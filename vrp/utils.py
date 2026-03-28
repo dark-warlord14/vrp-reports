@@ -31,12 +31,16 @@ def save_json(filepath: str | os.PathLike, data: Any) -> None:
 
 
 def load_json(filepath: str | os.PathLike) -> Any:
-    """Load JSON from file, returns None if not found."""
+    """Load JSON from file, returns None if not found or corrupt."""
     filepath = str(filepath)
     if not os.path.exists(filepath):
         return None
-    with open(filepath, "r", encoding="utf-8") as f:
-        return json.load(f)
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            return json.load(f)
+    except json.JSONDecodeError as e:
+        logger.error(f"Corrupt JSON at {filepath}: {e}")
+        return None
 
 
 def sanitize_filename(name: str) -> str:
@@ -55,8 +59,13 @@ async def download_file(
     filepath: str | os.PathLike,
     cookies: Optional[dict] = None,
     max_retries: int = 3,
+    expected_mime: Optional[str] = None,
 ) -> bool:
-    """Download a file with retry and optional cookie auth."""
+    """Download a file with retry and optional cookie auth.
+
+    If expected_mime is provided and the server returns text/html instead
+    (e.g. an auth redirect page), the download is rejected as failed.
+    """
     filepath = str(filepath)
     os.makedirs(os.path.dirname(filepath), exist_ok=True)
 
@@ -69,8 +78,21 @@ async def download_file(
                         jar.update_cookies({name: value})
                 async with session.get(url, timeout=aiohttp.ClientTimeout(total=60)) as resp:
                     if resp.status == 200:
+                        resp_ct = resp.headers.get("content-type", "")
+                        # Reject HTML responses when we expect non-HTML content
+                        # (indicates an auth redirect page was served instead of the file)
+                        if (
+                            expected_mime
+                            and "html" not in expected_mime
+                            and "text/html" in resp_ct
+                        ):
+                            logger.warning(
+                                f"Download returned HTML for {url} (auth required?), skipping"
+                            )
+                            return False
                         with open(filepath, "wb") as f:
-                            f.write(await resp.read())
+                            async for chunk in resp.content.iter_chunked(1024 * 64):
+                                f.write(chunk)
                         return True
                     elif resp.status == 429:
                         wait = 2 ** (attempt + 1)

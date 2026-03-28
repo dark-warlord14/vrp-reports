@@ -19,8 +19,9 @@ Scrapes and archives Chromium Vulnerability Reward Program (VRP) bug bounty repo
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -e .
+playwright install chromium   # download browser binary (required)
 
-# Start the dashboard (230 reports already collected)
+# Start the dashboard (if data/ is already populated)
 vrp serve
 # Open http://localhost:8080
 ```
@@ -28,14 +29,24 @@ vrp serve
 ## CLI Commands
 
 ```
-vrp discover [--year YEAR]   Phase 1: find issue IDs from search
-vrp scrape [--id ID]         Phase 2: scrape issues and download artifacts
-vrp reprocess                Re-parse existing raw JSON (no re-scraping)
-vrp markdown                 Generate/regenerate all report.md files
-vrp index                    Rebuild index.json + stats.json
-vrp serve [--port 8080]      Start the dashboard
-vrp run                      Full pipeline end to end
-vrp status                   Show counts and progress
+vrp discover [--year YEAR] [--no-resume] [--no-headless]
+    Phase 1: find issue IDs from search results.
+    --year YEAR      Discover for a single year instead of all years.
+    --no-resume      Ignore cached checkpoints, re-discover from scratch.
+    --no-headless    Show the browser window (useful for debugging auth).
+
+vrp scrape [--id ID] [--force] [--no-headless]
+    Phase 2: scrape issues and download artifacts.
+    --id ID          Scrape a single issue by ID.
+    --force          Re-scrape even if report.json already exists.
+    --no-headless    Show the browser window.
+
+vrp reprocess        Re-parse existing raw JSON (no re-scraping).
+vrp markdown         Generate/regenerate all report.md files.
+vrp index            Rebuild index.json + stats.json.
+vrp serve [--port N] Start the dashboard (default port: 8080).
+vrp run [--no-headless]  Full pipeline: discover → scrape → reprocess → markdown → index.
+vrp status           Show current counts and per-year discovery progress.
 ```
 
 ## Workflow

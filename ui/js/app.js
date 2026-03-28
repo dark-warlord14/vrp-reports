@@ -4,6 +4,9 @@ const App = {
     data: [],
     stats: null,
     md: null,
+    deployMode: 'local',
+    loadError: null,
+    _debounceTimer: null,
     currentSort: { field: 'created_date', dir: 'desc' },
     currentPage: 1,
     pageSize: 50,
@@ -11,7 +14,12 @@ const App = {
     chartInstances: {},
 
     async init() {
-        this.md = window.markdownit({ html: true, linkify: true, breaks: true });
+        this.md = window.markdownit({ html: false, linkify: true, breaks: true });
+        this.deployMode = document.querySelector('meta[name="vrp-deploy-mode"]')?.content || 'local';
+
+        // Show skeleton while loading
+        document.getElementById('app').innerHTML = Components.listSkeleton();
+
         await this.loadData();
         window.addEventListener('hashchange', () => this.route());
         this.route();
@@ -23,20 +31,46 @@ const App = {
                 fetch('/data/index.json'),
                 fetch('/data/stats.json'),
             ]);
-            if (indexRes.ok) this.data = await indexRes.json();
+            if (!indexRes.ok) throw new Error(`Failed to load index (HTTP ${indexRes.status})`);
+            this.data = await indexRes.json();
             if (statsRes.ok) this.stats = await statsRes.json();
         } catch (e) {
             console.error('Failed to load data:', e);
+            this.loadError = e.message || 'Failed to load data';
         }
     },
 
+    renderError() {
+        document.getElementById('app').innerHTML = `
+            <div class="error-banner">
+                <strong>Failed to load dashboard data</strong>
+                <p>${Components.escapeHtml(this.loadError)}</p>
+                <button onclick="App.retryLoad()">Retry</button>
+            </div>
+        `;
+    },
+
+    async retryLoad() {
+        this.loadError = null;
+        document.getElementById('app').innerHTML = Components.listSkeleton();
+        await this.loadData();
+        this.route();
+    },
+
     route() {
+        if (this.loadError) {
+            this.renderError();
+            return;
+        }
+
         const hash = location.hash || '#/';
+        const isListView = hash === '#/' || hash.startsWith('#/?');
+
         // Update nav active state
         document.querySelectorAll('.nav-link').forEach(el => {
             el.classList.toggle('active',
                 (hash.startsWith('#/stats') && el.dataset.nav === 'stats') ||
-                (hash === '#/' && el.dataset.nav === 'list') ||
+                (isListView && el.dataset.nav === 'list') ||
                 (hash.startsWith('#/report/') && el.dataset.nav === 'list')
             );
         });
@@ -44,11 +78,58 @@ const App = {
         if (hash.startsWith('#/report/')) {
             const id = hash.split('/')[2];
             this.showReport(id);
-        } else if (hash === '#/stats') {
+        } else if (hash.startsWith('#/stats')) {
             this.showStats();
         } else {
+            // URL is source of truth — parse state before rendering
+            this.parseState(hash);
             this.showList();
         }
+    },
+
+    // Parse filter/sort/page from URL hash: #/?q=v8&year=2024&sort=bounty_amount:desc&page=2
+    parseState(hash) {
+        // Reset to defaults first so navigating back to #/ clears filters
+        this.filters = { search: '', year: '', severity: '', status: '' };
+        this.currentSort = { field: 'created_date', dir: 'desc' };
+        this.currentPage = 1;
+
+        const qIndex = hash.indexOf('?');
+        if (qIndex === -1) return;
+
+        const params = new URLSearchParams(hash.slice(qIndex + 1));
+        if (params.has('q'))        this.filters.search   = params.get('q');
+        if (params.has('year'))     this.filters.year     = params.get('year');
+        if (params.has('severity')) this.filters.severity = params.get('severity');
+        if (params.has('status'))   this.filters.status   = params.get('status');
+        if (params.has('sort')) {
+            const [field, dir] = params.get('sort').split(':');
+            if (field && (dir === 'asc' || dir === 'desc')) {
+                this.currentSort = { field, dir };
+            }
+        }
+        if (params.has('page')) {
+            const p = parseInt(params.get('page'), 10);
+            if (!isNaN(p) && p > 0) this.currentPage = p;
+        }
+    },
+
+    // Serialize current state to URL hash string
+    serializeState() {
+        const params = new URLSearchParams();
+        if (this.filters.search)   params.set('q',        this.filters.search);
+        if (this.filters.year)     params.set('year',     this.filters.year);
+        if (this.filters.severity) params.set('severity', this.filters.severity);
+        if (this.filters.status)   params.set('status',   this.filters.status);
+        const isDefaultSort = this.currentSort.field === 'created_date' && this.currentSort.dir === 'desc';
+        if (!isDefaultSort) params.set('sort', `${this.currentSort.field}:${this.currentSort.dir}`);
+        if (this.currentPage > 1) params.set('page', this.currentPage);
+        const qs = params.toString();
+        return qs ? `#/?${qs}` : '#/';
+    },
+
+    updateHash() {
+        history.replaceState(null, '', this.serializeState());
     },
 
     // === LIST VIEW ===
@@ -63,18 +144,28 @@ const App = {
             this.currentPage * this.pageSize
         );
 
-        // Compute quick stats
         const totalBounty = filtered.reduce((s, r) => s + (r.bounty_amount || 0), 0);
         const years = [...new Set(this.data.map(r => r.year).filter(Boolean))].sort();
         const severities = [...new Set(this.data.map(r => r.severity).filter(Boolean))].sort();
         const statuses = [...new Set(this.data.map(r => r.status).filter(Boolean))].sort();
+
+        const hasActiveFilters = this.filters.search || this.filters.year ||
+            this.filters.severity || this.filters.status;
+
+        const startIdx = (this.currentPage - 1) * this.pageSize + 1;
+        const endIdx = Math.min(this.currentPage * this.pageSize, sorted.length);
+        const resultCount = sorted.length > 0
+            ? `Showing ${startIdx}–${endIdx} of ${sorted.length} report${sorted.length !== 1 ? 's' : ''}`
+            : 'No reports match your filters.';
 
         app.innerHTML = `
             <div class="stats-bar">
                 ${Components.statCard('Total Reports', filtered.length)}
                 ${Components.statCard('Total Bounty', '$' + totalBounty.toLocaleString())}
                 ${Components.statCard('Avg Bounty',
-                    '$' + (filtered.length ? Math.round(totalBounty / filtered.filter(r => r.bounty_amount).length || 1).toLocaleString() : '0')
+                    '$' + (filtered.length
+                        ? Math.round(totalBounty / (filtered.filter(r => r.bounty_amount).length || 1)).toLocaleString()
+                        : '0')
                 )}
                 ${Components.statCard('With Attachments',
                     filtered.filter(r => r.attachment_count > 0).length
@@ -82,55 +173,69 @@ const App = {
             </div>
 
             <div class="filters">
-                <input type="search" class="search-box" placeholder="Search by ID, title, or component..."
-                    value="${this.filters.search}" oninput="App.onFilter('search', this.value)">
-                <select onchange="App.onFilter('year', this.value)">
+                <input type="search" class="search-box"
+                    placeholder="Search by ID, title, or component..."
+                    aria-label="Search reports"
+                    value="${Components.escapeHtml(this.filters.search)}"
+                    oninput="App.onFilterDebounced('search', this.value)">
+                <select aria-label="Filter by year" onchange="App.onFilter('year', this.value)">
                     <option value="">All Years</option>
                     ${years.map(y => `<option value="${y}" ${this.filters.year == y ? 'selected' : ''}>${y}</option>`).join('')}
                 </select>
-                <select onchange="App.onFilter('severity', this.value)">
+                <select aria-label="Filter by severity" onchange="App.onFilter('severity', this.value)">
                     <option value="">All Severities</option>
-                    ${severities.map(s => `<option value="${s}" ${this.filters.severity === s ? 'selected' : ''}>${s}</option>`).join('')}
+                    ${severities.map(s => `<option value="${s}" ${this.filters.severity === s ? 'selected' : ''}>${Components.escapeHtml(s)}</option>`).join('')}
                 </select>
-                <select onchange="App.onFilter('status', this.value)">
+                <select aria-label="Filter by status" onchange="App.onFilter('status', this.value)">
                     <option value="">All Statuses</option>
-                    ${statuses.map(s => `<option value="${s}" ${this.filters.status === s ? 'selected' : ''}>${s}</option>`).join('')}
+                    ${statuses.map(s => `<option value="${s}" ${this.filters.status === s ? 'selected' : ''}>${Components.escapeHtml(s)}</option>`).join('')}
                 </select>
+                ${hasActiveFilters ? `<button class="outline small clear-btn" onclick="App.clearFilters()">Clear filters</button>` : ''}
+                <button class="outline small" onclick="App.exportCSV()" title="Export filtered results as CSV">Export CSV</button>
             </div>
 
-            <table class="report-table" role="grid">
-                <thead>
-                    <tr>
-                        ${this.thSortable('id', 'ID', 'col-id')}
-                        ${this.thSortable('title', 'Title', 'col-title')}
-                        ${this.thSortable('severity', 'Severity', 'col-severity')}
-                        ${this.thSortable('bounty_amount', 'Bounty', 'col-bounty')}
-                        ${this.thSortable('status', 'Status', 'col-status')}
-                        ${this.thSortable('created_date', 'Date', 'col-date')}
-                    </tr>
-                </thead>
-                <tbody>
-                    ${pageData.length === 0 ? '<tr><td colspan="6">No reports match your filters.</td></tr>' : ''}
-                    ${pageData.map(r => `
-                        <tr onclick="location.hash='#/report/${r.id}'">
-                            <td class="col-id"><code>${r.id}</code></td>
-                            <td class="col-title">${Components.escapeHtml(r.title || 'Untitled')}</td>
-                            <td class="col-severity">${Components.severityBadge(r.severity)}</td>
-                            <td class="col-bounty">${Components.bountyBadge(r.bounty_amount)}</td>
-                            <td class="col-status">${Components.statusBadge(r.status)}</td>
-                            <td class="col-date">${Components.formatDate(r.created_date)}</td>
+            <div class="result-count">${resultCount}</div>
+
+            <div class="table-wrapper">
+                <table class="report-table" role="grid">
+                    <thead>
+                        <tr>
+                            ${this.thSortable('id', 'ID', 'col-id')}
+                            ${this.thSortable('title', 'Title', 'col-title')}
+                            ${this.thSortable('severity', 'Severity', 'col-severity')}
+                            ${this.thSortable('bounty_amount', 'Bounty', 'col-bounty')}
+                            ${this.thSortable('status', 'Status', 'col-status')}
+                            ${this.thSortable('created_date', 'Date', 'col-date')}
                         </tr>
-                    `).join('')}
-                </tbody>
-            </table>
+                    </thead>
+                    <tbody>
+                        ${pageData.length === 0
+                            ? '<tr><td colspan="6" style="text-align:center;color:var(--pico-muted-color)">No reports match your filters.</td></tr>'
+                            : ''}
+                        ${pageData.map(r => `
+                            <tr onclick="location.hash='#/report/${r.id}'"
+                                tabindex="0"
+                                onkeydown="if(event.key==='Enter')location.hash='#/report/${r.id}'"
+                                aria-label="Report ${r.id}: ${Components.escapeHtml(r.title || 'Untitled')}">
+                                <td class="col-id"><code>${Components.escapeHtml(r.id || '')}</code></td>
+                                <td class="col-title">${Components.escapeHtml(r.title || 'Untitled')}</td>
+                                <td class="col-severity">${Components.severityBadge(r.severity)}</td>
+                                <td class="col-bounty">${Components.bountyBadge(r.bounty_amount)}</td>
+                                <td class="col-status">${Components.statusBadge(r.status)}</td>
+                                <td class="col-date">${Components.formatDate(r.created_date)}</td>
+                            </tr>
+                        `).join('')}
+                    </tbody>
+                </table>
+            </div>
             <div id="pagination"></div>
         `;
 
-        // Pagination
         if (totalPages > 1) {
             document.getElementById('pagination').appendChild(
                 Components.pagination(this.currentPage, totalPages, (p) => {
                     this.currentPage = p;
+                    this.updateHash();
                     this.showList();
                 })
             );
@@ -140,8 +245,10 @@ const App = {
     thSortable(field, label, cls) {
         const sorted = this.currentSort.field === field;
         const arrow = sorted ? (this.currentSort.dir === 'asc' ? '&#9650;' : '&#9660;') : '&#8597;';
+        const ariaSort = sorted ? (this.currentSort.dir === 'asc' ? 'ascending' : 'descending') : 'none';
         return `<th class="${cls} ${sorted ? 'sorted' : ''}"
-            onclick="App.onSort('${field}')">
+            onclick="App.onSort('${field}')"
+            aria-sort="${ariaSort}">
             ${label}<span class="sort-arrow">${arrow}</span>
         </th>`;
     },
@@ -153,13 +260,50 @@ const App = {
             this.currentSort = { field, dir: field === 'bounty_amount' ? 'desc' : 'asc' };
         }
         this.currentPage = 1;
+        this.updateHash();
         this.showList();
     },
 
     onFilter(key, value) {
         this.filters[key] = value;
         this.currentPage = 1;
+        this.updateHash();
         this.showList();
+    },
+
+    onFilterDebounced(key, value) {
+        clearTimeout(this._debounceTimer);
+        this._debounceTimer = setTimeout(() => this.onFilter(key, value), 150);
+    },
+
+    clearFilters() {
+        this.filters = { search: '', year: '', severity: '', status: '' };
+        this.currentPage = 1;
+        this.updateHash();
+        this.showList();
+    },
+
+    exportCSV() {
+        const filtered = this.getSortedData(this.getFilteredData());
+        const header = ['ID', 'Title', 'Severity', 'Bounty', 'Status', 'Date', 'URL'];
+        const rows = filtered.map(r => [
+            r.id || '',
+            (r.title || '').replace(/"/g, '""'),
+            r.severity || '',
+            r.bounty_amount || '',
+            r.status || '',
+            (r.created_date || '').substring(0, 10),
+            r.url || '',
+        ].map(v => `"${v}"`).join(','));
+
+        const csv = [header.join(','), ...rows].join('\n');
+        const blob = new Blob([csv], { type: 'text/csv' });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = 'vrp-reports.csv';
+        a.click();
+        URL.revokeObjectURL(url);
     },
 
     getFilteredData() {
@@ -196,15 +340,21 @@ const App = {
         app.innerHTML = '<p aria-busy="true">Loading report...</p>';
 
         try {
-            // Try markdown first, fall back to JSON
-            const [reportRes, mdRes, updatesRes] = await Promise.all([
+            const fetches = [
                 fetch(`/data/issues/${id}/report.json`),
                 fetch(`/data/issues/${id}/report.md`),
-                fetch(`/data/issues/${id}/raw_updates.json`),
-            ]);
+            ];
+            // raw_updates.json is not deployed in static mode (Cloudflare Pages)
+            if (this.deployMode !== 'static') {
+                fetches.push(fetch(`/data/issues/${id}/raw_updates.json`));
+            }
+
+            const results = await Promise.all(fetches);
+            const [reportRes, mdRes] = results;
+            const updatesRes = results[2] || null;
 
             if (!reportRes.ok) {
-                app.innerHTML = `<p>Report ${id} not found.</p><a href="#/">Back to list</a>`;
+                app.innerHTML = `<p>Report ${Components.escapeHtml(id)} not found.</p><a href="#/">Back to list</a>`;
                 return;
             }
 
@@ -212,7 +362,7 @@ const App = {
             const mdContent = mdRes.ok ? await mdRes.text() : null;
             let updates = [];
 
-            if (updatesRes.ok) {
+            if (updatesRes?.ok) {
                 try {
                     const raw = await updatesRes.json();
                     updates = this.parseRawUpdates(raw, id);
@@ -223,12 +373,16 @@ const App = {
 
         } catch (e) {
             console.error('Error loading report:', e);
-            app.innerHTML = `<p style="color:red;">Error: ${e.message}</p><a href="#/">Back</a>`;
+            app.innerHTML = `
+                <div class="error-banner">
+                    <strong>Error loading report</strong>
+                    <p>${Components.escapeHtml(e.message)}</p>
+                    <a href="#/">Back to list</a>
+                </div>`;
         }
     },
 
     parseRawUpdates(raw, issueId) {
-        // Navigate: raw[0][1][0] = updates list
         try {
             const list = raw[0][1][0];
             if (!Array.isArray(list)) return [];
@@ -248,8 +402,8 @@ const App = {
     renderReport(report, mdContent, updates) {
         const app = document.getElementById('app');
         const attachments = report.attachments || [];
+        const isStatic = this.deployMode === 'static';
 
-        // Build metadata grid
         const metaItems = [
             Components.metadataItem('Status', Components.statusBadge(report.status)),
             Components.metadataItem('Severity', Components.severityBadge(report.severity)),
@@ -258,14 +412,13 @@ const App = {
             Components.metadataItem('Component', report.component || 'Unknown'),
             Components.metadataItem('Reporter', report.reporter || 'Unknown'),
         ];
-        if (report.assignee) metaItems.push(Components.metadataItem('Assignee', report.assignee));
-        if (report.chrome_version) metaItems.push(Components.metadataItem('Chrome Version', report.chrome_version));
+        if (report.assignee)          metaItems.push(Components.metadataItem('Assignee', report.assignee));
+        if (report.chrome_version)    metaItems.push(Components.metadataItem('Chrome Version', report.chrome_version));
         if (report.os_platforms?.length) metaItems.push(Components.metadataItem('Platforms', report.os_platforms.join(', ')));
-        if (report.cve_ids?.length) metaItems.push(Components.metadataItem('CVE IDs', report.cve_ids.join(', ')));
-        if (report.created_date) metaItems.push(Components.metadataItem('Created', Components.formatDate(report.created_date)));
-        if (report.update_count) metaItems.push(Components.metadataItem('Updates', report.update_count));
+        if (report.cve_ids?.length)   metaItems.push(Components.metadataItem('CVE IDs', report.cve_ids.join(', ')));
+        if (report.created_date)      metaItems.push(Components.metadataItem('Created', Components.formatDate(report.created_date)));
+        if (report.update_count)      metaItems.push(Components.metadataItem('Updates', report.update_count));
 
-        // Render markdown content
         let descriptionHtml = '';
         if (mdContent) {
             descriptionHtml = this.md.render(mdContent);
@@ -273,19 +426,19 @@ const App = {
             descriptionHtml = `<pre>${Components.escapeHtml(report.description_snippet || 'No description available.')}</pre>`;
         }
 
-        // Inline previews for images/videos
-        const previews = attachments
+        // Inline previews only available in local mode (static mode lacks downloaded files)
+        const previews = isStatic ? '' : attachments
             .filter(a => a.mime_type?.startsWith('image/') || a.mime_type?.startsWith('video/'))
             .map(a => Components.inlinePreview(a, report.id))
             .join('');
 
-        // Attachment cards
         const attCards = attachments.map(a => Components.attachmentCard(a, report.id)).join('');
 
-        // Timeline from raw updates
-        const timelineHtml = updates.length > 1
+        // Timeline only available when raw_updates.json was fetched (local mode)
+        const showTimeline = !isStatic && updates.length > 1;
+        const timelineHtml = showTimeline
             ? updates.slice(1).map(u => Components.timelineEntry(u)).join('')
-            : '<p>No comments available.</p>';
+            : '';
 
         app.innerHTML = `
             <div class="report-detail">
@@ -293,18 +446,15 @@ const App = {
 
                 <div class="report-header">
                     <h1>${Components.escapeHtml(report.title || 'Untitled')}</h1>
-                    <a href="${report.url}" target="_blank" rel="noopener">View on Chromium Issue Tracker &rarr;</a>
+                    <a href="${Components.safeUrl(report.url)}" target="_blank" rel="noopener">
+                        View on Chromium Issue Tracker &rarr;
+                    </a>
                 </div>
 
                 <div class="metadata-grid">${metaItems.join('')}</div>
 
-                ${mdContent ? `
-                    <h2>Report</h2>
-                    <div class="markdown-content">${descriptionHtml}</div>
-                ` : `
-                    <h2>Description</h2>
-                    <div class="markdown-content">${descriptionHtml}</div>
-                `}
+                <h2>${mdContent ? 'Report' : 'Description'}</h2>
+                <div class="markdown-content">${descriptionHtml}</div>
 
                 ${previews ? `<h2>Previews</h2>${previews}` : ''}
 
@@ -315,16 +465,16 @@ const App = {
                     </div>
                 ` : ''}
 
-                ${updates.length > 1 ? `
+                ${showTimeline ? `
                     <h2>Timeline (${updates.length - 1} comments)</h2>
                     <div class="timeline">${timelineHtml}</div>
                 ` : ''}
 
                 <hr>
-                <div style="display:flex;gap:1rem;margin:1rem 0;">
+                <div style="display:flex;gap:1rem;margin:1rem 0;flex-wrap:wrap;">
                     <a href="/data/issues/${report.id}/report.json" target="_blank" class="outline small">report.json</a>
-                    <a href="/data/issues/${report.id}/raw_updates.json" target="_blank" class="outline small">raw_updates.json</a>
                     ${report.has_markdown !== false ? `<a href="/data/issues/${report.id}/report.md" target="_blank" class="outline small">report.md</a>` : ''}
+                    ${!isStatic ? `<a href="/data/issues/${report.id}/raw_updates.json" target="_blank" class="outline small">raw_updates.json</a>` : ''}
                 </div>
             </div>
         `;
@@ -390,7 +540,10 @@ const App = {
                     </thead>
                     <tbody>
                         ${s.top_bounties.map((b, i) => `
-                            <tr onclick="location.hash='#/report/${b.id}'" style="cursor:pointer">
+                            <tr onclick="location.hash='#/report/${b.id}'"
+                                tabindex="0"
+                                onkeydown="if(event.key==='Enter')location.hash='#/report/${b.id}'"
+                                style="cursor:pointer">
                                 <td class="rank">${i + 1}</td>
                                 <td>${Components.escapeHtml(b.title || '')}</td>
                                 <td>${Components.severityBadge(b.severity)}</td>
@@ -403,12 +556,10 @@ const App = {
             ` : ''}
         `;
 
-        // Render charts after DOM is ready
         requestAnimationFrame(() => this.renderCharts(s));
     },
 
     renderCharts(s) {
-        // Destroy existing chart instances
         Object.values(this.chartInstances).forEach(c => c.destroy());
         this.chartInstances = {};
 
@@ -419,9 +570,8 @@ const App = {
         Chart.defaults.color = textColor;
         Chart.defaults.borderColor = gridColor;
 
-        // Reports by year
         if (s.by_year) {
-            const years = Object.keys(s.by_year);
+            const years = Object.keys(s.by_year).sort();
             this.chartInstances.year = new Chart(document.getElementById('chartYear'), {
                 type: 'bar',
                 data: {
@@ -432,10 +582,18 @@ const App = {
                         backgroundColor: 'rgba(76, 175, 80, 0.7)',
                     }]
                 },
-                options: { responsive: true, plugins: { legend: { display: false } } }
+                options: {
+                    responsive: true,
+                    plugins: { legend: { display: false } },
+                    onClick: (evt, elements) => {
+                        if (elements.length > 0) {
+                            const year = years[elements[0].index];
+                            location.hash = `#/?year=${year}`;
+                        }
+                    },
+                },
             });
 
-            // Bounty by year
             this.chartInstances.bountyYear = new Chart(document.getElementById('chartBountyYear'), {
                 type: 'bar',
                 data: {
@@ -446,35 +604,30 @@ const App = {
                         backgroundColor: 'rgba(255, 152, 0, 0.7)',
                     }]
                 },
-                options: { responsive: true, plugins: { legend: { display: false } } }
+                options: { responsive: true, plugins: { legend: { display: false } } },
             });
         }
 
-        // Severity
         if (s.by_severity) {
             const sevLabels = Object.keys(s.by_severity);
             const sevColors = sevLabels.map(l => {
                 if (l.includes('Critical')) return '#f44336';
-                if (l.includes('High')) return '#ff5722';
-                if (l.includes('Medium')) return '#ff9800';
-                if (l.includes('Low')) return '#ffc107';
-                if (l.includes('Minimal')) return '#8bc34a';
+                if (l.includes('High'))     return '#ff5722';
+                if (l.includes('Medium'))   return '#ff9800';
+                if (l.includes('Low'))      return '#ffc107';
+                if (l.includes('Minimal'))  return '#8bc34a';
                 return '#9e9e9e';
             });
             this.chartInstances.severity = new Chart(document.getElementById('chartSeverity'), {
                 type: 'doughnut',
                 data: {
                     labels: sevLabels,
-                    datasets: [{
-                        data: Object.values(s.by_severity),
-                        backgroundColor: sevColors,
-                    }]
+                    datasets: [{ data: Object.values(s.by_severity), backgroundColor: sevColors }]
                 },
-                options: { responsive: true }
+                options: { responsive: true },
             });
         }
 
-        // Bounty histogram
         if (s.bounty_histogram) {
             this.chartInstances.bountyHist = new Chart(document.getElementById('chartBountyHist'), {
                 type: 'bar',
@@ -486,11 +639,10 @@ const App = {
                         backgroundColor: 'rgba(33, 150, 243, 0.7)',
                     }]
                 },
-                options: { responsive: true, plugins: { legend: { display: false } } }
+                options: { responsive: true, plugins: { legend: { display: false } } },
             });
         }
 
-        // Components
         if (s.by_component) {
             const compLabels = Object.keys(s.by_component).slice(0, 10);
             this.chartInstances.components = new Chart(document.getElementById('chartComponents'), {
@@ -506,12 +658,11 @@ const App = {
                 options: {
                     responsive: true,
                     indexAxis: 'y',
-                    plugins: { legend: { display: false } }
-                }
+                    plugins: { legend: { display: false } },
+                },
             });
         }
 
-        // Status
         if (s.by_status) {
             const statusLabels = Object.keys(s.by_status);
             this.chartInstances.status = new Chart(document.getElementById('chartStatus'), {
@@ -526,7 +677,7 @@ const App = {
                         ],
                     }]
                 },
-                options: { responsive: true }
+                options: { responsive: true },
             });
         }
     },
@@ -535,13 +686,11 @@ const App = {
 // Theme toggle
 function toggleTheme() {
     const html = document.documentElement;
-    const current = html.dataset.theme;
-    const next = current === 'dark' ? 'light' : 'dark';
+    const next = html.dataset.theme === 'dark' ? 'light' : 'dark';
     html.dataset.theme = next;
     localStorage.setItem('vrp-theme', next);
     document.getElementById('themeIcon').innerHTML = next === 'dark' ? '&#9790;' : '&#9728;';
-    // Re-render charts with new colors if on stats page
-    if (location.hash === '#/stats' && App.stats) {
+    if (location.hash.startsWith('#/stats') && App.stats) {
         App.renderCharts(App.stats);
     }
 }
@@ -555,5 +704,4 @@ function toggleTheme() {
     }
 })();
 
-// Init
 document.addEventListener('DOMContentLoaded', () => App.init());

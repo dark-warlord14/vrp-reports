@@ -6,7 +6,7 @@ import click
 from rich.console import Console
 from rich.table import Table
 
-from vrp.config import ISSUES_DIR, INDEX_FILE, QUEUE_FILE, get_all_years
+from vrp.config import DATA_DIR, ISSUES_DIR, INDEX_FILE, QUEUE_FILE, get_all_years
 from vrp.utils import load_json
 
 console = Console()
@@ -16,7 +16,9 @@ console = Console()
 @click.version_option(package_name="vrp-reports")
 def cli():
     """Chromium VRP Bug Bounty Reports - Scraper & Dashboard."""
-    pass
+    # Create data directories on first use (deferred from config import)
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+    ISSUES_DIR.mkdir(parents=True, exist_ok=True)
 
 
 @cli.command()
@@ -95,13 +97,21 @@ def run(no_headless):
 
     headless = not no_headless
 
-    console.print("[bold]Step 1/5: Discovery[/bold]")
-    ids = asyncio.run(discover_all(headless=headless))
-    console.print(f"  -> {len(ids)} issue IDs")
+    try:
+        console.print("[bold]Step 1/5: Discovery[/bold]")
+        ids = asyncio.run(discover_all(headless=headless))
+        console.print(f"  -> {len(ids)} issue IDs")
+    except Exception as e:
+        console.print(f"[red]Discovery failed: {e}[/red]")
+        raise SystemExit(1)
 
-    console.print("[bold]Step 2/5: Scraping[/bold]")
-    bounty_count = asyncio.run(scrape_all(headless=headless))
-    console.print(f"  -> {bounty_count} new bounty reports")
+    try:
+        console.print("[bold]Step 2/5: Scraping[/bold]")
+        bounty_count = asyncio.run(scrape_all(headless=headless))
+        console.print(f"  -> {bounty_count} new bounty reports")
+    except Exception as e:
+        console.print(f"[red]Scraping failed: {e}[/red]")
+        raise SystemExit(1)
 
     console.print("[bold]Step 3/5: Reprocessing[/bold]")
     reprocess_existing()
@@ -143,7 +153,6 @@ def status():
     index = load_json(INDEX_FILE) or []
 
     # Discovery checkpoints
-    from vrp.config import DATA_DIR
     checkpoints = list(DATA_DIR.glob("discovery_*.json"))
     years_discovered = []
     for cp in checkpoints:

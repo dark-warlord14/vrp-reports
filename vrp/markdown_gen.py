@@ -78,21 +78,20 @@ def generate_report_markdown(issue_id: str) -> bool:
 
     lines.append("")
 
+    # Parse updates once and reuse for both description and timeline
+    updates = parse_updates(raw_updates, issue_id) if raw_updates else []
+
     # Description
     lines.append("## Description")
     lines.append("")
 
-    if raw_updates:
-        updates = parse_updates(raw_updates, issue_id)
-        if updates and updates[0].text_plain:
-            # Prefer HTML conversion if available
-            if updates[0].text_html:
-                desc_md = _html_to_md(updates[0].text_html)
-            else:
-                desc_md = updates[0].text_plain
-            lines.append(desc_md)
+    if updates and updates[0].text_plain:
+        # Prefer HTML conversion if available
+        if updates[0].text_html:
+            desc_md = _html_to_md(updates[0].text_html)
         else:
-            lines.append("*No description available.*")
+            desc_md = updates[0].text_plain
+        lines.append(desc_md)
     else:
         snippet = report.get("description_snippet", "")
         lines.append(snippet or "*No description available.*")
@@ -116,8 +115,7 @@ def generate_report_markdown(issue_id: str) -> bool:
         lines.append("")
 
     # Timeline / Comments
-    if raw_updates:
-        updates = parse_updates(raw_updates, issue_id)
+    if updates:
         comments = [u for u in updates[1:] if u.text_plain.strip()]
         if comments:
             lines.append("## Timeline")

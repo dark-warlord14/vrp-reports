@@ -60,28 +60,37 @@ const Components = {
     attachmentCard(att, issueId) {
         const icon = this.fileIcon(att.mime_type);
         const size = this.formatSize(att.size_bytes || 0);
-        const href = att.local_path
-            ? `/data/issues/${issueId}/${att.local_path}`
-            : att.url || '#';
+        const isStatic = window.App?.deployMode === 'static';
+        // In static deploy, local files aren't available — link to issue tracker instead
+        const href = isStatic
+            ? this.safeUrl(att.url)
+            : (att.local_path ? `/data/issues/${issueId}/${att.local_path}` : this.safeUrl(att.url));
+        const name = this.escapeHtml(att.filename || 'unknown');
+        const mime = this.escapeHtml(att.mime_type || '');
+        const externalHint = isStatic ? ' &#8599;' : '';
         return `
-            <a class="attachment-card" href="${href}" target="_blank">
+            <a class="attachment-card" href="${href}" target="_blank" rel="noopener">
                 <span class="attachment-icon">${icon}</span>
                 <span class="attachment-info">
-                    <span class="att-name">${att.filename || 'unknown'}</span>
-                    <br><span class="att-meta">${att.mime_type || ''} &middot; ${size}</span>
+                    <span class="att-name">${name}${externalHint}</span>
+                    <br><span class="att-meta">${mime} &middot; ${size}</span>
                 </span>
             </a>`;
     },
 
     inlinePreview(att, issueId) {
+        // Inline previews are only available in local mode (files not deployed in static mode)
+        if (window.App?.deployMode === 'static') return '';
+
         const src = att.local_path
             ? `/data/issues/${issueId}/${att.local_path}`
-            : att.url || '';
-        if (!src) return '';
+            : this.safeUrl(att.url);
+        if (!src || src === '#') return '';
 
         const mime = att.mime_type || '';
+        const alt = this.escapeHtml(att.filename || '');
         if (mime.startsWith('image/')) {
-            return `<div class="inline-preview"><img src="${src}" alt="${att.filename}" loading="lazy"></div>`;
+            return `<div class="inline-preview"><img src="${src}" alt="${alt}" loading="lazy"></div>`;
         }
         if (mime.startsWith('video/')) {
             return `<div class="inline-preview"><video src="${src}" controls preload="metadata"></video></div>`;
@@ -110,6 +119,26 @@ const Components = {
         const div = document.createElement('div');
         div.textContent = text;
         return div.innerHTML;
+    },
+
+    // Allow only https:// and http:// URLs to prevent javascript: injection
+    safeUrl(url) {
+        if (!url) return '#';
+        const lower = url.trim().toLowerCase();
+        if (lower.startsWith('https://') || lower.startsWith('http://')) return url;
+        return '#';
+    },
+
+    listSkeleton() {
+        const skCard = () => `<div class="stat-card"><div class="skeleton-line" style="width:60%;height:1.8rem;margin:0 auto 0.5rem"></div><div class="skeleton-line" style="width:40%;height:0.8rem;margin:0 auto"></div></div>`;
+        const skRow = () => `<tr>${['100px','1fr','100px','90px','90px','100px'].map(w => `<td><div class="skeleton-line" style="width:80%;height:0.85rem"></div></td>`).join('')}</tr>`;
+        return `
+            <div class="stats-bar">${[1,2,3,4].map(skCard).join('')}</div>
+            <div class="skeleton-line" style="width:100%;height:2.5rem;margin-bottom:1rem"></div>
+            <div class="skeleton-line" style="width:120px;height:0.85rem;margin-bottom:0.5rem"></div>
+            <table class="report-table" style="opacity:0.5">
+                <tbody>${[1,2,3,4,5,6,7,8].map(skRow).join('')}</tbody>
+            </table>`;
     },
 
     pagination(currentPage, totalPages, onPageChange) {

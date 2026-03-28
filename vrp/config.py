@@ -14,10 +14,6 @@ STATS_FILE = DATA_DIR / "stats.json"
 QUEUE_FILE = DATA_DIR / "discovery_queue.json"
 UI_DIR = PROJECT_ROOT / "ui"
 
-# Ensure directories exist
-DATA_DIR.mkdir(parents=True, exist_ok=True)
-ISSUES_DIR.mkdir(parents=True, exist_ok=True)
-
 # --- Search ---
 BASE_SEARCH_TEMPLATE = (
     "https://issues.chromium.org/issues?q="

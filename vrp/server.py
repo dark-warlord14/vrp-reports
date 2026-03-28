@@ -12,23 +12,28 @@ class VRPHandler(SimpleHTTPRequestHandler):
     """Serve UI files and data with proper MIME types and CORS."""
 
     def do_GET(self):
+        # Strip query string before routing
+        path = self.path.split("?", 1)[0]
+
         # Route /data/* to data directory
-        if self.path.startswith("/data/"):
-            rel = self.path[6:]  # strip /data/
+        if path.startswith("/data/"):
+            rel = path[6:]  # strip /data/
             filepath = DATA_DIR / rel
-        elif self.path == "/" or self.path == "":
+        elif path == "/" or path == "":
             filepath = UI_DIR / "index.html"
         else:
             # Strip leading slash
-            rel = self.path.lstrip("/")
+            rel = path.lstrip("/")
             filepath = UI_DIR / rel
 
         filepath = filepath.resolve()
+        ui_root = UI_DIR.resolve()
+        data_root = DATA_DIR.resolve()
 
-        # Security: prevent path traversal
+        # Security: prevent path traversal using is_relative_to (Python 3.9+)
         if not (
-            str(filepath).startswith(str(UI_DIR.resolve()))
-            or str(filepath).startswith(str(DATA_DIR.resolve()))
+            filepath.is_relative_to(ui_root)
+            or filepath.is_relative_to(data_root)
         ):
             self.send_error(403, "Forbidden")
             return
@@ -82,8 +87,8 @@ class VRPHandler(SimpleHTTPRequestHandler):
 
 
 def run_server(port: int = 8080):
-    """Start the VRP dashboard server."""
-    server = HTTPServer(("", port), VRPHandler)
+    """Start the VRP dashboard server (binds to localhost only)."""
+    server = HTTPServer(("127.0.0.1", port), VRPHandler)
     logger.info(f"Dashboard: http://localhost:{port}")
     logger.info("Press Ctrl+C to stop")
     try:

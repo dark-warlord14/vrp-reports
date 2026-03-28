@@ -6,7 +6,6 @@ of existing raw JSON files.
 
 import asyncio
 import json
-import os
 from pathlib import Path
 
 from playwright.async_api import async_playwright, BrowserContext
@@ -42,7 +41,6 @@ async def _extract_cookies(context: BrowserContext) -> dict:
 async def scrape_issue(
     issue_id: str,
     context: BrowserContext,
-    cookies: dict,
     force: bool = False,
 ) -> bool:
     """Scrape a single issue from the Chromium Issue Tracker.
@@ -72,8 +70,8 @@ async def scrape_issue(
                     captured["updates"] = data
                 else:
                     captured["metadata"] = data
-        except Exception:
-            pass
+        except Exception as e:
+            logger.debug(f"Response handler error for {issue_id}: {e}")
 
     page = await context.new_page()
     page.on("response", on_response)
@@ -81,6 +79,9 @@ async def scrape_issue(
     try:
         await page.goto(url, wait_until="networkidle", timeout=TIMEOUT)
         await asyncio.sleep(5)
+
+        # Extract cookies after navigation so auth cookies are populated
+        cookies = await _extract_cookies(context)
 
         # Quick bounty check on raw text before full parsing
         if captured["updates"]:
@@ -118,7 +119,13 @@ async def scrape_issue(
             fname = sanitize_filename(att.filename)
             local_path = att_dir / fname
             if not local_path.exists():
-                await download_file(att.url, str(local_path), cookies=cookies)
+                ok = await download_file(
+                    att.url, str(local_path), cookies=cookies,
+                    expected_mime=att.mime_type,
+                )
+                if not ok:
+                    att.local_path = None
+                    continue
             att.local_path = f"attachments/{fname}"
 
         # Save enriched report
@@ -173,7 +180,6 @@ async def scrape_all(
     async with async_playwright() as pw:
         browser = await pw.chromium.launch(headless=headless)
         context = await browser.new_context(user_agent=USER_AGENT)
-        cookies = await _extract_cookies(context)
 
         processed = 0
         with create_progress() as progress:
@@ -182,7 +188,7 @@ async def scrape_all(
             async def process_one(iid: str):
                 nonlocal bounty_count, processed
                 async with semaphore:
-                    result = await scrape_issue(iid, context, cookies, force=force)
+                    result = await scrape_issue(iid, context, force=force)
                     if result:
                         bounty_count += 1
                     processed += 1
@@ -201,7 +207,6 @@ async def scrape_all(
                     logger.info("Restarting browser context...")
                     await context.close()
                     context = await browser.new_context(user_agent=USER_AGENT)
-                    cookies = await _extract_cookies(context)
 
         await browser.close()
 
@@ -247,8 +252,8 @@ def reprocess_existing() -> int:
                         if fname in existing_files:
                             att.local_path = f"attachments/{fname}"
                         else:
-                            # Check for old-style "Download" named files
-                            att.local_path = f"attachments/{fname}"
+                            # If file isn't downloaded, clear local_path to avoid broken links
+                            att.local_path = None
 
                 save_json(idir / "report.json", issue.model_dump())
                 count += 1

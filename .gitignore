@@ -44,5 +44,12 @@ Thumbs.db
 .idea/
 .vscode/
 
+# Secrets / environment
+.env
+.env.*
+
+# Claude Code
+.claude/
+
 # Logs
 *.log
