@@ -150,10 +150,13 @@ def generate_report_markdown(issue_id: str) -> bool:
     return True
 
 
-def generate_all_markdown() -> int:
+def generate_all_markdown(force: bool = False) -> int:
     """Generate report.md for all issues that have report.json.
 
-    Returns count of generated files.
+    Skips issues where report.md already exists and is newer than report.json,
+    unless force=True.
+
+    Returns count of generated (or regenerated) files.
     """
     if not ISSUES_DIR.exists():
         logger.error("No issues directory found.")
@@ -167,9 +170,20 @@ def generate_all_markdown() -> int:
         task = progress.add_task("Generating markdown", total=len(issue_dirs))
 
         for idir in issue_dirs:
-            if (idir / "report.json").exists():
-                if generate_report_markdown(idir.name):
-                    count += 1
+            json_path = idir / "report.json"
+            md_path = idir / "report.md"
+
+            if not json_path.exists():
+                progress.update(task, advance=1)
+                continue
+
+            if not force and md_path.exists():
+                if md_path.stat().st_mtime >= json_path.stat().st_mtime:
+                    progress.update(task, advance=1)
+                    continue
+
+            if generate_report_markdown(idir.name):
+                count += 1
             progress.update(task, advance=1)
 
     logger.info(f"Generated {count} markdown files")

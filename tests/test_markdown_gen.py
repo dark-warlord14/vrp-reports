@@ -155,3 +155,62 @@ class TestGenerateAllMarkdown:
             count = generate_all_markdown()
 
         assert count == 1
+
+    def test_skips_report_md_newer_than_report_json(self, tmp_path):
+        """When report.md is newer than report.json, skip regeneration."""
+        import time
+        issues_dir = tmp_path / "issues"
+        _setup_issue(issues_dir, ISSUE_ID)
+        idir = issues_dir / ISSUE_ID
+
+        with patch("vrp.markdown_gen.ISSUES_DIR", issues_dir):
+            from vrp.markdown_gen import generate_all_markdown
+            # First run: generates report.md
+            count1 = generate_all_markdown()
+        assert count1 == 1
+
+        # Touch report.md so its mtime is strictly newer than report.json
+        time.sleep(0.05)
+        (idir / "report.md").touch()
+
+        # Overwrite report.md with sentinel content to detect if regenerated
+        sentinel = "SENTINEL_DO_NOT_OVERWRITE"
+        (idir / "report.md").write_text(sentinel)
+        # Set report.md mtime after report.json
+        time.sleep(0.05)
+        (idir / "report.md").touch()
+
+        with patch("vrp.markdown_gen.ISSUES_DIR", issues_dir):
+            from vrp.markdown_gen import generate_all_markdown
+            count2 = generate_all_markdown()
+
+        # Should be skipped (count=0), sentinel should still be there
+        assert count2 == 0
+        assert (idir / "report.md").read_text() == sentinel
+
+    def test_force_flag_regenerates_even_if_up_to_date(self, tmp_path):
+        """force=True bypasses the mtime check."""
+        import time
+        issues_dir = tmp_path / "issues"
+        _setup_issue(issues_dir, ISSUE_ID)
+        idir = issues_dir / ISSUE_ID
+
+        with patch("vrp.markdown_gen.ISSUES_DIR", issues_dir):
+            from vrp.markdown_gen import generate_all_markdown
+            generate_all_markdown()
+
+        # Stamp report.md as newer, write sentinel
+        time.sleep(0.05)
+        (idir / "report.md").touch()
+        sentinel = "SENTINEL"
+        (idir / "report.md").write_text(sentinel)
+        time.sleep(0.05)
+        (idir / "report.md").touch()
+
+        with patch("vrp.markdown_gen.ISSUES_DIR", issues_dir):
+            from vrp.markdown_gen import generate_all_markdown
+            count = generate_all_markdown(force=True)
+
+        # Should regenerate
+        assert count == 1
+        assert (idir / "report.md").read_text() != sentinel

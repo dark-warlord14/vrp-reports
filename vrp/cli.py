@@ -59,11 +59,12 @@ def reprocess():
 
 
 @cli.command()
-def markdown():
+@click.option("--force", is_flag=True, help="Regenerate all markdown even if already up-to-date")
+def markdown(force):
     """Generate/regenerate markdown for all reports."""
     from vrp.markdown_gen import generate_all_markdown
 
-    count = generate_all_markdown()
+    count = generate_all_markdown(force=force)
     console.print(f"[green]Generated {count} markdown files[/green]")
 
 
