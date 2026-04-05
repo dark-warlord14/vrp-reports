@@ -4,6 +4,7 @@ Parses the protobuf-like JSON from raw_updates.json and raw_metadata.json
 into clean Python objects.
 """
 
+import logging
 import re
 from datetime import datetime, timezone
 from typing import Any, Optional
@@ -12,8 +13,6 @@ from vrp.config import (
     BOUNTY_AWARD_PATTERN, BOUNTY_INDICATORS, STATUS_MAP, SEVERITY_MAP,
     PRIORITY_MAP, FIELD_COMPONENT, FIELD_CHROME_VERSION, FIELD_OS, FIELD_BOUNTY,
 )
-import logging
-
 from vrp.models import Attachment, Update, Issue
 
 logger = logging.getLogger("vrp.parser")
