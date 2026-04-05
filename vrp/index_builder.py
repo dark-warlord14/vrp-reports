@@ -1,6 +1,7 @@
 """Build index.json and stats.json from all report data."""
 
 from collections import Counter, defaultdict
+from datetime import datetime
 from pathlib import Path
 
 from vrp.config import ISSUES_DIR, INDEX_FILE, STATS_FILE
@@ -25,14 +26,14 @@ def rebuild_index() -> int:
         for idir in issue_dirs:
             report = load_json(idir / "report.json")
             if report and report.get("bounty_confirmed"):
-                # Extract year from created_date
+                # Extract year from created_date (ISO format)
                 year = None
                 created = report.get("created_date")
-                if created and len(created) >= 4:
+                if created:
                     try:
-                        year = int(created[:4])
-                    except ValueError:
-                        pass
+                        year = datetime.fromisoformat(created).year
+                    except (ValueError, TypeError):
+                        logger.warning("Could not parse created_date %r for issue %s", created, report.get("id"))
 
                 entry = {
                     "id": report["id"],

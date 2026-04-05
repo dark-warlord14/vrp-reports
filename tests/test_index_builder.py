@@ -107,6 +107,40 @@ class TestRebuildIndex:
 
         assert count == 1
 
+    def test_malformed_created_date_does_not_crash(self, tmp_path):
+        """Year extraction must not crash on bad created_date values."""
+        issues_dir = tmp_path / "issues"
+        issues_dir.mkdir()
+        _write_report(issues_dir, "bad_date", {"created_date": "not-a-date"})
+        index_file = tmp_path / "index.json"
+
+        with patch("vrp.index_builder.ISSUES_DIR", issues_dir), \
+             patch("vrp.index_builder.INDEX_FILE", index_file), \
+             patch("vrp.index_builder.STATS_FILE", tmp_path / "stats.json"):
+            from vrp.index_builder import rebuild_index
+            count = rebuild_index()  # Must not raise
+
+        assert count == 1
+        import json
+        entries = json.loads(index_file.read_text())
+        assert entries[0]["year"] is None
+
+    def test_none_created_date_handled(self, tmp_path):
+        issues_dir = tmp_path / "issues"
+        issues_dir.mkdir()
+        _write_report(issues_dir, "no_date", {"created_date": None})
+        index_file = tmp_path / "index.json"
+
+        with patch("vrp.index_builder.ISSUES_DIR", issues_dir), \
+             patch("vrp.index_builder.INDEX_FILE", index_file), \
+             patch("vrp.index_builder.STATS_FILE", tmp_path / "stats.json"):
+            from vrp.index_builder import rebuild_index
+            rebuild_index()
+
+        import json
+        entries = json.loads(index_file.read_text())
+        assert entries[0]["year"] is None
+
 
 class TestBuildStats:
     def test_totals(self, tmp_path):
