@@ -13,6 +13,7 @@ from vrp.config import (
     PRIORITY_MAP, FIELD_COMPONENT, FIELD_CHROME_VERSION, FIELD_OS, FIELD_BOUNTY,
 )
 from vrp.models import Attachment, Update, Issue
+from vrp.utils import logger
 
 
 def safe_get(data: Any, *indices, default=None) -> Any:
@@ -240,8 +241,17 @@ def build_issue(issue_id: str, raw_updates: Any, raw_metadata: Any) -> Optional[
 
     Returns None if no bounty was detected.
     """
-    updates = parse_updates(raw_updates, issue_id)
-    metadata = parse_metadata(raw_metadata)
+    try:
+        updates = parse_updates(raw_updates, issue_id)
+    except Exception:
+        logger.error("parse_updates failed for issue %s", issue_id, exc_info=True)
+        return None
+
+    try:
+        metadata = parse_metadata(raw_metadata)
+    except Exception:
+        logger.error("parse_metadata failed for issue %s", issue_id, exc_info=True)
+        return None
 
     bounty_confirmed, bounty_amount, bounty_rationale = extract_bounty_info(updates)
 

@@ -339,3 +339,17 @@ class TestBuildIssue:
         raw_m = make_raw_metadata(title="Untitled")
         issue = build_issue(ISSUE_ID, raw_u, raw_m)
         assert issue.title == "Memory corruption in audio decoder"
+
+    def test_build_issue_returns_none_when_parse_updates_raises(self):
+        """build_issue must not propagate exceptions from parse_updates."""
+        from unittest.mock import patch
+        with patch("vrp.parser.parse_updates", side_effect=RuntimeError("API structure changed")):
+            result = build_issue(ISSUE_ID, [], {})
+        assert result is None
+
+    def test_build_issue_returns_none_when_parse_metadata_raises(self):
+        """build_issue must not propagate exceptions from parse_metadata."""
+        from unittest.mock import patch
+        with patch("vrp.parser.parse_metadata", side_effect=RuntimeError("Unexpected metadata shape")):
+            result = build_issue(ISSUE_ID, make_raw_updates(), make_raw_metadata())
+        assert result is None
