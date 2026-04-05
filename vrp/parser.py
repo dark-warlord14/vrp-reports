@@ -12,8 +12,12 @@ from vrp.config import (
     BOUNTY_AWARD_PATTERN, BOUNTY_INDICATORS, STATUS_MAP, SEVERITY_MAP,
     PRIORITY_MAP, FIELD_COMPONENT, FIELD_CHROME_VERSION, FIELD_OS, FIELD_BOUNTY,
 )
+import logging
+
 from vrp.models import Attachment, Update, Issue
-from vrp.utils import logger
+from vrp.utils import logger  # noqa: F401
+
+logger = logging.getLogger("vrp.parser")
 
 
 def safe_get(data: Any, *indices, default=None) -> Any:
@@ -179,6 +183,11 @@ def parse_metadata(raw: Any) -> dict:
             elif field_id == FIELD_BOUNTY:
                 if isinstance(int_val, (int, float)):
                     result["bounty_amount_meta"] = float(int_val)
+            else:
+                logger.debug(
+                    "Unrecognized custom field id=%s display=%s str=%s",
+                    field_id, display_val, str_val,
+                )
 
     return result
 

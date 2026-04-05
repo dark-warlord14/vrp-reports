@@ -182,6 +182,22 @@ class TestParseMetadata:
         raw = make_raw_metadata(status=999)
         assert parse_metadata(raw)["status"] == "Unknown"
 
+    def test_unrecognized_field_emits_debug_log(self, caplog):
+        """Unknown custom field IDs should be logged at DEBUG level."""
+        import logging
+        raw = make_raw_metadata()
+        # Inject an unknown field into the custom_fields list
+        # Structure: raw[0][1][22][2][14] is the custom_fields list
+        unknown_field_id = 999999
+        raw[0][1][22][2][14].append([unknown_field_id, "somevalue"] + [None] * 8)
+
+        with caplog.at_level(logging.DEBUG, logger="vrp.parser"):
+            from vrp.parser import parse_metadata
+            parse_metadata(raw)
+
+        assert any(str(unknown_field_id) in r.message
+                   for r in caplog.records if r.levelno == logging.DEBUG)
+
 
 # ---------------------------------------------------------------------------
 # extract_bounty_info
