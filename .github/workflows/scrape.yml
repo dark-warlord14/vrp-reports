@@ -14,10 +14,10 @@ jobs:
     timeout-minutes: 120
 
     steps:
-      - name: Checkout code (master)
+      - name: Checkout code (main)
         uses: actions/checkout@v4
         with:
-          ref: master
+          ref: main
 
       - name: Checkout data branch into data/
         uses: actions/checkout@v4
