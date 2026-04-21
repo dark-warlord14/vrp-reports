@@ -1,0 +1,40 @@
+{
+  "total_reports": 0,
+  "total_bounty": 0.0,
+  "avg_bounty": 0.0,
+  "by_year": {},
+  "by_severity": {},
+  "by_status": {},
+  "by_component": {},
+  "bounty_histogram": [
+    {
+      "range": "$0-500",
+      "count": 0
+    },
+    {
+      "range": "$500-1K",
+      "count": 0
+    },
+    {
+      "range": "$1K-3K",
+      "count": 0
+    },
+    {
+      "range": "$3K-5K",
+      "count": 0
+    },
+    {
+      "range": "$5K-10K",
+      "count": 0
+    },
+    {
+      "range": "$10K-20K",
+      "count": 0
+    },
+    {
+      "range": "$20K+",
+      "count": 0
+    }
+  ],
+  "top_bounties": []
+}
