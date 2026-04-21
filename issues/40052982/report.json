@@ -1,0 +1,52 @@
+{
+  "id": "40052982",
+  "url": "https://issues.chromium.org/issues/40052982",
+  "title": "Security: Possible to spoof URL after renderer crash",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Loader, UI>Browser>Navigation",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "dc...@chromium.org",
+  "created_date": "2020-07-31T03:43:06+00:00",
+  "modified_date": "2025-09-06T15:11:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53406229,
+      "filename": "external_site.html",
+      "mime_type": "text/plain",
+      "size_bytes": 264,
+      "url": "https://issues.chromium.org/action/issues/40052982/attachments/53406229?download=true",
+      "local_path": "attachments/external_site.html"
+    },
+    {
+      "id": 53406230,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2175,
+      "url": "https://issues.chromium.org/action/issues/40052982/attachments/53406230?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53406231,
+      "filename": "service_worker.js",
+      "mime_type": "text/plain",
+      "size_bytes": 657,
+      "url": "https://issues.chromium.org/action/issues/40052982/attachments/53406231?download=true",
+      "local_path": "attachments/service_worker.js"
+    }
+  ],
+  "update_count": 82,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen a renderer crashes, if the window associated with it is navigated (by another window) to a URL that's ultimately blocked, an about:blank page will be loaded. That page will be same origin with the window that triggered the navigation, but the URL shown in the omnibo"
+}

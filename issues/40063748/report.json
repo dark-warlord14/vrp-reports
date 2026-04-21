@@ -1,0 +1,44 @@
+{
+  "id": "40063748",
+  "url": "https://issues.chromium.org/issues/40063748",
+  "title": "UAF in content::NavigationState::RunCommitSameDocumentNavigationCallback",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2023-03-24T15:21:13+00:00",
+  "modified_date": "2024-01-09T10:10:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53200309,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 406,
+      "url": "https://issues.chromium.org/action/issues/40063748/attachments/53200309?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53200310,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 36060,
+      "url": "https://issues.chromium.org/action/issues/40063748/attachments/53200310?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**Steps to reproduce the problem:**   \nchrome version:  \nChromium 113.0.5653.0  \nChromium 114.0.5673.0(gs://chromium-browser-asan/linux-release/asan-linux-release-1121654.zip)  \nos version:  \nubuntu 22.04  \n  \nrepro step:  \n1 python3 -m http.server 8000 --dir=|dir path to poc.html|  \n2 ./chrome  htt"
+}

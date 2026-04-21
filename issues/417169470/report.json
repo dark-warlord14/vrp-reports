@@ -1,0 +1,28 @@
+{
+  "id": "417169470",
+  "url": "https://issues.chromium.org/issues/417169470",
+  "title": "V8 Turboshaft Late Load Elimination Aliasing bug leads to Memory Corruption",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Turbofan",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "135.0.0.0",
+  "cve_ids": [],
+  "reporter": "pw...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2025-05-12T15:35:12+00:00",
+  "modified_date": "2025-08-26T12:39:56+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": "below baseline report of memory corruption in a sandboxed process, as presented this issue was specific to the experimental configuration of V8 and would not have been considered a security issue or eligible for VRP reward",
+  "attachments": [],
+  "update_count": 122,
+  "description_snippet": "# Steps to reproduce the problem\n1. ./d8 --expose-externalize-string --omit-quit --allow-natives-syntax --fuzzing --jit-fuzzing --future --harmony --js-staging --wasm-staging --wasm-fast-api --expose-fast-api --turbolev --shared-string-table poc.js\n2. \n3. \n\n# Problem Description\nI'll analyze it and"
+}

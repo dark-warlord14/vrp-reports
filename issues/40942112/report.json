@@ -1,0 +1,61 @@
+{
+  "id": "40942112",
+  "url": "https://issues.chromium.org/issues/40942112",
+  "title": "Security: WebGL Texture RenderTarget Vulkan backend UAF",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "d8...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2023-11-13T13:24:12+00:00",
+  "modified_date": "2024-08-10T07:50:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53066277,
+      "filename": "test3.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1965,
+      "url": "https://issues.chromium.org/action/issues/40942112/attachments/53066277?download=true",
+      "local_path": "attachments/test3.html"
+    },
+    {
+      "id": 53066280,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 28004,
+      "url": "https://issues.chromium.org/action/issues/40942112/attachments/53066280?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53066287,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40942112/attachments/53066287?download=true",
+      "local_path": null
+    },
+    {
+      "id": 54691049,
+      "filename": "chrome.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1136,
+      "url": "https://issues.chromium.org/action/issues/40942112/attachments/54691049?download=true",
+      "local_path": "attachments/chrome.patch"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "When angle try to copy texture to image2d ( copyTex2image2D ), it will redefine the texture read render, and normal circumstance chrome will not allow render target and source texture is the same\r\n\r\n\r\nThis validation only work under WebGL context:\r\nhttps://source.chromium.org/chromium/chromium"
+}

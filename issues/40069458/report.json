@@ -1,0 +1,41 @@
+{
+  "id": "40069458",
+  "url": "https://issues.chromium.org/issues/40069458",
+  "title": " Inadequate Registry management within the Chrome uninstaller resulting in privilege escalation",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Installer",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "b....@gmail.com",
+  "assignee": "ga...@chromium.org",
+  "created_date": "2023-08-13T10:36:07+00:00",
+  "modified_date": "2024-01-09T19:30:34+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53008760,
+      "filename": "procmon.png",
+      "mime_type": "image/png",
+      "size_bytes": 143186,
+      "url": "https://issues.chromium.org/action/issues/40069458/attachments/53008760?download=true",
+      "local_path": "attachments/procmon.png"
+    },
+    {
+      "id": 53008789,
+      "filename": "IMG_3456.png",
+      "mime_type": "image/png",
+      "size_bytes": 257705,
+      "url": "https://issues.chromium.org/action/issues/40069458/attachments/53008789?download=true",
+      "local_path": "attachments/IMG_3456.png"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "---\n\n### Report description\n\n\n Inadequate Registry management within the Chrome uninstaller resulting in privilege escalation\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nGoogle Chrome\n\n\n---\n\n### The problem\n\n\n#### Please describe the technical details"
+}

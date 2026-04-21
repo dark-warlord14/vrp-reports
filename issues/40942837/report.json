@@ -1,0 +1,52 @@
+{
+  "id": "40942837",
+  "url": "https://issues.chromium.org/issues/40942837",
+  "title": "UAF in WallpaperSearch",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "rt...@google.com",
+  "created_date": "2023-11-15T12:33:39+00:00",
+  "modified_date": "2024-03-01T15:40:44+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53251206,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 27130,
+      "url": "https://issues.chromium.org/action/issues/40942837/attachments/53251206?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53251207,
+      "filename": "fix.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 2230,
+      "url": "https://issues.chromium.org/action/issues/40942837/attachments/53251207?download=true",
+      "local_path": "attachments/fix.patch"
+    },
+    {
+      "id": 53251208,
+      "filename": "reproduce.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 2936,
+      "url": "https://issues.chromium.org/action/issues/40942837/attachments/53251208?download=true",
+      "local_path": "attachments/reproduce.patch"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "---\n\n### Report description\n\n\nUAF in WallpaperSearch\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nGoogle Chrome\n\n\n---\n\n### The problem\n\n\n#### Please describe the technical details of the vulnerability\n\n# Details\n\nWhen the local wallpaper is selected in"
+}

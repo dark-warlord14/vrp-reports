@@ -1,0 +1,73 @@
+{
+  "id": "40051073",
+  "url": "https://issues.chromium.org/issues/40051073",
+  "title": "Unintended Data Leakage Through HTTP Request Headers",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Mobile>WebView",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sh...@gmail.com",
+  "assignee": "to...@chromium.org",
+  "created_date": "2019-12-27T09:06:27+00:00",
+  "modified_date": "2024-01-09T00:54:08+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52982084,
+      "filename": "app.py",
+      "mime_type": "text/plain",
+      "size_bytes": 318,
+      "url": "https://issues.chromium.org/action/issues/40051073/attachments/52982084?download=true",
+      "local_path": "attachments/app.py"
+    },
+    {
+      "id": 52982085,
+      "filename": "Null Pointer While Dumping Request Headers.png",
+      "mime_type": "image/png",
+      "size_bytes": 351721,
+      "url": "https://issues.chromium.org/action/issues/40051073/attachments/52982085?download=true",
+      "local_path": "attachments/Null Pointer While Dumping Request Headers.png"
+    },
+    {
+      "id": 52982086,
+      "filename": "Original Request.png",
+      "mime_type": "image/png",
+      "size_bytes": 1098594,
+      "url": "https://issues.chromium.org/action/issues/40051073/attachments/52982086?download=true",
+      "local_path": "attachments/Original Request.png"
+    },
+    {
+      "id": 52982087,
+      "filename": "Redirtect Request.png",
+      "mime_type": "image/png",
+      "size_bytes": 1100317,
+      "url": "https://issues.chromium.org/action/issues/40051073/attachments/52982087?download=true",
+      "local_path": "attachments/Redirtect Request.png"
+    },
+    {
+      "id": 52982088,
+      "filename": "Webview POC.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 28590527,
+      "url": "https://issues.chromium.org/action/issues/40051073/attachments/52982088?download=true",
+      "local_path": "attachments/Webview POC.zip"
+    },
+    {
+      "id": 52982089,
+      "filename": "Android Webview Security Issue.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 730404,
+      "url": "https://issues.chromium.org/action/issues/40051073/attachments/52982089?download=true",
+      "local_path": "attachments/Android Webview Security Issue.pdf"
+    }
+  ],
+  "update_count": 104,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhile performing the security review it has been observed that in Chromium-based webviews if a webpage is loaded with some additional headers using loadUrl(String url, Map<String, String> additionalHttpHeaders) then it sends the additional headers to any other requests t"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "40059725",
+  "url": "https://issues.chromium.org/issues/40059725",
+  "title": "AddressSanitizer: heap-use-after-free in content::ScreenlockMonitor::RemoveObserver content/browser/",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>GetUserMedia",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "he...@google.com",
+  "created_date": "2022-05-23T09:54:27+00:00",
+  "modified_date": "2024-01-09T05:03:37+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53206541,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17941,
+      "url": "https://issues.chromium.org/action/issues/40059725/attachments/53206541?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "**Steps to reproduce the problem:**   \n#Reproduce  \nThe problem was found by my fuzzer running on CF(CC Security team for access permission https://clusterfuzz.com/testcase-detail/5689697418543104),  \nBut it cannot be reproduced stably, CF may not automatically report.  \nAfter manual analysis, the r"
+}

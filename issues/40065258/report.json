@@ -1,0 +1,77 @@
+{
+  "id": "40065258",
+  "url": "https://issues.chromium.org/issues/40065258",
+  "title": "chrome.devtools.inspectedWindow.reload can run scripts on the Chrome Web Store",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "pf...@chromium.org",
+  "created_date": "2023-06-03T20:43:21+00:00",
+  "modified_date": "2024-01-09T09:35:57+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53283665,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 793,
+      "url": "https://issues.chromium.org/action/issues/40065258/attachments/53283665?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 53283814,
+      "filename": "Screen recording 2023-07-03 2.01.38 PM.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 3837687,
+      "url": "https://issues.chromium.org/action/issues/40065258/attachments/53283814?download=true",
+      "local_path": "attachments/Screen recording 2023-07-03 2.01.38 PM.webm"
+    },
+    {
+      "id": 53283818,
+      "filename": "Screenshot 2023-07-03 2.02.45 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 23859,
+      "url": "https://issues.chromium.org/action/issues/40065258/attachments/53283818?download=true",
+      "local_path": "attachments/Screenshot 2023-07-03 2.02.45 PM.png"
+    },
+    {
+      "id": 53283938,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 209,
+      "url": "https://issues.chromium.org/action/issues/40065258/attachments/53283938?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53283939,
+      "filename": "devtools.js",
+      "mime_type": "text/plain",
+      "size_bytes": 439,
+      "url": "https://issues.chromium.org/action/issues/40065258/attachments/53283939?download=true",
+      "local_path": "attachments/devtools.js"
+    },
+    {
+      "id": 53283940,
+      "filename": "devtools.html",
+      "mime_type": "text/plain",
+      "size_bytes": 36,
+      "url": "https://issues.chromium.org/action/issues/40065258/attachments/53283940?download=true",
+      "local_path": "attachments/devtools.html"
+    }
+  ],
+  "update_count": 95,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Download and install the extension file below  \n2. Visit chrome.google.com/webstore and open Inspect Element  \n3. Notice how inspectedWindow.eval fails but inspectedWindow.reload works  \n  \n**Problem Description:**   \nI'm not sure if this worked before. Judg"
+}

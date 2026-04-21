@@ -1,0 +1,60 @@
+{
+  "id": "40061682",
+  "url": "https://issues.chromium.org/issues/40061682",
+  "title": "Security: UAF in content::RenderFrameDevToolsAgentHost::RenderProcessExited",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Headless",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "et...@gmail.com",
+  "assignee": "kv...@chromium.org",
+  "created_date": "2022-11-10T03:16:19+00:00",
+  "modified_date": "2024-01-09T10:09:03+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 30000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53347894,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 26410,
+      "url": "https://issues.chromium.org/action/issues/40061682/attachments/53347894?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53347895,
+      "filename": "testharness.js",
+      "mime_type": "text/plain",
+      "size_bytes": 184578,
+      "url": "https://issues.chromium.org/action/issues/40061682/attachments/53347895?download=true",
+      "local_path": "attachments/testharness.js"
+    },
+    {
+      "id": 53347896,
+      "filename": "repro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2416493,
+      "url": "https://issues.chromium.org/action/issues/40061682/attachments/53347896?download=true",
+      "local_path": "attachments/repro.mp4"
+    },
+    {
+      "id": 53347917,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 26456,
+      "url": "https://issues.chromium.org/action/issues/40061682/attachments/53347917?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis vulnerability was found by my fuzzer, I will do a vulnerability analysis as soon as possible, but I will submit a poc to you here first  \n  \n**VERSION**   \nChrome Version: [109.0.5412.0] + [dev]  \nOperating System: linux and unknown  \n  \n**REPRODUCTION CASE**   \n0."
+}

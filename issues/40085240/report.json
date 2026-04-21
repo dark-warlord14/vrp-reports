@@ -1,0 +1,41 @@
+{
+  "id": "40085240",
+  "url": "https://issues.chromium.org/issues/40085240",
+  "title": "Location Bar URL and SSL Spoofing Risk using \"Confirm Form Resubmission\" box and a targeted website which allow a redirect",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Navigation, UI>Browser>Omnibox>SecurityIndicators",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jc...@gmail.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2016-08-30T20:47:12+00:00",
+  "modified_date": "2024-01-06T00:15:52+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53089489,
+      "filename": "PoC Google Chrome for iOS Location URL and SSL Spoofing.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 31330,
+      "url": "https://issues.chromium.org/action/issues/40085240/attachments/53089489?download=true",
+      "local_path": "attachments/PoC Google Chrome for iOS Location URL and SSL Spoofing.zip"
+    },
+    {
+      "id": 53089536,
+      "filename": "New TestCase (just need a click event to lead to Location Bar URL and SSL Spoofing).zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 31096,
+      "url": "https://issues.chromium.org/action/issues/40085240/attachments/53089536?download=true",
+      "local_path": "attachments/New TestCase (just need a click event to lead to Location Bar URL and SSL Spoofing).zip"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "Steps to reproduce the problem:\r\n1. Go to http://www.alternativ-testing.fr/Research/Google%20Chrome/Addressbar-spoofing-for-iOS/test4/poc-step1.html with Google Chrome for iOS and click on the link\r\n2. After all browsing action automated , a \"Confirm Form Resubmission\" box will appear and click out"
+}

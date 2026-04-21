@@ -1,0 +1,54 @@
+{
+  "id": "40068602",
+  "url": "https://issues.chromium.org/issues/40068602",
+  "title": "Security: Heap-use-after-free in blink::ThrottlingURLLoader::OnReceiveResponse",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Loader, Platform>Extensions",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "ho...@chromium.org",
+  "created_date": "2023-08-03T02:41:49+00:00",
+  "modified_date": "2024-01-09T11:29:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53100546,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 30648,
+      "url": "https://issues.chromium.org/action/issues/40068602/attachments/53100546?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53100587,
+      "filename": "patch4rep.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 680,
+      "url": "https://issues.chromium.org/action/issues/40068602/attachments/53100587?download=true",
+      "local_path": "attachments/patch4rep.diff"
+    },
+    {
+      "id": 53100588,
+      "filename": "clusterfuzz-testcase-6488999759380480.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 164936,
+      "url": "https://issues.chromium.org/action/issues/40068602/attachments/53100588?download=true",
+      "local_path": "attachments/clusterfuzz-testcase-6488999759380480.zip"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**REPRODUCTION CASE**   \nFound by myfuzzer run on cf(https://clusterfuzz.com/testcase-detail/6488999759380480)  \nBut it cannot be reproduced stably, I manually provide analysis and report  \n  \n#RCA  \n1. When ThrottlingURLLoader::OnReceiveResponse get call it will call throttle->WillProcessRespons"
+}

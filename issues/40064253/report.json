@@ -1,0 +1,42 @@
+{
+  "id": "40064253",
+  "url": "https://issues.chromium.org/issues/40064253",
+  "title": "Security: [swiftshader] heap-use-after-free on vk::Query::start (another)",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>GPU>SwiftShader",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ne...@nesk.kr",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2023-04-27T16:16:20+00:00",
+  "modified_date": "2024-01-09T11:17:41+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53411398,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 22262,
+      "url": "https://issues.chromium.org/action/issues/40064253/attachments/53411398?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53411420,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2759,
+      "url": "https://issues.chromium.org/action/issues/40064253/attachments/53411420?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \n=================================================================  \n==1660==ERROR: AddressSanitizer: heap-use-after-free on address 0x117014efa8e0 at pc 0x7ffcea2a610f bp 0x0001143fef50 sp 0x0001143fef98  \nWRITE of size 4 at 0x117014efa8e0 thread T26  \n==1660==WARNING"
+}

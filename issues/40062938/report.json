@@ -1,0 +1,57 @@
+{
+  "id": "40062938",
+  "url": "https://issues.chromium.org/issues/40062938",
+  "title": "Security: Android permission prompt tapjacking",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "la...@chromium.org",
+  "created_date": "2023-02-07T03:45:04+00:00",
+  "modified_date": "2023-06-27T17:38:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53015595,
+      "filename": "cookie.png",
+      "mime_type": "image/png",
+      "size_bytes": 4123,
+      "url": "https://issues.chromium.org/action/issues/40062938/attachments/53015595?download=true",
+      "local_path": "attachments/cookie.png"
+    },
+    {
+      "id": 53015596,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 649,
+      "url": "https://issues.chromium.org/action/issues/40062938/attachments/53015596?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53015597,
+      "filename": "poc.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 289621,
+      "url": "https://issues.chromium.org/action/issues/40062938/attachments/53015597?download=true",
+      "local_path": "attachments/poc.webm"
+    },
+    {
+      "id": 53015706,
+      "filename": "button-freeze.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3665428,
+      "url": "https://issues.chromium.org/action/issues/40062938/attachments/53015706?download=true",
+      "local_path": "attachments/button-freeze.mp4"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe permission prompt UI on Android is not protected against subsequent taps.  \n  \nIf an attacker tricks the user into double-tapping on specific point on the screen (for example in a cookie clicker game), opening a permission prompt dialog will cause the user to inadver"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "40062907",
+  "url": "https://issues.chromium.org/issues/40062907",
+  "title": "Security: use of uninitialized member variable in omnibox_popup_view_views.cc:575",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "or...@chromium.org",
+  "created_date": "2023-02-04T10:09:30+00:00",
+  "modified_date": "2023-11-02T00:44:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53397468,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7163,
+      "url": "https://issues.chromium.org/action/issues/40062907/attachments/53397468?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53397481,
+      "filename": "rep.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 550246,
+      "url": "https://issues.chromium.org/action/issues/40062907/attachments/53397481?download=true",
+      "local_path": "attachments/rep.webm"
+    }
+  ],
+  "update_count": 25,
+  "description_snippet": "**VERSION**   \nWIN10 X64  \n  \n```  \n# Set build arguments here. See `gn help buildargs`.  \nis_component_build = true  \nenable_nacl = false  \ntarget_cpu = \"x64\"  \nblink_symbol_level = 2  \nv8_symbol_level = 2  \nsymbol_level = 2  \nis_asan = true  \nis_debug=false  \ndcheck_always_on=false  \n```  \n  \n*"
+}

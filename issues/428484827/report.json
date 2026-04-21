@@ -1,0 +1,52 @@
+{
+  "id": "428484827",
+  "url": "https://issues.chromium.org/issues/428484827",
+  "title": "Confusion on permission prompt lead to spoof (using split view)",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Permissions>Prompts, UI>Browser>TopChrome>TabStrip>SplitView",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "ag...@google.com",
+  "created_date": "2025-06-29T14:44:16+00:00",
+  "modified_date": "2025-12-19T12:41:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "permission prompt spoof but the origin is correct so mitigated",
+  "attachments": [
+    {
+      "id": 67153727,
+      "filename": "bandicam 2025-06-29 21-30-09-024.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2241113,
+      "url": "https://issues.chromium.org/action/issues/428484827/attachments/67153727?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67153728,
+      "filename": "spoofpermisx.html",
+      "mime_type": "text/html",
+      "size_bytes": 1294,
+      "url": "https://issues.chromium.org/action/issues/428484827/attachments/67153728?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67153729,
+      "filename": "perm.html",
+      "mime_type": "text/html",
+      "size_bytes": 228,
+      "url": "https://issues.chromium.org/action/issues/428484827/attachments/67153729?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "VULNERABILITY DETAILS\n\nwhen opening a page using \"open link in split view\" on tab 1 using the file:// protocol and on tab 2 using the file:// protocol also at the same time on tab 1 calls the permission prompt and \"open link in split view\" is clicked this causes confusion on the permission prompt wh"
+}

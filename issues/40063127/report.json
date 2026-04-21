@@ -1,0 +1,81 @@
+{
+  "id": "40063127",
+  "url": "https://issues.chromium.org/issues/40063127",
+  "title": "Security:  UAF in PlatformAuthNavigationThrottle::FetchHeadersCallback",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Enterprise",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jt...@gmail.com",
+  "assignee": "ig...@chromium.org",
+  "created_date": "2023-02-17T08:56:57+00:00",
+  "modified_date": "2024-07-02T16:50:19+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 30000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53090118,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1529,
+      "url": "https://issues.chromium.org/action/issues/40063127/attachments/53090118?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 53090119,
+      "filename": "server.js",
+      "mime_type": "text/plain",
+      "size_bytes": 660,
+      "url": "https://issues.chromium.org/action/issues/40063127/attachments/53090119?download=true",
+      "local_path": "attachments/server.js"
+    },
+    {
+      "id": 53090120,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 170,
+      "url": "https://issues.chromium.org/action/issues/40063127/attachments/53090120?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53090121,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 14671,
+      "url": "https://issues.chromium.org/action/issues/40063127/attachments/53090121?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53090165,
+      "filename": "patch2.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1533,
+      "url": "https://issues.chromium.org/action/issues/40063127/attachments/53090165?download=true",
+      "local_path": "attachments/patch2.diff"
+    },
+    {
+      "id": 53090166,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 170,
+      "url": "https://issues.chromium.org/action/issues/40063127/attachments/53090166?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53090167,
+      "filename": "server.js",
+      "mime_type": "text/plain",
+      "size_bytes": 664,
+      "url": "https://issues.chromium.org/action/issues/40063127/attachments/53090167?download=true",
+      "local_path": "attachments/server.js"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe fucntion `PlatformAuthNavigationThrottle::FetchHeaders` calls `PlatformAuthProviderManager::GetData` to request some auth data from CloudAP at line [1]. The NavigationRequest may be deferred until the callback `PlatformAuthNavigationThrottle::FetchHeadersCallback` ca"
+}

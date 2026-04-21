@@ -1,0 +1,67 @@
+{
+  "id": "40059299",
+  "url": "https://issues.chromium.org/issues/40059299",
+  "title": "Security: heap-buffer-overflow on components/ui_devtools/views/devtools_server_util.cc",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rh...@gmail.com",
+  "assignee": "lg...@chromium.org",
+  "created_date": "2022-04-05T20:15:48+00:00",
+  "modified_date": "2022-07-29T23:52:02+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53295359,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 129,
+      "url": "https://issues.chromium.org/action/issues/40059299/attachments/53295359?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53295360,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 339,
+      "url": "https://issues.chromium.org/action/issues/40059299/attachments/53295360?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53295361,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40059299/attachments/53295361?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53295362,
+      "filename": "screencast_1313600.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2403030,
+      "url": "https://issues.chromium.org/action/issues/40059299/attachments/53295362?download=true",
+      "local_path": "attachments/screencast_1313600.webm"
+    },
+    {
+      "id": 53295376,
+      "filename": "bug-1313600.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 10895,
+      "url": "https://issues.chromium.org/action/issues/40059299/attachments/53295376?download=true",
+      "local_path": "attachments/bug-1313600.txt"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "**-------------------------**   \n  \n**VULNERABILITY DETAILS**   \nSimilar with issue #1313574  \n  \n**VERSION**   \nChrome Version: 102.0.4987.0 + dev  \nOperating System: linux-chromeOS and Linux  \n  \n**REPRODUCTION CASE**   \nOption 1  \n1. Open browser and navigate to devtools://devtools/bundled/devtoo"
+}

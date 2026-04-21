@@ -1,0 +1,42 @@
+{
+  "id": "419939693",
+  "url": "https://issues.chromium.org/issues/419939693",
+  "title": "GPU process crash via WebGPU shader - heap-buffer-overflow in Mesa build_interference_graph",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Dawn>Tint",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "a7...@gmail.com",
+  "assignee": "ms...@google.com",
+  "created_date": "2025-05-24T07:23:11+00:00",
+  "modified_date": "2026-03-05T16:41:19+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": "report of memory corruption in a highly privileged process",
+  "attachments": [
+    {
+      "id": 66091267,
+      "filename": "gfxrecon_capture_20250524T090556.gfxr",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 12943,
+      "url": "https://issues.chromium.org/action/issues/419939693/attachments/66091267?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66091268,
+      "filename": "build_interference_graph.html",
+      "mime_type": "text/html",
+      "size_bytes": 3226,
+      "url": "https://issues.chromium.org/action/issues/419939693/attachments/66091268?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 96,
+  "description_snippet": "##### VULNERABILITY DETAILS\n\nThis report is about a heap-buffer-overflow in Mesa, reachable via WebGPU shaders emitted by dawn/tint. I will also upload this report upstream, i.e., the Mesa project, and post the link below.\n\n\n##### VERSION\n\nChrome Version 137.0.7140.0 (Developer Build) (64-bit) \\\nOpe"
+}

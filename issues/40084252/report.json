@@ -1,0 +1,89 @@
+{
+  "id": "40084252",
+  "url": "https://issues.chromium.org/issues/40084252",
+  "title": "Chrome For Android Address Bar Spoofing Issue Due To Mishandling Of RTL Characters",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Omnibox, UI>Internationalization>RTL",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rb...@gmail.com",
+  "assignee": "mg...@chromium.org",
+  "created_date": "2016-05-06T01:23:13+00:00",
+  "modified_date": "2018-04-25T22:52:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53328955,
+      "filename": "chromefordesktop.png",
+      "mime_type": "image/png",
+      "size_bytes": 17443,
+      "url": "https://issues.chromium.org/action/issues/40084252/attachments/53328955?download=true",
+      "local_path": "attachments/chromefordesktop.png"
+    },
+    {
+      "id": 53328956,
+      "filename": "ChromeForAndroid.png",
+      "mime_type": "image/png",
+      "size_bytes": 87201,
+      "url": "https://issues.chromium.org/action/issues/40084252/attachments/53328956?download=true",
+      "local_path": "attachments/ChromeForAndroid.png"
+    },
+    {
+      "id": 53329047,
+      "filename": "unnamed.png",
+      "mime_type": "image/png",
+      "size_bytes": 53147,
+      "url": "https://issues.chromium.org/action/issues/40084252/attachments/53329047?download=true",
+      "local_path": "attachments/unnamed.png"
+    },
+    {
+      "id": 53329059,
+      "filename": "ltr-suggestions.png",
+      "mime_type": "image/png",
+      "size_bytes": 101206,
+      "url": "https://issues.chromium.org/action/issues/40084252/attachments/53329059?download=true",
+      "local_path": "attachments/ltr-suggestions.png"
+    },
+    {
+      "id": 53329060,
+      "filename": "rtl-suggestions.png",
+      "mime_type": "image/png",
+      "size_bytes": 107143,
+      "url": "https://issues.chromium.org/action/issues/40084252/attachments/53329060?download=true",
+      "local_path": "attachments/rtl-suggestions.png"
+    },
+    {
+      "id": 53329061,
+      "filename": "rtl-keyboard-cursor.png",
+      "mime_type": "image/png",
+      "size_bytes": 112663,
+      "url": "https://issues.chromium.org/action/issues/40084252/attachments/53329061?download=true",
+      "local_path": "attachments/rtl-keyboard-cursor.png"
+    },
+    {
+      "id": 53329105,
+      "filename": "bidi-omnibox-english.mp4",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2449267,
+      "url": "https://issues.chromium.org/action/issues/40084252/attachments/53329105?download=true",
+      "local_path": "attachments/bidi-omnibox-english.mp4"
+    },
+    {
+      "id": 53329106,
+      "filename": "bidi-omnibox-hebrew.mp4",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2479673,
+      "url": "https://issues.chromium.org/action/issues/40084252/attachments/53329106?download=true",
+      "local_path": "attachments/bidi-omnibox-hebrew.mp4"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "**Device name:**   \n  \nBrowser: Chrome For Android  \nVersion: 49.0.2623.91   \nPhone: Nexus Phone  \n**OS:**  Android Lollipop   \n  \nVulnerability Details:   \n  \nDue to mishandling of Unicode (RTL characters) such as U+7000, u+8000 etc combined with an IP Address it is possible to spoof   \na URL on Go"
+}

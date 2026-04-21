@@ -1,0 +1,57 @@
+{
+  "id": "40058914",
+  "url": "https://issues.chromium.org/issues/40058914",
+  "title": "Security:  Bypass Apk Warning In Andriod",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pu...@gmail.com",
+  "assignee": "qi...@chromium.org",
+  "created_date": "2022-02-27T19:59:34+00:00",
+  "modified_date": "2024-01-09T06:37:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53116476,
+      "filename": "Puf Demo.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1122,
+      "url": "https://issues.chromium.org/action/issues/40058914/attachments/53116476?download=true",
+      "local_path": "attachments/Puf Demo.html"
+    },
+    {
+      "id": 53116487,
+      "filename": "Apk Warning.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 79364,
+      "url": "https://issues.chromium.org/action/issues/40058914/attachments/53116487?download=true",
+      "local_path": "attachments/Apk Warning.jpg"
+    },
+    {
+      "id": 53116525,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058914/attachments/53116525?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53116589,
+      "filename": "puf2.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 431369,
+      "url": "https://issues.chromium.org/action/issues/40058914/attachments/53116589?download=true",
+      "local_path": "attachments/puf2.mp4"
+    }
+  ],
+  "update_count": 69,
+  "description_snippet": "Peace Be Upon You  \n  \nBypass Apk Warning In Chrome Andriod   \nUsing A Basic Html/Js Code   \nPlease Check The Code  \n  \n**VERSION**   \nChrome Version: [93.0.4577.82]  \nOperating System: [Andriod]  \n  \nif you have any questions let me know  \n  \nThank You"
+}

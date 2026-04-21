@@ -1,0 +1,41 @@
+{
+  "id": "415496161",
+  "url": "https://issues.chromium.org/issues/415496161",
+  "title": "\"File might be harmful\" dialog does not have origin",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": "135.0.0.0",
+  "cve_ids": [],
+  "reporter": "fr...@gmail.com",
+  "assignee": "ch...@chromium.org",
+  "created_date": "2025-05-04T13:43:16+00:00",
+  "modified_date": "2025-10-29T18:49:03+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact security UI spoof",
+  "attachments": [
+    {
+      "id": 65504006,
+      "filename": "regression - file download pop-up chrome.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 8166702,
+      "url": "https://issues.chromium.org/action/issues/415496161/attachments/65504006?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65504007,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 601,
+      "url": "https://issues.chromium.org/action/issues/415496161/attachments/65504007?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "# Steps to reproduce the problem\n1. Access poc.html\n2. Click the button\n3. The download pop-up will still appear on https://google.com\n\n# Problem Description\nThis vulnerability occurs when there is a condition that a file download pop-up origin can be overlaid on other origin. The file download pop-"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "40056730",
+  "url": "https://issues.chromium.org/issues/40056730",
+  "title": "v8/Turbofan: Wrong optimization of bitfield checks",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "ne...@chromium.org",
+  "created_date": "2021-07-30T13:49:10+00:00",
+  "modified_date": "2024-02-29T22:45:21+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 21000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52904389,
+      "filename": "bitfield_testcase.js",
+      "mime_type": "text/plain",
+      "size_bytes": 145,
+      "url": "https://issues.chromium.org/action/issues/40056730/attachments/52904389?download=true",
+      "local_path": "attachments/bitfield_testcase.js"
+    },
+    {
+      "id": 52904390,
+      "filename": "bitfield_rce.js",
+      "mime_type": "text/plain",
+      "size_bytes": 8885,
+      "url": "https://issues.chromium.org/action/issues/40056730/attachments/52904390?download=true",
+      "local_path": "attachments/bitfield_rce.js"
+    },
+    {
+      "id": 52904391,
+      "filename": "machine-operator-reducer.cc.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 462,
+      "url": "https://issues.chromium.org/action/issues/40056730/attachments/52904391?download=true",
+      "local_path": "attachments/machine-operator-reducer.cc.patch"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "---\n\n### Report description\n\n\nv8/Turbofan: Wrong optimization of bitfield checks\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nGoogle Chrome\n\n\n---\n\n### The problem\n\n\n#### Please describe the technical details of the vulnerability\n\nTested on:\n=========="
+}

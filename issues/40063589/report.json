@@ -1,0 +1,68 @@
+{
+  "id": "40063589",
+  "url": "https://issues.chromium.org/issues/40063589",
+  "title": "UAF in DevToolsAgentHostImpl::ForceDetachAllSessions(with headless mode and puppeteer) ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2023-03-14T10:14:47+00:00",
+  "modified_date": "2024-01-09T09:02:33+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53134301,
+      "filename": "sw.js",
+      "mime_type": "text/plain",
+      "size_bytes": 4882,
+      "url": "https://issues.chromium.org/action/issues/40063589/attachments/53134301?download=true",
+      "local_path": "attachments/sw.js"
+    },
+    {
+      "id": 53134302,
+      "filename": "test.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1120,
+      "url": "https://issues.chromium.org/action/issues/40063589/attachments/53134302?download=true",
+      "local_path": "attachments/test.js"
+    },
+    {
+      "id": 53134308,
+      "filename": "ws-poc.py",
+      "mime_type": "text/plain",
+      "size_bytes": 1609,
+      "url": "https://issues.chromium.org/action/issues/40063589/attachments/53134308?download=true",
+      "local_path": "attachments/ws-poc.py"
+    },
+    {
+      "id": 53134309,
+      "filename": "headless-asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 40245,
+      "url": "https://issues.chromium.org/action/issues/40063589/attachments/53134309?download=true",
+      "local_path": "attachments/headless-asan.log"
+    },
+    {
+      "id": 53134310,
+      "filename": "without-headless-asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 60451,
+      "url": "https://issues.chromium.org/action/issues/40063589/attachments/53134310?download=true",
+      "local_path": "attachments/without-headless-asan.log"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "UAF in DevToolsAgentHostImpl::ForceDetachAllSessions(with headless mode and puppeteer) \r\nchrome version:\r\nChromium 113.0.5651.0(gsutil ls -l gs://chromium-browser-asan/linux-release/asan-linux-release-1116741.zip)\r\nChromium 112.0.5615.20\r\n\r\nThis issue will repro when using automated tools, such as p"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "406631048",
+  "url": "https://issues.chromium.org/issues/406631048",
+  "title": "Copy as Curl (CMD) Leads to code execution on windows",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>DevTools>Network",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "136.0.7092.0 (Official Build) canary (64-bit)",
+  "cve_ids": [],
+  "reporter": "am...@gmail.com",
+  "assignee": "da...@google.com",
+  "created_date": "2025-03-27T11:22:58+00:00",
+  "modified_date": "2025-08-28T12:43:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact web platform privilege escalation",
+  "attachments": [
+    {
+      "id": 64308363,
+      "filename": "Chrome-Copy-As-Curl(windows)-CodeExecution.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3880483,
+      "url": "https://issues.chromium.org/action/issues/406631048/attachments/64308363?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64323845,
+      "filename": "test.html",
+      "mime_type": "text/html",
+      "size_bytes": 916,
+      "url": "https://issues.chromium.org/action/issues/406631048/attachments/64323845?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "# Steps to reproduce the problem\n1. Copy and run the payload in console (we can achieve it via html page too)\n2. Copy the request with copy as curl (windows)\n3. Paste on the windows cmd you can see calc triggers\n\n# Problem Description\nHI Team, chrome latest on windows is vulnerable for code executio"
+}

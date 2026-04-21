@@ -1,0 +1,24 @@
+{
+  "id": "40062106",
+  "url": "https://issues.chromium.org/issues/40062106",
+  "title": "Security: ChromeOS On halt/reboot root file overwrite",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@rorym.cnamara.com",
+  "assignee": "al...@google.com",
+  "created_date": "2022-12-07T17:28:07+00:00",
+  "modified_date": "2024-01-09T10:19:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 48,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nchromeos_shutdown calls bootstat_archive with a chronos-controlled target directory, which is used to copy a set of files from /tmp. Chronos can set up this target directory before bootstat_archive is executed to cause bootstat_archive to write arbitrary file contents th"
+}

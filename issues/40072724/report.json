@@ -1,0 +1,24 @@
+{
+  "id": "40072724",
+  "url": "https://issues.chromium.org/issues/40072724",
+  "title": "GPU failure in blink::AXObject::RepairMissingParent",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Accessibility",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "al...@chromium.org",
+  "created_date": "2023-09-19T01:09:39+00:00",
+  "modified_date": "2024-02-24T15:41:04+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 50,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=5548591573303296\n\nFuzzer: b0ring_webidl_fuzzer\nJob Type: windows_asan_chrome\nPlatform Id: windows\n\nCrash Type: GPU failure\nCrash Address: \nCrash State:\n  blink::AXObject::RepairMissingParent\n  blink::AXObject::SetAncestorsHaveDirtyDescendants\n  b"
+}

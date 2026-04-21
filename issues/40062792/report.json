@@ -1,0 +1,78 @@
+{
+  "id": "40062792",
+  "url": "https://issues.chromium.org/issues/40062792",
+  "title": "Crash in vk::ImageView::clear",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>SwiftShader",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ne...@nesk.kr",
+  "assignee": "ge...@chromium.org",
+  "created_date": "2023-01-25T15:58:52+00:00",
+  "modified_date": "2024-06-27T08:49:04+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53133248,
+      "filename": "asan1.log",
+      "mime_type": "text/plain",
+      "size_bytes": 11409,
+      "url": "https://issues.chromium.org/action/issues/40062792/attachments/53133248?download=true",
+      "local_path": "attachments/asan1.log"
+    },
+    {
+      "id": 53133249,
+      "filename": "asan2.log",
+      "mime_type": "text/plain",
+      "size_bytes": 11144,
+      "url": "https://issues.chromium.org/action/issues/40062792/attachments/53133249?download=true",
+      "local_path": "attachments/asan2.log"
+    },
+    {
+      "id": 53133282,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1951,
+      "url": "https://issues.chromium.org/action/issues/40062792/attachments/53133282?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53133291,
+      "filename": "windbg.log",
+      "mime_type": "text/plain",
+      "size_bytes": 11990,
+      "url": "https://issues.chromium.org/action/issues/40062792/attachments/53133291?download=true",
+      "local_path": "attachments/windbg.log"
+    },
+    {
+      "id": 53133382,
+      "filename": "asan3.log",
+      "mime_type": "text/plain",
+      "size_bytes": 11397,
+      "url": "https://issues.chromium.org/action/issues/40062792/attachments/53133382?download=true",
+      "local_path": "attachments/asan3.log"
+    },
+    {
+      "id": 53133478,
+      "filename": "asan4.log",
+      "mime_type": "text/plain",
+      "size_bytes": 11466,
+      "url": "https://issues.chromium.org/action/issues/40062792/attachments/53133478?download=true",
+      "local_path": "attachments/asan4.log"
+    }
+  ],
+  "update_count": 86,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \n=================================================================  \n==11336==ERROR: AddressSanitizer: access-violation on unknown address 0x120fd6b63000 (pc 0x7ffe3749107f bp 0x001485fff500 sp 0x001485fff450 T27)  \n==11336==The signal is caused by a WRITE memory acces"
+}

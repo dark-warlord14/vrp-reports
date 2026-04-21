@@ -1,0 +1,68 @@
+{
+  "id": "40060531",
+  "url": "https://issues.chromium.org/issues/40060531",
+  "title": "Security: Potential UAF in WebstoreInstallWithPrompt",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "om...@talon-sec.com",
+  "assignee": "db...@chromium.org",
+  "created_date": "2022-08-08T21:15:24+00:00",
+  "modified_date": "2024-01-09T07:24:03+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53013258,
+      "filename": "b689c891-178f-488e-977b-52fd8c0d5f42.dmp",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1356832,
+      "url": "https://issues.chromium.org/action/issues/40060531/attachments/53013258?download=true",
+      "local_path": "attachments/b689c891-178f-488e-977b-52fd8c0d5f42.dmp"
+    },
+    {
+      "id": 53013259,
+      "filename": "chrome-browser-extensions-webstore_install_with_prompt.cc.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1959,
+      "url": "https://issues.chromium.org/action/issues/40060531/attachments/53013259?download=true",
+      "local_path": "attachments/chrome-browser-extensions-webstore_install_with_prompt.cc.patch"
+    },
+    {
+      "id": 53013260,
+      "filename": "chrome-browser-extensions-webstore_install_with_prompt.h.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1471,
+      "url": "https://issues.chromium.org/action/issues/40060531/attachments/53013260?download=true",
+      "local_path": "attachments/chrome-browser-extensions-webstore_install_with_prompt.h.patch"
+    },
+    {
+      "id": 53013291,
+      "filename": "chrome-browser-extensions-webstore_standalone_installer.cc.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 871,
+      "url": "https://issues.chromium.org/action/issues/40060531/attachments/53013291?download=true",
+      "local_path": "attachments/chrome-browser-extensions-webstore_standalone_installer.cc.patch"
+    },
+    {
+      "id": 53013292,
+      "filename": "05c36e4c-0201-45ef-91d0-4c59f68e2c8f.dmp",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1497776,
+      "url": "https://issues.chromium.org/action/issues/40060531/attachments/53013292?download=true",
+      "local_path": "attachments/05c36e4c-0201-45ef-91d0-4c59f68e2c8f.dmp"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe WebstoreInstallWithPrompt class holds `std::unique_ptr<content::WebContents> dummy_web_contents_` member which uses `Profile\\*` that can be freed during the lifetime of the object (f.e. by process shutdown, profile sign-out etc..).   \nIn `~BrowserContextImpl` there i"
+}

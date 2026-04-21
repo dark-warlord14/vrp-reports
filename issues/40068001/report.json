@@ -1,0 +1,114 @@
+{
+  "id": "40068001",
+  "url": "https://issues.chromium.org/issues/40068001",
+  "title": "Security: Bypass the Protection of input fields cache (Autofill) ,and Autofill popup can be made hidden",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "el...@gmail.com",
+  "assignee": "jk...@google.com",
+  "created_date": "2023-07-24T21:41:51+00:00",
+  "modified_date": "2025-06-06T12:45:11+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of highly mitigated user information disclosure / exploitation mitigation bypass, mitigated by precondition of specific resizing conditions and sufficient user gesture to allow an attacker to take advantage of this issue and result in harm to someone using Chrome",
+  "attachments": [
+    {
+      "id": 53074028,
+      "filename": "accept-permissions.html",
+      "mime_type": "text/plain",
+      "size_bytes": 7260,
+      "url": "https://issues.chromium.org/action/issues/40068001/attachments/53074028?download=true",
+      "local_path": "attachments/accept-permissions.html"
+    },
+    {
+      "id": 53074029,
+      "filename": "Autofill-Leak-Chrome-116-0-5845-32-dev-2023-07-24_18-14-34.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1282571,
+      "url": "https://issues.chromium.org/action/issues/40068001/attachments/53074029?download=true",
+      "local_path": "attachments/Autofill-Leak-Chrome-116-0-5845-32-dev-2023-07-24_18-14-34.mp4"
+    },
+    {
+      "id": 53074030,
+      "filename": "Autofill-Leak-Chrome-116-0-5845-32-dev-2023-07-24_18-14-34.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1282571,
+      "url": "https://issues.chromium.org/action/issues/40068001/attachments/53074030?download=true",
+      "local_path": "attachments/Autofill-Leak-Chrome-116-0-5845-32-dev-2023-07-24_18-14-34.mp4"
+    },
+    {
+      "id": 53074089,
+      "filename": "AutoFillLeakPoC-ChromeStableV114-Linux.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1503948,
+      "url": "https://issues.chromium.org/action/issues/40068001/attachments/53074089?download=true",
+      "local_path": "attachments/AutoFillLeakPoC-ChromeStableV114-Linux.mp4"
+    },
+    {
+      "id": 53074090,
+      "filename": "V115-Linux-Stable-2023-07-26_12-03-25.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1424522,
+      "url": "https://issues.chromium.org/action/issues/40068001/attachments/53074090?download=true",
+      "local_path": "attachments/V115-Linux-Stable-2023-07-26_12-03-25.mp4"
+    },
+    {
+      "id": 53074091,
+      "filename": "select1st-IndexHiddenRecord-2023-07-26_13-35-47.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1065852,
+      "url": "https://issues.chromium.org/action/issues/40068001/attachments/53074091?download=true",
+      "local_path": "attachments/select1st-IndexHiddenRecord-2023-07-26_13-35-47.mp4"
+    },
+    {
+      "id": 53074092,
+      "filename": "select-2nd-indexHiddenRecord-2023-07-26_13-39-22.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 916782,
+      "url": "https://issues.chromium.org/action/issues/40068001/attachments/53074092?download=true",
+      "local_path": "attachments/select-2nd-indexHiddenRecord-2023-07-26_13-39-22.mp4"
+    },
+    {
+      "id": 53074121,
+      "filename": "Linux-Dev-117-2023-08-01_17-21-17.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1172528,
+      "url": "https://issues.chromium.org/action/issues/40068001/attachments/53074121?download=true",
+      "local_path": "attachments/Linux-Dev-117-2023-08-01_17-21-17.mp4"
+    },
+    {
+      "id": 53074176,
+      "filename": "vokoscreenNG-2024-01-28_09-50-11.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4435968,
+      "url": "https://issues.chromium.org/action/issues/40068001/attachments/53074176?download=true",
+      "local_path": "attachments/vokoscreenNG-2024-01-28_09-50-11.mp4"
+    },
+    {
+      "id": 53452730,
+      "filename": "POC-down4x-2024-01-28_14-13-42.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1109350,
+      "url": "https://issues.chromium.org/action/issues/40068001/attachments/53452730?download=true",
+      "local_path": "attachments/POC-down4x-2024-01-28_14-13-42.mp4"
+    },
+    {
+      "id": 57928327,
+      "filename": "AfterFIX-2024-07-15_16-06-36.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1804082,
+      "url": "https://issues.chromium.org/action/issues/40068001/attachments/57928327?download=true",
+      "local_path": "attachments/AfterFIX-2024-07-15_16-06-36.mp4"
+    }
+  ],
+  "update_count": 87,
+  "description_snippet": "VVULNERABILITY DETAILS  \n======================  \nThis is a report to a security vulnerability in google chrome/chromium browser as high-quality report with functional exploit. this vulnerability allows attackers to steal the cache of input fields like usernames, e-mail addresses, telephone numbers"
+}

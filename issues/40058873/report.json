@@ -1,0 +1,237 @@
+{
+  "id": "40058873",
+  "url": "https://issues.chromium.org/issues/40058873",
+  "title": "Security: Extension popup can render over permission prompts and screen share dialog",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2022-02-23T00:20:24+00:00",
+  "modified_date": "2024-08-16T20:54:42+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53386427,
+      "filename": "popup.html",
+      "mime_type": "text/plain",
+      "size_bytes": 890,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386427?download=true",
+      "local_path": "attachments/popup.html"
+    },
+    {
+      "id": 53386428,
+      "filename": "popup-screenshare.html",
+      "mime_type": "text/plain",
+      "size_bytes": 430,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386428?download=true",
+      "local_path": "attachments/popup-screenshare.html"
+    },
+    {
+      "id": 53386429,
+      "filename": "bg-openPopup.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2310,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386429?download=true",
+      "local_path": "attachments/bg-openPopup.js"
+    },
+    {
+      "id": 53386430,
+      "filename": "extension-over-prompt.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1977,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386430?download=true",
+      "local_path": "attachments/extension-over-prompt.html"
+    },
+    {
+      "id": 53386431,
+      "filename": "extension-over-prompt-openPopup.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2173,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386431?download=true",
+      "local_path": "attachments/extension-over-prompt-openPopup.html"
+    },
+    {
+      "id": 53386432,
+      "filename": "manifest-keyboard.json",
+      "mime_type": "text/plain",
+      "size_bytes": 494,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386432?download=true",
+      "local_path": "attachments/manifest-keyboard.json"
+    },
+    {
+      "id": 53386433,
+      "filename": "bg-keyboard.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1506,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386433?download=true",
+      "local_path": "attachments/bg-keyboard.js"
+    },
+    {
+      "id": 53386434,
+      "filename": "manifest-openPopup.json",
+      "mime_type": "text/plain",
+      "size_bytes": 957,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386434?download=true",
+      "local_path": "attachments/manifest-openPopup.json"
+    },
+    {
+      "id": 53386442,
+      "filename": "PoC-keyboard-v98-Stable.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4645240,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386442?download=true",
+      "local_path": "attachments/PoC-keyboard-v98-Stable.mp4"
+    },
+    {
+      "id": 53386443,
+      "filename": "PoC-openPopup-v101-Canary.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4341411,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386443?download=true",
+      "local_path": "attachments/PoC-openPopup-v101-Canary.mp4"
+    },
+    {
+      "id": 53386469,
+      "filename": "Screenshot from 2022-02-23 13-16-02.png",
+      "mime_type": "image/png",
+      "size_bytes": 71444,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386469?download=true",
+      "local_path": "attachments/Screenshot from 2022-02-23 13-16-02.png"
+    },
+    {
+      "id": 53386579,
+      "filename": "popup.html",
+      "mime_type": "text/plain",
+      "size_bytes": 890,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386579?download=true",
+      "local_path": "attachments/popup.html"
+    },
+    {
+      "id": 53386580,
+      "filename": "popup-screenshare.html",
+      "mime_type": "text/plain",
+      "size_bytes": 430,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386580?download=true",
+      "local_path": "attachments/popup-screenshare.html"
+    },
+    {
+      "id": 53386581,
+      "filename": "manifest-openPopup.json",
+      "mime_type": "text/plain",
+      "size_bytes": 974,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386581?download=true",
+      "local_path": "attachments/manifest-openPopup.json"
+    },
+    {
+      "id": 53386582,
+      "filename": "bg-openPopup.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2270,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386582?download=true",
+      "local_path": "attachments/bg-openPopup.js"
+    },
+    {
+      "id": 53386583,
+      "filename": "extension-over-prompt-openPopup-june2022.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2306,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386583?download=true",
+      "local_path": "attachments/extension-over-prompt-openPopup-june2022.html"
+    },
+    {
+      "id": 53386584,
+      "filename": "PoC-openPopup-v104-Canary-June2022.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4243095,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386584?download=true",
+      "local_path": "attachments/PoC-openPopup-v104-Canary-June2022.mp4"
+    },
+    {
+      "id": 53386691,
+      "filename": "popup.html",
+      "mime_type": "text/plain",
+      "size_bytes": 890,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386691?download=true",
+      "local_path": "attachments/popup.html"
+    },
+    {
+      "id": 53386692,
+      "filename": "popup-screenshare.html",
+      "mime_type": "text/plain",
+      "size_bytes": 430,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386692?download=true",
+      "local_path": "attachments/popup-screenshare.html"
+    },
+    {
+      "id": 53386693,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 926,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386693?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53386694,
+      "filename": "bg-keyboard.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1869,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386694?download=true",
+      "local_path": "attachments/bg-keyboard.js"
+    },
+    {
+      "id": 53386695,
+      "filename": "extension-over-prompt-september2022.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2206,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386695?download=true",
+      "local_path": "attachments/extension-over-prompt-september2022.html"
+    },
+    {
+      "id": 53386696,
+      "filename": "PoC-keyboard-v108-Canary.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4128581,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386696?download=true",
+      "local_path": "attachments/PoC-keyboard-v108-Canary.mp4"
+    },
+    {
+      "id": 53386704,
+      "filename": "bg-keyboard.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1868,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386704?download=true",
+      "local_path": "attachments/bg-keyboard.js"
+    },
+    {
+      "id": 54276400,
+      "filename": "extension-icon-bug.png",
+      "mime_type": "image/png",
+      "size_bytes": 4164,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/54276400?download=true",
+      "local_path": "attachments/extension-icon-bug.png"
+    },
+    {
+      "id": 58649033,
+      "filename": "Screen Recording 2024-08-14 155735.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 29523178,
+      "url": "https://issues.chromium.org/action/issues/40058873/attachments/58649033?download=true",
+      "local_path": "attachments/Screen Recording 2024-08-14 155735.mp4"
+    }
+  ],
+  "update_count": 106,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAn extension can show the extension's popup over a permission prompt or screen share dialog, which allows the extension to spoof parts of the prompt's UI that show origin and requested permissions. An extension can perform this attack using either a specially-crafted pag"
+}

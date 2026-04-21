@@ -1,0 +1,26 @@
+{
+  "id": "40062078",
+  "url": "https://issues.chromium.org/issues/40062078",
+  "title": "Use-after-poison in content::InspectorMediaEventHandler::SendQueuedMediaEvents",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Core, Internals>Media",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2022-12-07T00:47:49+00:00",
+  "modified_date": "2024-01-09T08:39:16+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 46,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=5927302438518784\n\nFuzzer: jesse_avalanche\nJob Type: linux_asan_chrome_mp\nPlatform Id: linux\n\nCrash Type: Use-after-poison READ 8\nCrash Address: 0x7eaf002350a0\nCrash State:\n  content::InspectorMediaEventHandler::SendQueuedMediaEvents\n  content::Ba"
+}

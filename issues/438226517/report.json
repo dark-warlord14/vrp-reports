@@ -1,0 +1,145 @@
+{
+  "id": "438226517",
+  "url": "https://issues.chromium.org/issues/438226517",
+  "title": "Address Bar Spoofing on Android",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "pn...@google.com",
+  "created_date": "2025-08-13T04:14:20+00:00",
+  "modified_date": "2025-12-12T12:52:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": "security UI spoofing but mitigated as needs some complex gesture from user. thank you for the bug report on this new feature.",
+  "attachments": [
+    {
+      "id": 68408517,
+      "filename": "samsunga31.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2755073,
+      "url": "https://issues.chromium.org/action/issues/438226517/attachments/68408517?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68408518,
+      "filename": "samsunga56.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 8089816,
+      "url": "https://issues.chromium.org/action/issues/438226517/attachments/68408518?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68408519,
+      "filename": "truncateddomainvirtualkeyboard.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 89661,
+      "url": "https://issues.chromium.org/action/issues/438226517/attachments/68408519?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68408520,
+      "filename": "spoofnewbottombar.html",
+      "mime_type": "text/html",
+      "size_bytes": 1432,
+      "url": "https://issues.chromium.org/action/issues/438226517/attachments/68408520?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68459497,
+      "filename": "spoofgooglea56.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 7531026,
+      "url": "https://issues.chromium.org/action/issues/438226517/attachments/68459497?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68441944,
+      "filename": "a56spoof.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 30693,
+      "url": "https://issues.chromium.org/action/issues/438226517/attachments/68441944?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68441945,
+      "filename": "spoofgooglea31.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4976494,
+      "url": "https://issues.chromium.org/action/issues/438226517/attachments/68441945?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68438138,
+      "filename": "a31spoof.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 46086,
+      "url": "https://issues.chromium.org/action/issues/438226517/attachments/68438138?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68475803,
+      "filename": "VID-20250816-WA0000.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4892076,
+      "url": "https://issues.chromium.org/action/issues/438226517/attachments/68475803?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68475804,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/438226517/attachments/68475804?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68621211,
+      "filename": "VID-20250821-WA0001.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 13389284,
+      "url": "https://issues.chromium.org/action/issues/438226517/attachments/68621211?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68629540,
+      "filename": "logcat.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 229884,
+      "url": "https://issues.chromium.org/action/issues/438226517/attachments/68629540?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68883752,
+      "filename": "samsunga56poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3282643,
+      "url": "https://issues.chromium.org/action/issues/438226517/attachments/68883752?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68886636,
+      "filename": "samsungaa31poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2296665,
+      "url": "https://issues.chromium.org/action/issues/438226517/attachments/68886636?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68883753,
+      "filename": "oppo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 7207790,
+      "url": "https://issues.chromium.org/action/issues/438226517/attachments/68883753?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 75,
+  "description_snippet": "redacted"
+}

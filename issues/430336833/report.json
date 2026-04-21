@@ -1,0 +1,125 @@
+{
+  "id": "430336833",
+  "url": "https://issues.chromium.org/issues/430336833",
+  "title": "Cross-context string leakage via V8 string_table",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Bindings",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sh...@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2025-07-09T10:05:22+00:00",
+  "modified_date": "2025-12-24T12:40:24+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "high quality but lower impact user information disclosure",
+  "attachments": [
+    {
+      "id": 67414219,
+      "filename": "gen.cpp",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 5982,
+      "url": "https://issues.chromium.org/action/issues/430336833/attachments/67414219?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67414220,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1829,
+      "url": "https://issues.chromium.org/action/issues/430336833/attachments/67414220?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67414221,
+      "filename": "server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 396,
+      "url": "https://issues.chromium.org/action/issues/430336833/attachments/67414221?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67567431,
+      "filename": "gen.cpp",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 5982,
+      "url": "https://issues.chromium.org/action/issues/430336833/attachments/67567431?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67537416,
+      "filename": "server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 396,
+      "url": "https://issues.chromium.org/action/issues/430336833/attachments/67537416?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67567432,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1689,
+      "url": "https://issues.chromium.org/action/issues/430336833/attachments/67567432?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67567463,
+      "filename": "target.html",
+      "mime_type": "text/html",
+      "size_bytes": 243,
+      "url": "https://issues.chromium.org/action/issues/430336833/attachments/67567463?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67587788,
+      "filename": "poc2.html",
+      "mime_type": "text/html",
+      "size_bytes": 1960,
+      "url": "https://issues.chromium.org/action/issues/430336833/attachments/67587788?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67587789,
+      "filename": "target2.html",
+      "mime_type": "text/html",
+      "size_bytes": 260,
+      "url": "https://issues.chromium.org/action/issues/430336833/attachments/67587789?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67627035,
+      "filename": "gen.cpp",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 6032,
+      "url": "https://issues.chromium.org/action/issues/430336833/attachments/67627035?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67627036,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 2078,
+      "url": "https://issues.chromium.org/action/issues/430336833/attachments/67627036?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67620884,
+      "filename": "server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 422,
+      "url": "https://issues.chromium.org/action/issues/430336833/attachments/67620884?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 144,
+  "description_snippet": "## VULNERABILITY DETAILS\nThe `string_table` in V8 is a per-isolate hash table storing internalized strings. As V8 in Chromium uses a heap snapshot for startup this means that the `hashseed` is known and fixed. This allows an attacker to compute the hash of any string and construct an oracle which ca"
+}

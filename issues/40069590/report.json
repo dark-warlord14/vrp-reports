@@ -1,0 +1,29 @@
+{
+  "id": "40069590",
+  "url": "https://issues.chromium.org/issues/40069590",
+  "title": "Security: Experimental features : ASAN error : GetNamedPropertyHandler",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Compiler>Turbofan",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sw...@gmail.com",
+  "assignee": "ni...@chromium.org",
+  "created_date": "2023-08-15T09:01:34+00:00",
+  "modified_date": "2025-04-18T12:42:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": "report of memory corruption in a sandboxed process / the renderer",
+  "attachments": [],
+  "update_count": 56,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n```  \nV8 is running with experimental features enabled. Stability and security will suffer.  \n=================================================================  \n==22876==ERROR: AddressSanitizer: access-violation on unknown address 0x1235beadbefa (pc 0x7ff6acc75226"
+}

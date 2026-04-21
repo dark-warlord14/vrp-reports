@@ -1,0 +1,33 @@
+{
+  "id": "40058635",
+  "url": "https://issues.chromium.org/issues/40058635",
+  "title": "Security: heap-use-after-free on ash/wm/desks/desks_controller.cc (chromeOS)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Shell",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rh...@gmail.com",
+  "assignee": "da...@chromium.org",
+  "created_date": "2022-01-29T07:57:31+00:00",
+  "modified_date": "2024-01-09T04:41:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53033963,
+      "filename": "screencast_1292271.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 6007299,
+      "url": "https://issues.chromium.org/action/issues/40058635/attachments/53033963?download=true",
+      "local_path": "attachments/screencast_1292271.webm"
+    }
+  ],
+  "update_count": 74,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nI will post screen-cast and details on next comment\r\n\r\nWhat is the expected behavior?\r\nnot crash\r\n\r\nWhat went wrong?\r\n=============================="
+}

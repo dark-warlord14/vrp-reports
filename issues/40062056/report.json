@@ -1,0 +1,73 @@
+{
+  "id": "40062056",
+  "url": "https://issues.chromium.org/issues/40062056",
+  "title": "UAF in SharedImageManager of GPU",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "ge...@chromium.org",
+  "created_date": "2022-12-06T07:01:07+00:00",
+  "modified_date": "2024-03-12T15:41:42+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53408067,
+      "filename": "repro.sh",
+      "mime_type": "text/plain",
+      "size_bytes": 20957,
+      "url": "https://issues.chromium.org/action/issues/40062056/attachments/53408067?download=true",
+      "local_path": "attachments/repro.sh"
+    },
+    {
+      "id": 53408072,
+      "filename": "intel-repro.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 44347,
+      "url": "https://issues.chromium.org/action/issues/40062056/attachments/53408072?download=true",
+      "local_path": "attachments/intel-repro.txt"
+    },
+    {
+      "id": 53408124,
+      "filename": "asan0.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 29151,
+      "url": "https://issues.chromium.org/action/issues/40062056/attachments/53408124?download=true",
+      "local_path": "attachments/asan0.txt"
+    },
+    {
+      "id": 53408125,
+      "filename": "asan1.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 27049,
+      "url": "https://issues.chromium.org/action/issues/40062056/attachments/53408125?download=true",
+      "local_path": "attachments/asan1.txt"
+    },
+    {
+      "id": 53408126,
+      "filename": "asan2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 26230,
+      "url": "https://issues.chromium.org/action/issues/40062056/attachments/53408126?download=true",
+      "local_path": "attachments/asan2.txt"
+    },
+    {
+      "id": 53408140,
+      "filename": "1396212_test.html",
+      "mime_type": "text/plain",
+      "size_bytes": 49098,
+      "url": "https://issues.chromium.org/action/issues/40062056/attachments/53408140?download=true",
+      "local_path": "attachments/1396212_test.html"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "**Steps to reproduce the problem:**   \nWill attach details later  \n  \n**Problem Description:**   \nUAF in GPU  \n  \n**Additional Comments:**   \n  \n  \n**Chrome version: ** 110.0.5458.0 **Channel: ** Canary  \n  \n**OS:** Mac OS"
+}

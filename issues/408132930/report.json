@@ -1,0 +1,65 @@
+{
+  "id": "408132930",
+  "url": "https://issues.chromium.org/issues/408132930",
+  "title": "Security: heap-use-after-free in views::DesktopWindowTreeHostWin::~DesktopWindowTreeHostWin",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Aura",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "135.0.0.0",
+  "cve_ids": [],
+  "reporter": "zh...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2025-04-03T11:40:08+00:00",
+  "modified_date": "2025-07-15T12:41:50+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": "moderately mitigated memory corruption in a non-sandboxed process",
+  "attachments": [
+    {
+      "id": 64534352,
+      "filename": "asas.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17308,
+      "url": "https://issues.chromium.org/action/issues/408132930/attachments/64534352?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64534353,
+      "filename": "1.html",
+      "mime_type": "text/html",
+      "size_bytes": 215529,
+      "url": "https://issues.chromium.org/action/issues/408132930/attachments/64534353?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64545757,
+      "filename": "poc.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 463571,
+      "url": "https://issues.chromium.org/action/issues/408132930/attachments/64545757?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64534354,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 26962364,
+      "url": "https://issues.chromium.org/action/issues/408132930/attachments/64534354?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64563385,
+      "filename": "poc_streamlined.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 78884784,
+      "url": "https://issues.chromium.org/action/issues/408132930/attachments/64563385?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "# Steps to reproduce the problem\n1. Compile asan chromium using Windows11, the steps are as follows:\n```\ngit checkout 028edb4fcf20b78e5f573d4575f6b1da914ee358\ngit apply poc.diff\ngn gen out/asan-0403 --args=\"is_component_build=true is_debug=false is_asan=true symbol_level=2 dcheck_always_on=false tre"
+}

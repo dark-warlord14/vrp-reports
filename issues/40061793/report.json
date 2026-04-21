@@ -1,0 +1,61 @@
+{
+  "id": "40061793",
+  "url": "https://issues.chromium.org/issues/40061793",
+  "title": "UAF in CartService",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Shopping>Cart",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "wy...@chromium.org",
+  "created_date": "2022-11-17T17:59:37+00:00",
+  "modified_date": "2024-01-09T07:34:35+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53262286,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 36412,
+      "url": "https://issues.chromium.org/action/issues/40061793/attachments/53262286?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53262287,
+      "filename": "main.js",
+      "mime_type": "text/plain",
+      "size_bytes": 362,
+      "url": "https://issues.chromium.org/action/issues/40061793/attachments/53262287?download=true",
+      "local_path": "attachments/main.js"
+    },
+    {
+      "id": 53262288,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 176,
+      "url": "https://issues.chromium.org/action/issues/40061793/attachments/53262288?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53262289,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1835,
+      "url": "https://issues.chromium.org/action/issues/40061793/attachments/53262289?download=true",
+      "local_path": "attachments/patch.diff"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**Steps to reproduce the problem:**   \nThis UAF is similar with the previous https://crbug.com/chromium/1385709. However, their root cause and the UAF places are different. Will attach details and PoC soon.  \n  \n**Problem Description:**   \nbrowser UAF.  \n  \n**Additional Comments:**   \n  \n  \n**Chrome"
+}

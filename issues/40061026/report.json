@@ -1,0 +1,151 @@
+{
+  "id": "40061026",
+  "url": "https://issues.chromium.org/issues/40061026",
+  "title": "Security: Extension can obscure active window with an unfocused window, allows interaction with permission API prompt dialog without awareness",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions>API",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2022-2616"
+  ],
+  "reporter": "vi...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2022-09-18T08:28:50+00:00",
+  "modified_date": "2025-03-27T12:43:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "$2,000 for report of lower impact web platform privilege escalation",
+  "attachments": [
+    {
+      "id": 53349839,
+      "filename": "defaultBehavior.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1085478,
+      "url": "https://issues.chromium.org/action/issues/40061026/attachments/53349839?download=true",
+      "local_path": "attachments/defaultBehavior.mp4"
+    },
+    {
+      "id": 53349841,
+      "filename": "unexpectedBehaviorWhenPromptedPermissions.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1423617,
+      "url": "https://issues.chromium.org/action/issues/40061026/attachments/53349841?download=true",
+      "local_path": "attachments/unexpectedBehaviorWhenPromptedPermissions.mp4"
+    },
+    {
+      "id": 53349842,
+      "filename": "extension.rar",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3126,
+      "url": "https://issues.chromium.org/action/issues/40061026/attachments/53349842?download=true",
+      "local_path": "attachments/extension.rar"
+    },
+    {
+      "id": 53349981,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 832,
+      "url": "https://issues.chromium.org/action/issues/40061026/attachments/53349981?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53349982,
+      "filename": "bg.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1706,
+      "url": "https://issues.chromium.org/action/issues/40061026/attachments/53349982?download=true",
+      "local_path": "attachments/bg.js"
+    },
+    {
+      "id": 53349983,
+      "filename": "crbug-1365104.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1202,
+      "url": "https://issues.chromium.org/action/issues/40061026/attachments/53349983?download=true",
+      "local_path": "attachments/crbug-1365104.html"
+    },
+    {
+      "id": 53349984,
+      "filename": "crbug-1365104-instructions.html",
+      "mime_type": "text/plain",
+      "size_bytes": 349,
+      "url": "https://issues.chromium.org/action/issues/40061026/attachments/53349984?download=true",
+      "local_path": "attachments/crbug-1365104-instructions.html"
+    },
+    {
+      "id": 53349985,
+      "filename": "crbug-1365104-stable.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 809966,
+      "url": "https://issues.chromium.org/action/issues/40061026/attachments/53349985?download=true",
+      "local_path": "attachments/crbug-1365104-stable.mp4"
+    },
+    {
+      "id": 53349986,
+      "filename": "crbug-1365104-canary.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 880920,
+      "url": "https://issues.chromium.org/action/issues/40061026/attachments/53349986?download=true",
+      "local_path": "attachments/crbug-1365104-canary.mp4"
+    },
+    {
+      "id": 61520938,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 689,
+      "url": "https://issues.chromium.org/action/issues/40061026/attachments/61520938?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 61520894,
+      "filename": "content.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1557,
+      "url": "https://issues.chromium.org/action/issues/40061026/attachments/61520894?download=true",
+      "local_path": "attachments/content.js"
+    },
+    {
+      "id": 61520939,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 720,
+      "url": "https://issues.chromium.org/action/issues/40061026/attachments/61520939?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 61520940,
+      "filename": "popup.html",
+      "mime_type": "text/html",
+      "size_bytes": 219,
+      "url": "https://issues.chromium.org/action/issues/40061026/attachments/61520940?download=true",
+      "local_path": "attachments/popup.html"
+    },
+    {
+      "id": 61520895,
+      "filename": "README.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 2174,
+      "url": "https://issues.chromium.org/action/issues/40061026/attachments/61520895?download=true",
+      "local_path": "attachments/README.md"
+    },
+    {
+      "id": 61520941,
+      "filename": "extension.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 3537,
+      "url": "https://issues.chromium.org/action/issues/40061026/attachments/61520941?download=true",
+      "local_path": "attachments/extension.zip"
+    }
+  ],
+  "update_count": 97,
+  "description_snippet": "**VERSION**   \n  \nChrome Version: 105.0.5195.127 (Official Build) (64-bit)  \nOperating System: Windows 10 Pro Version 21H1 (Build 19043.2006)  \n  \n**VULNERABILITY DETAILS**   \n  \nThis report covers some behavior previously reported in 1302159 (CVE-2022-2616), 1290213, and 1301203; expanding the impa"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "40065256",
+  "url": "https://issues.chromium.org/issues/40065256",
+  "title": "Heap-use-after-free in ui::AXTreeSerializer<blink::AXObject*>::AnyDescendantWasReparented",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Accessibility, Internals>Accessibility",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2023-06-03T17:44:18+00:00",
+  "modified_date": "2024-08-11T21:22:55+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53364764,
+      "filename": "test3.html",
+      "mime_type": "text/plain",
+      "size_bytes": 87,
+      "url": "https://issues.chromium.org/action/issues/40065256/attachments/53364764?download=true",
+      "local_path": "attachments/test3.html"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=5405225089957888\n\nFuzzer: b0ring_webidl_fuzzer\nJob Type: linux_asan_content_shell_drt\nPlatform Id: linux\n\nCrash Type: Heap-use-after-free READ 4\nCrash Address: 0x506000208f48\nCrash State:\n  ui::AXTreeSerializer<blink::AXObject*>::AnyDescendantWas"
+}

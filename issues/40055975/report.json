@@ -1,0 +1,74 @@
+{
+  "id": "40055975",
+  "url": "https://issues.chromium.org/issues/40055975",
+  "title": "Security: UAF after use clicks help link in accessibility labels dialog",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "UI>Accessibility",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "ka...@chromium.org",
+  "created_date": "2021-05-23T21:14:58+00:00",
+  "modified_date": "2024-01-09T03:25:04+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52957359,
+      "filename": "asan_output_885837.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18150,
+      "url": "https://issues.chromium.org/action/issues/40055975/attachments/52957359?download=true",
+      "local_path": "attachments/asan_output_885837.txt"
+    },
+    {
+      "id": 52957360,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 228,
+      "url": "https://issues.chromium.org/action/issues/40055975/attachments/52957360?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 52957361,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 169,
+      "url": "https://issues.chromium.org/action/issues/40055975/attachments/52957361?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 52957362,
+      "filename": "page.html",
+      "mime_type": "text/plain",
+      "size_bytes": 98,
+      "url": "https://issues.chromium.org/action/issues/40055975/attachments/52957362?download=true",
+      "local_path": "attachments/page.html"
+    },
+    {
+      "id": 52957363,
+      "filename": "page.js",
+      "mime_type": "text/plain",
+      "size_bytes": 710,
+      "url": "https://issues.chromium.org/action/issues/40055975/attachments/52957363?download=true",
+      "local_path": "attachments/page.js"
+    },
+    {
+      "id": 52957443,
+      "filename": "asan_output_779982.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17746,
+      "url": "https://issues.chromium.org/action/issues/40055975/attachments/52957443?download=true",
+      "local_path": "attachments/asan_output_779982.txt"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe accessibility labels dialog includes a help link in the bottom left. That link is opened via the WebContents used to show the dialog. If that WebContents has been destroyed (e.g. because the tab has been closed) and the user clicks the help link, a UAF will occur in"
+}

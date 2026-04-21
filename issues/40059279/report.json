@@ -1,0 +1,41 @@
+{
+  "id": "40059279",
+  "url": "https://issues.chromium.org/issues/40059279",
+  "title": "VideoTrackGenerator fails Security DCHECK(TypeConfuse) failure: IsA<Derived>(from) in casting.h",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>GetUserMedia",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "ht...@chromium.org",
+  "created_date": "2022-04-02T03:21:55+00:00",
+  "modified_date": "2024-02-28T03:07:42+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53058910,
+      "filename": "fuzz-00005.html",
+      "mime_type": "text/plain",
+      "size_bytes": 338,
+      "url": "https://issues.chromium.org/action/issues/40059279/attachments/53058910?download=true",
+      "local_path": "attachments/fuzz-00005.html"
+    },
+    {
+      "id": 53058936,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17045,
+      "url": "https://issues.chromium.org/action/issues/40059279/attachments/53058936?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.0.0 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n#TestOn\r\nasan-win32-release_x64-988236\r\n\r\n#Reproduce\r\nchrome --no-sandbox --enable-blink-test-features --user-data-dir=test fuzz-00005.html"
+}

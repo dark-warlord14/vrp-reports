@@ -1,0 +1,38 @@
+{
+  "id": "398773898",
+  "url": "https://issues.chromium.org/issues/398773898",
+  "title": "V8 Sandbox Bypass: OOB write in JsonStringifier::TrySerializeSimplePropertyKey",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Sandbox",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "v8...@gmail.com",
+  "assignee": "sr...@google.com",
+  "created_date": "2025-02-24T12:48:12+00:00",
+  "modified_date": "2025-06-07T12:42:04+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "report of V8 sandbox bypass demonstrating memory corruption outside the V8 heap sandbox",
+  "attachments": [
+    {
+      "id": 63195154,
+      "filename": "bug.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1468,
+      "url": "https://issues.chromium.org/action/issues/398773898/attachments/63195154?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "#### VULNERABILITY DETAILS\nDuring the serialization of an internalized string, an out-of-bounds write may occur due to an integer overflow in the buffer length check.\n\n```c++\ntemplate <typename DestChar>\nbool JsonStringifier::TrySerializeSimplePropertyKey(\n    Tagged<String> key, const DisallowGarba"
+}

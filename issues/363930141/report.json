@@ -1,0 +1,52 @@
+{
+  "id": "363930141",
+  "url": "https://issues.chromium.org/issues/363930141",
+  "title": "User can unknowingly Execute External File Hidden behind PiP during Interaction",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Media>PictureInPicture",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fa...@gmail.com",
+  "assignee": "ch...@chromium.org",
+  "created_date": "2024-09-02T10:14:17+00:00",
+  "modified_date": "2026-04-01T07:54:46+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "low impact UI spoofing with user gestures",
+  "attachments": [
+    {
+      "id": 59085369,
+      "filename": "screenrecord.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2062375,
+      "url": "https://issues.chromium.org/action/issues/363930141/attachments/59085369?download=true",
+      "local_path": "attachments/screenrecord.mp4"
+    },
+    {
+      "id": 59085370,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 5392,
+      "url": "https://issues.chromium.org/action/issues/363930141/attachments/59085370?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 71716107,
+      "filename": "screenrecording.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1469371,
+      "url": "https://issues.chromium.org/action/issues/363930141/attachments/71716107?download=true",
+      "local_path": "attachments/screenrecording.mp4"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "Security Bug\n\n-------------------------\n\nVULNERABILITY DETAILS\nAn attacker can exploit a combination of opening a Picture-in-Picture (PiP) window and a hidden popup behind it. By manipulating the focus onto the concealed popup, an attacker can hijack keypresses when a user interacts with the website"
+}

@@ -1,0 +1,70 @@
+{
+  "id": "40064274",
+  "url": "https://issues.chromium.org/issues/40064274",
+  "title": "Security: Select option can cover permission buble , lead to spoof",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "tu...@chromium.org",
+  "created_date": "2023-04-29T04:45:14+00:00",
+  "modified_date": "2025-12-17T12:46:34+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52969156,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064274/attachments/52969156?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52969157,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064274/attachments/52969157?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52969173,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064274/attachments/52969173?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52969174,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064274/attachments/52969174?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52969213,
+      "filename": "Screencast from 2023-05-16 11-11-29.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 160001,
+      "url": "https://issues.chromium.org/action/issues/40064274/attachments/52969213?download=true",
+      "local_path": "attachments/Screencast from 2023-05-16 11-11-29.webm"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "deleted"
+}

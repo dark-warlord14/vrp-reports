@@ -1,0 +1,68 @@
+{
+  "id": "40069416",
+  "url": "https://issues.chromium.org/issues/40069416",
+  "title": "heap-buffer-overflow in StringForwardingTable::UpdateAfterFullEvacuation",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>GarbageCollection",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "pt...@chromium.org",
+  "created_date": "2023-08-11T18:47:18+00:00",
+  "modified_date": "2024-01-09T11:29:56+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53115021,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1551,
+      "url": "https://issues.chromium.org/action/issues/40069416/attachments/53115021?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53115022,
+      "filename": "test.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1148,
+      "url": "https://issues.chromium.org/action/issues/40069416/attachments/53115022?download=true",
+      "local_path": "attachments/test.js"
+    },
+    {
+      "id": 53115023,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 38163,
+      "url": "https://issues.chromium.org/action/issues/40069416/attachments/53115023?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53115104,
+      "filename": "poc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1528,
+      "url": "https://issues.chromium.org/action/issues/40069416/attachments/53115104?download=true",
+      "local_path": "attachments/poc2.html"
+    },
+    {
+      "id": 53115105,
+      "filename": "test2.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1346,
+      "url": "https://issues.chromium.org/action/issues/40069416/attachments/53115105?download=true",
+      "local_path": "attachments/test2.js"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "**Steps to reproduce the problem:**   \nTested Environment:  \nOperating System: Ubuntu 22.04  \n  \nTested Chrome Versions:  \nChromium 118.0.5940.0 (gs://chromium-browser-asan/linux-release/asan-linux-release-1182064.zip)  \nChromium 113.0.5624.0 (Possibly earlier versions may also repro the same issue)"
+}

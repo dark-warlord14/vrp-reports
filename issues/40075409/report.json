@@ -1,0 +1,25 @@
+{
+  "id": "40075409",
+  "url": "https://issues.chromium.org/issues/40075409",
+  "title": "Security: UAF in gcm::GCMDriver::Shutdown",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "mi...@google.com",
+  "created_date": "2023-10-23T00:53:02+00:00",
+  "modified_date": "2024-03-08T15:41:18+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 33,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUAF in gcm::GCMDriver::Shutdown  \n  \n**VERSION**   \nChromium\t120.0.6080.0 (Developer Build) (64-bit)   \nRevision 5bb79c7cd3f3b57a90cdf0d7dbe98649173f9391-refs/heads/main@{#1213004}  \nPlatform        ChromiumOS Linux  \n  \n**REPRODUCTION CASE**   \nrun the command:  \n` ./ch"
+}

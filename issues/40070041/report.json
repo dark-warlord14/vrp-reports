@@ -1,0 +1,29 @@
+{
+  "id": "40070041",
+  "url": "https://issues.chromium.org/issues/40070041",
+  "title": "Security:  UAF in UnblockPendingSubframeNavigationRequestsIfNeeded",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>History",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "yq...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2023-08-20T15:13:35+00:00",
+  "modified_date": "2024-03-08T16:04:37+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe function `UnblockPendingSubframeNavigationRequestsIfNeeded``  calls `Resume` at line [1]. Calling `Resume` may delete NavigationRequest synchronously [2], which result in UAF write at line [3].  \n  \nThis issue is similar to crbug.com/1417122,1417133,1444360.it's just"
+}

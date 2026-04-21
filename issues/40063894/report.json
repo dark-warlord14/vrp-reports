@@ -1,0 +1,49 @@
+{
+  "id": "40063894",
+  "url": "https://issues.chromium.org/issues/40063894",
+  "title": "Security: UAF in vrend_renderer_pipe_resource_set_type",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fi...@gmail.com",
+  "assignee": "ch...@google.com",
+  "created_date": "2023-04-04T10:54:16+00:00",
+  "modified_date": "2023-07-27T17:37:21+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52972774,
+      "filename": "virgl_fuzzer.c",
+      "mime_type": "text/plain",
+      "size_bytes": 7030,
+      "url": "https://issues.chromium.org/action/issues/40063894/attachments/52972774?download=true",
+      "local_path": "attachments/virgl_fuzzer.c"
+    },
+    {
+      "id": 52972775,
+      "filename": "test",
+      "mime_type": "text/plain",
+      "size_bytes": 69,
+      "url": "https://issues.chromium.org/action/issues/40063894/attachments/52972775?download=true",
+      "local_path": "attachments/test"
+    },
+    {
+      "id": 52972776,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 5854,
+      "url": "https://issues.chromium.org/action/issues/40063894/attachments/52972776?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 25,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nres can be added to ctx->untyped_resources multiple times by calling vrend_renderer_attach_res_ctx multiple times.  \n```  \nvoid vrend_renderer_attach_res_ctx(struct vrend_context \\*ctx,  \n                                   struct virgl_resource \\*res)  \n{  \n   if (!re"
+}

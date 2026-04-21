@@ -1,0 +1,60 @@
+{
+  "id": "40056969",
+  "url": "https://issues.chromium.org/issues/40056969",
+  "title": "Security:  Blink - Use After Free of DawnCallback.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebGPU",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lo...@gmail.com",
+  "assignee": "en...@chromium.org",
+  "created_date": "2021-08-23T04:24:53+00:00",
+  "modified_date": "2026-03-27T17:01:57+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53045362,
+      "filename": "UAF_DawnCallback_PoC.html",
+      "mime_type": "text/plain",
+      "size_bytes": 174,
+      "url": "https://issues.chromium.org/action/issues/40056969/attachments/53045362?download=true",
+      "local_path": "attachments/UAF_DawnCallback_PoC.html"
+    },
+    {
+      "id": 53045363,
+      "filename": "UAF_DawnCallback_ASAN.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 20920,
+      "url": "https://issues.chromium.org/action/issues/40056969/attachments/53045363?download=true",
+      "local_path": "attachments/UAF_DawnCallback_ASAN.txt"
+    },
+    {
+      "id": 53045420,
+      "filename": "uaf-request-device-loop.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1159,
+      "url": "https://issues.chromium.org/action/issues/40056969/attachments/53045420?download=true",
+      "local_path": "attachments/uaf-request-device-loop.html"
+    },
+    {
+      "id": 53045427,
+      "filename": "ASAN_uaf_after_callbacks_set_to_null.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 27087,
+      "url": "https://issues.chromium.org/action/issues/40056969/attachments/53045427?download=true",
+      "local_path": "attachments/ASAN_uaf_after_callbacks_set_to_null.txt"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n\tSpecifically crafted HTML file can cause Use After Free of DawnCallback object in Web GPU code. This bug may potentially be exploited to achieve one click remote code execution in renderer process.  \n  \n  \n\tGPUDevice owns 3 DawnCallback members, one of which is lost_cal"
+}

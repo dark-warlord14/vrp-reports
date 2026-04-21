@@ -1,0 +1,69 @@
+{
+  "id": "40945515",
+  "url": "https://issues.chromium.org/issues/40945515",
+  "title": "Security: Stack-buffer-underflow in DataPack::GetStringPieceFromOffset when loading a malicious theme",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Themes, UI>Browser>WebUI",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "re...@gmail.com",
+  "assignee": "pk...@chromium.org",
+  "created_date": "2023-11-24T00:16:12+00:00",
+  "modified_date": "2024-04-10T15:40:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 6000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53327500,
+      "filename": "demo.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 6295605,
+      "url": "https://issues.chromium.org/action/issues/40945515/attachments/53327500?download=true",
+      "local_path": "attachments/demo.webm"
+    },
+    {
+      "id": 53327501,
+      "filename": "generate_pak.py",
+      "mime_type": "text/plain",
+      "size_bytes": 2648,
+      "url": "https://issues.chromium.org/action/issues/40945515/attachments/53327501?download=true",
+      "local_path": "attachments/generate_pak.py"
+    },
+    {
+      "id": 53327502,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 643,
+      "url": "https://issues.chromium.org/action/issues/40945515/attachments/53327502?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53327503,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3780783,
+      "url": "https://issues.chromium.org/action/issues/40945515/attachments/53327503?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 53327504,
+      "filename": "data_pack_fix.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1593,
+      "url": "https://issues.chromium.org/action/issues/40945515/attachments/53327504?download=true",
+      "local_path": "attachments/data_pack_fix.patch"
+    }
+  ],
+  "update_count": 92,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe DataPack::GetStringPieceFromOffset method is vulnerable to integer underflow due to the way it calculates lengths of resources (`size_t length = next_offset - target_offset;`). This makes it possible craft a malicious .pak file with intentionally incorrect offsets th"
+}

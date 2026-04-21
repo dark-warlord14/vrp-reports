@@ -1,0 +1,38 @@
+{
+  "id": "452209495",
+  "url": "https://issues.chromium.org/issues/452209495",
+  "title": "truncated long domain on Digital Credentials API prompt lead to spoof",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Payments",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2025-10-15T14:22:57+00:00",
+  "modified_date": "2026-02-11T16:25:55+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "low impact ui spoofing issue",
+  "attachments": [
+    {
+      "id": 70137647,
+      "filename": "longdomaintruncated.png",
+      "mime_type": "image/png",
+      "size_bytes": 332115,
+      "url": "https://issues.chromium.org/action/issues/452209495/attachments/70137647?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "VULNERABILITY DETAILS\n\nWhen the Digital Credentials API dialog is invoked, the dialog appears with the name \"Do you trust this site with your data\" and the long domain name causes the domain name to be truncated. As seen in the second video at\nhttps://developer.chrome.com/blog/digital-credentials-ap"
+}

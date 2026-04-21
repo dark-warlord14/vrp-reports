@@ -1,0 +1,39 @@
+{
+  "id": "425583995",
+  "url": "https://issues.chromium.org/issues/425583995",
+  "title": "Debug check failed: pc_offset() < unresolved_branches_first_limit()",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Maglev",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fa...@gmail.com",
+  "assignee": "vi...@chromium.org",
+  "created_date": "2025-06-17T16:37:00+00:00",
+  "modified_date": "2025-10-04T12:41:55+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": "report of memory corruption in a sandboxed process / renderer",
+  "attachments": [
+    {
+      "id": 66834675,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 745,
+      "url": "https://issues.chromium.org/action/issues/425583995/attachments/66834675?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 100,
+  "description_snippet": "```\n\n#\n# Fatal error in ../../src/codegen/arm64/assembler-arm64.cc, line 4917\n# Debug check failed: pc_offset() < unresolved_branches_first_limit().\n#\n#\n#\n#FailureMessage Object: 0x16d305468\n==== C stack trace ===============================\n\n    0   libv8_libbase.dylib                 0x00000001043"
+}

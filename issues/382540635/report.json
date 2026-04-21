@@ -1,0 +1,68 @@
+{
+  "id": "382540635",
+  "url": "https://issues.chromium.org/issues/382540635",
+  "title": "Extension popup can appear over WebUSB permission prompt",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "133.0.6879.0 (Official Build) canary (64-bit) (cohort: Clang-64) ",
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2024-12-06T01:53:58+00:00",
+  "modified_date": "2025-05-30T17:24:50+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact security UI issue",
+  "attachments": [
+    {
+      "id": 61337513,
+      "filename": "bg-keyboard.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1474,
+      "url": "https://issues.chromium.org/action/issues/382540635/attachments/61337513?download=true",
+      "local_path": null
+    },
+    {
+      "id": 61337514,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 494,
+      "url": "https://issues.chromium.org/action/issues/382540635/attachments/61337514?download=true",
+      "local_path": null
+    },
+    {
+      "id": 61337515,
+      "filename": "popup.html",
+      "mime_type": "text/html",
+      "size_bytes": 1584,
+      "url": "https://issues.chromium.org/action/issues/382540635/attachments/61337515?download=true",
+      "local_path": null
+    },
+    {
+      "id": 61337516,
+      "filename": "popup-screenshare.html",
+      "mime_type": "text/html",
+      "size_bytes": 430,
+      "url": "https://issues.chromium.org/action/issues/382540635/attachments/61337516?download=true",
+      "local_path": "attachments/popup-screenshare.html"
+    },
+    {
+      "id": 61337517,
+      "filename": "screen-capture.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2838128,
+      "url": "https://issues.chromium.org/action/issues/382540635/attachments/61337517?download=true",
+      "local_path": "attachments/screen-capture.webm"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "# Steps to reproduce the problem\n1. Install attached extension\n2. Click anywhere, then Press Ctrl+A \n\n# Problem Description\nSimilar to issue 361711121\n\n# Summary\nExtension popup can appear over WebUSB permission prompt\n\n# Additional Data\nCategory: Security \\\nChrome Channel: Canary \\\nRegression: N/A"
+}

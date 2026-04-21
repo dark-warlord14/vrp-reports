@@ -1,0 +1,45 @@
+{
+  "id": "392818696",
+  "url": "https://issues.chromium.org/issues/392818696",
+  "title": "Bypass :// Characters in Download Security UI lead to Origin Spoofing",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "131.0.0.0",
+  "cve_ids": [],
+  "reporter": "fr...@gmail.com",
+  "assignee": "ch...@chromium.org",
+  "created_date": "2025-01-28T17:53:11+00:00",
+  "modified_date": "2025-12-15T18:23:20+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": "Thank you reward for report of issue with low potential for user harm and issue requiring the user engage with the downloads workflow in a non-standard way. We were able to make a beneficial change from this report, so we wanted to acknowledge that contribution with a small reward.",
+  "attachments": [
+    {
+      "id": 62474568,
+      "filename": "spoof.html",
+      "mime_type": "text/html",
+      "size_bytes": 2012,
+      "url": "https://issues.chromium.org/action/issues/392818696/attachments/62474568?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62474569,
+      "filename": "bypass ::: chrome.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 8162668,
+      "url": "https://issues.chromium.org/action/issues/392818696/attachments/62474569?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "# Steps to reproduce the problem\n1.Prepare spoof.html\n2. Access the spoof.html\n3. Download the file\n4. You will see that the :// blacklist is getting bypassed and allow attacker to create a fake origin\n\n# Problem Description\nBy default, Chrome’s Security UI blocks :// from appearing as a filename in"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "40054539",
+  "url": "https://issues.chromium.org/issues/40054539",
+  "title": "Security: UaF in payments::SecurePaymentConfirmationAppFactory",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>Payments",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "np...@chromium.org",
+  "created_date": "2021-01-21T20:05:10+00:00",
+  "modified_date": "2024-01-09T02:55:20+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52897299,
+      "filename": "payment_request_new.html",
+      "mime_type": "text/plain",
+      "size_bytes": 307,
+      "url": "https://issues.chromium.org/action/issues/40054539/attachments/52897299?download=true",
+      "local_path": "attachments/payment_request_new.html"
+    },
+    {
+      "id": 52897300,
+      "filename": "payment_request2_new.html",
+      "mime_type": "text/plain",
+      "size_bytes": 764,
+      "url": "https://issues.chromium.org/action/issues/40054539/attachments/52897300?download=true",
+      "local_path": "attachments/payment_request2_new.html"
+    },
+    {
+      "id": 52897327,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40054539/attachments/52897327?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52897421,
+      "filename": "screen .mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 5456633,
+      "url": "https://issues.chromium.org/action/issues/40054539/attachments/52897421?download=true",
+      "local_path": "attachments/screen .mov"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "**VERSION**   \nChrome Version: 90.0.4394.0 (Official Build) canary (x86_64)  \nOperating System: MacOS  \n  \n  \n**REPRODUCTION CASE**   \n  \nSimilar to https://crbug.com/chromium/1110207  \n  \n1. Go to http://localhost:8000/payment_request_new.html  \n2. Try to close the tab manually  \n  \n==13678==ERROR:"
+}

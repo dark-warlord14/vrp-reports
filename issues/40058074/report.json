@@ -1,0 +1,70 @@
+{
+  "id": "40058074",
+  "url": "https://issues.chromium.org/issues/40058074",
+  "title": "SUMMARY: AddressSanitizer: heap-use-after-free base/bind_internal.h:535:12 in BindState<void (content::StorageNotificationService::*)(url::Origin), UnretainedWrapper<content::StorageNotificationService>",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>Storage",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2021-11-30T08:42:10+00:00",
+  "modified_date": "2024-01-09T04:12:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53084048,
+      "filename": "clusterfuzz-testcase-6255222588243968.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 82863,
+      "url": "https://issues.chromium.org/action/issues/40058074/attachments/53084048?download=true",
+      "local_path": "attachments/clusterfuzz-testcase-6255222588243968.zip"
+    },
+    {
+      "id": 53084049,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058074/attachments/53084049?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53084064,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 31809,
+      "url": "https://issues.chromium.org/action/issues/40058074/attachments/53084064?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53084099,
+      "filename": "rep.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 3985,
+      "url": "https://issues.chromium.org/action/issues/40058074/attachments/53084099?download=true",
+      "local_path": "attachments/rep.diff"
+    },
+    {
+      "id": 53084100,
+      "filename": "rep_asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 52769,
+      "url": "https://issues.chromium.org/action/issues/40058074/attachments/53084100?download=true",
+      "local_path": "attachments/rep_asan.txt"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4676.0 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n#TestOn\r\nasan-linux-release-945738\r\n\r\n#Reproduce\r\nThis is found by my fuzzer running on ClusterFuzz, but it cannot be reproduced stably so"
+}

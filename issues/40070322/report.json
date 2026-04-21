@@ -1,0 +1,33 @@
+{
+  "id": "40070322",
+  "url": "https://issues.chromium.org/issues/40070322",
+  "title": "Security: DoS due to check missing",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "bu...@gmail.com",
+  "assignee": "st...@google.com",
+  "created_date": "2023-08-23T12:02:26+00:00",
+  "modified_date": "2024-01-16T18:41:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53364189,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 2715,
+      "url": "https://issues.chromium.org/action/issues/40070322/attachments/53364189?download=true",
+      "local_path": "attachments/patch.diff"
+    }
+  ],
+  "update_count": 24,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThe function `vrend_inject_tcs` can be invoked when injecting a TCS(https://source.chromium.org/chromiumos/chromiumos/codesearch/+/main:src/third_party/virglrenderer/src/vrend_renderer.c;l=5406). Specifically, a new shader is allocated at the point[1]. However, it doe"
+}

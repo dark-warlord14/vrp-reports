@@ -1,0 +1,46 @@
+{
+  "id": "40945359",
+  "url": "https://issues.chromium.org/issues/40945359",
+  "title": "Security:  heap-use-after-free in libavif when decode the crafted avif file.",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Images>Codecs",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "vi...@google.com",
+  "created_date": "2023-11-23T12:41:55+00:00",
+  "modified_date": "2024-03-07T15:40:00+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53285620,
+      "filename": "poc3.avif",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 635,
+      "url": "https://issues.chromium.org/action/issues/40945359/attachments/53285620?download=true",
+      "local_path": "attachments/poc3.avif"
+    },
+    {
+      "id": 53285621,
+      "filename": "crash.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 115455,
+      "url": "https://issues.chromium.org/action/issues/40945359/attachments/53285621?download=true",
+      "local_path": "attachments/crash.jpg"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nheap-use-after-free in libavif when decode the crafted avif file.  \n  \nI just open it in 121.0.6144.0 chromium build with asan, and can make a crash. you can see the crash in the image attached.  \n  \n**VERSION**   \n  \nlatest libavif version  \n  \nSince the chromium ado"
+}

@@ -1,0 +1,84 @@
+{
+  "id": "40056443",
+  "url": "https://issues.chromium.org/issues/40056443",
+  "title": "Security: Another autocomplete preview text leak",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "ba...@chromium.org",
+  "created_date": "2021-07-07T21:18:36+00:00",
+  "modified_date": "2025-07-02T12:50:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53148466,
+      "filename": "demo.html",
+      "mime_type": "text/plain",
+      "size_bytes": 5338,
+      "url": "https://issues.chromium.org/action/issues/40056443/attachments/53148466?download=true",
+      "local_path": "attachments/demo.html"
+    },
+    {
+      "id": 53148467,
+      "filename": "fontUtils.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2522,
+      "url": "https://issues.chromium.org/action/issues/40056443/attachments/53148467?download=true",
+      "local_path": "attachments/fontUtils.js"
+    },
+    {
+      "id": 53148468,
+      "filename": "opentype.js",
+      "mime_type": "text/plain",
+      "size_bytes": 466623,
+      "url": "https://issues.chromium.org/action/issues/40056443/attachments/53148468?download=true",
+      "local_path": "attachments/opentype.js"
+    },
+    {
+      "id": 53148469,
+      "filename": "utils.js",
+      "mime_type": "text/plain",
+      "size_bytes": 885,
+      "url": "https://issues.chromium.org/action/issues/40056443/attachments/53148469?download=true",
+      "local_path": "attachments/utils.js"
+    },
+    {
+      "id": 53148550,
+      "filename": "Screen Shot 2021-07-13 at 1.08.04 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 28435,
+      "url": "https://issues.chromium.org/action/issues/40056443/attachments/53148550?download=true",
+      "local_path": "attachments/Screen Shot 2021-07-13 at 1.08.04 PM.png"
+    },
+    {
+      "id": 53148572,
+      "filename": "Screen Shot 2021-07-14 at 22.24.25.png",
+      "mime_type": "image/png",
+      "size_bytes": 50003,
+      "url": "https://issues.chromium.org/action/issues/40056443/attachments/53148572?download=true",
+      "local_path": "attachments/Screen Shot 2021-07-14 at 22.24.25.png"
+    },
+    {
+      "id": 53148575,
+      "filename": "Screen Shot 2021-07-14 at 22.30.08.png",
+      "mime_type": "image/png",
+      "size_bytes": 60724,
+      "url": "https://issues.chromium.org/action/issues/40056443/attachments/53148575?download=true",
+      "local_path": "attachments/Screen Shot 2021-07-14 at 22.30.08.png"
+    }
+  ],
+  "update_count": 96,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis exploit allows a malicious webpage containing a HTML form to read values that are being proposed by Chrome's autocomplete feature before the user has actually selected them (i.e. while the autocomplete UI is open and in the \"suggest\"/\"preview\" state).  \n  \nIn this w"
+}

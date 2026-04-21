@@ -1,0 +1,49 @@
+{
+  "id": "442065550",
+  "url": "https://issues.chromium.org/issues/442065550",
+  "title": "libusc UAF via WebGPU shaders at MergeConsecutiveBarriersBP",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Dawn>Tint",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "a7...@gmail.com",
+  "assignee": "jr...@google.com",
+  "created_date": "2025-08-30T18:29:57+00:00",
+  "modified_date": "2026-03-05T16:41:05+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 25000.0,
+  "bounty_rationale": "Sandbox escape / Memory corruption in a non-sandboxed process",
+  "attachments": [
+    {
+      "id": 68899562,
+      "filename": "comp.spv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 280,
+      "url": "https://issues.chromium.org/action/issues/442065550/attachments/68899562?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68899563,
+      "filename": "a.html",
+      "mime_type": "text/html",
+      "size_bytes": 2794,
+      "url": "https://issues.chromium.org/action/issues/442065550/attachments/68899563?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68899564,
+      "filename": "standalone.cpp",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 7765,
+      "url": "https://issues.chromium.org/action/issues/442065550/attachments/68899564?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "##### VULNERABILITY DETAILS\n\nChrome on Android translates WebGPU shaders to SPIR-V. On Pixel 10 devices, these SPIR-V shaders are eventually passed to the vendor-specific libraries libufwriter.so and libusc.so for optimization and native code generation. This bug report is about a WebGPU shader that"
+}

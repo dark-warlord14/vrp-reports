@@ -1,0 +1,45 @@
+{
+  "id": "40064564",
+  "url": "https://issues.chromium.org/issues/40064564",
+  "title": "Security:  Use-after-free in CPWL_ComboBox::OnKeyDown",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "qu...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2023-05-15T04:42:40+00:00",
+  "modified_date": "2024-01-09T07:55:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53047681,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 2781,
+      "url": "https://issues.chromium.org/action/issues/40064564/attachments/53047681?download=true",
+      "local_path": "attachments/poc.pdf"
+    },
+    {
+      "id": 53047682,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17633,
+      "url": "https://issues.chromium.org/action/issues/40064564/attachments/53047682?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUse-after-free in CPWL_ComboBox::OnKeyDown function.  \n  \n**VERSION**   \nChrome Version: Version 103.0.5052.0 (Developer Build) (64-bit)  \n  \nBuild: https://www.googleapis.com/download/storage/v1/b/chromium-browser-asan/o/win32-release_x64%2Fasan-win32-release_x64-100082"
+}

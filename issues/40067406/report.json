@@ -1,0 +1,69 @@
+{
+  "id": "40067406",
+  "url": "https://issues.chromium.org/issues/40067406",
+  "title": "Security: UaF in Mirroring",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Cast>Streaming",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "av...@gmail.com",
+  "assignee": "bz...@google.com",
+  "created_date": "2023-07-14T00:29:07+00:00",
+  "modified_date": "2023-12-20T18:34:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53032289,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40067406/attachments/53032289?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53032290,
+      "filename": "asansymbolized.log",
+      "mime_type": "text/plain",
+      "size_bytes": 60509,
+      "url": "https://issues.chromium.org/action/issues/40067406/attachments/53032290?download=true",
+      "local_path": "attachments/asansymbolized.log"
+    },
+    {
+      "id": 53032309,
+      "filename": "2023-07-09 22-02-53.mkv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2588107,
+      "url": "https://issues.chromium.org/action/issues/40067406/attachments/53032309?download=true",
+      "local_path": "attachments/2023-07-09 22-02-53.mkv"
+    },
+    {
+      "id": 53032324,
+      "filename": "poc2.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 184129,
+      "url": "https://issues.chromium.org/action/issues/40067406/attachments/53032324?download=true",
+      "local_path": "attachments/poc2.zip"
+    },
+    {
+      "id": 53032358,
+      "filename": "poc4.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 183394,
+      "url": "https://issues.chromium.org/action/issues/40067406/attachments/53032358?download=true",
+      "local_path": "attachments/poc4.zip"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "**-------------------------**   \n  \n**VULNERABILITY DETAILS**   \nA UaF in Mirroring is caused by the https://source.chromium.org/chromium/chromium/src/+/main:chrome/browser/media/cast_mirroring_service_host.cc;drc=254a229f4653742ec8a64b8749e2b2645fa5ef08;l=616  \nCastMirroringServiceHost   \n  \nA raw"
+}

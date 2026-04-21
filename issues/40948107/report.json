@@ -1,0 +1,102 @@
+{
+  "id": "40948107",
+  "url": "https://issues.chromium.org/issues/40948107",
+  "title": "Security: Debug check failed: HasFeedbackMetadata(kAcquireLoad)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Maglev, Blink>JavaScript>Compiler>Turbofan",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wh...@gmail.com",
+  "assignee": "di...@chromium.org",
+  "created_date": "2023-12-02T16:28:57+00:00",
+  "modified_date": "2024-03-26T15:40:57+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53101516,
+      "filename": "log.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 6507,
+      "url": "https://issues.chromium.org/action/issues/40948107/attachments/53101516?download=true",
+      "local_path": "attachments/log.txt"
+    },
+    {
+      "id": 53101517,
+      "filename": "program_20231203030957_557F1142-4278-457A-ACF6-7D57F68712CD_flaky.js",
+      "mime_type": "text/plain",
+      "size_bytes": 6744,
+      "url": "https://issues.chromium.org/action/issues/40948107/attachments/53101517?download=true",
+      "local_path": "attachments/program_20231203030957_557F1142-4278-457A-ACF6-7D57F68712CD_flaky.js"
+    },
+    {
+      "id": 53101518,
+      "filename": "program_20231203013939_F30B454F-44CF-4A98-AE98-122CA44DFECC_flaky.js",
+      "mime_type": "text/plain",
+      "size_bytes": 19969,
+      "url": "https://issues.chromium.org/action/issues/40948107/attachments/53101518?download=true",
+      "local_path": "attachments/program_20231203013939_F30B454F-44CF-4A98-AE98-122CA44DFECC_flaky.js"
+    },
+    {
+      "id": 53101519,
+      "filename": "program_20231203004608_9125402D-2FEC-4F7C-B929-767021731303_flaky.js",
+      "mime_type": "text/plain",
+      "size_bytes": 20953,
+      "url": "https://issues.chromium.org/action/issues/40948107/attachments/53101519?download=true",
+      "local_path": "attachments/program_20231203004608_9125402D-2FEC-4F7C-B929-767021731303_flaky.js"
+    },
+    {
+      "id": 53101520,
+      "filename": "program_20231202223653_DFC5A2A0-B04B-4F95-8743-332C5F439182_flaky.js",
+      "mime_type": "text/plain",
+      "size_bytes": 20561,
+      "url": "https://issues.chromium.org/action/issues/40948107/attachments/53101520?download=true",
+      "local_path": "attachments/program_20231202223653_DFC5A2A0-B04B-4F95-8743-332C5F439182_flaky.js"
+    },
+    {
+      "id": 53101521,
+      "filename": "program_20231202211949_F2F3F4A6-A713-4164-A8D8-72485EFA79F3_flaky.js",
+      "mime_type": "text/plain",
+      "size_bytes": 21601,
+      "url": "https://issues.chromium.org/action/issues/40948107/attachments/53101521?download=true",
+      "local_path": "attachments/program_20231202211949_F2F3F4A6-A713-4164-A8D8-72485EFA79F3_flaky.js"
+    },
+    {
+      "id": 53101522,
+      "filename": "program_20231202114925_4DDEF1B6-6A57-4456-AE42-0EEDE9E79E2D_flaky.js",
+      "mime_type": "text/plain",
+      "size_bytes": 25067,
+      "url": "https://issues.chromium.org/action/issues/40948107/attachments/53101522?download=true",
+      "local_path": "attachments/program_20231202114925_4DDEF1B6-6A57-4456-AE42-0EEDE9E79E2D_flaky.js"
+    },
+    {
+      "id": 53101548,
+      "filename": "testcase.tar.bz2",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 14857,
+      "url": "https://issues.chromium.org/action/issues/40948107/attachments/53101548?download=true",
+      "local_path": "attachments/testcase.tar.bz2"
+    },
+    {
+      "id": 53101648,
+      "filename": "1.png",
+      "mime_type": "image/png",
+      "size_bytes": 349832,
+      "url": "https://issues.chromium.org/action/issues/40948107/attachments/53101648?download=true",
+      "local_path": "attachments/1.png"
+    }
+  ],
+  "update_count": 85,
+  "description_snippet": "/home/uuu/asan/d8_debug_zip/d8-linux-debug-v8-component-91311/libv8_libbase.so(v8::base::debug::StackTrace::StackTrace()+0x13) [0x7fb9af097c73]\n    /home/uuu/asan/d8_debug_zip/d8-linux-debug-v8-component-91311/libv8_libplatform.so(+0x19add) [0x7fb9af03eadd]\n    /home/uuu/asan/d8_debug_zip/d8-linux-d"
+}

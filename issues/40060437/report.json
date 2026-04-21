@@ -1,0 +1,129 @@
+{
+  "id": "40060437",
+  "url": "https://issues.chromium.org/issues/40060437",
+  "title": "UAP style_invalidator.cc:192 in blink::StyleInvalidator::PushInvalidationSetsForContainerNode",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>CSS",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "fu...@chromium.org",
+  "created_date": "2022-07-29T07:59:10+00:00",
+  "modified_date": "2024-01-09T07:21:35+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53271840,
+      "filename": "6ecd0a5ace7c998c7c9b4d7fcad6e8630efbf2f2.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 11817,
+      "url": "https://issues.chromium.org/action/issues/40060437/attachments/53271840?download=true",
+      "local_path": "attachments/6ecd0a5ace7c998c7c9b4d7fcad6e8630efbf2f2.mp4"
+    },
+    {
+      "id": 53271841,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 10030,
+      "url": "https://issues.chromium.org/action/issues/40060437/attachments/53271841?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53271842,
+      "filename": "asan2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 8635,
+      "url": "https://issues.chromium.org/action/issues/40060437/attachments/53271842?download=true",
+      "local_path": "attachments/asan2.txt"
+    },
+    {
+      "id": 53271843,
+      "filename": "ch.test.js",
+      "mime_type": "text/plain",
+      "size_bytes": 5554,
+      "url": "https://issues.chromium.org/action/issues/40060437/attachments/53271843?download=true",
+      "local_path": "attachments/ch.test.js"
+    },
+    {
+      "id": 53271844,
+      "filename": "h1.js",
+      "mime_type": "text/plain",
+      "size_bytes": 8337,
+      "url": "https://issues.chromium.org/action/issues/40060437/attachments/53271844?download=true",
+      "local_path": "attachments/h1.js"
+    },
+    {
+      "id": 53271845,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 749,
+      "url": "https://issues.chromium.org/action/issues/40060437/attachments/53271845?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 53271846,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 19196,
+      "url": "https://issues.chromium.org/action/issues/40060437/attachments/53271846?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53271847,
+      "filename": "testharness.js",
+      "mime_type": "text/plain",
+      "size_bytes": 159402,
+      "url": "https://issues.chromium.org/action/issues/40060437/attachments/53271847?download=true",
+      "local_path": "attachments/testharness.js"
+    },
+    {
+      "id": 53271848,
+      "filename": "test-v-128k-320x240-24fps-8kfr.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 38738,
+      "url": "https://issues.chromium.org/action/issues/40060437/attachments/53271848?download=true",
+      "local_path": "attachments/test-v-128k-320x240-24fps-8kfr.mp4"
+    },
+    {
+      "id": 53271875,
+      "filename": "m6.html",
+      "mime_type": "text/plain",
+      "size_bytes": 5362,
+      "url": "https://issues.chromium.org/action/issues/40060437/attachments/53271875?download=true",
+      "local_path": "attachments/m6.html"
+    },
+    {
+      "id": 53271885,
+      "filename": "o2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 322374,
+      "url": "https://issues.chromium.org/action/issues/40060437/attachments/53271885?download=true",
+      "local_path": "attachments/o2.html"
+    },
+    {
+      "id": 53271886,
+      "filename": "rep.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2595355,
+      "url": "https://issues.chromium.org/action/issues/40060437/attachments/53271886?download=true",
+      "local_path": "attachments/rep.mp4"
+    },
+    {
+      "id": 53271894,
+      "filename": "load.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1033,
+      "url": "https://issues.chromium.org/action/issues/40060437/attachments/53271894?download=true",
+      "local_path": "attachments/load.js"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**Steps to reproduce the problem:**   \n#TestOn  \nasan-win32-release_x64-1029569  \n  \n#Reproduce  \n1. python -m http.server 1337  \n2. install node,puppeteer-core  \n3. node ch.test.js D:\\chrome_asan\\asan-win32-release_x64-1029569\\chrome.exe http://localhost:1337/poc.html  \n  \nNOTE:Using puppeteer-core"
+}

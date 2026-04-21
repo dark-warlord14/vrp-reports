@@ -1,0 +1,89 @@
+{
+  "id": "40065577",
+  "url": "https://issues.chromium.org/issues/40065577",
+  "title": "Security: Stack-use-after-return in BrowserAttestationService::OnChallengeValidated",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Enterprise>Connectors",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "se...@chromium.org",
+  "created_date": "2023-06-09T13:37:15+00:00",
+  "modified_date": "2024-03-07T18:36:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53145197,
+      "filename": "server81.py",
+      "mime_type": "text/plain",
+      "size_bytes": 2207,
+      "url": "https://issues.chromium.org/action/issues/40065577/attachments/53145197?download=true",
+      "local_path": "attachments/server81.py"
+    },
+    {
+      "id": 53145198,
+      "filename": "poc1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 106,
+      "url": "https://issues.chromium.org/action/issues/40065577/attachments/53145198?download=true",
+      "local_path": "attachments/poc1.html"
+    },
+    {
+      "id": 53145199,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 106,
+      "url": "https://issues.chromium.org/action/issues/40065577/attachments/53145199?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53145200,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 24785,
+      "url": "https://issues.chromium.org/action/issues/40065577/attachments/53145200?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53145201,
+      "filename": "video.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 3938750,
+      "url": "https://issues.chromium.org/action/issues/40065577/attachments/53145201?download=true",
+      "local_path": "attachments/video.mov"
+    },
+    {
+      "id": 53145270,
+      "filename": "change.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2195,
+      "url": "https://issues.chromium.org/action/issues/40065577/attachments/53145270?download=true",
+      "local_path": "attachments/change.txt"
+    },
+    {
+      "id": 53145277,
+      "filename": "patch.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1052,
+      "url": "https://issues.chromium.org/action/issues/40065577/attachments/53145277?download=true",
+      "local_path": "attachments/patch.txt"
+    },
+    {
+      "id": 53145286,
+      "filename": "change.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2191,
+      "url": "https://issues.chromium.org/action/issues/40065577/attachments/53145286?download=true",
+      "local_path": "attachments/change.txt"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. apply the patch to Chromium and compile Chromium with ASAN enabled  \n2. start the server: `python server81.py`  \n3. run `./Chromium --enable-features=UserDTCInlineFlowEnabled   --user-data-dir=./tmp1    http://127.0.0.1:8081/poc.html`  \n  \n**Problem Descript"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "40061557",
+  "url": "https://issues.chromium.org/issues/40061557",
+  "title": "Security: heap-use-after-free ui/views/view.cc:1921:7 in views::View::HandleAccessibleAction",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "UI>Accessibility",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rh...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2022-11-02T00:04:03+00:00",
+  "modified_date": "2024-11-01T15:44:14+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53217993,
+      "filename": "screencast_00022.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 7211962,
+      "url": "https://issues.chromium.org/action/issues/40061557/attachments/53217993?download=true",
+      "local_path": "attachments/screencast_00022.webm"
+    },
+    {
+      "id": 53217994,
+      "filename": "1355560-M109.log",
+      "mime_type": "text/plain",
+      "size_bytes": 19217,
+      "url": "https://issues.chromium.org/action/issues/40061557/attachments/53217994?download=true",
+      "local_path": "attachments/1355560-M109.log"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Enable touch screen & chromevox  \n2. Open NTP  \n3. alt+tab then double click on views (please refer to screencast)  \n  \n**Problem Description:**   \nCopied from https://bugs.chromium.org/p/chromium/issues/detail?id=1355560#c25, the CL in https://bugs.chromium"
+}

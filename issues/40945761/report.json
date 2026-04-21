@@ -1,0 +1,57 @@
+{
+  "id": "40945761",
+  "url": "https://issues.chromium.org/issues/40945761",
+  "title": "Security: use-after-poison in blink::InlineLayoutAlgorithm::CreateLine",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>CSS, Blink>Layout",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wh...@gmail.com",
+  "assignee": "sa...@chromium.org",
+  "created_date": "2023-11-25T03:21:10+00:00",
+  "modified_date": "2024-03-10T15:41:08+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 0.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53103087,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40945761/attachments/53103087?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53103120,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40945761/attachments/53103120?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53103132,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40945761/attachments/53103132?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53103169,
+      "filename": "1.png",
+      "mime_type": "image/png",
+      "size_bytes": 72272,
+      "url": "https://issues.chromium.org/action/issues/40945761/attachments/53103169?download=true",
+      "local_path": "attachments/1.png"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "deleted"
+}

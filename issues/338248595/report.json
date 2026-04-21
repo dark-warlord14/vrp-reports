@@ -1,0 +1,108 @@
+{
+  "id": "338248595",
+  "url": "https://issues.chromium.org/issues/338248595",
+  "title": "Sandbox escape from extensions due to insufficent checks in chrome.devtools.inspectedWindow.reload and chrome://policy",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ad...@gmail.com",
+  "assignee": "yd...@google.com",
+  "created_date": "2024-05-01T22:57:43+00:00",
+  "modified_date": "2025-11-14T02:48:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": "consolidated reward for high quality report of crbug.com/338248595, crbug.com/341136300, crbug.com/341875171 -- resulting in a sandbox escape",
+  "attachments": [
+    {
+      "id": 56004853,
+      "filename": "sandbox_escape_windows.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 536318,
+      "url": "https://issues.chromium.org/action/issues/338248595/attachments/56004853?download=true",
+      "local_path": "attachments/sandbox_escape_windows.mp4"
+    },
+    {
+      "id": 56004854,
+      "filename": "sandbox_escape_linux.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 749079,
+      "url": "https://issues.chromium.org/action/issues/338248595/attachments/56004854?download=true",
+      "local_path": "attachments/sandbox_escape_linux.mp4"
+    },
+    {
+      "id": 56004855,
+      "filename": "devtools.html",
+      "mime_type": "text/html",
+      "size_bytes": 73,
+      "url": "https://issues.chromium.org/action/issues/338248595/attachments/56004855?download=true",
+      "local_path": "attachments/devtools.html"
+    },
+    {
+      "id": 56004856,
+      "filename": "devtools.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3451,
+      "url": "https://issues.chromium.org/action/issues/338248595/attachments/56004856?download=true",
+      "local_path": "attachments/devtools.js"
+    },
+    {
+      "id": 56004857,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 191,
+      "url": "https://issues.chromium.org/action/issues/338248595/attachments/56004857?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 56004858,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 248,
+      "url": "https://issues.chromium.org/action/issues/338248595/attachments/56004858?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 56004859,
+      "filename": "worker.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 149,
+      "url": "https://issues.chromium.org/action/issues/338248595/attachments/56004859?download=true",
+      "local_path": "attachments/worker.js"
+    },
+    {
+      "id": 56004860,
+      "filename": "devtools_downloads.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1953,
+      "url": "https://issues.chromium.org/action/issues/338248595/attachments/56004860?download=true",
+      "local_path": "attachments/devtools_downloads.js"
+    },
+    {
+      "id": 56083266,
+      "filename": "devtools.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3235,
+      "url": "https://issues.chromium.org/action/issues/338248595/attachments/56083266?download=true",
+      "local_path": "attachments/devtools.js"
+    },
+    {
+      "id": 56083267,
+      "filename": "sandbox_escape_linux_v2.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 559661,
+      "url": "https://issues.chromium.org/action/issues/338248595/attachments/56083267?download=true",
+      "local_path": "attachments/sandbox_escape_linux_v2.mp4"
+    }
+  ],
+  "update_count": 94,
+  "description_snippet": "## VULNERABILITY DETAILS\n1. A race condition in the devtools API server and `chrome.devtools.inspectedWindow.reload`, along with insufficient permissions checks, allows an extension with the `devtools_page` permission to run arbitrary JS on any privileged page.\n2. This is used to run JS on `chrome:/"
+}

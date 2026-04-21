@@ -1,0 +1,44 @@
+{
+  "id": "40053039",
+  "url": "https://issues.chromium.org/issues/40053039",
+  "title": "Security: UaF in views::View::UpdateTooltip",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Payments",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "sa...@chromium.org",
+  "created_date": "2020-08-10T02:45:20+00:00",
+  "modified_date": "2024-01-09T02:16:06+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53051037,
+      "filename": "screen.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2884931,
+      "url": "https://issues.chromium.org/action/issues/40053039/attachments/53051037?download=true",
+      "local_path": "attachments/screen.mp4"
+    },
+    {
+      "id": 53051299,
+      "filename": "fix_crash_after_payment_request_cancellation.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1237885,
+      "url": "https://issues.chromium.org/action/issues/40053039/attachments/53051299?download=true",
+      "local_path": "attachments/fix_crash_after_payment_request_cancellation.mp4"
+    }
+  ],
+  "update_count": 81,
+  "description_snippet": "**VERSION**   \nChrome Version: 86.0.4228.0 (Official Build) canary (x86_64)  \nOperating System: MacOS and Windows   \n  \n**REPRODUCTION CASE**   \n1. Go to https://skilful-reserve-239412.appspot.com/static/apps/max-nonbasiccard/, click install  \n2. Go to https://maxlgu.github.io/pr/max-nonbasiccard/"
+}

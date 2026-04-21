@@ -1,0 +1,45 @@
+{
+  "id": "40062478",
+  "url": "https://issues.chromium.org/issues/40062478",
+  "title": "V8 type confusion of object as v8::Function in CallMethodOnFrame",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wx...@gmail.com",
+  "assignee": "sz...@chromium.org",
+  "created_date": "2023-01-03T14:21:30+00:00",
+  "modified_date": "2023-04-20T20:24:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53233306,
+      "filename": "0001-type-confusion-check.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 957,
+      "url": "https://issues.chromium.org/action/issues/40062478/attachments/53233306?download=true",
+      "local_path": "attachments/0001-type-confusion-check.patch"
+    },
+    {
+      "id": 53233330,
+      "filename": "0001-fix-type-confusion.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 996,
+      "url": "https://issues.chromium.org/action/issues/40062478/attachments/53233330?download=true",
+      "local_path": "attachments/0001-fix-type-confusion.patch"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1.  \n2.a  \n3.  \n  \n**Problem Description:**   \na  \n  \n**Additional Comments:**   \n  \n  \n**Chrome version: ** 108.0.0.0 **Channel: ** Not sure  \n  \n**OS:** Windows"
+}

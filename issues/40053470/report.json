@@ -1,0 +1,29 @@
+{
+  "id": "40053470",
+  "url": "https://issues.chromium.org/issues/40053470",
+  "title": "Security: Debug check failed: IsFound() || !holder_->HasFastProperties(isolate_)",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@gmail.com",
+  "assignee": "is...@chromium.org",
+  "created_date": "2020-09-29T22:12:03+00:00",
+  "modified_date": "2024-01-09T02:34:50+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 74,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nNote: I am unable to submit on the proper bug bounty link (https://bugs.chromium.org/p/chromium/issues/entry?template=Security%20Bug) currently, po"
+}

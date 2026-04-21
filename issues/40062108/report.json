@@ -1,0 +1,33 @@
+{
+  "id": "40062108",
+  "url": "https://issues.chromium.org/issues/40062108",
+  "title": "Security: ChromeOS pluginvm arbitrary chmod 777",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@rorym.cnamara.com",
+  "assignee": "dt...@chromium.org",
+  "created_date": "2022-12-07T17:28:12+00:00",
+  "modified_date": "2023-06-30T17:37:15+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53350961,
+      "filename": "pluginvm777.sh",
+      "mime_type": "text/plain",
+      "size_bytes": 9126,
+      "url": "https://issues.chromium.org/action/issues/40062108/attachments/53350961?download=true",
+      "local_path": "attachments/pluginvm777.sh"
+    }
+  ],
+  "update_count": 26,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen starting, vmplugin_dispatcher will attempt to reset the permissions of the parallels_crash_dumps directory inside registered VMs. While vmplugin_dispatcher is not running, if this directory is replaced with a symbolic link, when launched again the service will follo"
+}

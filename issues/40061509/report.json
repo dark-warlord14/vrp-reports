@@ -1,0 +1,70 @@
+{
+  "id": "40061509",
+  "url": "https://issues.chromium.org/issues/40061509",
+  "title": "Incorrect handle of url scheme lead to rce+sbx escape",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2021-1810",
+    "CVE-2021-30657",
+    "CVE-2022-22616",
+    "CVE-2022-32910"
+  ],
+  "reporter": "su...@gmail.com",
+  "assignee": "rs...@chromium.org",
+  "created_date": "2022-10-28T14:27:21+00:00",
+  "modified_date": "2024-12-30T13:19:32+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53354039,
+      "filename": "poc1.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 175973,
+      "url": "https://issues.chromium.org/action/issues/40061509/attachments/53354039?download=true",
+      "local_path": "attachments/poc1.mp4"
+    },
+    {
+      "id": 53354040,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 766,
+      "url": "https://issues.chromium.org/action/issues/40061509/attachments/53354040?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53354096,
+      "filename": "exp.html",
+      "mime_type": "text/plain",
+      "size_bytes": 787,
+      "url": "https://issues.chromium.org/action/issues/40061509/attachments/53354096?download=true",
+      "local_path": "attachments/exp.html"
+    },
+    {
+      "id": 53354097,
+      "filename": "test.app.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 75861,
+      "url": "https://issues.chromium.org/action/issues/40061509/attachments/53354097?download=true",
+      "local_path": "attachments/test.app.zip"
+    },
+    {
+      "id": 53354098,
+      "filename": "exp_zip.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 247821,
+      "url": "https://issues.chromium.org/action/issues/40061509/attachments/53354098?download=true",
+      "local_path": "attachments/exp_zip.mp4"
+    }
+  ],
+  "update_count": 89,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1、Browse poc.html in any version chrome.  \n2、git clone https://github.com/koocola/test_app.git  \n3、open the click_me button or wait 30s then you will see calculator open  \n  \n**Problem Description:**   \nmailto, news, snews are three external url scheme which wi"
+}

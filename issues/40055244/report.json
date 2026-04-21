@@ -1,0 +1,42 @@
+{
+  "id": "40055244",
+  "url": "https://issues.chromium.org/issues/40055244",
+  "title": "crash in VideoFrame",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>Internals>Modularization, Blink>JavaScript, Blink>Media>WebCodecs",
+  "os_platforms": [
+    "Linux",
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ne...@gmail.com",
+  "assignee": "sa...@chromium.org",
+  "created_date": "2021-03-18T09:31:45+00:00",
+  "modified_date": "2021-07-03T17:49:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52962406,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 331,
+      "url": "https://issues.chromium.org/action/issues/40055244/attachments/52962406?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52962438,
+      "filename": "poc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 307,
+      "url": "https://issues.chromium.org/action/issues/40055244/attachments/52962438?download=true",
+      "local_path": "attachments/poc2.html"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.104 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nubuntu 20.04\r\nGoogle Chrome 90.0.4427.5 dev (official build)\r\nChromium 91.0.4451.0\r\n\r\n./chrome --enable-experimental-web-platform-feature"
+}

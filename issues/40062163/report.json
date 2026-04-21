@@ -1,0 +1,35 @@
+{
+  "id": "40062163",
+  "url": "https://issues.chromium.org/issues/40062163",
+  "title": "Security:  Debug check failed: string->InSharedHeap() in v8",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "pt...@chromium.org",
+  "created_date": "2022-12-10T07:21:06+00:00",
+  "modified_date": "2023-03-30T18:42:50+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53076321,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 147,
+      "url": "https://issues.chromium.org/action/issues/40062163/attachments/53076321?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "```cpp  \nTitle : Debug check failed: string->InSharedHeap() in v8  \n  \n**VULNERABILITY DETAILS**   \n## INTRODUCE  \n  \nAfter bisect, it was determined that commit 9f0d20b0feea980e4a7c64211addb2145316bd53\tcaused this problem.  \n  \n- 82260 will trigger crash: `Debug check failed: unreachable code`  \nht"
+}

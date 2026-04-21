@@ -1,0 +1,41 @@
+{
+  "id": "40063572",
+  "url": "https://issues.chromium.org/issues/40063572",
+  "title": "LAN9500, LAN75xx driver information leak",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Core",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sz...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2023-03-13T20:53:55+00:00",
+  "modified_date": "2023-07-19T17:39:15+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53157240,
+      "filename": "0001-net-usb-smsc75xx-Limit-packet-length-to-skb-len.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1308,
+      "url": "https://issues.chromium.org/action/issues/40063572/attachments/53157240?download=true",
+      "local_path": "attachments/0001-net-usb-smsc75xx-Limit-packet-length-to-skb-len.patch"
+    },
+    {
+      "id": 53157241,
+      "filename": "0001-net-usb-smsc95xx-Limit-packet-length-to-skb-len.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1229,
+      "url": "https://issues.chromium.org/action/issues/40063572/attachments/53157241?download=true",
+      "local_path": "attachments/0001-net-usb-smsc95xx-Limit-packet-length-to-skb-len.patch"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "---\n\n### Report description\n\n\nLAN9500, LAN75xx driver information leak\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nOther - Chrome VRP\n\n\n#### Which URL (or repository) have you found the vulnerability in?\n\nChrome OS - Linux Kernel\n\n\n---\n\n### The problem"
+}

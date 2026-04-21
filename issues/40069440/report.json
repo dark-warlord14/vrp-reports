@@ -1,0 +1,61 @@
+{
+  "id": "40069440",
+  "url": "https://issues.chromium.org/issues/40069440",
+  "title": "Use-After-Free in MediaStreamDeviceObserver::OnDeviceStopped",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>MediaStream",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fw...@gmail.com",
+  "assignee": "gu...@chromium.org",
+  "created_date": "2023-08-12T06:23:33+00:00",
+  "modified_date": "2024-01-09T08:23:42+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53373435,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 688,
+      "url": "https://issues.chromium.org/action/issues/40069440/attachments/53373435?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53373436,
+      "filename": "asan_.log",
+      "mime_type": "text/plain",
+      "size_bytes": 19292,
+      "url": "https://issues.chromium.org/action/issues/40069440/attachments/53373436?download=true",
+      "local_path": "attachments/asan_.log"
+    },
+    {
+      "id": 53373485,
+      "filename": "access.png",
+      "mime_type": "image/png",
+      "size_bytes": 5306,
+      "url": "https://issues.chromium.org/action/issues/40069440/attachments/53373485?download=true",
+      "local_path": "attachments/access.png"
+    },
+    {
+      "id": 53373486,
+      "filename": "blocked.png",
+      "mime_type": "image/png",
+      "size_bytes": 18774,
+      "url": "https://issues.chromium.org/action/issues/40069440/attachments/53373486?download=true",
+      "local_path": "attachments/blocked.png"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. chrome.exe --no-sandbox http://localhost:8001/test.html  \n2. Click the Allow Microphone Permissions button  \n3. Disabling microphone access after page load  \n  \n**Problem Description:**   \n[0] https://source.chromium.org/chromium/chromium/src/+/main:third_pa"
+}

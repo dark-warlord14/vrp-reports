@@ -1,0 +1,45 @@
+{
+  "id": "40053185",
+  "url": "https://issues.chromium.org/issues/40053185",
+  "title": "Security: UAF in DirectSocketsServiceImpl",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Network",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "vu...@gmail.com",
+  "assignee": "er...@chromium.org",
+  "created_date": "2020-08-28T08:30:30+00:00",
+  "modified_date": "2021-03-29T15:19:30+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53276903,
+      "filename": "directsockets.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1756,
+      "url": "https://issues.chromium.org/action/issues/40053185/attachments/53276903?download=true",
+      "local_path": "attachments/directsockets.html"
+    },
+    {
+      "id": 53276905,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 28374,
+      "url": "https://issues.chromium.org/action/issues/40053185/attachments/53276905?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nDirectSocketsServiceImpl is created with mojo::MakeSelfOwnedReceiver, and it holds a raw pointer to the RenderFrameHost without observing its lifetime.  \n  \nCode Review  \n  \nThis bug need to enable  `kDirectSockets` feature on android  \nhttps://source.chromium.org/chr"
+}

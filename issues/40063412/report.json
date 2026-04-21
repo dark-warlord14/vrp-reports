@@ -1,0 +1,173 @@
+{
+  "id": "40063412",
+  "url": "https://issues.chromium.org/issues/40063412",
+  "title": "Security: use-after-free in ManagePasswordsUIController::OnChooseCredentials",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Passwords",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "du...@gmail.com",
+  "assignee": "va...@chromium.org",
+  "created_date": "2023-03-06T16:29:25+00:00",
+  "modified_date": "2024-01-09T07:31:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53068287,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1563,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068287?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53068288,
+      "filename": "render.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 3235,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068288?download=true",
+      "local_path": "attachments/render.diff"
+    },
+    {
+      "id": 53068289,
+      "filename": "browser.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 2835,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068289?download=true",
+      "local_path": "attachments/browser.diff"
+    },
+    {
+      "id": 53068290,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 66930,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068290?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53068304,
+      "filename": "patch.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 6065,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068304?download=true",
+      "local_path": "attachments/patch.txt"
+    },
+    {
+      "id": 53068349,
+      "filename": "leak.png",
+      "mime_type": "image/png",
+      "size_bytes": 15363,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068349?download=true",
+      "local_path": "attachments/leak.png"
+    },
+    {
+      "id": 53068350,
+      "filename": "save.png",
+      "mime_type": "image/png",
+      "size_bytes": 13294,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068350?download=true",
+      "local_path": "attachments/save.png"
+    },
+    {
+      "id": 53068411,
+      "filename": "copy_mojo_js_bindings.py",
+      "mime_type": "text/plain",
+      "size_bytes": 512,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068411?download=true",
+      "local_path": "attachments/copy_mojo_js_bindings.py"
+    },
+    {
+      "id": 53068412,
+      "filename": "poc.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 6933,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068412?download=true",
+      "local_path": "attachments/poc.diff"
+    },
+    {
+      "id": 53068413,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1679,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068413?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53068504,
+      "filename": "leak.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 169576,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068504?download=true",
+      "local_path": "attachments/leak.zip"
+    },
+    {
+      "id": 53068566,
+      "filename": "leak.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1279,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068566?download=true",
+      "local_path": "attachments/leak.html"
+    },
+    {
+      "id": 53068590,
+      "filename": "poc.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 8311,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068590?download=true",
+      "local_path": "attachments/poc.diff"
+    },
+    {
+      "id": 53068591,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1798,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068591?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53068636,
+      "filename": "pic1.png",
+      "mime_type": "image/png",
+      "size_bytes": 176199,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068636?download=true",
+      "local_path": "attachments/pic1.png"
+    },
+    {
+      "id": 53068637,
+      "filename": "pic2.png",
+      "mime_type": "image/png",
+      "size_bytes": 65027,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068637?download=true",
+      "local_path": "attachments/pic2.png"
+    },
+    {
+      "id": 53068649,
+      "filename": "poc.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 4689,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068649?download=true",
+      "local_path": "attachments/poc.diff"
+    },
+    {
+      "id": 53068650,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1798,
+      "url": "https://issues.chromium.org/action/issues/40063412/attachments/53068650?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 86,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThere is a heap use-after-free vulnerability in ManagePasswordsUIController.  \n  \nThere is a unique pointer dialog_controller_ in `manage_passwords_ui_controller.h`. It can be reset as the controller of three prompts in the following three functions.  \n**----------------"
+}

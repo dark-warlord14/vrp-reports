@@ -1,0 +1,53 @@
+{
+  "id": "40054745",
+  "url": "https://issues.chromium.org/issues/40054745",
+  "title": "Reading local files through an extension that only has the \"downloads\" permission",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions, UI>Browser>Downloads",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "qi...@chromium.org",
+  "created_date": "2021-02-09T01:04:25+00:00",
+  "modified_date": "2024-01-09T08:48:08+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52899074,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40054745/attachments/52899074?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52899093,
+      "filename": "bug-1176031.html",
+      "mime_type": "text/plain",
+      "size_bytes": 628,
+      "url": "https://issues.chromium.org/action/issues/40054745/attachments/52899093?download=true",
+      "local_path": "attachments/bug-1176031.html"
+    },
+    {
+      "id": 52899094,
+      "filename": "extension.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 721,
+      "url": "https://issues.chromium.org/action/issues/40054745/attachments/52899094?download=true",
+      "local_path": "attachments/extension.zip"
+    }
+  ],
+  "update_count": 83,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt seems possible to use \"chrome.downloads.onDeterminingFilename\" to listen for downloads and then rename files. This also works for local files even if the \"Allow access to file URLs\" setting is not enabled.  \n  \nThe behavior described above can be combined with the abi"
+}

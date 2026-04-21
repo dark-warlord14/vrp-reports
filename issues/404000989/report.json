@@ -1,0 +1,116 @@
+{
+  "id": "404000989",
+  "url": "https://issues.chromium.org/issues/404000989",
+  "title": "DevTools frontend leaks breakpoint history to any remote WebSocket server it connects to",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "134.0.6998.89 ",
+  "cve_ids": [],
+  "reporter": "da...@gmail.com",
+  "assignee": "dc...@chromium.org",
+  "created_date": "2025-03-16T21:27:41+00:00",
+  "modified_date": "2025-09-19T17:19:21+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "report of lower impact information disclosure",
+  "attachments": [
+    {
+      "id": 63824987,
+      "filename": "attack-servers.mjs",
+      "mime_type": "text/javascript",
+      "size_bytes": 1530,
+      "url": "https://issues.chromium.org/action/issues/404000989/attachments/63824987?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63824988,
+      "filename": "BreakpointDataLeak.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 15471,
+      "url": "https://issues.chromium.org/action/issues/404000989/attachments/63824988?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63824989,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 1932,
+      "url": "https://issues.chromium.org/action/issues/404000989/attachments/63824989?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63824990,
+      "filename": "installer_drag.png",
+      "mime_type": "image/png",
+      "size_bytes": 6748,
+      "url": "https://issues.chromium.org/action/issues/404000989/attachments/63824990?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63824991,
+      "filename": "package.json",
+      "mime_type": "application/json",
+      "size_bytes": 180,
+      "url": "https://issues.chromium.org/action/issues/404000989/attachments/63824991?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63824992,
+      "filename": "update_link2.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 31644,
+      "url": "https://issues.chromium.org/action/issues/404000989/attachments/63824992?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63824993,
+      "filename": "websocket-server.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1734,
+      "url": "https://issues.chromium.org/action/issues/404000989/attachments/63824993?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63827998,
+      "filename": "XSS.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 18344,
+      "url": "https://issues.chromium.org/action/issues/404000989/attachments/63827998?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64259806,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2354,
+      "url": "https://issues.chromium.org/action/issues/404000989/attachments/64259806?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64259807,
+      "filename": "devtools.html",
+      "mime_type": "text/html",
+      "size_bytes": 45,
+      "url": "https://issues.chromium.org/action/issues/404000989/attachments/64259807?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64217740,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 217,
+      "url": "https://issues.chromium.org/action/issues/404000989/attachments/64217740?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 73,
+  "description_snippet": "# Steps to reproduce the problem\nSteps to reproduce as attacker:\n1. Run attacker WebSocket server, locally or remotely.\n\nSteps to reproduce as victim:\n1. Have breakpoints/logpoints set\n2. Navigate to: http://localhost:9123/#devtools://devtools/bundled/devtools_app.html?ws=192.168.0.1:6123\n3. Drag th"
+}

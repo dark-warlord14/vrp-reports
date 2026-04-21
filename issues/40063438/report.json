@@ -1,0 +1,24 @@
+{
+  "id": "40063438",
+  "url": "https://issues.chromium.org/issues/40063438",
+  "title": "Security: Using popups, Incognito Mode-specific external protocol prompts can be overlaid on other origins on Android.",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Mobile>Intents, UI>Browser>Incognito",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2023-03-07T16:06:15+00:00",
+  "modified_date": "2024-01-06T00:06:17+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 26,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhile retesting https://bugs.chromium.org/p/chromium/issues/detail?id=1404621, I noticed that the incognito mode-specific external protocol prompt can still be overlaid by using a popup instead of a top-level navigation.  \n  \nThis requires the popup-blocker to be disable"
+}

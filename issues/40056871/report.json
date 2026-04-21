@@ -1,0 +1,60 @@
+{
+  "id": "40056871",
+  "url": "https://issues.chromium.org/issues/40056871",
+  "title": "use after free in  sharing_hub::ScreenshotCapturedBubbleController::Capture",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Sharing",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wx...@gmail.com",
+  "assignee": "km...@chromium.org",
+  "created_date": "2021-08-13T07:38:05+00:00",
+  "modified_date": "2025-02-13T00:31:34+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53242698,
+      "filename": "uaf.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 23000,
+      "url": "https://issues.chromium.org/action/issues/40056871/attachments/53242698?download=true",
+      "local_path": "attachments/uaf.txt"
+    },
+    {
+      "id": 53242708,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 11085747,
+      "url": "https://issues.chromium.org/action/issues/40056871/attachments/53242708?download=true",
+      "local_path": "attachments/poc.mp4"
+    },
+    {
+      "id": 53242722,
+      "filename": "patch.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 41919,
+      "url": "https://issues.chromium.org/action/issues/40056871/attachments/53242722?download=true",
+      "local_path": "attachments/patch.PNG"
+    },
+    {
+      "id": 53242744,
+      "filename": "patch.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 44791,
+      "url": "https://issues.chromium.org/action/issues/40056871/attachments/53242744?download=true",
+      "local_path": "attachments/patch.PNG"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.131 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1.fllow my step in video.\r\n2.you shoul enable two flags  #sharing-desktop-screenshots and  #sharing-hub-desktop-omnibox \r\n3.\r\n\r\nWhat is t"
+}

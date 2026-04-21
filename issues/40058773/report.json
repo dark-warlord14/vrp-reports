@@ -1,0 +1,33 @@
+{
+  "id": "40058773",
+  "url": "https://issues.chromium.org/issues/40058773",
+  "title": "Security: Chrome Enterprise MSI installer Elevation of Privileges Vulnerability",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Installer",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ve...@gmail.com",
+  "assignee": "ga...@chromium.org",
+  "created_date": "2022-02-14T20:42:50+00:00",
+  "modified_date": "2024-01-09T09:37:37+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53358873,
+      "filename": "ChromeMsiLPE.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 98461,
+      "url": "https://issues.chromium.org/action/issues/40058773/attachments/53358873?download=true",
+      "local_path": "attachments/ChromeMsiLPE.zip"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nI have been deploying chrome in some windows server installations, and I apparently deploying it through MSI packages is faster & easier.  \nWhile doing that, I noticed a thing, the MSI packages are repairable for standard users.  \nIn other words, standard users can tell"
+}

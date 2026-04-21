@@ -1,0 +1,81 @@
+{
+  "id": "351564774",
+  "url": "https://issues.chromium.org/issues/351564774",
+  "title": "The PWA's installation dialog isn't being dismissed after redirects, which allows an attacker to sho",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Mobile>Messages, UI>Browser>WebAppInstalls>Android",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": "126.0.0.0",
+  "cve_ids": [],
+  "reporter": "bh...@gmail.com",
+  "assignee": "la...@google.com",
+  "created_date": "2024-07-07T19:54:12+00:00",
+  "modified_date": "2025-11-14T02:48:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": "low impact security UI issue",
+  "attachments": [
+    {
+      "id": 57758384,
+      "filename": "screen-20240708-011112.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 13704039,
+      "url": "https://issues.chromium.org/action/issues/351564774/attachments/57758384?download=true",
+      "local_path": "attachments/screen-20240708-011112.mp4"
+    },
+    {
+      "id": 57761217,
+      "filename": "sw.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 142,
+      "url": "https://issues.chromium.org/action/issues/351564774/attachments/57761217?download=true",
+      "local_path": "attachments/sw.js"
+    },
+    {
+      "id": 57764937,
+      "filename": "dummy-sw.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 156,
+      "url": "https://issues.chromium.org/action/issues/351564774/attachments/57764937?download=true",
+      "local_path": "attachments/dummy-sw.js"
+    },
+    {
+      "id": 57760093,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 695,
+      "url": "https://issues.chromium.org/action/issues/351564774/attachments/57760093?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 57761218,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 1310,
+      "url": "https://issues.chromium.org/action/issues/351564774/attachments/57761218?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 57784349,
+      "filename": "Mon Jul 08 2024 14:06:14 GMT-0700 (Pacific Daylight Time).png",
+      "mime_type": "image/png",
+      "size_bytes": 69345,
+      "url": "https://issues.chromium.org/action/issues/351564774/attachments/57784349?download=true",
+      "local_path": "attachments/Mon Jul 08 2024 14_06_14 GMT-0700 (Pacific Daylight Time).png"
+    },
+    {
+      "id": 57846756,
+      "filename": "VID-20240711-WA0001.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 10721153,
+      "url": "https://issues.chromium.org/action/issues/351564774/attachments/57846756?download=true",
+      "local_path": "attachments/VID-20240711-WA0001.mp4"
+    }
+  ],
+  "update_count": 113,
+  "description_snippet": "# Steps to reproduce the problem\ngo to mrnoob790.github.io/index.html\nclick on add homescreen and then fastly click on install app u will installation popup come in screen and website is redirect to google.com\n\n# Problem Description\nAfter the PWA's installation dialog is opened by the user, it is po"
+}

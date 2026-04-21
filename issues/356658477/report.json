@@ -1,0 +1,41 @@
+{
+  "id": "356658477",
+  "url": "https://issues.chromium.org/issues/356658477",
+  "title": "Android Chrome External Navigation Bubble Tapjacking",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Mobile>Intents",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": "127.0.6533.65",
+  "cve_ids": [],
+  "reporter": "sh...@gmail.com",
+  "assignee": "la...@chromium.org",
+  "created_date": "2024-07-31T19:04:14+00:00",
+  "modified_date": "2025-07-16T12:45:22+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact exploitation mitigation bypass",
+  "attachments": [
+    {
+      "id": 58337733,
+      "filename": "bubble.html",
+      "mime_type": "text/html",
+      "size_bytes": 1093,
+      "url": "https://issues.chromium.org/action/issues/356658477/attachments/58337733?download=true",
+      "local_path": "attachments/bubble.html"
+    },
+    {
+      "id": 58337734,
+      "filename": "Screenrecorder-2024-08-01-00-21-07-701_720x1560.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 7532113,
+      "url": "https://issues.chromium.org/action/issues/356658477/attachments/58337734?download=true",
+      "local_path": "attachments/Screenrecorder-2024-08-01-00-21-07-701_720x1560.mp4"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "# Steps to reproduce the problem\n1. Make sure “com.sec.android.app.sbrowser” is installed on your Android device. (https://play.google.com/store/apps/details?id=com.sec.android.app.sbrowser)\n2. Open Chrome and visit - http://bugtest.unaux.com/bubble.html\n3. Click on the red box 3 times\n4. Notice, th"
+}

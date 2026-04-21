@@ -1,0 +1,94 @@
+{
+  "id": "40948479",
+  "url": "https://issues.chromium.org/issues/40948479",
+  "title": "Security: Debug check failed: !can_be_invalid implies result.valid().",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2023-12-04T10:52:08+00:00",
+  "modified_date": "2024-03-20T18:28:32+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53321468,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2839,
+      "url": "https://issues.chromium.org/action/issues/40948479/attachments/53321468?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53321470,
+      "filename": "poc1.js",
+      "mime_type": "text/plain",
+      "size_bytes": 9024,
+      "url": "https://issues.chromium.org/action/issues/40948479/attachments/53321470?download=true",
+      "local_path": "attachments/poc1.js"
+    },
+    {
+      "id": 53321471,
+      "filename": "poc2.js",
+      "mime_type": "text/plain",
+      "size_bytes": 4708,
+      "url": "https://issues.chromium.org/action/issues/40948479/attachments/53321471?download=true",
+      "local_path": "attachments/poc2.js"
+    },
+    {
+      "id": 53321472,
+      "filename": "poc3.js",
+      "mime_type": "text/plain",
+      "size_bytes": 19331,
+      "url": "https://issues.chromium.org/action/issues/40948479/attachments/53321472?download=true",
+      "local_path": "attachments/poc3.js"
+    },
+    {
+      "id": 53321488,
+      "filename": "poc1.js",
+      "mime_type": "text/plain",
+      "size_bytes": 9024,
+      "url": "https://issues.chromium.org/action/issues/40948479/attachments/53321488?download=true",
+      "local_path": "attachments/poc1.js"
+    },
+    {
+      "id": 53321489,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2839,
+      "url": "https://issues.chromium.org/action/issues/40948479/attachments/53321489?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53321510,
+      "filename": "poc2.js",
+      "mime_type": "text/plain",
+      "size_bytes": 4708,
+      "url": "https://issues.chromium.org/action/issues/40948479/attachments/53321510?download=true",
+      "local_path": "attachments/poc2.js"
+    },
+    {
+      "id": 53321511,
+      "filename": "poc3.js",
+      "mime_type": "text/plain",
+      "size_bytes": 19331,
+      "url": "https://issues.chromium.org/action/issues/40948479/attachments/53321511?download=true",
+      "local_path": "attachments/poc3.js"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "Title : Debug check failed: !can_be_invalid implies result.valid(). in v8\n\nVULNERABILITY DETAILS\n## INTRODUCE\nAfter bisect, it was determined that following commit caused this problem.\n\n- Commit Info\n    - Version: 91054\n    - link: https://crrev.com/ce5999e86e234dbd7000989556567a69e1ecafcf \n- Commi"
+}

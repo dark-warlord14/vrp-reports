@@ -1,0 +1,60 @@
+{
+  "id": "40062042",
+  "url": "https://issues.chromium.org/issues/40062042",
+  "title": "Security: UAF in HandleExpandedPaths",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Enterprise, Enterprise>Connectors",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2022-12-05T06:44:28+00:00",
+  "modified_date": "2024-03-07T18:36:31+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 30000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53420014,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 44292,
+      "url": "https://issues.chromium.org/action/issues/40062042/attachments/53420014?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53420015,
+      "filename": "enable_connectors.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1709,
+      "url": "https://issues.chromium.org/action/issues/40062042/attachments/53420015?download=true",
+      "local_path": "attachments/enable_connectors.patch"
+    },
+    {
+      "id": 53420016,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 622,
+      "url": "https://issues.chromium.org/action/issues/40062042/attachments/53420016?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53420017,
+      "filename": "copy_mojo_js_bindings.py",
+      "mime_type": "text/plain",
+      "size_bytes": 512,
+      "url": "https://issues.chromium.org/action/issues/40062042/attachments/53420017?download=true",
+      "local_path": "attachments/copy_mojo_js_bindings.py"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "UAF in HandleExpandedPaths  \n  \n**VULNERABILITY DETAILS**   \nWhen processing the files read request from the clipboard, the current WebContent will be bound[1] into function `HandleExpandedPaths` as a callback.   \n```  \nvoid ChromeContentBrowserClient::IsClipboardPasteContentAllowed(  \n    content::"
+}

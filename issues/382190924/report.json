@@ -1,0 +1,57 @@
+{
+  "id": "382190924",
+  "url": "https://issues.chromium.org/issues/382190924",
+  "title": "Extension popup can render over PWA Install Prompt",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "131.0.0.0",
+  "cve_ids": [],
+  "reporter": "li...@gmail.com",
+  "assignee": "ms...@google.com",
+  "created_date": "2024-12-04T18:39:06+00:00",
+  "modified_date": "2025-09-06T12:38:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": "report of lower impact security UI issue, with low potential for exploitability and low potential for user harm",
+  "attachments": [
+    {
+      "id": 61293103,
+      "filename": "screen-capture (2).webm",
+      "mime_type": "video/webm",
+      "size_bytes": 800622,
+      "url": "https://issues.chromium.org/action/issues/382190924/attachments/61293103?download=true",
+      "local_path": "attachments/screen-capture (2).webm"
+    },
+    {
+      "id": 61293104,
+      "filename": "extensionpopuppwa.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 3025,
+      "url": "https://issues.chromium.org/action/issues/382190924/attachments/61293104?download=true",
+      "local_path": "attachments/extensionpopuppwa.zip"
+    },
+    {
+      "id": 61293105,
+      "filename": "pwa.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 3550,
+      "url": "https://issues.chromium.org/action/issues/382190924/attachments/61293105?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65779421,
+      "filename": "screen-capture (21).webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1204406,
+      "url": "https://issues.chromium.org/action/issues/382190924/attachments/65779421?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "# Steps to reproduce the problem\nThis vulnerability is almost the same as https://issues.chromium.org/issues/40058873 but it occurs on  PWA Install Prompt\n\n# Problem Description\nInstall Extension\nClick + Key press Ctr + A\nDouble click install pwa will install\n\n# Additional Comments\nVersion 133.0.684"
+}

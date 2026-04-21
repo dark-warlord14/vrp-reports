@@ -1,0 +1,34 @@
+{
+  "id": "348793144",
+  "url": "https://issues.chromium.org/issues/348793144",
+  "title": "Abrt in Builtins_CEntry_Return1_ArgvOnStack_NoBuiltinExit",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime, Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "th...@google.com",
+  "created_date": "2024-06-23T03:07:05+00:00",
+  "modified_date": "2026-01-08T12:42:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "bounty_rationale": "$7,000 for report of memory corruption in a sandboxed process + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 57403302,
+      "filename": "output_poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 7751,
+      "url": "https://issues.chromium.org/action/issues/348793144/attachments/57403302?download=true",
+      "local_path": "attachments/output_poc.js"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "VULNERABILITY DETAILS\n## INTRODUCE\nAfter bisect, it was determined that following commit caused this problem.\n\n- Commit Info\n    - Version: 93470\n    - link: https://crrev.com/125189fa267b75cc8b7d4db870daa98958ee11dd \n- Commit Message\n\n```\ncommit 125189fa267b75cc8b7d4db870daa98958ee11dd\nAuthor: Thib"
+}

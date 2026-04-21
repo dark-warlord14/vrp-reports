@@ -1,0 +1,24 @@
+{
+  "id": "40060520",
+  "url": "https://issues.chromium.org/issues/40060520",
+  "title": "Security:  access-violation on unknown address 0x12dfa490bbaa in dawn::native::TextureBase::TextureBase(browser process) ",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>Dawn, Internals>Skia>Compositing",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "su...@chromium.org",
+  "created_date": "2022-08-06T12:24:35+00:00",
+  "modified_date": "2023-05-10T17:35:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 37,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n access-violation on unknown address 0x12dfa490bbaa in dawn::native::TextureBase::TextureBase   \n  \n**VERSION**   \nChromium\t106.0.5223.0 (Developer Build) (64-bit)   \nRevision\t150265d5721034653c4be83721c4c266e6071175-refs/heads/main@{#1032249}  \nOS\tWindows 10 Version 21H"
+}

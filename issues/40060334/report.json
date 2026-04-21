@@ -1,0 +1,66 @@
+{
+  "id": "40060334",
+  "url": "https://issues.chromium.org/issues/40060334",
+  "title": "UAF in AccessCodeCastSinkService",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Cast",
+  "os_platforms": [
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "gb...@google.com",
+  "created_date": "2022-07-20T12:58:02+00:00",
+  "modified_date": "2024-01-09T06:21:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 9500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53287325,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40060334/attachments/53287325?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53287326,
+      "filename": "asan1.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 14814,
+      "url": "https://issues.chromium.org/action/issues/40060334/attachments/53287326?download=true",
+      "local_path": "attachments/asan1.txt"
+    },
+    {
+      "id": 53287327,
+      "filename": "asan2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 34384,
+      "url": "https://issues.chromium.org/action/issues/40060334/attachments/53287327?download=true",
+      "local_path": "attachments/asan2.txt"
+    },
+    {
+      "id": 53287328,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 63,
+      "url": "https://issues.chromium.org/action/issues/40060334/attachments/53287328?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53287343,
+      "filename": "suggested_fix.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 874,
+      "url": "https://issues.chromium.org/action/issues/40060334/attachments/53287343?download=true",
+      "local_path": "attachments/suggested_fix.patch"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "**Steps to reproduce the problem:**   \nWill attch details and PoC soon.  \n  \n**Problem Description:**   \nabove all.  \n  \n**Additional Comments:**   \n  \n  \n**Chrome version: ** 105.0.5189.0 **Channel: ** Stable  \n  \n**OS:** Windows"
+}

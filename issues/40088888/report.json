@@ -1,0 +1,52 @@
+{
+  "id": "40088888",
+  "url": "https://issues.chromium.org/issues/40088888",
+  "title": "Security: Samesite Cookies sent in a cross-site request navigated from Chrome's PDF viewer",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature, Internals>Network>Cookies, Internals>Plugins>PDF, Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "na...@chromium.org",
+  "created_date": "2017-08-31T17:22:37+00:00",
+  "modified_date": "2025-09-14T12:36:19+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "baseline report of user information disclosure",
+  "attachments": [
+    {
+      "id": 53288220,
+      "filename": "Samesite Cookie CSRF PoC.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 654825,
+      "url": "https://issues.chromium.org/action/issues/40088888/attachments/53288220?download=true",
+      "local_path": "attachments/Samesite Cookie CSRF PoC.pdf"
+    },
+    {
+      "id": 53288267,
+      "filename": "form.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 12410,
+      "url": "https://issues.chromium.org/action/issues/40088888/attachments/53288267?download=true",
+      "local_path": "attachments/form.pdf"
+    },
+    {
+      "id": 53288288,
+      "filename": "example.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 8637,
+      "url": "https://issues.chromium.org/action/issues/40088888/attachments/53288288?download=true",
+      "local_path": "attachments/example.PNG"
+    }
+  ],
+  "update_count": 201,
+  "description_snippet": "VULNERABILITY DETAILS\r\nSamesite cookies are never sent in a cross-site request unless the Samesite attribute in a cookie had been set to Lax, in which case the cookie is sent only when the request is a Top-level navigation using safe HTTP methods.\r\n\r\nWhen clicking on a link from a PDF document loade"
+}

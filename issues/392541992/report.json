@@ -1,0 +1,38 @@
+{
+  "id": "392541992",
+  "url": "https://issues.chromium.org/issues/392541992",
+  "title": "V8 Sandbox Bypass: UAF in ValueSerializer::WriteRawBytes",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Sandbox",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "v8...@gmail.com",
+  "assignee": "is...@chromium.org",
+  "created_date": "2025-01-27T13:57:19+00:00",
+  "modified_date": "2025-05-10T12:37:39+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "V8 Sandbox Bypass demonstrating memory corruption outside the V8 heap sandbox",
+  "attachments": [
+    {
+      "id": 62435299,
+      "filename": "bug.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 455,
+      "url": "https://issues.chromium.org/action/issues/392541992/attachments/62435299?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "#### VULNERABILITY DETAILS\nInjecting faults in the `stack` property of a `URIError` object causes a UAF. The root cause seems to be in `ExpandBuffer` at `src/objects/value-serializer.cc:408`. If `base::Realloc` is called with `requested_capacity = 0`, `buffer_` is freed and `new_buffer` is set to nu"
+}

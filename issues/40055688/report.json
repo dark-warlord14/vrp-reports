@@ -1,0 +1,45 @@
+{
+  "id": "40055688",
+  "url": "https://issues.chromium.org/issues/40055688",
+  "title": "Security: Type confusion bug in LoadSuperIC",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler, Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "la...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2021-04-27T03:22:47+00:00",
+  "modified_date": "2024-02-29T22:47:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53318867,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 314,
+      "url": "https://issues.chromium.org/action/issues/40055688/attachments/53318867?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53318868,
+      "filename": "exp.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3891,
+      "url": "https://issues.chromium.org/action/issues/40055688/attachments/53318868?download=true",
+      "local_path": "attachments/exp.js"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "**-------------------------**   \n  \n**VULNERABILITY DETAILS**   \nType confusion in the IC system of v8. The incorrect code path is:  \n    [0] AccessorAssembler::LoadSuperIC  \n    [1] AccessorAssembler::HandleLoadICHandlerCase  \n  \n```  \nvoid AccessorAssembler::LoadSuperIC(const LoadICParameter"
+}

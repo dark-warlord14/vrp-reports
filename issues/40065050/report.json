@@ -1,0 +1,38 @@
+{
+  "id": "40065050",
+  "url": "https://issues.chromium.org/issues/40065050",
+  "title": "CHECK failure: !v8::internal::v8_flags.enable_slow_asserts.value() || (IsSeqOneByteString_NonIn",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "5n...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2023-05-31T02:18:07+00:00",
+  "modified_date": "2024-01-09T11:25:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53279315,
+      "filename": "2.js",
+      "mime_type": "text/plain",
+      "size_bytes": 148,
+      "url": "https://issues.chromium.org/action/issues/40065050/attachments/53279315?download=true",
+      "local_path": "attachments/2.js"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "version:\r\nd8 dev channel:10.4.132.20\r\n\r\nbuild flags:\r\ngn gen out/partinst --args='is_debug=false dcheck_always_on=true v8_static_library=true v8_enable_slow_dchecks=true v8_enable_v8_checks=true v8_enable_verify_heap=true v8_enable_verify_csa=true target_cpu=\"x64\"'\r\n\r\nrun with:\r\n./d8 2.js\r\n\r\ncrash i"
+}

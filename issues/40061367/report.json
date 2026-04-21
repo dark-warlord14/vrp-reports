@@ -1,0 +1,86 @@
+{
+  "id": "40061367",
+  "url": "https://issues.chromium.org/issues/40061367",
+  "title": "Multiple checks fail, cross process crash, maybe race condition & use-after-free in video_encoder.cc",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Media>WebCodecs",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "so...@gmail.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2022-10-15T21:32:15+00:00",
+  "modified_date": "2024-01-09T06:41:32+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53239960,
+      "filename": "asan-1.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 5845,
+      "url": "https://issues.chromium.org/action/issues/40061367/attachments/53239960?download=true",
+      "local_path": "attachments/asan-1.txt"
+    },
+    {
+      "id": 53239961,
+      "filename": "asan-2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 5966,
+      "url": "https://issues.chromium.org/action/issues/40061367/attachments/53239961?download=true",
+      "local_path": "attachments/asan-2.txt"
+    },
+    {
+      "id": 53239962,
+      "filename": "asan-3-other-tab.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 22722,
+      "url": "https://issues.chromium.org/action/issues/40061367/attachments/53239962?download=true",
+      "local_path": "attachments/asan-3-other-tab.txt"
+    },
+    {
+      "id": 53239963,
+      "filename": "asan-all-output.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 505162,
+      "url": "https://issues.chromium.org/action/issues/40061367/attachments/53239963?download=true",
+      "local_path": "attachments/asan-all-output.txt"
+    },
+    {
+      "id": 53239964,
+      "filename": "frame2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1610,
+      "url": "https://issues.chromium.org/action/issues/40061367/attachments/53239964?download=true",
+      "local_path": "attachments/frame2.html"
+    },
+    {
+      "id": 53239965,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 891,
+      "url": "https://issues.chromium.org/action/issues/40061367/attachments/53239965?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53240020,
+      "filename": "asan-cached.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 12484,
+      "url": "https://issues.chromium.org/action/issues/40061367/attachments/53240020?download=true",
+      "local_path": "attachments/asan-cached.txt"
+    }
+  ],
+  "update_count": 70,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Start a local server  \n2. Open localhost/index.html  \n3. Try again more time, if not crashes  \n  \nWith a debug build, the DCHECK will block the crash in video_encoder.cc, so try without DCHECK  \n  \nMy reproduction ratio for  \n  \nCHECK(!context.IsEmpty()):"
+}

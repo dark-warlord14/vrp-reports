@@ -1,0 +1,61 @@
+{
+  "id": "40055424",
+  "url": "https://issues.chromium.org/issues/40055424",
+  "title": "Security: HeapOverflow in MediaFeeds",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media>Feeds",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "st...@chromium.org",
+  "created_date": "2021-04-02T11:12:30+00:00",
+  "modified_date": "2024-01-09T08:57:55+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52944180,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 51749,
+      "url": "https://issues.chromium.org/action/issues/40055424/attachments/52944180?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 52944181,
+      "filename": "https.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1078,
+      "url": "https://issues.chromium.org/action/issues/40055424/attachments/52944181?download=true",
+      "local_path": "attachments/https.patch"
+    },
+    {
+      "id": 52944182,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 114,
+      "url": "https://issues.chromium.org/action/issues/40055424/attachments/52944182?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52944183,
+      "filename": "VideoObject",
+      "mime_type": "text/plain",
+      "size_bytes": 2007,
+      "url": "https://issues.chromium.org/action/issues/40055424/attachments/52944183?download=true",
+      "local_path": "attachments/VideoObject"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nWhen making a search in |entity_values|[1], there is no check whether the query result is end(). If the author's type is not \"person\", find_if() will return end(). Then the HeapOverflow will be triggered when the |person|[2] get accessed.  \n  \n[1]. https://source.chro"
+}

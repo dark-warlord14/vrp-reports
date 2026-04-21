@@ -1,0 +1,49 @@
+{
+  "id": "40059501",
+  "url": "https://issues.chromium.org/issues/40059501",
+  "title": "Security: Chrome on Android Hide Fullscreen Notification Toast When Multiple Times Enter and Exit Fullscreen",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Fullscreen",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "su...@gmail.com",
+  "assignee": "ji...@chromium.org",
+  "created_date": "2022-04-27T23:33:11+00:00",
+  "modified_date": "2024-11-19T21:35:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53248969,
+      "filename": "testcase.html",
+      "mime_type": "text/plain",
+      "size_bytes": 921,
+      "url": "https://issues.chromium.org/action/issues/40059501/attachments/53248969?download=true",
+      "local_path": "attachments/testcase.html"
+    },
+    {
+      "id": 53248970,
+      "filename": "Chrome for Android - Invoke requestFullScreen and Exit Multiple Times will Hide Fullscreen Notification Toast ",
+      "mime_type": "text/plain",
+      "size_bytes": 3130656,
+      "url": "https://issues.chromium.org/action/issues/40059501/attachments/53248970?download=true",
+      "local_path": "attachments/Chrome for Android - Invoke requestFullScreen and Exit Multiple Times will Hide Fullscreen Notification Toast"
+    },
+    {
+      "id": 53248976,
+      "filename": "Chrome for Android - Invoke requestFullScreen without Fullscreen Notification Toast.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 3130656,
+      "url": "https://issues.chromium.org/action/issues/40059501/attachments/53248976?download=true",
+      "local_path": "attachments/Chrome for Android - Invoke requestFullScreen without Fullscreen Notification Toast.webm"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen run setInterval method to multiple times calls requestFullScreen and append fullscreen element to another element to exit fullscreen mode,  interestingly after one single tap it able to fire onfullscreenchange event multiple times.   \n  \nSurprisingly I notice when o"
+}

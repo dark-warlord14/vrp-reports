@@ -1,0 +1,81 @@
+{
+  "id": "40062915",
+  "url": "https://issues.chromium.org/issues/40062915",
+  "title": "Security: A UAF in WebRTC",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebRTC, Internals>Media>ScreenCapture",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "om...@talon-sec.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2023-02-04T22:56:21+00:00",
+  "modified_date": "2024-02-28T06:18:32+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53199660,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 291,
+      "url": "https://issues.chromium.org/action/issues/40062915/attachments/53199660?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53199661,
+      "filename": "poc.py",
+      "mime_type": "text/plain",
+      "size_bytes": 797,
+      "url": "https://issues.chromium.org/action/issues/40062915/attachments/53199661?download=true",
+      "local_path": "attachments/poc.py"
+    },
+    {
+      "id": 53199662,
+      "filename": "6485e599-2cef-40f9-a9d7-5f99d0b23328.dmp",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2026384,
+      "url": "https://issues.chromium.org/action/issues/40062915/attachments/53199662?download=true",
+      "local_path": "attachments/6485e599-2cef-40f9-a9d7-5f99d0b23328.dmp"
+    },
+    {
+      "id": 53199663,
+      "filename": "36888155-eb11-48fe-9dbb-9ee79f01e0dd.dmp",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1429664,
+      "url": "https://issues.chromium.org/action/issues/40062915/attachments/53199663?download=true",
+      "local_path": "attachments/36888155-eb11-48fe-9dbb-9ee79f01e0dd.dmp"
+    },
+    {
+      "id": 53199664,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5317956,
+      "url": "https://issues.chromium.org/action/issues/40062915/attachments/53199664?download=true",
+      "local_path": "attachments/demo.mp4"
+    },
+    {
+      "id": 53199683,
+      "filename": "ScreenClippingHost.exe.33364.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3883544,
+      "url": "https://issues.chromium.org/action/issues/40062915/attachments/53199683?download=true",
+      "local_path": "attachments/ScreenClippingHost.exe.33364.zip"
+    },
+    {
+      "id": 53199709,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3213074,
+      "url": "https://issues.chromium.org/action/issues/40062915/attachments/53199709?download=true",
+      "local_path": "attachments/demo.mp4"
+    }
+  ],
+  "update_count": 74,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe bug is triggered in `third_party\\webrtc\\modules\\desktop_capture\\win\\wgc_capture_session.cc` in the `OnItemClosed` method causing the browser process to crash.  \n  \nThis method is being called from a message pumping thread (`DesktopMediaListCaptureThread`) as you can"
+}

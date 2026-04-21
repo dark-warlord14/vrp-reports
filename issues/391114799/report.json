@@ -1,0 +1,49 @@
+{
+  "id": "391114799",
+  "url": "https://issues.chromium.org/issues/391114799",
+  "title": "Extensions without file URL access can open UNC paths through chrome.debugger",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "132.0.6834.84",
+  "cve_ids": [],
+  "reporter": "ba...@gmail.com",
+  "assignee": "pf...@google.com",
+  "created_date": "2025-01-20T16:23:33+00:00",
+  "modified_date": "2025-05-17T12:43:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": "$2,000 for report of lower impact user information disclosure + $2,000 patch bonus",
+  "attachments": [
+    {
+      "id": 62282864,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 157,
+      "url": "https://issues.chromium.org/action/issues/391114799/attachments/62282864?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62282865,
+      "filename": "patch.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 2487,
+      "url": "https://issues.chromium.org/action/issues/391114799/attachments/62282865?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62282866,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 640,
+      "url": "https://issues.chromium.org/action/issues/391114799/attachments/62282866?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "# Steps to reproduce the problem\nOn a server that the target can access:\n1. Clone the following repository: https://github.com/lgandx/Responder\n2. Inside the repository, run sudo ./Responder.py -I <INTERFACE> -w, where INTERFACE is the public facing network interface of the server\n\nOn the target:\n1."
+}

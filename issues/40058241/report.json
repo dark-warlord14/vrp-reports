@@ -1,0 +1,81 @@
+{
+  "id": "40058241",
+  "url": "https://issues.chromium.org/issues/40058241",
+  "title": "Security: Heap-use-after-free in TabStrip::OnGroupCreated",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>TopChrome>TabStrip>TabGroups",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "dp...@chromium.org",
+  "created_date": "2021-12-15T10:53:55+00:00",
+  "modified_date": "2024-01-09T04:34:55+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53038613,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 22889,
+      "url": "https://issues.chromium.org/action/issues/40058241/attachments/53038613?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53038614,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 150,
+      "url": "https://issues.chromium.org/action/issues/40058241/attachments/53038614?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53038615,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 547,
+      "url": "https://issues.chromium.org/action/issues/40058241/attachments/53038615?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53038616,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 210,
+      "url": "https://issues.chromium.org/action/issues/40058241/attachments/53038616?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53038617,
+      "filename": "video.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 6325735,
+      "url": "https://issues.chromium.org/action/issues/40058241/attachments/53038617?download=true",
+      "local_path": "attachments/video.webm"
+    },
+    {
+      "id": 53038636,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 367,
+      "url": "https://issues.chromium.org/action/issues/40058241/attachments/53038636?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53038647,
+      "filename": "video1.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 560619,
+      "url": "https://issues.chromium.org/action/issues/40058241/attachments/53038647?download=true",
+      "local_path": "attachments/video1.webm"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. download asan-linux-release-951397.zip and unzip\r\n2. start a server at the folder of poc.html : `python -m SimpleHTTPServer 8605`\r\n3. install the"
+}

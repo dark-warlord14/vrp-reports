@@ -1,0 +1,35 @@
+{
+  "id": "40060076",
+  "url": "https://issues.chromium.org/issues/40060076",
+  "title": "Prevent server redirect to non web accessible resource",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions, UI>Browser>Omnibox",
+  "os_platforms": [
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "nd...@protonmail.com",
+  "assignee": "so...@chromium.org",
+  "created_date": "2022-06-26T02:20:47+00:00",
+  "modified_date": "2025-07-18T15:41:57+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact web platform privilege escalation",
+  "attachments": [
+    {
+      "id": 53259861,
+      "filename": "extensionbug.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 404721,
+      "url": "https://issues.chromium.org/action/issues/40060076/attachments/53259861?download=true",
+      "local_path": "attachments/extensionbug.mp4"
+    }
+  ],
+  "update_count": 274,
+  "description_snippet": "**Steps to reproduce the problem:**   \nchrome.window.create({url: 'chrome-extension://nkoccljplnhpfnfiajclkommnmllphnl/html/crosh.html?command=vmshell&args[]='})  \n  \n**Problem Description:**   \nThe URL parameters args[] and command on chrome-extension://nkoccljplnhpfnfiajclkommnmllphnl/html/crosh.h"
+}

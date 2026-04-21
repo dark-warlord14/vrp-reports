@@ -1,0 +1,41 @@
+{
+  "id": "401823929",
+  "url": "https://issues.chromium.org/issues/401823929",
+  "title": "intent:// can bypass fido:/ URI bock (see: 370482421)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>WebAuthentication",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "Si...@rawet.se",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2025-03-09T23:58:29+00:00",
+  "modified_date": "2025-06-25T12:47:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "report of moderate impact web platform privilege escalation",
+  "attachments": [
+    {
+      "id": 63607890,
+      "filename": "0da04336.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1248,
+      "url": "https://issues.chromium.org/action/issues/401823929/attachments/63607890?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63607893,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 1864,
+      "url": "https://issues.chromium.org/action/issues/401823929/attachments/63607893?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "VULNERABILITY DETAILS\nIt's possbile to bypass the fix for 370482421 by using a intent URI.\n\nVERSION\nChrome Version: 133.0.6943.137 stable\nOperating System: Pixel 7 Pro Android 15 March security updates.\n\nREPRODUCTION CASE\nSee https://issues.chromium.org/issues/370482421 for the original discussion."
+}

@@ -1,0 +1,45 @@
+{
+  "id": "40059520",
+  "url": "https://issues.chromium.org/issues/40059520",
+  "title": "Security: Debug check failed: marking_state_->IsBlackOrGrey(heap_object).",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "p4...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2022-04-29T11:02:11+00:00",
+  "modified_date": "2024-01-09T06:00:18+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53417665,
+      "filename": "test.js",
+      "mime_type": "text/plain",
+      "size_bytes": 580,
+      "url": "https://issues.chromium.org/action/issues/40059520/attachments/53417665?download=true",
+      "local_path": "attachments/test.js"
+    },
+    {
+      "id": 53417666,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 503,
+      "url": "https://issues.chromium.org/action/issues/40059520/attachments/53417666?download=true",
+      "local_path": "attachments/patch.diff"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "**This template is ONLY for reporting security bugs. If you are reporting a**   \n**Download Protection Bypass bug, please use the \"Security - Download**   \n**Protection\" template. For all other reports, please use a different**   \n**template.**   \n  \n**Please READ THIS FAQ before filing a bug: https"
+}

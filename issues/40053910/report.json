@@ -1,0 +1,38 @@
+{
+  "id": "40053910",
+  "url": "https://issues.chromium.org/issues/40053910",
+  "title": "Security: OOBW in the icu_68::FormattedStringBuilder::insert ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Internationalization",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "ft...@chromium.org",
+  "created_date": "2020-11-18T12:49:14+00:00",
+  "modified_date": "2024-01-09T02:39:00+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52938506,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 125,
+      "url": "https://issues.chromium.org/action/issues/40053910/attachments/52938506?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nOOBW in the icu_68::FormattedStringBuilder::insert   \n  \n**VERSION**   \nChrome Version: the latest chromium dev version  \n$ git branch -v  \n\\* master 35e3b12b95   \n  \n**REPRODUCTION CASE**   \n  \nWindows 10 20H2 (32GB RAM)  \nThe OS memory must be more than 16GB to reprodu"
+}

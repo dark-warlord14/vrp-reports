@@ -1,0 +1,24 @@
+{
+  "id": "40092907",
+  "url": "https://issues.chromium.org/issues/40092907",
+  "title": "Security: Content-Type & Nosniff Ignored in Chrome for iOS",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Mobile>iOSWeb>Security, Mobile>iOSWeb>WebPlatform",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pi...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2018-10-31T01:13:21+00:00",
+  "modified_date": "2024-03-19T12:34:19+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 89,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nXHTML files with external entities in the doctype declaration will fetch the external entity and put into the DOM regardless of Content-Type or nosniff. This let's an attacker use polyglot files with embedded XHTML to smuggle in JavaScript.  \n  \n**VERSION**   \nChrome Ver"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "349529650",
+  "url": "https://issues.chromium.org/issues/349529650",
+  "title": "V8 Sandbox Bypass: AAR/W via function import signature check race",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>JavaScript>Sandbox",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2024-06-26T10:32:13+00:00",
+  "modified_date": "2026-02-19T12:54:33+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "$5,000 V8 heap sandbox bypass reward",
+  "attachments": [
+    {
+      "id": 57477157,
+      "filename": "function_import_race.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 74208,
+      "url": "https://issues.chromium.org/action/issues/349529650/attachments/57477157?download=true",
+      "local_path": "attachments/function_import_race.js"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "### VULNERABILITY DETAILS\n\nV8 sandbox bypass, arbitrary address read/write via function import signature check bypass through race condition using in-sandbox exploit primitives.\n\nImported functions are processed through `InstanceBuilder::ProcessImportedFunction()`, where various checks are performed"
+}

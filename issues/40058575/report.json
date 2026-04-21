@@ -1,0 +1,37 @@
+{
+  "id": "40058575",
+  "url": "https://issues.chromium.org/issues/40058575",
+  "title": "Security: CDP Runtime.queryObjects leaks internal objects in JS heap, allowing CDP clients to compromise V8 process",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ku...@gmail.com",
+  "assignee": "ds...@chromium.org",
+  "created_date": "2022-01-24T07:26:43+00:00",
+  "modified_date": "2024-01-09T06:16:56+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53020683,
+      "filename": "simplescreenrecorder-2022-01-24_20.08.00.mkv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 6321754,
+      "url": "https://issues.chromium.org/action/issues/40058575/attachments/53020683?download=true",
+      "local_path": "attachments/simplescreenrecorder-2022-01-24_20.08.00.mkv"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWith Runtime.queryObjects, the JS heap can be traversed by a Chrome DevTools Protocol client, allowing it to perform heap exploitation. This breaks an implicit security assumption that a CDP client can only modify and execute JS in the Isolate that the debugger is attach"
+}

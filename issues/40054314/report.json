@@ -1,0 +1,45 @@
+{
+  "id": "40054314",
+  "url": "https://issues.chromium.org/issues/40054314",
+  "title": "Security: heap-use-after-free in IsBox",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Editing",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ho...@gmail.com",
+  "assignee": "vm...@chromium.org",
+  "created_date": "2020-12-28T22:47:22+00:00",
+  "modified_date": "2024-01-09T02:40:18+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53023213,
+      "filename": "uaf_isbox.html",
+      "mime_type": "text/plain",
+      "size_bytes": 200,
+      "url": "https://issues.chromium.org/action/issues/40054314/attachments/53023213?download=true",
+      "local_path": "attachments/uaf_isbox.html"
+    },
+    {
+      "id": 53023236,
+      "filename": "windows.asan",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 20188,
+      "url": "https://issues.chromium.org/action/issues/40054314/attachments/53023236?download=true",
+      "local_path": "attachments/windows.asan"
+    }
+  ],
+  "update_count": 70,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \n**VERSION**   \nChrome Version:   \nChromium\t89.0.4356.6 (Developer Build) (64-bit)  \nRevision: 8689d5f68d3ce081fb0b81230a4f316c03221418-refs/branch-heads/4356@{#11}  \nOperating System: Linux-4.15.0-126-generic-x86_64-with-Ubuntu-18.04-bionic  \n  \n  \n**REPRODUCTION CASE"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "454927471",
+  "url": "https://issues.chromium.org/issues/454927471",
+  "title": "V8 Sandbox Bypass: AAW/PC control via CallKnownJSFunction reduction for builtins",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Sandbox",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "kr...@gmail.com",
+  "assignee": "is...@chromium.org",
+  "created_date": "2025-10-25T02:05:07+00:00",
+  "modified_date": "2026-02-07T12:47:16+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 22000.0,
+  "bounty_rationale": "Exploitation Mitigation Bypass (v8 sandbox) with a patch bonus",
+  "attachments": [
+    {
+      "id": 70394631,
+      "filename": "maglev-known-builtin-poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3144,
+      "url": "https://issues.chromium.org/action/issues/454927471/attachments/70394631?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70394632,
+      "filename": "fix.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 892,
+      "url": "https://issues.chromium.org/action/issues/454927471/attachments/70394632?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Summary\n\nIt's possible to call JS linkage builtins that should be disabled (in [this](https://source.chromium.org/chromium/chromium/src/+/main:v8/src/builtins/builtins.cc;l=589;drc=8900162810d457b64286ce653cb61bc2009c5068) sense) via Maglev's `CallKnownJSFunction`. Si"
+}

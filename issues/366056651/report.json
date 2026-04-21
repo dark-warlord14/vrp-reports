@@ -1,0 +1,65 @@
+{
+  "id": "366056651",
+  "url": "https://issues.chromium.org/issues/366056651",
+  "title": "Unintended File Upload via `webkitdirectory` triggered by Keyboard interactions on macOS Chrome",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Forms>File>Directory",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fa...@gmail.com",
+  "assignee": "el...@chromium.org",
+  "created_date": "2024-09-12T11:04:35+00:00",
+  "modified_date": "2026-03-31T07:55:57+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "low impact UI spoofing with user gestures",
+  "attachments": [
+    {
+      "id": 59347640,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1939,
+      "url": "https://issues.chromium.org/action/issues/366056651/attachments/59347640?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 59347641,
+      "filename": "screenrecord.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1814183,
+      "url": "https://issues.chromium.org/action/issues/366056651/attachments/59347641?download=true",
+      "local_path": "attachments/screenrecord.mp4"
+    },
+    {
+      "id": 59339320,
+      "filename": "mac-prompt.png",
+      "mime_type": "image/png",
+      "size_bytes": 24096,
+      "url": "https://issues.chromium.org/action/issues/366056651/attachments/59339320?download=true",
+      "local_path": "attachments/mac-prompt.png"
+    },
+    {
+      "id": 59347642,
+      "filename": "win-prompt.png",
+      "mime_type": "image/png",
+      "size_bytes": 34561,
+      "url": "https://issues.chromium.org/action/issues/366056651/attachments/59347642?download=true",
+      "local_path": "attachments/win-prompt.png"
+    },
+    {
+      "id": 71723272,
+      "filename": "Screen Recording 1404-09-20 at 21.16.42.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 3036773,
+      "url": "https://issues.chromium.org/action/issues/366056651/attachments/71723272?download=true",
+      "local_path": "attachments/Screen Recording 1404-09-20 at 21.16.42.mov"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "#### SUMMARY\n\nThe file picker, when using webkitdirectory, can unknowingly upload user files without their awareness during website interaction, as the default prompt in the macOS version of Chrome is set to \"Allow. \n\nAs a result, user files are uploaded to the attacker's website due to an alert app"
+}

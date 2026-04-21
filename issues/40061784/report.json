@@ -1,0 +1,46 @@
+{
+  "id": "40061784",
+  "url": "https://issues.chromium.org/issues/40061784",
+  "title": "Security: Debug check failed: slot < sentinel_ in UpdateUntypedOldToSharedPointers",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>GarbageCollection",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "di...@chromium.org",
+  "created_date": "2022-11-17T12:03:07+00:00",
+  "modified_date": "2023-02-28T18:33:16+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53180404,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 486,
+      "url": "https://issues.chromium.org/action/issues/40061784/attachments/53180404?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53180405,
+      "filename": "poc2.js",
+      "mime_type": "text/plain",
+      "size_bytes": 232,
+      "url": "https://issues.chromium.org/action/issues/40061784/attachments/53180405?download=true",
+      "local_path": "attachments/poc2.js"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt seems to be sharedheap gc issue in v8, it can lead to potential oob or uaf, but I don't have a full root cause analysis.   \nHowever, I found when it was introduced by bisect.  \n  \n## Introduce  \n```  \ncommit 6fbe1bf2987462ab31f6ed3ede5226ab21f75580  \nAuthor: Dominik I"
+}

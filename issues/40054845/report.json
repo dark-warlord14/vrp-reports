@@ -1,0 +1,43 @@
+{
+  "id": "40054845",
+  "url": "https://issues.chromium.org/issues/40054845",
+  "title": "Heap-buffer-overflow in blink::LayoutTable::AddColumn",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>Layout>Table",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "at...@chromium.org",
+  "created_date": "2021-02-14T15:10:02+00:00",
+  "modified_date": "2024-01-09T02:50:48+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53017129,
+      "filename": "tc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 217,
+      "url": "https://issues.chromium.org/action/issues/40054845/attachments/53017129?download=true",
+      "local_path": "attachments/tc.html"
+    },
+    {
+      "id": 53017160,
+      "filename": "tc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 244,
+      "url": "https://issues.chromium.org/action/issues/40054845/attachments/53017160?download=true",
+      "local_path": "attachments/tc2.html"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=5201403786887168\n\nFuzzer: attekett_dom_fuzzer\nJob Type: linux_asan_chrome_v8_arm\nPlatform Id: linux\n\nCrash Type: Heap-buffer-overflow READ 2\nCrash Address: 0xf1509278\nCrash State:\n  blink::LayoutTable::AddColumn\n  blink::LayoutTableCol::InsertedI"
+}

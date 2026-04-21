@@ -1,0 +1,62 @@
+{
+  "id": "40066280",
+  "url": "https://issues.chromium.org/issues/40066280",
+  "title": "Security: UAF in webrtc::SctpDataChannel::SetState",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebRTC>DataChannel",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "to...@chromium.org",
+  "created_date": "2023-06-23T04:30:21+00:00",
+  "modified_date": "2024-01-09T11:27:36+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52953549,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 27654,
+      "url": "https://issues.chromium.org/action/issues/40066280/attachments/52953549?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 52953570,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 27654,
+      "url": "https://issues.chromium.org/action/issues/40066280/attachments/52953570?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 52953578,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 27654,
+      "url": "https://issues.chromium.org/action/issues/40066280/attachments/52953578?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 52953660,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 4346,
+      "url": "https://issues.chromium.org/action/issues/40066280/attachments/52953660?download=true",
+      "local_path": "attachments/patch.diff"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "VULNERABILITY DETAILS\n## Bisect\ntodo\n\n## RCA\nThis is a race condition vulnerability, as indicated by ASAN LOG. The functions create/free and use are executed in two different threads, T0 and T20, respectively. T20 is an network thread created by T0 using blink::PeerConnectionDependencyFactory::Creat"
+}

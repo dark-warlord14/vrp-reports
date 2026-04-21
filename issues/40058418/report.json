@@ -1,0 +1,68 @@
+{
+  "id": "40058418",
+  "url": "https://issues.chromium.org/issues/40058418",
+  "title": "Security: heap-use-after-free in web_app::ShortcutInfoForExtensionAndProfile ",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2022-01-06T23:46:06+00:00",
+  "modified_date": "2024-01-09T09:24:56+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53218934,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058418/attachments/53218934?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53218940,
+      "filename": "Screenshot from 2022-01-10 11-51-13.png",
+      "mime_type": "image/png",
+      "size_bytes": 190368,
+      "url": "https://issues.chromium.org/action/issues/40058418/attachments/53218940?download=true",
+      "local_path": "attachments/Screenshot from 2022-01-10 11-51-13.png"
+    },
+    {
+      "id": 53218988,
+      "filename": "uaf.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1078342,
+      "url": "https://issues.chromium.org/action/issues/40058418/attachments/53218988?download=true",
+      "local_path": "attachments/uaf.mp4"
+    },
+    {
+      "id": 53219041,
+      "filename": "uaf.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 19799,
+      "url": "https://issues.chromium.org/action/issues/40058418/attachments/53219041?download=true",
+      "local_path": "attachments/uaf.txt"
+    },
+    {
+      "id": 53219048,
+      "filename": "cast.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 793187,
+      "url": "https://issues.chromium.org/action/issues/40058418/attachments/53219048?download=true",
+      "local_path": "attachments/cast.webm"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nCreating an app shortcut after deleting a profile causes a heap UAF.  \n  \n**VERSION**   \nChrome Version: 99.0.4800.0   \nOperating System: Windows 10  \n  \n**REPRODUCTION CASE**   \n1. Open chrome://apps  \n2. Right-click on the preinstalled Web Store app and select Create s"
+}

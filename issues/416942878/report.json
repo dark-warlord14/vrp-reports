@@ -1,0 +1,44 @@
+{
+  "id": "416942878",
+  "url": "https://issues.chromium.org/issues/416942878",
+  "title": "SameSite Strict cookies are included when middle clicking a link to another site in a PDF document",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Network>Cookies, Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gn...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2025-05-11T02:22:32+00:00",
+  "modified_date": "2025-09-17T12:42:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "$2,000 for a solid and helpful report of web platform privilege escalation issue",
+  "attachments": [
+    {
+      "id": 65715163,
+      "filename": "samesite-example.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1122635,
+      "url": "https://issues.chromium.org/action/issues/416942878/attachments/65715163?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65690885,
+      "filename": "samesitetest-link.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 10028,
+      "url": "https://issues.chromium.org/action/issues/416942878/attachments/65690885?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "---\n\n### Report description\n\n\nSameSite Strict cookies are included when middle clicking a link to another site in a PDF document\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https"
+}

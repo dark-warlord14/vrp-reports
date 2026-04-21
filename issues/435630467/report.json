@@ -1,0 +1,37 @@
+{
+  "id": "435630467",
+  "url": "https://issues.chromium.org/issues/435630467",
+  "title": "V8 Sandbox Bypass: In-sandbox corruption allows execution of DebugBreakTrampoline, leading to invalid tail call",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Sandbox",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "is...@chromium.org",
+  "created_date": "2025-08-02T05:40:21+00:00",
+  "modified_date": "2025-11-28T12:45:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": "report of V8 sandbox bypass demonstrating attacker stack spray and stack control outside of the V8 heap sandbox",
+  "attachments": [
+    {
+      "id": 68111343,
+      "filename": "v8sbx-unlock-debugbreaktrampoline.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 83604,
+      "url": "https://issues.chromium.org/action/issues/435630467/attachments/68111343?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n> Another example of the meta-bug b/435630464 to show that these issues are prevalent, not only for the `v8_flags.*` gated ones. Feel free to dup this into the meta-bug if necessary, but keep in mind that every reachable code, not just ones that are \"commonly used and fuzz"
+}

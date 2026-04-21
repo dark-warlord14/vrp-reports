@@ -1,0 +1,54 @@
+{
+  "id": "40064728",
+  "url": "https://issues.chromium.org/issues/40064728",
+  "title": "Security: TALOS-2023-1751 - Google Chrome VideoEncoder av1_svc_check_reset_layer_rc_flag use-after-free vulnerability",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pi...@thelead82.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2023-05-22T15:25:55+00:00",
+  "modified_date": "2024-08-11T21:22:45+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52933210,
+      "filename": "TALOS-2023-1751 - Google_Chrome_VideoEncoder_av1_svc_check_reset_layer_rc_flag_use-after-free_vulnerability.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17970,
+      "url": "https://issues.chromium.org/action/issues/40064728/attachments/52933210?download=true",
+      "local_path": "attachments/TALOS-2023-1751 - Google_Chrome_VideoEncoder_av1_svc_check_reset_layer_rc_flag_use-after-free_vulnerability.txt"
+    },
+    {
+      "id": 52933211,
+      "filename": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.htm",
+      "mime_type": "text/plain",
+      "size_bytes": 1353,
+      "url": "https://issues.chromium.org/action/issues/40064728/attachments/52933211?download=true",
+      "local_path": "attachments/e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.htm"
+    },
+    {
+      "id": 52933234,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 33425,
+      "url": "https://issues.chromium.org/action/issues/40064728/attachments/52933234?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "None (published patch date) \r\nTALOS-2023-1751   \r\n\r\n\r\nGoogle Chrome VideoEncoder av1_svc_check_reset_layer_rc_flag use-after-free vulnerability\r\n\r\n\r\n### Summary\r\n\r\nA use-after-free vulnerability exists in the VideoEncoder av1_svc_check_reset_layer_rc_flag functionality of Google Chrome 113.0.5672.12"
+}

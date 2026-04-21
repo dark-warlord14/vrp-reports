@@ -1,0 +1,35 @@
+{
+  "id": "40082940",
+  "url": "https://issues.chromium.org/issues/40082940",
+  "title": "Security: Crazy Linker on Android allows modification of Chrome APK without breaking signature",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2015-6783"
+  ],
+  "reporter": "be...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2015-09-29T14:20:31+00:00",
+  "modified_date": "2018-12-24T01:01:06+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52888227,
+      "filename": "crazy-linker-zip.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 3417,
+      "url": "https://issues.chromium.org/action/issues/40082940/attachments/52888227?download=true",
+      "local_path": "attachments/crazy-linker-zip.zip"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nChrome on Android loads it's libraries using it's own fork of Android Crazy Linker, which parses Chrome APK file itself, bit differently than Android does. In particular when looking for end-of-central-directory-record signature (PK\\5\\6), Chrome's Crazy Linker starts sea"
+}

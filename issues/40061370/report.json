@@ -1,0 +1,62 @@
+{
+  "id": "40061370",
+  "url": "https://issues.chromium.org/issues/40061370",
+  "title": "Security: UAF in webgpu\\gpu.cc in blink::`anonymous namespace'::CreateContextProviderOnMainThread",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Dawn",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "ho...@gmail.com",
+  "created_date": "2022-10-16T08:04:40+00:00",
+  "modified_date": "2026-03-05T16:41:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53376769,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 579,
+      "url": "https://issues.chromium.org/action/issues/40061370/attachments/53376769?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53376770,
+      "filename": "ASAN.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3535,
+      "url": "https://issues.chromium.org/action/issues/40061370/attachments/53376770?download=true",
+      "local_path": "attachments/ASAN.txt"
+    },
+    {
+      "id": 53376806,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 342,
+      "url": "https://issues.chromium.org/action/issues/40061370/attachments/53376806?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53376817,
+      "filename": "fix.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1946,
+      "url": "https://issues.chromium.org/action/issues/40061370/attachments/53376817?download=true",
+      "local_path": "attachments/fix.patch"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**VERSION**   \nWIN10 X64  \ncommit 12f0eec0b0f1a77d40a82a839db7d8ee41c693b3 (HEAD, origin/main, origin/HEAD)  \n  \ntarget_cpu = \"x64\"  \ndcheck_always_on = false  \nis_asan = true  \nis_component_build = true  \nis_debug = false  \nenable_nacl = false  \nsymbol_level=2  \n  \n  \n**REPRODUCTION CASE**   \nchrom"
+}

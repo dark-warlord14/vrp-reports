@@ -1,0 +1,68 @@
+{
+  "id": "40074800",
+  "url": "https://issues.chromium.org/issues/40074800",
+  "title": "Security:  opens a new window at the same time as the previous window in fullscreen mode, (the window enters fullscreen mode which is closed by another new window) leads to spoof",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Fullscreen",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "mu...@google.com",
+  "created_date": "2023-10-13T07:44:09+00:00",
+  "modified_date": "2026-02-11T12:49:19+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "Security UI spoofing",
+  "attachments": [
+    {
+      "id": 53229818,
+      "filename": "bandicam 2023-10-13 13-19-17-377.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4237924,
+      "url": "https://issues.chromium.org/action/issues/40074800/attachments/53229818?download=true",
+      "local_path": "attachments/bandicam 2023-10-13 13-19-17-377.mp4"
+    },
+    {
+      "id": 53229819,
+      "filename": "downloadspoofbar.html",
+      "mime_type": "text/plain",
+      "size_bytes": 628,
+      "url": "https://issues.chromium.org/action/issues/40074800/attachments/53229819?download=true",
+      "local_path": "attachments/downloadspoofbar.html"
+    },
+    {
+      "id": 53229861,
+      "filename": "bandicam 2023-10-17 07-10-46-335.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2236223,
+      "url": "https://issues.chromium.org/action/issues/40074800/attachments/53229861?download=true",
+      "local_path": "attachments/bandicam 2023-10-17 07-10-46-335.mp4"
+    },
+    {
+      "id": 61565531,
+      "filename": "bandicam 2024-12-16 09-34-46-158.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1573694,
+      "url": "https://issues.chromium.org/action/issues/40074800/attachments/61565531?download=true",
+      "local_path": "attachments/bandicam 2024-12-16 09-34-46-158.mp4"
+    },
+    {
+      "id": 64253208,
+      "filename": "bandicam 2024-12-16 09-34-46-158.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1573694,
+      "url": "https://issues.chromium.org/action/issues/40074800/attachments/64253208?download=true",
+      "local_path": "attachments/bandicam 2024-12-16 09-34-46-158.mp4"
+    }
+  ],
+  "update_count": 75,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nI found a bar spoofing vulnerability, when a window opens in fullscreen mode and opens a new window at same time what happens is that it immediately exits fullscreen mode.  \nHowever, this does not happen when opening an open window and redirecting to download files us"
+}

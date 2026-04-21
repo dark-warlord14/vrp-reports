@@ -1,0 +1,28 @@
+{
+  "id": "40062700",
+  "url": "https://issues.chromium.org/issues/40062700",
+  "title": "Security DCHECK failure: IsA<Derived>(from) in casting.h",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>CSS",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "se...@chromium.org",
+  "created_date": "2023-01-17T00:00:42+00:00",
+  "modified_date": "2024-08-11T21:22:56+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 51,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=4859881134948352\n\nFuzzer: b0ring_webidl_fuzzer\nJob Type: linux_asan_chrome_mp\nPlatform Id: linux\n\nCrash Type: Security DCHECK failure\nCrash Address: \nCrash State:\n  IsA<Derived>(from) in casting.h\n  blink::StylePropertyMap::append\n  blink::v8_sty"
+}

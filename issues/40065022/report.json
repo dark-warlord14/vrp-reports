@@ -1,0 +1,114 @@
+{
+  "id": "40065022",
+  "url": "https://issues.chromium.org/issues/40065022",
+  "title": "Security: heap-use-after-free on AudioManagerWin",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Media>Audio",
+  "os_platforms": [
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "tg...@chromium.org",
+  "created_date": "2023-05-30T15:25:04+00:00",
+  "modified_date": "2024-05-22T12:59:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53066294,
+      "filename": "repro.mkv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1420352,
+      "url": "https://issues.chromium.org/action/issues/40065022/attachments/53066294?download=true",
+      "local_path": "attachments/repro.mkv"
+    },
+    {
+      "id": 53066295,
+      "filename": "repro.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 12516,
+      "url": "https://issues.chromium.org/action/issues/40065022/attachments/53066295?download=true",
+      "local_path": "attachments/repro.diff"
+    },
+    {
+      "id": 53066296,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 332,
+      "url": "https://issues.chromium.org/action/issues/40065022/attachments/53066296?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53066297,
+      "filename": "execution_and_asan_log_in_c9dbb5.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 19324,
+      "url": "https://issues.chromium.org/action/issues/40065022/attachments/53066297?download=true",
+      "local_path": "attachments/execution_and_asan_log_in_c9dbb5.txt"
+    },
+    {
+      "id": 53066298,
+      "filename": "asan_log_in_asan-win32-release_x64-1150200.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11129,
+      "url": "https://issues.chromium.org/action/issues/40065022/attachments/53066298?download=true",
+      "local_path": "attachments/asan_log_in_asan-win32-release_x64-1150200.txt"
+    },
+    {
+      "id": 53066307,
+      "filename": "asan_log_in_asan-win32-release_x64-1150200.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11129,
+      "url": "https://issues.chromium.org/action/issues/40065022/attachments/53066307?download=true",
+      "local_path": "attachments/asan_log_in_asan-win32-release_x64-1150200.txt"
+    },
+    {
+      "id": 53066308,
+      "filename": "execution_and_asan_log_in_c9dbb5.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 19324,
+      "url": "https://issues.chromium.org/action/issues/40065022/attachments/53066308?download=true",
+      "local_path": "attachments/execution_and_asan_log_in_c9dbb5.txt"
+    },
+    {
+      "id": 53066309,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 332,
+      "url": "https://issues.chromium.org/action/issues/40065022/attachments/53066309?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53066310,
+      "filename": "repro.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 12516,
+      "url": "https://issues.chromium.org/action/issues/40065022/attachments/53066310?download=true",
+      "local_path": "attachments/repro.diff"
+    },
+    {
+      "id": 53066311,
+      "filename": "repro.mkv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1420352,
+      "url": "https://issues.chromium.org/action/issues/40065022/attachments/53066311?download=true",
+      "local_path": "attachments/repro.mkv"
+    },
+    {
+      "id": 53066375,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 11129,
+      "url": "https://issues.chromium.org/action/issues/40065022/attachments/53066375?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 73,
+  "description_snippet": "VULNERABILITY DETAILS\n## Bisect\nBased on the analysis with bisect, it was determined that the vulnerability was introduced by this commit: https://source.chromium.org/chromium/chromium/src/+/0b4125c58738e6fc1339a5ffffc4fb4e644d9e5a\n```\nHandle audio device changes on Windows.\n\nUses the new AudioDevic"
+}

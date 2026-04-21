@@ -1,0 +1,45 @@
+{
+  "id": "411544197",
+  "url": "https://issues.chromium.org/issues/411544197",
+  "title": "A vulnerability in FileSystemFileHandle.move bypasses download restrictions.",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Storage>FileSystem",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "137.0.7115.0",
+  "cve_ids": [],
+  "reporter": "ia...@gmail.com",
+  "assignee": "my...@chromium.org",
+  "created_date": "2025-04-18T09:20:44+00:00",
+  "modified_date": "2025-09-18T12:37:31+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "report of web platform privilege escalation where an updated POC and helpful information was provided to better demonstrate the potential for security consequences",
+  "attachments": [
+    {
+      "id": 65064465,
+      "filename": "Mon Apr 21 2025 09:58:57 GMT+0800 (中国标准时间).png",
+      "mime_type": "image/png",
+      "size_bytes": 13611,
+      "url": "https://issues.chromium.org/action/issues/411544197/attachments/65064465?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65098944,
+      "filename": "stacktrace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 10207,
+      "url": "https://issues.chromium.org/action/issues/411544197/attachments/65098944?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 190,
+  "description_snippet": "# Steps to reproduce the problem\nOn any HTTPS page, try the following JS code. It should correctly display a file save dialog prompt, asking you to save a file named hello.png. When you click \"OK,\" an evil.bat file will actually be generated in the actual directory.\n```\ntry {\n    // 1. Call showSave"
+}

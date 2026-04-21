@@ -1,0 +1,29 @@
+{
+  "id": "390568183",
+  "url": "https://issues.chromium.org/issues/390568183",
+  "title": "V8 Sandbox Bypass: UB in MessageHandler::GetMessage because of invalid MessageTemplate variant",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Sandbox",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "v8...@gmail.com",
+  "assignee": "sr...@google.com",
+  "created_date": "2025-01-17T11:56:22+00:00",
+  "modified_date": "2025-04-29T12:37:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "v8 sandbox bypass demonstrating memory corruption outside the v8 sandbox",
+  "attachments": [],
+  "update_count": 33,
+  "description_snippet": "#### VULNERABILITY DETAILS\nDuring the construction of an error message, the `MessageTemplate` variant used for formatting is read from on-heap data and used in a switch instruction. This probably can be mitigated by using a sbx check in `MessageTemplateFromInt()` (`src/common/message-template.h:762`"
+}

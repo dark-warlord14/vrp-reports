@@ -1,0 +1,25 @@
+{
+    "id": "429440615",
+    "url": "https://issues.chromium.org/issues/429440615",
+    "title": "Permission element inner div with style -webkit-text-stroke-width: thick;font-weight: bolder; can be abused if no element in the parent chain has any -webkit-text-stroke-width: thick;font-weight: bolder; are set. [429440615] - Chromium",
+    "status": "Unknown",
+    "bounty_confirmed": true,
+    "attachments": [
+        {
+            "name": "View",
+            "url": "https://issues.chromium.org/action/issues/429440615/attachments/67307574?download=false"
+        },
+        {
+            "name": "Download",
+            "url": "https://issues.chromium.org/action/issues/429440615/attachments/67307574?download=true"
+        },
+        {
+            "name": "View",
+            "url": "https://issues.chromium.org/action/issues/429440615/attachments/70982368?download=false"
+        },
+        {
+            "name": "Download",
+            "url": "https://issues.chromium.org/action/issues/429440615/attachments/70982368?download=true"
+        }
+    ]
+}

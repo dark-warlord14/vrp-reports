@@ -1,0 +1,33 @@
+{
+  "id": "40052647",
+  "url": "https://issues.chromium.org/issues/40052647",
+  "title": "Security: Chrome Browser Read Files from Recent Used Folder",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Forms>File>Directory",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ia...@gmail.com",
+  "assignee": "pb...@chromium.org",
+  "created_date": "2020-06-22T11:18:55+00:00",
+  "modified_date": "2025-03-24T18:18:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52897677,
+      "filename": "allinitv2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1418,
+      "url": "https://issues.chromium.org/action/issues/40052647/attachments/52897677?download=true",
+      "local_path": "attachments/allinitv2.html"
+    }
+  ],
+  "update_count": 82,
+  "description_snippet": "Hello Team,\r\n\r\nI was just going through older issues reported in chrome browsers and found that one of the previously fixed issue\r\nhttps://bugs.chromium.org/p/chromium/issues/detail?id=637098 is still exist.\r\n\r\nSteps to reproduce:\r\n\r\n1. Open attached POC\r\n2. Hold down 'Enter'\r\n3. Suppose the last us"
+}

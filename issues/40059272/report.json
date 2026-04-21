@@ -1,0 +1,65 @@
+{
+  "id": "40059272",
+  "url": "https://issues.chromium.org/issues/40059272",
+  "title": "Security: heap-use-after-free on components/global_media_controls/public/views/media_item_ui_list_view.cc",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Media>UI",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rh...@gmail.com",
+  "assignee": "st...@chromium.org",
+  "created_date": "2022-04-01T14:43:32+00:00",
+  "modified_date": "2024-01-09T04:56:04+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53068260,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40059272/attachments/53068260?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53068261,
+      "filename": "poc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 518,
+      "url": "https://issues.chromium.org/action/issues/40059272/attachments/53068261?download=true",
+      "local_path": "attachments/poc2.html"
+    },
+    {
+      "id": 53068262,
+      "filename": "youtube.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1702,
+      "url": "https://issues.chromium.org/action/issues/40059272/attachments/53068262?download=true",
+      "local_path": "attachments/youtube.html"
+    },
+    {
+      "id": 53068354,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40059272/attachments/53068354?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53068355,
+      "filename": "1312419_asan_device.log",
+      "mime_type": "text/plain",
+      "size_bytes": 34335,
+      "url": "https://issues.chromium.org/action/issues/40059272/attachments/53068355?download=true",
+      "local_path": "attachments/1312419_asan_device.log"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.51 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nRepro's on chromeOS and Lacros. This issue similar with bug #1312366 but with different stack trace, so I filled the new report.\r\n\r\n1. Run python3 h"
+}

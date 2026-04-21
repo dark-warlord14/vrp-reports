@@ -1,0 +1,69 @@
+{
+  "id": "40061289",
+  "url": "https://issues.chromium.org/issues/40061289",
+  "title": "The PWA's installation dialog isn't being dismissed after redirects, which allows an attacker to show it on cross-origin pages",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>WebAppInstalls",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2022-10-09T18:37:18+00:00",
+  "modified_date": "2024-01-14T18:43:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53371076,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 695,
+      "url": "https://issues.chromium.org/action/issues/40061289/attachments/53371076?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53371077,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 1310,
+      "url": "https://issues.chromium.org/action/issues/40061289/attachments/53371077?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53371078,
+      "filename": "script.js",
+      "mime_type": "text/plain",
+      "size_bytes": 84,
+      "url": "https://issues.chromium.org/action/issues/40061289/attachments/53371078?download=true",
+      "local_path": "attachments/script.js"
+    },
+    {
+      "id": 53371079,
+      "filename": "sw.js",
+      "mime_type": "text/plain",
+      "size_bytes": 142,
+      "url": "https://issues.chromium.org/action/issues/40061289/attachments/53371079?download=true",
+      "local_path": "attachments/sw.js"
+    },
+    {
+      "id": 53371080,
+      "filename": "repro.mkv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1657037,
+      "url": "https://issues.chromium.org/action/issues/40061289/attachments/53371080?download=true",
+      "local_path": "attachments/repro.mkv"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAfter the PWA's installation dialog is opened by the user, it is possible to redirect the attacker's page to another website, and given the dialog isn't being dismissed, it will show over cross-origin websites.  \n  \nThis vulnerability can be chained with https://crbug.co"
+}

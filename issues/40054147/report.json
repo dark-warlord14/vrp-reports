@@ -1,0 +1,53 @@
+{
+  "id": "40054147",
+  "url": "https://issues.chromium.org/issues/40054147",
+  "title": "Security: UAF in PasswordProtectionRequest",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "xi...@chromium.org",
+  "created_date": "2020-12-11T12:33:58+00:00",
+  "modified_date": "2024-01-09T02:37:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53345905,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 22472,
+      "url": "https://issues.chromium.org/action/issues/40054147/attachments/53345905?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53345906,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 4892,
+      "url": "https://issues.chromium.org/action/issues/40054147/attachments/53345906?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 53345911,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 441,
+      "url": "https://issues.chromium.org/action/issues/40054147/attachments/53345911?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nIf the Help-Improve-Security feature is enabled, a sampled_ping request[1] will be sent when checking the whitelist. And if the serialized information is too large, the request will finish immediately[2]. This will erase the request from |pending_requests_|[3], and th"
+}

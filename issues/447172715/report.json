@@ -1,0 +1,201 @@
+{
+  "id": "447172715",
+  "url": "https://issues.chromium.org/issues/447172715",
+  "title": "Security: Compromised renderer can control mouse after single tap (UXSS, sandbox escape, and more)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Views",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "da...@chromium.org",
+  "created_date": "2025-09-25T06:51:00+00:00",
+  "modified_date": "2026-01-30T12:39:00+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 30000.0,
+  "bounty_rationale": "sandbox escape // UXSS mitigated by needing a colluding extension",
+  "attachments": [
+    {
+      "id": 69608919,
+      "filename": "dragclick-patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 16900,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608919?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69608920,
+      "filename": "touch-drag-click-cr.html",
+      "mime_type": "text/html",
+      "size_bytes": 18449,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608920?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69608921,
+      "filename": "dragclick-uxss.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1781216,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608921?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69608922,
+      "filename": "dragclick-uxss-open-settings-show-bookmarks-bar.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 675680,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608922?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69608923,
+      "filename": "dragclick-pwn-all-the-things.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4487321,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608923?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69608924,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 402,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608924?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69608944,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 6486,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608944?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69608925,
+      "filename": "page.html",
+      "mime_type": "text/html",
+      "size_bytes": 390,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608925?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69609325,
+      "filename": "page.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 9390,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69609325?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69608926,
+      "filename": "self-closing.html",
+      "mime_type": "text/html",
+      "size_bytes": 90,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608926?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69609326,
+      "filename": "self-closing.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 15,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69609326?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69608928,
+      "filename": "dragclick-ext-chained-sbx-esc-downloads-api-open.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1635431,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608928?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69608929,
+      "filename": "dragclick-ext-chained-sbx-esc-downloads-page-open.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2120500,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608929?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69705283,
+      "filename": "drag_diffs.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1206,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69705283?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69782972,
+      "filename": "mitigations.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 20653,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69782972?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69848678,
+      "filename": "persistent-touch-state.html",
+      "mime_type": "text/html",
+      "size_bytes": 620,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69848678?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69848679,
+      "filename": "basic-click-demo.html",
+      "mime_type": "text/html",
+      "size_bytes": 2019,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69848679?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69848680,
+      "filename": "click-monitor.html",
+      "mime_type": "text/html",
+      "size_bytes": 535,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69848680?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69848681,
+      "filename": "basic-repro.log",
+      "mime_type": "text/plain",
+      "size_bytes": 7200,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69848681?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69895481,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69895481?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69916554,
+      "filename": "touch_diffs.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 4401,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/69916554?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70193566,
+      "filename": "dragclick-web-contents-bounds-bypass.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1318984,
+      "url": "https://issues.chromium.org/action/issues/447172715/attachments/70193566?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 108,
+  "description_snippet": "## SUMMARY\n\nSimilar to issue 370856871, on Windows a compromised renderer can call `StartDragging()` to control the mouse and perform clicks. The existing mitigations can be bypassed after a single user tap until browser shutdown, allowing for many of the same impacts as the referenced issue. After"
+}

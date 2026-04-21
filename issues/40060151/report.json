@@ -1,0 +1,201 @@
+{
+  "id": "40060151",
+  "url": "https://issues.chromium.org/issues/40060151",
+  "title": "Security: Bypass(1301873)Chrome for Android Hide Custom Fullscreen Toast View with Repeated  delayed Enter Fullscreen Request ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>FullScreen",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "el...@gmail.com",
+  "assignee": "li...@google.com",
+  "created_date": "2022-07-03T12:46:10+00:00",
+  "modified_date": "2024-01-09T06:39:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53104128,
+      "filename": "SVID_20220703_140235_1.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3426428,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104128?download=true",
+      "local_path": "attachments/SVID_20220703_140235_1.mp4"
+    },
+    {
+      "id": 53104129,
+      "filename": "fullscreenpoc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4234,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104129?download=true",
+      "local_path": "attachments/fullscreenpoc.html"
+    },
+    {
+      "id": 53104152,
+      "filename": "XRecorder_04072022_003018.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1263908,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104152?download=true",
+      "local_path": "attachments/XRecorder_04072022_003018.mp4"
+    },
+    {
+      "id": 53104239,
+      "filename": "Pixel6fullscreenpoc_1.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 428598,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104239?download=true",
+      "local_path": "attachments/Pixel6fullscreenpoc_1.mp4"
+    },
+    {
+      "id": 53104240,
+      "filename": "Google Pixel6 Chrome Version&Build.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 154588,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104240?download=true",
+      "local_path": "attachments/Google Pixel6 Chrome Version&Build.jpg"
+    },
+    {
+      "id": 53104241,
+      "filename": "Huawei Nova7i-POC 8Sep2022.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3325878,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104241?download=true",
+      "local_path": "attachments/Huawei Nova7i-POC 8Sep2022.mp4"
+    },
+    {
+      "id": 53104249,
+      "filename": "screen-20220912-152722.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1849884,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104249?download=true",
+      "local_path": "attachments/screen-20220912-152722.mp4"
+    },
+    {
+      "id": 53104399,
+      "filename": "Chrome-Debug-Poc-Pixel6.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 4544,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104399?download=true",
+      "local_path": "attachments/Chrome-Debug-Poc-Pixel6.txt"
+    },
+    {
+      "id": 53104400,
+      "filename": "seconed-pixel6-test.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 4657,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104400?download=true",
+      "local_path": "attachments/seconed-pixel6-test.txt"
+    },
+    {
+      "id": 53104411,
+      "filename": "Debug-OnClick-Huawei-PoC.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11960,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104411?download=true",
+      "local_path": "attachments/Debug-OnClick-Huawei-PoC.txt"
+    },
+    {
+      "id": 53104417,
+      "filename": "2nd DebugTest-Huawei-PoC.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 10290,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104417?download=true",
+      "local_path": "attachments/2nd DebugTest-Huawei-PoC.txt"
+    },
+    {
+      "id": 53104471,
+      "filename": "logs.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 8192,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104471?download=true",
+      "local_path": "attachments/logs.txt"
+    },
+    {
+      "id": 53104512,
+      "filename": "filtered-logs.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11706,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104512?download=true",
+      "local_path": "attachments/filtered-logs.txt"
+    },
+    {
+      "id": 53104535,
+      "filename": "filtered-debugme-more.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 36333,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104535?download=true",
+      "local_path": "attachments/filtered-debugme-more.txt"
+    },
+    {
+      "id": 53104562,
+      "filename": "filtered-debugme-more-animation-tracing-hide.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 88589,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104562?download=true",
+      "local_path": "attachments/filtered-debugme-more-animation-tracing-hide.txt"
+    },
+    {
+      "id": 53104569,
+      "filename": "filtered-animation-tracing.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17254,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104569?download=true",
+      "local_path": "attachments/filtered-animation-tracing.txt"
+    },
+    {
+      "id": 53104592,
+      "filename": "screen-20221203-002143.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1012351,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104592?download=true",
+      "local_path": "attachments/screen-20221203-002143.mp4"
+    },
+    {
+      "id": 53104611,
+      "filename": "filtered-debug.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7820,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104611?download=true",
+      "local_path": "attachments/filtered-debug.txt"
+    },
+    {
+      "id": 53104612,
+      "filename": "filtered-logs-debug.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 20989,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104612?download=true",
+      "local_path": "attachments/filtered-logs-debug.txt"
+    },
+    {
+      "id": 53104665,
+      "filename": "Physical-Setup.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 47037,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104665?download=true",
+      "local_path": "attachments/Physical-Setup.jpg"
+    },
+    {
+      "id": 53104666,
+      "filename": "Remote-Physical-debug-Platform 2022-12-20 20-32-22-530.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2086335,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104666?download=true",
+      "local_path": "attachments/Remote-Physical-debug-Platform 2022-12-20 20-32-22-530.mp4"
+    },
+    {
+      "id": 53104742,
+      "filename": "XRecorder_Edited_08012023_005334.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4873145,
+      "url": "https://issues.chromium.org/action/issues/40060151/attachments/53104742?download=true",
+      "local_path": "attachments/XRecorder_Edited_08012023_005334.mp4"
+    }
+  ],
+  "update_count": 144,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAfter https://crbug.com/chromium/1264561 Chrome on Android fullscreen toast now migrated from native Android toast framework to custom toast view,and in this ticket Bypass of (1301873)  \n  \nNormally the custom toast view will be displayed for 5 seconds, interestingly wit"
+}

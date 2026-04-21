@@ -1,0 +1,214 @@
+{
+  "id": "446722008",
+  "url": "https://issues.chromium.org/issues/446722008",
+  "title": "heap-use-after-free in content::indexed_db::Database::connections_ when force_closing_ is true",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Storage>IndexedDB",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "so...@gmail.com",
+  "assignee": "st...@microsoft.com",
+  "created_date": "2025-09-23T01:40:44+00:00",
+  "modified_date": "2026-01-03T04:09:30+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 35000.0,
+  "bounty_rationale": "High-quality report of demonstrated memory corruption in non-sandboxed process",
+  "attachments": [
+    {
+      "id": 69530864,
+      "filename": "exploit.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 4479,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/69530864?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69530865,
+      "filename": "renderer.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 796,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/69530865?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69530866,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 451,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/69530866?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69530867,
+      "filename": "main.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 10372,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/69530867?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69530868,
+      "filename": "video.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 36597307,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/69530868?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69737064,
+      "filename": "uaf-database-runtasks.textproto",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1113,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/69737064?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70122400,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/70122400?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70122369,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/70122369?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70122402,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/70122402?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70122984,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/70122984?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70122370,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/70122370?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70122403,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/70122403?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70188312,
+      "filename": "renderer.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 796,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/70188312?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70188969,
+      "filename": "v8.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 6463,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/70188969?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70193572,
+      "filename": "exploit.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 14891,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/70193572?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70188313,
+      "filename": "copy_mojo_js_bindings.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 697,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/70188313?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70188970,
+      "filename": "disable_aslr.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 1202,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/70188970?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70193573,
+      "filename": "rce_64bit_NoASLR.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2680450,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/70193573?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70188971,
+      "filename": "rce_32bit.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 10942836,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/70188971?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70644848,
+      "filename": "renderer.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1682,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/70644848?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70644877,
+      "filename": "main32.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 22221,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/70644877?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70644849,
+      "filename": "pe.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 12316,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/70644849?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70648826,
+      "filename": "rce_32bit_reliable.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 18347572,
+      "url": "https://issues.chromium.org/action/issues/446722008/attachments/70648826?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 129,
+  "description_snippet": "# **VULNERABILITY DETAILS**  \n**tl;dr**  \nThe database is not destroyed immediately when `Database::ForceCloseAndRunTasks()` is called.  \nIt sets `Database::force_closing_` to true, clears all active connections and then queues a `bucket_context_->QueueRunTasks()` task to destroy itself.  \nThe datab"
+}

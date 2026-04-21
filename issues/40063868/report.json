@@ -1,0 +1,38 @@
+{
+  "id": "40063868",
+  "url": "https://issues.chromium.org/issues/40063868",
+  "title": "Service workers bypass PrivateNetworkAccess for localhost",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>CORS>PrivateNetworkAccess",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "nd...@protonmail.com",
+  "assignee": "ct...@chromium.org",
+  "created_date": "2023-04-02T02:48:52+00:00",
+  "modified_date": "2025-09-06T12:38:27+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "thank you for report of issue in a feature that did not ship, but helped us make considerations regarding service worker handling in local network access",
+  "attachments": [
+    {
+      "id": 53040315,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40063868/attachments/53040315?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "**Steps to reproduce the problem:**   \nCreate a service worker with the contents of:  \n\"use strict\";  \nself.addEventListener('fetch', function (event) {  \n  event.respondWith(fetch(event.request).then(inject));  \n});  \n  \nfunction inject(response) {  \nconst headers = new Headers(response.headers);"
+}

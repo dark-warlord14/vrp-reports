@@ -1,0 +1,57 @@
+{
+  "id": "40057030",
+  "url": "https://issues.chromium.org/issues/40057030",
+  "title": "Security: RCE - Download Silently *.exe or *.dll to users Desktop or Downloads folder ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Storage>FileSystem",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "as...@chromium.org",
+  "created_date": "2021-08-26T20:11:00+00:00",
+  "modified_date": "2024-01-09T08:59:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53254238,
+      "filename": "rce.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3547,
+      "url": "https://issues.chromium.org/action/issues/40057030/attachments/53254238?download=true",
+      "local_path": "attachments/rce.html"
+    },
+    {
+      "id": 53254273,
+      "filename": "rceAPPDATA.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3559,
+      "url": "https://issues.chromium.org/action/issues/40057030/attachments/53254273?download=true",
+      "local_path": "attachments/rceAPPDATA.html"
+    },
+    {
+      "id": 53254280,
+      "filename": "env.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4084,
+      "url": "https://issues.chromium.org/action/issues/40057030/attachments/53254280?download=true",
+      "local_path": "attachments/env.html"
+    },
+    {
+      "id": 53254305,
+      "filename": "CommonFileDialogApp.cpp",
+      "mime_type": "text/plain",
+      "size_bytes": 10633,
+      "url": "https://issues.chromium.org/action/issues/40057030/attachments/53254305?download=true",
+      "local_path": "attachments/CommonFileDialogApp.cpp"
+    }
+  ],
+  "update_count": 91,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nBy holding for 5 seconds ENTER button, we can save any file to the user's desktop. For instance: virus.exe, user32.dll, or more.  \n  \n**VERSION**   \nChrome Version: 92.0.4515.159 (Official Build) (64-bit) (cohort: Stable)  \nOperating System: Windows (possible Linux and M"
+}

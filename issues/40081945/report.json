@@ -1,0 +1,39 @@
+{
+  "id": "40081945",
+  "url": "https://issues.chromium.org/issues/40081945",
+  "title": "Security: Boundless Tunes - universal SOP bypass through ActionSctipt's Sound object",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "oj...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2015-04-27T20:17:04+00:00",
+  "modified_date": "2018-04-25T23:01:03+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53047119,
+      "filename": "BoundlessTunes.swf",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2484,
+      "url": "https://issues.chromium.org/action/issues/40081945/attachments/53047119?download=true",
+      "local_path": "attachments/BoundlessTunes.swf"
+    },
+    {
+      "id": 53047120,
+      "filename": "BoundlessTunes.as",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4173,
+      "url": "https://issues.chromium.org/action/issues/40081945/attachments/53047120?download=true",
+      "local_path": "attachments/BoundlessTunes.as"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAn instance of ActionScript's Sound class allows for loading and extracting for further processing any kind of external data, not only sound files. Same-origin policy doesn't apply here. Each input byte of raw data, loaded previously from given URL, is encoded by an unsp"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "420734141",
+  "url": "https://issues.chromium.org/issues/420734141",
+  "title": "Screen Share Dialog - Domain Spoof (Similar to permission prompt)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>MediaCapture",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "138.0.7204.4 (Official Build) canary (64-bit)",
+  "cve_ids": [
+    "CVE-2025-11211"
+  ],
+  "reporter": "am...@gmail.com",
+  "assignee": "to...@chromium.org",
+  "created_date": "2025-05-28T02:32:49+00:00",
+  "modified_date": "2026-01-14T08:57:11+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "mitigated baseline UI spoof",
+  "attachments": [
+    {
+      "id": 66220260,
+      "filename": "bandicam 2025-05-28 07-56-04-516.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2190216,
+      "url": "https://issues.chromium.org/action/issues/420734141/attachments/66220260?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66220261,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1942,
+      "url": "https://issues.chromium.org/action/issues/420734141/attachments/66220261?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66220262,
+      "filename": "server.crt",
+      "mime_type": "application/x-x509-ca-cert",
+      "size_bytes": 1064,
+      "url": "https://issues.chromium.org/action/issues/420734141/attachments/66220262?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66220263,
+      "filename": "server.key",
+      "mime_type": "application/x-iwork-keynote-sffkey",
+      "size_bytes": 1732,
+      "url": "https://issues.chromium.org/action/issues/420734141/attachments/66220263?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66220264,
+      "filename": "https_server_fileserve.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 715,
+      "url": "https://issues.chromium.org/action/issues/420734141/attachments/66220264?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 113,
+  "description_snippet": "# Steps to reproduce the problem\n1. Open the vulnerable page in long domain name (possible above 75)\n2. click the button to start screenshare\n3. you can see the domain name is truncated and diff domain is showed\n\nTo reproduce this issue locally we can follow the below steps\n\n1. Add a below entry in"
+}

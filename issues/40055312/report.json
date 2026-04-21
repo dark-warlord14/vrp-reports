@@ -1,0 +1,43 @@
+{
+  "id": "40055312",
+  "url": "https://issues.chromium.org/issues/40055312",
+  "title": "Security:  heap-use-after-free in blink::InvalidatableInterpolation::MaybeConvertPairwise",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Animation, Blink>CSS",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "fu...@chromium.org",
+  "created_date": "2021-03-24T12:50:22+00:00",
+  "modified_date": "2021-07-08T17:49:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53022673,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 19416,
+      "url": "https://issues.chromium.org/action/issues/40055312/attachments/53022673?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53022674,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1028,
+      "url": "https://issues.chromium.org/action/issues/40055312/attachments/53022674?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nheap-use-after-free in blink::InvalidatableInterpolation::MaybeConvertPairwise  \n  \n**VERSION**   \nChrome Version: Chromium Dev(asan-win32-release_x64-865999)  \nOperating System: Windows 20H2  \n  \n**REPRODUCTION CASE**   \nOpen the poc.html in the latest chromium.  \nC:\\ch"
+}

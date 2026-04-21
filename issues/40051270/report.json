@@ -1,0 +1,44 @@
+{
+  "id": "40051270",
+  "url": "https://issues.chromium.org/issues/40051270",
+  "title": "Security: bypass of CSP validator to run remote code in extensions",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "mo...@google.com",
+  "created_date": "2020-01-17T00:26:34+00:00",
+  "modified_date": "2024-01-09T07:52:35+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53287378,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 266,
+      "url": "https://issues.chromium.org/action/issues/40051270/attachments/53287378?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53287379,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 132,
+      "url": "https://issues.chromium.org/action/issues/40051270/attachments/53287379?download=true",
+      "local_path": "attachments/background.js"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "The CSP validator blocks remote code in extensions by restricting script-src, object-src, worker-src and default-src (https://cs.chromium.org/DoesCSPDisallowRemoteCode and https://cs.chromium.org/GetSecureDirectiveValues). Other directives are accepted as is.  \n  \nThe script-src-elem and script-src-"
+}

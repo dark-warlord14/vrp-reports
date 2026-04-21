@@ -1,0 +1,61 @@
+{
+  "id": "40066575",
+  "url": "https://issues.chromium.org/issues/40066575",
+  "title": "Security: Heap-buffer-overflow in CompositorFrameSinkSupport::DidPresentCompositorFrame",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU, Internals>Services>Viz",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hi...@gmail.com",
+  "assignee": "ky...@chromium.org",
+  "created_date": "2023-06-28T13:39:59+00:00",
+  "modified_date": "2024-04-28T05:15:34+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53385318,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 316,
+      "url": "https://issues.chromium.org/action/issues/40066575/attachments/53385318?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53385319,
+      "filename": "video.html",
+      "mime_type": "text/plain",
+      "size_bytes": 138,
+      "url": "https://issues.chromium.org/action/issues/40066575/attachments/53385319?download=true",
+      "local_path": "attachments/video.html"
+    },
+    {
+      "id": 53385320,
+      "filename": "change.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 752,
+      "url": "https://issues.chromium.org/action/issues/40066575/attachments/53385320?download=true",
+      "local_path": "attachments/change.diff"
+    },
+    {
+      "id": 53385321,
+      "filename": "flower.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 554058,
+      "url": "https://issues.chromium.org/action/issues/40066575/attachments/53385321?download=true",
+      "local_path": "attachments/flower.webm"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "reproduce:\r\n1. apply change.diff and compile Chromium wiht ASAN\r\n2. start a server at the folder of poc.html and video.html  `python2 -m SimpleHTTPServer 8080`\r\n3. `./Chrome --no-sandbox --disable-popup-blocking http://127.0.0.1:8080/poc.html`\r\n\r\n**This is a bug that affects GPU process with a compr"
+}

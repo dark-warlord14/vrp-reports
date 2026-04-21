@@ -1,0 +1,46 @@
+{
+  "id": "40063426",
+  "url": "https://issues.chromium.org/issues/40063426",
+  "title": "Security DCHECK failed: IsA<Derived>(from) blink::TimelineOffset::Create timeline_offset.cc:82",
+  "status": "Fixed",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Animation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2023-03-07T02:53:28+00:00",
+  "modified_date": "2023-06-15T17:36:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52991826,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 458,
+      "url": "https://issues.chromium.org/action/issues/40063426/attachments/52991826?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52991843,
+      "filename": "fix.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 653,
+      "url": "https://issues.chromium.org/action/issues/40063426/attachments/52991843?download=true",
+      "local_path": "attachments/fix.diff"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "**VERSION**   \nWIN10 X64  \nasan-win32-release_x64-1113210  \n  \n**REPRODUCTION CASE**   \nchrome --no-sandbox --enable-blink-test-features --user-data-dir=test poc.html  \n  \nType of crash: [tab]  \n  \n#ASAN  \n[15204:9672:0307/104949.197:FATAL:casting.h(115)] Security DCHECK failed: IsA<Derived>(from)."
+}

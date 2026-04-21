@@ -1,0 +1,49 @@
+{
+  "id": "412265459",
+  "url": "https://issues.chromium.org/issues/412265459",
+  "title": "Security: Security DCHECK failed in StringView",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>ViewTransitions",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": "asan-linux-release-1444497",
+  "cve_ids": [],
+  "reporter": "su...@gmail.com",
+  "assignee": "sk...@chromium.org",
+  "created_date": "2025-04-21T15:08:49+00:00",
+  "modified_date": "2025-08-14T12:41:20+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": "report of memory corruption in a sandboxed process / the renderer",
+  "attachments": [
+    {
+      "id": 65080222,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 7645,
+      "url": "https://issues.chromium.org/action/issues/412265459/attachments/65080222?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65135903,
+      "filename": "poc2.html",
+      "mime_type": "text/html",
+      "size_bytes": 24635,
+      "url": "https://issues.chromium.org/action/issues/412265459/attachments/65135903?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65137960,
+      "filename": "2025-04-23 17-10-09.mkv",
+      "mime_type": "video/x-matroska",
+      "size_bytes": 4326438,
+      "url": "https://issues.chromium.org/action/issues/412265459/attachments/65137960?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 193,
+  "description_snippet": "# Steps to reproduce the problem\nI can only provide a rough POC at the moment, and I'm still trying to optimize it.\n\nPOC: see poc.html\n\n1. fetch asan-linux-release-1444497\n2. serve poc.html on port 8080\n3. ./chrome --enable-experimental-web-platform-features http://127.0.0.1:8080/poc.html \n\n# Proble"
+}

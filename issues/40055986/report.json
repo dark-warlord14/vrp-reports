@@ -1,0 +1,31 @@
+{
+  "id": "40055986",
+  "url": "https://issues.chromium.org/issues/40055986",
+  "title": "Security: libxml CVE-2021-3541",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>XML",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2021-3541"
+  ],
+  "reporter": "se...@pipping.org",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2021-05-24T16:56:39+00:00",
+  "modified_date": "2024-08-11T21:22:41+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 0.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 30,
+  "description_snippet": "CVE-2021-3541 \"Parameter Laughs\" fixed in libxml2 2.9.11\r\n\r\nhttps://blog.hartwork.org/posts/cve-2021-3541-parameter-laughs-fixed-in-libxml2-2-9-11/\r\n\r\nMaybe this fix will be absorbed by the work in https://crbug.com/chromium/1211314 anyway (https://chromium.googlesource.com/chromium/src/+/b0a66f930c"
+}

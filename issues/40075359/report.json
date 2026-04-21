@@ -1,0 +1,36 @@
+{
+  "id": "40075359",
+  "url": "https://issues.chromium.org/issues/40075359",
+  "title": "Security: Heap-use-after-free in lens::OpenLensRegionSearchInstructions",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>SearchSidePanel",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ju...@google.com",
+  "created_date": "2023-10-21T04:19:45+00:00",
+  "modified_date": "2024-02-06T15:41:25+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53111548,
+      "filename": "Recording #1.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1060465,
+      "url": "https://issues.chromium.org/action/issues/40075359/attachments/53111548?download=true",
+      "local_path": "attachments/Recording #1.mp4"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**VERSION**   \nChrome Version: 120.0.6079.0 (Official Build) canary (64-bit) (cohort: Clang-64)   \nOperating System: windows 11  \n  \n**REPRODUCTION CASE**   \n1. Open two chrome windows   \n2. On each window open Google Search Side Panel and try to seach by \"Select any page area\" option.  \n3. Move one"
+}

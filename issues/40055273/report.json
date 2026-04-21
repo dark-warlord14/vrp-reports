@@ -1,0 +1,44 @@
+{
+  "id": "40055273",
+  "url": "https://issues.chromium.org/issues/40055273",
+  "title": "Security: UAF in InputHandler::InputInjector::InjectKeyboardEvent",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "bm...@chromium.org",
+  "created_date": "2021-03-21T06:09:41+00:00",
+  "modified_date": "2024-01-09T03:10:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53193375,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1120,
+      "url": "https://issues.chromium.org/action/issues/40055273/attachments/53193375?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53193376,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 206,
+      "url": "https://issues.chromium.org/action/issues/40055273/attachments/53193376?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nOne of the methods available via the Chrome DevTools protocol is Input.dispatchKeyEvent. That method allows the caller to dispatch key events to the target page.  \n  \nWhen sending a browser shortcut that would result in the debugged tab being closed (such as the shortcut"
+}

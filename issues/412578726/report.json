@@ -1,0 +1,91 @@
+{
+  "id": "412578726",
+  "url": "https://issues.chromium.org/issues/412578726",
+  "title": "ipcz bug can allow renderer duplicate browser process handle to escape sandbox",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Mojo>Core",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "135.0.0.0",
+  "cve_ids": [
+    "CVE-2025-2783"
+  ],
+  "reporter": "ha...@gmail.com",
+  "assignee": "aj...@chromium.org",
+  "created_date": "2025-04-22T16:38:51+00:00",
+  "modified_date": "2025-10-06T03:14:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 250000.0,
+  "bounty_rationale": "report demonstrating a Chrome sandbox escape -- while arguably there is a race here, this is a very complex logic bug and high quality report with a functional exploit, with good analysis and demonstration of a sandbox escape. This is amazing work and the type of researcher we want to reward with these types of rewards and incentivize future investment in this type of research",
+  "attachments": [
+    {
+      "id": 65117625,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 16777,
+      "url": "https://issues.chromium.org/action/issues/412578726/attachments/65117625?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65117626,
+      "filename": "handle.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2864,
+      "url": "https://issues.chromium.org/action/issues/412578726/attachments/65117626?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65145515,
+      "filename": "ajgo.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 17529,
+      "url": "https://issues.chromium.org/action/issues/412578726/attachments/65145515?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65349042,
+      "filename": "exploit.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6603398,
+      "url": "https://issues.chromium.org/action/issues/412578726/attachments/65349042?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65348951,
+      "filename": "exploit.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 23380,
+      "url": "https://issues.chromium.org/action/issues/412578726/attachments/65348951?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68311871,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/412578726/attachments/68311871?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68322189,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/412578726/attachments/68322189?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68325321,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/412578726/attachments/68325321?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 79,
+  "description_snippet": "# Steps to reproduce the problem\n1. git apply patch.diff and compile chromium.(This patch is all renderer side patch.)\n2. open chromium.\n3. If you are build chromium without component build and without official build. You will hit the check\"You are attempting to duplicate a privileged handle into a"
+}

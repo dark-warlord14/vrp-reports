@@ -1,0 +1,95 @@
+{
+  "id": "41485950",
+  "url": "https://issues.chromium.org/issues/41485950",
+  "title": "Security: CRX3 File Signature Verification Bypass via Embedded ZIP64 Payload",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Cast, Internals>Installer>Components, Internals>Updater, Platform>Extensions",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@sodium24.com",
+  "assignee": "wa...@chromium.org",
+  "created_date": "2023-12-20T10:13:42+00:00",
+  "modified_date": "2024-11-12T18:14:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53101257,
+      "filename": "payload_embedder.py",
+      "mime_type": "text/plain",
+      "size_bytes": 7492,
+      "url": "https://issues.chromium.org/action/issues/41485950/attachments/53101257?download=true",
+      "local_path": "attachments/payload_embedder.py"
+    },
+    {
+      "id": 53101258,
+      "filename": "crx3_pb2.py",
+      "mime_type": "text/plain",
+      "size_bytes": 6735,
+      "url": "https://issues.chromium.org/action/issues/41485950/attachments/53101258?download=true",
+      "local_path": "attachments/crx3_pb2.py"
+    },
+    {
+      "id": 53101259,
+      "filename": "my_sample_app.crx",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 48355,
+      "url": "https://issues.chromium.org/action/issues/41485950/attachments/53101259?download=true",
+      "local_path": "attachments/my_sample_app.crx"
+    },
+    {
+      "id": 53101260,
+      "filename": "my_sample_app.xml",
+      "mime_type": "text/plain",
+      "size_bytes": 266,
+      "url": "https://issues.chromium.org/action/issues/41485950/attachments/53101260?download=true",
+      "local_path": "attachments/my_sample_app.xml"
+    },
+    {
+      "id": 53101261,
+      "filename": "payload.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 47987,
+      "url": "https://issues.chromium.org/action/issues/41485950/attachments/53101261?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53101264,
+      "filename": "windows_lpe_poc.exe",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 148992,
+      "url": "https://issues.chromium.org/action/issues/41485950/attachments/53101264?download=true",
+      "local_path": "attachments/windows_lpe_poc.exe"
+    },
+    {
+      "id": 53101266,
+      "filename": "windows_lpe_payload.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 62331,
+      "url": "https://issues.chromium.org/action/issues/41485950/attachments/53101266?download=true",
+      "local_path": "attachments/windows_lpe_payload.zip"
+    },
+    {
+      "id": 53101268,
+      "filename": "windows_lpe_poc.bat",
+      "mime_type": "text/plain",
+      "size_bytes": 114,
+      "url": "https://issues.chromium.org/action/issues/41485950/attachments/53101268?download=true",
+      "local_path": "attachments/windows_lpe_poc.bat"
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nA vulnerability has been found in Google Chrome's CRX3 file signature validation, which would allow an attacker to embed their own malicious payload inside a legitimate CRX extension with a valid signature and key. The CRX file will still contain valid signatures, but"
+}

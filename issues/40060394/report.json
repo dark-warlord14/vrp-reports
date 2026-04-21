@@ -1,0 +1,54 @@
+{
+  "id": "40060394",
+  "url": "https://issues.chromium.org/issues/40060394",
+  "title": "TypeConfuse in blink::NGLayoutInputNode::IsEmptyTableSection ng_layout_input_node.cc:87",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>CSS",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "fu...@chromium.org",
+  "created_date": "2022-07-25T07:02:08+00:00",
+  "modified_date": "2024-01-09T07:20:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53299846,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13404,
+      "url": "https://issues.chromium.org/action/issues/40060394/attachments/53299846?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53299847,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 636,
+      "url": "https://issues.chromium.org/action/issues/40060394/attachments/53299847?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 53299848,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1257,
+      "url": "https://issues.chromium.org/action/issues/40060394/attachments/53299848?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**Steps to reproduce the problem:**   \n#TestOn  \nasan-win32-release_x64-1027164  \n  \n#Reproduce  \n1. chrome --no-sandbox --user-data-dir=test poc.html  \n  \n**Problem Description:**   \n#Type of crash  \nrender tab  \n  \n#Analysis  \nLayoutTableSection can also pass the conditional test of IsTableSection"
+}

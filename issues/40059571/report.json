@@ -1,0 +1,41 @@
+{
+  "id": "40059571",
+  "url": "https://issues.chromium.org/issues/40059571",
+  "title": "Security DCHECK(TypeConfuse) failed: IsA<Derived>(from) in blink::VisualViewport::StartTrackingPinch",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Input",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "bo...@chromium.org",
+  "created_date": "2022-05-05T09:25:52+00:00",
+  "modified_date": "2022-11-04T17:33:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52942161,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 9004,
+      "url": "https://issues.chromium.org/action/issues/40059571/attachments/52942161?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 52942162,
+      "filename": "fuzz-00003.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3688,
+      "url": "https://issues.chromium.org/action/issues/40059571/attachments/52942162?download=true",
+      "local_path": "attachments/fuzz-00003.html"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**Steps to reproduce the problem:**   \n#TestOn  \nasan-win32-release_x64-998137  \n  \n#Reproduce  \nThis problem was found in the fuzzer environment, but could not be reproduced.  \nI provided a sample that I think may be related to the trigger.  \nThe sample will continuously open new pages through the"
+}

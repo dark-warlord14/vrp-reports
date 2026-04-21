@@ -1,0 +1,52 @@
+{
+  "id": "40061426",
+  "url": "https://issues.chromium.org/issues/40061426",
+  "title": "Reading local files through an extension that only has the \"downloads\" permission",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions>API, UI>Browser>Downloads",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "qi...@chromium.org",
+  "created_date": "2022-10-21T01:01:23+00:00",
+  "modified_date": "2024-01-09T06:44:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53408403,
+      "filename": "extension.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1010,
+      "url": "https://issues.chromium.org/action/issues/40061426/attachments/53408403?download=true",
+      "local_path": "attachments/extension.zip"
+    },
+    {
+      "id": 53408404,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 610,
+      "url": "https://issues.chromium.org/action/issues/40061426/attachments/53408404?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53408405,
+      "filename": "repro.mkv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3637809,
+      "url": "https://issues.chromium.org/action/issues/40061426/attachments/53408405?download=true",
+      "local_path": "attachments/repro.mkv"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nI was reading the source code of download_target_determiner.cc (https://source.chromium.org/chromium/chromium/src/+/main:chrome/browser/download/download_target_determiner.cc) and found out there is a bug in the ReplaceExtension function (https://source.chromium.org/chro"
+}

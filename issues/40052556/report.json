@@ -1,0 +1,26 @@
+{
+  "id": "40052556",
+  "url": "https://issues.chromium.org/issues/40052556",
+  "title": "Security: Chrome's insecure construction of curl commands allows untrusted websites to retrieve local files from the user's system",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>DevTools>Network",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pa...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2020-06-11T12:21:40+00:00",
+  "modified_date": "2021-02-09T14:27:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 31,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nCurl commands produced by the \"Copy as cURL (bash)\" menu item in the Network Inspector are constructed insecurely. This subtle flaw can be exploited by an untrusted website to retrieve local files from the user's system when the curl command is subsequently executed b"
+}

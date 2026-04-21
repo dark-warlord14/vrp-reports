@@ -1,0 +1,41 @@
+{
+  "id": "40945804",
+  "url": "https://issues.chromium.org/issues/40945804",
+  "title": "Security: iOS file picker dialog can be shown over a different tab",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ho...@gmail.com",
+  "assignee": "aj...@google.com",
+  "created_date": "2023-11-25T17:13:01+00:00",
+  "modified_date": "2024-08-23T15:45:02+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "baseline report of security UI bug -- the reward amount was decided based on the low risk / user impact posed by this issue\n\nThank you for your efforts and helping us make Chrome more secure for all users!\n\nCheers,\nChrome VRP Panel Bot\n\n\nP.S. Two other things we'd like to mention:\n\n* Please do NOT publicly disclose details until a fix has been released to all our users. Early public disclosure may cancel the provisional reward. Also, please be considerate about disclosure when the bug affects a ",
+  "attachments": [
+    {
+      "id": 52922402,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40945804/attachments/52922402?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52922403,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40945804/attachments/52922403?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt is possible to display a file or image picker dialog over a different tab.  \n  \nSimilar bug: https://bugs.chromium.org/p/chromium/issues/detail?id=1414936  \n  \n**VERSION**   \nChrome Version: 119.0.6045.169 + stable  \nOperating System: iOS 17.1  \n  \n**REPRODUCTION CASE"
+}

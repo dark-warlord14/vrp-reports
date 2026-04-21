@@ -1,0 +1,41 @@
+{
+  "id": "40065422",
+  "url": "https://issues.chromium.org/issues/40065422",
+  "title": "Security : Heap UaF on ash/wm/splitview/split_view_divider_view.cc:168:23",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rh...@gmail.com",
+  "assignee": "st...@google.com",
+  "created_date": "2023-06-06T15:32:25+00:00",
+  "modified_date": "2023-09-18T17:37:57+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52883006,
+      "filename": "no_need_drag_center_line_asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8618,
+      "url": "https://issues.chromium.org/action/issues/40065422/attachments/52883006?download=true",
+      "local_path": "attachments/no_need_drag_center_line_asan.log"
+    },
+    {
+      "id": 52883007,
+      "filename": "asan1.log",
+      "mime_type": "text/plain",
+      "size_bytes": 5926,
+      "url": "https://issues.chromium.org/action/issues/40065422/attachments/52883007?download=true",
+      "local_path": "attachments/asan1.log"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Build chromeOS under asan  \n2. Run tablet mode with touch-device ( --panel=hdp is enabled while writing this report)  \n3. Open two tabs and drag one tab out until split view and pick the center line to the left side or right side. Sometimes pick the center l"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "40945671",
+  "url": "https://issues.chromium.org/issues/40945671",
+  "title": "Security: SincResampler buffer UAF",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>WebAudio",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "su...@gmail.com",
+  "assignee": "ho...@chromium.org",
+  "created_date": "2023-11-24T16:08:30+00:00",
+  "modified_date": "2024-06-13T21:09:52+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53106160,
+      "filename": "uaf_read.html",
+      "mime_type": "text/plain",
+      "size_bytes": 975,
+      "url": "https://issues.chromium.org/action/issues/40945671/attachments/53106160?download=true",
+      "local_path": "attachments/uaf_read.html"
+    },
+    {
+      "id": 53106161,
+      "filename": "uaf_write.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1072,
+      "url": "https://issues.chromium.org/action/issues/40945671/attachments/53106161?download=true",
+      "local_path": "attachments/uaf_write.html"
+    }
+  ],
+  "update_count": 97,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \n```c++  \nvoid RealtimeAudioDestinationHandler::Render(  \n    AudioBus\\* destination_bus,  \n    uint32_t number_of_frames,  \n    const AudioIOPosition& output_position,  \n    const AudioCallbackMetric& metric) {  \n  TRACE_EVENT0(\"webaudio\", \"RealtimeAudioDestinationHan"
+}

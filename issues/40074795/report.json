@@ -1,0 +1,73 @@
+{
+  "id": "40074795",
+  "url": "https://issues.chromium.org/issues/40074795",
+  "title": "Uaf in EmbeddedPermissionPrompt::~EmbeddedPermissionPrompt And defects in raw_ptr with ASAN",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2023-10-13T06:37:27+00:00",
+  "modified_date": "2024-02-16T15:40:35+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53153479,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 979,
+      "url": "https://issues.chromium.org/action/issues/40074795/attachments/53153479?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53153480,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 25949,
+      "url": "https://issues.chromium.org/action/issues/40074795/attachments/53153480?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53153481,
+      "filename": "poc.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 980265,
+      "url": "https://issues.chromium.org/action/issues/40074795/attachments/53153481?download=true",
+      "local_path": "attachments/poc.webm"
+    },
+    {
+      "id": 53153495,
+      "filename": "poc-overflow.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2113,
+      "url": "https://issues.chromium.org/action/issues/40074795/attachments/53153495?download=true",
+      "local_path": "attachments/poc-overflow.html"
+    },
+    {
+      "id": 53153496,
+      "filename": "asan-overflow.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 12441,
+      "url": "https://issues.chromium.org/action/issues/40074795/attachments/53153496?download=true",
+      "local_path": "attachments/asan-overflow.txt"
+    },
+    {
+      "id": 53153497,
+      "filename": "poc-overflow.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 894323,
+      "url": "https://issues.chromium.org/action/issues/40074795/attachments/53153497?download=true",
+      "local_path": "attachments/poc-overflow.webm"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "**Steps to reproduce the problem:**   \ncommit at a5a7c2b61c212a326ee6e6bd190048907417053e  \n1. compile Chromium with ASAN enabled   \n2. copy the `\\*.mojom.js` file to the folder of `poc.html` and start a HTTP server  \n3. run `./chrome --enable-blink-features=MojoJS,MojoJSTest --enable-features=Permi"
+}

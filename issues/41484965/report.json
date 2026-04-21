@@ -1,0 +1,46 @@
+{
+  "id": "41484965",
+  "url": "https://issues.chromium.org/issues/41484965",
+  "title": "Security: Enterprise Policy Bypass Vulnerability Allows Download of Internal/Blocked Files",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Storage>FileSystem, UI>Browser>Downloads",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2023-4904"
+  ],
+  "reporter": "fa...@gmail.com",
+  "assignee": "ha...@google.com",
+  "created_date": "2023-12-16T20:51:14+00:00",
+  "modified_date": "2025-12-30T12:40:37+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "for pointing out a potential gap in our policy enforcement",
+  "attachments": [
+    {
+      "id": 53022742,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1178,
+      "url": "https://issues.chromium.org/action/issues/41484965/attachments/53022742?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53022745,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3655051,
+      "url": "https://issues.chromium.org/action/issues/41484965/attachments/53022745?download=true",
+      "local_path": "attachments/demo.mp4"
+    }
+  ],
+  "update_count": 84,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe `window.showSaveFilePicker` file handle can bypass download policies set by an enterprise in Chrome.  \n  \n**VERSION**   \nChrome Version: 120.0.6099.110 (Official Build) (64-bit) (cohort: M120 Rollout)   \nOperating System: Windows 11  \n  \nTo set up Enterprise policy o"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "40090857",
+  "url": "https://issues.chromium.org/issues/40090857",
+  "title": "Payment Request API permitted in CSP/iframe sandbox",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>FeaturePolicy, Blink>Payments, Blink>SecurityFeature>ContentSecurityPolicy, Blink>SecurityFeature>IFrameSandbox",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "s....@gmail.com",
+  "assignee": "am...@chromium.org",
+  "created_date": "2018-03-20T14:49:22+00:00",
+  "modified_date": "2024-08-22T15:48:15+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "low impact exploit mitigation bypass",
+  "attachments": [
+    {
+      "id": 53127323,
+      "filename": "Screen Shot 2019-08-21 at 3.11.53 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 260354,
+      "url": "https://issues.chromium.org/action/issues/40090857/attachments/53127323?download=true",
+      "local_path": "attachments/Screen Shot 2019-08-21 at 3.11.53 PM.png"
+    },
+    {
+      "id": 53127324,
+      "filename": "Screen Shot 2019-08-21 at 3.12.10 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 261637,
+      "url": "https://issues.chromium.org/action/issues/40090857/attachments/53127324?download=true",
+      "local_path": "attachments/Screen Shot 2019-08-21 at 3.12.10 PM.png"
+    },
+    {
+      "id": 53127329,
+      "filename": "Screen Shot 2019-08-21 at 3.14.23 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 39881,
+      "url": "https://issues.chromium.org/action/issues/40090857/attachments/53127329?download=true",
+      "local_path": "attachments/Screen Shot 2019-08-21 at 3.14.23 PM.png"
+    },
+    {
+      "id": 53127439,
+      "filename": "Spider_Man_meme.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 96841,
+      "url": "https://issues.chromium.org/action/issues/40090857/attachments/53127439?download=true",
+      "local_path": "attachments/Spider_Man_meme.jpeg"
+    }
+  ],
+  "update_count": 72,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.162 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Go to https://test.shhnjk.com/sandboxed_PR.php\r\n\r\nWhat is the expected behavior?\r\nPayment Request fails.\r\n\r\nWhat went wrong?\r\nI think"
+}

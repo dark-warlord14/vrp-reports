@@ -1,0 +1,45 @@
+{
+  "id": "40063230",
+  "url": "https://issues.chromium.org/issues/40063230",
+  "title": "Security: After refactor, page can use EyeDropper API to bypass mouse movement/keyboard input requirements for autofill (regression of issue 1287364)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "jk...@google.com",
+  "created_date": "2023-02-24T01:35:41+00:00",
+  "modified_date": "2024-01-09T07:27:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53283648,
+      "filename": "autofill-eye-dropper-refactor.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3586,
+      "url": "https://issues.chromium.org/action/issues/40063230/attachments/53283648?download=true",
+      "local_path": "attachments/autofill-eye-dropper-refactor.html"
+    },
+    {
+      "id": 53283649,
+      "filename": "autofill-eye-dropper-refactor-canary.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1020168,
+      "url": "https://issues.chromium.org/action/issues/40063230/attachments/53283649?download=true",
+      "local_path": "attachments/autofill-eye-dropper-refactor-canary.mp4"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA page can make a user select an autofill item with two consecutive clicks (three in limited cases), without moving their mouse or pressing keyboard keys after the autofill prompt appears.  \n  \nThis is a regression of https://crbug.com/chromium/1287364 due to refactor of"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "40054252",
+  "url": "https://issues.chromium.org/issues/40054252",
+  "title": "Security: Use After Free in WebSQL",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Storage",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "et...@gmail.com",
+  "assignee": "hu...@chromium.org",
+  "created_date": "2020-12-21T03:10:01+00:00",
+  "modified_date": "2024-01-09T02:49:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52944661,
+      "filename": "Screenshot from 2020-12-21 10-58-34.png",
+      "mime_type": "image/png",
+      "size_bytes": 186723,
+      "url": "https://issues.chromium.org/action/issues/40054252/attachments/52944661?download=true",
+      "local_path": "attachments/Screenshot from 2020-12-21 10-58-34.png"
+    },
+    {
+      "id": 52944662,
+      "filename": "oob.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1897,
+      "url": "https://issues.chromium.org/action/issues/40054252/attachments/52944662?download=true",
+      "local_path": "attachments/oob.html"
+    },
+    {
+      "id": 52944663,
+      "filename": "poc.sql",
+      "mime_type": "text/plain",
+      "size_bytes": 92,
+      "url": "https://issues.chromium.org/action/issues/40054252/attachments/52944663?download=true",
+      "local_path": "attachments/poc.sql"
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nYou can reproduce this bug in two ways\r\n[0] \r\nDownload sqlite 3.33.0 or 3.34.0\r\ngcc -DSQLITE_DEBUG shell.c sqlite3.c -pthread -ldl -"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "40055253",
+  "url": "https://issues.chromium.org/issues/40055253",
+  "title": "Aww snap crash when editing canvas text",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Canvas",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "li...@chromium.org",
+  "created_date": "2021-03-19T00:04:29+00:00",
+  "modified_date": "2024-01-09T08:56:06+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53285143,
+      "filename": "1189926.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1386185,
+      "url": "https://issues.chromium.org/action/issues/40055253/attachments/53285143?download=true",
+      "local_path": "attachments/1189926.mp4"
+    },
+    {
+      "id": 53285162,
+      "filename": "chrome_crash.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 3510601,
+      "url": "https://issues.chromium.org/action/issues/40055253/attachments/53285162?download=true",
+      "local_path": "attachments/chrome_crash.mov"
+    },
+    {
+      "id": 53285163,
+      "filename": "Screen Shot 2021-03-19 at 9.21.31 AM.png",
+      "mime_type": "image/png",
+      "size_bytes": 1324025,
+      "url": "https://issues.chromium.org/action/issues/40055253/attachments/53285163?download=true",
+      "local_path": "attachments/Screen Shot 2021-03-19 at 9.21.31 AM.png"
+    },
+    {
+      "id": 53285168,
+      "filename": "Screen Shot 2021-03-23 at 12.52.09 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 97436,
+      "url": "https://issues.chromium.org/action/issues/40055253/attachments/53285168?download=true",
+      "local_path": "attachments/Screen Shot 2021-03-23 at 12.52.09 PM.png"
+    },
+    {
+      "id": 53285169,
+      "filename": "gpu.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 5951,
+      "url": "https://issues.chromium.org/action/issues/40055253/attachments/53285169?download=true",
+      "local_path": "attachments/gpu.txt"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 11_2_3) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Have chrome Hardware Acceleration setting OFF\r\n2. Relaunch page\r\n3. Sign into Seesaw account as a teacher\r\n4. Go to Activities tab"
+}

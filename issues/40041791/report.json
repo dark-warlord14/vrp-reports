@@ -1,0 +1,66 @@
+{
+  "id": "40041791",
+  "url": "https://issues.chromium.org/issues/40041791",
+  "title": "Video escapes content area",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Compositing, Internals>GPU>Video",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "xp...@gmail.com",
+  "assignee": "mi...@google.com",
+  "created_date": "2022-02-20T20:57:51+00:00",
+  "modified_date": "2024-01-09T04:44:46+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53157699,
+      "filename": "PoC.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 20277,
+      "url": "https://issues.chromium.org/action/issues/40041791/attachments/53157699?download=true",
+      "local_path": "attachments/PoC.zip"
+    },
+    {
+      "id": 53157700,
+      "filename": "chrome_i2G6SFEI99.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 486138,
+      "url": "https://issues.chromium.org/action/issues/40041791/attachments/53157700?download=true",
+      "local_path": "attachments/chrome_i2G6SFEI99.mp4"
+    },
+    {
+      "id": 53157737,
+      "filename": "ubuntu_video_height.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 270298,
+      "url": "https://issues.chromium.org/action/issues/40041791/attachments/53157737?download=true",
+      "local_path": "attachments/ubuntu_video_height.mp4"
+    },
+    {
+      "id": 53157777,
+      "filename": "Code_-_Insiders_mSfUtYR5tL.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 23234,
+      "url": "https://issues.chromium.org/action/issues/40041791/attachments/53157777?download=true",
+      "local_path": "attachments/Code_-_Insiders_mSfUtYR5tL.mp4"
+    },
+    {
+      "id": 53157778,
+      "filename": "PoC.html",
+      "mime_type": "text/plain",
+      "size_bytes": 345,
+      "url": "https://issues.chromium.org/action/issues/40041791/attachments/53157778?download=true",
+      "local_path": "attachments/PoC.html"
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.88 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Extract PoC.zip to a folder. Open PoC.html.\r\n2. Scroll down the page.\r\n3. If the security bug doesn't trigger, scroll all the way back"
+}

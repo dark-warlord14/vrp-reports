@@ -1,0 +1,38 @@
+{
+  "id": "425121216",
+  "url": "https://issues.chromium.org/issues/425121216",
+  "title": "V8 Sandbox Bypass: OOB write in JsonParser due to dangling GC callback",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "vs...@gmail.com",
+  "assignee": "di...@chromium.org",
+  "created_date": "2025-06-15T15:50:08+00:00",
+  "modified_date": "2025-11-04T21:11:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "below baseline / speculative report of V8 sandbox bypass that resulted in a security beneficial change",
+  "attachments": [
+    {
+      "id": 67287713,
+      "filename": "bug.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1389,
+      "url": "https://issues.chromium.org/action/issues/425121216/attachments/67287713?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "#### VULNERABILITY DETAILS\nDuring construction of a `JsonParser`, a [GCEpilogueCallback is registered](https://source.chromium.org/chromium/chromium/src/+/main:v8/src/json/json-parser.cc;drc=feaf4438bcf1f96868820e62254495bfa46d3ea0;l=327) based on the type of the string (depending on whether it is e"
+}

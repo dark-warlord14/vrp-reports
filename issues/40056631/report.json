@@ -1,0 +1,85 @@
+{
+  "id": "40056631",
+  "url": "https://issues.chromium.org/issues/40056631",
+  "title": "Security: UAF in perfromance_manager's site_data_impl.cc",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>PerformanceManager",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rz...@gmail.com",
+  "assignee": "si...@chromium.org",
+  "created_date": "2021-07-22T10:30:41+00:00",
+  "modified_date": "2024-01-09T03:33:24+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53358978,
+      "filename": "sitedata.html",
+      "mime_type": "text/plain",
+      "size_bytes": 713,
+      "url": "https://issues.chromium.org/action/issues/40056631/attachments/53358978?download=true",
+      "local_path": "attachments/sitedata.html"
+    },
+    {
+      "id": 53358979,
+      "filename": "asan_log",
+      "mime_type": "text/plain",
+      "size_bytes": 25281,
+      "url": "https://issues.chromium.org/action/issues/40056631/attachments/53358979?download=true",
+      "local_path": "attachments/asan_log"
+    },
+    {
+      "id": 53358980,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40056631/attachments/53358980?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53358981,
+      "filename": "copy_mojo_js_bindings.py",
+      "mime_type": "text/plain",
+      "size_bytes": 514,
+      "url": "https://issues.chromium.org/action/issues/40056631/attachments/53358981?download=true",
+      "local_path": "attachments/copy_mojo_js_bindings.py"
+    },
+    {
+      "id": 53359027,
+      "filename": "asan_new",
+      "mime_type": "text/plain",
+      "size_bytes": 27699,
+      "url": "https://issues.chromium.org/action/issues/40056631/attachments/53359027?download=true",
+      "local_path": "attachments/asan_new"
+    },
+    {
+      "id": 53359028,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2510755,
+      "url": "https://issues.chromium.org/action/issues/40056631/attachments/53359028?download=true",
+      "local_path": "attachments/poc.mp4"
+    },
+    {
+      "id": 53359118,
+      "filename": "site.tar.xz",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1008,
+      "url": "https://issues.chromium.org/action/issues/40056631/attachments/53359118?download=true",
+      "local_path": "attachments/site.tar.xz"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nSiteDataImpl object is  accessing the destroyed OnDestroyDelegate object [1]; triggered soon after the tab is closed while attempting to receive the notification from OnSiteDataImplDestroyed [2], when it is about to get destroyed.  \n  \n[1] https://source.chromium.o"
+}

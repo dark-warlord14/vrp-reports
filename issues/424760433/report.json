@@ -1,0 +1,50 @@
+{
+  "id": "424760433",
+  "url": "https://issues.chromium.org/issues/424760433",
+  "title": "GPU process crash via WebGPU shader - heap-use-after-free in Mesa brw_live_variables::setup_one_read",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "a7...@gmail.com",
+  "assignee": "pe...@google.com",
+  "created_date": "2025-06-13T15:52:30+00:00",
+  "modified_date": "2025-12-12T12:52:17+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "bounty_rationale": "Baseline memory Corruption in a highly privileged process (GPU) with a bisect bonus",
+  "attachments": [
+    {
+      "id": 66724325,
+      "filename": "subgroup.html",
+      "mime_type": "text/html",
+      "size_bytes": 2893,
+      "url": "https://issues.chromium.org/action/issues/424760433/attachments/66724325?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66724326,
+      "filename": "gfxrecon_capture_20250613T172703.gfxr",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 10708,
+      "url": "https://issues.chromium.org/action/issues/424760433/attachments/66724326?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66768950,
+      "filename": "Dockerfile",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2050,
+      "url": "https://issues.chromium.org/action/issues/424760433/attachments/66768950?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 97,
+  "description_snippet": "#### VULNERABILITY DETAILS\n\nThis report is about a heap-use-after-free in the Mesa shader compiler, reachable via WebGPU shaders emitted by dawn/tint. I will also upload this report upstream, i.e., the Mesa project, and post the link below. The offending shader looks as follows:\n\n```\nenable subgroup"
+}

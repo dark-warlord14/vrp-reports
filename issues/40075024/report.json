@@ -1,0 +1,36 @@
+{
+  "id": "40075024",
+  "url": "https://issues.chromium.org/issues/40075024",
+  "title": "Security: Popup window tab doesn't show the origin elided from the right",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>TopChrome>TabStrip>HoverCards",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "dp...@google.com",
+  "created_date": "2023-10-17T02:10:35+00:00",
+  "modified_date": "2025-07-24T12:44:57+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": "report of lower impact security UI issue with low potential for exploitation and security implications, but did allow us to make a security beneficial change",
+  "attachments": [
+    {
+      "id": 52918384,
+      "filename": "PXL_20231017_020147987~2.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 1079764,
+      "url": "https://issues.chromium.org/action/issues/40075024/attachments/52918384?download=true",
+      "local_path": "attachments/PXL_20231017_020147987~2.jpg"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "**VERSION**   \nChrome Version: 120.0.6071.0 (Official Build) canary (64-bit) (cohort: Clang-64)   \nOperating System: Windows 11   \n  \n**REPRODUCTION CASE**   \n1. Go to https://long-extended-subdomain-name-containing-many-letters-and-dashes.badssl.com  \n2. Hover over the tab"
+}

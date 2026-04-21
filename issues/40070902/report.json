@@ -1,0 +1,62 @@
+{
+  "id": "40070902",
+  "url": "https://issues.chromium.org/issues/40070902",
+  "title": "heap-use-after-free in ReadAnythingAppController::OnActiveAXTreeIDChanged(ui::AXTreeID const&, long long, GURL const&)",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "UI>Accessibility>ReadingMode, UI>Browser>TopChrome>SidePanel",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zy...@gmail.com",
+  "assignee": "fr...@google.com",
+  "created_date": "2023-08-30T07:23:45+00:00",
+  "modified_date": "2024-08-11T21:21:36+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52928884,
+      "filename": "asanlog.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2619,
+      "url": "https://issues.chromium.org/action/issues/40070902/attachments/52928884?download=true",
+      "local_path": "attachments/asanlog.txt"
+    },
+    {
+      "id": 52928896,
+      "filename": "screenrecorder2023-08-30.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 13037951,
+      "url": "https://issues.chromium.org/action/issues/40070902/attachments/52928896?download=true",
+      "local_path": "attachments/screenrecorder2023-08-30.mov"
+    },
+    {
+      "id": 52928904,
+      "filename": "full_asanlog.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 35211,
+      "url": "https://issues.chromium.org/action/issues/40070902/attachments/52928904?download=true",
+      "local_path": "attachments/full_asanlog.txt"
+    },
+    {
+      "id": 52929013,
+      "filename": "screenshot_chrome_stable_version.png",
+      "mime_type": "image/png",
+      "size_bytes": 289631,
+      "url": "https://issues.chromium.org/action/issues/40070902/attachments/52929013?download=true",
+      "local_path": "attachments/screenshot_chrome_stable_version.png"
+    }
+  ],
+  "update_count": 77,
+  "description_snippet": "---\n\n### Report description\n\n\nheap-use-after-free in ReadAnythingAppController::OnActiveAXTreeIDChanged(ui::AXTreeID const&, long long, GURL const&)\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nGoogle Chrome\n\n\n#### Which URL (or repository) have you fou"
+}

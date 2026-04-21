@@ -1,0 +1,29 @@
+{
+  "id": "447613219",
+  "url": "https://issues.chromium.org/issues/447613219",
+  "title": "Debug check failed: has_latin1_bytecode().",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "pt...@chromium.org",
+  "created_date": "2025-09-27T10:11:33+00:00",
+  "modified_date": "2026-01-09T12:41:08+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": "Baseline renderer memory corruption in a sandboxed process",
+  "attachments": [],
+  "update_count": 56,
+  "description_snippet": "COMMIT INFORMATION:\n- Version: 102131\n- Commit: 5652827a6073536b38e55c5cd52a6b25355c22d6\n- Link: https://crrev.com/5652827a6073536b38e55c5cd52a6b25355c22d6\n\nCOMMIT MESSAGE:\n```\ncommit 5652827a6073536b38e55c5cd52a6b25355c22d6\nAuthor: pthier <pthier@chromium.org>\nDate: Fri Aug 29 14:09:47 2025 +0200"
+}

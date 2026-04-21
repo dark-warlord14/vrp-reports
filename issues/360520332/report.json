@@ -1,0 +1,33 @@
+{
+  "id": "360520332",
+  "url": "https://issues.chromium.org/issues/360520332",
+  "title": "Google Chrome on iOS sad tabs with the following testcase.",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Mobile>iOSWeb>Security",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": "128.0.6613.34",
+  "cve_ids": [],
+  "reporter": "nt...@gmail.com",
+  "assignee": "mi...@google.com",
+  "created_date": "2024-08-18T20:05:43+00:00",
+  "modified_date": "2025-06-03T12:41:22+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "below baseline report of memory corruption in a sandboxed process",
+  "attachments": [
+    {
+      "id": 58741582,
+      "filename": "testcase.html",
+      "mime_type": "text/html",
+      "size_bytes": 249,
+      "url": "https://issues.chromium.org/action/issues/360520332/attachments/58741582?download=true",
+      "local_path": "attachments/testcase.html"
+    }
+  ],
+  "update_count": 70,
+  "description_snippet": "# Steps to reproduce the problem\nPut the following testcase in a file, e.g. testcase.html:\n\n<script>\nlet x = new Intl.Locale(\"en-variant0-variant1-variant2-variant3-variant4-variant5-variant6-variant7-variant8-variant9-varianta-variantb-variantc-variantd-variante-variantf-variantg-varianth-varianti-"
+}

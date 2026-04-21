@@ -1,0 +1,53 @@
+{
+  "id": "40059651",
+  "url": "https://issues.chromium.org/issues/40059651",
+  "title": "AddressSanitizer: heap-use-after-free __memory/unique_ptr.h:312:28 in mojo::Connector::HandleError(b",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>Storage>IndexedDB",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "ar...@chromium.org",
+  "created_date": "2022-05-12T08:15:06+00:00",
+  "modified_date": "2022-08-20T17:31:42+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53377470,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18938,
+      "url": "https://issues.chromium.org/action/issues/40059651/attachments/53377470?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53377471,
+      "filename": "asan2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 27272,
+      "url": "https://issues.chromium.org/action/issues/40059651/attachments/53377471?download=true",
+      "local_path": "attachments/asan2.txt"
+    },
+    {
+      "id": 53377472,
+      "filename": "39aed4b.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 979,
+      "url": "https://issues.chromium.org/action/issues/40059651/attachments/53377472?download=true",
+      "local_path": "attachments/39aed4b.diff"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "**Steps to reproduce the problem:**   \nThe problem was found by my fuzzer running on CF(CC Security team for access permission https://clusterfuzz.com/testcase-detail/4657073883381760,https://clusterfuzz.com/testcase-detail/6355298952609792),  \nBut it cannot be reproduced stably, CF may not automati"
+}

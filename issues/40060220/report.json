@@ -1,0 +1,24 @@
+{
+  "id": "40060220",
+  "url": "https://issues.chromium.org/issues/40060220",
+  "title": "Security: UAF in OnAccessTokenRefreshFailed",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ya...@gmail.com",
+  "assignee": "jl...@google.com",
+  "created_date": "2022-07-09T07:08:57+00:00",
+  "modified_date": "2024-07-16T22:14:16+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 49,
+  "description_snippet": "std::unique_ptr<KeyedService> BuildAuthenticationService(\r\n    web::BrowserState* context) {\r\n  ChromeBrowserState* browser_state =\r\n      ChromeBrowserState::FromBrowserState(context);\r\n  return std::make_unique<AuthenticationService>(   //[0]\r\n      browser_state->GetPrefs(),\r\n      SyncSetupSer"
+}

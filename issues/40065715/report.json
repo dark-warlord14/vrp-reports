@@ -1,0 +1,24 @@
+{
+  "id": "40065715",
+  "url": "https://issues.chromium.org/issues/40065715",
+  "title": "Security: OOB in evdi_gem_fault",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "ch...@google.com",
+  "created_date": "2023-06-13T07:24:04+00:00",
+  "modified_date": "2024-01-15T18:45:28+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 17,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nSame as https://labs.bluefrostsecurity.de/blog/cve-2023-2008.html  \n  \n[0] page_offset does not check whether it is larger than obj->size,and will cause OOB [1],which can cause any physical address to read and write.  \nThis vulnerability seems to be relatively easy to"
+}

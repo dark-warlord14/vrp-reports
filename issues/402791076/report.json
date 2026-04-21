@@ -1,0 +1,180 @@
+{
+  "id": "402791076",
+  "url": "https://issues.chromium.org/issues/402791076",
+  "title": "Security: DevTools XSS allows sandbox escape, UXSS, CDP access, other impacts",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "da...@google.com",
+  "created_date": "2025-03-13T05:34:21+00:00",
+  "modified_date": "2025-11-14T02:48:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": "$1,000 for report of lower impact web platform privilege escalation + $2,000 patch bonus + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 63733245,
+      "filename": "devtools-drag.html",
+      "mime_type": "text/html",
+      "size_bytes": 11459,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/63733245?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63733246,
+      "filename": "devtools-xss-download-sandbox-escape-1a.js.php",
+      "mime_type": "application/x-httpd-php",
+      "size_bytes": 2742,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/63733246?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63733247,
+      "filename": "devtools-xss-download-sandbox-escape-1b.js.php",
+      "mime_type": "application/x-httpd-php",
+      "size_bytes": 5957,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/63733247?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63733248,
+      "filename": "package.json",
+      "mime_type": "application/json",
+      "size_bytes": 68,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/63733248?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63733249,
+      "filename": "websocket-server.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1734,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/63733249?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63733250,
+      "filename": "devtools-xss-scenario-1a.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2426259,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/63733250?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63733251,
+      "filename": "devtools-xss-scenario-1b.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3077813,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/63733251?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64003400,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 325,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/64003400?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64003135,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3523,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/64003135?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64003401,
+      "filename": "devtools.html",
+      "mime_type": "text/html",
+      "size_bytes": 45,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/64003401?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64003402,
+      "filename": "instructions-top.html",
+      "mime_type": "text/html",
+      "size_bytes": 449,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/64003402?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64003403,
+      "filename": "instructions-bottom.html",
+      "mime_type": "text/html",
+      "size_bytes": 397,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/64003403?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64003136,
+      "filename": "devtools-xss-extension-devtools_page.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2828816,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/64003136?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64104636,
+      "filename": "devtools-xss-scenario-3.js.php",
+      "mime_type": "application/x-httpd-php",
+      "size_bytes": 4939,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/64104636?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64104637,
+      "filename": "devtools-xss-scenario-3a-drag.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4966237,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/64104637?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64105651,
+      "filename": "devtools-xss-scenario-3b-extension.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5248999,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/64105651?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66649687,
+      "filename": "NullOriginXSSlogEntryAdded.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 18344,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/66649687?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66652984,
+      "filename": "extensionFishExample.png",
+      "mime_type": "image/png",
+      "size_bytes": 111217,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/66652984?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66649688,
+      "filename": "remoteDesktopPoC.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1723,
+      "url": "https://issues.chromium.org/action/issues/402791076/attachments/66649688?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 96,
+  "description_snippet": "## SUMMARY\n\nThis is a variation of issue 40942152 due to incomplete fix.\n\nWith `devtools://devtools/bundled/integration_test_runner.html` connected to a malicious remote WebSocket server, after user double-clicks on a network log item, an attacker can run JavaScript in `devtools://devtools` origin."
+}

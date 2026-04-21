@@ -1,0 +1,52 @@
+{
+  "id": "40053054",
+  "url": "https://issues.chromium.org/issues/40053054",
+  "title": "Full CSP bypass by opening a blob URL in a new tab and reloading it with history.back",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2020-08-11T23:34:35+00:00",
+  "modified_date": "2024-11-12T10:22:30+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52909828,
+      "filename": "back.html",
+      "mime_type": "text/plain",
+      "size_bytes": 37,
+      "url": "https://issues.chromium.org/action/issues/40053054/attachments/52909828?download=true",
+      "local_path": "attachments/back.html"
+    },
+    {
+      "id": 52909829,
+      "filename": "csp_bypass.js",
+      "mime_type": "text/plain",
+      "size_bytes": 298,
+      "url": "https://issues.chromium.org/action/issues/40053054/attachments/52909829?download=true",
+      "local_path": "attachments/csp_bypass.js"
+    },
+    {
+      "id": 52909830,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 289,
+      "url": "https://issues.chromium.org/action/issues/40053054/attachments/52909830?download=true",
+      "local_path": "attachments/index.html"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt is possible to bypass the CSP of a page by creating and opening a blob URL in a new tab that will redirect itself to another page and back using a meta redirect and history.back (similar to a page reload).  \n  \nThe blob URL inherits the CSP of the page that opened it,"
+}

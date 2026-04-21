@@ -1,0 +1,84 @@
+{
+  "id": "40074918",
+  "url": "https://issues.chromium.org/issues/40074918",
+  "title": "Security: Bypass the Protection of input fields cache (Autofill) Similar to (1358647 ,1395164 ,1108181) with Different Vector",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "el...@gmail.com",
+  "assignee": "sy...@google.com",
+  "created_date": "2023-10-14T22:21:20+00:00",
+  "modified_date": "2025-10-21T12:45:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": "$2,000 for report of lower impact user information disclosure + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 53211705,
+      "filename": "Bypass-AutofillCap-DEV-V120-2023-10-14_23-44-16.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1802792,
+      "url": "https://issues.chromium.org/action/issues/40074918/attachments/53211705?download=true",
+      "local_path": "attachments/Bypass-AutofillCap-DEV-V120-2023-10-14_23-44-16.mp4"
+    },
+    {
+      "id": 53211706,
+      "filename": "Bypass-Autofill-Cap-StableV118-2023-10-14_23-40-24.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1318056,
+      "url": "https://issues.chromium.org/action/issues/40074918/attachments/53211706?download=true",
+      "local_path": "attachments/Bypass-Autofill-Cap-StableV118-2023-10-14_23-40-24.mp4"
+    },
+    {
+      "id": 53211707,
+      "filename": "show-me-out3-caption.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2272,
+      "url": "https://issues.chromium.org/action/issues/40074918/attachments/53211707?download=true",
+      "local_path": "attachments/show-me-out3-caption.html"
+    },
+    {
+      "id": 53211708,
+      "filename": "tts-game-instructions.mp3",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 115401,
+      "url": "https://issues.chromium.org/action/issues/40074918/attachments/53211708?download=true",
+      "local_path": "attachments/tts-game-instructions.mp3"
+    },
+    {
+      "id": 53211709,
+      "filename": "wargame.webp",
+      "mime_type": "image/webp",
+      "size_bytes": 195802,
+      "url": "https://issues.chromium.org/action/issues/40074918/attachments/53211709?download=true",
+      "local_path": "attachments/wargame.webp"
+    },
+    {
+      "id": 53211753,
+      "filename": "CanaryWin-V120-2023-10-16 21-25-04-382.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3164133,
+      "url": "https://issues.chromium.org/action/issues/40074918/attachments/53211753?download=true",
+      "local_path": "attachments/CanaryWin-V120-2023-10-16 21-25-04-382.mp4"
+    },
+    {
+      "id": 64627504,
+      "filename": "Screenshot from 2025-04-07 13-50-37.png",
+      "mime_type": "image/png",
+      "size_bytes": 519142,
+      "url": "https://issues.chromium.org/action/issues/40074918/attachments/64627504?download=true",
+      "local_path": "attachments/Screenshot from 2025-04-07 13-50-37.png"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n=====================  \n  \nThis Issue is identical to the Recently Resolved Ones https://crbug.com/chromium/1108181 , https://crbug.com/chromium/1358647 , https://crbug.com/chromium/1395164   \n  \nBut With Different Attack Vector , as the Solved Ones  https://crbug.com/ch"
+}

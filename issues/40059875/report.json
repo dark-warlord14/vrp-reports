@@ -1,0 +1,33 @@
+{
+  "id": "40059875",
+  "url": "https://issues.chromium.org/issues/40059875",
+  "title": "Safebrowsing does not trigger a malware warning for malware loaded through an embed",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Unknown",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "xp...@gmail.com",
+  "assignee": "xi...@chromium.org",
+  "created_date": "2022-06-06T20:23:32+00:00",
+  "modified_date": "2022-11-05T17:30:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53383824,
+      "filename": "PoC.html",
+      "mime_type": "text/plain",
+      "size_bytes": 204,
+      "url": "https://issues.chromium.org/action/issues/40059875/attachments/53383824?download=true",
+      "local_path": "attachments/PoC.html"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Create an embed and set the src attribute to malware targeted by safebrowsing e.g. https://testsafebrowsing.appspot.com/s/malware.html  \n  \nOR  \n  \nDownload my simple PoC.html and run in Chrome.  \n  \n**Problem Description:**   \nSafebrowsing should trigger fo"
+}

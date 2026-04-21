@@ -1,0 +1,52 @@
+{
+  "id": "40055468",
+  "url": "https://issues.chromium.org/issues/40055468",
+  "title": "Security: OOB vector insertion when extension highlights tab during drag",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "so...@chromium.org",
+  "created_date": "2021-04-06T16:15:03+00:00",
+  "modified_date": "2024-01-09T03:09:23+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53242882,
+      "filename": "asan_output_869515.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13977,
+      "url": "https://issues.chromium.org/action/issues/40055468/attachments/53242882?download=true",
+      "local_path": "attachments/asan_output_869515.txt"
+    },
+    {
+      "id": 53242883,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1925,
+      "url": "https://issues.chromium.org/action/issues/40055468/attachments/53242883?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53242884,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 167,
+      "url": "https://issues.chromium.org/action/issues/40055468/attachments/53242884?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen the user is dragging a tab, if an extension highlights another tab in the same tab strip, an out-of-bounds vector insertion will occur in the browser process when the user drags the tab past the last tab in the tab strip.  \n  \n**VERSION**   \nChrome Version: Tested o"
+}

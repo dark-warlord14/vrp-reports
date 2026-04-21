@@ -1,0 +1,33 @@
+{
+  "id": "40063040",
+  "url": "https://issues.chromium.org/issues/40063040",
+  "title": "Security: Uninitialized Pointer in `msm_parse_post_deps`",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>VendorSpecific",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lm...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2023-02-12T11:46:34+00:00",
+  "modified_date": "2023-07-11T17:38:18+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53116002,
+      "filename": "poc.c",
+      "mime_type": "text/plain",
+      "size_bytes": 886,
+      "url": "https://issues.chromium.org/action/issues/40063040/attachments/53116002?download=true",
+      "local_path": "attachments/poc.c"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nioctl$MSM_GEM_SUBMIT will call \\*msm_ioctl_gem_submit\\* to submit gem. If \\*MSM_SUBMIT_SYNCOBJ_OUT\\* is set in \\*args->flags\\*, it will call \\*msm_parse_post_deps\\*. The \\*post_deps\\* is allocated by \\*kmalloc_array\\*[1] without \\*__GFP_ZERO\\* flag which means the mem"
+}

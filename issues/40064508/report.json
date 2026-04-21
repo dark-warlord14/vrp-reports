@@ -1,0 +1,41 @@
+{
+  "id": "40064508",
+  "url": "https://issues.chromium.org/issues/40064508",
+  "title": "Security: A use after free vulnerability exists in ChromeOS Kernel",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ay...@gmail.com",
+  "assignee": "ch...@google.com",
+  "created_date": "2023-05-11T16:20:57+00:00",
+  "modified_date": "2023-10-25T17:42:34+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52969387,
+      "filename": "poc.c",
+      "mime_type": "text/plain",
+      "size_bytes": 16698,
+      "url": "https://issues.chromium.org/action/issues/40064508/attachments/52969387?download=true",
+      "local_path": "attachments/poc.c"
+    },
+    {
+      "id": 52969388,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064508/attachments/52969388?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "Google Chrome: Version 113.0.5672.114 (Official Build)  (64-bit)\r\nPlatform: 15393.48.0 (Official Build) stable-channel reven\r\nChannel: stable-channel\r\nFirmware Version: \r\nARC Enabled: false\r\nARC: \r\nEnterprise Enrolled: false\r\nDeveloper Mode: true\r\nChrome OS Platform: <ChromeOS Flex>\r\n\r\nThe issue exi"
+}

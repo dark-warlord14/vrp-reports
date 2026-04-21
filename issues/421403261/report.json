@@ -1,0 +1,37 @@
+{
+  "id": "421403261",
+  "url": "https://issues.chromium.org/issues/421403261",
+  "title": "V8 Sandbox Bypass: AAW via clobbered i32 high word on return value in Liftoff",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "cl...@chromium.org",
+  "created_date": "2025-05-31T05:02:11+00:00",
+  "modified_date": "2025-09-10T12:42:17+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": "report of V8 sandbox bypass demonstrating controlled write outside the V8 heap sandbox",
+  "attachments": [
+    {
+      "id": 66327756,
+      "filename": "liftoff-wasmarray-i64-indexing.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 77102,
+      "url": "https://issues.chromium.org/action/issues/421403261/attachments/66327756?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 83,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Summary\n\nV8 sandbox bypass, arbitrary address read/write due to Liftoff emitting WasmArray indexing code using full 64bit registers in x86-64.\n\n\n#### Details\n\nLiftoff holds an invariant that all registers storing an i32 value is valid, i.e. that the upper 32bits are z"
+}

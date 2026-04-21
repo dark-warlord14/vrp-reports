@@ -1,0 +1,66 @@
+{
+  "id": "391666328",
+  "url": "https://issues.chromium.org/issues/391666328",
+  "title": "heap-use-after-free in content::RenderFrameHostImpl::ProcessBeforeUnloadCompleted in browser process",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>DefaultNavigationTransitions, UI>Browser>Navigation",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "li...@chromium.org",
+  "created_date": "2025-01-23T01:25:10+00:00",
+  "modified_date": "2025-05-15T12:39:32+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "report of mildly mitigated memory corruption bug in a non-sandboxed process, mitigated by precondition to download app (since <webview> tag is specific to apps) + install malicious extension",
+  "attachments": [
+    {
+      "id": 62357757,
+      "filename": "extension.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 1220,
+      "url": "https://issues.chromium.org/action/issues/391666328/attachments/62357757?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62387091,
+      "filename": "popup.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 859,
+      "url": "https://issues.chromium.org/action/issues/391666328/attachments/62387091?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62389582,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 38,
+      "url": "https://issues.chromium.org/action/issues/391666328/attachments/62389582?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62389583,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 281,
+      "url": "https://issues.chromium.org/action/issues/391666328/attachments/62389583?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62387092,
+      "filename": "popup.html",
+      "mime_type": "text/html",
+      "size_bytes": 188,
+      "url": "https://issues.chromium.org/action/issues/391666328/attachments/62387092?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 96,
+  "description_snippet": "VULNERABILITY DETAILS\nheap-use-after-free in content::RenderFrameHostImpl::ProcessBeforeUnloadCompleted in browser process\n\nVERSION\nChromium\t134.0.6972.0 (Developer Build) (64-bit) \nOperating System: linux-release-chromeos\n\nREPRODUCTION CASE\n1. get the lastest linux-release-chromeos asan build: gs:/"
+}

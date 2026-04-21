@@ -1,0 +1,33 @@
+{
+  "id": "40055353",
+  "url": "https://issues.chromium.org/issues/40055353",
+  "title": "Security: Arbitrary file read when caching file using CallAsSelfAndImpersonate2",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Installer",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ve...@gmail.com",
+  "assignee": "ga...@chromium.org",
+  "created_date": "2021-03-27T17:18:21+00:00",
+  "modified_date": "2023-07-28T23:44:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53082533,
+      "filename": "GoogleOmaha.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 199979,
+      "url": "https://issues.chromium.org/action/issues/40055353/attachments/53082533?download=true",
+      "local_path": "attachments/GoogleOmaha.zip"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "Summary:\r\nThe Google Update service expose a COM object that is accessible locally to low privileges users, the object exposes an interface that can be used to read arbitrary files.\r\n\r\nDescription:\r\nGoogle Updater is a service designed to allow low privileged users to run a highly privileges update"
+}

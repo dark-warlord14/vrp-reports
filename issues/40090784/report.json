@@ -1,0 +1,24 @@
+{
+  "id": "40090784",
+  "url": "https://issues.chromium.org/issues/40090784",
+  "title": "CSP not inherited after navigation to JavaScript scheme URI (iOS)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "s....@gmail.com",
+  "assignee": "mk...@chromium.org",
+  "created_date": "2018-03-14T00:05:40+00:00",
+  "modified_date": "2024-01-09T10:32:56+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 118,
+  "description_snippet": "Steps to reproduce the problem:\r\n1. Go to https://test.shhnjk.com/ablank.html\r\n\r\nWhat is the expected behavior?\r\nNo frame is rendered.\r\n\r\nWhat went wrong?\r\nCSP doesn't get inherited to Javascript URL navigated to \"_self\". See https://crbug.com/chromium/747847 for more details.\r\n\r\nDid this work befor"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "40055405",
+  "url": "https://issues.chromium.org/issues/40055405",
+  "title": "Security: UAF after moving tab associated with undocked devtools instance into another browser window",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools, Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "wo...@chromium.org",
+  "created_date": "2021-04-01T07:57:12+00:00",
+  "modified_date": "2024-01-06T00:11:39+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53211820,
+      "filename": "asan_output_864975.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 16801,
+      "url": "https://issues.chromium.org/action/issues/40055405/attachments/53211820?download=true",
+      "local_path": "attachments/asan_output_864975.txt"
+    },
+    {
+      "id": 53211821,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2001,
+      "url": "https://issues.chromium.org/action/issues/40055405/attachments/53211821?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53211822,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 201,
+      "url": "https://issues.chromium.org/action/issues/40055405/attachments/53211822?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53211878,
+      "filename": "Screenshot 2021-04-06 at 12.13.00.png",
+      "mime_type": "image/png",
+      "size_bytes": 332651,
+      "url": "https://issues.chromium.org/action/issues/40055405/attachments/53211878?download=true",
+      "local_path": "attachments/Screenshot 2021-04-06 at 12.13.00.png"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nTypically, a devtools instance can be shown within the tab being debugged, or in an undocked browser window. However, by using the chrome.tabs/chrome.windows API, an extension can move the tab associated with an undocked devtools instance into another window. This then l"
+}

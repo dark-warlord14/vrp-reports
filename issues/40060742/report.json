@@ -1,0 +1,121 @@
+{
+  "id": "40060742",
+  "url": "https://issues.chromium.org/issues/40060742",
+  "title": "Security: Bypass the Protection of input fields cache (Autofill) 1108181",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2022-44688"
+  ],
+  "reporter": "el...@gmail.com",
+  "assignee": "vi...@google.com",
+  "created_date": "2022-08-31T19:16:56+00:00",
+  "modified_date": "2025-07-02T12:50:14+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53401795,
+      "filename": "AUTOFILL-POC-FILES.rar",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4459,
+      "url": "https://issues.chromium.org/action/issues/40060742/attachments/53401795?download=true",
+      "local_path": "attachments/AUTOFILL-POC-FILES.rar"
+    },
+    {
+      "id": 53401796,
+      "filename": "Autofill-POC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1447400,
+      "url": "https://issues.chromium.org/action/issues/40060742/attachments/53401796?download=true",
+      "local_path": "attachments/Autofill-POC.mp4"
+    },
+    {
+      "id": 53401828,
+      "filename": "canvasautofillwindows.html",
+      "mime_type": "text/plain",
+      "size_bytes": 6939,
+      "url": "https://issues.chromium.org/action/issues/40060742/attachments/53401828?download=true",
+      "local_path": "attachments/canvasautofillwindows.html"
+    },
+    {
+      "id": 53401829,
+      "filename": "maincanvasjs.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3638,
+      "url": "https://issues.chromium.org/action/issues/40060742/attachments/53401829?download=true",
+      "local_path": "attachments/maincanvasjs.js"
+    },
+    {
+      "id": 53401830,
+      "filename": "spoofautofillpop.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2911,
+      "url": "https://issues.chromium.org/action/issues/40060742/attachments/53401830?download=true",
+      "local_path": "attachments/spoofautofillpop.html"
+    },
+    {
+      "id": 53401831,
+      "filename": "stylecanvas.css",
+      "mime_type": "text/plain",
+      "size_bytes": 372,
+      "url": "https://issues.chromium.org/action/issues/40060742/attachments/53401831?download=true",
+      "local_path": "attachments/stylecanvas.css"
+    },
+    {
+      "id": 53401864,
+      "filename": "POC-WINDOWS- 2022-09-05 00-21-19-907.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 7201365,
+      "url": "https://issues.chromium.org/action/issues/40060742/attachments/53401864?download=true",
+      "local_path": "attachments/POC-WINDOWS- 2022-09-05 00-21-19-907.mp4"
+    },
+    {
+      "id": 53401865,
+      "filename": "Linux-POC-2022-09-05_00-34-20.mkv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2590064,
+      "url": "https://issues.chromium.org/action/issues/40060742/attachments/53401865?download=true",
+      "local_path": "attachments/Linux-POC-2022-09-05_00-34-20.mkv"
+    },
+    {
+      "id": 53401873,
+      "filename": "Linux-POC-2022-09-05_00-34-20.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1284231,
+      "url": "https://issues.chromium.org/action/issues/40060742/attachments/53401873?download=true",
+      "local_path": "attachments/Linux-POC-2022-09-05_00-34-20.mp4"
+    },
+    {
+      "id": 53402226,
+      "filename": "Screenshot_20230116-155939.png",
+      "mime_type": "image/png",
+      "size_bytes": 273739,
+      "url": "https://issues.chromium.org/action/issues/40060742/attachments/53402226?download=true",
+      "local_path": "attachments/Screenshot_20230116-155939.png"
+    },
+    {
+      "id": 53402227,
+      "filename": "Screenshot_20230116-160756.png",
+      "mime_type": "image/png",
+      "size_bytes": 312715,
+      "url": "https://issues.chromium.org/action/issues/40060742/attachments/53402227?download=true",
+      "local_path": "attachments/Screenshot_20230116-160756.png"
+    }
+  ],
+  "update_count": 86,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nthis is a report to a security vulnerability in google chrome/chromium browser as high-quality report with functional exploit. this vulnerability allows attackers to steal thecache of input fields like usernames, e-mail adresses, telephone numbers from any site like twit"
+}

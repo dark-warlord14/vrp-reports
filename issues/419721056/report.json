@@ -1,0 +1,41 @@
+{
+  "id": "419721056",
+  "url": "https://issues.chromium.org/issues/419721056",
+  "title": "`showSaveFilePicker()` DIalog can Overlaid on Other Origin lead to Origin Spoofing",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Storage>FileSystem",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": "136.0.0.0",
+  "cve_ids": [],
+  "reporter": "fr...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2025-05-23T08:47:57+00:00",
+  "modified_date": "2025-11-24T22:15:35+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact security UI issue",
+  "attachments": [
+    {
+      "id": 66102559,
+      "filename": "showsavefilepicker can overlaid on other origin.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 15162771,
+      "url": "https://issues.chromium.org/action/issues/419721056/attachments/66102559?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66101083,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1353,
+      "url": "https://issues.chromium.org/action/issues/419721056/attachments/66101083?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "# Steps to reproduce the problem\n1. Access poc.html\n2. Click anywhere at the poc.html\n3. Browse any sites and after 3sec the dialog will appear on other origin\n\n# Problem Description\nThis vulnerability occurs when the showSaveFilePicker() dialog can be overlaid on another origin . By default, if a p"
+}

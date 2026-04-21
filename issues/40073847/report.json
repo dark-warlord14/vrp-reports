@@ -1,0 +1,49 @@
+{
+  "id": "40073847",
+  "url": "https://issues.chromium.org/issues/40073847",
+  "title": "Chrome's Reading Mode UAF",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "UI>Accessibility",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "no...@ssd-disclosure.com",
+  "assignee": "jo...@google.com",
+  "created_date": "2023-10-01T10:29:11+00:00",
+  "modified_date": "2024-05-28T13:09:39+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53134985,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 29745,
+      "url": "https://issues.chromium.org/action/issues/40073847/attachments/53134985?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53134986,
+      "filename": "readme.md",
+      "mime_type": "text/plain",
+      "size_bytes": 4160,
+      "url": "https://issues.chromium.org/action/issues/40073847/attachments/53134986?download=true",
+      "local_path": "attachments/readme.md"
+    },
+    {
+      "id": 53135059,
+      "filename": "proof-reduced.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2438111,
+      "url": "https://issues.chromium.org/action/issues/40073847/attachments/53135059?download=true",
+      "local_path": "attachments/proof-reduced.mp4"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "**Steps to reproduce the problem:**   \n### REPRODUCTION CASE  \n  \nUse After Free occurs when a page is loaded by directly typing [chrome-untrusted://read-anything-side-panel.top-chrome/](chrome-untrusted://read-anything-side-panel.top-chrome/) in the address bar of the tab and then moving to another"
+}

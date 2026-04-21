@@ -1,0 +1,38 @@
+{
+  "id": "40061046",
+  "url": "https://issues.chromium.org/issues/40061046",
+  "title": "Security: [maglev] VisitSwitchOnGeneratorState function  JumpTableTargetOffsets can be  0 ",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "vi...@gmail.com",
+  "assignee": "le...@chromium.org",
+  "created_date": "2022-09-19T13:35:29+00:00",
+  "modified_date": "2025-02-13T00:21:55+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53013070,
+      "filename": "1.js",
+      "mime_type": "text/plain",
+      "size_bytes": 423,
+      "url": "https://issues.chromium.org/action/issues/40061046/attachments/53013070?download=true",
+      "local_path": "attachments/1.js"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nthe bug occur in the maglev phase. which can be exploited lead to RCE  \n  \n**VERSION**   \nChrome Version: dev  \nOperating System: ubuntu20.04 tls x64  \n  \n**REPRODUCTION CASE**   \ncompile debug version v8 with maglev engable,    \nrun the command line:  \n./d8  --expose"
+}

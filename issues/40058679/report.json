@@ -1,0 +1,50 @@
+{
+  "id": "40058679",
+  "url": "https://issues.chromium.org/issues/40058679",
+  "title": "Security: Heap-use-after-free in NearbyShareAction::HandleKeyboardEvent",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebShare",
+  "os_platforms": [
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ha...@google.com",
+  "created_date": "2022-02-04T03:31:47+00:00",
+  "modified_date": "2024-01-09T04:42:32+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53281044,
+      "filename": "testcase.html",
+      "mime_type": "text/plain",
+      "size_bytes": 256,
+      "url": "https://issues.chromium.org/action/issues/40058679/attachments/53281044?download=true",
+      "local_path": "attachments/testcase.html"
+    },
+    {
+      "id": 53281045,
+      "filename": "Screen.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2799479,
+      "url": "https://issues.chromium.org/action/issues/40058679/attachments/53281045?download=true",
+      "local_path": "attachments/Screen.webm"
+    },
+    {
+      "id": 53281137,
+      "filename": "screen.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 616173,
+      "url": "https://issues.chromium.org/action/issues/40058679/attachments/53281137?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "Chrome Version: 100.0.4867.0   \nOperating System: ChromeOS  \n  \n  \n**REPRODUCTION CASE**   \n1. Open the testcase in two windows (window A and B)  \n2. In the window A, click on the button and choose \"Nearby Share\"   \n3. In the window B, click on the button and choose \"Nearby Share\"   \n4. Move any win"
+}

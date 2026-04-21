@@ -1,0 +1,97 @@
+{
+  "id": "40060740",
+  "url": "https://issues.chromium.org/issues/40060740",
+  "title": "heap-use-after-free html_element.cc:1850 in blink::HTMLElement::offsetTopForBinding",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>DOM",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "db...@chromium.org",
+  "created_date": "2022-08-31T17:59:13+00:00",
+  "modified_date": "2024-01-09T06:25:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53222184,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 12135,
+      "url": "https://issues.chromium.org/action/issues/40060740/attachments/53222184?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53222185,
+      "filename": "h1.js",
+      "mime_type": "text/plain",
+      "size_bytes": 8356,
+      "url": "https://issues.chromium.org/action/issues/40060740/attachments/53222185?download=true",
+      "local_path": "attachments/h1.js"
+    },
+    {
+      "id": 53222186,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 82992,
+      "url": "https://issues.chromium.org/action/issues/40060740/attachments/53222186?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53222187,
+      "filename": "poc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2483,
+      "url": "https://issues.chromium.org/action/issues/40060740/attachments/53222187?download=true",
+      "local_path": "attachments/poc2.html"
+    },
+    {
+      "id": 53222188,
+      "filename": "testharness.js",
+      "mime_type": "text/plain",
+      "size_bytes": 159402,
+      "url": "https://issues.chromium.org/action/issues/40060740/attachments/53222188?download=true",
+      "local_path": "attachments/testharness.js"
+    },
+    {
+      "id": 53222207,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40060740/attachments/53222207?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53222247,
+      "filename": "poc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2449,
+      "url": "https://issues.chromium.org/action/issues/40060740/attachments/53222247?download=true",
+      "local_path": "attachments/poc2.html"
+    },
+    {
+      "id": 53222262,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40060740/attachments/53222262?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53222263,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 82958,
+      "url": "https://issues.chromium.org/action/issues/40060740/attachments/53222263?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**Steps to reproduce the problem:**   \n#Reproduce  \n1. chrome --js-flags=\"-expose-gc --allow-natives-syntax\" --no-sandbox --enable-blink-test-features --user-data-dir=test --enable-logging=stderr poc.html  \n2. click any where  \n  \npoc.htmlStable reproducible but not minimal sample  \npoc1.html is a m"
+}

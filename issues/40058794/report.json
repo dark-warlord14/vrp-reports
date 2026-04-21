@@ -1,0 +1,59 @@
+{
+  "id": "40058794",
+  "url": "https://issues.chromium.org/issues/40058794",
+  "title": "Security: heap-use-after-free in base::SupportsUserData::GetUserData",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Omnibox, UI>Browser>Sharing",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "yu...@gmail.com",
+  "assignee": "vi...@google.com",
+  "created_date": "2022-02-16T12:36:23+00:00",
+  "modified_date": "2022-06-01T17:31:43+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53085007,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 16559,
+      "url": "https://issues.chromium.org/action/issues/40058794/attachments/53085007?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53085008,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 176,
+      "url": "https://issues.chromium.org/action/issues/40058794/attachments/53085008?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53085009,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 194,
+      "url": "https://issues.chromium.org/action/issues/40058794/attachments/53085009?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53085010,
+      "filename": "record.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 5845236,
+      "url": "https://issues.chromium.org/action/issues/40058794/attachments/53085010?download=true",
+      "local_path": "attachments/record.mov"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen we enable #share-context-menu in chrome://flags, \"Share\" submenu will be created in the menu when we right click omnibox. A raw webcontents pointer hold in ShareSubmenuModel and not observer it's lifecycle. If the webcontents destroyed before click \"Create QRCode..\""
+}

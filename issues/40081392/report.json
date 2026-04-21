@@ -1,0 +1,39 @@
+{
+  "id": "40081392",
+  "url": "https://issues.chromium.org/issues/40081392",
+  "title": "Heap-buffer-overflow in opj_dwt_decode",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@hboeck.de",
+  "assignee": "ju...@foxitsoftware.com",
+  "created_date": "2015-02-11T00:18:21+00:00",
+  "modified_date": "2018-04-25T23:02:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53165861,
+      "filename": "pdfium-overflow-opj_dwt_interleave_h.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 1053,
+      "url": "https://issues.chromium.org/action/issues/40081392/attachments/53165861?download=true",
+      "local_path": "attachments/pdfium-overflow-opj_dwt_interleave_h.pdf"
+    },
+    {
+      "id": 53165862,
+      "filename": "pdfium-overflow-opj_dwt_interleave_h.pdf.asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 56468,
+      "url": "https://issues.chromium.org/action/issues/40081392/attachments/53165862?download=true",
+      "local_path": "attachments/pdfium-overflow-opj_dwt_interleave_h.pdf.asan.txt"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2272.35 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. run attached pdf through pdfium_test (compiled with asan)\r\n2. will crash and show invalid memory read access (full asan debugging output attached"
+}

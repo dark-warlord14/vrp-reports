@@ -1,0 +1,54 @@
+{
+  "id": "41486862",
+  "url": "https://issues.chromium.org/issues/41486862",
+  "title": "Security: Memory Corrupt in V8 Webassembly",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Turbofan, Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2023-12-26T04:14:16+00:00",
+  "modified_date": "2026-01-08T10:33:23+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53239302,
+      "filename": "poc_code.js",
+      "mime_type": "text/plain",
+      "size_bytes": 14719,
+      "url": "https://issues.chromium.org/action/issues/41486862/attachments/53239302?download=true",
+      "local_path": "attachments/poc_code.js"
+    },
+    {
+      "id": 53239303,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3285,
+      "url": "https://issues.chromium.org/action/issues/41486862/attachments/53239303?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53239429,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1302,
+      "url": "https://issues.chromium.org/action/issues/41486862/attachments/53239429?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "VULNERABILITY DETAILS\n## INTRODUCE\nAfter bisect, it was determined that following commit caused this problem.\n\n- Commit Info\n    - Version: 90457\n    - link: https://crrev.com/63405a66d43737599afec36381a9b0bb13dbb484 \n- Commit Message\n\n```\ncommit 63405a66d43737599afec36381a9b0bb13dbb484\nAuthor: Mano"
+}

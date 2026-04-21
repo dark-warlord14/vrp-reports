@@ -1,0 +1,89 @@
+{
+  "id": "40064636",
+  "url": "https://issues.chromium.org/issues/40064636",
+  "title": "Security: (Android) PWA Install Dialogs can be overlaid over other origins (PWA install dialog spoofing while navigation).",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Mobile>CompositedUI, UI>Browser>Mobile>CustomTabs, UI>Browser>Mobile>Messages, UI>Browser>WebAppInstalls>Android",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "el...@gmail.com",
+  "assignee": "la...@chromium.org",
+  "created_date": "2023-05-18T16:38:35+00:00",
+  "modified_date": "2024-10-17T17:08:25+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53344976,
+      "filename": "Android CCT-crossorigin-PWA-regression.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4989887,
+      "url": "https://issues.chromium.org/action/issues/40064636/attachments/53344976?download=true",
+      "local_path": "attachments/Android CCT-crossorigin-PWA-regression.mp4"
+    },
+    {
+      "id": 53344977,
+      "filename": "pwa-crossorigin.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1105,
+      "url": "https://issues.chromium.org/action/issues/40064636/attachments/53344977?download=true",
+      "local_path": "attachments/pwa-crossorigin.html"
+    },
+    {
+      "id": 53344978,
+      "filename": "pwa-app-crossorigin.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2054,
+      "url": "https://issues.chromium.org/action/issues/40064636/attachments/53344978?download=true",
+      "local_path": "attachments/pwa-app-crossorigin.js"
+    },
+    {
+      "id": 53344979,
+      "filename": "style.css",
+      "mime_type": "text/plain",
+      "size_bytes": 868,
+      "url": "https://issues.chromium.org/action/issues/40064636/attachments/53344979?download=true",
+      "local_path": "attachments/style.css"
+    },
+    {
+      "id": 53344980,
+      "filename": "dummy-sw.js",
+      "mime_type": "text/plain",
+      "size_bytes": 156,
+      "url": "https://issues.chromium.org/action/issues/40064636/attachments/53344980?download=true",
+      "local_path": "attachments/dummy-sw.js"
+    },
+    {
+      "id": 53344981,
+      "filename": "pwa-app.webmanifest",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 622,
+      "url": "https://issues.chromium.org/action/issues/40064636/attachments/53344981?download=true",
+      "local_path": "attachments/pwa-app.webmanifest"
+    },
+    {
+      "id": 53344982,
+      "filename": "phishing.html",
+      "mime_type": "text/plain",
+      "size_bytes": 731,
+      "url": "https://issues.chromium.org/action/issues/40064636/attachments/53344982?download=true",
+      "local_path": "attachments/phishing.html"
+    },
+    {
+      "id": 53344983,
+      "filename": "Screenshot_20230508-220706.png",
+      "mime_type": "image/png",
+      "size_bytes": 100107,
+      "url": "https://issues.chromium.org/action/issues/40064636/attachments/53344983?download=true",
+      "local_path": "attachments/Screenshot_20230508-220706.png"
+    }
+  ],
+  "update_count": 86,
+  "description_snippet": "**VULNERABILITY DETAILS** :  \n----------------------  \nThis Bug is filled Because the main one \" https://crbug.com/chromium/1442434\" was mistakenly closed as Won't-fix,and i have corrected the related components the this bug is related to, so please update the bug component as mentioned below , also"
+}

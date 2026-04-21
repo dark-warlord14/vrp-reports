@@ -1,0 +1,44 @@
+{
+  "id": "40057837",
+  "url": "https://issues.chromium.org/issues/40057837",
+  "title": "Security: webgl heap-buffer-overflow LoadCompressedToNative",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "jo...@google.com",
+  "created_date": "2021-11-06T01:24:48+00:00",
+  "modified_date": "2024-05-01T21:44:48+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53332693,
+      "filename": "LoadCompressedToNative.html",
+      "mime_type": "text/plain",
+      "size_bytes": 692,
+      "url": "https://issues.chromium.org/action/issues/40057837/attachments/53332693?download=true",
+      "local_path": "attachments/LoadCompressedToNative.html"
+    },
+    {
+      "id": 53332694,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 11516,
+      "url": "https://issues.chromium.org/action/issues/40057837/attachments/53332694?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "Tested on Version asan-linux-release-936833\r\nFull asan log attached.\r\n\r\n==96692==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x6060001c4d00 at pc 0x55bd11753b67 bp 0x7ffc75b06310 sp 0x7ffc75b05ad8\r\nREAD of size 16 at 0x6060001c4d00 thread T0 (chrome)\r\n    #0 0x55bd11753b66 in __asan_mem"
+}

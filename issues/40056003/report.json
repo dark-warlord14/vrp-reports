@@ -1,0 +1,71 @@
+{
+  "id": "40056003",
+  "url": "https://issues.chromium.org/issues/40056003",
+  "title": "Security: HeapOverflow in FillPhoneCountryCode",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2021-05-26T03:34:14+00:00",
+  "modified_date": "2025-07-02T12:50:19+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53161787,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 17400,
+      "url": "https://issues.chromium.org/action/issues/40056003/attachments/53161787?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53161788,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1516,
+      "url": "https://issues.chromium.org/action/issues/40056003/attachments/53161788?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 53161789,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1233,
+      "url": "https://issues.chromium.org/action/issues/40056003/attachments/53161789?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53161790,
+      "filename": "trigger.html",
+      "mime_type": "text/plain",
+      "size_bytes": 392,
+      "url": "https://issues.chromium.org/action/issues/40056003/attachments/53161790?download=true",
+      "local_path": "attachments/trigger.html"
+    },
+    {
+      "id": 53161924,
+      "filename": "uaf-asan",
+      "mime_type": "text/plain",
+      "size_bytes": 28392,
+      "url": "https://issues.chromium.org/action/issues/40056003/attachments/53161924?download=true",
+      "local_path": "attachments/uaf-asan"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIn function FillPhoneCountryCodeSelectControl[1], the size of field->option_contents could mismatch with the size of field->option_values. If the size of option_contents is larger than the size of option_values, the HeapOverflow will be trigger when field->option_values["
+}

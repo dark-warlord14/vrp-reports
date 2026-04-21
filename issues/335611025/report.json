@@ -1,0 +1,36 @@
+{
+  "id": "335611025",
+  "url": "https://issues.chromium.org/issues/335611025",
+  "title": "Chrome on IOS ignores Content-Type header (and nosniff) when rendering XHTML content",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Mobile>iOSWeb",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2023-32445",
+    "CVE-2024-40785"
+  ],
+  "reporter": "jo...@gmail.com",
+  "assignee": "mi...@google.com",
+  "created_date": "2024-04-18T12:30:02+00:00",
+  "modified_date": "2026-01-01T16:51:25+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact exploitation mitigation bypass",
+  "attachments": [
+    {
+      "id": 55643465,
+      "filename": "test.xhtml",
+      "mime_type": "application/xhtml+xml",
+      "size_bytes": 185,
+      "url": "https://issues.chromium.org/action/issues/335611025/attachments/55643465?download=true",
+      "local_path": "attachments/test.xhtml"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "---\n\n### Report description\n\n\nChrome on IOS ignores Content-Type header (and nosniff) when rendering XHTML content\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nGoogle Chrome\n\n\n#### Which URL (or repository) have you found the vulnerability in?\n\nhttps://"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "429703123",
+  "url": "https://issues.chromium.org/issues/429703123",
+  "title": "V8 Sandbox Bypass: Arbitrary code execution via interpreter-to-baseline OSR Code type confusion",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "ol...@chromium.org",
+  "created_date": "2025-07-05T13:23:01+00:00",
+  "modified_date": "2025-10-15T12:49:50+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": "report of V8 sandbox bypass demonstrating arbitrary code execution outside the V8 heap sandbox",
+  "attachments": [
+    {
+      "id": 67322975,
+      "filename": "osr-to-baseline-code-confusion.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 89368,
+      "url": "https://issues.chromium.org/action/issues/429703123/attachments/67322975?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 69,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Summary\n\nV8 sandbox bypass, arbitrary native code execution (without JIT page overwrite) via OSR Code type confusion. Interpreter & builtins double-fetches `Code` from `sfi.trusted_function_data` where the interpreter asserts that it is a Code object but the builtin s"
+}

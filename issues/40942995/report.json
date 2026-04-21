@@ -1,0 +1,134 @@
+{
+  "id": "40942995",
+  "url": "https://issues.chromium.org/issues/40942995",
+  "title": "SwiftShader: UAF in isCubeCompatible  ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>SwiftShader",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2023-11-15T19:11:13+00:00",
+  "modified_date": "2024-09-21T15:38:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": "mildly mitigated (very racy) memory corruption in the GPU process",
+  "attachments": [
+    {
+      "id": 52930071,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2728,
+      "url": "https://issues.chromium.org/action/issues/40942995/attachments/52930071?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 52930072,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 28047,
+      "url": "https://issues.chromium.org/action/issues/40942995/attachments/52930072?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 52930073,
+      "filename": "launcher.sh",
+      "mime_type": "text/plain",
+      "size_bytes": 3027,
+      "url": "https://issues.chromium.org/action/issues/40942995/attachments/52930073?download=true",
+      "local_path": "attachments/launcher.sh"
+    },
+    {
+      "id": 53687798,
+      "filename": "VUID-vkDestroyImage-image-01000.log",
+      "mime_type": "text/plain",
+      "size_bytes": 2228504,
+      "url": "https://issues.chromium.org/action/issues/40942995/attachments/53687798?download=true",
+      "local_path": "attachments/VUID-vkDestroyImage-image-01000.log"
+    },
+    {
+      "id": 53680612,
+      "filename": "VUID-vkDestroyImageView-imageView-01026.log",
+      "mime_type": "text/plain",
+      "size_bytes": 2268887,
+      "url": "https://issues.chromium.org/action/issues/40942995/attachments/53680612?download=true",
+      "local_path": "attachments/VUID-vkDestroyImageView-imageView-01026.log"
+    },
+    {
+      "id": 53654230,
+      "filename": "VUID-vkDestroyImage-image-01000.log",
+      "mime_type": "text/plain",
+      "size_bytes": 6461719,
+      "url": "https://issues.chromium.org/action/issues/40942995/attachments/53654230?download=true",
+      "local_path": "attachments/VUID-vkDestroyImage-image-01000.log"
+    },
+    {
+      "id": 53656479,
+      "filename": "VUID-vkDestroyImageView-imageView-01026.log",
+      "mime_type": "text/plain",
+      "size_bytes": 6411961,
+      "url": "https://issues.chromium.org/action/issues/40942995/attachments/53656479?download=true",
+      "local_path": "attachments/VUID-vkDestroyImageView-imageView-01026.log"
+    },
+    {
+      "id": 54716244,
+      "filename": "crash2.html",
+      "mime_type": "text/html",
+      "size_bytes": 3379,
+      "url": "https://issues.chromium.org/action/issues/40942995/attachments/54716244?download=true",
+      "local_path": "attachments/crash2.html"
+    },
+    {
+      "id": 55416661,
+      "filename": "crash-q2-no-repro.html",
+      "mime_type": "text/html",
+      "size_bytes": 2985,
+      "url": "https://issues.chromium.org/action/issues/40942995/attachments/55416661?download=true",
+      "local_path": "attachments/crash-q2-no-repro.html"
+    },
+    {
+      "id": 55417025,
+      "filename": "crash-q3-no-repro.html",
+      "mime_type": "text/html",
+      "size_bytes": 2478,
+      "url": "https://issues.chromium.org/action/issues/40942995/attachments/55417025?download=true",
+      "local_path": "attachments/crash-q3-no-repro.html"
+    },
+    {
+      "id": 55420752,
+      "filename": "crash-origin-minimize-repro.html",
+      "mime_type": "text/html",
+      "size_bytes": 3383,
+      "url": "https://issues.chromium.org/action/issues/40942995/attachments/55420752?download=true",
+      "local_path": "attachments/crash-origin-minimize-repro.html"
+    },
+    {
+      "id": 55420376,
+      "filename": "crash-q2-repro.html",
+      "mime_type": "text/html",
+      "size_bytes": 3181,
+      "url": "https://issues.chromium.org/action/issues/40942995/attachments/55420376?download=true",
+      "local_path": "attachments/crash-q2-repro.html"
+    },
+    {
+      "id": 56025654,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 26795,
+      "url": "https://issues.chromium.org/action/issues/40942995/attachments/56025654?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 152,
+  "description_snippet": "**Steps to reproduce the problem:**   \ntested os version:  \nubuntu:22.04  \n  \ntested chrome version:  \nChromium 121.0.6128.0(gs://chromium-browser-asan/linux-release/asan-linux-release-1224132.zip)  \nChromium 113.0.5624.0(I believe it should be possible to reproduce earlier than this version.）"
+}

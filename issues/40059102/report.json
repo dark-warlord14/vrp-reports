@@ -1,0 +1,29 @@
+{
+  "id": "40059102",
+  "url": "https://issues.chromium.org/issues/40059102",
+  "title": "Security: Sanitizer API bypass via prototype pollution",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>SanitizerAPI",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@bentkowski.info",
+  "assignee": "vo...@chromium.org",
+  "created_date": "2022-03-15T12:23:28+00:00",
+  "modified_date": "2022-09-15T17:32:55+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 28,
+  "description_snippet": "Hey!\r\n\r\nClient-side prototype pollution seems to me a more common issues that we might have previously assumed (check: https://blog.s1r1us.ninja/research/PP). I decided to check whether prototype pollution can be abused to bypass Sanitizer API. Turns out it can! \r\n\r\nHere's a proof of concept:\r\n\r\n\t<!"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "432035817",
+  "url": "https://issues.chromium.org/issues/432035817",
+  "title": "Crash with three-way self Jitsi Meet call",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media>Codecs",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jo...@gmail.com",
+  "assignee": "ma...@google.com",
+  "created_date": "2025-07-15T20:12:21+00:00",
+  "modified_date": "2026-01-09T12:36:15+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": "report of memory corruption in a sandboxed process / the renderer",
+  "attachments": [
+    {
+      "id": 67627048,
+      "filename": "Chrome-138-crashes.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 23558,
+      "url": "https://issues.chromium.org/action/issues/432035817/attachments/67627048?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67682746,
+      "filename": "chrome-asan-crash-stackwalk-stacks.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 987582,
+      "url": "https://issues.chromium.org/action/issues/432035817/attachments/67682746?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67682747,
+      "filename": "chrome-asan-crash-stackwalk.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 286048,
+      "url": "https://issues.chromium.org/action/issues/432035817/attachments/67682747?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67682748,
+      "filename": "chrome-asan-crash.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 32275,
+      "url": "https://issues.chromium.org/action/issues/432035817/attachments/67682748?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 111,
+  "description_snippet": "IMPORTANT: Your crash has already been automatically reported to our crash system. Please file this bug only if you can provide more information about it.\n\n\nChrome Version: 138.0.7204.158\nOperating System: Mac OS X 15.5.0\n\nURL (if applicable) where crash occurred: https://beta.meet.jit.si/ATestJitsi"
+}

@@ -1,0 +1,102 @@
+{
+  "id": "40062697",
+  "url": "https://issues.chromium.org/issues/40062697",
+  "title": "UAF in blink::VideoFrameSubmitter::OnContextLost",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Media>Video",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "da...@chromium.org",
+  "created_date": "2023-01-16T17:51:06+00:00",
+  "modified_date": "2024-01-09T09:43:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53036769,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1041,
+      "url": "https://issues.chromium.org/action/issues/40062697/attachments/53036769?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53036770,
+      "filename": "test.png",
+      "mime_type": "image/png",
+      "size_bytes": 376,
+      "url": "https://issues.chromium.org/action/issues/40062697/attachments/53036770?download=true",
+      "local_path": "attachments/test.png"
+    },
+    {
+      "id": 53036816,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 36750,
+      "url": "https://issues.chromium.org/action/issues/40062697/attachments/53036816?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53036829,
+      "filename": "repro.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 6630286,
+      "url": "https://issues.chromium.org/action/issues/40062697/attachments/53036829?download=true",
+      "local_path": "attachments/repro.mov"
+    },
+    {
+      "id": 53036844,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40062697/attachments/53036844?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53036857,
+      "filename": "crash3.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1843,
+      "url": "https://issues.chromium.org/action/issues/40062697/attachments/53036857?download=true",
+      "local_path": "attachments/crash3.html"
+    },
+    {
+      "id": 53036919,
+      "filename": "check.log",
+      "mime_type": "text/plain",
+      "size_bytes": 12791,
+      "url": "https://issues.chromium.org/action/issues/40062697/attachments/53036919?download=true",
+      "local_path": "attachments/check.log"
+    },
+    {
+      "id": 53036953,
+      "filename": "crash4.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1240,
+      "url": "https://issues.chromium.org/action/issues/40062697/attachments/53036953?download=true",
+      "local_path": "attachments/crash4.html"
+    },
+    {
+      "id": 53036967,
+      "filename": "gpu_oom.html",
+      "mime_type": "text/plain",
+      "size_bytes": 427,
+      "url": "https://issues.chromium.org/action/issues/40062697/attachments/53036967?download=true",
+      "local_path": "attachments/gpu_oom.html"
+    }
+  ],
+  "update_count": 105,
+  "description_snippet": "**Steps to reproduce the problem:**   \ntested os:ubuntu22.04  \nchromium version:  \nChromium 111.0.5523.0( gs://chromium-browser-asan/linux-release/asan-linux-release-1091147.zip)  \nChromium 110.0.5481.24(custom asan build)  \nrepro steps:  \n1. setup simple http server:  \n    python -m SimpleHTTPServe"
+}

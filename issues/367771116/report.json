@@ -1,0 +1,116 @@
+{
+  "id": "367771116",
+  "url": "https://issues.chromium.org/issues/367771116",
+  "title": "Extension popup can render over downloaded file prompts",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2024-09-18T07:40:09+00:00",
+  "modified_date": "2025-07-02T12:42:56+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact security UI spoof",
+  "attachments": [
+    {
+      "id": 59464493,
+      "filename": "extensionpopup-.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 7710,
+      "url": "https://issues.chromium.org/action/issues/367771116/attachments/59464493?download=true",
+      "local_path": "attachments/extensionpopup-.zip"
+    },
+    {
+      "id": 59464494,
+      "filename": "bandicam 2024-09-18 14-33-42-940.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2390659,
+      "url": "https://issues.chromium.org/action/issues/367771116/attachments/59464494?download=true",
+      "local_path": "attachments/bandicam 2024-09-18 14-33-42-940.mp4"
+    },
+    {
+      "id": 59464495,
+      "filename": "downloadspoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 108307,
+      "url": "https://issues.chromium.org/action/issues/367771116/attachments/59464495?download=true",
+      "local_path": "attachments/downloadspoof.png"
+    },
+    {
+      "id": 59493548,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 467,
+      "url": "https://issues.chromium.org/action/issues/367771116/attachments/59493548?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 59491161,
+      "filename": "popup.html",
+      "mime_type": "text/html",
+      "size_bytes": 2373,
+      "url": "https://issues.chromium.org/action/issues/367771116/attachments/59491161?download=true",
+      "local_path": "attachments/popup.html"
+    },
+    {
+      "id": 59493549,
+      "filename": "popup-screenshare.html",
+      "mime_type": "text/html",
+      "size_bytes": 430,
+      "url": "https://issues.chromium.org/action/issues/367771116/attachments/59493549?download=true",
+      "local_path": "attachments/popup-screenshare.html"
+    },
+    {
+      "id": 59491162,
+      "filename": "bg-keyboard.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2296,
+      "url": "https://issues.chromium.org/action/issues/367771116/attachments/59491162?download=true",
+      "local_path": "attachments/bg-keyboard.js"
+    },
+    {
+      "id": 64219761,
+      "filename": "bandicam 2025-03-25 12-32-53-235.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1610827,
+      "url": "https://issues.chromium.org/action/issues/367771116/attachments/64219761?download=true",
+      "local_path": "attachments/bandicam 2025-03-25 12-32-53-235.mp4"
+    },
+    {
+      "id": 64390756,
+      "filename": "bandicam 2025-03-29 07-59-21-393.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2340368,
+      "url": "https://issues.chromium.org/action/issues/367771116/attachments/64390756?download=true",
+      "local_path": "attachments/bandicam 2025-03-29 07-59-21-393.mp4"
+    },
+    {
+      "id": 64386405,
+      "filename": "bandicam 2025-03-29 08-25-04-755.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1887734,
+      "url": "https://issues.chromium.org/action/issues/367771116/attachments/64386405?download=true",
+      "local_path": "attachments/bandicam 2025-03-29 08-25-04-755.mp4"
+    },
+    {
+      "id": 64390777,
+      "filename": "bandicam 2025-03-29 08-45-30-613.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1601558,
+      "url": "https://issues.chromium.org/action/issues/367771116/attachments/64390777?download=true",
+      "local_path": "attachments/bandicam 2025-03-29 08-45-30-613.mp4"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "VULNERABILITY DETAILS\nThis vulnerability is almost the same as\n https://issues.chromium.org/issues/40058873, https://issues.chromium.org/issues/361711121 \n but it occurs on downloaded file  prompt\n\n\nVERSION\nChrome Version 130.0.6723.4 (Official Build) canary (64-bit)\nOperating System: Windows 10\n\nRE"
+}

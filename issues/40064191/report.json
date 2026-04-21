@@ -1,0 +1,65 @@
+{
+  "id": "40064191",
+  "url": "https://issues.chromium.org/issues/40064191",
+  "title": "Security: UAF in SaveUPIOfferBubbleViews::WindowClosing",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zh...@gmail.com",
+  "assignee": "vy...@google.com",
+  "created_date": "2023-04-24T09:30:58+00:00",
+  "modified_date": "2025-07-02T12:50:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53104755,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 28842,
+      "url": "https://issues.chromium.org/action/issues/40064191/attachments/53104755?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53104757,
+      "filename": "poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 4734241,
+      "url": "https://issues.chromium.org/action/issues/40064191/attachments/53104757?download=true",
+      "local_path": "attachments/poc.mov"
+    },
+    {
+      "id": 53104775,
+      "filename": "poc.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 933,
+      "url": "https://issues.chromium.org/action/issues/40064191/attachments/53104775?download=true",
+      "local_path": "attachments/poc.diff"
+    },
+    {
+      "id": 53104795,
+      "filename": "fix.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 2481,
+      "url": "https://issues.chromium.org/action/issues/40064191/attachments/53104795?download=true",
+      "local_path": "attachments/fix.diff"
+    },
+    {
+      "id": 53104807,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2263,
+      "url": "https://issues.chromium.org/action/issues/40064191/attachments/53104807?download=true",
+      "local_path": "attachments/index.html"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. First, you need to have a compiled chromium locally  \n2. Run `git apply poc.diff` and recompile chromium locally  \n.What I need to explain here is poc.diff is to trigger the vulnerability function more easily, obviously, it will not maliciously change the pr"
+}

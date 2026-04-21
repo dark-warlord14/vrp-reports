@@ -1,0 +1,110 @@
+{
+  "id": "409911705",
+  "url": "https://issues.chromium.org/issues/409911705",
+  "title": "container-overflow in blink::CloseWatcher::WatcherStack::Signal() close_watcher.cc:170:10",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>HTML, IO>Keyboard",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "do...@chromium.org",
+  "created_date": "2025-04-11T09:34:59+00:00",
+  "modified_date": "2025-07-29T12:37:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "$3,000 for report of mildly mitigated memory corruption in a sandboxed process / the renderer + $1,000 bisect bonus + $1,000 good report bonus",
+  "attachments": [
+    {
+      "id": 64777203,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1413,
+      "url": "https://issues.chromium.org/action/issues/409911705/attachments/64777203?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64852765,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1445,
+      "url": "https://issues.chromium.org/action/issues/409911705/attachments/64852765?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64852766,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 9199,
+      "url": "https://issues.chromium.org/action/issues/409911705/attachments/64852766?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64852767,
+      "filename": "dbg.patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1365,
+      "url": "https://issues.chromium.org/action/issues/409911705/attachments/64852767?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64850519,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1397,
+      "url": "https://issues.chromium.org/action/issues/409911705/attachments/64850519?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64850520,
+      "filename": "Video2.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2305878,
+      "url": "https://issues.chromium.org/action/issues/409911705/attachments/64850520?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64959501,
+      "filename": "many-watchers-in-cancel-event-crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 522,
+      "url": "https://issues.chromium.org/action/issues/409911705/attachments/64959501?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65236475,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/409911705/attachments/65236475?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65236476,
+      "filename": "poc_with_memcontrol.html",
+      "mime_type": "text/html",
+      "size_bytes": 3608,
+      "url": "https://issues.chromium.org/action/issues/409911705/attachments/65236476?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65236477,
+      "filename": "dbg_print_MEMADDRESS_log.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 4520,
+      "url": "https://issues.chromium.org/action/issues/409911705/attachments/65236477?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 90,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

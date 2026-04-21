@@ -1,0 +1,36 @@
+{
+  "id": "40054390",
+  "url": "https://issues.chromium.org/issues/40054390",
+  "title": "Security: PDFIum (XFA) Heap Overflow in RelocateTableRowCells",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "dy...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2021-01-08T03:29:07+00:00",
+  "modified_date": "2021-04-17T17:49:09+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53126592,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 5844,
+      "url": "https://issues.chromium.org/action/issues/40054390/attachments/53126592?download=true",
+      "local_path": "attachments/poc.pdf"
+    }
+  ],
+  "update_count": 27,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nWhile running my fuzzer I found the following HeapOverflow crash in pdfium. A minimized testcase to reproduce is attached.  \n  \n  \n**VERSION**   \nbuilt from 4f67a285e22100c9dc9d175e8269c8fed1734f34  \nwith \"pdf_enable_xfa=true pdf_enable_v8=true pdf_is_standalone=true"
+}

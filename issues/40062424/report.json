@@ -1,0 +1,83 @@
+{
+  "id": "40062424",
+  "url": "https://issues.chromium.org/issues/40062424",
+  "title": "Security: PWA Install prompt can be overlaid over other origins.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>WebAppInstalls",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2022-12-28T20:17:16+00:00",
+  "modified_date": "2025-02-13T00:11:33+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53063533,
+      "filename": "a2hs-poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 939,
+      "url": "https://issues.chromium.org/action/issues/40062424/attachments/53063533?download=true",
+      "local_path": "attachments/a2hs-poc.html"
+    },
+    {
+      "id": 53063534,
+      "filename": "app.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1791,
+      "url": "https://issues.chromium.org/action/issues/40062424/attachments/53063534?download=true",
+      "local_path": "attachments/app.js"
+    },
+    {
+      "id": 53063535,
+      "filename": "app.webmanifest",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1194,
+      "url": "https://issues.chromium.org/action/issues/40062424/attachments/53063535?download=true",
+      "local_path": "attachments/app.webmanifest"
+    },
+    {
+      "id": 53063536,
+      "filename": "dummy-sw.js",
+      "mime_type": "text/plain",
+      "size_bytes": 156,
+      "url": "https://issues.chromium.org/action/issues/40062424/attachments/53063536?download=true",
+      "local_path": "attachments/dummy-sw.js"
+    },
+    {
+      "id": 53063537,
+      "filename": "phishing.html",
+      "mime_type": "text/plain",
+      "size_bytes": 731,
+      "url": "https://issues.chromium.org/action/issues/40062424/attachments/53063537?download=true",
+      "local_path": "attachments/phishing.html"
+    },
+    {
+      "id": 53063538,
+      "filename": "style.css",
+      "mime_type": "text/plain",
+      "size_bytes": 868,
+      "url": "https://issues.chromium.org/action/issues/40062424/attachments/53063538?download=true",
+      "local_path": "attachments/style.css"
+    },
+    {
+      "id": 53063552,
+      "filename": "Untitled_ Dec 30, 2022 2_28 AM.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1331315,
+      "url": "https://issues.chromium.org/action/issues/40062424/attachments/53063552?download=true",
+      "local_path": "attachments/Untitled_ Dec 30, 2022 2_28 AM.webm"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe PWA installation prompt can be overlaid over other origins by first initiating the prompt and then calling window.open.  \n  \n**VERSION**   \nChrome Version: 108.0.5359.125 (Official Build) (64-bit) (cohort: Stable)   \nOperating System: Windows 10 Version 21H2 (Build 1"
+}

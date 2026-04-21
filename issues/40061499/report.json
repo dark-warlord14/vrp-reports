@@ -1,0 +1,41 @@
+{
+  "id": "40061499",
+  "url": "https://issues.chromium.org/issues/40061499",
+  "title": "Security: FileChooserImpl still traverse symlink in symlink to directory",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Forms>File>Directory",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "xi...@chromium.org",
+  "created_date": "2022-10-27T14:34:14+00:00",
+  "modified_date": "2024-01-09T06:46:06+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53090844,
+      "filename": "input.html",
+      "mime_type": "text/plain",
+      "size_bytes": 54,
+      "url": "https://issues.chromium.org/action/issues/40061499/attachments/53090844?download=true",
+      "local_path": "attachments/input.html"
+    },
+    {
+      "id": 53090855,
+      "filename": "poc-folder.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 196,
+      "url": "https://issues.chromium.org/action/issues/40061499/attachments/53090855?download=true",
+      "local_path": "attachments/poc-folder.zip"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAs a continuation of https://bugs.chromium.org/p/chromium/issues/detail?id=1378484 (and https://chromium-review.googlesource.com/c/chromium/src/+/3866767), <input type=\"file\" webkitdirectory>, will on MacOS, traverse the symlink when a folder containing a symlink pointin"
+}

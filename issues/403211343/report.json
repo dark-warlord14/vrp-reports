@@ -1,0 +1,28 @@
+{
+  "id": "403211343",
+  "url": "https://issues.chromium.org/issues/403211343",
+  "title": "Improper Error Handling in LateLoadElimination for String Map in Turboshaft Leads to RCE",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Turbofan",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hu...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2025-03-13T16:33:14+00:00",
+  "modified_date": "2025-07-11T12:37:41+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 50000.0,
+  "bounty_rationale": "high-quality report demonstrating controlled write in a sandboxed process / the renderer",
+  "attachments": [],
+  "update_count": 50,
+  "description_snippet": "VULNERABILITY DETAILS\n\nThis is a long-standing vulnerability that, at first glance, seems not very harmful. However, through a very clever construction, it can be transformed into arbitrary read and write on the V8 Heap. It is indeed a simple process, and fortunately, it was successful.\n\n\n## 1 Turbo"
+}

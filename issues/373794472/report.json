@@ -1,0 +1,60 @@
+{
+  "id": "373794472",
+  "url": "https://issues.chromium.org/issues/373794472",
+  "title": "User can still unknowingly allow Permission Prompt Hidden behind PiP during Interaction",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Permissions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fa...@gmail.com",
+  "assignee": "bk...@google.com",
+  "created_date": "2024-10-16T14:30:26+00:00",
+  "modified_date": "2025-09-24T12:40:52+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": "report of a lower impact UI spoofing issue that resulted in a beneficial change in Chrome",
+  "attachments": [
+    {
+      "id": 60112914,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 5188,
+      "url": "https://issues.chromium.org/action/issues/373794472/attachments/60112914?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 60112915,
+      "filename": "permission.html",
+      "mime_type": "text/html",
+      "size_bytes": 1564,
+      "url": "https://issues.chromium.org/action/issues/373794472/attachments/60112915?download=true",
+      "local_path": "attachments/permission.html"
+    },
+    {
+      "id": 60112916,
+      "filename": "new.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1811504,
+      "url": "https://issues.chromium.org/action/issues/373794472/attachments/60112916?download=true",
+      "local_path": "attachments/new.mp4"
+    },
+    {
+      "id": 66645070,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/373794472/attachments/66645070?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "VULNERABILITY DETAILS\nThis issue is opened based on a previous issue, Bug 364508693, which does not seem to have been properly fixed. I hope the fix has landed, but when testing on the latest Chromium build 1369320, this issue is still reproducible, indicating that the fix did not completely address"
+}

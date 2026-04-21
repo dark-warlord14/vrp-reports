@@ -1,0 +1,99 @@
+{
+  "id": "40061335",
+  "url": "https://issues.chromium.org/issues/40061335",
+  "title": "Security: access-violation src\\v8\\src\\api\\api.cc:5809 in v8::String::WriteOneByte",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Bindings, Blink>ImageCapture, Blink>JavaScript>API",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "be...@google.com",
+  "created_date": "2022-10-13T14:23:50+00:00",
+  "modified_date": "2024-01-09T07:24:39+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53168356,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 10166,
+      "url": "https://issues.chromium.org/action/issues/40061335/attachments/53168356?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53168357,
+      "filename": "dcheck.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17177,
+      "url": "https://issues.chromium.org/action/issues/40061335/attachments/53168357?download=true",
+      "local_path": "attachments/dcheck.txt"
+    },
+    {
+      "id": 53168674,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40061335/attachments/53168674?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53168675,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40061335/attachments/53168675?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53168676,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40061335/attachments/53168676?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53168725,
+      "filename": "help.js",
+      "mime_type": "text/plain",
+      "size_bytes": 827,
+      "url": "https://issues.chromium.org/action/issues/40061335/attachments/53168725?download=true",
+      "local_path": "attachments/help.js"
+    },
+    {
+      "id": 53168726,
+      "filename": "poc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1506,
+      "url": "https://issues.chromium.org/action/issues/40061335/attachments/53168726?download=true",
+      "local_path": "attachments/poc2.html"
+    },
+    {
+      "id": 53168727,
+      "filename": "asan_with_log.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 20674,
+      "url": "https://issues.chromium.org/action/issues/40061335/attachments/53168727?download=true",
+      "local_path": "attachments/asan_with_log.txt"
+    },
+    {
+      "id": 53168817,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 284,
+      "url": "https://issues.chromium.org/action/issues/40061335/attachments/53168817?download=true",
+      "local_path": "attachments/index.html"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "**VULNERABILITY DETAILS**   \naccess-violation src\\v8\\src\\api\\api.cc:5809 in v8::String::WriteOneByte  \n  \n**VERSION**   \nWIN10 X64  \nasan-win32-release_x64-1057463  \n  \n**REPRODUCTION CASE**   \nComing soon  \n  \nType of crash: [tab]  \n  \nRCA  \nComing soon  \n  \nASAN  \n  \n=============================="
+}

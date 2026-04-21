@@ -1,0 +1,52 @@
+{
+  "id": "40055542",
+  "url": "https://issues.chromium.org/issues/40055542",
+  "title": "Security: OOB write after extension pins tab during drag",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "so...@chromium.org",
+  "created_date": "2021-04-13T22:55:26+00:00",
+  "modified_date": "2024-01-09T03:17:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52890159,
+      "filename": "asan_output_872117.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11536,
+      "url": "https://issues.chromium.org/action/issues/40055542/attachments/52890159?download=true",
+      "local_path": "attachments/asan_output_872117.txt"
+    },
+    {
+      "id": 52890160,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 196,
+      "url": "https://issues.chromium.org/action/issues/40055542/attachments/52890160?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 52890161,
+      "filename": "service_worker.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1103,
+      "url": "https://issues.chromium.org/action/issues/40055542/attachments/52890161?download=true",
+      "local_path": "attachments/service_worker.js"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen the user is dragging a tab that was initially in a group, an extension can mark the tab as pinned. If the drag is then cancelled, the tab will be moved back into its original group, resulting in a tab that's both pinned and in a group. Moving the group to a differen"
+}

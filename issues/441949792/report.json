@@ -1,0 +1,38 @@
+{
+  "id": "441949792",
+  "url": "https://issues.chromium.org/issues/441949792",
+  "title": "V8 Sandbox Bypass: Argument count inconsistency due to bound args double-fetch in Generate_PushBoundArguments",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>JavaScript>Sandbox",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "is...@chromium.org",
+  "created_date": "2025-08-29T16:13:56+00:00",
+  "modified_date": "2025-12-24T12:42:20+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "v8 sandbox bypass only demonstrating a read",
+  "attachments": [
+    {
+      "id": 68879088,
+      "filename": "bound-args-shift.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2257,
+      "url": "https://issues.chromium.org/action/issues/441949792/attachments/68879088?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n\n#### Summary\n\n(A likely) V8 sandbox bypass, argument count inconsistency due to bound arguments count double-fetch. `Generate_PushBoundArguments()` generates code which double-fetches bound arguments count which allows an attacker to push one additional argument while not"
+}

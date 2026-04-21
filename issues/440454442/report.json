@@ -1,0 +1,78 @@
+{
+  "id": "440454442",
+  "url": "https://issues.chromium.org/issues/440454442",
+  "title": "Use After Free in ServiceWorkerVersion::FinishRequestWithFetchCount() in browser process.",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>ServiceWorker",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lo...@gmail.com",
+  "assignee": "yy...@chromium.org",
+  "created_date": "2025-08-22T10:33:45+00:00",
+  "modified_date": "2025-12-12T19:20:39+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 43000.0,
+  "bounty_rationale": "$35,000 for high quality memory corruption in a non-sandboxed process + $7,000 for baseline renderer memory corruption (since exploitation does not require renderer m/c) + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 68676531,
+      "filename": "UAF_FinishRequestWithFetchCount_PoC.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1460,
+      "url": "https://issues.chromium.org/action/issues/440454442/attachments/68676531?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68676532,
+      "filename": "UAF_FinishRequestWithFetchCount_ASAN.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 48348,
+      "url": "https://issues.chromium.org/action/issues/440454442/attachments/68676532?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68676533,
+      "filename": "UAF_FinishRequestWithFetchCount_crashState_Mac.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 10694,
+      "url": "https://issues.chromium.org/action/issues/440454442/attachments/68676533?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68754454,
+      "filename": "UAF_FinishRequestWithFetchCount_PoC_OnPipeConnectionError.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1732,
+      "url": "https://issues.chromium.org/action/issues/440454442/attachments/68754454?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68754482,
+      "filename": "UAF_FinishRequestWithFetchCount_OnPipeConnectionError_ASAN.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 49855,
+      "url": "https://issues.chromium.org/action/issues/440454442/attachments/68754482?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68754626,
+      "filename": "UAF_FinishRequestWithFetchCount_OnPipeConnectionError_crashState_dev.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 15547,
+      "url": "https://issues.chromium.org/action/issues/440454442/attachments/68754626?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 106,
+  "description_snippet": "VULNERABILITY DETAILS\n\n\tSpecifically crafted web page can trigger Use After Free of InflightRequestTimeoutInfo object in ServiceWorkerVersion::FinishRequestWithFetchCount(). This bug may potentially be exploited to achieve one click Remote Code Execution in browser process (outside sandbox).\n\n\tServi"
+}

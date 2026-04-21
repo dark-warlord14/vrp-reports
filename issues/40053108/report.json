@@ -1,0 +1,31 @@
+{
+  "id": "40053108",
+  "url": "https://issues.chromium.org/issues/40053108",
+  "title": "Security: Upgrade sqlite to 3.33.0 due to CVE-2020-13871 and CVE-2020-15358?",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Storage",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2020-13871",
+    "CVE-2020-15358"
+  ],
+  "reporter": "ri...@sap.com",
+  "assignee": "hu...@chromium.org",
+  "created_date": "2020-08-18T06:46:39+00:00",
+  "modified_date": "2024-03-12T19:43:04+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 51,
+  "description_snippet": "Hi Chromium Security Team,\r\n\r\nWe perform OSS Security scans of Chromium embedded Framework/Chromium. Our latest stable version (Chromium Embedded Framework 84.3.8, Chromium 84.0.4147.105) identified several vulnerabilities for SQLite 3.31.1, where the most are already adressed with the upgrade to SQ"
+}

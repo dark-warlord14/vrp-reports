@@ -1,0 +1,44 @@
+{
+  "id": "40058536",
+  "url": "https://issues.chromium.org/issues/40058536",
+  "title": "Security: [ANGLE] Heap-buffer-overflow in ImageHelper::SubresourceUpdate::isUpdateToLayers",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gg...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2022-01-20T21:43:36+00:00",
+  "modified_date": "2024-03-12T14:02:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53168938,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 618,
+      "url": "https://issues.chromium.org/action/issues/40058536/attachments/53168938?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53168954,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 16606,
+      "url": "https://issues.chromium.org/action/issues/40058536/attachments/53168954?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThere is a heap buffer overflow vulnerability in the Vulkan backend that could be triggered in Swiftshader.  \nI think it seems that ImageHelper::SubresourceUpdate::isUpdateToLayers is the cause.  \nThis vulnerability started in commit 56330564295ef041b63c82283142eed8b98e2"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "40064965",
+  "url": "https://issues.chromium.org/issues/40064965",
+  "title": "Security: heap-use-after-free on LibcastSocketService",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>Cast>Providers",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "mf...@chromium.org",
+  "created_date": "2023-05-29T14:27:06+00:00",
+  "modified_date": "2023-09-14T17:38:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 16000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53272102,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 14373,
+      "url": "https://issues.chromium.org/action/issues/40064965/attachments/53272102?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53272110,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 14373,
+      "url": "https://issues.chromium.org/action/issues/40064965/attachments/53272110?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "VULNERABILITY DETAILS\n## Bisect\nBased on the analysis with bisect, it was determined that the vulnerability was introduced by this commit: https://source.chromium.org/chromium/chromium/src/+/1834fac498edb068c7fc036ca6e834d330ef5bad\n```\nUse libcast CastSocket in CastSocketService\n\nThis change makes C"
+}

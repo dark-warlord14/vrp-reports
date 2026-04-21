@@ -1,0 +1,41 @@
+{
+  "id": "40059929",
+  "url": "https://issues.chromium.org/issues/40059929",
+  "title": "WebGL glCompressedTexImage3D Heap-Based Buffer Overflow Vulnerability",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebGL, Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "no...@ssd-disclosure.com",
+  "assignee": "kb...@chromium.org",
+  "created_date": "2022-06-12T07:01:41+00:00",
+  "modified_date": "2024-01-09T06:14:05+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52979821,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 598,
+      "url": "https://issues.chromium.org/action/issues/40059929/attachments/52979821?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52979822,
+      "filename": "report.md",
+      "mime_type": "text/plain",
+      "size_bytes": 30581,
+      "url": "https://issues.chromium.org/action/issues/40059929/attachments/52979822?download=true",
+      "local_path": "attachments/report.md"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "**Steps to reproduce the problem:**   \n## Summary  \n- A Heap-Based Buffer Overflow vulnerability exists in the WebGL glCompressedTexImage3D.  \n- An attacker must open a arbitrary generated html file to exploit this vulnerability.  \n  \n  \n## Test environment  \n  - OS : macOS Monterey 12.4(21F79)"
+}

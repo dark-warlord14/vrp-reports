@@ -1,0 +1,61 @@
+{
+  "id": "40084355",
+  "url": "https://issues.chromium.org/issues/40084355",
+  "title": "Credential Phishing via Transparent Authenticating Proxy Vector",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Network>Auth, Internals>Network>Proxy",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pa...@gmail.com",
+  "assignee": "as...@chromium.org",
+  "created_date": "2016-05-20T17:51:57+00:00",
+  "modified_date": "2018-04-25T22:52:19+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53096381,
+      "filename": "Screen Shot 2016-05-20 at 11.22.19 AM.png",
+      "mime_type": "image/png",
+      "size_bytes": 64325,
+      "url": "https://issues.chromium.org/action/issues/40084355/attachments/53096381?download=true",
+      "local_path": "attachments/Screen Shot 2016-05-20 at 11.22.19 AM.png"
+    },
+    {
+      "id": 53096382,
+      "filename": "Screen Shot 2016-05-20 at 11.42.57 AM.png",
+      "mime_type": "image/png",
+      "size_bytes": 42031,
+      "url": "https://issues.chromium.org/action/issues/40084355/attachments/53096382?download=true",
+      "local_path": "attachments/Screen Shot 2016-05-20 at 11.42.57 AM.png"
+    },
+    {
+      "id": 53096462,
+      "filename": "wellsfargo_phishing_osx.png",
+      "mime_type": "image/png",
+      "size_bytes": 106778,
+      "url": "https://issues.chromium.org/action/issues/40084355/attachments/53096462?download=true",
+      "local_path": "attachments/wellsfargo_phishing_osx.png"
+    },
+    {
+      "id": 53096494,
+      "filename": "net-internals-log.json.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 804477,
+      "url": "https://issues.chromium.org/action/issues/40084355/attachments/53096494?download=true",
+      "local_path": "attachments/net-internals-log.json.txt"
+    }
+  ],
+  "update_count": 69,
+  "description_snippet": "This impacts version Chrome version 50.0.2661.94 for OSX.\r\n\r\nIt is possible for a networked MitM to establish a transparent authenticating proxy on a network.  When this is done, a user running Chrome on that network will be prompted for entry of credentials as shown in \"Screen Shot 2016-05-20 at 11"
+}

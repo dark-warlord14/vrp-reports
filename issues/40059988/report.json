@@ -1,0 +1,24 @@
+{
+  "id": "40059988",
+  "url": "https://issues.chromium.org/issues/40059988",
+  "title": "Security: HeapOverflow in PluralStringHandler::HandleGetPluralString ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>WebUI",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ya...@gmail.com",
+  "assignee": "mi...@google.com",
+  "created_date": "2022-06-17T01:04:29+00:00",
+  "modified_date": "2024-01-09T09:37:55+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 40,
+  "description_snippet": "This issue is the same as https://crbug.com/chromium/1303613.The problem seems to be triggered by diagnostics in chromeos, I'm not sure either.\r\n\r\n\r\nvoid PluralStringHandler::HandleGetPluralString(const base::ListValue* args) {\r\n  AllowJavascript();\r\n  CHECK_EQ(3U, args->GetListDeprecated().size());"
+}

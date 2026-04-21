@@ -1,0 +1,41 @@
+{
+  "id": "40054195",
+  "url": "https://issues.chromium.org/issues/40054195",
+  "title": "uaf in media::learning::MojoLearningTaskControllerService::PredictDistribution",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "li...@google.com",
+  "created_date": "2020-12-17T03:09:10+00:00",
+  "modified_date": "2024-03-22T17:09:17+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53118843,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 726,
+      "url": "https://issues.chromium.org/action/issues/40054195/attachments/53118843?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53118844,
+      "filename": "testharness.js",
+      "mime_type": "text/plain",
+      "size_bytes": 144759,
+      "url": "https://issues.chromium.org/action/issues/40054195/attachments/53118844?download=true",
+      "local_path": "attachments/testharness.js"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\ntested environment\r\nos:ubuntu 20.04\r\nChromium 88.0.4324.11(dev with asan build)\r\nChromium 89.0.4350.4(dev with asan build)\r\nChromium 89.0."
+}

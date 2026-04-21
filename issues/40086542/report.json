@@ -1,0 +1,33 @@
+{
+  "id": "40086542",
+  "url": "https://issues.chromium.org/issues/40086542",
+  "title": "Security: WebGL - Use After Free in Buffer11::updateBufferStorage()",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Blink>WebGL, Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lo...@gmail.com",
+  "assignee": "jm...@chromium.org",
+  "created_date": "2017-01-17T23:00:07+00:00",
+  "modified_date": "2024-03-12T13:33:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52894205,
+      "filename": "UAF_updateBufferStorage_Repro.html",
+      "mime_type": "text/plain",
+      "size_bytes": 966,
+      "url": "https://issues.chromium.org/action/issues/40086542/attachments/52894205?download=true",
+      "local_path": "attachments/UAF_updateBufferStorage_Repro.html"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n\tSteps to reproduce:  \n\t  \n\t1. Open UAF_updateBufferStorage_Repro.html in  Chrome browser.  \n\t2. Chrome crashes  in rx::Buffer11::updateBufferStorage caused by a Use After Free.  \n  \n\t\t==23588==ERROR: AddressSanitizer: heap-use-after-free on address 0x22c337f0 at pc 0"
+}

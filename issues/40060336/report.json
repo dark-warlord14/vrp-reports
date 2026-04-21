@@ -1,0 +1,62 @@
+{
+  "id": "40060336",
+  "url": "https://issues.chromium.org/issues/40060336",
+  "title": "Security: Another UAF in WebSQL sqlite3Select",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Storage>WebSQL, Internals>Storage",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "et...@gmail.com",
+  "assignee": "ay...@chromium.org",
+  "created_date": "2022-07-20T15:12:19+00:00",
+  "modified_date": "2024-01-09T06:09:34+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52889118,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 25056,
+      "url": "https://issues.chromium.org/action/issues/40060336/attachments/52889118?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 52889119,
+      "filename": "poc.sql",
+      "mime_type": "text/plain",
+      "size_bytes": 245,
+      "url": "https://issues.chromium.org/action/issues/40060336/attachments/52889119?download=true",
+      "local_path": "attachments/poc.sql"
+    },
+    {
+      "id": 52889120,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2041,
+      "url": "https://issues.chromium.org/action/issues/40060336/attachments/52889120?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52889121,
+      "filename": "repro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 10096470,
+      "url": "https://issues.chromium.org/action/issues/40060336/attachments/52889121?download=true",
+      "local_path": "attachments/repro.mp4"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n# Note  \n1. I found this unique case while reviewing the crash. This bug \\*\\*is a completely different bug from\\*\\* https://bugs.chromium.org/p/chromium/issues/detail?id=1343348, \\*\\*nor is it a patch bypass.\\*\\*  \n  \n2. Based on our current testing, it has been in Chrom"
+}

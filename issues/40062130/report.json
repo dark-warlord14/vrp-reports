@@ -1,0 +1,54 @@
+{
+  "id": "40062130",
+  "url": "https://issues.chromium.org/issues/40062130",
+  "title": "Security: UAF in MojoQueryQuotaIpcz",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Mojo",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ss...@gmail.com",
+  "assignee": "ro...@google.com",
+  "created_date": "2022-12-08T14:16:10+00:00",
+  "modified_date": "2025-10-27T18:27:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 30000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53061488,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 41485,
+      "url": "https://issues.chromium.org/action/issues/40062130/attachments/53061488?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53061489,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1155,
+      "url": "https://issues.chromium.org/action/issues/40062130/attachments/53061489?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53061490,
+      "filename": "fix.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1243,
+      "url": "https://issues.chromium.org/action/issues/40062130/attachments/53061490?download=true",
+      "local_path": "attachments/fix.diff"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAn IPC Endpoint is wrapped as `MojoHandle` while passing to Mojo `Connector` from the low-level Mojo Core. In Mojo Core, the `MojoHandle` is a counter number used to fetch the `Dispatcher` from a global map.  \n  \nThings get more interesting when the low-level Mojo Core i"
+}

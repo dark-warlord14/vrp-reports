@@ -1,0 +1,54 @@
+{
+  "id": "40055548",
+  "url": "https://issues.chromium.org/issues/40055548",
+  "title": "use-after-poison in  blink::ImageDecoderExternal::OnMetadata",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Media>WebCodecs",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ne...@gmail.com",
+  "assignee": "da...@chromium.org",
+  "created_date": "2021-04-14T11:16:18+00:00",
+  "modified_date": "2024-01-09T03:17:20+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52954505,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 241,
+      "url": "https://issues.chromium.org/action/issues/40055548/attachments/52954505?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 52954506,
+      "filename": "main.html",
+      "mime_type": "text/plain",
+      "size_bytes": 293,
+      "url": "https://issues.chromium.org/action/issues/40055548/attachments/52954506?download=true",
+      "local_path": "attachments/main.html"
+    },
+    {
+      "id": 52954636,
+      "filename": "asan-linux-release-874061-asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8762,
+      "url": "https://issues.chromium.org/action/issues/40055548/attachments/52954636?download=true",
+      "local_path": "attachments/asan-linux-release-874061-asan.log"
+    }
+  ],
+  "update_count": 76,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nUuntu 20.04\r\ntested chrome version\r\nChromium 92.0.4477.0\r\nChromium 91.0.4469.4\r\n\r\ngoogle-chrome --enable-experimental-web-platform-featur"
+}

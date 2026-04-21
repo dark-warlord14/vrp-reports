@@ -1,0 +1,38 @@
+{
+  "id": "40054989",
+  "url": "https://issues.chromium.org/issues/40054989",
+  "title": "Security: Use after free in V8",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler, Blink>JavaScript>GarbageCollection",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "p4...@gmail.com",
+  "assignee": "ne...@chromium.org",
+  "created_date": "2021-02-26T11:50:14+00:00",
+  "modified_date": "2024-01-09T08:52:36+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53357204,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1231,
+      "url": "https://issues.chromium.org/action/issues/40054989/attachments/53357204?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "**Please provide a brief explanation of the security issue.**   \nIn optimized function, when something unexpected happens, it will call `TranslatedValue::GetValue` to generate some necessary objects using the information (such as element pointer) stored in register or stack. When an object generated"
+}

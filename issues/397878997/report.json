@@ -1,0 +1,93 @@
+{
+  "id": "397878997",
+  "url": "https://issues.chromium.org/issues/397878997",
+  "title": "Video Document In Document spoof login box",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Media>PictureInPicture",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ke...@gmail.com",
+  "assignee": "bk...@google.com",
+  "created_date": "2025-02-20T10:38:40+00:00",
+  "modified_date": "2025-12-24T12:40:28+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": "UI spoofing, low impact, and mitigated.",
+  "attachments": [
+    {
+      "id": 63110064,
+      "filename": "finding (23).pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 2944926,
+      "url": "https://issues.chromium.org/action/issues/397878997/attachments/63110064?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63110065,
+      "filename": "pocwin.html",
+      "mime_type": "text/html",
+      "size_bytes": 2255,
+      "url": "https://issues.chromium.org/action/issues/397878997/attachments/63110065?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63110066,
+      "filename": "v4.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 638277,
+      "url": "https://issues.chromium.org/action/issues/397878997/attachments/63110066?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63110067,
+      "filename": "v2.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 662819,
+      "url": "https://issues.chromium.org/action/issues/397878997/attachments/63110067?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63110068,
+      "filename": "v1.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 987557,
+      "url": "https://issues.chromium.org/action/issues/397878997/attachments/63110068?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63110069,
+      "filename": "v3.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1075919,
+      "url": "https://issues.chromium.org/action/issues/397878997/attachments/63110069?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63090694,
+      "filename": "Screen Recording 2025-02-20 at 11.56.07.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 12261142,
+      "url": "https://issues.chromium.org/action/issues/397878997/attachments/63090694?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63140405,
+      "filename": "finalpoc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 39663790,
+      "url": "https://issues.chromium.org/action/issues/397878997/attachments/63140405?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 100,
+  "description_snippet": "---\n\n### Report description\n\n\nVideo Document In Document spoof login box\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/rules/5745167867576320/ch"
+}

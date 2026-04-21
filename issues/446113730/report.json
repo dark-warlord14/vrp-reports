@@ -1,0 +1,38 @@
+{
+  "id": "446113730",
+  "url": "https://issues.chromium.org/issues/446113730",
+  "title": "V8 Sandbox Bypass: WasmCPT handle UAF by import dispatch table growth",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "cl...@chromium.org",
+  "created_date": "2025-09-19T13:57:45+00:00",
+  "modified_date": "2026-02-18T13:55:42+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": "v8 sandbox bypass with controllable write",
+  "attachments": [
+    {
+      "id": 69441531,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 86207,
+      "url": "https://issues.chromium.org/action/issues/446113730/attachments/69441531?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Summary\n\nV8 sandbox bypass through WasmCPT handle UAF by growing `dispatch_table_for_imports` to transfer away its `WasmDispatchTableData`. Entries in the original table are still reachable through imported function calls but has wrapper refcnt holder transferred away"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "40918488",
+  "url": "https://issues.chromium.org/issues/40918488",
+  "title": "Security: [Fix bypass] PWA Install prompt can still be overlaid over other origins",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P3",
+  "component": "Platform>WebAppProvider",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2023-06-24T06:42:06+00:00",
+  "modified_date": "2024-01-12T18:44:09+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52880930,
+      "filename": "dummy-sw.js",
+      "mime_type": "text/plain",
+      "size_bytes": 156,
+      "url": "https://issues.chromium.org/action/issues/40918488/attachments/52880930?download=true",
+      "local_path": "attachments/dummy-sw.js"
+    },
+    {
+      "id": 52880932,
+      "filename": "app.webmanifest",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1202,
+      "url": "https://issues.chromium.org/action/issues/40918488/attachments/52880932?download=true",
+      "local_path": "attachments/app.webmanifest"
+    },
+    {
+      "id": 52880933,
+      "filename": "app.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1807,
+      "url": "https://issues.chromium.org/action/issues/40918488/attachments/52880933?download=true",
+      "local_path": "attachments/app.js"
+    },
+    {
+      "id": 52880934,
+      "filename": "a2hs-poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 939,
+      "url": "https://issues.chromium.org/action/issues/40918488/attachments/52880934?download=true",
+      "local_path": "attachments/a2hs-poc.html"
+    },
+    {
+      "id": 52880942,
+      "filename": "Untitled_ Jun 24, 2023 2_47 PM.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1226265,
+      "url": "https://issues.chromium.org/action/issues/40918488/attachments/52880942?download=true",
+      "local_path": "attachments/Untitled_ Jun 24, 2023 2_47 PM.webm"
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIn https://chromium-review.googlesource.com/c/chromium/src/+/4616004 it was fixed such that PWA install prompt closes after navigation. While testing in Canary with the fix absorbed, if popup blocker is disabled, I found that a page can still call the install prompt and"
+}

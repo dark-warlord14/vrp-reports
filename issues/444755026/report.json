@@ -1,0 +1,110 @@
+{
+  "id": "444755026",
+  "url": "https://issues.chromium.org/issues/444755026",
+  "title": "Buffer Overflow in Y16 Video Capture",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media>CameraCapture",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "el...@cryptosearch.tools",
+  "assignee": "il...@chromium.org",
+  "created_date": "2025-09-12T23:59:28+00:00",
+  "modified_date": "2025-12-27T12:38:57+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": "memory corruption in a sandboxed process which is mildly mitigated, with a bisect bonus",
+  "attachments": [
+    {
+      "id": 69275673,
+      "filename": "y16_auto_final.html",
+      "mime_type": "text/html",
+      "size_bytes": 1478,
+      "url": "https://issues.chromium.org/action/issues/444755026/attachments/69275673?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69275674,
+      "filename": "vivid.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 112001,
+      "url": "https://issues.chromium.org/action/issues/444755026/attachments/69275674?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69275675,
+      "filename": "processname_chrome_y16.png",
+      "mime_type": "image/png",
+      "size_bytes": 176672,
+      "url": "https://issues.chromium.org/action/issues/444755026/attachments/69275675?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69275676,
+      "filename": "chrome_y16_camera_access_violation.png",
+      "mime_type": "image/png",
+      "size_bytes": 407002,
+      "url": "https://issues.chromium.org/action/issues/444755026/attachments/69275676?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69275677,
+      "filename": "chrome_y16_access_violation_2.png",
+      "mime_type": "image/png",
+      "size_bytes": 373336,
+      "url": "https://issues.chromium.org/action/issues/444755026/attachments/69275677?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69277684,
+      "filename": "VCamSample.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 93731,
+      "url": "https://issues.chromium.org/action/issues/444755026/attachments/69277684?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69277685,
+      "filename": "y16_auto_final.html",
+      "mime_type": "text/html",
+      "size_bytes": 1478,
+      "url": "https://issues.chromium.org/action/issues/444755026/attachments/69277685?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69277686,
+      "filename": "vivid.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 112001,
+      "url": "https://issues.chromium.org/action/issues/444755026/attachments/69277686?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69277687,
+      "filename": "VCamSample.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 93731,
+      "url": "https://issues.chromium.org/action/issues/444755026/attachments/69277687?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69346360,
+      "filename": "vivid_y16_padding_after_each_row.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 4801,
+      "url": "https://issues.chromium.org/action/issues/444755026/attachments/69346360?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 108,
+  "description_snippet": "---\n\n### Report description\n\n\nBuffer Overflow in Y16 Video Capture\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/rules/5745167867576320/chrome-v"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "453147449",
+  "url": "https://issues.chromium.org/issues/453147449",
+  "title": "DCHECK failure in TCPReadableStreamWrapper::Pull()",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Network>DirectSockets",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "i....@gmail.com",
+  "assignee": "vk...@google.com",
+  "created_date": "2025-10-18T19:45:46+00:00",
+  "modified_date": "2026-01-31T12:46:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": "base value $2000, moderately mitigated (needs extension and user gesture) + 1k patch + 1k bisect",
+  "attachments": [
+    {
+      "id": 70231846,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 24175,
+      "url": "https://issues.chromium.org/action/issues/453147449/attachments/70231846?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70231847,
+      "filename": "diff.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 5067,
+      "url": "https://issues.chromium.org/action/issues/453147449/attachments/70231847?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70231848,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 396,
+      "url": "https://issues.chromium.org/action/issues/453147449/attachments/70231848?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70238326,
+      "filename": "asan2.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8465,
+      "url": "https://issues.chromium.org/action/issues/453147449/attachments/70238326?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70273789,
+      "filename": "diff2.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 6231,
+      "url": "https://issues.chromium.org/action/issues/453147449/attachments/70273789?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70272238,
+      "filename": "poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 27405470,
+      "url": "https://issues.chromium.org/action/issues/453147449/attachments/70272238?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "# Steps to reproduce the problem\n1. apply `diff.patch` and build asan chromium. This patch is just for making the reproduction easier and doesn't affect the bug's eligibility.\n2. exec `echo -e \"UAF\" | nc -l 12321` on local.\n3. serve `poc.html` on local, and open it by asan chromium built in step 1."
+}

@@ -1,0 +1,100 @@
+{
+  "id": "40057508",
+  "url": "https://issues.chromium.org/issues/40057508",
+  "title": "Security: UI spoofing using a very long URL",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>MediaCapture, UI>Browser>Permissions>Prompts, UI>Security (Use Subcomponent)>UrlFormatting",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "av...@chromium.org",
+  "created_date": "2021-10-04T16:07:12+00:00",
+  "modified_date": "2024-05-23T22:27:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53087346,
+      "filename": "payment-dialog-custom-title-spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 26553,
+      "url": "https://issues.chromium.org/action/issues/40057508/attachments/53087346?download=true",
+      "local_path": "attachments/payment-dialog-custom-title-spoof.png"
+    },
+    {
+      "id": 53087347,
+      "filename": "payment-dialog-spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 26082,
+      "url": "https://issues.chromium.org/action/issues/40057508/attachments/53087347?download=true",
+      "local_path": "attachments/payment-dialog-spoof.png"
+    },
+    {
+      "id": 53087348,
+      "filename": "permission-access-denied-spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 17294,
+      "url": "https://issues.chromium.org/action/issues/40057508/attachments/53087348?download=true",
+      "local_path": "attachments/permission-access-denied-spoof.png"
+    },
+    {
+      "id": 53087349,
+      "filename": "pwa-custom-title-spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 29299,
+      "url": "https://issues.chromium.org/action/issues/40057508/attachments/53087349?download=true",
+      "local_path": "attachments/pwa-custom-title-spoof.png"
+    },
+    {
+      "id": 53087350,
+      "filename": "screen-share-dialog-spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 4435,
+      "url": "https://issues.chromium.org/action/issues/40057508/attachments/53087350?download=true",
+      "local_path": "attachments/screen-share-dialog-spoof.png"
+    },
+    {
+      "id": 53087351,
+      "filename": "screen-share-fullscreen-share-spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 4851,
+      "url": "https://issues.chromium.org/action/issues/40057508/attachments/53087351?download=true",
+      "local_path": "attachments/screen-share-fullscreen-share-spoof.png"
+    },
+    {
+      "id": 53087352,
+      "filename": "screen-share-tab-share-spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 4385,
+      "url": "https://issues.chromium.org/action/issues/40057508/attachments/53087352?download=true",
+      "local_path": "attachments/screen-share-tab-share-spoof.png"
+    },
+    {
+      "id": 53087353,
+      "filename": "tab-url-spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 25043,
+      "url": "https://issues.chromium.org/action/issues/40057508/attachments/53087353?download=true",
+      "local_path": "attachments/tab-url-spoof.png"
+    },
+    {
+      "id": 53087354,
+      "filename": "window-url-spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 31376,
+      "url": "https://issues.chromium.org/action/issues/40057508/attachments/53087354?download=true",
+      "local_path": "attachments/window-url-spoof.png"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nChanging the URL using `history.replaceState` to 10M+ characters causes a spoofing bug in various security UIs.  \n  \n**VERSION**   \nChrome Version: 94.0.4606.71 + all channels  \nOperating System: Tested on Windows 10, Mac OS, Android 11  \n  \n  \n**REPRODUCTION CASE**"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "40062161",
+  "url": "https://issues.chromium.org/issues/40062161",
+  "title": "Security: UAF in VIRTGPU_RESOURCE_CREATE and VIRTGPU_RESOURCE_CREATE_BLOB",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "OS>Packages",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lm...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2022-12-10T03:37:56+00:00",
+  "modified_date": "2023-05-24T13:00:12+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53147194,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 4377,
+      "url": "https://issues.chromium.org/action/issues/40062161/attachments/53147194?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53147195,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 864,
+      "url": "https://issues.chromium.org/action/issues/40062161/attachments/53147195?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 53147196,
+      "filename": "poc.c",
+      "mime_type": "text/plain",
+      "size_bytes": 1935,
+      "url": "https://issues.chromium.org/action/issues/40062161/attachments/53147196?download=true",
+      "local_path": "attachments/poc.c"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nioctl$DRM_IOCTL_VIRTGPU_RESOURCE_CREATE will register \\*virtio_gpu_object\\*[1] (created in \\*virtio_gpu_object_create\\*[2]) as a handle which can be deleted by ioctl$DRM_IOCTL_GEM_CLOSE, and afterwards decrease refcount of it. But after decrease the refcount, it will"
+}

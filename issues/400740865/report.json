@@ -1,0 +1,57 @@
+{
+  "id": "400740865",
+  "url": "https://issues.chromium.org/issues/400740865",
+  "title": "Chrome's updater.exe is prone to privilege escalation through privileged file deletion",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Updater>Client",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "s3...@gmx.net",
+  "assignee": "ga...@chromium.org",
+  "created_date": "2025-03-04T19:47:36+00:00",
+  "modified_date": "2025-06-17T03:04:09+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "high-quality report of moderate impact local privilege escalation",
+  "attachments": [
+    {
+      "id": 63462605,
+      "filename": "FilesystemEoPsNewChrome.7z",
+      "mime_type": "application/x-7z-compressed",
+      "size_bytes": 50606,
+      "url": "https://issues.chromium.org/action/issues/400740865/attachments/63462605?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63462606,
+      "filename": "FolderContentsDeleteToFolderDelete.exe",
+      "mime_type": "application/x-msdos-program",
+      "size_bytes": 239104,
+      "url": "https://issues.chromium.org/action/issues/400740865/attachments/63462606?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63462607,
+      "filename": "FolderOrFileDeleteToSystem.exe",
+      "mime_type": "application/x-msdos-program",
+      "size_bytes": 519168,
+      "url": "https://issues.chromium.org/action/issues/400740865/attachments/63462607?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63462608,
+      "filename": "PoC-Google-ChromeUpdater-EoP.mkv",
+      "mime_type": "video/x-matroska",
+      "size_bytes": 1864673,
+      "url": "https://issues.chromium.org/action/issues/400740865/attachments/63462608?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 68,
+  "description_snippet": "# Attack Scenario\n> **Please note that this exploit especially poses a risk in a corporate environment where users normally don’t have administrative privileges, and client software is distributed using centrally managed software distribution tools like MS SCCM running with elevated privileges like"
+}

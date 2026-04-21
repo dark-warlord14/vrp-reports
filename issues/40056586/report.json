@@ -1,0 +1,62 @@
+{
+  "id": "40056586",
+  "url": "https://issues.chromium.org/issues/40056586",
+  "title": "Security: heap-use-after-free in the PaymentCredential in the browser process",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>Payments",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2021-07-19T12:07:03+00:00",
+  "modified_date": "2024-01-09T08:45:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53403393,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 19871,
+      "url": "https://issues.chromium.org/action/issues/40056586/attachments/53403393?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53403394,
+      "filename": "confirm.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1624,
+      "url": "https://issues.chromium.org/action/issues/40056586/attachments/53403394?download=true",
+      "local_path": "attachments/confirm.html"
+    },
+    {
+      "id": 53403395,
+      "filename": "confirm.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1316,
+      "url": "https://issues.chromium.org/action/issues/40056586/attachments/53403395?download=true",
+      "local_path": "attachments/confirm.js"
+    },
+    {
+      "id": 53403396,
+      "filename": "pay.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 8076381,
+      "url": "https://issues.chromium.org/action/issues/40056586/attachments/53403396?download=true",
+      "local_path": "attachments/pay.gif"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nheap-use-after-free in the PaymentCredential in the browser process which will excape the sandbox.  \n  \n**VERSION**   \nChrome Version: [94.0.4581.0] + [dev] (asan-win32-release_x64-902937)  \nOperating System: Windows 10  \n  \n**REPRODUCTION CASE**   \n  \nPut the confirm.ht"
+}

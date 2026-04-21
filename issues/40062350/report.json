@@ -1,0 +1,60 @@
+{
+  "id": "40062350",
+  "url": "https://issues.chromium.org/issues/40062350",
+  "title": "Security: Heap-use-after-free in ExtensionViewHost::OnDidStopFirstLoad",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2022-12-22T07:07:36+00:00",
+  "modified_date": "2024-01-09T06:52:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53261110,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 187,
+      "url": "https://issues.chromium.org/action/issues/40062350/attachments/53261110?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53261111,
+      "filename": "default_path.html",
+      "mime_type": "text/plain",
+      "size_bytes": 23,
+      "url": "https://issues.chromium.org/action/issues/40062350/attachments/53261111?download=true",
+      "local_path": "attachments/default_path.html"
+    },
+    {
+      "id": 53261112,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 22107,
+      "url": "https://issues.chromium.org/action/issues/40062350/attachments/53261112?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53261113,
+      "filename": "video.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 374246,
+      "url": "https://issues.chromium.org/action/issues/40062350/attachments/53261113?download=true",
+      "local_path": "attachments/video.webm"
+    }
+  ],
+  "update_count": 28,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. download asan-linux-release-1086198.zip and unzip  \n2. put `default_path.html` and `manifest.json` in the folder `/path/to/extension` AND run `./chrome --user-data-dir=/tmp/noexist --enable-features=ExtensionSidePanelIntegration --load-extension=/path/to/ext"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "41489926",
+  "url": "https://issues.chromium.org/issues/41489926",
+  "title": "Security: use-after-poison in blink::MLGraphXnnpack::ComputeAsyncImpl",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zh...@gmail.com",
+  "assignee": "ni...@intel.com",
+  "created_date": "2024-01-09T17:37:53+00:00",
+  "modified_date": "2026-03-26T21:28:03+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53189714,
+      "filename": "asan-use-after-poison",
+      "mime_type": "text/plain",
+      "size_bytes": 19187,
+      "url": "https://issues.chromium.org/action/issues/41489926/attachments/53189714?download=true",
+      "local_path": "attachments/asan-use-after-poison"
+    },
+    {
+      "id": 53189715,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 522,
+      "url": "https://issues.chromium.org/action/issues/41489926/attachments/53189715?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53189716,
+      "filename": "poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 4527946,
+      "url": "https://issues.chromium.org/action/issues/41489926/attachments/53189716?download=true",
+      "local_path": "attachments/poc.mov"
+    },
+    {
+      "id": 53189734,
+      "filename": "poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 7608841,
+      "url": "https://issues.chromium.org/action/issues/41489926/attachments/53189734?download=true",
+      "local_path": "attachments/poc.mov"
+    },
+    {
+      "id": 53189855,
+      "filename": "heap-buffer-overflow",
+      "mime_type": "text/plain",
+      "size_bytes": 27594,
+      "url": "https://issues.chromium.org/action/issues/41489926/attachments/53189855?download=true",
+      "local_path": "attachments/heap-buffer-overflow"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "---\n\n### Report description\n\n\nSecurity: use-after-poison in blink::MLGraphXnnpack::ComputeAsyncImpl\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nGoogle Chrome\n\n\n---\n\n### The problem\n\n\n#### Please describe the technical details of the vulnerability\n\nVULN"
+}

@@ -1,0 +1,89 @@
+{
+  "id": "40052325",
+  "url": "https://issues.chromium.org/issues/40052325",
+  "title": "URL spoofing on iOS by repeatedly navigating a new window",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Mobile>iOSWeb>PageLoad, Mobile>iOSWeb>Security",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ra...@gmail.com",
+  "assignee": "aj...@google.com",
+  "created_date": "2020-05-15T17:46:13+00:00",
+  "modified_date": "2024-08-21T12:00:55+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53230891,
+      "filename": "Spoofing.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1522593,
+      "url": "https://issues.chromium.org/action/issues/40052325/attachments/53230891?download=true",
+      "local_path": "attachments/Spoofing.mp4"
+    },
+    {
+      "id": 53230892,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40052325/attachments/53230892?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53230893,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40052325/attachments/53230893?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53230922,
+      "filename": "attack1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 132,
+      "url": "https://issues.chromium.org/action/issues/40052325/attachments/53230922?download=true",
+      "local_path": "attachments/attack1.html"
+    },
+    {
+      "id": 53230923,
+      "filename": "Parent.html",
+      "mime_type": "text/plain",
+      "size_bytes": 540,
+      "url": "https://issues.chromium.org/action/issues/40052325/attachments/53230923?download=true",
+      "local_path": "attachments/Parent.html"
+    },
+    {
+      "id": 53230924,
+      "filename": "UpdatedSpoof.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1647693,
+      "url": "https://issues.chromium.org/action/issues/40052325/attachments/53230924?download=true",
+      "local_path": "attachments/UpdatedSpoof.mp4"
+    },
+    {
+      "id": 53231066,
+      "filename": "TwitterSpoof.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 319203,
+      "url": "https://issues.chromium.org/action/issues/40052325/attachments/53231066?download=true",
+      "local_path": "attachments/TwitterSpoof.mp4"
+    },
+    {
+      "id": 53231203,
+      "filename": "Fixed.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6414374,
+      "url": "https://issues.chromium.org/action/issues/40052325/attachments/53231203?download=true",
+      "local_path": "attachments/Fixed.mp4"
+    }
+  ],
+  "update_count": 87,
+  "description_snippet": "1) Go to parent.html\r\n2) Click on the hyperlinked text\r\n3) Observe.\r\n\r\n\r\nActual: \r\n\r\nShown epicgames.com while the content is of twitter.com\r\n\r\nExpected:\r\n\r\nUpdate the content too."
+}

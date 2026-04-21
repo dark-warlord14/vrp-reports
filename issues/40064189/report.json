@@ -1,0 +1,57 @@
+{
+  "id": "40064189",
+  "url": "https://issues.chromium.org/issues/40064189",
+  "title": "Security: Heap-use-after-free in SearchCompanionSidePanelCoordinator::CreateCompanionEntry",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>TopChrome>SidePanel",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "co...@chromium.org",
+  "created_date": "2023-04-24T09:14:10+00:00",
+  "modified_date": "2024-01-09T10:17:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53355094,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 210,
+      "url": "https://issues.chromium.org/action/issues/40064189/attachments/53355094?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53355095,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 370,
+      "url": "https://issues.chromium.org/action/issues/40064189/attachments/53355095?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53355096,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 30093,
+      "url": "https://issues.chromium.org/action/issues/40064189/attachments/53355096?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53355097,
+      "filename": "video.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 476805,
+      "url": "https://issues.chromium.org/action/issues/40064189/attachments/53355097?download=true",
+      "local_path": "attachments/video.webm"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. download asan-linux-release-1134408.zip and unzip  \n2. run `./chrome --user-data-dir=/tmp/noexist --load-extension=/path/to/extension --enable-features=SidePanelCompanion`  \n3. Open SidePanel and choose `Google`  \n  \n**Problem Description:**   \n1. Analysis"
+}

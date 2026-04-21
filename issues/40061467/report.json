@@ -1,0 +1,94 @@
+{
+  "id": "40061467",
+  "url": "https://issues.chromium.org/issues/40061467",
+  "title": "Security: Heap-use-after-free in InstallablePaymentAppCrawler::OnPaymentMethodManifestParsed",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>Payments",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "sm...@chromium.org",
+  "created_date": "2022-10-25T16:00:34+00:00",
+  "modified_date": "2023-03-29T22:27:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 30000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53158298,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 722,
+      "url": "https://issues.chromium.org/action/issues/40061467/attachments/53158298?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53158299,
+      "filename": "test.html",
+      "mime_type": "text/plain",
+      "size_bytes": 276,
+      "url": "https://issues.chromium.org/action/issues/40061467/attachments/53158299?download=true",
+      "local_path": "attachments/test.html"
+    },
+    {
+      "id": 53158300,
+      "filename": "pay",
+      "mime_type": "text/plain",
+      "size_bytes": 6918,
+      "url": "https://issues.chromium.org/action/issues/40061467/attachments/53158300?download=true",
+      "local_path": "attachments/pay"
+    },
+    {
+      "id": 53158301,
+      "filename": "web_manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 326,
+      "url": "https://issues.chromium.org/action/issues/40061467/attachments/53158301?download=true",
+      "local_path": "attachments/web_manifest.json"
+    },
+    {
+      "id": 53158302,
+      "filename": "test_dev.html",
+      "mime_type": "text/plain",
+      "size_bytes": 275,
+      "url": "https://issues.chromium.org/action/issues/40061467/attachments/53158302?download=true",
+      "local_path": "attachments/test_dev.html"
+    },
+    {
+      "id": 53158303,
+      "filename": "asan.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 250736,
+      "url": "https://issues.chromium.org/action/issues/40061467/attachments/53158303?download=true",
+      "local_path": "attachments/asan.webm"
+    },
+    {
+      "id": 53158304,
+      "filename": "dev.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 691377,
+      "url": "https://issues.chromium.org/action/issues/40061467/attachments/53158304?download=true",
+      "local_path": "attachments/dev.webm"
+    },
+    {
+      "id": 53158305,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 58134,
+      "url": "https://issues.chromium.org/action/issues/40061467/attachments/53158305?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 70,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. download asan-linux-release-1062625.zip and unzip  \n2. put poc.html, test.html, pay and web_manifest.json together and start a HTTPS server  \n3. run `./chrome --incognito http://localhost/test.html`  \n  \n**Problem Description:**   \nThis is caused by the inco"
+}

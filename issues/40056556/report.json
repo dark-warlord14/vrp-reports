@@ -1,0 +1,41 @@
+{
+  "id": "40056556",
+  "url": "https://issues.chromium.org/issues/40056556",
+  "title": "TaskManager fails to keep Profile alive leading to UAF in CreateNativeWidget",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Profiles, UI>TaskManager",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wx...@gmail.com",
+  "assignee": "ni...@chromium.org",
+  "created_date": "2021-07-15T14:42:53+00:00",
+  "modified_date": "2024-01-09T08:43:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53381716,
+      "filename": "uaf.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 24850,
+      "url": "https://issues.chromium.org/action/issues/40056556/attachments/53381716?download=true",
+      "local_path": "attachments/uaf.txt"
+    },
+    {
+      "id": 53381756,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 8607424,
+      "url": "https://issues.chromium.org/action/issues/40056556/attachments/53381756?download=true",
+      "local_path": "attachments/poc.mp4"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1.lanch chromium and open task window.\r\n2.open anathor profile window, close the current profile window.\r\n3.right click task window, brow"
+}

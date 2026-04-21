@@ -1,0 +1,33 @@
+{
+  "id": "40065644",
+  "url": "https://issues.chromium.org/issues/40065644",
+  "title": "Security: Fatal error in ../../src/compiler/turboshaft/types.h",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sw...@gmail.com",
+  "assignee": "ni...@chromium.org",
+  "created_date": "2023-06-12T02:35:14+00:00",
+  "modified_date": "2023-11-11T00:29:32+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53208163,
+      "filename": "rrr.js",
+      "mime_type": "text/plain",
+      "size_bytes": 5021,
+      "url": "https://issues.chromium.org/action/issues/40065644/attachments/53208163?download=true",
+      "local_path": "attachments/rrr.js"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n```  \n#  \n# Fatal error in ../..--future  --allow-natives-syntax  --turboshaft-assert-types --always-turbofan/src/compiler/turboshaft/types.h, line 501  \n# Debug check failed: 0 != special_values (0 vs. 0).  \n#  \n#  \n#  \n#FailureMessage Object: 0x7ffd5d9d7100  \n```"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "40053633",
+  "url": "https://issues.chromium.org/issues/40053633",
+  "title": "Security: Heap-use-after-free in WebRTC",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>WebRTC",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "kk...@gmail.com",
+  "assignee": "hb...@chromium.org",
+  "created_date": "2020-10-16T01:12:18+00:00",
+  "modified_date": "2024-01-09T02:26:32+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53106508,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40053633/attachments/53106508?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53106509,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40053633/attachments/53106509?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53106546,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40053633/attachments/53106546?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53106559,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40053633/attachments/53106559?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nhttps://source.chromium.org/chromium/chromium/src/+/master:third_party/blink/renderer/modules/peerconnection/peer_connection_tracker.cc;drc=ca70ba3c2187f4cf18f4ce57d53723f99fd089da;l=706  \n```  \nvoid PeerConnectionTracker::OnSuspend() {  \n  DCHECK_CALLED_ON_VALID_T"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "40057239",
+  "url": "https://issues.chromium.org/issues/40057239",
+  "title": "CSP Violation reports contain blockedURI's hostname",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Mobile>iOSWeb>Security",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pr...@gmail.com",
+  "assignee": "aj...@google.com",
+  "created_date": "2021-09-13T04:45:19+00:00",
+  "modified_date": "2024-10-03T10:10:21+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53244183,
+      "filename": "blockedURI.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 140773,
+      "url": "https://issues.chromium.org/action/issues/40057239/attachments/53244183?download=true",
+      "local_path": "attachments/blockedURI.jpg"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "Steps to reproduce the problem:\r\nFor reproduction, simply visit https://cm2.pw/research/xsleaks/csp-url?url=https://fb.com/4&domain=fb.com and notice the `blockedURI` directive which says `facebook.com` instead of fb.com. \r\n\r\n** Note: It's a vulnerability in WebKit and not in Chrome itself. \r\n\r\nWhat"
+}

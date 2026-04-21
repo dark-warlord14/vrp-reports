@@ -1,0 +1,57 @@
+{
+  "id": "40063010",
+  "url": "https://issues.chromium.org/issues/40063010",
+  "title": "Security: UAF in AppFinder::OnGetAppDescriptions",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Payments",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jt...@gmail.com",
+  "assignee": "sm...@chromium.org",
+  "created_date": "2023-02-10T11:23:07+00:00",
+  "modified_date": "2024-01-09T08:57:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 30000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53366048,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 65378,
+      "url": "https://issues.chromium.org/action/issues/40063010/attachments/53366048?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53366049,
+      "filename": "copy_mojo_js_bindings.py",
+      "mime_type": "text/plain",
+      "size_bytes": 512,
+      "url": "https://issues.chromium.org/action/issues/40063010/attachments/53366049?download=true",
+      "local_path": "attachments/copy_mojo_js_bindings.py"
+    },
+    {
+      "id": 53366050,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 3065,
+      "url": "https://issues.chromium.org/action/issues/40063010/attachments/53366050?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 53366051,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3293,
+      "url": "https://issues.chromium.org/action/issues/40063010/attachments/53366051?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nSummary:  \nThe function `AppFinder::OnGetAppDescriptions` may synchronously call `AppFinder::OnIsReadyToPay` in a for loop. This may result in this AppFinder object to be deleted, which causes UAF.  \n  \nDetails:  \nWhen initializing a PaymentRequest on Android platform (o"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "40059265",
+  "url": "https://issues.chromium.org/issues/40059265",
+  "title": "Security: heap-use-after-free in content::WebContentsViewAura::StartDragging",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Portals",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "mc...@chromium.org",
+  "created_date": "2022-03-31T19:48:58+00:00",
+  "modified_date": "2022-08-12T17:31:06+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53405056,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 309,
+      "url": "https://issues.chromium.org/action/issues/40059265/attachments/53405056?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53405057,
+      "filename": "portal.html",
+      "mime_type": "text/plain",
+      "size_bytes": 140,
+      "url": "https://issues.chromium.org/action/issues/40059265/attachments/53405057?download=true",
+      "local_path": "attachments/portal.html"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n1. User drags any draggable content on the page  \n2. The portal is activated and adopts its predecessor, which destroys the originating |aura::Window|  \n3. When the user finishes or cancels the drag, |content::WebContentsViewAura::StartDragging| uses the destroyed |aura:"
+}

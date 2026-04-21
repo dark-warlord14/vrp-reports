@@ -1,0 +1,54 @@
+{
+  "id": "40089169",
+  "url": "https://issues.chromium.org/issues/40089169",
+  "title": "Stack-buffer-overflow in icu_59::NumberingSystem::createInstance",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sc...@gmail.com",
+  "assignee": "js...@chromium.org",
+  "created_date": "2017-09-30T07:51:34+00:00",
+  "modified_date": "2024-02-22T16:25:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53364646,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 208,
+      "url": "https://issues.chromium.org/action/issues/40089169/attachments/53364646?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53364647,
+      "filename": "crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 5956,
+      "url": "https://issues.chromium.org/action/issues/40089169/attachments/53364647?download=true",
+      "local_path": "attachments/crash.log"
+    },
+    {
+      "id": 53364648,
+      "filename": "patch.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 322,
+      "url": "https://issues.chromium.org/action/issues/40089169/attachments/53364648?download=true",
+      "local_path": "attachments/patch.diff"
+    }
+  ],
+  "update_count": 76,
+  "description_snippet": "VULNERABILITY DETAILS\r\nlength of buffer on stack is ULOC_KEYWORDS_CAPACITY(96), but was filled with ULOC_KEYWORD_AND_VALUES_CAPACITY(100) bytes\r\n\r\n```cpp\r\n//uloc.h\r\n#define ULOC_KEYWORDS_CAPACITY 96\r\n#define ULOC_KEYWORD_AND_VALUES_CAPACITY 100\r\n\r\n//uloc.cpp\r\nU_CAPI int32_t U_EXPORT2\r\nuloc_getKeywor"
+}

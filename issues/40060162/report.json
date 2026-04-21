@@ -1,0 +1,53 @@
+{
+  "id": "40060162",
+  "url": "https://issues.chromium.org/issues/40060162",
+  "title": "Security: use after free in IPH DemoMode NeverAvailabilityModel",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>FeatureEngagement",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wx...@gmail.com",
+  "assignee": "sh...@chromium.org",
+  "created_date": "2022-07-05T03:42:30+00:00",
+  "modified_date": "2022-10-15T17:29:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53397912,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 27507,
+      "url": "https://issues.chromium.org/action/issues/40060162/attachments/53397912?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53397913,
+      "filename": "0001-trigger-uaf.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 2239,
+      "url": "https://issues.chromium.org/action/issues/40060162/attachments/53397913?download=true",
+      "local_path": "attachments/0001-trigger-uaf.patch"
+    },
+    {
+      "id": 53397924,
+      "filename": "0001-fix-uaf.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1931,
+      "url": "https://issues.chromium.org/action/issues/40060162/attachments/53397924?download=true",
+      "local_path": "attachments/0001-fix-uaf.patch"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**This template is ONLY for reporting security bugs. If you are reporting a**   \n**Download Protection Bypass bug, please use the \"Security - Download**   \n**Protection\" template. For all other reports, please use a different**   \n**template.**   \n  \n**Please READ THIS FAQ before filing a bug: https"
+}

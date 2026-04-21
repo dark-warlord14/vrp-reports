@@ -1,0 +1,75 @@
+{
+  "id": "40063542",
+  "url": "https://issues.chromium.org/issues/40063542",
+  "title": "Security: SEGV_ACCERR in v8",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Maglev",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2023-03-11T07:05:25+00:00",
+  "modified_date": "2024-02-29T20:22:39+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53092337,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 525,
+      "url": "https://issues.chromium.org/action/issues/40063542/attachments/53092337?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53092355,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 525,
+      "url": "https://issues.chromium.org/action/issues/40063542/attachments/53092355?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53092405,
+      "filename": "poc1.js",
+      "mime_type": "text/plain",
+      "size_bytes": 296,
+      "url": "https://issues.chromium.org/action/issues/40063542/attachments/53092405?download=true",
+      "local_path": "attachments/poc1.js"
+    },
+    {
+      "id": 53092430,
+      "filename": "oob-exp.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1722,
+      "url": "https://issues.chromium.org/action/issues/40063542/attachments/53092430?download=true",
+      "local_path": "attachments/oob-exp.js"
+    },
+    {
+      "id": 53092434,
+      "filename": "rce-exp.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3608,
+      "url": "https://issues.chromium.org/action/issues/40063542/attachments/53092434?download=true",
+      "local_path": "attachments/rce-exp.js"
+    },
+    {
+      "id": 53092435,
+      "filename": "repo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1200470,
+      "url": "https://issues.chromium.org/action/issues/40063542/attachments/53092435?download=true",
+      "local_path": "attachments/repo.mp4"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "VULNERABILITY DETAILS\n## INTRODUCE\nAfter bisect, it was determined that commit https://crrev.com/a92801661d3b26c1745da087db2f0abfb621b9b8 caused this problem.\n\n- 85841 will not trigger crash: \nhttps://www.googleapis.com/download/storage/v1/b/v8-asan/o/linux-debug%2Fd8-linux-debug-v8-component-85841."
+}

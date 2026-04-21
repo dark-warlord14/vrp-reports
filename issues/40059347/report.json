@@ -1,0 +1,37 @@
+{
+  "id": "40059347",
+  "url": "https://issues.chromium.org/issues/40059347",
+  "title": "Security: Drag and Drop XSS",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>DataTransfer, Blink>Editing, Blink>SVG",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@bentkowski.info",
+  "assignee": "xi...@chromium.org",
+  "created_date": "2022-04-10T19:35:57+00:00",
+  "modified_date": "2024-01-09T06:00:11+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52972122,
+      "filename": "recording.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 1508878,
+      "url": "https://issues.chromium.org/action/issues/40059347/attachments/52972122?download=true",
+      "local_path": "attachments/recording.mov"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "This bug is similar to many Copy&Paste bugs I reported for Chromium (examples: https://crbug.com/chromium/1011950, https://crbug.com/chromium/1040755, https://crbug.com/chromium/1065761, https://crbug.com/chromium/1141350). The difference is that now I'm focusing on drag and drop.\r\n\r\nEssentially, wh"
+}

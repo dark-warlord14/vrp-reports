@@ -1,0 +1,65 @@
+{
+  "id": "40060715",
+  "url": "https://issues.chromium.org/issues/40060715",
+  "title": "Security: Heap-use-after-free in FrameUserNoteChanges",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Creation",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "bo...@chromium.org",
+  "created_date": "2022-08-30T10:28:25+00:00",
+  "modified_date": "2024-01-09T07:27:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53054608,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 31520,
+      "url": "https://issues.chromium.org/action/issues/40060715/attachments/53054608?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53054609,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 299,
+      "url": "https://issues.chromium.org/action/issues/40060715/attachments/53054609?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53054610,
+      "filename": "poc1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 12,
+      "url": "https://issues.chromium.org/action/issues/40060715/attachments/53054610?download=true",
+      "local_path": "attachments/poc1.html"
+    },
+    {
+      "id": 53054612,
+      "filename": "poc.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 701596,
+      "url": "https://issues.chromium.org/action/issues/40060715/attachments/53054612?download=true",
+      "local_path": "attachments/poc.webm"
+    },
+    {
+      "id": 53054675,
+      "filename": "addnote.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 226023,
+      "url": "https://issues.chromium.org/action/issues/40060715/attachments/53054675?download=true",
+      "local_path": "attachments/addnote.webm"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "**Steps to reproduce the problem:**   \nrepro:  \n\\*\\* you need to add any note to poc1.html before run poc.html  \n1. download asan-linux-release-1040850.zip and unzip  \n2. start a http server in the folder of poc.html and poc1.html  \n3. run `./chrome --enable-features=UserNotes,UnifiedSidePanel --use"
+}

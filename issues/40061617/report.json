@@ -1,0 +1,33 @@
+{
+  "id": "40061617",
+  "url": "https://issues.chromium.org/issues/40061617",
+  "title": "Security: ChromiumOS CRAS Server D-Bus SetGlobalOutputChannelRemix heap-over-flow",
+  "status": "New",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Media>Audio",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hi...@gmail.com",
+  "assignee": "wh...@chromium.org",
+  "created_date": "2022-11-06T12:50:08+00:00",
+  "modified_date": "2024-01-09T10:06:22+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 13000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53166586,
+      "filename": "1381857_asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3852,
+      "url": "https://issues.chromium.org/action/issues/40061617/attachments/53166586?download=true",
+      "local_path": "attachments/1381857_asan.txt"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nCRAS server provides a D-Bus service for the browser to use the audio. Among the methods in the D-Bus Control interface, a method called SetGlobalOutputChannelRemix receives two parameters:  \n  \n<method name=\"SetGlobalOutputChannelRemix\">  \n  <tp:docstring>  \n    Sets th"
+}

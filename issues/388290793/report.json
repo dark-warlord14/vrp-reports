@@ -1,0 +1,54 @@
+{
+  "id": "388290793",
+  "url": "https://issues.chromium.org/issues/388290793",
+  "title": "WebAssembly out-of-bounds memory access due to broken memory64 guard page assumptions",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "cl...@chromium.org",
+  "created_date": "2025-01-07T19:51:22+00:00",
+  "modified_date": "2025-04-18T12:42:56+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 55000.0,
+  "bounty_rationale": "reward for demonstration of RCE in a sandboxed process / the renderer",
+  "attachments": [
+    {
+      "id": 62023540,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 75515,
+      "url": "https://issues.chromium.org/action/issues/388290793/attachments/62023540?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62023541,
+      "filename": "poc-crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 79591,
+      "url": "https://issues.chromium.org/action/issues/388290793/attachments/62023541?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62023557,
+      "filename": "exp.html",
+      "mime_type": "text/html",
+      "size_bytes": 94818,
+      "url": "https://issues.chromium.org/action/issues/388290793/attachments/62023557?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 73,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Summary\n\nWebAssembly OOB memory access due to broken memory64 guard page assumptions. Generated code assumes `WasmMemory::max_memory_size` bytes of total reserved guard region for memory64, where imported memory (or module-instantiated memory under memory pressure, et"
+}

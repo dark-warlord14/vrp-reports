@@ -1,0 +1,24 @@
+{
+  "id": "40073846",
+  "url": "https://issues.chromium.org/issues/40073846",
+  "title": "Crash in v8::internal::EvacuationVerifier::VerifyEvacuation",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>JavaScript>GarbageCollection",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "ml...@chromium.org",
+  "created_date": "2023-10-01T08:55:42+00:00",
+  "modified_date": "2024-08-11T21:22:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 42,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=5037012981317632\n\nFuzzer: b0ring_webidl_fuzzer\nJob Type: linux_asan_chrome_media\nPlatform Id: linux\n\nCrash Type: UNKNOWN READ\nCrash Address: 0x7938beadbef6\nCrash State:\n  v8::internal::EvacuationVerifier::VerifyEvacuation\n  v8::internal::Evacuati"
+}

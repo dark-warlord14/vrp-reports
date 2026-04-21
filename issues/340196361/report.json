@@ -1,0 +1,57 @@
+{
+  "id": "340196361",
+  "url": "https://issues.chromium.org/issues/340196361",
+  "title": "GPU process crash via WebGPU shader - UAF in GetIfCondition at BasicBlockUtils.cpp:810",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Dawn>Tint",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wg...@gmail.com",
+  "assignee": "am...@google.com",
+  "created_date": "2024-05-13T18:51:24+00:00",
+  "modified_date": "2026-03-05T16:43:35+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": "report of memory corruption in the GPU process",
+  "attachments": [
+    {
+      "id": 56346274,
+      "filename": "index_FoldTwoEntryPHINode.html",
+      "mime_type": "text/html",
+      "size_bytes": 4216,
+      "url": "https://issues.chromium.org/action/issues/340196361/attachments/56346274?download=true",
+      "local_path": "attachments/index_FoldTwoEntryPHINode.html"
+    },
+    {
+      "id": 56313497,
+      "filename": "standalone.wgsl",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1227,
+      "url": "https://issues.chromium.org/action/issues/340196361/attachments/56313497?download=true",
+      "local_path": "attachments/standalone.wgsl"
+    },
+    {
+      "id": 56361145,
+      "filename": "standalone.hlsl",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1332,
+      "url": "https://issues.chromium.org/action/issues/340196361/attachments/56361145?download=true",
+      "local_path": "attachments/standalone.hlsl"
+    },
+    {
+      "id": 56359082,
+      "filename": "asanlogfold",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 24011,
+      "url": "https://issues.chromium.org/action/issues/340196361/attachments/56359082?download=true",
+      "local_path": "attachments/asanlogfold"
+    }
+  ],
+  "update_count": 74,
+  "description_snippet": "##### VULNERABILITY DETAILS\nChromium translates wgsl shaders via tint to an OS-specific shader format. On Windows, the OS-specific file format is hlsl, processed in dxcompiler.dll. When compiling chrome-generated hlsl files, this triggers an UAF inside the hlsl compiler.\n\n##### VERSION\n\nChrome Versi"
+}

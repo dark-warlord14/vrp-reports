@@ -1,0 +1,30 @@
+{
+  "id": "40060925",
+  "url": "https://issues.chromium.org/issues/40060925",
+  "title": "Generic CORS bypass that enables Cross-Site-Tracing (XST)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature>CORS",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "to...@chromium.org",
+  "created_date": "2022-09-11T20:06:31+00:00",
+  "modified_date": "2024-04-18T09:19:33+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 82,
+  "description_snippet": "---\n\n### Report description\n\n\nGeneric CORS bypass that enables Cross-Site-Tracing (XST)\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nGoogle Chrome\n\n\n#### Which URL (or repository) have you found the vulnerability in?\n\nall\n\n\n---\n\n### The problem\n\n\n#### P"
+}

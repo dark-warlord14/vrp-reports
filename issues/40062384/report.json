@@ -1,0 +1,41 @@
+{
+  "id": "40062384",
+  "url": "https://issues.chromium.org/issues/40062384",
+  "title": "register assign error with jit",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>API, Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "5n...@gmail.com",
+  "assignee": "pa...@google.com",
+  "created_date": "2022-12-25T09:15:34+00:00",
+  "modified_date": "2024-01-09T08:49:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53158736,
+      "filename": "jit_crash3.js",
+      "mime_type": "text/plain",
+      "size_bytes": 484,
+      "url": "https://issues.chromium.org/action/issues/40062384/attachments/53158736?download=true",
+      "local_path": "attachments/jit_crash3.js"
+    },
+    {
+      "id": 53158737,
+      "filename": "turbo-opt-0.json",
+      "mime_type": "text/plain",
+      "size_bytes": 1949703,
+      "url": "https://issues.chromium.org/action/issues/40062384/attachments/53158737?download=true",
+      "local_path": "attachments/turbo-opt-0.json"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**Steps to reproduce the problem:**   \nbuild flag:  \ngn gen out/x64_release --args=\"target_cpu=\\\"x64\\\" symbol_level=2 is_debug=false is_component_build=false v8_enable_backtrace = true v8_enable_disassembler=true v8_enable_object_print=true\"  \n  \nenvironment:  \nubuntu 20.04 5.15.0-56-generic  \n  \nru"
+}

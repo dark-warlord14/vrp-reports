@@ -1,0 +1,69 @@
+{
+  "id": "40086589",
+  "url": "https://issues.chromium.org/issues/40086589",
+  "title": "Security: UAF in WorkerThreadableLoader in Blink",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>DOM, Blink>Loader",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ng...@tresorit.com",
+  "assignee": "ml...@chromium.org",
+  "created_date": "2017-01-20T23:43:51+00:00",
+  "modified_date": "2017-05-09T13:03:20+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53224221,
+      "filename": "debuglog.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1941,
+      "url": "https://issues.chromium.org/action/issues/40086589/attachments/53224221?download=true",
+      "local_path": "attachments/debuglog.patch"
+    },
+    {
+      "id": 53224222,
+      "filename": "xhr_uaf.html",
+      "mime_type": "text/plain",
+      "size_bytes": 343,
+      "url": "https://issues.chromium.org/action/issues/40086589/attachments/53224222?download=true",
+      "local_path": "attachments/xhr_uaf.html"
+    },
+    {
+      "id": 53224255,
+      "filename": "xhrgc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 410,
+      "url": "https://issues.chromium.org/action/issues/40086589/attachments/53224255?download=true",
+      "local_path": "attachments/xhrgc.html"
+    },
+    {
+      "id": 53224325,
+      "filename": "xhrgc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 513,
+      "url": "https://issues.chromium.org/action/issues/40086589/attachments/53224325?download=true",
+      "local_path": "attachments/xhrgc2.html"
+    },
+    {
+      "id": 53224403,
+      "filename": "xhrgc3.html",
+      "mime_type": "text/plain",
+      "size_bytes": 395,
+      "url": "https://issues.chromium.org/action/issues/40086589/attachments/53224403?download=true",
+      "local_path": "attachments/xhrgc3.html"
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThere is a UAF bug in WorkerThreadableLoader. It contains a raw pointer to a ThreadableLoaderClient (in the reproduction case it is an XMLHttpRequest),  \nwhich can be freed before freeing the WorkerThreadableLoader that tries use it.  \nI can only trigger it with versi"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "452392032",
+  "url": "https://issues.chromium.org/issues/452392032",
+  "title": "When in split-view mode, the mini address bar does not appear above the virtual keyboard, leading to a spoof.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "pn...@google.com",
+  "created_date": "2025-10-16T04:01:34+00:00",
+  "modified_date": "2026-01-30T14:03:46+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": "hides security sensitive ui but attacker does not control the UI. The panel thank you for your contribution but this bug is low security impact.",
+  "attachments": [
+    {
+      "id": 70163184,
+      "filename": "spoofsplitview.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6335780,
+      "url": "https://issues.chromium.org/action/issues/452392032/attachments/70163184?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70163185,
+      "filename": "spoofnewxiov.html",
+      "mime_type": "text/html",
+      "size_bytes": 3633,
+      "url": "https://issues.chromium.org/action/issues/452392032/attachments/70163185?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70191235,
+      "filename": "8eWXXFfj3qsanP5.png",
+      "mime_type": "image/png",
+      "size_bytes": 285508,
+      "url": "https://issues.chromium.org/action/issues/452392032/attachments/70191235?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70231837,
+      "filename": "Screenshot_20251018_182618_Chrome Canary~2.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 212898,
+      "url": "https://issues.chromium.org/action/issues/452392032/attachments/70231837?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "VULNERABILITY DETAILS\nThis vulnerability is similar to https://issues.chromium.org/issues/439262604 (iOS version), but this bug occurs on the Android version. When in split-view mode, the mini address bar does not appear above the virtual keyboard.\n\nVERSION\nChrome Version: [143.0.7472.0] + [Canary]"
+}

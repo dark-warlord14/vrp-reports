@@ -1,0 +1,24 @@
+{
+  "id": "40059762",
+  "url": "https://issues.chromium.org/issues/40059762",
+  "title": "'unsafe-inline' is not ignored even though 'strict-dynamic' is specified in dafault-src.",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "tj...@gmail.com",
+  "assignee": "pa...@chromium.org",
+  "created_date": "2022-05-26T10:20:36+00:00",
+  "modified_date": "2022-09-29T17:32:23+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 32,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Access to the following page  \n<!DOCTYPE html>  \n<html lang=\"en\">  \n<head>  \n    <meta http-equiv=\"Content-Security-Policy\" content=\"default-src 'unsafe-inline' 'strict-dynamic'\">  \n</head>  \n<body>  \n<script>alert(1)</script>  \n</body>  \n</html>  \n  \n2. We"
+}

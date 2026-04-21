@@ -1,0 +1,38 @@
+{
+  "id": "452071845",
+  "url": "https://issues.chromium.org/issues/452071845",
+  "title": "Potential out-of-bounds read in Transform::ColMajorF on undersized buffer",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>WebXR",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ig...@aisle.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2025-10-15T11:32:02+00:00",
+  "modified_date": "2026-02-11T16:30:11+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "baseline user information disclosure i.e. a read in the renderer",
+  "attachments": [
+    {
+      "id": 70140705,
+      "filename": "poc-min-leak.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3219,
+      "url": "https://issues.chromium.org/action/issues/452071845/attachments/70140705?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "**Security Bug**\n\nWe have discovered a potential issue in Chromium that lets WebXR content trigger an out-of-bounds read in the renderer by feeding a zero-length buffer into `gfx::Transform::ColMajorF`. \n\n**Vulnerability Details**\n- `Transform::ColMajorF` assumes the caller has provided 16 floats an"
+}

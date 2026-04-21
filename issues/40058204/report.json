@@ -1,0 +1,60 @@
+{
+  "id": "40058204",
+  "url": "https://issues.chromium.org/issues/40058204",
+  "title": "Security: Heap-use-after-free in autofill::EditAddressProfileView::WindowClosing",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2021-12-10T23:41:14+00:00",
+  "modified_date": "2025-07-02T13:02:36+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53206854,
+      "filename": "screen.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 12636667,
+      "url": "https://issues.chromium.org/action/issues/40058204/attachments/53206854?download=true",
+      "local_path": "attachments/screen.mov"
+    },
+    {
+      "id": 53206855,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1240,
+      "url": "https://issues.chromium.org/action/issues/40058204/attachments/53206855?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53207243,
+      "filename": "p1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1289,
+      "url": "https://issues.chromium.org/action/issues/40058204/attachments/53207243?download=true",
+      "local_path": "attachments/p1.html"
+    },
+    {
+      "id": 53207244,
+      "filename": "Screencast from 16 دجنبر, 2021 +01 17:34:24.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1394317,
+      "url": "https://issues.chromium.org/action/issues/40058204/attachments/53207244?download=true",
+      "local_path": "attachments/Screencast from 16 دجنبر, 2021 +01 17_34_24.webm"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "**VERSION**   \nChrome Version: 99.0.4759.0 (Developer Build) (x86_64)   \nOperating System: all  \n  \n**REPRODUCTION CASE**   \n  \nSimilar to https://crbug.com/chromium/1240884.  \n  \n1. Run ./chrome --enable-features=AutofillAddressProfileSavePrompt http://localhost:8000/poc.html  \n2. Click the 'Edit a"
+}

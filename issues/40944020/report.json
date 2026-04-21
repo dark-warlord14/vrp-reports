@@ -1,0 +1,46 @@
+{
+  "id": "40944020",
+  "url": "https://issues.chromium.org/issues/40944020",
+  "title": "Opening the Sidepanel results in plaintext HTTP requests to gstatic URLs",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>TopChrome>SidePanel",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "d4...@gmail.com",
+  "assignee": "so...@chromium.org",
+  "created_date": "2023-11-20T06:55:42+00:00",
+  "modified_date": "2024-03-05T15:42:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53394655,
+      "filename": "sidepanel-log.json",
+      "mime_type": "text/plain",
+      "size_bytes": 2052863,
+      "url": "https://issues.chromium.org/action/issues/40944020/attachments/53394655?download=true",
+      "local_path": "attachments/sidepanel-log.json"
+    },
+    {
+      "id": 53394679,
+      "filename": "images.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 5587,
+      "url": "https://issues.chromium.org/action/issues/40944020/attachments/53394679?download=true",
+      "local_path": "attachments/images.jpeg"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "---\n\n### Report description\n\n\nOpening the Sidepanel sends a bunch image requests to google servers in PLAINTEXT for the bookmarks. Unable to change the default view to ReadingList as before either.\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nGoogle Chr"
+}

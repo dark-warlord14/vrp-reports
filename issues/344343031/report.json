@@ -1,0 +1,55 @@
+{
+  "id": "344343031",
+  "url": "https://issues.chromium.org/issues/344343031",
+  "title": "V8 Sandbox Bypass: Code Pointer Table Index Confusion leading to Stack Corruption",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>JavaScript>Sandbox",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@sec.in.tum.de",
+  "assignee": "sa...@chromium.org",
+  "created_date": "2024-06-02T14:24:19+00:00",
+  "modified_date": "2026-01-08T10:33:24+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "V8 sandbox bypass reward",
+  "attachments": [
+    {
+      "id": 56869983,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 11734,
+      "url": "https://issues.chromium.org/action/issues/344343031/attachments/56869983?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 56868728,
+      "filename": "Dockerfile",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 803,
+      "url": "https://issues.chromium.org/action/issues/344343031/attachments/56868728?download=true",
+      "local_path": "attachments/Dockerfile"
+    },
+    {
+      "id": 56870009,
+      "filename": "create_wasm.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 1060,
+      "url": "https://issues.chromium.org/action/issues/344343031/attachments/56870009?download=true",
+      "local_path": "attachments/create_wasm.py"
+    },
+    {
+      "id": 56870013,
+      "filename": "poc2.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 11683,
+      "url": "https://issues.chromium.org/action/issues/344343031/attachments/56870013?download=true",
+      "local_path": "attachments/poc2.js"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "I have initially modified the component to V8 (https://issues.chromium.org/issues/344128766), seemingly making it publicly available for a brief amount of time. I could delete everything but the title and reported it and hope it can be removed ASAP. I am very sorry for this mistake.\n\n---------------"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "452541294",
+  "url": "https://issues.chromium.org/issues/452541294",
+  "title": "Type confusion in v8 caused by incorrect unregistration of prototype users",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "my...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2025-10-16T15:11:48+00:00",
+  "modified_date": "2026-01-27T12:41:03+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": "high quality memory corruption in a sandboxed process. the panel thanks you in particular for going the extra mile and noticing this issue might be exposed to users via origin trial.",
+  "attachments": [
+    {
+      "id": 70176785,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1244,
+      "url": "https://issues.chromium.org/action/issues/452541294/attachments/70176785?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70176786,
+      "filename": "cage_rw.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2901,
+      "url": "https://issues.chromium.org/action/issues/452541294/attachments/70176786?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70176787,
+      "filename": "wasm-module-builder.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 78347,
+      "url": "https://issues.chromium.org/action/issues/452541294/attachments/70176787?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "Security Bug\n\nVulnerability details\n\nWhen a prototype object changes its map, it'll call [`UpdatePrototypeUserRegistration`](https://source.chromium.org/chromium/chromium/src/+/main:v8/src/objects/js-objects.cc;l=3082;drc=1fb4c56b03b105b03c45627871b15b8933ed8a11?q=js-objects.cc&ss=chromium%2Fchromiu"
+}

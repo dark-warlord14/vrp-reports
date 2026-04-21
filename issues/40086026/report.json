@@ -1,0 +1,33 @@
+{
+  "id": "40086026",
+  "url": "https://issues.chromium.org/issues/40086026",
+  "title": "Security: Multiple issues in GTK+ file picker / gdk-pixbuf",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Images>Codecs",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@hboeck.de",
+  "assignee": "ts...@google.com",
+  "created_date": "2016-11-20T09:47:10+00:00",
+  "modified_date": "2025-02-07T15:43:20+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "thank you for your report that resulted in upstream changes for inclusion in Chrome",
+  "attachments": [
+    {
+      "id": 52880336,
+      "filename": "gdk-pixbuf-crashers-and-asan-errors.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4664,
+      "url": "https://issues.chromium.org/action/issues/40086026/attachments/52880336?download=true",
+      "local_path": "attachments/gdk-pixbuf-crashers-and-asan-errors.zip"
+    }
+  ],
+  "update_count": 129,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nChrome on Linux uses the GTK+ library, therefore security issues in GTK+ and its dependencies may affect Chrome.  \nThe file picker that gets used e.g. for file uploads uses the gdk-pixbuf library to parse images.  \n  \nAll these issues have been reported to the GNOME deve"
+}

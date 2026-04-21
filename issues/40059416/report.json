@@ -1,0 +1,41 @@
+{
+  "id": "40059416",
+  "url": "https://issues.chromium.org/issues/40059416",
+  "title": "Security: container-overflow in ui::Compositor::StopThroughtputTracker",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Compositing",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "xi...@chromium.org",
+  "created_date": "2022-04-19T19:42:03+00:00",
+  "modified_date": "2024-01-09T09:14:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53242761,
+      "filename": "screen.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 3309707,
+      "url": "https://issues.chromium.org/action/issues/40059416/attachments/53242761?download=true",
+      "local_path": "attachments/screen.webm"
+    },
+    {
+      "id": 53242802,
+      "filename": "chrome log",
+      "mime_type": "text/plain",
+      "size_bytes": 31650,
+      "url": "https://issues.chromium.org/action/issues/40059416/attachments/53242802?download=true",
+      "local_path": "attachments/chrome log"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "Chromium 103.0.5010.0 Ozone build \r\n\r\n\r\nI reproduced this crash When I closed two chromium windows from two desks. I'm still trying to get specific steps.\r\n\r\n=================================================================\r\n==104810==ERROR: AddressSanitizer: container-overflow on address 0x61300012"
+}

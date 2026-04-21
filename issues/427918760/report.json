@@ -1,0 +1,38 @@
+{
+  "id": "427918760",
+  "url": "https://issues.chromium.org/issues/427918760",
+  "title": "V8 Sandbox Bypass: OOB write in the WasmFullDecoder EndControl handler",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "vs...@gmail.com",
+  "assignee": "cl...@chromium.org",
+  "created_date": "2025-06-26T13:56:28+00:00",
+  "modified_date": "2026-01-08T10:33:24+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "report of V8 sandbox bypass demonstrating memory corruption outside the V8 heap sandbox",
+  "attachments": [
+    {
+      "id": 67107988,
+      "filename": "bug.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2527,
+      "url": "https://issues.chromium.org/action/issues/427918760/attachments/67107988?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "#### VULNERABILITY DETAILS\nThis is a bug in the ASM JS parser responsible for parsing `switch` statements ([here](https://source.chromium.org/chromium/chromium/src/+/main:v8/src/asmjs/asm-parser.cc;drc=3e7191831b1a3f979570b9668541770bb6624d02;l=1312])). \n\nWhile I am not entirely sure about the under"
+}

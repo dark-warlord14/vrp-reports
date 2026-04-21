@@ -1,0 +1,53 @@
+{
+  "id": "447192722",
+  "url": "https://issues.chromium.org/issues/447192722",
+  "title": "UAF in safe_browsing::RendererURLLoaderThrottle::WillRedirectRequest due to Mojo Remote being freed during resource load lifecycle",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Services (Use Subcomponents)>Safebrowsing",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2025-09-25T02:21:46+00:00",
+  "modified_date": "2026-01-13T12:42:30+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": "Baseline renderer memory corruption in a sandboxed process",
+  "attachments": [
+    {
+      "id": 69603852,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 466,
+      "url": "https://issues.chromium.org/action/issues/447192722/attachments/69603852?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69603853,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 794,
+      "url": "https://issues.chromium.org/action/issues/447192722/attachments/69603853?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69603854,
+      "filename": "content.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 158,
+      "url": "https://issues.chromium.org/action/issues/447192722/attachments/69603854?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 94,
+  "description_snippet": "VULNERABILITY DETAILS\nA UAF condition was detected in the renderer process within the Safe Browsing URL loading throttle mechanism. This vulnerability occurs when a resource load that triggers the safe_browsing::RendererURLLoaderThrottle is redirected, and a race condition is won against the tear-d"
+}

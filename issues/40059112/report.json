@@ -1,0 +1,62 @@
+{
+  "id": "40059112",
+  "url": "https://issues.chromium.org/issues/40059112",
+  "title": "Security: Incomplete patch for issue 1246631 (CVE-2021-37981) and inaccurate scaling in EyeDropperView",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Forms>Color",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2021-37981"
+  ],
+  "reporter": "l4...@gmail.com",
+  "assignee": "dc...@chromium.org",
+  "created_date": "2022-03-16T15:54:14+00:00",
+  "modified_date": "2024-01-09T06:42:13+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53026638,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 224,
+      "url": "https://issues.chromium.org/action/issues/40059112/attachments/53026638?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53026639,
+      "filename": "scale_fix.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 700,
+      "url": "https://issues.chromium.org/action/issues/40059112/attachments/53026639?download=true",
+      "local_path": "attachments/scale_fix.diff"
+    },
+    {
+      "id": 53026670,
+      "filename": "msrc70076_chromium.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7933,
+      "url": "https://issues.chromium.org/action/issues/40059112/attachments/53026670?download=true",
+      "local_path": "attachments/msrc70076_chromium.txt"
+    },
+    {
+      "id": 53026710,
+      "filename": "asan_eyedropper_100_chromium.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 14838,
+      "url": "https://issues.chromium.org/action/issues/40059112/attachments/53026710?download=true",
+      "local_path": "attachments/asan_eyedropper_100_chromium.txt"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nDescription:  \n  \nThere's a heap overflow might occurs in EyeDropperView::OnPaint which is similar to https://crbug.com/chromium/1246631 (CVE-2021-37981) while Windows scale setting is 125% or 175%  \n  \nThe crash is only reproduced on Microsoft Chromium Edge since the"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "40061453",
+  "url": "https://issues.chromium.org/issues/40061453",
+  "title": "Security: WebAssembly UAF in catch block with stale memory start pointer",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gz...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2022-10-24T14:40:47+00:00",
+  "modified_date": "2025-03-26T05:22:24+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53046572,
+      "filename": "min.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1646,
+      "url": "https://issues.chromium.org/action/issues/40061453/attachments/53046572?download=true",
+      "local_path": "attachments/min.html"
+    },
+    {
+      "id": 53046573,
+      "filename": "min.wat",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 306,
+      "url": "https://issues.chromium.org/action/issues/40061453/attachments/53046573?download=true",
+      "local_path": "attachments/min.wat"
+    },
+    {
+      "id": 53046574,
+      "filename": "exploit.html",
+      "mime_type": "text/plain",
+      "size_bytes": 926,
+      "url": "https://issues.chromium.org/action/issues/40061453/attachments/53046574?download=true",
+      "local_path": "attachments/exploit.html"
+    },
+    {
+      "id": 53046575,
+      "filename": "exploit-worker.js",
+      "mime_type": "text/plain",
+      "size_bytes": 18957,
+      "url": "https://issues.chromium.org/action/issues/40061453/attachments/53046575?download=true",
+      "local_path": "attachments/exploit-worker.js"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nWebAssembly memory start and size are stored as wasm instance fields. The WasmGraphBuilder caches the corresponding TurboFan nodes and only reloads them when necessary. One such reload is following a function call:  \n  \nhttps://github.com/v8/v8/blob/28f763b5949d053c62"
+}

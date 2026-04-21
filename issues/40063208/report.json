@@ -1,0 +1,68 @@
+{
+  "id": "40063208",
+  "url": "https://issues.chromium.org/issues/40063208",
+  "title": "Security: Document PIP inherits wrong origin when opened from an extension popup",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Media>PictureInPicture",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "st...@chromium.org",
+  "created_date": "2023-02-23T01:29:21+00:00",
+  "modified_date": "2024-01-09T07:15:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53070758,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 218,
+      "url": "https://issues.chromium.org/action/issues/40063208/attachments/53070758?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53070759,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 223,
+      "url": "https://issues.chromium.org/action/issues/40063208/attachments/53070759?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53070760,
+      "filename": "popup.html",
+      "mime_type": "text/plain",
+      "size_bytes": 170,
+      "url": "https://issues.chromium.org/action/issues/40063208/attachments/53070760?download=true",
+      "local_path": "attachments/popup.html"
+    },
+    {
+      "id": 53070761,
+      "filename": "popup.js",
+      "mime_type": "text/plain",
+      "size_bytes": 370,
+      "url": "https://issues.chromium.org/action/issues/40063208/attachments/53070761?download=true",
+      "local_path": "attachments/popup.js"
+    },
+    {
+      "id": 53070762,
+      "filename": "poc.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 656566,
+      "url": "https://issues.chromium.org/action/issues/40063208/attachments/53070762?download=true",
+      "local_path": "attachments/poc.webm"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA PIP2 window opened from an extension popup shows the origin of the active tab, not the extension popup itself.  \n  \nThis allows an extension to programatically open a PIP2 window with spoofed security origin UI.  \n  \n  \nWhen a PIP window is being created in PictureInPi"
+}

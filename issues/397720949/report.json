@@ -1,0 +1,29 @@
+{
+  "id": "397720949",
+  "url": "https://issues.chromium.org/issues/397720949",
+  "title": "Some Float16Array Built-ins Fail to Account for Side Effects Causing Array OOB Access",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hu...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2025-02-20T07:04:41+00:00",
+  "modified_date": "2025-05-30T12:44:39+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "bounty_rationale": "$10,000 for high-quality report of memory corruption in a sandboxed process / the renderer + $1,000 bisect bonus",
+  "attachments": [],
+  "update_count": 45,
+  "description_snippet": "VULNERABILITY DETAILS\n\nI will explain what happens in the POC:\n\nIn the POC, the `f16Arr.lastIndexOf()` method invokes the `Builtin_TypedArrayPrototypeLastIndexOf()` function for processing. The process is as follows:\n\n1. The `array->GetLength();` method is called to retrieve the length of the `f16Ar"
+}

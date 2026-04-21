@@ -1,0 +1,62 @@
+{
+  "id": "40064002",
+  "url": "https://issues.chromium.org/issues/40064002",
+  "title": "Security: CSA_DCHECK failed: Torque assert 'IsConstructor(target)'",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wh...@gmail.com",
+  "assignee": "jg...@chromium.org",
+  "created_date": "2023-04-12T06:40:33+00:00",
+  "modified_date": "2024-01-09T10:59:52+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53032378,
+      "filename": "1.js",
+      "mime_type": "text/plain",
+      "size_bytes": 925,
+      "url": "https://issues.chromium.org/action/issues/40064002/attachments/53032378?download=true",
+      "local_path": "attachments/1.js"
+    },
+    {
+      "id": 53032405,
+      "filename": "simplescreenrecorder-(4).mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4380573,
+      "url": "https://issues.chromium.org/action/issues/40064002/attachments/53032405?download=true",
+      "local_path": "attachments/simplescreenrecorder-(4).mp4"
+    },
+    {
+      "id": 53032435,
+      "filename": "simplescreenrecorder-(2).mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 270433,
+      "url": "https://issues.chromium.org/action/issues/40064002/attachments/53032435?download=true",
+      "local_path": "attachments/simplescreenrecorder-(2).mp4"
+    },
+    {
+      "id": 53032461,
+      "filename": "1.png",
+      "mime_type": "image/png",
+      "size_bytes": 26234,
+      "url": "https://issues.chromium.org/action/issues/40064002/attachments/53032461?download=true",
+      "local_path": "attachments/1.png"
+    }
+  ],
+  "update_count": 107,
+  "description_snippet": "**This template is ONLY for reporting security bugs. If you are reporting a**   \n**Download Protection Bypass bug, please use the \"Security - Download**   \n**Protection\" template. For all other reports, please use a different**   \n**template.**   \n  \n**Please READ THIS FAQ before filing a bug: https"
+}

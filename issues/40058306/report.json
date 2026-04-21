@@ -1,0 +1,61 @@
+{
+  "id": "40058306",
+  "url": "https://issues.chromium.org/issues/40058306",
+  "title": "Security: UAF in AXVirtualViewWrapper",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Accessibility",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "ks...@microsoft.com",
+  "created_date": "2021-12-21T08:55:33+00:00",
+  "modified_date": "2022-07-05T17:31:33+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53420988,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 13186,
+      "url": "https://issues.chromium.org/action/issues/40058306/attachments/53420988?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53420989,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058306/attachments/53420989?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53421020,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 379,
+      "url": "https://issues.chromium.org/action/issues/40058306/attachments/53421020?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53421021,
+      "filename": "share.html",
+      "mime_type": "text/plain",
+      "size_bytes": 119,
+      "url": "https://issues.chromium.org/action/issues/40058306/attachments/53421021?download=true",
+      "local_path": "attachments/share.html"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nIn `AXVirtualViewWrapper`[1], there is no observing function like `OnViewIsDeleting()` in `AXViewObjWrapper`. Therefore, after `VirtualView` is destroyed, the wrapper stored in `cache_`[3] is not cleaned up. Finally, the destroyed `VirtualView` get used when traversin"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "40058759",
+  "url": "https://issues.chromium.org/issues/40058759",
+  "title": "Security: heap-buffer-overflow in getImageActualFormat",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>GPU",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "jm...@chromium.org",
+  "created_date": "2022-02-12T21:31:30+00:00",
+  "modified_date": "2024-01-09T04:43:35+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53385915,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 13519,
+      "url": "https://issues.chromium.org/action/issues/40058759/attachments/53385915?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53385916,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 808,
+      "url": "https://issues.chromium.org/action/issues/40058759/attachments/53385916?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "Tested on Windows Chrome Dev 100.0.4878.0\r\nand asan-linux-release-966194\r\nwith flags --no-sandbox --disable-gpu\r\n\r\n3:046> r\r\nrax=abababababababab rbx=0000000000000000 rcx=000001eeee1f1130\r\nrdx=000001eeee1e7760 rsi=0000000000000001 rdi=000001eeee1f3e20\r\nrip=00007ffb743559b4 rsp=000000e80adfdaa8 rbp=0"
+}

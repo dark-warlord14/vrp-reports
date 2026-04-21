@@ -1,0 +1,42 @@
+{
+  "id": "40062849",
+  "url": "https://issues.chromium.org/issues/40062849",
+  "title": "heap-use-after-free in Read Anything",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Accessibility",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "xp...@gmail.com",
+  "assignee": "ab...@google.com",
+  "created_date": "2023-01-31T22:54:40+00:00",
+  "modified_date": "2023-06-17T17:34:30+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53251276,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18059,
+      "url": "https://issues.chromium.org/action/issues/40062849/attachments/53251276?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53251287,
+      "filename": "WindowsTerminal_xXCzTIcLjY.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 7767492,
+      "url": "https://issues.chromium.org/action/issues/40062849/attachments/53251287?download=true",
+      "local_path": "attachments/WindowsTerminal_xXCzTIcLjY.mp4"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Enable #read-anything in flags (chrome://flags/#read-anything).  \n2. Inspect any page and undock devtools.  \n3. Right click devtools console and press menu option \"Open in Reader\"  \n4. Dock devtools => UAF  \n  \n**Problem Description:**   \nheap-use-after-free"
+}

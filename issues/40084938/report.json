@@ -1,0 +1,24 @@
+{
+  "id": "40084938",
+  "url": "https://issues.chromium.org/issues/40084938",
+  "title": "upgrade-insecure-requests does not also upgrade navigational requests ",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature, Blink>SecurityFeature>ContentSecurityPolicy",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ia...@iancarrico.com",
+  "assignee": "ct...@chromium.org",
+  "created_date": "2016-07-25T20:04:07+00:00",
+  "modified_date": "2025-02-28T19:55:21+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact exploitation mitigation bypass",
+  "attachments": [],
+  "update_count": 107,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Create a webpage at a sample domain, served over HTTPS with the header \"Content-Security-Policy: upgrade-insecure-requests\"\r\n2."
+}

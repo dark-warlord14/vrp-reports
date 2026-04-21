@@ -1,0 +1,27 @@
+{
+  "id": "40073252",
+  "url": "https://issues.chromium.org/issues/40073252",
+  "title": "Security: Out Of Bound in PDF web view plugin",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pw...@gmail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2023-09-24T09:49:59+00:00",
+  "modified_date": "2026-03-19T07:52:57+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": null,
+  "bounty_rationale": "the panel decided that because of the steps required for a user to be exposed to this bug a reasonable and prudent user would not be at risk here so declined to reward\n\n\nNote that the fact that this issue is not being rewarded does not mean\nthat the product team won't fix the issue. We have filed a bug with the product\nteam and they will review your report and decide if a fix is required. We'll\nlet you know if the issue was fixed.\n\nRegards, \\\nGoogle Security Bot\n\n*How did we do? Please fill out ",
+  "attachments": [],
+  "update_count": 23,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAn Assert error occurs due to incorrect index checking for the getPageBoundingBox and saveAttachment messages in the PDF view web Plugin.  \n  \n```C  \nvoid PdfViewWebPlugin::HandleGetPageBoundingBoxMessage(  \n    const base::Value::Dict& message) {  \n  const int page_inde"
+}

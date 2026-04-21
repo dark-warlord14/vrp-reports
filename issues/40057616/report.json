@@ -1,0 +1,76 @@
+{
+  "id": "40057616",
+  "url": "https://issues.chromium.org/issues/40057616",
+  "title": "Security: the contents of iframe is placed outside of iframe when CSS \"column-width\" is defined in main frame.",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Paint",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ss...@snu.ac.kr",
+  "assignee": "pd...@chromium.org",
+  "created_date": "2021-10-15T04:34:54+00:00",
+  "modified_date": "2025-10-28T12:38:25+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52943838,
+      "filename": "parent.html",
+      "mime_type": "text/plain",
+      "size_bytes": 371,
+      "url": "https://issues.chromium.org/action/issues/40057616/attachments/52943838?download=true",
+      "local_path": "attachments/parent.html"
+    },
+    {
+      "id": 52943839,
+      "filename": "child.html",
+      "mime_type": "text/plain",
+      "size_bytes": 148,
+      "url": "https://issues.chromium.org/action/issues/40057616/attachments/52943839?download=true",
+      "local_path": "attachments/child.html"
+    },
+    {
+      "id": 52943840,
+      "filename": "Screenshot.png",
+      "mime_type": "image/png",
+      "size_bytes": 133315,
+      "url": "https://issues.chromium.org/action/issues/40057616/attachments/52943840?download=true",
+      "local_path": "attachments/Screenshot.png"
+    },
+    {
+      "id": 52943841,
+      "filename": "Screenshot_click.png",
+      "mime_type": "image/png",
+      "size_bytes": 152347,
+      "url": "https://issues.chromium.org/action/issues/40057616/attachments/52943841?download=true",
+      "local_path": "attachments/Screenshot_click.png"
+    },
+    {
+      "id": 52943886,
+      "filename": "parent.html",
+      "mime_type": "text/plain",
+      "size_bytes": 369,
+      "url": "https://issues.chromium.org/action/issues/40057616/attachments/52943886?download=true",
+      "local_path": "attachments/parent.html"
+    },
+    {
+      "id": 52943913,
+      "filename": "chrome___version.png",
+      "mime_type": "image/png",
+      "size_bytes": 801765,
+      "url": "https://issues.chromium.org/action/issues/40057616/attachments/52943913?download=true",
+      "local_path": "attachments/chrome_version.png"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe contents of iframe is placed outside of iframe when CSS \"column-width\" is defined in main frame.  \n  \n**VERSION**   \nChrome Version: 95.0.4638.49 + beta  \nOperating System: Ubuntu 18.04  \n  \n**REPRODUCTION CASE**   \n(1) Download \"parent.html\" and \"child.html\"  \n(2) M"
+}

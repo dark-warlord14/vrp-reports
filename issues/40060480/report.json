@@ -1,0 +1,44 @@
+{
+  "id": "40060480",
+  "url": "https://issues.chromium.org/issues/40060480",
+  "title": "Security: Heap-use-after-free in WebContentsImpl::OpenURL",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Pogo, UI>Browser>TopChrome>SidePanel",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "yu...@chromium.org",
+  "created_date": "2022-08-03T07:33:59+00:00",
+  "modified_date": "2024-01-09T07:22:48+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53107974,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 16816,
+      "url": "https://issues.chromium.org/action/issues/40060480/attachments/53107974?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53107975,
+      "filename": "poc.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1304282,
+      "url": "https://issues.chromium.org/action/issues/40060480/attachments/53107975?download=true",
+      "local_path": "attachments/poc.webm"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. download asan-linux-release-1030370.zip and unzip  \n2. run `./chrome --enable-features=SideSearch,UnifiedSidePanel,SideSearchDSESupport   --user-data-dir=/tmp/noexist`  \n3. search anything with google.com and then navigate to any other search engine (such as"
+}

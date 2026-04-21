@@ -1,0 +1,50 @@
+{
+  "id": "40052250",
+  "url": "https://issues.chromium.org/issues/40052250",
+  "title": "Android/iOS: URL spoofing using long sub-domain for blob:URL",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Android",
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ra...@gmail.com",
+  "assignee": "st...@chromium.org",
+  "created_date": "2020-05-07T23:30:57+00:00",
+  "modified_date": "2025-02-13T00:19:02+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53423050,
+      "filename": "Simulator Screen Shot - iPhone X - 2020-04-27 at 14.50.43.png",
+      "mime_type": "image/png",
+      "size_bytes": 90021,
+      "url": "https://issues.chromium.org/action/issues/40052250/attachments/53423050?download=true",
+      "local_path": "attachments/Simulator Screen Shot - iPhone X - 2020-04-27 at 14.50.43.png"
+    },
+    {
+      "id": 53423051,
+      "filename": "Simulator Screen Shot - iPhone X - 2020-04-27 at 14.52.16.png",
+      "mime_type": "image/png",
+      "size_bytes": 89943,
+      "url": "https://issues.chromium.org/action/issues/40052250/attachments/53423051?download=true",
+      "local_path": "attachments/Simulator Screen Shot - iPhone X - 2020-04-27 at 14.52.16.png"
+    },
+    {
+      "id": 53423085,
+      "filename": "Android.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 18555,
+      "url": "https://issues.chromium.org/action/issues/40052250/attachments/53423085?download=true",
+      "local_path": "attachments/Android.jpeg"
+    }
+  ],
+  "update_count": 101,
+  "description_snippet": "https://bugs.chromium.org/p/chromium/issues/detail?id=1069246#c18\r\n\r\nStates the screenshot for before and after fixture. If you notice it, It's still not fixed. It would be spoofed using long subdomain.  \r\n\r\nExpected result should be to display:\r\n \r\n...719.bmoattachments.org/ae099... (bmoattachments"
+}

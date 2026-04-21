@@ -1,0 +1,84 @@
+{
+  "id": "40065872",
+  "url": "https://issues.chromium.org/issues/40065872",
+  "title": "Security: Autofill Exploit Using Custom CSS Cursor",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fa...@gmail.com",
+  "assignee": "br...@google.com",
+  "created_date": "2023-06-15T16:08:59+00:00",
+  "modified_date": "2025-07-02T12:49:56+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53016562,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1436,
+      "url": "https://issues.chromium.org/action/issues/40065872/attachments/53016562?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53016563,
+      "filename": "popup.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4106,
+      "url": "https://issues.chromium.org/action/issues/40065872/attachments/53016563?download=true",
+      "local_path": "attachments/popup.html"
+    },
+    {
+      "id": 53016564,
+      "filename": "step-1.png",
+      "mime_type": "image/png",
+      "size_bytes": 3006,
+      "url": "https://issues.chromium.org/action/issues/40065872/attachments/53016564?download=true",
+      "local_path": "attachments/step-1.png"
+    },
+    {
+      "id": 53016565,
+      "filename": "step-2.png",
+      "mime_type": "image/png",
+      "size_bytes": 2674,
+      "url": "https://issues.chromium.org/action/issues/40065872/attachments/53016565?download=true",
+      "local_path": "attachments/step-2.png"
+    },
+    {
+      "id": 53016583,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 675695,
+      "url": "https://issues.chromium.org/action/issues/40065872/attachments/53016583?download=true",
+      "local_path": "attachments/demo.mp4"
+    },
+    {
+      "id": 53016644,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1465573,
+      "url": "https://issues.chromium.org/action/issues/40065872/attachments/53016644?download=true",
+      "local_path": "attachments/poc.mp4"
+    },
+    {
+      "id": 53016695,
+      "filename": "repro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1587298,
+      "url": "https://issues.chromium.org/action/issues/40065872/attachments/53016695?download=true",
+      "local_path": "attachments/repro.mp4"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUsing the proof of concept below , an attacker could create an engaging website, for example, for verification purposes or other methods, to lure the victim into unknowingly providing sensitive autofill data like address or credit card information of the victim.  \n  \nHer"
+}

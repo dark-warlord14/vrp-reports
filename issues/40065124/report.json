@@ -1,0 +1,85 @@
+{
+  "id": "40065124",
+  "url": "https://issues.chromium.org/issues/40065124",
+  "title": "Security: UAF in guest_view::GuestViewManager::EmbedderProcessDestroyed(browser process)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>Apps>BrowserTag",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "mc...@chromium.org",
+  "created_date": "2023-05-31T23:41:47+00:00",
+  "modified_date": "2024-01-09T07:37:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53308448,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 72,
+      "url": "https://issues.chromium.org/action/issues/40065124/attachments/53308448?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53308449,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 73,
+      "url": "https://issues.chromium.org/action/issues/40065124/attachments/53308449?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53308450,
+      "filename": "script.js",
+      "mime_type": "text/plain",
+      "size_bytes": 290,
+      "url": "https://issues.chromium.org/action/issues/40065124/attachments/53308450?download=true",
+      "local_path": "attachments/script.js"
+    },
+    {
+      "id": 53308451,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 181,
+      "url": "https://issues.chromium.org/action/issues/40065124/attachments/53308451?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53308452,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2111,
+      "url": "https://issues.chromium.org/action/issues/40065124/attachments/53308452?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53308453,
+      "filename": "testharness.js",
+      "mime_type": "text/plain",
+      "size_bytes": 184737,
+      "url": "https://issues.chromium.org/action/issues/40065124/attachments/53308453?download=true",
+      "local_path": "attachments/testharness.js"
+    },
+    {
+      "id": 53308454,
+      "filename": "urltestdata.json",
+      "mime_type": "text/plain",
+      "size_bytes": 201024,
+      "url": "https://issues.chromium.org/action/issues/40065124/attachments/53308454?download=true",
+      "local_path": "attachments/urltestdata.json"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUAF in guest_view::GuestViewManager::EmbedderProcessDestroyed when destroy the webview app.  \n  \n**VERSION**   \nChromium\t116.0.5805.0 (Developer Build) (64-bit)   \nRevision\t7e43ded13451eef1b12f8df95432f93ce9230cc3-refs/heads/main@{#1151488}  \nOS\tWindows 10 Version 22H2 ("
+}

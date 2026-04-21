@@ -1,0 +1,62 @@
+{
+  "id": "40063209",
+  "url": "https://issues.chromium.org/issues/40063209",
+  "title": "Security: heap-use-after-free worker_thread.cc:671 in blink::WorkerThread::InitializeOnWorkerThread",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Workers",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2023-02-23T02:58:40+00:00",
+  "modified_date": "2024-01-09T07:25:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53273197,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18234,
+      "url": "https://issues.chromium.org/action/issues/40063209/attachments/53273197?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53273226,
+      "filename": "dummy-processor-globalthis.js",
+      "mime_type": "text/plain",
+      "size_bytes": 253,
+      "url": "https://issues.chromium.org/action/issues/40063209/attachments/53273226?download=true",
+      "local_path": "attachments/dummy-processor-globalthis.js"
+    },
+    {
+      "id": 53273227,
+      "filename": "load.js",
+      "mime_type": "text/plain",
+      "size_bytes": 4461,
+      "url": "https://issues.chromium.org/action/issues/40063209/attachments/53273227?download=true",
+      "local_path": "attachments/load.js"
+    },
+    {
+      "id": 53273229,
+      "filename": "poc3.html",
+      "mime_type": "text/plain",
+      "size_bytes": 560,
+      "url": "https://issues.chromium.org/action/issues/40063209/attachments/53273229?download=true",
+      "local_path": "attachments/poc3.html"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nheap-use-after-free worker_thread.cc:671 in blink::WorkerThread::InitializeOnWorkerThread  \n  \n**VERSION**   \nWIN10 X64  \n  \nasan-win32-release_x64-1108236  \n  \n**REPRODUCTION CASE**   \nworking on minipoc coming soon.  \n  \nType of crash: [tab]  \n  \n#RCA  \ncoming soon"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "406054655",
+  "url": "https://issues.chromium.org/issues/406054655",
+  "title": "Heap-buffer-overflow in SkPngCodecBase::createColorTable",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Images>Codecs, Internals>Skia",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "lu...@google.com",
+  "created_date": "2025-03-25T18:59:19+00:00",
+  "modified_date": "2025-07-03T12:41:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 9000.0,
+  "bounty_rationale": "$7,000 for report of memory corruption in a sandboxed process + $2,000 fuzzer bonus",
+  "attachments": [
+    {
+      "id": 64295369,
+      "filename": "basn3p01-based-long2-trns.png",
+      "mime_type": "image/png",
+      "size_bytes": 365,
+      "url": "https://issues.chromium.org/action/issues/406054655/attachments/64295369?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64295333,
+      "filename": "basn3p01-based-long-plte.png",
+      "mime_type": "image/png",
+      "size_bytes": 874,
+      "url": "https://issues.chromium.org/action/issues/406054655/attachments/64295333?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64295923,
+      "filename": "basn3p01-based-long-trns.png",
+      "mime_type": "image/png",
+      "size_bytes": 111,
+      "url": "https://issues.chromium.org/action/issues/406054655/attachments/64295923?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64295924,
+      "filename": "basn3p01-based-ok.png",
+      "mime_type": "image/png",
+      "size_bytes": 109,
+      "url": "https://issues.chromium.org/action/issues/406054655/attachments/64295924?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=5267720912175104\n\nFuzzer: attekett_surku_fuzzer\nJob Type: linux_asan_chrome_media\nPlatform Id: linux\n\nCrash Type: Heap-buffer-overflow READ 1\nCrash Address: 0x78a8a0830907\nCrash State:\n  SkPngCodecBase::createColorTable\n  SkPngCodecBase::initiali"
+}

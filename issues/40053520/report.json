@@ -1,0 +1,54 @@
+{
+  "id": "40053520",
+  "url": "https://issues.chromium.org/issues/40053520",
+  "title": "Security: UAF in USBDevice",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>USB",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "re...@chromium.org",
+  "created_date": "2020-10-07T00:24:13+00:00",
+  "modified_date": "2024-07-16T05:11:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53320342,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 16151,
+      "url": "https://issues.chromium.org/action/issues/40053520/attachments/53320342?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53320343,
+      "filename": "copy_mojo_js_bindings.py",
+      "mime_type": "text/plain",
+      "size_bytes": 512,
+      "url": "https://issues.chromium.org/action/issues/40053520/attachments/53320343?download=true",
+      "local_path": "attachments/copy_mojo_js_bindings.py"
+    },
+    {
+      "id": 53320344,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 629,
+      "url": "https://issues.chromium.org/action/issues/40053520/attachments/53320344?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThe Open-IPC-Call[1] will create a |device_handle| and push its raw-pointer into |handles_|[2]. Frequent calls to Open-IPC-Call will cause the old |device_handle| to be replaced[3] and destroyed. But it will not clean up the |handles_|. Its raw pointer will be accesse"
+}

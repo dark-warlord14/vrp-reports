@@ -1,0 +1,37 @@
+{
+  "id": "389970331",
+  "url": "https://issues.chromium.org/issues/389970331",
+  "title": "V8 Sandbox Bypass: StringToBigIntHelper stack-buffer-overflow",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Sandbox",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "v8...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2025-01-15T13:02:59+00:00",
+  "modified_date": "2025-04-26T12:38:11+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "V8 sandbox bypass demonstrating memory corruption outside the sandbox",
+  "attachments": [
+    {
+      "id": 62176622,
+      "filename": "bug.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 368,
+      "url": "https://issues.chromium.org/action/issues/389970331/attachments/62176622?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "#### VULNERABILITY DETAILS\nConverting a very long string to a `BigInt` overflows the stack buffer used during conversion. I guess some of the checks in `FromStringAccumulator::Parse` do not deal correctly with very long input arguments.\n\n**Please note that ASAN would terminate on the read on line `b"
+}

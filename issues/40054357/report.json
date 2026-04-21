@@ -1,0 +1,163 @@
+{
+  "id": "40054357",
+  "url": "https://issues.chromium.org/issues/40054357",
+  "title": "Security: website is able to draw over protected UI elements (URL, padlock, tab list, titlebar) using 3D CSS transforms",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Compositing, Internals>Compositing>Animation",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rs...@gmail.com",
+  "assignee": "bs...@google.com",
+  "created_date": "2021-01-04T18:35:52+00:00",
+  "modified_date": "2024-01-09T02:51:43+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52931570,
+      "filename": "repro.html",
+      "mime_type": "text/plain",
+      "size_bytes": 57021,
+      "url": "https://issues.chromium.org/action/issues/40054357/attachments/52931570?download=true",
+      "local_path": "attachments/repro.html"
+    },
+    {
+      "id": 52931571,
+      "filename": "ceil.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 61995,
+      "url": "https://issues.chromium.org/action/issues/40054357/attachments/52931571?download=true",
+      "local_path": "attachments/ceil.jpg"
+    },
+    {
+      "id": 52931572,
+      "filename": "crate.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 3365,
+      "url": "https://issues.chromium.org/action/issues/40054357/attachments/52931572?download=true",
+      "local_path": "attachments/crate.jpg"
+    },
+    {
+      "id": 52931573,
+      "filename": "drum2.png",
+      "mime_type": "image/png",
+      "size_bytes": 53486,
+      "url": "https://issues.chromium.org/action/issues/40054357/attachments/52931573?download=true",
+      "local_path": "attachments/drum2.png"
+    },
+    {
+      "id": 52931574,
+      "filename": "floor.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 78379,
+      "url": "https://issues.chromium.org/action/issues/40054357/attachments/52931574?download=true",
+      "local_path": "attachments/floor.jpg"
+    },
+    {
+      "id": 52931575,
+      "filename": "map.png",
+      "mime_type": "image/png",
+      "size_bytes": 452,
+      "url": "https://issues.chromium.org/action/issues/40054357/attachments/52931575?download=true",
+      "local_path": "attachments/map.png"
+    },
+    {
+      "id": 52931576,
+      "filename": "pipe2.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 7805,
+      "url": "https://issues.chromium.org/action/issues/40054357/attachments/52931576?download=true",
+      "local_path": "attachments/pipe2.jpg"
+    },
+    {
+      "id": 52931577,
+      "filename": "wall.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 57561,
+      "url": "https://issues.chromium.org/action/issues/40054357/attachments/52931577?download=true",
+      "local_path": "attachments/wall.jpg"
+    },
+    {
+      "id": 52931591,
+      "filename": "screenshot.png",
+      "mime_type": "image/png",
+      "size_bytes": 821247,
+      "url": "https://issues.chromium.org/action/issues/40054357/attachments/52931591?download=true",
+      "local_path": "attachments/screenshot.png"
+    },
+    {
+      "id": 52931598,
+      "filename": "Screenshot 2021-01-04 at 1.08.18 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 1112047,
+      "url": "https://issues.chromium.org/action/issues/40054357/attachments/52931598?download=true",
+      "local_path": "attachments/Screenshot 2021-01-04 at 1.08.18 PM.png"
+    },
+    {
+      "id": 52931599,
+      "filename": "about_gpu_linux.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 22161,
+      "url": "https://issues.chromium.org/action/issues/40054357/attachments/52931599?download=true",
+      "local_path": "attachments/about_gpu_linux.txt"
+    },
+    {
+      "id": 52931600,
+      "filename": "about_gpu_chromeos.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 65906,
+      "url": "https://issues.chromium.org/action/issues/40054357/attachments/52931600?download=true",
+      "local_path": "attachments/about_gpu_chromeos.txt"
+    },
+    {
+      "id": 52931611,
+      "filename": "about_gpu_windows.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 23941,
+      "url": "https://issues.chromium.org/action/issues/40054357/attachments/52931611?download=true",
+      "local_path": "attachments/about_gpu_windows.txt"
+    },
+    {
+      "id": 52931641,
+      "filename": "quad_over_ui.html",
+      "mime_type": "text/plain",
+      "size_bytes": 6876,
+      "url": "https://issues.chromium.org/action/issues/40054357/attachments/52931641?download=true",
+      "local_path": "attachments/quad_over_ui.html"
+    },
+    {
+      "id": 52931642,
+      "filename": "quad_over_ui.png",
+      "mime_type": "image/png",
+      "size_bytes": 27546,
+      "url": "https://issues.chromium.org/action/issues/40054357/attachments/52931642?download=true",
+      "local_path": "attachments/quad_over_ui.png"
+    },
+    {
+      "id": 52931654,
+      "filename": "white_highlight.png",
+      "mime_type": "image/png",
+      "size_bytes": 32006,
+      "url": "https://issues.chromium.org/action/issues/40054357/attachments/52931654?download=true",
+      "local_path": "attachments/white_highlight.png"
+    },
+    {
+      "id": 52931905,
+      "filename": "crbug1162942-repro.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 87716,
+      "url": "https://issues.chromium.org/action/issues/40054357/attachments/52931905?download=true",
+      "local_path": "attachments/crbug1162942-repro.jpg"
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe UI elements outside of the content area are security-sensitive and a website being able to paint on top of them would allow critical security-sensitive information to be faked.  \n  \nThe attached repro case was built to demonstrate 3D CSS capabilities, but it inadvert"
+}

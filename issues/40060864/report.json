@@ -1,0 +1,24 @@
+{
+  "id": "40060864",
+  "url": "https://issues.chromium.org/issues/40060864",
+  "title": "Security: Lockscreen - phone options available",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Sharing",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@googlemail.com",
+  "assignee": "el...@chromium.org",
+  "created_date": "2022-09-07T21:28:44+00:00",
+  "modified_date": "2024-02-27T17:10:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 47,
+  "description_snippet": "Hello together,\r\n\r\nToday my device received\r\n\r\n* chromeOS Version 105.0.5195.112 (Official Build) (32-bit)\r\n\r\nIn that version https://crbug.com/chromium/1303308 (open webpages via the lockscreen) is fixed - a thousand thanks again for that.\r\n\r\nUnfortunately, the behaviour regarding entered phone num"
+}

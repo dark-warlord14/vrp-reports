@@ -1,0 +1,45 @@
+{
+  "id": "40053595",
+  "url": "https://issues.chromium.org/issues/40053595",
+  "title": "Security: PDFium heap-use-after-free in CPWL_ListBox::~CPWL_ListBox()",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2020-10-13T02:08:11+00:00",
+  "modified_date": "2024-01-09T02:37:03+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52939722,
+      "filename": "uaf0.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 4205,
+      "url": "https://issues.chromium.org/action/issues/40053595/attachments/52939722?download=true",
+      "local_path": "attachments/uaf0.pdf"
+    },
+    {
+      "id": 52939723,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 26458,
+      "url": "https://issues.chromium.org/action/issues/40053595/attachments/52939723?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1 build chrome with asan\r\n2 ./chrome uaf0.pdf\r\n\r\nIf you want to get the symbol info, close the sandbox: ./chrome --no-sandbox uaf0.pdf\r\n\r\nNote that"
+}

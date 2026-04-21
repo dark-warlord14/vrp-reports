@@ -1,0 +1,53 @@
+{
+  "id": "40936633",
+  "url": "https://issues.chromium.org/issues/40936633",
+  "title": "Security: Heap-use-after-free in ReadAnythingUntrustedPageHandler::LogTextStyle",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>TopChrome>SidePanel",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "kr...@google.com",
+  "created_date": "2023-10-17T15:57:26+00:00",
+  "modified_date": "2024-01-30T18:46:00+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53366093,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 60,
+      "url": "https://issues.chromium.org/action/issues/40936633/attachments/53366093?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53366094,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 22828,
+      "url": "https://issues.chromium.org/action/issues/40936633/attachments/53366094?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53366095,
+      "filename": "poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 5043886,
+      "url": "https://issues.chromium.org/action/issues/40936633/attachments/53366095?download=true",
+      "local_path": "attachments/poc.mov"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Start a server at the folder of poc.html  \n2. `./Chromium --user-data-dir=./tmp http://127.0.0.1:8605/poc.html about:blank`  \n3. Open the `SidePanel`, choose `ReadAnything`, then drag and merge the poc.html, close the `SidePanel`  \n  \n**Problem Description:*"
+}

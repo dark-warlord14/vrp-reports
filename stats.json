@@ -1,40 +1,259 @@
 {
-  "total_reports": 0,
-  "total_bounty": 0.0,
-  "avg_bounty": 0.0,
-  "by_year": {},
-  "by_severity": {},
-  "by_status": {},
-  "by_component": {},
+  "total_reports": 1934,
+  "total_bounty": 13435789.0,
+  "avg_bounty": 6983.26,
+  "by_year": {
+    "2015": {
+      "count": 37,
+      "total_bounty": 81337.0
+    },
+    "2016": {
+      "count": 43,
+      "total_bounty": 95500.0
+    },
+    "2017": {
+      "count": 41,
+      "total_bounty": 97000.0
+    },
+    "2018": {
+      "count": 24,
+      "total_bounty": 37000.0
+    },
+    "2019": {
+      "count": 17,
+      "total_bounty": 59000.0
+    },
+    "2020": {
+      "count": 154,
+      "total_bounty": 1024500.0
+    },
+    "2021": {
+      "count": 369,
+      "total_bounty": 2948000.0
+    },
+    "2022": {
+      "count": 446,
+      "total_bounty": 2752000.0
+    },
+    "2023": {
+      "count": 460,
+      "total_bounty": 2466587.0
+    },
+    "2024": {
+      "count": 100,
+      "total_bounty": 903365.0
+    },
+    "2025": {
+      "count": 238,
+      "total_bounty": 2971500.0
+    }
+  },
+  "by_severity": {
+    "S3-Low": 1730,
+    "S4-Minimal": 195,
+    "Unknown": 5,
+    "S1-High": 4
+  },
+  "by_status": {
+    "Assigned": 1497,
+    "Accepted": 337,
+    "Fixed": 58,
+    "New": 28,
+    "Verified": 9,
+    "Unknown": 5
+  },
+  "by_component": {
+    "Blink": 852,
+    "Internals": 365,
+    "UI": 354,
+    "Platform": 139,
+    "Unknown": 124,
+    "Mobile": 29,
+    "Dawn": 27,
+    "Enterprise": 10,
+    "OS": 7,
+    "IO": 4,
+    "Services (Use Subcomponents)": 3,
+    "Speed": 3,
+    "Privacy": 3,
+    "Dawn, Dawn": 2,
+    "Privacy, UI": 2,
+    "Enterprise, Platform": 2,
+    "Infra": 2,
+    "PDFium": 1,
+    "Dawn, Internals": 1,
+    "Issue Tracker, Platform": 1
+  },
   "bounty_histogram": [
     {
       "range": "$0-500",
-      "count": 0
+      "count": 8
     },
     {
       "range": "$500-1K",
-      "count": 0
+      "count": 109
     },
     {
       "range": "$1K-3K",
-      "count": 0
+      "count": 496
     },
     {
       "range": "$3K-5K",
-      "count": 0
+      "count": 269
     },
     {
       "range": "$5K-10K",
-      "count": 0
+      "count": 595
     },
     {
       "range": "$10K-20K",
-      "count": 0
+      "count": 283
     },
     {
       "range": "$20K+",
-      "count": 0
+      "count": 164
     }
   ],
-  "top_bounties": []
+  "top_bounties": [
+    {
+      "id": "453094710",
+      "title": "Out-of-bound read in the jmp table of ActiveMediaSessionController leads to sandbox escape.",
+      "bounty_amount": 250000.0,
+      "severity": "S3-Low",
+      "year": 2025
+    },
+    {
+      "id": "412578726",
+      "title": "ipcz bug can allow renderer duplicate browser process handle to escape sandbox",
+      "bounty_amount": 250000.0,
+      "severity": "S3-Low",
+      "year": 2025
+    },
+    {
+      "id": "340122160",
+      "title": "MiraclePtr bypass due to PtrCount overflow",
+      "bounty_amount": 100115.0,
+      "severity": "S3-Low",
+      "year": 2024
+    },
+    {
+      "id": "433533359",
+      "title": "Consumers of ReadableStream subject to data race with SharedArrayBuffer, leading to RCE + V8 Sandbox bypass",
+      "bounty_amount": 70000.0,
+      "severity": "S3-Low",
+      "year": 2025
+    },
+    {
+      "id": "400086889",
+      "title": "Arbitrary Wasm type confusion due to transient canonical index overflow",
+      "bounty_amount": 62000.0,
+      "severity": "S3-Low",
+      "year": 2025
+    },
+    {
+      "id": "446113732",
+      "title": "Wasm type confusion due to spec unsoundness in `cast_desc` operations",
+      "bounty_amount": 55000.0,
+      "severity": "S3-Low",
+      "year": 2025
+    },
+    {
+      "id": "446122633",
+      "title": "Wasm type confusion due to wrong reachability analysis in `WasmGCTypeAnalyzer::ProcessBranchOnTarget()` with custom descriptor casts",
+      "bounty_amount": 55000.0,
+      "severity": "S3-Low",
+      "year": 2025
+    },
+    {
+      "id": "446124893",
+      "title": "Wasm type confusion due to custom descriptors spec ambiguity in `ref.get_desc` exactness typing",
+      "bounty_amount": 55000.0,
+      "severity": "S3-Low",
+      "year": 2025
+    },
+    {
+      "id": "446113731",
+      "title": "Wasm type confusion due to custom descriptors spec unsoundness on `ref.func` exact typing",
+      "bounty_amount": 55000.0,
+      "severity": "S3-Low",
+      "year": 2025
+    },
+    {
+      "id": "446124892",
+      "title": "Wasm type confusion due to missing exactness check on JS-Wasm boundary",
+      "bounty_amount": 55000.0,
+      "severity": "S3-Low",
+      "year": 2025
+    },
+    {
+      "id": "400052777",
+      "title": "Signal SIGTRAP in v8",
+      "bounty_amount": 55000.0,
+      "severity": "S4-Minimal",
+      "year": 2025
+    },
+    {
+      "id": "391907159",
+      "title": "WasmCode \"resurrection\" using the WasmImportWrapperCache can lead to JIT allocation UaF, causing memory corruption",
+      "bounty_amount": 55000.0,
+      "severity": "S4-Minimal",
+      "year": 2025
+    },
+    {
+      "id": "388290793",
+      "title": "WebAssembly out-of-bounds memory access due to broken memory64 guard page assumptions",
+      "bounty_amount": 55000.0,
+      "severity": "S3-Low",
+      "year": 2025
+    },
+    {
+      "id": "380397544",
+      "title": "Arbitrary WASM type confusion due to improper fix of b/379009132",
+      "bounty_amount": 55000.0,
+      "severity": "S3-Low",
+      "year": 2024
+    },
+    {
+      "id": "368241697",
+      "title": "Type confusion due to improper WASM module size check in `AsyncStreamingDecoder`",
+      "bounty_amount": 55000.0,
+      "severity": "S3-Low",
+      "year": 2024
+    },
+    {
+      "id": "467247247",
+      "title": "Maglev's handling of target and new.target is incorrect",
+      "bounty_amount": 50000.0,
+      "severity": "S3-Low",
+      "year": 2025
+    },
+    {
+      "id": "454485895",
+      "title": "Incorrect Optimization of ArrayConstructor by Maglev Leads to Creation of Malformed JSArray Objects",
+      "bounty_amount": 50000.0,
+      "severity": "S3-Low",
+      "year": 2025
+    },
+    {
+      "id": "450618029",
+      "title": "TDZ check elision leading to hole leak",
+      "bounty_amount": 50000.0,
+      "severity": "S3-Low",
+      "year": 2025
+    },
+    {
+      "id": "447613211",
+      "title": "Type confusion in inline cache prototype loading with Webassembly object prototype",
+      "bounty_amount": 50000.0,
+      "severity": "S3-Low",
+      "year": 2025
+    },
+    {
+      "id": "403211343",
+      "title": "Improper Error Handling in LateLoadElimination for String Map in Turboshaft Leads to RCE",
+      "bounty_amount": 50000.0,
+      "severity": "S3-Low",
+      "year": 2025
+    }
+  ]
 }

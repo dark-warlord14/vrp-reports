@@ -1,0 +1,37 @@
+{
+  "id": "40054167",
+  "url": "https://issues.chromium.org/issues/40054167",
+  "title": "Security: Security DCHECK failed: !NeedsLayout() || ChildLayoutBlockedByDisplayLock() in blink::LayoutObject::AssertLaidOut",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Layout, Blink>MathML",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ho...@gmail.com",
+  "assignee": "rb...@igalia.com",
+  "created_date": "2020-12-14T14:20:27+00:00",
+  "modified_date": "2024-01-09T08:23:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53082551,
+      "filename": "test.html",
+      "mime_type": "text/plain",
+      "size_bytes": 208,
+      "url": "https://issues.chromium.org/action/issues/40054167/attachments/53082551?download=true",
+      "local_path": "attachments/test.html"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \n**VERSION**   \nChrome Version: 89.0.4350.4 (Developer Build) (64-bit)  \nRevision\t29c0d89383f97531bef022ee9606d26a194dec6d-refs/branch-heads/4350@{#7}  \nOperating System: Linux-4.15.0-112-generic-x86_64-with-Ubuntu-18.04-bionic  \n  \n**REPRODUCTION CASE**   \n  \nLoad the"
+}

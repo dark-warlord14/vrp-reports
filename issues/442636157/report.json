@@ -1,0 +1,89 @@
+{
+  "id": "442636157",
+  "url": "https://issues.chromium.org/issues/442636157",
+  "title": "Chrome on Android: URL spoof triggered by address bar position Change",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": "141.0.0.0",
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "pn...@chromium.org",
+  "created_date": "2025-09-03T03:02:47+00:00",
+  "modified_date": "2026-01-09T12:41:18+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": null,
+  "bounty_rationale": "the panel determined that a reasonable and prudent user would not be put at risk by this bug given the level of interactions required\n\n\nNote that the fact that this issue is not being rewarded does not mean\nthat the product team won't fix the issue. We have filed a bug with the product\nteam and they will review your report and decide if a fix is required. We'll\nlet you know if the issue was fixed.\n\nRegards, \\\nGoogle Security Bot\n\n*How did we do? Please fill out a [short anonymous survey](https:/",
+  "attachments": [
+    {
+      "id": 68968688,
+      "filename": "testcase.html",
+      "mime_type": "text/html",
+      "size_bytes": 921,
+      "url": "https://issues.chromium.org/action/issues/442636157/attachments/68968688?download=true",
+      "local_path": "attachments/testcase.html"
+    },
+    {
+      "id": 68968689,
+      "filename": "screen.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 321470,
+      "url": "https://issues.chromium.org/action/issues/442636157/attachments/68968689?download=true",
+      "local_path": "attachments/screen.mp4"
+    },
+    {
+      "id": 69003566,
+      "filename": "screen-20250903-203504.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5953791,
+      "url": "https://issues.chromium.org/action/issues/442636157/attachments/69003566?download=true",
+      "local_path": "attachments/screen-20250903-203504.mp4"
+    },
+    {
+      "id": 69010050,
+      "filename": "screen-20250904-043644.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 8334958,
+      "url": "https://issues.chromium.org/action/issues/442636157/attachments/69010050?download=true",
+      "local_path": "attachments/screen-20250904-043644.mp4"
+    },
+    {
+      "id": 69041599,
+      "filename": "screen-20250905-225353.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6944827,
+      "url": "https://issues.chromium.org/action/issues/442636157/attachments/69041599?download=true",
+      "local_path": "attachments/screen-20250905-225353.mp4"
+    },
+    {
+      "id": 69181629,
+      "filename": "screen-20250910-183221.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 14448666,
+      "url": "https://issues.chromium.org/action/issues/442636157/attachments/69181629?download=true",
+      "local_path": "attachments/screen-20250910-183221.mp4"
+    },
+    {
+      "id": 69260451,
+      "filename": "screen-20250912-223243~2.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3520298,
+      "url": "https://issues.chromium.org/action/issues/442636157/attachments/69260451?download=true",
+      "local_path": "attachments/screen-20250912-223243~2.mp4"
+    },
+    {
+      "id": 69321610,
+      "filename": "cam2.html",
+      "mime_type": "text/html",
+      "size_bytes": 1084,
+      "url": "https://issues.chromium.org/action/issues/442636157/attachments/69321610?download=true",
+      "local_path": "attachments/cam2.html"
+    }
+  ],
+  "update_count": 73,
+  "description_snippet": "# Steps to reproduce the problem\n1. Open the test case page and tap the \"Try it\" button.\n2. Keep your finger pressed inside the page until an alert dialog appears.\n3. Try to move the address bar to the bottom, then dismiss the alert dialog.\n\n# Problem Description\nWhen moving the Chrome address bar t"
+}

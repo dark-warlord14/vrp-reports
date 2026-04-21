@@ -1,0 +1,49 @@
+{
+  "id": "40054744",
+  "url": "https://issues.chromium.org/issues/40054744",
+  "title": "Security: Heap-buffer-overflow in TabStripModel::IsTabPinned",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "tb...@chromium.org",
+  "created_date": "2021-02-08T23:54:58+00:00",
+  "modified_date": "2024-01-09T08:48:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53237729,
+      "filename": "screen.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 7640702,
+      "url": "https://issues.chromium.org/action/issues/40054744/attachments/53237729?download=true",
+      "local_path": "attachments/screen.mov"
+    },
+    {
+      "id": 53237753,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 176,
+      "url": "https://issues.chromium.org/action/issues/40054744/attachments/53237753?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53237828,
+      "filename": "screen.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 2610680,
+      "url": "https://issues.chromium.org/action/issues/40054744/attachments/53237828?download=true",
+      "local_path": "attachments/screen.mov"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "Chrome Version: Chromium 90.0.4413.0 and stable  \nOperating System: Windows 7 and Linux  \n  \n**REPRODUCTION CASE**   \n1. python -m SimpleHTTPServer  \n2. chrome.exe \"about:blank\" \"http://localhost:8000/poc.html\"   \n3. Add \"about:blank\" tab to a new group.  \n4. Switch \"http://localhost:8000/poc.html\""
+}

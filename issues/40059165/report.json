@@ -1,0 +1,49 @@
+{
+  "id": "40059165",
+  "url": "https://issues.chromium.org/issues/40059165",
+  "title": "Security: Abuse the user's system environment variables in <a> download attribute may cause DLL Hijacking or Path Interception ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>PlatformIntegration, UI>Browser>Downloads",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "qi...@chromium.org",
+  "created_date": "2022-03-21T15:16:04+00:00",
+  "modified_date": "2022-09-22T17:34:22+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52893556,
+      "filename": "download.html",
+      "mime_type": "text/plain",
+      "size_bytes": 66,
+      "url": "https://issues.chromium.org/action/issues/40059165/attachments/52893556?download=true",
+      "local_path": "attachments/download.html"
+    },
+    {
+      "id": 52893557,
+      "filename": "poc.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 3646171,
+      "url": "https://issues.chromium.org/action/issues/40059165/attachments/52893557?download=true",
+      "local_path": "attachments/poc.gif"
+    },
+    {
+      "id": 52893558,
+      "filename": "edge.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 1745080,
+      "url": "https://issues.chromium.org/action/issues/40059165/attachments/52893558?download=true",
+      "local_path": "attachments/edge.gif"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nChrome treats the \"Save as\" as a trusted operation even if the file extension is .exe or .dll.(https://support.google.com/chrome/answer/95759)  \nWhen we set the system environment variables in the <a> download attribute and save the file with \"Save as\", it will cause sec"
+}

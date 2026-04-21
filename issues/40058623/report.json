@@ -1,0 +1,41 @@
+{
+  "id": "40058623",
+  "url": "https://issues.chromium.org/issues/40058623",
+  "title": "Uaf in qrcode_generator::QRCodeGeneratorBubbleController::OnBubbleClosed",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Sharing",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "tt...@gmail.com",
+  "assignee": "kr...@chromium.org",
+  "created_date": "2022-01-28T08:28:57+00:00",
+  "modified_date": "2024-01-09T04:41:30+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52955707,
+      "filename": "uaf-reproduce.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1286503,
+      "url": "https://issues.chromium.org/action/issues/40058623/attachments/52955707?download=true",
+      "local_path": "attachments/uaf-reproduce.mp4"
+    },
+    {
+      "id": 52955764,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 24821,
+      "url": "https://issues.chromium.org/action/issues/40058623/attachments/52955764?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. open chromium on Mac M1 with the following command: ./chromium --user-data-dir=./tmp http://127.0.0.1:8080 (the ip address is not"
+}

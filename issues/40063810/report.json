@@ -1,0 +1,33 @@
+{
+  "id": "40063810",
+  "url": "https://issues.chromium.org/issues/40063810",
+  "title": "Security: Chrome on IOS ignores Content-Type header when rendering XML and SVG content",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jo...@gmail.com",
+  "assignee": "aj...@google.com",
+  "created_date": "2023-03-28T22:04:57+00:00",
+  "modified_date": "2024-07-16T22:05:06+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53298127,
+      "filename": "test.xml",
+      "mime_type": "text/plain",
+      "size_bytes": 313,
+      "url": "https://issues.chromium.org/action/issues/40063810/attachments/53298127?download=true",
+      "local_path": "attachments/test.xml"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nXML files can contain HTML and thus run javascript if they are delivered as content-type: text/xml. A way to safely deliver user supplied files as raw data is to set the content-type to text/plain instead. This will make all desktop browsers render the XML data as plain"
+}

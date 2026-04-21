@@ -1,0 +1,52 @@
+{
+  "id": "40064571",
+  "url": "https://issues.chromium.org/issues/40064571",
+  "title": "Security: Heap-use-after-free in AboutThisSiteSidePanelView::HandleKeyboardEvent",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Bubbles>PageInfo",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "fs...@google.com",
+  "created_date": "2023-05-15T11:29:42+00:00",
+  "modified_date": "2023-11-11T00:22:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53347203,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 35252,
+      "url": "https://issues.chromium.org/action/issues/40064571/attachments/53347203?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53347204,
+      "filename": "video.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1005927,
+      "url": "https://issues.chromium.org/action/issues/40064571/attachments/53347204?download=true",
+      "local_path": "attachments/video.webm"
+    },
+    {
+      "id": 53347205,
+      "filename": "change.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1394,
+      "url": "https://issues.chromium.org/action/issues/40064571/attachments/53347205?download=true",
+      "local_path": "attachments/change.diff"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "**Steps to reproduce the problem:**   \ncommit at 8c0f80a0a4f2a20b64bee9eacb69583cfa1a5fc9  \n1. apply change.diff and compile Chromium with ASAN enabled  \n2. run `./chrome --user-data-dir=/tmp/noexist --enable-features=PageInfoAboutThisSiteNonEn,AboutThisSitePersistentSidePanelEntry`  \n3. Open two wi"
+}

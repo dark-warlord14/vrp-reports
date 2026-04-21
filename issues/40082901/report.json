@@ -1,0 +1,24 @@
+{
+  "id": "40082901",
+  "url": "https://issues.chromium.org/issues/40082901",
+  "title": "CSP: `*.x.y` must match a host that ends with `.x.y` (4.2.2 step 4.6)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2015-6785"
+  ],
+  "reporter": "m....@shapesecurity.com",
+  "assignee": "jw...@chromium.org",
+  "created_date": "2015-09-21T19:58:41+00:00",
+  "modified_date": "2018-07-28T14:24:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 32,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nGiven a CSP header of `script-src \\*.a.localhost`, the script `<script src=\"//a.localhost/script.js\"></script>` should not be loaded. CSP spec section 4.2.2 step 4.6 states \"If the first character of the source expression’s host-part is an U+002A ASTERISK character (\\"
+}

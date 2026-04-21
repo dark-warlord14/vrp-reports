@@ -1,0 +1,34 @@
+{
+  "id": "40059105",
+  "url": "https://issues.chromium.org/issues/40059105",
+  "title": "AddressSanitizer: heap-use-after-free components/history/core/browser/history_backend.cc:2542:22 in history::HistoryBackend::KillHistoryDatabase()",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>History",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "sk...@chromium.org",
+  "created_date": "2022-03-15T15:53:28+00:00",
+  "modified_date": "2023-01-02T22:52:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52968068,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13464,
+      "url": "https://issues.chromium.org/action/issues/40059105/attachments/52968068?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 70,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4942.0 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nThe problem was found by my fuzzer running on CF(CC Security team for access permission https://clusterfuzz.com/testcase-detail/5136386931"
+}

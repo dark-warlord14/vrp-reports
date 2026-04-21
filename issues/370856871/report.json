@@ -1,0 +1,145 @@
+{
+  "id": "370856871",
+  "url": "https://issues.chromium.org/issues/370856871",
+  "title": "Compromised renderer can control your mouse and escape sbx",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Views",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "129.0.0.0",
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "da...@google.com",
+  "created_date": "2024-10-02T16:35:03+00:00",
+  "modified_date": "2025-11-26T22:07:35+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 50000.0,
+  "bounty_rationale": "High-quality report of security issue that can result in a sandbox escape with multiple preconditions / mitigations to exploit",
+  "attachments": [
+    {
+      "id": 59792094,
+      "filename": "a.cpp",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 175,
+      "url": "https://issues.chromium.org/action/issues/370856871/attachments/59792094?download=true",
+      "local_path": "attachments/a.cpp"
+    },
+    {
+      "id": 59792095,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 813080,
+      "url": "https://issues.chromium.org/action/issues/370856871/attachments/59792095?download=true",
+      "local_path": "attachments/demo.mp4"
+    },
+    {
+      "id": 59792096,
+      "filename": "exp.html",
+      "mime_type": "text/html",
+      "size_bytes": 1400,
+      "url": "https://issues.chromium.org/action/issues/370856871/attachments/59792096?download=true",
+      "local_path": "attachments/exp.html"
+    },
+    {
+      "id": 59792097,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1817,
+      "url": "https://issues.chromium.org/action/issues/370856871/attachments/59792097?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 59802077,
+      "filename": "biggerwindow.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5739737,
+      "url": "https://issues.chromium.org/action/issues/370856871/attachments/59802077?download=true",
+      "local_path": "attachments/biggerwindow.mp4"
+    },
+    {
+      "id": 59804657,
+      "filename": "smallwindow.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 8480355,
+      "url": "https://issues.chromium.org/action/issues/370856871/attachments/59804657?download=true",
+      "local_path": "attachments/smallwindow.mp4"
+    },
+    {
+      "id": 59814573,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/370856871/attachments/59814573?download=true",
+      "local_path": null
+    },
+    {
+      "id": 59803716,
+      "filename": "exp_show.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 7732874,
+      "url": "https://issues.chromium.org/action/issues/370856871/attachments/59803716?download=true",
+      "local_path": "attachments/exp_show.mp4"
+    },
+    {
+      "id": 59814581,
+      "filename": "exp.html",
+      "mime_type": "text/html",
+      "size_bytes": 2891,
+      "url": "https://issues.chromium.org/action/issues/370856871/attachments/59814581?download=true",
+      "local_path": "attachments/exp.html"
+    },
+    {
+      "id": 59879775,
+      "filename": "a.cpp",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 175,
+      "url": "https://issues.chromium.org/action/issues/370856871/attachments/59879775?download=true",
+      "local_path": "attachments/a.cpp"
+    },
+    {
+      "id": 59880832,
+      "filename": "aaa.html",
+      "mime_type": "text/html",
+      "size_bytes": 586,
+      "url": "https://issues.chromium.org/action/issues/370856871/attachments/59880832?download=true",
+      "local_path": "attachments/aaa.html"
+    },
+    {
+      "id": 59879776,
+      "filename": "exploit.html",
+      "mime_type": "text/html",
+      "size_bytes": 865,
+      "url": "https://issues.chromium.org/action/issues/370856871/attachments/59879776?download=true",
+      "local_path": "attachments/exploit.html"
+    },
+    {
+      "id": 59879777,
+      "filename": "new_patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 3611,
+      "url": "https://issues.chromium.org/action/issues/370856871/attachments/59879777?download=true",
+      "local_path": "attachments/new_patch.diff"
+    },
+    {
+      "id": 59879778,
+      "filename": "exploit_record.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 989218,
+      "url": "https://issues.chromium.org/action/issues/370856871/attachments/59879778?download=true",
+      "local_path": "attachments/exploit_record.mp4"
+    },
+    {
+      "id": 61063603,
+      "filename": "exploit.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 13265557,
+      "url": "https://issues.chromium.org/action/issues/370856871/attachments/61063603?download=true",
+      "local_path": "attachments/exploit.mp4"
+    }
+  ],
+  "update_count": 116,
+  "description_snippet": "# Steps to reproduce the problem\n1. git apply patch.diff\n2. Compile a.cpp into a.exe and put a.exe to the http server folder\n3. python3 -m http.server\n4. visit exp.html and click the button then you will see your mouse automatically click the exe in the download bubble and execute it.\n\n# Problem Des"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "40064754",
+  "url": "https://issues.chromium.org/issues/40064754",
+  "title": "Security: Spoofing Permission Prompts UI behind PIP overlay-Bypass of 1394410 ",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Media>PictureInPicture, UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "el...@gmail.com",
+  "assignee": "st...@chromium.org",
+  "created_date": "2023-05-23T15:44:46+00:00",
+  "modified_date": "2024-06-04T15:42:33+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53302055,
+      "filename": "canvasautofill-modx-linux-doooh-dev.html",
+      "mime_type": "text/plain",
+      "size_bytes": 7090,
+      "url": "https://issues.chromium.org/action/issues/40064754/attachments/53302055?download=true",
+      "local_path": "attachments/canvasautofill-modx-linux-doooh-dev.html"
+    },
+    {
+      "id": 53302056,
+      "filename": "share-me-doooh.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2883,
+      "url": "https://issues.chromium.org/action/issues/40064754/attachments/53302056?download=true",
+      "local_path": "attachments/share-me-doooh.html"
+    },
+    {
+      "id": 53302057,
+      "filename": "giphy.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 5694,
+      "url": "https://issues.chromium.org/action/issues/40064754/attachments/53302057?download=true",
+      "local_path": "attachments/giphy.webm"
+    },
+    {
+      "id": 53302058,
+      "filename": "pickup-weapons.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 201192,
+      "url": "https://issues.chromium.org/action/issues/40064754/attachments/53302058?download=true",
+      "local_path": "attachments/pickup-weapons.jpeg"
+    },
+    {
+      "id": 53302059,
+      "filename": "Spoofing-permissions-DEV-115-linux-2023-05-23_18-14-50.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2406033,
+      "url": "https://issues.chromium.org/action/issues/40064754/attachments/53302059?download=true",
+      "local_path": "attachments/Spoofing-permissions-DEV-115-linux-2023-05-23_18-14-50.mp4"
+    },
+    {
+      "id": 53302060,
+      "filename": "Spoofing-Developer-115-ASAN-2023-05-23_18-10-09.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2554066,
+      "url": "https://issues.chromium.org/action/issues/40064754/attachments/53302060?download=true",
+      "local_path": "attachments/Spoofing-Developer-115-ASAN-2023-05-23_18-10-09.mp4"
+    },
+    {
+      "id": 53302061,
+      "filename": "Linux-behavior-2023-05-23_18-17-45.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 553635,
+      "url": "https://issues.chromium.org/action/issues/40064754/attachments/53302061?download=true",
+      "local_path": "attachments/Linux-behavior-2023-05-23_18-17-45.mp4"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n======================  \nThis issue is similar to https://crbug.com/chromium/1237310 and bypass of https://crbug.com/chromium/1394410 and Exploitation way is similar to https://crbug.com/chromium/1358647  \n  \nThis is a report to a security vulnerability in google chro"
+}

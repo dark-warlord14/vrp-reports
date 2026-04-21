@@ -1,0 +1,49 @@
+{
+  "id": "40083613",
+  "url": "https://issues.chromium.org/issues/40083613",
+  "title": "Security: Memory leak in libxslt",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>XML",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2016-1684"
+  ],
+  "reporter": "ni...@gmail.com",
+  "assignee": "do...@chromium.org",
+  "created_date": "2016-02-02T00:56:35+00:00",
+  "modified_date": "2018-04-25T22:54:25+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53347539,
+      "filename": "xsltNumberFormatAlpha-GlobalReadOverflow.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 9885,
+      "url": "https://issues.chromium.org/action/issues/40083613/attachments/53347539?download=true",
+      "local_path": "attachments/xsltNumberFormatAlpha-GlobalReadOverflow.txt"
+    },
+    {
+      "id": 53347626,
+      "filename": "fix-crbug-583171.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2752,
+      "url": "https://issues.chromium.org/action/issues/40083613/attachments/53347626?download=true",
+      "local_path": "attachments/fix-crbug-583171.diff"
+    },
+    {
+      "id": 53347660,
+      "filename": "0001-xsl-number-format-A-should-not-try-to-format-negativ.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3822,
+      "url": "https://issues.chromium.org/action/issues/40083613/attachments/53347660?download=true",
+      "local_path": "attachments/0001-xsl-number-format-A-should-not-try-to-format-negativ.patch"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nNegative numbers provided to <xsl:number> allow to leak some memory content (location limited to 26 bytes on the left of some global buffers).  \n  \n**VERSION**   \n  \nChrome Version: release+asan+symbolized v371829  \nOperating System: Ubuntu x64  \n  \n**REPRODUCTION CAS"
+}

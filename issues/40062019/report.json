@@ -1,0 +1,41 @@
+{
+  "id": "40062019",
+  "url": "https://issues.chromium.org/issues/40062019",
+  "title": "Security: ChromeOS Guest User Can Force Persistent Rollback on Stable Channel",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Enterprise",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hi...@gmail.com",
+  "assignee": "ki...@chromium.org",
+  "created_date": "2022-12-02T11:02:24+00:00",
+  "modified_date": "2023-11-11T02:09:21+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53358295,
+      "filename": "Persisten_Downgrade.png",
+      "mime_type": "image/png",
+      "size_bytes": 41297,
+      "url": "https://issues.chromium.org/action/issues/40062019/attachments/53358295?download=true",
+      "local_path": "attachments/Persisten_Downgrade.png"
+    },
+    {
+      "id": 53358389,
+      "filename": "Screenshot 2022-12-21 04.06.32.png",
+      "mime_type": "image/png",
+      "size_bytes": 26926,
+      "url": "https://issues.chromium.org/action/issues/40062019/attachments/53358389?download=true",
+      "local_path": "attachments/Screenshot 2022-12-21 04.06.32.png"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThere are three problems with the rollback command in crosh:  \n  \n1. It states, \"Only available on non-stable channels and non-enterprise enrolled devices.\". But on a stable channel ChromeOS, we can use this command (see the reproduce section below).  \n  \n2. A guest user"
+}

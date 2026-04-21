@@ -1,0 +1,59 @@
+{
+  "id": "40060309",
+  "url": "https://issues.chromium.org/issues/40060309",
+  "title": "wild read in DrawCall::run",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebGL, Internals>GPU>ANGLE, Internals>GPU>SwiftShader",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2022-07-16T09:42:35+00:00",
+  "modified_date": "2024-01-09T06:20:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53182813,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2580,
+      "url": "https://issues.chromium.org/action/issues/40060309/attachments/53182813?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53182831,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2485,
+      "url": "https://issues.chromium.org/action/issues/40060309/attachments/53182831?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53182856,
+      "filename": "webgl-test-utils2.js",
+      "mime_type": "text/plain",
+      "size_bytes": 115077,
+      "url": "https://issues.chromium.org/action/issues/40060309/attachments/53182856?download=true",
+      "local_path": "attachments/webgl-test-utils2.js"
+    },
+    {
+      "id": 53182857,
+      "filename": "crash2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2548,
+      "url": "https://issues.chromium.org/action/issues/40060309/attachments/53182857?download=true",
+      "local_path": "attachments/crash2.html"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1.google-chrome --disable-gpu --user-data-dir=/tmp/xx http://localhost:8001/crash.html  \n  \n**Problem Description:**   \ntestedOS:  \nmacOS,Ubuntu22.04  \nChrome Version:  \nVersion 105.0.5148.2 (Official Build) dev (64-bit) ubuntu  \nChromium 105.0.5127.0 (MacOS)"
+}

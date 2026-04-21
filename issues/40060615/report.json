@@ -1,0 +1,52 @@
+{
+  "id": "40060615",
+  "url": "https://issues.chromium.org/issues/40060615",
+  "title": "Security: Hide real extension of file by many white spaces via suggestedName parameter - showSaveFilePicker",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Storage>FileSystem",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "as...@chromium.org",
+  "created_date": "2022-08-19T09:47:13+00:00",
+  "modified_date": "2025-06-19T15:07:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53178540,
+      "filename": "poc.png",
+      "mime_type": "image/png",
+      "size_bytes": 3190,
+      "url": "https://issues.chromium.org/action/issues/40060615/attachments/53178540?download=true",
+      "local_path": "attachments/poc.png"
+    },
+    {
+      "id": 53178541,
+      "filename": "filepicker-poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1523,
+      "url": "https://issues.chromium.org/action/issues/40060615/attachments/53178541?download=true",
+      "local_path": "attachments/filepicker-poc.html"
+    },
+    {
+      "id": 53178688,
+      "filename": "unfixed-poc.png",
+      "mime_type": "image/png",
+      "size_bytes": 7878,
+      "url": "https://issues.chromium.org/action/issues/40060615/attachments/53178688?download=true",
+      "local_path": "attachments/unfixed-poc.png"
+    }
+  ],
+  "update_count": 89,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nhttps://bugs.chromium.org/p/chromium/issues/detail?id=1140403 can be bypassed by using suggestedName parameter in showSaveFilePicker  \n  \n**VERSION**   \nChrome Version: 104.0.5112.101 (Official Build) (64-bit) (cohort: 104_stable_101_rampup)  \nOperating System: Windows 1"
+}

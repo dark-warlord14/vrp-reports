@@ -1,0 +1,81 @@
+{
+  "id": "40061504",
+  "url": "https://issues.chromium.org/issues/40061504",
+  "title": "Security: Stack-buffer-overflow in WebGL vulkan backend",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "et...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2022-10-28T03:02:57+00:00",
+  "modified_date": "2024-12-16T15:15:50+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52881858,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1864,
+      "url": "https://issues.chromium.org/action/issues/40061504/attachments/52881858?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52881859,
+      "filename": "repro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 614951,
+      "url": "https://issues.chromium.org/action/issues/40061504/attachments/52881859?download=true",
+      "local_path": "attachments/repro.mp4"
+    },
+    {
+      "id": 52881860,
+      "filename": "crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 9951,
+      "url": "https://issues.chromium.org/action/issues/40061504/attachments/52881860?download=true",
+      "local_path": "attachments/crash.log"
+    },
+    {
+      "id": 52881861,
+      "filename": "chrome_gpu.config",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 56004,
+      "url": "https://issues.chromium.org/action/issues/40061504/attachments/52881861?download=true",
+      "local_path": "attachments/chrome_gpu.config"
+    },
+    {
+      "id": 52881881,
+      "filename": "libvulkan_intel.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3647604,
+      "url": "https://issues.chromium.org/action/issues/40061504/attachments/52881881?download=true",
+      "local_path": "attachments/libvulkan_intel.zip"
+    },
+    {
+      "id": 52881923,
+      "filename": "crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 10414,
+      "url": "https://issues.chromium.org/action/issues/40061504/attachments/52881923?download=true",
+      "local_path": "attachments/crash.log"
+    },
+    {
+      "id": 52881924,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 36514,
+      "url": "https://issues.chromium.org/action/issues/40061504/attachments/52881924?download=true",
+      "local_path": "attachments/poc.zip"
+    }
+  ],
+  "update_count": 69,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis bug is similar to https://bugs.chromium.org/p/chromium/issues/detail?id=333885.  \n  \nThe commit id that introduced this vulnerability is 8ed5c89d533d74d57824eab7b05e4fe778e4a532, this chromium commit rolls the angle code forward.  \nhttps://chromium.googlesource.com/"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "392521083",
+  "url": "https://issues.chromium.org/issues/392521083",
+  "title": "Incorrect WriteBarrier Optimization in ObjectAssign FastPath Leads to Exploitable UAF Vulnerability",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hu...@gmail.com",
+  "assignee": "ol...@chromium.org",
+  "created_date": "2025-01-27T18:02:12+00:00",
+  "modified_date": "2025-07-10T16:58:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 50000.0,
+  "bounty_rationale": "high-quality report demonstrating controlled write in a sandboxed process / the renderer",
+  "attachments": [],
+  "update_count": 93,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

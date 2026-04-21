@@ -1,0 +1,53 @@
+{
+  "id": "467297219",
+  "url": "https://issues.chromium.org/issues/467297219",
+  "title": "Use-After-Poison in RouteMap::UpdateActiveRoutes",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>CSS",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "142.0.0.0",
+  "cve_ids": [],
+  "reporter": "an...@gmail.com",
+  "assignee": "ms...@chromium.org",
+  "created_date": "2025-12-09T13:48:25+00:00",
+  "modified_date": "2026-03-19T07:53:05+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "bounty_rationale": "baseline memory corruption in a sandboxed process + a bisect bonus",
+  "attachments": [
+    {
+      "id": 71637368,
+      "filename": "test.html",
+      "mime_type": "text/html",
+      "size_bytes": 3464,
+      "url": "https://issues.chromium.org/action/issues/467297219/attachments/71637368?download=true",
+      "local_path": "attachments/test.html"
+    },
+    {
+      "id": 71637370,
+      "filename": "check.log",
+      "mime_type": "text/plain",
+      "size_bytes": 28215,
+      "url": "https://issues.chromium.org/action/issues/467297219/attachments/71637370?download=true",
+      "local_path": "attachments/check.log"
+    },
+    {
+      "id": 71637372,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 20546,
+      "url": "https://issues.chromium.org/action/issues/467297219/attachments/71637372?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 77,
+  "description_snippet": "# Steps to reproduce the problem\n1. open test.html with flag --enable-blink-features=RouteMatching\n2. click button\n3. UAP!\n\n# Problem Description\n```c++\nvoid RouteMap::UpdateActiveRoutes() {\n  bool changed = false;\n  for (const auto& entry : routes_) {\n    Route& route = *entry.value;\n    changed ="
+}

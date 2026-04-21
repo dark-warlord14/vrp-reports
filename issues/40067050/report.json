@@ -1,0 +1,94 @@
+{
+  "id": "40067050",
+  "url": "https://issues.chromium.org/issues/40067050",
+  "title": "Security: Type Confusion in V8 WebAssembly, leading to RCE",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2023-07-07T15:46:44+00:00",
+  "modified_date": "2024-02-29T20:21:48+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53259332,
+      "filename": "exp.js",
+      "mime_type": "text/plain",
+      "size_bytes": 76501,
+      "url": "https://issues.chromium.org/action/issues/40067050/attachments/53259332?download=true",
+      "local_path": "attachments/exp.js"
+    },
+    {
+      "id": 53259333,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 412,
+      "url": "https://issues.chromium.org/action/issues/40067050/attachments/53259333?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53259334,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 926,
+      "url": "https://issues.chromium.org/action/issues/40067050/attachments/53259334?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53259335,
+      "filename": "fix.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1048,
+      "url": "https://issues.chromium.org/action/issues/40067050/attachments/53259335?download=true",
+      "local_path": "attachments/fix.patch"
+    },
+    {
+      "id": 53259346,
+      "filename": "fix.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1048,
+      "url": "https://issues.chromium.org/action/issues/40067050/attachments/53259346?download=true",
+      "local_path": "attachments/fix.patch"
+    },
+    {
+      "id": 53259347,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 926,
+      "url": "https://issues.chromium.org/action/issues/40067050/attachments/53259347?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53259348,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 412,
+      "url": "https://issues.chromium.org/action/issues/40067050/attachments/53259348?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53259349,
+      "filename": "exp.js",
+      "mime_type": "text/plain",
+      "size_bytes": 76501,
+      "url": "https://issues.chromium.org/action/issues/40067050/attachments/53259349?download=true",
+      "local_path": "attachments/exp.js"
+    }
+  ],
+  "update_count": 75,
+  "description_snippet": "VULNERABILITY DETAILS\n## BISECT1\nAfter bisect, it was determined that following commit caused this problem.\n\n- Commit Info\n    - Version: 85705\n    - link: https://crrev.com/455d38ff8df7303474e8ead05cad659aac0a1bbc \n- Commit Message\n\n```\ncommit 455d38ff8df7303474e8ead05cad659aac0a1bbc\nAuthor: Manos"
+}

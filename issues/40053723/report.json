@@ -1,0 +1,33 @@
+{
+  "id": "40053723",
+  "url": "https://issues.chromium.org/issues/40053723",
+  "title": "uaf in VideoFrame::CreateImageBitmap",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Media>WebCodecs",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cd...@gmail.com",
+  "assignee": "sa...@chromium.org",
+  "created_date": "2020-10-27T02:40:37+00:00",
+  "modified_date": "2024-01-09T02:23:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52965328,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 369,
+      "url": "https://issues.chromium.org/action/issues/40053723/attachments/52965328?download=true",
+      "local_path": "attachments/crash.html"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nChromium 88.0.4305.0(asan build)\r\n1.python3.6m -m http.server 8000\r\n2./chrome --enable-experimental-web-platform-features http://localhost"
+}

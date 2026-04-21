@@ -1,0 +1,77 @@
+{
+  "id": "40050720",
+  "url": "https://issues.chromium.org/issues/40050720",
+  "title": "Permission Service Use After Free",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Permissions>Model",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "if...@gmail.com",
+  "assignee": "en...@chromium.org",
+  "created_date": "2019-11-18T10:00:15+00:00",
+  "modified_date": "2021-07-23T17:32:33+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53406743,
+      "filename": "permission.html",
+      "mime_type": "text/plain",
+      "size_bytes": 231,
+      "url": "https://issues.chromium.org/action/issues/40050720/attachments/53406743?download=true",
+      "local_path": "attachments/permission.html"
+    },
+    {
+      "id": 53406744,
+      "filename": "permission.js",
+      "mime_type": "text/plain",
+      "size_bytes": 938,
+      "url": "https://issues.chromium.org/action/issues/40050720/attachments/53406744?download=true",
+      "local_path": "attachments/permission.js"
+    },
+    {
+      "id": 53406745,
+      "filename": "copy_binding.py",
+      "mime_type": "text/plain",
+      "size_bytes": 530,
+      "url": "https://issues.chromium.org/action/issues/40050720/attachments/53406745?download=true",
+      "local_path": "attachments/copy_binding.py"
+    },
+    {
+      "id": 53406746,
+      "filename": "asan_log_permission.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 20603,
+      "url": "https://issues.chromium.org/action/issues/40050720/attachments/53406746?download=true",
+      "local_path": "attachments/asan_log_permission.txt"
+    },
+    {
+      "id": 53406747,
+      "filename": "permission_chrome.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 619,
+      "url": "https://issues.chromium.org/action/issues/40050720/attachments/53406747?download=true",
+      "local_path": "attachments/permission_chrome.diff"
+    },
+    {
+      "id": 53406748,
+      "filename": "permissions_content_browser.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 698,
+      "url": "https://issues.chromium.org/action/issues/40050720/attachments/53406748?download=true",
+      "local_path": "attachments/permissions_content_browser.diff"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nFirst of all, apply two patches in the attchments, and then:\r\n\r\n1. python copy_binding.py /path/to/out/gen/\r\n2. cp /path/to/permission.html /path/to"
+}

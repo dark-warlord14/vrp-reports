@@ -1,0 +1,62 @@
+{
+  "id": "41483297",
+  "url": "https://issues.chromium.org/issues/41483297",
+  "title": "Security: Type confusion in Harmony Set methods (Leads to RCE)",
+  "status": "Fixed",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript, Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "h0...@gmail.com",
+  "assignee": "re...@chromium.org",
+  "created_date": "2023-12-12T01:29:07+00:00",
+  "modified_date": "2024-03-21T15:41:13+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53059229,
+      "filename": "repro.js",
+      "mime_type": "text/plain",
+      "size_bytes": 132,
+      "url": "https://issues.chromium.org/action/issues/41483297/attachments/53059229?download=true",
+      "local_path": "attachments/repro.js"
+    },
+    {
+      "id": 53059230,
+      "filename": "ex.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3148,
+      "url": "https://issues.chromium.org/action/issues/41483297/attachments/53059230?download=true",
+      "local_path": "attachments/ex.js"
+    },
+    {
+      "id": 53059231,
+      "filename": "ex.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4001,
+      "url": "https://issues.chromium.org/action/issues/41483297/attachments/53059231?download=true",
+      "local_path": "attachments/ex.html"
+    },
+    {
+      "id": 53059274,
+      "filename": "1510709_asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 8786,
+      "url": "https://issues.chromium.org/action/issues/41483297/attachments/53059274?download=true",
+      "local_path": "attachments/1510709_asan.txt"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**This template is ONLY for reporting security bugs. If you are reporting a**   \n**Download Protection Bypass bug, please use the \"Security - Download**   \n**Protection\" template. For all other reports, please use a different**   \n**template.**   \n  \n**Please READ THIS FAQ before filing a bug: https"
+}

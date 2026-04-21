@@ -1,0 +1,94 @@
+{
+  "id": "379516109",
+  "url": "https://issues.chromium.org/issues/379516109",
+  "title": "AddressSanitizer:heap-use-after-free on  LanguageDetectionModel::NotifyModelLoaded\n",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Language>Translate",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "130.0.0.0",
+  "cve_ids": [],
+  "reporter": "li...@gmail.com",
+  "assignee": "fe...@chromium.org",
+  "created_date": "2024-11-18T01:42:42+00:00",
+  "modified_date": "2025-06-03T19:02:34+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 50000.0,
+  "bounty_rationale": "high quality report demonstrating controlled write in a sandboxed process / renderer",
+  "attachments": [
+    {
+      "id": 60878156,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 39154,
+      "url": "https://issues.chromium.org/action/issues/379516109/attachments/60878156?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 60878157,
+      "filename": "fix.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 869,
+      "url": "https://issues.chromium.org/action/issues/379516109/attachments/60878157?download=true",
+      "local_path": "attachments/fix.diff"
+    },
+    {
+      "id": 60878158,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 673,
+      "url": "https://issues.chromium.org/action/issues/379516109/attachments/60878158?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 60878159,
+      "filename": "uaf15.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 2189,
+      "url": "https://issues.chromium.org/action/issues/379516109/attachments/60878159?download=true",
+      "local_path": "attachments/uaf15.patch"
+    },
+    {
+      "id": 60946112,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 92942,
+      "url": "https://issues.chromium.org/action/issues/379516109/attachments/60946112?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 61142454,
+      "filename": "demonstration.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 17778252,
+      "url": "https://issues.chromium.org/action/issues/379516109/attachments/61142454?download=true",
+      "local_path": "attachments/demonstration.mov"
+    },
+    {
+      "id": 61142455,
+      "filename": "exploit_demonstration.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 15140,
+      "url": "https://issues.chromium.org/action/issues/379516109/attachments/61142455?download=true",
+      "local_path": "attachments/exploit_demonstration.md"
+    },
+    {
+      "id": 61149461,
+      "filename": "stable_poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1316,
+      "url": "https://issues.chromium.org/action/issues/379516109/attachments/61149461?download=true",
+      "local_path": "attachments/stable_poc.html"
+    }
+  ],
+  "update_count": 112,
+  "description_snippet": "# Steps to reproduce the problem\nrepro: \n\n0. launch chrome with --enable-features=LanguageDetectionAPI\n\n1. apply patch.diff which simplify trigger \n\n2. run poc.html.\n\n# Problem Description\n0. In the function `LanguageDetectionModel:: NotifyModelLoaded`, there is an iterator operation. When AILanguag"
+}

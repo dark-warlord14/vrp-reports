@@ -1,0 +1,28 @@
+{
+  "id": "441917796",
+  "url": "https://issues.chromium.org/issues/441917796",
+  "title": "WebCodecs VideoFrame constructor crashes browser when non-even width and height are used",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Media>WebCodecs",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": "138.0.7204.100",
+  "cve_ids": [
+    "CVE-2025-11211"
+  ],
+  "reporter": "ko...@gmail.com",
+  "assignee": "da...@chromium.org",
+  "created_date": "2025-08-29T12:33:41+00:00",
+  "modified_date": "2025-12-10T12:46:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": "baseline user information disclosure (data READ) with a bisect bonus",
+  "attachments": [],
+  "update_count": 63,
+  "description_snippet": "# Steps to reproduce the problem\nConstructing a VideoFrame from array buffer source with non-even width and height crashes the browser. If only one of width and height is non-even it works. Happens only on non-gpu accelerated ARM linux, e.g. AWS Graviton.\n\nThis code:\n\nconst width = 1139;\nconst heigh"
+}

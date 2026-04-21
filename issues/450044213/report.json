@@ -1,0 +1,65 @@
+{
+  "id": "450044213",
+  "url": "https://issues.chromium.org/issues/450044213",
+  "title": "BluetoothAdapterWin UAF Issue",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "va...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2025-10-08T02:58:02+00:00",
+  "modified_date": "2026-02-10T12:56:00+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": "a moderately mitigated (due to pre-requisites) memory corruption in a non-sandboxed process",
+  "attachments": [
+    {
+      "id": 69946676,
+      "filename": "gwp-asan-crash.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 9866,
+      "url": "https://issues.chromium.org/action/issues/450044213/attachments/69946676?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70506985,
+      "filename": "bt_classic_min_extension.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 2532,
+      "url": "https://issues.chromium.org/action/issues/450044213/attachments/70506985?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70495490,
+      "filename": "Snipaste_2025-10-29_19-07-44.png",
+      "mime_type": "image/png",
+      "size_bytes": 109637,
+      "url": "https://issues.chromium.org/action/issues/450044213/attachments/70495490?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70492402,
+      "filename": "Snipaste_2025-10-29_19-08-10.png",
+      "mime_type": "image/png",
+      "size_bytes": 1781916,
+      "url": "https://issues.chromium.org/action/issues/450044213/attachments/70492402?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70495491,
+      "filename": "20251029-190452.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 11566640,
+      "url": "https://issues.chromium.org/action/issues/450044213/attachments/70495491?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "BluetoothAdapterWin is created through the BluetoothAdapterFactory::GetClassicAdapter interface. During creation, an object reference is retained within BluetoothAdapterFactory. After initialization is completed, init_callback_ is invoked. In this callback, the reference within BluetoothAdapterFacto"
+}

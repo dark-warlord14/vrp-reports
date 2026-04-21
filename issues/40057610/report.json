@@ -1,0 +1,37 @@
+{
+  "id": "40057610",
+  "url": "https://issues.chromium.org/issues/40057610",
+  "title": "Security: RenderFrameHostImpl logic error leading browser UAF",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Portals, Internals>Sandbox>SiteIsolation, Platform>Apps>BrowserTag",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "bt...@gmail.com",
+  "assignee": "dc...@chromium.org",
+  "created_date": "2021-10-14T21:46:18+00:00",
+  "modified_date": "2025-02-13T00:32:00+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53072613,
+      "filename": "18_embedder_rfhi_intercept.tar.gz",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3645261,
+      "url": "https://issues.chromium.org/action/issues/40057610/attachments/53072613?download=true",
+      "local_path": "attachments/18_embedder_rfhi_intercept.tar.gz"
+    }
+  ],
+  "update_count": 79,
+  "description_snippet": "This bug is split off from https://crbug.com/chromium/1260109 to track the RenderFrameHostImpl bug portion of that report. Details below are copied from that bug. Note that this may be similar to https://crbug.com/chromium/1260007.  \n  \n--------------------  \n  \n= SBX: Logic error in RFHI leads to U"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "40062890",
+  "url": "https://issues.chromium.org/issues/40062890",
+  "title": "type mismatch with turboshaft,1 vs NaN",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Turbofan",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "5n...@gmail.com",
+  "assignee": "ni...@chromium.org",
+  "created_date": "2023-02-03T01:03:28+00:00",
+  "modified_date": "2023-05-17T17:33:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52978510,
+      "filename": "11.js",
+      "mime_type": "text/plain",
+      "size_bytes": 524,
+      "url": "https://issues.chromium.org/action/issues/40062890/attachments/52978510?download=true",
+      "local_path": "attachments/11.js"
+    },
+    {
+      "id": 52978538,
+      "filename": "minimized.js",
+      "mime_type": "text/plain",
+      "size_bytes": 369,
+      "url": "https://issues.chromium.org/action/issues/40062890/attachments/52978538?download=true",
+      "local_path": "attachments/minimized.js"
+    }
+  ],
+  "update_count": 27,
+  "description_snippet": "**Steps to reproduce the problem:**   \nv8 version:head  \nbuild flag:  \ngn gen out/x64_release --args=\"target_cpu=\\\"x64\\\" symbol_level=2 is_debug=false is_component_build=false v8_enable_backtrace = true v8_enable_disassembler=true v8_enable_object_print=true\"  \n  \nrun arg:  \n--allow-natives-syntax -"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "40946348",
+  "url": "https://issues.chromium.org/issues/40946348",
+  "title": "UAF in blink::RTCEncodedAudioUnderlyingSource::OnFrameFromSource ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebRTC",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "gu...@chromium.org",
+  "created_date": "2023-11-28T11:14:38+00:00",
+  "modified_date": "2024-03-09T15:45:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53259095,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 5221,
+      "url": "https://issues.chromium.org/action/issues/40946348/attachments/53259095?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53259096,
+      "filename": "1.mp3",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2349,
+      "url": "https://issues.chromium.org/action/issues/40946348/attachments/53259096?download=true",
+      "local_path": "attachments/1.mp3"
+    },
+    {
+      "id": 53259097,
+      "filename": "dcheck.log",
+      "mime_type": "text/plain",
+      "size_bytes": 1683,
+      "url": "https://issues.chromium.org/action/issues/40946348/attachments/53259097?download=true",
+      "local_path": "attachments/dcheck.log"
+    },
+    {
+      "id": 53259098,
+      "filename": "uaf-asan2.log",
+      "mime_type": "text/plain",
+      "size_bytes": 48387,
+      "url": "https://issues.chromium.org/action/issues/40946348/attachments/53259098?download=true",
+      "local_path": "attachments/uaf-asan2.log"
+    },
+    {
+      "id": 53259099,
+      "filename": "uaf-asan1.log",
+      "mime_type": "text/plain",
+      "size_bytes": 47990,
+      "url": "https://issues.chromium.org/action/issues/40946348/attachments/53259099?download=true",
+      "local_path": "attachments/uaf-asan1.log"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "**Steps to reproduce the problem:**   \ntested os:ubuntu 22.04  \ntested chromium version:  \nChromium 121.0.6151.0  \nChromium 116.0.5805.0  \n  \nrepro steps:  \n1 ./chrome --autoplay-policy=no-user-gesture-required --no-sandbox --user-data-dir=/tmp/xx --js-flags=--expose-gc  http://localhost:8000/crash."
+}

@@ -1,0 +1,43 @@
+{
+  "id": "40060691",
+  "url": "https://issues.chromium.org/issues/40060691",
+  "title": "Security: PDFium OOB Write in OpenJPEG due to a missed patch",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2022-08-27T10:49:07+00:00",
+  "modified_date": "2022-12-06T18:33:12+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52948898,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 3059,
+      "url": "https://issues.chromium.org/action/issues/40060691/attachments/52948898?download=true",
+      "local_path": "attachments/poc.pdf"
+    },
+    {
+      "id": 52948929,
+      "filename": "0044-opj_t1_allocate_buffers.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 869,
+      "url": "https://issues.chromium.org/action/issues/40060691/attachments/52948929?download=true",
+      "local_path": "attachments/0044-opj_t1_allocate_buffers.patch"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n=====================  \n1. Components: Internals>Plugins>PDF  \n2. Description: The OpenJPEG code in PDFium missed a patch which addressed a heap buffer overflow vulnerability. The attached proof-of-concept file poc.pdf could trigger OOB write in pdfium_test.exe.  \n3. PDF"
+}

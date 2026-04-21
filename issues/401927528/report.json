@@ -1,0 +1,59 @@
+{
+  "id": "401927528",
+  "url": "https://issues.chromium.org/issues/401927528",
+  "title": "DevTools Recorder Can Flip Internal Flags Without User Awareness",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>DevTools>Recorder",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "bi...@gmail.com",
+  "assignee": "al...@google.com",
+  "created_date": "2025-03-10T10:20:58+00:00",
+  "modified_date": "2025-07-03T12:40:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact exploitation mitigation bypass",
+  "attachments": [
+    {
+      "id": 63612056,
+      "filename": "devtools-recorder-misuse-demo.html",
+      "mime_type": "text/html",
+      "size_bytes": 4756,
+      "url": "https://issues.chromium.org/action/issues/401927528/attachments/63612056?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63612057,
+      "filename": "devtools recorder misuse demo.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 12094888,
+      "url": "https://issues.chromium.org/action/issues/401927528/attachments/63612057?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63631309,
+      "filename": "download.json",
+      "mime_type": "application/json",
+      "size_bytes": 1382,
+      "url": "https://issues.chromium.org/action/issues/401927528/attachments/63631309?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63612061,
+      "filename": "devtools_recorder_toggle-extensions-on-chrome-urls_flag.json",
+      "mime_type": "application/json",
+      "size_bytes": 3024,
+      "url": "https://issues.chromium.org/action/issues/401927528/attachments/63612061?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

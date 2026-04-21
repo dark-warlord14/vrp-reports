@@ -1,0 +1,74 @@
+{
+  "id": "40067111",
+  "url": "https://issues.chromium.org/issues/40067111",
+  "title": "memory corruption in perfetto",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Speed>Tracing",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "kh...@google.com",
+  "created_date": "2023-07-09T16:36:39+00:00",
+  "modified_date": "2025-04-19T12:38:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "reward for moderately mitigated memory corruption in a sandboxed process / renderer",
+  "attachments": [
+    {
+      "id": 53127933,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 161,
+      "url": "https://issues.chromium.org/action/issues/40067111/attachments/53127933?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53127934,
+      "filename": "launcher.sh",
+      "mime_type": "text/plain",
+      "size_bytes": 1444,
+      "url": "https://issues.chromium.org/action/issues/40067111/attachments/53127934?download=true",
+      "local_path": "attachments/launcher.sh"
+    },
+    {
+      "id": 53127935,
+      "filename": "test.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1011,
+      "url": "https://issues.chromium.org/action/issues/40067111/attachments/53127935?download=true",
+      "local_path": "attachments/test.js"
+    },
+    {
+      "id": 53127936,
+      "filename": "asan1-use-after-poison.log",
+      "mime_type": "text/plain",
+      "size_bytes": 10795,
+      "url": "https://issues.chromium.org/action/issues/40067111/attachments/53127936?download=true",
+      "local_path": "attachments/asan1-use-after-poison.log"
+    },
+    {
+      "id": 53127937,
+      "filename": "asan2-unknown-crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 10673,
+      "url": "https://issues.chromium.org/action/issues/40067111/attachments/53127937?download=true",
+      "local_path": "attachments/asan2-unknown-crash.log"
+    },
+    {
+      "id": 53127994,
+      "filename": "poc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 219,
+      "url": "https://issues.chromium.org/action/issues/40067111/attachments/53127994?download=true",
+      "local_path": "attachments/poc2.html"
+    }
+  ],
+  "update_count": 69,
+  "description_snippet": "**Steps to reproduce the problem:**   \ntested os:  \nubuntu 22.04  \ntested chrome version:  \nChromium 113.0.5624.0 ~ Chromium 117.0.5878.0（Due to the sudden decrease in internet speed today, I am unable to confirm earlier versions.）  \nrepro steps:  \n   ./chrome --no-sandbox --no-zygote --trace-config"
+}

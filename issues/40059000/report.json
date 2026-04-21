@@ -1,0 +1,78 @@
+{
+  "id": "40059000",
+  "url": "https://issues.chromium.org/issues/40059000",
+  "title": "Heap-use-after-free in blink::BoxPainterBase::PaintFillLayer",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>Canvas, Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "fl...@chromium.org",
+  "created_date": "2022-03-07T14:56:27+00:00",
+  "modified_date": "2024-01-09T06:16:18+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53181853,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 141229,
+      "url": "https://issues.chromium.org/action/issues/40059000/attachments/53181853?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 53181854,
+      "filename": "asan1.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 29657,
+      "url": "https://issues.chromium.org/action/issues/40059000/attachments/53181854?download=true",
+      "local_path": "attachments/asan1.txt"
+    },
+    {
+      "id": 53181855,
+      "filename": "asan2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 19923,
+      "url": "https://issues.chromium.org/action/issues/40059000/attachments/53181855?download=true",
+      "local_path": "attachments/asan2.txt"
+    },
+    {
+      "id": 53181856,
+      "filename": "asan3.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 24904,
+      "url": "https://issues.chromium.org/action/issues/40059000/attachments/53181856?download=true",
+      "local_path": "attachments/asan3.txt"
+    },
+    {
+      "id": 53181913,
+      "filename": "repro.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 146828,
+      "url": "https://issues.chromium.org/action/issues/40059000/attachments/53181913?download=true",
+      "local_path": "attachments/repro.zip"
+    },
+    {
+      "id": 53182222,
+      "filename": "clusterfuzz-testcase-5735980887900160.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 152197,
+      "url": "https://issues.chromium.org/action/issues/40059000/attachments/53182222?download=true",
+      "local_path": "attachments/clusterfuzz-testcase-5735980887900160.zip"
+    }
+  ],
+  "update_count": 112,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.0 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n#TestOn\r\nWindows NT 10.0; Win64; Ubuntu 20.04 x64\r\ngs://chromium-browser-asan/linux-release/asan-linux-release-978054.zip\r\ngs://chromium-br"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "40065154",
+  "url": "https://issues.chromium.org/issues/40065154",
+  "title": "Security: UAF in AutofillSnackbarController",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "UI>Browser>Autofill>Payments",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jt...@gmail.com",
+  "assignee": "si...@google.com",
+  "created_date": "2023-06-01T13:12:25+00:00",
+  "modified_date": "2024-01-09T11:25:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53050302,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 4698,
+      "url": "https://issues.chromium.org/action/issues/40065154/attachments/53050302?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 53050303,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 791,
+      "url": "https://issues.chromium.org/action/issues/40065154/attachments/53050303?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53050304,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 12421,
+      "url": "https://issues.chromium.org/action/issues/40065154/attachments/53050304?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIf user accepts a virtual credit card suggestion for autofill, ChromeAutofillClient::OnVirtualCardDataAvailable is called after the credit card info was fetched. On android platform, it then calls AutofillSnackbarControllerImpl::Show to show the virtual card snackbar [1]"
+}

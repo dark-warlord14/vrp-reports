@@ -1,0 +1,46 @@
+{
+  "id": "40052658",
+  "url": "https://issues.chromium.org/issues/40052658",
+  "title": "Security: allow-top-navigation-by-user-activation bypasses via message event listeners on iOS",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Mobile>iOSWeb>Security",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2019-19788",
+    "CVE-2019-5840",
+    "CVE-2019-8771",
+    "CVE-2021-1801"
+  ],
+  "reporter": "el...@confiant.com",
+  "assignee": "ga...@google.com",
+  "created_date": "2020-06-24T02:37:35+00:00",
+  "modified_date": "2024-08-21T12:00:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53243580,
+      "filename": "payload.html",
+      "mime_type": "text/plain",
+      "size_bytes": 427,
+      "url": "https://issues.chromium.org/action/issues/40052658/attachments/53243580?download=true",
+      "local_path": "attachments/payload.html"
+    },
+    {
+      "id": 53243581,
+      "filename": "origin1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 469,
+      "url": "https://issues.chromium.org/action/issues/40052658/attachments/53243581?download=true",
+      "local_path": "attachments/origin1.html"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "Hi Team,\r\n\r\nWe have a couple of new examples of iframe sandbox bypasses that are actively being exploited by malvertisers. For context, we have reported similar findings in the past:\r\n\r\nCVE-2019-5840\r\nCVE-2019-8771\r\nCVE-2019-19788\r\n\r\nRecently, we've observed a malvertising attack where the client-si"
+}

@@ -1,0 +1,143 @@
+{
+  "id": "463155954",
+  "url": "https://issues.chromium.org/issues/463155954",
+  "title": "Extensions can hijack Gemini in the browser webview process to perform PE attacks by abusing DNR permissions, allowing stealing prompts, PII leakage, unrestricted access to camera-microphone and more",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "we...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2025-11-23T21:47:50+00:00",
+  "modified_date": "2026-03-04T00:09:17+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": "Web platform privilege escalation, high quality and high impact",
+  "attachments": [
+    {
+      "id": 71235720,
+      "filename": "README.md",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 7862,
+      "url": "https://issues.chromium.org/action/issues/463155954/attachments/71235720?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71235721,
+      "filename": "rules_pe.json",
+      "mime_type": "application/json",
+      "size_bytes": 4239,
+      "url": "https://issues.chromium.org/action/issues/463155954/attachments/71235721?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71235722,
+      "filename": "rules_intercept.json",
+      "mime_type": "application/json",
+      "size_bytes": 3103,
+      "url": "https://issues.chromium.org/action/issues/463155954/attachments/71235722?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71235723,
+      "filename": "rules.json",
+      "mime_type": "application/json",
+      "size_bytes": 2547,
+      "url": "https://issues.chromium.org/action/issues/463155954/attachments/71235723?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71235724,
+      "filename": "rules_phish.json",
+      "mime_type": "application/json",
+      "size_bytes": 4527,
+      "url": "https://issues.chromium.org/action/issues/463155954/attachments/71235724?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71235725,
+      "filename": "rules_leak_pii.json",
+      "mime_type": "application/json",
+      "size_bytes": 3203,
+      "url": "https://issues.chromium.org/action/issues/463155954/attachments/71235725?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71235726,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 1012,
+      "url": "https://issues.chromium.org/action/issues/463155954/attachments/71235726?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71258559,
+      "filename": "gemini_demo2.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 123646622,
+      "url": "https://issues.chromium.org/action/issues/463155954/attachments/71258559?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71263649,
+      "filename": "bnbndddd3.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 10498,
+      "url": "https://issues.chromium.org/action/issues/463155954/attachments/71263649?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71263147,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 11757,
+      "url": "https://issues.chromium.org/action/issues/463155954/attachments/71263147?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71258560,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 1120,
+      "url": "https://issues.chromium.org/action/issues/463155954/attachments/71258560?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71263650,
+      "filename": "rules_local_file_read.json",
+      "mime_type": "application/json",
+      "size_bytes": 11473,
+      "url": "https://issues.chromium.org/action/issues/463155954/attachments/71263650?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71258562,
+      "filename": "README.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 9156,
+      "url": "https://issues.chromium.org/action/issues/463155954/attachments/71258562?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71263652,
+      "filename": "gemini_demo.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 225380174,
+      "url": "https://issues.chromium.org/action/issues/463155954/attachments/71263652?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 153,
+  "description_snippet": "---\n\n### Report description\n\n\nExtensions can hijack Gemini in the browser webview process to perform PE attacks by abusing DNR permissions, allowing stealing prompts, PII leakage, unrestricted access to camera-microphone and more\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulner"
+}

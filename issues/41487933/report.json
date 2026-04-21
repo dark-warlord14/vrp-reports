@@ -1,0 +1,102 @@
+{
+  "id": "41487933",
+  "url": "https://issues.chromium.org/issues/41487933",
+  "title": "Security: about:srcdoc session history entries leak document state cross-origin",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>History, Internals>Sandbox>SiteIsolation, UI>Browser>Navigation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "cr...@chromium.org",
+  "created_date": "2024-01-03T20:49:14+00:00",
+  "modified_date": "2025-12-28T17:25:48+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53225481,
+      "filename": "exp1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 729,
+      "url": "https://issues.chromium.org/action/issues/41487933/attachments/53225481?download=true",
+      "local_path": "attachments/exp1.html"
+    },
+    {
+      "id": 53225482,
+      "filename": "exp2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 671,
+      "url": "https://issues.chromium.org/action/issues/41487933/attachments/53225482?download=true",
+      "local_path": "attachments/exp2.html"
+    },
+    {
+      "id": 53225483,
+      "filename": "exp3.html",
+      "mime_type": "text/plain",
+      "size_bytes": 401,
+      "url": "https://issues.chromium.org/action/issues/41487933/attachments/53225483?download=true",
+      "local_path": "attachments/exp3.html"
+    },
+    {
+      "id": 53225484,
+      "filename": "victim1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 147,
+      "url": "https://issues.chromium.org/action/issues/41487933/attachments/53225484?download=true",
+      "local_path": "attachments/victim1.html"
+    },
+    {
+      "id": 53225485,
+      "filename": "victim2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 315,
+      "url": "https://issues.chromium.org/action/issues/41487933/attachments/53225485?download=true",
+      "local_path": "attachments/victim2.html"
+    },
+    {
+      "id": 53225486,
+      "filename": "victim3.html",
+      "mime_type": "text/plain",
+      "size_bytes": 136,
+      "url": "https://issues.chromium.org/action/issues/41487933/attachments/53225486?download=true",
+      "local_path": "attachments/victim3.html"
+    },
+    {
+      "id": 53225487,
+      "filename": "redirect.html",
+      "mime_type": "text/plain",
+      "size_bytes": 72,
+      "url": "https://issues.chromium.org/action/issues/41487933/attachments/53225487?download=true",
+      "local_path": "attachments/redirect.html"
+    },
+    {
+      "id": 53225488,
+      "filename": "x.js",
+      "mime_type": "text/plain",
+      "size_bytes": 48,
+      "url": "https://issues.chromium.org/action/issues/41487933/attachments/53225488?download=true",
+      "local_path": "attachments/x.js"
+    },
+    {
+      "id": 53225508,
+      "filename": "exp2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 725,
+      "url": "https://issues.chromium.org/action/issues/41487933/attachments/53225508?download=true",
+      "local_path": "attachments/exp2.html"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt's possible to have two cross-origin parents with insufficient framing protections use the same session history entry when navigating history by using location.replace(). By creating a history entry in a subframe, then replacing the parent frame's active history entry"
+}

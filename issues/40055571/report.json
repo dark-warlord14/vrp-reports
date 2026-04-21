@@ -1,0 +1,37 @@
+{
+  "id": "40055571",
+  "url": "https://issues.chromium.org/issues/40055571",
+  "title": "Security: spook.js attacks on site vs origin isolation; extensions",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Sandbox>SiteIsolation, Platform>Extensions",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ge...@umich.edu",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2021-04-16T18:45:16+00:00",
+  "modified_date": "2024-08-11T21:23:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53370992,
+      "filename": "strictsiteiso-vendors-20210416.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 3107123,
+      "url": "https://issues.chromium.org/action/issues/40055571/attachments/53370992?download=true",
+      "local_path": "attachments/strictsiteiso-vendors-20210416.pdf"
+    }
+  ],
+  "update_count": 68,
+  "description_snippet": "Attached is a pre-print paper we've been sent.\r\n\r\nFrom briefly scanning, it says:\r\n\r\n* Lumping together multiple origins into a single renderer process is suboptimal, and makes them vulnerable to spectre.js type attacks. I don't think this is news.\r\n* We also lump together extensions into a single r"
+}

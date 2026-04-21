@@ -1,0 +1,65 @@
+{
+  "id": "329476341",
+  "url": "https://issues.chromium.org/issues/329476341",
+  "title": "Text Selection menu able to overlap URL bar  ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser, UI>Browser>Mobile>ContextMenu, UI>Browser>Selection",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": "124.0.0.0",
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ji...@google.com",
+  "created_date": "2024-03-14T08:23:08+00:00",
+  "modified_date": "2025-12-10T15:35:15+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "report of lower impact security UI issue",
+  "attachments": [
+    {
+      "id": 54634978,
+      "filename": "repro.html",
+      "mime_type": "text/html",
+      "size_bytes": 666,
+      "url": "https://issues.chromium.org/action/issues/329476341/attachments/54634978?download=true",
+      "local_path": "attachments/repro.html"
+    },
+    {
+      "id": 54634979,
+      "filename": "spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 73855,
+      "url": "https://issues.chromium.org/action/issues/329476341/attachments/54634979?download=true",
+      "local_path": "attachments/spoof.png"
+    },
+    {
+      "id": 54634980,
+      "filename": "screen.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 228031,
+      "url": "https://issues.chromium.org/action/issues/329476341/attachments/54634980?download=true",
+      "local_path": "attachments/screen.mp4"
+    },
+    {
+      "id": 60563595,
+      "filename": "6423.png",
+      "mime_type": "image/png",
+      "size_bytes": 421291,
+      "url": "https://issues.chromium.org/action/issues/329476341/attachments/60563595?download=true",
+      "local_path": "attachments/6423.png"
+    },
+    {
+      "id": 61994821,
+      "filename": "20250106_130420275.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 666865,
+      "url": "https://issues.chromium.org/action/issues/329476341/attachments/61994821?download=true",
+      "local_path": "attachments/20250106_130420275.jpg"
+    }
+  ],
+  "update_count": 116,
+  "description_snippet": "# Steps to reproduce the problem\n1. Open the testcase.html or navigate to https://lbstyle.github.io/repro.html\n2. tap anywhere \n3. \n\n# Problem Description\nWhen the user taps somewhere on the page, the text selection menu can appear over the URL bar, in this case, the user can be manipulated.\n\n# Summ"
+}

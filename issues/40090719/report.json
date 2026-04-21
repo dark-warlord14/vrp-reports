@@ -1,0 +1,73 @@
+{
+  "id": "40090719",
+  "url": "https://issues.chromium.org/issues/40090719",
+  "title": "Security: SMB credentials leak through PDFium",
+  "status": "Accepted",
+  "severity": "S1-High",
+  "priority": "P3",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ta...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2018-03-07T19:12:07+00:00",
+  "modified_date": "2026-03-11T12:13:56+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact user information disclosure",
+  "attachments": [
+    {
+      "id": 53320109,
+      "filename": "poc.rb",
+      "mime_type": "text/plain",
+      "size_bytes": 257,
+      "url": "https://issues.chromium.org/action/issues/40090719/attachments/53320109?download=true",
+      "local_path": "attachments/poc.rb"
+    },
+    {
+      "id": 53320110,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 592,
+      "url": "https://issues.chromium.org/action/issues/40090719/attachments/53320110?download=true",
+      "local_path": "attachments/poc.pdf"
+    },
+    {
+      "id": 53320111,
+      "filename": "_blank.htm",
+      "mime_type": "text/plain",
+      "size_bytes": 81,
+      "url": "https://issues.chromium.org/action/issues/40090719/attachments/53320111?download=true",
+      "local_path": "attachments/_blank.htm"
+    },
+    {
+      "id": 53320112,
+      "filename": "force_download_poc.py",
+      "mime_type": "text/plain",
+      "size_bytes": 1263,
+      "url": "https://issues.chromium.org/action/issues/40090719/attachments/53320112?download=true",
+      "local_path": "attachments/force_download_poc.py"
+    },
+    {
+      "id": 53320113,
+      "filename": "fsdk_actionhandler_patched.cpp",
+      "mime_type": "text/plain",
+      "size_bytes": 17535,
+      "url": "https://issues.chromium.org/action/issues/40090719/attachments/53320113?download=true",
+      "local_path": "attachments/fsdk_actionhandler_patched.cpp"
+    },
+    {
+      "id": 53320134,
+      "filename": "poc_2.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 776974,
+      "url": "https://issues.chromium.org/action/issues/40090719/attachments/53320134?download=true",
+      "local_path": "attachments/poc_2.mp4"
+    }
+  ],
+  "update_count": 133,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe Chrome PDF processor is prone to SMB credentials leak when the PDF have a redirection to a shared resource in a Windows environment.   \n  \n**VERSION**   \nChrome Version: Version 65.0.3325.146 (Official Build) (64-bit)  \nOperating System:   \nOS Name:"
+}

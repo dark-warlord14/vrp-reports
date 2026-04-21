@@ -1,0 +1,118 @@
+{
+  "id": "40948927",
+  "url": "https://issues.chromium.org/issues/40948927",
+  "title": "Security: Debug check failed: idx.offset() / sizeof(OperationStorageSlot) < size(), leading to segment fault.",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ml...@chromium.org",
+  "created_date": "2023-12-05T02:35:34+00:00",
+  "modified_date": "2024-03-14T15:42:27+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53188334,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 4886,
+      "url": "https://issues.chromium.org/action/issues/40948927/attachments/53188334?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53188336,
+      "filename": "poc4.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3493,
+      "url": "https://issues.chromium.org/action/issues/40948927/attachments/53188336?download=true",
+      "local_path": "attachments/poc4.js"
+    },
+    {
+      "id": 53188337,
+      "filename": "poc3.js",
+      "mime_type": "text/plain",
+      "size_bytes": 17653,
+      "url": "https://issues.chromium.org/action/issues/40948927/attachments/53188337?download=true",
+      "local_path": "attachments/poc3.js"
+    },
+    {
+      "id": 53188338,
+      "filename": "poc2.js",
+      "mime_type": "text/plain",
+      "size_bytes": 4727,
+      "url": "https://issues.chromium.org/action/issues/40948927/attachments/53188338?download=true",
+      "local_path": "attachments/poc2.js"
+    },
+    {
+      "id": 53188339,
+      "filename": "poc1.js",
+      "mime_type": "text/plain",
+      "size_bytes": 20069,
+      "url": "https://issues.chromium.org/action/issues/40948927/attachments/53188339?download=true",
+      "local_path": "attachments/poc1.js"
+    },
+    {
+      "id": 53188386,
+      "filename": "poc2.js",
+      "mime_type": "text/plain",
+      "size_bytes": 4727,
+      "url": "https://issues.chromium.org/action/issues/40948927/attachments/53188386?download=true",
+      "local_path": "attachments/poc2.js"
+    },
+    {
+      "id": 53188387,
+      "filename": "poc3.js",
+      "mime_type": "text/plain",
+      "size_bytes": 17653,
+      "url": "https://issues.chromium.org/action/issues/40948927/attachments/53188387?download=true",
+      "local_path": "attachments/poc3.js"
+    },
+    {
+      "id": 53188394,
+      "filename": "poc4.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3493,
+      "url": "https://issues.chromium.org/action/issues/40948927/attachments/53188394?download=true",
+      "local_path": "attachments/poc4.js"
+    },
+    {
+      "id": 53188452,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 12259,
+      "url": "https://issues.chromium.org/action/issues/40948927/attachments/53188452?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53188453,
+      "filename": "oob_poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3373,
+      "url": "https://issues.chromium.org/action/issues/40948927/attachments/53188453?download=true",
+      "local_path": "attachments/oob_poc.js"
+    },
+    {
+      "id": 53188454,
+      "filename": "mini_poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3319,
+      "url": "https://issues.chromium.org/action/issues/40948927/attachments/53188454?download=true",
+      "local_path": "attachments/mini_poc.js"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "VULNERABILITY DETAILS\n## INTRODUCE\nAfter bisect, it was determined that following commit caused this problem.\n\n- Commit Info\n    - Version: 90457\n    - link: https://crrev.com/63405a66d43737599afec36381a9b0bb13dbb484 \n- Commit Message\n\n```\ncommit 63405a66d43737599afec36381a9b0bb13dbb484\nAuthor: Mano"
+}

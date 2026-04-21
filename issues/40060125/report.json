@@ -1,0 +1,49 @@
+{
+  "id": "40060125",
+  "url": "https://issues.chromium.org/issues/40060125",
+  "title": "Security: Heap-use-after-free in SidePanelCoordinator::PopulateSidePanel",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>TopChrome>SidePanel",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "co...@chromium.org",
+  "created_date": "2022-07-01T04:24:10+00:00",
+  "modified_date": "2022-11-21T18:23:00+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52996487,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18253,
+      "url": "https://issues.chromium.org/action/issues/40060125/attachments/52996487?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 52996488,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 76,
+      "url": "https://issues.chromium.org/action/issues/40060125/attachments/52996488?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52996489,
+      "filename": "poc.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 650931,
+      "url": "https://issues.chromium.org/action/issues/40060125/attachments/52996489?download=true",
+      "local_path": "attachments/poc.webm"
+    }
+  ],
+  "update_count": 25,
+  "description_snippet": "**Steps to reproduce the problem:**   \nrepro:  \n1. download asan-linux-release-1019940.zip and unzip  \n2. run `./chrome --enable-features=SidePanelJourneys,UnifiedSidePanel --user-data-dir=/tmp/noexist http://127.0.0.1:8605/poc.html` and allow popup  \n3. open side panel, switch the combobox to `Jour"
+}

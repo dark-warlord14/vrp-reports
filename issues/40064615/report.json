@@ -1,0 +1,61 @@
+{
+  "id": "40064615",
+  "url": "https://issues.chromium.org/issues/40064615",
+  "title": "Security: UAF in webrtc::PeerConnection::ReportTransportStats()",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebRTC",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "ht...@chromium.org",
+  "created_date": "2023-05-17T11:22:13+00:00",
+  "modified_date": "2024-01-09T11:23:00+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53198469,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 585,
+      "url": "https://issues.chromium.org/action/issues/40064615/attachments/53198469?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53198470,
+      "filename": "RTCPeerConnection-perfect-negotiation-helper.js",
+      "mime_type": "text/plain",
+      "size_bytes": 6096,
+      "url": "https://issues.chromium.org/action/issues/40064615/attachments/53198470?download=true",
+      "local_path": "attachments/RTCPeerConnection-perfect-negotiation-helper.js"
+    },
+    {
+      "id": 53198471,
+      "filename": "testharness.js",
+      "mime_type": "text/plain",
+      "size_bytes": 184737,
+      "url": "https://issues.chromium.org/action/issues/40064615/attachments/53198471?download=true",
+      "local_path": "attachments/testharness.js"
+    },
+    {
+      "id": 53198472,
+      "filename": "asan_linux.log",
+      "mime_type": "text/plain",
+      "size_bytes": 66984,
+      "url": "https://issues.chromium.org/action/issues/40064615/attachments/53198472?download=true",
+      "local_path": "attachments/asan_linux.log"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUAF in webrtc::PeerConnection::ReportTransportStats()  \n  \n**VERSION**   \nChromium\t115.0.5775.0 (Developer Build) (64-bit)   \nRevision\tf4538fa9bfb5e86f0e82a0c5b42638b2e82fd527-refs/heads/main@{#1144563}  \nOS\tLinux  \n  \n  \n**REPRODUCTION CASE**   \n1. put the attachments i"
+}

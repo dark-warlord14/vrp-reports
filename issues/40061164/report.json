@@ -1,0 +1,126 @@
+{
+  "id": "40061164",
+  "url": "https://issues.chromium.org/issues/40061164",
+  "title": "Security: FencedFrame - Two way communication between embedder and frame",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>FencedFrames",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "so...@gmail.com",
+  "assignee": "lb...@google.com",
+  "created_date": "2022-09-27T19:15:00+00:00",
+  "modified_date": "2024-01-09T06:51:52+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53124868,
+      "filename": "output.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2392875,
+      "url": "https://issues.chromium.org/action/issues/40061164/attachments/53124868?download=true",
+      "local_path": "attachments/output.mp4"
+    },
+    {
+      "id": 53124869,
+      "filename": "embedder.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4893,
+      "url": "https://issues.chromium.org/action/issues/40061164/attachments/53124869?download=true",
+      "local_path": "attachments/embedder.html"
+    },
+    {
+      "id": 53124870,
+      "filename": "frame.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1943,
+      "url": "https://issues.chromium.org/action/issues/40061164/attachments/53124870?download=true",
+      "local_path": "attachments/frame.html"
+    },
+    {
+      "id": 53124871,
+      "filename": "focus.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1580,
+      "url": "https://issues.chromium.org/action/issues/40061164/attachments/53124871?download=true",
+      "local_path": "attachments/focus.html"
+    },
+    {
+      "id": 53124895,
+      "filename": "index2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 382,
+      "url": "https://issues.chromium.org/action/issues/40061164/attachments/53124895?download=true",
+      "local_path": "attachments/index2.html"
+    },
+    {
+      "id": 53124925,
+      "filename": "2022-09-30 16-11-00.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 656858,
+      "url": "https://issues.chromium.org/action/issues/40061164/attachments/53124925?download=true",
+      "local_path": "attachments/2022-09-30 16-11-00.mp4"
+    },
+    {
+      "id": 53124937,
+      "filename": "2022-09-30 17-28-23.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 733007,
+      "url": "https://issues.chromium.org/action/issues/40061164/attachments/53124937?download=true",
+      "local_path": "attachments/2022-09-30 17-28-23.mp4"
+    },
+    {
+      "id": 53124938,
+      "filename": "embedder.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4643,
+      "url": "https://issues.chromium.org/action/issues/40061164/attachments/53124938?download=true",
+      "local_path": "attachments/embedder.html"
+    },
+    {
+      "id": 53124939,
+      "filename": "frame.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2480,
+      "url": "https://issues.chromium.org/action/issues/40061164/attachments/53124939?download=true",
+      "local_path": "attachments/frame.html"
+    },
+    {
+      "id": 53124951,
+      "filename": "Screen Shot 2022-09-30 at 9.57.05 AM.png",
+      "mime_type": "image/png",
+      "size_bytes": 193926,
+      "url": "https://issues.chromium.org/action/issues/40061164/attachments/53124951?download=true",
+      "local_path": "attachments/Screen Shot 2022-09-30 at 9.57.05 AM.png"
+    },
+    {
+      "id": 53124959,
+      "filename": "embedder.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4210,
+      "url": "https://issues.chromium.org/action/issues/40061164/attachments/53124959?download=true",
+      "local_path": "attachments/embedder.html"
+    },
+    {
+      "id": 53124960,
+      "filename": "frame.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2825,
+      "url": "https://issues.chromium.org/action/issues/40061164/attachments/53124960?download=true",
+      "local_path": "attachments/frame.html"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nI don't know this is a real bug, or it's a normal behavior, or a known sidechannel attack for fencedframes. If it's not a bug, then sorry for the inconvenience.  \n  \nI found 3 cases with fencedframe:  \n  \n1. I can create two way communication channel between the fence"
+}

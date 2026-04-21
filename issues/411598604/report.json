@@ -1,0 +1,37 @@
+{
+  "id": "411598604",
+  "url": "https://issues.chromium.org/issues/411598604",
+  "title": "V8 Sandbox Bypass: UAF during LargeObjectSpace tear down",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "v8...@gmail.com",
+  "assignee": "di...@chromium.org",
+  "created_date": "2025-04-18T19:52:55+00:00",
+  "modified_date": "2025-08-14T12:41:18+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "report of V8 heap sandbox bypass demonstrating memory corruption outside of the V8 sandbox",
+  "attachments": [
+    {
+      "id": 65023642,
+      "filename": "bug.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 427,
+      "url": "https://issues.chromium.org/action/issues/411598604/attachments/65023642?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 189,
+  "description_snippet": "#### VERSION\nV8 commit: 9a9a2b2d796da6e8b4ae1bb294aff41294b882fc\n\n#### REPRODUCTION CASE\n\nBuild args:\n```\nis_debug=false\nis_asan=true\nv8_enable_sandbox=true\nv8_enable_memory_corruption_api=true\ndcheck_always_on=false\nv8_static_library=true\nv8_fuzzilli=false\ntarget_cpu=\"x64\"\n```\n\nShell args: `d8 --si"
+}

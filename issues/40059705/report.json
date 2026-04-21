@@ -1,0 +1,93 @@
+{
+  "id": "40059705",
+  "url": "https://issues.chromium.org/issues/40059705",
+  "title": "Security: UAF in InterestGroupPermissionsChecker::OnRequestComplete",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>InterestGroups",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "et...@gmail.com",
+  "assignee": "rs...@chromium.org",
+  "created_date": "2022-05-19T16:30:57+00:00",
+  "modified_date": "2024-01-09T09:30:22+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52901690,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2054,
+      "url": "https://issues.chromium.org/action/issues/40059705/attachments/52901690?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52901691,
+      "filename": "asan_process_race.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 37517,
+      "url": "https://issues.chromium.org/action/issues/40059705/attachments/52901691?download=true",
+      "local_path": "attachments/asan_process_race.txt"
+    },
+    {
+      "id": 52901692,
+      "filename": "patch_to_trigger_process_race_uaf.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 7589,
+      "url": "https://issues.chromium.org/action/issues/40059705/attachments/52901692?download=true",
+      "local_path": "attachments/patch_to_trigger_process_race_uaf.diff"
+    },
+    {
+      "id": 52901693,
+      "filename": "asan_thread_race.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 37273,
+      "url": "https://issues.chromium.org/action/issues/40059705/attachments/52901693?download=true",
+      "local_path": "attachments/asan_thread_race.txt"
+    },
+    {
+      "id": 52901694,
+      "filename": "patch_to_trigger_thread_race_uaf.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 14046,
+      "url": "https://issues.chromium.org/action/issues/40059705/attachments/52901694?download=true",
+      "local_path": "attachments/patch_to_trigger_thread_race_uaf.diff"
+    },
+    {
+      "id": 52901695,
+      "filename": "repro_with_extension.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6807361,
+      "url": "https://issues.chromium.org/action/issues/40059705/attachments/52901695?download=true",
+      "local_path": "attachments/repro_with_extension.mp4"
+    },
+    {
+      "id": 52901711,
+      "filename": "repro_with_exit_browser.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4981456,
+      "url": "https://issues.chromium.org/action/issues/40059705/attachments/52901711?download=true",
+      "local_path": "attachments/repro_with_exit_browser.mp4"
+    },
+    {
+      "id": 52901719,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 2067,
+      "url": "https://issues.chromium.org/action/issues/40059705/attachments/52901719?download=true",
+      "local_path": "attachments/patch.diff"
+    }
+  ],
+  "update_count": 75,
+  "description_snippet": "**Steps to reproduce the problem:**   \n## Reproduce  \n  \n- chromium commit hash  \n  \n```cpp  \ncommit 392465f82cafe6835f1995d949dfbd8dbd652897 (HEAD -> main, origin/main, origin/HEAD)  \nAuthor: Yoshifumi Inoue <yosin@chromium.org>  \nDate:   Wed May 18 07:55:08 2022 +0000  \n```  \n  \n- build config"
+}

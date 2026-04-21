@@ -1,0 +1,41 @@
+{
+  "id": "40054711",
+  "url": "https://issues.chromium.org/issues/40054711",
+  "title": "uaf in CrossOriginEmbedderPolicyReporter(browser)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>SecurityFeature>OriginPolicy, Blink>Workers",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "as...@chromium.org",
+  "created_date": "2021-02-06T13:00:21+00:00",
+  "modified_date": "2025-07-12T14:33:48+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53190990,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 124,
+      "url": "https://issues.chromium.org/action/issues/40054711/attachments/53190990?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53190991,
+      "filename": "cache-ws.js",
+      "mime_type": "text/plain",
+      "size_bytes": 20,
+      "url": "https://issues.chromium.org/action/issues/40054711/attachments/53190991?download=true",
+      "local_path": "attachments/cache-ws.js"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nChromium 90.0.4411.0 canary (asan build)\r\nChromium 90.0.4408.0 dev (asan build)\r\n1.launch simple webserver\r\npython3.8 -m http.server 8000"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "352690885",
+  "url": "https://issues.chromium.org/issues/352690885",
+  "title": "Fatal error in Bytecode mismatch at offset 8 in interpreter.cc",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript, Blink>JavaScript>GarbageCollection, Blink>JavaScript>Parser, Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ta...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2024-07-12T13:40:18+00:00",
+  "modified_date": "2026-02-11T16:28:12+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "bounty_rationale": "$7,000 for baseline report of potential memory corruption in a sandboxed process + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 57876199,
+      "filename": "testcase_1.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 207,
+      "url": "https://issues.chromium.org/action/issues/352690885/attachments/57876199?download=true",
+      "local_path": "attachments/testcase_1.js"
+    },
+    {
+      "id": 57895240,
+      "filename": "testcase_2.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 131,
+      "url": "https://issues.chromium.org/action/issues/352690885/attachments/57895240?download=true",
+      "local_path": "attachments/testcase_2.js"
+    },
+    {
+      "id": 57895241,
+      "filename": "testcase_3.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 120,
+      "url": "https://issues.chromium.org/action/issues/352690885/attachments/57895241?download=true",
+      "local_path": "attachments/testcase_3.js"
+    },
+    {
+      "id": 57895242,
+      "filename": "testcase_4.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 346,
+      "url": "https://issues.chromium.org/action/issues/352690885/attachments/57895242?download=true",
+      "local_path": "attachments/testcase_4.js"
+    },
+    {
+      "id": 57895243,
+      "filename": "testcase_5.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 900,
+      "url": "https://issues.chromium.org/action/issues/352690885/attachments/57895243?download=true",
+      "local_path": "attachments/testcase_5.js"
+    },
+    {
+      "id": 57895244,
+      "filename": "testcase_6.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1176,
+      "url": "https://issues.chromium.org/action/issues/352690885/attachments/57895244?download=true",
+      "local_path": "attachments/testcase_6.js"
+    }
+  ],
+  "update_count": 124,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

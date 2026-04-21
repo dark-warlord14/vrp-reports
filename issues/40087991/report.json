@@ -1,0 +1,31 @@
+{
+  "id": "40087991",
+  "url": "https://issues.chromium.org/issues/40087991",
+  "title": "Security: Information Disclosure Issue in v8::wasm",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "xi...@gmail.com",
+  "assignee": "cl...@chromium.org",
+  "created_date": "2017-06-06T11:55:45+00:00",
+  "modified_date": "2020-02-17T14:57:48+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53025458,
+      "filename": "wasm_exp.html",
+      "mime_type": "text/plain",
+      "size_bytes": 498,
+      "url": "https://issues.chromium.org/action/issues/40087991/attachments/53025458?download=true",
+      "local_path": "attachments/wasm_exp.html"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThere is a out of boundary issue in v8::wasm::module-decoder, which will disclosure sensitive information in the heap.  \n  \nIn v8\\src\\wasm\\module-decoder.cc, the function next(), DecodeModule(), and DecodeCustomSections() doesn't handle the custom section properly."
+}

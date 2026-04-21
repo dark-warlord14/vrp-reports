@@ -1,0 +1,65 @@
+{
+  "id": "40058786",
+  "url": "https://issues.chromium.org/issues/40058786",
+  "title": "Security: heap-use-after-free ash/drag_drop/drag_drop_tracker.cc:109",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Shell>UIFoundations",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rh...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2022-02-15T18:12:02+00:00",
+  "modified_date": "2023-05-24T13:03:46+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52946030,
+      "filename": "screencast_1297643.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 5383686,
+      "url": "https://issues.chromium.org/action/issues/40058786/attachments/52946030?download=true",
+      "local_path": "attachments/screencast_1297643.webm"
+    },
+    {
+      "id": 52946042,
+      "filename": "Screen recording 2022-02-22 2.01.10 PM.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2130424,
+      "url": "https://issues.chromium.org/action/issues/40058786/attachments/52946042?download=true",
+      "local_path": "attachments/Screen recording 2022-02-22 2.01.10 PM.webm"
+    },
+    {
+      "id": 52946049,
+      "filename": "screencast__00014.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 5767392,
+      "url": "https://issues.chromium.org/action/issues/40058786/attachments/52946049?download=true",
+      "local_path": "attachments/screencast_00014.webm"
+    },
+    {
+      "id": 52946050,
+      "filename": "screencast__00013.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 7005038,
+      "url": "https://issues.chromium.org/action/issues/40058786/attachments/52946050?download=true",
+      "local_path": "attachments/screencast_00013.webm"
+    },
+    {
+      "id": 52946108,
+      "filename": "screencast__00009.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 3445937,
+      "url": "https://issues.chromium.org/action/issues/40058786/attachments/52946108?download=true",
+      "local_path": "attachments/screencast_00009.webm"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.99 Safari/537.36  \nPlatform: Linux-chromeOS  \n  \nSteps to reproduce the problem:  \nPoC  \n  \n**(1)**  Tested on linux-chromeOS Asan.  \n**(2)**  Force chromeOS to tablet mode pass in command line --force"
+}

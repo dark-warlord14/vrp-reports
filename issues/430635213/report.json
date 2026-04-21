@@ -1,0 +1,57 @@
+{
+  "id": "430635213",
+  "url": "https://issues.chromium.org/issues/430635213",
+  "title": "UAF in content::protocol::InputHandler::InputInjector::InjectMouseEvent through DevTools",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "xu...@gmail.com",
+  "assignee": "pf...@google.com",
+  "created_date": "2025-07-10T10:18:25+00:00",
+  "modified_date": "2025-10-25T08:40:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of heavily mitigated memory corruption in a non-sandboxed process",
+  "attachments": [
+    {
+      "id": 67464821,
+      "filename": "android_crash.hwasan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 60917,
+      "url": "https://issues.chromium.org/action/issues/430635213/attachments/67464821?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67530391,
+      "filename": "2025-07-13 06-09-57.mkv",
+      "mime_type": "video/x-matroska",
+      "size_bytes": 13096659,
+      "url": "https://issues.chromium.org/action/issues/430635213/attachments/67530391?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67530394,
+      "filename": "win_crash.mkv",
+      "mime_type": "video/x-matroska",
+      "size_bytes": 15853080,
+      "url": "https://issues.chromium.org/action/issues/430635213/attachments/67530394?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67536251,
+      "filename": "win_crash.asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 93534,
+      "url": "https://issues.chromium.org/action/issues/430635213/attachments/67536251?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "# VULNERABILITY DETAILS\nThis vulnerability occurs in the Chrome DevTools protocol input handling mechanism, specifically within the InputInjector class that manages mouse event injection for automation and debugging purposes.\n\nThe vulnerability stems from a race condition in the asynchronous callbac"
+}

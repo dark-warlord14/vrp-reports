@@ -1,0 +1,41 @@
+{
+  "id": "40054493",
+  "url": "https://issues.chromium.org/issues/40054493",
+  "title": "Security: Context menu \"Open\" on a javascript: link bypasses Content-Security-Policy",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy, Mobile>iOSWeb>Security",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ni...@gmail.com",
+  "assignee": "ga...@google.com",
+  "created_date": "2021-01-18T06:39:49+00:00",
+  "modified_date": "2024-08-21T12:00:42+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53353824,
+      "filename": "csp-bypass-by-open-link.php",
+      "mime_type": "text/plain",
+      "size_bytes": 315,
+      "url": "https://issues.chromium.org/action/issues/40054493/attachments/53353824?download=true",
+      "local_path": "attachments/csp-bypass-by-open-link.php"
+    },
+    {
+      "id": 53353825,
+      "filename": "demo.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 1091215,
+      "url": "https://issues.chromium.org/action/issues/40054493/attachments/53353825?download=true",
+      "local_path": "attachments/demo.mov"
+    }
+  ],
+  "update_count": 31,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen you long tap a hyperlink to javascript: URL in a page, context menu is shown.  \nThe menu has \"Open\" button that executes JavaScript code in the URL on the page even though inline script is prohibited by CSP.  \nSo, if a page prohibits inline script by CSP, an attacke"
+}

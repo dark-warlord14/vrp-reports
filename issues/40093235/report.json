@@ -1,0 +1,46 @@
+{
+  "id": "40093235",
+  "url": "https://issues.chromium.org/issues/40093235",
+  "title": "Security: iframe.contentWindow.location.href can bypass CSP for javascript URLs",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Loader, Blink>SecurityFeature",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ac...@meta.com",
+  "assignee": "ac...@meta.com",
+  "created_date": "2018-11-28T20:32:24+00:00",
+  "modified_date": "2024-01-08T19:31:30+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53260630,
+      "filename": "test.html",
+      "mime_type": "text/plain",
+      "size_bytes": 812,
+      "url": "https://issues.chromium.org/action/issues/40093235/attachments/53260630?download=true",
+      "local_path": "attachments/test.html"
+    },
+    {
+      "id": 53260631,
+      "filename": "test_frame.html",
+      "mime_type": "text/plain",
+      "size_bytes": 21,
+      "url": "https://issues.chromium.org/action/issues/40093235/attachments/53260631?download=true",
+      "local_path": "attachments/test_frame.html"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nA parent document with a CSP that does not allow unsafe inline scripts can still execute JavaScript URLs in inline iframes if using the iframe content window's location.href to navigate.  \n  \nThis occurs because asynchronous `javascript:` URL navigations (such as thos"
+}

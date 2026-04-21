@@ -1,0 +1,57 @@
+{
+  "id": "421511847",
+  "url": "https://issues.chromium.org/issues/421511847",
+  "title": "Download origin spoofing using malformed data url.",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": "136.0.7103.127",
+  "cve_ids": [],
+  "reporter": "x4...@gmail.com",
+  "assignee": "ch...@chromium.org",
+  "created_date": "2025-05-31T10:10:05+00:00",
+  "modified_date": "2025-11-07T23:31:48+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "report of moderate impact security UI / origin information spoof",
+  "attachments": [
+    {
+      "id": 66326458,
+      "filename": "not-working-version-129.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5591945,
+      "url": "https://issues.chromium.org/action/issues/421511847/attachments/66326458?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66326459,
+      "filename": "oldest-working-version.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 19459508,
+      "url": "https://issues.chromium.org/action/issues/421511847/attachments/66326459?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66326460,
+      "filename": "POC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 8101042,
+      "url": "https://issues.chromium.org/action/issues/421511847/attachments/66326460?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66403960,
+      "filename": "POC updated.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3293953,
+      "url": "https://issues.chromium.org/action/issues/421511847/attachments/66403960?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "# Steps to reproduce the problem\n1.  Enter this payload in the address bar on android chrome: `data://google.com/html,somereallyreallylongtextattheaddressbar` and press enter, you will notice a download begins with origin in the notification as google.com, same origin is displayed in chrome://downlo"
+}

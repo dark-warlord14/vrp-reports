@@ -1,0 +1,49 @@
+{
+  "id": "40061277",
+  "url": "https://issues.chromium.org/issues/40061277",
+  "title": "Security: Heap-use-after-free in ash::ScopedOverviewHideWindows::~ScopedOverviewHideWindows",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Views>Desktop",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "yo...@chromium.org",
+  "created_date": "2022-10-08T13:28:14+00:00",
+  "modified_date": "2024-01-06T00:11:50+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52966613,
+      "filename": "screen.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2168564,
+      "url": "https://issues.chromium.org/action/issues/40061277/attachments/52966613?download=true",
+      "local_path": "attachments/screen.webm"
+    },
+    {
+      "id": 52966677,
+      "filename": "screen .webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2305538,
+      "url": "https://issues.chromium.org/action/issues/40061277/attachments/52966677?download=true",
+      "local_path": "attachments/screen .webm"
+    },
+    {
+      "id": 52966698,
+      "filename": "screen.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 933827,
+      "url": "https://issues.chromium.org/action/issues/40061277/attachments/52966698?download=true",
+      "local_path": "attachments/screen.webm"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "**VERSION**   \nChrome Version: 108.0.5348.0  \nOperating System: ChromeOS  \n  \n**REPRODUCTION CASE**   \n0. ./chrome --enable-features=DesksTemplates  \n1. Open Chromium browser  \n2. Press F5 >> Save desk as a template >> Use tamplate  \n3. Right-click on Chromium icon >> Close   \n  \n==================="
+}

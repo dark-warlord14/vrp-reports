@@ -1,0 +1,67 @@
+{
+  "id": "40056923",
+  "url": "https://issues.chromium.org/issues/40056923",
+  "title": "Security: [ANGLE] Stack buffer overwrite in rx::StateManager11::syncVertexBuffersAndInputLayout",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ne...@nesk.kr",
+  "assignee": "jm...@chromium.org",
+  "created_date": "2021-08-18T18:30:14+00:00",
+  "modified_date": "2024-01-09T08:57:11+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53159973,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1042,
+      "url": "https://issues.chromium.org/action/issues/40056923/attachments/53159973?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53159974,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 7197,
+      "url": "https://issues.chromium.org/action/issues/40056923/attachments/53159974?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53159993,
+      "filename": "patch_test.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1925,
+      "url": "https://issues.chromium.org/action/issues/40056923/attachments/53159993?download=true",
+      "local_path": "attachments/patch_test.diff"
+    },
+    {
+      "id": 53160001,
+      "filename": "test.asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 7146,
+      "url": "https://issues.chromium.org/action/issues/40056923/attachments/53160001?download=true",
+      "local_path": "attachments/test.asan.log"
+    },
+    {
+      "id": 53160003,
+      "filename": "patch_test.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1908,
+      "url": "https://issues.chromium.org/action/issues/40056923/attachments/53160003?download=true",
+      "local_path": "attachments/patch_test.diff"
+    }
+  ],
+  "update_count": 69,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThe array `mAttribLocationToD3DSemantic` is filled with -1 (0xffffffff) during the initialization process of the `GL_LinkProgram` [1]  \n  \n```  \nvoid ProgramD3D::reset()  \n{  \n...  \n    mAttribLocationToD3DSemantic.fill(-1);  \n```  \n  \nDuring the execution of `GL_Draw"
+}

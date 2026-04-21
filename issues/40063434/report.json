@@ -1,0 +1,33 @@
+{
+  "id": "40063434",
+  "url": "https://issues.chromium.org/issues/40063434",
+  "title": "Security: Race Condition UAF in evdi_painter_mode_changed_notify",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lm...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2023-03-07T14:40:59+00:00",
+  "modified_date": "2024-01-09T07:32:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53414965,
+      "filename": "poc.tar",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 40960,
+      "url": "https://issues.chromium.org/action/issues/40063434/attachments/53414965?download=true",
+      "local_path": "attachments/poc.tar"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nioctl$EVDI_CONNECT will call \\*evdi_painter_connect_ioctl\\* to connect/disconnect painter. if \\*cmd->connected\\* is false, evdi_painter_disconnect will be called. \\*painter->scanout_fb\\* will be put[1] under \\*painter->lock\\*, that is fine. But \\*evdi_painter_mode_cha"
+}

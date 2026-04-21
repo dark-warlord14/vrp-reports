@@ -1,0 +1,65 @@
+{
+  "id": "40059591",
+  "url": "https://issues.chromium.org/issues/40059591",
+  "title": "memeory corruption in frame_queue_underlying_source.cc",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>MediaStream",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "be...@google.com",
+  "created_date": "2022-05-07T17:03:05+00:00",
+  "modified_date": "2022-12-20T18:31:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53384502,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 690,
+      "url": "https://issues.chromium.org/action/issues/40059591/attachments/53384502?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53384503,
+      "filename": "ws.js",
+      "mime_type": "text/plain",
+      "size_bytes": 274,
+      "url": "https://issues.chromium.org/action/issues/40059591/attachments/53384503?download=true",
+      "local_path": "attachments/ws.js"
+    },
+    {
+      "id": 53384607,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 717,
+      "url": "https://issues.chromium.org/action/issues/40059591/attachments/53384607?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53384608,
+      "filename": "wrapper.html",
+      "mime_type": "text/plain",
+      "size_bytes": 234,
+      "url": "https://issues.chromium.org/action/issues/40059591/attachments/53384608?download=true",
+      "local_path": "attachments/wrapper.html"
+    },
+    {
+      "id": 53384609,
+      "filename": "ws.js",
+      "mime_type": "text/plain",
+      "size_bytes": 274,
+      "url": "https://issues.chromium.org/action/issues/40059591/attachments/53384609?download=true",
+      "local_path": "attachments/ws.js"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "**Steps to reproduce the problem:**   \nOS:  \nUbuntu 22.04  \nVersion 103.0.5042.0 (Official Build) dev (64-bit)  \n  \nThis issue is not  stable to repro with chrome asan version.   \nSo,I  tested with non asan version. It will crash  about 30 ~ 60 seconds.  \n  \n1.google-chrome --use-fake-device-for-med"
+}

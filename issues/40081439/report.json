@@ -1,0 +1,31 @@
+{
+  "id": "40081439",
+  "url": "https://issues.chromium.org/issues/40081439",
+  "title": "Security: pdfium - write past end of heap buffer when parsing invalid JPEG2000 image",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "ju...@foxitsoftware.com",
+  "created_date": "2015-02-17T15:20:56+00:00",
+  "modified_date": "2018-04-25T23:02:23+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52978542,
+      "filename": "openjpeg-svn-id000179-opj_pi_next_cprl-pdfium.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 3520,
+      "url": "https://issues.chromium.org/action/issues/40081439/attachments/52978542?download=true",
+      "local_path": "attachments/openjpeg-svn-id000179-opj_pi_next_cprl-pdfium.zip"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA PDF file containing a malformed JPEG2000 image causes opj_pi_next_cprl and opj_pi_next_lrcp in pdfium's bundled openjpeg to write past the end of a heap buffer. More specifically, an attacker can rewrite a 16-bit integer at some location past the end of the buffer from"
+}

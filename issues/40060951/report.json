@@ -1,0 +1,89 @@
+{
+  "id": "40060951",
+  "url": "https://issues.chromium.org/issues/40060951",
+  "title": "uaf in PermissionStatus::OnPermissionStatusChange",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>PermissionsAPI",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wx...@gmail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2022-09-13T07:08:21+00:00",
+  "modified_date": "2024-01-09T07:29:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52963196,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 14728,
+      "url": "https://issues.chromium.org/action/issues/40060951/attachments/52963196?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 52963199,
+      "filename": "test.html",
+      "mime_type": "text/plain",
+      "size_bytes": 619,
+      "url": "https://issues.chromium.org/action/issues/40060951/attachments/52963199?download=true",
+      "local_path": "attachments/test.html"
+    },
+    {
+      "id": 52963200,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2924299,
+      "url": "https://issues.chromium.org/action/issues/40060951/attachments/52963200?download=true",
+      "local_path": "attachments/poc.mp4"
+    },
+    {
+      "id": 52963203,
+      "filename": "0001-issue-1363040-fix-patch.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1035,
+      "url": "https://issues.chromium.org/action/issues/40060951/attachments/52963203?download=true",
+      "local_path": "attachments/0001-issue-1363040-fix-patch.patch"
+    },
+    {
+      "id": 52963219,
+      "filename": "0001-fix-issue-1363040.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1038,
+      "url": "https://issues.chromium.org/action/issues/40060951/attachments/52963219?download=true",
+      "local_path": "attachments/0001-fix-issue-1363040.patch"
+    },
+    {
+      "id": 52963245,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1137,
+      "url": "https://issues.chromium.org/action/issues/40060951/attachments/52963245?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52963249,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 567067,
+      "url": "https://issues.chromium.org/action/issues/40060951/attachments/52963249?download=true",
+      "local_path": "attachments/poc.mp4"
+    },
+    {
+      "id": 52963344,
+      "filename": "0001-fix-issue-1363040.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 998,
+      "url": "https://issues.chromium.org/action/issues/40060951/attachments/52963344?download=true",
+      "local_path": "attachments/0001-fix-issue-1363040.patch"
+    }
+  ],
+  "update_count": 68,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1.  \n```c++  \nvoid PermissionStatus::OnPermissionStatusChange(MojoPermissionStatus status) {  \n  DispatchEvent(\\*Event::Create(event_type_names::kChange));  here can execute user's js  \n}  \n```  \n2.then we can see the function  \n```  \nvoid PermissionStatusListe"
+}

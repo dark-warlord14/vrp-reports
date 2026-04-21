@@ -1,0 +1,33 @@
+{
+    "id": "415262406",
+    "url": "https://issues.chromium.org/issues/415262406",
+    "title": "Stealing emails via FedCM clickjacking in Chrome Android [415262406] - Chromium",
+    "status": "Unknown",
+    "bounty_confirmed": true,
+    "attachments": [
+        {
+            "name": "View",
+            "url": "https://issues.chromium.org/action/issues/415262406/attachments/65481456?download=false"
+        },
+        {
+            "name": "Download",
+            "url": "https://issues.chromium.org/action/issues/415262406/attachments/65481456?download=true"
+        },
+        {
+            "name": "Download",
+            "url": "https://issues.chromium.org/action/issues/415262406/attachments/65481457?download=true"
+        },
+        {
+            "name": "View",
+            "url": "https://issues.chromium.org/action/issues/415262406/attachments/65543906?download=false"
+        },
+        {
+            "name": "Download",
+            "url": "https://issues.chromium.org/action/issues/415262406/attachments/65543906?download=true"
+        },
+        {
+            "name": "Download",
+            "url": "https://issues.chromium.org/action/issues/415262406/attachments/67105311?download=true"
+        }
+    ]
+}

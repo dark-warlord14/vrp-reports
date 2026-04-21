@@ -1,0 +1,41 @@
+{
+  "id": "40063545",
+  "url": "https://issues.chromium.org/issues/40063545",
+  "title": "Security: OOB Access in intel_pxp_sm_ioctl_mark_session_in_play",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>GPU>VendorSpecific",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lm...@gmail.com",
+  "assignee": "ju...@chromium.org",
+  "created_date": "2023-03-11T12:20:36+00:00",
+  "modified_date": "2023-09-18T17:38:45+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53206682,
+      "filename": "poc.c",
+      "mime_type": "text/plain",
+      "size_bytes": 3246,
+      "url": "https://issues.chromium.org/action/issues/40063545/attachments/53206682?download=true",
+      "local_path": "attachments/poc.c"
+    },
+    {
+      "id": 53206784,
+      "filename": "poc.c",
+      "mime_type": "text/plain",
+      "size_bytes": 3246,
+      "url": "https://issues.chromium.org/action/issues/40063545/attachments/53206784?download=true",
+      "local_path": "attachments/poc.c"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nIOCTL$I915_PXP_OPS will call i915_pxp_ops_ioctl to handle pxp ioctls. if \\*pxp_ops->action\\* is DOWNSTREAM_DRM_I915_PXP_ACTION_SET_SESSION_STATUS, it will call \\*pxp_set_session_status\\*. \\*params\\* is copied from userspace[1], which means \\*params\\* is under user con"
+}

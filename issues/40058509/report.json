@@ -1,0 +1,45 @@
+{
+  "id": "40058509",
+  "url": "https://issues.chromium.org/issues/40058509",
+  "title": "Security: [ANGLE] Heap-buffer-overflow in TextureVk::prepareForGenerateMipmap",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gg...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2022-01-17T10:24:11+00:00",
+  "modified_date": "2024-03-12T14:02:11+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53421254,
+      "filename": "poc1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 699,
+      "url": "https://issues.chromium.org/action/issues/40058509/attachments/53421254?download=true",
+      "local_path": "attachments/poc1.html"
+    },
+    {
+      "id": 53421255,
+      "filename": "poc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 709,
+      "url": "https://issues.chromium.org/action/issues/40058509/attachments/53421255?download=true",
+      "local_path": "attachments/poc2.html"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThere is a heap buffer overflow vulnerability that is caused by the TextureVk::prepareForGenerateMipmap function.  \nThis vulnerability exists in the Vulkan backend, So in Chrome it can be triggered in Swiftshader.  \n  \n**-------------------------** ----------------------"
+}

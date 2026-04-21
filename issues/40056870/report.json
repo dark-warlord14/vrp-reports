@@ -1,0 +1,65 @@
+{
+  "id": "40056870",
+  "url": "https://issues.chromium.org/issues/40056870",
+  "title": "Security: Pointer lock can be used to bypass mouse movement/keyboard input requirements for autofill",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Input>PointerLock, UI>Browser>Autofill",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "sc...@google.com",
+  "created_date": "2021-08-13T06:09:28+00:00",
+  "modified_date": "2025-07-02T12:50:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53231144,
+      "filename": "autofill-pointer-lock.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1484307,
+      "url": "https://issues.chromium.org/action/issues/40056870/attachments/53231144?download=true",
+      "local_path": "attachments/autofill-pointer-lock.mp4"
+    },
+    {
+      "id": 53231145,
+      "filename": "autofill-pointer-lock.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1016,
+      "url": "https://issues.chromium.org/action/issues/40056870/attachments/53231145?download=true",
+      "local_path": "attachments/autofill-pointer-lock.html"
+    },
+    {
+      "id": 53231146,
+      "filename": "autofill-pointer-lock-popup.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2210,
+      "url": "https://issues.chromium.org/action/issues/40056870/attachments/53231146?download=true",
+      "local_path": "attachments/autofill-pointer-lock-popup.html"
+    },
+    {
+      "id": 53231286,
+      "filename": "check-asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8562,
+      "url": "https://issues.chromium.org/action/issues/40056870/attachments/53231286?download=true",
+      "local_path": "attachments/check-asan.log"
+    },
+    {
+      "id": 53231287,
+      "filename": "null-read-asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 5442,
+      "url": "https://issues.chromium.org/action/issues/40056870/attachments/53231287?download=true",
+      "local_path": "attachments/null-read-asan.log"
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA page can use a carefully-sized popup combined with a pointer lock to force the user to select an autofill item with three consecutive clicks, without moving their mouse or pressing keyboard keys.  \n  \nNormally Chrome requires an intentional selection by the user, eithe"
+}

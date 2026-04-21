@@ -1,0 +1,52 @@
+{
+  "id": "40053041",
+  "url": "https://issues.chromium.org/issues/40053041",
+  "title": "Security: Possible for extension to escape sandbox via Target.setAutoAttach and Target.sendMessageToTarget",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>DevTools>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2020-08-10T09:32:28+00:00",
+  "modified_date": "2024-11-15T08:50:08+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52993502,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 5363,
+      "url": "https://issues.chromium.org/action/issues/40053041/attachments/52993502?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 52993503,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 244,
+      "url": "https://issues.chromium.org/action/issues/40053041/attachments/52993503?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 52993504,
+      "filename": "page.html",
+      "mime_type": "text/plain",
+      "size_bytes": 304,
+      "url": "https://issues.chromium.org/action/issues/40053041/attachments/52993504?download=true",
+      "local_path": "attachments/page.html"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen using the chrome.debugger API, one of the methods an extension can call is Target.setAutoAttach. That method will attach all cross-process subframes (of the currently debugged page) to the debugger.  \n  \nOnce that's been done, an extension can call Target.sendMessag"
+}

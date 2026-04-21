@@ -1,0 +1,70 @@
+{
+  "id": "447613211",
+  "url": "https://issues.chromium.org/issues/447613211",
+  "title": "Type confusion in inline cache prototype loading with Webassembly object prototype",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m-...@github.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2025-09-26T21:54:54+00:00",
+  "modified_date": "2026-01-13T12:42:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 50000.0,
+  "bounty_rationale": "High-quality report demonstrating controlled write in a sandboxed process",
+  "attachments": [
+    {
+      "id": 69644198,
+      "filename": "wasm-module-builder.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 78347,
+      "url": "https://issues.chromium.org/action/issues/447613211/attachments/69644198?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69644199,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1211,
+      "url": "https://issues.chromium.org/action/issues/447613211/attachments/69644199?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69698080,
+      "filename": "cage_rw.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2827,
+      "url": "https://issues.chromium.org/action/issues/447613211/attachments/69698080?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69690538,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1194,
+      "url": "https://issues.chromium.org/action/issues/447613211/attachments/69690538?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69687645,
+      "filename": "wasm-module-builder.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 78347,
+      "url": "https://issues.chromium.org/action/issues/447613211/attachments/69687645?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 83,
+  "description_snippet": "Vulnerability details\n\nWhen loading properties from prototype, inline cache caches the prototype [property holder](https://source.chromium.org/chromium/chromium/src/+/main:v8/src/ic/accessor-assembler.cc;l=1255;drc=1fb4c56b03b105b03c45627871b15b8933ed8a11) and accesses its properties via optimize ha"
+}

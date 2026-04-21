@@ -1,0 +1,61 @@
+{
+  "id": "40053536",
+  "url": "https://issues.chromium.org/issues/40053536",
+  "title": "Incorrect security UI at screen share API",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zy...@gmail.com",
+  "assignee": "ag...@chromium.org",
+  "created_date": "2020-10-09T03:09:13+00:00",
+  "modified_date": "2024-01-09T02:36:33+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53277970,
+      "filename": "poc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2707,
+      "url": "https://issues.chromium.org/action/issues/40053536/attachments/53277970?download=true",
+      "local_path": "attachments/poc2.html"
+    },
+    {
+      "id": 53277971,
+      "filename": "截屏2020-10-09上午11.00.39.png",
+      "mime_type": "image/png",
+      "size_bytes": 461429,
+      "url": "https://issues.chromium.org/action/issues/40053536/attachments/53277971?download=true",
+      "local_path": "attachments/截屏2020-10-09上午11.00.39.png"
+    },
+    {
+      "id": 53278107,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2424,
+      "url": "https://issues.chromium.org/action/issues/40053536/attachments/53278107?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53278108,
+      "filename": "record.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 4493754,
+      "url": "https://issues.chromium.org/action/issues/40053536/attachments/53278108?download=true",
+      "local_path": "attachments/record.gif"
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1.open the attchment poc2.html at 'http://127.0.0.1/poc2.html'\r\n2.click button `Start capture`\r\n3.`www.google.com` will ask to shar"
+}

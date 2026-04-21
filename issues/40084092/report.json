@@ -1,0 +1,35 @@
+{
+  "id": "40084092",
+  "url": "https://issues.chromium.org/issues/40084092",
+  "title": "Pinned TLS public keys (HPKP) evicted after clearing cache",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Network>SSL, Privacy",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2016-1694"
+  ],
+  "reporter": "ry...@cyph.com",
+  "assignee": "es...@chromium.org",
+  "created_date": "2016-04-14T20:25:18+00:00",
+  "modified_date": "2024-01-06T00:07:43+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52910496,
+      "filename": "Screen Shot 2016-04-15 at 11.59.52 AM.png",
+      "mime_type": "image/png",
+      "size_bytes": 109892,
+      "url": "https://issues.chromium.org/action/issues/40084092/attachments/52910496?download=true",
+      "local_path": "attachments/Screen Shot 2016-04-15 at 11.59.52 AM.png"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Open a URL with a valid Public-Key-Pins header (I tested with https://cyph.im and https://github.com).\r\n\r\n2. Confirm the browser'"
+}

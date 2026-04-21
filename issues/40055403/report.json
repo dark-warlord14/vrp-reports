@@ -1,0 +1,65 @@
+{
+  "id": "40055403",
+  "url": "https://issues.chromium.org/issues/40055403",
+  "title": "use after poison write in mojo::InterfaceEndpointClient::NotifyError when deal with WebBundle",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Loader, Blink>Loader>WebPackaging",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ne...@gmail.com",
+  "assignee": "ho...@chromium.org",
+  "created_date": "2021-04-01T03:07:30+00:00",
+  "modified_date": "2021-08-17T17:31:13+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52916440,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40055403/attachments/52916440?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52916441,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40055403/attachments/52916441?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52916442,
+      "filename": "test.wbn",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3446,
+      "url": "https://issues.chromium.org/action/issues/40055403/attachments/52916442?download=true",
+      "local_path": "attachments/test.wbn"
+    },
+    {
+      "id": 52916460,
+      "filename": "main3.html",
+      "mime_type": "text/plain",
+      "size_bytes": 376,
+      "url": "https://issues.chromium.org/action/issues/40055403/attachments/52916460?download=true",
+      "local_path": "attachments/main3.html"
+    },
+    {
+      "id": 52916466,
+      "filename": "poc3.html",
+      "mime_type": "text/plain",
+      "size_bytes": 164,
+      "url": "https://issues.chromium.org/action/issues/40055403/attachments/52916466?download=true",
+      "local_path": "attachments/poc3.html"
+    }
+  ],
+  "update_count": 28,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nOS:Ubuntu:\r\nChrome Version: Chromium 91.0.4465.0 gs://chromium-browser-asan/linux-release/asan-linux-release-868361.zip\r\n\r\n./chrome --enab"
+}

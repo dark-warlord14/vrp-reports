@@ -1,0 +1,36 @@
+{
+  "id": "40060530",
+  "url": "https://issues.chromium.org/issues/40060530",
+  "title": "Security: [ANGLE] Heap use-after-free caused by changing the framebuffer cache to sharing in context",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gg...@gmail.com",
+  "assignee": "cc...@google.com",
+  "created_date": "2022-08-08T20:58:13+00:00",
+  "modified_date": "2025-07-11T18:17:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52906511,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2046,
+      "url": "https://issues.chromium.org/action/issues/40060530/attachments/52906511?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThere is a heap use-after-free vulnerability that exists in the Vulkan backend.  \n  \nBefore commit 72e457fee77e8859e1c916130268d76c7f20b178, |mFramebufferCache| was a member of FramebufferVk.  \nBut after commit, |mFramebufferCache| moved to a member of ShareGroupVk.  \nAn"
+}

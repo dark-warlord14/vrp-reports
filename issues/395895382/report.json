@@ -1,0 +1,38 @@
+{
+  "id": "395895382",
+  "url": "https://issues.chromium.org/issues/395895382",
+  "title": "V8 Sandbox Bypass: AAW via array length corruption in Turbofan spread call inlining",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Compiler>Turbofan, Blink>JavaScript>Sandbox",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "ni...@chromium.org",
+  "created_date": "2025-02-12T08:48:29+00:00",
+  "modified_date": "2025-08-02T12:52:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": "V8 sandbox bypass demonstrating arbitrary write outside of the heap sandbox",
+  "attachments": [
+    {
+      "id": 62840513,
+      "filename": "array-spread-call-tierup-inline-oob.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3529,
+      "url": "https://issues.chromium.org/action/issues/395895382/attachments/62840513?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Summary\n\nV8 sandbox bypass, arbitrary address write by corrupting `AllocationSite` boilerplate array literal length to a negative value. When this array is used with spread syntax for a call/construct argument, tier-up compilation of this code results in `JSCallReduce"
+}

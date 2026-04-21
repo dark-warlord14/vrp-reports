@@ -1,0 +1,57 @@
+{
+  "id": "40054230",
+  "url": "https://issues.chromium.org/issues/40054230",
+  "title": "heapoverflow in web gpu ",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebGPU",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wx...@gmail.com",
+  "assignee": "en...@chromium.org",
+  "created_date": "2020-12-19T06:02:38+00:00",
+  "modified_date": "2026-03-27T17:01:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53299376,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 445,
+      "url": "https://issues.chromium.org/action/issues/40054230/attachments/53299376?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53299377,
+      "filename": "new.html",
+      "mime_type": "text/plain",
+      "size_bytes": 768,
+      "url": "https://issues.chromium.org/action/issues/40054230/attachments/53299377?download=true",
+      "local_path": "attachments/new.html"
+    },
+    {
+      "id": 53299378,
+      "filename": "test.js",
+      "mime_type": "text/plain",
+      "size_bytes": 5990,
+      "url": "https://issues.chromium.org/action/issues/40054230/attachments/53299378?download=true",
+      "local_path": "attachments/test.js"
+    },
+    {
+      "id": 53299402,
+      "filename": "test.js",
+      "mime_type": "text/plain",
+      "size_bytes": 7403,
+      "url": "https://issues.chromium.org/action/issues/40054230/attachments/53299402?download=true",
+      "local_path": "attachments/test.js"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1.open chromium and enable webgpu\r\n2.put files to sanme dir and run `python -m SimpleHTTPServer`\r\n3.chrome.exe --no-sandbox --user-data-di"
+}

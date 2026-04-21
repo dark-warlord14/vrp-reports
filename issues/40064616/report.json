@@ -1,0 +1,38 @@
+{
+  "id": "40064616",
+  "url": "https://issues.chromium.org/issues/40064616",
+  "title": "Security: Side-channel attack allows accessing the browsing history",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Paint, Internals>GPU",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "is...@oy.ne.ro",
+  "assignee": "ky...@chromium.org",
+  "created_date": "2023-05-17T12:12:17+00:00",
+  "modified_date": "2025-10-03T12:47:13+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "Thank you for report demonstrating a security impact resulting that helped valid our planned work and prioritization of partitioning of :visited links history.",
+  "attachments": [
+    {
+      "id": 53187990,
+      "filename": "paper_main.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 356018,
+      "url": "https://issues.chromium.org/action/issues/40064616/attachments/53187990?download=true",
+      "local_path": "attachments/paper_main.pdf"
+    }
+  ],
+  "update_count": 83,
+  "description_snippet": "Dear Chromium Developers,\r\n\r\nMy co-authors and I are security researchers from the New Jersey Institute of Technology. Later this month, we plan to submit a paper to the journal IEEE Transactions on Dependable and Secure Computing, titled \"Contention-Based Side Channels Enable Faster and Stealthier"
+}

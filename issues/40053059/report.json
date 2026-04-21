@@ -1,0 +1,108 @@
+{
+  "id": "40053059",
+  "url": "https://issues.chromium.org/issues/40053059",
+  "title": "Security: Possible for extension to escape sandbox via Input.dispatchKeyEvent and devtools_page",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools, Platform>DevTools>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "da...@google.com",
+  "created_date": "2020-08-12T10:46:30+00:00",
+  "modified_date": "2024-11-15T08:50:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53110550,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 6570,
+      "url": "https://issues.chromium.org/action/issues/40053059/attachments/53110550?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53110551,
+      "filename": "chrome_inspect.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1170,
+      "url": "https://issues.chromium.org/action/issues/40053059/attachments/53110551?download=true",
+      "local_path": "attachments/chrome_inspect.js"
+    },
+    {
+      "id": 53110552,
+      "filename": "devtools.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3212,
+      "url": "https://issues.chromium.org/action/issues/40053059/attachments/53110552?download=true",
+      "local_path": "attachments/devtools.js"
+    },
+    {
+      "id": 53110553,
+      "filename": "devtools_not_connected.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2535,
+      "url": "https://issues.chromium.org/action/issues/40053059/attachments/53110553?download=true",
+      "local_path": "attachments/devtools_not_connected.js"
+    },
+    {
+      "id": 53110554,
+      "filename": "devtools_page.html",
+      "mime_type": "text/plain",
+      "size_bytes": 107,
+      "url": "https://issues.chromium.org/action/issues/40053059/attachments/53110554?download=true",
+      "local_path": "attachments/devtools_page.html"
+    },
+    {
+      "id": 53110555,
+      "filename": "devtools_page.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2444,
+      "url": "https://issues.chromium.org/action/issues/40053059/attachments/53110555?download=true",
+      "local_path": "attachments/devtools_page.js"
+    },
+    {
+      "id": 53110556,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 246,
+      "url": "https://issues.chromium.org/action/issues/40053059/attachments/53110556?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53110557,
+      "filename": "notifier.html",
+      "mime_type": "text/plain",
+      "size_bytes": 102,
+      "url": "https://issues.chromium.org/action/issues/40053059/attachments/53110557?download=true",
+      "local_path": "attachments/notifier.html"
+    },
+    {
+      "id": 53110558,
+      "filename": "notifier.js",
+      "mime_type": "text/plain",
+      "size_bytes": 59,
+      "url": "https://issues.chromium.org/action/issues/40053059/attachments/53110558?download=true",
+      "local_path": "attachments/notifier.js"
+    },
+    {
+      "id": 53110559,
+      "filename": "panel.html",
+      "mime_type": "text/plain",
+      "size_bytes": 32,
+      "url": "https://issues.chromium.org/action/issues/40053059/attachments/53110559?download=true",
+      "local_path": "attachments/panel.html"
+    }
+  ],
+  "update_count": 92,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen using the chrome.debugger API, one of the methods an extension can call is Input.dispatchKeyEvent. That method allows input events to be dispatched to a page being debugged.  \n  \nUsing the fact that it's possible to dispatch browser shortcuts using this method, an e"
+}

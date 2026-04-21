@@ -1,0 +1,37 @@
+{
+  "id": "40090425",
+  "url": "https://issues.chromium.org/issues/40090425",
+  "title": "Security: Extension with <all_urls> permission can read arbitrary local files and chrome:// pages",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions>API",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fr...@gmail.com",
+  "assignee": "rd...@chromium.org",
+  "created_date": "2018-02-08T02:22:38+00:00",
+  "modified_date": "2022-05-22T11:54:11+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53017161,
+      "filename": "SpyTab.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1174,
+      "url": "https://issues.chromium.org/action/issues/40090425/attachments/53017161?download=true",
+      "local_path": "attachments/SpyTab.zip"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAn extension with the <all_urls> permission can read any file on the file system and send its content to a remote host, using chrome.tabs.captureVisibleTab.  \n  \n**VERSION**   \nChrome Version: 64.0.3282.140 + stable  \nOperating System: Windows 10 Home, Version 1709"
+}

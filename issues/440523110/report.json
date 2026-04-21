@@ -1,0 +1,68 @@
+{
+  "id": "440523110",
+  "url": "https://issues.chromium.org/issues/440523110",
+  "title": "(Split View) UI spoofing Upload leads leaking confidential files, Photos to Attacker",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>TopChrome>TabStrip>SplitView",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "140.0.7339.24 ",
+  "cve_ids": [],
+  "reporter": "pu...@gmail.com",
+  "assignee": "ag...@google.com",
+  "created_date": "2025-08-22T20:32:38+00:00",
+  "modified_date": "2025-12-16T12:44:15+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": "Security UI spoofing, Baseline // Lower Impact",
+  "attachments": [
+    {
+      "id": 68684916,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/440523110/attachments/68684916?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68676547,
+      "filename": "Repro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 591675,
+      "url": "https://issues.chromium.org/action/issues/440523110/attachments/68676547?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68688421,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1012,
+      "url": "https://issues.chromium.org/action/issues/440523110/attachments/68688421?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68684918,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/440523110/attachments/68684918?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68684919,
+      "filename": "chrome.png",
+      "mime_type": "image/png",
+      "size_bytes": 177698,
+      "url": "https://issues.chromium.org/action/issues/440523110/attachments/68684919?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 72,
+  "description_snippet": "# Steps to reproduce the problem\n1. Enable the #side-by-side flag\n2. Open poc.html in Chrome Browser\n3. Right click and open in Split view\n4. This causes the Attacker file dialog to on omnibox e.g.: drive.google.com\nand then Select any file or photo\n5. Successfully Uploaded in Attacker site \n\n# Prob"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "40062927",
+  "url": "https://issues.chromium.org/issues/40062927",
+  "title": "Security: Race Condition UAF in hci_cmd_sync_work(2)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lm...@gmail.com",
+  "assignee": "ch...@google.com",
+  "created_date": "2023-02-06T06:36:56+00:00",
+  "modified_date": "2023-09-18T17:38:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53023715,
+      "filename": "poc.c",
+      "mime_type": "text/plain",
+      "size_bytes": 9345,
+      "url": "https://issues.chromium.org/action/issues/40062927/attachments/53023715?download=true",
+      "local_path": "attachments/poc.c"
+    },
+    {
+      "id": 53023716,
+      "filename": "kasan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 3388,
+      "url": "https://issues.chromium.org/action/issues/40062927/attachments/53023716?download=true",
+      "local_path": "attachments/kasan.log"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThe root cause of this issue is similar to https://crbug.com/chromium/1413031, race condition UAF, and both in the some function. This vulnerability is actually the incomplete fix of commit 0b94f2651f56b9e4aa5f012b0d7eb57308c773cf  \n  \n\\*hci_cmd_sync_queue\\* will chec"
+}

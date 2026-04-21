@@ -1,0 +1,53 @@
+{
+  "id": "400761079",
+  "url": "https://issues.chromium.org/issues/400761079",
+  "title": "permission prompt obscured by black screen lead to spoof to allow permission",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "ra...@google.com",
+  "created_date": "2025-03-04T20:53:46+00:00",
+  "modified_date": "2026-02-20T12:42:46+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": "limited impact UI spoof",
+  "attachments": [
+    {
+      "id": 63464806,
+      "filename": "bandicam 2025-03-05 03-40-23-623.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3485652,
+      "url": "https://issues.chromium.org/action/issues/400761079/attachments/63464806?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63464807,
+      "filename": "pypi.html",
+      "mime_type": "text/html",
+      "size_bytes": 17772,
+      "url": "https://issues.chromium.org/action/issues/400761079/attachments/63464807?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70737101,
+      "filename": "bandicam 2025-11-05 13-40-56-043.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2796308,
+      "url": "https://issues.chromium.org/action/issues/400761079/attachments/70737101?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "VULNERABILITY DETAILS\n\nwhen the payment prompt is called and at the same time the permission prompt is called the permission prompt moves behind the black screen (which should be above the black screen) so this can obscure the permission prompt causing a trick to allow the permission\n\nVERSION\nChrome"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "40062619",
+  "url": "https://issues.chromium.org/issues/40062619",
+  "title": "Security: Forced user interaction for permission prompts by closing a popup window",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Permissions>Indicators",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "re...@gmail.com",
+  "assignee": "tu...@chromium.org",
+  "created_date": "2023-01-12T19:15:24+00:00",
+  "modified_date": "2024-02-14T22:35:06+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53226691,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 467113,
+      "url": "https://issues.chromium.org/action/issues/40062619/attachments/53226691?download=true",
+      "local_path": "attachments/demo.mp4"
+    },
+    {
+      "id": 53226692,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1378,
+      "url": "https://issues.chromium.org/action/issues/40062619/attachments/53226692?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt is possible to trick a user into accepting a permission prompt (eg microphone/webcam) by tricking them into clicking rapidly in a popup window, then closing the popup while a permission prompt is already open in a different window.  \n  \nThe permission prompt has a coo"
+}

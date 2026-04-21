@@ -1,0 +1,52 @@
+{
+  "id": "388680893",
+  "url": "https://issues.chromium.org/issues/388680893",
+  "title": "the autofill prompt obscured by permission prompt lead to spoof",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Permissions>PermissionElement",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "tu...@google.com",
+  "created_date": "2025-01-09T08:15:20+00:00",
+  "modified_date": "2025-05-27T12:47:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": "thank you reward for report of a low impact security UI issue with low potential for exploitability and user harm; since we were able to make a beneficial change here, we do want to acknowledge your efforts with a small reward",
+  "attachments": [
+    {
+      "id": 62057292,
+      "filename": "index6.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1248,
+      "url": "https://issues.chromium.org/action/issues/388680893/attachments/62057292?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62057293,
+      "filename": "pxtm.html",
+      "mime_type": "text/html",
+      "size_bytes": 2967,
+      "url": "https://issues.chromium.org/action/issues/388680893/attachments/62057293?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62057294,
+      "filename": "bandicam 2025-01-09 15-01-06-539.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2623022,
+      "url": "https://issues.chromium.org/action/issues/388680893/attachments/62057294?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "redacted"
+}

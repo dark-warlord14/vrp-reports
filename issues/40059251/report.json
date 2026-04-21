@@ -1,0 +1,254 @@
+{
+  "id": "40059251",
+  "url": "https://issues.chromium.org/issues/40059251",
+  "title": "Security: Browser-side origin confusion for javascript/data URLs opened in a new window/tab by cross-origin iframe",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Sandbox>SiteIsolation, UI>Browser>Navigation, UI>Browser>Permissions",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "ra...@chromium.org",
+  "created_date": "2022-03-30T21:21:42+00:00",
+  "modified_date": "2025-08-16T05:07:06+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53077048,
+      "filename": "js-dialog-origin-spoof.html",
+      "mime_type": "text/plain",
+      "size_bytes": 752,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077048?download=true",
+      "local_path": "attachments/js-dialog-origin-spoof.html"
+    },
+    {
+      "id": 53077049,
+      "filename": "js-dialog-origin-spoof-frame.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2183,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077049?download=true",
+      "local_path": "attachments/js-dialog-origin-spoof-frame.html"
+    },
+    {
+      "id": 53077050,
+      "filename": "js-dialog-origin-spoof.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2970396,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077050?download=true",
+      "local_path": "attachments/js-dialog-origin-spoof.mp4"
+    },
+    {
+      "id": 53077078,
+      "filename": "js-dialog-expected.png",
+      "mime_type": "image/png",
+      "size_bytes": 9934,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077078?download=true",
+      "local_path": "attachments/js-dialog-expected.png"
+    },
+    {
+      "id": 53077079,
+      "filename": "js-dialog-origin-spoof-Android.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 137840,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077079?download=true",
+      "local_path": "attachments/js-dialog-origin-spoof-Android.jpg"
+    },
+    {
+      "id": 53077124,
+      "filename": "origin-spoof-with-content.png",
+      "mime_type": "image/png",
+      "size_bytes": 36223,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077124?download=true",
+      "local_path": "attachments/origin-spoof-with-content.png"
+    },
+    {
+      "id": 53077243,
+      "filename": "rfh-origin-spoof.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1030,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077243?download=true",
+      "local_path": "attachments/rfh-origin-spoof.html"
+    },
+    {
+      "id": 53077244,
+      "filename": "rfh-origin-spoof-frame.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3462,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077244?download=true",
+      "local_path": "attachments/rfh-origin-spoof-frame.html"
+    },
+    {
+      "id": 53077245,
+      "filename": "rfh-origin-spoof.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1499244,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077245?download=true",
+      "local_path": "attachments/rfh-origin-spoof.mp4"
+    },
+    {
+      "id": 53077246,
+      "filename": "rfh-origin-spoof-android-contacts.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 154605,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077246?download=true",
+      "local_path": "attachments/rfh-origin-spoof-android-contacts.mp4"
+    },
+    {
+      "id": 53077360,
+      "filename": "renderer.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 12112,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077360?download=true",
+      "local_path": "attachments/renderer.patch"
+    },
+    {
+      "id": 53077361,
+      "filename": "browser.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 2307,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077361?download=true",
+      "local_path": "attachments/browser.patch"
+    },
+    {
+      "id": 53077362,
+      "filename": "rfh-origin-spoof-pt2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1301,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077362?download=true",
+      "local_path": "attachments/rfh-origin-spoof-pt2.html"
+    },
+    {
+      "id": 53077363,
+      "filename": "rfh-origin-spoof-pt2-frame.html",
+      "mime_type": "text/plain",
+      "size_bytes": 7761,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077363?download=true",
+      "local_path": "attachments/rfh-origin-spoof-pt2-frame.html"
+    },
+    {
+      "id": 53077364,
+      "filename": "set-cookie-idb.html",
+      "mime_type": "text/plain",
+      "size_bytes": 439,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077364?download=true",
+      "local_path": "attachments/set-cookie-idb.html"
+    },
+    {
+      "id": 53077365,
+      "filename": "broadcast-channel.html",
+      "mime_type": "text/plain",
+      "size_bytes": 835,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077365?download=true",
+      "local_path": "attachments/broadcast-channel.html"
+    },
+    {
+      "id": 53077366,
+      "filename": "shared-worker.html",
+      "mime_type": "text/plain",
+      "size_bytes": 936,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077366?download=true",
+      "local_path": "attachments/shared-worker.html"
+    },
+    {
+      "id": 53077367,
+      "filename": "shared-worker.js",
+      "mime_type": "text/plain",
+      "size_bytes": 475,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077367?download=true",
+      "local_path": "attachments/shared-worker.js"
+    },
+    {
+      "id": 53077368,
+      "filename": "shared-worker-2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1201,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077368?download=true",
+      "local_path": "attachments/shared-worker-2.html"
+    },
+    {
+      "id": 53077369,
+      "filename": "rfh-origin-spoof-pt2-regular-renderer.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3650163,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077369?download=true",
+      "local_path": "attachments/rfh-origin-spoof-pt2-regular-renderer.mp4"
+    },
+    {
+      "id": 53077370,
+      "filename": "rfh-origin-spoof-pt2-websocket.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 706230,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077370?download=true",
+      "local_path": "attachments/rfh-origin-spoof-pt2-websocket.mp4"
+    },
+    {
+      "id": 53077384,
+      "filename": "rfh-origin-spoof-pt2-compromised-renderer.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 8037595,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077384?download=true",
+      "local_path": "attachments/rfh-origin-spoof-pt2-compromised-renderer.mp4"
+    },
+    {
+      "id": 53077420,
+      "filename": "renderer-postmessage.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1289,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077420?download=true",
+      "local_path": "attachments/renderer-postmessage.patch"
+    },
+    {
+      "id": 53077421,
+      "filename": "rfh-origin-spoof-pt3.html",
+      "mime_type": "text/plain",
+      "size_bytes": 707,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077421?download=true",
+      "local_path": "attachments/rfh-origin-spoof-pt3.html"
+    },
+    {
+      "id": 53077422,
+      "filename": "rfh-origin-spoof-pt3-frame.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2049,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077422?download=true",
+      "local_path": "attachments/rfh-origin-spoof-pt3-frame.html"
+    },
+    {
+      "id": 53077423,
+      "filename": "postmessage-to-parent.html",
+      "mime_type": "text/plain",
+      "size_bytes": 569,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077423?download=true",
+      "local_path": "attachments/postmessage-to-parent.html"
+    },
+    {
+      "id": 53077424,
+      "filename": "rfh-origin-spoof-pt3-postmessage.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1314132,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/53077424?download=true",
+      "local_path": "attachments/rfh-origin-spoof-pt3-postmessage.mp4"
+    },
+    {
+      "id": 67941228,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40059251/attachments/67941228?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 87,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA cross-origin iframe can spoof the top-frame origin's hostname shown in a JavaScript dialog title (such as alert(), prompt(), etc.) by opening a new window/tab to a blank-ish page (but \\*not\\* about:blank) and then creating the JS dialog.  \n  \nOpening a new window requi"
+}

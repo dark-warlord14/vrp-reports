@@ -1,0 +1,49 @@
+{
+  "id": "40059985",
+  "url": "https://issues.chromium.org/issues/40059985",
+  "title": "Security: heap-use-after-free ash/drag_drop/drag_drop_tracker.cc:111:1 (chromeOS)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Shell>UIFoundations",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rh...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2022-06-16T16:09:31+00:00",
+  "modified_date": "2024-01-09T06:56:24+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53066041,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40059985/attachments/53066041?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53066102,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40059985/attachments/53066102?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53066175,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40059985/attachments/53066175?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis bug is happening when dual display extended mode + tablet mode enabled. No crash happen with mirror mode.  \n  \nwhen perform ash::DragDropTracker::~DragDropTracker()[1] is holding aura::Window\\*. When user holds tabstrip from top chrome then the aura::Window\\* get de"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "41486190",
+  "url": "https://issues.chromium.org/issues/41486190",
+  "title": "Security: opens a new window in fullscreen mode at same time ,  leading to address bar spoof",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Fullscreen, Blink>WindowDialog, UI>Browser>FullScreen",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "li...@google.com",
+  "created_date": "2023-12-21T08:19:08+00:00",
+  "modified_date": "2026-02-11T12:48:57+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": null,
+  "bounty_rationale": "The panel determined that this was not a convincing spoof and a \"reasonable and prudent\" user would never end up in a situation where this would impact their safety and security.\n\n\nNote that the fact that this issue is not being rewarded does not mean\nthat the product team won't fix the issue. We have filed a bug with the product\nteam and they will review your report and decide if a fix is required. We'll\nlet you know if the issue was fixed.\n\nRegards, \\\nGoogle Security Bot\n\n*How did we do? Pleas",
+  "attachments": [
+    {
+      "id": 53040513,
+      "filename": "bandicam 2023-12-21 14-00-02-731.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1943767,
+      "url": "https://issues.chromium.org/action/issues/41486190/attachments/53040513?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53040514,
+      "filename": "fullscreenspf.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2870,
+      "url": "https://issues.chromium.org/action/issues/41486190/attachments/53040514?download=true",
+      "local_path": "attachments/fullscreenspf.html"
+    },
+    {
+      "id": 53040568,
+      "filename": "fullscreenspf.html",
+      "mime_type": "text/plain",
+      "size_bytes": 270,
+      "url": "https://issues.chromium.org/action/issues/41486190/attachments/53040568?download=true",
+      "local_path": "attachments/fullscreenspf.html"
+    },
+    {
+      "id": 62210891,
+      "filename": "bandicam 2025-01-16 09-41-51-757.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1239034,
+      "url": "https://issues.chromium.org/action/issues/41486190/attachments/62210891?download=true",
+      "local_path": "attachments/bandicam 2025-01-16 09-41-51-757.mp4"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nI found a bar spoofing vulnerability, when a window opens in fullscreen mode and opens a new window at same time what happens is that it immediately exits fullscreen mode.  \nHowever, this does not happen when opening an open  a new window at the same time as fullscree"
+}

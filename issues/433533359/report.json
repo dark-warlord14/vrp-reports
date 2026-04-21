@@ -1,0 +1,61 @@
+{
+  "id": "433533359",
+  "url": "https://issues.chromium.org/issues/433533359",
+  "title": "Consumers of ReadableStream subject to data race with SharedArrayBuffer, leading to RCE + V8 Sandbox bypass",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "cl...@chromium.org",
+  "created_date": "2025-07-23T07:06:44+00:00",
+  "modified_date": "2026-02-11T16:30:52+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 70000.0,
+  "bounty_rationale": "demonstration of controlled write outside the V8 sandbox directly from Wasm (renderer controlled write + V8 sandbox bypass demonstrating controlled write outside the sandbox)",
+  "attachments": [
+    {
+      "id": 67822512,
+      "filename": "exp.html",
+      "mime_type": "text/html",
+      "size_bytes": 90325,
+      "url": "https://issues.chromium.org/action/issues/433533359/attachments/67822512?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67827914,
+      "filename": "exploit-ab3b8cf0af3f30d97084b8a727cb40f7a0b81cbadd53195eb840cca943ff810e.tar.gz",
+      "mime_type": "application/x-gzip",
+      "size_bytes": 20477,
+      "url": "https://issues.chromium.org/action/issues/433533359/attachments/67827914?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67904723,
+      "filename": "stack-433533359.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1786,
+      "url": "https://issues.chromium.org/action/issues/433533359/attachments/67904723?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67895832,
+      "filename": "stack-asan-v8-sandbox-testing-linux-release-1490481.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 9177,
+      "url": "https://issues.chromium.org/action/issues/433533359/attachments/67895832?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 120,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Summary\n\nConsumers of `ReadableStream` may not be aware of concurrent mutation of the supplied chunk when interpreting it as a `ArrayBuffer` / `TypedArray`. For example, `ReadableStreamBytesConsumer` takes any `Uint8Array` chunk and directly uses its backing store. Th"
+}

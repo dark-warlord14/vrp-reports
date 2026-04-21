@@ -1,0 +1,70 @@
+{
+  "id": "400052777",
+  "url": "https://issues.chromium.org/issues/400052777",
+  "title": "Signal SIGTRAP in v8",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Turbofan",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2025-03-02T06:55:34+00:00",
+  "modified_date": "2025-06-11T12:37:02+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 55000.0,
+  "bounty_rationale": "report demonstrating RCE in a sandboxed process / renderer",
+  "attachments": [
+    {
+      "id": 63379873,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 361,
+      "url": "https://issues.chromium.org/action/issues/400052777/attachments/63379873?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63464813,
+      "filename": "rw_exploit.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2810,
+      "url": "https://issues.chromium.org/action/issues/400052777/attachments/63464813?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63466799,
+      "filename": "rw_exploit_no_flags.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3561,
+      "url": "https://issues.chromium.org/action/issues/400052777/attachments/63466799?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63522907,
+      "filename": "demo.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 188210,
+      "url": "https://issues.chromium.org/action/issues/400052777/attachments/63522907?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63525862,
+      "filename": "exploit.html",
+      "mime_type": "text/html",
+      "size_bytes": 5075,
+      "url": "https://issues.chromium.org/action/issues/400052777/attachments/63525862?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 92,
+  "description_snippet": "VULNERABILITY DETAILS\n## INTRODUCE\nAfter bisect, it was determined that following commit caused this problem.\n\n- Commit Info\n    - Version: 97378\n    - link: https://crrev.com/b8d3f7d0cf6461b59ec41379e49534eb7bebc210\n- Commit Message\n\n```\ncommit b8d3f7d0cf6461b59ec41379e49534eb7bebc210\nAuthor: Marja"
+}

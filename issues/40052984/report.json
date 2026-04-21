@@ -1,0 +1,45 @@
+{
+  "id": "40052984",
+  "url": "https://issues.chromium.org/issues/40052984",
+  "title": "Security: OffscreenCanvas - Use After Free in OffscreenCanvasRenderingContext2D::DrawTextInternal()",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Canvas",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lo...@gmail.com",
+  "assignee": "yi...@chromium.org",
+  "created_date": "2020-07-31T11:19:40+00:00",
+  "modified_date": "2024-02-22T16:26:22+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53363372,
+      "filename": "UAF_DrawTextInternal_PoC.html",
+      "mime_type": "text/plain",
+      "size_bytes": 473,
+      "url": "https://issues.chromium.org/action/issues/40052984/attachments/53363372?download=true",
+      "local_path": "attachments/UAF_DrawTextInternal_PoC.html"
+    },
+    {
+      "id": 53363373,
+      "filename": "UAF_DrawTextInternal_ASAN.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 24484,
+      "url": "https://issues.chromium.org/action/issues/40052984/attachments/53363373?download=true",
+      "local_path": "attachments/UAF_DrawTextInternal_ASAN.txt"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n    Specifically crafted HTML file with OffscreenCanvas can cause Use After Free of a MemoryManagedPaintCanvas object in OffscreenCanvasRenderingContext2D::DrawTextInternal(). This bug may be exploited to achieve one click remote code execution in  renderer process."
+}

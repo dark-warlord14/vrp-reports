@@ -1,0 +1,93 @@
+{
+  "id": "40071255",
+  "url": "https://issues.chromium.org/issues/40071255",
+  "title": "Security: Bypass the Protection of input fields cache (Autofill) due to inappropriate code design (Bypass 1472404),Similar to(1449874)",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P3",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "el...@gmail.com",
+  "assignee": "jk...@google.com",
+  "created_date": "2023-09-03T20:48:16+00:00",
+  "modified_date": "2024-01-22T13:09:12+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53122231,
+      "filename": "bypass1472404-poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 5866,
+      "url": "https://issues.chromium.org/action/issues/40071255/attachments/53122231?download=true",
+      "local_path": "attachments/bypass1472404-poc.html"
+    },
+    {
+      "id": 53122232,
+      "filename": "cursor-128x128-auto.png",
+      "mime_type": "image/png",
+      "size_bytes": 2900,
+      "url": "https://issues.chromium.org/action/issues/40071255/attachments/53122232?download=true",
+      "local_path": "attachments/cursor-128x128-auto.png"
+    },
+    {
+      "id": 53122233,
+      "filename": "bypass1472404-poc-DEV-LINUX-V118-2023-09-03_17-10-00.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1716944,
+      "url": "https://issues.chromium.org/action/issues/40071255/attachments/53122233?download=true",
+      "local_path": "attachments/bypass1472404-poc-DEV-LINUX-V118-2023-09-03_17-10-00.mp4"
+    },
+    {
+      "id": 53122262,
+      "filename": "Linux-dev-Official-v118-2023-09-13_10-11-38.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1129715,
+      "url": "https://issues.chromium.org/action/issues/40071255/attachments/53122262?download=true",
+      "local_path": "attachments/Linux-dev-Official-v118-2023-09-13_10-11-38.mp4"
+    },
+    {
+      "id": 53122276,
+      "filename": "bandicam 2023-09-22 23-45-32-386.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2509139,
+      "url": "https://issues.chromium.org/action/issues/40071255/attachments/53122276?download=true",
+      "local_path": "attachments/bandicam 2023-09-22 23-45-32-386.mp4"
+    },
+    {
+      "id": 53122277,
+      "filename": "Win-Canary-withShowMove-2023-09-22 23-53-49-720.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2400287,
+      "url": "https://issues.chromium.org/action/issues/40071255/attachments/53122277?download=true",
+      "local_path": "attachments/Win-Canary-withShowMove-2023-09-22 23-53-49-720.mp4"
+    },
+    {
+      "id": 53122341,
+      "filename": "Full-Autofill-Game-Poc2023-10-09 23-45-14-398.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1175872,
+      "url": "https://issues.chromium.org/action/issues/40071255/attachments/53122341?download=true",
+      "local_path": "attachments/Full-Autofill-Game-Poc2023-10-09 23-45-14-398.mp4"
+    },
+    {
+      "id": 53122343,
+      "filename": "Full-Game-Autofill-Exploit 2023-10-09 23-46-52-946.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2060829,
+      "url": "https://issues.chromium.org/action/issues/40071255/attachments/53122343?download=true",
+      "local_path": "attachments/Full-Game-Autofill-Exploit 2023-10-09 23-46-52-946.mp4"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n======================  \nthis is a report to a security vulnerability in google chrome/chromium browser as high-quality report with functional exploit. this vulnerability (Straight forward Bypass of https://crbug.com/chromium/1472404)which is similar to https://crbug.com"
+}

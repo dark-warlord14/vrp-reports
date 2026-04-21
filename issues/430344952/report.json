@@ -1,0 +1,38 @@
+{
+  "id": "430344952",
+  "url": "https://issues.chromium.org/issues/430344952",
+  "title": "Debug check failed: IsInBounds(index)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Parser",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fa...@gmail.com",
+  "assignee": "ve...@chromium.org",
+  "created_date": "2025-07-09T08:49:49+00:00",
+  "modified_date": "2025-10-18T12:47:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "bounty_rationale": "$7,000 report of memory corruption in a sandboxed process / the renderer + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 67417633,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 315,
+      "url": "https://issues.chromium.org/action/issues/430344952/attachments/67417633?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 86,
+  "description_snippet": "```\n\n\n#\n# Fatal error in ../../src/objects/fixed-array-inl.h, line 116\n# Debug check failed: IsInBounds(index).\n#\n#\n#\n#FailureMessage Object: 0x7ffdb6786b58\n==== C stack trace ===============================\n\n    /home/user/v8/v8/out/x64.debug/libv8_libbase.so(v8::base::debug::StackTrace::StackTrace"
+}

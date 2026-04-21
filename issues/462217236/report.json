@@ -1,0 +1,38 @@
+{
+  "id": "462217236",
+  "url": "https://issues.chromium.org/issues/462217236",
+  "title": "V8 Sandbox Bypass: AAW/PC control via dispatch entry UAF during InstantiateAsmJs by hijacking start",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>GarbageCollection, Blink>JavaScript>Sandbox",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "kr...@gmail.com",
+  "assignee": "cl...@chromium.org",
+  "created_date": "2025-11-20T00:23:44+00:00",
+  "modified_date": "2026-03-12T07:59:31+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": "V8 sandbox bypass with control of PC",
+  "attachments": [
+    {
+      "id": 71148124,
+      "filename": "tail-dispatch-uaf-poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3885,
+      "url": "https://issues.chromium.org/action/issues/462217236/attachments/71148124?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Summary\n\nThe js-to-wasm wrapper for the start function used for asm.js instantiation exists inside the sandbox and so can be corrupted to run user code during instantiation. Since nothing besides in-sandbox data retains the dispatch entry of the instantiator at this p"
+}

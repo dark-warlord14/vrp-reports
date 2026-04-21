@@ -1,0 +1,53 @@
+{
+  "id": "40059248",
+  "url": "https://issues.chromium.org/issues/40059248",
+  "title": "Security: UAF in DumpDatabaseHandler",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Storage>FileSystem",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "as...@chromium.org",
+  "created_date": "2022-03-30T16:03:42+00:00",
+  "modified_date": "2024-01-09T06:44:16+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53142114,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 47753,
+      "url": "https://issues.chromium.org/action/issues/40059248/attachments/53142114?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53142115,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 210,
+      "url": "https://issues.chromium.org/action/issues/40059248/attachments/53142115?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53142116,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 534,
+      "url": "https://issues.chromium.org/action/issues/40059248/attachments/53142116?download=true",
+      "local_path": "attachments/background.js"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nMessage `getDatabaseDump`[1] will bind the task `DidGetDatabaseDump`[2] with `base::Unretained(this)` as a callback into the SyncFileSystemService. And if the `sync_worker` is turned on, the task will be posted into a new sequence[3]. It will cause the UAF if `DumpDat"
+}

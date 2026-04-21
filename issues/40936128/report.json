@@ -1,0 +1,52 @@
+{
+  "id": "40936128",
+  "url": "https://issues.chromium.org/issues/40936128",
+  "title": "Security: readanything render frame UAF fix of crbug.com/1488268 is not robust.",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "UI>Accessibility>ReadingMode",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zh...@gmail.com",
+  "assignee": "jo...@google.com",
+  "created_date": "2023-10-13T07:42:25+00:00",
+  "modified_date": "2024-05-28T12:56:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53147967,
+      "filename": "readanything-render-uaf.asan",
+      "mime_type": "text/plain",
+      "size_bytes": 24443,
+      "url": "https://issues.chromium.org/action/issues/40936128/attachments/53147967?download=true",
+      "local_path": "attachments/readanything-render-uaf.asan"
+    },
+    {
+      "id": 53147969,
+      "filename": "readanything-render-uaf.demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4950771,
+      "url": "https://issues.chromium.org/action/issues/40936128/attachments/53147969?download=true",
+      "local_path": "attachments/readanything-render-uaf.demo.mp4"
+    },
+    {
+      "id": 53147970,
+      "filename": "readanything-reander-uaf-fix.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 3464,
+      "url": "https://issues.chromium.org/action/issues/40936128/attachments/53147970?download=true",
+      "local_path": "attachments/readanything-reander-uaf-fix.patch"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nhttps://chromium-review.googlesource.com/c/chromium/src/+/4908587  \n  \nWhile reviewing the aforementioned modification, I discovered that   \nit did not work as the owner's expectations.  \n  \nThe primary modification made in this fix is the inclusion of a   \ncheck for"
+}

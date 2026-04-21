@@ -1,0 +1,42 @@
+{
+  "id": "40061865",
+  "url": "https://issues.chromium.org/issues/40061865",
+  "title": "Security: Security DCHECK failed: IsA<Derived>(from) blink::CSSPrimitiveValue::ConvertToLength",
+  "status": "Fixed",
+  "severity": "S4-Minimal",
+  "priority": "P4",
+  "component": "Blink>Animation, Blink>CSS",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "ke...@google.com",
+  "created_date": "2022-11-22T03:29:56+00:00",
+  "modified_date": "2023-03-09T18:33:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53297616,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 419,
+      "url": "https://issues.chromium.org/action/issues/40061865/attachments/53297616?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53297617,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2243,
+      "url": "https://issues.chromium.org/action/issues/40061865/attachments/53297617?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 31,
+  "description_snippet": "**VERSION**   \nWIN10 X64  \nasan-win32-release_x64-1073735  \n  \n**REPRODUCTION CASE**   \nchrome --no-sandbox --user-data-dir=test --enable-blink-test-features poc.html  \n  \nType of crash: [tab]  \n  \nRCA  \nComing soon  \n  \n  \nASAN  \n[4360:16768:1122/112517.488:FATAL:casting.h(115)] Security DCHECK fai"
+}

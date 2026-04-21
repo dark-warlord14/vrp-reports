@@ -1,0 +1,34 @@
+{
+  "id": "404285918",
+  "url": "https://issues.chromium.org/issues/404285918",
+  "title": "V8 Sandbox Bypass: SP/PC control via Wasm JSPI central stack top confusion",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "th...@google.com",
+  "created_date": "2025-03-17T19:16:48+00:00",
+  "modified_date": "2026-02-19T12:54:35+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": "V8 sandbox bypass report demonstrating control of stack and control flow outside the V8 sandbox",
+  "attachments": [
+    {
+      "id": 63920092,
+      "filename": "jspi-central-stack-confusion.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 77371,
+      "url": "https://issues.chromium.org/action/issues/404285918/attachments/63920092?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Summary\n\nV8 sandbox bypass, SP/PC control (full stack control) via Wasm JSPI central stack top confusion. This requires using a staged WASM feature ([JSPI](https://chromestatus.com/feature/5674874568704000)), also available through Origin Trials.\n\nThis is a variant of"
+}

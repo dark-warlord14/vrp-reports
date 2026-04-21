@@ -1,0 +1,51 @@
+{
+  "id": "40053670",
+  "url": "https://issues.chromium.org/issues/40053670",
+  "title": "Security:  Hide real extension of file by RTL - showSaveFilePicker",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Storage>FileSystem",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "as...@chromium.org",
+  "created_date": "2020-10-20T09:03:21+00:00",
+  "modified_date": "2024-01-09T02:27:37+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53183725,
+      "filename": "rtltrick.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 9677689,
+      "url": "https://issues.chromium.org/action/issues/40053670/attachments/53183725?download=true",
+      "local_path": "attachments/rtltrick.gif"
+    },
+    {
+      "id": 53183726,
+      "filename": "RTLExplanation.png",
+      "mime_type": "image/png",
+      "size_bytes": 53319,
+      "url": "https://issues.chromium.org/action/issues/40053670/attachments/53183726?download=true",
+      "local_path": "attachments/RTLExplanation.png"
+    },
+    {
+      "id": 53183727,
+      "filename": "downloadExeAsJpeg.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2081,
+      "url": "https://issues.chromium.org/action/issues/40053670/attachments/53183727?download=true",
+      "local_path": "attachments/downloadExeAsJpeg.html"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "New bug based on \"Comment by maciekpul@gmail.com on Tue, Oct 13, 2020, 7:18 PM GMT+2 (6 days ago)\": https://bugs.chromium.org/p/chromium/issues/detail?id=1137247#c7  \n  \n**VULNERABILITY DETAILS**   \nAccept extension allowing to put RTL (right-to-left) character. Extra spoofing extension of file on t"
+}

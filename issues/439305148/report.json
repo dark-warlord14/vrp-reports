@@ -1,0 +1,83 @@
+{
+  "id": "439305148",
+  "url": "https://issues.chromium.org/issues/439305148",
+  "title": "Mojo’s ChannelPosix incorrectly handles >128 file descriptors in a message, leading to fd confusion",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Mojo",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "ff...@google.com",
+  "created_date": "2025-08-18T01:13:13+00:00",
+  "modified_date": "2025-12-16T21:32:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 30000.0,
+  "bounty_rationale": "While this report didn't fully demonstrate memory corruption or RCE, we do believe this was a sufficient and high-impact report of a site-isolation bypass, qualifying for a $30,000 reward accordingly",
+  "attachments": [
+    {
+      "id": 68523097,
+      "filename": "poc1.html",
+      "mime_type": "text/html",
+      "size_bytes": 1320,
+      "url": "https://issues.chromium.org/action/issues/439305148/attachments/68523097?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68523098,
+      "filename": "poc1-stack-browser.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 5307,
+      "url": "https://issues.chromium.org/action/issues/439305148/attachments/68523098?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68523099,
+      "filename": "poc1-stack-renderer.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 8999,
+      "url": "https://issues.chromium.org/action/issues/439305148/attachments/68523099?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68523100,
+      "filename": "poc2.html",
+      "mime_type": "text/html",
+      "size_bytes": 942,
+      "url": "https://issues.chromium.org/action/issues/439305148/attachments/68523100?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68523101,
+      "filename": "poc3.html",
+      "mime_type": "text/html",
+      "size_bytes": 581,
+      "url": "https://issues.chromium.org/action/issues/439305148/attachments/68523101?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68523102,
+      "filename": "poc3-evil.html",
+      "mime_type": "text/html",
+      "size_bytes": 380,
+      "url": "https://issues.chromium.org/action/issues/439305148/attachments/68523102?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68523103,
+      "filename": "poc3-victim.html",
+      "mime_type": "text/html",
+      "size_bytes": 300,
+      "url": "https://issues.chromium.org/action/issues/439305148/attachments/68523103?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 107,
+  "description_snippet": "VULNERABILITY DETAILS\nIf more than 128 file descriptors are sent in a single Mojo message on platforms using ChannelPosix (Linux, Android, ChromeOS), the extra file descriptors are silently dropped and never seen by the receiver. If more file descriptors are subsequently transmitted on the same chan"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "40058585",
+  "url": "https://issues.chromium.org/issues/40058585",
+  "title": "Uaf in OmniboxPopup",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "tt...@gmail.com",
+  "assignee": "to...@chromium.org",
+  "created_date": "2022-01-25T07:54:20+00:00",
+  "modified_date": "2022-08-18T01:28:27+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53105482,
+      "filename": "test.html",
+      "mime_type": "text/plain",
+      "size_bytes": 74,
+      "url": "https://issues.chromium.org/action/issues/40058585/attachments/53105482?download=true",
+      "local_path": "attachments/test.html"
+    },
+    {
+      "id": 53105483,
+      "filename": "test.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2042248,
+      "url": "https://issues.chromium.org/action/issues/40058585/attachments/53105483?download=true",
+      "local_path": "attachments/test.mp4"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:95.0) Gecko/20100101 Firefox/95.0\r\n\r\nSteps to reproduce the problem:\r\n1. run chrome with flag: ./asan-linux-release-962399/chrome --enable-features=WebUIOmniboxPopup http://127.0.0.1:8000/test.html about:blank\r\n2.  input anything in the location"
+}

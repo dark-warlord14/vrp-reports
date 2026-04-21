@@ -1,0 +1,26 @@
+{
+  "id": "40062211",
+  "url": "https://issues.chromium.org/issues/40062211",
+  "title": "Buffer overflow in the rndis_wlan driver for Linux kernel",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2023-23559"
+  ],
+  "reporter": "sz...@gmail.com",
+  "assignee": "ch...@google.com",
+  "created_date": "2022-12-13T08:09:35+00:00",
+  "modified_date": "2023-05-24T13:00:12+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 45,
+  "description_snippet": "---\n\n### Report description\n\n\nBuffer overflow in the rndis_wlan driver for Linux kernel\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nOther - Chrome VRP\n\n\n---\n\n### The problem\n\n\n#### Please describe the technical details of the vulnerability\n\nThe rndis_w"
+}

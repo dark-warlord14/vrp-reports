@@ -1,0 +1,41 @@
+{
+  "id": "40086452",
+  "url": "https://issues.chromium.org/issues/40086452",
+  "title": "Security: Out-of-bounds write in ChunkDemuxer (TRUN box)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media>Video",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2017-5037"
+  ],
+  "reporter": "wy...@gmail.com",
+  "assignee": "ch...@chromium.org",
+  "created_date": "2017-01-10T07:43:19+00:00",
+  "modified_date": "2018-04-25T22:46:37+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53317866,
+      "filename": "PoC.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 5024833,
+      "url": "https://issues.chromium.org/action/issues/40086452/attachments/53317866?download=true",
+      "local_path": "attachments/PoC.zip"
+    },
+    {
+      "id": 53317867,
+      "filename": "patch.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1111,
+      "url": "https://issues.chromium.org/action/issues/40086452/attachments/53317867?download=true",
+      "local_path": "attachments/patch.diff"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAfter reading the source code of Chrome(Android), I find Chrome do some check with video by FFmpegDemuxer and ChunkDemuxer.  \n  \nhttps://cs.chromium.org/chromium/src/media/blink/webmediaplayer_impl.cc?dr=CSs&sq=package:chromium&rcl=1484007841&l=1643  \n  \n\tvoid WebMediaPl"
+}

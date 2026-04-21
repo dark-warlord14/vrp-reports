@@ -1,0 +1,49 @@
+{
+  "id": "40061129",
+  "url": "https://issues.chromium.org/issues/40061129",
+  "title": "Security: Extension sanitization bypass by using %% ",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "qi...@chromium.org",
+  "created_date": "2022-09-24T13:19:29+00:00",
+  "modified_date": "2023-02-14T18:33:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53309576,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 92,
+      "url": "https://issues.chromium.org/action/issues/40061129/attachments/53309576?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53309699,
+      "filename": "lnk.html",
+      "mime_type": "text/plain",
+      "size_bytes": 353,
+      "url": "https://issues.chromium.org/action/issues/40061129/attachments/53309699?download=true",
+      "local_path": "attachments/lnk.html"
+    },
+    {
+      "id": 53309721,
+      "filename": "Thu Oct 13 2022 16_54_02.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1426689,
+      "url": "https://issues.chromium.org/action/issues/40061129/attachments/53309721?download=true",
+      "local_path": "attachments/Thu Oct 13 2022 16_54_02.webm"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nDue to the fix for https://bugs.chromium.org/p/chromium/issues/detail?id=1308422, its possible to bypass link sanitization for dangerous downloads when clicking \"Save As\" on Windows  \n  \n**VERSION**   \nChrome Version: [105.0.5195.127 Stable]  \nOperating System: [Windo"
+}

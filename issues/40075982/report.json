@@ -1,0 +1,77 @@
+{
+  "id": "40075982",
+  "url": "https://issues.chromium.org/issues/40075982",
+  "title": "Security: heap-use-after-free in blink::FormData::append form_data.cc:151",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>GarbageCollection, Blink>Network>FetchAPI",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "ni...@chromium.org",
+  "created_date": "2023-10-31T15:00:20+00:00",
+  "modified_date": "2024-02-14T15:40:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52965885,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 21933,
+      "url": "https://issues.chromium.org/action/issues/40075982/attachments/52965885?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 52965886,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 162,
+      "url": "https://issues.chromium.org/action/issues/40075982/attachments/52965886?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52965887,
+      "filename": "h1.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1017,
+      "url": "https://issues.chromium.org/action/issues/40075982/attachments/52965887?download=true",
+      "local_path": "attachments/h1.js"
+    },
+    {
+      "id": 52965888,
+      "filename": "testharness.js",
+      "mime_type": "text/plain",
+      "size_bytes": 185427,
+      "url": "https://issues.chromium.org/action/issues/40075982/attachments/52965888?download=true",
+      "local_path": "attachments/testharness.js"
+    },
+    {
+      "id": 52965889,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 8964,
+      "url": "https://issues.chromium.org/action/issues/40075982/attachments/52965889?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 52965890,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40075982/attachments/52965890?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "heap-use-after-free in blink::FormData::append form_data.cc:151\r\n\r\n#Teston\r\n1217490 Winx64\r\n\r\n#Reproduce\r\ninstall node&puppeteer-core\r\npython -m http.server 1337\r\nnode 1031.js chrome.exe http://localhost:1337/poc.html\r\n\r\n##Note\r\nBecause the test case reproduction is unstable, I have written an autom"
+}

@@ -1,0 +1,137 @@
+{
+  "id": "40062302",
+  "url": "https://issues.chromium.org/issues/40062302",
+  "title": "Security: heap-buffer-overflow in HidDeviceManager::GetApiDevicesFromList",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Apps>API>HID, Platform>Extensions>API",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "un...@gmail.com",
+  "assignee": "ch...@chromium.org",
+  "created_date": "2022-12-17T11:04:48+00:00",
+  "modified_date": "2024-01-09T08:47:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53355565,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 15605,
+      "url": "https://issues.chromium.org/action/issues/40062302/attachments/53355565?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53355566,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 206,
+      "url": "https://issues.chromium.org/action/issues/40062302/attachments/53355566?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53355567,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 139,
+      "url": "https://issues.chromium.org/action/issues/40062302/attachments/53355567?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53355568,
+      "filename": "window.html",
+      "mime_type": "text/plain",
+      "size_bytes": 259,
+      "url": "https://issues.chromium.org/action/issues/40062302/attachments/53355568?download=true",
+      "local_path": "attachments/window.html"
+    },
+    {
+      "id": 53355569,
+      "filename": "main.js",
+      "mime_type": "text/plain",
+      "size_bytes": 301,
+      "url": "https://issues.chromium.org/action/issues/40062302/attachments/53355569?download=true",
+      "local_path": "attachments/main.js"
+    },
+    {
+      "id": 53355570,
+      "filename": "angular.min.js",
+      "mime_type": "text/plain",
+      "size_bytes": 125526,
+      "url": "https://issues.chromium.org/action/issues/40062302/attachments/53355570?download=true",
+      "local_path": "attachments/angular.min.js"
+    },
+    {
+      "id": 53355571,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1081230,
+      "url": "https://issues.chromium.org/action/issues/40062302/attachments/53355571?download=true",
+      "local_path": "attachments/poc.mp4"
+    },
+    {
+      "id": 53355601,
+      "filename": "window.html",
+      "mime_type": "text/plain",
+      "size_bytes": 67,
+      "url": "https://issues.chromium.org/action/issues/40062302/attachments/53355601?download=true",
+      "local_path": "attachments/window.html"
+    },
+    {
+      "id": 53355602,
+      "filename": "main.js",
+      "mime_type": "text/plain",
+      "size_bytes": 232,
+      "url": "https://issues.chromium.org/action/issues/40062302/attachments/53355602?download=true",
+      "local_path": "attachments/main.js"
+    },
+    {
+      "id": 53355624,
+      "filename": "picture1.png",
+      "mime_type": "image/png",
+      "size_bytes": 241568,
+      "url": "https://issues.chromium.org/action/issues/40062302/attachments/53355624?download=true",
+      "local_path": "attachments/picture1.png"
+    },
+    {
+      "id": 53355625,
+      "filename": "picture2.png",
+      "mime_type": "image/png",
+      "size_bytes": 235508,
+      "url": "https://issues.chromium.org/action/issues/40062302/attachments/53355625?download=true",
+      "local_path": "attachments/picture2.png"
+    },
+    {
+      "id": 53355626,
+      "filename": "poc on vm.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2913637,
+      "url": "https://issues.chromium.org/action/issues/40062302/attachments/53355626?download=true",
+      "local_path": "attachments/poc on vm.mp4"
+    },
+    {
+      "id": 53355702,
+      "filename": "issue1402000_chrome_app_package.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 46053,
+      "url": "https://issues.chromium.org/action/issues/40062302/attachments/53355702?download=true",
+      "local_path": "attachments/issue1402000_chrome_app_package.zip"
+    },
+    {
+      "id": 53355754,
+      "filename": "issue1402000_usb.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 46253,
+      "url": "https://issues.chromium.org/action/issues/40062302/attachments/53355754?download=true",
+      "local_path": "attachments/issue1402000_usb.zip"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen choosing Hid devices in the page created by extension, heap buffer overflow occurs.   \n  \n**VERSION**   \nChrome Version:111.0.5483.0 (Developer Build) (64-bit)  \nOperating System:Windows 10 19045  \ntested on https://www.googleapis.com/download/storage/v1/b/chromium-"
+}

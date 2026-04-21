@@ -1,0 +1,22 @@
+{
+  "id": "40082902",
+  "url": "https://issues.chromium.org/issues/40082902",
+  "title": "CSP: wildcard source expression (*) should not match data URIs",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@shapesecurity.com",
+  "assignee": "jw...@chromium.org",
+  "created_date": "2015-09-21T20:57:54+00:00",
+  "modified_date": "2018-07-28T14:24:50+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 31,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nA CSP policy of `script-src \\*` incorrectly allows a script using a data URI (such as `<script src=\"data:application/javascript,console.log(\\'inline script ran\\');\"></script>`) to run. This should not be allowed, as per CSP section 4.2.2 step 2, which states  \n  \n  If"
+}

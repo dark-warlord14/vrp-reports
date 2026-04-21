@@ -1,0 +1,45 @@
+{
+  "id": "40073505",
+  "url": "https://issues.chromium.org/issues/40073505",
+  "title": "Security:  heap-use-after-free on RenderFrameHostImpl::Init",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>Sandbox>SiteIsolation, Platform>Apps>BrowserTag",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "18...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2023-09-27T09:02:12+00:00",
+  "modified_date": "2024-01-12T18:43:35+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53202250,
+      "filename": "patch.cpp",
+      "mime_type": "text/plain",
+      "size_bytes": 2340,
+      "url": "https://issues.chromium.org/action/issues/40073505/attachments/53202250?download=true",
+      "local_path": "attachments/patch.cpp"
+    },
+    {
+      "id": 53202251,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 24626,
+      "url": "https://issues.chromium.org/action/issues/40073505/attachments/53202251?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "Hey, The bug found by occasionally when I inverstigate [another bug](https://bugs.chromium.org/p/chromium/issues/detail?id=1444360).\r\n\r\nWhen I inverstigate above code, I found [RenderFrameHostManager::CommitPending](https://source.chromium.org/chromium/chromium/src/+/main:content/browser/renderer_ho"
+}

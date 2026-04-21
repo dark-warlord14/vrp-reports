@@ -1,0 +1,49 @@
+{
+  "id": "40060572",
+  "url": "https://issues.chromium.org/issues/40060572",
+  "title": "Security: Download notification can hide 'Press Esc to exit fullscreen' warning",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Bubbles>Download, UI>Browser>Downloads",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "bh...@google.com",
+  "created_date": "2022-08-12T07:41:08+00:00",
+  "modified_date": "2024-01-09T07:25:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53018758,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 295,
+      "url": "https://issues.chromium.org/action/issues/40060572/attachments/53018758?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53018759,
+      "filename": "screen.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 121302,
+      "url": "https://issues.chromium.org/action/issues/40060572/attachments/53018759?download=true",
+      "local_path": "attachments/screen.mp4"
+    },
+    {
+      "id": 53018833,
+      "filename": "Screenshot (2).png",
+      "mime_type": "image/png",
+      "size_bytes": 77820,
+      "url": "https://issues.chromium.org/action/issues/40060572/attachments/53018833?download=true",
+      "local_path": "attachments/Screenshot (2).png"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**VERSION**   \nChrome Version: 106.0.5235.0 (Official Build) canary   \nOperating System: Windows 10  \n  \n**REPRODUCTION CASE**   \n  \n- Enable chrome://flags/#download-bubble  \n  \n1. Open poc.html  \n2. Click anywhere  \n  \nNote that the download notification can replace the \"Press Esc to exit full scr"
+}

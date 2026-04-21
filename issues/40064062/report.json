@@ -1,0 +1,41 @@
+{
+  "id": "40064062",
+  "url": "https://issues.chromium.org/issues/40064062",
+  "title": "Security:stack buffer overflow in set_stream_out_varyings",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fi...@gmail.com",
+  "assignee": "ch...@google.com",
+  "created_date": "2023-04-15T13:27:53+00:00",
+  "modified_date": "2024-01-09T07:53:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53003146,
+      "filename": "crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 3982,
+      "url": "https://issues.chromium.org/action/issues/40064062/attachments/53003146?download=true",
+      "local_path": "attachments/crash.log"
+    },
+    {
+      "id": 53003147,
+      "filename": "test",
+      "mime_type": "text/plain",
+      "size_bytes": 112,
+      "url": "https://issues.chromium.org/action/issues/40064062/attachments/53003147?download=true",
+      "local_path": "attachments/test"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nvaryings is an array with the size of PIPE_MAX_SHADER_OUTPUTS\\*2. varyings is continuously written in set_stream_out_varyings without any check, resulting in stack buffer overflow.  \n```  \nstatic void set_stream_out_varyings(ASSERTED struct vrend_sub_context \\*sub_ctx"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "40058878",
+  "url": "https://issues.chromium.org/issues/40058878",
+  "title": "Security: Chrome for Android Cancel Enter Fullscreen able to Hide Omnibox",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Fullscreen, UI>Browser>FullScreen, UI>Browser>Omnibox",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "su...@gmail.com",
+  "assignee": "ji...@chromium.org",
+  "created_date": "2022-02-23T19:22:56+00:00",
+  "modified_date": "2024-01-09T04:45:15+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53041932,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058878/attachments/53041932?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53041933,
+      "filename": "hideomnibox demonstration on Mi 9T.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4043656,
+      "url": "https://issues.chromium.org/action/issues/40058878/attachments/53041933?download=true",
+      "local_path": "attachments/hideomnibox demonstration on Mi 9T.mp4"
+    },
+    {
+      "id": 53041943,
+      "filename": "hideomniboxspoof.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 15104,
+      "url": "https://issues.chromium.org/action/issues/40058878/attachments/53041943?download=true",
+      "local_path": "attachments/hideomniboxspoof.zip"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "When requestFullscreen then canceled by append fullscreen element into <html> element using canvas.toBlob to help achieve appropriate timing, surprisingly the omnibox will be hidden instead of restore to visible state.  \n  \n**VERSION**   \n- Chrome 98.0.4758.101 on Mi 9T; Android 11  \n- Chrome 98.0.4"
+}

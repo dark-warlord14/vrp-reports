@@ -1,0 +1,109 @@
+{
+  "id": "40058916",
+  "url": "https://issues.chromium.org/issues/40058916",
+  "title": "Security: Extension can move window off screen, user can interact with sensitive UI using keyboard without being aware",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions>API",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "em...@chromium.org",
+  "created_date": "2022-02-27T22:18:45+00:00",
+  "modified_date": "2024-01-09T09:40:06+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52921868,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 265,
+      "url": "https://issues.chromium.org/action/issues/40058916/attachments/52921868?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 52921869,
+      "filename": "bg.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3024,
+      "url": "https://issues.chromium.org/action/issues/40058916/attachments/52921869?download=true",
+      "local_path": "attachments/bg.js"
+    },
+    {
+      "id": 52921870,
+      "filename": "extension-interaction-offscreen.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2783238,
+      "url": "https://issues.chromium.org/action/issues/40058916/attachments/52921870?download=true",
+      "local_path": "attachments/extension-interaction-offscreen.mp4"
+    },
+    {
+      "id": 52921888,
+      "filename": "offscreen.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3764,
+      "url": "https://issues.chromium.org/action/issues/40058916/attachments/52921888?download=true",
+      "local_path": "attachments/offscreen.html"
+    },
+    {
+      "id": 52921889,
+      "filename": "offscreen-instructions.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1713,
+      "url": "https://issues.chromium.org/action/issues/40058916/attachments/52921889?download=true",
+      "local_path": "attachments/offscreen-instructions.html"
+    },
+    {
+      "id": 52921896,
+      "filename": "manifest-offscreen-bookmark-xss.json",
+      "mime_type": "text/plain",
+      "size_bytes": 346,
+      "url": "https://issues.chromium.org/action/issues/40058916/attachments/52921896?download=true",
+      "local_path": "attachments/manifest-offscreen-bookmark-xss.json"
+    },
+    {
+      "id": 52921897,
+      "filename": "bg-offscreen-bookmark-xss.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1707,
+      "url": "https://issues.chromium.org/action/issues/40058916/attachments/52921897?download=true",
+      "local_path": "attachments/bg-offscreen-bookmark-xss.js"
+    },
+    {
+      "id": 52921898,
+      "filename": "offscreen.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4598,
+      "url": "https://issues.chromium.org/action/issues/40058916/attachments/52921898?download=true",
+      "local_path": "attachments/offscreen.html"
+    },
+    {
+      "id": 52921899,
+      "filename": "offscreen-instructions.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1902,
+      "url": "https://issues.chromium.org/action/issues/40058916/attachments/52921899?download=true",
+      "local_path": "attachments/offscreen-instructions.html"
+    },
+    {
+      "id": 52921900,
+      "filename": "offscreen-bookmark-xss.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1246330,
+      "url": "https://issues.chromium.org/action/issues/40058916/attachments/52921900?download=true",
+      "local_path": "attachments/offscreen-bookmark-xss.mp4"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAn extension can create or move any window outside of the screen, and the window can still receive keyboard input. This can hide user interactions using keyboard input with sensitive browser UI and web pages. I've identified a myriad of affected areas, and there are pote"
+}

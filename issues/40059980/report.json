@@ -1,0 +1,53 @@
+{
+  "id": "40059980",
+  "url": "https://issues.chromium.org/issues/40059980",
+  "title": "An iframe on a different domain can change the location to about:blank which enables you to access properties on the window. document.baseURI is leaked from the parent frame.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature>IFrameSandbox",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ga...@portswigger.net",
+  "assignee": "ar...@chromium.org",
+  "created_date": "2022-06-16T08:37:01+00:00",
+  "modified_date": "2024-01-06T00:06:15+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53010110,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 307,
+      "url": "https://issues.chromium.org/action/issues/40059980/attachments/53010110?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53010111,
+      "filename": "target.html",
+      "mime_type": "text/plain",
+      "size_bytes": 110,
+      "url": "https://issues.chromium.org/action/issues/40059980/attachments/53010111?download=true",
+      "local_path": "attachments/target.html"
+    },
+    {
+      "id": 53010179,
+      "filename": "Capture d’écran du 2022-06-30 12-19-02.png",
+      "mime_type": "image/png",
+      "size_bytes": 16611,
+      "url": "https://issues.chromium.org/action/issues/40059980/attachments/53010179?download=true",
+      "local_path": "attachments/Capture d’écran du 2022-06-30 12-19-02.png"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "---\n\n### Report description\n\n\nAn iframe on a different domain can change the location to about:blank which enables you to access properties on the window. document.baseURI is leaked from the parent frame.\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nGoo"
+}

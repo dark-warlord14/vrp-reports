@@ -1,0 +1,41 @@
+{
+  "id": "40059489",
+  "url": "https://issues.chromium.org/issues/40059489",
+  "title": "UAF in ash::HatsDialog::Show",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>HaTS",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "et...@gmail.com",
+  "assignee": "ja...@google.com",
+  "created_date": "2022-04-27T04:28:55+00:00",
+  "modified_date": "2023-05-24T13:03:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53084466,
+      "filename": "repro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4643911,
+      "url": "https://issues.chromium.org/action/issues/40059489/attachments/53084466?download=true",
+      "local_path": "attachments/repro.mp4"
+    },
+    {
+      "id": 53084467,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 24721,
+      "url": "https://issues.chromium.org/action/issues/40059489/attachments/53084467?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 73,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. apply patch to chromeos  \nThis is to increase the race time, and it can also block the GetFormattedSiteContext function.  \n```  \ndiff --git a/chrome/browser/ash/hats/hats_dialog.cc b/chrome/browser/ash/hats/hats_dialog.cc  \nindex da7f247164c47..5bc8752eb4ca7"
+}

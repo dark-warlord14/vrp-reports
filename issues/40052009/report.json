@@ -1,0 +1,65 @@
+{
+  "id": "40052009",
+  "url": "https://issues.chromium.org/issues/40052009",
+  "title": "Security: URL spoofing using 'very-long-hostname' URL in the Suggestion box",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ra...@gmail.com",
+  "assignee": "jd...@chromium.org",
+  "created_date": "2020-04-13T22:32:00+00:00",
+  "modified_date": "2021-09-08T17:31:36+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52983221,
+      "filename": "URL spoofing in the suggestion box.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 28229,
+      "url": "https://issues.chromium.org/action/issues/40052009/attachments/52983221?download=true",
+      "local_path": "attachments/URL spoofing in the suggestion box.jpg"
+    },
+    {
+      "id": 52983222,
+      "filename": "Shown correctly in omni box.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 28520,
+      "url": "https://issues.chromium.org/action/issues/40052009/attachments/52983222?download=true",
+      "local_path": "attachments/Shown correctly in omni box.jpg"
+    },
+    {
+      "id": 52983340,
+      "filename": "Suggested.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 43959,
+      "url": "https://issues.chromium.org/action/issues/40052009/attachments/52983340?download=true",
+      "local_path": "attachments/Suggested.jpeg"
+    },
+    {
+      "id": 52983385,
+      "filename": "Before fix.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 28229,
+      "url": "https://issues.chromium.org/action/issues/40052009/attachments/52983385?download=true",
+      "local_path": "attachments/Before fix.jpg"
+    },
+    {
+      "id": 52983386,
+      "filename": "After fix.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 40981,
+      "url": "https://issues.chromium.org/action/issues/40052009/attachments/52983386?download=true",
+      "local_path": "attachments/After fix.jpg"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "While 'very-long-hostname' is fixed in the iOS version and shows correctly in the omnibox, but it needs to be fixed in the suggestion box since it states the link that you copied is 'google.com/fake/fake/fake' However, it should be shown as '...attack.com'\r\n\r\nURL for the experiment:\r\n\r\nhttps://googl"
+}

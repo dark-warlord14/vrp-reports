@@ -1,0 +1,65 @@
+{
+  "id": "40946724",
+  "url": "https://issues.chromium.org/issues/40946724",
+  "title": "Security: Security UI Spoofing on Chrome for Android due to the tabstrip hiding the fullscreen notification ",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>FullScreen, UI>Browser>Mobile>TabStrip",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "mu...@google.com",
+  "created_date": "2023-11-29T16:09:33+00:00",
+  "modified_date": "2026-03-28T03:17:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "UI spoofing requiring complex prerequisites and multiple gestures",
+  "attachments": [
+    {
+      "id": 53378380,
+      "filename": "screen.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 450622,
+      "url": "https://issues.chromium.org/action/issues/40946724/attachments/53378380?download=true",
+      "local_path": "attachments/screen.mp4"
+    },
+    {
+      "id": 53378391,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1063,
+      "url": "https://issues.chromium.org/action/issues/40946724/attachments/53378391?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53378439,
+      "filename": "screen.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 442543,
+      "url": "https://issues.chromium.org/action/issues/40946724/attachments/53378439?download=true",
+      "local_path": "attachments/screen.mp4"
+    },
+    {
+      "id": 71728727,
+      "filename": "screen-20251212-050630.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 8922973,
+      "url": "https://issues.chromium.org/action/issues/40946724/attachments/71728727?download=true",
+      "local_path": "attachments/screen-20251212-050630.mp4"
+    },
+    {
+      "id": 72362917,
+      "filename": "Fri Jan 09 2026 11:22:38 GMT-0800 (Pacific Standard Time).png",
+      "mime_type": "image/png",
+      "size_bytes": 359768,
+      "url": "https://issues.chromium.org/action/issues/40946724/attachments/72362917?download=true",
+      "local_path": "attachments/Fri Jan 09 2026 11_22_38 GMT-0800 (Pacific Standard Time).png"
+    }
+  ],
+  "update_count": 70,
+  "description_snippet": "**VERSION**   \nChrome Version: 121.0.6150.0  \nOperating System: Android Pixel 7 Pro  \n  \n**REPRODUCTION CASE**   \n1. Create a group containing two tabs  \n2. Open PoC.html in one tab and tap anywhere on the page  \n3. tap on tab overview button then back to the page"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "379818904",
+  "url": "https://issues.chromium.org/issues/379818904",
+  "title": "iOS QR code spoof: embedded backslashes",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Mobile",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ze...@gmail.com",
+  "assignee": "am...@google.com",
+  "created_date": "2024-11-19T18:24:37+00:00",
+  "modified_date": "2026-01-20T02:38:15+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact security UI spoof",
+  "attachments": [
+    {
+      "id": 60930639,
+      "filename": "446.png",
+      "mime_type": "image/png",
+      "size_bytes": 1470,
+      "url": "https://issues.chromium.org/action/issues/379818904/attachments/60930639?download=true",
+      "local_path": "attachments/446.png"
+    },
+    {
+      "id": 60930640,
+      "filename": "IMG_1645.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 1873561,
+      "url": "https://issues.chromium.org/action/issues/379818904/attachments/60930640?download=true",
+      "local_path": "attachments/IMG_1645.jpeg"
+    }
+  ],
+  "update_count": 108,
+  "description_snippet": "VULNERABILITY DETAILS\n\nWe are currently investigating QR code issues across various browsers and have discovered that Chrome on iOS may be susceptible to certain phishing attacks when handling QR codes.\n\nWhen Chrome scans a QR code on iOS, it attempts to truncate the full URL based on the backslash"
+}

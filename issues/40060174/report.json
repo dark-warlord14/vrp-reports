@@ -1,0 +1,38 @@
+{
+  "id": "40060174",
+  "url": "https://issues.chromium.org/issues/40060174",
+  "title": "Security: V8 Typer hardening bypass via ReduceArrayPrototypeAt",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>JavaScript>Compiler",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ji...@gmail.com",
+  "assignee": "te...@chromium.org",
+  "created_date": "2022-07-06T03:53:03+00:00",
+  "modified_date": "2024-01-09T10:37:45+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52904586,
+      "filename": "exploit.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3763,
+      "url": "https://issues.chromium.org/action/issues/40060174/attachments/52904586?download=true",
+      "local_path": "attachments/exploit.js"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nArray.prototype.at [1] retrieves an array element at the specified index.  \nThis function is recently added to JSCallReducer. While there are some boundary checks [2],  \nthey can be eliminated by typer bugs.  \n  \njs-call-reducer.cc [2]:  \n  \n    // Bound checking."
+}

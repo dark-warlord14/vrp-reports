@@ -1,0 +1,46 @@
+{
+  "id": "40094750",
+  "url": "https://issues.chromium.org/issues/40094750",
+  "title": "Security: Possible to include mixed content in an about:blank popup opened by a https page",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2019-04-26T13:07:52+00:00",
+  "modified_date": "2025-06-23T22:40:21+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53042687,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 202,
+      "url": "https://issues.chromium.org/action/issues/40094750/attachments/53042687?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53042688,
+      "filename": "main.js",
+      "mime_type": "text/plain",
+      "size_bytes": 417,
+      "url": "https://issues.chromium.org/action/issues/40094750/attachments/53042688?download=true",
+      "local_path": "attachments/main.js"
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nTypically, a https site can't use or access resources from a http site. The browser will block attempts by a https site to include a http iframe, for example.  \n  \nHowever, a https site that opens a new window with a location of \"javascript:\" will be able to include a ht"
+}

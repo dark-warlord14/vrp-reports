@@ -1,0 +1,37 @@
+{
+  "id": "40053099",
+  "url": "https://issues.chromium.org/issues/40053099",
+  "title": "Security: heap-buffer-overflow in \"SkiaState::AdjustClip\" function",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pa...@gmail.com",
+  "assignee": "ni...@chromium.org",
+  "created_date": "2020-08-16T20:39:20+00:00",
+  "modified_date": "2024-08-11T21:22:46+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53156228,
+      "filename": "poc_heap_buffer_overlow",
+      "mime_type": "text/plain",
+      "size_bytes": 800,
+      "url": "https://issues.chromium.org/action/issues/40053099/attachments/53156228?download=true",
+      "local_path": "attachments/poc_heap_buffer_overlow"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**-------------------------**   \n  \n**VULNERABILITY DETAILS**   \nHi, our developed fuzzer found a heap-buffer-overflow bug in \"SkData::AdjustClip\" when fuzzing pdfium_test.  \n  \nIn  \n```  \n void AdjustClip(int limit) {  \n    while (m_clipIndex > limit) {  \n      do {  \n        --m_clipIndex;"
+}

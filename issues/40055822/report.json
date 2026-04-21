@@ -1,0 +1,42 @@
+{
+  "id": "40055822",
+  "url": "https://issues.chromium.org/issues/40055822",
+  "title": "Security: Heap-use-after-free in media_router::WebContentsDisplayObserverView::OnBrowserSetLastActive",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Cast>UI",
+  "os_platforms": [
+    "Linux",
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "mu...@google.com",
+  "created_date": "2021-05-12T05:40:55+00:00",
+  "modified_date": "2024-01-09T03:16:21+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53035112,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 525,
+      "url": "https://issues.chromium.org/action/issues/40055822/attachments/53035112?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53035130,
+      "filename": "screen.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 5408525,
+      "url": "https://issues.chromium.org/action/issues/40055822/attachments/53035130?download=true",
+      "local_path": "attachments/screen.mov"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "Chrome Version: 92.0.4504.0 (Official Build) canary (x86_64)  \nOperating System: MacOS  \n  \n**REPRODUCTION CASE**   \n  \n1. out/asan/chrome --enable-features=GlobalMediaControlsCastStartStop --user-data-dir=/tmp/xxxx \"about:blank\" \"http://localhost:8000/poc.html\"  \n2. In http://localhost:8000/poc.htm"
+}

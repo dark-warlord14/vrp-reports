@@ -1,0 +1,46 @@
+{
+  "id": "40055541",
+  "url": "https://issues.chromium.org/issues/40055541",
+  "title": "Security: Range miscalculation for nodes of type SpeculativeSafeIntegerAdd in v8's TurboFan",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Compiler",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "ne...@chromium.org",
+  "created_date": "2021-04-13T22:29:16+00:00",
+  "modified_date": "2024-01-09T03:10:43+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53201702,
+      "filename": "bug.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1060,
+      "url": "https://issues.chromium.org/action/issues/40055541/attachments/53201702?download=true",
+      "local_path": "attachments/bug.js"
+    },
+    {
+      "id": 53201703,
+      "filename": "bug.html",
+      "mime_type": "text/plain",
+      "size_bytes": 448,
+      "url": "https://issues.chromium.org/action/issues/40055541/attachments/53201703?download=true",
+      "local_path": "attachments/bug.html"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nIn the TruboFan compiler of v8, a range miscalculation bug in the typer can be triggered due to an off-by-one involving type bounds of \"kAdditiveSafeInteger\".  \nThis can be used to crash v8 (via triggering a Throw-node) - and thus the browser tab of Chrome - , however"
+}

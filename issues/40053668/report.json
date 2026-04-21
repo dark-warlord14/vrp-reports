@@ -1,0 +1,51 @@
+{
+  "id": "40053668",
+  "url": "https://issues.chromium.org/issues/40053668",
+  "title": "Security: Hide real extension of file by many white spaces - showSaveFilePicker",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Storage>FileSystem",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "as...@chromium.org",
+  "created_date": "2020-10-20T08:40:27+00:00",
+  "modified_date": "2024-01-09T02:27:35+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53011688,
+      "filename": "picture3.png",
+      "mime_type": "image/png",
+      "size_bytes": 25887,
+      "url": "https://issues.chromium.org/action/issues/40053668/attachments/53011688?download=true",
+      "local_path": "attachments/picture3.png"
+    },
+    {
+      "id": 53011689,
+      "filename": "picture2.png",
+      "mime_type": "image/png",
+      "size_bytes": 30029,
+      "url": "https://issues.chromium.org/action/issues/40053668/attachments/53011689?download=true",
+      "local_path": "attachments/picture2.png"
+    },
+    {
+      "id": 53011690,
+      "filename": "manyWhite.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1783,
+      "url": "https://issues.chromium.org/action/issues/40053668/attachments/53011690?download=true",
+      "local_path": "attachments/manyWhite.html"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "New bug based on \"https://crbug.com/chromium/1140403#c6 by maciekpul@gmail.com on Tue, Oct 13, 2020, 3:06 PM GMT+2 (6 days ago)\": https://bugs.chromium.org/p/chromium/issues/detail?id=1137247#c6  \n  \n**VULNERABILITY DETAILS**   \nIf windows user has the option \"show all file extensions\" activated in"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "40066828",
+  "url": "https://issues.chromium.org/issues/40066828",
+  "title": "Incognito Mode Leaving Alert Dialog Box Tapjacking on DoubleClick",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Incognito",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sh...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2023-07-04T11:06:40+00:00",
+  "modified_date": "2023-10-20T17:43:41+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53318571,
+      "filename": "ptap.html",
+      "mime_type": "text/plain",
+      "size_bytes": 478,
+      "url": "https://issues.chromium.org/action/issues/40066828/attachments/53318571?download=true",
+      "local_path": "attachments/ptap.html"
+    },
+    {
+      "id": 53318572,
+      "filename": "cookie.png",
+      "mime_type": "image/png",
+      "size_bytes": 4123,
+      "url": "https://issues.chromium.org/action/issues/40066828/attachments/53318572?download=true",
+      "local_path": "attachments/cookie.png"
+    },
+    {
+      "id": 53318573,
+      "filename": "Screenrecorder-2023-07-04-15-28-31-591.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5252382,
+      "url": "https://issues.chromium.org/action/issues/40066828/attachments/53318573?download=true",
+      "local_path": "attachments/Screenrecorder-2023-07-04-15-28-31-591.mp4"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Open Incognito Mode in Android Chrome and visit : http://lnmi.unaux.com/ptap.html  \n2. Double click on Cookie Image  \n3. You will notice the Incognito mode leaving alert dialog box LEAVE button is clicked accidentally.  \n  \n**Problem Description:**   \nNormal"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "40057591",
+  "url": "https://issues.chromium.org/issues/40057591",
+  "title": "Security UI Spoofing on Chrome for Android due to the Contact permission dialog hiding the fullscreen alert message",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Contacts, Blink>Fullscreen, Blink>PermissionsAPI, UI>Browser>FullScreen",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2022-1307"
+  ],
+  "reporter": "he...@gmail.com",
+  "assignee": "ji...@chromium.org",
+  "created_date": "2021-10-13T01:59:59+00:00",
+  "modified_date": "2025-10-07T05:27:31+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52921630,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1218,
+      "url": "https://issues.chromium.org/action/issues/40057591/attachments/52921630?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 52921631,
+      "filename": "spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 96863,
+      "url": "https://issues.chromium.org/action/issues/40057591/attachments/52921631?download=true",
+      "local_path": "attachments/spoof.png"
+    },
+    {
+      "id": 52921632,
+      "filename": "repro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5596728,
+      "url": "https://issues.chromium.org/action/issues/40057591/attachments/52921632?download=true",
+      "local_path": "attachments/repro.mp4"
+    },
+    {
+      "id": 52921919,
+      "filename": "repro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 286591,
+      "url": "https://issues.chromium.org/action/issues/40057591/attachments/52921919?download=true",
+      "local_path": "attachments/repro.mp4"
+    }
+  ],
+  "update_count": 90,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen a user clicks on the attacker's page it is possible to use their activation to call navigator.contacts.select (Contact Picker API) and at the same time request the page to enter fullscreen.  \n  \nIt seems that when both are called at the same time, the Contact permis"
+}

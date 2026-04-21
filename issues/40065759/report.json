@@ -1,0 +1,102 @@
+{
+  "id": "40065759",
+  "url": "https://issues.chromium.org/issues/40065759",
+  "title": "Security: Cursor hijacking mitigation bypass if iframe's content area is outside the top-layer content area",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>CSS, Blink>HTML>IFrame, Blink>Input",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "ms...@chromium.org",
+  "created_date": "2023-06-13T17:24:42+00:00",
+  "modified_date": "2024-01-09T09:38:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53348221,
+      "filename": "cursor.png",
+      "mime_type": "image/png",
+      "size_bytes": 10056,
+      "url": "https://issues.chromium.org/action/issues/40065759/attachments/53348221?download=true",
+      "local_path": "attachments/cursor.png"
+    },
+    {
+      "id": 53348222,
+      "filename": "popout.png",
+      "mime_type": "image/png",
+      "size_bytes": 28919,
+      "url": "https://issues.chromium.org/action/issues/40065759/attachments/53348222?download=true",
+      "local_path": "attachments/popout.png"
+    },
+    {
+      "id": 53348223,
+      "filename": "padlock.png",
+      "mime_type": "image/png",
+      "size_bytes": 4027,
+      "url": "https://issues.chromium.org/action/issues/40065759/attachments/53348223?download=true",
+      "local_path": "attachments/padlock.png"
+    },
+    {
+      "id": 53348224,
+      "filename": "cursor-page.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2950,
+      "url": "https://issues.chromium.org/action/issues/40065759/attachments/53348224?download=true",
+      "local_path": "attachments/cursor-page.html"
+    },
+    {
+      "id": 53348225,
+      "filename": "frame.html",
+      "mime_type": "text/plain",
+      "size_bytes": 146,
+      "url": "https://issues.chromium.org/action/issues/40065759/attachments/53348225?download=true",
+      "local_path": "attachments/frame.html"
+    },
+    {
+      "id": 53348226,
+      "filename": "Untitled_ Jun 14, 2023 1_23 AM.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 679050,
+      "url": "https://issues.chromium.org/action/issues/40065759/attachments/53348226?download=true",
+      "local_path": "attachments/Untitled_ Jun 14, 2023 1_23 AM.webm"
+    },
+    {
+      "id": 53348245,
+      "filename": "Screenshot 2023-06-14 014432.png",
+      "mime_type": "image/png",
+      "size_bytes": 20168,
+      "url": "https://issues.chromium.org/action/issues/40065759/attachments/53348245?download=true",
+      "local_path": "attachments/Screenshot 2023-06-14 014432.png"
+    },
+    {
+      "id": 53348295,
+      "filename": "Untitled_ Jun 15, 2023 8_32 AM.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 743146,
+      "url": "https://issues.chromium.org/action/issues/40065759/attachments/53348295?download=true",
+      "local_path": "attachments/Untitled_ Jun 15, 2023 8_32 AM.webm"
+    },
+    {
+      "id": 53348324,
+      "filename": "Untitled_ Jul 30, 2023 4_42 PM.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 819241,
+      "url": "https://issues.chromium.org/action/issues/40065759/attachments/53348324?download=true",
+      "local_path": "attachments/Untitled_ Jul 30, 2023 4_42 PM.webm"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIf an iframe's content area exists outside the content area of the top layer, it is possible to bypass the 32x32 custom cursor hijacking mitigation and render a 128x128 cursor over browser UI.  \n  \n**VERSION**   \nChrome Version: 114.0.5735.110 (Official Build) (64-bit) ("
+}

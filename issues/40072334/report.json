@@ -1,0 +1,60 @@
+{
+  "id": "40072334",
+  "url": "https://issues.chromium.org/issues/40072334",
+  "title": "Security: SOP bypass: Portal activation bypasses same-page drag and drop source check",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>DataTransfer, Blink>Portals",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "ad...@chromium.org",
+  "created_date": "2023-09-14T15:25:15+00:00",
+  "modified_date": "2024-01-18T18:44:55+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52932530,
+      "filename": "poc.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1619195,
+      "url": "https://issues.chromium.org/action/issues/40072334/attachments/52932530?download=true",
+      "local_path": "attachments/poc.webm"
+    },
+    {
+      "id": 52932531,
+      "filename": "poc-iframe.html",
+      "mime_type": "text/plain",
+      "size_bytes": 588,
+      "url": "https://issues.chromium.org/action/issues/40072334/attachments/52932531?download=true",
+      "local_path": "attachments/poc-iframe.html"
+    },
+    {
+      "id": 52932532,
+      "filename": "poc-image.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1269,
+      "url": "https://issues.chromium.org/action/issues/40072334/attachments/52932532?download=true",
+      "local_path": "attachments/poc-image.html"
+    },
+    {
+      "id": 52932533,
+      "filename": "portal.html",
+      "mime_type": "text/plain",
+      "size_bytes": 243,
+      "url": "https://issues.chromium.org/action/issues/40072334/attachments/52932533?download=true",
+      "local_path": "attachments/portal.html"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA <portal> being activated while cross-origin content is being dragged allows the page to capture the drop and read the cross-origin data.  \n  \nExpected behavior:  \n> \"drag and drop will not expose data across cross-site frames on the same page\" [0]  \n  \nThis allows to:"
+}

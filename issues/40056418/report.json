@@ -1,0 +1,31 @@
+{
+  "id": "40056418",
+  "url": "https://issues.chromium.org/issues/40056418",
+  "title": "Security: Clickjacking",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Infra",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pt...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2021-07-04T11:27:15+00:00",
+  "modified_date": "2024-05-22T20:06:12+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52882825,
+      "filename": "clickchromemain.png",
+      "mime_type": "image/png",
+      "size_bytes": 112975,
+      "url": "https://issues.chromium.org/action/issues/40056418/attachments/52882825?download=true",
+      "local_path": "attachments/clickchromemain.png"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "i found multi clickjacking vulnerability \r\n\r\nClickjacking is an attack that tricks a user into clicking a webpage element which is invisible or disguised as another element. This can cause users to unwittingly download malware, visit malicious web pages, provide credentials or sensitive information,"
+}

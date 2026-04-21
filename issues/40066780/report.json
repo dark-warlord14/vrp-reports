@@ -1,0 +1,77 @@
+{
+  "id": "40066780",
+  "url": "https://issues.chromium.org/issues/40066780",
+  "title": "Security: Document PIP URL address spoofing using long about:blank URL",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Media>PictureInPicture",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "st...@chromium.org",
+  "created_date": "2023-07-03T14:53:22+00:00",
+  "modified_date": "2024-07-16T23:48:03+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52922469,
+      "filename": "pip-exploit.html",
+      "mime_type": "text/plain",
+      "size_bytes": 413,
+      "url": "https://issues.chromium.org/action/issues/40066780/attachments/52922469?download=true",
+      "local_path": "attachments/pip-exploit.html"
+    },
+    {
+      "id": 52922489,
+      "filename": "Untitled_ Jul 3, 2023 10_57 PM.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 627985,
+      "url": "https://issues.chromium.org/action/issues/40066780/attachments/52922489?download=true",
+      "local_path": "attachments/Untitled_ Jul 3, 2023 10_57 PM.webm"
+    },
+    {
+      "id": 52922589,
+      "filename": "pip-exploit.html",
+      "mime_type": "text/plain",
+      "size_bytes": 486,
+      "url": "https://issues.chromium.org/action/issues/40066780/attachments/52922589?download=true",
+      "local_path": "attachments/pip-exploit.html"
+    },
+    {
+      "id": 52922590,
+      "filename": "doc-pip-long-domain-spoof.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 512089,
+      "url": "https://issues.chromium.org/action/issues/40066780/attachments/52922590?download=true",
+      "local_path": "attachments/doc-pip-long-domain-spoof.webm"
+    },
+    {
+      "id": 52922601,
+      "filename": "betterspoof.html",
+      "mime_type": "text/plain",
+      "size_bytes": 486,
+      "url": "https://issues.chromium.org/action/issues/40066780/attachments/52922601?download=true",
+      "local_path": "attachments/betterspoof.html"
+    },
+    {
+      "id": 52922602,
+      "filename": "betterspoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 32745,
+      "url": "https://issues.chromium.org/action/issues/40066780/attachments/52922602?download=true",
+      "local_path": "attachments/betterspoof.png"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt is possible to spoof document PIP address by using a long about:blank URL containing URL fragment.   \n  \n**VERSION**   \nChrome Version: 117.0.5868.0 (Official Build) canary (64-bit) (cohort: Clang-64)   \nOperating System: Windows 10 Version 22H2 (Build 19045.3086)"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "40064365",
+  "url": "https://issues.chromium.org/issues/40064365",
+  "title": "Security: UAF in content::BrowserPluginGuest::GetProspectiveOuterDocument()  in browser process",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>Apps>BrowserTag, Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "mc...@chromium.org",
+  "created_date": "2023-05-04T11:39:33+00:00",
+  "modified_date": "2024-01-09T07:54:34+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53223048,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 345,
+      "url": "https://issues.chromium.org/action/issues/40064365/attachments/53223048?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53223051,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 165,
+      "url": "https://issues.chromium.org/action/issues/40064365/attachments/53223051?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53223052,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 111,
+      "url": "https://issues.chromium.org/action/issues/40064365/attachments/53223052?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53223053,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3844,
+      "url": "https://issues.chromium.org/action/issues/40064365/attachments/53223053?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUAF in content::BrowserPluginGuest::GetProspectiveOuterDocument()  in browser process  \n  \n  \n**VERSION**   \nChromium\t115.0.5751.0 (Developer Build) (64-bit)   \nRevision\t2ad890f4358ed25b5376d658a007d5cd9b968e27-refs/heads/main@{#1139369}  \nOS\tLinux  \n  \n  \n**REPRODUCTION"
+}

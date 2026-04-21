@@ -1,0 +1,73 @@
+{
+  "id": "379551588",
+  "url": "https://issues.chromium.org/issues/379551588",
+  "title": "libGLES_mali memory safety violation via WebGPU shaders at llvm::Value::setNameImpl",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Dawn>Tint",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "a7...@gmail.com",
+  "assignee": "ds...@chromium.org",
+  "created_date": "2024-11-18T17:02:57+00:00",
+  "modified_date": "2026-03-05T16:41:21+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 35000.0,
+  "bounty_rationale": "high-quality report of memory corruption in a non-sandboxed process",
+  "attachments": [
+    {
+      "id": 60888577,
+      "filename": "androidoob.html",
+      "mime_type": "text/html",
+      "size_bytes": 4154,
+      "url": "https://issues.chromium.org/action/issues/379551588/attachments/60888577?download=true",
+      "local_path": "attachments/androidoob.html"
+    },
+    {
+      "id": 60932794,
+      "filename": "comp.spv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2484,
+      "url": "https://issues.chromium.org/action/issues/379551588/attachments/60932794?download=true",
+      "local_path": "attachments/comp.spv"
+    },
+    {
+      "id": 60934525,
+      "filename": "standalone.cpp",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 7753,
+      "url": "https://issues.chromium.org/action/issues/379551588/attachments/60934525?download=true",
+      "local_path": "attachments/standalone.cpp"
+    },
+    {
+      "id": 60979045,
+      "filename": "androidoob.html",
+      "mime_type": "text/html",
+      "size_bytes": 4229,
+      "url": "https://issues.chromium.org/action/issues/379551588/attachments/60979045?download=true",
+      "local_path": "attachments/androidoob.html"
+    },
+    {
+      "id": 61138273,
+      "filename": "androidoob2.html",
+      "mime_type": "text/html",
+      "size_bytes": 4282,
+      "url": "https://issues.chromium.org/action/issues/379551588/attachments/61138273?download=true",
+      "local_path": "attachments/androidoob2.html"
+    },
+    {
+      "id": 62293180,
+      "filename": "comp(2).spv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3740,
+      "url": "https://issues.chromium.org/action/issues/379551588/attachments/62293180?download=true",
+      "local_path": "attachments/comp(2).spv"
+    }
+  ],
+  "update_count": 134,
+  "description_snippet": "##### VULNERABILITY DETAILS\nChrome on Android translates WebGPU shaders to SPIR-V. These SPIR-V shaders are eventually passed to libGLES_mali.so for optimization and native code generation. This bug report is about a WebGPU shader that crashes com.android.chrome (and sometimes com.android.systemui,"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "40056980",
+  "url": "https://issues.chromium.org/issues/40056980",
+  "title": "Security: History Cached Page of the Lens region search cause url spoof",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Permissions>SearchEngineGeolocation, UI>Browser>Navigation, UI>Browser>Navigation>BFCache",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "sk...@chromium.org",
+  "created_date": "2021-08-23T15:05:46+00:00",
+  "modified_date": "2022-02-21T18:29:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53220126,
+      "filename": "poc.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 3109992,
+      "url": "https://issues.chromium.org/action/issues/40056980/attachments/53220126?download=true",
+      "local_path": "attachments/poc.gif"
+    },
+    {
+      "id": 53220127,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 251,
+      "url": "https://issues.chromium.org/action/issues/40056980/attachments/53220127?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 31,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nHistory Cached Page of the Lens region search cause url spoof  \nThe Lens region search page is always on the top of the webpage cause the URL spoof.  \n  \n  \n**VERSION**   \nChrome Version:95.0.4616.0 (Developer Build) (64-bit)  \nOperating System: Windows 10  \n  \n  \n**REPR"
+}

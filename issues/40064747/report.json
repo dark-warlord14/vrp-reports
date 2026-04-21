@@ -1,0 +1,93 @@
+{
+  "id": "40064747",
+  "url": "https://issues.chromium.org/issues/40064747",
+  "title": "Security: Heap Buffer Overflow and Security DCHECK failed: IsA<Derived>(from) in MediaStreamTrackImpl::stopTrack",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>MediaStream",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2023-05-23T10:13:04+00:00",
+  "modified_date": "2023-09-01T17:41:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53089194,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 199,
+      "url": "https://issues.chromium.org/action/issues/40064747/attachments/53089194?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53089195,
+      "filename": "security_dcheck.log",
+      "mime_type": "text/plain",
+      "size_bytes": 7221,
+      "url": "https://issues.chromium.org/action/issues/40064747/attachments/53089195?download=true",
+      "local_path": "attachments/security_dcheck.log"
+    },
+    {
+      "id": 53089196,
+      "filename": "heap_buffer_overflow.log",
+      "mime_type": "text/plain",
+      "size_bytes": 29919,
+      "url": "https://issues.chromium.org/action/issues/40064747/attachments/53089196?download=true",
+      "local_path": "attachments/heap_buffer_overflow.log"
+    },
+    {
+      "id": 53089197,
+      "filename": "reproduce.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3646072,
+      "url": "https://issues.chromium.org/action/issues/40064747/attachments/53089197?download=true",
+      "local_path": "attachments/reproduce.mp4"
+    },
+    {
+      "id": 53089217,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064747/attachments/53089217?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53089218,
+      "filename": "heap_buffer_overflow.log",
+      "mime_type": "text/plain",
+      "size_bytes": 29919,
+      "url": "https://issues.chromium.org/action/issues/40064747/attachments/53089218?download=true",
+      "local_path": "attachments/heap_buffer_overflow.log"
+    },
+    {
+      "id": 53089219,
+      "filename": "security_dcheck.log",
+      "mime_type": "text/plain",
+      "size_bytes": 7221,
+      "url": "https://issues.chromium.org/action/issues/40064747/attachments/53089219?download=true",
+      "local_path": "attachments/security_dcheck.log"
+    },
+    {
+      "id": 53089220,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 199,
+      "url": "https://issues.chromium.org/action/issues/40064747/attachments/53089220?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "## Bitset and Test version\n\nTestOn: Version 115.0.5788.0 (Developer Build) (64-bit)\n\nBased on the analysis with bitset, it was determined that the vulnerability was introduced by this commit: https://chromium.googlesource.com/chromium/src/+/3da6e612d7b1ab789f018db887334391a47504de\n\n## RCA\n\nDue to an"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "411802156",
+  "url": "https://issues.chromium.org/issues/411802156",
+  "title": "Security: Fatal error in src/compiler/turboshaft/operations.cc, line 152",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Compiler>Turbofan",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "da...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2025-04-19T14:18:21+00:00",
+  "modified_date": "2025-08-29T12:41:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": "report of memory corruption in a sandboxed process / renderer",
+  "attachments": [
+    {
+      "id": 65025336,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/411802156/attachments/65025336?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65025337,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 424,
+      "url": "https://issues.chromium.org/action/issues/411802156/attachments/65025337?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 193,
+  "description_snippet": "# VULNERABILITY DETAILS\n\nA representation mismatch occurring in Turboshaft has been identified by `ValidateOpInputRep()` located at `src/compiler/turboshaft/operations.cc, line 152`. Despite Turboshaft's invariant condition that 'all input values of Phi nodes must have the same RegisterRepresentatio"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "40063777",
+  "url": "https://issues.chromium.org/issues/40063777",
+  "title": "Security:UAF in content::SyntheticPointerAction::ForwardTouchOrMouseInputEvents(browser process)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>Input",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "bo...@chromium.org",
+  "created_date": "2023-03-27T01:50:07+00:00",
+  "modified_date": "2023-08-01T17:38:25+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53318814,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1791,
+      "url": "https://issues.chromium.org/action/issues/40063777/attachments/53318814?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53318815,
+      "filename": "gesture-util.js",
+      "mime_type": "text/plain",
+      "size_bytes": 28544,
+      "url": "https://issues.chromium.org/action/issues/40063777/attachments/53318815?download=true",
+      "local_path": "attachments/gesture-util.js"
+    },
+    {
+      "id": 53318816,
+      "filename": "run-after-layout-and-paint.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2661,
+      "url": "https://issues.chromium.org/action/issues/40063777/attachments/53318816?download=true",
+      "local_path": "attachments/run-after-layout-and-paint.js"
+    },
+    {
+      "id": 53318817,
+      "filename": "testharness.js",
+      "mime_type": "text/plain",
+      "size_bytes": 184737,
+      "url": "https://issues.chromium.org/action/issues/40063777/attachments/53318817?download=true",
+      "local_path": "attachments/testharness.js"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUAF in content::SyntheticPointerAction::ForwardTouchOrMouseInputEvents in the browser process  \n  \n**VERSION**   \nChromium\t114.0.5677.0 (Developer Build) (64-bit)   \nRevision\t2c16a353a63f5c3e31612dc255e00ba58537bca8-refs/heads/main@{#1122213}  \nOS\tWindows 10 Version 22H2"
+}

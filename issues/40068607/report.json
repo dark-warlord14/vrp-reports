@@ -1,0 +1,59 @@
+{
+  "id": "40068607",
+  "url": "https://issues.chromium.org/issues/40068607",
+  "title": "Security: Hide Fullscreen Notification ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>FullScreen",
+  "os_platforms": [
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pu...@gmail.com",
+  "assignee": "ta...@chromium.org",
+  "created_date": "2023-08-03T06:26:49+00:00",
+  "modified_date": "2025-11-14T02:48:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "$5,000 for report of moderate impact exploitation mitigation bypass / security UI spoofing",
+  "attachments": [
+    {
+      "id": 53008322,
+      "filename": "puf.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 37986,
+      "url": "https://issues.chromium.org/action/issues/40068607/attachments/53008322?download=true",
+      "local_path": "attachments/puf.mp4"
+    },
+    {
+      "id": 53008344,
+      "filename": "PufIndex.html",
+      "mime_type": "text/plain",
+      "size_bytes": 364,
+      "url": "https://issues.chromium.org/action/issues/40068607/attachments/53008344?download=true",
+      "local_path": "attachments/PufIndex.html"
+    },
+    {
+      "id": 53008399,
+      "filename": "Poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 79859,
+      "url": "https://issues.chromium.org/action/issues/40068607/attachments/53008399?download=true",
+      "local_path": "attachments/Poc.mp4"
+    },
+    {
+      "id": 53008406,
+      "filename": "PufIndex.html",
+      "mime_type": "text/plain",
+      "size_bytes": 535,
+      "url": "https://issues.chromium.org/action/issues/40068607/attachments/53008406?download=true",
+      "local_path": "attachments/PufIndex.html"
+    }
+  ],
+  "update_count": 78,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nUsing pointerLockElement   \nAttacker Can Hide Fullscreen Notification.  \n  \n**VERSION**   \nChrome Version: [115.0.5790.110] + [stable]  \nOperating System: [Windows 10]  \n  \n**REPRODUCTION CASE**   \n1. Open Pufindex.html  \n2. Click Anywhere on Page  \n  \n**CREDIT INFORM"
+}

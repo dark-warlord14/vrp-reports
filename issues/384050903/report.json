@@ -1,0 +1,43 @@
+{
+  "id": "384050903",
+  "url": "https://issues.chromium.org/issues/384050903",
+  "title": "Save As file dialog steal focus behind the PictureinPictureAPI save malicious file at arbitrary path",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Media>PictureInPicture",
+  "os_platforms": [
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "132.0.6834.46 ",
+  "cve_ids": [],
+  "reporter": "pu...@gmail.com",
+  "assignee": "st...@chromium.org",
+  "created_date": "2024-12-14T10:57:17+00:00",
+  "modified_date": "2025-10-02T12:45:45+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact web platform privilege escalation / UI spoof",
+  "attachments": [
+    {
+      "id": 61523353,
+      "filename": "repro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 303425,
+      "url": "https://issues.chromium.org/action/issues/384050903/attachments/61523353?download=true",
+      "local_path": null
+    },
+    {
+      "id": 61544785,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/384050903/attachments/61544785?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 69,
+  "description_snippet": "# Steps to reproduce the problem\n`Enable Ask where to save each file before downloading in Downloads`\n\n1. Open the poc.html file in the browser\n2. Click the button\n3. Click on Start file writing button\n4. Press the keys ctrl + v and keypress Enter key\nA file will be written\n\n# Problem Description\nSa"
+}

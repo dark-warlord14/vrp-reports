@@ -1,0 +1,41 @@
+{
+  "id": "455899538",
+  "url": "https://issues.chromium.org/issues/455899538",
+  "title": "Bypass #443948855 - Allows Arbitrary Code Execution via \"Copy as cURL (cmd)\" in DevTools",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>DevTools>Network",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "we...@gmail.com",
+  "assignee": "da...@google.com",
+  "created_date": "2025-10-29T01:47:09+00:00",
+  "modified_date": "2026-02-20T12:42:37+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "Exploitation Mitigation Bypass",
+  "attachments": [
+    {
+      "id": 70488378,
+      "filename": "chrome_curl.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3030783,
+      "url": "https://issues.chromium.org/action/issues/455899538/attachments/70488378?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70488379,
+      "filename": "chromeCanary_curl.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2619810,
+      "url": "https://issues.chromium.org/action/issues/455899538/attachments/70488379?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "VULNERABILITY DETAILS\n\nAfter re-checking, I discovered a way to bypass the fix from my previous report (which is marked as fixed in the latest Chrome build and Canary: https://issues.chromium.org/issues/443948855\n\nThe issue concerns the “Copy as cURL (cmd)” feature in Chromium DevTools. When exporti"
+}

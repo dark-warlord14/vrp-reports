@@ -1,0 +1,52 @@
+{
+  "id": "40060417",
+  "url": "https://issues.chromium.org/issues/40060417",
+  "title": "Security: UAF in UserNoteService",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Creation",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "gu...@google.com",
+  "created_date": "2022-07-27T06:41:16+00:00",
+  "modified_date": "2022-11-16T18:31:27+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 30000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53212899,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 31281,
+      "url": "https://issues.chromium.org/action/issues/40060417/attachments/53212899?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53212900,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 369,
+      "url": "https://issues.chromium.org/action/issues/40060417/attachments/53212900?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53212901,
+      "filename": "reload.html",
+      "mime_type": "text/plain",
+      "size_bytes": 109,
+      "url": "https://issues.chromium.org/action/issues/40060417/attachments/53212901?download=true",
+      "local_path": "attachments/reload.html"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nAfter observing DidFinishNavigation[1] event, UserNoteService will call[2] |OnNoteMetadataFetchedForNavigation| asynchronously with |{rfh}| as parameter:  \n```  \nvoid UserNoteService::OnFrameNavigated(content::RenderFrameHost\\* rfh) {  \n  [...]  \n  \n  std::vector<cont"
+}

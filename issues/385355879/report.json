@@ -1,0 +1,67 @@
+{
+  "id": "385355879",
+  "url": "https://issues.chromium.org/issues/385355879",
+  "title": "Use after free in AddressSignInPromoView.",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Autofill>AddressesAndMore",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": "133.0.6907.0",
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "am...@google.com",
+  "created_date": "2025-01-01T18:58:01+00:00",
+  "modified_date": "2025-04-15T12:39:41+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "$1,000 for this report of a highly mitigated (mitigated by user gesture and that this would resulted in test failures upon enabling this feature and running CQ) memory corruption bug in a non-sandboxed process + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 61721871,
+      "filename": "asan",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 18394,
+      "url": "https://issues.chromium.org/action/issues/385355879/attachments/61721871?download=true",
+      "local_path": null
+    },
+    {
+      "id": 61721872,
+      "filename": "browser.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 805,
+      "url": "https://issues.chromium.org/action/issues/385355879/attachments/61721872?download=true",
+      "local_path": null
+    },
+    {
+      "id": 61721873,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 564704,
+      "url": "https://issues.chromium.org/action/issues/385355879/attachments/61721873?download=true",
+      "local_path": null
+    },
+    {
+      "id": 61721874,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 353,
+      "url": "https://issues.chromium.org/action/issues/385355879/attachments/61721874?download=true",
+      "local_path": null
+    },
+    {
+      "id": 61721875,
+      "filename": "popup.html",
+      "mime_type": "text/html",
+      "size_bytes": 306,
+      "url": "https://issues.chromium.org/action/issues/385355879/attachments/61721875?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "# Steps to reproduce the problem\n1. apply attached patch browser.diff [*]\n2. ./path/to/chrome --user-data-dir=\"/tmp/aaa\" --enable-features=ImprovedSigninUIOnDesktop \"http://localhost:8000/poc.html\"\n3. Click `Trigger the bug`, input and submit.\n4. Click save and waiting for the UAF.\n[*] This is just"
+}

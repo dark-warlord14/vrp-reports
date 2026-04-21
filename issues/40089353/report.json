@@ -1,0 +1,38 @@
+{
+  "id": "40089353",
+  "url": "https://issues.chromium.org/issues/40089353",
+  "title": "Security: Fullscreen notification can be overlapped",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>FullScreen",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2017-15386"
+  ],
+  "reporter": "ma...@gmail.com",
+  "assignee": "av...@chromium.org",
+  "created_date": "2017-10-19T16:39:39+00:00",
+  "modified_date": "2019-01-04T00:58:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53270986,
+      "filename": "attack.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 174256,
+      "url": "https://issues.chromium.org/action/issues/40089353/attachments/53270986?download=true",
+      "local_path": "attachments/attack.gif"
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "AFFECTED PRODUCTS\r\n--------------------\r\nchrome 62 stable\r\n\r\n\r\nDESCRIPTION\r\n--------------------\r\nattacker could call an alert function in the popup without exit fullscreen mode\r\nand overlay the security notification\r\nbypass the patch of CVE-2017-15386 (https://crbug.com/chromium/752003)\r\nOnline dem"
+}

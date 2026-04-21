@@ -1,0 +1,22 @@
+{
+  "id": "40086586",
+  "url": "https://issues.chromium.org/issues/40086586",
+  "title": "Security: Whole-script confusable domain label spoofing (Cyrillic)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Omnibox, UI>Internationalization",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wr...@slicealias.com",
+  "assignee": "js...@chromium.org",
+  "created_date": "2017-01-20T19:47:40+00:00",
+  "modified_date": "2025-11-02T09:15:08+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 96,
+  "description_snippet": "See https://www.xn--80ak6aa92e.com/ - if you compare with https://www.apple.com/, URL looks identical on Windows and Linux. On OS X, the font is slightly different, and it is potentially possible to distinguish between the two.\r\n\r\nThe domain xn--80ak6aa92e.com is currently proxying requests to apple"
+}

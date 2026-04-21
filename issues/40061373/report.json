@@ -1,0 +1,81 @@
+{
+  "id": "40061373",
+  "url": "https://issues.chromium.org/issues/40061373",
+  "title": "Security: Android: Bluetooth and USB chooser dialogs do not use top-level origin with permission delegation",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Bluetooth, Blink>USB, UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "ch...@chromium.org",
+  "created_date": "2022-10-16T23:56:53+00:00",
+  "modified_date": "2024-01-09T06:44:06+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52970067,
+      "filename": "bt-usb-permission-delegation.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1051,
+      "url": "https://issues.chromium.org/action/issues/40061373/attachments/52970067?download=true",
+      "local_path": "attachments/bt-usb-permission-delegation.html"
+    },
+    {
+      "id": 52970068,
+      "filename": "bt-usb-frame.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1217,
+      "url": "https://issues.chromium.org/action/issues/40061373/attachments/52970068?download=true",
+      "local_path": "attachments/bt-usb-frame.html"
+    },
+    {
+      "id": 52970069,
+      "filename": "bt-usb-permission-delegation.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1725420,
+      "url": "https://issues.chromium.org/action/issues/40061373/attachments/52970069?download=true",
+      "local_path": "attachments/bt-usb-permission-delegation.mp4"
+    },
+    {
+      "id": 52970070,
+      "filename": "bt-expected-windows-1.png",
+      "mime_type": "image/png",
+      "size_bytes": 40461,
+      "url": "https://issues.chromium.org/action/issues/40061373/attachments/52970070?download=true",
+      "local_path": "attachments/bt-expected-windows-1.png"
+    },
+    {
+      "id": 52970071,
+      "filename": "usb-expected-windows-2.png",
+      "mime_type": "image/png",
+      "size_bytes": 42217,
+      "url": "https://issues.chromium.org/action/issues/40061373/attachments/52970071?download=true",
+      "local_path": "attachments/usb-expected-windows-2.png"
+    },
+    {
+      "id": 52970135,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40061373/attachments/52970135?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52970146,
+      "filename": "bt-android-discovery-permission-delegation.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 70340,
+      "url": "https://issues.chromium.org/action/issues/40061373/attachments/52970146?download=true",
+      "local_path": "attachments/bt-android-discovery-permission-delegation.jpg"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis report describes same behavior affecting two different dialogs, but filing together since they're closely related.  \n  \nIn Android, the Bluetooth and USB chooser dialogs use a cross-origin frame's origin [1] instead of the top-level page's origin. Per https://crbug."
+}

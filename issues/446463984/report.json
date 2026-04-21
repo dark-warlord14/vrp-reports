@@ -1,0 +1,38 @@
+{
+  "id": "446463984",
+  "url": "https://issues.chromium.org/issues/446463984",
+  "title": "Check failed: !WriteBarrier::IsRequired(heap_object, Tagged<Object>(value)).",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>GarbageCollection",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "di...@chromium.org",
+  "created_date": "2025-09-21T14:22:47+00:00",
+  "modified_date": "2026-01-03T12:39:04+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": "high quality memory corruption in a sandboxed process",
+  "attachments": [
+    {
+      "id": 69564896,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/446463984/attachments/69564896?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 74,
+  "description_snippet": "COMMIT INFORMATION:\n- Version: 102449\n- Commit: 69d3c775919f5e800886dfc83a571aed9e4ed1a8\n- Link: https://crrev.com/69d3c775919f5e800886dfc83a571aed9e4ed1a8\n\nCOMMIT MESSAGE:\n```\ncommit 69d3c775919f5e800886dfc83a571aed9e4ed1a8\nAuthor: Dominik Inführ <dinfuehr@chromium.org>\nDate: Fri Sep 12 11:26:18 2"
+}

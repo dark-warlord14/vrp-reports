@@ -1,0 +1,35 @@
+{
+  "id": "40057126",
+  "url": "https://issues.chromium.org/issues/40057126",
+  "title": "Security: Security DCHECK failure at blink::LayoutInline",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Internals>WTF, Blink>Layout",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "ik...@chromium.org",
+  "created_date": "2021-09-01T21:24:51+00:00",
+  "modified_date": "2024-01-09T08:59:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53026939,
+      "filename": "crash-sdcheck-layoutline.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1704,
+      "url": "https://issues.chromium.org/action/issues/40057126/attachments/53026939?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe attached page triggers a security dcheck, which is there to help detect bad casts.  \n  \n**VERSION**   \nChrome Version: Chromium 95.0.4624.0 beta (prebuilt asan)  \nOperating System: Linux  \n  \n**REPRODUCTION CASE**   \nOpen the attached file. Issue should reproduce eve"
+}

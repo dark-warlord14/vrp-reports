@@ -1,0 +1,45 @@
+{
+  "id": "40053481",
+  "url": "https://issues.chromium.org/issues/40053481",
+  "title": "Security: UaF in printing::PrintRenderFrameHelper::PreviewPageRendered()",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "UI>Browser>PrintPreview",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2020-10-01T04:23:33+00:00",
+  "modified_date": "2021-01-08T18:53:12+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53200110,
+      "filename": "testcase.html",
+      "mime_type": "text/plain",
+      "size_bytes": 210,
+      "url": "https://issues.chromium.org/action/issues/40053481/attachments/53200110?download=true",
+      "local_path": "attachments/testcase.html"
+    },
+    {
+      "id": 53200214,
+      "filename": "screen.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 7758998,
+      "url": "https://issues.chromium.org/action/issues/40053481/attachments/53200214?download=true",
+      "local_path": "attachments/screen.mov"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4278.0 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Open the testcase\r\n\r\nReceived signal 11 SEGV_MAPERR ffffe541b001861b\r\n#0 0x55555ac855f9 base::debug::CollectStackTrace()\r\n#1 0x555"
+}

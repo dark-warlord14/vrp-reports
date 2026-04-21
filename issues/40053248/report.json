@@ -1,0 +1,65 @@
+{
+  "id": "40053248",
+  "url": "https://issues.chromium.org/issues/40053248",
+  "title": "Arbitrary file deletion in google chrome updater in master/chrome/updater/installer.cc",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Installer",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ve...@gmail.com",
+  "assignee": "gr...@chromium.org",
+  "created_date": "2020-09-04T03:42:18+00:00",
+  "modified_date": "2024-01-09T02:29:06+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53005935,
+      "filename": "Demo.mkv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 7147116,
+      "url": "https://issues.chromium.org/action/issues/40053248/attachments/53005935?download=true",
+      "local_path": "attachments/Demo.mkv"
+    },
+    {
+      "id": 53005936,
+      "filename": "ChromeUpdater_LPE.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 145057,
+      "url": "https://issues.chromium.org/action/issues/40053248/attachments/53005936?download=true",
+      "local_path": "attachments/ChromeUpdater_LPE.zip"
+    },
+    {
+      "id": 53005942,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40053248/attachments/53005942?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53005981,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40053248/attachments/53005981?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53006085,
+      "filename": "mini_installer.cc",
+      "mime_type": "text/plain",
+      "size_bytes": 40597,
+      "url": "https://issues.chromium.org/action/issues/40053248/attachments/53006085?download=true",
+      "local_path": "attachments/mini_installer.cc"
+    }
+  ],
+  "update_count": 86,
+  "description_snippet": "Arbitrary file deletion in google chrome updater\r\nPlatform: Windows\r\nClass: Elevation of Privileges\r\nSecurity Boundary: Users\r\n\r\nSummary:\r\nThe google chrome updater perform file deletion in a user write-able location while running as SYSTEM without checking for reparse point allowing arbitrary file"
+}

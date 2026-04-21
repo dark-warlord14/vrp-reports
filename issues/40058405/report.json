@@ -1,0 +1,84 @@
+{
+  "id": "40058405",
+  "url": "https://issues.chromium.org/issues/40058405",
+  "title": "Security: UAF in safe_browsing::DownloadRequestMaker::Start",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "dy...@gmail.com",
+  "assignee": "xi...@chromium.org",
+  "created_date": "2022-01-05T12:08:17+00:00",
+  "modified_date": "2024-01-09T04:16:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52911551,
+      "filename": "chooser.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1664,
+      "url": "https://issues.chromium.org/action/issues/40058405/attachments/52911551?download=true",
+      "local_path": "attachments/chooser.html"
+    },
+    {
+      "id": 52911552,
+      "filename": "download.html",
+      "mime_type": "text/plain",
+      "size_bytes": 503,
+      "url": "https://issues.chromium.org/action/issues/40058405/attachments/52911552?download=true",
+      "local_path": "attachments/download.html"
+    },
+    {
+      "id": 52911553,
+      "filename": "copy_mojo_js_bindings.py",
+      "mime_type": "text/plain",
+      "size_bytes": 512,
+      "url": "https://issues.chromium.org/action/issues/40058405/attachments/52911553?download=true",
+      "local_path": "attachments/copy_mojo_js_bindings.py"
+    },
+    {
+      "id": 52911554,
+      "filename": "crash-0.asan",
+      "mime_type": "text/plain",
+      "size_bytes": 26803,
+      "url": "https://issues.chromium.org/action/issues/40058405/attachments/52911554?download=true",
+      "local_path": "attachments/crash-0.asan"
+    },
+    {
+      "id": 52911555,
+      "filename": "crash-1.asan",
+      "mime_type": "text/plain",
+      "size_bytes": 37927,
+      "url": "https://issues.chromium.org/action/issues/40058405/attachments/52911555?download=true",
+      "local_path": "attachments/crash-1.asan"
+    },
+    {
+      "id": 52911556,
+      "filename": "crash-1-non-incognito.asan",
+      "mime_type": "text/plain",
+      "size_bytes": 22620,
+      "url": "https://issues.chromium.org/action/issues/40058405/attachments/52911556?download=true",
+      "local_path": "attachments/crash-1-non-incognito.asan"
+    },
+    {
+      "id": 52911557,
+      "filename": "crash-2.asan",
+      "mime_type": "text/plain",
+      "size_bytes": 29676,
+      "url": "https://issues.chromium.org/action/issues/40058405/attachments/52911557?download=true",
+      "local_path": "attachments/crash-2.asan"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "redacted"
+}

@@ -1,0 +1,145 @@
+{
+  "id": "40091708",
+  "url": "https://issues.chromium.org/issues/40091708",
+  "title": "Cross-origin download bypasses SameSite cookie",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature, Internals>Network>Cookies, UI>Browser>Downloads",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "s....@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2018-06-20T00:16:22+00:00",
+  "modified_date": "2025-11-08T07:20:20+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53266199,
+      "filename": "download_redirect.html",
+      "mime_type": "text/plain",
+      "size_bytes": 147,
+      "url": "https://issues.chromium.org/action/issues/40091708/attachments/53266199?download=true",
+      "local_path": "attachments/download_redirect.html"
+    },
+    {
+      "id": 53266200,
+      "filename": "location.php",
+      "mime_type": "text/plain",
+      "size_bytes": 209,
+      "url": "https://issues.chromium.org/action/issues/40091708/attachments/53266200?download=true",
+      "local_path": "attachments/location.php"
+    },
+    {
+      "id": 70851136,
+      "filename": "capture_instructions.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 912,
+      "url": "https://issues.chromium.org/action/issues/40091708/attachments/70851136?download=true",
+      "local_path": "attachments/capture_instructions.txt"
+    },
+    {
+      "id": 70808614,
+      "filename": "evidence_template.har",
+      "mime_type": "application/json",
+      "size_bytes": 135,
+      "url": "https://issues.chromium.org/action/issues/40091708/attachments/70808614?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70850653,
+      "filename": "samesite_poc_bundle.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 7499,
+      "url": "https://issues.chromium.org/action/issues/40091708/attachments/70850653?download=true",
+      "local_path": "attachments/samesite_poc_bundle.zip"
+    },
+    {
+      "id": 70808615,
+      "filename": "hosts_instructions.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 256,
+      "url": "https://issues.chromium.org/action/issues/40091708/attachments/70808615?download=true",
+      "local_path": "attachments/hosts_instructions.txt"
+    },
+    {
+      "id": 70850654,
+      "filename": "report_checklist.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 412,
+      "url": "https://issues.chromium.org/action/issues/40091708/attachments/70850654?download=true",
+      "local_path": "attachments/report_checklist.txt"
+    },
+    {
+      "id": 70851137,
+      "filename": "README (1).md",
+      "mime_type": "text/markdown",
+      "size_bytes": 1612,
+      "url": "https://issues.chromium.org/action/issues/40091708/attachments/70851137?download=true",
+      "local_path": "attachments/README (1).md"
+    },
+    {
+      "id": 70808617,
+      "filename": "mitre_cve_submission.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2612,
+      "url": "https://issues.chromium.org/action/issues/40091708/attachments/70808617?download=true",
+      "local_path": "attachments/mitre_cve_submission.txt"
+    },
+    {
+      "id": 70850655,
+      "filename": "disclosure_email.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2785,
+      "url": "https://issues.chromium.org/action/issues/40091708/attachments/70850655?download=true",
+      "local_path": "attachments/disclosure_email.txt"
+    },
+    {
+      "id": 70808618,
+      "filename": "poc_response_sample.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 37,
+      "url": "https://issues.chromium.org/action/issues/40091708/attachments/70808618?download=true",
+      "local_path": "attachments/poc_response_sample.txt"
+    },
+    {
+      "id": 70850656,
+      "filename": "safe_redirect.php",
+      "mime_type": "application/x-httpd-php",
+      "size_bytes": 1069,
+      "url": "https://issues.chromium.org/action/issues/40091708/attachments/70850656?download=true",
+      "local_path": "attachments/safe_redirect.php"
+    },
+    {
+      "id": 70851138,
+      "filename": "samesite_poc.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 3866,
+      "url": "https://issues.chromium.org/action/issues/40091708/attachments/70851138?download=true",
+      "local_path": "attachments/samesite_poc.py"
+    },
+    {
+      "id": 70808620,
+      "filename": "download_redirect.html",
+      "mime_type": "text/html",
+      "size_bytes": 147,
+      "url": "https://issues.chromium.org/action/issues/40091708/attachments/70808620?download=true",
+      "local_path": "attachments/download_redirect.html"
+    },
+    {
+      "id": 70850657,
+      "filename": "location.php",
+      "mime_type": "application/x-httpd-php",
+      "size_bytes": 209,
+      "url": "https://issues.chromium.org/action/issues/40091708/attachments/70850657?download=true",
+      "local_path": "attachments/location.php"
+    }
+  ],
+  "update_count": 96,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.79 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Go to https://test.shhnjk.com/SameSite.php (this sets SameSite cookies)\r\n2. Now go to https://shhnjk.azurewebsites.net/iframer.ph"
+}

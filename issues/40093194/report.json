@@ -1,0 +1,57 @@
+{
+  "id": "40093194",
+  "url": "https://issues.chromium.org/issues/40093194",
+  "title": "Security: chrome.wallpaper and chrome.wallpaperPrivate issues",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions>API",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ne...@gmail.com",
+  "assignee": "wz...@chromium.org",
+  "created_date": "2018-11-26T04:13:39+00:00",
+  "modified_date": "2024-01-08T19:57:28+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52887818,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 200,
+      "url": "https://issues.chromium.org/action/issues/40093194/attachments/52887818?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 52887819,
+      "filename": "page.html",
+      "mime_type": "text/plain",
+      "size_bytes": 641,
+      "url": "https://issues.chromium.org/action/issues/40093194/attachments/52887819?download=true",
+      "local_path": "attachments/page.html"
+    },
+    {
+      "id": 52887820,
+      "filename": "page.js",
+      "mime_type": "text/plain",
+      "size_bytes": 538,
+      "url": "https://issues.chromium.org/action/issues/40093194/attachments/52887820?download=true",
+      "local_path": "attachments/page.js"
+    },
+    {
+      "id": 52887821,
+      "filename": "wp.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 437,
+      "url": "https://issues.chromium.org/action/issues/40093194/attachments/52887821?download=true",
+      "local_path": "attachments/wp.jpg"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nCertain methods of the Chrome OS chrome.wallpaper and chrome.wallpaperPrivate APIs can be used to access more than should be allowed.  \n  \n--- chrome.wallpaper.setWallpaper() path traversal ---  \nThis method requires an extension or app with the \"wallpaper\" permission. A"
+}

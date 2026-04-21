@@ -1,0 +1,45 @@
+{
+  "id": "40060669",
+  "url": "https://issues.chromium.org/issues/40060669",
+  "title": "Security: XML object's heap memory difference leaking or potential ASLR bypass in libXML",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>XML",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "aq...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2022-08-24T14:36:40+00:00",
+  "modified_date": "2023-07-28T23:49:33+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52886252,
+      "filename": "1.png",
+      "mime_type": "image/png",
+      "size_bytes": 40410,
+      "url": "https://issues.chromium.org/action/issues/40060669/attachments/52886252?download=true",
+      "local_path": "attachments/1.png"
+    },
+    {
+      "id": 52886253,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 781,
+      "url": "https://issues.chromium.org/action/issues/40060669/attachments/52886253?download=true",
+      "local_path": "attachments/poc.zip"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**This template is ONLY for reporting security bugs. If you are reporting a**   \n**Download Protection Bypass bug, please use the \"Security - Download**   \n**Protection\" template. For all other reports, please use a different**   \n**template.**   \n  \n**Please READ THIS FAQ before filing a bug: https"
+}

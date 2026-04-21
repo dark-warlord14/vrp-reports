@@ -1,0 +1,33 @@
+{
+  "id": "40074483",
+  "url": "https://issues.chromium.org/issues/40074483",
+  "title": "Security: Inappropriate implementation in Fullscreen API",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>FullScreen, UI>Browser>Mobile>EdgeToEdge",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "tw...@google.com",
+  "created_date": "2023-10-10T02:08:13+00:00",
+  "modified_date": "2024-08-09T15:42:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": "Thank you for the report. Based on this as a low impact, low severity issue, the Chrome VRP Panel has decided to award you $500 for this report. \n\nThank you for your efforts and helping us make Chrome more secure for all users!\n\nCheers,\nChrome VRP Panel Bot\n\n\nP.S. Two other things we'd like to mention:\n\n* Please do NOT publicly disclose details until a fix has been released to all our users. Early public disclosure may cancel the provisional reward. Also, please be considerate about disclosure w",
+  "attachments": [
+    {
+      "id": 53092716,
+      "filename": "screen-20231011-031809.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 14411846,
+      "url": "https://issues.chromium.org/action/issues/40074483/attachments/53092716?download=true",
+      "local_path": "attachments/screen-20231011-031809.mp4"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**VERSION**   \nChrome Version: 120.0.6057.0 Canary  \nOperating System: Android Pixel 7 Pro   \n  \n**REPRODUCTION CASE**   \n1. Enable #DrawEdgeToEdge and #DrawWebEdgeToEdge flags  \n2. Go to https://permission.site and click Fullscreen  \n  \nNote: 'Press Esc to exit fullscreen' warning doesn't display."
+}

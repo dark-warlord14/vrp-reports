@@ -1,0 +1,65 @@
+{
+  "id": "40060700",
+  "url": "https://issues.chromium.org/issues/40060700",
+  "title": "Security: UAF in ash::PrintServersProviderImpl::NotifyObservers",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Printing",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zh...@gmail.com",
+  "assignee": "bm...@chromium.org",
+  "created_date": "2022-08-28T16:00:07+00:00",
+  "modified_date": "2024-01-09T06:34:32+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52951676,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 7963,
+      "url": "https://issues.chromium.org/action/issues/40060700/attachments/52951676?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 52951677,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 537,
+      "url": "https://issues.chromium.org/action/issues/40060700/attachments/52951677?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 52951678,
+      "filename": "test.js",
+      "mime_type": "text/plain",
+      "size_bytes": 80,
+      "url": "https://issues.chromium.org/action/issues/40060700/attachments/52951678?download=true",
+      "local_path": "attachments/test.js"
+    },
+    {
+      "id": 52951679,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 24009,
+      "url": "https://issues.chromium.org/action/issues/40060700/attachments/52951679?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 52951680,
+      "filename": "poc.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 9900216,
+      "url": "https://issues.chromium.org/action/issues/40060700/attachments/52951680?download=true",
+      "local_path": "attachments/poc.webm"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \n|PrintServersPolicyProvider::PrintServersPolicyProvider| will add[1] self as observer into user_policy_provider_ and device_policy_provider_, and the observer will not be removed even though the object of PrintServersPolicyProvider is freed.  The lifetime of PrintServ"
+}

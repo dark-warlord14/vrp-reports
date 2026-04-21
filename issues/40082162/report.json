@@ -1,0 +1,31 @@
+{
+  "id": "40082162",
+  "url": "https://issues.chromium.org/issues/40082162",
+  "title": "Security: libexpat buffer-overflow seems to affect latest version of chromium on Linux x86_64",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebRTC",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "si...@gmail.com",
+  "assignee": "mb...@chromium.org",
+  "created_date": "2015-05-26T07:06:46+00:00",
+  "modified_date": "2018-04-25T23:00:35+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53112384,
+      "filename": "expat.py",
+      "mime_type": "text/plain",
+      "size_bytes": 973,
+      "url": "https://issues.chromium.org/action/issues/40082162/attachments/53112384?download=true",
+      "local_path": "attachments/expat.py"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nRecently Mozilla fixed a buffer-overflow in expat. Chromium seems to be affected by that issue as well.  \n  \nReferences:  \nAdvisory: https://www.mozilla.org/en-US/security/advisories/mfsa2015-54/  \nPatch: https://hg.mozilla.org/releases/mozilla-esr31/rev/2f3e78643f5c"
+}

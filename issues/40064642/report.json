@@ -1,0 +1,82 @@
+{
+  "id": "40064642",
+  "url": "https://issues.chromium.org/issues/40064642",
+  "title": "Security: Bypass Of 1342072",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>PresentationAPI, UI>Security (Use Subcomponent)>UrlFormatting",
+  "os_platforms": [
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ia...@gmail.com",
+  "assignee": "ah...@google.com",
+  "created_date": "2023-05-18T19:23:31+00:00",
+  "modified_date": "2024-05-23T22:22:16+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53260218,
+      "filename": "Bypass.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3350,
+      "url": "https://issues.chromium.org/action/issues/40064642/attachments/53260218?download=true",
+      "local_path": "attachments/Bypass.txt"
+    },
+    {
+      "id": 53260219,
+      "filename": "chrome_cross.html.png",
+      "mime_type": "image/png",
+      "size_bytes": 504166,
+      "url": "https://issues.chromium.org/action/issues/40064642/attachments/53260219?download=true",
+      "local_path": "attachments/chrome_cross.html.png"
+    },
+    {
+      "id": 53260220,
+      "filename": "chrome_cross2.html.png",
+      "mime_type": "image/png",
+      "size_bytes": 518433,
+      "url": "https://issues.chromium.org/action/issues/40064642/attachments/53260220?download=true",
+      "local_path": "attachments/chrome_cross2.html.png"
+    },
+    {
+      "id": 53260221,
+      "filename": "opera_cross.html.png",
+      "mime_type": "image/png",
+      "size_bytes": 535924,
+      "url": "https://issues.chromium.org/action/issues/40064642/attachments/53260221?download=true",
+      "local_path": "attachments/opera_cross.html.png"
+    },
+    {
+      "id": 53260222,
+      "filename": "opera_cross2.html.png",
+      "mime_type": "image/png",
+      "size_bytes": 550509,
+      "url": "https://issues.chromium.org/action/issues/40064642/attachments/53260222?download=true",
+      "local_path": "attachments/opera_cross2.html.png"
+    },
+    {
+      "id": 53260223,
+      "filename": "edge_cross.html.png",
+      "mime_type": "image/png",
+      "size_bytes": 485039,
+      "url": "https://issues.chromium.org/action/issues/40064642/attachments/53260223?download=true",
+      "local_path": "attachments/edge_cross.html.png"
+    },
+    {
+      "id": 53260239,
+      "filename": "Bypass.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3981,
+      "url": "https://issues.chromium.org/action/issues/40064642/attachments/53260239?download=true",
+      "local_path": "attachments/Bypass.txt"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "For me its a bypass of 1342072, please do let me know what you think about this.\r\nDetailed information is attached.\r\n\r\nPlease let me know if or correct me If I am wrong somewhere.\r\n\r\nTested On Mac Ventura 13.1\r\nVersion 113.0.5672.126 (Official Build) (arm64)\r\n\r\nI have also attached screenshot of Ope"
+}

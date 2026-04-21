@@ -1,0 +1,57 @@
+{
+  "id": "40062298",
+  "url": "https://issues.chromium.org/issues/40062298",
+  "title": "Security: Container-overflow in SavedTabGroupModel::RemoveTabFromGroup",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>TopChrome>TabStrip>TabGroups",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "dp...@chromium.org",
+  "created_date": "2022-12-17T02:15:24+00:00",
+  "modified_date": "2024-02-04T15:49:57+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53327700,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 289,
+      "url": "https://issues.chromium.org/action/issues/40062298/attachments/53327700?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53327701,
+      "filename": "Video_2022_12_17-2.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2644612,
+      "url": "https://issues.chromium.org/action/issues/40062298/attachments/53327701?download=true",
+      "local_path": "attachments/Video_2022_12_17-2.webm"
+    },
+    {
+      "id": 53327807,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 19653,
+      "url": "https://issues.chromium.org/action/issues/40062298/attachments/53327807?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53327826,
+      "filename": "Screenshot 2022-12-19 3.24.04 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 87941,
+      "url": "https://issues.chromium.org/action/issues/40062298/attachments/53327826?download=true",
+      "local_path": "attachments/Screenshot 2022-12-19 3.24.04 PM.png"
+    }
+  ],
+  "update_count": 77,
+  "description_snippet": "Chrome Version: 110.0.5481.3 (Official Build) canary (64-bit) (cohort: Clang-64)   \nOperating System: Window and Linux  \n  \n**REPRODUCTION CASE**   \n1. Open crash.html >> Add the tab to new group >> Save group  \n2. Now click on the button and wait  \n  \n==33045==ERROR: AddressSanitizer: container-ove"
+}

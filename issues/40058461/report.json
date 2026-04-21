@@ -1,0 +1,43 @@
+{
+  "id": "40058461",
+  "url": "https://issues.chromium.org/issues/40058461",
+  "title": "Security: [ANGLE] Vulkan : Out-of-bounds memory can be accessed using bound offsets",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ne...@nesk.kr",
+  "assignee": "ro...@google.com",
+  "created_date": "2022-01-10T16:41:17+00:00",
+  "modified_date": "2024-01-09T04:38:03+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53317506,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1576,
+      "url": "https://issues.chromium.org/action/issues/40058461/attachments/53317506?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53317507,
+      "filename": "crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8777,
+      "url": "https://issues.chromium.org/action/issues/40058461/attachments/53317507?download=true",
+      "local_path": "attachments/crash.log"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nWhen processing the `glDrawArrays` method in the Vulkan renderer, `VertexArrayVk::updateStreamedAttribs` is called.  \n  \n```c++  \n// Handle copying client attribs and/or expanding attrib buffer in case where attribute  \n//  divisor value has to be emulated.  \nangle::R"
+}

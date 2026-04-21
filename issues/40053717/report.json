@@ -1,0 +1,45 @@
+{
+  "id": "40053717",
+  "url": "https://issues.chromium.org/issues/40053717",
+  "title": "Security: use-after-poison in blink::FileReaderLoader::OnReceivedData",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>DataTransfer, Blink>Storage>FileAPI",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wo...@gmail.com",
+  "assignee": "hu...@chromium.org",
+  "created_date": "2020-10-26T05:18:20+00:00",
+  "modified_date": "2024-01-09T02:28:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53062665,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2422,
+      "url": "https://issues.chromium.org/action/issues/40053717/attachments/53062665?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53062666,
+      "filename": "ASAN.log",
+      "mime_type": "text/plain",
+      "size_bytes": 13037,
+      "url": "https://issues.chromium.org/action/issues/40053717/attachments/53062666?download=true",
+      "local_path": "attachments/ASAN.log"
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe renderer process of chromium with ASAN crash when following testcase executed.  \nAlso I confirmed that crash can be reproduced even linux stable, windows stable, MS Edge.  \nThe PoC is unstable. (in my environment, the crash reproduced after reloading a few times)  \nI"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "40061481",
+  "url": "https://issues.chromium.org/issues/40061481",
+  "title": "Use-after-free in Mojo ChannelMac::SendMessageLocked",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Mojo",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "rs...@chromium.org",
+  "created_date": "2022-10-26T12:02:41+00:00",
+  "modified_date": "2024-01-09T06:42:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 30000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53253445,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 12554,
+      "url": "https://issues.chromium.org/action/issues/40061481/attachments/53253445?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53253642,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 12853,
+      "url": "https://issues.chromium.org/action/issues/40061481/attachments/53253642?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53253643,
+      "filename": "main.html",
+      "mime_type": "text/plain",
+      "size_bytes": 7178,
+      "url": "https://issues.chromium.org/action/issues/40061481/attachments/53253643?download=true",
+      "local_path": "attachments/main.html"
+    },
+    {
+      "id": 53253644,
+      "filename": "sub1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 317838,
+      "url": "https://issues.chromium.org/action/issues/40061481/attachments/53253644?download=true",
+      "local_path": "attachments/sub1.html"
+    },
+    {
+      "id": 53253645,
+      "filename": "sub2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 305804,
+      "url": "https://issues.chromium.org/action/issues/40061481/attachments/53253645?download=true",
+      "local_path": "attachments/sub2.html"
+    },
+    {
+      "id": 53253646,
+      "filename": "sub3.html",
+      "mime_type": "text/plain",
+      "size_bytes": 296052,
+      "url": "https://issues.chromium.org/action/issues/40061481/attachments/53253646?download=true",
+      "local_path": "attachments/sub3.html"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "**Steps to reproduce the problem:**   \nplease see the attached asan log  \n  \n**Problem Description:**   \nmemory corruption  \n  \n**Additional Comments:**   \n  \n  \n**Chrome version: ** 109.0.5383.0 **Channel: ** Canary  \n  \n**OS:** Mac OS"
+}

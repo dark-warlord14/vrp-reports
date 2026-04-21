@@ -1,0 +1,45 @@
+{
+  "id": "397601495",
+  "url": "https://issues.chromium.org/issues/397601495",
+  "title": "AddressSanitizer: heap-use-after-free in cc::LayerTreeHost::RemoveSurfaceRange",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>Services>Viz",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "jo...@chromium.org",
+  "created_date": "2025-02-19T10:47:51+00:00",
+  "modified_date": "2025-06-01T12:52:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 26000.0,
+  "bounty_rationale": "$25,000 for report of memory corruption in a non-sandboxed process + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 63043275,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 2149,
+      "url": "https://issues.chromium.org/action/issues/397601495/attachments/63043275?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63086053,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/397601495/attachments/63086053?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 94,
+  "description_snippet": "VULNERABILITY DETAILS\nIn the function LayerTreeHost::ActivateCommitState\nthe pending_commit_state that is created may be accessed by multiple threads\nAs shown in the vulnerability below, a use-after-free issue can occur\nwhen the main thread has already reset the CommitState currently pointed \nto b"
+}

@@ -1,0 +1,81 @@
+{
+  "id": "40054576",
+  "url": "https://issues.chromium.org/issues/40054576",
+  "title": "use after poison in DOMWebSocket",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>GarbageCollection, Blink>Network>WebSockets",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ne...@gmail.com",
+  "assignee": "ri...@chromium.org",
+  "created_date": "2021-01-26T08:09:14+00:00",
+  "modified_date": "2024-01-09T08:43:32+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53032521,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40054576/attachments/53032521?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53032536,
+      "filename": "test.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1606,
+      "url": "https://issues.chromium.org/action/issues/40054576/attachments/53032536?download=true",
+      "local_path": "attachments/test.webm"
+    },
+    {
+      "id": 53032537,
+      "filename": "testharness.js",
+      "mime_type": "text/plain",
+      "size_bytes": 144759,
+      "url": "https://issues.chromium.org/action/issues/40054576/attachments/53032537?download=true",
+      "local_path": "attachments/testharness.js"
+    },
+    {
+      "id": 53032538,
+      "filename": "submit",
+      "mime_type": "text/plain",
+      "size_bytes": 175,
+      "url": "https://issues.chromium.org/action/issues/40054576/attachments/53032538?download=true",
+      "local_path": "attachments/submit"
+    },
+    {
+      "id": 53032539,
+      "filename": "main.html",
+      "mime_type": "text/plain",
+      "size_bytes": 56,
+      "url": "https://issues.chromium.org/action/issues/40054576/attachments/53032539?download=true",
+      "local_path": "attachments/main.html"
+    },
+    {
+      "id": 53032540,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 548,
+      "url": "https://issues.chromium.org/action/issues/40054576/attachments/53032540?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53032616,
+      "filename": "one-page.html",
+      "mime_type": "text/plain",
+      "size_bytes": 209,
+      "url": "https://issues.chromium.org/action/issues/40054576/attachments/53032616?download=true",
+      "local_path": "attachments/one-page.html"
+    }
+  ],
+  "update_count": 74,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.141 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nOS:\r\nUbuntu 20.04\r\nChromium 89.0.4350.4(asan build)\r\nChromium 90.0.4399.0(asan build)\r\n1. unzip poc.zip\r\n2. python3.8 -m http.server 8000"
+}

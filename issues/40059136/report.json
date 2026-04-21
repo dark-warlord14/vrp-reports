@@ -1,0 +1,45 @@
+{
+  "id": "40059136",
+  "url": "https://issues.chromium.org/issues/40059136",
+  "title": "Type confuse in blink::To<blink::LayoutTableSection,blink::LayoutObject> layout_table.cc:175",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Layout",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "fu...@chromium.org",
+  "created_date": "2022-03-18T08:49:29+00:00",
+  "modified_date": "2024-06-27T08:50:05+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53000340,
+      "filename": "fuzz-00270.html",
+      "mime_type": "text/plain",
+      "size_bytes": 148,
+      "url": "https://issues.chromium.org/action/issues/40059136/attachments/53000340?download=true",
+      "local_path": "attachments/fuzz-00270.html"
+    },
+    {
+      "id": 53000341,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 8729,
+      "url": "https://issues.chromium.org/action/issues/40059136/attachments/53000341?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n#TestOn\r\nasan-win32-release_x64-982586\r\n\r\n#Reproduce\r\nThe problem was found by my fuzzer running on CF(CC Security team for access permission"
+}

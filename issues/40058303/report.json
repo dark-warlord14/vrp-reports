@@ -1,0 +1,62 @@
+{
+  "id": "40058303",
+  "url": "https://issues.chromium.org/issues/40058303",
+  "title": "Security: UAF in GoogleSearchDomainMixingMetricsEmitter",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "pk...@chromium.org",
+  "created_date": "2021-12-21T03:42:46+00:00",
+  "modified_date": "2022-04-19T17:30:15+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53013706,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 13655,
+      "url": "https://issues.chromium.org/action/issues/40058303/attachments/53013706?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53013707,
+      "filename": "poc.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 2396,
+      "url": "https://issues.chromium.org/action/issues/40058303/attachments/53013707?download=true",
+      "local_path": "attachments/poc.diff"
+    },
+    {
+      "id": 53013708,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 140,
+      "url": "https://issues.chromium.org/action/issues/40058303/attachments/53013708?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53013709,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4132314,
+      "url": "https://issues.chromium.org/action/issues/40058303/attachments/53013709?download=true",
+      "local_path": "attachments/demo.mp4"
+    }
+  ],
+  "update_count": 23,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAfter enable the EmitGoogleSearchDomainMixingMetrics feature, a delayed task with `Unretained(this)` will be post into ui thread[1]. The `task_runner_` comes from `content::GetUIThreadTaskRunner`, so there is no guarantee that this task will not be executed after `Google"
+}

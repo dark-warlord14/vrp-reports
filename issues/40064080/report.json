@@ -1,0 +1,41 @@
+{
+  "id": "40064080",
+  "url": "https://issues.chromium.org/issues/40064080",
+  "title": "Security: arbitrary address write in allocate_temp_range",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fi...@gmail.com",
+  "assignee": "ch...@google.com",
+  "created_date": "2023-04-17T12:35:17+00:00",
+  "modified_date": "2023-08-01T17:38:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53320144,
+      "filename": "crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 2060,
+      "url": "https://issues.chromium.org/action/issues/40064080/attachments/53320144?download=true",
+      "local_path": "attachments/crash.log"
+    },
+    {
+      "id": 53320145,
+      "filename": "test",
+      "mime_type": "text/plain",
+      "size_bytes": 880,
+      "url": "https://issues.chromium.org/action/issues/40064080/attachments/53320145?download=true",
+      "local_path": "attachments/test"
+    }
+  ],
+  "update_count": 27,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThere is no guarantee that first must be greater than last in allocate_temp_range. We can trigger an integer overflow by `DCL TEMP[1000000..0]` and subsequently trigger arbitrary address write/heap buffer overflow.  \n```  \nstatic bool allocate_temp_range(struct vrend_"
+}

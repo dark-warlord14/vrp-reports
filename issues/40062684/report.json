@@ -1,0 +1,29 @@
+{
+  "id": "40062684",
+  "url": "https://issues.chromium.org/issues/40062684",
+  "title": "[TF::OptimizationBug] After optimization, running the \"poc.js\" yields segmentation fault",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>API, Blink>JavaScript>Compiler, Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "kw...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2023-01-16T05:25:31+00:00",
+  "modified_date": "2024-01-09T08:53:48+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 53,
+  "description_snippet": "**Steps to reproduce the problem:**   \nRun the below 'poc.js' on the release build of v8-11.1.193:  \n  \n```poc.js  \nfunction opt() {  \n    function aux(a, b, c) {  \n        if (a == 4) {  \n            c += b;  \n        }  \n        b << c;  \n    }  \n    for (let i = 0; i < 10; i++) {  \n        aux(i,"
+}

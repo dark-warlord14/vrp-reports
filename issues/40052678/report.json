@@ -1,0 +1,36 @@
+{
+  "id": "40052678",
+  "url": "https://issues.chromium.org/issues/40052678",
+  "title": "Security: heap-buffer-overflow in \"SkData::PrivateNewWithCopy\" function",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF, Internals>Skia",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cp...@stevens.edu",
+  "assignee": "th...@chromium.org",
+  "created_date": "2020-06-25T22:05:47+00:00",
+  "modified_date": "2020-11-01T15:19:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52935998,
+      "filename": "poc_heap_buffer_overflow",
+      "mime_type": "text/plain",
+      "size_bytes": 1203,
+      "url": "https://issues.chromium.org/action/issues/40052678/attachments/52935998?download=true",
+      "local_path": "attachments/poc_heap_buffer_overflow"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nHi, our developed fuzzer found a heap-buffer-overflow bug in \"SkData::PrivateNewWithCopy\" when fuzzing pdfium_test.  \n  \nIn this function:  \nsk_sp<SkData> SkData::PrivateNewWithCopy(const void\\* srcOrNull, size_t length) {  \n    if (0 == length) {  \n        return SkD"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "342579972",
+  "url": "https://issues.chromium.org/issues/342579972",
+  "title": "Drag and Drop Can Navigate to File and Chrome URIs Without Restriction",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P3",
+  "component": "Blink>DataTransfer, UI>Browser>Navigation, UI>Browser>TopChrome>TabStrip",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fa...@gmail.com",
+  "assignee": "ay...@chromium.org",
+  "created_date": "2024-05-24T17:44:58+00:00",
+  "modified_date": "2025-08-26T17:07:36+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": "thank you reward -- while this report was the first report of this issue, a newer report of higher quality and demonstrating higher impact was also reported and helped to achieve the issue being prioritized and resolved",
+  "attachments": [
+    {
+      "id": 56648871,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 2326,
+      "url": "https://issues.chromium.org/action/issues/342579972/attachments/56648871?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 56648872,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2957626,
+      "url": "https://issues.chromium.org/action/issues/342579972/attachments/56648872?download=true",
+      "local_path": "attachments/demo.mp4"
+    }
+  ],
+  "update_count": 83,
+  "description_snippet": "**VULNERABILITY DETAILS**\n\nUsually, navigation from an online site to a file URI or Chrome URI is blocked with \"about:blank,\" but using Chrome drag and drop, the navigation is possible without restriction.\n\nBelow, the proof-of-concept demonstration shows four cases:\n- Case 1: Drag a normal link - wh"
+}

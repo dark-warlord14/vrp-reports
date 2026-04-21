@@ -1,0 +1,42 @@
+{
+  "id": "41483711",
+  "url": "https://issues.chromium.org/issues/41483711",
+  "title": "Security: Title : Debug check failed: Asm().current_block()->IsMerge() && inputs.size() == Asm().current_block()->Predecessors().size(). in v8, leading to SEGV",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Turbofan",
+  "os_platforms": [
+    "Linux",
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2023-12-13T03:45:13+00:00",
+  "modified_date": "2024-03-23T15:41:20+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53374616,
+      "filename": "poc_code.js",
+      "mime_type": "text/plain",
+      "size_bytes": 15424,
+      "url": "https://issues.chromium.org/action/issues/41483711/attachments/53374616?download=true",
+      "local_path": "attachments/poc_code.js"
+    },
+    {
+      "id": 53374617,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3315,
+      "url": "https://issues.chromium.org/action/issues/41483711/attachments/53374617?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "VULNERABILITY DETAILS\n## INTRODUCE\nAfter bisect, it was determined that following commit caused this problem.\n\n- Commit Info\n    - Version: 91383\n    - link: https://crrev.com/196726259ed8f3898b4c51c7dc79d1b6b32ff7e3\n- Commit Message\n\n```\ncommit 196726259ed8f3898b4c51c7dc79d1b6b32ff7e3\nAuthor: Jakob"
+}

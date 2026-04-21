@@ -1,0 +1,46 @@
+{
+  "id": "40065570",
+  "url": "https://issues.chromium.org/issues/40065570",
+  "title": "Security: UAF in gpu::ClientSharedImageInterface::DestroySharedImage(browser process)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Services>Viz",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2023-06-09T10:42:08+00:00",
+  "modified_date": "2024-02-05T15:04:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53136989,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 204,
+      "url": "https://issues.chromium.org/action/issues/40065570/attachments/53136989?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53136990,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 61,
+      "url": "https://issues.chromium.org/action/issues/40065570/attachments/53136990?download=true",
+      "local_path": "attachments/background.js"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUAF in gpu::ClientSharedImageInterface::DestroySharedImage in browser process.  \n  \n**VERSION**   \nChromium\t116.0.5822.0 (Developer Build) (64-bit)   \nRevision\t158f730d8773af87ef2013367616bd68ea9d258c-refs/heads/main@{#1155365}  \nOS\tLinux  \n  \n  \n**REPRODUCTION CASE**"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "40056040",
+  "url": "https://issues.chromium.org/issues/40056040",
+  "title": "Security: tel: protocal spoofing",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "li...@gmail.com",
+  "assignee": "es...@chromium.org",
+  "created_date": "2021-05-29T11:49:00+00:00",
+  "modified_date": "2024-09-23T21:57:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": "thank you reward for low impact security bug report, from which we were able to make a security relevant change",
+  "attachments": [
+    {
+      "id": 53085321,
+      "filename": "screen-capture.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1288093,
+      "url": "https://issues.chromium.org/action/issues/40056040/attachments/53085321?download=true",
+      "local_path": "attachments/screen-capture.webm"
+    },
+    {
+      "id": 55417026,
+      "filename": "Screenshot 2024-04-11 232101.png",
+      "mime_type": "image/png",
+      "size_bytes": 118703,
+      "url": "https://issues.chromium.org/action/issues/40056040/attachments/55417026?download=true",
+      "local_path": "attachments/Screenshot 2024-04-11 232101.png"
+    },
+    {
+      "id": 56090025,
+      "filename": "Screenshot 2024-04-11 232101 (1).png",
+      "mime_type": "image/png",
+      "size_bytes": 118703,
+      "url": "https://issues.chromium.org/action/issues/40056040/attachments/56090025?download=true",
+      "local_path": "attachments/Screenshot 2024-04-11 232101 (1).png"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n<html>\r\n<head>\r\n    <title>Chrome Url Spoofing (bypass dangerous website) vulnerability</title>\r\n</head>\r\n<script>\r\nfunction pwn() {"
+}

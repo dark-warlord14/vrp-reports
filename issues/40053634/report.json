@@ -1,0 +1,52 @@
+{
+  "id": "40053634",
+  "url": "https://issues.chromium.org/issues/40053634",
+  "title": "Security: chrome.debugger API bypasses the runtime_blocked_hosts Enterprise policy",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Enterprise, Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "so...@chromium.org",
+  "created_date": "2020-10-16T01:31:49+00:00",
+  "modified_date": "2024-01-09T07:57:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53411640,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 391,
+      "url": "https://issues.chromium.org/action/issues/40053634/attachments/53411640?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53411641,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1203,
+      "url": "https://issues.chromium.org/action/issues/40053634/attachments/53411641?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53411642,
+      "filename": "contentscript.js",
+      "mime_type": "text/plain",
+      "size_bytes": 141,
+      "url": "https://issues.chromium.org/action/issues/40053634/attachments/53411642?download=true",
+      "local_path": "attachments/contentscript.js"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe ExtensionSettings.\\*.runtime_blocked_hosts Enterprise policy is supposed to prevent extensions from accessing web content at the given hosts, regardless of the permissions declared by the extension. This is however not enforced for the chrome.debugger extension API."
+}

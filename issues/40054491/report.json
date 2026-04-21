@@ -1,0 +1,41 @@
+{
+  "id": "40054491",
+  "url": "https://issues.chromium.org/issues/40054491",
+  "title": "Security: Offline view bypasses Content-Security-Policy of the original page",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy, UI>Browser>ReaderMode",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ni...@gmail.com",
+  "assignee": "ol...@chromium.org",
+  "created_date": "2021-01-17T01:36:43+00:00",
+  "modified_date": "2021-06-24T17:53:27+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52879150,
+      "filename": "csp-bypass-by-offline.php",
+      "mime_type": "text/plain",
+      "size_bytes": 864,
+      "url": "https://issues.chromium.org/action/issues/40054491/attachments/52879150?download=true",
+      "local_path": "attachments/csp-bypass-by-offline.php"
+    },
+    {
+      "id": 52879151,
+      "filename": "csp-bypass-demo.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 7602226,
+      "url": "https://issues.chromium.org/action/issues/40054491/attachments/52879151?download=true",
+      "local_path": "attachments/csp-bypass-demo.mov"
+    }
+  ],
+  "update_count": 27,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n\"Read Later\" feature in Reading List generates a distilled HTML file for offline reading.  \nThen, the distilled page strips all Content-Security-Policy rules of the original page.  \nSo, if a page prohibits inline script by CSP, attacker can execute it on the distilled HT"
+}

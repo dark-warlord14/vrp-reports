@@ -1,0 +1,60 @@
+{
+  "id": "40935719",
+  "url": "https://issues.chromium.org/issues/40935719",
+  "title": "Security:  heap-use-after-free on BrandcodeConfigFetcher::OnSimpleLoaderComplete",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Profiles",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "18...@gmail.com",
+  "assignee": "rs...@chromium.org",
+  "created_date": "2023-10-10T04:02:12+00:00",
+  "modified_date": "2024-01-18T18:44:31+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53017905,
+      "filename": "repro.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1226,
+      "url": "https://issues.chromium.org/action/issues/40935719/attachments/53017905?download=true",
+      "local_path": "attachments/repro.diff"
+    },
+    {
+      "id": 53017906,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 36410,
+      "url": "https://issues.chromium.org/action/issues/40935719/attachments/53017906?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53017921,
+      "filename": "repro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 10191618,
+      "url": "https://issues.chromium.org/action/issues/40935719/attachments/53017921?download=true",
+      "local_path": "attachments/repro.mp4"
+    },
+    {
+      "id": 53017987,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 30580,
+      "url": "https://issues.chromium.org/action/issues/40935719/attachments/53017987?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "##  report\r\n\r\nHey, I want to report a UAF bug in `|BrandcodeConfigFetcher::OnSimpleLoaderComplete|` [1] .\r\n\r\n``` c++\r\nvoid BrandcodeConfigFetcher::OnSimpleLoaderComplete(\r\n    std::unique_ptr<std::string> response_body) {\r\n  if (response_body && simple_url_loader_->ResponseInfo() &&\r\n      simple_ur"
+}

@@ -1,0 +1,101 @@
+{
+  "id": "407328533",
+  "url": "https://issues.chromium.org/issues/407328533",
+  "title": "Security: heap-use-after-free in blink::TransitionInterpolation on CSS custom properties",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Animation, Blink>CSS",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "re...@gmail.com",
+  "assignee": "fl...@google.com",
+  "created_date": "2025-03-30T16:54:24+00:00",
+  "modified_date": "2025-08-14T12:41:28+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": "$3,000 for report of mildly mitigated memory corruption in a sandboxed process / the renderer + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 64413762,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/407328533/attachments/64413762?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64413763,
+      "filename": "chrome_2025-03-30_19-51-07.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 332301,
+      "url": "https://issues.chromium.org/action/issues/407328533/attachments/64413763?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64413764,
+      "filename": "crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 318,
+      "url": "https://issues.chromium.org/action/issues/407328533/attachments/64413764?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64413765,
+      "filename": "asan2.log",
+      "mime_type": "text/plain",
+      "size_bytes": 36805,
+      "url": "https://issues.chromium.org/action/issues/407328533/attachments/64413765?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64417137,
+      "filename": "crash2.html",
+      "mime_type": "text/html",
+      "size_bytes": 372,
+      "url": "https://issues.chromium.org/action/issues/407328533/attachments/64417137?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64408507,
+      "filename": "crash2.html",
+      "mime_type": "text/html",
+      "size_bytes": 372,
+      "url": "https://issues.chromium.org/action/issues/407328533/attachments/64408507?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64417139,
+      "filename": "crash3.html",
+      "mime_type": "text/html",
+      "size_bytes": 846,
+      "url": "https://issues.chromium.org/action/issues/407328533/attachments/64417139?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64417140,
+      "filename": "demo.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2990047,
+      "url": "https://issues.chromium.org/action/issues/407328533/attachments/64417140?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65471578,
+      "filename": "crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 590,
+      "url": "https://issues.chromium.org/action/issues/407328533/attachments/65471578?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 112,
+  "description_snippet": "VULNERABILITY DETAILS\nWhen transitioning a custom property with @starting-style, heap-use-after-free tab crashes in blink::TransitionInterpolation seem to be likely. I am not exactly sure what triggers the heap-uaf and how/whether it could be used, but I have found a reliable repro for this.\n\nI am n"
+}

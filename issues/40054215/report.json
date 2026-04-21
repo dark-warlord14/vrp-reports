@@ -1,0 +1,49 @@
+{
+  "id": "40054215",
+  "url": "https://issues.chromium.org/issues/40054215",
+  "title": "crash in gpu::gles2::GLES2Implementation::ReadPixels",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>Internals",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "va...@chromium.org",
+  "created_date": "2020-12-18T15:26:49+00:00",
+  "modified_date": "2024-01-09T08:26:44+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53231308,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40054215/attachments/53231308?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53231309,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40054215/attachments/53231309?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53231310,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40054215/attachments/53231310?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n\r\nversion:\r\nUbuntu 20.04\r\nchrome version:Google Chrome 89.0.4350.4 dev (office build without asan)\r\nchrome version:Chromium 89.0.4355.0 wi"
+}

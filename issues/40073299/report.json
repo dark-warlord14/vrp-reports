@@ -1,0 +1,28 @@
+{
+  "id": "40073299",
+  "url": "https://issues.chromium.org/issues/40073299",
+  "title": "potentional UAF ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Network>Logging",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "li...@gmail.com",
+  "assignee": "bi...@chromium.org",
+  "created_date": "2023-09-25T10:36:35+00:00",
+  "modified_date": "2024-01-09T11:18:09+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 0.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 37,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1.  \n2.  \n3.0  \n  \n**Problem Description:**   \nfound by code audit,so if i was wrong ,please ingore it ,thanks.  \n  \n  \n[0] pass Unretained(this) to OnStartNetLogBoundedScratchDirectoryCreated , then post the task to ThreadPool. so if we destruct the NetworkSer"
+}

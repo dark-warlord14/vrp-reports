@@ -1,0 +1,45 @@
+{
+  "id": "40065191",
+  "url": "https://issues.chromium.org/issues/40065191",
+  "title": "Security: UAF in extensions::OffscreenCreateDocumentFunction::OnExtensionHostDestroyed (browser process)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "rd...@chromium.org",
+  "created_date": "2023-06-02T05:03:34+00:00",
+  "modified_date": "2024-01-09T11:26:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53193570,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 232,
+      "url": "https://issues.chromium.org/action/issues/40065191/attachments/53193570?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53193571,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 146,
+      "url": "https://issues.chromium.org/action/issues/40065191/attachments/53193571?download=true",
+      "local_path": "attachments/background.js"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUAF in extensions::OffscreenCreateDocumentFunction::OnExtensionHostDestroyed in browser process.  \n  \n**VERSION**   \nChromium\t116.0.5807.0 (Developer Build) (arm64)   \nRevision\t52bc891f506397897ef06192beda312c480e9937-refs/heads/main@{#1152210}  \nOS\tmacOS Version 13.3.1"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "354627692",
+  "url": "https://issues.chromium.org/issues/354627692",
+  "title": "Security: Internal Compiler Error(The continue construct with the continue target '16[%16]' is not structurally post dominated by the back-edge block '38[%38]') in tint::spirv::writer::IRFuzzer",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Dawn>Tint",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "jr...@google.com",
+  "created_date": "2024-07-22T10:34:04+00:00",
+  "modified_date": "2026-03-05T16:41:35+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "Report of ICE in GPU process, this is generally not considered a security issue and results in a safe crash and there was no demonstration or evidence of memory corruption based on the report. Since we were able to make a potentially security relevant change, we did want to extend a reward for this report.",
+  "attachments": [
+    {
+      "id": 58104414,
+      "filename": "log.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18729,
+      "url": "https://issues.chromium.org/action/issues/354627692/attachments/58104414?download=true",
+      "local_path": "attachments/log.txt"
+    },
+    {
+      "id": 58104415,
+      "filename": "poc.wgsl",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1214,
+      "url": "https://issues.chromium.org/action/issues/354627692/attachments/58104415?download=true",
+      "local_path": "attachments/poc.wgsl"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "## REPRODUCE\n1. gn gen out/libfuzzer --args=\"use_libfuzzer=true tint_build_cmds=true\"\n2. ninja -C out/libfuzzer tint_wgsl_fuzzer\n3. out/libfuzzer/tint_wgsl_fuzzer poc.wgsl\n\n## CRASH LOG\nFor the full content, refer to log.txt. This is just a summary.\n\n```\nspirv:1:1 error: The continue construct with"
+}

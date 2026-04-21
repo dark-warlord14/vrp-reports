@@ -1,0 +1,53 @@
+{
+  "id": "421471016",
+  "url": "https://issues.chromium.org/issues/421471016",
+  "title": "UAF in StackSampler",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Metrics>SamplingProfiler",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "136.0.0.0",
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "th...@google.com",
+  "created_date": "2025-05-31T14:36:22+00:00",
+  "modified_date": "2025-09-13T12:37:04+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": "$3,000 for report of moderately mitigated memory corruption in a non-sandboxed process, mitigated by race and lower potential for reliable attacker control and exploitability + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 66294310,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 95228,
+      "url": "https://issues.chromium.org/action/issues/421471016/attachments/66294310?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66331745,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 95228,
+      "url": "https://issues.chromium.org/action/issues/421471016/attachments/66331745?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66428061,
+      "filename": "fuzz_c5a39b1725b58e96ef18a1a0a1257893.html",
+      "mime_type": "text/html",
+      "size_bytes": 110182,
+      "url": "https://issues.chromium.org/action/issues/421471016/attachments/66428061?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 88,
+  "description_snippet": "# Steps to reproduce the problem\nWill attach details soon. See asan.txt for stack trace\n\n# Problem Description\nUAF in StackSampler\n\n# Summary\nUAF in StackSampler\n\n# Custom Questions\n#### Type of crash: \nbrowser UAF\n\n#### Crash state: \nSee asan.txt\n\n# Additional Data\nCategory: Security \\\nChrome Chann"
+}

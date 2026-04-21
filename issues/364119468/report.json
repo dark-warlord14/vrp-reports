@@ -1,0 +1,92 @@
+{
+  "id": "364119468",
+  "url": "https://issues.chromium.org/issues/364119468",
+  "title": "Clickjacking on permission prompt using PIP",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Media>PictureInPicture, UI>Browser>Permissions, UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "en...@chromium.org",
+  "created_date": "2024-09-03T10:51:51+00:00",
+  "modified_date": "2026-03-04T12:43:12+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "Web Platform Privilege Escalation",
+  "attachments": [
+    {
+      "id": 59107054,
+      "filename": "bandicam 2024-09-03 17-43-30-938.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1569951,
+      "url": "https://issues.chromium.org/action/issues/364119468/attachments/59107054?download=true",
+      "local_path": "attachments/bandicam 2024-09-03 17-43-30-938.mp4"
+    },
+    {
+      "id": 59107055,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/364119468/attachments/59107055?download=true",
+      "local_path": null
+    },
+    {
+      "id": 59127273,
+      "filename": "clickjackpipwindow.html",
+      "mime_type": "text/html",
+      "size_bytes": 2238,
+      "url": "https://issues.chromium.org/action/issues/364119468/attachments/59127273?download=true",
+      "local_path": "attachments/clickjackpipwindow.html"
+    },
+    {
+      "id": 59123749,
+      "filename": "permshow.html",
+      "mime_type": "text/html",
+      "size_bytes": 216,
+      "url": "https://issues.chromium.org/action/issues/364119468/attachments/59123749?download=true",
+      "local_path": "attachments/permshow.html"
+    },
+    {
+      "id": 59127274,
+      "filename": "urldomainnotshow.png",
+      "mime_type": "image/png",
+      "size_bytes": 241504,
+      "url": "https://issues.chromium.org/action/issues/364119468/attachments/59127274?download=true",
+      "local_path": "attachments/urldomainnotshow.png"
+    },
+    {
+      "id": 59159584,
+      "filename": "buttonnotshown.html",
+      "mime_type": "text/html",
+      "size_bytes": 372,
+      "url": "https://issues.chromium.org/action/issues/364119468/attachments/59159584?download=true",
+      "local_path": "attachments/buttonnotshown.html"
+    },
+    {
+      "id": 59155867,
+      "filename": "buttonnotshow.png",
+      "mime_type": "image/png",
+      "size_bytes": 223718,
+      "url": "https://issues.chromium.org/action/issues/364119468/attachments/59155867?download=true",
+      "local_path": "attachments/buttonnotshow.png"
+    },
+    {
+      "id": 70737114,
+      "filename": "bandicam 2025-11-05 15-52-12-554.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2473652,
+      "url": "https://issues.chromium.org/action/issues/364119468/attachments/70737114?download=true",
+      "local_path": "attachments/bandicam 2025-11-05 15-52-12-554.mp4"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "VULNERABILITY DETAILS\n\nThis vulnerability is clickjacking on the permission prompt using the pip window and select option.the impact is clickjacking on permission prompt\n\nVERSION\nChrome Version: 130.0.6695.0 (Official Build) canary (64-bit)\nOperating System: Windows 10\n\nREPRODUCTION CASE\n1. open poc"
+}

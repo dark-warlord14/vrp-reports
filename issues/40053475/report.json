@@ -1,0 +1,53 @@
+{
+  "id": "40053475",
+  "url": "https://issues.chromium.org/issues/40053475",
+  "title": "Security: UAF in AutofillPopupControllerImpl::HandleKeyPressEvent",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jt...@gmail.com",
+  "assignee": "jd...@chromium.org",
+  "created_date": "2020-09-30T10:52:48+00:00",
+  "modified_date": "2024-01-09T02:11:44+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53150736,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1158,
+      "url": "https://issues.chromium.org/action/issues/40053475/attachments/53150736?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53150737,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1182,
+      "url": "https://issues.chromium.org/action/issues/40053475/attachments/53150737?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 53150738,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 31249,
+      "url": "https://issues.chromium.org/action/issues/40053475/attachments/53150738?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nVULNERABILITY DETAILS\r\n\r\nWhen user fill out forms, a popup view will be shown with suggestions saved before.\r\n\r\nIn function AutofillPopupController"
+}

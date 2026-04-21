@@ -1,0 +1,59 @@
+{
+  "id": "40057691",
+  "url": "https://issues.chromium.org/issues/40057691",
+  "title": "Security: Chrome for Android Prevent Back Button to Exit Fullscreen Mode using Text Selection",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>FullScreen, UI>Browser>Selection",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2021-29983"
+  ],
+  "reporter": "su...@gmail.com",
+  "assignee": "la...@chromium.org",
+  "created_date": "2021-10-24T20:13:11+00:00",
+  "modified_date": "2025-06-19T12:42:23+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": "report of lower impact security UI issue",
+  "attachments": [
+    {
+      "id": 52884940,
+      "filename": "spoof-lockfullscreen-textselection.html",
+      "mime_type": "text/plain",
+      "size_bytes": 636581,
+      "url": "https://issues.chromium.org/action/issues/40057691/attachments/52884940?download=true",
+      "local_path": "attachments/spoof-lockfullscreen-textselection.html"
+    },
+    {
+      "id": 52884941,
+      "filename": "Chrome for Android - Fullscreen Exit Lock with Text Selection Menu.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 434406,
+      "url": "https://issues.chromium.org/action/issues/40057691/attachments/52884941?download=true",
+      "local_path": "attachments/Chrome for Android - Fullscreen Exit Lock with Text Selection Menu.mp4"
+    },
+    {
+      "id": 52884982,
+      "filename": "spoof-lockfullscreen-hidetextselection.html",
+      "mime_type": "text/plain",
+      "size_bytes": 636732,
+      "url": "https://issues.chromium.org/action/issues/40057691/attachments/52884982?download=true",
+      "local_path": "attachments/spoof-lockfullscreen-hidetextselection.html"
+    },
+    {
+      "id": 52884983,
+      "filename": "Chrome for Android - Prevent Back to Exit Fullscreen with Hidden Text Selection Menu.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 433702,
+      "url": "https://issues.chromium.org/action/issues/40057691/attachments/52884983?download=true",
+      "local_path": "attachments/Chrome for Android - Prevent Back to Exit Fullscreen with Hidden Text Selection Menu.mp4"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAfter call document.execCommand(\"selectAll\") to select the text with the appearance of the Android text selection menu, then interestingly after call document.getSelection().removeAllRanges() while text selection menu still appears it will prevent back button including o"
+}

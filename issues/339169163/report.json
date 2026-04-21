@@ -1,0 +1,97 @@
+{
+  "id": "339169163",
+  "url": "https://issues.chromium.org/issues/339169163",
+  "title": "GPU process crash via WebGPU shader - OOB in ComputeExitLimit at",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Dawn>Tint",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wg...@gmail.com",
+  "assignee": "am...@google.com",
+  "created_date": "2024-05-07T14:54:28+00:00",
+  "modified_date": "2026-03-05T16:43:45+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": "report of memory corruption in the GPU process",
+  "attachments": [
+    {
+      "id": 56161900,
+      "filename": "asancomputeexit",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 18792,
+      "url": "https://issues.chromium.org/action/issues/339169163/attachments/56161900?download=true",
+      "local_path": "attachments/asancomputeexit"
+    },
+    {
+      "id": 56161901,
+      "filename": "indexComputeExitLimit.html",
+      "mime_type": "text/html",
+      "size_bytes": 3155,
+      "url": "https://issues.chromium.org/action/issues/339169163/attachments/56161901?download=true",
+      "local_path": "attachments/indexComputeExitLimit.html"
+    },
+    {
+      "id": 56161902,
+      "filename": "standalone.hlsl",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 754,
+      "url": "https://issues.chromium.org/action/issues/339169163/attachments/56161902?download=true",
+      "local_path": "attachments/standalone.hlsl"
+    },
+    {
+      "id": 56161903,
+      "filename": "standalone.wgsl",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 881,
+      "url": "https://issues.chromium.org/action/issues/339169163/attachments/56161903?download=true",
+      "local_path": "attachments/standalone.wgsl"
+    },
+    {
+      "id": 56439974,
+      "filename": "rule-0-post.dot",
+      "mime_type": "application/msword",
+      "size_bytes": 8679,
+      "url": "https://issues.chromium.org/action/issues/339169163/attachments/56439974?download=true",
+      "local_path": "attachments/rule-0-post.dot"
+    },
+    {
+      "id": 56439867,
+      "filename": "rule-0-post.png",
+      "mime_type": "image/png",
+      "size_bytes": 681554,
+      "url": "https://issues.chromium.org/action/issues/339169163/attachments/56439867?download=true",
+      "local_path": "attachments/rule-0-post.png"
+    },
+    {
+      "id": 56439398,
+      "filename": "rule-0-pre.dot",
+      "mime_type": "application/msword",
+      "size_bytes": 7768,
+      "url": "https://issues.chromium.org/action/issues/339169163/attachments/56439398?download=true",
+      "local_path": "attachments/rule-0-pre.dot"
+    },
+    {
+      "id": 56440330,
+      "filename": "rule-0-pre.png",
+      "mime_type": "image/png",
+      "size_bytes": 560445,
+      "url": "https://issues.chromium.org/action/issues/339169163/attachments/56440330?download=true",
+      "local_path": "attachments/rule-0-pre.png"
+    },
+    {
+      "id": 56474199,
+      "filename": "DumpLoopCFG.cpp",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 3644,
+      "url": "https://issues.chromium.org/action/issues/339169163/attachments/56474199?download=true",
+      "local_path": "attachments/DumpLoopCFG.cpp"
+    }
+  ],
+  "update_count": 121,
+  "description_snippet": "##### VULNERABILITY DETAILS\n\nChromium translates wgsl shaders via tint to an OS-specific shader format. On Windows, the OS-specific file format is hlsl, processed in dxcompiler.dll. When compiling chrome-generated hlsl files, this triggers an OOB inside the hlsl compiler. Standalone reproducing on l"
+}

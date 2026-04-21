@@ -1,0 +1,49 @@
+{
+  "id": "40061212",
+  "url": "https://issues.chromium.org/issues/40061212",
+  "title": "UAF in SelectFileDialogLinuxKde::CallKDialogOutput",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@gmail.com",
+  "assignee": "lu...@chromium.org",
+  "created_date": "2022-10-03T01:54:00+00:00",
+  "modified_date": "2024-01-09T07:16:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53162526,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 35479,
+      "url": "https://issues.chromium.org/action/issues/40061212/attachments/53162526?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53162527,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 72,
+      "url": "https://issues.chromium.org/action/issues/40061212/attachments/53162527?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53162654,
+      "filename": "Screenshot from 2022-10-17 09-21-16.png",
+      "mime_type": "image/png",
+      "size_bytes": 229594,
+      "url": "https://issues.chromium.org/action/issues/40061212/attachments/53162654?download=true",
+      "local_path": "attachments/Screenshot from 2022-10-17 09-21-16.png"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1.prepare a kde desktop linux and launch chrome.  \n2.python -m SimHTTPServer.  \n3.run out/asan/chrome.  \n4.Browse http://localhost:8000/poc.html.  \n5.click the save and close the tab.  \n6.UAF happen.  \n  \n**Problem Description:**   \nThis bug was introduced in h"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "40061152",
+  "url": "https://issues.chromium.org/issues/40061152",
+  "title": "Security: SameSite cookie bypass on Android by redirecting to to intent-picker",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Network>Cookies, Mobile>Intents",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "mt...@chromium.org",
+  "created_date": "2022-09-26T18:23:22+00:00",
+  "modified_date": "2024-01-09T06:39:46+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53355633,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 174,
+      "url": "https://issues.chromium.org/action/issues/40061152/attachments/53355633?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53355634,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40061152/attachments/53355634?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53355671,
+      "filename": "poc.py",
+      "mime_type": "text/plain",
+      "size_bytes": 514,
+      "url": "https://issues.chromium.org/action/issues/40061152/attachments/53355671?download=true",
+      "local_path": "attachments/poc.py"
+    },
+    {
+      "id": 53355676,
+      "filename": "mobizen_20220927_024004.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4470472,
+      "url": "https://issues.chromium.org/action/issues/40061152/attachments/53355676?download=true",
+      "local_path": "attachments/mobizen_20220927_024004.mp4"
+    },
+    {
+      "id": 53355711,
+      "filename": "poc.py",
+      "mime_type": "text/plain",
+      "size_bytes": 705,
+      "url": "https://issues.chromium.org/action/issues/40061152/attachments/53355711?download=true",
+      "local_path": "attachments/poc.py"
+    },
+    {
+      "id": 53355715,
+      "filename": "mobizen_20220930_173415.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 9657137,
+      "url": "https://issues.chromium.org/action/issues/40061152/attachments/53355715?download=true",
+      "local_path": "attachments/mobizen_20220930_173415.mp4"
+    }
+  ],
+  "update_count": 92,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nPossible to bypass SameSite cookie on Android by redirecting to intent and continuing to stay in Chrome  \n  \n**VERSION**   \nChrome Version: [105.0.5195.136] + [stable]  \nOperating System: [Android 11; Samsung]  \n  \nNote that I am using a Samsung for this. You must"
+}

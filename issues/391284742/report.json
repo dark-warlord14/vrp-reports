@@ -1,0 +1,59 @@
+{
+  "id": "391284742",
+  "url": "https://issues.chromium.org/issues/391284742",
+  "title": "libGLES_mali UAF via WebGPU shaders at llvm::PatternMatch::undef_match::check",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Dawn>Tint",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2025-0932"
+  ],
+  "reporter": "a7...@gmail.com",
+  "assignee": "am...@chromium.org",
+  "created_date": "2025-01-21T16:02:55+00:00",
+  "modified_date": "2026-03-05T16:41:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "Since while this issue was known and patched upstream in LLVM before this report, it seems that it was only based on this report that ARM knew of this issue and was able to backport that change into Mali as a result of this report. \nTherefore, while we can't issue a full reward for this report, we wanted to show our appreciation for this this issue being reported to us and Arm ensuring full resolution.",
+  "attachments": [
+    {
+      "id": 62302437,
+      "filename": "frag.spv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3152,
+      "url": "https://issues.chromium.org/action/issues/391284742/attachments/62302437?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62302438,
+      "filename": "vert.spv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 512,
+      "url": "https://issues.chromium.org/action/issues/391284742/attachments/62302438?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62316182,
+      "filename": "a.html",
+      "mime_type": "text/html",
+      "size_bytes": 4820,
+      "url": "https://issues.chromium.org/action/issues/391284742/attachments/62316182?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62316183,
+      "filename": "standalone.cpp",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 12248,
+      "url": "https://issues.chromium.org/action/issues/391284742/attachments/62316183?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 79,
+  "description_snippet": "##### VULNERABILITY DETAILS\nChrome on Android translates WebGPU shaders to SPIR-V. These SPIR-V shaders are eventually passed to libGLES_mali.so for optimization and native code generation. This bug report is about a WebGPU shader that crashes org.chromium.chrome on an MTE-enable device. Chromium us"
+}

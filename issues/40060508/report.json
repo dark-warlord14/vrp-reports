@@ -1,0 +1,70 @@
+{
+  "id": "40060508",
+  "url": "https://issues.chromium.org/issues/40060508",
+  "title": "Security: UAF in BackForwardCache",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Sandbox>SiteIsolation, UI>Browser>Navigation>BFCache",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "dt...@chromium.org",
+  "created_date": "2022-08-05T12:21:10+00:00",
+  "modified_date": "2023-01-11T18:31:32+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 30000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53047775,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 29077,
+      "url": "https://issues.chromium.org/action/issues/40060508/attachments/53047775?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53047776,
+      "filename": "poc.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1846,
+      "url": "https://issues.chromium.org/action/issues/40060508/attachments/53047776?download=true",
+      "local_path": "attachments/poc.diff"
+    },
+    {
+      "id": 53047777,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 336,
+      "url": "https://issues.chromium.org/action/issues/40060508/attachments/53047777?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53047778,
+      "filename": "blank.html",
+      "mime_type": "text/plain",
+      "size_bytes": 5,
+      "url": "https://issues.chromium.org/action/issues/40060508/attachments/53047778?download=true",
+      "local_path": "attachments/blank.html"
+    },
+    {
+      "id": 53047779,
+      "filename": "close.html",
+      "mime_type": "text/plain",
+      "size_bytes": 40,
+      "url": "https://issues.chromium.org/action/issues/40060508/attachments/53047779?download=true",
+      "local_path": "attachments/close.html"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nWhen `RenderFrameHostManager` unload[1] the old frame, the old RenderFrameHost can be stored in the BackForwardCache:  \n  \n```  \nif (can_store) {  \n      auto stored_page = CollectPage(std::move(old_render_frame_host));  \n      auto entry =  \n          std::make_uniqu"
+}

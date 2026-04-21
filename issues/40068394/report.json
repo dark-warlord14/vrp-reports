@@ -1,0 +1,59 @@
+{
+  "id": "40068394",
+  "url": "https://issues.chromium.org/issues/40068394",
+  "title": "Uaf in OmniboxPopupPresenter::WaitForHandler",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "tt...@gmail.com",
+  "assignee": "or...@chromium.org",
+  "created_date": "2023-07-31T06:43:47+00:00",
+  "modified_date": "2023-11-07T18:43:14+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53264245,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 77,
+      "url": "https://issues.chromium.org/action/issues/40068394/attachments/53264245?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53264246,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1107,
+      "url": "https://issues.chromium.org/action/issues/40068394/attachments/53264246?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 53264247,
+      "filename": "movie.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 4558059,
+      "url": "https://issues.chromium.org/action/issues/40068394/attachments/53264247?download=true",
+      "local_path": "attachments/movie.mov"
+    },
+    {
+      "id": 53264248,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 20325,
+      "url": "https://issues.chromium.org/action/issues/40068394/attachments/53264248?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 22,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. apply the patch and compile Chromium with ASAN  \n2. start a server for poc.html  \n3. `./Chromium --enable-features=WebUIOmniboxPopup --user-data-dir=./tmp  http://127.0.0.1:8080/poc.html`  \n4. click the address bar and input anything, then press `tab` on the"
+}

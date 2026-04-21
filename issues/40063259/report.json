@@ -1,0 +1,57 @@
+{
+  "id": "40063259",
+  "url": "https://issues.chromium.org/issues/40063259",
+  "title": "Bypass 1349146, local file access checks can be bypassed by using `file:` instead of `file://`",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@fingerprint.com",
+  "assignee": "ds...@chromium.org",
+  "created_date": "2023-02-26T22:16:27+00:00",
+  "modified_date": "2024-01-09T07:16:13+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53383049,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 183,
+      "url": "https://issues.chromium.org/action/issues/40063259/attachments/53383049?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53383050,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 200,
+      "url": "https://issues.chromium.org/action/issues/40063259/attachments/53383050?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53383051,
+      "filename": "devtools.js",
+      "mime_type": "text/plain",
+      "size_bytes": 245,
+      "url": "https://issues.chromium.org/action/issues/40063259/attachments/53383051?download=true",
+      "local_path": "attachments/devtools.js"
+    },
+    {
+      "id": 53383052,
+      "filename": "devtools.html",
+      "mime_type": "text/plain",
+      "size_bytes": 35,
+      "url": "https://issues.chromium.org/action/issues/40063259/attachments/53383052?download=true",
+      "local_path": "attachments/devtools.html"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Install the attached extension. Make sure to disable \"Allows access to file URLs\".  \n2. Open Developer Tools on the new tab opened by the extension.  \n3. You'll see an alert box with the contents of the /etc/hosts\\* file.  \n  \n\\*Because of `/etc/hosts` this"
+}

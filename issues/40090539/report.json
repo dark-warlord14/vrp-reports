@@ -1,0 +1,27 @@
+{
+  "id": "40090539",
+  "url": "https://issues.chromium.org/issues/40090539",
+  "title": "Security: Web sites can open privileged pages via remote debugging server (CSRF)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "ds...@chromium.org",
+  "created_date": "2018-02-19T11:27:52+00:00",
+  "modified_date": "2024-01-09T07:49:22+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 91,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen Chrome is started with the --remote-debugging-port=PORT flag, an undocumented HTTP API becomes available at http://127.0.0.1:PORT/.  \nOne of the APIs is /json/new?(url_here), which is susceptible to cross-site request forgery. Attackers can use this from a web page"
+}

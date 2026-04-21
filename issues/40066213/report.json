@@ -1,0 +1,43 @@
+{
+  "id": "40066213",
+  "url": "https://issues.chromium.org/issues/40066213",
+  "title": "Security: use-after-free/data-race (in off-by-default JavaScriptExperimentalSharedMemory feature)",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "kv...@googlecontrib.kvakil.me",
+  "assignee": "pt...@chromium.org",
+  "created_date": "2023-06-22T05:37:35+00:00",
+  "modified_date": "2023-10-13T17:43:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53261062,
+      "filename": "uaf.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17439,
+      "url": "https://issues.chromium.org/action/issues/40066213/attachments/53261062?download=true",
+      "local_path": "attachments/uaf.txt"
+    },
+    {
+      "id": 53261063,
+      "filename": "data-race.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11489,
+      "url": "https://issues.chromium.org/action/issues/40066213/attachments/53261063?download=true",
+      "local_path": "attachments/data-race.txt"
+    }
+  ],
+  "update_count": 27,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nWhen the (off-by-default) JavaScriptExperimentalSharedMemory feature is enabled, the V8 flag --shared-string-table is enabled. When this V8 flag is enabled, concurrent string externalization in V8 can lead to use-after-free issues and data races.  \n  \n**VERSION**   \nC"
+}

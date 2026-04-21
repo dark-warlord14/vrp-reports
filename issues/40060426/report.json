@@ -1,0 +1,44 @@
+{
+  "id": "40060426",
+  "url": "https://issues.chromium.org/issues/40060426",
+  "title": "Security: heap-buffer-overflow in TableView",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "UI>TaskManager",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "yo...@snu.ac.kr",
+  "assignee": "pk...@chromium.org",
+  "created_date": "2022-07-28T05:08:34+00:00",
+  "modified_date": "2024-01-09T07:21:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53362367,
+      "filename": "poc_07_28.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2112774,
+      "url": "https://issues.chromium.org/action/issues/40060426/attachments/53362367?download=true",
+      "local_path": "attachments/poc_07_28.mp4"
+    },
+    {
+      "id": 53362368,
+      "filename": "v8oom_heapoverflow_asan_log.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 41298,
+      "url": "https://issues.chromium.org/action/issues/40060426/attachments/53362368?download=true",
+      "local_path": "attachments/v8oom_heapoverflow_asan_log.txt"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThis commit is a cause of this vulnerability : https://chromium-review.googlesource.com/c/chromium/src/+/3747422  \n  \n```cpp  \nvoid TableView::Select(absl::optional<size_t> model_row) {  \n  if (!model_)  \n    return;  \n  \n  SelectByViewIndex(model_row.has_value()"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "40060996",
+  "url": "https://issues.chromium.org/issues/40060996",
+  "title": "Security: Heap-use-after-free in UnusedSitePermissionsService::UpdateUnusedPermissionsAsync",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Permissions",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "du...@chromium.org",
+  "created_date": "2022-09-16T08:14:32+00:00",
+  "modified_date": "2024-01-09T06:36:18+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52890169,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 49393,
+      "url": "https://issues.chromium.org/action/issues/40060996/attachments/52890169?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 52890170,
+      "filename": "poc.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1243557,
+      "url": "https://issues.chromium.org/action/issues/40060996/attachments/52890170?download=true",
+      "local_path": "attachments/poc.webm"
+    },
+    {
+      "id": 52890171,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40060996/attachments/52890171?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**Steps to reproduce the problem:**   \nrepro:  \n1. apply the change.diff and compile chromium with ASAN  \n2. run `./chrome --user-data-dir=/tmp/noexist  --enable-features=RecordPermissionExpirationTimestamps`  \n3. open a new profile then close it  \n  \n**Problem Description:**   \nThis is introduced b"
+}

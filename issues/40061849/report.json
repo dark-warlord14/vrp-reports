@@ -1,0 +1,38 @@
+{
+  "id": "40061849",
+  "url": "https://issues.chromium.org/issues/40061849",
+  "title": "Security: Debug check failed: IsPrimitiveMap()",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Maglev",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "p4...@gmail.com",
+  "assignee": "ve...@chromium.org",
+  "created_date": "2022-11-21T11:07:21+00:00",
+  "modified_date": "2023-03-07T18:34:06+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53135540,
+      "filename": "test.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1697,
+      "url": "https://issues.chromium.org/action/issues/40061849/attachments/53135540?download=true",
+      "local_path": "attachments/test.js"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "See details at https://crbug.com/chromium/1392061#c1."
+}

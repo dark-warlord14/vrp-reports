@@ -1,0 +1,54 @@
+{
+  "id": "420150619",
+  "url": "https://issues.chromium.org/issues/420150619",
+  "title": "Security: Race condition in AudioRendererImpl",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media>Video",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "asan-linux-release-1460407",
+  "cve_ids": [],
+  "reporter": "su...@gmail.com",
+  "assignee": "mj...@chromium.org",
+  "created_date": "2025-05-25T16:11:11+00:00",
+  "modified_date": "2025-09-04T12:42:31+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "bounty_rationale": "$7,000 for report of memory corruption in a sandboxed process / renderer + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 66155442,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 3220,
+      "url": "https://issues.chromium.org/action/issues/420150619/attachments/66155442?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66155443,
+      "filename": "big-buck-bunny_trailer.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2165175,
+      "url": "https://issues.chromium.org/action/issues/420150619/attachments/66155443?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66162091,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 3191,
+      "url": "https://issues.chromium.org/action/issues/420150619/attachments/66162091?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 87,
+  "description_snippet": "# Steps to reproduce the problem\n1. fetch asan-linux-release-1460407\n2. serve poc.html and big-buck-bunny_trailer.webm on port 8080\n3. ./chrome --autoplay-policy=no-user-gesture-required http://127.0.0.1:8080/poc.html \n\nSince this is a race condition issue, the POC cannot guarantee stable triggering"
+}

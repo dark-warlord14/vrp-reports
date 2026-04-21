@@ -1,0 +1,98 @@
+{
+  "id": "40067231",
+  "url": "https://issues.chromium.org/issues/40067231",
+  "title": "Extensions on lens.google.com can bypass host permissions and open chrome-untrusted:// URLs with side panel",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Sandbox>SiteIsolation, Platform>Extensions, UI>Browser>TopChrome>SidePanel",
+  "os_platforms": [
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "na...@chromium.org",
+  "created_date": "2023-07-11T18:22:04+00:00",
+  "modified_date": "2024-01-22T18:47:13+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53367095,
+      "filename": "bad_lens_redirect_poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 566,
+      "url": "https://issues.chromium.org/action/issues/40067231/attachments/53367095?download=true",
+      "local_path": "attachments/bad_lens_redirect_poc.zip"
+    },
+    {
+      "id": 53367125,
+      "filename": "read_file_without_permission_poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 653,
+      "url": "https://issues.chromium.org/action/issues/40067231/attachments/53367125?download=true",
+      "local_path": "attachments/read_file_without_permission_poc.zip"
+    },
+    {
+      "id": 53367131,
+      "filename": "all_lens_pocs.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4817470,
+      "url": "https://issues.chromium.org/action/issues/40067231/attachments/53367131?download=true",
+      "local_path": "attachments/all_lens_pocs.mp4"
+    },
+    {
+      "id": 53367147,
+      "filename": "lens_webstore_vid.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 783171,
+      "url": "https://issues.chromium.org/action/issues/40067231/attachments/53367147?download=true",
+      "local_path": "attachments/lens_webstore_vid.mp4"
+    },
+    {
+      "id": 53367148,
+      "filename": "lens_webstore_access.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1035,
+      "url": "https://issues.chromium.org/action/issues/40067231/attachments/53367148?download=true",
+      "local_path": "attachments/lens_webstore_access.zip"
+    },
+    {
+      "id": 53367218,
+      "filename": "Unnamed screencast (2).webm",
+      "mime_type": "video/webm",
+      "size_bytes": 5141353,
+      "url": "https://issues.chromium.org/action/issues/40067231/attachments/53367218?download=true",
+      "local_path": "attachments/Unnamed screencast (2).webm"
+    },
+    {
+      "id": 53367244,
+      "filename": "Screenshot 2023-07-27 15.40.10.png",
+      "mime_type": "image/png",
+      "size_bytes": 170771,
+      "url": "https://issues.chromium.org/action/issues/40067231/attachments/53367244?download=true",
+      "local_path": "attachments/Screenshot 2023-07-27 15.40.10.png"
+    },
+    {
+      "id": 53367256,
+      "filename": "Screen recording 2023-07-27 16.51.45.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2449587,
+      "url": "https://issues.chromium.org/action/issues/40067231/attachments/53367256?download=true",
+      "local_path": "attachments/Screen recording 2023-07-27 16.51.45.webm"
+    },
+    {
+      "id": 53367289,
+      "filename": "Capture.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 408781,
+      "url": "https://issues.chromium.org/action/issues/40067231/attachments/53367289?download=true",
+      "local_path": "attachments/Capture.PNG"
+    }
+  ],
+  "update_count": 72,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Download the attached extension  \n2. Right click an image in chrome and click \"search google for image\"  \n3. The current tab is redirected to chrome-untrusted://terminal  \n  \n**Problem Description:**   \nWhile the steps described above do require user interac"
+}

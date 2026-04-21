@@ -1,0 +1,47 @@
+{
+  "id": "40058874",
+  "url": "https://issues.chromium.org/issues/40058874",
+  "title": "Security: Private Network Access (PNA) Bypass Allows Access to localhost on macOS & Linux using 0.0.0.0",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>CORS>PrivateNetworkAccess",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2023-48022"
+  ],
+  "reporter": "sa...@gmail.com",
+  "assignee": "es...@chromium.org",
+  "created_date": "2022-02-23T01:02:07+00:00",
+  "modified_date": "2026-03-20T18:11:32+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact privilege escalation that has contributed to overall Private Network Access considerations",
+  "attachments": [
+    {
+      "id": 55190856,
+      "filename": "chrome-1-click-rce-fast.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 18619333,
+      "url": "https://issues.chromium.org/action/issues/40058874/attachments/55190856?download=true",
+      "local_path": "attachments/chrome-1-click-rce-fast.mov"
+    },
+    {
+      "id": 55185202,
+      "filename": "0.0.0.0 Day.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 56115,
+      "url": "https://issues.chromium.org/action/issues/40058874/attachments/55185202?download=true",
+      "local_path": "attachments/0.0.0.0 Day.jpg"
+    }
+  ],
+  "update_count": 81,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nChrome is deprecating direct access to private network endpoints from public websites as part of the Private Network Access (PNA) specification (https://developer.chrome.com/blog/private-network-access-preflight/). Services listening on the localhost (127.0.0.0/8) are"
+}

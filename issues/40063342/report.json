@@ -1,0 +1,53 @@
+{
+  "id": "40063342",
+  "url": "https://issues.chromium.org/issues/40063342",
+  "title": "ServiceWorkers in credentialless iframes could access long lived cookies",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>AnonymousIframe, Blink>ServiceWorker, Internals>Network>Cookies>PartitionedCookies, Internals>Sandbox>SiteIsolation",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "ti...@chromium.org",
+  "created_date": "2023-03-02T08:55:38+00:00",
+  "modified_date": "2024-01-09T10:46:03+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53421909,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2408,
+      "url": "https://issues.chromium.org/action/issues/40063342/attachments/53421909?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 53421930,
+      "filename": "Screenshot 2023-03-03 at 9.23.42 AM.png",
+      "mime_type": "image/png",
+      "size_bytes": 939874,
+      "url": "https://issues.chromium.org/action/issues/40063342/attachments/53421930?download=true",
+      "local_path": "attachments/Screenshot 2023-03-03 at 9.23.42 AM.png"
+    },
+    {
+      "id": 53421948,
+      "filename": "poc_new.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3001,
+      "url": "https://issues.chromium.org/action/issues/40063342/attachments/53421948?download=true",
+      "local_path": "attachments/poc_new.zip"
+    }
+  ],
+  "update_count": 89,
+  "description_snippet": "---\n\n### Report description\n\n\nServiceWorkers in credentialless iframes could access long lived cookies\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nGoogle Chrome\n\n\n---\n\n### The problem\n\n\n#### Please describe the technical details of the vulnerability\n\nS"
+}

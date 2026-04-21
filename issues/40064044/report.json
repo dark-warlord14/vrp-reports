@@ -1,0 +1,102 @@
+{
+  "id": "40064044",
+  "url": "https://issues.chromium.org/issues/40064044",
+  "title": "Security: use-after-poison libANGLE\\renderer\\d3d\\d3d11\\VertexBuffer11.cpp:129 in rx::VertexBuffer11::storeVertexAttributes",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebGL",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "ge...@chromium.org",
+  "created_date": "2023-04-14T04:51:50+00:00",
+  "modified_date": "2024-01-09T11:02:11+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52963843,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13934,
+      "url": "https://issues.chromium.org/action/issues/40064044/attachments/52963843?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 52963845,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 8490,
+      "url": "https://issues.chromium.org/action/issues/40064044/attachments/52963845?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52963846,
+      "filename": "desktop-gl-constants.js",
+      "mime_type": "text/plain",
+      "size_bytes": 90269,
+      "url": "https://issues.chromium.org/action/issues/40064044/attachments/52963846?download=true",
+      "local_path": "attachments/desktop-gl-constants.js"
+    },
+    {
+      "id": 52963847,
+      "filename": "js-test-post.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1293,
+      "url": "https://issues.chromium.org/action/issues/40064044/attachments/52963847?download=true",
+      "local_path": "attachments/js-test-post.js"
+    },
+    {
+      "id": 52963848,
+      "filename": "js-test-pre.js",
+      "mime_type": "text/plain",
+      "size_bytes": 21515,
+      "url": "https://issues.chromium.org/action/issues/40064044/attachments/52963848?download=true",
+      "local_path": "attachments/js-test-pre.js"
+    },
+    {
+      "id": 52963849,
+      "filename": "webgl-test-utils.js",
+      "mime_type": "text/plain",
+      "size_bytes": 121698,
+      "url": "https://issues.chromium.org/action/issues/40064044/attachments/52963849?download=true",
+      "local_path": "attachments/webgl-test-utils.js"
+    },
+    {
+      "id": 52963873,
+      "filename": "pocmini.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1516,
+      "url": "https://issues.chromium.org/action/issues/40064044/attachments/52963873?download=true",
+      "local_path": "attachments/pocmini.html"
+    },
+    {
+      "id": 52963874,
+      "filename": "webgl-test-utils.js",
+      "mime_type": "text/plain",
+      "size_bytes": 121698,
+      "url": "https://issues.chromium.org/action/issues/40064044/attachments/52963874?download=true",
+      "local_path": "attachments/webgl-test-utils.js"
+    },
+    {
+      "id": 52963890,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1266,
+      "url": "https://issues.chromium.org/action/issues/40064044/attachments/52963890?download=true",
+      "local_path": "attachments/patch.diff"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "#Version\r\nasan-win32-release_x64-1129101\r\n\r\n#Reproduce\r\nchrome --no-sandbox --user-data-dir=test poc.html\r\n\r\n#Type of crash\r\ngpu process\r\n\r\n#Analysis\r\ncoming soon\r\n\r\n#Note\r\n*.js is part of the KhronosGroup/WebGL,the files can be found here\r\nhttps://github.com/KhronosGroup/WebGL/tree/main/sdk/tests/j"
+}

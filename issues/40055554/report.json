@@ -1,0 +1,108 @@
+{
+  "id": "40055554",
+  "url": "https://issues.chromium.org/issues/40055554",
+  "title": "Security: UAF caused by some WebUIMessageHandlers when OnJavascriptDisallowed() is not called before destruction",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>ServiceWorker, Internals>Sandbox>SiteIsolation, Platform>Extensions, UI>Browser>Navigation, UI>Browser>WebUI",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "as...@chromium.org",
+  "created_date": "2021-04-15T02:19:49+00:00",
+  "modified_date": "2024-01-09T03:17:27+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53197770,
+      "filename": "asan_output_872603.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17549,
+      "url": "https://issues.chromium.org/action/issues/40055554/attachments/53197770?download=true",
+      "local_path": "attachments/asan_output_872603.txt"
+    },
+    {
+      "id": 53197771,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3224,
+      "url": "https://issues.chromium.org/action/issues/40055554/attachments/53197771?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53197772,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 169,
+      "url": "https://issues.chromium.org/action/issues/40055554/attachments/53197772?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53197773,
+      "filename": "service_worker.js",
+      "mime_type": "text/plain",
+      "size_bytes": 431,
+      "url": "https://issues.chromium.org/action/issues/40055554/attachments/53197773?download=true",
+      "local_path": "attachments/service_worker.js"
+    },
+    {
+      "id": 53197824,
+      "filename": "Screen Shot 2021-04-20 at 6.08.40 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 234132,
+      "url": "https://issues.chromium.org/action/issues/40055554/attachments/53197824?download=true",
+      "local_path": "attachments/Screen Shot 2021-04-20 at 6.08.40 PM.png"
+    },
+    {
+      "id": 53197825,
+      "filename": "Screen Shot 2021-04-20 at 6.09.16 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 100226,
+      "url": "https://issues.chromium.org/action/issues/40055554/attachments/53197825?download=true",
+      "local_path": "attachments/Screen Shot 2021-04-20 at 6.09.16 PM.png"
+    },
+    {
+      "id": 53197864,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 5631,
+      "url": "https://issues.chromium.org/action/issues/40055554/attachments/53197864?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53197865,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 156,
+      "url": "https://issues.chromium.org/action/issues/40055554/attachments/53197865?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53197866,
+      "filename": "service_worker.js",
+      "mime_type": "text/plain",
+      "size_bytes": 58,
+      "url": "https://issues.chromium.org/action/issues/40055554/attachments/53197866?download=true",
+      "local_path": "attachments/service_worker.js"
+    },
+    {
+      "id": 53197882,
+      "filename": "web_ui_remove_observers.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1426,
+      "url": "https://issues.chromium.org/action/issues/40055554/attachments/53197882?download=true",
+      "local_path": "attachments/web_ui_remove_observers.patch"
+    }
+  ],
+  "update_count": 83,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe ServiceWorkerContextCore class dispatches various service worker notifications within the browser process. The chrome://serviceworker-internals/ WebUI page then observes some of those notifications.  \n  \nDue to the way in which the notifications are dispatched, it's"
+}

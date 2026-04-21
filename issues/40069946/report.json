@@ -1,0 +1,57 @@
+{
+  "id": "40069946",
+  "url": "https://issues.chromium.org/issues/40069946",
+  "title": "Security: Heap buffer overflow write due to bound check missing",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "bu...@gmail.com",
+  "assignee": "ch...@google.com",
+  "created_date": "2023-08-18T14:13:54+00:00",
+  "modified_date": "2023-12-22T18:43:22+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53375839,
+      "filename": "build.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 559,
+      "url": "https://issues.chromium.org/action/issues/40069946/attachments/53375839?download=true",
+      "local_path": "attachments/build.diff"
+    },
+    {
+      "id": 53375840,
+      "filename": "npd_asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1251,
+      "url": "https://issues.chromium.org/action/issues/40069946/attachments/53375840?download=true",
+      "local_path": "attachments/npd_asan.txt"
+    },
+    {
+      "id": 53375841,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 514,
+      "url": "https://issues.chromium.org/action/issues/40069946/attachments/53375841?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 53375842,
+      "filename": "test_oob.c",
+      "mime_type": "text/plain",
+      "size_bytes": 7076,
+      "url": "https://issues.chromium.org/action/issues/40069946/attachments/53375842?download=true",
+      "local_path": "attachments/test_oob.c"
+    }
+  ],
+  "update_count": 24,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nWhen handling the VIRGL_CCMD_GET_MEMORY_INFO command, `vrend_renderer_get_meminfo` function will be invoked(https://source.chromium.org/chromiumos/_/chromium/chromiumos/third_party/virglrenderer/+/master:src/vrend_renderer.c;l=12974  \n). Specifically, it directly assi"
+}

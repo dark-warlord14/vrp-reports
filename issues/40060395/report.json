@@ -1,0 +1,94 @@
+{
+  "id": "40060395",
+  "url": "https://issues.chromium.org/issues/40060395",
+  "title": "Security: UAF in HidService::GetDevices",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>HID",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "et...@gmail.com",
+  "assignee": "ch...@chromium.org",
+  "created_date": "2022-07-25T10:06:41+00:00",
+  "modified_date": "2022-12-09T02:53:42+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53155290,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 21137,
+      "url": "https://issues.chromium.org/action/issues/40060395/attachments/53155290?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53155291,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 185,
+      "url": "https://issues.chromium.org/action/issues/40060395/attachments/53155291?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53155292,
+      "filename": "sw.js",
+      "mime_type": "text/plain",
+      "size_bytes": 469,
+      "url": "https://issues.chromium.org/action/issues/40060395/attachments/53155292?download=true",
+      "local_path": "attachments/sw.js"
+    },
+    {
+      "id": 53155337,
+      "filename": "HidExtensionServiceWorker.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 68190,
+      "url": "https://issues.chromium.org/action/issues/40060395/attachments/53155337?download=true",
+      "local_path": "attachments/HidExtensionServiceWorker.zip"
+    },
+    {
+      "id": 53155338,
+      "filename": "ServiceWorkerHost_destructor_stack.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 5674,
+      "url": "https://issues.chromium.org/action/issues/40060395/attachments/53155338?download=true",
+      "local_path": "attachments/ServiceWorkerHost_destructor_stack.txt"
+    },
+    {
+      "id": 53155339,
+      "filename": "HidService_destructor_stack.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 6469,
+      "url": "https://issues.chromium.org/action/issues/40060395/attachments/53155339?download=true",
+      "local_path": "attachments/HidService_destructor_stack.txt"
+    },
+    {
+      "id": 53155432,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 273,
+      "url": "https://issues.chromium.org/action/issues/40060395/attachments/53155432?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53155433,
+      "filename": "sw.js",
+      "mime_type": "text/plain",
+      "size_bytes": 442,
+      "url": "https://issues.chromium.org/action/issues/40060395/attachments/53155433?download=true",
+      "local_path": "attachments/sw.js"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis vulnerability is similar to https://bugs.chromium.org/p/chromium/issues/detail?id=1284916  \n  \nThere is a raw pointer `browser_context_` stored as member variable in class HidService. And the lifetime of HidService binds to a self-owned receiver [1], which means it"
+}

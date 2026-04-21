@@ -1,0 +1,76 @@
+{
+  "id": "40053051",
+  "url": "https://issues.chromium.org/issues/40053051",
+  "title": "CSP frame-src bypass using: window.open + javascript-url + about:srcdoc + doubly-nested-iframe.",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "dd...@gmail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2020-08-11T11:40:47+00:00",
+  "modified_date": "2021-06-24T17:54:12+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53334497,
+      "filename": "bypass-default-src.html",
+      "mime_type": "text/plain",
+      "size_bytes": 269,
+      "url": "https://issues.chromium.org/action/issues/40053051/attachments/53334497?download=true",
+      "local_path": "attachments/bypass-default-src.html"
+    },
+    {
+      "id": 53334498,
+      "filename": "bypass-script-src.html",
+      "mime_type": "text/plain",
+      "size_bytes": 262,
+      "url": "https://issues.chromium.org/action/issues/40053051/attachments/53334498?download=true",
+      "local_path": "attachments/bypass-script-src.html"
+    },
+    {
+      "id": 53334538,
+      "filename": "unsafe-inline.html",
+      "mime_type": "text/plain",
+      "size_bytes": 238,
+      "url": "https://issues.chromium.org/action/issues/40053051/attachments/53334538?download=true",
+      "local_path": "attachments/unsafe-inline.html"
+    },
+    {
+      "id": 53334539,
+      "filename": "bypass-default-src-none.html",
+      "mime_type": "text/plain",
+      "size_bytes": 269,
+      "url": "https://issues.chromium.org/action/issues/40053051/attachments/53334539?download=true",
+      "local_path": "attachments/bypass-default-src-none.html"
+    },
+    {
+      "id": 53334564,
+      "filename": "Screenshot from 2020-08-17 18-14-40.png",
+      "mime_type": "image/png",
+      "size_bytes": 226867,
+      "url": "https://issues.chromium.org/action/issues/40053051/attachments/53334564?download=true",
+      "local_path": "attachments/Screenshot from 2020-08-17 18-14-40.png"
+    },
+    {
+      "id": 53334570,
+      "filename": "chrome_canary_87.png",
+      "mime_type": "image/png",
+      "size_bytes": 84062,
+      "url": "https://issues.chromium.org/action/issues/40053051/attachments/53334570?download=true",
+      "local_path": "attachments/chrome_canary_87.png"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1.use `sudo php -S 0.0.0.0:80` to start a web server, and put the bypass-default-src.html and bypass-script-src.html into the web r"
+}

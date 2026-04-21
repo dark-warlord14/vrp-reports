@@ -1,0 +1,47 @@
+{
+  "id": "40060367",
+  "url": "https://issues.chromium.org/issues/40060367",
+  "title": "Security: UTF chartorune heap-buffer-overflow crash",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>OptimizationGuide",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2022-07-22T17:14:11+00:00",
+  "modified_date": "2024-01-09T06:21:50+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53007374,
+      "filename": "testcase",
+      "mime_type": "text/plain",
+      "size_bytes": 1,
+      "url": "https://issues.chromium.org/action/issues/40060367/attachments/53007374?download=true",
+      "local_path": "attachments/testcase"
+    },
+    {
+      "id": 53007375,
+      "filename": "utf_fuzzer.cc",
+      "mime_type": "text/plain",
+      "size_bytes": 228,
+      "url": "https://issues.chromium.org/action/issues/40060367/attachments/53007375?download=true",
+      "local_path": "attachments/utf_fuzzer.cc"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "**VERSION** : trunk  \n  \n%< - [Run] --------------------  \n  \n./utf-fuzzer testcase  \n  \n  \n==46780==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x128e68ea03d1 at pc 0x7ff74706131e bp 0x008ea54ff4c0 sp 0x008ea54ff508  \nREAD of size 1 at 0x128e68ea03d1 thread T0  \nSCARINESS: 12 (1-byte-r"
+}

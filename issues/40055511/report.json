@@ -1,0 +1,60 @@
+{
+  "id": "40055511",
+  "url": "https://issues.chromium.org/issues/40055511",
+  "title": "Security: OOB read when attempting to add tab to group after groups have changed",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>TopChrome>TabStrip>TabGroups",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "co...@chromium.org",
+  "created_date": "2021-04-10T20:23:01+00:00",
+  "modified_date": "2024-01-09T08:58:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53273671,
+      "filename": "asan_output_871272.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13018,
+      "url": "https://issues.chromium.org/action/issues/40055511/attachments/53273671?download=true",
+      "local_path": "attachments/asan_output_871272.txt"
+    },
+    {
+      "id": 53273672,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 577,
+      "url": "https://issues.chromium.org/action/issues/40055511/attachments/53273672?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53273673,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 163,
+      "url": "https://issues.chromium.org/action/issues/40055511/attachments/53273673?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53273683,
+      "filename": "suggested_patch.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 865,
+      "url": "https://issues.chromium.org/action/issues/40055511/attachments/53273683?download=true",
+      "local_path": "attachments/suggested_patch.patch"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe context menu shown for a tab allows that tab to be added to an existing group. However, if one or more groups were removed in the time since the menu was shown, an out-of-bounds read can occur in the browser process.  \n  \n**VERSION**   \nChrome Version: Tested on 92.0"
+}

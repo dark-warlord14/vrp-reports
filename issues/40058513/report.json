@@ -1,0 +1,34 @@
+{
+  "id": "40058513",
+  "url": "https://issues.chromium.org/issues/40058513",
+  "title": "heap buffer overflow in sw::Blitter::fastResolve",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE, Internals>GPU>SwiftShader",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2022-01-17T14:45:57+00:00",
+  "modified_date": "2024-01-09T04:30:05+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53067896,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 825,
+      "url": "https://issues.chromium.org/action/issues/40058513/attachments/53067896?download=true",
+      "local_path": "attachments/crash.html"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/97.0.4692.71 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nos version:\r\nubuntu 20.04\r\nchrome version：Chromium 99.0.4818.0\r\n\r\n1 ./chrome --user-data-dir=/tmp/xx  --incognito http://localhost:8000/cr"
+}

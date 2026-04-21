@@ -1,0 +1,46 @@
+{
+  "id": "40086999",
+  "url": "https://issues.chromium.org/issues/40086999",
+  "title": "Security: HSTS Bypass via flooding of the HSTS policy file",
+  "status": "Accepted",
+  "severity": "S1-High",
+  "priority": "P3",
+  "component": "Internals>Network>DomainSecurityPolicy",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "a3...@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2017-03-08T09:08:25+00:00",
+  "modified_date": "2026-03-11T12:14:52+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact exploitation mitigation bypass",
+  "attachments": [
+    {
+      "id": 53399219,
+      "filename": "111.png",
+      "mime_type": "image/png",
+      "size_bytes": 191263,
+      "url": "https://issues.chromium.org/action/issues/40086999/attachments/53399219?download=true",
+      "local_path": "attachments/111.png"
+    },
+    {
+      "id": 53399220,
+      "filename": "222.png",
+      "mime_type": "image/png",
+      "size_bytes": 121342,
+      "url": "https://issues.chromium.org/action/issues/40086999/attachments/53399220?download=true",
+      "local_path": "attachments/222.png"
+    }
+  ],
+  "update_count": 207,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen TransportSecurity file is very large，HSTS doesn't work for protecting the site that is first loaded by chrome.  \nFor example, the user's homepage and clicking a URL in other application(chrome is the default browser).   \nA patient attacker can easily make the victim"
+}

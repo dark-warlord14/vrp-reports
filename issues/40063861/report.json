@@ -1,0 +1,49 @@
+{
+  "id": "40063861",
+  "url": "https://issues.chromium.org/issues/40063861",
+  "title": "Security: Heap-use-after-free in views::View::VisibilityChangedImpl ",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "em...@chromium.org",
+  "created_date": "2023-04-01T04:53:46+00:00",
+  "modified_date": "2025-10-28T12:38:22+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53033718,
+      "filename": "Screen Recording (4-1-2023 5-11-02 AM).mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2581699,
+      "url": "https://issues.chromium.org/action/issues/40063861/attachments/53033718?download=true",
+      "local_path": "attachments/Screen Recording (4-1-2023 5-11-02 AM).mp4"
+    },
+    {
+      "id": 53033785,
+      "filename": "screen.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2077120,
+      "url": "https://issues.chromium.org/action/issues/40063861/attachments/53033785?download=true",
+      "local_path": "attachments/screen.mp4"
+    },
+    {
+      "id": 53033817,
+      "filename": "screen_1.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 362922,
+      "url": "https://issues.chromium.org/action/issues/40063861/attachments/53033817?download=true",
+      "local_path": "attachments/screen_1.mp4"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "**VERSION**   \nChrome Version: 114.0.5687.0 (Official Build) canary (64-bit) (cohort: Clang-64)   \nOperating System: Windows 10   \n  \n**REPRODUCTION CASE**   \n1. Enable chrome://flags/#extensions-menu-access-control  \n2. Install an extension  \n3. Double click on Extensions icon  \n  \n==6716==ERROR: A"
+}

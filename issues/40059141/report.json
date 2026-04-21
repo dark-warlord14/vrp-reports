@@ -1,0 +1,33 @@
+{
+  "id": "40059141",
+  "url": "https://issues.chromium.org/issues/40059141",
+  "title": "Security: .url files can redirect showSaveFilePicker into an arbitrary file",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Storage>FileSystem",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ve...@gmail.com",
+  "assignee": "as...@chromium.org",
+  "created_date": "2022-03-18T22:27:06+00:00",
+  "modified_date": "2024-01-09T06:42:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53131627,
+      "filename": "PoC.html",
+      "mime_type": "text/plain",
+      "size_bytes": 8219,
+      "url": "https://issues.chromium.org/action/issues/40059141/attachments/53131627?download=true",
+      "local_path": "attachments/PoC.html"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThis is based on #1152327  \n  \nAn attacker needs to convince the user to save and upload the saved file, this will result in opening an arbitrary file. The fix was fairly easy, you just blocked saving .lnk files which was enough to mitigate the issue.  \nHowever, there"
+}

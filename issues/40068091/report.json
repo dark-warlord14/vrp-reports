@@ -1,0 +1,60 @@
+{
+  "id": "40068091",
+  "url": "https://issues.chromium.org/issues/40068091",
+  "title": "Security: chrome.devtools.inspectedWindow.getResources allows resources from enterprise policy-blocked hosts",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions>API",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "ds...@chromium.org",
+  "created_date": "2023-07-26T06:23:47+00:00",
+  "modified_date": "2024-01-09T08:18:44+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53032146,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 201,
+      "url": "https://issues.chromium.org/action/issues/40068091/attachments/53032146?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53032147,
+      "filename": "devtools.js",
+      "mime_type": "text/plain",
+      "size_bytes": 230,
+      "url": "https://issues.chromium.org/action/issues/40068091/attachments/53032147?download=true",
+      "local_path": "attachments/devtools.js"
+    },
+    {
+      "id": 53032148,
+      "filename": "devtools.html",
+      "mime_type": "text/plain",
+      "size_bytes": 35,
+      "url": "https://issues.chromium.org/action/issues/40068091/attachments/53032148?download=true",
+      "local_path": "attachments/devtools.html"
+    },
+    {
+      "id": 53032149,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 94,
+      "url": "https://issues.chromium.org/action/issues/40068091/attachments/53032149?download=true",
+      "local_path": "attachments/background.js"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nExtensions shouldn't be able to interact with enterprise policy-blocked hosts  \n  \nAccording to https://support.google.com/chrome/a/answer/9031935?hl=en,  \n\"For example, if your developers host code in a third-party code repository, you can block the repository's webpage"
+}

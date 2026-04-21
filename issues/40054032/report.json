@@ -1,0 +1,61 @@
+{
+  "id": "40054032",
+  "url": "https://issues.chromium.org/issues/40054032",
+  "title": "Security: determining size of CORB/CORP'd cross-origin responses",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>CORS, Internals>Network, Internals>Sandbox>SiteIsolation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "to...@gmail.com",
+  "assignee": "mm...@chromium.org",
+  "created_date": "2020-12-01T14:17:13+00:00",
+  "modified_date": "2024-01-09T08:15:05+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53211239,
+      "filename": "leak-size-corb.html",
+      "mime_type": "text/plain",
+      "size_bytes": 806,
+      "url": "https://issues.chromium.org/action/issues/40054032/attachments/53211239?download=true",
+      "local_path": "attachments/leak-size-corb.html"
+    },
+    {
+      "id": 53211240,
+      "filename": "get.php",
+      "mime_type": "text/plain",
+      "size_bytes": 262,
+      "url": "https://issues.chromium.org/action/issues/40054032/attachments/53211240?download=true",
+      "local_path": "attachments/get.php"
+    },
+    {
+      "id": 53211241,
+      "filename": "sblob.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 50000,
+      "url": "https://issues.chromium.org/action/issues/40054032/attachments/53211241?download=true",
+      "local_path": "attachments/sblob.txt"
+    },
+    {
+      "id": 53211242,
+      "filename": "tao.php",
+      "mime_type": "text/plain",
+      "size_bytes": 90,
+      "url": "https://issues.chromium.org/action/issues/40054032/attachments/53211242?download=true",
+      "local_path": "attachments/tao.php"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen a CORB/CORP'd response is received, the browser will signal to the server to stop sending it. For HTTP/1.1 connections, this is done with a TCP FIN/RST packet, but only when a sufficient number of bytes of the response have been received. As such, if fewer bytes hav"
+}

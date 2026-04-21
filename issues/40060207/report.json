@@ -1,0 +1,41 @@
+{
+  "id": "40060207",
+  "url": "https://issues.chromium.org/issues/40060207",
+  "title": "sourceMappingURL directive allows use of UNC paths on Windows",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zi...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2022-07-07T19:58:49+00:00",
+  "modified_date": "2025-04-03T11:00:55+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53223460,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 198,
+      "url": "https://issues.chromium.org/action/issues/40060207/attachments/53223460?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53223461,
+      "filename": "index.js",
+      "mime_type": "text/plain",
+      "size_bytes": 93,
+      "url": "https://issues.chromium.org/action/issues/40060207/attachments/53223461?download=true",
+      "local_path": "attachments/index.js"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "---\n\n### Report description\n\n\nsourceMappingURL directive allows use of UNC paths on Windows\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nGoogle Chrome\n\n\n---\n\n### The problem\n\n\n#### Please describe the technical details of the vulnerability\n\n### Descript"
+}

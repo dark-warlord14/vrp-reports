@@ -1,0 +1,57 @@
+{
+  "id": "40060647",
+  "url": "https://issues.chromium.org/issues/40060647",
+  "title": "heap-use-after-free ui/views/view.cc:1898:7 in views::View::HandleAccessibleAction",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "UI>Accessibility, UI>Accessibility>Compatibility",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rh...@gmail.com",
+  "assignee": "dt...@chromium.org",
+  "created_date": "2022-08-22T19:54:17+00:00",
+  "modified_date": "2024-06-18T13:07:05+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53030845,
+      "filename": "chromevox_onEvent_uaf.log",
+      "mime_type": "text/plain",
+      "size_bytes": 18465,
+      "url": "https://issues.chromium.org/action/issues/40060647/attachments/53030845?download=true",
+      "local_path": "attachments/chromevox_onEvent_uaf.log"
+    },
+    {
+      "id": 53030846,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40060647/attachments/53030846?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53031009,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40060647/attachments/53031009?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53031019,
+      "filename": "1355560-M109.log",
+      "mime_type": "text/plain",
+      "size_bytes": 19217,
+      "url": "https://issues.chromium.org/action/issues/40060647/attachments/53031019?download=true",
+      "local_path": "attachments/1355560-M109.log"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Enable touch screen & chromevox  \n2. Open NTP  \n3. alt+tab then double click on views (please refer to screencast)  \n  \n**Problem Description:**   \nThis heap UaF occurs when chromevox is enabled. Holding alt+tab then releasing the onEvent state get freed and"
+}

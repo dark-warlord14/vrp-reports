@@ -1,0 +1,26 @@
+{
+  "id": "40054019",
+  "url": "https://issues.chromium.org/issues/40054019",
+  "title": "Heap-buffer-overflow in SkAnalyticEdge::setLine",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Skia",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "re...@google.com",
+  "created_date": "2020-11-29T23:28:27+00:00",
+  "modified_date": "2024-01-09T02:44:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 6000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 46,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=5689989573967872\n\nFuzzer: jesse_avalanche\nJob Type: linux_asan_chrome_mp\nPlatform Id: linux\n\nCrash Type: Heap-buffer-overflow WRITE 8\nCrash Address: 0x61700005cbb0\nCrash State:\n  SkAnalyticEdge::setLine\n  SkAnalyticEdgeBuilder::addPolyLine\n  SkEd"
+}

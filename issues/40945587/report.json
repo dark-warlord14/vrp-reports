@@ -1,0 +1,59 @@
+{
+  "id": "40945587",
+  "url": "https://issues.chromium.org/issues/40945587",
+  "title": "Security: Heap-use-after-free in WebUIBubbleDialogView::ClearContentsWrapper",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>ContentSuggestions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "de...@chromium.org",
+  "created_date": "2023-11-24T09:12:20+00:00",
+  "modified_date": "2024-03-14T15:42:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52929859,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 168,
+      "url": "https://issues.chromium.org/action/issues/40945587/attachments/52929859?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52929860,
+      "filename": "patch.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2075,
+      "url": "https://issues.chromium.org/action/issues/40945587/attachments/52929860?download=true",
+      "local_path": "attachments/patch.txt"
+    },
+    {
+      "id": 52929861,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 26378,
+      "url": "https://issues.chromium.org/action/issues/40945587/attachments/52929861?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 52929863,
+      "filename": "video.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 3884517,
+      "url": "https://issues.chromium.org/action/issues/40945587/attachments/52929863?download=true",
+      "local_path": "attachments/video.mov"
+    }
+  ],
+  "update_count": 27,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. apply the patch and compile chromium with ASAN enabled. The patch only turns on the compose.  \n2. Start a server at the folder of poc.html  \n3. `./Chromium --enable-features=Compose,ComposeNudge --user-data-dir=./tmp http://127.0.0.1:8605/poc.html`  \n4. Righ"
+}

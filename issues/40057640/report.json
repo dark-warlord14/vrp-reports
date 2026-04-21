@@ -1,0 +1,62 @@
+{
+  "id": "40057640",
+  "url": "https://issues.chromium.org/issues/40057640",
+  "title": "Security: TFC 2021 loader bug",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Loader",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jt...@gmail.com",
+  "assignee": "hi...@chromium.org",
+  "created_date": "2021-10-18T16:14:41+00:00",
+  "modified_date": "2024-08-11T21:23:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52890527,
+      "filename": "render.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 31864,
+      "url": "https://issues.chromium.org/action/issues/40057640/attachments/52890527?download=true",
+      "local_path": "attachments/render.zip"
+    },
+    {
+      "id": 52890882,
+      "filename": "trace_earth_hash.json.gz",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2412389,
+      "url": "https://issues.chromium.org/action/issues/40057640/attachments/52890882?download=true",
+      "local_path": "attachments/trace_earth_hash.json.gz"
+    },
+    {
+      "id": 52890883,
+      "filename": "trace_earth_nohash.json.gz",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2235637,
+      "url": "https://issues.chromium.org/action/issues/40057640/attachments/52890883?download=true",
+      "local_path": "attachments/trace_earth_nohash.json.gz"
+    },
+    {
+      "id": 52890892,
+      "filename": "trace_adobe2.json.gz",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4462630,
+      "url": "https://issues.chromium.org/action/issues/40057640/attachments/52890892?download=true",
+      "local_path": "attachments/trace_adobe2.json.gz"
+    }
+  ],
+  "update_count": 111,
+  "description_snippet": "The renderer rce bug from https://crbug.com/chromium/1260579\r\n\r\nIn function `ResourceLoader::CodeCacheRequest::MaybeSendCachedCode`, two timestamps (`cached_code_response_time_` and `resource_response_time_`) need to be equal to identify that the response for cached code data is the same with the re"
+}

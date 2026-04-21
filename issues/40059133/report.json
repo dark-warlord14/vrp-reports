@@ -1,0 +1,102 @@
+{
+  "id": "40059133",
+  "url": "https://issues.chromium.org/issues/40059133",
+  "title": "Security: RegExp[@@replace] missing write barrier, leading to RCE",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Regexp",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "bt...@gmail.com",
+  "assignee": "jg...@chromium.org",
+  "created_date": "2022-03-18T03:22:13+00:00",
+  "modified_date": "2026-01-06T23:19:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53188080,
+      "filename": "dcheck.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 4317,
+      "url": "https://issues.chromium.org/action/issues/40059133/attachments/53188080?download=true",
+      "local_path": "attachments/dcheck.txt"
+    },
+    {
+      "id": 53188081,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 898,
+      "url": "https://issues.chromium.org/action/issues/40059133/attachments/53188081?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53188121,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1048,
+      "url": "https://issues.chromium.org/action/issues/40059133/attachments/53188121?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53188326,
+      "filename": "chrome.js",
+      "mime_type": "text/plain",
+      "size_bytes": 14755,
+      "url": "https://issues.chromium.org/action/issues/40059133/attachments/53188326?download=true",
+      "local_path": "attachments/chrome.js"
+    },
+    {
+      "id": 53188327,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 8460,
+      "url": "https://issues.chromium.org/action/issues/40059133/attachments/53188327?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53188328,
+      "filename": "Caddyfile",
+      "mime_type": "text/plain",
+      "size_bytes": 35,
+      "url": "https://issues.chromium.org/action/issues/40059133/attachments/53188328?download=true",
+      "local_path": "attachments/Caddyfile"
+    },
+    {
+      "id": 65444277,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40059133/attachments/65444277?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65444278,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40059133/attachments/65444278?download=true",
+      "local_path": null
+    },
+    {
+      "id": 72127332,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40059133/attachments/72127332?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 88,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nWhen `re[Symbol.replace]` is called on RegExp objects that are no longer in fast mode or with modified initial RegExp objects, v8 will call into `Runtime::kRegExpReplaceRT` [1].  \n  \nIf the RegExp is global, it will eventually reach this loop [2] which calls into `Reg"
+}

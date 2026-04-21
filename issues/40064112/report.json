@@ -1,0 +1,73 @@
+{
+  "id": "40064112",
+  "url": "https://issues.chromium.org/issues/40064112",
+  "title": "Security: UAF in ReadAnythingAppController::OnAXTreeDistilled",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Accessibility",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zh...@gmail.com",
+  "assignee": "ab...@google.com",
+  "created_date": "2023-04-19T13:59:43+00:00",
+  "modified_date": "2023-08-08T17:38:31+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53245585,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 13882,
+      "url": "https://issues.chromium.org/action/issues/40064112/attachments/53245585?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53245599,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 36804,
+      "url": "https://issues.chromium.org/action/issues/40064112/attachments/53245599?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53245621,
+      "filename": "poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 8651132,
+      "url": "https://issues.chromium.org/action/issues/40064112/attachments/53245621?download=true",
+      "local_path": "attachments/poc.mov"
+    },
+    {
+      "id": 53245657,
+      "filename": "asan2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 36765,
+      "url": "https://issues.chromium.org/action/issues/40064112/attachments/53245657?download=true",
+      "local_path": "attachments/asan2.txt"
+    },
+    {
+      "id": 53245658,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 70,
+      "url": "https://issues.chromium.org/action/issues/40064112/attachments/53245658?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53245659,
+      "filename": "poc2.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 9682356,
+      "url": "https://issues.chromium.org/action/issues/40064112/attachments/53245659?download=true",
+      "local_path": "attachments/poc2.mov"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Download asan-mac-release-1132387 from here: https://www.googleapis.com/download/storage/v1/b/chromium-browser-asan/o/mac-release%2Fasan-mac-release-1132387.zip?generation=1681906922585379&alt=media  \n2. Start Chromium on MacOS: `./Chromium.app/Contents/MacO"
+}

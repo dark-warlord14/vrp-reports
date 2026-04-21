@@ -1,0 +1,65 @@
+{
+  "id": "40059984",
+  "url": "https://issues.chromium.org/issues/40059984",
+  "title": "Security: heap-buffer-overflow ui/wm/core/transient_window_stacking_client.cc (chromeOS)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Aura",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rh...@gmail.com",
+  "assignee": "sk...@chromium.org",
+  "created_date": "2022-06-16T14:35:30+00:00",
+  "modified_date": "2024-01-09T06:08:24+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53281779,
+      "filename": "1336979_screencast.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 5071986,
+      "url": "https://issues.chromium.org/action/issues/40059984/attachments/53281779?download=true",
+      "local_path": "attachments/1336979_screencast.webm"
+    },
+    {
+      "id": 53281792,
+      "filename": "1336979_patch_applied.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2009368,
+      "url": "https://issues.chromium.org/action/issues/40059984/attachments/53281792?download=true",
+      "local_path": "attachments/1336979_patch_applied.webm"
+    },
+    {
+      "id": 53281793,
+      "filename": "1336979.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 880,
+      "url": "https://issues.chromium.org/action/issues/40059984/attachments/53281793?download=true",
+      "local_path": "attachments/1336979.patch"
+    },
+    {
+      "id": 53281900,
+      "filename": "1336979_screencast_00013.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 5532393,
+      "url": "https://issues.chromium.org/action/issues/40059984/attachments/53281900?download=true",
+      "local_path": "attachments/1336979_screencast_00013.webm"
+    },
+    {
+      "id": 53281908,
+      "filename": "1336979_versions_1017797.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 6719956,
+      "url": "https://issues.chromium.org/action/issues/40059984/attachments/53281908?download=true",
+      "local_path": "attachments/1336979_versions_1017797.webm"
+    }
+  ],
+  "update_count": 70,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis bug requires a crafted html to open YouTube videos and dual display. I also tested with empty browser but the crash didn't happened. So the crafted html plays a role to trigger crash.  \n  \nWhen a window on second display spawned and enter overview mode then active s"
+}

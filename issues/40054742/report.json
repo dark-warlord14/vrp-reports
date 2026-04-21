@@ -1,0 +1,77 @@
+{
+  "id": "40054742",
+  "url": "https://issues.chromium.org/issues/40054742",
+  "title": "Reading local files through an extension that doesn't have the file permission",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "ct...@chromium.org",
+  "created_date": "2021-02-08T21:44:47+00:00",
+  "modified_date": "2026-03-23T18:50:44+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "user information disclosure, baseline - lower impact.",
+  "attachments": [
+    {
+      "id": 53362620,
+      "filename": "extension.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2800,
+      "url": "https://issues.chromium.org/action/issues/40054742/attachments/53362620?download=true",
+      "local_path": "attachments/extension.zip"
+    },
+    {
+      "id": 53362912,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 829,
+      "url": "https://issues.chromium.org/action/issues/40054742/attachments/53362912?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53362913,
+      "filename": "receiver.js",
+      "mime_type": "text/plain",
+      "size_bytes": 227,
+      "url": "https://issues.chromium.org/action/issues/40054742/attachments/53362913?download=true",
+      "local_path": "attachments/receiver.js"
+    },
+    {
+      "id": 53362914,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 422,
+      "url": "https://issues.chromium.org/action/issues/40054742/attachments/53362914?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53362915,
+      "filename": "receiver.html",
+      "mime_type": "text/plain",
+      "size_bytes": 175,
+      "url": "https://issues.chromium.org/action/issues/40054742/attachments/53362915?download=true",
+      "local_path": "attachments/receiver.html"
+    },
+    {
+      "id": 53362916,
+      "filename": "icon.png",
+      "mime_type": "image/png",
+      "size_bytes": 1257,
+      "url": "https://issues.chromium.org/action/issues/40054742/attachments/53362916?download=true",
+      "local_path": "attachments/icon.png"
+    }
+  ],
+  "update_count": 154,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe \"tabCapture\" permission allows capturing the visible area of a given tab, but doesn't seem to block the capture when the tab gets redirected to a local file - which allows an attacker to leak its contents even though the file permission was not given.  \n  \n**VERSION*"
+}

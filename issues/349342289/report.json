@@ -1,0 +1,38 @@
+{
+  "id": "349342289",
+  "url": "https://issues.chromium.org/issues/349342289",
+  "title": "Security: possible heap UaF in ThrottlingURLLoader+HttpsUpgradesInterceptor+MaybeCreateLoaderForResponse",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Loader>WebPackaging, Internals>Network>SSL>HttpsUpgrades, UI>Browser>Navigation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "hi...@chromium.org",
+  "created_date": "2024-06-25T15:12:53+00:00",
+  "modified_date": "2025-07-31T04:51:31+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "bounty_rationale": "$7,000 for report of memory corruption in a sandboxed process + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 57567659,
+      "filename": "apply.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 633,
+      "url": "https://issues.chromium.org/action/issues/349342289/attachments/57567659?download=true",
+      "local_path": "attachments/apply.diff"
+    }
+  ],
+  "update_count": 121,
+  "description_snippet": "The cause of this vulnerability is the same as https://issues.chromium.org/issues/40068602. I don't have POC and ASAN proofs at the moment because there are problems with my current test, but I believe it should exist. I should construct ASAN to prove the vulnerability later.\n\nvoid PluginResponseInt"
+}

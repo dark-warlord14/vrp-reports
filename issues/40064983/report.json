@@ -1,0 +1,46 @@
+{
+  "id": "40064983",
+  "url": "https://issues.chromium.org/issues/40064983",
+  "title": "Security: type mismatch with jit,0 vs 65536",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "be...@gmail.com",
+  "assignee": "ni...@chromium.org",
+  "created_date": "2023-05-29T23:53:35+00:00",
+  "modified_date": "2023-09-22T17:54:30+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53220583,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 511,
+      "url": "https://issues.chromium.org/action/issues/40064983/attachments/53220583?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53220600,
+      "filename": "mini.js",
+      "mime_type": "text/plain",
+      "size_bytes": 389,
+      "url": "https://issues.chromium.org/action/issues/40064983/attachments/53220600?download=true",
+      "local_path": "attachments/mini.js"
+    }
+  ],
+  "update_count": 25,
+  "description_snippet": "Steps to reproduce the problem:\r\nbuild flag:\r\ngn gen out/fuzzbuild_new --args='is_debug=false dcheck_always_on=true v8_static_library=true v8_enable_slow_dchecks=true v8_enable_v8_checks=true v8_enable_verify_heap=true v8_enable_verify_csa=true v8_fuzzilli=true sanitizer_coverage_flags=\"trace-pc-gua"
+}

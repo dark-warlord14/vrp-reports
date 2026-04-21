@@ -1,0 +1,62 @@
+{
+  "id": "40061519",
+  "url": "https://issues.chromium.org/issues/40061519",
+  "title": "Security: heap-use-after-free browser\\renderer_host\\render_process_host_impl.cc:2068 in content::RenderProcessHostImpl::CreateNotificationService",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Navigation>BFCache, UI>Notifications",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "le...@chromium.org",
+  "created_date": "2022-10-29T14:56:24+00:00",
+  "modified_date": "2024-01-09T10:00:32+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52987635,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 25652,
+      "url": "https://issues.chromium.org/action/issues/40061519/attachments/52987635?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 52987665,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 166086,
+      "url": "https://issues.chromium.org/action/issues/40061519/attachments/52987665?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 52987666,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 246795,
+      "url": "https://issues.chromium.org/action/issues/40061519/attachments/52987666?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52987667,
+      "filename": "ch.test.js",
+      "mime_type": "text/plain",
+      "size_bytes": 5431,
+      "url": "https://issues.chromium.org/action/issues/40061519/attachments/52987667?download=true",
+      "local_path": "attachments/ch.test.js"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**VERSION**   \nWIN10 X64  \ncommit 4f54ba6adfa8f619fd7f6993649bdc68e1b3a167 (HEAD, origin/main, origin/HEAD)  \nAuthor: Peter Kasting <pkasting@chromium.org>  \nDate:   Sat Oct 29 01:45:01 2022 +0000  \n  \ntarget_cpu = \"x64\"  \ndcheck_always_on = false  \nis_asan = true  \nis_component_build = true  \nis_de"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "40054695",
+  "url": "https://issues.chromium.org/issues/40054695",
+  "title": "uaf in DestroyURLLoader(network::cors::CorsURLLoaderFactory)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Network",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "lu...@chromium.org",
+  "created_date": "2021-02-05T06:49:22+00:00",
+  "modified_date": "2024-01-09T08:47:23+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53035469,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 357,
+      "url": "https://issues.chromium.org/action/issues/40054695/attachments/53035469?download=true",
+      "local_path": "attachments/crash.html"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.146 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nos:ubuntu 20.04\r\nChromium 89.0.4350.4 with asan build\r\nChromium 90.0.4409.0 with asan build\r\n\r\n1 ./chrome -user-data-dir=/tmp/xx http://l"
+}

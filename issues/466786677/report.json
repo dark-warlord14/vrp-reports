@@ -1,0 +1,29 @@
+{
+  "id": "466786677",
+  "url": "https://issues.chromium.org/issues/466786677",
+  "title": " v8 incorrect Integer Overflow Elimination leads to potential OOB R/W",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript, Blink>JavaScript>Compiler>Maglev",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fa...@gmail.com",
+  "assignee": "vi...@chromium.org",
+  "created_date": "2025-12-08T06:56:21+00:00",
+  "modified_date": "2026-03-18T07:53:04+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": "baseline memory corruption in a sandboxed process",
+  "attachments": [],
+  "update_count": 78,
+  "description_snippet": "```\nReceived signal 11 SEGV_ACCERR 719801064773\n\n==== C stack trace ===============================\n\n../v8/v8/out/arm64/d8(__interceptor_backtrace+0x46)[0x5cca99d37a66]\n../v8/v8/out/arm64/d8(_ZN2v84base5debug10StackTraceC2Ev+0x13)[0x5ccaa1e105a3]\n../v8/v8/out/arm64/d8(+0xc4a03b0)[0x5ccaa1e103b0]\n/li"
+}

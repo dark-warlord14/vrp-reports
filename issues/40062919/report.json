@@ -1,0 +1,49 @@
+{
+  "id": "40062919",
+  "url": "https://issues.chromium.org/issues/40062919",
+  "title": "Security: Race Condition UAF in hci_cmd_sync_work",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lm...@gmail.com",
+  "assignee": "ap...@chromium.org",
+  "created_date": "2023-02-05T12:09:49+00:00",
+  "modified_date": "2023-06-28T17:37:16+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52926994,
+      "filename": "poc.c",
+      "mime_type": "text/plain",
+      "size_bytes": 9345,
+      "url": "https://issues.chromium.org/action/issues/40062919/attachments/52926994?download=true",
+      "local_path": "attachments/poc.c"
+    },
+    {
+      "id": 52926995,
+      "filename": "kasan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 5752,
+      "url": "https://issues.chromium.org/action/issues/40062919/attachments/52926995?download=true",
+      "local_path": "attachments/kasan.log"
+    },
+    {
+      "id": 52927017,
+      "filename": "kasan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 4234,
+      "url": "https://issues.chromium.org/action/issues/40062919/attachments/52927017?download=true",
+      "local_path": "attachments/kasan.log"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThe root cause of this issue is similar to https://crbug.com/chromium/1355718, race condition UAF.  \n  \n\\*hci_cmd_sync_queue\\* will check the flag of hdev not equal to \\*HCI_UNREGISTER\\*[1], and enqueue \\*hdev->cmd_sync_work\\*(which is \\*hci_cmd_sync_work\\*)[2]. \\*hci"
+}

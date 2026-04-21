@@ -1,0 +1,60 @@
+{
+  "id": "40053062",
+  "url": "https://issues.chromium.org/issues/40053062",
+  "title": "Security: Full CSP bypass through blob: URIs",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gi...@gmail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2020-08-12T18:47:02+00:00",
+  "modified_date": "2024-01-09T07:55:22+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53124927,
+      "filename": "attacker.html",
+      "mime_type": "text/plain",
+      "size_bytes": 147,
+      "url": "https://issues.chromium.org/action/issues/40053062/attachments/53124927?download=true",
+      "local_path": "attachments/attacker.html"
+    },
+    {
+      "id": 53124928,
+      "filename": "victim.html",
+      "mime_type": "text/plain",
+      "size_bytes": 263,
+      "url": "https://issues.chromium.org/action/issues/40053062/attachments/53124928?download=true",
+      "local_path": "attachments/victim.html"
+    },
+    {
+      "id": 53124929,
+      "filename": "blocked.html",
+      "mime_type": "text/plain",
+      "size_bytes": 103,
+      "url": "https://issues.chromium.org/action/issues/40053062/attachments/53124929?download=true",
+      "local_path": "attachments/blocked.html"
+    },
+    {
+      "id": 53124930,
+      "filename": "secret.html",
+      "mime_type": "text/plain",
+      "size_bytes": 41,
+      "url": "https://issues.chromium.org/action/issues/40053062/attachments/53124930?download=true",
+      "local_path": "attachments/secret.html"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nChrome does not properly inherit a CSP through blob URIs even though they share the same origin as the context thats creates them.  \n  \nAs long as an attacker can execute JavaScript on a victim page, this allows CSP to be entirely bypassed by creating a blob URI and assi"
+}

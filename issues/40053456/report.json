@@ -1,0 +1,33 @@
+{
+  "id": "40053456",
+  "url": "https://issues.chromium.org/issues/40053456",
+  "title": "Security: Root priv escalation through shill, arc-setup, and upstart",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "OS>Systems",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@rorym.cnamara.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2020-09-28T19:01:13+00:00",
+  "modified_date": "2024-08-11T21:22:42+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 30000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53398163,
+      "filename": "newchain.tar.bz2",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3861685,
+      "url": "https://issues.chromium.org/action/issues/40053456/attachments/53398163?download=true",
+      "local_path": "attachments/newchain.tar.bz2"
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe shill-scripts user can be compromised to avoid chronos process termination on logout, allowing malicious code to exploit a post-logout chronos arbitrary directory chown. Arc-setup can be tricked into performing a root arbitrary file write to set the uid_map of a user"
+}

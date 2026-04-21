@@ -1,0 +1,47 @@
+{
+  "id": "40083512",
+  "url": "https://issues.chromium.org/issues/40083512",
+  "title": "Security: Google Chrome <any version> Extensions Web Accessible Resources Bypass",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "l3...@gmail.com",
+  "assignee": "as...@chromium.org",
+  "created_date": "2016-01-12T21:31:58+00:00",
+  "modified_date": "2025-02-13T00:08:32+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53055957,
+      "filename": "with_magic.html",
+      "mime_type": "text/html",
+      "size_bytes": 450,
+      "url": "https://issues.chromium.org/action/issues/40083512/attachments/53055957?download=true",
+      "local_path": "attachments/with_magic.html"
+    },
+    {
+      "id": 53055958,
+      "filename": "before_magic.html",
+      "mime_type": "text/html",
+      "size_bytes": 171,
+      "url": "https://issues.chromium.org/action/issues/40083512/attachments/53055958?download=true",
+      "local_path": "attachments/before_magic.html"
+    },
+    {
+      "id": 53055959,
+      "filename": "with_and_without.html",
+      "mime_type": "text/html",
+      "size_bytes": 764,
+      "url": "https://issues.chromium.org/action/issues/40083512/attachments/53055959?download=true",
+      "local_path": "attachments/with_and_without.html"
+    }
+  ],
+  "update_count": 85,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nEvery chrome extension has a manifest.json file, which holds a 'web_accessible_resources' field. This field states every 'internal' resource of the extension that can be accessed via the web. For this PoC we will focusing on the Adblock Plus extension (URL: https://chrom"
+}

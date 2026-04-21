@@ -1,0 +1,50 @@
+{
+  "id": "352610611",
+  "url": "https://issues.chromium.org/issues/352610611",
+  "title": "UAF in dawn::wire::client::Device::HandleError",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Dawn, Dawn>Wire",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "lo...@google.com",
+  "created_date": "2024-07-12T05:54:56+00:00",
+  "modified_date": "2026-03-06T08:01:22+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "bounty_rationale": "$7,000 for report of memory corruption in a sandboxed process / renderer + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 57874757,
+      "filename": "crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 837,
+      "url": "https://issues.chromium.org/action/issues/352610611/attachments/57874757?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 57874758,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 47772,
+      "url": "https://issues.chromium.org/action/issues/352610611/attachments/57874758?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 57928086,
+      "filename": "launcher.sh",
+      "mime_type": "text/x-sh",
+      "size_bytes": 502,
+      "url": "https://issues.chromium.org/action/issues/352610611/attachments/57928086?download=true",
+      "local_path": "attachments/launcher.sh"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "UAF in dawn::wire::client::Device::HandleError\ntested OS:ubuntu 22.04\ntested chrome:\nChromium 128.0.6591.0(gs://chromium-browser-asan/linux-release/asan-linux-release-1326524.zip)\nChromium 128.0.6585.0\n\n- Repro steps (on the real Machine)\n./chrome --user-data-dir=/tmp/xx1 --enable-unsafe-webgpu --in"
+}

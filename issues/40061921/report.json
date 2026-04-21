@@ -1,0 +1,44 @@
+{
+  "id": "40061921",
+  "url": "https://issues.chromium.org/issues/40061921",
+  "title": "Security: Download notification can hide \"Press and hold Esc to exit full screen\" ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Bubbles>Download, UI>Browser>Downloads",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "xi...@chromium.org",
+  "created_date": "2022-11-26T04:22:15+00:00",
+  "modified_date": "2024-01-09T07:35:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53235654,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 706,
+      "url": "https://issues.chromium.org/action/issues/40061921/attachments/53235654?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53235688,
+      "filename": "Untitled_ Nov 26, 2022 12_48 PM.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 443465,
+      "url": "https://issues.chromium.org/action/issues/40061921/attachments/53235688?download=true",
+      "local_path": "attachments/Untitled_ Nov 26, 2022 12_48 PM.webm"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIn https://bugs.chromium.org/p/chromium/issues/detail?id=1352388, it was updated when download notification and fullscreen notification is shown at the same time, then the download notification will be combined with the fullscreen notification into \"Press Esc to exit ful"
+}

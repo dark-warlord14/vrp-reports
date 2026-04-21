@@ -1,0 +1,81 @@
+{
+  "id": "40059784",
+  "url": "https://issues.chromium.org/issues/40059784",
+  "title": "Security: Heap-use-after-free in ash::TabletModeBrowserWindowDragSessionWindowsHider::~TabletModeBrowserWindowDragSessionWindowsHider",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Shell",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "yu...@chromium.org",
+  "created_date": "2022-05-28T02:25:34+00:00",
+  "modified_date": "2023-05-24T13:03:55+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53223638,
+      "filename": "screen.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 4837263,
+      "url": "https://issues.chromium.org/action/issues/40059784/attachments/53223638?download=true",
+      "local_path": "attachments/screen.webm"
+    },
+    {
+      "id": 53223718,
+      "filename": "screen.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 4340056,
+      "url": "https://issues.chromium.org/action/issues/40059784/attachments/53223718?download=true",
+      "local_path": "attachments/screen.webm"
+    },
+    {
+      "id": 53223726,
+      "filename": "cast (1).webm",
+      "mime_type": "video/webm",
+      "size_bytes": 7085281,
+      "url": "https://issues.chromium.org/action/issues/40059784/attachments/53223726?download=true",
+      "local_path": "attachments/cast (1).webm"
+    },
+    {
+      "id": 53223737,
+      "filename": "screen.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2306828,
+      "url": "https://issues.chromium.org/action/issues/40059784/attachments/53223737?download=true",
+      "local_path": "attachments/screen.webm"
+    },
+    {
+      "id": 53223738,
+      "filename": "Screen Recording 2022-07-27 at 5.23.16 PM.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 7477868,
+      "url": "https://issues.chromium.org/action/issues/40059784/attachments/53223738?download=true",
+      "local_path": "attachments/Screen Recording 2022-07-27 at 5.23.16 PM.mov"
+    },
+    {
+      "id": 53223752,
+      "filename": "screen.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 4085811,
+      "url": "https://issues.chromium.org/action/issues/40059784/attachments/53223752?download=true",
+      "local_path": "attachments/screen.webm"
+    },
+    {
+      "id": 53223753,
+      "filename": "crash",
+      "mime_type": "text/plain",
+      "size_bytes": 38710,
+      "url": "https://issues.chromium.org/action/issues/40059784/attachments/53223753?download=true",
+      "local_path": "attachments/crash"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "Chrome Version: linux-release-chromeos_asan-linux-release-1008401.zip  \nOperating System: Linux   \n  \n**REPRODUCTION CASE**   \n  \nRun chromeOS with --disable-popup-blocking --top-chrome-touch-ui=enabled   \n  \n1. Open https://lbstyle.github.io/alert.html in two different desks (as in https://crbug.co"
+}

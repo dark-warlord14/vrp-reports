@@ -1,0 +1,66 @@
+{
+  "id": "390459306",
+  "url": "https://issues.chromium.org/issues/390459306",
+  "title": " heap-use-after-free in PrintDialogGtk::~PrintDialogGtk()",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Printing",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2025-01-17T00:02:18+00:00",
+  "modified_date": "2025-05-14T12:40:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of highly mitigated security bug in a non-sandboxed process, mitigated by precondition to install malicious extension, race condition, precondition of passing the --disable-print-preview, and limited attacker control from the single attempt given extension install and race condition",
+  "attachments": [
+    {
+      "id": 62237387,
+      "filename": "extension.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 2659,
+      "url": "https://issues.chromium.org/action/issues/390459306/attachments/62237387?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62887882,
+      "filename": "script.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 285,
+      "url": "https://issues.chromium.org/action/issues/390459306/attachments/62887882?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62914143,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 5990,
+      "url": "https://issues.chromium.org/action/issues/390459306/attachments/62914143?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62887853,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 66,
+      "url": "https://issues.chromium.org/action/issues/390459306/attachments/62887853?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62887854,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 82,
+      "url": "https://issues.chromium.org/action/issues/390459306/attachments/62887854?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "VULNERABILITY DETAILS\nheap-use-after-free in PrintDialogGtk::~PrintDialogGtk()\n\nVERSION\nChromium\t133.0.6931.0 (Developer Build) (64-bit) \nOS\tLinux\n\nREPRODUCTION CASE\n1. Download the latest linux asan build\n2. run the command:\n./chrome --user-data-dir=/tmp/test --no-sandbox --disable-print-preview --"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "40926043",
+  "url": "https://issues.chromium.org/issues/40926043",
+  "title": "Security: Overflow in compareUTF32Strings()",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Mobile>iOSWeb",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2023-42852"
+  ],
+  "reporter": "pe...@gmail.com",
+  "assignee": "aj...@google.com",
+  "created_date": "2023-08-08T09:40:26+00:00",
+  "modified_date": "2024-12-27T17:25:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52914783,
+      "filename": "poc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 112,
+      "url": "https://issues.chromium.org/action/issues/40926043/attachments/52914783?download=true",
+      "local_path": "attachments/poc2.html"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe string below is interpreted by JavaScriptCore (JSC) as a JavaScript regular expression:  \n  \n```js  \n/[\\q{|34||78}]\\*/v  \n```  \n  \nRunning this testcase with JSC under gdb results in the following backtrace:  \n  \n```c  \n[#0] 0x369832fb3ccc → mov ebp, eax  \n[#1] 0x369"
+}

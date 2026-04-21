@@ -1,0 +1,49 @@
+{
+  "id": "40053465",
+  "url": "https://issues.chromium.org/issues/40053465",
+  "title": "Incorrect Security UI when using Tab preview",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zy...@gmail.com",
+  "assignee": "df...@chromium.org",
+  "created_date": "2020-09-29T07:42:32+00:00",
+  "modified_date": "2024-01-09T02:34:37+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53149297,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40053465/attachments/53149297?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53149306,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40053465/attachments/53149306?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53149361,
+      "filename": "截屏2020-09-30上午9.44.12.png",
+      "mime_type": "image/png",
+      "size_bytes": 87404,
+      "url": "https://issues.chromium.org/action/issues/40053465/attachments/53149361?download=true",
+      "local_path": "attachments/截屏2020-09-30上午9.44.12.png"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1.open this svg in chrome:\r\n```\r\n<!DOCTYPE svg PUBLIC \"-//W3C//DTD SVG 1.1//EN\" \"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd\">"
+}

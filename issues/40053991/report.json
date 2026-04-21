@@ -1,0 +1,65 @@
+{
+  "id": "40053991",
+  "url": "https://issues.chromium.org/issues/40053991",
+  "title": "Security: WebView and Chromium based browser Omnibar Spoofing with Race Condition",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Loader, Internals>Compositing, Internals>Sandbox>SiteIsolation, UI>Browser>Navigation",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "su...@gmail.com",
+  "assignee": "jo...@chromium.org",
+  "created_date": "2020-11-25T22:01:21+00:00",
+  "modified_date": "2026-01-20T21:29:16+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52984630,
+      "filename": "spoof.1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 718,
+      "url": "https://issues.chromium.org/action/issues/40053991/attachments/52984630?download=true",
+      "local_path": "attachments/spoof.1.html"
+    },
+    {
+      "id": 52984631,
+      "filename": "microsoft-edge-demonstration.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 367361,
+      "url": "https://issues.chromium.org/action/issues/40053991/attachments/52984631?download=true",
+      "local_path": "attachments/microsoft-edge-demonstration.mp4"
+    },
+    {
+      "id": 52984632,
+      "filename": "firefox-lite-tried-to-win-race.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 609286,
+      "url": "https://issues.chromium.org/action/issues/40053991/attachments/52984632?download=true",
+      "local_path": "attachments/firefox-lite-tried-to-win-race.mp4"
+    },
+    {
+      "id": 52984633,
+      "filename": "firefox-lite-win-race-straight.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 152989,
+      "url": "https://issues.chromium.org/action/issues/40053991/attachments/52984633?download=true",
+      "local_path": "attachments/firefox-lite-win-race-straight.mp4"
+    },
+    {
+      "id": 52984726,
+      "filename": "cleared_data_thumbnail.png",
+      "mime_type": "image/png",
+      "size_bytes": 62121,
+      "url": "https://issues.chromium.org/action/issues/40053991/attachments/52984726?download=true",
+      "local_path": "attachments/cleared_data_thumbnail.png"
+    }
+  ],
+  "update_count": 78,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt is possible to spoof address bar with secure padlock. It involve race condition in navigation, if \"https://www.google.com/csi\" (w/ header 204 No Content) loaded first, the address bar will show the spoofed address with attacker controlled content.  \n  \nI think it's si"
+}

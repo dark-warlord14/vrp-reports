@@ -1,0 +1,28 @@
+{
+  "id": "401846968",
+  "url": "https://issues.chromium.org/issues/401846968",
+  "title": "Heap-use-after-free in chromium_jpeg_read_scanlines",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "PDFium",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "fm...@chromium.org",
+  "created_date": "2025-03-09T14:59:45+00:00",
+  "modified_date": "2025-06-20T12:40:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 9000.0,
+  "bounty_rationale": "$7,000 for report of memory corruption in a sandboxed process + $2,000 fuzzer bonus",
+  "attachments": [],
+  "update_count": 43,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=5311346941820928\n\nFuzzer: attekett_surku_fuzzer\nJob Type: linux_asan_chrome_mp\nPlatform Id: linux\n\nCrash Type: Heap-use-after-free READ 4\nCrash Address: 0x7c0669357814\nCrash State:\n  chromium_jpeg_read_scanlines\n  jpeg_common_read_scanlines\n  fxc"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "40075535",
+  "url": "https://issues.chromium.org/issues/40075535",
+  "title": "iOS Chrome Media Permission Privilege Escalation",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>GetUserMedia, Internals>Permissions>Model",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pr...@gmail.com",
+  "assignee": "aj...@google.com",
+  "created_date": "2023-10-24T21:30:01+00:00",
+  "modified_date": "2024-06-05T15:43:16+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53127513,
+      "filename": "mediaspoof.html",
+      "mime_type": "text/plain",
+      "size_bytes": 268,
+      "url": "https://issues.chromium.org/action/issues/40075535/attachments/53127513?download=true",
+      "local_path": "attachments/mediaspoof.html"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "**Steps to reproduce the problem:**   \nWe are able to escalate Media Permission privilege to Top-level Origin when it's framed.  \n  \nPoC:  \n  \nLegitimate.site: <iframe src=\"https://pwning.click/mediaspoof.php\"/></iframe>  \n  \nMalicious.site (https://pwning.click for this test demo):   \n  \n  \n<input"
+}

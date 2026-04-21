@@ -1,0 +1,53 @@
+{
+  "id": "40054242",
+  "url": "https://issues.chromium.org/issues/40054242",
+  "title": "Security: Access to camera with clickjacking and popup window",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "fj...@chromium.org",
+  "created_date": "2020-12-19T22:11:51+00:00",
+  "modified_date": "2024-01-09T08:27:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52892731,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1130,
+      "url": "https://issues.chromium.org/action/issues/40054242/attachments/52892731?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 52892732,
+      "filename": "game.html",
+      "mime_type": "text/plain",
+      "size_bytes": 774,
+      "url": "https://issues.chromium.org/action/issues/40054242/attachments/52892732?download=true",
+      "local_path": "attachments/game.html"
+    },
+    {
+      "id": 52892733,
+      "filename": "camera.avi",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2356862,
+      "url": "https://issues.chromium.org/action/issues/40054242/attachments/52892733?download=true",
+      "local_path": "attachments/camera.avi"
+    }
+  ],
+  "update_count": 94,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt's possible to get the user to click the \"Allow\" button on the camera (or similar request dialogs) with the help of a popup window.  \n  \n**VERSION**   \nChrome Version: 87.0.4280.88 + stable  \nOperating System: Windows 10  \n  \n**REPRODUCTION CASE**   \n1. Open a popup wi"
+}

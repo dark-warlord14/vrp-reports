@@ -1,0 +1,153 @@
+{
+  "id": "40082258",
+  "url": "https://issues.chromium.org/issues/40082258",
+  "title": "Web MIDI performance crashes chrome canary",
+  "status": "New",
+  "severity": "S4-Minimal",
+  "priority": "P0",
+  "component": "Blink>WebMIDI",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "j....@netcologne.de",
+  "assignee": "to...@chromium.org",
+  "created_date": "2015-06-11T12:38:56+00:00",
+  "modified_date": "2016-12-09T21:07:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53155814,
+      "filename": "499279.mov",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4920902,
+      "url": "https://issues.chromium.org/action/issues/40082258/attachments/53155814?download=true",
+      "local_path": "attachments/499279.mov"
+    },
+    {
+      "id": 53155822,
+      "filename": "Step3.png",
+      "mime_type": "image/png",
+      "size_bytes": 115367,
+      "url": "https://issues.chromium.org/action/issues/40082258/attachments/53155822?download=true",
+      "local_path": "attachments/Step3.png"
+    },
+    {
+      "id": 53155846,
+      "filename": "TaskManager15.06.2015.png",
+      "mime_type": "image/png",
+      "size_bytes": 42321,
+      "url": "https://issues.chromium.org/action/issues/40082258/attachments/53155846?download=true",
+      "local_path": "attachments/TaskManager15.06.2015.png"
+    },
+    {
+      "id": 53155861,
+      "filename": "Song Six-(scroll)-annotated_2015-06-15.mid",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1024098,
+      "url": "https://issues.chromium.org/action/issues/40082258/attachments/53155861?download=true",
+      "local_path": "attachments/Song Six-(scroll)-annotated_2015-06-15.mid"
+    },
+    {
+      "id": 53155873,
+      "filename": "499279.png",
+      "mime_type": "image/png",
+      "size_bytes": 88337,
+      "url": "https://issues.chromium.org/action/issues/40082258/attachments/53155873?download=true",
+      "local_path": "attachments/499279.png"
+    },
+    {
+      "id": 53155891,
+      "filename": "Song Six-(scroll)-annotated(fromBar92)_2015-06-16.mid",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 275030,
+      "url": "https://issues.chromium.org/action/issues/40082258/attachments/53155891?download=true",
+      "local_path": "attachments/Song Six-(scroll)-annotated(fromBar92)_2015-06-16.mid"
+    },
+    {
+      "id": 53155953,
+      "filename": "ShortCrashSample.png",
+      "mime_type": "image/png",
+      "size_bytes": 39265,
+      "url": "https://issues.chromium.org/action/issues/40082258/attachments/53155953?download=true",
+      "local_path": "attachments/ShortCrashSample.png"
+    },
+    {
+      "id": 53155954,
+      "filename": "ShortCrashSample.mid",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2752,
+      "url": "https://issues.chromium.org/action/issues/40082258/attachments/53155954?download=true",
+      "local_path": "attachments/ShortCrashSample.mid"
+    },
+    {
+      "id": 53155955,
+      "filename": "LongCrashSample.png",
+      "mime_type": "image/png",
+      "size_bytes": 39028,
+      "url": "https://issues.chromium.org/action/issues/40082258/attachments/53155955?download=true",
+      "local_path": "attachments/LongCrashSample.png"
+    },
+    {
+      "id": 53155956,
+      "filename": "LongCrashSample.mid",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 31216,
+      "url": "https://issues.chromium.org/action/issues/40082258/attachments/53155956?download=true",
+      "local_path": "attachments/LongCrashSample.mid"
+    },
+    {
+      "id": 53156050,
+      "filename": "penultimateChordBar92Channel2.png",
+      "mime_type": "image/png",
+      "size_bytes": 39653,
+      "url": "https://issues.chromium.org/action/issues/40082258/attachments/53156050?download=true",
+      "local_path": "attachments/penultimateChordBar92Channel2.png"
+    },
+    {
+      "id": 53156051,
+      "filename": "penultimateChordBar92Channel2.mid",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 119,
+      "url": "https://issues.chromium.org/action/issues/40082258/attachments/53156051?download=true",
+      "local_path": "attachments/penultimateChordBar92Channel2.mid"
+    },
+    {
+      "id": 53156052,
+      "filename": "lastChordBar92Channel2.mid",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 271,
+      "url": "https://issues.chromium.org/action/issues/40082258/attachments/53156052?download=true",
+      "local_path": "attachments/lastChordBar92Channel2.mid"
+    },
+    {
+      "id": 53156053,
+      "filename": "lastTwoChordsBar92Channel2.png",
+      "mime_type": "image/png",
+      "size_bytes": 39526,
+      "url": "https://issues.chromium.org/action/issues/40082258/attachments/53156053?download=true",
+      "local_path": "attachments/lastTwoChordsBar92Channel2.png"
+    },
+    {
+      "id": 53156054,
+      "filename": "lastTwoChordsBar92Channel2.mid",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 362,
+      "url": "https://issues.chromium.org/action/issues/40082258/attachments/53156054?download=true",
+      "local_path": "attachments/lastTwoChordsBar92Channel2.mid"
+    },
+    {
+      "id": 53156055,
+      "filename": "lastChordBar92Channel2.png",
+      "mime_type": "image/png",
+      "size_bytes": 39440,
+      "url": "https://issues.chromium.org/action/issues/40082258/attachments/53156055?download=true",
+      "local_path": "attachments/lastChordBar92Channel2.png"
+    }
+  ],
+  "update_count": 98,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/45.0.2429.0 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Load the URL:http://james-ingram-act-two.de/open-source/assistantPerformer/assistantPerformer.html \r\n2. Select the score \"Song Six (scrol"
+}

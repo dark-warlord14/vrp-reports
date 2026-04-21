@@ -1,0 +1,57 @@
+{
+  "id": "407315793",
+  "url": "https://issues.chromium.org/issues/407315793",
+  "title": "Security: heap-use-after-free in gpu::CommandBufferProxyImpl::OnDisconnect",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Services>GPU",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": "134.0.0.0",
+  "cve_ids": [],
+  "reporter": "zh...@gmail.com",
+  "assignee": "mf...@chromium.org",
+  "created_date": "2025-03-30T14:32:53+00:00",
+  "modified_date": "2025-07-30T12:41:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": "$2,000 for report of significantly mitigated memory corruption in a non-sandboxed project, mitigated by precondition for shutdown and UI gestures / user granting permissions + $1,000 patch bonus",
+  "attachments": [
+    {
+      "id": 64415305,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 28200,
+      "url": "https://issues.chromium.org/action/issues/407315793/attachments/64415305?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64415306,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 195611,
+      "url": "https://issues.chromium.org/action/issues/407315793/attachments/64415306?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64415307,
+      "filename": "poc.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 468091,
+      "url": "https://issues.chromium.org/action/issues/407315793/attachments/64415307?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64415308,
+      "filename": "poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 109170243,
+      "url": "https://issues.chromium.org/action/issues/407315793/attachments/64415308?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "# Steps to reproduce the problem\n1. Compile asan chromium using mac, the steps are as follows:\n```\ngit checkout 924d038bf0e3f482162c5f5658ef15658f33f222\ngit apply poc.diff\n```\n\n2. `args.gn` content is as follows:\n```\n# Build arguments go here.\n# See \"gn args <out_dir> --list\" for available build arg"
+}

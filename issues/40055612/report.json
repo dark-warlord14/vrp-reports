@@ -1,0 +1,53 @@
+{
+  "id": "40055612",
+  "url": "https://issues.chromium.org/issues/40055612",
+  "title": "Security: Use-after-free in extension install dialog",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "kk...@gmail.com",
+  "assignee": "la...@chromium.org",
+  "created_date": "2021-04-21T02:33:52+00:00",
+  "modified_date": "2024-01-09T03:13:00+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52975719,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 738,
+      "url": "https://issues.chromium.org/action/issues/40055612/attachments/52975719?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 52975720,
+      "filename": "report_vuln1.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 25000,
+      "url": "https://issues.chromium.org/action/issues/40055612/attachments/52975720?download=true",
+      "local_path": "attachments/report_vuln1.txt"
+    },
+    {
+      "id": 52975721,
+      "filename": "report_vuln2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 21262,
+      "url": "https://issues.chromium.org/action/issues/40055612/attachments/52975721?download=true",
+      "local_path": "attachments/report_vuln2.txt"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nI report two vulnerabilities (Use-After-Free) which have the same root cause.  \nPlease see the attachments for details.  \n  \n  \n**VERSION**   \n  \nSee the attachments.  \n  \n**REPRODUCTION CASE**   \n  \nSee the attachments."
+}

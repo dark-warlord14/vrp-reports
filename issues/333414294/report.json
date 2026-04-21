@@ -1,0 +1,49 @@
+{
+  "id": "333414294",
+  "url": "https://issues.chromium.org/issues/333414294",
+  "title": "GPU process crash via WebGPU shader - SimplifyInstruction in InstructionSimplify.cpp",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebGPU, Internals>GPU>Dawn, Internals>GPU>Tint",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wg...@gmail.com",
+  "assignee": "am...@google.com",
+  "created_date": "2024-04-09T12:10:31+00:00",
+  "modified_date": "2026-03-27T17:01:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": "$10,000 for this report of memory corruption in the GPU process \n\nThank you for your efforts and helping us make Chrome more secure for all users!\n\nCheers,\nChrome VRP Panel Bot\n\n\nP.S. Two other things we'd like to mention:\n\n* Please do NOT publicly disclose details until a fix has been released to all our users. Early public disclosure may cancel the provisional reward. Also, please be considerate about disclosure when the bug affects a core library that may be used by other products. Please do ",
+  "attachments": [
+    {
+      "id": 55329211,
+      "filename": "indexSimplifyInst.html",
+      "mime_type": "text/html",
+      "size_bytes": 3955,
+      "url": "https://issues.chromium.org/action/issues/333414294/attachments/55329211?download=true",
+      "local_path": "attachments/indexSimplifyInst.html"
+    },
+    {
+      "id": 55511957,
+      "filename": "Mon Apr 15 2024 10:09:14 GMT-0400 (Eastern Daylight Time).png",
+      "mime_type": "image/png",
+      "size_bytes": 90884,
+      "url": "https://issues.chromium.org/action/issues/333414294/attachments/55511957?download=true",
+      "local_path": "attachments/Mon Apr 15 2024 10_09_14 GMT-0400 (Eastern Daylight Time).png"
+    },
+    {
+      "id": 55698487,
+      "filename": "x.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 3017,
+      "url": "https://issues.chromium.org/action/issues/333414294/attachments/55698487?download=true",
+      "local_path": "attachments/x.patch"
+    }
+  ],
+  "update_count": 92,
+  "description_snippet": "VULNERABILITY DETAILS\n\nChromium translates wgsl shaders via tint to an OS-specific shader format. On Windows, the OS-specific file format is hlsl, processed in dxcompiler.dll. When compiling chrome-generated hlsl files, this might trigger a heap UAF insider the hlsl compiler.\n\nVERSION\nChrome Version"
+}

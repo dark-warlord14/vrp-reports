@@ -1,0 +1,66 @@
+{
+  "id": "40071155",
+  "url": "https://issues.chromium.org/issues/40071155",
+  "title": "UAF in v8_inspector DomainDispatcherImpl",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools>Extensions",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "sz...@google.com",
+  "created_date": "2023-09-01T16:25:22+00:00",
+  "modified_date": "2026-03-17T07:55:20+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "Highly mitigated code execution in a sandboxed process",
+  "attachments": [
+    {
+      "id": 53371095,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 33774,
+      "url": "https://issues.chromium.org/action/issues/40071155/attachments/53371095?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53371152,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 55,
+      "url": "https://issues.chromium.org/action/issues/40071155/attachments/53371152?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53371153,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 205,
+      "url": "https://issues.chromium.org/action/issues/40071155/attachments/53371153?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53371154,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 61,
+      "url": "https://issues.chromium.org/action/issues/40071155/attachments/53371154?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53371155,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 188428,
+      "url": "https://issues.chromium.org/action/issues/40071155/attachments/53371155?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 133,
+  "description_snippet": "**Steps to reproduce the problem:**   \nwill attach details soon.  \n  \n**Problem Description:**   \nrenderer UAF  \n  \n**Additional Comments:**   \n  \n  \n**Chrome version: ** 118.0.5979.0 **Channel: ** Dev  \n  \n**OS:** Linux"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "40055617",
+  "url": "https://issues.chromium.org/issues/40055617",
+  "title": "Security: UAP in FileReader",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Storage>FileAPI",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jt...@gmail.com",
+  "assignee": "me...@chromium.org",
+  "created_date": "2021-04-21T06:08:07+00:00",
+  "modified_date": "2024-01-09T03:19:11+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53311306,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3603,
+      "url": "https://issues.chromium.org/action/issues/40055617/attachments/53311306?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53311307,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 18012,
+      "url": "https://issues.chromium.org/action/issues/40055617/attachments/53311307?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nA FileReader instance is normally referenced in the JavaScript and/or pending_readers_/running_readers_ of FileReader::ThrottlingController in Blink heap. And there is a way to drop all references to FileReader while it's still loading data, which leads to UAF."
+}

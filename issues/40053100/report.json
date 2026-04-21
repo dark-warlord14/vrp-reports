@@ -1,0 +1,41 @@
+{
+  "id": "40053100",
+  "url": "https://issues.chromium.org/issues/40053100",
+  "title": "container-overflow in blink::MediaStreamSource",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>GetUserMedia",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "gu...@chromium.org",
+  "created_date": "2020-08-17T03:04:44+00:00",
+  "modified_date": "2024-01-09T02:20:37+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53406671,
+      "filename": "crash.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 32935,
+      "url": "https://issues.chromium.org/action/issues/40053100/attachments/53406671?download=true",
+      "local_path": "attachments/crash.zip"
+    },
+    {
+      "id": 53406742,
+      "filename": "poc2.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 33085,
+      "url": "https://issues.chromium.org/action/issues/40053100/attachments/53406742?download=true",
+      "local_path": "attachments/poc2.zip"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.125 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nChromium 86.0.4236.0(gs://chromium-browser-asan/linux-release/asan-linux-release-798506.zip)\r\n1.python3.6m -m http.server 8000\r\n2.google-"
+}

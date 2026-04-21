@@ -1,0 +1,45 @@
+{
+  "id": "40070055",
+  "url": "https://issues.chromium.org/issues/40070055",
+  "title": "Security: V8 SEGV_ACCERR 02b6beadbef2",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript, Blink>JavaScript>GarbageCollection",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "dd...@gmail.com",
+  "assignee": "om...@chromium.org",
+  "created_date": "2023-08-21T01:22:12+00:00",
+  "modified_date": "2023-12-05T18:45:34+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53144871,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 421,
+      "url": "https://issues.chromium.org/action/issues/40070055/attachments/53144871?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53144899,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 686,
+      "url": "https://issues.chromium.org/action/issues/40070055/attachments/53144899?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "**This template is ONLY for reporting security bugs. If you are reporting a**   \n**Download Protection Bypass bug, please use the \"Security - Download**   \n**Protection\" template. For all other reports, please use a different**   \n**template.**   \n  \n**Please READ THIS FAQ before filing a bug: https"
+}

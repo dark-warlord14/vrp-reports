@@ -1,0 +1,53 @@
+{
+  "id": "40067456",
+  "url": "https://issues.chromium.org/issues/40067456",
+  "title": "Security: Desktop permission prompt tapjacking",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Views",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2023-07-14T19:32:15+00:00",
+  "modified_date": "2024-10-10T16:02:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "$1,000 for report of lower impact security UI spoof",
+  "attachments": [
+    {
+      "id": 52920568,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 527,
+      "url": "https://issues.chromium.org/action/issues/40067456/attachments/52920568?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52920569,
+      "filename": "poc-click.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 288279,
+      "url": "https://issues.chromium.org/action/issues/40067456/attachments/52920569?download=true",
+      "local_path": "attachments/poc-click.webm"
+    },
+    {
+      "id": 52920570,
+      "filename": "poc-touch.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 94966,
+      "url": "https://issues.chromium.org/action/issues/40067456/attachments/52920570?download=true",
+      "local_path": "attachments/poc-touch.webm"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nOn desktop platforms, the permission prompt UI protects against unwanted clicks.  \nThis is implemented in `InputEventActivationProtector::IsPossiblyUnintendedInteraction`, which ignores the interaction if there was a previous interaction less than 500ms ago.  \n  \nhttps:/"
+}

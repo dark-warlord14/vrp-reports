@@ -1,0 +1,38 @@
+{
+  "id": "430960844",
+  "url": "https://issues.chromium.org/issues/430960844",
+  "title": "V8 Sandbox Bypass: InstantiateAsmJs builtin doesn't protect against mid-builtin dispatch handle swaps",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@popax21.dev",
+  "assignee": "cl...@chromium.org",
+  "created_date": "2025-07-11T01:56:10+00:00",
+  "modified_date": "2026-01-08T10:33:21+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": "report of V8 sandbox bypass demonstrating a controlled write outside the V8 heap sandbox",
+  "attachments": [
+    {
+      "id": 67487868,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3560,
+      "url": "https://issues.chromium.org/action/issues/430960844/attachments/67487868?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 84,
+  "description_snippet": "The `InstantiateAsmJs` Turbofan builtin is installed as the active code object for asm.js functions after their respective compilation job finishes; when invoked, it will try to instantiate the translated Wasm module built during the compilation job. If the instantiation fails for any reason however"
+}

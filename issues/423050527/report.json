@@ -1,0 +1,38 @@
+{
+  "id": "423050527",
+  "url": "https://issues.chromium.org/issues/423050527",
+  "title": "Deoptimize: inconsistency in materialization can insert unexpected value to the interpreter stack frame",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Turbofan",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ak...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2025-06-07T05:58:53+00:00",
+  "modified_date": "2025-09-17T12:42:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": "high quality report of memory corruption in a sandboxed process / renderer",
+  "attachments": [
+    {
+      "id": 66528603,
+      "filename": "trigger_dcheck.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 390,
+      "url": "https://issues.chromium.org/action/issues/423050527/attachments/66528603?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

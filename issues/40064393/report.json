@@ -1,0 +1,24 @@
+{
+  "id": "40064393",
+  "url": "https://issues.chromium.org/issues/40064393",
+  "title": "Security: Race Condition in amdgpu_ttm_tt_get_user_pages",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "yq...@gmail.com",
+  "assignee": "ch...@google.com",
+  "created_date": "2023-05-06T02:35:35+00:00",
+  "modified_date": "2023-08-30T17:37:30+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 25,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nI found that this uaf vulnerability does not exist in linux kernel 5.10, but this problem exists in chromeos kernel 5.10.  \n  \nWhen you mmap() the gem object, amdgpu_gem_object_mmap() records  \nthe pointers to the mm_struct and the VMA. When you unmap the VMA (or any"
+}

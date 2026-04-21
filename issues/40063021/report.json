@@ -1,0 +1,50 @@
+{
+  "id": "40063021",
+  "url": "https://issues.chromium.org/issues/40063021",
+  "title": "Security: Android file picker dialog can be shown over a different tab",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Forms>File, UI>Browser>Navigation",
+  "os_platforms": [
+    "Android",
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "bo...@chromium.org",
+  "created_date": "2023-02-10T23:50:03+00:00",
+  "modified_date": "2024-01-09T10:45:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52987489,
+      "filename": "poc-with-camera.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1561819,
+      "url": "https://issues.chromium.org/action/issues/40063021/attachments/52987489?download=true",
+      "local_path": "attachments/poc-with-camera.webm"
+    },
+    {
+      "id": 52987490,
+      "filename": "poc-with-system-dialog.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 570638,
+      "url": "https://issues.chromium.org/action/issues/40063021/attachments/52987490?download=true",
+      "local_path": "attachments/poc-with-system-dialog.webm"
+    },
+    {
+      "id": 52987491,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 800,
+      "url": "https://issues.chromium.org/action/issues/40063021/attachments/52987491?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt is possible to show a file/image picker dialog over a different tab.  \n  \nThis works regardless if the user has granted the Android system \"Photos and videos\" permission to Chrome. If not, the Android permission dialog (see [poc-with-system-dialog.webm]) will also be"
+}

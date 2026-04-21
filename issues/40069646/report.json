@@ -1,0 +1,86 @@
+{
+  "id": "40069646",
+  "url": "https://issues.chromium.org/issues/40069646",
+  "title": "Security: UAP in IDBFactory::DidAllowIndexedDB",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Storage>IndexedDB",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "es...@chromium.org",
+  "created_date": "2023-08-16T02:23:42+00:00",
+  "modified_date": "2024-01-09T10:44:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53274063,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 7494,
+      "url": "https://issues.chromium.org/action/issues/40069646/attachments/53274063?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53274064,
+      "filename": "asan-in-14988c.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8524,
+      "url": "https://issues.chromium.org/action/issues/40069646/attachments/53274064?download=true",
+      "local_path": "attachments/asan-in-14988c.log"
+    },
+    {
+      "id": 53274065,
+      "filename": "execution.log",
+      "mime_type": "text/plain",
+      "size_bytes": 62987,
+      "url": "https://issues.chromium.org/action/issues/40069646/attachments/53274065?download=true",
+      "local_path": "attachments/execution.log"
+    },
+    {
+      "id": 53274079,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 7494,
+      "url": "https://issues.chromium.org/action/issues/40069646/attachments/53274079?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53274080,
+      "filename": "execution.log",
+      "mime_type": "text/plain",
+      "size_bytes": 62987,
+      "url": "https://issues.chromium.org/action/issues/40069646/attachments/53274080?download=true",
+      "local_path": "attachments/execution.log"
+    },
+    {
+      "id": 53274128,
+      "filename": "asan-in-14988c.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8524,
+      "url": "https://issues.chromium.org/action/issues/40069646/attachments/53274128?download=true",
+      "local_path": "attachments/asan-in-14988c.log"
+    },
+    {
+      "id": 53274179,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 8524,
+      "url": "https://issues.chromium.org/action/issues/40069646/attachments/53274179?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "VULNERABILITY DETAILS\n\nVERSION\n\nchrome commit run by fuzzer:\nNOTE THAT IT'S NOT A GIT COMMIT FOR BISECTION.\n\n```\ncommit a7b98a1e333e69afaf7ef17f86bcf0440f5c043b (HEAD -> main, origin/main, origin/HEAD)\nAuthor: Sana Akbani <sanaakbani@google.com>\nDate:   Tue Aug 15 02:17:53 2023 +0000\n\n    Deprecate"
+}

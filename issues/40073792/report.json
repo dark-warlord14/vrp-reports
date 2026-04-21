@@ -1,0 +1,41 @@
+{
+  "id": "40073792",
+  "url": "https://issues.chromium.org/issues/40073792",
+  "title": "UAF in vk::Buffer::getOffsetPointer",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>GPU>SwiftShader",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "ge...@chromium.org",
+  "created_date": "2023-09-29T19:08:33+00:00",
+  "modified_date": "2024-01-18T18:44:44+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52996530,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2182,
+      "url": "https://issues.chromium.org/action/issues/40073792/attachments/52996530?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52996531,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 26049,
+      "url": "https://issues.chromium.org/action/issues/40073792/attachments/52996531?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**Steps to reproduce the problem:**   \ntested os:  \n-   ubuntu 22.04  \n  \ntested chrome version:  \n-   Chromium 119.0.6034.6(build with asan)  \n-   Chromium 119.0.6039.0(gs://chromium-browser-asan/linux-release/asan-linux-release-1203313.zip)  \n  \n  \nRepro Steps:  \n./chrome --disable-gpu --user-data"
+}

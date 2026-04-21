@@ -1,0 +1,70 @@
+{
+  "id": "388400226",
+  "url": "https://issues.chromium.org/issues/388400226",
+  "title": "UAF in chrome::CloseAllBrowsers() with popin",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Storage",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "et...@chromium.org",
+  "created_date": "2025-01-08T10:58:15+00:00",
+  "modified_date": "2025-05-10T12:37:36+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "Report of highly mitigated issue in a non-sandboxed process",
+  "attachments": [
+    {
+      "id": 62027151,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 15873,
+      "url": "https://issues.chromium.org/action/issues/388400226/attachments/62027151?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62027152,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 202,
+      "url": "https://issues.chromium.org/action/issues/388400226/attachments/62027152?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62027153,
+      "filename": "run_poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1122,
+      "url": "https://issues.chromium.org/action/issues/388400226/attachments/62027153?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62027154,
+      "filename": "sub.html",
+      "mime_type": "text/html",
+      "size_bytes": 74,
+      "url": "https://issues.chromium.org/action/issues/388400226/attachments/62027154?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62054837,
+      "filename": "asan_1403981.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 21564,
+      "url": "https://issues.chromium.org/action/issues/388400226/attachments/62054837?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 94,
+  "description_snippet": "VULNERABILITY DETAILS\n\nUaF in chrome::CloseAllBrowsers() while opening the target web page.\n\nVERSION\nChrome Version: 134.0.6944.0 canary\nOperating System: [Linux]\n\nREPRODUCTION CASE\n\nTo make reproduction more easier, I use the puppeteer-core to reproduce this UAF:\n\n1. Under the same directory of the"
+}

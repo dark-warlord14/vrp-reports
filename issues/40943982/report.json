@@ -1,0 +1,62 @@
+{
+  "id": "40943982",
+  "url": "https://issues.chromium.org/issues/40943982",
+  "title": "Security: [V8] [turboshaft] Yet another minus zero case missing when typing divisions.",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Turbofan",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "in...@gmail.com",
+  "assignee": "ni...@chromium.org",
+  "created_date": "2023-11-19T22:22:23+00:00",
+  "modified_date": "2024-03-26T15:40:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53326350,
+      "filename": "works.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1940,
+      "url": "https://issues.chromium.org/action/issues/40943982/attachments/53326350?download=true",
+      "local_path": "attachments/works.js"
+    },
+    {
+      "id": 53326351,
+      "filename": "turboshaft_division.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 569,
+      "url": "https://issues.chromium.org/action/issues/40943982/attachments/53326351?download=true",
+      "local_path": "attachments/turboshaft_division.patch"
+    },
+    {
+      "id": 53326352,
+      "filename": "yolo2.js",
+      "mime_type": "text/plain",
+      "size_bytes": 870,
+      "url": "https://issues.chromium.org/action/issues/40943982/attachments/53326352?download=true",
+      "local_path": "attachments/yolo2.js"
+    },
+    {
+      "id": 53326353,
+      "filename": "yolo2_old_ranges.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1160,
+      "url": "https://issues.chromium.org/action/issues/40943982/attachments/53326353?download=true",
+      "local_path": "attachments/yolo2_old_ranges.js"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nTurboshaft misses a case that can lead to minus zero when typing divisions.  \n  \nIn v8/src/compiler/turboshaft/typer.h \"FloatOperationTyper.Divide\" we try to rule out minus zero:  \n```c  \n// Try to rule out -0.  \nbool maybe_minuszero =  \n    // -0 / r (r > 0)  \n    (l"
+}

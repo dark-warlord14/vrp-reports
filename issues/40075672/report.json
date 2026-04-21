@@ -1,0 +1,81 @@
+{
+  "id": "40075672",
+  "url": "https://issues.chromium.org/issues/40075672",
+  "title": "Security: chrome.debugger API can capture cookies of host blocked by Enterprise Policy",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Enterprise, Platform>Extensions",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fa...@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2023-10-26T11:13:32+00:00",
+  "modified_date": "2024-03-12T15:47:34+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53017332,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 580,
+      "url": "https://issues.chromium.org/action/issues/40075672/attachments/53017332?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53017333,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 225,
+      "url": "https://issues.chromium.org/action/issues/40075672/attachments/53017333?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53017334,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3129064,
+      "url": "https://issues.chromium.org/action/issues/40075672/attachments/53017334?download=true",
+      "local_path": "attachments/demo.mp4"
+    },
+    {
+      "id": 53017391,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40075672/attachments/53017391?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53017407,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1312,
+      "url": "https://issues.chromium.org/action/issues/40075672/attachments/53017407?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53017408,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 225,
+      "url": "https://issues.chromium.org/action/issues/40075672/attachments/53017408?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53017467,
+      "filename": "test-policy.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2085541,
+      "url": "https://issues.chromium.org/action/issues/40075672/attachments/53017467?download=true",
+      "local_path": "attachments/test-policy.mp4"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIf a policy is set by an enterprise to block host using runtime_blocked_hosts, an extension installed on a user's system should not permit reading of cookies from a blocked host. However, using the chrome.debugger API's Network.getAllCookies, it is possible to capture co"
+}

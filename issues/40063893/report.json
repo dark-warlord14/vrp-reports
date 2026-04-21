@@ -1,0 +1,41 @@
+{
+  "id": "40063893",
+  "url": "https://issues.chromium.org/issues/40063893",
+  "title": "Security: UAF in vrend_update_stencil_state",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>GPU>Internals",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fi...@gmail.com",
+  "assignee": "st...@google.com",
+  "created_date": "2023-04-04T03:39:44+00:00",
+  "modified_date": "2023-07-28T17:30:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52897767,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 4742,
+      "url": "https://issues.chromium.org/action/issues/40063893/attachments/52897767?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 52897768,
+      "filename": "test",
+      "mime_type": "text/plain",
+      "size_bytes": 77,
+      "url": "https://issues.chromium.org/action/issues/40063893/attachments/52897768?download=true",
+      "local_path": "attachments/test"
+    }
+  ],
+  "update_count": 26,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nstate will be assigned to dsa in vrend_object_bind_dsa.  \n```  \nvoid vrend_object_bind_dsa(struct vrend_context \\*ctx,  \n                           uint32_t handle)  \n{  \n   struct pipe_depth_stencil_alpha_state \\*state;  \n  \n   if (handle == 0) {  \n      memset(&ctx-"
+}

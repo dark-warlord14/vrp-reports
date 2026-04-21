@@ -1,0 +1,73 @@
+{
+  "id": "40062823",
+  "url": "https://issues.chromium.org/issues/40062823",
+  "title": "Security: Android - Bypass the Protection of input fields cache (Autofill) Bypass 1398579",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "el...@gmail.com",
+  "assignee": "fr...@chromium.org",
+  "created_date": "2023-01-29T19:55:00+00:00",
+  "modified_date": "2024-01-09T08:56:16+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53396219,
+      "filename": "PoC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 8657980,
+      "url": "https://issues.chromium.org/action/issues/40062823/attachments/53396219?download=true",
+      "local_path": "attachments/PoC.mp4"
+    },
+    {
+      "id": 53396220,
+      "filename": "base.css",
+      "mime_type": "text/plain",
+      "size_bytes": 3092,
+      "url": "https://issues.chromium.org/action/issues/40062823/attachments/53396220?download=true",
+      "local_path": "attachments/base.css"
+    },
+    {
+      "id": 53396221,
+      "filename": "bypass-autofill-restrictions.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4111,
+      "url": "https://issues.chromium.org/action/issues/40062823/attachments/53396221?download=true",
+      "local_path": "attachments/bypass-autofill-restrictions.html"
+    },
+    {
+      "id": 53396222,
+      "filename": "giphy.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 6649,
+      "url": "https://issues.chromium.org/action/issues/40062823/attachments/53396222?download=true",
+      "local_path": "attachments/giphy.webm"
+    },
+    {
+      "id": 53396263,
+      "filename": "with_keyboard.png",
+      "mime_type": "image/png",
+      "size_bytes": 197662,
+      "url": "https://issues.chromium.org/action/issues/40062823/attachments/53396263?download=true",
+      "local_path": "attachments/with_keyboard.png"
+    },
+    {
+      "id": 53396264,
+      "filename": "no_keyboard.png",
+      "mime_type": "image/png",
+      "size_bytes": 131425,
+      "url": "https://issues.chromium.org/action/issues/40062823/attachments/53396264?download=true",
+      "local_path": "attachments/no_keyboard.png"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n=====================  \n  \nthis is a report to a security vulnerability in google chrome/chromium browser as high-quality report with functional exploit. this vulnerability allows attackers to steal the cache of input fields like usernames, e-mail addresses, telephone nu"
+}

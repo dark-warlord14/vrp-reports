@@ -1,0 +1,49 @@
+{
+  "id": "40063876",
+  "url": "https://issues.chromium.org/issues/40063876",
+  "title": "Security: Heap-use-after-free in SavedTabGroupButton::MoveGroupToNewWindowPressed",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>TopChrome>TabStrip>TabGroups",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "tb...@chromium.org",
+  "created_date": "2023-04-03T08:52:45+00:00",
+  "modified_date": "2023-09-06T17:38:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53300348,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 26999,
+      "url": "https://issues.chromium.org/action/issues/40063876/attachments/53300348?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53300349,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 12,
+      "url": "https://issues.chromium.org/action/issues/40063876/attachments/53300349?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53300350,
+      "filename": "video.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 4399201,
+      "url": "https://issues.chromium.org/action/issues/40063876/attachments/53300350?download=true",
+      "local_path": "attachments/video.mov"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "**Steps to reproduce the problem:**   \ncommit at 7c1556f35c5205157de0a2ac2d2edb7194a00052  \n1. compile chromium on Mac with M1 chip, enable ASAN   \n2. Open chromium and save at least FIVE tabGroups, this will show the overflow menu in the bookmark bar  \n3. run `./asan-linux-release-1118297/chrome  -"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "40061945",
+  "url": "https://issues.chromium.org/issues/40061945",
+  "title": "Security:  stack-use-after-scope in dawn::native::CommandEncoder::BeginRenderPass",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>Dawn, Internals>Skia",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "ar...@google.com",
+  "created_date": "2022-11-29T01:07:29+00:00",
+  "modified_date": "2024-06-27T08:48:39+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52916054,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2392,
+      "url": "https://issues.chromium.org/action/issues/40061945/attachments/52916054?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nstack-use-after-scope in dawn::native::CommandEncoder::BeginRenderPass  \n  \n**VERSION**   \nChromium\t110.0.5447.0 (Developer Build) (64-bit)   \nRevision\ta3f4c77cb8416e743cb15d44aa75d30edf927c88-refs/heads/main@{#1076486}  \nOS\tWindows 10 Version 22H2 (Build 19045.2251)"
+}

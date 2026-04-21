@@ -1,0 +1,97 @@
+{
+  "id": "431309019",
+  "url": "https://issues.chromium.org/issues/431309019",
+  "title": "Bypassing Mark of the Web with an HTML File and User Interaction",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "to...@gmail.com",
+  "assignee": "qi...@chromium.org",
+  "created_date": "2025-07-12T00:35:33+00:00",
+  "modified_date": "2025-12-10T12:46:23+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "exploit mitigation bypass, moderate impact, but mitigated",
+  "attachments": [
+    {
+      "id": 67526761,
+      "filename": "Chrome-report.zip",
+      "mime_type": "application/x-zip-compressed",
+      "size_bytes": 16220368,
+      "url": "https://issues.chromium.org/action/issues/431309019/attachments/67526761?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67582398,
+      "filename": "zone3.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 10508876,
+      "url": "https://issues.chromium.org/action/issues/431309019/attachments/67582398?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67582424,
+      "filename": "zone4.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 9495315,
+      "url": "https://issues.chromium.org/action/issues/431309019/attachments/67582424?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67582399,
+      "filename": "calc.c",
+      "mime_type": "text/x-csrc",
+      "size_bytes": 444,
+      "url": "https://issues.chromium.org/action/issues/431309019/attachments/67582399?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67582400,
+      "filename": "html_loader.ps1",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 481,
+      "url": "https://issues.chromium.org/action/issues/431309019/attachments/67582400?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67582425,
+      "filename": "template.html",
+      "mime_type": "text/html",
+      "size_bytes": 1262,
+      "url": "https://issues.chromium.org/action/issues/431309019/attachments/67582425?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67567443,
+      "filename": "zone4.html",
+      "mime_type": "text/html",
+      "size_bytes": 144641,
+      "url": "https://issues.chromium.org/action/issues/431309019/attachments/67567443?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67582426,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/431309019/attachments/67582426?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67582708,
+      "filename": "zone3.html",
+      "mime_type": "text/html",
+      "size_bytes": 145010,
+      "url": "https://issues.chromium.org/action/issues/431309019/attachments/67582708?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "---\n\n### Report description\n\n\nBypassing Mark of the Web with an HTML File and User Interaction\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/rul"
+}

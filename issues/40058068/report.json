@@ -1,0 +1,38 @@
+{
+  "id": "40058068",
+  "url": "https://issues.chromium.org/issues/40058068",
+  "title": "Security: Bypass of Issue 1239709: Cross-Origin Response Leak If wildcard ACAO is sent",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>BackgroundFetch",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "la...@gmail.com",
+  "assignee": "be...@google.com",
+  "created_date": "2021-11-29T12:02:47+00:00",
+  "modified_date": "2025-08-02T12:52:02+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": "$2,000 for report of information disclosure + $2,000 patch bonus",
+  "attachments": [
+    {
+      "id": 64599795,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 2218,
+      "url": "https://issues.chromium.org/action/issues/40058068/attachments/64599795?download=true",
+      "local_path": "attachments/patch.diff"
+    }
+  ],
+  "update_count": 116,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nBackgroundFetch sends cookies even if the credentials mode is \"omit\" or \"same-origin\" and thus bypassing the fix for https://crbug.com/chromium/1239709.  \n  \n**VERSION**   \nVersion 96.0.4664.45 (Official Build) Arch Linux (64-bit)  \n  \n**REPRODUCTION CASE**   \nUsing the"
+}

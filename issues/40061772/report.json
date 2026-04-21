@@ -1,0 +1,92 @@
+{
+  "id": "40061772",
+  "url": "https://issues.chromium.org/issues/40061772",
+  "title": "Security: Extension with <all_urls> permission can read arbitrary local files although  (Allow access to file URLs) is disabled",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions>API",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "el...@gmail.com",
+  "assignee": "tj...@chromium.org",
+  "created_date": "2022-11-16T11:10:26+00:00",
+  "modified_date": "2024-01-09T07:34:27+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53346379,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1348,
+      "url": "https://issues.chromium.org/action/issues/40061772/attachments/53346379?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53346380,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 352,
+      "url": "https://issues.chromium.org/action/issues/40061772/attachments/53346380?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53346381,
+      "filename": "Linux-Extension-PoC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 8087168,
+      "url": "https://issues.chromium.org/action/issues/40061772/attachments/53346381?download=true",
+      "local_path": "attachments/Linux-Extension-PoC.mp4"
+    },
+    {
+      "id": 53346389,
+      "filename": "Windows-PoC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 7648438,
+      "url": "https://issues.chromium.org/action/issues/40061772/attachments/53346389?download=true",
+      "local_path": "attachments/Windows-PoC.mp4"
+    },
+    {
+      "id": 53346483,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1225,
+      "url": "https://issues.chromium.org/action/issues/40061772/attachments/53346483?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53346484,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 352,
+      "url": "https://issues.chromium.org/action/issues/40061772/attachments/53346484?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53346485,
+      "filename": "Canary-Arbitary-file-leak- 2022-12-20 16-38-47-957.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6328940,
+      "url": "https://issues.chromium.org/action/issues/40061772/attachments/53346485?download=true",
+      "local_path": "attachments/Canary-Arbitary-file-leak- 2022-12-20 16-38-47-957.mp4"
+    },
+    {
+      "id": 53346490,
+      "filename": "Dev-Arbitary-file-leak-2022-12-20 16-40-57-081.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6923361,
+      "url": "https://issues.chromium.org/action/issues/40061772/attachments/53346490?download=true",
+      "local_path": "attachments/Dev-Arbitary-file-leak-2022-12-20 16-40-57-081.mp4"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nAn extension with the <all_urls> permission can read any file on the file system and send it's content to a remote host, using chrome.tabs.captureVisibleTab although extension (Allow access to file URLs) is disabled.  \n  \nthis bug is a fork of https://bugs.chromium.or"
+}

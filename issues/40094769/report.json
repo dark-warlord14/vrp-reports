@@ -1,0 +1,86 @@
+{
+  "id": "40094769",
+  "url": "https://issues.chromium.org/issues/40094769",
+  "title": "Security: Extension messages can indefinitely extend user activation expiry and repeatedly use of it",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Input, Platform>Extensions",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "mu...@chromium.org",
+  "created_date": "2019-04-29T13:49:34+00:00",
+  "modified_date": "2024-01-09T07:51:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53221986,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 519,
+      "url": "https://issues.chromium.org/action/issues/40094769/attachments/53221986?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53221987,
+      "filename": "content_script.js",
+      "mime_type": "text/plain",
+      "size_bytes": 833,
+      "url": "https://issues.chromium.org/action/issues/40094769/attachments/53221987?download=true",
+      "local_path": "attachments/content_script.js"
+    },
+    {
+      "id": 53221988,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 494,
+      "url": "https://issues.chromium.org/action/issues/40094769/attachments/53221988?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53221989,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 134,
+      "url": "https://issues.chromium.org/action/issues/40094769/attachments/53221989?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53221990,
+      "filename": "link_to_index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 125,
+      "url": "https://issues.chromium.org/action/issues/40094769/attachments/53221990?download=true",
+      "local_path": "attachments/link_to_index.html"
+    },
+    {
+      "id": 53221991,
+      "filename": "main.js",
+      "mime_type": "text/plain",
+      "size_bytes": 166,
+      "url": "https://issues.chromium.org/action/issues/40094769/attachments/53221991?download=true",
+      "local_path": "attachments/main.js"
+    },
+    {
+      "id": 53222389,
+      "filename": "renew_activation_state_thru_send_reply.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3259,
+      "url": "https://issues.chromium.org/action/issues/40094769/attachments/53222389?download=true",
+      "local_path": "attachments/renew_activation_state_thru_send_reply.zip"
+    }
+  ],
+  "update_count": 132,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA user activation is required in order to perform certain actions on a webpage. For example, a page won't be able to open a popup window without a (recent) user activation.  \n  \nHowever, when an extension with some simple specific (and valid) behavior is installed, a pag"
+}

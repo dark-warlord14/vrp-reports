@@ -1,0 +1,84 @@
+{
+  "id": "40069571",
+  "url": "https://issues.chromium.org/issues/40069571",
+  "title": "chrome.inspectedWindow.eval execution on Web Store with trailing URL dot",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions>API",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "pf...@google.com",
+  "created_date": "2023-08-14T23:15:53+00:00",
+  "modified_date": "2024-11-21T20:26:27+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53292086,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 236,
+      "url": "https://issues.chromium.org/action/issues/40069571/attachments/53292086?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53292087,
+      "filename": "devtools.html",
+      "mime_type": "text/plain",
+      "size_bytes": 37,
+      "url": "https://issues.chromium.org/action/issues/40069571/attachments/53292087?download=true",
+      "local_path": "attachments/devtools.html"
+    },
+    {
+      "id": 53292088,
+      "filename": "devtools.js",
+      "mime_type": "text/plain",
+      "size_bytes": 568,
+      "url": "https://issues.chromium.org/action/issues/40069571/attachments/53292088?download=true",
+      "local_path": "attachments/devtools.js"
+    },
+    {
+      "id": 53292089,
+      "filename": "trailing_dot_poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 880,
+      "url": "https://issues.chromium.org/action/issues/40069571/attachments/53292089?download=true",
+      "local_path": "attachments/trailing_dot_poc.zip"
+    },
+    {
+      "id": 53292090,
+      "filename": "trailing_dot_poc_vid.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 837812,
+      "url": "https://issues.chromium.org/action/issues/40069571/attachments/53292090?download=true",
+      "local_path": "attachments/trailing_dot_poc_vid.mp4"
+    },
+    {
+      "id": 54514617,
+      "filename": "Capture1.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 101378,
+      "url": "https://issues.chromium.org/action/issues/40069571/attachments/54514617?download=true",
+      "local_path": "attachments/Capture1.PNG"
+    },
+    {
+      "id": 54513348,
+      "filename": "may be working poc.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 1632,
+      "url": "https://issues.chromium.org/action/issues/40069571/attachments/54513348?download=true",
+      "local_path": "attachments/may be working poc.zip"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Install attached extension   \n2. Open inspect element on any http/https website  \n3. Observe alert in Web Store domain with access to privileged APIs  \n  \n**Problem Description:**   \nThe issue is simply that the chrome.devtools origin checks and the domains"
+}

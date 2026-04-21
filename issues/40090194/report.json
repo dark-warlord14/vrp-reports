@@ -1,0 +1,37 @@
+{
+  "id": "40090194",
+  "url": "https://issues.chromium.org/issues/40090194",
+  "title": "Origin can be removed from modal dialogs",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>WindowDialog",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "s....@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2018-01-15T11:03:30+00:00",
+  "modified_date": "2026-02-25T12:34:39+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact security UI issue",
+  "attachments": [
+    {
+      "id": 73709277,
+      "filename": "Screenshot 2026-02-24 at 3.30.21 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 62598,
+      "url": "https://issues.chromium.org/action/issues/40090194/attachments/73709277?download=true",
+      "local_path": "attachments/Screenshot 2026-02-24 at 3.30.21 PM.png"
+    }
+  ],
+  "update_count": 123,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Go to https://test.shhnjk.com/iframer.php?url=//vuln.shhnjk.com/xssable.php?xss=%3Ciframe%3E%3C/iframe%3E%20%3Cscript%3E%20window[0].p"
+}

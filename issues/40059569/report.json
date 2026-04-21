@@ -1,0 +1,69 @@
+{
+  "id": "40059569",
+  "url": "https://issues.chromium.org/issues/40059569",
+  "title": "Security: UAF in DiscardsGraphDumpImpl",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>PerformanceManager",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wg...@gmail.com",
+  "assignee": "jo...@google.com",
+  "created_date": "2022-05-05T03:35:04+00:00",
+  "modified_date": "2024-01-09T06:47:32+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53278897,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1921,
+      "url": "https://issues.chromium.org/action/issues/40059569/attachments/53278897?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 53278898,
+      "filename": "dcheck.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7539,
+      "url": "https://issues.chromium.org/action/issues/40059569/attachments/53278898?download=true",
+      "local_path": "attachments/dcheck.txt"
+    },
+    {
+      "id": 53278899,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 16375,
+      "url": "https://issues.chromium.org/action/issues/40059569/attachments/53278899?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53278900,
+      "filename": "POC.html",
+      "mime_type": "text/plain",
+      "size_bytes": 156,
+      "url": "https://issues.chromium.org/action/issues/40059569/attachments/53278900?download=true",
+      "local_path": "attachments/POC.html"
+    },
+    {
+      "id": 53278923,
+      "filename": "rep.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5117884,
+      "url": "https://issues.chromium.org/action/issues/40059569/attachments/53278923?download=true",
+      "local_path": "attachments/rep.mp4"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nDiscardsGraphDumpImpl::StartFrameFaviconRequest() will post a task to UIThreadTaskRunner, and then call FaviconRequestHelper::RequestFavicon()[1], using raw pointer returned from EnsureFaviconRequestHelper()[2]. DiscardsGraphDumpImpl owns FaviconRequestHelper instance[3]"
+}

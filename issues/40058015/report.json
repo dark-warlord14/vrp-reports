@@ -1,0 +1,44 @@
+{
+  "id": "40058015",
+  "url": "https://issues.chromium.org/issues/40058015",
+  "title": "Security: webgl global-buffer-overflow in getIncompleteTexture",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE, Internals>GPU>Vulkan",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "lf...@google.com",
+  "created_date": "2021-11-25T01:04:01+00:00",
+  "modified_date": "2024-03-12T14:01:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53343427,
+      "filename": "getIncompleteTexture.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1666,
+      "url": "https://issues.chromium.org/action/issues/40058015/attachments/53343427?download=true",
+      "local_path": "attachments/getIncompleteTexture.html"
+    },
+    {
+      "id": 53343428,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 6773,
+      "url": "https://issues.chromium.org/action/issues/40058015/attachments/53343428?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "Tested on Version 96.0.4664.45 (Official Build) (64-bit) on Windows 11 and asan-win32-release_x64-936776.\r\n\r\nFlags used --no-sandbox --disable-gpu\r\n\r\n(6988.33b4): Access violation - code c0000005 (first chance)\r\nFirst chance exceptions are reported before any exception handling.\r\nThis exception may"
+}

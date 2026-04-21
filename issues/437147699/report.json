@@ -1,0 +1,49 @@
+{
+  "id": "437147699",
+  "url": "https://issues.chromium.org/issues/437147699",
+  "title": "Chrome on Android: Spoof issue triggered by bottom address bar",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": "141.0.7341.0",
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "pn...@google.com",
+  "created_date": "2025-08-07T20:27:28+00:00",
+  "modified_date": "2025-11-21T12:39:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "report of moderate impact security UI spoof\n\nIt's important to not that future reports related to this specific UI surface, unless demonstrated to be highly and convincingly spoofable with little to no user interaction, may not be eligible for as high of rewards. Given that this report resulted in hardening of a new UI surface, we feel this report warrants this reward.",
+  "attachments": [
+    {
+      "id": 68268325,
+      "filename": "js-dialog-origin-spoof-frame.html",
+      "mime_type": "text/html",
+      "size_bytes": 2005,
+      "url": "https://issues.chromium.org/action/issues/437147699/attachments/68268325?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68273336,
+      "filename": "sandbox.html",
+      "mime_type": "text/html",
+      "size_bytes": 571,
+      "url": "https://issues.chromium.org/action/issues/437147699/attachments/68273336?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68246882,
+      "filename": "screen.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 872897,
+      "url": "https://issues.chromium.org/action/issues/437147699/attachments/68246882?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "# Steps to reproduce the problem\n1. Navigate to https://lbstyle.github.io/sandbox.html\n2. Tap inside the input field\n3. Tap docwrite1\n\n# Problem Description\nNote: This is very similar to issue 379652406 and issue 40064686.\n\nThe omnibox disappears, and the attack can trick the user into thinking they"
+}

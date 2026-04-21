@@ -1,0 +1,68 @@
+{
+  "id": "40062383",
+  "url": "https://issues.chromium.org/issues/40062383",
+  "title": "oob in RTCStatsCollector::ProduceTransportStats_n",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebRTC>PeerConnection",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "ht...@chromium.org",
+  "created_date": "2022-12-25T09:13:47+00:00",
+  "modified_date": "2024-01-09T07:39:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53055042,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1091,
+      "url": "https://issues.chromium.org/action/issues/40062383/attachments/53055042?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53055043,
+      "filename": "RTCPeerConnection-helper.js",
+      "mime_type": "text/plain",
+      "size_bytes": 23448,
+      "url": "https://issues.chromium.org/action/issues/40062383/attachments/53055043?download=true",
+      "local_path": "attachments/RTCPeerConnection-helper.js"
+    },
+    {
+      "id": 53055044,
+      "filename": "launcher.sh",
+      "mime_type": "text/plain",
+      "size_bytes": 977,
+      "url": "https://issues.chromium.org/action/issues/40062383/attachments/53055044?download=true",
+      "local_path": "attachments/launcher.sh"
+    },
+    {
+      "id": 53055045,
+      "filename": "asan-SEGV_MAPERR.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8385,
+      "url": "https://issues.chromium.org/action/issues/40062383/attachments/53055045?download=true",
+      "local_path": "attachments/asan-SEGV_MAPERR.log"
+    },
+    {
+      "id": 53055046,
+      "filename": "asan2-buffer-overflow.log",
+      "mime_type": "text/plain",
+      "size_bytes": 21360,
+      "url": "https://issues.chromium.org/action/issues/40062383/attachments/53055046?download=true",
+      "local_path": "attachments/asan2-buffer-overflow.log"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**Steps to reproduce the problem:**   \ntested chrome version:  \nChromium 111.0.5497.0(gs://chromium-browser-asan/linux-release/asan-linux-release-1086812.zip)  \nChromium 110.0.5478.4  \nos version:  \n22.04  \n repro steps:  \n (1) python3 -m http.server 8000 --dir=|Directory path for containing the cra"
+}

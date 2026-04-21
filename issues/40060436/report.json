@@ -1,0 +1,41 @@
+{
+  "id": "40060436",
+  "url": "https://issues.chromium.org/issues/40060436",
+  "title": "Security: container-overflow in HistoryClustersHandler::OpenVisitUrlsInTabGroup",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Journeys",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "mf...@google.com",
+  "created_date": "2022-07-29T07:10:15+00:00",
+  "modified_date": "2022-12-23T18:30:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53396111,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 12208,
+      "url": "https://issues.chromium.org/action/issues/40060436/attachments/53396111?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53396112,
+      "filename": "poc.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 530985,
+      "url": "https://issues.chromium.org/action/issues/40060436/attachments/53396112?download=true",
+      "local_path": "attachments/poc.webm"
+    }
+  ],
+  "update_count": 26,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. download asan-linux-release-1029554.zip and unzip  \n2. run `./chrome --enable-features=SidePanelJourneys,UnifiedSidePanel --user-data-dir=//path/to/your/exist/profile`   \n3. open sidepanel and choose `Journeys`, then choose `Open all in new tab group`  \nNote"
+}

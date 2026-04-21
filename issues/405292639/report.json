@@ -1,0 +1,54 @@
+{
+  "id": "405292639",
+  "url": "https://issues.chromium.org/issues/405292639",
+  "title": "AddressSanitizer: heap-use-after-free on address 0x7da147715900 at pc 0x55baa6985542 bp 0x7ffe146adfd0 sp 0x7ffe146adfc8",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>USB",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zy...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2025-03-21T07:55:07+00:00",
+  "modified_date": "2025-07-16T12:45:24+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "bounty_rationale": "$10,000 for report of mildly mitigated memory corruption in a sandboxed process + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 64131992,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11805,
+      "url": "https://issues.chromium.org/action/issues/405292639/attachments/64131992?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64131993,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 493,
+      "url": "https://issues.chromium.org/action/issues/405292639/attachments/64131993?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64140587,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 19907,
+      "url": "https://issues.chromium.org/action/issues/405292639/attachments/64140587?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 82,
+  "description_snippet": "---\n\n### Report description\n\n\nAddressSanitizer: heap-use-after-free on address 0x7da147715900 at pc 0x55baa6985542 bp 0x7ffe146adfd0 sp 0x7ffe146adfc8\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [Se"
+}

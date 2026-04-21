@@ -1,0 +1,46 @@
+{
+  "id": "388437270",
+  "url": "https://issues.chromium.org/issues/388437270",
+  "title": "V8 Sandbox Bypass: OOB write in JsonStringifier::SerializeString",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Sandbox",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "v8...@gmail.com",
+  "assignee": "pt...@chromium.org",
+  "created_date": "2025-01-08T14:33:05+00:00",
+  "modified_date": "2025-09-23T17:31:30+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "V8 sandbox bypass reward demonstrating memory corruption outside the sandbox",
+  "attachments": [
+    {
+      "id": 62043584,
+      "filename": "bug.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 527,
+      "url": "https://issues.chromium.org/action/issues/388437270/attachments/62043584?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62164474,
+      "filename": "bug.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 758,
+      "url": "https://issues.chromium.org/action/issues/388437270/attachments/62164474?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "#### VULNERABILITY DETAILS\nChanging a string value that has been embedded into a `FixedArray` causes an out-of-bounds write during JSON serialization.\n\n#### VERSION\nV8 commit: 4715559d4fe2ce6e2c0f6de3c966347b6da6a489\n\n#### REPRODUCTION CASE\n\nBuild args:\n```\nis_debug=false\nis_asan=true\nv8_enable_sand"
+}

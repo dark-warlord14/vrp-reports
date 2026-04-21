@@ -1,0 +1,44 @@
+{
+  "id": "40057228",
+  "url": "https://issues.chromium.org/issues/40057228",
+  "title": "SEGV in vk::Image::clear()",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>GPU>SwiftShader",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "ni...@google.com",
+  "created_date": "2021-09-10T21:03:36+00:00",
+  "modified_date": "2024-01-09T09:01:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53036453,
+      "filename": "SEGV--Imageclear-CommandBuffersubmit-QueuesubmitQueue1-min.html",
+      "mime_type": "text/plain",
+      "size_bytes": 594,
+      "url": "https://issues.chromium.org/action/issues/40057228/attachments/53036453?download=true",
+      "local_path": "attachments/SEGV--Imageclear-CommandBuffersubmit-QueuesubmitQueue1-min.html"
+    },
+    {
+      "id": 53036454,
+      "filename": "SEGV--Imageclear-CommandBuffersubmit-QueuesubmitQueue.log",
+      "mime_type": "text/plain",
+      "size_bytes": 10239,
+      "url": "https://issues.chromium.org/action/issues/40057228/attachments/53036454?download=true",
+      "local_path": "attachments/SEGV--Imageclear-CommandBuffersubmit-QueuesubmitQueue.log"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "Tested on:\r\n  OS: Ubuntu 20.04\r\n  Chromium: asan-linux-debug-920244 from ttps://www.googleapis.com/download/storage/v1/b/chromium-browser-asan/o/linux-debug%2Fasan-linux-debug-920244.zip?generation=1631293316584801&alt=media\r\n\r\nTo reproduce:\r\n\r\nexport ASAN_OPTIONS=\"external_symbolizer_path=/chromi"
+}

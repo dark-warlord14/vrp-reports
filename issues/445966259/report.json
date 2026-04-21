@@ -1,0 +1,38 @@
+{
+  "id": "445966259",
+  "url": "https://issues.chromium.org/issues/445966259",
+  "title": "V8 Sandbox Bypass: AAW/PC control via DebugBreakTrampoline",
+  "status": "Verified",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Sandbox",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "kr...@gmail.com",
+  "assignee": "is...@chromium.org",
+  "created_date": "2025-09-18T23:39:56+00:00",
+  "modified_date": "2025-12-30T12:40:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": "V8 sandbox escape with PC control",
+  "attachments": [
+    {
+      "id": 69440789,
+      "filename": "debug-break-trampoline-poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2133,
+      "url": "https://issues.chromium.org/action/issues/445966259/attachments/69440789?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Details\n\nIt's possible to tail call into any builtin from DebugBreakTrampoline regardless of linkage, allowing an attacker to escape the sandbox.\n\nThe crux of the issue can be seen in [DebugBreakTrampoline](https://source.chromium.org/chromium/chromium/src/+/main:v8/s"
+}

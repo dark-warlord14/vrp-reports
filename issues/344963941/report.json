@@ -1,0 +1,46 @@
+{
+  "id": "344963941",
+  "url": "https://issues.chromium.org/issues/344963941",
+  "title": "V8 Sandbox Bypass: Irregexp engine bytecode modification leads to arbitrary read/write outside the sandbox",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P3",
+  "component": "Blink>JavaScript>Sandbox",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "as...@gmail.com",
+  "assignee": "pt...@chromium.org",
+  "created_date": "2024-06-05T00:07:16+00:00",
+  "modified_date": "2026-02-19T12:54:32+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5250.0,
+  "bounty_rationale": "V8 heap sandbox bypass reward + $250 patch bonus",
+  "attachments": [
+    {
+      "id": 56907813,
+      "filename": "fix.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 431,
+      "url": "https://issues.chromium.org/action/issues/344963941/attachments/56907813?download=true",
+      "local_path": "attachments/fix.patch"
+    },
+    {
+      "id": 56907814,
+      "filename": "expl.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3391,
+      "url": "https://issues.chromium.org/action/issues/344963941/attachments/56907814?download=true",
+      "local_path": "attachments/expl.js"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "# V8 Sandbox Bypass: Irregexp engine bytecode modification leads to arbitrary read/write outside the sandbox\n\n**VULNERABILITY DETAILS**\n\nSince the bytecode used by the Irregexp engine resides on the V8 heap, it can be arbitrarily modified by an attacker.\nIn `IrregexpInterpreter::Result RawMatch` the"
+}

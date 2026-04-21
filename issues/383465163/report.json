@@ -1,0 +1,33 @@
+{
+  "id": "383465163",
+  "url": "https://issues.chromium.org/issues/383465163",
+  "title": "Android Chrome: Heap overflow in GLES2DecoderPassthroughImpl::DoEndQueryEXT",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": "133.0.6887 (64bit SAMSUNG S-24)",
+  "cve_ids": [],
+  "reporter": "po...@gmail.com",
+  "assignee": "ge...@google.com",
+  "created_date": "2024-12-11T10:49:22+00:00",
+  "modified_date": "2025-05-29T19:56:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": "report of memory corruption in a highly-privileged process (GPU)",
+  "attachments": [
+    {
+      "id": 61478136,
+      "filename": "oob.html",
+      "mime_type": "text/html",
+      "size_bytes": 408724,
+      "url": "https://issues.chromium.org/action/issues/383465163/attachments/61478136?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "# Steps to reproduce the problem\n1. Run Android Chrome\n2. Open oob.html\n3. check crash log using \"adb logcat -b crash\"\n\n# Problem Description\nIn \"gpu/command_buffer/service/gles2_cmd_decoder_passthrough_doers.cc\" `GLES2DecoderPassthroughImpl::DoEndQueryEXT`  will try to erase an \"active_queries_\" wi"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "454485895",
+  "url": "https://issues.chromium.org/issues/454485895",
+  "title": "Incorrect Optimization of ArrayConstructor by Maglev Leads to Creation of Malformed JSArray Objects",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Maglev",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hu...@gmail.com",
+  "assignee": "jg...@chromium.org",
+  "created_date": "2025-10-23T14:39:58+00:00",
+  "modified_date": "2026-01-31T12:47:00+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 50000.0,
+  "bounty_rationale": "High-quality report demonstrating controlled write in sandboxed renderer",
+  "attachments": [],
+  "update_count": 75,
+  "description_snippet": "VULNERABILITY DETAILS\n\n## 1 Why Crash?\n\nAfter Maglev optimization, an incorrect `JSArray` object was created for `arr2`, leading to a crash when `arr2.join()` was executed. The abnormal `JSArray` object is as follows.\n\n```\nDebugPrint: 0x9b10084a591: [JSArray]\n - map: 0x28cd02827311 <Map[16](PACKED_S"
+}

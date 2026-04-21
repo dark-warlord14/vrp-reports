@@ -1,0 +1,201 @@
+{
+  "id": "40058468",
+  "url": "https://issues.chromium.org/issues/40058468",
+  "title": "Security: Potential UaF in TabStripModel (chromeOS)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>TopChrome>TabStrip>ThumbnailTabStrip",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rh...@gmail.com",
+  "assignee": "yu...@chromium.org",
+  "created_date": "2022-01-11T06:37:15+00:00",
+  "modified_date": "2024-01-09T04:44:21+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53187791,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53187791?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53187825,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53187825?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53187862,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53187862?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53187903,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53187903?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53187904,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53187904?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53187926,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53187926?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53187938,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53187938?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53187980,
+      "filename": "uaf_1286203_tablet_mode.log",
+      "mime_type": "text/plain",
+      "size_bytes": 28634,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53187980?download=true",
+      "local_path": "attachments/uaf_1286203_tablet_mode.log"
+    },
+    {
+      "id": 53187981,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53187981?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53187996,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53187996?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53188040,
+      "filename": "asan_1286203_noMouseEvent.log",
+      "mime_type": "text/plain",
+      "size_bytes": 35623,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53188040?download=true",
+      "local_path": "attachments/asan_1286203_noMouseEvent.log"
+    },
+    {
+      "id": 53188041,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53188041?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53188050,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53188050?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53188057,
+      "filename": "newTab.html",
+      "mime_type": "text/plain",
+      "size_bytes": 326,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53188057?download=true",
+      "local_path": "attachments/newTab.html"
+    },
+    {
+      "id": 53188058,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53188058?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53188091,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53188091?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53188133,
+      "filename": "Screen recording 2022-02-27 6.09.25 PM.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 12062746,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53188133?download=true",
+      "local_path": "attachments/Screen recording 2022-02-27 6.09.25 PM.webm"
+    },
+    {
+      "id": 53188139,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53188139?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53188185,
+      "filename": "lacros-1286203-asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 7252,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53188185?download=true",
+      "local_path": "attachments/lacros-1286203-asan.log"
+    },
+    {
+      "id": 53188224,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53188224?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53188366,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53188366?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53188367,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40058468/attachments/53188367?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 177,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nSimilar with issue #1242742 but effects only on chromeOS  \n  \n**VERSION**   \nChromeOS Beta: 98.0.4758.46   \nGoogle_Atlas.11827.169.0  \n  \n**REPRODUCTION CASE**   \nenable-flags #top-chrome-touch-ui,webui-tab-strip.  \nThe flags expires on version 99.  \n  \n(1) Open 3 tabs a"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "40060492",
+  "url": "https://issues.chromium.org/issues/40060492",
+  "title": "Security: compromised renderer is able to send extension message to another tab",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Sandbox>SiteIsolation, Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ym...@ym.kim",
+  "assignee": "lu...@chromium.org",
+  "created_date": "2022-08-04T13:24:18+00:00",
+  "modified_date": "2022-12-07T18:33:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53346153,
+      "filename": "renderer.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 2545,
+      "url": "https://issues.chromium.org/action/issues/40060492/attachments/53346153?download=true",
+      "local_path": "attachments/renderer.patch"
+    },
+    {
+      "id": 53346154,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 229,
+      "url": "https://issues.chromium.org/action/issues/40060492/attachments/53346154?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53346155,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 99,
+      "url": "https://issues.chromium.org/action/issues/40060492/attachments/53346155?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53346156,
+      "filename": "content.js",
+      "mime_type": "text/plain",
+      "size_bytes": 219,
+      "url": "https://issues.chromium.org/action/issues/40060492/attachments/53346156?download=true",
+      "local_path": "attachments/content.js"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA compromised renderer is able to send an extension message to another tab.  \n  \nThe browser process (extensions::MessageService) does not check ExtensionHostMsg_OpenChannelToTab message came from an extension process or a process with access to chrome.tabs.sendMessage A"
+}

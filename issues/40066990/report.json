@@ -1,0 +1,57 @@
+{
+  "id": "40066990",
+  "url": "https://issues.chromium.org/issues/40066990",
+  "title": "Security: Eyedropper API can confuse real cursor position which can cause users to be tricked into clicking unwanted positions (ie. accepting permission prompts)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Forms>Color",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "lu...@microsoft.com",
+  "created_date": "2023-07-06T20:46:52+00:00",
+  "modified_date": "2025-02-13T00:20:44+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52942961,
+      "filename": "accept-da-prompt.html",
+      "mime_type": "text/plain",
+      "size_bytes": 370,
+      "url": "https://issues.chromium.org/action/issues/40066990/attachments/52942961?download=true",
+      "local_path": "attachments/accept-da-prompt.html"
+    },
+    {
+      "id": 52942962,
+      "filename": "helper.html",
+      "mime_type": "text/plain",
+      "size_bytes": 897,
+      "url": "https://issues.chromium.org/action/issues/40066990/attachments/52942962?download=true",
+      "local_path": "attachments/helper.html"
+    },
+    {
+      "id": 52942991,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 184103,
+      "url": "https://issues.chromium.org/action/issues/40066990/attachments/52942991?download=true",
+      "local_path": "attachments/poc.mp4"
+    },
+    {
+      "id": 52943003,
+      "filename": "helper.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1097,
+      "url": "https://issues.chromium.org/action/issues/40066990/attachments/52943003?download=true",
+      "local_path": "attachments/helper.html"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen an eyedropper is spawned on the main page and a window is opened, surprisingly, the main page overlay over the eyedropper. Doing this results in the cursor being invisible in the newly opened window.  \n  \nAttackers can abuse this to cause clicks in unwanted position"
+}

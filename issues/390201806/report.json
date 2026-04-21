@@ -1,0 +1,37 @@
+{
+  "id": "390201806",
+  "url": "https://issues.chromium.org/issues/390201806",
+  "title": "V8 Sandbox Bypass: AAR/W due to length-tracking TypedArray length double fetch",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Sandbox",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "ma...@google.com",
+  "created_date": "2025-01-16T05:36:24+00:00",
+  "modified_date": "2025-05-31T12:38:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": "V8 sandbox bypass report demonstrating controlled write outside the V8 sandbox",
+  "attachments": [
+    {
+      "id": 62207386,
+      "filename": "typedarray-length-double-fetch.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2741,
+      "url": "https://issues.chromium.org/action/issues/390201806/attachments/62207386?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Summary\n\nV8 sandbox bypass, arbitrary address read/write by exploiting in-sandbox double fetch race condition when calculating length-tracked TypedArray length. This results in integer overflow and a subsequent out-of-bounds memory read/write within the full 64bit add"
+}

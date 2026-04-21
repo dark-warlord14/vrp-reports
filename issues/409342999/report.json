@@ -1,0 +1,51 @@
+{
+  "id": "409342999",
+  "url": "https://issues.chromium.org/issues/409342999",
+  "title": "page crash after breakpoint and resume, and in other cases",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": "135.0.0.0",
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "is...@chromium.org",
+  "created_date": "2025-04-09T08:25:54+00:00",
+  "modified_date": "2025-09-17T06:05:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "report of heavily mitigated memory corruption in a non-sandboxed process",
+  "attachments": [
+    {
+      "id": 64694400,
+      "filename": "cmdlinevariations.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 34715,
+      "url": "https://issues.chromium.org/action/issues/409342999/attachments/64694400?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64798016,
+      "filename": "409342999-CL-Canary.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 46309507,
+      "url": "https://issues.chromium.org/action/issues/409342999/attachments/64798016?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64862845,
+      "filename": "409342999-CL-Canary.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 10637474,
+      "url": "https://issues.chromium.org/action/issues/409342999/attachments/64862845?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "# Steps to reproduce the problem\n1. start Chrome\n2. run https://csynth.github.io/csynth/csynth.html\n3. open devtools/console\n4. type 'init' and enter\n5. devtools finds function init(), but the page crashes\nIt may(?) work first time, but will crash on any repeated test after restart\n\n# Problem Descri"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "40061952",
+  "url": "https://issues.chromium.org/issues/40061952",
+  "title": "Security: Debug check failed: enum_length == map->NumberOfEnumerableProperties()",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2022-11-29T14:02:19+00:00",
+  "modified_date": "2024-02-29T20:23:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52897498,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 33,
+      "url": "https://issues.chromium.org/action/issues/40061952/attachments/52897498?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n## CRASH LOG  \n- Debug output  \n```  \n#  \n# Fatal error in ../../src/objects/keys.cc, line 500  \n# Debug check failed: enum_length == map->NumberOfEnumerableProperties() (1 vs. 0).  \n#  \n#  \n#  \n#FailureMessage Object: 0x7ffebc769630  \n==== C stack trace ================"
+}

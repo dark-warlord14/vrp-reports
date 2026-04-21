@@ -1,0 +1,76 @@
+{
+  "id": "40068570",
+  "url": "https://issues.chromium.org/issues/40068570",
+  "title": "Security: Bypass about:blank#blocked In Drag & Drop",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>DataTransfer, UI>Browser>Omnibox",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pu...@gmail.com",
+  "assignee": "es...@chromium.org",
+  "created_date": "2023-08-02T13:50:42+00:00",
+  "modified_date": "2025-11-11T12:42:37+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": "report of lower impact exploitation mitigation bypass",
+  "attachments": [
+    {
+      "id": 52928287,
+      "filename": "Chrome File URL.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 937910,
+      "url": "https://issues.chromium.org/action/issues/40068570/attachments/52928287?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52928288,
+      "filename": "Chrome Links.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 668191,
+      "url": "https://issues.chromium.org/action/issues/40068570/attachments/52928288?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52928289,
+      "filename": "PufIndex.html",
+      "mime_type": "text/plain",
+      "size_bytes": 578,
+      "url": "https://issues.chromium.org/action/issues/40068570/attachments/52928289?download=true",
+      "local_path": "attachments/PufIndex.html"
+    },
+    {
+      "id": 52928321,
+      "filename": "Image Drag.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 408464,
+      "url": "https://issues.chromium.org/action/issues/40068570/attachments/52928321?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52928322,
+      "filename": "PufImgIndex.html",
+      "mime_type": "text/plain",
+      "size_bytes": 232,
+      "url": "https://issues.chromium.org/action/issues/40068570/attachments/52928322?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68105693,
+      "filename": "Latest Reproduce.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 173680,
+      "url": "https://issues.chromium.org/action/issues/40068570/attachments/68105693?download=true",
+      "local_path": "attachments/Latest Reproduce.mp4"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nIn Chrome If Drag Links Such as file:/// , chrome://settings/ etc...  \n  \nChrome replaces the file URI , chrome://settings/ with about:blank#blocked.  \n  \nAttacker Can Bypass about:blank#blocked Now, While using Drag & Drop  \n  \n**VERSION**   \nChrome Version: [115.0.5"
+}

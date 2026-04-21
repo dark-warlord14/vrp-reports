@@ -1,0 +1,70 @@
+{
+  "id": "40052718",
+  "url": "https://issues.chromium.org/issues/40052718",
+  "title": "Security: Possible to download files from sandboxed frames",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature>IFrameSandbox",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2020-06-30T05:14:21+00:00",
+  "modified_date": "2024-01-09T07:53:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53068611,
+      "filename": "download.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1,
+      "url": "https://issues.chromium.org/action/issues/40052718/attachments/53068611?download=true",
+      "local_path": "attachments/download.txt"
+    },
+    {
+      "id": 53068612,
+      "filename": "iframe.html",
+      "mime_type": "text/plain",
+      "size_bytes": 113,
+      "url": "https://issues.chromium.org/action/issues/40052718/attachments/53068612?download=true",
+      "local_path": "attachments/iframe.html"
+    },
+    {
+      "id": 53068613,
+      "filename": "iframe.js",
+      "mime_type": "text/plain",
+      "size_bytes": 121,
+      "url": "https://issues.chromium.org/action/issues/40052718/attachments/53068613?download=true",
+      "local_path": "attachments/iframe.js"
+    },
+    {
+      "id": 53068614,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 152,
+      "url": "https://issues.chromium.org/action/issues/40052718/attachments/53068614?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53068615,
+      "filename": "server.py",
+      "mime_type": "text/plain",
+      "size_bytes": 488,
+      "url": "https://issues.chromium.org/action/issues/40052718/attachments/53068615?download=true",
+      "local_path": "attachments/server.py"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIn the most recent version of Chrome, it's not possible to download files from a sandboxed frame, unless the allow-downloads flag is set. However, if a sandboxed frame calls window.open with the noopener option and a download URL, the download will proceed. This is true"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "40055949",
+  "url": "https://issues.chromium.org/issues/40055949",
+  "title": "SUMMARY: AddressSanitizer: heap-use-after-free devtools_agent_host_impl.h:84 in std::__1::vector<content::protocol::TargetHandler*, std::__1::allocator<content::protocol::TargetHandler*> > content::DevToolsAgentHostImpl::HandlersByName<content::protocol::TargetHandler>(std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "dm...@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2021-05-20T12:14:26+00:00",
+  "modified_date": "2024-01-09T03:28:48+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53301261,
+      "filename": "ChromiumHeapUaFViaLoopedReloadWithDevTools.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1682228,
+      "url": "https://issues.chromium.org/action/issues/40055949/attachments/53301261?download=true",
+      "local_path": "attachments/ChromiumHeapUaFViaLoopedReloadWithDevTools.mp4"
+    },
+    {
+      "id": 53301289,
+      "filename": "win-asan-report-heap-uaf.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18356,
+      "url": "https://issues.chromium.org/action/issues/40055949/attachments/53301289?download=true",
+      "local_path": "attachments/win-asan-report-heap-uaf.txt"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0\r\n\r\nSteps to reproduce the problem:\r\n1. Open Chromium.\r\n2. Open Developer Tools from homepage.\r\n3. Hold Command (or Ctrl) + R until crash of Chromium\r\n\r\nWhat is the expected behavior?\r\nPage reloaded but Chro"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "340221135",
+  "url": "https://issues.chromium.org/issues/340221135",
+  "title": "RCE in V8 maglev",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Maglev",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "oc...@gmail.com",
+  "assignee": "sy...@google.com",
+  "created_date": "2024-05-13T15:08:08+00:00",
+  "modified_date": "2026-02-25T21:17:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": "Extending for appreciation of reporting this V8 renderer RCE you discovered being exploited to us! If you are unable to accept the reward, you can choose to donate it or have it donated on your behalf.\n\nThank you for your efforts and helping us make Chrome more secure for all users!\n\nCheers,\nChrome VRP Panel Bot\n\n\nP.S. Two other things we'd like to mention:\n\n* Please do NOT publicly disclose details until a fix has been released to all our users. Early public disclosure may cancel the provisiona",
+  "attachments": [
+    {
+      "id": 56328763,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/340221135/attachments/56328763?download=true",
+      "local_path": "attachments/deleted"
+    },
+    {
+      "id": 56330795,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/340221135/attachments/56330795?download=true",
+      "local_path": "attachments/deleted"
+    },
+    {
+      "id": 56330839,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/340221135/attachments/56330839?download=true",
+      "local_path": "attachments/deleted"
+    },
+    {
+      "id": 56338585,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/340221135/attachments/56338585?download=true",
+      "local_path": "attachments/deleted"
+    },
+    {
+      "id": 56364601,
+      "filename": "min.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 127,
+      "url": "https://issues.chromium.org/action/issues/340221135/attachments/56364601?download=true",
+      "local_path": "attachments/min.js"
+    },
+    {
+      "id": 56364602,
+      "filename": "module.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 20,
+      "url": "https://issues.chromium.org/action/issues/340221135/attachments/56364602?download=true",
+      "local_path": "attachments/module.txt"
+    }
+  ],
+  "update_count": 125,
+  "description_snippet": "---\n\n### Report description\n\n\nGoogle Chrome 0-day exploited ITW\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/rules/5745167867576320/chrome-vuln"
+}

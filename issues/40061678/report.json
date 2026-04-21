@@ -1,0 +1,51 @@
+{
+  "id": "40061678",
+  "url": "https://issues.chromium.org/issues/40061678",
+  "title": "Security: heap-use-after-free in observer_list.h triggered via Notes/Annotation feature",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>TopChrome>SidePanel",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "co...@chromium.org",
+  "created_date": "2022-11-10T01:05:10+00:00",
+  "modified_date": "2023-05-13T17:34:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52956537,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 21723,
+      "url": "https://issues.chromium.org/action/issues/40061678/attachments/52956537?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 52956553,
+      "filename": "Notes-CHECK-asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 7862,
+      "url": "https://issues.chromium.org/action/issues/40061678/attachments/52956553?download=true",
+      "local_path": "attachments/Notes-CHECK-asan.log"
+    },
+    {
+      "id": 52956554,
+      "filename": "Notes-CHECK-repro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1355340,
+      "url": "https://issues.chromium.org/action/issues/40061678/attachments/52956554?download=true",
+      "local_path": "attachments/Notes-CHECK-repro.mp4"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nClosing a window with Notes/Annotation feature open seems to cause a UAF in certain conditions. I'm having trouble reproducing a second time, but providing ASan stack trace and potential repro steps since that should have enough info to start analysis. Based on stack tra"
+}

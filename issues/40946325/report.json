@@ -1,0 +1,41 @@
+{
+  "id": "40946325",
+  "url": "https://issues.chromium.org/issues/40946325",
+  "title": "Elevation of Privilege in GoogleUpdate with Windows",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Updater",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "do...@pksecurity.io",
+  "assignee": "ga...@chromium.org",
+  "created_date": "2023-11-28T09:15:28+00:00",
+  "modified_date": "2024-06-07T20:08:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53363793,
+      "filename": "goopdate.dll",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2036512,
+      "url": "https://issues.chromium.org/action/issues/40946325/attachments/53363793?download=true",
+      "local_path": "attachments/goopdate.dll"
+    },
+    {
+      "id": 53363826,
+      "filename": "TEST_goopdate_unsigned.pdb.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 9699905,
+      "url": "https://issues.chromium.org/action/issues/40946325/attachments/53363826?download=true",
+      "local_path": "attachments/TEST_goopdate_unsigned.pdb.zip"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "---\n\n### Report description\n\n\nElevation of Privilege in GoogleUpdate with Windows\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nGoogle Chrome\n\n\n---\n\n### The problem\n\n\n#### Please describe the technical details of the vulnerability\n\n### VULNERABILITY SUMM"
+}

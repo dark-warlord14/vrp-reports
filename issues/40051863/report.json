@@ -1,0 +1,38 @@
+{
+  "id": "40051863",
+  "url": "https://issues.chromium.org/issues/40051863",
+  "title": "UAF in base::SupportsUserData::SetUserData",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Payments",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cd...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2020-03-27T05:34:06+00:00",
+  "modified_date": "2024-01-09T02:01:15+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53252090,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4978,
+      "url": "https://issues.chromium.org/action/issues/40051863/attachments/53252090?download=true",
+      "local_path": "attachments/poc.zip"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1 python3.6m -m http.server 8605\r\n2 ./crhome  --user-dir=/tmp/nonexist --incognito  http://127.0.0.1:8605/crash.html\r\n3 Close the browser"
+}

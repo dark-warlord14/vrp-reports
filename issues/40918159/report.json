@@ -1,0 +1,57 @@
+{
+  "id": "40918159",
+  "url": "https://issues.chromium.org/issues/40918159",
+  "title": "Security: (Android) file download with long name cannot show the extension file it lead to spoof",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "sh...@chromium.org",
+  "created_date": "2023-06-21T19:47:54+00:00",
+  "modified_date": "2025-12-07T12:29:45+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53202784,
+      "filename": "video_2023-06-22_00-46-04.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1404656,
+      "url": "https://issues.chromium.org/action/issues/40918159/attachments/53202784?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53202785,
+      "filename": "downloadmenu.png",
+      "mime_type": "image/png",
+      "size_bytes": 65413,
+      "url": "https://issues.chromium.org/action/issues/40918159/attachments/53202785?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53202786,
+      "filename": "fileexplorer.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 115109,
+      "url": "https://issues.chromium.org/action/issues/40918159/attachments/53202786?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53202839,
+      "filename": "Screenshot_20230720_135735_Chrome.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 52054,
+      "url": "https://issues.chromium.org/action/issues/40918159/attachments/53202839?download=true",
+      "local_path": "attachments/Screenshot_20230720_135735_Chrome.jpg"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "redacted"
+}

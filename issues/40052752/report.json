@@ -1,0 +1,125 @@
+{
+  "id": "40052752",
+  "url": "https://issues.chromium.org/issues/40052752",
+  "title": "Security: Possible to escape sandbox via devtools_page (alternative method)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>DevTools, Platform>Extensions",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2020-07-03T04:40:35+00:00",
+  "modified_date": "2024-01-09T07:53:57+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53017398,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 540,
+      "url": "https://issues.chromium.org/action/issues/40052752/attachments/53017398?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53017399,
+      "filename": "chrome_inspect.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1170,
+      "url": "https://issues.chromium.org/action/issues/40052752/attachments/53017399?download=true",
+      "local_path": "attachments/chrome_inspect.js"
+    },
+    {
+      "id": 53017400,
+      "filename": "devtools.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3212,
+      "url": "https://issues.chromium.org/action/issues/40052752/attachments/53017400?download=true",
+      "local_path": "attachments/devtools.js"
+    },
+    {
+      "id": 53017401,
+      "filename": "devtools_not_connected.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2564,
+      "url": "https://issues.chromium.org/action/issues/40052752/attachments/53017401?download=true",
+      "local_path": "attachments/devtools_not_connected.js"
+    },
+    {
+      "id": 53017402,
+      "filename": "devtools_page.html",
+      "mime_type": "text/plain",
+      "size_bytes": 132,
+      "url": "https://issues.chromium.org/action/issues/40052752/attachments/53017402?download=true",
+      "local_path": "attachments/devtools_page.html"
+    },
+    {
+      "id": 53017403,
+      "filename": "devtools_page.js",
+      "mime_type": "text/plain",
+      "size_bytes": 4109,
+      "url": "https://issues.chromium.org/action/issues/40052752/attachments/53017403?download=true",
+      "local_path": "attachments/devtools_page.js"
+    },
+    {
+      "id": 53017404,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 222,
+      "url": "https://issues.chromium.org/action/issues/40052752/attachments/53017404?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53017405,
+      "filename": "notifier.html",
+      "mime_type": "text/plain",
+      "size_bytes": 127,
+      "url": "https://issues.chromium.org/action/issues/40052752/attachments/53017405?download=true",
+      "local_path": "attachments/notifier.html"
+    },
+    {
+      "id": 53017406,
+      "filename": "notifier.js",
+      "mime_type": "text/plain",
+      "size_bytes": 63,
+      "url": "https://issues.chromium.org/action/issues/40052752/attachments/53017406?download=true",
+      "local_path": "attachments/notifier.js"
+    },
+    {
+      "id": 53017448,
+      "filename": "devtools_page.html",
+      "mime_type": "text/plain",
+      "size_bytes": 132,
+      "url": "https://issues.chromium.org/action/issues/40052752/attachments/53017448?download=true",
+      "local_path": "attachments/devtools_page.html"
+    },
+    {
+      "id": 53017449,
+      "filename": "devtools_page.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1564,
+      "url": "https://issues.chromium.org/action/issues/40052752/attachments/53017449?download=true",
+      "local_path": "attachments/devtools_page.js"
+    },
+    {
+      "id": 53017450,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 165,
+      "url": "https://issues.chromium.org/action/issues/40052752/attachments/53017450?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 84,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIn https://crbug.com/chromium/1059577, a method was provided for escaping the sandbox via devtools_page. That issue relied on the fact that embedded extensions would remain active once the devtools was opened, no matter the target page.  \n  \nThat issue was fixed by updat"
+}

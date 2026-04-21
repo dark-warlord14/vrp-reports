@@ -1,0 +1,49 @@
+{
+  "id": "40064410",
+  "url": "https://issues.chromium.org/issues/40064410",
+  "title": "Security: Chrome iOS",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>Referrer",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ia...@gmail.com",
+  "assignee": "aj...@google.com",
+  "created_date": "2023-05-07T16:46:38+00:00",
+  "modified_date": "2024-07-16T22:02:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53177172,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064410/attachments/53177172?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53177173,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064410/attachments/53177173?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53177175,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064410/attachments/53177175?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "This may fall under ExternalDependency as per Chrome Bug System. Already reported to Apple Report ID - OE09428599144\r\n\r\n##Summary\r\n`<meta name=\"referrer\" content=\"no-referrer\">`\r\nThe HTML code <meta name=\"referrer\" content=\"no-referrer\"> sets the referrer policy for the webpage. The referrer policy"
+}

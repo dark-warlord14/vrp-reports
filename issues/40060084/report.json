@@ -1,0 +1,62 @@
+{
+  "id": "40060084",
+  "url": "https://issues.chromium.org/issues/40060084",
+  "title": "Security: container-overflow in chrome_pdf::PDFiumEngine::SelectFindResult",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sk...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2022-06-27T08:21:42+00:00",
+  "modified_date": "2024-01-09T06:17:30+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53041991,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 17581,
+      "url": "https://issues.chromium.org/action/issues/40060084/attachments/53041991?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53041992,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1227792,
+      "url": "https://issues.chromium.org/action/issues/40060084/attachments/53041992?download=true",
+      "local_path": "attachments/demo.mp4"
+    },
+    {
+      "id": 53041993,
+      "filename": "a.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 8731,
+      "url": "https://issues.chromium.org/action/issues/40060084/attachments/53041993?download=true",
+      "local_path": "attachments/a.pdf"
+    },
+    {
+      "id": 53042037,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 14563,
+      "url": "https://issues.chromium.org/action/issues/40060084/attachments/53042037?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \npdf/pdfium/pdfium_engine.cc  \n```  \ngfx::Size PDFiumEngine::ApplyDocumentLayout(  \n    const DocumentLayout::Options& options) {  \n      \n  // ...  \n    \n  UpdateDocumentLayout(&layout_);  \n  if (!layout_.dirty())  \n    return layout_.size();  \n  \n  // Store the curre"
+}

@@ -1,0 +1,85 @@
+{
+  "id": "40071901",
+  "url": "https://issues.chromium.org/issues/40071901",
+  "title": "UAF in AutocompleteController::Observer",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "or...@chromium.org",
+  "created_date": "2023-09-11T04:17:26+00:00",
+  "modified_date": "2024-02-20T15:45:25+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52952851,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 33047,
+      "url": "https://issues.chromium.org/action/issues/40071901/attachments/52952851?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 52952912,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 182,
+      "url": "https://issues.chromium.org/action/issues/40071901/attachments/52952912?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 52952913,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 274,
+      "url": "https://issues.chromium.org/action/issues/40071901/attachments/52952913?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 52952914,
+      "filename": "1.js",
+      "mime_type": "text/plain",
+      "size_bytes": 589586,
+      "url": "https://issues.chromium.org/action/issues/40071901/attachments/52952914?download=true",
+      "local_path": "attachments/1.js"
+    },
+    {
+      "id": 52952915,
+      "filename": "2.js",
+      "mime_type": "text/plain",
+      "size_bytes": 313175,
+      "url": "https://issues.chromium.org/action/issues/40071901/attachments/52952915?download=true",
+      "local_path": "attachments/2.js"
+    },
+    {
+      "id": 52952916,
+      "filename": "default.html",
+      "mime_type": "text/plain",
+      "size_bytes": 123,
+      "url": "https://issues.chromium.org/action/issues/40071901/attachments/52952916?download=true",
+      "local_path": "attachments/default.html"
+    },
+    {
+      "id": 52952917,
+      "filename": "default.js",
+      "mime_type": "text/plain",
+      "size_bytes": 458343,
+      "url": "https://issues.chromium.org/action/issues/40071901/attachments/52952917?download=true",
+      "local_path": "attachments/default.js"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**Steps to reproduce the problem:**   \nAnalysis coming soon.  \n  \n**Problem Description:**   \nUAF in browser  \n  \n**Additional Comments:**   \n  \n  \n**Chrome version: ** 119.0.5998.0 **Channel: ** Dev  \n  \n**OS:** Mac OS"
+}

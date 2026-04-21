@@ -1,0 +1,31 @@
+{
+  "id": "40086256",
+  "url": "https://issues.chromium.org/issues/40086256",
+  "title": "Security: heap-buffer-overflow in SkAlphaThresholdFilterImpl::onFilterImage",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Skia",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sw...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2016-12-17T08:51:59+00:00",
+  "modified_date": "2018-04-25T22:47:19+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52986805,
+      "filename": "poc1.fil",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1040,
+      "url": "https://issues.chromium.org/action/issues/40086256/attachments/52986805?download=true",
+      "local_path": "attachments/poc1.fil"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe OOB-Read bug exists in SkAlphaThresholdFilterImpl::onFilterImage.  \n  \n- ASAN ouput  \n===========================================================================================  \n./filter_fuzz_stub poc1.fil   \n[1217/173144.153389:INFO:filter_fuzz_stub.cc(59)] Test c"
+}

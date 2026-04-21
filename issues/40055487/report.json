@@ -1,0 +1,52 @@
+{
+  "id": "40055487",
+  "url": "https://issues.chromium.org/issues/40055487",
+  "title": "Security: UAF when extension removes tab group during drag",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>TopChrome>TabStrip, UI>Browser>TopChrome>TabStrip>TabGroups",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "so...@chromium.org",
+  "created_date": "2021-04-08T15:54:21+00:00",
+  "modified_date": "2024-01-09T08:58:42+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53048162,
+      "filename": "asan_output_870481.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18652,
+      "url": "https://issues.chromium.org/action/issues/40055487/attachments/53048162?download=true",
+      "local_path": "attachments/asan_output_870481.txt"
+    },
+    {
+      "id": 53048163,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1111,
+      "url": "https://issues.chromium.org/action/issues/40055487/attachments/53048163?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53048164,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 156,
+      "url": "https://issues.chromium.org/action/issues/40055487/attachments/53048164?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen a tab group is being dragged, if an extension removes that group (e.g. by moving all tabs in the group to another group), a use-after-free will occur in the browser process.  \n  \n**VERSION**   \nChrome Version: Tested on 91.0.4472.0 (latest asan build)  \nOperating Sy"
+}

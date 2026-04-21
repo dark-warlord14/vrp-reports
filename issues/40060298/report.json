@@ -1,0 +1,44 @@
+{
+  "id": "40060298",
+  "url": "https://issues.chromium.org/issues/40060298",
+  "title": "use-after-free in Serial",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Serial, Platform>Apps>API>Serial",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "ch...@chromium.org",
+  "created_date": "2022-07-15T16:19:29+00:00",
+  "modified_date": "2022-12-09T18:31:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53136785,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 86,
+      "url": "https://issues.chromium.org/action/issues/40060298/attachments/53136785?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53136786,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 263,
+      "url": "https://issues.chromium.org/action/issues/40060298/attachments/53136786?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 26,
+  "description_snippet": "**Steps to reproduce the problem:**   \nWill attach details soon.  \n  \n**Problem Description:**   \n.  \n  \n**Additional Comments:**   \n  \n  \n**Chrome version: ** 105.0.5178.0 **Channel: ** Stable  \n  \n**OS:** Windows"
+}

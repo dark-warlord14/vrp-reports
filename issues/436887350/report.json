@@ -1,0 +1,115 @@
+{
+  "id": "436887350",
+  "url": "https://issues.chromium.org/issues/436887350",
+  "title": "Security: Extension can download file by resuming interrupted download",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "qi...@google.com",
+  "created_date": "2025-08-06T19:38:23+00:00",
+  "modified_date": "2026-01-13T12:42:33+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": "high quality medium impact exploit mitigation bypass",
+  "attachments": [
+    {
+      "id": 68247641,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 354,
+      "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247641?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68247642,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2303,
+      "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247642?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68247643,
+      "filename": "page.html",
+      "mime_type": "text/html",
+      "size_bytes": 632,
+      "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247643?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68247644,
+      "filename": "page.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 700,
+      "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247644?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68247645,
+      "filename": "download-file-resume.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1461144,
+      "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247645?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68247646,
+      "filename": "download-file-resume-debug.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1698776,
+      "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247646?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68247441,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 385,
+      "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247441?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68247648,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2609,
+      "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247648?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68247649,
+      "filename": "page.html",
+      "mime_type": "text/html",
+      "size_bytes": 659,
+      "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247649?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68247650,
+      "filename": "page.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1093,
+      "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247650?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68247442,
+      "filename": "download-file-resume-chained-cr.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 804220,
+      "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247442?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "## SUMMARY\n\nAn extension with `downloads` permission can download a `file://` URL by calling `downloads.download()`, waiting for the download to be interrupted, and then calling `downloads.resume()` on the interrupted download. This causes the download to be initiated by the browser, bypassing `Down"
+}

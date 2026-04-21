@@ -1,0 +1,65 @@
+{
+  "id": "426480606",
+  "url": "https://issues.chromium.org/issues/426480606",
+  "title": "open link in split view view leads to the origin of an external protocol handler prompt obscured (Windows)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>TopChrome>TabStrip>SplitView",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "138.0.7204.35",
+  "cve_ids": [],
+  "reporter": "pu...@gmail.com",
+  "assignee": "ag...@google.com",
+  "created_date": "2025-06-20T17:53:59+00:00",
+  "modified_date": "2025-11-19T12:50:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": "report of lower impact security UI issue",
+  "attachments": [
+    {
+      "id": 66940112,
+      "filename": "chrome repro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2742647,
+      "url": "https://issues.chromium.org/action/issues/426480606/attachments/66940112?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67029781,
+      "filename": "expected.png",
+      "mime_type": "image/png",
+      "size_bytes": 78955,
+      "url": "https://issues.chromium.org/action/issues/426480606/attachments/67029781?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67030751,
+      "filename": "actual.png",
+      "mime_type": "image/png",
+      "size_bytes": 50801,
+      "url": "https://issues.chromium.org/action/issues/426480606/attachments/67030751?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68402635,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/426480606/attachments/68402635?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68402609,
+      "filename": "Verified Fix.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 321172,
+      "url": "https://issues.chromium.org/action/issues/426480606/attachments/68402609?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 79,
+  "description_snippet": "# Steps to reproduce the problem\n1. Enable the #side-by-side flag \n2. Open https://microsoft-application-new-ai.glitch.me in Chrome Browser\n2. Right click and open in Split view\n\n`Result:` external protocol handler prompt obscured and showing above microsoft.com\n\n# Problem Description\nopening link i"
+}

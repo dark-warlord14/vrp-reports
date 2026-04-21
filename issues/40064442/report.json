@@ -1,0 +1,49 @@
+{
+  "id": "40064442",
+  "url": "https://issues.chromium.org/issues/40064442",
+  "title": "Regression: External protocol confirmation dialog may overlap with other origins",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Mobile>Intents, UI>Browser>Navigation",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zy...@gmail.com",
+  "assignee": "qp...@google.com",
+  "created_date": "2023-05-09T02:41:20+00:00",
+  "modified_date": "2024-03-19T13:02:03+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53104538,
+      "filename": "spoof_ioschrome.html",
+      "mime_type": "text/plain",
+      "size_bytes": 138,
+      "url": "https://issues.chromium.org/action/issues/40064442/attachments/53104538?download=true",
+      "local_path": "attachments/spoof_ioschrome.html"
+    },
+    {
+      "id": 53104539,
+      "filename": "PHOTO_20230509_103930056.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 815266,
+      "url": "https://issues.chromium.org/action/issues/40064442/attachments/53104539?download=true",
+      "local_path": "attachments/PHOTO_20230509_103930056.jpg"
+    },
+    {
+      "id": 53104540,
+      "filename": "PHOTO_20230509_103930216.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 670052,
+      "url": "https://issues.chromium.org/action/issues/40064442/attachments/53104540?download=true",
+      "local_path": "attachments/PHOTO_20230509_103930216.jpg"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. 1.Open the attached spoof_ioschrome.html using iOS chrome:  \n```  \n<script>  \nlocation.href = \"tg:1\"  \n//location.href = \"tel:1\"  \nsetTimeout('location.href = \"https://apple.com\"', 500)  \n</script>  \n```  \n  \n2. you should see the external protocol confirmat"
+}

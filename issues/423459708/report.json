@@ -1,0 +1,28 @@
+{
+  "id": "423459708",
+  "url": "https://issues.chromium.org/issues/423459708",
+  "title": "JSON.parse() Out-of-Bounds Access to DescriptorArray",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hu...@gmail.com",
+  "assignee": "pt...@chromium.org",
+  "created_date": "2025-06-09T14:07:41+00:00",
+  "modified_date": "2025-09-17T12:42:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": "$3,000 for high quality report of OOB read / user information disclosure + $1,000 bisect bonus",
+  "attachments": [],
+  "update_count": 63,
+  "description_snippet": "VULNERABILITY DETAILS\n\nI will explain what happened in poc\n\n### 1 prepare map transition\n\nFirstly, `makeJson()` constructs the following map transition, where `map1` has the property `str`, `map2` has two properties: `str, f`, and `map1` and `map2` share the same `DescriptorArray`.\n\n\n```\n       map1"
+}

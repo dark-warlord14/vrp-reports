@@ -1,0 +1,49 @@
+{
+  "id": "40064579",
+  "url": "https://issues.chromium.org/issues/40064579",
+  "title": "Security: Chrome iOS iframe SandBox Download",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Mobile>iOSWeb>Security",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ia...@gmail.com",
+  "assignee": "aj...@google.com",
+  "created_date": "2023-05-15T18:54:37+00:00",
+  "modified_date": "2024-07-16T22:32:22+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53032275,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064579/attachments/53032275?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53032276,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064579/attachments/53032276?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53032277,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064579/attachments/53032277?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "By inspiring an older report, interestingly noted that this vulnerability is affecting Safari iOS (Webkit) which should be taken care by Apple only. Hence reported to them. Report OE194060593136\r\n\r\nSeems like Chrome Android is also vulnerable.\r\n\r\nAs of now Safari don't have this feature but I have r"
+}

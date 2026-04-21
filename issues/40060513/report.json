@@ -1,0 +1,49 @@
+{
+  "id": "40060513",
+  "url": "https://issues.chromium.org/issues/40060513",
+  "title": "Security: heap-use-after-free ui/events/event_processor.cc:77:26 in ui::EventProcessor::OnEventFromSource(ui::Event*)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Aura, OS>Inputs",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rh...@gmail.com",
+  "assignee": "os...@chromium.org",
+  "created_date": "2022-08-05T19:16:46+00:00",
+  "modified_date": "2024-01-06T00:11:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53121711,
+      "filename": "1350561.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 6950352,
+      "url": "https://issues.chromium.org/action/issues/40060513/attachments/53121711?download=true",
+      "local_path": "attachments/1350561.webm"
+    },
+    {
+      "id": 53121863,
+      "filename": "tested-device.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 105202,
+      "url": "https://issues.chromium.org/action/issues/40060513/attachments/53121863?download=true",
+      "local_path": "attachments/tested-device.jpeg"
+    },
+    {
+      "id": 53121864,
+      "filename": "tested-on-dut.log",
+      "mime_type": "text/plain",
+      "size_bytes": 10994,
+      "url": "https://issues.chromium.org/action/issues/40060513/attachments/53121864?download=true",
+      "local_path": "attachments/tested-on-dut.log"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "**VERSION**   \nChrome Version: Chromium 106.0.5221.0  \nOperating System: linux-chromeOS  \n  \n**REPRODUCTION CASE**   \nOn the real devices with touchscreen, to reproduce this issue it requires alt+tab. In the emulator linux-chromeOS it requires --ash-dev-shortcuts --force-tablet-mode=clamshell --touc"
+}

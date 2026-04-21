@@ -1,0 +1,26 @@
+{
+  "id": "40059630",
+  "url": "https://issues.chromium.org/issues/40059630",
+  "title": "Heap-use-after-free in blink::NGHighlightPainter::NGHighlightPainter",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Paint",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "fu...@chromium.org",
+  "created_date": "2022-05-10T19:15:08+00:00",
+  "modified_date": "2022-08-17T17:31:01+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 6000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 51,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=5627760148152320\n\nFuzzer: miaubiz_css_fuzzer\nJob Type: windows_asan_chrome_no_sandbox\nPlatform Id: windows\n\nCrash Type: Heap-use-after-free READ 4\nCrash Address: 0x11af675c6f74\nCrash State:\n  blink::NGHighlightPainter::NGHighlightPainter\n  blink:"
+}

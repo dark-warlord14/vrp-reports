@@ -1,0 +1,57 @@
+{
+  "id": "40081649",
+  "url": "https://issues.chromium.org/issues/40081649",
+  "title": "Alert popup with no and/or inaccurate origin identification",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Omnibox>SecurityIndicators, UI>Browser>PopupBlocker",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2016-1615"
+  ],
+  "reporter": "ro...@gmail.com",
+  "assignee": "kk...@chromium.org",
+  "created_date": "2015-03-18T04:28:44+00:00",
+  "modified_date": "2024-01-06T00:15:50+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53330645,
+      "filename": "google.html",
+      "mime_type": "text/html",
+      "size_bytes": 691,
+      "url": "https://issues.chromium.org/action/issues/40081649/attachments/53330645?download=true",
+      "local_path": "attachments/google.html"
+    },
+    {
+      "id": 53330728,
+      "filename": "Screen Shot 2015-05-18 at 9.50.48 AM.png",
+      "mime_type": "image/png",
+      "size_bytes": 22866,
+      "url": "https://issues.chromium.org/action/issues/40081649/attachments/53330728?download=true",
+      "local_path": "attachments/Screen Shot 2015-05-18 at 9.50.48 AM.png"
+    },
+    {
+      "id": 53330742,
+      "filename": "iOS Simulator Screen Shot May 18, 2015, 2.10.18 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 74029,
+      "url": "https://issues.chromium.org/action/issues/40081649/attachments/53330742?download=true",
+      "local_path": "attachments/iOS Simulator Screen Shot May 18, 2015, 2.10.18 PM.png"
+    },
+    {
+      "id": 53330795,
+      "filename": "2.png",
+      "mime_type": "image/png",
+      "size_bytes": 42033,
+      "url": "https://issues.chromium.org/action/issues/40081649/attachments/53330795?download=true",
+      "local_path": "attachments/2.png"
+    }
+  ],
+  "update_count": 72,
+  "description_snippet": "Steps to reproduce the problem:\r\n1. Visit a malicious website http://ronmasas.com/google\r\n2. Click on a link (this link will open a popup)\r\n3. Google.com ask for your password\r\n\r\nWhat is the expected behavior?\r\nWhen a website use javascript to create alerts using javascript by using one of the follo"
+}

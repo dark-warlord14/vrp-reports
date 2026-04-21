@@ -1,0 +1,49 @@
+{
+  "id": "40059790",
+  "url": "https://issues.chromium.org/issues/40059790",
+  "title": "Security: heap-after-free on components/exo/extended_drag_source.cc (Lacros)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Shell>UIFoundations",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rh...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2022-05-29T03:21:18+00:00",
+  "modified_date": "2024-01-09T05:06:18+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53395025,
+      "filename": "screencast__00083.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2577615,
+      "url": "https://issues.chromium.org/action/issues/40059790/attachments/53395025?download=true",
+      "local_path": "attachments/screencast_00083.webm"
+    },
+    {
+      "id": 53395189,
+      "filename": "screencast_00022.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 3053187,
+      "url": "https://issues.chromium.org/action/issues/40059790/attachments/53395189?download=true",
+      "local_path": "attachments/screencast_00022.webm"
+    },
+    {
+      "id": 53395190,
+      "filename": "screencast_00021.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2838722,
+      "url": "https://issues.chromium.org/action/issues/40059790/attachments/53395190?download=true",
+      "local_path": "attachments/screencast_00021.webm"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen dragging a new tab the |GetDisplayNearestWindow| is holding drag_source_window_. Since in the first attempt detaching tab |GetDisplayNearestWindow| didn't get notify if the drag_source_window_ has been released then the second attempt join/merge into browser cause U"
+}

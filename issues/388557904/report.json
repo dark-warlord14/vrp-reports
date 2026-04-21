@@ -1,0 +1,45 @@
+{
+  "id": "388557904",
+  "url": "https://issues.chromium.org/issues/388557904",
+  "title": " access-violation on unknown address 0x7ffde90a6f3c in chrome_pdf::`anonymous namespace'::GetRotatedRectF ",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2025-01-09T03:14:28+00:00",
+  "modified_date": "2025-04-20T12:37:20+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "report of user information disclosure / read on an uninitialized address in a sandboxed process",
+  "attachments": [
+    {
+      "id": 62057278,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 39,
+      "url": "https://issues.chromium.org/action/issues/388557904/attachments/62057278?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62057279,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 124,
+      "url": "https://issues.chromium.org/action/issues/388557904/attachments/62057279?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "VULNERABILITY DETAILS\naccess-violation on unknown address 0x7ffde90a6f3c in chrome_pdf::`anonymous namespace'::GetRotatedRectF \n\nVERSION\nChromium\t133.0.6941.0 (Developer Build) (64-bit) \nOS\tWindows 11 Version 24H2 (Build 26100.2605)\n\nREPRODUCTION CASE\n1. Download the latest asan build.\n2. run the co"
+}

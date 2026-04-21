@@ -1,0 +1,59 @@
+{
+  "id": "40060000",
+  "url": "https://issues.chromium.org/issues/40060000",
+  "title": "Security: use after free in GraphicsPipeline::containsImageWrite",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>SwiftShader",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2022-06-18T11:13:51+00:00",
+  "modified_date": "2024-01-09T06:15:39+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53017299,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4914,
+      "url": "https://issues.chromium.org/action/issues/40060000/attachments/53017299?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53017300,
+      "filename": "1.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1606,
+      "url": "https://issues.chromium.org/action/issues/40060000/attachments/53017300?download=true",
+      "local_path": "attachments/1.webm"
+    },
+    {
+      "id": 53017422,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 28259,
+      "url": "https://issues.chromium.org/action/issues/40060000/attachments/53017422?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53017535,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 27871,
+      "url": "https://issues.chromium.org/action/issues/40060000/attachments/53017535?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 87,
+  "description_snippet": "**VERSION** :  \nChrome Version: Chromium 104.0.5098.0(dev), 104.0.5083.0 (Official Build) dev (64-bit)  \nOperating System: Ubuntu 20.04  \n  \n./chrome --user-data-dir=/tmp/x1 http://localhost:8001/crash.html  \nWait a few seconds and it will repro immediately.  \nType of crash: [gpu]  \n  \n=========="
+}

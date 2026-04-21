@@ -1,0 +1,68 @@
+{
+  "id": "40054110",
+  "url": "https://issues.chromium.org/issues/40054110",
+  "title": "Security: Use After Free in UserMediaRequest::OnMediaStreamInitialized",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>MediaStream",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2020-6422",
+    "CVE-2020-6550"
+  ],
+  "reporter": "et...@gmail.com",
+  "assignee": "gu...@chromium.org",
+  "created_date": "2020-12-08T05:21:56+00:00",
+  "modified_date": "2024-02-27T13:21:14+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52940151,
+      "filename": "media1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 535,
+      "url": "https://issues.chromium.org/action/issues/40054110/attachments/52940151?download=true",
+      "local_path": "attachments/media1.html"
+    },
+    {
+      "id": 52940152,
+      "filename": "media2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1167,
+      "url": "https://issues.chromium.org/action/issues/40054110/attachments/52940152?download=true",
+      "local_path": "attachments/media2.html"
+    },
+    {
+      "id": 52940153,
+      "filename": "BED5219FA8905053665B3F4B6B0D80BD.png",
+      "mime_type": "image/png",
+      "size_bytes": 139803,
+      "url": "https://issues.chromium.org/action/issues/40054110/attachments/52940153?download=true",
+      "local_path": "attachments/BED5219FA8905053665B3F4B6B0D80BD.png"
+    },
+    {
+      "id": 52940154,
+      "filename": "D4BF4EA3BAED4994E3C5CEC6193CA5AB.png",
+      "mime_type": "image/png",
+      "size_bytes": 153628,
+      "url": "https://issues.chromium.org/action/issues/40054110/attachments/52940154?download=true",
+      "local_path": "attachments/D4BF4EA3BAED4994E3C5CEC6193CA5AB.png"
+    },
+    {
+      "id": 52940167,
+      "filename": "patch_log.png",
+      "mime_type": "image/png",
+      "size_bytes": 143460,
+      "url": "https://issues.chromium.org/action/issues/40054110/attachments/52940167?download=true",
+      "local_path": "attachments/patch_log.png"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.67 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nInclude the attached files media-1.html, media-2.html in the same folder and serve it on local host. open media-1.html in the chromi"
+}

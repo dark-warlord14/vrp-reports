@@ -1,0 +1,62 @@
+{
+  "id": "40059381",
+  "url": "https://issues.chromium.org/issues/40059381",
+  "title": "Security: Heap Buffer Overflow in mojo Message",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>API, Internals>Mojo>Bindings",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "ph...@chromium.org",
+  "created_date": "2022-04-14T16:11:18+00:00",
+  "modified_date": "2024-01-09T10:37:17+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52906617,
+      "filename": "copy_mojo_js_bindings.py",
+      "mime_type": "text/plain",
+      "size_bytes": 514,
+      "url": "https://issues.chromium.org/action/issues/40059381/attachments/52906617?download=true",
+      "local_path": "attachments/copy_mojo_js_bindings.py"
+    },
+    {
+      "id": 52906619,
+      "filename": "release_asan",
+      "mime_type": "text/plain",
+      "size_bytes": 12854,
+      "url": "https://issues.chromium.org/action/issues/40059381/attachments/52906619?download=true",
+      "local_path": "attachments/release_asan"
+    },
+    {
+      "id": 52906620,
+      "filename": "debug_crash",
+      "mime_type": "text/plain",
+      "size_bytes": 5707,
+      "url": "https://issues.chromium.org/action/issues/40059381/attachments/52906620?download=true",
+      "local_path": "attachments/debug_crash"
+    },
+    {
+      "id": 52906621,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1251,
+      "url": "https://issues.chromium.org/action/issues/40059381/attachments/52906621?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 98,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe Message Constructor[1] consider that the payload's size would always in Uint32 Range.However we can use (new WebAssembly.Memory({initial:65536})).buffer to get an ArrayBuffer which size is 0x100000000, larger than Uint32 Range.  \nThe payload's size would be truncated"
+}

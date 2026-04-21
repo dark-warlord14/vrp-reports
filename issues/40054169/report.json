@@ -1,0 +1,68 @@
+{
+  "id": "40054169",
+  "url": "https://issues.chromium.org/issues/40054169",
+  "title": "Security: Bypass iframe security policy in the portal element",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Portals, Internals>Plugins>PDF, Platform>Apps>BrowserTag, UI>Browser>Navigation",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "mc...@chromium.org",
+  "created_date": "2020-12-14T14:36:43+00:00",
+  "modified_date": "2024-01-09T02:48:13+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52883197,
+      "filename": "poc.png",
+      "mime_type": "image/png",
+      "size_bytes": 220217,
+      "url": "https://issues.chromium.org/action/issues/40054169/attachments/52883197?download=true",
+      "local_path": "attachments/poc.png"
+    },
+    {
+      "id": 52883198,
+      "filename": "poc1.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 776,
+      "url": "https://issues.chromium.org/action/issues/40054169/attachments/52883198?download=true",
+      "local_path": "attachments/poc1.zip"
+    },
+    {
+      "id": 52883217,
+      "filename": "portal.html",
+      "mime_type": "text/plain",
+      "size_bytes": 170,
+      "url": "https://issues.chromium.org/action/issues/40054169/attachments/52883217?download=true",
+      "local_path": "attachments/portal.html"
+    },
+    {
+      "id": 52883218,
+      "filename": "url.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 694,
+      "url": "https://issues.chromium.org/action/issues/40054169/attachments/52883218?download=true",
+      "local_path": "attachments/url.pdf"
+    },
+    {
+      "id": 52883324,
+      "filename": "1158381 extension popup.png",
+      "mime_type": "image/png",
+      "size_bytes": 17892,
+      "url": "https://issues.chromium.org/action/issues/40054169/attachments/52883324?download=true",
+      "local_path": "attachments/1158381 extension popup.png"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nActivate the pdf in the portal element will bypass 'X-Frame-Options','Mixed Content' and some other security police.  \n  \nthe Chromium deals the http/https website with an error handler.  \nThat maybe causes some other issue.  \n  \nSome like https://crbug.com/chromium/1158"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "40056682",
+  "url": "https://issues.chromium.org/issues/40056682",
+  "title": "Security: Out of bounds memory access in BigInt",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "p4...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2021-07-27T07:03:09+00:00",
+  "modified_date": "2024-01-09T03:24:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53059955,
+      "filename": "test.js",
+      "mime_type": "text/plain",
+      "size_bytes": 78,
+      "url": "https://issues.chromium.org/action/issues/40056682/attachments/53059955?download=true",
+      "local_path": "attachments/test.js"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nwhen dealing with divide operation in bigint, it calculates the result length in `DivideResultLength`[1], and use the length to alloc a bigint object [2].  \n  \n```c++  \nMaybeHandle<BigInt> BigInt::Divide(Isolate\\* isolate, Handle<BigInt> x,"
+}

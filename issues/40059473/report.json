@@ -1,0 +1,36 @@
+{
+  "id": "40059473",
+  "url": "https://issues.chromium.org/issues/40059473",
+  "title": "AddressSanitizer: heap-use-after-free in PermissionRequestChip::CreateBubble",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Omnibox, UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "el...@chromium.org",
+  "created_date": "2022-04-26T09:23:35+00:00",
+  "modified_date": "2024-01-09T06:47:09+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53224288,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17106,
+      "url": "https://issues.chromium.org/action/issues/40059473/attachments/53224288?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "**Steps to reproduce the problem:**   \nThe root cause of the problem is very clear by reading the code and asan log, now I am looking for a stable way to reproduce  \n  \n**Problem Description:**   \n1. In function PermissionRequestChip::CreateBubble the PermissionPromptBubbleView object will be create"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "444803530",
+  "url": "https://issues.chromium.org/issues/444803530",
+  "title": "Windows download logic flaw: % triggers double extension sanitization bypass (.lnk .lnk, .scf .scf)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "br...@gmail.com",
+  "assignee": "xi...@chromium.org",
+  "created_date": "2025-09-13T20:15:46+00:00",
+  "modified_date": "2026-02-11T12:49:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": "1k for the bug (highly mitigated exploitation mitigation bypass), 1k for the patch, 1k for the bisect = 3k",
+  "attachments": [
+    {
+      "id": 69261533,
+      "filename": "poc.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 9276,
+      "url": "https://issues.chromium.org/action/issues/444803530/attachments/69261533?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**Description**\n\nChrome on Windows can be tricked into delivering **dangerous file types** (for example, **.lnk** or **.scf**) despite the download sanitization that should rewrite them to **.download**.  \n\nWhen a suggested filename includes certain **%** sequences after a space following the extens"
+}

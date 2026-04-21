@@ -1,0 +1,94 @@
+{
+  "id": "40063055",
+  "url": "https://issues.chromium.org/issues/40063055",
+  "title": "UAF in permissions::PermissionRequest::request_type",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "tu...@chromium.org",
+  "created_date": "2023-02-13T17:10:18+00:00",
+  "modified_date": "2024-01-09T08:58:13+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 41000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53335266,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 39706,
+      "url": "https://issues.chromium.org/action/issues/40063055/attachments/53335266?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53335267,
+      "filename": "copy_mojo_js_bindings.py",
+      "mime_type": "text/plain",
+      "size_bytes": 512,
+      "url": "https://issues.chromium.org/action/issues/40063055/attachments/53335267?download=true",
+      "local_path": "attachments/copy_mojo_js_bindings.py"
+    },
+    {
+      "id": 53335307,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2717,
+      "url": "https://issues.chromium.org/action/issues/40063055/attachments/53335307?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53335333,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3010,
+      "url": "https://issues.chromium.org/action/issues/40063055/attachments/53335333?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53335334,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 26775,
+      "url": "https://issues.chromium.org/action/issues/40063055/attachments/53335334?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53335340,
+      "filename": "poc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1983,
+      "url": "https://issues.chromium.org/action/issues/40063055/attachments/53335340?download=true",
+      "local_path": "attachments/poc2.html"
+    },
+    {
+      "id": 53335342,
+      "filename": "poc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1983,
+      "url": "https://issues.chromium.org/action/issues/40063055/attachments/53335342?download=true",
+      "local_path": "attachments/poc2.html"
+    },
+    {
+      "id": 53335379,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 26775,
+      "url": "https://issues.chromium.org/action/issues/40063055/attachments/53335379?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 101,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1.python ./copy_mojo_js_bindings.py /path/to/chrome/.../out/Asan/gen  \n2.python SimpleHTTPServer  \n3.Run chromium with the html file.  \n  \n**Problem Description:**   \nThere's a circular_deque[1] in pending_permission_requests_ which hold a raw point of Permissi"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "386992811",
+  "url": "https://issues.chromium.org/issues/386992811",
+  "title": "Security: heap-use-after-free in cc::TileManager::MarkTilesOutOfMemory",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Compositing",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": "131.0.0.0",
+  "cve_ids": [],
+  "reporter": "zh...@gmail.com",
+  "assignee": "zm...@chromium.org",
+  "created_date": "2025-01-01T11:41:22+00:00",
+  "modified_date": "2025-10-22T12:44:25+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "bounty_rationale": "$10,000 for a high-quality report of memory corruption in a sandboxed process + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 61890662,
+      "filename": "asan-PictureLayerTilingSet.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 28679,
+      "url": "https://issues.chromium.org/action/issues/386992811/attachments/61890662?download=true",
+      "local_path": null
+    },
+    {
+      "id": 61890663,
+      "filename": "asan-RemoveTilesInRegion.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 34533,
+      "url": "https://issues.chromium.org/action/issues/386992811/attachments/61890663?download=true",
+      "local_path": null
+    },
+    {
+      "id": 61890664,
+      "filename": "asan-SetRasterSourceAndResize.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 32308,
+      "url": "https://issues.chromium.org/action/issues/386992811/attachments/61890664?download=true",
+      "local_path": null
+    },
+    {
+      "id": 61890665,
+      "filename": "poc.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 430866,
+      "url": "https://issues.chromium.org/action/issues/386992811/attachments/61890665?download=true",
+      "local_path": null
+    },
+    {
+      "id": 61897528,
+      "filename": "poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 141745352,
+      "url": "https://issues.chromium.org/action/issues/386992811/attachments/61897528?download=true",
+      "local_path": null
+    },
+    {
+      "id": 61893817,
+      "filename": "PoC-final.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 251340612,
+      "url": "https://issues.chromium.org/action/issues/386992811/attachments/61893817?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 84,
+  "description_snippet": "# Steps to reproduce the problem\n1. Compile asan chromium on arm mac，The commit I used is `git checkout edaf05b8d1867a0e26a566d19bfcbebc6c117168`\n2. To better reproduce the vulnerability, apply some debugging diff `git apply poc.diff`\n3. Triggering the vulnerability consumes a lot of memory. To make"
+}

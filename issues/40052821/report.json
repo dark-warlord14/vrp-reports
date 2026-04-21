@@ -1,0 +1,57 @@
+{
+  "id": "40052821",
+  "url": "https://issues.chromium.org/issues/40052821",
+  "title": "Security: Private file upload (data exfiltration)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Mobile>Intents",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ka...@gmail.com",
+  "assignee": "qi...@chromium.org",
+  "created_date": "2020-07-12T15:25:21+00:00",
+  "modified_date": "2024-01-09T01:36:04+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53188094,
+      "filename": "poc.apk",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2450893,
+      "url": "https://issues.chromium.org/action/issues/40052821/attachments/53188094?download=true",
+      "local_path": "attachments/poc.apk"
+    },
+    {
+      "id": 53188095,
+      "filename": "server.py",
+      "mime_type": "text/plain",
+      "size_bytes": 737,
+      "url": "https://issues.chromium.org/action/issues/40052821/attachments/53188095?download=true",
+      "local_path": "attachments/server.py"
+    },
+    {
+      "id": 53188096,
+      "filename": "video.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 11628623,
+      "url": "https://issues.chromium.org/action/issues/40052821/attachments/53188096?download=true",
+      "local_path": "attachments/video.mp4"
+    },
+    {
+      "id": 53188097,
+      "filename": "ChromePathInternal.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 141734,
+      "url": "https://issues.chromium.org/action/issues/40052821/attachments/53188097?download=true",
+      "local_path": "attachments/ChromePathInternal.zip"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**This template is ONLY for reporting security bugs. If you are reporting a**   \n**Download Protection Bypass bug, please use the \"Security - Download**   \n**Protection\" template. For all other reports, please use a different**   \n**template.**   \n  \n**Please READ THIS FAQ before filing a bug: https"
+}

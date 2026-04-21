@@ -1,0 +1,62 @@
+{
+  "id": "40061735",
+  "url": "https://issues.chromium.org/issues/40061735",
+  "title": "blink::MediaInspectorContextImpl::CullPlayers",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Media>WebCodecs, Blink>Scheduling",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "tm...@chromium.org",
+  "created_date": "2022-11-14T17:28:22+00:00",
+  "modified_date": "2024-01-09T07:34:00+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53175483,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 33539,
+      "url": "https://issues.chromium.org/action/issues/40061735/attachments/53175483?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53175539,
+      "filename": "launcher.sh",
+      "mime_type": "text/plain",
+      "size_bytes": 470,
+      "url": "https://issues.chromium.org/action/issues/40061735/attachments/53175539?download=true",
+      "local_path": "attachments/launcher.sh"
+    },
+    {
+      "id": 53175540,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 707,
+      "url": "https://issues.chromium.org/action/issues/40061735/attachments/53175540?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53175541,
+      "filename": "xx.mp3",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2349,
+      "url": "https://issues.chromium.org/action/issues/40061735/attachments/53175541?download=true",
+      "local_path": "attachments/xx.mp3"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "**Steps to reproduce the problem:**   \nos:  \nubuntu 22.04  \nchrome version:  \nChromium 109.0.5410.0  \n  \nrepro step:  \nBecause the repro is not stable, I have no poc yet.  \nBut I may know what caused it.  \nThere are 4 related historical issues, and the list is as follows:  \n(a)https://bugs.chromium."
+}

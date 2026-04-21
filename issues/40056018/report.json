@@ -1,0 +1,65 @@
+{
+  "id": "40056018",
+  "url": "https://issues.chromium.org/issues/40056018",
+  "title": "Security: Full screen notification overlap on Windows",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Fullscreen, UI>Browser>FullScreen",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "li...@gmail.com",
+  "assignee": "av...@chromium.org",
+  "created_date": "2021-05-27T06:29:01+00:00",
+  "modified_date": "2024-11-09T15:42:05+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": "$500 thank you reward for report of lower impact security UI bug",
+  "attachments": [
+    {
+      "id": 53029579,
+      "filename": "spf.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 3488270,
+      "url": "https://issues.chromium.org/action/issues/40056018/attachments/53029579?download=true",
+      "local_path": "attachments/spf.webm"
+    },
+    {
+      "id": 53029699,
+      "filename": "screen-capture (7).webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1571926,
+      "url": "https://issues.chromium.org/action/issues/40056018/attachments/53029699?download=true",
+      "local_path": "attachments/screen-capture (7).webm"
+    },
+    {
+      "id": 53029713,
+      "filename": "screen-capture (3).webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1203501,
+      "url": "https://issues.chromium.org/action/issues/40056018/attachments/53029713?download=true",
+      "local_path": "attachments/screen-capture (3).webm"
+    },
+    {
+      "id": 53029727,
+      "filename": "screen-capture (4).webm",
+      "mime_type": "video/webm",
+      "size_bytes": 360226,
+      "url": "https://issues.chromium.org/action/issues/40056018/attachments/53029727?download=true",
+      "local_path": "attachments/screen-capture (4).webm"
+    },
+    {
+      "id": 57845502,
+      "filename": "screen-capture (24).webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1082705,
+      "url": "https://issues.chromium.org/action/issues/40056018/attachments/57845502?download=true",
+      "local_path": "attachments/screen-capture (24).webm"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.77 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nSimilar to https://crbug.com/chromium/1037730\r\n\r\nI create https://crbug.com/chromium/1212909 you made it public\r\n\r\n- Please allow pop-ups"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "40055982",
+  "url": "https://issues.chromium.org/issues/40055982",
+  "title": "Security: UAF in ServiceWorker with bfcache",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>ServiceWorker, UI>Browser>Navigation>BFCache",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jt...@gmail.com",
+  "assignee": "as...@chromium.org",
+  "created_date": "2021-05-24T11:16:04+00:00",
+  "modified_date": "2024-01-09T03:25:17+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 25000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53038736,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1923,
+      "url": "https://issues.chromium.org/action/issues/40055982/attachments/53038736?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 53038737,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 27453,
+      "url": "https://issues.chromium.org/action/issues/40055982/attachments/53038737?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 81,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nIn function ServiceWorkerContainerHost::UpdateController, |this| was removed from |controllee_map_| of the old controller [1]. However, |controllee_map_| would not contain |this| if the ServiceWorkerContainerHost was in back-forward cache, and |this| should be remo"
+}

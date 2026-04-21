@@ -1,0 +1,44 @@
+{
+  "id": "394350433",
+  "url": "https://issues.chromium.org/issues/394350433",
+  "title": "Heap memory corruption due to overly large parameter count in WasmToJSWrapper tier-up",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2025-02-04T20:35:41+00:00",
+  "modified_date": "2025-07-10T16:58:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "bounty_rationale": "$10,000 for high quality report of memory corruption in a sandboxed process / the renderer + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 62642829,
+      "filename": "wrapper.html",
+      "mime_type": "text/html",
+      "size_bytes": 249,
+      "url": "https://issues.chromium.org/action/issues/394350433/attachments/62642829?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62642830,
+      "filename": "wasmtojs-tierup-isel-crash.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 75928,
+      "url": "https://issues.chromium.org/action/issues/394350433/attachments/62642830?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 78,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Summary\n\nHeap memory corruption due to overly large JS parameter count of `0xfffa` and above in Wasm-to-JS wrapper tier-up compilation causing out-of-bounds memory access at `InstructionSelectorT::InitializeCallBuffer()`.\n\n\n#### Details\n\nWhen compiling a Wasm-to-JS wr"
+}

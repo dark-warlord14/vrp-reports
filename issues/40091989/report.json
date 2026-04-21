@@ -1,0 +1,49 @@
+{
+  "id": "40091989",
+  "url": "https://issues.chromium.org/issues/40091989",
+  "title": "Security: Google Update for Windows allows arbitrary file creation when logs are enabled",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Installer",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@gmail.com",
+  "assignee": "ga...@chromium.org",
+  "created_date": "2018-07-22T15:53:17+00:00",
+  "modified_date": "2024-01-09T07:50:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53093330,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 274188,
+      "url": "https://issues.chromium.org/action/issues/40091989/attachments/53093330?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 53093331,
+      "filename": "GoogleUpdate.ini",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 214,
+      "url": "https://issues.chromium.org/action/issues/40091989/attachments/53093331?download=true",
+      "local_path": "attachments/GoogleUpdate.ini"
+    },
+    {
+      "id": 53093332,
+      "filename": "FakeDllLoader.cpp",
+      "mime_type": "text/plain",
+      "size_bytes": 4171,
+      "url": "https://issues.chromium.org/action/issues/40091989/attachments/53093332?download=true",
+      "local_path": "attachments/FakeDllLoader.cpp"
+    }
+  ],
+  "update_count": 96,
+  "description_snippet": "SUMMARY  \n  \nThe permissive access rights on the log folder & files set by GoogleUpdate on Windows (when logs are enabled) can be abused to create arbitrary files with write access. This can be used by an unprivileged user to obtain SYSTEM privileges.  \n  \n**VULNERABILITY DETAILS**   \n  \nWhen config"
+}

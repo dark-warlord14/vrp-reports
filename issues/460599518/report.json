@@ -1,0 +1,61 @@
+{
+  "id": "460599518",
+  "url": "https://issues.chromium.org/issues/460599518",
+  "title": "Security: Heap-use-after-free in LoginStateChecker::OnExecutionResponseCallback ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Passwords",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "142.0.7444.59",
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "vs...@google.com",
+  "created_date": "2025-11-14T07:22:54+00:00",
+  "modified_date": "2026-02-28T12:44:00+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "Heavily mitigated memory corruption in a non-sandboxed process",
+  "attachments": [
+    {
+      "id": 71004691,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 91072,
+      "url": "https://issues.chromium.org/action/issues/460599518/attachments/71004691?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71004692,
+      "filename": "change.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11810,
+      "url": "https://issues.chromium.org/action/issues/460599518/attachments/71004692?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71004693,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1125,
+      "url": "https://issues.chromium.org/action/issues/460599518/attachments/71004693?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71004694,
+      "filename": "poc.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2364809,
+      "url": "https://issues.chromium.org/action/issues/460599518/attachments/71004694?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 68,
+  "description_snippet": "# Steps to reproduce the problem\n1. apply the change.txt to the newest Chromium and compile chrome with ASAN\n2. start a server at poc.html's folder : python -m SimpleHTTPServer 8605\n3. ./chrome  --user-data-dir=/tmp/noexist  --password-change-url=\"http://127.0.0.1:8605/\" http://127.0.0.1:8605/poc.ht"
+}

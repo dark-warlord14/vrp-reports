@@ -1,0 +1,77 @@
+{
+  "id": "40058195",
+  "url": "https://issues.chromium.org/issues/40058195",
+  "title": "AddressSanitizer: heap-use-after-free in blink::NetworkStateNotifier::NotifyObserversOnTaskRunner",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Network",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "dm...@gmail.com",
+  "assignee": "yo...@chromium.org",
+  "created_date": "2021-12-10T11:08:34+00:00",
+  "modified_date": "2024-01-09T07:41:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53057854,
+      "filename": "NetworkStateNotifier-heap-use-after-free.html",
+      "mime_type": "text/plain",
+      "size_bytes": 637,
+      "url": "https://issues.chromium.org/action/issues/40058195/attachments/53057854?download=true",
+      "local_path": "attachments/NetworkStateNotifier-heap-use-after-free.html"
+    },
+    {
+      "id": 53057855,
+      "filename": "ChromiumUseAfterFreeInNetworkStateNotifier.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6179267,
+      "url": "https://issues.chromium.org/action/issues/40058195/attachments/53057855?download=true",
+      "local_path": "attachments/ChromiumUseAfterFreeInNetworkStateNotifier.mp4"
+    },
+    {
+      "id": 53057879,
+      "filename": "NetworkStateNotifier-heap-use-after-free.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 29513,
+      "url": "https://issues.chromium.org/action/issues/40058195/attachments/53057879?download=true",
+      "local_path": "attachments/NetworkStateNotifier-heap-use-after-free.txt"
+    },
+    {
+      "id": 53057886,
+      "filename": "fix.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1178,
+      "url": "https://issues.chromium.org/action/issues/40058195/attachments/53057886?download=true",
+      "local_path": "attachments/fix.diff"
+    },
+    {
+      "id": 53057912,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 28808,
+      "url": "https://issues.chromium.org/action/issues/40058195/attachments/53057912?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53057913,
+      "filename": "bt.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 4070,
+      "url": "https://issues.chromium.org/action/issues/40058195/attachments/53057913?download=true",
+      "local_path": "attachments/bt.txt"
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0\r\n\r\nSteps to reproduce the problem:\r\n1. Open attached NetworkStateNotifier-heap-use-after-free.html in Chromium (\"./Chromium --user-data-dir=/tmp/temporary-test-dir NetworkStateNotifier-heap-use-after-free.h"
+}

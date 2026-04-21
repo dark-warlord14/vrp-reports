@@ -1,0 +1,65 @@
+{
+  "id": "40061975",
+  "url": "https://issues.chromium.org/issues/40061975",
+  "title": "Security:UAF in content::SyntheticMouseDriver::DispatchEvent(browser process)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Input, Internals>Core",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "bo...@chromium.org",
+  "created_date": "2022-11-30T14:26:31+00:00",
+  "modified_date": "2024-01-09T08:34:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53381157,
+      "filename": "extension.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1353,
+      "url": "https://issues.chromium.org/action/issues/40061975/attachments/53381157?download=true",
+      "local_path": "attachments/extension.zip"
+    },
+    {
+      "id": 53381158,
+      "filename": "webserver.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 57792,
+      "url": "https://issues.chromium.org/action/issues/40061975/attachments/53381158?download=true",
+      "local_path": "attachments/webserver.zip"
+    },
+    {
+      "id": 53381159,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 21934,
+      "url": "https://issues.chromium.org/action/issues/40061975/attachments/53381159?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53381265,
+      "filename": "newpoc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 58015,
+      "url": "https://issues.chromium.org/action/issues/40061975/attachments/53381265?download=true",
+      "local_path": "attachments/newpoc.zip"
+    },
+    {
+      "id": 53381266,
+      "filename": "extension.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1353,
+      "url": "https://issues.chromium.org/action/issues/40061975/attachments/53381266?download=true",
+      "local_path": "attachments/extension.zip"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUAF in content::SyntheticMouseDriver::DispatchEvent in the browser process  \n  \n**VERSION**   \nChromium\t110.0.5450.0 (Developer Build) (64-bit)   \nRevision\tb54b2f50db2faf68b7eb7ca69984fb1b15cc3d22-refs/heads/main@{#1077406}  \nOS\tLinux  \n  \n  \n**REPRODUCTION CASE**   \nThi"
+}

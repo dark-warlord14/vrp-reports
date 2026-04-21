@@ -1,0 +1,52 @@
+{
+  "id": "40058989",
+  "url": "https://issues.chromium.org/issues/40058989",
+  "title": "Security: heap-use-after-free in ui::EventTarget::RemovePreTargetHandler",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Forms>Color, Blink>Portals",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "mc...@chromium.org",
+  "created_date": "2022-03-05T23:01:20+00:00",
+  "modified_date": "2022-07-07T17:32:02+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53269549,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 212,
+      "url": "https://issues.chromium.org/action/issues/40058989/attachments/53269549?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53269550,
+      "filename": "portal.html",
+      "mime_type": "text/plain",
+      "size_bytes": 163,
+      "url": "https://issues.chromium.org/action/issues/40058989/attachments/53269550?download=true",
+      "local_path": "attachments/portal.html"
+    },
+    {
+      "id": 53269551,
+      "filename": "uaf.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 491693,
+      "url": "https://issues.chromium.org/action/issues/40058989/attachments/53269551?download=true",
+      "local_path": "attachments/uaf.mp4"
+    }
+  ],
+  "update_count": 22,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nSelecting a color from an eye dropper initiated in a portal predecessor that has been adopted causes a UAF.  \n  \n**VERSION**   \nChrome Version: 101.0.4911.0 + stable  \nOperating System: Windows 10  \n  \n**REPRODUCTION CASE**   \n1. python3 -m http.server 9000  \n2. chrome -"
+}

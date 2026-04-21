@@ -1,0 +1,86 @@
+{
+  "id": "41481374",
+  "url": "https://issues.chromium.org/issues/41481374",
+  "title": "UAF in mojo::WaitSet::State::Context::OnNotification",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Storage, Internals>Mojo",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "aj...@chromium.org",
+  "created_date": "2023-12-06T06:15:17+00:00",
+  "modified_date": "2024-08-16T19:24:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52885711,
+      "filename": "test.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1315,
+      "url": "https://issues.chromium.org/action/issues/41481374/attachments/52885711?download=true",
+      "local_path": "attachments/test.js"
+    },
+    {
+      "id": 52885712,
+      "filename": "main.html",
+      "mime_type": "text/plain",
+      "size_bytes": 6135,
+      "url": "https://issues.chromium.org/action/issues/41481374/attachments/52885712?download=true",
+      "local_path": "attachments/main.html"
+    },
+    {
+      "id": 52885713,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1607,
+      "url": "https://issues.chromium.org/action/issues/41481374/attachments/52885713?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 52885714,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 41821,
+      "url": "https://issues.chromium.org/action/issues/41481374/attachments/52885714?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 52885766,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1105,
+      "url": "https://issues.chromium.org/action/issues/41481374/attachments/52885766?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 52885767,
+      "filename": "asan2.log",
+      "mime_type": "text/plain",
+      "size_bytes": 39954,
+      "url": "https://issues.chromium.org/action/issues/41481374/attachments/52885767?download=true",
+      "local_path": "attachments/asan2.log"
+    },
+    {
+      "id": 52885777,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 429,
+      "url": "https://issues.chromium.org/action/issues/41481374/attachments/52885777?download=true",
+      "local_path": "attachments/crash.html"
+    }
+  ],
+  "update_count": 100,
+  "description_snippet": "**Steps to reproduce the problem:**   \ntested os: Ubuntu 22.04  \ntested chromium version:  \nChromium 121.0.6129.0  \nChromium 121.0.6163.0(gs://chromium-browser-asan/linux-release/asan-linux-release-1232441.zip)  \n  \nRepro Steps:  \nDue to the instability of the reproduction, I used a Puppeteer script"
+}

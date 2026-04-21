@@ -1,0 +1,49 @@
+{
+  "id": "40056681",
+  "url": "https://issues.chromium.org/issues/40056681",
+  "title": "Referrer Spoof using <base href> and <style>",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>Referrer",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pr...@gmail.com",
+  "assignee": "da...@chromium.org",
+  "created_date": "2021-07-27T05:45:19+00:00",
+  "modified_date": "2024-01-09T08:49:27+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52899398,
+      "filename": "Screenshot_google-chrome-unstable_20210727110808.png",
+      "mime_type": "image/png",
+      "size_bytes": 148419,
+      "url": "https://issues.chromium.org/action/issues/40056681/attachments/52899398?download=true",
+      "local_path": "attachments/Screenshot_google-chrome-unstable_20210727110808.png"
+    },
+    {
+      "id": 52899399,
+      "filename": "Screenshot_select-area_20210727112519.png",
+      "mime_type": "image/png",
+      "size_bytes": 68037,
+      "url": "https://issues.chromium.org/action/issues/40056681/attachments/52899399?download=true",
+      "local_path": "attachments/Screenshot_select-area_20210727112519.png"
+    },
+    {
+      "id": 52899400,
+      "filename": "Screenshot_select-area_20210727112553.png",
+      "mime_type": "image/png",
+      "size_bytes": 40634,
+      "url": "https://issues.chromium.org/action/issues/40056681/attachments/52899400?download=true",
+      "local_path": "attachments/Screenshot_select-area_20210727112553.png"
+    }
+  ],
+  "update_count": 69,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.8 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nThe bug was originally filed by Jun (https://crbug.com/1152999) and was fixed recently. However, it still works in latest versions of Chrome Canary a"
+}

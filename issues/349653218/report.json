@@ -1,0 +1,41 @@
+{
+  "id": "349653218",
+  "url": "https://issues.chromium.org/issues/349653218",
+  "title": "AddressSanitizer: heap-use-after-free on NetExportMessageHandler::SendEmail",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Network>Logging",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": "126.0.0.0",
+  "cve_ids": [],
+  "reporter": "li...@gmail.com",
+  "assignee": "ri...@chromium.org",
+  "created_date": "2024-06-27T04:42:51+00:00",
+  "modified_date": "2025-11-14T02:48:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of highly mitigated memory corruption in a non-sandboxed process -- mitigated by preconditions to exploit and user gesture",
+  "attachments": [
+    {
+      "id": 57513790,
+      "filename": "uaf5-asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 105811,
+      "url": "https://issues.chromium.org/action/issues/349653218/attachments/57513790?download=true",
+      "local_path": "attachments/uaf5-asan.log"
+    },
+    {
+      "id": 57528458,
+      "filename": "fix5.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1118,
+      "url": "https://issues.chromium.org/action/issues/349653218/attachments/57528458?download=true",
+      "local_path": "attachments/fix5.patch"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "# Steps to reproduce the problem\nstep to repro:\n1. navigate to chrome://net-export\n2. click send email and close the site.\n\n# Problem Description\n0. In classic mode, closing WebContents before the callback is run will cause the NetExportMessageHandler to be deleted. Then lead to UAF.\n```cpp\nvoid Net"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "40060134",
+  "url": "https://issues.chromium.org/issues/40060134",
+  "title": "Security: Page can obtain autofill data with two consecutive taps with minimal user awareness, bypasses issue 1240472 and issue 1279268 fixes",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Privacy",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "jk...@google.com",
+  "created_date": "2022-07-02T01:05:02+00:00",
+  "modified_date": "2024-01-09T07:46:48+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53294433,
+      "filename": "autofill-two-taps.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 187584,
+      "url": "https://issues.chromium.org/action/issues/40060134/attachments/53294433?download=true",
+      "local_path": "attachments/autofill-two-taps.mp4"
+    },
+    {
+      "id": 53294434,
+      "filename": "autofill-two-taps.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3042,
+      "url": "https://issues.chromium.org/action/issues/40060134/attachments/53294434?download=true",
+      "local_path": "attachments/autofill-two-taps.html"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA page can make a user select an autofill item with two consecutive taps with minimal or no user awareness.  \n  \nNormally Chrome requires an intentional selection by the user and clear user awareness to select an autofill item.  \n  \nThis bypasses fixes from https://crbug"
+}

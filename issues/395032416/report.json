@@ -1,0 +1,60 @@
+{
+  "id": "395032416",
+  "url": "https://issues.chromium.org/issues/395032416",
+  "title": "heap-use-after-free in blink::LegacyDOMSnapshotAgent::VisitNode",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "as...@gmail.com",
+  "assignee": "pf...@google.com",
+  "created_date": "2025-02-10T09:05:47+00:00",
+  "modified_date": "2025-06-05T12:39:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": "report of mildly mitigated memory corruption in a sandboxed process / renderer, mitigated by precondition to install malicious extension with debugger permissions",
+  "attachments": [
+    {
+      "id": 62770701,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1292,
+      "url": "https://issues.chromium.org/action/issues/395032416/attachments/62770701?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62770702,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 160,
+      "url": "https://issues.chromium.org/action/issues/395032416/attachments/62770702?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62770703,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 36921,
+      "url": "https://issues.chromium.org/action/issues/395032416/attachments/62770703?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62786211,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1407,
+      "url": "https://issues.chromium.org/action/issues/395032416/attachments/62786211?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 77,
+  "description_snippet": "VULNERABILITY DETAILS\nUAF in blink::LegacyDOMSnapshotAgent::VisitNode\n\nVERSION\nChrome Version: 134.0.6986.0（Developer Build）\nOperating System: Ubuntu\n\nREPRODUCTION CASE\n1. put manifest.json/background.js into the extension_path\n2. run the command:\n ./chrome --user-data-dir=./noexist --no-sandbox --l"
+}

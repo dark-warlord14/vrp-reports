@@ -1,0 +1,45 @@
+{
+  "id": "40056674",
+  "url": "https://issues.chromium.org/issues/40056674",
+  "title": "Security: Overlong iframe CSP attribute allows you to send near-arbitrary length headers to a server and induce server errors",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "1s...@gmail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2021-07-26T16:41:37+00:00",
+  "modified_date": "2024-01-09T03:47:41+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53404462,
+      "filename": "iframe_csp_poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 295,
+      "url": "https://issues.chromium.org/action/issues/40056674/attachments/53404462?download=true",
+      "local_path": "attachments/iframe_csp_poc.html"
+    },
+    {
+      "id": 53404490,
+      "filename": "iframe_csp_timing_poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 933,
+      "url": "https://issues.chromium.org/action/issues/40056674/attachments/53404490?download=true",
+      "local_path": "attachments/iframe_csp_timing_poc.html"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "**VULNERABILITY DETAILS**   \na large iframe csp attribute results in chrome sending a Sec-Fetch-CSP header without any length limit on the request to the iframe's src.  \n  \nthis allows a malicious attacker to induce server errors when the request headers are too large, and the error is detectable vi"
+}

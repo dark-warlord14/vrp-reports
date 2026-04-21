@@ -1,0 +1,73 @@
+{
+  "id": "409619251",
+  "url": "https://issues.chromium.org/issues/409619251",
+  "title": "Buffer Overflow (GPU process) in Chrome Windows Media Foundation Encode Accelerator",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Media>WebCodecs",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "el...@cryptosearch.tools",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2025-04-09T22:11:30+00:00",
+  "modified_date": "2025-08-07T18:38:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": "high-quality report of memory corruption in a highly privileged process",
+  "attachments": [
+    {
+      "id": 64741793,
+      "filename": "video13_configurable.html",
+      "mime_type": "text/html",
+      "size_bytes": 49466,
+      "url": "https://issues.chromium.org/action/issues/409619251/attachments/64741793?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64741794,
+      "filename": "gpu_process_crash.png",
+      "mime_type": "image/png",
+      "size_bytes": 152646,
+      "url": "https://issues.chromium.org/action/issues/409619251/attachments/64741794?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64741795,
+      "filename": "video15_autoload.html",
+      "mime_type": "text/html",
+      "size_bytes": 43857,
+      "url": "https://issues.chromium.org/action/issues/409619251/attachments/64741795?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64741796,
+      "filename": "chromium-exploit-video.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 28957915,
+      "url": "https://issues.chromium.org/action/issues/409619251/attachments/64741796?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64741797,
+      "filename": "video15_autoload.html",
+      "mime_type": "text/html",
+      "size_bytes": 43857,
+      "url": "https://issues.chromium.org/action/issues/409619251/attachments/64741797?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64774930,
+      "filename": "chrome-video-callstack-2.png",
+      "mime_type": "image/png",
+      "size_bytes": 332878,
+      "url": "https://issues.chromium.org/action/issues/409619251/attachments/64774930?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 75,
+  "description_snippet": "---\n\n### Report description\n\n\nBuffer Overflow (GPU process) in Chrome Windows Media Foundation Encode Accelerator\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.g"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "329271490",
+  "url": "https://issues.chromium.org/issues/329271490",
+  "title": "Stack buffer overflow in angle shader translation",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>WebGL, Internals>GPU, Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wg...@gmail.com",
+  "assignee": "ge...@chromium.org",
+  "created_date": "2024-03-13T10:36:06+00:00",
+  "modified_date": "2025-08-20T23:24:52+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 54551947,
+      "filename": "angle.html",
+      "mime_type": "text/html",
+      "size_bytes": 3014,
+      "url": "https://issues.chromium.org/action/issues/329271490/attachments/54551947?download=true",
+      "local_path": "attachments/angle.html"
+    },
+    {
+      "id": 54551948,
+      "filename": "a.vert",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 226,
+      "url": "https://issues.chromium.org/action/issues/329271490/attachments/54551948?download=true",
+      "local_path": "attachments/a.vert"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "VULNERABILITY DETAILS\nThe angle shader translator contains a stack buffer overflow that can be triggered via a malicious shader. The code path is reachable from chromium; in an ASAN build the GPU process crashes with an ASAN violation.\n\nVERSION\nChrome Version: 124.0.6354.0 (Developer Build) (64-bit)"
+}

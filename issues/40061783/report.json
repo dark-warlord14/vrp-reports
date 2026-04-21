@@ -1,0 +1,77 @@
+{
+  "id": "40061783",
+  "url": "https://issues.chromium.org/issues/40061783",
+  "title": "Security: Permissions Prompt UI spoof through a custom CSS cursor",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser, UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "re...@gmail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2022-11-17T11:54:27+00:00",
+  "modified_date": "2023-06-14T17:34:50+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53315414,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1023772,
+      "url": "https://issues.chromium.org/action/issues/40061783/attachments/53315414?download=true",
+      "local_path": "attachments/demo.mp4"
+    },
+    {
+      "id": 53315415,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1984,
+      "url": "https://issues.chromium.org/action/issues/40061783/attachments/53315415?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53315416,
+      "filename": "overlay.png",
+      "mime_type": "image/png",
+      "size_bytes": 1284,
+      "url": "https://issues.chromium.org/action/issues/40061783/attachments/53315416?download=true",
+      "local_path": "attachments/overlay.png"
+    },
+    {
+      "id": 53315417,
+      "filename": "cursor.png",
+      "mime_type": "image/png",
+      "size_bytes": 322,
+      "url": "https://issues.chromium.org/action/issues/40061783/attachments/53315417?download=true",
+      "local_path": "attachments/cursor.png"
+    },
+    {
+      "id": 53315517,
+      "filename": "1385714.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 619601,
+      "url": "https://issues.chromium.org/action/issues/40061783/attachments/53315517?download=true",
+      "local_path": "attachments/1385714.webm"
+    },
+    {
+      "id": 53315518,
+      "filename": "cursor.png",
+      "mime_type": "image/png",
+      "size_bytes": 131,
+      "url": "https://issues.chromium.org/action/issues/40061783/attachments/53315518?download=true",
+      "local_path": "attachments/cursor.png"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nCSS allows setting custom mouse cursors up to 128x128 in size. There are checks in place to prevent this from covering up the browser UI, but there isn't one for the permission prompt (UI>Browser>Permissions>Prompts). A maliciously crafted website can overlay custom cont"
+}

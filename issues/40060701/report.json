@@ -1,0 +1,57 @@
+{
+  "id": "40060701",
+  "url": "https://issues.chromium.org/issues/40060701",
+  "title": "uaf in  webrtc::VideoStreamEncoder::RequestRefreshFrame",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>WebRTC",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "sp...@chromium.org",
+  "created_date": "2022-08-28T19:47:56+00:00",
+  "modified_date": "2024-01-09T06:34:34+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53352343,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 60934,
+      "url": "https://issues.chromium.org/action/issues/40060701/attachments/53352343?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53352344,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1528,
+      "url": "https://issues.chromium.org/action/issues/40060701/attachments/53352344?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53352345,
+      "filename": "launcher.sh",
+      "mime_type": "text/plain",
+      "size_bytes": 2465,
+      "url": "https://issues.chromium.org/action/issues/40060701/attachments/53352345?download=true",
+      "local_path": "attachments/launcher.sh"
+    },
+    {
+      "id": 53352346,
+      "filename": "fake-video.y4m",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 8460628,
+      "url": "https://issues.chromium.org/action/issues/40060701/attachments/53352346?download=true",
+      "local_path": "attachments/fake-video.y4m"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**Steps to reproduce the problem:**   \ntested os:  \nubuntu 22.04  \ntested chrome version:  \n1)Chromium 107.0.5264.0(gs://chromium-browser-asan/linux-release/asan-linux-release-1039798.zip)  \n2)Chromium 106.0.5216.6(custom asan build)  \n    args.gn  \n    is_asan = true  \n    is_debug = false  \n    en"
+}

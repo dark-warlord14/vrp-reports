@@ -1,0 +1,49 @@
+{
+  "id": "40060025",
+  "url": "https://issues.chromium.org/issues/40060025",
+  "title": " heap-use-after-free in RenderViewContextMenu::ExecuteCommand",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Views, UI>Browser>QuickCommands",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "xp...@gmail.com",
+  "assignee": "lg...@chromium.org",
+  "created_date": "2022-06-21T05:01:24+00:00",
+  "modified_date": "2022-10-12T17:32:45+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53342759,
+      "filename": "WindowsTerminal_hrvSbnxb1X.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 9588790,
+      "url": "https://issues.chromium.org/action/issues/40060025/attachments/53342759?download=true",
+      "local_path": "attachments/WindowsTerminal_hrvSbnxb1X.mp4"
+    },
+    {
+      "id": 53342776,
+      "filename": "asan_.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 16234,
+      "url": "https://issues.chromium.org/action/issues/40060025/attachments/53342776?download=true",
+      "local_path": "attachments/asan_.txt"
+    },
+    {
+      "id": 53342783,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 22786,
+      "url": "https://issues.chromium.org/action/issues/40060025/attachments/53342783?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 31,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Enable chrome://flags/#quick-commands and restart.  \n2. Press CTRL + SPACE to open quick commands.  \n3. Right click quick commands input field and enable enhanced spell check. From context menu: Spell Check > Use Enhanced Spell Check  \nuaf ensues!  \n  \n**Pro"
+}

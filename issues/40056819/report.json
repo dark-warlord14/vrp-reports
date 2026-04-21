@@ -1,0 +1,46 @@
+{
+  "id": "40056819",
+  "url": "https://issues.chromium.org/issues/40056819",
+  "title": "Security: v8 CHECK Failed IsStruct_NonInline in Torgue Struct-Tq-Inl",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "re...@yahoo.de",
+  "assignee": "cb...@chromium.org",
+  "created_date": "2021-08-08T08:10:46+00:00",
+  "modified_date": "2024-01-09T08:54:28+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53069616,
+      "filename": "broken.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 71834,
+      "url": "https://issues.chromium.org/action/issues/40056819/attachments/53069616?download=true",
+      "local_path": "attachments/broken.txt"
+    },
+    {
+      "id": 53069617,
+      "filename": "working.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 35849,
+      "url": "https://issues.chromium.org/action/issues/40056819/attachments/53069617?download=true",
+      "local_path": "attachments/working.txt"
+    }
+  ],
+  "update_count": 77,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nHello, I found this bug via fuzzing. It leads to the following CHECK:  \n  \n# Fatal error in gen/torque-generated/src/objects/struct-tq-inl.inc, line 4  \n# Check failed: !v8::internal::FLAG_enable_slow_asserts || (IsStruct_NonInline(\\*this)).  \n  \n  \n  \n**VERSION**   \nI v"
+}

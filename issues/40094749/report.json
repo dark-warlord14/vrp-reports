@@ -1,0 +1,54 @@
+{
+  "id": "40094749",
+  "url": "https://issues.chromium.org/issues/40094749",
+  "title": "Mixed content can be bypassed by sandboxed pages",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature, Blink>SecurityFeature>IFrameSandbox",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2019-04-26T10:51:41+00:00",
+  "modified_date": "2024-01-09T07:51:23+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53147813,
+      "filename": "iframe.html",
+      "mime_type": "text/plain",
+      "size_bytes": 158,
+      "url": "https://issues.chromium.org/action/issues/40094749/attachments/53147813?download=true",
+      "local_path": "attachments/iframe.html"
+    },
+    {
+      "id": 53147814,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 152,
+      "url": "https://issues.chromium.org/action/issues/40094749/attachments/53147814?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53147997,
+      "filename": "wpt.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1058,
+      "url": "https://issues.chromium.org/action/issues/40094749/attachments/53147997?download=true",
+      "local_path": "attachments/wpt.patch"
+    }
+  ],
+  "update_count": 94,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nTypically, a https site can't use or access resources from a http site. The browser will block attempts by a https site to include a http iframe, for example.  \n  \nA sandboxed iframe (specifically one that doesn't have the \"allow-same-origin\" flag set), however, can crea"
+}

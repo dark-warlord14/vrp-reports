@@ -1,0 +1,87 @@
+{
+  "id": "41484431",
+  "url": "https://issues.chromium.org/issues/41484431",
+  "title": "Security: Debug check failed: inlinee.sig->return_count() == sig->return_count() . in v8",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Turbofan, Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2023-12-15T02:42:54+00:00",
+  "modified_date": "2024-05-13T20:21:52+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52954510,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 4137,
+      "url": "https://issues.chromium.org/action/issues/41484431/attachments/52954510?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 52954511,
+      "filename": "poc_code.js",
+      "mime_type": "text/plain",
+      "size_bytes": 20282,
+      "url": "https://issues.chromium.org/action/issues/41484431/attachments/52954511?download=true",
+      "local_path": "attachments/poc_code.js"
+    },
+    {
+      "id": 52954677,
+      "filename": "poc_asan_oob.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3479,
+      "url": "https://issues.chromium.org/action/issues/41484431/attachments/52954677?download=true",
+      "local_path": "attachments/poc_asan_oob.js"
+    },
+    {
+      "id": 52954678,
+      "filename": "poc_asan_oob_code.js",
+      "mime_type": "text/plain",
+      "size_bytes": 14169,
+      "url": "https://issues.chromium.org/action/issues/41484431/attachments/52954678?download=true",
+      "local_path": "attachments/poc_asan_oob_code.js"
+    },
+    {
+      "id": 52954679,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 13304,
+      "url": "https://issues.chromium.org/action/issues/41484431/attachments/52954679?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 56339031,
+      "filename": "poc_code.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/41484431/attachments/56339031?download=true",
+      "local_path": "attachments/poc_code.js"
+    },
+    {
+      "id": 56338838,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3351,
+      "url": "https://issues.chromium.org/action/issues/41484431/attachments/56338838?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "## INTRODUCE\nAfter bisect, it was determined that following commit caused this problem.\n\n- Commit Info\n    - Version: 91376\n    - link: https://crrev.com/def7931b83728d229e94be9445529fb9db660654 \n- Commit Message\n\n```\ncommit def7931b83728d229e94be9445529fb9db660654\nAuthor: Matthias Liedtke <mliedtke"
+}

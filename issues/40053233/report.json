@@ -1,0 +1,25 @@
+{
+  "id": "40053233",
+  "url": "https://issues.chromium.org/issues/40053233",
+  "title": "Global-buffer-overflow in blink::MathMLOperatorElement::ComputeOperatorProperty",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>MathML",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "fw...@igalia.com",
+  "created_date": "2020-09-03T07:43:49+00:00",
+  "modified_date": "2024-01-09T02:28:41+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 46,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=4829989417844736\n\nFuzzer: jesse_avalanche\nJob Type: windows_asan_chrome\nPlatform Id: windows\n\nCrash Type: Global-buffer-overflow READ 4\nCrash Address: 0x7ff9774716bc\nCrash State:\n  blink::MathMLOperatorElement::ComputeOperatorProperty\n  blink::Ma"
+}

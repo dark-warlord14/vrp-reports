@@ -1,0 +1,139 @@
+{
+  "id": "40064398",
+  "url": "https://issues.chromium.org/issues/40064398",
+  "title": "Security: Chrome iOS",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Mobile>iOSWeb>Security, Mobile>iOSWeb>WebPlatform",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2023-38572"
+  ],
+  "reporter": "ia...@gmail.com",
+  "assignee": "aj...@google.com",
+  "created_date": "2023-05-06T11:44:03+00:00",
+  "modified_date": "2024-07-16T22:34:21+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52914407,
+      "filename": "server.py",
+      "mime_type": "text/plain",
+      "size_bytes": 383,
+      "url": "https://issues.chromium.org/action/issues/40064398/attachments/52914407?download=true",
+      "local_path": "attachments/server.py"
+    },
+    {
+      "id": 52914408,
+      "filename": "hello.html",
+      "mime_type": "text/plain",
+      "size_bytes": 112,
+      "url": "https://issues.chromium.org/action/issues/40064398/attachments/52914408?download=true",
+      "local_path": "attachments/hello.html"
+    },
+    {
+      "id": 52914454,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064398/attachments/52914454?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52914500,
+      "filename": "Screenshot 2023-05-25 at 11.50.13 AM.png",
+      "mime_type": "image/png",
+      "size_bytes": 180076,
+      "url": "https://issues.chromium.org/action/issues/40064398/attachments/52914500?download=true",
+      "local_path": "attachments/Screenshot 2023-05-25 at 11.50.13 AM.png"
+    },
+    {
+      "id": 52914526,
+      "filename": "server1.py",
+      "mime_type": "text/plain",
+      "size_bytes": 383,
+      "url": "https://issues.chromium.org/action/issues/40064398/attachments/52914526?download=true",
+      "local_path": "attachments/server1.py"
+    },
+    {
+      "id": 52914527,
+      "filename": "scenario1-chrome-refused-to-redirect.png",
+      "mime_type": "image/png",
+      "size_bytes": 441271,
+      "url": "https://issues.chromium.org/action/issues/40064398/attachments/52914527?download=true",
+      "local_path": "attachments/scenario1-chrome-refused-to-redirect.png"
+    },
+    {
+      "id": 52914528,
+      "filename": "scenario1-safari-refused-to-redirect.png",
+      "mime_type": "image/png",
+      "size_bytes": 414481,
+      "url": "https://issues.chromium.org/action/issues/40064398/attachments/52914528?download=true",
+      "local_path": "attachments/scenario1-safari-refused-to-redirect.png"
+    },
+    {
+      "id": 52914529,
+      "filename": "Scenario2 Chrome Mac Blocked Redirection.png",
+      "mime_type": "image/png",
+      "size_bytes": 261685,
+      "url": "https://issues.chromium.org/action/issues/40064398/attachments/52914529?download=true",
+      "local_path": "attachments/Scenario2 Chrome Mac Blocked Redirection.png"
+    },
+    {
+      "id": 52914530,
+      "filename": "Scenario2 Safari Mac Allowed Redirection.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 3199907,
+      "url": "https://issues.chromium.org/action/issues/40064398/attachments/52914530?download=true",
+      "local_path": "attachments/Scenario2 Safari Mac Allowed Redirection.mov"
+    },
+    {
+      "id": 52914535,
+      "filename": "server1.py",
+      "mime_type": "text/plain",
+      "size_bytes": 383,
+      "url": "https://issues.chromium.org/action/issues/40064398/attachments/52914535?download=true",
+      "local_path": "attachments/server1.py"
+    },
+    {
+      "id": 52914536,
+      "filename": "scenario1-chrome-refused-to-redirect.png",
+      "mime_type": "image/png",
+      "size_bytes": 441271,
+      "url": "https://issues.chromium.org/action/issues/40064398/attachments/52914536?download=true",
+      "local_path": "attachments/scenario1-chrome-refused-to-redirect.png"
+    },
+    {
+      "id": 52914537,
+      "filename": "scenario1-safari-refused-to-redirect.png",
+      "mime_type": "image/png",
+      "size_bytes": 414481,
+      "url": "https://issues.chromium.org/action/issues/40064398/attachments/52914537?download=true",
+      "local_path": "attachments/scenario1-safari-refused-to-redirect.png"
+    },
+    {
+      "id": 52914538,
+      "filename": "Scenario2 Chrome Mac Blocked Redirection.png",
+      "mime_type": "image/png",
+      "size_bytes": 261685,
+      "url": "https://issues.chromium.org/action/issues/40064398/attachments/52914538?download=true",
+      "local_path": "attachments/Scenario2 Chrome Mac Blocked Redirection.png"
+    },
+    {
+      "id": 52914539,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064398/attachments/52914539?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 68,
+  "description_snippet": "Bypass of https://bugs.chromium.org/p/chromium/issues/detail?id=1145553\r\n\r\nAffecting Chrome iOS Version 113.0.5672.69\r\nTested On iPhone 12 Running 16.4.1 (a)\r\n\r\nSteps\r\n======\r\n\r\n1.Download server.py (attached)\r\n\r\n2.To run this you will need flask, if not already installed pip install flask\r\nRun this"
+}

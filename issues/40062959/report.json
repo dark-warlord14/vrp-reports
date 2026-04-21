@@ -1,0 +1,41 @@
+{
+  "id": "40062959",
+  "url": "https://issues.chromium.org/issues/40062959",
+  "title": "documentPictureInPicture UI spoof via opener",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Media>PictureInPicture, UI>Browser>Navigation",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "nd...@protonmail.com",
+  "assignee": "st...@chromium.org",
+  "created_date": "2023-02-08T01:34:08+00:00",
+  "modified_date": "2024-01-09T08:57:17+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53239339,
+      "filename": "spoof.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 499726,
+      "url": "https://issues.chromium.org/action/issues/40062959/attachments/53239339?download=true",
+      "local_path": "attachments/spoof.mp4"
+    },
+    {
+      "id": 53239425,
+      "filename": "extension.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3727338,
+      "url": "https://issues.chromium.org/action/issues/40062959/attachments/53239425?download=true",
+      "local_path": "attachments/extension.mp4"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Enable feature chrome://flags/#document-picture-in-picture-api (in Origin Trial)  \n2. On victim page do documentPictureInPicture.requestWindow();  \n3. Victim PiP opens popup to attacker page like open('https://example.org', '', 'popup=1');  \n4. On attacker p"
+}

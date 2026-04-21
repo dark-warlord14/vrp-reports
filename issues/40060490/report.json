@@ -1,0 +1,51 @@
+{
+  "id": "40060490",
+  "url": "https://issues.chromium.org/issues/40060490",
+  "title": "Security: UI spoofing for external protocol dialogues via iframe srcdoc on the malicious site",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "el...@chromium.org",
+  "created_date": "2022-08-04T06:30:20+00:00",
+  "modified_date": "2024-04-10T15:40:39+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52973025,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 136835,
+      "url": "https://issues.chromium.org/action/issues/40060490/attachments/52973025?download=true",
+      "local_path": "attachments/poc.mp4"
+    },
+    {
+      "id": 52973064,
+      "filename": "poc-victim.html",
+      "mime_type": "text/plain",
+      "size_bytes": 65,
+      "url": "https://issues.chromium.org/action/issues/40060490/attachments/52973064?download=true",
+      "local_path": "attachments/poc-victim.html"
+    },
+    {
+      "id": 52973065,
+      "filename": "poc-attacker.html",
+      "mime_type": "text/plain",
+      "size_bytes": 62,
+      "url": "https://issues.chromium.org/action/issues/40060490/attachments/52973065?download=true",
+      "local_path": "attachments/poc-attacker.html"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nCurrently, when right-clicking on a link using an external protocol and clicking \"Opening new window\" or \"Opening a new incognito window\". The origin containing the external protocol link will be shown on the external protocol dialog on the new window. You can see htt"
+}

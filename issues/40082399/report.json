@@ -1,0 +1,79 @@
+{
+  "id": "40082399",
+  "url": "https://issues.chromium.org/issues/40082399",
+  "title": "UNKNOWN in blink::EventTarget::getEventListeners",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Bindings, Blink>DOM",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "jo...@chromium.org",
+  "created_date": "2015-06-29T08:10:22+00:00",
+  "modified_date": "2024-01-06T00:09:45+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53001724,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 58108,
+      "url": "https://issues.chromium.org/action/issues/40082399/attachments/53001724?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53001852,
+      "filename": "uaf.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7508,
+      "url": "https://issues.chromium.org/action/issues/40082399/attachments/53001852?download=true",
+      "local_path": "attachments/uaf.txt"
+    },
+    {
+      "id": 53001867,
+      "filename": "505374.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 16574,
+      "url": "https://issues.chromium.org/action/issues/40082399/attachments/53001867?download=true",
+      "local_path": "attachments/505374.txt"
+    },
+    {
+      "id": 53001868,
+      "filename": "505745_no_uaf.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7848,
+      "url": "https://issues.chromium.org/action/issues/40082399/attachments/53001868?download=true",
+      "local_path": "attachments/505745_no_uaf.txt"
+    },
+    {
+      "id": 53001869,
+      "filename": "505745_uaf.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7508,
+      "url": "https://issues.chromium.org/action/issues/40082399/attachments/53001869?download=true",
+      "local_path": "attachments/505745_uaf.txt"
+    },
+    {
+      "id": 53001886,
+      "filename": "505745.html",
+      "mime_type": "text/html",
+      "size_bytes": 7632,
+      "url": "https://issues.chromium.org/action/issues/40082399/attachments/53001886?download=true",
+      "local_path": "attachments/505745.html"
+    },
+    {
+      "id": 53001901,
+      "filename": "505745_min.html",
+      "mime_type": "text/html",
+      "size_bytes": 1080,
+      "url": "https://issues.chromium.org/action/issues/40082399/attachments/53001901?download=true",
+      "local_path": "attachments/505745_min.html"
+    }
+  ],
+  "update_count": 97,
+  "description_snippet": "Chrome Version: [43.0.2357.130 m] \r\nOperating System: [win7]"
+}

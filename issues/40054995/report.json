@@ -1,0 +1,29 @@
+{
+  "id": "40054995",
+  "url": "https://issues.chromium.org/issues/40054995",
+  "title": "Security: Amended fix for Side-channel attack against Autofill Preview",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "xu...@gmail.com",
+  "assignee": "ba...@chromium.org",
+  "created_date": "2021-02-26T17:57:43+00:00",
+  "modified_date": "2024-08-11T21:22:23+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 38,
+  "description_snippet": "https://crbug.com/chromium/1075734 fixed an autofill bug. The fix was released in M84.\r\n\r\nIn https://bugs.chromium.org/p/chromium/issues/detail?id=1075734#c26 the reporters indicated that the fix was insufficient, and a new fix was put in place, which it seems will be released in M89.\r\n\r\nFiling a tr"
+}

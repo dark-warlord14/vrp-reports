@@ -1,0 +1,43 @@
+{
+  "id": "40057696",
+  "url": "https://issues.chromium.org/issues/40057696",
+  "title": "Improper restriction in password saving form, while navigation from one site to another site",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Privacy, UI>Browser>Passwords",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "va...@chromium.org",
+  "created_date": "2021-10-25T10:37:43+00:00",
+  "modified_date": "2024-02-04T15:50:08+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53011363,
+      "filename": "1262953.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 5703148,
+      "url": "https://issues.chromium.org/action/issues/40057696/attachments/53011363?download=true",
+      "local_path": "attachments/1262953.webm"
+    },
+    {
+      "id": 53011503,
+      "filename": "Screen Shot 2021-12-07 at 11.55.54.png",
+      "mime_type": "image/png",
+      "size_bytes": 44853,
+      "url": "https://issues.chromium.org/action/issues/40057696/attachments/53011503?download=true",
+      "local_path": "attachments/Screen Shot 2021-12-07 at 11.55.54.png"
+    }
+  ],
+  "update_count": 73,
+  "description_snippet": "---\n\n### Report description\n\n\nImproper restriction in password saving form, while navigation from one site to another site\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nGoogle Chrome\n\n\n#### Which URL have you found the vulnerability in?\n\nNo url\n\n\n---\n\n##"
+}

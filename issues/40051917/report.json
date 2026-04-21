@@ -1,0 +1,62 @@
+{
+  "id": "40051917",
+  "url": "https://issues.chromium.org/issues/40051917",
+  "title": "Security: UAF in Speech Recognizer",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>Speech",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "ha...@chromium.org",
+  "created_date": "2020-04-04T11:39:28+00:00",
+  "modified_date": "2025-02-13T00:31:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 25000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53360313,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 339,
+      "url": "https://issues.chromium.org/action/issues/40051917/attachments/53360313?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53360314,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 15565,
+      "url": "https://issues.chromium.org/action/issues/40051917/attachments/53360314?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53360315,
+      "filename": "index_headless.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2008,
+      "url": "https://issues.chromium.org/action/issues/40051917/attachments/53360315?download=true",
+      "local_path": "attachments/index_headless.html"
+    },
+    {
+      "id": 53360316,
+      "filename": "asan_headless",
+      "mime_type": "text/plain",
+      "size_bytes": 17037,
+      "url": "https://issues.chromium.org/action/issues/40051917/attachments/53360316?download=true",
+      "local_path": "attachments/asan_headless"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.162 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nRun the attached script. The vulnerability can be triggered in two ways.\r\n\r\n1.\r\n$python -m SimpleHTTPServer&\r\n$./out/Asan/chrome --user-d"
+}

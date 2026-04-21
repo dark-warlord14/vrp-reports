@@ -1,0 +1,121 @@
+{
+  "id": "446463993",
+  "url": "https://issues.chromium.org/issues/446463993",
+  "title": "Spoof on virtual keyboard",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "pn...@chromium.org",
+  "created_date": "2025-09-21T23:08:32+00:00",
+  "modified_date": "2026-01-02T12:40:41+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": "somewhat mitigated omnibox spoof",
+  "attachments": [
+    {
+      "id": 69496394,
+      "filename": "spoofkeyboard.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1914668,
+      "url": "https://issues.chromium.org/action/issues/446463993/attachments/69496394?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69496395,
+      "filename": "detx.html",
+      "mime_type": "text/html",
+      "size_bytes": 3847,
+      "url": "https://issues.chromium.org/action/issues/446463993/attachments/69496395?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69496396,
+      "filename": "spoofkeyboard.html",
+      "mime_type": "text/html",
+      "size_bytes": 701,
+      "url": "https://issues.chromium.org/action/issues/446463993/attachments/69496396?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69533388,
+      "filename": "IMG-20250923-WA0000.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 63300,
+      "url": "https://issues.chromium.org/action/issues/446463993/attachments/69533388?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69533526,
+      "filename": "VID-20250923-WA0001.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1945932,
+      "url": "https://issues.chromium.org/action/issues/446463993/attachments/69533526?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69532486,
+      "filename": "detx1.html",
+      "mime_type": "text/html",
+      "size_bytes": 3852,
+      "url": "https://issues.chromium.org/action/issues/446463993/attachments/69532486?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69532487,
+      "filename": "spoofkeyboard1.html",
+      "mime_type": "text/html",
+      "size_bytes": 705,
+      "url": "https://issues.chromium.org/action/issues/446463993/attachments/69532487?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69532488,
+      "filename": "beta.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1870486,
+      "url": "https://issues.chromium.org/action/issues/446463993/attachments/69532488?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69532489,
+      "filename": "stable.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1893632,
+      "url": "https://issues.chromium.org/action/issues/446463993/attachments/69532489?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69533398,
+      "filename": "bgcolorwhite.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2094543,
+      "url": "https://issues.chromium.org/action/issues/446463993/attachments/69533398?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69603858,
+      "filename": "VID-20250925-WA0003.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2120239,
+      "url": "https://issues.chromium.org/action/issues/446463993/attachments/69603858?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69603859,
+      "filename": "IMG-20250925-WA0002.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 35913,
+      "url": "https://issues.chromium.org/action/issues/446463993/attachments/69603859?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 79,
+  "description_snippet": "VULNERABILITY DETAILS\n\nwhen the virtual keyboard is displayed and at the same time the navigation is directed to the previous page (history.go(-1)) the virtual keyboard still appears and the color of the minibar above the virtual keyboard becomes dynamic (the color follows the --theme-color of the b"
+}

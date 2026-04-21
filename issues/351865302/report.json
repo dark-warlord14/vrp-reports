@@ -1,0 +1,38 @@
+{
+  "id": "351865302",
+  "url": "https://issues.chromium.org/issues/351865302",
+  "title": "Fatal error in ../../src/compiler/simplified-lowering.cc, line 568",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler, Blink>JavaScript>Compiler>Maglev, Blink>JavaScript>Compiler>Turbofan",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "be...@gmail.com",
+  "assignee": "ni...@chromium.org",
+  "created_date": "2024-07-09T05:11:06+00:00",
+  "modified_date": "2026-02-11T16:28:13+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": "baseline report of memory corruption in a sandboxed process / renderer",
+  "attachments": [
+    {
+      "id": 57782159,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 711,
+      "url": "https://issues.chromium.org/action/issues/351865302/attachments/57782159?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 110,
+  "description_snippet": "Security: Fatal error in ../../src/compiler/simplified-lowering.cc, line 568\n\nSteps to reproduce the problem:\nbuild flag:\ngn gen out/fuzzbuild_new --args='is_debug=false dcheck_always_on=true v8_static_library=true v8_enable_slow_dchecks=true v8_enable_v8_checks=true v8_enable_verify_heap=true v8_en"
+}

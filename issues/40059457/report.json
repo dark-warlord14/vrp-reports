@@ -1,0 +1,49 @@
+{
+  "id": "40059457",
+  "url": "https://issues.chromium.org/issues/40059457",
+  "title": "heap-use-after-free on content::DevToolsAgentHostImpl::ForceDetachAllSessions",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Portals, Platform>DevTools",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "xp...@gmail.com",
+  "assignee": "ad...@chromium.org",
+  "created_date": "2022-04-25T04:02:54+00:00",
+  "modified_date": "2023-12-13T10:43:39+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53283243,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18180,
+      "url": "https://issues.chromium.org/action/issues/40059457/attachments/53283243?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53283244,
+      "filename": "eRRLU15FqD.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 7972839,
+      "url": "https://issues.chromium.org/action/issues/40059457/attachments/53283244?download=true",
+      "local_path": "attachments/eRRLU15FqD.mp4"
+    },
+    {
+      "id": 53283256,
+      "filename": "PoC.html",
+      "mime_type": "text/plain",
+      "size_bytes": 364,
+      "url": "https://issues.chromium.org/action/issues/40059457/attachments/53283256?download=true",
+      "local_path": "attachments/PoC.html"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**Steps to reproduce the problem:**   \nPrerequisite flags: chrome://flags#enable-portals  \n0. Setup a webserver (needed for portals to work).   \n1. Start Chrome with PoC.html. e.g. chrome http://127.0.0.1:5500/PoC.html  \n2. When you see the window for Chrome, focus window and spam key F12 for devtoo"
+}

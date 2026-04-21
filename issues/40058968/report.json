@@ -1,0 +1,49 @@
+{
+  "id": "40058968",
+  "url": "https://issues.chromium.org/issues/40058968",
+  "title": "Security: Heap-use-after-free in send_tab_to_self::SendTabToSelfBubbleController::OnBubbleClosed",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Sharing",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "el...@chromium.org",
+  "created_date": "2022-03-04T11:41:36+00:00",
+  "modified_date": "2022-07-29T21:26:20+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53211715,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 173,
+      "url": "https://issues.chromium.org/action/issues/40058968/attachments/53211715?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53211716,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 23682,
+      "url": "https://issues.chromium.org/action/issues/40058968/attachments/53211716?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53211717,
+      "filename": "video.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 6064650,
+      "url": "https://issues.chromium.org/action/issues/40058968/attachments/53211717?download=true",
+      "local_path": "attachments/video.mov"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.109 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. download asan-mac-release-975711.zip and unzip\r\n2. start a server at poc.html: python -m SimpleHTTPServer 8605\r\n3. ./Chromium --"
+}

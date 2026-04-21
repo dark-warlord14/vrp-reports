@@ -1,0 +1,38 @@
+{
+  "id": "354748063",
+  "url": "https://issues.chromium.org/issues/354748063",
+  "title": "heap-use-after-free dawn\\src\\dawn\\native\\Device.cpp:285 in dawn::native::DeviceBase::DeviceLostEvent::Complete",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Dawn>Native",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "lo...@google.com",
+  "created_date": "2024-07-23T03:39:01+00:00",
+  "modified_date": "2026-03-05T16:43:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "moderately mitigated memory corruption in a highly privileged process (GPU), lacking a POC / demonstrable information",
+  "attachments": [
+    {
+      "id": 58125998,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 19512,
+      "url": "https://issues.chromium.org/action/issues/354748063/attachments/58125998?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "#REPRODUCTION CASE\nThis is a difficult-to-reproduce issue caused by conditional race conditions. I have provided the ASAN logs recorded by the FUZZER at the time and a root cause analysis report.\n\n#BISECT\nhttps://dawn-review.googlesource.com/c/dawn/+/165527\n\n#RCA\n1. DeviceBase is a reference-counted"
+}

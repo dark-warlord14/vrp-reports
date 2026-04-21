@@ -1,0 +1,41 @@
+{
+  "id": "40083010",
+  "url": "https://issues.chromium.org/issues/40083010",
+  "title": "Security: URL Spoofing when victim tries to access another website from attacker's page.",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Views, UI",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2016-1616"
+  ],
+  "reporter": "he...@gmail.com",
+  "assignee": "me...@chromium.org",
+  "created_date": "2015-10-09T00:56:58+00:00",
+  "modified_date": "2018-04-25T22:56:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53136497,
+      "filename": "before.png",
+      "mime_type": "image/png",
+      "size_bytes": 86987,
+      "url": "https://issues.chromium.org/action/issues/40083010/attachments/53136497?download=true",
+      "local_path": "attachments/before.png"
+    },
+    {
+      "id": 53136498,
+      "filename": "after.png",
+      "mime_type": "image/png",
+      "size_bytes": 153086,
+      "url": "https://issues.chromium.org/action/issues/40083010/attachments/53136498?download=true",
+      "local_path": "attachments/after.png"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis vulnerability makes it possible to display arbitrary content under the URL of the website that the user is trying to access (from the attacker's page, through the omnibox).  \n  \n**VERSION**   \nChrome Version: [45.0.2454.101 m] + [stable] | I tested it too on [47.0.2"
+}

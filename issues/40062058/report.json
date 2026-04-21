@@ -1,0 +1,24 @@
+{
+  "id": "40062058",
+  "url": "https://issues.chromium.org/issues/40062058",
+  "title": "Security: Fatal error in ../../src/heap/sweeper.cc",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>GarbageCollection",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wh...@gmail.com",
+  "assignee": "di...@chromium.org",
+  "created_date": "2022-12-06T08:37:14+00:00",
+  "modified_date": "2023-03-14T17:33:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 31,
+  "description_snippet": "**This template is ONLY for reporting security bugs. If you are reporting a**   \n**Download Protection Bypass bug, please use the \"Security - Download**   \n**Protection\" template. For all other reports, please use a different**   \n**template.**   \n  \n**Please READ THIS FAQ before filing a bug: https"
+}

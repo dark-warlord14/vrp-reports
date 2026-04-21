@@ -1,0 +1,100 @@
+{
+  "id": "40058534",
+  "url": "https://issues.chromium.org/issues/40058534",
+  "title": "Security: UAF in BookmarkDragHelper",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Bookmarks",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jt...@gmail.com",
+  "assignee": "pk...@chromium.org",
+  "created_date": "2022-01-20T11:56:05+00:00",
+  "modified_date": "2024-01-09T06:16:22+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53082467,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 57439,
+      "url": "https://issues.chromium.org/action/issues/40058534/attachments/53082467?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 53082468,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 28009,
+      "url": "https://issues.chromium.org/action/issues/40058534/attachments/53082468?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53082495,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 59,
+      "url": "https://issues.chromium.org/action/issues/40058534/attachments/53082495?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53082496,
+      "filename": "server.js",
+      "mime_type": "text/plain",
+      "size_bytes": 691,
+      "url": "https://issues.chromium.org/action/issues/40058534/attachments/53082496?download=true",
+      "local_path": "attachments/server.js"
+    },
+    {
+      "id": 53082497,
+      "filename": "tree.ico",
+      "mime_type": "image/x-icon",
+      "size_bytes": 183899,
+      "url": "https://issues.chromium.org/action/issues/40058534/attachments/53082497?download=true",
+      "local_path": "attachments/tree.ico"
+    },
+    {
+      "id": 53082498,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 865,
+      "url": "https://issues.chromium.org/action/issues/40058534/attachments/53082498?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53082499,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 273,
+      "url": "https://issues.chromium.org/action/issues/40058534/attachments/53082499?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53082518,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1722386,
+      "url": "https://issues.chromium.org/action/issues/40058534/attachments/53082518?download=true",
+      "local_path": "attachments/demo.mp4"
+    },
+    {
+      "id": 53082547,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 17947,
+      "url": "https://issues.chromium.org/action/issues/40058534/attachments/53082547?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nBookmarkDragHelper::OnBookmarkIconLoaded could be called from both `Start` and `BookmarkNodeFaviconChanged`, so a re-entrant call to OnBookmarkIconLoaded is made if the favicon changes while the bookmark node is being dragged, and the `delete this` code at [1] would be e"
+}

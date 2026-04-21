@@ -1,0 +1,35 @@
+{
+  "id": "40057932",
+  "url": "https://issues.chromium.org/issues/40057932",
+  "title": "Security: use after free in swiftshader",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>GPU>SwiftShader",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2021-11-16T08:40:15+00:00",
+  "modified_date": "2024-01-09T04:10:31+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53114008,
+      "filename": "chrome-uaf-getAspectFormat.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2204,
+      "url": "https://issues.chromium.org/action/issues/40057932/attachments/53114008?download=true",
+      "local_path": "attachments/chrome-uaf-getAspectFormat.html"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA use after free occurs when the attached page is opened.  \n  \n**VERSION**   \nChrome Version: 98.0.4706.0 (prebuilt 941492)  \nOperating System: Linux, Debian 11.1  \n  \n**REPRODUCTION CASE**   \nOpen the attached page.   \n  \n**FOR CRASHES, PLEASE INCLUDE THE FOLLOWING ADDI"
+}

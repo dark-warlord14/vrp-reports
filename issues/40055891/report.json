@@ -1,0 +1,185 @@
+{
+  "id": "40055891",
+  "url": "https://issues.chromium.org/issues/40055891",
+  "title": "AddressSanitizer: heap-use-after-free scoped_blocking_call_internal.cc:208 in base::internal::IOJankMonitoringWindow::OnBlockingCallCompleted",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Core",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "ga...@chromium.org",
+  "created_date": "2021-05-16T15:03:04+00:00",
+  "modified_date": "2024-01-09T03:24:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53249678,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 22390,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249678?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 53249701,
+      "filename": "fuzz-00015.html",
+      "mime_type": "text/plain",
+      "size_bytes": 64582,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249701?download=true",
+      "local_path": "attachments/fuzz-00015.html"
+    },
+    {
+      "id": 53249702,
+      "filename": "viper.mp3",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3360,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249702?download=true",
+      "local_path": "attachments/viper.mp3"
+    },
+    {
+      "id": 53249703,
+      "filename": "viper.ogg",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2603,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249703?download=true",
+      "local_path": "attachments/viper.ogg"
+    },
+    {
+      "id": 53249743,
+      "filename": "asan_heap-buffer-overflow_on_address_1620888420857_811867_cr.html",
+      "mime_type": "text/plain",
+      "size_bytes": 25573,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249743?download=true",
+      "local_path": "attachments/asan_heap-buffer-overflow_on_address_1620888420857_811867_cr.html"
+    },
+    {
+      "id": 53249744,
+      "filename": "asan_heap-buffer-overflow_on_address_1621013750618_723460_cr.html",
+      "mime_type": "text/plain",
+      "size_bytes": 17963,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249744?download=true",
+      "local_path": "attachments/asan_heap-buffer-overflow_on_address_1621013750618_723460_cr.html"
+    },
+    {
+      "id": 53249745,
+      "filename": "asan_heap-buffer-overflow_on_address_1621081285572_830888_cr.html",
+      "mime_type": "text/plain",
+      "size_bytes": 21360,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249745?download=true",
+      "local_path": "attachments/asan_heap-buffer-overflow_on_address_1621081285572_830888_cr.html"
+    },
+    {
+      "id": 53249746,
+      "filename": "asan_heap-buffer-overflow_on_address_1621107985633_798066_cr.html",
+      "mime_type": "text/plain",
+      "size_bytes": 27352,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249746?download=true",
+      "local_path": "attachments/asan_heap-buffer-overflow_on_address_1621107985633_798066_cr.html"
+    },
+    {
+      "id": 53249747,
+      "filename": "asan_heap-buffer-overflow_on_address_1621199112669_747308_cr.html",
+      "mime_type": "text/plain",
+      "size_bytes": 24459,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249747?download=true",
+      "local_path": "attachments/asan_heap-buffer-overflow_on_address_1621199112669_747308_cr.html"
+    },
+    {
+      "id": 53249748,
+      "filename": "asan_heap-buffer-overflow_on_address_1621228114540_770024_cr.html",
+      "mime_type": "text/plain",
+      "size_bytes": 24408,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249748?download=true",
+      "local_path": "attachments/asan_heap-buffer-overflow_on_address_1621228114540_770024_cr.html"
+    },
+    {
+      "id": 53249749,
+      "filename": "asan_heap-buffer-overflow_on_address_1621235788938_142506_cr.html",
+      "mime_type": "text/plain",
+      "size_bytes": 23095,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249749?download=true",
+      "local_path": "attachments/asan_heap-buffer-overflow_on_address_1621235788938_142506_cr.html"
+    },
+    {
+      "id": 53249750,
+      "filename": "asan_heap-use-after-free_on_address_01620819091012_471010_cr.html",
+      "mime_type": "text/plain",
+      "size_bytes": 19459,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249750?download=true",
+      "local_path": "attachments/asan_heap-use-after-free_on_address_01620819091012_471010_cr.html"
+    },
+    {
+      "id": 53249751,
+      "filename": "asan_heap-use-after-free_on_address_01620934150316_618769_cr.html",
+      "mime_type": "text/plain",
+      "size_bytes": 24717,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249751?download=true",
+      "local_path": "attachments/asan_heap-use-after-free_on_address_01620934150316_618769_cr.html"
+    },
+    {
+      "id": 53249752,
+      "filename": "asan_heap-use-after-free_on_address_01621241568684_5470_cr.html",
+      "mime_type": "text/plain",
+      "size_bytes": 21319,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249752?download=true",
+      "local_path": "attachments/asan_heap-use-after-free_on_address_01621241568684_5470_cr.html"
+    },
+    {
+      "id": 53249753,
+      "filename": "asan_heap-use-after-free_on_address_01621249625972_718155_cr.html",
+      "mime_type": "text/plain",
+      "size_bytes": 22329,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249753?download=true",
+      "local_path": "attachments/asan_heap-use-after-free_on_address_01621249625972_718155_cr.html"
+    },
+    {
+      "id": 53249798,
+      "filename": "Screenshot 2021-05-18 121958.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 184715,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249798?download=true",
+      "local_path": "attachments/Screenshot 2021-05-18 121958.jpg"
+    },
+    {
+      "id": 53249876,
+      "filename": "foreproduce.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 2375,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249876?download=true",
+      "local_path": "attachments/foreproduce.diff"
+    },
+    {
+      "id": 53249877,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13357,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53249877?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53250067,
+      "filename": "asan_breakpoint_on_unknown_address_0x7ffbce7de56d_pc 0x7ffbce7de56d 1627376232558_674693_cr.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17414,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53250067?download=true",
+      "local_path": "attachments/asan_breakpoint_on_unknown_address_0x7ffbce7de56d_pc 0x7ffbce7de56d 1627376232558_674693_cr.txt"
+    },
+    {
+      "id": 53250068,
+      "filename": "asan_breakpoint_on_unknown_address_0x7ffbce7de56d_pc 0x7ffbce7de56d 1627382146697_804060_cr.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 15443,
+      "url": "https://issues.chromium.org/action/issues/40055891/attachments/53250068?download=true",
+      "local_path": "attachments/asan_breakpoint_on_unknown_address_0x7ffbce7de56d_pc 0x7ffbce7de56d 1627382146697_804060_cr.txt"
+    }
+  ],
+  "update_count": 130,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4494.0 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n#TestOn\r\nWindows NT 10.0; Win64; x64\r\nasan-win32-release_x64-880310\r\n\r\n#SANDBOX\r\nNeed to pay attention to when the problem occurs in the br"
+}

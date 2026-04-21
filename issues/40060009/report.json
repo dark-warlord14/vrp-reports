@@ -1,0 +1,52 @@
+{
+  "id": "40060009",
+  "url": "https://issues.chromium.org/issues/40060009",
+  "title": "Security: use after free in DiceWebSigninInterceptor::OnAccountLevelManagedAccountsSigninRestrictionReceived",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Unknown",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wx...@gmail.com",
+  "assignee": "yd...@chromium.org",
+  "created_date": "2022-06-20T02:50:47+00:00",
+  "modified_date": "2022-10-12T17:32:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53062964,
+      "filename": "chromium_report.md",
+      "mime_type": "text/plain",
+      "size_bytes": 1953,
+      "url": "https://issues.chromium.org/action/issues/40060009/attachments/53062964?download=true",
+      "local_path": "attachments/chromium_report.md"
+    },
+    {
+      "id": 53062976,
+      "filename": "0001-trigger-issue-1337676.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 2179,
+      "url": "https://issues.chromium.org/action/issues/40060009/attachments/53062976?download=true",
+      "local_path": "attachments/0001-trigger-issue-1337676.patch"
+    },
+    {
+      "id": 53062977,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 26473,
+      "url": "https://issues.chromium.org/action/issues/40060009/attachments/53062977?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**This template is ONLY for reporting security bugs. If you are reporting a**   \n**Download Protection Bypass bug, please use the \"Security - Download**   \n**Protection\" template. For all other reports, please use a different**   \n**template.**   \n  \n**Please READ THIS FAQ before filing a bug: https"
+}

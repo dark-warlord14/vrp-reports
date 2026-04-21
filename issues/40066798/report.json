@@ -1,0 +1,36 @@
+{
+  "id": "40066798",
+  "url": "https://issues.chromium.org/issues/40066798",
+  "title": "chrome.devtools.inspectedWindow origin limitations are very broken and can be bypassed",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "da...@google.com",
+  "created_date": "2023-07-03T18:36:42+00:00",
+  "modified_date": "2024-11-15T08:47:28+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53276305,
+      "filename": "Untitled_ Jul 3, 2023 2_27 PM.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6720094,
+      "url": "https://issues.chromium.org/action/issues/40066798/attachments/53276305?download=true",
+      "local_path": "attachments/Untitled_ Jul 3, 2023 2_27 PM.mp4"
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": "**Steps to reproduce the problem:**   \nWatch the video attached.  \n  \n**Problem Description:**   \nOn:  \n- chrome:// pages  \n- chrome-extension:// component origins  \nthe devtools frame doesn't load at all. This can be seen by the fact that there are no alerts.  \n  \nThis is probably what should happe"
+}

@@ -1,0 +1,68 @@
+{
+  "id": "40057362",
+  "url": "https://issues.chromium.org/issues/40057362",
+  "title": "Security: UAF in IdentityDialogController::ShowIdProviderWindow",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>Identity>FedCM",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jt...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2021-09-23T11:50:22+00:00",
+  "modified_date": "2024-03-25T12:14:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 25000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53037804,
+      "filename": "server.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1282,
+      "url": "https://issues.chromium.org/action/issues/40057362/attachments/53037804?download=true",
+      "local_path": "attachments/server.js"
+    },
+    {
+      "id": 53037805,
+      "filename": "server.cert",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1245,
+      "url": "https://issues.chromium.org/action/issues/40057362/attachments/53037805?download=true",
+      "local_path": "attachments/server.cert"
+    },
+    {
+      "id": 53037806,
+      "filename": "server.key",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1704,
+      "url": "https://issues.chromium.org/action/issues/40057362/attachments/53037806?download=true",
+      "local_path": "attachments/server.key"
+    },
+    {
+      "id": 53037807,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 36004,
+      "url": "https://issues.chromium.org/action/issues/40057362/attachments/53037807?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53037830,
+      "filename": "ajgo.asan",
+      "mime_type": "text/plain",
+      "size_bytes": 26213,
+      "url": "https://issues.chromium.org/action/issues/40057362/attachments/53037830?download=true",
+      "local_path": "attachments/ajgo.asan"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nIf `navigator.id.get()` API is called under the permission-oriented flow, a permission prompt is shown, and when the user accepts it, `FederatedAuthRequestImpl::OnSigninApproved` is called which would send a request to fetch well-known configuration [1]. The permissio"
+}

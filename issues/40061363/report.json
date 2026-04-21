@@ -1,0 +1,81 @@
+{
+  "id": "40061363",
+  "url": "https://issues.chromium.org/issues/40061363",
+  "title": "uaf in FederatedAuthRequestImpl",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Identity>FedCM",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "ta...@chromium.org",
+  "created_date": "2022-10-15T06:29:10+00:00",
+  "modified_date": "2024-03-25T12:22:44+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53319665,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 74808,
+      "url": "https://issues.chromium.org/action/issues/40061363/attachments/53319665?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53319666,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40061363/attachments/53319666?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53319667,
+      "filename": "accounts",
+      "mime_type": "text/plain",
+      "size_bytes": 337,
+      "url": "https://issues.chromium.org/action/issues/40061363/attachments/53319667?download=true",
+      "local_path": "attachments/accounts"
+    },
+    {
+      "id": 53319668,
+      "filename": "web-identity",
+      "mime_type": "text/plain",
+      "size_bytes": 85,
+      "url": "https://issues.chromium.org/action/issues/40061363/attachments/53319668?download=true",
+      "local_path": "attachments/web-identity"
+    },
+    {
+      "id": 53319669,
+      "filename": "fedcm.json",
+      "mime_type": "text/plain",
+      "size_bytes": 262,
+      "url": "https://issues.chromium.org/action/issues/40061363/attachments/53319669?download=true",
+      "local_path": "attachments/fedcm.json"
+    },
+    {
+      "id": 53319670,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 938,
+      "url": "https://issues.chromium.org/action/issues/40061363/attachments/53319670?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53319698,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1000532,
+      "url": "https://issues.chromium.org/action/issues/40061363/attachments/53319698?download=true",
+      "local_path": "attachments/poc.mp4"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1.Download all attachment.  \n2.mkdir .well-known  \n3.mv web-identity .well-known/web-identity  \n4.python -m SimpleHTTPServer 8000  \n5.out/asan/chrome  --enable-features=FedCmMultipleIdentityProviders [http://localhost:8000/poc.html](http://localhost:8081/poc_pa"
+}

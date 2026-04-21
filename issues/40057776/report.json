@@ -1,0 +1,33 @@
+{
+  "id": "40057776",
+  "url": "https://issues.chromium.org/issues/40057776",
+  "title": "Referrer leakage via object & embed tags despite setting referrer policy to no-referrer",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>Referrer",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pr...@gmail.com",
+  "assignee": "aj...@google.com",
+  "created_date": "2021-10-31T02:27:51+00:00",
+  "modified_date": "2024-07-09T14:28:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53186654,
+      "filename": "referrer.html",
+      "mime_type": "text/plain",
+      "size_bytes": 511,
+      "url": "https://issues.chromium.org/action/issues/40057776/attachments/53186654?download=true",
+      "local_path": "attachments/referrer.html"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "Steps to reproduce the problem:\r\nTested on: Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Mobile/15E148 Safari/604.1\r\n\r\nWebKit based browsers leak referrer to resources embedded via object and embed tags when went back. I've created a PO"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "40941111",
+  "url": "https://issues.chromium.org/issues/40941111",
+  "title": "Security: WebAudio UAF caused by setSinkId",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>WebAudio",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "su...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2023-11-09T07:38:24+00:00",
+  "modified_date": "2024-02-17T15:39:43+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53190014,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1282,
+      "url": "https://issues.chromium.org/action/issues/40941111/attachments/53190014?download=true",
+      "local_path": "attachments/crash.html"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThis is another triggering way for https://crbug.com/chromium/1497859. https://crbug.com/chromium/1497859 just patched `RealtimeAudioDestinationHandler::SetChannelCount`, but there is a same problem in `RealtimeAudioDestinationHandler::SetSinkDescriptor`.  \n  \n```c++"
+}

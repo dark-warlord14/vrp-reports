@@ -1,0 +1,45 @@
+{
+  "id": "40066208",
+  "url": "https://issues.chromium.org/issues/40066208",
+  "title": "Security: SoftNavigation + first-paint can leak history information",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>PerformanceAPIs",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "da...@gmail.com",
+  "assignee": "yo...@chromium.org",
+  "created_date": "2023-06-22T00:27:27+00:00",
+  "modified_date": "2023-10-20T17:43:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53294114,
+      "filename": "driver.html",
+      "mime_type": "text/plain",
+      "size_bytes": 962,
+      "url": "https://issues.chromium.org/action/issues/40066208/attachments/53294114?download=true",
+      "local_path": "attachments/driver.html"
+    },
+    {
+      "id": 53294115,
+      "filename": "exploit.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2349,
+      "url": "https://issues.chromium.org/action/issues/40066208/attachments/53294115?download=true",
+      "local_path": "attachments/exploit.html"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**This template is ONLY for reporting security bugs. If you are reporting a**   \n**Download Protection Bypass bug, please use the \"Security - Download**   \n**Protection\" template. For all other reports, please use a different**   \n**template.**   \n  \n**Please READ THIS FAQ before filing a bug: https"
+}

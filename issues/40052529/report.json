@@ -1,0 +1,33 @@
+{
+  "id": "40052529",
+  "url": "https://issues.chromium.org/issues/40052529",
+  "title": "Security: OpenFileViaShell may open executables in the same directory with similar filenames unexpectedly ",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "je...@google.com",
+  "created_date": "2020-06-08T17:08:18+00:00",
+  "modified_date": "2021-01-07T05:52:09+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53115806,
+      "filename": "download-trick-worker.js",
+      "mime_type": "text/plain",
+      "size_bytes": 538,
+      "url": "https://issues.chromium.org/action/issues/40052529/attachments/53115806?download=true",
+      "local_path": "attachments/download-trick-worker.js"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "Method in question: https://source.chromium.org/chromium/chromium/src/+/master:ui/base/win/shell.cc;bpv=1;bpt=1;l=67?ss=chromium  \n  \n  \n**VULNERABILITY DETAILS**   \nThe \"OpenFileViaShell\" method may open executable files with the same base file name as the file it is instructed to open.  E.g. Open("
+}

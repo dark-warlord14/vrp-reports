@@ -1,0 +1,43 @@
+{
+  "id": "40082112",
+  "url": "https://issues.chromium.org/issues/40082112",
+  "title": "Security: heap-use-after-free in WebsiteSettingsInfoBarDelegate::Create",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Infobars",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "pa...@chromium.org",
+  "created_date": "2015-05-21T03:14:43+00:00",
+  "modified_date": "2018-04-25T23:00:41+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53093232,
+      "filename": "PoC.html",
+      "mime_type": "text/html",
+      "size_bytes": 234,
+      "url": "https://issues.chromium.org/action/issues/40082112/attachments/53093232?download=true",
+      "local_path": "attachments/PoC.html"
+    },
+    {
+      "id": 53093233,
+      "filename": "872131.mp4",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 617522,
+      "url": "https://issues.chromium.org/action/issues/40082112/attachments/53093233?download=true",
+      "local_path": "attachments/872131.mp4"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**VERSION**   \nChrome Version: 45.0.2407.0 canary (32 bits)  \nOperating System: Windows 7  \n  \n**REPRODUCTION CASE**   \n(Watch the video)  \n  \n============================================================================================================  \n==6472==ERROR: AddressSanitizer: heap-use-afte"
+}

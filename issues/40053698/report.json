@@ -1,0 +1,37 @@
+{
+  "id": "40053698",
+  "url": "https://issues.chromium.org/issues/40053698",
+  "title": "Security: Yet another universal XSS via copy&paste",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Editing, Blink>MathML",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@bentkowski.info",
+  "assignee": "yo...@chromium.org",
+  "created_date": "2020-10-22T10:24:16+00:00",
+  "modified_date": "2024-01-09T02:28:23+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53373048,
+      "filename": "Screen Shot 2020-10-26 at 3.40.45 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 1036312,
+      "url": "https://issues.chromium.org/action/issues/40053698/attachments/53373048?download=true",
+      "local_path": "attachments/Screen Shot 2020-10-26 at 3.40.45 PM.png"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "Hey,\r\n\r\nI'm reporting another universal XSS via copy&paste. It is related to https://crbug.com/chromium/1065761 and https://crbug.com/chromium/1011950. I am not sure if this is a regression or another case that was missed earlier.\r\n\r\nThe idea is that the user copies something from an untrusted site"
+}

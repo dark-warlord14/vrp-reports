@@ -1,0 +1,35 @@
+{
+  "id": "40064538",
+  "url": "https://issues.chromium.org/issues/40064538",
+  "title": "Security: Chrome German capital sharp s \"ẞ\"",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Network, Internals>Network, UI>Security (Use Subcomponent)>UrlFormatting",
+  "os_platforms": [
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@googlemail.com",
+  "assignee": "me...@chromium.org",
+  "created_date": "2023-05-12T22:35:55+00:00",
+  "modified_date": "2025-02-08T15:43:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "report of lower-impact security UI spoofing",
+  "attachments": [
+    {
+      "id": 53339313,
+      "filename": "german-sharp-s-in-address-bar.png",
+      "mime_type": "image/png",
+      "size_bytes": 199886,
+      "url": "https://issues.chromium.org/action/issues/40064538/attachments/53339313?download=true",
+      "local_path": "attachments/german-sharp-s-in-address-bar.png"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "Good evening together,\r\n\r\nFor some time now Chrome(OS) is obviously supporting domain names, which are containing the German letter \"ß\" (aka Eszett aka Scharfes S, English sharp s). The letter \"ß\" is no longer translated to \"ss\".\r\n\r\nReally great, as the owner of such a domain! It was a long lasting"
+}

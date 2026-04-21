@@ -1,0 +1,142 @@
+{
+  "id": "390633126",
+  "url": "https://issues.chromium.org/issues/390633126",
+  "title": "UAP due to largearray and removechild()",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>CSS, Blink>GarbageCollection",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "134.0.6963.0",
+  "cve_ids": [],
+  "reporter": "da...@gmail.com",
+  "assignee": "ml...@chromium.org",
+  "created_date": "2025-01-18T04:25:12+00:00",
+  "modified_date": "2025-05-13T12:49:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "report of moderately mitigated memory corruption in a sandboxed process / the renderer",
+  "attachments": [
+    {
+      "id": 62257211,
+      "filename": "chrome_debug_win10-1405230.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17494,
+      "url": "https://issues.chromium.org/action/issues/390633126/attachments/62257211?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62257212,
+      "filename": "chrome_debug_win10-1405230-v2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 19416,
+      "url": "https://issues.chromium.org/action/issues/390633126/attachments/62257212?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62257213,
+      "filename": "linux-release_asan-linux-release-1407906.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 14497,
+      "url": "https://issues.chromium.org/action/issues/390633126/attachments/62257213?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62257214,
+      "filename": "manyHandles.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 27511,
+      "url": "https://issues.chromium.org/action/issues/390633126/attachments/62257214?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62257215,
+      "filename": "PoC.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 22136396,
+      "url": "https://issues.chromium.org/action/issues/390633126/attachments/62257215?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62257216,
+      "filename": "test.html",
+      "mime_type": "text/html",
+      "size_bytes": 635,
+      "url": "https://issues.chromium.org/action/issues/390633126/attachments/62257216?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62257217,
+      "filename": "test.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 515,
+      "url": "https://issues.chromium.org/action/issues/390633126/attachments/62257217?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62257218,
+      "filename": "variations-linux.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 136809,
+      "url": "https://issues.chromium.org/action/issues/390633126/attachments/62257218?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62383312,
+      "filename": "1507bb54-8016-4bda-b8be-3b9977f71f41-Stable.dmp",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4697440,
+      "url": "https://issues.chromium.org/action/issues/390633126/attachments/62383312?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62383313,
+      "filename": "variations-local-linux.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 137201,
+      "url": "https://issues.chromium.org/action/issues/390633126/attachments/62383313?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62534829,
+      "filename": "ASANCmdVariations.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 144380,
+      "url": "https://issues.chromium.org/action/issues/390633126/attachments/62534829?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62537351,
+      "filename": "CanaryCmdVariations.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 68644,
+      "url": "https://issues.chromium.org/action/issues/390633126/attachments/62537351?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62534830,
+      "filename": "postShutdown.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 148940,
+      "url": "https://issues.chromium.org/action/issues/390633126/attachments/62534830?download=true",
+      "local_path": null
+    },
+    {
+      "id": 63139346,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/390633126/attachments/63139346?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 93,
+  "description_snippet": "# Steps to reproduce the problem\n1. Host test.html + test.js with python -m http.server 9003\n2. lanuch chrome with: --no-sandbox --enable-logging --v=1 http://localhost:9003\n3. Click on test.html\n4. Wait for the UAP to occur (ranges from 5-60 minutes)\n\n# Problem Description\nThis reproduces for me bo"
+}

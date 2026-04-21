@@ -1,0 +1,93 @@
+{
+  "id": "40061287",
+  "url": "https://issues.chromium.org/issues/40061287",
+  "title": "The name attribute length on a PWA's manifest doesn't have a limit, which allows an attacker to spoof its message and origin",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>WebAppInstalls",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "fi...@chromium.org",
+  "created_date": "2022-10-09T17:05:08+00:00",
+  "modified_date": "2025-04-16T12:41:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact security UI issue",
+  "attachments": [
+    {
+      "id": 53393181,
+      "filename": "script.js",
+      "mime_type": "text/plain",
+      "size_bytes": 84,
+      "url": "https://issues.chromium.org/action/issues/40061287/attachments/53393181?download=true",
+      "local_path": "attachments/script.js"
+    },
+    {
+      "id": 53393182,
+      "filename": "sw.js",
+      "mime_type": "text/plain",
+      "size_bytes": 142,
+      "url": "https://issues.chromium.org/action/issues/40061287/attachments/53393182?download=true",
+      "local_path": "attachments/sw.js"
+    },
+    {
+      "id": 53393183,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 1311,
+      "url": "https://issues.chromium.org/action/issues/40061287/attachments/53393183?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53393184,
+      "filename": "dialog.png",
+      "mime_type": "image/png",
+      "size_bytes": 39311,
+      "url": "https://issues.chromium.org/action/issues/40061287/attachments/53393184?download=true",
+      "local_path": "attachments/dialog.png"
+    },
+    {
+      "id": 53393185,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 563,
+      "url": "https://issues.chromium.org/action/issues/40061287/attachments/53393185?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53393186,
+      "filename": "repro.mkv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 816754,
+      "url": "https://issues.chromium.org/action/issues/40061287/attachments/53393186?download=true",
+      "local_path": "attachments/repro.mkv"
+    },
+    {
+      "id": 53393310,
+      "filename": "Screen Shot 2022-10-18 at 12.59.17 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 157540,
+      "url": "https://issues.chromium.org/action/issues/40061287/attachments/53393310?download=true",
+      "local_path": "attachments/Screen Shot 2022-10-18 at 12.59.17 PM.png"
+    },
+    {
+      "id": 61230941,
+      "filename": "Mon Dec 02 2024 16:34:00 GMT+0000 (Greenwich Mean Time).png",
+      "mime_type": "image/png",
+      "size_bytes": 21108,
+      "url": "https://issues.chromium.org/action/issues/40061287/attachments/61230941?download=true",
+      "local_path": "attachments/Mon Dec 02 2024 16_34_00 GMT+0000 (Greenwich Mean Time).png"
+    }
+  ],
+  "update_count": 90,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe name attribute retrieved from a PWA's manifest is reflected on several parts of the Chrome UI, and due to the lack of restricting its maximum length, an attacker can spoof the PWA's installation dialog with an arbitrary message and even hide the origin displayed on i"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "40064493",
+  "url": "https://issues.chromium.org/issues/40064493",
+  "title": "Security: another UAF in content::SyntheticPointerAction::ForwardTouchOrMouseInputEvents(browser process)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>Input",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "bo...@chromium.org",
+  "created_date": "2023-05-11T00:54:35+00:00",
+  "modified_date": "2024-01-05T18:45:56+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53412069,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1053,
+      "url": "https://issues.chromium.org/action/issues/40064493/attachments/53412069?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53412070,
+      "filename": "input-types.js",
+      "mime_type": "text/plain",
+      "size_bytes": 273,
+      "url": "https://issues.chromium.org/action/issues/40064493/attachments/53412070?download=true",
+      "local_path": "attachments/input-types.js"
+    },
+    {
+      "id": 53412071,
+      "filename": "testdriver.js",
+      "mime_type": "text/plain",
+      "size_bytes": 33366,
+      "url": "https://issues.chromium.org/action/issues/40064493/attachments/53412071?download=true",
+      "local_path": "attachments/testdriver.js"
+    },
+    {
+      "id": 53412072,
+      "filename": "testdriver-actions.js",
+      "mime_type": "text/plain",
+      "size_bytes": 18833,
+      "url": "https://issues.chromium.org/action/issues/40064493/attachments/53412072?download=true",
+      "local_path": "attachments/testdriver-actions.js"
+    },
+    {
+      "id": 53412073,
+      "filename": "testdriver-vendor.js",
+      "mime_type": "text/plain",
+      "size_bytes": 18619,
+      "url": "https://issues.chromium.org/action/issues/40064493/attachments/53412073?download=true",
+      "local_path": "attachments/testdriver-vendor.js"
+    },
+    {
+      "id": 53412074,
+      "filename": "testharness.js",
+      "mime_type": "text/plain",
+      "size_bytes": 184737,
+      "url": "https://issues.chromium.org/action/issues/40064493/attachments/53412074?download=true",
+      "local_path": "attachments/testharness.js"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAnother UAF in content::SyntheticPointerAction::ForwardTouchOrMouseInputEvents in browser process.  \nThe https://crbug.com/chromium/1427918 has been fixed and cannot been reproduced.  \nHowever the new issue can also trigger the same UAF crash.  \n  \n  \n**VERSION**   \nC"
+}

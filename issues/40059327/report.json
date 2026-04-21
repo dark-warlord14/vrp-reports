@@ -1,0 +1,38 @@
+{
+  "id": "40059327",
+  "url": "https://issues.chromium.org/issues/40059327",
+  "title": "Security: heap-use-after-free in PDFium CPDFSDK_AppStream::Write",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mu...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2022-04-08T09:38:13+00:00",
+  "modified_date": "2024-01-09T05:59:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53371430,
+      "filename": "crash_4_6",
+      "mime_type": "text/plain",
+      "size_bytes": 232,
+      "url": "https://issues.chromium.org/action/issues/40059327/attachments/53371430?download=true",
+      "local_path": "attachments/crash_4_6"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "# VULNERABILITY DETAILS  \n  \nheap-use-after-free in PDFium  \n  \n# VERSION  \n  \ncommit: 268f21c9d342b6bfd66621eb3940f9a1902898f9  \nrepo: https://pdfium.googlesource.com/pdfium  \n  \n# REPRODUCTION CASE  \n  \ngn args:  \n  \n```  \nis_debug = false  \npdf_enable_xfa = true  \npdf_enable_v8 = true  \npdf_is_st"
+}

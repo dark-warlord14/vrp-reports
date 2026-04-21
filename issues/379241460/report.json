@@ -1,0 +1,167 @@
+{
+  "id": "379241460",
+  "url": "https://issues.chromium.org/issues/379241460",
+  "title": "the permission prompt is not in the correct position lead to spoofing",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "rd...@chromium.org",
+  "created_date": "2024-11-15T15:10:46+00:00",
+  "modified_date": "2026-02-11T12:49:24+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": "Security UI Spoofing (low impact)",
+  "attachments": [
+    {
+      "id": 60853655,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/60853655?download=true",
+      "local_path": null
+    },
+    {
+      "id": 60853656,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/60853656?download=true",
+      "local_path": null
+    },
+    {
+      "id": 60853657,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/60853657?download=true",
+      "local_path": null
+    },
+    {
+      "id": 60853658,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/60853658?download=true",
+      "local_path": null
+    },
+    {
+      "id": 60853659,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/60853659?download=true",
+      "local_path": null
+    },
+    {
+      "id": 60853660,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/60853660?download=true",
+      "local_path": null
+    },
+    {
+      "id": 60853665,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/60853665?download=true",
+      "local_path": null
+    },
+    {
+      "id": 60844498,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/60844498?download=true",
+      "local_path": null
+    },
+    {
+      "id": 60857021,
+      "filename": "bandicam 2024-11-17 05-07-30-993.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3109701,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/60857021?download=true",
+      "local_path": "attachments/bandicam 2024-11-17 05-07-30-993.mp4"
+    },
+    {
+      "id": 60857022,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 115,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/60857022?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 60859007,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 291,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/60859007?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 60870694,
+      "filename": "index.css",
+      "mime_type": "text/css",
+      "size_bytes": 1253,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/60870694?download=true",
+      "local_path": "attachments/index.css"
+    },
+    {
+      "id": 60857023,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 255,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/60857023?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 60870695,
+      "filename": "index.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 481,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/60870695?download=true",
+      "local_path": "attachments/index.js"
+    },
+    {
+      "id": 60859008,
+      "filename": "spoofpermission.html",
+      "mime_type": "text/html",
+      "size_bytes": 292,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/60859008?download=true",
+      "local_path": "attachments/spoofpermission.html"
+    },
+    {
+      "id": 60859009,
+      "filename": "spoofbar.html",
+      "mime_type": "text/html",
+      "size_bytes": 142,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/60859009?download=true",
+      "local_path": "attachments/spoofbar.html"
+    },
+    {
+      "id": 64253207,
+      "filename": "bandicam 2025-03-26 11-40-59-356.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2935770,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/64253207?download=true",
+      "local_path": "attachments/bandicam 2025-03-26 11-40-59-356.mp4"
+    },
+    {
+      "id": 70551658,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/379241460/attachments/70551658?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "VULNERABILITY DETAILS\n\nwhen the popup window is displayed on the sidepanel and at the same time the permission prompt is displayed and at the same time window.move is performed, the permission prompt does not move to the window but is in its initial position, this causes to spoofing the permission p"
+}

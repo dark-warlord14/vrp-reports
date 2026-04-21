@@ -1,0 +1,35 @@
+{
+  "id": "40059304",
+  "url": "https://issues.chromium.org/issues/40059304",
+  "title": "Security: [ANGLE] Heap use-after-free in ContextVk::onBeginTransformFeedback",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>Vulkan",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gg...@gmail.com",
+  "assignee": "jm...@chromium.org",
+  "created_date": "2022-04-06T12:54:31+00:00",
+  "modified_date": "2025-02-13T00:30:23+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53311862,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1791,
+      "url": "https://issues.chromium.org/action/issues/40059304/attachments/53311862?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThere is a heap uss-after-free vulnerability that is caused by the ContextVk::onBeginTransformFeedback function.  \nThis vulnerability exists in the Vulkan backend.  \n  \nWhen glBeginTransformFeedback() is called, the TransformFeedbackVk::begin function calls initializeXFB"
+}

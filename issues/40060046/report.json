@@ -1,0 +1,60 @@
+{
+  "id": "40060046",
+  "url": "https://issues.chromium.org/issues/40060046",
+  "title": "Security: UAF in WebContentsFrameTracker",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media>SurfaceCapture",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "kl...@chromium.org",
+  "created_date": "2022-06-22T16:06:35+00:00",
+  "modified_date": "2024-01-09T06:16:33+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52910544,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 18124,
+      "url": "https://issues.chromium.org/action/issues/40060046/attachments/52910544?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 52910545,
+      "filename": "poc.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 4203,
+      "url": "https://issues.chromium.org/action/issues/40060046/attachments/52910545?download=true",
+      "local_path": "attachments/poc.patch"
+    },
+    {
+      "id": 52910546,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 417,
+      "url": "https://issues.chromium.org/action/issues/40060046/attachments/52910546?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52910574,
+      "filename": "windows.asan",
+      "mime_type": "text/plain",
+      "size_bytes": 19093,
+      "url": "https://issues.chromium.org/action/issues/40060046/attachments/52910574?download=true",
+      "local_path": "attachments/windows.asan"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nSince tracker_[1] will be sent to UIThread for destruction, it will not be destroyed immediately when WebContentsVideoCaptureDevice gets destructed:  \n  \n```  \nstd::unique_ptr<WebContentsFrameTracker, BrowserThread::DeleteOnUIThread>  \n      tracker_;  \n```  \n  \nSo th"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "425122187",
+  "url": "https://issues.chromium.org/issues/425122187",
+  "title": "V8 Sandbox Bypass: UB V8HeapExplorer::GetSystemEntryName leads to OOB write",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "vs...@gmail.com",
+  "assignee": "sr...@google.com",
+  "created_date": "2025-06-15T14:04:16+00:00",
+  "modified_date": "2025-11-04T21:13:24+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of V8 sandbox bypass issue that does not meet the full conditions of a V8 heap bypass report eligible for a reward, but did result in a security beneficial change",
+  "attachments": [],
+  "update_count": 35,
+  "description_snippet": "#### VULNERABILITY DETAILS\nIn [V8HeapExplorer::GetSystemEntryName](https://source.chromium.org/chromium/chromium/src/+/main:v8/src/profiler/heap-snapshot-generator.cc;drc=feaf4438bcf1f96868820e62254495bfa46d3ea0;l=1052), on-heap data is used as input for a switch statement without a default case (se"
+}

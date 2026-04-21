@@ -1,0 +1,57 @@
+{
+  "id": "41483793",
+  "url": "https://issues.chromium.org/issues/41483793",
+  "title": "Security: Omnibox Spoofing in MacOS",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>FullScreen",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fa...@gmail.com",
+  "assignee": "mu...@google.com",
+  "created_date": "2023-12-13T11:30:29+00:00",
+  "modified_date": "2025-07-25T12:48:17+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "report of moderate impact security UI issue",
+  "attachments": [
+    {
+      "id": 53066788,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 889,
+      "url": "https://issues.chromium.org/action/issues/41483793/attachments/53066788?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53066789,
+      "filename": "spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 345664,
+      "url": "https://issues.chromium.org/action/issues/41483793/attachments/53066789?download=true",
+      "local_path": "attachments/spoof.png"
+    },
+    {
+      "id": 53066790,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2262311,
+      "url": "https://issues.chromium.org/action/issues/41483793/attachments/53066790?download=true",
+      "local_path": "attachments/demo.mp4"
+    },
+    {
+      "id": 64852780,
+      "filename": "spoofing-fixed-test.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1812747,
+      "url": "https://issues.chromium.org/action/issues/41483793/attachments/64852780?download=true",
+      "local_path": "attachments/spoofing-fixed-test.mp4"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nBy leveraging a combination of requestFullscreen(), onmousedown, and select dropdown functions, an attacker could take control of the omnibox in the Chrome browser with content controlled by the attacker.  \n  \nThis issue is caused by a combination of the aforementioned w"
+}

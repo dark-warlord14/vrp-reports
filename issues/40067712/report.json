@@ -1,0 +1,158 @@
+{
+  "id": "40067712",
+  "url": "https://issues.chromium.org/issues/40067712",
+  "title": "Security: Memory corrupt in v8, leading to RCE",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2023-07-19T17:07:59+00:00",
+  "modified_date": "2025-08-19T10:40:13+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 23000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52977362,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1052,
+      "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977362?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52977363,
+      "filename": "test.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1036,
+      "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977363?download=true",
+      "local_path": "attachments/test.js"
+    },
+    {
+      "id": 52977364,
+      "filename": "rce.png",
+      "mime_type": "image/png",
+      "size_bytes": 183319,
+      "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977364?download=true",
+      "local_path": "attachments/rce.png"
+    },
+    {
+      "id": 52977365,
+      "filename": "poc-old.js",
+      "mime_type": "text/plain",
+      "size_bytes": 590,
+      "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977365?download=true",
+      "local_path": "attachments/poc-old.js"
+    },
+    {
+      "id": 52977366,
+      "filename": "poc-new.js",
+      "mime_type": "text/plain",
+      "size_bytes": 593,
+      "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977366?download=true",
+      "local_path": "attachments/poc-new.js"
+    },
+    {
+      "id": 52977367,
+      "filename": "fix.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 780,
+      "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977367?download=true",
+      "local_path": "attachments/fix.patch"
+    },
+    {
+      "id": 52977368,
+      "filename": "exp.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3720,
+      "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977368?download=true",
+      "local_path": "attachments/exp.js"
+    },
+    {
+      "id": 52977369,
+      "filename": "exp.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4854,
+      "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977369?download=true",
+      "local_path": "attachments/exp.html"
+    },
+    {
+      "id": 52977387,
+      "filename": "exp.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4854,
+      "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977387?download=true",
+      "local_path": "attachments/exp.html"
+    },
+    {
+      "id": 52977388,
+      "filename": "exp.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3720,
+      "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977388?download=true",
+      "local_path": "attachments/exp.js"
+    },
+    {
+      "id": 52977390,
+      "filename": "fix.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 780,
+      "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977390?download=true",
+      "local_path": "attachments/fix.patch"
+    },
+    {
+      "id": 52977391,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1052,
+      "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977391?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52977392,
+      "filename": "poc-new.js",
+      "mime_type": "text/plain",
+      "size_bytes": 593,
+      "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977392?download=true",
+      "local_path": "attachments/poc-new.js"
+    },
+    {
+      "id": 52977393,
+      "filename": "poc-old.js",
+      "mime_type": "text/plain",
+      "size_bytes": 590,
+      "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977393?download=true",
+      "local_path": "attachments/poc-old.js"
+    },
+    {
+      "id": 52977394,
+      "filename": "rce.png",
+      "mime_type": "image/png",
+      "size_bytes": 183319,
+      "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977394?download=true",
+      "local_path": "attachments/rce.png"
+    },
+    {
+      "id": 52977408,
+      "filename": "test.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1036,
+      "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977408?download=true",
+      "local_path": "attachments/test.js"
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "VULNERABILITY DETAILS\n## BISECT1\nNote: The current POC will bisect to https://crrev.com/6c108b36d5861c4186e931793a6d8adbfbc7ab83. \nHowever, it is not the correct entry point. Here, only modifications to the opcode have been made. Reverting these modifications and continuing the bisect will lead to t"
+}

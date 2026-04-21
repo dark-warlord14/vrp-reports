@@ -1,0 +1,25 @@
+{
+  "id": "361116749",
+  "url": "https://issues.chromium.org/issues/361116749",
+  "title": "CSP doesn't block sourceMappingURL",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>DevTools>Sources",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "no...@applitools.com",
+  "assignee": "da...@google.com",
+  "created_date": "2024-08-20T19:06:16+00:00",
+  "modified_date": "2025-11-07T23:31:48+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact exploitation mitigation bypass, mitigated due to preconditions of lack of remote exploitability and user interaction",
+  "attachments": [],
+  "update_count": 60,
+  "description_snippet": "# VULNERABILITY DETAILS\nThe vulnerability allows source maps from unauthorized domains to be loaded despite Content Security Policy restrictions, potentially exposing sensitive information.\n\n# VERSION\n* Chrome Version: 127.0.6533.99 (Official Build) snap (64-bit) stable\n* Operating System: Ubuntu 24"
+}

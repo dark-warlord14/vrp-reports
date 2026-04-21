@@ -1,0 +1,41 @@
+{
+  "id": "40065810",
+  "url": "https://issues.chromium.org/issues/40065810",
+  "title": "Security: Users cannot escape the full screen mode in this offline .html file",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>FullScreen",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "du...@gmail.com",
+  "assignee": "la...@chromium.org",
+  "created_date": "2023-06-14T15:53:02+00:00",
+  "modified_date": "2025-01-10T09:16:16+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53069291,
+      "filename": "testcase.html",
+      "mime_type": "text/plain",
+      "size_bytes": 544,
+      "url": "https://issues.chromium.org/action/issues/40065810/attachments/53069291?download=true",
+      "local_path": "attachments/testcase.html"
+    },
+    {
+      "id": 53069476,
+      "filename": "testcase.html",
+      "mime_type": "text/plain",
+      "size_bytes": 544,
+      "url": "https://issues.chromium.org/action/issues/40065810/attachments/53069476?download=true",
+      "local_path": "attachments/testcase.html"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "**This template is ONLY for reporting security bugs. If you are reporting a**   \n**Download Protection Bypass bug, please use the \"Security - Download**   \n**Protection\" template. For all other reports, please use a different**   \n**template.**   \n  \n**Please READ THIS FAQ before filing a bug: https"
+}

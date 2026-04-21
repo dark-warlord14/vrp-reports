@@ -1,0 +1,53 @@
+{
+  "id": "40056514",
+  "url": "https://issues.chromium.org/issues/40056514",
+  "title": "Security: UaF in TabGroupEditorBubbleView::UpdateGroup()",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Platform>Extensions>API, UI>Browser>TopChrome>TabStrip>TabGroups",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "jo...@chromium.org",
+  "created_date": "2021-07-13T02:51:18+00:00",
+  "modified_date": "2024-01-09T03:44:13+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52885256,
+      "filename": "screen.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 810904,
+      "url": "https://issues.chromium.org/action/issues/40056514/attachments/52885256?download=true",
+      "local_path": "attachments/screen.mp4"
+    },
+    {
+      "id": 52885257,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 336,
+      "url": "https://issues.chromium.org/action/issues/40056514/attachments/52885257?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 52885258,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 389,
+      "url": "https://issues.chromium.org/action/issues/40056514/attachments/52885258?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "**VERSION**   \nChrome Version: 93.0.4573.0 (Official Build) canary (x86_64) and stable  \nOperating System: Windows and Linux  \n  \n**REPRODUCTION CASE**   \n  \nSimilar to https://crbug.com/chromium/1184954.  \n  \nenable #top-chrome-touch-ui  \n  \n1. Install the extension.  \n2. At the top of chrome, clic"
+}

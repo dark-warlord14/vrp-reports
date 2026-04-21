@@ -1,0 +1,61 @@
+{
+  "id": "40062962",
+  "url": "https://issues.chromium.org/issues/40062962",
+  "title": "Security: Security DCHECK failed: IsA<Derived>(from) blink::LayoutMultiColumnFlowThread::ComputeSize layout_multi_column_flow_thread.cc:1666",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Layout",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "tk...@chromium.org",
+  "created_date": "2023-02-08T02:53:43+00:00",
+  "modified_date": "2024-01-09T07:14:23+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53349418,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13521,
+      "url": "https://issues.chromium.org/action/issues/40062962/attachments/53349418?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53349452,
+      "filename": "minipoc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 225,
+      "url": "https://issues.chromium.org/action/issues/40062962/attachments/53349452?download=true",
+      "local_path": "attachments/minipoc.html"
+    },
+    {
+      "id": 53349504,
+      "filename": "poc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1102,
+      "url": "https://issues.chromium.org/action/issues/40062962/attachments/53349504?download=true",
+      "local_path": "attachments/poc2.html"
+    },
+    {
+      "id": 53349512,
+      "filename": "tc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 249,
+      "url": "https://issues.chromium.org/action/issues/40062962/attachments/53349512?download=true",
+      "local_path": "attachments/tc.html"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "**VERSION**   \nWIN10 X64  \nasan-win32-release_x64-1102058  \n  \n**REPRODUCTION CASE**   \nchrome --no-sandbox --user-data-dir=test --enable-blink-test-features poc.html  \n  \nType of crash: [tab]  \n  \nMinicase  \nComing soon  \n  \nRCA  \nsame as 1412020  \nhttps://chromium-review.googlesource.com/c/chromiu"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "40064176",
+  "url": "https://issues.chromium.org/issues/40064176",
+  "title": "Security: Chrome OS amd drm gpu driver UAF bug in amdgpu_sched_ioctl which can be triggered from chrome browser context",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>Internals",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pi...@gmail.com",
+  "assignee": "ol...@chromium.org",
+  "created_date": "2023-04-23T07:33:41+00:00",
+  "modified_date": "2024-01-09T10:17:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53102131,
+      "filename": "drm_auth.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 935,
+      "url": "https://issues.chromium.org/action/issues/40064176/attachments/53102131?download=true",
+      "local_path": "attachments/drm_auth.diff"
+    },
+    {
+      "id": 53102132,
+      "filename": "drm_poc.c",
+      "mime_type": "text/plain",
+      "size_bytes": 3941,
+      "url": "https://issues.chromium.org/action/issues/40064176/attachments/53102132?download=true",
+      "local_path": "attachments/drm_poc.c"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nLenovo ThinkPad C13 Yoga Chromebook is using amd graphics card, the driver is amd drm gpu driver. The zork board's latest kernel version is 5.4.  \n  \nIn amd drm gpu driver, there is an ioctl handler called amdgpu_sched_ioctl.  \n    DRM_IOCTL_DEF_DRV(AMDGPU_SCHED, a"
+}

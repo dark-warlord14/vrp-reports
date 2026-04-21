@@ -1,0 +1,101 @@
+{
+  "id": "40074269",
+  "url": "https://issues.chromium.org/issues/40074269",
+  "title": "Security: Extension has access to a custom NTP",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fa...@gmail.com",
+  "assignee": "da...@google.com",
+  "created_date": "2023-10-06T11:58:46+00:00",
+  "modified_date": "2024-03-12T12:19:45+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53408235,
+      "filename": "devtool-demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6847823,
+      "url": "https://issues.chromium.org/action/issues/40074269/attachments/53408235?download=true",
+      "local_path": "attachments/devtool-demo.mp4"
+    },
+    {
+      "id": 53408236,
+      "filename": "devtools.js",
+      "mime_type": "text/plain",
+      "size_bytes": 94,
+      "url": "https://issues.chromium.org/action/issues/40074269/attachments/53408236?download=true",
+      "local_path": "attachments/devtools.js"
+    },
+    {
+      "id": 53408238,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 48,
+      "url": "https://issues.chromium.org/action/issues/40074269/attachments/53408238?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53408240,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 181,
+      "url": "https://issues.chromium.org/action/issues/40074269/attachments/53408240?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53408241,
+      "filename": "devtools.html",
+      "mime_type": "text/plain",
+      "size_bytes": 35,
+      "url": "https://issues.chromium.org/action/issues/40074269/attachments/53408241?download=true",
+      "local_path": "attachments/devtools.html"
+    },
+    {
+      "id": 53408263,
+      "filename": "debugger-demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 742912,
+      "url": "https://issues.chromium.org/action/issues/40074269/attachments/53408263?download=true",
+      "local_path": "attachments/debugger-demo.mp4"
+    },
+    {
+      "id": 53408264,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 441,
+      "url": "https://issues.chromium.org/action/issues/40074269/attachments/53408264?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53408265,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 178,
+      "url": "https://issues.chromium.org/action/issues/40074269/attachments/53408265?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53408291,
+      "filename": "Screenshot 2023-10-10 at 9.51.54 AM.png",
+      "mime_type": "image/png",
+      "size_bytes": 1046268,
+      "url": "https://issues.chromium.org/action/issues/40074269/attachments/53408291?download=true",
+      "local_path": "attachments/Screenshot 2023-10-10 at 9.51.54 AM.png"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis vulnerability is similar to crbug.com/1428743  \n  \nWhen a victim is using other search engines as address bar, for example, bing/yahoo, the extension can execute JavaScript on the WebUI at chrome://newtab  \n  \n**VERSION**   \nChrome Version: 117.0.5938.134 (Official"
+}

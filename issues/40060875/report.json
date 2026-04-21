@@ -1,0 +1,57 @@
+{
+  "id": "40060875",
+  "url": "https://issues.chromium.org/issues/40060875",
+  "title": "Security: heap-buffer-overflow components/ui_devtools/ui_element.cc:112:5",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Views>UIDevtools",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rh...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2022-09-08T05:30:36+00:00",
+  "modified_date": "2023-05-24T13:04:05+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53325832,
+      "filename": "ui_element_asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 20928,
+      "url": "https://issues.chromium.org/action/issues/40060875/attachments/53325832?download=true",
+      "local_path": "attachments/ui_element_asan.log"
+    },
+    {
+      "id": 53325833,
+      "filename": "poc.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 9577774,
+      "url": "https://issues.chromium.org/action/issues/40060875/attachments/53325833?download=true",
+      "local_path": "attachments/poc.webm"
+    },
+    {
+      "id": 53325849,
+      "filename": "suggestion_fix.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 10203629,
+      "url": "https://issues.chromium.org/action/issues/40060875/attachments/53325849?download=true",
+      "local_path": "attachments/suggestion_fix.webm"
+    },
+    {
+      "id": 53325878,
+      "filename": "1361204-without-flags.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 8977882,
+      "url": "https://issues.chromium.org/action/issues/40060875/attachments/53325878?download=true",
+      "local_path": "attachments/1361204-without-flags.webm"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Use prebuilt linux chromeOS (gs://chromium-browser-asan/linux-release-chromeos/asan-linux-release-1044347.zip) or any lower version.  \n2. --enable-ui-devtools=9223 in command line and navigate to devtools://devtools/bundled/devtools_app.html?uiDevTools=true&"
+}

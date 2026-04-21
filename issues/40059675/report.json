@@ -1,0 +1,92 @@
+{
+  "id": "40059675",
+  "url": "https://issues.chromium.org/issues/40059675",
+  "title": "AddressSanitizer: heap-use-after-free location_bar\\permission_request_chip.cc:127 in PermissionReque",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Omnibox, UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "el...@chromium.org",
+  "created_date": "2022-05-16T03:20:43+00:00",
+  "modified_date": "2024-01-09T06:47:45+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53355441,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 16660,
+      "url": "https://issues.chromium.org/action/issues/40059675/attachments/53355441?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53355513,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40059675/attachments/53355513?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53355516,
+      "filename": "poc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 898,
+      "url": "https://issues.chromium.org/action/issues/40059675/attachments/53355516?download=true",
+      "local_path": "attachments/poc2.html"
+    },
+    {
+      "id": 53355531,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40059675/attachments/53355531?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53355546,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40059675/attachments/53355546?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53355579,
+      "filename": "Untitled2.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 9003526,
+      "url": "https://issues.chromium.org/action/issues/40059675/attachments/53355579?download=true",
+      "local_path": "attachments/Untitled2.mov"
+    },
+    {
+      "id": 53355596,
+      "filename": "fuzz-00004.html",
+      "mime_type": "text/plain",
+      "size_bytes": 360330,
+      "url": "https://issues.chromium.org/action/issues/40059675/attachments/53355596?download=true",
+      "local_path": "attachments/fuzz-00004.html"
+    },
+    {
+      "id": 53355597,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40059675/attachments/53355597?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "**Steps to reproduce the problem:**   \n#TestOn  \nasan-win32-release_x64-1003503  \n  \n#Reproduce  \nI think the previously reported 1319797 was not fixed correctly,My fuzzer is still reporting similar issues, and the crash stack is basically the same.  \nBut the reproduction method is different from 13"
+}

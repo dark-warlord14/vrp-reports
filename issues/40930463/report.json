@@ -1,0 +1,52 @@
+{
+  "id": "40930463",
+  "url": "https://issues.chromium.org/issues/40930463",
+  "title": "Security: Use-After-Free in chrome_pdf::PdfViewWebPlugin::PrintEnd",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Printing",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pw...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2023-09-10T13:22:02+00:00",
+  "modified_date": "2024-01-09T09:21:52+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52934502,
+      "filename": "repro.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 9482876,
+      "url": "https://issues.chromium.org/action/issues/40930463/attachments/52934502?download=true",
+      "local_path": "attachments/repro.mov"
+    },
+    {
+      "id": 52934503,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 92542,
+      "url": "https://issues.chromium.org/action/issues/40930463/attachments/52934503?download=true",
+      "local_path": "attachments/poc.pdf"
+    },
+    {
+      "id": 52934504,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 21329,
+      "url": "https://issues.chromium.org/action/issues/40930463/attachments/52934504?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUse-After-Free in PDF printing  \n  \n**VERSION**   \nChrome Version: 116.0.5845.179 (Official Build) (arm64)  \nOperating System: MacOS 13.4.1 (c) (22F770820d)  \n  \n**REPRODUCTION CASE**   \n1. Open the \"poc.pdf\" file.  \n2. Click the \"Print\" button.  \n3. Open the Inspector a"
+}

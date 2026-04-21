@@ -1,0 +1,46 @@
+{
+  "id": "40062594",
+  "url": "https://issues.chromium.org/issues/40062594",
+  "title": "v8 oobr on an obj",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>API, Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "5n...@gmail.com",
+  "assignee": "le...@chromium.org",
+  "created_date": "2023-01-11T06:34:57+00:00",
+  "modified_date": "2023-05-13T17:33:43+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52990250,
+      "filename": "4_report.js",
+      "mime_type": "text/plain",
+      "size_bytes": 5143,
+      "url": "https://issues.chromium.org/action/issues/40062594/attachments/52990250?download=true",
+      "local_path": "attachments/4_report.js"
+    },
+    {
+      "id": 52990284,
+      "filename": "1406429.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1639,
+      "url": "https://issues.chromium.org/action/issues/40062594/attachments/52990284?download=true",
+      "local_path": "attachments/1406429.js"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**Steps to reproduce the problem:**   \nv8 version:head  \nbuild flag:  \ngn gen out/x64_release --args=\"target_cpu=\\\"x64\\\" symbol_level=2 is_debug=false is_component_build=false v8_enable_backtrace = true v8_enable_disassembler=true v8_enable_object_print=true\"  \n  \nrun flag:  \n--allow-natives-syntax"
+}

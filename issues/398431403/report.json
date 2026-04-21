@@ -1,0 +1,33 @@
+{
+  "id": "398431403",
+  "url": "https://issues.chromium.org/issues/398431403",
+  "title": "Security: Fatal error in src/compiler/turbofan-typer.cc, line 451",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "da...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2025-02-24T00:10:16+00:00",
+  "modified_date": "2025-06-04T12:42:25+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": "report of memory corruption in a sandboxed process / renderer",
+  "attachments": [
+    {
+      "id": 63188828,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 195,
+      "url": "https://issues.chromium.org/action/issues/398431403/attachments/63188828?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "# VULNERABILITY DETAILS\n\nA type inconsistency was identified in `src/compiler/turbofan-typer.cc, line 451`.\n\nMore specifically, the previous type and current type of PhiNode in `UpdateType` appear to be inconsistent.\n\n# VERSION\n\nChrome Version: V8 main branch commit `e3b5497f`\n\nOperating System: Ubu"
+}

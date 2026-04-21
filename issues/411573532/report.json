@@ -1,0 +1,101 @@
+{
+  "id": "411573532",
+  "url": "https://issues.chromium.org/issues/411573532",
+  "title": "heap-use-after-free in cc::LayerTreeHost::NotifyTransitionRequestsFinished",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Animation, Internals>Services>Viz",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "vm...@chromium.org",
+  "created_date": "2025-04-18T10:17:14+00:00",
+  "modified_date": "2025-08-21T12:38:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "bounty_rationale": "$10,000 for high-quality report demonstrating memory corruption in a sandboxed process / the renderer + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 65004101,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1259,
+      "url": "https://issues.chromium.org/action/issues/411573532/attachments/65004101?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65004102,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 61571,
+      "url": "https://issues.chromium.org/action/issues/411573532/attachments/65004102?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65069761,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/411573532/attachments/65069761?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65282527,
+      "filename": "fixpatch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 526,
+      "url": "https://issues.chromium.org/action/issues/411573532/attachments/65282527?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65307716,
+      "filename": "simple_poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1901,
+      "url": "https://issues.chromium.org/action/issues/411573532/attachments/65307716?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65399781,
+      "filename": "writeup_en.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 17648,
+      "url": "https://issues.chromium.org/action/issues/411573532/attachments/65399781?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65399782,
+      "filename": "exp.html",
+      "mime_type": "text/html",
+      "size_bytes": 4192,
+      "url": "https://issues.chromium.org/action/issues/411573532/attachments/65399782?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65388969,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/411573532/attachments/65388969?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66067564,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/411573532/attachments/66067564?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 111,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

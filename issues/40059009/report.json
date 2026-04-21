@@ -1,0 +1,29 @@
+{
+  "id": "40059009",
+  "url": "https://issues.chromium.org/issues/40059009",
+  "title": "uaf in FrameSinkVideoCaptureDevice::OnLog",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Media",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "qi...@gmail.com",
+  "assignee": "il...@chromium.org",
+  "created_date": "2022-03-08T07:57:48+00:00",
+  "modified_date": "2022-12-13T15:40:37+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 63,
+  "description_snippet": "Steps to reproduce the problem:\r\n\r\nhttps://source.chromium.org/chromium/chromium/src/+/main:content/browser/media/capture/frame_sink_video_capture_device.cc;l=297\r\n\r\n- in this Mojo function FrameSinkVideoCaptureDevice::OnLog\r\n```c++\r\nvoid FrameSinkVideoCaptureDevice::OnLog(const std::string& messa"
+}

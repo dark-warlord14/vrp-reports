@@ -1,0 +1,41 @@
+{
+  "id": "40057631",
+  "url": "https://issues.chromium.org/issues/40057631",
+  "title": "Use after free in gl::VertexArray::setDependentDirtyBit",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sj...@gmail.com",
+  "assignee": "jm...@chromium.org",
+  "created_date": "2021-10-18T05:41:44+00:00",
+  "modified_date": "2024-03-12T14:01:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53422847,
+      "filename": "uafpoc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1738,
+      "url": "https://issues.chromium.org/action/issues/40057631/attachments/53422847?download=true",
+      "local_path": "attachments/uafpoc.html"
+    },
+    {
+      "id": 53422848,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40057631/attachments/53422848?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. run chromium with --no-sandbox.\r\n2. visit to uafpoc.html\r\n\r\nWhat is the expected behavior?\r\n\r\nWhat went wrong?\r\n## Title\r\n    Use after"
+}

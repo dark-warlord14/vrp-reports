@@ -1,0 +1,33 @@
+{
+  "id": "40071366",
+  "url": "https://issues.chromium.org/issues/40071366",
+  "title": "Security: heap-buffer-overflow vrend_read_from_iovec",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ph...@gmail.com",
+  "assignee": "ch...@google.com",
+  "created_date": "2023-09-05T12:29:39+00:00",
+  "modified_date": "2024-01-16T18:41:44+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 250.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53180746,
+      "filename": "virgl_fuzzer.c",
+      "mime_type": "text/plain",
+      "size_bytes": 8321,
+      "url": "https://issues.chromium.org/action/issues/40071366/attachments/53180746?download=true",
+      "local_path": "attachments/virgl_fuzzer.c"
+    }
+  ],
+  "update_count": 17,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nvrend_read_from_iovec call memcpy without check the buf size lead to heap buffer overflow  \n  \nsize_t vrend_read_from_iovec(const struct iovec \\*iov, int iovlen,  \n\t\t\t     size_t offset,  \n\t\t\t     char \\*buf, size_t count)  \n{  \n  size_t read = 0;  \n  size_t len;"
+}

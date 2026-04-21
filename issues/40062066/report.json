@@ -1,0 +1,41 @@
+{
+  "id": "40062066",
+  "url": "https://issues.chromium.org/issues/40062066",
+  "title": "UAF in GpuChannel",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "ro...@google.com",
+  "created_date": "2022-12-06T12:38:21+00:00",
+  "modified_date": "2024-05-01T15:58:24+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53413820,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 26231,
+      "url": "https://issues.chromium.org/action/issues/40062066/attachments/53413820?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53413821,
+      "filename": "repro.sh",
+      "mime_type": "text/plain",
+      "size_bytes": 33879,
+      "url": "https://issues.chromium.org/action/issues/40062066/attachments/53413821?download=true",
+      "local_path": "attachments/repro.sh"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "**Steps to reproduce the problem:**   \nWill attach details soon  \n  \n**Problem Description:**   \nUAF in GPU  \n  \n**Additional Comments:**   \n  \n  \n**Chrome version: ** 110.0.5458.0 **Channel: ** Canary  \n  \n**OS:** Mac OS"
+}

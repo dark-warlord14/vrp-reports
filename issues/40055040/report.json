@@ -1,0 +1,105 @@
+{
+  "id": "40055040",
+  "url": "https://issues.chromium.org/issues/40055040",
+  "title": "Security: Incorrect Security UI in payment",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Payments",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zy...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2021-03-03T09:43:42+00:00",
+  "modified_date": "2024-04-11T11:19:36+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53210618,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40055040/attachments/53210618?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53210636,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40055040/attachments/53210636?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53210644,
+      "filename": "Screen Shot 2021-03-04 at 9.08.26 AM.png",
+      "mime_type": "image/png",
+      "size_bytes": 27337,
+      "url": "https://issues.chromium.org/action/issues/40055040/attachments/53210644?download=true",
+      "local_path": "attachments/Screen Shot 2021-03-04 at 9.08.26 AM.png"
+    },
+    {
+      "id": 53210645,
+      "filename": "Screenshot_20210304-091826.png",
+      "mime_type": "image/png",
+      "size_bytes": 159349,
+      "url": "https://issues.chromium.org/action/issues/40055040/attachments/53210645?download=true",
+      "local_path": "attachments/Screenshot_20210304-091826.png"
+    },
+    {
+      "id": 53210663,
+      "filename": "aosp1.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 4905667,
+      "url": "https://issues.chromium.org/action/issues/40055040/attachments/53210663?download=true",
+      "local_path": "attachments/aosp1.jpg"
+    },
+    {
+      "id": 53210664,
+      "filename": "aosp2.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 6306244,
+      "url": "https://issues.chromium.org/action/issues/40055040/attachments/53210664?download=true",
+      "local_path": "attachments/aosp2.jpg"
+    },
+    {
+      "id": 53210665,
+      "filename": "aosp3.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 5621082,
+      "url": "https://issues.chromium.org/action/issues/40055040/attachments/53210665?download=true",
+      "local_path": "attachments/aosp3.jpg"
+    },
+    {
+      "id": 53210707,
+      "filename": "Screenshot_20210308-072721.png",
+      "mime_type": "image/png",
+      "size_bytes": 291881,
+      "url": "https://issues.chromium.org/action/issues/40055040/attachments/53210707?download=true",
+      "local_path": "attachments/Screenshot_20210308-072721.png"
+    },
+    {
+      "id": 55416651,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40055040/attachments/55416651?download=true",
+      "local_path": null
+    },
+    {
+      "id": 55416653,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 963,
+      "url": "https://issues.chromium.org/action/issues/40055040/attachments/55416653?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "Steps to reproduce the problem:\r\n1.open \"https://lightrains.org/js/poc/evil.html\" in android chrome\r\n\r\n2.click link “Install Google Pay Web Payment App”\r\n\r\n3.then open \"https://rsolomakhin.github.io/pr/contact/\" in another tab\r\n\r\nyou will see crlf code has been injection into the payment handler"
+}

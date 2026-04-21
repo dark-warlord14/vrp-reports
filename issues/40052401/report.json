@@ -1,0 +1,49 @@
+{
+  "id": "40052401",
+  "url": "https://issues.chromium.org/issues/40052401",
+  "title": "Security: UAF in ChromeOS Login",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Enterprise",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "fa...@chromium.org",
+  "created_date": "2020-05-25T09:54:08+00:00",
+  "modified_date": "2024-01-09T01:14:31+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52894988,
+      "filename": "poc.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 3495,
+      "url": "https://issues.chromium.org/action/issues/40052401/attachments/52894988?download=true",
+      "local_path": "attachments/poc.patch"
+    },
+    {
+      "id": 52894989,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 22611,
+      "url": "https://issues.chromium.org/action/issues/40052401/attachments/52894989?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 52895014,
+      "filename": "ui.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1592,
+      "url": "https://issues.chromium.org/action/issues/40052401/attachments/52895014?download=true",
+      "local_path": "attachments/ui.patch"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nChallengeResponseAuthKeysLoader uses ScopedObserver[1] to monitor ExtensionHost. When the extension_host_observer_ is released, ExtensionHost::RemoveObserver will be called. ExtensionHost could be released through IPC call[2], and the has_loaded_once check[3] also cou"
+}

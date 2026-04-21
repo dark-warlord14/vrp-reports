@@ -1,0 +1,25 @@
+{
+  "id": "40062720",
+  "url": "https://issues.chromium.org/issues/40062720",
+  "title": "Crash in blink::HTMLFastPathParser<unsigned char>::ParseAttributes",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>HTML>Parser",
+  "os_platforms": [
+    "Linux",
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "sk...@chromium.org",
+  "created_date": "2023-01-18T17:24:44+00:00",
+  "modified_date": "2024-01-09T07:03:23+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 40,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=4813536265175040\n\nFuzzer: attekett_dom_fuzzer\nJob Type: linux_tsan_chrome_mp\nPlatform Id: linux\n\nCrash Type: UNKNOWN READ\nCrash Address: 0x7b1400030000\nCrash State:\n  blink::HTMLFastPathParser<unsigned char>::ParseAttributes\n  blink::Element* bli"
+}

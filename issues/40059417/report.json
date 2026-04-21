@@ -1,0 +1,58 @@
+{
+  "id": "40059417",
+  "url": "https://issues.chromium.org/issues/40059417",
+  "title": "Security: Select dropdown able to overlap fullscreen notification toast",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>FullScreen",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "su...@gmail.com",
+  "assignee": "xi...@chromium.org",
+  "created_date": "2022-04-20T03:26:27+00:00",
+  "modified_date": "2024-01-09T06:02:05+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53036708,
+      "filename": "testcase.html",
+      "mime_type": "text/plain",
+      "size_bytes": 653,
+      "url": "https://issues.chromium.org/action/issues/40059417/attachments/53036708?download=true",
+      "local_path": "attachments/testcase.html"
+    },
+    {
+      "id": 53036709,
+      "filename": "Chrome - Select dropdown overlap fullscreen notification toast.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 470491,
+      "url": "https://issues.chromium.org/action/issues/40059417/attachments/53036709?download=true",
+      "local_path": "attachments/Chrome - Select dropdown overlap fullscreen notification toast.mp4"
+    },
+    {
+      "id": 53036777,
+      "filename": "testcase-cros.html",
+      "mime_type": "text/plain",
+      "size_bytes": 704,
+      "url": "https://issues.chromium.org/action/issues/40059417/attachments/53036777?download=true",
+      "local_path": "attachments/testcase-cros.html"
+    },
+    {
+      "id": 53036778,
+      "filename": "Chrome OS Flex - Select dropdown overlap fullscreen notification toast.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 810623,
+      "url": "https://issues.chromium.org/action/issues/40059417/attachments/53036778?download=true",
+      "local_path": "attachments/Chrome OS Flex - Select dropdown overlap fullscreen notification toast.webm"
+    }
+  ],
+  "update_count": 68,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAfter invoke requestFullScreen and append multiple option to select element, when browser goes into fullscreen and tab temporarily unresponsive, interestingly the fullscreen notification toast will be overlapped with the black select dropdown menu.  \n  \nI able to reprodu"
+}

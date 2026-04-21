@@ -1,0 +1,36 @@
+{
+  "id": "40060172",
+  "url": "https://issues.chromium.org/issues/40060172",
+  "title": "Security: Pdfium heap bof in CFDE_TextOut::RetrievePieces()",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2022-07-05T20:48:52+00:00",
+  "modified_date": "2022-10-19T17:31:28+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53283325,
+      "filename": "repro.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 1672,
+      "url": "https://issues.chromium.org/action/issues/40060172/attachments/53283325?download=true",
+      "local_path": "attachments/repro.pdf"
+    }
+  ],
+  "update_count": 23,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nPdfium heap bof in CFDE_TextOut::RetrievePieces() at xfa/fde/cfde_textout.cpp:389.  \n  \nOffsets are calculated incorrectly, leading to RetrievePieces() overflowing the std::vector m_CharWidths. In repro.pdf m_CharWidths size is 402, but the loop \"for (; j < iPieceChars;"
+}

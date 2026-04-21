@@ -1,0 +1,165 @@
+{
+  "id": "439058242",
+  "url": "https://issues.chromium.org/issues/439058242",
+  "title": "Extensions can run JS on any privileged origin by exploiting already-patched vulnerabilities under devtools:// scheme.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools>Extensions",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "da...@google.com",
+  "created_date": "2025-08-16T00:44:01+00:00",
+  "modified_date": "2026-02-24T12:44:55+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "bounty_rationale": "Moderate Impact Web Platform Privilege Escalation with a High Quality with Functional Exploit",
+  "attachments": [
+    {
+      "id": 68490978,
+      "filename": "PoC1.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 3568,
+      "url": "https://issues.chromium.org/action/issues/439058242/attachments/68490978?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68490979,
+      "filename": "PoC2.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 9330,
+      "url": "https://issues.chromium.org/action/issues/439058242/attachments/68490979?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68498609,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 466,
+      "url": "https://issues.chromium.org/action/issues/439058242/attachments/68498609?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68498610,
+      "filename": "devtools.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2699,
+      "url": "https://issues.chromium.org/action/issues/439058242/attachments/68498610?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68498611,
+      "filename": "devtools-page.html",
+      "mime_type": "text/html",
+      "size_bytes": 159,
+      "url": "https://issues.chromium.org/action/issues/439058242/attachments/68498611?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68490980,
+      "filename": "devtools-page.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2985,
+      "url": "https://issues.chromium.org/action/issues/439058242/attachments/68490980?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68498612,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 262,
+      "url": "https://issues.chromium.org/action/issues/439058242/attachments/68498612?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68498613,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 988,
+      "url": "https://issues.chromium.org/action/issues/439058242/attachments/68498613?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68495385,
+      "filename": "devtools.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1884,
+      "url": "https://issues.chromium.org/action/issues/439058242/attachments/68495385?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68495386,
+      "filename": "devtools-page.html",
+      "mime_type": "text/html",
+      "size_bytes": 159,
+      "url": "https://issues.chromium.org/action/issues/439058242/attachments/68495386?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68498614,
+      "filename": "devtools-page.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 4430,
+      "url": "https://issues.chromium.org/action/issues/439058242/attachments/68498614?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68490981,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 498,
+      "url": "https://issues.chromium.org/action/issues/439058242/attachments/68490981?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68495387,
+      "filename": "offscreen.html",
+      "mime_type": "text/html",
+      "size_bytes": 176,
+      "url": "https://issues.chromium.org/action/issues/439058242/attachments/68495387?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68490982,
+      "filename": "offscreen.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2422,
+      "url": "https://issues.chromium.org/action/issues/439058242/attachments/68490982?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68498615,
+      "filename": "pdf-script.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2729,
+      "url": "https://issues.chromium.org/action/issues/439058242/attachments/68498615?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68498616,
+      "filename": "perfetto-script.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2255,
+      "url": "https://issues.chromium.org/action/issues/439058242/attachments/68498616?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68498617,
+      "filename": "webstore-script.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2817,
+      "url": "https://issues.chromium.org/action/issues/439058242/attachments/68498617?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 145,
+  "description_snippet": "# VULNERABILITY DETAILS\nThe **devtools://** scheme allows loading of remote assets from the domain https://chrome-devtools-frontend.appspot.com/. This server keeps a history of old versions of the DevTools Frontend, which can be loaded by navigating any tab to the URL \"**devtools://devtools/remote/s"
+}

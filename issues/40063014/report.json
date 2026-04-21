@@ -1,0 +1,33 @@
+{
+  "id": "40063014",
+  "url": "https://issues.chromium.org/issues/40063014",
+  "title": "LZ and ZST files which are another form of Archive file is missing into the gesture file types",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Unknown",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sm...@gmail.com",
+  "assignee": "dr...@chromium.org",
+  "created_date": "2023-02-10T16:32:10+00:00",
+  "modified_date": "2024-10-16T15:49:02+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": "$500 reward for report of low impact issue",
+  "attachments": [
+    {
+      "id": 53271111,
+      "filename": "lz and zst gesture.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6053434,
+      "url": "https://issues.chromium.org/action/issues/40063014/attachments/53271111?download=true",
+      "local_path": "attachments/lz and zst gesture.mp4"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**Steps to reproduce the problem:**   \nFor LZ archive file:  \n1. Take any dangerous extension file and add this into archive and give this file any archive name. Suppose \"test.lz\"  \n2. You can open this file by direct clicking or extract by 7-zip or WinRAR.  \n3. In chromium Gesture file list it is n"
+}

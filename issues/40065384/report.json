@@ -1,0 +1,117 @@
+{
+  "id": "40065384",
+  "url": "https://issues.chromium.org/issues/40065384",
+  "title": "Security: Spoof empty titlebar via javascript: URI in Document PIP",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Media>PictureInPicture",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "li...@google.com",
+  "created_date": "2023-06-05T19:12:28+00:00",
+  "modified_date": "2023-11-18T18:42:46+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52929463,
+      "filename": "Untitled_ Jun 6, 2023 3_09 AM.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 831162,
+      "url": "https://issues.chromium.org/action/issues/40065384/attachments/52929463?download=true",
+      "local_path": "attachments/Untitled_ Jun 6, 2023 3_09 AM.webm"
+    },
+    {
+      "id": 52929464,
+      "filename": "pip-exploit.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1029,
+      "url": "https://issues.chromium.org/action/issues/40065384/attachments/52929464?download=true",
+      "local_path": "attachments/pip-exploit.html"
+    },
+    {
+      "id": 52929549,
+      "filename": "pip-exploit.html",
+      "mime_type": "text/plain",
+      "size_bytes": 411,
+      "url": "https://issues.chromium.org/action/issues/40065384/attachments/52929549?download=true",
+      "local_path": "attachments/pip-exploit.html"
+    },
+    {
+      "id": 52929550,
+      "filename": "Untitled_ Jul 3, 2023 10_57 PM.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 627985,
+      "url": "https://issues.chromium.org/action/issues/40065384/attachments/52929550?download=true",
+      "local_path": "attachments/Untitled_ Jul 3, 2023 10_57 PM.webm"
+    },
+    {
+      "id": 52929553,
+      "filename": "Untitled_ Jul 30, 2023 3_06 PM.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 820298,
+      "url": "https://issues.chromium.org/action/issues/40065384/attachments/52929553?download=true",
+      "local_path": "attachments/Untitled_ Jul 30, 2023 3_06 PM.webm"
+    },
+    {
+      "id": 52929577,
+      "filename": "Screenshot 2023-08-03 (1).png",
+      "mime_type": "image/png",
+      "size_bytes": 24797,
+      "url": "https://issues.chromium.org/action/issues/40065384/attachments/52929577?download=true",
+      "local_path": "attachments/Screenshot 2023-08-03 (1).png"
+    },
+    {
+      "id": 52929578,
+      "filename": "Screenshot 2023-08-03 (2).png",
+      "mime_type": "image/png",
+      "size_bytes": 12872,
+      "url": "https://issues.chromium.org/action/issues/40065384/attachments/52929578?download=true",
+      "local_path": "attachments/Screenshot 2023-08-03 (2).png"
+    },
+    {
+      "id": 52929579,
+      "filename": "Screenshot 2023-08-03 (3).png",
+      "mime_type": "image/png",
+      "size_bytes": 16203,
+      "url": "https://issues.chromium.org/action/issues/40065384/attachments/52929579?download=true",
+      "local_path": "attachments/Screenshot 2023-08-03 (3).png"
+    },
+    {
+      "id": 52929580,
+      "filename": "Screenshot 2023-08-03 (4).png",
+      "mime_type": "image/png",
+      "size_bytes": 18608,
+      "url": "https://issues.chromium.org/action/issues/40065384/attachments/52929580?download=true",
+      "local_path": "attachments/Screenshot 2023-08-03 (4).png"
+    },
+    {
+      "id": 52929617,
+      "filename": "doc-pip-spoofed-omnibar.html",
+      "mime_type": "text/plain",
+      "size_bytes": 919,
+      "url": "https://issues.chromium.org/action/issues/40065384/attachments/52929617?download=true",
+      "local_path": "attachments/doc-pip-spoofed-omnibar.html"
+    },
+    {
+      "id": 52929618,
+      "filename": "spoofed-omnibar.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 561989,
+      "url": "https://issues.chromium.org/action/issues/40065384/attachments/52929618?download=true",
+      "local_path": "attachments/spoofed-omnibar.webm"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIts possible to spoof empty origin using javascript: URI in Document PIP  \n  \n**VERSION**   \nChrome Version: 114.0.5735.91 (Official Build) (64-bit) (cohort: Stable Installs & Version Pins)   \nOperating System: Windows 10 Version 22H2 (Build 19045.2965)  \n  \n**REPRODUCTI"
+}

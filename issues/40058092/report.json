@@ -1,0 +1,53 @@
+{
+  "id": "40058092",
+  "url": "https://issues.chromium.org/issues/40058092",
+  "title": "Security: UAF in ViewsAXTreeManager",
+  "status": "New",
+  "severity": "S4-Minimal",
+  "priority": "P0",
+  "component": "UI>Accessibility",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "ks...@microsoft.com",
+  "created_date": "2021-12-01T15:58:29+00:00",
+  "modified_date": "2024-01-09T04:13:03+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53357166,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 12911,
+      "url": "https://issues.chromium.org/action/issues/40058092/attachments/53357166?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53357167,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 296,
+      "url": "https://issues.chromium.org/action/issues/40058092/attachments/53357167?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53357303,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 233,
+      "url": "https://issues.chromium.org/action/issues/40058092/attachments/53357303?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIf the AccessibilityTreeForViews flag is enabled, an |ax_tree_manager_| will be made based on the root_view[1]. And in ViewsAXTreeManager, a callback function will be post into SequencedTaskRunner[2], it will finally call[3] |GetUniqueId()| and access the root_view[4]. S"
+}

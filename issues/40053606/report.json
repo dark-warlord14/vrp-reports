@@ -1,0 +1,89 @@
+{
+  "id": "40053606",
+  "url": "https://issues.chromium.org/issues/40053606",
+  "title": "segmentation fault in mojom::clipboard",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>DataTransfer",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wo...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2020-10-14T08:34:29+00:00",
+  "modified_date": "2024-01-09T02:09:21+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52911779,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 950,
+      "url": "https://issues.chromium.org/action/issues/40053606/attachments/52911779?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52911780,
+      "filename": "crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 15545,
+      "url": "https://issues.chromium.org/action/issues/40053606/attachments/52911780?download=true",
+      "local_path": "attachments/crash.log"
+    },
+    {
+      "id": 52911852,
+      "filename": "memo.log",
+      "mime_type": "text/plain",
+      "size_bytes": 4173,
+      "url": "https://issues.chromium.org/action/issues/40053606/attachments/52911852?download=true",
+      "local_path": "attachments/memo.log"
+    },
+    {
+      "id": 52911853,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1616,
+      "url": "https://issues.chromium.org/action/issues/40053606/attachments/52911853?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52911971,
+      "filename": "symbolize.log",
+      "mime_type": "text/plain",
+      "size_bytes": 15762,
+      "url": "https://issues.chromium.org/action/issues/40053606/attachments/52911971?download=true",
+      "local_path": "attachments/symbolize.log"
+    },
+    {
+      "id": 52911972,
+      "filename": "symbolize2.log",
+      "mime_type": "text/plain",
+      "size_bytes": 68534,
+      "url": "https://issues.chromium.org/action/issues/40053606/attachments/52911972?download=true",
+      "local_path": "attachments/symbolize2.log"
+    },
+    {
+      "id": 52912003,
+      "filename": "retry02.log",
+      "mime_type": "text/plain",
+      "size_bytes": 6049,
+      "url": "https://issues.chromium.org/action/issues/40053606/attachments/52912003?download=true",
+      "local_path": "attachments/retry02.log"
+    },
+    {
+      "id": 52912004,
+      "filename": "retry01.log",
+      "mime_type": "text/plain",
+      "size_bytes": 5272,
+      "url": "https://issues.chromium.org/action/issues/40053606/attachments/52912004?download=true",
+      "local_path": "attachments/retry01.log"
+    }
+  ],
+  "update_count": 120,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.75 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nchromium: 88.0.4293.0\r\n1. Download and extract asan-linux-release-816894.zip from (https://www.googleapis.com/download/storage/v1/b/chromium-browser"
+}

@@ -1,0 +1,63 @@
+{
+  "id": "40051596",
+  "url": "https://issues.chromium.org/issues/40051596",
+  "title": "Security: Possible to cause incorrect origin to be used when performing a same document navigation",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Sandbox>SiteIsolation, UI>Browser>Navigation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "cr...@chromium.org",
+  "created_date": "2020-02-23T15:25:04+00:00",
+  "modified_date": "2025-06-03T12:41:27+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "report of lower impact security UI spoof",
+  "attachments": [
+    {
+      "id": 53355274,
+      "filename": "iframe.html",
+      "mime_type": "text/plain",
+      "size_bytes": 650,
+      "url": "https://issues.chromium.org/action/issues/40051596/attachments/53355274?download=true",
+      "local_path": "attachments/iframe.html"
+    },
+    {
+      "id": 53355275,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 146,
+      "url": "https://issues.chromium.org/action/issues/40051596/attachments/53355275?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53355276,
+      "filename": "main.js",
+      "mime_type": "text/plain",
+      "size_bytes": 939,
+      "url": "https://issues.chromium.org/action/issues/40051596/attachments/53355276?download=true",
+      "local_path": "attachments/main.js"
+    },
+    {
+      "id": 53355294,
+      "filename": "New Tab - Google Chrome 2020-02-24 12-32-20.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2934698,
+      "url": "https://issues.chromium.org/action/issues/40051596/attachments/53355294?download=true",
+      "local_path": "attachments/New Tab - Google Chrome 2020-02-24 12-32-20.mp4"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt's possible for a window to perform a same document navigation between its original URL (e.g. a http/https URL) and about:blank. If another window within the same namespace navigates the first window to about:blank and then goes back, a same document navigation will be"
+}

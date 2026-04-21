@@ -1,0 +1,45 @@
+{
+  "id": "426054987",
+  "url": "https://issues.chromium.org/issues/426054987",
+  "title": "use-after-poison in blink::MediaStreamAudioTrack::StopAndNotify(class base::OnceCallback<(void)>)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>MediaStream",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "ev...@google.com",
+  "created_date": "2025-06-19T13:22:50+00:00",
+  "modified_date": "2025-10-21T12:45:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "bounty_rationale": "$7,000 for report of memory corruption in a sandboxed process + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 66891229,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 22391,
+      "url": "https://issues.chromium.org/action/issues/426054987/attachments/66891229?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66891230,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1713,
+      "url": "https://issues.chromium.org/action/issues/426054987/attachments/66891230?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

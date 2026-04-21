@@ -1,0 +1,44 @@
+{
+  "id": "40096065",
+  "url": "https://issues.chromium.org/issues/40096065",
+  "title": "Security: [xfa] pdfium SEGV on RelocateTableRowCells",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "qu...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2019-08-22T16:19:45+00:00",
+  "modified_date": "2024-06-27T08:59:05+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53414628,
+      "filename": "RelocateTableRowCells.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 1548,
+      "url": "https://issues.chromium.org/action/issues/40096065/attachments/53414628?download=true",
+      "local_path": "attachments/RelocateTableRowCells.pdf"
+    },
+    {
+      "id": 53414683,
+      "filename": "RelocateTableRowCells.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 586,
+      "url": "https://issues.chromium.org/action/issues/40096065/attachments/53414683?download=true",
+      "local_path": "attachments/RelocateTableRowCells.patch"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nPdfium Out-Of-Bounds Read on RelocateTableRowCells  \n  \n**VERSION**   \ncommit 60044886a39365bbf10be7f8894a71dcd3275794  \nDate:   Thu Aug 22 10:29:04 UTC 2019  \n  \n  \n**REPRODUCTION CASE**   \n  \nThe attached proof-of-concept file could crash the latest build of pdfium_tes"
+}

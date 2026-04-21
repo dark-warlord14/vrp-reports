@@ -1,0 +1,45 @@
+{
+  "id": "41486150",
+  "url": "https://issues.chromium.org/issues/41486150",
+  "title": "Security: Debug check failed: displacement == 0 . in v8",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Turbofan, Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2023-12-21T02:38:29+00:00",
+  "modified_date": "2026-01-08T12:42:50+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52952901,
+      "filename": "poc_code.js",
+      "mime_type": "text/plain",
+      "size_bytes": 16144,
+      "url": "https://issues.chromium.org/action/issues/41486150/attachments/52952901?download=true",
+      "local_path": "attachments/poc_code.js"
+    },
+    {
+      "id": 52952902,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3267,
+      "url": "https://issues.chromium.org/action/issues/41486150/attachments/52952902?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "VULNERABILITY DETAILS\n## INTRODUCE\nAfter bisect, it was determined that following commit caused this problem.\n\n- Commit Info\n    - Version: 91281\n    - link: https://crrev.com/06df8123409d9c0c23aaa66ab11bbeeb6ba29a5d \n- Commit Message\n\n```\ncommit 06df8123409d9c0c23aaa66ab11bbeeb6ba29a5d\nAuthor: Mano"
+}

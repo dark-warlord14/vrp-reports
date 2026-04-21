@@ -1,0 +1,60 @@
+{
+  "id": "40052447",
+  "url": "https://issues.chromium.org/issues/40052447",
+  "title": "Security: drawImage timing depends on alpha-channel value, allowing to read cross-origin images",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Canvas, Internals>GPU, Internals>Skia",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@popovs.lv",
+  "assignee": "mt...@google.com",
+  "created_date": "2020-05-30T18:10:39+00:00",
+  "modified_date": "2021-01-07T18:53:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53357500,
+      "filename": "benchmark.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3880,
+      "url": "https://issues.chromium.org/action/issues/40052447/attachments/53357500?download=true",
+      "local_path": "attachments/benchmark.html"
+    },
+    {
+      "id": 53357501,
+      "filename": "exploit.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2497,
+      "url": "https://issues.chromium.org/action/issues/40052447/attachments/53357501?download=true",
+      "local_path": "attachments/exploit.html"
+    },
+    {
+      "id": 53357502,
+      "filename": "target_xsmall.png",
+      "mime_type": "image/png",
+      "size_bytes": 593,
+      "url": "https://issues.chromium.org/action/issues/40052447/attachments/53357502?download=true",
+      "local_path": "attachments/target_xsmall.png"
+    },
+    {
+      "id": 53357503,
+      "filename": "benchmark_nogpu.png",
+      "mime_type": "image/png",
+      "size_bytes": 44461,
+      "url": "https://issues.chromium.org/action/issues/40052447/attachments/53357503?download=true",
+      "local_path": "attachments/benchmark_nogpu.png"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe function CanvasRenderingContext2D.drawImage takes a different amount of time to draw pixels depending on their alpha value: fully opaque pixels (A=255) are drawn about an order of magnitude faster than fully transparent ones (A=0), and fully transparent ones are abou"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "40052774",
+  "url": "https://issues.chromium.org/issues/40052774",
+  "title": "Security: Information disclosure through screenshare with clickjacking",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ga...@gmail.com",
+  "assignee": "el...@chromium.org",
+  "created_date": "2020-07-05T00:15:42+00:00",
+  "modified_date": "2024-01-09T01:34:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52952940,
+      "filename": "2020-07-05 01-52-07.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5261982,
+      "url": "https://issues.chromium.org/action/issues/40052774/attachments/52952940?download=true",
+      "local_path": "attachments/2020-07-05 01-52-07.mp4"
+    },
+    {
+      "id": 52952941,
+      "filename": "PoC.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4048,
+      "url": "https://issues.chromium.org/action/issues/40052774/attachments/52952941?download=true",
+      "local_path": "attachments/PoC.zip"
+    },
+    {
+      "id": 52952952,
+      "filename": "Bildschirmfoto 2020-07-05 um 02.57.42.png",
+      "mime_type": "image/png",
+      "size_bytes": 243408,
+      "url": "https://issues.chromium.org/action/issues/40052774/attachments/52952952?download=true",
+      "local_path": "attachments/Bildschirmfoto 2020-07-05 um 02.57.42.png"
+    },
+    {
+      "id": 52952966,
+      "filename": "Bildschirmfoto 2020-07-05 um 16.49.24.png",
+      "mime_type": "image/png",
+      "size_bytes": 98493,
+      "url": "https://issues.chromium.org/action/issues/40052774/attachments/52952966?download=true",
+      "local_path": "attachments/Bildschirmfoto 2020-07-05 um 16.49.24.png"
+    }
+  ],
+  "update_count": 72,
+  "description_snippet": "Hello Security Team,\r\n\r\nBefore the screen transmission starts, a dialog box appears. This dialog window is displayed in the middle of the browser and only 2 clicks are enough to start the screen transmission. This can be used by attackers who want to get important information. I have created a video"
+}

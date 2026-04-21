@@ -1,0 +1,45 @@
+{
+  "id": "40059331",
+  "url": "https://issues.chromium.org/issues/40059331",
+  "title": "Security: UAF in SegmentationPlatformServiceImpl",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>SegmentationPlatform",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "ss...@chromium.org",
+  "created_date": "2022-04-08T10:43:25+00:00",
+  "modified_date": "2024-01-09T05:59:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53177910,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 18361,
+      "url": "https://issues.chromium.org/action/issues/40059331/attachments/53177910?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53177911,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 140,
+      "url": "https://issues.chromium.org/action/issues/40059331/attachments/53177911?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nWhen the ProfileManager is destructed with flag SegmentationPlatform enabled:  \n  \nProfileManager::~ProfileManager()  \n```  \nProfileManager::~ProfileManager() {  \n  DCHECK_CALLED_ON_VALID_THREAD(thread_checker_);  \n  for (auto& observer : observers_) {  \n    observer."
+}

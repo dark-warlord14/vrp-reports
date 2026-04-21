@@ -1,0 +1,57 @@
+{
+  "id": "40071138",
+  "url": "https://issues.chromium.org/issues/40071138",
+  "title": "Security: Cookie leaking from the request object in chrome.devtools.network in onRequestFinished event",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions>API",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "ds...@chromium.org",
+  "created_date": "2023-09-01T11:55:43+00:00",
+  "modified_date": "2024-01-09T10:58:42+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53238108,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 74,
+      "url": "https://issues.chromium.org/action/issues/40071138/attachments/53238108?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53238109,
+      "filename": "devtools.html",
+      "mime_type": "text/plain",
+      "size_bytes": 35,
+      "url": "https://issues.chromium.org/action/issues/40071138/attachments/53238109?download=true",
+      "local_path": "attachments/devtools.html"
+    },
+    {
+      "id": 53238110,
+      "filename": "devtools.js",
+      "mime_type": "text/plain",
+      "size_bytes": 182,
+      "url": "https://issues.chromium.org/action/issues/40071138/attachments/53238110?download=true",
+      "local_path": "attachments/devtools.js"
+    },
+    {
+      "id": 53238111,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 184,
+      "url": "https://issues.chromium.org/action/issues/40071138/attachments/53238111?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nhttps://chromium.googlesource.com/devtools/devtools-frontend/+/90ebdff4cc6efa1c3fbf3026d2be4de268c3afe6 fixed an issue in https://bugs.chromium.org/p/chromium/issues/detail?id=1471253 where cookie values were uncleared for enterprise-policy blocked hosts. However the fix"
+}

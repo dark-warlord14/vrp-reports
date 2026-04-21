@@ -1,0 +1,54 @@
+{
+  "id": "40062526",
+  "url": "https://issues.chromium.org/issues/40062526",
+  "title": "UAF in blink::RTCPeerConnectionHandler::OnIceCandidate",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebRTC",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "ht...@chromium.org",
+  "created_date": "2023-01-05T18:37:42+00:00",
+  "modified_date": "2024-01-09T09:43:15+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53217003,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1345,
+      "url": "https://issues.chromium.org/action/issues/40062526/attachments/53217003?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53217004,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 43590,
+      "url": "https://issues.chromium.org/action/issues/40062526/attachments/53217004?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53217005,
+      "filename": "launcher.sh",
+      "mime_type": "text/plain",
+      "size_bytes": 397,
+      "url": "https://issues.chromium.org/action/issues/40062526/attachments/53217005?download=true",
+      "local_path": "attachments/launcher.sh"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "**Steps to reproduce the problem:**   \ntested os:  \nubuntu 22.04  \ntested chrome version:  \nChromium 110.0.5478.4  \nChromium 111.0.5521.0(gs://chromium-browser-asan/linux-release/asan-linux-release-1089145.zip)  \n  \nrepro steps  \n(1)python3 -m http.server 8000 |path to poc folder|  \n(2)./chrome   --"
+}

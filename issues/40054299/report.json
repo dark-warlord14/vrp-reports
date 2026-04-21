@@ -1,0 +1,39 @@
+{
+  "id": "40054299",
+  "url": "https://issues.chromium.org/issues/40054299",
+  "title": "Security: Reloading iframes with data: src causes partial CSP bypass",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ar...@gmail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2020-12-26T19:47:24+00:00",
+  "modified_date": "2023-07-28T23:46:04+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53037406,
+      "filename": "partial csp circumvent demo.html",
+      "mime_type": "text/plain",
+      "size_bytes": 203,
+      "url": "https://issues.chromium.org/action/issues/40054299/attachments/53037406?download=true",
+      "local_path": "attachments/partial csp circumvent demo.html"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nCertain embedded contexts, including iframes, are required to inherit the CSP of their parent under certain conditions. Section 3.5 - Policy Applicability of the CSP2 specification states that:  \n  \nUnless the embedded resource is a globally unique identifier (or a srcdo"
+}

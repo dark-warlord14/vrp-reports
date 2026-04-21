@@ -1,0 +1,54 @@
+{
+  "id": "40075944",
+  "url": "https://issues.chromium.org/issues/40075944",
+  "title": "UAP in permissions::PermissionRequestQueue::Peek",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "tu...@chromium.org",
+  "created_date": "2023-10-31T03:04:35+00:00",
+  "modified_date": "2024-05-11T11:02:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 30000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53354577,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 767,
+      "url": "https://issues.chromium.org/action/issues/40075944/attachments/53354577?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 53354578,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 937,
+      "url": "https://issues.chromium.org/action/issues/40075944/attachments/53354578?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53354609,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 20549,
+      "url": "https://issues.chromium.org/action/issues/40075944/attachments/53354609?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1.download the attachment and serve a http server in 8000  \n2.download the asan build dev version chromium or build the newest chromium  \n3.rm -rf /tmp/abcd1234;out/asan/chrome  \n4.Click the trigger_uaf button. Then after 2 seconds, uaf happen.  \n  \n**Problem D"
+}

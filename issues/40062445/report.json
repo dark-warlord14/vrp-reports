@@ -1,0 +1,89 @@
+{
+  "id": "40062445",
+  "url": "https://issues.chromium.org/issues/40062445",
+  "title": "Security:  (Android) PWA Install prompt can be overlaid over other origins.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>WebAppInstalls>Android",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "ei...@chromium.org",
+  "created_date": "2022-12-30T07:47:47+00:00",
+  "modified_date": "2024-01-09T10:22:25+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53372176,
+      "filename": "a2hs-poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 939,
+      "url": "https://issues.chromium.org/action/issues/40062445/attachments/53372176?download=true",
+      "local_path": "attachments/a2hs-poc.html"
+    },
+    {
+      "id": 53372177,
+      "filename": "app.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1791,
+      "url": "https://issues.chromium.org/action/issues/40062445/attachments/53372177?download=true",
+      "local_path": "attachments/app.js"
+    },
+    {
+      "id": 53372178,
+      "filename": "app.webmanifest",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 622,
+      "url": "https://issues.chromium.org/action/issues/40062445/attachments/53372178?download=true",
+      "local_path": "attachments/app.webmanifest"
+    },
+    {
+      "id": 53372179,
+      "filename": "dummy-sw.js",
+      "mime_type": "text/plain",
+      "size_bytes": 156,
+      "url": "https://issues.chromium.org/action/issues/40062445/attachments/53372179?download=true",
+      "local_path": "attachments/dummy-sw.js"
+    },
+    {
+      "id": 53372180,
+      "filename": "phishing.html",
+      "mime_type": "text/plain",
+      "size_bytes": 731,
+      "url": "https://issues.chromium.org/action/issues/40062445/attachments/53372180?download=true",
+      "local_path": "attachments/phishing.html"
+    },
+    {
+      "id": 53372181,
+      "filename": "style.css",
+      "mime_type": "text/plain",
+      "size_bytes": 868,
+      "url": "https://issues.chromium.org/action/issues/40062445/attachments/53372181?download=true",
+      "local_path": "attachments/style.css"
+    },
+    {
+      "id": 53372186,
+      "filename": "mobizen_20221230_155420.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1416339,
+      "url": "https://issues.chromium.org/action/issues/40062445/attachments/53372186?download=true",
+      "local_path": "attachments/mobizen_20221230_155420.mp4"
+    },
+    {
+      "id": 53372228,
+      "filename": "mobizen_20230117_011517.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 8161583,
+      "url": "https://issues.chromium.org/action/issues/40062445/attachments/53372228?download=true",
+      "local_path": "attachments/mobizen_20230117_011517.mp4"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nI found that by changing the PoC a little, it is indeed possible to reproduce https://bugs.chromium.org/p/chromium/issues/detail?id=1404001 on Android.  \n  \nOn Android, there are two types of installation prompts for PWAs  \n  \n(1) Installation prompt with description and"
+}

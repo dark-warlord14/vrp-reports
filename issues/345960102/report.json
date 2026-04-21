@@ -1,0 +1,38 @@
+{
+  "id": "345960102",
+  "url": "https://issues.chromium.org/issues/345960102",
+  "title": "Turbofan incorrectly optimizes 64 bit bigint shifts.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Compiler>Turbofan",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "in...@gmail.com",
+  "assignee": "ni...@chromium.org",
+  "created_date": "2024-06-10T01:18:57+00:00",
+  "modified_date": "2025-08-16T19:46:30+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "bounty_rationale": "$10,000 for high quality report of memory corruption in a non-sandboxed process + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 57023263,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 325,
+      "url": "https://issues.chromium.org/action/issues/345960102/attachments/57023263?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "VULNERABILITY DETAILS\n\nTurbofan incorrectly optimizes 64 bit bigint shifts.\n\nIn src/compiler/simplified-lowering.cc \"VisitNode(Node* node, Truncation truncation, SimplifiedLowering* lowering)\" we try to optimize bigint (left and right) shifts:\n```cpp\n      case IrOpcode::kSpeculativeBigIntShiftLeft:"
+}

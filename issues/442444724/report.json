@@ -1,0 +1,37 @@
+{
+  "id": "442444724",
+  "url": "https://issues.chromium.org/issues/442444724",
+  "title": "Heap-buffer-overflow/wild-read in dawn::native::`anonymous namespace'::ReflectEntryPointUsingTint ",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Dawn",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "gm...@chromium.org",
+  "created_date": "2025-09-02T09:03:22+00:00",
+  "modified_date": "2026-03-05T16:43:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 25000.0,
+  "bounty_rationale": "Sandbox escape in GPU on android (non-sandboxed)",
+  "attachments": [
+    {
+      "id": 68929093,
+      "filename": "heap-buffer-overflow-dawnnativeReflectEntryPointUsingTint.html",
+      "mime_type": "text/html",
+      "size_bytes": 6458,
+      "url": "https://issues.chromium.org/action/issues/442444724/attachments/68929093?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 149,
+  "description_snippet": "Tested on:\n Chromium:  141.0.7379.0 (Developer Build) (64-bit) \n OS:\tWindows 11 Version 24H2 (Build 26100.4946)\n\nGPU-info: Integrated AMD Radeon Graphics of AMD Ryzen 5 5625U\n\nTo reproduce run attached .html with '--enable-experimental-web-platform-features' flag.\n\nchromium-141.0.7379.0-win64-asan"
+}

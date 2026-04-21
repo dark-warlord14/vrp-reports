@@ -1,0 +1,84 @@
+{
+  "id": "40055380",
+  "url": "https://issues.chromium.org/issues/40055380",
+  "title": "Security: Site isolation break because of double fetch of shared buffer",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime, Internals>Network>Cache, Internals>Sandbox>SiteIsolation",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hi...@gmail.com",
+  "assignee": "bb...@chromium.org",
+  "created_date": "2021-03-30T13:00:05+00:00",
+  "modified_date": "2024-01-09T08:57:24+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53211850,
+      "filename": "poc.tar",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 6584320,
+      "url": "https://issues.chromium.org/action/issues/40055380/attachments/53211850?download=true",
+      "local_path": "attachments/poc.tar"
+    },
+    {
+      "id": 53211890,
+      "filename": "demo.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 189914,
+      "url": "https://issues.chromium.org/action/issues/40055380/attachments/53211890?download=true",
+      "local_path": "attachments/demo.gif"
+    },
+    {
+      "id": 53211898,
+      "filename": "site isolation.png",
+      "mime_type": "image/png",
+      "size_bytes": 43242,
+      "url": "https://issues.chromium.org/action/issues/40055380/attachments/53211898?download=true",
+      "local_path": "attachments/site isolation.png"
+    },
+    {
+      "id": 53211918,
+      "filename": "attacker.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2180,
+      "url": "https://issues.chromium.org/action/issues/40055380/attachments/53211918?download=true",
+      "local_path": "attachments/attacker.html"
+    },
+    {
+      "id": 53211919,
+      "filename": "victim.html",
+      "mime_type": "text/plain",
+      "size_bytes": 185,
+      "url": "https://issues.chromium.org/action/issues/40055380/attachments/53211919?download=true",
+      "local_path": "attachments/victim.html"
+    },
+    {
+      "id": 53211920,
+      "filename": "cached.js",
+      "mime_type": "text/plain",
+      "size_bytes": 75557,
+      "url": "https://issues.chromium.org/action/issues/40055380/attachments/53211920?download=true",
+      "local_path": "attachments/cached.js"
+    },
+    {
+      "id": 53211921,
+      "filename": "cachearray.js",
+      "mime_type": "text/plain",
+      "size_bytes": 467706,
+      "url": "https://issues.chromium.org/action/issues/40055380/attachments/53211921?download=true",
+      "local_path": "attachments/cachearray.js"
+    }
+  ],
+  "update_count": 82,
+  "description_snippet": "in the function GeneratedCodeCache::WriteEntry, the buffer |data| is passed from renderer process, the function calculate the hash |checksum_key|\r\nfirstly and then write the buffer to code cache backing store. if renderer modify the content of the buffer between calculation and write. the\r\nchecksum_"
+}

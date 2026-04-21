@@ -1,0 +1,41 @@
+{
+  "id": "40063506",
+  "url": "https://issues.chromium.org/issues/40063506",
+  "title": "Security: ChromeOS: Local privilege escalation due to use-after-free in u32 classifier",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mg...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2023-03-10T07:36:08+00:00",
+  "modified_date": "2024-06-27T08:49:19+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53160389,
+      "filename": "poc_min.c",
+      "mime_type": "text/plain",
+      "size_bytes": 9323,
+      "url": "https://issues.chromium.org/action/issues/40063506/attachments/53160389?download=true",
+      "local_path": "attachments/poc_min.c"
+    },
+    {
+      "id": 53160390,
+      "filename": "poc.c",
+      "mime_type": "text/plain",
+      "size_bytes": 20728,
+      "url": "https://issues.chromium.org/action/issues/40063506/attachments/53160390?download=true",
+      "local_path": "attachments/poc.c"
+    }
+  ],
+  "update_count": 24,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nA reference counter leak occurs due to incorrect error handling when creating a `tc_u_knode` object in the `u32_change()`. By exploiting the vulnerability, an attacker could gain root privilege.  \n  \n```c  \nstatic int u32_change(struct net \\*net, struct sk_buff \\*in_s"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "367475557",
+  "url": "https://issues.chromium.org/issues/367475557",
+  "title": "race condition on pip window lead to spoof address bar",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Media>PictureInPicture",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "li...@chromium.org",
+  "created_date": "2024-09-17T13:58:11+00:00",
+  "modified_date": "2026-02-11T12:49:22+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": "Security UI Spoofing",
+  "attachments": [
+    {
+      "id": 59440053,
+      "filename": "bandicam 2024-09-17 20-33-05-444.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2854992,
+      "url": "https://issues.chromium.org/action/issues/367475557/attachments/59440053?download=true",
+      "local_path": "attachments/bandicam 2024-09-17 20-33-05-444.mp4"
+    },
+    {
+      "id": 59440054,
+      "filename": "bandicam 2024-09-17 20-53-51-182.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3222450,
+      "url": "https://issues.chromium.org/action/issues/367475557/attachments/59440054?download=true",
+      "local_path": "attachments/bandicam 2024-09-17 20-53-51-182.mp4"
+    },
+    {
+      "id": 59440055,
+      "filename": "paymentpip1.html",
+      "mime_type": "text/html",
+      "size_bytes": 3097,
+      "url": "https://issues.chromium.org/action/issues/367475557/attachments/59440055?download=true",
+      "local_path": "attachments/paymentpip1.html"
+    },
+    {
+      "id": 70551660,
+      "filename": "bandicam 2025-10-31 14-29-07-497.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4432115,
+      "url": "https://issues.chromium.org/action/issues/367475557/attachments/70551660?download=true",
+      "local_path": "attachments/bandicam 2025-10-31 14-29-07-497.mp4"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "VULNERABILITY DETAILS\n\nI found a race condition vulnerability on pip window where when a page that opens pip window repeatedly and at the same time redirects to another page, the pip window should be closed but it doesn't and the url bar in pip window is the redirect address\n\nVERSION\nChrome Version"
+}

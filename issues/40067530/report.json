@@ -1,0 +1,54 @@
+{
+  "id": "40067530",
+  "url": "https://issues.chromium.org/issues/40067530",
+  "title": "Security: Type confusion in VisitFindNonDefaultConstructorOrConstruct of Maglev",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Maglev",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m-...@github.com",
+  "assignee": "ve...@chromium.org",
+  "created_date": "2023-07-17T12:25:03+00:00",
+  "modified_date": "2024-02-29T20:20:41+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53303612,
+      "filename": "super_ctor.js",
+      "mime_type": "text/plain",
+      "size_bytes": 275,
+      "url": "https://issues.chromium.org/action/issues/40067530/attachments/53303612?download=true",
+      "local_path": "attachments/super_ctor.js"
+    },
+    {
+      "id": 53303613,
+      "filename": "proxy.js",
+      "mime_type": "text/plain",
+      "size_bytes": 219,
+      "url": "https://issues.chromium.org/action/issues/40067530/attachments/53303613?download=true",
+      "local_path": "attachments/proxy.js"
+    },
+    {
+      "id": 53303729,
+      "filename": "exploit.js",
+      "mime_type": "text/plain",
+      "size_bytes": 4362,
+      "url": "https://issues.chromium.org/action/issues/40067530/attachments/53303729?download=true",
+      "local_path": "attachments/exploit.js"
+    }
+  ],
+  "update_count": 75,
+  "description_snippet": "Vulnerability Details  \n  \nIn the maglev implementation of `VisitFindNonDefaultConstructorOrConstruct`, if `new_target` is a constant function, then the object will be constructed directly using the `initial_map` of `new_target` [1], [2].  \n  \n```  \nvoid MaglevGraphBuilder::VisitFindNonDefaultConstr"
+}

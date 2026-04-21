@@ -1,0 +1,92 @@
+{
+  "id": "40064688",
+  "url": "https://issues.chromium.org/issues/40064688",
+  "title": "Security:  the autofill prompt appears together with the requesfullscreen, the autofill prompt does not close   it can confuse lead to spoof",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "jk...@google.com",
+  "created_date": "2023-05-19T23:22:08+00:00",
+  "modified_date": "2024-11-21T15:40:52+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "$1,000 thank you for your report, which provided information to confirm a timing change would be helpful making a security-relevant improvement",
+  "attachments": [
+    {
+      "id": 53022587,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064688/attachments/53022587?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53022620,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064688/attachments/53022620?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53022634,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064688/attachments/53022634?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53022654,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064688/attachments/53022654?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53022811,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064688/attachments/53022811?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53022825,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064688/attachments/53022825?download=true",
+      "local_path": null
+    },
+    {
+      "id": 56021752,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064688/attachments/56021752?download=true",
+      "local_path": null
+    },
+    {
+      "id": 57629995,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064688/attachments/57629995?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 78,
+  "description_snippet": "deleted"
+}

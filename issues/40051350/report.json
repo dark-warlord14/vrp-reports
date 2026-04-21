@@ -1,0 +1,27 @@
+{
+  "id": "40051350",
+  "url": "https://issues.chromium.org/issues/40051350",
+  "title": "Security: Extension fingerprinting by detecting fetched resources",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>PerformanceAPIs>ResourceTiming, Platform>Extensions, Privacy",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "so...@gmail.com",
+  "assignee": "ha...@chromium.org",
+  "created_date": "2020-01-25T01:33:13+00:00",
+  "modified_date": "2024-01-09T07:52:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 86,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nBrowser extensions can fetch resources (i.e., style sheets, scripts, images, etc.) from the Internet. Attackers can use Resource Timing API to collect the list of fetched resources and enumerate installed extensions. Using the performance.getEntriesByType(\"resource\") met"
+}

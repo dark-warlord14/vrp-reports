@@ -1,0 +1,29 @@
+{
+  "id": "40055987",
+  "url": "https://issues.chromium.org/issues/40055987",
+  "title": "Security: expat vulnerable to CVE-2013-0340?",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>XML",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2013-0340"
+  ],
+  "reporter": "se...@pipping.org",
+  "assignee": "bu...@chromium.org",
+  "created_date": "2021-05-24T16:59:28+00:00",
+  "modified_date": "2024-08-11T21:22:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 35,
+  "description_snippet": "Reported by Sebastian Pipping:\r\n\r\nI believe ... this vulnerability affect Chromium:\r\n\r\n  CVE-2013-0340 \"Billion Laughs\" fixed in Expat 2.4.0\r\n\r\nhttps://blog.hartwork.org/posts/cve-2013-0340-billion-laughs-fixed-in-expat-2-4-0/"
+}

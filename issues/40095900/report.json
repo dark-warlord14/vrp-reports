@@ -1,0 +1,45 @@
+{
+  "id": "40095900",
+  "url": "https://issues.chromium.org/issues/40095900",
+  "title": "Security: Security: CSP does not propagate to blob: URIs",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ti...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2019-08-03T10:05:33+00:00",
+  "modified_date": "2025-02-13T00:21:31+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53252999,
+      "filename": "firefox.png",
+      "mime_type": "image/png",
+      "size_bytes": 23539,
+      "url": "https://issues.chromium.org/action/issues/40095900/attachments/53252999?download=true",
+      "local_path": "attachments/firefox.png"
+    },
+    {
+      "id": 53253000,
+      "filename": "microsoftedge_dev.png",
+      "mime_type": "image/png",
+      "size_bytes": 27048,
+      "url": "https://issues.chromium.org/action/issues/40095900/attachments/53253000?download=true",
+      "local_path": "attachments/microsoftedge_dev.png"
+    }
+  ],
+  "update_count": 72,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen setting a CSP that allows blob: URIs, creating a blob: of type \"text/html\" and then navigating to that blob removes the CSP restrictions with script-src 'unsafe-inline'. That means an eval() call can been executed.Just like https://crbug.com/chromium/905301.  \n  \n**"
+}

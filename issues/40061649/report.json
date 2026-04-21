@@ -1,0 +1,105 @@
+{
+  "id": "40061649",
+  "url": "https://issues.chromium.org/issues/40061649",
+  "title": "UAF in ScreenAIService",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "UI>Accessibility",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "rh...@chromium.org",
+  "created_date": "2022-11-08T11:57:26+00:00",
+  "modified_date": "2024-06-18T12:40:44+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53076524,
+      "filename": "asan1.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 25080,
+      "url": "https://issues.chromium.org/action/issues/40061649/attachments/53076524?download=true",
+      "local_path": "attachments/asan1.txt"
+    },
+    {
+      "id": 53076525,
+      "filename": "asan2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 25080,
+      "url": "https://issues.chromium.org/action/issues/40061649/attachments/53076525?download=true",
+      "local_path": "attachments/asan2.txt"
+    },
+    {
+      "id": 53076526,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 767,
+      "url": "https://issues.chromium.org/action/issues/40061649/attachments/53076526?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 53076527,
+      "filename": "poc1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 190,
+      "url": "https://issues.chromium.org/action/issues/40061649/attachments/53076527?download=true",
+      "local_path": "attachments/poc1.html"
+    },
+    {
+      "id": 53076528,
+      "filename": "fake.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 1,
+      "url": "https://issues.chromium.org/action/issues/40061649/attachments/53076528?download=true",
+      "local_path": "attachments/fake.pdf"
+    },
+    {
+      "id": 53076536,
+      "filename": "1382369_1.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2189296,
+      "url": "https://issues.chromium.org/action/issues/40061649/attachments/53076536?download=true",
+      "local_path": "attachments/1382369_1.webm"
+    },
+    {
+      "id": 53076537,
+      "filename": "1382369_2.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2175969,
+      "url": "https://issues.chromium.org/action/issues/40061649/attachments/53076537?download=true",
+      "local_path": "attachments/1382369_2.webm"
+    },
+    {
+      "id": 53076563,
+      "filename": "non_patch_asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 25591,
+      "url": "https://issues.chromium.org/action/issues/40061649/attachments/53076563?download=true",
+      "local_path": "attachments/non_patch_asan.txt"
+    },
+    {
+      "id": 53076574,
+      "filename": "main.js",
+      "mime_type": "text/plain",
+      "size_bytes": 124,
+      "url": "https://issues.chromium.org/action/issues/40061649/attachments/53076574?download=true",
+      "local_path": "attachments/main.js"
+    },
+    {
+      "id": 53076575,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 176,
+      "url": "https://issues.chromium.org/action/issues/40061649/attachments/53076575?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**Steps to reproduce the problem:**   \nWill attach details soon.  \n  \n**Problem Description:**   \nbrowser UAF  \n  \n**Additional Comments:**   \n  \n  \n**Chrome version: ** 109.0.5407.0 **Channel: ** Canary  \n  \n**OS:** Mac OS"
+}

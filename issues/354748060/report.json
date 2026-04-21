@@ -1,0 +1,41 @@
+{
+  "id": "354748060",
+  "url": "https://issues.chromium.org/issues/354748060",
+  "title": "Security: Internal Compiler Error(OpTypeFunction may not take more than 255 arguments. OpTypeFunction <id> '267[%267]' has 256 arguments) in tint::spirv::writer::IRFuzzer",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Dawn>Tint",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "jr...@google.com",
+  "created_date": "2024-07-23T02:43:34+00:00",
+  "modified_date": "2026-03-05T16:43:45+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": "baseline report of potential memory corruption in a highly privileged process (GPU)",
+  "attachments": [
+    {
+      "id": 58125993,
+      "filename": "log.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 99454,
+      "url": "https://issues.chromium.org/action/issues/354748060/attachments/58125993?download=true",
+      "local_path": "attachments/log.txt"
+    },
+    {
+      "id": 58125994,
+      "filename": "poc.wgsl",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 13601,
+      "url": "https://issues.chromium.org/action/issues/354748060/attachments/58125994?download=true",
+      "local_path": "attachments/poc.wgsl"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "## REPRODUCE\n1. gn gen out/libfuzzer --args=\"use_libfuzzer=true tint_build_cmds=true\"\n2. ninja -C out/libfuzzer tint_wgsl_fuzzer\n3. out/libfuzzer/tint_wgsl_fuzzer --filter=\"writer\" poc.wgsl\n\n## CRASH LOG\nFor the full content, refer to log.txt. This is just a summary.\n```\nspirv:1:1 error: OpTypeFunct"
+}

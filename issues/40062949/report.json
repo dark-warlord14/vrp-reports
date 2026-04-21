@@ -1,0 +1,33 @@
+{
+  "id": "40062949",
+  "url": "https://issues.chromium.org/issues/40062949",
+  "title": "Security: UAF in void perfetto::DataSource<perfetto::perfetto_track_event::TrackEvent",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Speed>Tracing",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "kh...@google.com",
+  "created_date": "2023-02-07T13:53:34+00:00",
+  "modified_date": "2023-06-26T17:37:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53415729,
+      "filename": "webserver.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 49312,
+      "url": "https://issues.chromium.org/action/issues/40062949/attachments/53415729?download=true",
+      "local_path": "attachments/webserver.zip"
+    }
+  ],
+  "update_count": 27,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUAF in void perfetto::DataSource<perfetto::perfetto_track_event::TrackEvent  \n  \n**VERSION**   \n**Chrome Version: [x.x.x.x] + [stable, beta, or dev]**   \n**Operating System: [Please indicate OS, version, and service pack level]**   \n  \n**REPRODUCTION CASE**   \n1. unzip t"
+}

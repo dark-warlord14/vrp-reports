@@ -1,0 +1,66 @@
+{
+  "id": "40064425",
+  "url": "https://issues.chromium.org/issues/40064425",
+  "title": "Security: UAF in  extensions::WebViewFindHelper::FindReply in browser process",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "mc...@chromium.org",
+  "created_date": "2023-05-08T12:29:55+00:00",
+  "modified_date": "2024-01-09T07:54:36+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53178514,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 180,
+      "url": "https://issues.chromium.org/action/issues/40064425/attachments/53178514?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53178515,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 72,
+      "url": "https://issues.chromium.org/action/issues/40064425/attachments/53178515?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53178516,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 74,
+      "url": "https://issues.chromium.org/action/issues/40064425/attachments/53178516?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53178517,
+      "filename": "script.js",
+      "mime_type": "text/plain",
+      "size_bytes": 416,
+      "url": "https://issues.chromium.org/action/issues/40064425/attachments/53178517?download=true",
+      "local_path": "attachments/script.js"
+    },
+    {
+      "id": 53178518,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 196,
+      "url": "https://issues.chromium.org/action/issues/40064425/attachments/53178518?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n UAF in  extensions::WebViewFindHelper::FindReply in browser process  \n  \n**VERSION**   \nChromium\t115.0.5759.0 (Developer Build) (64-bit)   \nRevision\t8d1c2199edc54e419a2e1027e9264af9baaae847-refs/heads/main@{#1140712}  \nOS\tWindows 10 Version 22H2 (Build 19045.2846)"
+}

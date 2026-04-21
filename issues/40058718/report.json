@@ -1,0 +1,35 @@
+{
+  "id": "40058718",
+  "url": "https://issues.chromium.org/issues/40058718",
+  "title": "Security: [ANGLE] Heap use-after-free in CommandBufferHelperCommon::bufferWrite",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gg...@gmail.com",
+  "assignee": "jm...@chromium.org",
+  "created_date": "2022-02-08T19:53:58+00:00",
+  "modified_date": "2024-03-12T14:02:20+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53146184,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1762,
+      "url": "https://issues.chromium.org/action/issues/40058718/attachments/53146184?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThere is a heap use-after-free vulnerability in Vulkan backend that could be triggered in Swiftshader.  \nI think that this vulnerability started in commit 8270ebbd627d24eb87c61fde1282f52a6e085653.  \n  \n  \n  \n  \n  \n**VERSION**   \nChrome Version: master (and tested on 98.0"
+}

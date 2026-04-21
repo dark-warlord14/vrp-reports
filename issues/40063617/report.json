@@ -1,0 +1,49 @@
+{
+  "id": "40063617",
+  "url": "https://issues.chromium.org/issues/40063617",
+  "title": "Security: Heap-use-after-free in TabGroupModel::GetTabGroup",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>TopChrome>TabStrip>TabGroups",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "dl...@chromium.org",
+  "created_date": "2023-03-16T07:39:39+00:00",
+  "modified_date": "2024-01-09T10:04:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53403994,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 12,
+      "url": "https://issues.chromium.org/action/issues/40063617/attachments/53403994?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53403995,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 20899,
+      "url": "https://issues.chromium.org/action/issues/40063617/attachments/53403995?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53403996,
+      "filename": "video.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 791862,
+      "url": "https://issues.chromium.org/action/issues/40063617/attachments/53403996?download=true",
+      "local_path": "attachments/video.webm"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. download asan-linux-release-1117591.zip and unzip  \n2. start a http server at the folder of poc.html  \n3. run `./asan-linux-release-1117591/chrome  --user-data-dir=/tmp/noexist  --enable-features=TabGroupsSave http://127.0.0.1:8605/poc.html http://127.0.0.1:"
+}

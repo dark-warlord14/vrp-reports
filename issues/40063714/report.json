@@ -1,0 +1,45 @@
+{
+  "id": "40063714",
+  "url": "https://issues.chromium.org/issues/40063714",
+  "title": "Security: Heap-use-after-free in ExclusiveAccessBubbleViews::UpdateBounds",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "tl...@chromium.org",
+  "created_date": "2023-03-21T16:49:02+00:00",
+  "modified_date": "2024-01-09T10:09:05+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53407267,
+      "filename": "Screencast from 21 مارس, 2023 +00 16:48:29.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 3046388,
+      "url": "https://issues.chromium.org/action/issues/40063714/attachments/53407267?download=true",
+      "local_path": "attachments/Screencast from 21 مارس, 2023 +00 16_48_29.webm"
+    },
+    {
+      "id": 53407286,
+      "filename": "PoC.html",
+      "mime_type": "text/plain",
+      "size_bytes": 89,
+      "url": "https://issues.chromium.org/action/issues/40063714/attachments/53407286?download=true",
+      "local_path": "attachments/PoC.html"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "**VERSION**   \nChrome Version: 113.0.5667.0  \nOperating System: ChromeOS  \n  \n**REPRODUCTION CASE**   \n  \n1. Go to https://permission.site/ and click on \"Pointer Lock\"  \n2. Press F5   \n  \n=================================================================  \n==44950==ERROR: AddressSanitizer: heap-use-a"
+}

@@ -1,0 +1,53 @@
+{
+  "id": "40059047",
+  "url": "https://issues.chromium.org/issues/40059047",
+  "title": "[ANGLE] Vulkan Use After Free in onBeginTransformFeedback",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sj...@gmail.com",
+  "assignee": "jm...@chromium.org",
+  "created_date": "2022-03-10T13:52:19+00:00",
+  "modified_date": "2025-02-13T00:30:23+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53237056,
+      "filename": "report1.md",
+      "mime_type": "text/plain",
+      "size_bytes": 1355,
+      "url": "https://issues.chromium.org/action/issues/40059047/attachments/53237056?download=true",
+      "local_path": "attachments/report1.md"
+    },
+    {
+      "id": 53237057,
+      "filename": "poc1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2287,
+      "url": "https://issues.chromium.org/action/issues/40059047/attachments/53237057?download=true",
+      "local_path": "attachments/poc1.html"
+    },
+    {
+      "id": 53237058,
+      "filename": "poc1_asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17640,
+      "url": "https://issues.chromium.org/action/issues/40059047/attachments/53237058?download=true",
+      "local_path": "attachments/poc1_asan.txt"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.4934.0 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. run with ./chrome --no-sandbox http://localhost:8000/poc1.html\r\n2.\r\n3.\r\n\r\nWhat is the expected behavior?\r\n\r\nWhat went wrong?\r\n## Title\r\n- [ANGLE]"
+}

@@ -1,0 +1,108 @@
+{
+  "id": "40056837",
+  "url": "https://issues.chromium.org/issues/40056837",
+  "title": "container-overflow in blink::UserMediaProcessor::DetermineExistingAudioSessionId",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>GetUserMedia",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "to...@chromium.org",
+  "created_date": "2021-08-10T04:46:51+00:00",
+  "modified_date": "2024-01-09T08:54:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53389434,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1033,
+      "url": "https://issues.chromium.org/action/issues/40056837/attachments/53389434?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53389435,
+      "filename": "main.html",
+      "mime_type": "text/plain",
+      "size_bytes": 206,
+      "url": "https://issues.chromium.org/action/issues/40056837/attachments/53389435?download=true",
+      "local_path": "attachments/main.html"
+    },
+    {
+      "id": 53389436,
+      "filename": "testharness.js",
+      "mime_type": "text/plain",
+      "size_bytes": 154901,
+      "url": "https://issues.chromium.org/action/issues/40056837/attachments/53389436?download=true",
+      "local_path": "attachments/testharness.js"
+    },
+    {
+      "id": 53389437,
+      "filename": "testharnessreport.js",
+      "mime_type": "text/plain",
+      "size_bytes": 14529,
+      "url": "https://issues.chromium.org/action/issues/40056837/attachments/53389437?download=true",
+      "local_path": "attachments/testharnessreport.js"
+    },
+    {
+      "id": 53389480,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40056837/attachments/53389480?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53389481,
+      "filename": "main.html",
+      "mime_type": "text/plain",
+      "size_bytes": 206,
+      "url": "https://issues.chromium.org/action/issues/40056837/attachments/53389481?download=true",
+      "local_path": "attachments/main.html"
+    },
+    {
+      "id": 53389490,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 950,
+      "url": "https://issues.chromium.org/action/issues/40056837/attachments/53389490?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53389556,
+      "filename": "main.html",
+      "mime_type": "text/plain",
+      "size_bytes": 208,
+      "url": "https://issues.chromium.org/action/issues/40056837/attachments/53389556?download=true",
+      "local_path": "attachments/main.html"
+    },
+    {
+      "id": 53389557,
+      "filename": "crash2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 950,
+      "url": "https://issues.chromium.org/action/issues/40056837/attachments/53389557?download=true",
+      "local_path": "attachments/crash2.html"
+    },
+    {
+      "id": 53389597,
+      "filename": "symbolised_stack.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 55389,
+      "url": "https://issues.chromium.org/action/issues/40056837/attachments/53389597?download=true",
+      "local_path": "attachments/symbolised_stack.txt"
+    }
+  ],
+  "update_count": 82,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nChrome Version:\r\nChromium 93.0.4573.0\r\nGoogle Chrome 94.0.4595.0 dev\r\n1 ./chrome --user-data-dir=/tmp/xx --incognito   --use-fake--for-me"
+}

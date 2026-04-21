@@ -1,0 +1,30 @@
+{
+  "id": "41485789",
+  "url": "https://issues.chromium.org/issues/41485789",
+  "title": "Improper handling of duplicate `<html>` and `<body>` tags enables CSP nonce leakage",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fe...@gmail.com",
+  "assignee": "ph...@google.com",
+  "created_date": "2023-12-19T18:08:24+00:00",
+  "modified_date": "2024-06-13T21:10:33+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 84,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Visit https://poc.minimal.blue/nonce?name=%3Cstyle%3Ebody[nonce\\*=secret]{background:red}%3C/style%3E%3Cbody The page is served with the header `Content-Security-Policy: script-src 'nonce-secret'`  \n  \n2. Notice that the CSS selector `body[nonce\\*=secret]` c"
+}

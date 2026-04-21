@@ -1,0 +1,61 @@
+{
+  "id": "40062221",
+  "url": "https://issues.chromium.org/issues/40062221",
+  "title": "Security: UAF in GuestViewBase::StopTrackingEmbedderZoomLevel",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Apps>BrowserTag",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ss...@gmail.com",
+  "assignee": "mc...@chromium.org",
+  "created_date": "2022-12-14T01:35:26+00:00",
+  "modified_date": "2024-01-09T10:21:00+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53258380,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 49102,
+      "url": "https://issues.chromium.org/action/issues/40062221/attachments/53258380?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53258381,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 249,
+      "url": "https://issues.chromium.org/action/issues/40062221/attachments/53258381?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53258382,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 205,
+      "url": "https://issues.chromium.org/action/issues/40062221/attachments/53258382?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53258429,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 40936,
+      "url": "https://issues.chromium.org/action/issues/40062221/attachments/53258429?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nIn the constructor of `GuestViewBase`[1], a raw_ptr of `WebContents` is stored to its `owner_web_contents_`, which will be protected after the initialization completes[2].  \n  \n`AppViewGuest` is one of the derived class of `GuestViewBase`, when we create a `<appview>`"
+}

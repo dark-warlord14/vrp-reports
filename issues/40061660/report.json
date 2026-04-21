@@ -1,0 +1,46 @@
+{
+  "id": "40061660",
+  "url": "https://issues.chromium.org/issues/40061660",
+  "title": "Security: UAF in validation_message_overlay_delegate",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Forms",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sp...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2022-11-08T22:39:42+00:00",
+  "modified_date": "2024-01-09T06:42:27+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53341759,
+      "filename": "asan_symbolize.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 29730,
+      "url": "https://issues.chromium.org/action/issues/40061660/attachments/53341759?download=true",
+      "local_path": "attachments/asan_symbolize.txt"
+    },
+    {
+      "id": 53341760,
+      "filename": "poc1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 635,
+      "url": "https://issues.chromium.org/action/issues/40061660/attachments/53341760?download=true",
+      "local_path": "attachments/poc1.html"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nuse after free in ValidationMessageOverlayDelegate::GetElementById  \n  \n  \nChrome Version: 109.0.5410.0 (Developer Build) (64-bit)   \nOperating System: UBUNTU64  \n  \n**REPRODUCTION CASE**   \n  \nrun asan build of chromium with the poc attached  \n  \nType of crash: Use a"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "40063770",
+  "url": "https://issues.chromium.org/issues/40063770",
+  "title": "Arbitrary OOB read and write with WebGL via SwiftShader",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebGL, Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2023-03-26T10:34:26+00:00",
+  "modified_date": "2024-03-12T14:03:27+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 76,
+  "description_snippet": "**Steps to reproduce the problem:**   \n0. Launch google-chrome with swiftshader as renderer: google-chrome --use-gl=swiftshader  \n  \n1. For simplification, visit https://www.shadertoy.com/new  \n  \n2. Copy this shader  \n  \n```  \nuvec4 magic[0x7ffffff];  \n  \nuniform float q;  \n  \nint weird(int a, int"
+}

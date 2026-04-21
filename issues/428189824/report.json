@@ -1,0 +1,148 @@
+{
+  "id": "428189824",
+  "url": "https://issues.chromium.org/issues/428189824",
+  "title": "Security: PiP window obscures FSA API file picker dialog (env var leak)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Media>PictureInPicture, Blink>Storage>FileSystem",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "le...@google.com",
+  "created_date": "2025-06-27T22:25:13+00:00",
+  "modified_date": "2025-11-22T12:40:03+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "high quality report of lower-end of moderate user information disclosure; there was some sufficient and specific gestures here need here to make this possible",
+  "attachments": [
+    {
+      "id": 67108012,
+      "filename": "filepicker-pip.html",
+      "mime_type": "text/html",
+      "size_bytes": 6309,
+      "url": "https://issues.chromium.org/action/issues/428189824/attachments/67108012?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67133866,
+      "filename": "filepicker-pip-minimal.html",
+      "mime_type": "text/html",
+      "size_bytes": 1433,
+      "url": "https://issues.chromium.org/action/issues/428189824/attachments/67133866?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67133867,
+      "filename": "filepicker-pip.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3287319,
+      "url": "https://issues.chromium.org/action/issues/428189824/attachments/67133867?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67133868,
+      "filename": "filepicker-pip-minimal-FileDialogsTuckPictureInPicture.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2846907,
+      "url": "https://issues.chromium.org/action/issues/428189824/attachments/67133868?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67133869,
+      "filename": "filepicker-pip-minimal-FileDialogsBlockPictureInPicture.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2107320,
+      "url": "https://issues.chromium.org/action/issues/428189824/attachments/67133869?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67333633,
+      "filename": "filepicker-pip-rce.html",
+      "mime_type": "text/html",
+      "size_bytes": 4317,
+      "url": "https://issues.chromium.org/action/issues/428189824/attachments/67333633?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67346603,
+      "filename": "filepicker-pip-rce.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 11549118,
+      "url": "https://issues.chromium.org/action/issues/428189824/attachments/67346603?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67378542,
+      "filename": "filepicker-pip-rce-cr.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 2222,
+      "url": "https://issues.chromium.org/action/issues/428189824/attachments/67378542?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67378543,
+      "filename": "filepicker-pip-rce-cr.html",
+      "mime_type": "text/html",
+      "size_bytes": 2814,
+      "url": "https://issues.chromium.org/action/issues/428189824/attachments/67378543?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67378544,
+      "filename": "filepicker-pip-rce-cr.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 7821162,
+      "url": "https://issues.chromium.org/action/issues/428189824/attachments/67378544?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67379411,
+      "filename": "filepicker-pip-rce-cr.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 3305,
+      "url": "https://issues.chromium.org/action/issues/428189824/attachments/67379411?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67414202,
+      "filename": "filepicker-pip-rce-bg-cr.html",
+      "mime_type": "text/html",
+      "size_bytes": 3145,
+      "url": "https://issues.chromium.org/action/issues/428189824/attachments/67414202?download=true",
+      "local_path": null
+    },
+    {
+      "id": 67414203,
+      "filename": "filepicker-pip-rce-bg-cr.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3215814,
+      "url": "https://issues.chromium.org/action/issues/428189824/attachments/67414203?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68193855,
+      "filename": "Screencast From 2025-08-05 15-48-28.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1930922,
+      "url": "https://issues.chromium.org/action/issues/428189824/attachments/68193855?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68226289,
+      "filename": "Untitled.png",
+      "mime_type": "image/png",
+      "size_bytes": 23989,
+      "url": "https://issues.chromium.org/action/issues/428189824/attachments/68226289?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 92,
+  "description_snippet": "## SUMMARY\n\nA PiP window can obscure the file/directory picker dialog, using the File System Access (FSA) API. Without user awareness, an attacker can:\n* Read environment variables (similar to issue 40057200)\n* Read/write files (similar to issue 40076120)\n\nUsing the FSA API bypasses existing protect"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "40064061",
+  "url": "https://issues.chromium.org/issues/40064061",
+  "title": "Security: Chrome OS i915 drm gpu driver create_clone UAF",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pi...@gmail.com",
+  "assignee": "ch...@google.com",
+  "created_date": "2023-04-15T10:59:36+00:00",
+  "modified_date": "2023-08-01T17:38:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53368409,
+      "filename": "create_clone.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1755,
+      "url": "https://issues.chromium.org/action/issues/40064061/attachments/53368409?download=true",
+      "local_path": "attachments/create_clone.diff"
+    },
+    {
+      "id": 53368410,
+      "filename": "drm_poc.c",
+      "mime_type": "text/plain",
+      "size_bytes": 4225,
+      "url": "https://issues.chromium.org/action/issues/40064061/attachments/53368410?download=true",
+      "local_path": "attachments/drm_poc.c"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThis i915 drm gpu driver is used on Pixelbook. The latest pixelbook image kernel version is 5.4.  \n  \nIn this ioctl call path has a bug can cause UAF:  \n    i915_gem_context_create_ioctl -> i915_user_extensions -> create_clone  \n  \nIt doesn't increase the i915_gem_con"
+}

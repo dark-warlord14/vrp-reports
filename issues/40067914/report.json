@@ -1,0 +1,57 @@
+{
+  "id": "40067914",
+  "url": "https://issues.chromium.org/issues/40067914",
+  "title": "Security: [Esc] KeyPress Does Not Work in FullScreen While navigator.share Is Active",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>WebShare, UI>Browser>FullScreen",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pu...@gmail.com",
+  "assignee": "mg...@chromium.org",
+  "created_date": "2023-07-22T09:30:23+00:00",
+  "modified_date": "2025-02-17T14:27:21+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "with the addition of the new and more security impactful POC in c#36, $5,000 for report of moderate impact security UI spoof",
+  "attachments": [
+    {
+      "id": 53092209,
+      "filename": "PufIndex.html",
+      "mime_type": "text/plain",
+      "size_bytes": 464,
+      "url": "https://issues.chromium.org/action/issues/40067914/attachments/53092209?download=true",
+      "local_path": "attachments/PufIndex.html"
+    },
+    {
+      "id": 53092210,
+      "filename": "New Poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 382458,
+      "url": "https://issues.chromium.org/action/issues/40067914/attachments/53092210?download=true",
+      "local_path": "attachments/New Poc.mp4"
+    },
+    {
+      "id": 58475381,
+      "filename": "New Reproduce.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 391070,
+      "url": "https://issues.chromium.org/action/issues/40067914/attachments/58475381?download=true",
+      "local_path": "attachments/New Reproduce.mp4"
+    },
+    {
+      "id": 58475407,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 550,
+      "url": "https://issues.chromium.org/action/issues/40067914/attachments/58475407?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 88,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nWe Can Prevent [Esc] KeyPress in Full Screen Mode Using navigator.share   \n  \n**VERSION**   \nChrome Version: [115.0.5790.99] + [stable]  \nOperating System: [Windows 10]  \n  \n**REPRODUCTION CASE**   \n1. Open PocIndex.html  \n2. Double Click [Click Me!] button  \n3. Done"
+}

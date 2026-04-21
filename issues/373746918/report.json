@@ -1,0 +1,41 @@
+{
+  "id": "373746918",
+  "url": "https://issues.chromium.org/issues/373746918",
+  "title": "Android fullscreen notification is not shown when Chrome is in split-screen",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Fullscreen",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fa...@gmail.com",
+  "assignee": "mu...@google.com",
+  "created_date": "2024-10-16T13:24:27+00:00",
+  "modified_date": "2026-03-31T07:56:06+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "Low impact UI spoofing with user gestures",
+  "attachments": [
+    {
+      "id": 60108388,
+      "filename": "repro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3121287,
+      "url": "https://issues.chromium.org/action/issues/373746918/attachments/60108388?download=true",
+      "local_path": "attachments/repro.mp4"
+    },
+    {
+      "id": 65396415,
+      "filename": "repro-fixed.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1207359,
+      "url": "https://issues.chromium.org/action/issues/373746918/attachments/65396415?download=true",
+      "local_path": "attachments/repro-fixed.mp4"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "Security Bug\nVULNERABILITY DETAILS\nWhen the Chrome Android browser is open in split-screen mode after an app, activating fullscreen does not show the security fullscreen notification indicating that the user has switched to fullscreen. Therefore, this can be used for spoofing the address bar.\n\nVERSI"
+}

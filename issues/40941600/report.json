@@ -1,0 +1,37 @@
+{
+  "id": "40941600",
+  "url": "https://issues.chromium.org/issues/40941600",
+  "title": "Security: V8 Debug check failed: LAST_TYPE >= value",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "vu...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2023-11-10T13:24:28+00:00",
+  "modified_date": "2024-02-22T15:39:50+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 16000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53021830,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 344,
+      "url": "https://issues.chromium.org/action/issues/40941600/attachments/53021830?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 76,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n**Please provide a brief explanation of the security issue.**   \n=================================================================  \n==35892==ERROR: AddressSanitizer: access-violation on unknown address 0x12ef001d773f (pc 0x7ff77cf0deed bp 0x008d7e5fe4b0 sp 0x008d7e5fe42"
+}

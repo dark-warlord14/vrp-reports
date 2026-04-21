@@ -1,0 +1,33 @@
+{
+  "id": "40057297",
+  "url": "https://issues.chromium.org/issues/40057297",
+  "title": "#Summary SUMMARY: AddressSanitizer: heap-use-after-free in gpu::CommandBufferProxyImpl::OnDisconnect",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "ro...@google.com",
+  "created_date": "2021-09-17T09:26:40+00:00",
+  "modified_date": "2024-01-09T09:03:14+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53048436,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 10902,
+      "url": "https://issues.chromium.org/action/issues/40057297/attachments/53048436?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/95.0.4628.3 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n#TestOn\r\nWindows NT 10.0; Win64; x64\r\ngit status\r\nHEAD detached from 77ffd97a139\r\n\r\n#Reproduce\r\nThis issue is not stable to reproduce, but"
+}

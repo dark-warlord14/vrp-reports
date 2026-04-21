@@ -1,0 +1,39 @@
+{
+  "id": "40082523",
+  "url": "https://issues.chromium.org/issues/40082523",
+  "title": "Security: Performance APIs reveal cross-origin URLs.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink, Blink>PermissionsAPI",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pv...@gmail.com",
+  "assignee": "ks...@chromium.org",
+  "created_date": "2015-07-18T14:49:03+00:00",
+  "modified_date": "2018-04-25T22:57:17+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53282319,
+      "filename": "xreadurl.html",
+      "mime_type": "text/html",
+      "size_bytes": 2044,
+      "url": "https://issues.chromium.org/action/issues/40082523/attachments/53282319?download=true",
+      "local_path": "attachments/xreadurl.html"
+    },
+    {
+      "id": 53282382,
+      "filename": "xreadurl2.html",
+      "mime_type": "text/html",
+      "size_bytes": 1985,
+      "url": "https://issues.chromium.org/action/issues/40082523/attachments/53282382?download=true",
+      "local_path": "attachments/xreadurl2.html"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt is possible to read x-domain URLs after a redirect if the page can be iframed. What I think is a violation of the SOP and could be used to steal sensitive data from several pages.  \n  \nIf http://victim/ redirects to http://victim/?secret, an attacker can iframe the fi"
+}

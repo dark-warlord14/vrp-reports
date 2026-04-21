@@ -1,0 +1,33 @@
+{
+  "id": "40059011",
+  "url": "https://issues.chromium.org/issues/40059011",
+  "title": "Security: UAF in ScanningHandler",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>WebUI",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "ga...@chromium.org",
+  "created_date": "2022-03-08T11:44:19+00:00",
+  "modified_date": "2025-02-13T00:08:21+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53404928,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 21654,
+      "url": "https://issues.chromium.org/action/issues/40059011/attachments/53404928?download=true",
+      "local_path": "attachments/asan"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nMessage `ensureValidFilePath` will post the reply task `OnPathExists`[1] with `base::Unretained(this)` into the new sequence. It will cause the UAF if `ScanningHandler` gets destroyed before the task run.  \n  \n[1]. https://source.chromium.org/chromium/chromium/src/+/m"
+}

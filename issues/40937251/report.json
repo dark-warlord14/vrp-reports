@@ -1,0 +1,43 @@
+{
+  "id": "40937251",
+  "url": "https://issues.chromium.org/issues/40937251",
+  "title": "UAF in vk::Format::getAspectFormat(unsigned int)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>SwiftShader",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2023-10-22T02:09:01+00:00",
+  "modified_date": "2024-02-08T15:45:06+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53377388,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1377,
+      "url": "https://issues.chromium.org/action/issues/40937251/attachments/53377388?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53377389,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 25887,
+      "url": "https://issues.chromium.org/action/issues/40937251/attachments/53377389?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "**Steps to reproduce the problem:**   \ntested os version:  \n-   ubuntu 22.04  \ntested chrome version:  \nChromium 120.0.6073.0  \nChromium 120.0.6080.0(gs://chromium-browser-asan/linux-release/asan-linux-release-1213059.zip)  \nrepro steps:  \n1 python3 -m http.server 8000 --dir=|PATH|  \n2 ./chrome --us"
+}

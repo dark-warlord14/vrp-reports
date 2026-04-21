@@ -1,0 +1,70 @@
+{
+  "id": "40061184",
+  "url": "https://issues.chromium.org/issues/40061184",
+  "title": "Security: Race condition in JSCreateLowering, leading to RCE",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ss...@gmail.com",
+  "assignee": "te...@chromium.org",
+  "created_date": "2022-09-30T07:11:08+00:00",
+  "modified_date": "2024-02-29T20:25:14+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53298501,
+      "filename": "lock.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1777,
+      "url": "https://issues.chromium.org/action/issues/40061184/attachments/53298501?download=true",
+      "local_path": "attachments/lock.diff"
+    },
+    {
+      "id": 53298502,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 348,
+      "url": "https://issues.chromium.org/action/issues/40061184/attachments/53298502?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53298503,
+      "filename": "gen.py",
+      "mime_type": "text/plain",
+      "size_bytes": 1834,
+      "url": "https://issues.chromium.org/action/issues/40061184/attachments/53298503?download=true",
+      "local_path": "attachments/gen.py"
+    },
+    {
+      "id": 53298504,
+      "filename": "exp.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3454,
+      "url": "https://issues.chromium.org/action/issues/40061184/attachments/53298504?download=true",
+      "local_path": "attachments/exp.js"
+    },
+    {
+      "id": 53298527,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 2468,
+      "url": "https://issues.chromium.org/action/issues/40061184/attachments/53298527?download=true",
+      "local_path": "attachments/patch.diff"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "**This template is ONLY for reporting security bugs. If you are reporting a**   \n**Download Protection Bypass bug, please use the \"Security - Download**   \n**Protection\" template. For all other reports, please use a different**   \n**template.**   \n  \n**Please READ THIS FAQ before filing a bug: https"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "338071106",
+  "url": "https://issues.chromium.org/issues/338071106",
+  "title": "GPU process crash via WebGPU shader - UAF in ProcessValue at DxilValueCache.cpp:555",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebGPU, Dawn>Tint, Internals>GPU>Dawn, Internals>GPU>Tint",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wg...@gmail.com",
+  "assignee": "am...@google.com",
+  "created_date": "2024-05-01T08:09:53+00:00",
+  "modified_date": "2026-03-27T17:02:43+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": "memory corruption in the GPU process\n\nThank you for your efforts and helping us make Chrome more secure for all users!\n\nCheers,\nChrome VRP Panel Bot\n\n\nP.S. Two other things we'd like to mention:\n\n* Please do NOT publicly disclose details until a fix has been released to all our users. Early public disclosure may cancel the provisional reward. Also, please be considerate about disclosure when the bug affects a core library that may be used by other products. Please do NOT share this information w",
+  "attachments": [
+    {
+      "id": 55984189,
+      "filename": "indexDIXLUaf.html",
+      "mime_type": "text/html",
+      "size_bytes": 3895,
+      "url": "https://issues.chromium.org/action/issues/338071106/attachments/55984189?download=true",
+      "local_path": "attachments/indexDIXLUaf.html"
+    },
+    {
+      "id": 55984190,
+      "filename": "standalone.wgsl",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 991,
+      "url": "https://issues.chromium.org/action/issues/338071106/attachments/55984190?download=true",
+      "local_path": "attachments/standalone.wgsl"
+    },
+    {
+      "id": 55984191,
+      "filename": "standalone.hlsl",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1193,
+      "url": "https://issues.chromium.org/action/issues/338071106/attachments/55984191?download=true",
+      "local_path": "attachments/standalone.hlsl"
+    },
+    {
+      "id": 55984192,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 23599,
+      "url": "https://issues.chromium.org/action/issues/338071106/attachments/55984192?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 95,
+  "description_snippet": "##### VULNERABILITY DETAILS\n\nChromium translates wgsl shaders via tint to an OS-specific shader format. On Windows, the OS-specific file format is hlsl, processed in dxcompiler.dll. When compiling chrome-generated hlsl files, this might trigger a heap UAF insider the hlsl compiler.\n\n##### VERSION\nCh"
+}

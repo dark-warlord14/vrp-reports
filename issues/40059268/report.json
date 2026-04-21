@@ -1,0 +1,42 @@
+{
+  "id": "40059268",
+  "url": "https://issues.chromium.org/issues/40059268",
+  "title": "heap-buffer-overflow on ui_devtools::UIElement::ReorderChild",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "xp...@gmail.com",
+  "assignee": "lg...@chromium.org",
+  "created_date": "2022-04-01T01:43:24+00:00",
+  "modified_date": "2022-07-20T17:32:20+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53366534,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13742,
+      "url": "https://issues.chromium.org/action/issues/40059268/attachments/53366534?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53366535,
+      "filename": "CTOt1m7oxa.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 5019980,
+      "url": "https://issues.chromium.org/action/issues/40059268/attachments/53366535?download=true",
+      "local_path": "attachments/CTOt1m7oxa.gif"
+    }
+  ],
+  "update_count": 31,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.43 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Start chrome/chromium with --enable-ui-devtools\r\n2. Navigate to \"chrome://inspect\" and click \"Native Client\".\r\n3. Click button labeled"
+}

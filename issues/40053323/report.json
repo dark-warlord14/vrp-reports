@@ -1,0 +1,29 @@
+{
+  "id": "40053323",
+  "url": "https://issues.chromium.org/issues/40053323",
+  "title": "Security: Debug check failed: IrOpcode::IsInlineeOpcode(node->opcode()).",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Compiler",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "b3...@gmail.com",
+  "assignee": "ne...@chromium.org",
+  "created_date": "2020-09-11T12:17:52+00:00",
+  "modified_date": "2024-01-09T02:09:15+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 46,
+  "description_snippet": "Target : ASAN-D8-DBG Latest  \nCrash Type:  Fatal error in ../../src/compiler/js-inlining.cc, line 378  \nCrash State:  \n  \n#  \n# Fatal error in ../../src/compiler/js-inlining.cc, line 378  \n# Debug check failed: IrOpcode::IsInlineeOpcode(node->opcode()).  \n#  \n#  \n  \n  \nPOC:  \n**---------------------"
+}

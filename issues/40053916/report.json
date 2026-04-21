@@ -1,0 +1,43 @@
+{
+  "id": "40053916",
+  "url": "https://issues.chromium.org/issues/40053916",
+  "title": "Security: UAF in the views::DialogDelegate in the browser process",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>WebAppInstalls",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2020-11-19T11:47:27+00:00",
+  "modified_date": "2024-01-09T02:39:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53107939,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 24798,
+      "url": "https://issues.chromium.org/action/issues/40053916/attachments/53107939?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53107940,
+      "filename": "app_uninstall_uaf.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 6252470,
+      "url": "https://issues.chromium.org/action/issues/40053916/attachments/53107940?download=true",
+      "local_path": "attachments/app_uninstall_uaf.gif"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUAF in the views::DialogDelegate in the browser process when uninstall the website app.  \n  \n  \n**VERSION**   \nChrome Version: Version 89.0.4330.0 (Developer Build) (64-bit) + dev  \ngs://chromium-browser-asan/win32-release_x64/asan-win32-release_x64-829027.zip  \n  \nOpera"
+}

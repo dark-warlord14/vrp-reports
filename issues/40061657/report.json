@@ -1,0 +1,97 @@
+{
+  "id": "40061657",
+  "url": "https://issues.chromium.org/issues/40061657",
+  "title": "Security: Chrome on Android Keyboard Able to Overlap Fullscreen Notification Toast",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Fullscreen, UI>Browser>FullScreen",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "su...@gmail.com",
+  "assignee": "ji...@chromium.org",
+  "created_date": "2022-11-08T18:18:25+00:00",
+  "modified_date": "2024-11-19T21:35:34+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53410199,
+      "filename": "testcase-spoof.html",
+      "mime_type": "text/plain",
+      "size_bytes": 60558,
+      "url": "https://issues.chromium.org/action/issues/40061657/attachments/53410199?download=true",
+      "local_path": "attachments/testcase-spoof.html"
+    },
+    {
+      "id": 53410219,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40061657/attachments/53410219?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53410241,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40061657/attachments/53410241?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53410248,
+      "filename": "testcase-spoof-gsignin.html",
+      "mime_type": "text/plain",
+      "size_bytes": 884540,
+      "url": "https://issues.chromium.org/action/issues/40061657/attachments/53410248?download=true",
+      "local_path": "attachments/testcase-spoof-gsignin.html"
+    },
+    {
+      "id": 53410249,
+      "filename": "Chrome on Android - Keyboard Overlap Fullscreen Toast + Impersonate Google Sign In Page.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2712852,
+      "url": "https://issues.chromium.org/action/issues/40061657/attachments/53410249?download=true",
+      "local_path": "attachments/Chrome on Android - Keyboard Overlap Fullscreen Toast + Impersonate Google Sign In Page.mp4"
+    },
+    {
+      "id": 53410303,
+      "filename": "fs-k01.png",
+      "mime_type": "image/png",
+      "size_bytes": 315589,
+      "url": "https://issues.chromium.org/action/issues/40061657/attachments/53410303?download=true",
+      "local_path": "attachments/fs-k01.png"
+    },
+    {
+      "id": 53410304,
+      "filename": "fs-k02.png",
+      "mime_type": "image/png",
+      "size_bytes": 320586,
+      "url": "https://issues.chromium.org/action/issues/40061657/attachments/53410304?download=true",
+      "local_path": "attachments/fs-k02.png"
+    },
+    {
+      "id": 53410322,
+      "filename": "fs-k03.png",
+      "mime_type": "image/png",
+      "size_bytes": 327008,
+      "url": "https://issues.chromium.org/action/issues/40061657/attachments/53410322?download=true",
+      "local_path": "attachments/fs-k03.png"
+    },
+    {
+      "id": 53410425,
+      "filename": "1382484-fs01.png",
+      "mime_type": "image/png",
+      "size_bytes": 126611,
+      "url": "https://issues.chromium.org/action/issues/40061657/attachments/53410425?download=true",
+      "local_path": "attachments/1382484-fs01.png"
+    }
+  ],
+  "update_count": 68,
+  "description_snippet": "On Chrome on Android after patch crrev.com/c/3990410 the fullscreen notification toast is now displayed in bottom instead of top position, if shown in the bottom position I found that Android keyboard able to overlap fullscreen notification toast, so user will not see the fullscreen toast.  \n  \n**VE"
+}

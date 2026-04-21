@@ -1,0 +1,50 @@
+{
+  "id": "384531062",
+  "url": "https://issues.chromium.org/issues/384531062",
+  "title": "GPU process crash via WebGPU shader - heap-buffer-overflow in Mesa brw_fs_opt_register_coalesce",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebGPU",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "a7...@gmail.com",
+  "assignee": "ms...@google.com",
+  "created_date": "2024-12-17T13:44:48+00:00",
+  "modified_date": "2026-03-27T17:00:45+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": "report of memory corruption in a highly privileged process (GPU)",
+  "attachments": [
+    {
+      "id": 61598303,
+      "filename": "brw_fs_opt_split_virtual_grfs.html",
+      "mime_type": "text/html",
+      "size_bytes": 3661,
+      "url": "https://issues.chromium.org/action/issues/384531062/attachments/61598303?download=true",
+      "local_path": null
+    },
+    {
+      "id": 61598304,
+      "filename": "gfxrecon_capture_20241217T134513.gfxr",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 8192,
+      "url": "https://issues.chromium.org/action/issues/384531062/attachments/61598304?download=true",
+      "local_path": "attachments/gfxrecon_capture_20241217T134513.gfxr"
+    },
+    {
+      "id": 64153546,
+      "filename": "gfxrecon_capture_20250322T211754.gfxr",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 13014,
+      "url": "https://issues.chromium.org/action/issues/384531062/attachments/64153546?download=true",
+      "local_path": "attachments/gfxrecon_capture_20250322T211754.gfxr"
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": "##### VULNERABILITY DETAILS\n\nThis report is about a vulnerability in Mesa reachable via WebGPU shaders. The Mesa version is the one used by ChromeOS (which, in contrast to other versions of Linux, enables WebGPU). The bug reproducer was tested on an Ubuntu machine, which should not influence whether"
+}

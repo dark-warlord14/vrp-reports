@@ -1,0 +1,73 @@
+{
+  "id": "40064142",
+  "url": "https://issues.chromium.org/issues/40064142",
+  "title": "Security: UAF in DevToolsDataSource::OnLoadComplete",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>DevTools, UI>Browser>WebUI",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "sz...@chromium.org",
+  "created_date": "2023-04-21T00:29:05+00:00",
+  "modified_date": "2024-01-09T11:09:14+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52996496,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40064142/attachments/52996496?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52996554,
+      "filename": "icr.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3231,
+      "url": "https://issues.chromium.org/action/issues/40064142/attachments/52996554?download=true",
+      "local_path": "attachments/icr.html"
+    },
+    {
+      "id": 52996555,
+      "filename": "testharness.js",
+      "mime_type": "text/plain",
+      "size_bytes": 184737,
+      "url": "https://issues.chromium.org/action/issues/40064142/attachments/52996555?download=true",
+      "local_path": "attachments/testharness.js"
+    },
+    {
+      "id": 52996556,
+      "filename": "helpers.js",
+      "mime_type": "text/plain",
+      "size_bytes": 4459,
+      "url": "https://issues.chromium.org/action/issues/40064142/attachments/52996556?download=true",
+      "local_path": "attachments/helpers.js"
+    },
+    {
+      "id": 52996557,
+      "filename": "testharnessreport.js",
+      "mime_type": "text/plain",
+      "size_bytes": 14540,
+      "url": "https://issues.chromium.org/action/issues/40064142/attachments/52996557?download=true",
+      "local_path": "attachments/testharnessreport.js"
+    },
+    {
+      "id": 52996558,
+      "filename": "br.html",
+      "mime_type": "text/plain",
+      "size_bytes": 427,
+      "url": "https://issues.chromium.org/action/issues/40064142/attachments/52996558?download=true",
+      "local_path": "attachments/br.html"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUAF in DevToolsDataSource::OnLoadComplete  \n  \n**VERSION**   \nChromium\t114.0.5725.0 (Developer Build) (64-bit)   \nRevision\t2e1e3a8b5f1e13220d98ecfe4800a1b8c117a438-refs/heads/main@{#1133421}  \nOS\tLinux  \n  \n**REPRODUCTION CASE**   \n1. unzip the file into the webserver di"
+}

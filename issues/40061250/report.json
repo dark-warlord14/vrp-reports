@@ -1,0 +1,133 @@
+{
+  "id": "40061250",
+  "url": "https://issues.chromium.org/issues/40061250",
+  "title": "Security: UAF in mojo::SimpleWatcher::Context in MojoIpcz feature (browser process)",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Mojo",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "ro...@google.com",
+  "created_date": "2022-10-06T12:27:12+00:00",
+  "modified_date": "2023-01-18T18:33:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53318264,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 1418,
+      "url": "https://issues.chromium.org/action/issues/40061250/attachments/53318264?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53318265,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2293,
+      "url": "https://issues.chromium.org/action/issues/40061250/attachments/53318265?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53318266,
+      "filename": "close.html",
+      "mime_type": "text/plain",
+      "size_bytes": 96,
+      "url": "https://issues.chromium.org/action/issues/40061250/attachments/53318266?download=true",
+      "local_path": "attachments/close.html"
+    },
+    {
+      "id": 53318267,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 27013,
+      "url": "https://issues.chromium.org/action/issues/40061250/attachments/53318267?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53318327,
+      "filename": "issue_reproduce.py",
+      "mime_type": "text/plain",
+      "size_bytes": 1295,
+      "url": "https://issues.chromium.org/action/issues/40061250/attachments/53318327?download=true",
+      "local_path": "attachments/issue_reproduce.py"
+    },
+    {
+      "id": 53318328,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 1418,
+      "url": "https://issues.chromium.org/action/issues/40061250/attachments/53318328?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53318329,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2131,
+      "url": "https://issues.chromium.org/action/issues/40061250/attachments/53318329?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53318330,
+      "filename": "close.html",
+      "mime_type": "text/plain",
+      "size_bytes": 99,
+      "url": "https://issues.chromium.org/action/issues/40061250/attachments/53318330?download=true",
+      "local_path": "attachments/close.html"
+    },
+    {
+      "id": 53318331,
+      "filename": "asan1.log",
+      "mime_type": "text/plain",
+      "size_bytes": 28087,
+      "url": "https://issues.chromium.org/action/issues/40061250/attachments/53318331?download=true",
+      "local_path": "attachments/asan1.log"
+    },
+    {
+      "id": 53318332,
+      "filename": "asan2.log",
+      "mime_type": "text/plain",
+      "size_bytes": 26286,
+      "url": "https://issues.chromium.org/action/issues/40061250/attachments/53318332?download=true",
+      "local_path": "attachments/asan2.log"
+    },
+    {
+      "id": 53318333,
+      "filename": "asan3.log",
+      "mime_type": "text/plain",
+      "size_bytes": 26251,
+      "url": "https://issues.chromium.org/action/issues/40061250/attachments/53318333?download=true",
+      "local_path": "attachments/asan3.log"
+    },
+    {
+      "id": 53318334,
+      "filename": "asan4.log",
+      "mime_type": "text/plain",
+      "size_bytes": 41905,
+      "url": "https://issues.chromium.org/action/issues/40061250/attachments/53318334?download=true",
+      "local_path": "attachments/asan4.log"
+    },
+    {
+      "id": 53318335,
+      "filename": "asan5.log",
+      "mime_type": "text/plain",
+      "size_bytes": 38162,
+      "url": "https://issues.chromium.org/action/issues/40061250/attachments/53318335?download=true",
+      "local_path": "attachments/asan5.log"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUAF in mojo::SimpleWatcher::Context in MojoIpcz feature in browser process  \n  \n**VERSION**   \nChromium\t108.0.5342.0 (Developer Build) (64-bit)   \nRevision\t01282ba43df30470536db4577ff77f8c89478f46-refs/heads/main@{#1055199}  \nOS\tLinux  \n  \n**REPRODUCTION CASE**   \n1. put"
+}

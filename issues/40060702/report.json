@@ -1,0 +1,44 @@
+{
+  "id": "40060702",
+  "url": "https://issues.chromium.org/issues/40060702",
+  "title": "Security: Draw Mouse Cursor to hide omni box",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Input, UI>HighDPI",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "ms...@chromium.org",
+  "created_date": "2022-08-29T02:44:28+00:00",
+  "modified_date": "2025-08-08T07:01:45+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53095051,
+      "filename": "poccursors.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3182,
+      "url": "https://issues.chromium.org/action/issues/40060702/attachments/53095051?download=true",
+      "local_path": "attachments/poccursors.html"
+    },
+    {
+      "id": 53095052,
+      "filename": "bandicam 2022-08-29 09-27-18-095.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1798335,
+      "url": "https://issues.chromium.org/action/issues/40060702/attachments/53095052?download=true",
+      "local_path": "attachments/bandicam 2022-08-29 09-27-18-095.mp4"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n**Please provide a brief explanation of the security issue.**   \n  \n**VERSION**   \nChrome Version: Version 103.0.5046.0 (Developer Build) (64-bit)]   \nOperating System: Windows 10  \n  \n**REPRODUCTION CASE**   \n  \n1. Open pocursors.html  \n2. move the cursor at the top unt"
+}

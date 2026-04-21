@@ -1,0 +1,108 @@
+{
+  "id": "40065003",
+  "url": "https://issues.chromium.org/issues/40065003",
+  "title": "Security: Bypass the Protection of input fields cache (Autofill)  due to inappropriate code design (Bypass 1108181)",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P3",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "el...@gmail.com",
+  "assignee": "vy...@google.com",
+  "created_date": "2023-05-30T11:11:16+00:00",
+  "modified_date": "2023-10-29T17:43:04+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53398616,
+      "filename": "poc-01-2023-05-30_10-49-57.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 960999,
+      "url": "https://issues.chromium.org/action/issues/40065003/attachments/53398616?download=true",
+      "local_path": "attachments/poc-01-2023-05-30_10-49-57.mp4"
+    },
+    {
+      "id": 53398617,
+      "filename": "poc-02-2023-05-30_10-46-23.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 699273,
+      "url": "https://issues.chromium.org/action/issues/40065003/attachments/53398617?download=true",
+      "local_path": "attachments/poc-02-2023-05-30_10-46-23.mp4"
+    },
+    {
+      "id": 53398647,
+      "filename": "show-me-out3.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3143,
+      "url": "https://issues.chromium.org/action/issues/40065003/attachments/53398647?download=true",
+      "local_path": "attachments/show-me-out3.html"
+    },
+    {
+      "id": 53398653,
+      "filename": "V115.0.5790.3-dev-linux-2023-05-31_13-29-08.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1178326,
+      "url": "https://issues.chromium.org/action/issues/40065003/attachments/53398653?download=true",
+      "local_path": "attachments/V115.0.5790.3-dev-linux-2023-05-31_13-29-08.mp4"
+    },
+    {
+      "id": 53398667,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40065003/attachments/53398667?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53398673,
+      "filename": "show-me-out3-dynamic.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4123,
+      "url": "https://issues.chromium.org/action/issues/40065003/attachments/53398673?download=true",
+      "local_path": "attachments/show-me-out3-dynamic.html"
+    },
+    {
+      "id": 53398674,
+      "filename": "Autofill-Stable-Win- 2023-06-02 19-28-51-136.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4400856,
+      "url": "https://issues.chromium.org/action/issues/40065003/attachments/53398674?download=true",
+      "local_path": "attachments/Autofill-Stable-Win- 2023-06-02 19-28-51-136.mp4"
+    },
+    {
+      "id": 53398675,
+      "filename": "Autofill-Canary-Win 2023-06-02 19-34-20-606.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2974142,
+      "url": "https://issues.chromium.org/action/issues/40065003/attachments/53398675?download=true",
+      "local_path": "attachments/Autofill-Canary-Win 2023-06-02 19-34-20-606.mp4"
+    },
+    {
+      "id": 53398732,
+      "filename": "canary5819-2023-06-08 14-42-18-347.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1724156,
+      "url": "https://issues.chromium.org/action/issues/40065003/attachments/53398732?download=true",
+      "local_path": "attachments/canary5819-2023-06-08 14-42-18-347.mp4"
+    },
+    {
+      "id": 53398733,
+      "filename": "canary-5818-2023-06-08 14-41-05-523.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1415498,
+      "url": "https://issues.chromium.org/action/issues/40065003/attachments/53398733?download=true",
+      "local_path": "attachments/canary-5818-2023-06-08 14-41-05-523.mp4"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n======================  \nthis is a report to a security vulnerability in google chrome/chromium browser as high-quality report with functional exploit. this vulnerability (Bypass of https://crbug.com/chromium/1108181)and similar to https://crbug.com/chromium/1358647 whic"
+}

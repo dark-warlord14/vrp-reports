@@ -1,0 +1,46 @@
+{
+  "id": "392375312",
+  "url": "https://issues.chromium.org/issues/392375312",
+  "title": "Information Leak via Out-of-Bounds Read in media::AudioBuffer",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Media",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": "133.0.6876.6 ",
+  "cve_ids": [],
+  "reporter": "bl...@gmail.com",
+  "assignee": "tg...@google.com",
+  "created_date": "2025-01-26T13:50:07+00:00",
+  "modified_date": "2025-05-09T12:38:33+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "report of user information disclosure",
+  "attachments": [
+    {
+      "id": 62427105,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 3251,
+      "url": "https://issues.chromium.org/action/issues/392375312/attachments/62427105?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62427167,
+      "filename": "get_mojomjs.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 826,
+      "url": "https://issues.chromium.org/action/issues/392375312/attachments/62427167?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "# Steps to reproduce the problem\n\n1. Build the chrome: \n```\ngn gen out/MediaMojoRelease --args=\"is_debug=false symbol_level=2 enable_nacl=false is_component_build=true dcheck_always_on=false\"\n```\n2. Launch chrome with mojo enable: \n```\nRelease\\chrome.exe  --enable-blink-features=MojoJS,MojoJSTest\n``"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "40057217",
+  "url": "https://issues.chromium.org/issues/40057217",
+  "title": "Security:  heap-use-after-free in the views::Widget::GetNativeTheme in the browser process ",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "to...@chromium.org",
+  "created_date": "2021-09-09T14:08:37+00:00",
+  "modified_date": "2022-08-02T17:32:17+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53141053,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 91,
+      "url": "https://issues.chromium.org/action/issues/40057217/attachments/53141053?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53141054,
+      "filename": "windows.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 7858324,
+      "url": "https://issues.chromium.org/action/issues/40057217/attachments/53141054?download=true",
+      "local_path": "attachments/windows.gif"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nheap-use-after-free in the views::Widget::GetNativeTheme in the browser process  which will excape the sandbox.  \n  \n  \n**VERSION**   \nChrome Version: 95.0.4626.0 (Developer Build) (64-bit)  \nOperating System: Windows 10 && Ubuntu  \n  \n  \n**REPRODUCTION CASE**   \n  \nIn t"
+}

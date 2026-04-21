@@ -1,0 +1,42 @@
+{
+  "id": "40062884",
+  "url": "https://issues.chromium.org/issues/40062884",
+  "title": "Security: Type confusion in v8 value serializer",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m-...@github.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2023-02-02T17:46:42+00:00",
+  "modified_date": "2024-01-09T09:44:02+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53305054,
+      "filename": "test_ser.js",
+      "mime_type": "text/plain",
+      "size_bytes": 478,
+      "url": "https://issues.chromium.org/action/issues/40062884/attachments/53305054?download=true",
+      "local_path": "attachments/test_ser.js"
+    },
+    {
+      "id": 53305055,
+      "filename": "test_ser.html",
+      "mime_type": "text/plain",
+      "size_bytes": 666,
+      "url": "https://issues.chromium.org/action/issues/40062884/attachments/53305055?download=true",
+      "local_path": "attachments/test_ser.html"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "Vulnerability Details  \n  \nWhen deserializing Javascript objects, the function `ReadJSObjectProperties`[1] will try to create a map using existing transitions:  \n```  \nMaybe<uint32_t> ValueDeserializer::ReadJSObjectProperties(  \n    Handle<JSObject> object, SerializationTag end_tag,  \n    bool can_u"
+}

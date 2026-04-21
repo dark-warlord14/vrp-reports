@@ -1,0 +1,44 @@
+{
+  "id": "430555440",
+  "url": "https://issues.chromium.org/issues/430555440",
+  "title": "Autofill suggestions appear off-screen, allowing covert access to user data",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ku...@google.com",
+  "created_date": "2025-07-09T15:33:38+00:00",
+  "modified_date": "2025-12-18T12:45:57+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 0.0,
+  "bounty_rationale": "The panel believed this level of interaction is beyond what a “reasonable and prudent” user would do (see FAQ). if you can demonstrate programmatic ability to shift window off screen to hide suggestions the panel will consider a re-evaluation of this reward.\n\n\nNote that the fact that this issue is not being rewarded does not mean\nthat the product team won't fix the issue. We have filed a bug with the product\nteam and they will review your report and decide if a fix is required. We'll\nlet you kno",
+  "attachments": [
+    {
+      "id": 67432656,
+      "filename": "09.07.2025_02.58.32_REC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 678134,
+      "url": "https://issues.chromium.org/action/issues/430555440/attachments/67432656?download=true",
+      "local_path": "attachments/09.07.2025_02.58.32_REC.mp4"
+    },
+    {
+      "id": 67445908,
+      "filename": "fedcm-autofill.html",
+      "mime_type": "text/html",
+      "size_bytes": 4402,
+      "url": "https://issues.chromium.org/action/issues/430555440/attachments/67445908?download=true",
+      "local_path": "attachments/fedcm-autofill.html"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "---\n\n### Report description\n\n\nAutofill suggestions appear off-screen, allowing covert access to user data\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.co"
+}

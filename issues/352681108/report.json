@@ -1,0 +1,77 @@
+{
+  "id": "352681108",
+  "url": "https://issues.chromium.org/issues/352681108",
+  "title": "Incorrect security UI of files' download source at chrome://downloads",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zy...@gmail.com",
+  "assignee": "dr...@chromium.org",
+  "created_date": "2024-07-12T08:23:29+00:00",
+  "modified_date": "2025-10-30T12:47:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "lower impact security UI issue / spoof",
+  "attachments": [
+    {
+      "id": 57891124,
+      "filename": "2.png",
+      "mime_type": "image/png",
+      "size_bytes": 41235,
+      "url": "https://issues.chromium.org/action/issues/352681108/attachments/57891124?download=true",
+      "local_path": "attachments/2.png"
+    },
+    {
+      "id": 57891125,
+      "filename": "3.png",
+      "mime_type": "image/png",
+      "size_bytes": 51930,
+      "url": "https://issues.chromium.org/action/issues/352681108/attachments/57891125?download=true",
+      "local_path": "attachments/3.png"
+    },
+    {
+      "id": 57891126,
+      "filename": "1.png",
+      "mime_type": "image/png",
+      "size_bytes": 47790,
+      "url": "https://issues.chromium.org/action/issues/352681108/attachments/57891126?download=true",
+      "local_path": "attachments/1.png"
+    },
+    {
+      "id": 58052651,
+      "filename": "malicious_apk.png",
+      "mime_type": "image/png",
+      "size_bytes": 44537,
+      "url": "https://issues.chromium.org/action/issues/352681108/attachments/58052651?download=true",
+      "local_path": "attachments/malicious_apk.png"
+    },
+    {
+      "id": 58148000,
+      "filename": "google.html",
+      "mime_type": "text/html",
+      "size_bytes": 331,
+      "url": "https://issues.chromium.org/action/issues/352681108/attachments/58148000?download=true",
+      "local_path": "attachments/google.html"
+    },
+    {
+      "id": 58148001,
+      "filename": "PoC_video.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 3789569,
+      "url": "https://issues.chromium.org/action/issues/352681108/attachments/58148001?download=true",
+      "local_path": "attachments/PoC_video.mov"
+    }
+  ],
+  "update_count": 87,
+  "description_snippet": "---\n\n### Report description\n\n\nIncorrect security UI of files' download source at chrome://downloads\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/abou"
+}

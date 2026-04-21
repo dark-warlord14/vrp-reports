@@ -1,0 +1,92 @@
+{
+  "id": "40063723",
+  "url": "https://issues.chromium.org/issues/40063723",
+  "title": "Security: Extensions with \"download\" permissions can read local files by using FSA API",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions>API, UI>Browser>Downloads",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "qi...@chromium.org",
+  "created_date": "2023-03-22T13:50:31+00:00",
+  "modified_date": "2024-01-09T07:38:00+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53134331,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 147,
+      "url": "https://issues.chromium.org/action/issues/40063723/attachments/53134331?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53134332,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 300,
+      "url": "https://issues.chromium.org/action/issues/40063723/attachments/53134332?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53134333,
+      "filename": "script.html",
+      "mime_type": "text/plain",
+      "size_bytes": 57,
+      "url": "https://issues.chromium.org/action/issues/40063723/attachments/53134333?download=true",
+      "local_path": "attachments/script.html"
+    },
+    {
+      "id": 53134334,
+      "filename": "script-inline.js",
+      "mime_type": "text/plain",
+      "size_bytes": 830,
+      "url": "https://issues.chromium.org/action/issues/40063723/attachments/53134334?download=true",
+      "local_path": "attachments/script-inline.js"
+    },
+    {
+      "id": 53134354,
+      "filename": "Untitled_ Mar 22, 2023 9_55 PM.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1478452,
+      "url": "https://issues.chromium.org/action/issues/40063723/attachments/53134354?download=true",
+      "local_path": "attachments/Untitled_ Mar 22, 2023 9_55 PM.webm"
+    },
+    {
+      "id": 53134439,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 249,
+      "url": "https://issues.chromium.org/action/issues/40063723/attachments/53134439?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53134440,
+      "filename": "script.html",
+      "mime_type": "text/plain",
+      "size_bytes": 57,
+      "url": "https://issues.chromium.org/action/issues/40063723/attachments/53134440?download=true",
+      "local_path": "attachments/script.html"
+    },
+    {
+      "id": 53134441,
+      "filename": "script-inline.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1295,
+      "url": "https://issues.chromium.org/action/issues/40063723/attachments/53134441?download=true",
+      "local_path": "attachments/script-inline.js"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nI have devised a method for a malicious extension with \"download\" permissions but no access to file:// URLs to read local files with unregistered MIME type such as History on Chrome on Windows.   \n  \nThis method combines aspects of https://bugs.chromium.org/p/chromium/is"
+}

@@ -1,0 +1,94 @@
+{
+  "id": "40056924",
+  "url": "https://issues.chromium.org/issues/40056924",
+  "title": "Security: \"Origin\" header incorrectly set for cross-site request via service worker",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>ServiceWorker, UI>Browser>Navigation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ho...@gmail.com",
+  "assignee": "wa...@chromium.org",
+  "created_date": "2021-08-18T21:33:45+00:00",
+  "modified_date": "2022-07-29T21:36:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53137379,
+      "filename": "chrome-sw-origin-prob.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 400473,
+      "url": "https://issues.chromium.org/action/issues/40056924/attachments/53137379?download=true",
+      "local_path": "attachments/chrome-sw-origin-prob.mp4"
+    },
+    {
+      "id": 53137413,
+      "filename": "repo.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1810,
+      "url": "https://issues.chromium.org/action/issues/40056924/attachments/53137413?download=true",
+      "local_path": "attachments/repo.zip"
+    },
+    {
+      "id": 53137459,
+      "filename": "firefox-sw-running-and-null-result.JPG",
+      "mime_type": "image/jpeg",
+      "size_bytes": 52078,
+      "url": "https://issues.chromium.org/action/issues/40056924/attachments/53137459?download=true",
+      "local_path": "attachments/firefox-sw-running-and-null-result.JPG"
+    },
+    {
+      "id": 53137617,
+      "filename": "chrome-sw-origin-prob2.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 63841,
+      "url": "https://issues.chromium.org/action/issues/40056924/attachments/53137617?download=true",
+      "local_path": "attachments/chrome-sw-origin-prob2.mp4"
+    },
+    {
+      "id": 53137618,
+      "filename": "sw-echo.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 982,
+      "url": "https://issues.chromium.org/action/issues/40056924/attachments/53137618?download=true",
+      "local_path": "attachments/sw-echo.zip"
+    },
+    {
+      "id": 53137630,
+      "filename": "echo.png",
+      "mime_type": "image/png",
+      "size_bytes": 5893,
+      "url": "https://issues.chromium.org/action/issues/40056924/attachments/53137630?download=true",
+      "local_path": "attachments/echo.png"
+    },
+    {
+      "id": 53137631,
+      "filename": "sw-echo.png",
+      "mime_type": "image/png",
+      "size_bytes": 5976,
+      "url": "https://issues.chromium.org/action/issues/40056924/attachments/53137631?download=true",
+      "local_path": "attachments/sw-echo.png"
+    },
+    {
+      "id": 53137688,
+      "filename": "sec.JPG",
+      "mime_type": "image/jpeg",
+      "size_bytes": 196489,
+      "url": "https://issues.chromium.org/action/issues/40056924/attachments/53137688?download=true",
+      "local_path": "attachments/sec.JPG"
+    }
+  ],
+  "update_count": 161,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen a cross-site request is made to a site that uses a service worker to fetch the request - the Origin header is incorrectly set to appear to come from the main site.  \n  \nIn the video you can see the problem in action.  \n  \nChrome states the Origin is \"http://cc.local"
+}

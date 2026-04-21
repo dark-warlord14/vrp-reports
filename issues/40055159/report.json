@@ -1,0 +1,49 @@
+{
+  "id": "40055159",
+  "url": "https://issues.chromium.org/issues/40055159",
+  "title": "Heap-use-after-free in CurrentTabDesktopMediaList::Refresh",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebRTC",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "el...@chromium.org",
+  "created_date": "2021-03-12T06:38:38+00:00",
+  "modified_date": "2024-01-09T08:54:55+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52940941,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1124,
+      "url": "https://issues.chromium.org/action/issues/40055159/attachments/52940941?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52940942,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 16304,
+      "url": "https://issues.chromium.org/action/issues/40055159/attachments/52940942?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 52940943,
+      "filename": "video.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 4468914,
+      "url": "https://issues.chromium.org/action/issues/40055159/attachments/52940943?download=true",
+      "local_path": "attachments/video.webm"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.190 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. download chromium asan build (I use 861451) and unzip\r\n2. python -m SimpleHTTPServer 8605\r\n3. ./chrome --enable-blink-features=MojoJS"
+}

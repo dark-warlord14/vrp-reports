@@ -1,0 +1,65 @@
+{
+  "id": "41486690",
+  "url": "https://issues.chromium.org/issues/41486690",
+  "title": "Extension sanitization bypass - Setting file extension as \"%%\" resorts to the previous text",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "br...@gmail.com",
+  "assignee": "qi...@chromium.org",
+  "created_date": "2023-12-24T21:59:41+00:00",
+  "modified_date": "2024-07-23T15:42:52+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52992884,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 357,
+      "url": "https://issues.chromium.org/action/issues/41486690/attachments/52992884?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 52992885,
+      "filename": "download.php",
+      "mime_type": "text/plain",
+      "size_bytes": 101,
+      "url": "https://issues.chromium.org/action/issues/41486690/attachments/52992885?download=true",
+      "local_path": "attachments/download.php"
+    },
+    {
+      "id": 52992926,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1150,
+      "url": "https://issues.chromium.org/action/issues/41486690/attachments/52992926?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 52992927,
+      "filename": "malicious_link.download",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3446,
+      "url": "https://issues.chromium.org/action/issues/41486690/attachments/52992927?download=true",
+      "local_path": "attachments/malicious_link.download"
+    },
+    {
+      "id": 52992928,
+      "filename": "script.ps1",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 935,
+      "url": "https://issues.chromium.org/action/issues/41486690/attachments/52992928?download=true",
+      "local_path": "attachments/script.ps1"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Download both of the attached files.  \n2. Run this: `python -m http.server --directory C:\\Path\\To\\The\\Downloaded\\Files --bind 127.0.0.1`  \n3. Visit localhost.  \n4. Right click > Save As for Link 1, see that the dangerous extension .lnk gets replaced with .do"
+}

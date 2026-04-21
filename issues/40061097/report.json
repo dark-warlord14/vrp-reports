@@ -1,0 +1,41 @@
+{
+  "id": "40061097",
+  "url": "https://issues.chromium.org/issues/40061097",
+  "title": "Security: custom_element_registry use-after-poison",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>HTML>CustomElements",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sp...@gmail.com",
+  "assignee": "xi...@chromium.org",
+  "created_date": "2022-09-22T13:34:49+00:00",
+  "modified_date": "2024-01-09T06:48:52+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52971252,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 455,
+      "url": "https://issues.chromium.org/action/issues/40061097/attachments/52971252?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52971253,
+      "filename": "asan_log_symbolized.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 15827,
+      "url": "https://issues.chromium.org/action/issues/40061097/attachments/52971253?download=true",
+      "local_path": "attachments/asan_log_symbolized.txt"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**This template is ONLY for reporting security bugs. If you are reporting a**   \n**Download Protection Bypass bug, please use the \"Security - Download**   \n**Protection\" template. For all other reports, please use a different**   \n**template.**   \n  \n**Please READ THIS FAQ before filing a bug: https"
+}

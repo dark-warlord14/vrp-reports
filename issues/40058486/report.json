@@ -1,0 +1,100 @@
+{
+  "id": "40058486",
+  "url": "https://issues.chromium.org/issues/40058486",
+  "title": "Security: heap-use-after-free in ProfileImpl::IsSameOrParent",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>Extensions>API, Webstore",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "db...@chromium.org",
+  "created_date": "2022-01-13T00:40:44+00:00",
+  "modified_date": "2024-10-11T17:13:31+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52898333,
+      "filename": "uaf.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5816295,
+      "url": "https://issues.chromium.org/action/issues/40058486/attachments/52898333?download=true",
+      "local_path": "attachments/uaf.mp4"
+    },
+    {
+      "id": 52898384,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6016583,
+      "url": "https://issues.chromium.org/action/issues/40058486/attachments/52898384?download=true",
+      "local_path": "attachments/poc.mp4"
+    },
+    {
+      "id": 52898399,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 21392,
+      "url": "https://issues.chromium.org/action/issues/40058486/attachments/52898399?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 52898409,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 294,
+      "url": "https://issues.chromium.org/action/issues/40058486/attachments/52898409?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 52898410,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2801,
+      "url": "https://issues.chromium.org/action/issues/40058486/attachments/52898410?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 52898411,
+      "filename": "extension-poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1463892,
+      "url": "https://issues.chromium.org/action/issues/40058486/attachments/52898411?download=true",
+      "local_path": "attachments/extension-poc.mp4"
+    },
+    {
+      "id": 52898412,
+      "filename": "focus.html",
+      "mime_type": "text/plain",
+      "size_bytes": 32,
+      "url": "https://issues.chromium.org/action/issues/40058486/attachments/52898412?download=true",
+      "local_path": "attachments/focus.html"
+    },
+    {
+      "id": 52898413,
+      "filename": "focus.js",
+      "mime_type": "text/plain",
+      "size_bytes": 101,
+      "url": "https://issues.chromium.org/action/issues/40058486/attachments/52898413?download=true",
+      "local_path": "attachments/focus.js"
+    },
+    {
+      "id": 52898414,
+      "filename": "popup.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1,
+      "url": "https://issues.chromium.org/action/issues/40058486/attachments/52898414?download=true",
+      "local_path": "attachments/popup.html"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nWhen an extension install confirmation dialog is accepted, an `approval` with a `profile` pointer is added to `g_pending_approvals`.  \n  \nhttps://source.chromium.org/chromium/chromium/src/+/main:chrome/browser/extensions/api/webstore_private/webstore_private_api.cc;l="
+}

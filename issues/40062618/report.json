@@ -1,0 +1,93 @@
+{
+  "id": "40062618",
+  "url": "https://issues.chromium.org/issues/40062618",
+  "title": "Security: FedCM should have clickjacking protection",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Identity>FedCM",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "re...@gmail.com",
+  "assignee": "np...@chromium.org",
+  "created_date": "2023-01-12T17:50:22+00:00",
+  "modified_date": "2025-02-13T01:07:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53088865,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1082339,
+      "url": "https://issues.chromium.org/action/issues/40062618/attachments/53088865?download=true",
+      "local_path": "attachments/demo.mp4"
+    },
+    {
+      "id": 53088866,
+      "filename": "accounts_endpoint.json",
+      "mime_type": "text/plain",
+      "size_bytes": 270,
+      "url": "https://issues.chromium.org/action/issues/40062618/attachments/53088866?download=true",
+      "local_path": "attachments/accounts_endpoint.json"
+    },
+    {
+      "id": 53088867,
+      "filename": "client_metadata_static.json",
+      "mime_type": "text/plain",
+      "size_bytes": 49,
+      "url": "https://issues.chromium.org/action/issues/40062618/attachments/53088867?download=true",
+      "local_path": "attachments/client_metadata_static.json"
+    },
+    {
+      "id": 53088868,
+      "filename": "fedcm.json",
+      "mime_type": "text/plain",
+      "size_bytes": 176,
+      "url": "https://issues.chromium.org/action/issues/40062618/attachments/53088868?download=true",
+      "local_path": "attachments/fedcm.json"
+    },
+    {
+      "id": 53088869,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 526,
+      "url": "https://issues.chromium.org/action/issues/40062618/attachments/53088869?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53088870,
+      "filename": "web-identity",
+      "mime_type": "text/plain",
+      "size_bytes": 61,
+      "url": "https://issues.chromium.org/action/issues/40062618/attachments/53088870?download=true",
+      "local_path": "attachments/web-identity"
+    },
+    {
+      "id": 53088935,
+      "filename": "With protection.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 3093873,
+      "url": "https://issues.chromium.org/action/issues/40062618/attachments/53088935?download=true",
+      "local_path": "attachments/With protection.mov"
+    },
+    {
+      "id": 53088936,
+      "filename": "Without protection.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 1936935,
+      "url": "https://issues.chromium.org/action/issues/40062618/attachments/53088936?download=true",
+      "local_path": "attachments/Without protection.mov"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe Federated Credential Management API allows a website to link to a Terms of Service page. This link is not checked against the usual blocklists and can be used to open internal (chrome://, chrome-devtools://, chrome-search://, chrome-extension:// etc) or otherwise blo"
+}

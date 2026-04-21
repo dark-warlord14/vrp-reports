@@ -1,0 +1,65 @@
+{
+  "id": "40054677",
+  "url": "https://issues.chromium.org/issues/40054677",
+  "title": "UAP in MojoWatcher::OnHandleReady",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>GarbageCollection, Internals>Mojo>Core",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "ro...@google.com",
+  "created_date": "2021-02-04T05:28:04+00:00",
+  "modified_date": "2021-09-16T12:41:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52890916,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40054677/attachments/52890916?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52890952,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40054677/attachments/52890952?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52890985,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40054677/attachments/52890985?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52891015,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40054677/attachments/52891015?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52891036,
+      "filename": "uap.html",
+      "mime_type": "text/plain",
+      "size_bytes": 373,
+      "url": "https://issues.chromium.org/action/issues/40054677/attachments/52891036?download=true",
+      "local_path": "attachments/uap.html"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nTest with asan-linux-release-849869\r\n1.python copy_mojo_js_bindings.py path/to/ASAN/gen/\r\n2.python -m SimpleHTTPServer 8605\r\n3.ASAN/chrome --enable-"
+}

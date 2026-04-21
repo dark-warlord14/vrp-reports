@@ -1,0 +1,54 @@
+{
+  "id": "40063469",
+  "url": "https://issues.chromium.org/issues/40063469",
+  "title": "UAF in v8_inspector",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2023-03-09T02:29:54+00:00",
+  "modified_date": "2024-01-09T07:32:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53358815,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 26949,
+      "url": "https://issues.chromium.org/action/issues/40063469/attachments/53358815?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53358866,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 860968,
+      "url": "https://issues.chromium.org/action/issues/40063469/attachments/53358866?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53358867,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 494,
+      "url": "https://issues.chromium.org/action/issues/40063469/attachments/53358867?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**Steps to reproduce the problem:**   \nWill attach details soon.  \n  \n**Problem Description:**   \nuse after free  \n  \n**Additional Comments:**   \n  \n  \n**Chrome version: ** 113.0.5638.0 **Channel: ** Canary  \n  \n**OS:** Linux"
+}

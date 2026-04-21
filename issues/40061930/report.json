@@ -1,0 +1,26 @@
+{
+  "id": "40061930",
+  "url": "https://issues.chromium.org/issues/40061930",
+  "title": "Turbofan-Optimization Bug: \"Check failed: IsBigInt()\"",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "kw...@gmail.com",
+  "assignee": "pa...@google.com",
+  "created_date": "2022-11-28T01:57:50+00:00",
+  "modified_date": "2024-01-09T08:33:00+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 44,
+  "description_snippet": "**Steps to reproduce the problem:**   \nRun the below 'poc.js' on the release build of the v8-11.0.109.  \n  \n// poc.js  \nfunction opt() {  \n  function aux(a, b) {  \n    if (b) {  \n      b >> a;  \n    } else {  \n      let c = 0;  \n      while (c < 7) {  \n        c++;  \n      }  \n    }  \n  }  \n  let p"
+}

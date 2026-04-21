@@ -1,0 +1,37 @@
+{
+  "id": "40053069",
+  "url": "https://issues.chromium.org/issues/40053069",
+  "title": "Security: SameSite policy bypassed with Service Worker FetchEvent",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>ServiceWorker, Internals>Network>Cookies",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "wa...@chromium.org",
+  "created_date": "2020-08-13T06:02:40+00:00",
+  "modified_date": "2022-07-29T21:36:06+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53027504,
+      "filename": "prong-glory-novel-2020-08-13_055327.tgz",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 98579,
+      "url": "https://issues.chromium.org/action/issues/40053069/attachments/53027504?download=true",
+      "local_path": "attachments/prong-glory-novel-2020-08-13_055327.tgz"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt seems Chrome ignores SameSite policy by sending protected cookies when: a request is intercepted by a service worker FetchEvent, then fired from within its context. As developers willingly opt to implement FetchEvent mainly for caching purposes, this behavior undermin"
+}

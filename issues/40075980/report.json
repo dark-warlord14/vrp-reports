@@ -1,0 +1,108 @@
+{
+  "id": "40075980",
+  "url": "https://issues.chromium.org/issues/40075980",
+  "title": "Security: Bypass and Semi Regression of Issue 1472404 fix  which Bypass the Protection of input fields cache (Autofill) ",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P3",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "el...@gmail.com",
+  "assignee": "jk...@google.com",
+  "created_date": "2023-10-31T14:14:47+00:00",
+  "modified_date": "2024-04-28T20:59:52+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53209180,
+      "filename": "content-script.js",
+      "mime_type": "text/plain",
+      "size_bytes": 275,
+      "url": "https://issues.chromium.org/action/issues/40075980/attachments/53209180?download=true",
+      "local_path": "attachments/content-script.js"
+    },
+    {
+      "id": 53209181,
+      "filename": "script.js",
+      "mime_type": "text/plain",
+      "size_bytes": 434,
+      "url": "https://issues.chromium.org/action/issues/40075980/attachments/53209181?download=true",
+      "local_path": "attachments/script.js"
+    },
+    {
+      "id": 53209182,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 528,
+      "url": "https://issues.chromium.org/action/issues/40075980/attachments/53209182?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53209183,
+      "filename": "sidepanel-tab.html",
+      "mime_type": "text/plain",
+      "size_bytes": 594,
+      "url": "https://issues.chromium.org/action/issues/40075980/attachments/53209183?download=true",
+      "local_path": "attachments/sidepanel-tab.html"
+    },
+    {
+      "id": 53209184,
+      "filename": "service-worker.js",
+      "mime_type": "text/plain",
+      "size_bytes": 959,
+      "url": "https://issues.chromium.org/action/issues/40075980/attachments/53209184?download=true",
+      "local_path": "attachments/service-worker.js"
+    },
+    {
+      "id": 53209185,
+      "filename": "page.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2020,
+      "url": "https://issues.chromium.org/action/issues/40075980/attachments/53209185?download=true",
+      "local_path": "attachments/page.html"
+    },
+    {
+      "id": 53209186,
+      "filename": "Bypass-Linux-Dev-V120-NG-2023-10-31_14-24-12.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1471374,
+      "url": "https://issues.chromium.org/action/issues/40075980/attachments/53209186?download=true",
+      "local_path": "attachments/Bypass-Linux-Dev-V120-NG-2023-10-31_14-24-12.mp4"
+    },
+    {
+      "id": 53209187,
+      "filename": "Bypass-Linux-DEV-V120-SideNG-2023-10-31_14-07-59.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1727215,
+      "url": "https://issues.chromium.org/action/issues/40075980/attachments/53209187?download=true",
+      "local_path": "attachments/Bypass-Linux-DEV-V120-SideNG-2023-10-31_14-07-59.mp4"
+    },
+    {
+      "id": 53209188,
+      "filename": "autofillpop-cursor-win-ref.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3003,
+      "url": "https://issues.chromium.org/action/issues/40075980/attachments/53209188?download=true",
+      "local_path": "attachments/autofillpop-cursor-win-ref.html"
+    },
+    {
+      "id": 53209190,
+      "filename": "cursor-128x128-autoXY.png",
+      "mime_type": "image/png",
+      "size_bytes": 2966,
+      "url": "https://issues.chromium.org/action/issues/40075980/attachments/53209190?download=true",
+      "local_path": "attachments/cursor-128x128-autoXY.png"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n======================  \n  \nthis is a report to a security vulnerability in google chrome/chromium browser as high-quality report with functional exploit.   \n  \n``This Bug has a Bypass for the Mitigation done at Main https://crbug.com/chromium/1472404``  \n  \nthis vulnera"
+}

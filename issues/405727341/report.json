@@ -1,0 +1,52 @@
+{
+  "id": "405727341",
+  "url": "https://issues.chromium.org/issues/405727341",
+  "title": "clickjacking (enterjacking) download notification when a window.alert() is closed",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "ch...@chromium.org",
+  "created_date": "2025-03-24T04:34:23+00:00",
+  "modified_date": "2026-01-23T12:40:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": "Security UI spoofing baseline - lower impact",
+  "attachments": [
+    {
+      "id": 64179908,
+      "filename": "enterjack3.html",
+      "mime_type": "text/html",
+      "size_bytes": 1097,
+      "url": "https://issues.chromium.org/action/issues/405727341/attachments/64179908?download=true",
+      "local_path": null
+    },
+    {
+      "id": 64179909,
+      "filename": "bandicam 2025-03-24 11-30-17-311.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1420156,
+      "url": "https://issues.chromium.org/action/issues/405727341/attachments/64179909?download=true",
+      "local_path": null
+    },
+    {
+      "id": 70156999,
+      "filename": "bandicam 2025-10-16 10-02-11-145.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1260885,
+      "url": "https://issues.chromium.org/action/issues/405727341/attachments/70156999?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "Security Bug\n\nVULNERABILITY DETAILS\nwhen opening a window alert() and at the same time the popup window is downloading a file and  window.alert() is closed the focus changes to the file that has been downloaded (download notification) this causes the file to be opened\n\nVERSION\nChrome Version: Versio"
+}

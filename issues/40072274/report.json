@@ -1,0 +1,86 @@
+{
+  "id": "40072274",
+  "url": "https://issues.chromium.org/issues/40072274",
+  "title": "Bypass PaymentRequest.show() calls after the first.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Payments",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "nd...@protonmail.com",
+  "assignee": "np...@chromium.org",
+  "created_date": "2023-09-14T04:13:54+00:00",
+  "modified_date": "2024-01-09T11:11:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53076858,
+      "filename": "xsleaks.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 536315,
+      "url": "https://issues.chromium.org/action/issues/40072274/attachments/53076858?download=true",
+      "local_path": "attachments/xsleaks.mp4"
+    },
+    {
+      "id": 53076859,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 609,
+      "url": "https://issues.chromium.org/action/issues/40072274/attachments/53076859?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53076860,
+      "filename": "index.js",
+      "mime_type": "text/plain",
+      "size_bytes": 938,
+      "url": "https://issues.chromium.org/action/issues/40072274/attachments/53076860?download=true",
+      "local_path": "attachments/index.js"
+    },
+    {
+      "id": 53076861,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 811,
+      "url": "https://issues.chromium.org/action/issues/40072274/attachments/53076861?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53076862,
+      "filename": "pay.html",
+      "mime_type": "text/plain",
+      "size_bytes": 635,
+      "url": "https://issues.chromium.org/action/issues/40072274/attachments/53076862?download=true",
+      "local_path": "attachments/pay.html"
+    },
+    {
+      "id": 53076863,
+      "filename": "pay.js",
+      "mime_type": "text/plain",
+      "size_bytes": 285,
+      "url": "https://issues.chromium.org/action/issues/40072274/attachments/53076863?download=true",
+      "local_path": "attachments/pay.js"
+    },
+    {
+      "id": 53076864,
+      "filename": "service-worker.js",
+      "mime_type": "text/plain",
+      "size_bytes": 4040,
+      "url": "https://issues.chromium.org/action/issues/40072274/attachments/53076864?download=true",
+      "local_path": "attachments/service-worker.js"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "**Steps to reproduce the problem:**   \nPoC (use chrome canary): https://mixolydian-wild-legal.glitch.me/?url=https://terjanq.me/xss.php?h[Cross-Origin-Opener-Policy]=same-origin  \nThis opens a COOP protected window without user interaction that could repletely make query's for an XS-Search attack."
+}

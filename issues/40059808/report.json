@@ -1,0 +1,60 @@
+{
+  "id": "40059808",
+  "url": "https://issues.chromium.org/issues/40059808",
+  "title": "Security: UAF in ManagedConfigurationAPI::GetConfigurationOnBackend",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Managed, Enterprise",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "et...@gmail.com",
+  "assignee": "bf...@chromium.org",
+  "created_date": "2022-05-31T08:52:53+00:00",
+  "modified_date": "2024-01-09T06:06:00+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53177553,
+      "filename": "test.html",
+      "mime_type": "text/plain",
+      "size_bytes": 182,
+      "url": "https://issues.chromium.org/action/issues/40059808/attachments/53177553?download=true",
+      "local_path": "attachments/test.html"
+    },
+    {
+      "id": 53177554,
+      "filename": "repro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2768037,
+      "url": "https://issues.chromium.org/action/issues/40059808/attachments/53177554?download=true",
+      "local_path": "attachments/repro.mp4"
+    },
+    {
+      "id": 53177555,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 27762,
+      "url": "https://issues.chromium.org/action/issues/40059808/attachments/53177555?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53177572,
+      "filename": "repro_bug.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 2475,
+      "url": "https://issues.chromium.org/action/issues/40059808/attachments/53177572?download=true",
+      "local_path": "attachments/repro_bug.diff"
+    }
+  ],
+  "update_count": 77,
+  "description_snippet": "**Steps to reproduce the problem:**   \nThe pattern of this vulnerability is similar to this issue.  \nhttps://chromium-review.googlesource.com/c/chromium/src/+/3651398  \n  \n1. apply patch.diff and build  \n  \n[0] Since GetOriginPolicyConfiguration will check origin, this requires chrome enterprise ver"
+}

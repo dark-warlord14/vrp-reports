@@ -1,0 +1,34 @@
+{
+  "id": "40052749",
+  "url": "https://issues.chromium.org/issues/40052749",
+  "title": "Heap-buffer-overflow in blink::NGFragmentItems::LayoutObjectWillBeMoved",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Layout",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "ko...@chromium.org",
+  "created_date": "2020-07-02T16:44:02+00:00",
+  "modified_date": "2024-01-09T01:50:07+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 6000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53086752,
+      "filename": "tc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 253,
+      "url": "https://issues.chromium.org/action/issues/40052749/attachments/53086752?download=true",
+      "local_path": "attachments/tc.html"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=6589180840312832\n\nFuzzer: puzzor\nJob Type: linux_asan_chrome_v8_arm\nPlatform Id: linux\n\nCrash Type: Heap-buffer-overflow READ 4\nCrash Address: 0xf37736b0\nCrash State:\n  blink::NGFragmentItems::LayoutObjectWillBeMoved\n  blink::InvalidateInlineItem"
+}

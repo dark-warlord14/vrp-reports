@@ -1,0 +1,33 @@
+{
+  "id": "40074630",
+  "url": "https://issues.chromium.org/issues/40074630",
+  "title": "Security: Google Chrome MetalCompiler OOB Access Vulnerability",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebGL, Internals>GPU, Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pw...@gmail.com",
+  "assignee": "ge...@chromium.org",
+  "created_date": "2023-10-11T14:43:45+00:00",
+  "modified_date": "2024-08-27T15:21:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": "Reward amount decided based on memory corruption in a sandboxed process. Thank you for reporting this issue to us so that Apple could resolve this issue upstream. \n\nThank you for your efforts and helping us make Chrome more secure for all users!\n\nCheers,\nChrome VRP Panel Bot\n\n\nP.S. Two other things we'd like to mention:\n\n* Please do NOT publicly disclose details until a fix has been released to all our users. Early public disclosure may cancel the provisional reward. Also, please be considerate ",
+  "attachments": [
+    {
+      "id": 53393790,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2460,
+      "url": "https://issues.chromium.org/action/issues/40074630/attachments/53393790?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 91,
+  "description_snippet": "# VULNERABILITY DETAILS  \nWhen using WebGL2 as chrome in MacOS, the MTLCompilerService generates OOB.  \n  \n# VERSION  \nVersion : Chrome Stable + AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36  \nOperating System : MacOS Sonoma 14.1  \n  \n# REPRODUCTION CASE  \n1. python3 -m"
+}

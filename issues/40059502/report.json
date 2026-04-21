@@ -1,0 +1,41 @@
+{
+  "id": "40059502",
+  "url": "https://issues.chromium.org/issues/40059502",
+  "title": "Security: Heap-use-after-free in sharing_hub::SharingHubBubbleController::OnBubbleClosed",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Sharing",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "el...@chromium.org",
+  "created_date": "2022-04-28T03:50:10+00:00",
+  "modified_date": "2024-01-09T06:47:17+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52924114,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 173,
+      "url": "https://issues.chromium.org/action/issues/40059502/attachments/52924114?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52924115,
+      "filename": "video.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 4025431,
+      "url": "https://issues.chromium.org/action/issues/40059502/attachments/52924115?download=true",
+      "local_path": "attachments/video.mov"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. download asan-mac-release-995881.zip and unzip  \n2. start a server at poc.html: python -m SimpleHTTPServer 8605  \n3. ./Chromium  http://127.0.0.1:8605/poc.html    \n4. After open chromium, click sharing hub icon, then choose `show QR code`  \n5. Then move the"
+}

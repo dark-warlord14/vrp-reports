@@ -1,0 +1,41 @@
+{
+  "id": "40066076",
+  "url": "https://issues.chromium.org/issues/40066076",
+  "title": "Security: [ANGLE] opengl : Out-of-bounds memory can be accessed using offsets in vertexAttribPointer",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebGL, Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ne...@nesk.kr",
+  "assignee": "ge...@chromium.org",
+  "created_date": "2023-06-20T06:09:42+00:00",
+  "modified_date": "2024-05-24T14:48:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53402700,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 34426,
+      "url": "https://issues.chromium.org/action/issues/40066076/attachments/53402700?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53402725,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1675,
+      "url": "https://issues.chromium.org/action/issues/40066076/attachments/53402725?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nAddressSanitizer:DEADLYSIGNAL  \n=================================================================  \n==7974==ERROR: AddressSanitizer: SEGV on unknown address 0x000041424344 (pc 0x00020d105c2c bp 0x00028c1c4e00 sp 0x00028c1c4c50 T25)  \n==7974==ERROR: AddressSanitizer: S"
+}

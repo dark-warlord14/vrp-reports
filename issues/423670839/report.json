@@ -1,0 +1,45 @@
+{
+  "id": "423670839",
+  "url": "https://issues.chromium.org/issues/423670839",
+  "title": "Permission element inner div  with style text-decoration-line: line-through; and text-decoration-thickness  can be abused if no element in the parent chain has any text-decoration-line: line-through; and text-decoration-thickness are  set.",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Permissions>PermissionElement",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2025-06-10T04:30:33+00:00",
+  "modified_date": "2025-11-07T23:31:48+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": "Thank you reward for report of a lower-impact issue that resulted in a security beneficial change",
+  "attachments": [
+    {
+      "id": 66604124,
+      "filename": "fontpepc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1405,
+      "url": "https://issues.chromium.org/action/issues/423670839/attachments/66604124?download=true",
+      "local_path": null
+    },
+    {
+      "id": 66604125,
+      "filename": "bandicam 2025-06-10 11-19-20-944.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2732477,
+      "url": "https://issues.chromium.org/action/issues/423670839/attachments/66604125?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "This bug is similar to https://issues.chromium.org/issues/398803201,  when text-decoration-line: line-through; and text-decoration-thickness: are embedded in a tag above the <permission> tag, for example a div or something else, this affects the <permission> tag, thus covering the text in the <permi"
+}

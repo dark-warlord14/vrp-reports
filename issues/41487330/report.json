@@ -1,0 +1,54 @@
+{
+  "id": "41487330",
+  "url": "https://issues.chromium.org/issues/41487330",
+  "title": "[webrtc]UAF in RTCPeerConnectionHandler::OnIceCandidate",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebRTC, Blink>WebRTC>PeerConnection",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "gu...@chromium.org",
+  "created_date": "2023-12-29T13:34:17+00:00",
+  "modified_date": "2024-04-27T15:44:41+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53069095,
+      "filename": "force-gc.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 3154,
+      "url": "https://issues.chromium.org/action/issues/41487330/attachments/53069095?download=true",
+      "local_path": "attachments/force-gc.patch"
+    },
+    {
+      "id": 53069096,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1343,
+      "url": "https://issues.chromium.org/action/issues/41487330/attachments/53069096?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53069097,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 34675,
+      "url": "https://issues.chromium.org/action/issues/41487330/attachments/53069097?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "**Steps to reproduce the problem:**   \ntested os version:  \nubuntu 22.04  \ntested chrome version:  \nChromium 122.0.6182.0  \nChromium 122.0.6208.0  \n  \nrepro steps:  \n1 git apply force-gc.patch  \n2 ./chrome --user-data-dr=/tmp/xx http://localhost:8000/crash.html  \n  \n**Problem Description:**   \nanaly"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "40070873",
+  "url": "https://issues.chromium.org/issues/40070873",
+  "title": "Security: Bypassing of security interstitials using devtools API",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "al...@google.com",
+  "created_date": "2023-08-29T18:47:45+00:00",
+  "modified_date": "2024-11-15T08:47:18+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52969329,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 101,
+      "url": "https://issues.chromium.org/action/issues/40070873/attachments/52969329?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 52969330,
+      "filename": "devtools.html",
+      "mime_type": "text/plain",
+      "size_bytes": 35,
+      "url": "https://issues.chromium.org/action/issues/40070873/attachments/52969330?download=true",
+      "local_path": "attachments/devtools.html"
+    },
+    {
+      "id": 52969331,
+      "filename": "devtools.js",
+      "mime_type": "text/plain",
+      "size_bytes": 274,
+      "url": "https://issues.chromium.org/action/issues/40070873/attachments/52969331?download=true",
+      "local_path": "attachments/devtools.js"
+    },
+    {
+      "id": 52969332,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 183,
+      "url": "https://issues.chromium.org/action/issues/40070873/attachments/52969332?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nSimilar to https://bugs.chromium.org/p/chromium/issues/detail?id=1268445 (which was for the debugger permission), a devtools API extension can debug and obtain scripting access to chrome-error://chromewebdata page, which allows it to bypass security interstitials. Note t"
+}

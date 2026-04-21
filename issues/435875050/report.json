@@ -1,0 +1,41 @@
+{
+  "id": "435875050",
+  "url": "https://issues.chromium.org/issues/435875050",
+  "title": "WebGPU dawn::native::d3d12::ResourceAllocatorManager::Tick Heap-Use-After-Free",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Dawn",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "140.0.7317.0",
+  "cve_ids": [],
+  "reporter": "wl...@gmail.com",
+  "assignee": "lo...@google.com",
+  "created_date": "2025-08-03T03:54:17+00:00",
+  "modified_date": "2026-03-05T16:43:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": "high quality report of memory corruption in the GPU",
+  "attachments": [
+    {
+      "id": 68137197,
+      "filename": "Asan_logs.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 39188,
+      "url": "https://issues.chromium.org/action/issues/435875050/attachments/68137197?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68137198,
+      "filename": "PoC.html",
+      "mime_type": "text/html",
+      "size_bytes": 1602,
+      "url": "https://issues.chromium.org/action/issues/435875050/attachments/68137198?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 82,
+  "description_snippet": "# Steps to reproduce the problem\n## Steps to reproduce\n\n1. Run open_PoC.bat (launches a local HTTP server and opens chromium)\n2. Navigates to PoC.html, The flag —no-sandbox is used for ASAN output.  ⇒ `./chrome.exe --no-sandbox http://localhost:8000/PoC.html`\n3. After a few reload cycles, the GPU pr"
+}

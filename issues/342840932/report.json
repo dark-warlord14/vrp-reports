@@ -1,0 +1,41 @@
+{
+  "id": "342840932",
+  "url": "https://issues.chromium.org/issues/342840932",
+  "title": "Security: Internal Compiler Error(Duplicate non-aggregate type declarations are not allowed) in tint::spirv::writer::IRFuzzer",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Dawn>Tint",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "jr...@google.com",
+  "created_date": "2024-05-26T15:17:16+00:00",
+  "modified_date": "2026-03-05T16:43:36+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": "$5,000 for report of potential, but not demonstrated, memory corruption in the GPU process",
+  "attachments": [
+    {
+      "id": 56679379,
+      "filename": "log.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 72129,
+      "url": "https://issues.chromium.org/action/issues/342840932/attachments/56679379?download=true",
+      "local_path": "attachments/log.txt"
+    },
+    {
+      "id": 56679380,
+      "filename": "poc.wgsl",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 8529,
+      "url": "https://issues.chromium.org/action/issues/342840932/attachments/56679380?download=true",
+      "local_path": "attachments/poc.wgsl"
+    }
+  ],
+  "update_count": 68,
+  "description_snippet": "## REPRODUCE\n1. gn gen out/libfuzzer --args=\"use_libfuzzer=true tint_build_cmds=true\"\n2. ninja -C out/libfuzzer tint_wgsl_fuzzer\n3. out/libfuzzer/tint_wgsl_fuzzer poc.wgsl\n\n## CRASH LOG\nFor the full content, refer to log.txt. This is just a summary.\n\n```\nspirv:1:1 error: Duplicate non-aggregate type"
+}

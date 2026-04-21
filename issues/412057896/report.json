@@ -1,0 +1,29 @@
+{
+  "id": "412057896",
+  "url": "https://issues.chromium.org/issues/412057896",
+  "title": "Security: Uaf in media::AudioBus",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Media",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "asan-linux-release-1444497",
+  "cve_ids": [],
+  "reporter": "su...@gmail.com",
+  "assignee": "mj...@chromium.org",
+  "created_date": "2025-04-20T15:39:05+00:00",
+  "modified_date": "2025-08-01T12:38:39+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": "report of memory corruption in a sandboxed process",
+  "attachments": [],
+  "update_count": 97,
+  "description_snippet": "# Steps to reproduce the problem\nThis vulnerability is a race condition vulnerability with a very low probability of being triggered. I am still trying to reproduce the vulnerability and construct a PoC.\n\n# Problem Description\nI currently don't know the root cause of this vulnerability. For now, I c"
+}

@@ -1,0 +1,82 @@
+{
+  "id": "40063759",
+  "url": "https://issues.chromium.org/issues/40063759",
+  "title": "Security: UAF in extensions::SupervisedUserExtensionsDelegateImpl::ShowParentPermissionDialogForExtension",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zh...@gmail.com",
+  "assignee": "ag...@chromium.org",
+  "created_date": "2023-03-25T09:55:09+00:00",
+  "modified_date": "2024-01-06T00:11:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52930511,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 334,
+      "url": "https://issues.chromium.org/action/issues/40063759/attachments/52930511?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 52930512,
+      "filename": "popup.html",
+      "mime_type": "text/plain",
+      "size_bytes": 78,
+      "url": "https://issues.chromium.org/action/issues/40063759/attachments/52930512?download=true",
+      "local_path": "attachments/popup.html"
+    },
+    {
+      "id": 52930513,
+      "filename": "popup.js",
+      "mime_type": "text/plain",
+      "size_bytes": 372,
+      "url": "https://issues.chromium.org/action/issues/40063759/attachments/52930513?download=true",
+      "local_path": "attachments/popup.js"
+    },
+    {
+      "id": 52930514,
+      "filename": "icon.png",
+      "mime_type": "image/png",
+      "size_bytes": 4454,
+      "url": "https://issues.chromium.org/action/issues/40063759/attachments/52930514?download=true",
+      "local_path": "attachments/icon.png"
+    },
+    {
+      "id": 52930515,
+      "filename": "supervised_user_load_icon_uaf.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 2465,
+      "url": "https://issues.chromium.org/action/issues/40063759/attachments/52930515?download=true",
+      "local_path": "attachments/supervised_user_load_icon_uaf.patch"
+    },
+    {
+      "id": 52930516,
+      "filename": "supervised_user_load_icon_uaf.asan",
+      "mime_type": "text/plain",
+      "size_bytes": 24733,
+      "url": "https://issues.chromium.org/action/issues/40063759/attachments/52930516?download=true",
+      "local_path": "attachments/supervised_user_load_icon_uaf.asan"
+    },
+    {
+      "id": 52930541,
+      "filename": "supervised_user_load_icon_uaf_poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6998825,
+      "url": "https://issues.chromium.org/action/issues/40063759/attachments/52930541?download=true",
+      "local_path": "attachments/supervised_user_load_icon_uaf_poc.mp4"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nWhen loading extension icon in SupervisedUserExtensionsDelegateImpl::RequestToEnableExtensionOrShowError,   \nthe web content will be bound into function `OnExtensionDataLoaded` as a callback [0].  \n  \n```  \nvoid SupervisedUserExtensionsDelegateImpl::RequestToEnableExt"
+}

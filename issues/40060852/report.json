@@ -1,0 +1,41 @@
+{
+  "id": "40060852",
+  "url": "https://issues.chromium.org/issues/40060852",
+  "title": "Security: heap-use-after-free in the Metal features in the GPU process",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Skia",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "cc...@google.com",
+  "created_date": "2022-09-07T07:54:00+00:00",
+  "modified_date": "2023-02-25T18:32:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53362982,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 45189,
+      "url": "https://issues.chromium.org/action/issues/40060852/attachments/53362982?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53362992,
+      "filename": "1360743-asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 156334,
+      "url": "https://issues.chromium.org/action/issues/40060852/attachments/53362992?download=true",
+      "local_path": "attachments/1360743-asan.log"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nheap-use-after-free in the Metal features in the GPU process  \n  \n**VERSION**   \nChrome Version: 107.0.5287.0 (Developer Build) (arm64)   \nOperating System: MacOS Monterey  Version 12.5.1  \nRevision\t66a7dac93d21894a8a58de4c3ac9e7ad6080c514-refs/heads/main@{#1043835}"
+}

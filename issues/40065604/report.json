@@ -1,0 +1,85 @@
+{
+  "id": "40065604",
+  "url": "https://issues.chromium.org/issues/40065604",
+  "title": "Security: Page can obtain autofill data with two consecutive taps using EyeDropper API (bypass of multiple prior fixes)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill>AddressesAndMore, UI>Browser>Autofill>Payments",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "jk...@google.com",
+  "created_date": "2023-06-09T23:50:10+00:00",
+  "modified_date": "2024-10-05T15:39:56+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": "$10,000 total reward for this report of multiple user information disclosure issues: $5,000 for high-quality, moderate impact user information disclosure + $2,000 for report of lower impact information disclosure + $2,000 for report of lower impact information disclosure + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 53380369,
+      "filename": "autofill-eye-dropper-two-taps.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3480,
+      "url": "https://issues.chromium.org/action/issues/40065604/attachments/53380369?download=true",
+      "local_path": "attachments/autofill-eye-dropper-two-taps.html"
+    },
+    {
+      "id": 53380370,
+      "filename": "autofill-eye-dropper-two-taps.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 99402,
+      "url": "https://issues.chromium.org/action/issues/40065604/attachments/53380370?download=true",
+      "local_path": "attachments/autofill-eye-dropper-two-taps.mp4"
+    },
+    {
+      "id": 53380506,
+      "filename": "crbug1453815-debug-1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3079,
+      "url": "https://issues.chromium.org/action/issues/40065604/attachments/53380506?download=true",
+      "local_path": "attachments/crbug1453815-debug-1.html"
+    },
+    {
+      "id": 53380658,
+      "filename": "autofill-eye-dropper-jan2024.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3809,
+      "url": "https://issues.chromium.org/action/issues/40065604/attachments/53380658?download=true",
+      "local_path": "attachments/autofill-eye-dropper-jan2024.html"
+    },
+    {
+      "id": 53380682,
+      "filename": "timed-video.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1520,
+      "url": "https://issues.chromium.org/action/issues/40065604/attachments/53380682?download=true",
+      "local_path": "attachments/timed-video.html"
+    },
+    {
+      "id": 53380684,
+      "filename": "timed-video.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2089119,
+      "url": "https://issues.chromium.org/action/issues/40065604/attachments/53380684?download=true",
+      "local_path": "attachments/timed-video.mp4"
+    },
+    {
+      "id": 57274839,
+      "filename": "autofill-eye-dropper-june2024.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2736392,
+      "url": "https://issues.chromium.org/action/issues/40065604/attachments/57274839?download=true",
+      "local_path": "attachments/autofill-eye-dropper-june2024.mp4"
+    }
+  ],
+  "update_count": 100,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA page can make a user select an autofill item with two consecutive taps with no user awareness by calling the EyeDropper API. Similar behavior with EyeDropper API + mouse was previously fixed in https://crbug.com/chromium/1287364 [1]. The tap behavior without the EyeDro"
+}

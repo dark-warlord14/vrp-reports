@@ -1,0 +1,71 @@
+{
+  "id": "361611809",
+  "url": "https://issues.chromium.org/issues/361611809",
+  "title": "[Security] Tapjacking on payment request dialog using window alert",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Payments",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "ro...@google.com",
+  "created_date": "2024-08-23T09:23:59+00:00",
+  "modified_date": "2025-10-23T01:56:24+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "report of lower impact security UI / web platform privilege escalation bug",
+  "attachments": [
+    {
+      "id": 58858826,
+      "filename": "video6214974538107588499.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6689305,
+      "url": "https://issues.chromium.org/action/issues/361611809/attachments/58858826?download=true",
+      "local_path": "attachments/video6214974538107588499.mp4"
+    },
+    {
+      "id": 58858827,
+      "filename": "payment.html",
+      "mime_type": "text/html",
+      "size_bytes": 16592,
+      "url": "https://issues.chromium.org/action/issues/361611809/attachments/58858827?download=true",
+      "local_path": "attachments/payment.html"
+    },
+    {
+      "id": 64239586,
+      "filename": "video6273551694387221470.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3238482,
+      "url": "https://issues.chromium.org/action/issues/361611809/attachments/64239586?download=true",
+      "local_path": "attachments/video6273551694387221470.mp4"
+    },
+    {
+      "id": 64285879,
+      "filename": "2025_03_26_21_17_32.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 11765763,
+      "url": "https://issues.chromium.org/action/issues/361611809/attachments/64285879?download=true",
+      "local_path": "attachments/2025_03_26_21_17_32.mp4"
+    },
+    {
+      "id": 64275570,
+      "filename": "2025_03_26_22_17_23.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 12767905,
+      "url": "https://issues.chromium.org/action/issues/361611809/attachments/64275570?download=true",
+      "local_path": "attachments/2025_03_26_22_17_23.mp4"
+    },
+    {
+      "id": 64275571,
+      "filename": "2025_03_26_22_29_18.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 10408868,
+      "url": "https://issues.chromium.org/action/issues/361611809/attachments/64275571?download=true",
+      "local_path": "attachments/2025_03_26_22_29_18.mp4"
+    }
+  ],
+  "update_count": 76,
+  "description_snippet": "VULNERABILITY DETAILS\n\nI found a tapjacking vulnerability on payment request (android). When tapped once, the payment request continues to run even though the dialog is closed by user.\n\nVERSION\nChrome Version 122.0.6170.3 (Official Build) dev (64-bit)\nOperating System: Android 12\n\nREPRODUCTION CASE"
+}

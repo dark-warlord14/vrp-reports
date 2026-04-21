@@ -1,0 +1,46 @@
+{
+  "id": "40056812",
+  "url": "https://issues.chromium.org/issues/40056812",
+  "title": " TALOS-2021-1352: Google Chrome Blink setBaseAndExtent use after free vulnerability",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Editing>Selection",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "vm...@chromium.org",
+  "created_date": "2021-08-06T19:04:12+00:00",
+  "modified_date": "2024-08-11T21:22:52+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53031590,
+      "filename": "TALOS-2021-1352 - Google_Chrome_Blink_setBaseAndExtent_use_after_free_vulnerability.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 24017,
+      "url": "https://issues.chromium.org/action/issues/40056812/attachments/53031590?download=true",
+      "local_path": "attachments/TALOS-2021-1352 - Google_Chrome_Blink_setBaseAndExtent_use_after_free_vulnerability.txt"
+    },
+    {
+      "id": 53031591,
+      "filename": "TALOS-2021-1352-poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 431,
+      "url": "https://issues.chromium.org/action/issues/40056812/attachments/53031591?download=true",
+      "local_path": "attachments/TALOS-2021-1352-poc.html"
+    }
+  ],
+  "update_count": 70,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36 Edg/92.0.902.55\r\n\r\nSteps to reproduce the problem:\r\n### Summary\r\n\r\nA use after free vulnerability exists in the Selection API of Blink rendering engine in Google Chrome 92.0"
+}

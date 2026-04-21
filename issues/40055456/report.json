@@ -1,0 +1,64 @@
+{
+  "id": "40055456",
+  "url": "https://issues.chromium.org/issues/40055456",
+  "title": "Security:  v8 Array.concat IterateElements OOB access leads to RCE",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2017-5030"
+  ],
+  "reporter": "bt...@gmail.com",
+  "assignee": "is...@chromium.org",
+  "created_date": "2021-04-05T20:36:01+00:00",
+  "modified_date": "2024-03-12T01:14:51+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 22000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53310950,
+      "filename": "exploit.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2665,
+      "url": "https://issues.chromium.org/action/issues/40055456/attachments/53310950?download=true",
+      "local_path": "attachments/exploit.zip"
+    },
+    {
+      "id": 53311017,
+      "filename": "leak.js",
+      "mime_type": "text/plain",
+      "size_bytes": 589,
+      "url": "https://issues.chromium.org/action/issues/40055456/attachments/53311017?download=true",
+      "local_path": "attachments/leak.js"
+    },
+    {
+      "id": 53311025,
+      "filename": "exploit.js",
+      "mime_type": "text/plain",
+      "size_bytes": 8226,
+      "url": "https://issues.chromium.org/action/issues/40055456/attachments/53311025?download=true",
+      "local_path": "attachments/exploit.js"
+    },
+    {
+      "id": 53311026,
+      "filename": "exploit.html",
+      "mime_type": "text/plain",
+      "size_bytes": 42,
+      "url": "https://issues.chromium.org/action/issues/40055456/attachments/53311026?download=true",
+      "local_path": "attachments/exploit.html"
+    }
+  ],
+  "update_count": 103,
+  "description_snippet": "I. VULNERABILITY DETAILS\r\n\r\nIt is possible to trigger a callback during the computation of IterateElements used by Array.concat(). This is done by controlling the return type of Array.concat() (visitor variable) by setting the Symbol.species of the receiving element to the function. In this example"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "40062145",
+  "url": "https://issues.chromium.org/issues/40062145",
+  "title": "stack use after return in gpu::raster::(anonymous namespace)::OnReadYUVImagePixelsDone",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>Vulkan",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "va...@chromium.org",
+  "created_date": "2022-12-09T07:38:06+00:00",
+  "modified_date": "2024-01-09T07:38:03+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53120336,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 26493,
+      "url": "https://issues.chromium.org/action/issues/40062145/attachments/53120336?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53120337,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 837,
+      "url": "https://issues.chromium.org/action/issues/40062145/attachments/53120337?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53120338,
+      "filename": "common.js",
+      "mime_type": "text/plain",
+      "size_bytes": 11334,
+      "url": "https://issues.chromium.org/action/issues/40062145/attachments/53120338?download=true",
+      "local_path": "attachments/common.js"
+    },
+    {
+      "id": 53120339,
+      "filename": "about_gpu.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 55579,
+      "url": "https://issues.chromium.org/action/issues/40062145/attachments/53120339?download=true",
+      "local_path": "attachments/about_gpu.txt"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**Steps to reproduce the problem:**   \nglxinfo -B  \nname of display: :0  \ndisplay: :0  screen: 0  \ndirect rendering: Yes  \nMemory info (GL_NVX_gpu_memory_info):  \n    Dedicated video memory: 8192 MB  \n    Total available memory: 8192 MB  \n    Currently available dedicated video memory: 7951 MB  \nOpe"
+}
