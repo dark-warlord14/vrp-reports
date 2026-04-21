@@ -2,7 +2,7 @@ name: Scrape VRP Reports
 
 on:
   schedule:
-    - cron: '0 6 * * *'   # 6 AM UTC daily
+    - cron: '0 6 * * 0'   # 6 AM UTC every Sunday
   workflow_dispatch:        # allow manual trigger from Actions UI
 
 permissions:
