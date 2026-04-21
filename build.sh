@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Assembles the static dist/ directory for Cloudflare Pages deployment.
+# Assembles the static dist/ directory for GitHub Pages deployment.
 # Output: ~22.5MB (ui assets + index/stats + per-issue report.json/report.md only)
 # Excludes: attachments, raw JSON, discovery queue files.
 set -euo pipefail

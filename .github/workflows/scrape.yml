@@ -7,11 +7,16 @@ on:
 
 permissions:
   contents: write           # needed to push the data branch
+  pages: write              # needed to deploy to GitHub Pages
+  id-token: write           # needed for OIDC token for Pages deployment
 
 jobs:
   scrape-and-deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 120
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
 
     steps:
       - name: Checkout code (master)
@@ -62,9 +67,17 @@ jobs:
       - name: Build static dist/
         run: bash build.sh
 
-      - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
+      - name: Add .nojekyll (prevent Jekyll processing)
+        run: touch dist/.nojekyll
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name=vrp-reports --commit-dirty=true
+          path: dist/
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
