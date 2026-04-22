@@ -569,7 +569,9 @@ code, pre { font-family: var(--mono); }
     font-weight: 500;
     color: var(--fg);
     font-variant-numeric: tabular-nums;
-    word-break: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 /* ---------- Markdown ---------- */

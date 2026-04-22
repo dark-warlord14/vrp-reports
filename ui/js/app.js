@@ -496,7 +496,7 @@ const App = {
             <div class="stats-bar">
                 ${Components.statCard('Total Reports', s.total_reports)}
                 ${Components.statCard('Total Bounty', '$' + (s.total_bounty || 0).toLocaleString())}
-                ${Components.statCard('Avg Bounty', '$' + (s.avg_bounty || 0).toLocaleString())}
+                ${Components.statCard('Avg Bounty', '$' + Math.round(s.avg_bounty || 0).toLocaleString())}
             </div>
 
             <div class="stats-grid">
