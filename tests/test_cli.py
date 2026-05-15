@@ -5,7 +5,7 @@ from unittest.mock import patch
 
 import pytest
 from click.testing import CliRunner
-from vrp.cli import cli
+from vrp.cli import _load_year_issue_ids, cli
 from vrp.parser import build_issue
 from vrp.utils import save_json
 
@@ -99,4 +99,37 @@ class TestStatusCommand:
         assert result.exit_code == 0
         assert "2" in result.output
 
+    def test_status_ignores_master_queue_as_year_checkpoint(self, runner, data_dir):
+        save_json(data_dir / "discovery_2026.json", ["1", "2"])
+        save_json(data_dir / "discovery_queue.json", ["1", "2", "3"])
+
+        patches = _patch_paths(data_dir)
+        for p in patches:
+            p.start()
+        try:
+            result = runner.invoke(cli, ["status"])
+        finally:
+            for p in patches:
+                p.stop()
+
+        assert result.exit_code == 0
+        assert "2026(2)" in result.output
+        assert "queue(3)" not in result.output
+
+
+class TestYearScopedRun:
+    def test_load_year_issue_ids_dedupes_selected_checkpoints(self, data_dir):
+        save_json(data_dir / "discovery_2025.json", ["2", "1"])
+        save_json(data_dir / "discovery_2026.json", ["2", "3"])
+
+        patches = _patch_paths(data_dir)
+        for p in patches:
+            p.start()
+        try:
+            ids = _load_year_issue_ids([2025, 2026])
+        finally:
+            for p in patches:
+                p.stop()
+
+        assert ids == ["1", "2", "3"]
 

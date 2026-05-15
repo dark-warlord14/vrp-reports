@@ -12,6 +12,16 @@ from vrp.utils import load_json
 console = Console()
 
 
+def _load_year_issue_ids(years: list[int]) -> list[str]:
+    """Load issue IDs from the selected per-year discovery checkpoints."""
+    issue_ids: set[str] = set()
+    for year in years:
+        checkpoint = DATA_DIR / f"discovery_{year}.json"
+        ids = load_json(checkpoint) or []
+        issue_ids.update(str(iid) for iid in ids)
+    return sorted(issue_ids)
+
+
 @click.group()
 @click.version_option(package_name="vrp-reports")
 def cli():
@@ -31,8 +41,10 @@ def serve(port):
 
 
 @cli.command()
+@click.option("--year", "years", multiple=True, type=int, help="Limit discovery/scraping to a year. Can be repeated.")
+@click.option("--refresh-discovery", is_flag=True, help="Ignore selected year checkpoints and rediscover IDs.")
 @click.option("--no-headless", is_flag=True, help="Show browser window")
-def run(no_headless):
+def run(years, refresh_discovery, no_headless):
     """Full pipeline: discover -> scrape -> reprocess -> markdown -> index."""
     from vrp.discovery import discover_all
     from vrp.extractor import reprocess_existing, scrape_all
@@ -40,18 +52,30 @@ def run(no_headless):
     from vrp.markdown_gen import generate_all_markdown
 
     headless = not no_headless
+    selected_years = sorted(set(years)) or None
 
     try:
         console.print("[bold]Step 1/5: Discovery[/bold]")
-        ids = asyncio.run(discover_all(headless=headless))
-        console.print(f"  -> {len(ids)} issue IDs")
+        ids = asyncio.run(
+            discover_all(
+                years=selected_years,
+                resume=not refresh_discovery,
+                headless=headless,
+            )
+        )
+        if selected_years:
+            ids = _load_year_issue_ids(selected_years)
+            years_str = ", ".join(str(year) for year in selected_years)
+            console.print(f"  -> {len(ids)} issue IDs for {years_str}")
+        else:
+            console.print(f"  -> {len(ids)} issue IDs")
     except Exception as e:
         console.print(f"[red]Discovery failed: {e}[/red]")
         raise SystemExit(1)
 
     try:
         console.print("[bold]Step 2/5: Scraping[/bold]")
-        bounty_count = asyncio.run(scrape_all(headless=headless))
+        bounty_count = asyncio.run(scrape_all(issue_ids=ids, headless=headless))
         console.print(f"  -> {bounty_count} new bounty reports")
     except Exception as e:
         console.print(f"[red]Scraping failed: {e}[/red]")
@@ -97,7 +121,7 @@ def status():
     index = load_json(INDEX_FILE) or []
 
     # Discovery checkpoints
-    checkpoints = list(DATA_DIR.glob("discovery_*.json"))
+    checkpoints = [cp for cp in DATA_DIR.glob("discovery_*.json") if cp.name != "discovery_queue.json"]
     years_discovered = []
     for cp in checkpoints:
         year = cp.stem.replace("discovery_", "")
