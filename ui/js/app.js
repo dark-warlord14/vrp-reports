@@ -145,7 +145,7 @@ const App = {
         );
 
         const totalBounty = filtered.reduce((s, r) => s + (r.bounty_amount || 0), 0);
-        const years = [...new Set(this.data.map(r => r.year).filter(Boolean))].sort();
+        const years = [...new Set(this.data.map(r => r.year).filter(Boolean))].sort((a, b) => b - a);
         const severities = [...new Set(this.data.map(r => r.severity).filter(Boolean))].sort();
         const statuses = [...new Set(this.data.map(r => r.status).filter(Boolean))].sort();
 
@@ -257,7 +257,7 @@ const App = {
         if (this.currentSort.field === field) {
             this.currentSort.dir = this.currentSort.dir === 'asc' ? 'desc' : 'asc';
         } else {
-            this.currentSort = { field, dir: field === 'bounty_amount' ? 'desc' : 'asc' };
+            this.currentSort = { field, dir: this.defaultSortDir(field) };
         }
         this.currentPage = 1;
         this.updateHash();
@@ -326,12 +326,29 @@ const App = {
         const { field, dir } = this.currentSort;
         const mult = dir === 'asc' ? 1 : -1;
         return [...data].sort((a, b) => {
-            let va = a[field], vb = b[field];
+            let va = this.sortValue(a, field), vb = this.sortValue(b, field);
             if (va == null) va = '';
             if (vb == null) vb = '';
             if (typeof va === 'number' && typeof vb === 'number') return (va - vb) * mult;
             return String(va).localeCompare(String(vb)) * mult;
         });
+    },
+
+    defaultSortDir(field) {
+        return ['bounty_amount', 'created_date', 'id'].includes(field) ? 'desc' : 'asc';
+    },
+
+    sortValue(row, field) {
+        const value = row[field];
+        if (field === 'created_date') {
+            const timestamp = Date.parse(value || '');
+            return Number.isNaN(timestamp) ? 0 : timestamp;
+        }
+        if (field === 'id') {
+            const numericId = Number(value);
+            return Number.isNaN(numericId) ? value : numericId;
+        }
+        return value;
     },
 
     // === REPORT DETAIL VIEW ===
