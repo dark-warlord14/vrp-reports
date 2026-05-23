@@ -16,11 +16,13 @@ Cloudflare Pages project `vrp-reports` has auto-builds **disabled** (build comma
 
 - **Manual**: Actions tab → `Deploy VRP Reports` → Run workflow
 - **Auto**: push to `main` that touches `ui/**`, `build.sh`, or the workflow file itself
-- Data branch updates do **not** auto-redeploy — trigger manually after pushing data.
+- **Daily scrape**: `.github/workflows/scrape.yml` runs once a day, pushes lightweight updates to `data`, and deploys when data changed
 
 ## Updating content (new scraped reports)
 
-Scrape locally (CI scraping is blocked — likely bot detection on Azure IPs):
+The scheduled scraper runs daily on GitHub Actions. It refreshes discovery for the previous and current UTC year, scrapes new reports, regenerates markdown/index/stats, pushes lightweight files to the `data` branch, and deploys when data changed.
+
+You can still scrape locally:
 
 ```bash
 vrp run                           # discover → scrape → markdown → index

@@ -170,11 +170,11 @@ All tests run offline — no Playwright install or scraped data required.
 
 ## Deployment
 
-Deploys to Cloudflare Pages via `.github/workflows/deploy.yml` (manual dispatch or push to `main` touching `ui/**` or `build.sh`). Two-branch layout:
+Deploys to Cloudflare Pages via `.github/workflows/deploy.yml` (manual dispatch or push to `main` touching UI/build files). Two-branch layout:
 
 - `main` — source code + UI
 - `data` — scraped output (`index.json`, `stats.json`, per-issue `report.json`/`report.md`)
 
-`build.sh` checks out both branches, assembles `dist/`, and `wrangler pages deploy` publishes it. Scraping runs locally (CI scraping is blocked by bot detection on Azure IPs) — push the lightweight files to the `data` branch, then trigger the deploy workflow.
+`build.sh` checks out both branches, assembles `dist/`, and `wrangler pages deploy` publishes it. `.github/workflows/scrape.yml` runs once a day, refreshes recent discovery, scrapes new reports, pushes lightweight files to the `data` branch, and deploys when data changed.
 
 See [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) for the full flow, secrets setup, and token rotation.

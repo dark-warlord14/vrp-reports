@@ -1,13 +1,14 @@
 name: Deploy VRP Reports
 
 on:
-  workflow_dispatch:          # manual trigger only
+  workflow_dispatch:
   push:
     branches: [main]          # redeploy on code/UI changes
     paths:
       - 'ui/**'
       - 'build.sh'
       - '.github/workflows/scrape.yml'
+      - '.github/workflows/deploy.yml'
 
 jobs:
   deploy:
