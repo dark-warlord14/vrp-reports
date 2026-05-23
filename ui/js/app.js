@@ -502,7 +502,7 @@ const App = {
         const app = document.getElementById('app');
 
         if (!this.stats) {
-            app.innerHTML = '<p>No statistics available. Run <code>vrp index</code> to generate.</p>';
+            app.innerHTML = '<p>No statistics available. Run <code>vrp update</code> to generate.</p>';
             return;
         }
 

@@ -2,19 +2,19 @@
 
 > Structured archive of Chromium Vulnerability Reward Program (VRP) bug bounty reports. All data is served as static JSON over CDN — no authentication, no rate limits beyond Cloudflare's defaults.
 
-Base URL: https://vrp-reports.pages.dev
+Base URL: https://vrp-reports.aivault.securityjunky.com
 
 ## Discovery
 
-- [index.json](https://vrp-reports.pages.dev/data/index.json): Array of every bounty report (id, title, severity, component, bounty_amount, year, status). ~900KB. Start here to find IDs.
-- [stats.json](https://vrp-reports.pages.dev/data/stats.json): Aggregate stats — totals, histograms, by-year, by-severity, by-component, top bounties.
-- [schema.json](https://vrp-reports.pages.dev/schema.json): JSON Schema for a full report.
-- [skill.md](https://vrp-reports.pages.dev/skill.md): Agent-oriented usage guide with example queries.
+- [index.json](https://vrp-reports.aivault.securityjunky.com/data/index.json): Array of every bounty report (id, title, severity, component, bounty_amount, year, status). ~900KB. Start here to find IDs.
+- [stats.json](https://vrp-reports.aivault.securityjunky.com/data/stats.json): Aggregate stats — totals, histograms, by-year, by-severity, by-component, top bounties.
+- [schema.json](https://vrp-reports.aivault.securityjunky.com/schema.json): JSON Schema for a full report.
+- [skill.md](https://vrp-reports.aivault.securityjunky.com/skill.md): Agent-oriented usage guide with example queries.
 
 ## Per-report
 
-- `https://vrp-reports.pages.dev/data/issues/<id>/report.json`: Full structured report for one issue.
-- `https://vrp-reports.pages.dev/data/issues/<id>/report.md`: Markdown-rendered version suitable for LLM context.
+- `https://vrp-reports.aivault.securityjunky.com/data/issues/<id>/report.json`: Full structured report for one issue.
+- `https://vrp-reports.aivault.securityjunky.com/data/issues/<id>/report.md`: Markdown-rendered version suitable for LLM context.
 
 ## Typical agent flow
 

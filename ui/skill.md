@@ -7,7 +7,7 @@ description: Query the Chromium VRP bug bounty archive — find vulnerability re
 
 Static JSON archive of Chromium Vulnerability Reward Program reports. Served from Cloudflare CDN, no auth, CORS-enabled.
 
-Base URL: `https://vrp-reports.pages.dev`
+Base URL: `https://vrp-reports.aivault.securityjunky.com`
 
 ## When to use
 
@@ -51,7 +51,7 @@ Severity values: `S0-Critical`, `S1-High`, `S2-Medium`, `S3-Low`, `Unknown`.
 ```python
 import httpx
 
-index = httpx.get("https://vrp-reports.pages.dev/data/index.json").json()
+index = httpx.get("https://vrp-reports.aivault.securityjunky.com/data/index.json").json()
 
 # Example: all critical 2024 bounties ≥ $20K
 matches = [
@@ -63,14 +63,14 @@ matches = [
 
 # Fetch full markdown for top 3
 for e in matches[:3]:
-    md = httpx.get(f"https://vrp-reports.pages.dev/data/issues/{e['id']}/report.md").text
+    md = httpx.get(f"https://vrp-reports.aivault.securityjunky.com/data/issues/{e['id']}/report.md").text
     print(md)
 ```
 
 ## Recipe: component hotspots
 
 ```python
-stats = httpx.get("https://vrp-reports.pages.dev/data/stats.json").json()
+stats = httpx.get("https://vrp-reports.aivault.securityjunky.com/data/stats.json").json()
 top_components = stats["by_component"]   # already sorted, top 20
 top_payouts = stats["top_bounties"]      # top 20 bounty amounts
 ```

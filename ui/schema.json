@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://vrp-reports.pages.dev/schema.json",
+  "$id": "https://vrp-reports.aivault.securityjunky.com/schema.json",
   "title": "Chromium VRP Report",
   "description": "Schema for /data/issues/<id>/report.json entries. The /data/index.json file is an array of summary entries — a subset of these fields (id, title, url, status, severity, component, bounty_amount, created_date, year, attachment_count, local_path, has_markdown).",
   "type": "object",

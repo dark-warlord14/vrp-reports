@@ -35,7 +35,7 @@ rm -f "${DIST}/index.html.bak"
 
 # Copy top-level data files
 if [ ! -f "${DATA}/index.json" ] || [ ! -f "${DATA}/stats.json" ]; then
-    echo "ERROR: ${DATA}/index.json or ${DATA}/stats.json missing. Run 'vrp index' first." >&2
+    echo "ERROR: ${DATA}/index.json or ${DATA}/stats.json missing. Run 'vrp update' first." >&2
     exit 1
 fi
 mkdir -p "${DIST}/data/issues"

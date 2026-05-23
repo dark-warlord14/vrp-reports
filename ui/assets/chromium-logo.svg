@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Chromium logo</title>
+  <desc id="desc">A Chromium-style circular logo in blue tones.</desc>
+  <defs>
+    <clipPath id="circle">
+      <circle cx="128" cy="128" r="116"/>
+    </clipPath>
+  </defs>
+  <circle cx="128" cy="128" r="116" fill="#9cc7f1"/>
+  <g clip-path="url(#circle)">
+    <path fill="#4f9fe3" d="M20 24h216v104H128L92 190z"/>
+    <path fill="#1d6fc1" d="M92 190 128 128h108L132 308z"/>
+    <path fill="#8fc5f3" d="M20 24 92 190l36-62z"/>
+  </g>
+  <circle cx="128" cy="128" r="54" fill="#0b57a3"/>
+  <circle cx="128" cy="128" r="54" fill="none" stroke="#e8f2fb" stroke-width="14"/>
+</svg>

@@ -3,8 +3,8 @@ name: Scrape VRP Reports
 on:
   workflow_dispatch:
   schedule:
-    # Run weekly on Monday at 03:17 UTC.
-    - cron: '17 3 * * 1'
+    # Run weekly on Sunday at 03:17 UTC.
+    - cron: '17 3 * * 0'
 
 concurrency:
   group: scrape-vrp-reports

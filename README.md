@@ -2,7 +2,7 @@
 
 Scrapes and archives Chromium Vulnerability Reward Program (VRP) bug bounty reports from the [Chromium Issue Tracker](https://issues.chromium.org). Collects all bounty-awarded reports back to 2015, downloads all artifacts (PoC files, diffs, videos, screenshots), generates structured markdown, and provides a local dashboard for browsing everything offline.
 
-**Live site:** https://vrp-reports.pages.dev/ — editorial archive, agent-accessible via [`/skill.md`](https://vrp-reports.pages.dev/skill.md), [`/schema.json`](https://vrp-reports.pages.dev/schema.json), [`/llms.txt`](https://vrp-reports.pages.dev/llms.txt).
+**Live site:** https://vrp-reports.aivault.securityjunky.com/ — editorial archive, agent-accessible via [`/skill.md`](https://vrp-reports.aivault.securityjunky.com/skill.md), [`/schema.json`](https://vrp-reports.aivault.securityjunky.com/schema.json), [`/llms.txt`](https://vrp-reports.aivault.securityjunky.com/llms.txt).
 
 ## Features
 
@@ -176,6 +176,6 @@ Deploys to Cloudflare Pages via `.github/workflows/deploy.yml` (manual dispatch 
 - `main` — source code + UI
 - `data` — scraped output (`index.json`, `stats.json`, per-issue `report.json`/`report.md`)
 
-`build.sh` checks out both branches, assembles `dist/`, and `wrangler pages deploy` publishes it. `.github/workflows/scrape.yml` runs weekly, refreshes recent discovery, scrapes only missing reports, pushes lightweight files to the `data` branch, and deploys when data changed.
+`build.sh` checks out both branches, assembles `dist/`, and `wrangler pages deploy` publishes it. `.github/workflows/scrape.yml` runs every Sunday, refreshes the latest/current UTC year, scrapes only missing reports, pushes lightweight files to the `data` branch, and deploys when data changed.
 
 See [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) for the full flow, secrets setup, and token rotation.

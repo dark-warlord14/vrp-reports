@@ -1,6 +1,6 @@
 # Cloudflare Pages Deployment
 
-Live site: https://vrp-reports.pages.dev/
+Live site: https://vrp-reports.aivault.securityjunky.com/
 
 ## How it works
 
@@ -16,11 +16,11 @@ Cloudflare Pages project `vrp-reports` has auto-builds **disabled** (build comma
 
 - **Manual**: Actions tab → `Deploy VRP Reports` → Run workflow
 - **Auto**: push to `main` that touches `ui/**`, `build.sh`, or the workflow file itself
-- **Weekly scrape**: `.github/workflows/scrape.yml` runs weekly, pushes lightweight updates to `data`, and deploys when data changed
+- **Weekly scrape**: `.github/workflows/scrape.yml` runs every Sunday, pushes lightweight updates to `data`, and deploys when data changed
 
 ## Updating content (new scraped reports)
 
-The scheduled scraper runs weekly on GitHub Actions. It refreshes discovery for the current UTC year, scrapes only missing reports, regenerates markdown/index/stats, pushes lightweight files to the `data` branch, and deploys when data changed.
+The scheduled scraper runs weekly on GitHub Actions. It refreshes discovery for the latest/current UTC year, scrapes only missing reports, regenerates markdown/index/stats, pushes lightweight files to the `data` branch, and deploys when data changed.
 
 You can still scrape locally:
 
@@ -69,7 +69,7 @@ Static JSON exposed at these stable URLs (CORS enabled):
 - `/skill.md` — agent usage guide (drop into a Claude Code skill).
 - `/llms.txt` — site manifest for LLM discoverability.
 
-Point any agent at `https://vrp-reports.pages.dev/skill.md` for the full usage contract.
+Point any agent at `https://vrp-reports.aivault.securityjunky.com/skill.md` for the full usage contract.
 
 ## Changing the Cloudflare project name
 
