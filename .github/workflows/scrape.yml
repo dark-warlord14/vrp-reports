@@ -21,7 +21,6 @@ jobs:
     env:
       VRP_CONCURRENCY: "2"
       VRP_DELAY: "3"
-      VRP_DOWNLOAD_ATTACHMENTS: "false"
 
     steps:
       - name: Checkout code

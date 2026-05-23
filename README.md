@@ -150,7 +150,6 @@ All defaults can be overridden with environment variables:
 | `VRP_TIMEOUT` | `60000` | Page load timeout (ms) |
 | `VRP_DELAY` | `2` | Delay between issues (seconds) |
 | `VRP_BROWSER_RESTART` | `100` | Restart browser every N issues |
-| `VRP_DOWNLOAD_ATTACHMENTS` | `true` | Download issue attachments during scraping |
 
 ## Testing
 

@@ -99,7 +99,6 @@ HEADLESS = os.environ.get("VRP_HEADLESS", "true").lower() == "true"
 TIMEOUT = int(os.environ.get("VRP_TIMEOUT", "60000"))
 DELAY_BETWEEN_ISSUES = float(os.environ.get("VRP_DELAY", "2"))
 BROWSER_RESTART_INTERVAL = int(os.environ.get("VRP_BROWSER_RESTART", "100"))
-DOWNLOAD_ATTACHMENTS = os.environ.get("VRP_DOWNLOAD_ATTACHMENTS", "true").lower() == "true"
 
 USER_AGENT = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
