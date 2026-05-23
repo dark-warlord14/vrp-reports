@@ -17,6 +17,7 @@ from vrp.config import (
     CONCURRENCY_LIMIT,
     CORPUS_DIR,
     DELAY_BETWEEN_ISSUES,
+    DOWNLOAD_ATTACHMENTS,
     HEADLESS,
     ISSUES_DIR,
     QUEUE_FILE,
@@ -122,21 +123,25 @@ async def scrape_issue(
 
         logger.info(f"BOUNTY: {issue_id} - ${issue.bounty_amount or '?'} - {issue.title[:60]}")
 
-        # Download attachments using a shared session for connection reuse
-        att_dir = idir / "attachments"
-        async with aiohttp.ClientSession() as dl_session:
+        if DOWNLOAD_ATTACHMENTS:
+            # Download attachments using a shared session for connection reuse.
+            att_dir = idir / "attachments"
+            async with aiohttp.ClientSession() as dl_session:
+                for att in issue.attachments:
+                    fname = sanitize_filename(att.filename)
+                    local_path = att_dir / fname
+                    if not local_path.exists():
+                        ok = await download_file(
+                            att.url, str(local_path), cookies=cookies,
+                            expected_mime=att.mime_type, session=dl_session,
+                        )
+                        if not ok:
+                            att.local_path = None
+                            continue
+                    att.local_path = f"attachments/{fname}"
+        else:
             for att in issue.attachments:
-                fname = sanitize_filename(att.filename)
-                local_path = att_dir / fname
-                if not local_path.exists():
-                    ok = await download_file(
-                        att.url, str(local_path), cookies=cookies,
-                        expected_mime=att.mime_type, session=dl_session,
-                    )
-                    if not ok:
-                        att.local_path = None
-                        continue
-                att.local_path = f"attachments/{fname}"
+                att.local_path = None
 
         # Save enriched report
         save_json(idir / "report.json", issue.model_dump())
