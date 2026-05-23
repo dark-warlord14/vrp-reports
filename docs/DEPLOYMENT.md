@@ -20,7 +20,7 @@ Cloudflare Pages project `vrp-reports` has auto-builds **disabled** (build comma
 
 ## Updating content (new scraped reports)
 
-The scheduled scraper runs weekly on GitHub Actions. It refreshes discovery for the previous and current UTC year, scrapes only missing reports, regenerates markdown/index/stats, pushes lightweight files to the `data` branch, and deploys when data changed.
+The scheduled scraper runs weekly on GitHub Actions. It refreshes discovery for the current UTC year, scrapes only missing reports, regenerates markdown/index/stats, pushes lightweight files to the `data` branch, and deploys when data changed.
 
 You can still scrape locally:
 
