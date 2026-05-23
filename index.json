@@ -5292,6 +5292,20 @@
     "has_markdown": true
   },
   {
+    "id": "338254612",
+    "title": "Security UI Spoofing on Android Chrome Due to Picture in Picture PIP Fullscreen ",
+    "url": "https://issues.chromium.org/issues/338254612",
+    "status": "Accepted",
+    "severity": "S3-Low",
+    "component": "Internals>Media>UI, UI>Browser>FullScreen",
+    "bounty_amount": 1000.0,
+    "created_date": "2024-05-01T20:50:04+00:00",
+    "year": 2024,
+    "attachment_count": 22,
+    "local_path": "issues/338254612",
+    "has_markdown": true
+  },
+  {
     "id": "338103465",
     "title": "GPU process crash via WebGPU shader - UAF in SimplifyTerminatorOnSelect at SimplifyCFG.cpp:2637",
     "url": "https://issues.chromium.org/issues/338103465",
@@ -5415,6 +5429,20 @@
     "year": 2024,
     "attachment_count": 2,
     "local_path": "issues/333313912",
+    "has_markdown": true
+  },
+  {
+    "id": "333024273",
+    "title": "UAF in content::RenderFrameImpl::CommitSameDocumentNavigation(with puppeteer)",
+    "url": "https://issues.chromium.org/issues/333024273",
+    "status": "Accepted",
+    "severity": "S3-Low",
+    "component": "UI>Browser>Navigation",
+    "bounty_amount": null,
+    "created_date": "2024-04-05T17:14:11+00:00",
+    "year": 2024,
+    "attachment_count": 4,
+    "local_path": "issues/333024273",
     "has_markdown": true
   },
   {
