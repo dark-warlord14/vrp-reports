@@ -34,7 +34,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1684793,
       "url": "https://issues.chromium.org/action/issues/40086717/attachments/53339218?download=true",
-      "local_path": "attachments/net-internals-log (1).json"
+      "local_path": null
     },
     {
       "id": 53339225,
@@ -42,7 +42,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1684381,
       "url": "https://issues.chromium.org/action/issues/40086717/attachments/53339225?download=true",
-      "local_path": "attachments/mslog.json"
+      "local_path": null
     }
   ],
   "update_count": 73,

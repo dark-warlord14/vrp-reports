@@ -61,12 +61,12 @@ I have attached the output from debug running poc2.html in crash.log with DCHECK
 
 ## Attachments
 
-- [poc1.html](attachments/poc1.html) (text/plain, 839 B)
-- [poc2.html](attachments/poc2.html) (text/plain, 3.4 KB)
+- poc1.html (text/plain, 839 B)
+- poc2.html (text/plain, 3.4 KB)
 - [poc3.html](attachments/poc3.html) (text/plain, 3.4 KB)
-- [crash.log](attachments/crash.log) (text/plain, 1.3 KB)
-- [linux_exploit.html](attachments/linux_exploit.html) (text/plain, 10.0 KB)
-- [windows_exploit.html](attachments/windows_exploit.html) (text/plain, 9.9 KB)
+- crash.log (text/plain, 1.3 KB)
+- linux_exploit.html (text/plain, 10.0 KB)
+- windows_exploit.html (text/plain, 9.9 KB)
 
 ## Timeline
 

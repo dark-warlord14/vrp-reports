@@ -27,7 +27,7 @@
       "mime_type": "text/plain",
       "size_bytes": 12192,
       "url": "https://issues.chromium.org/action/issues/40086758/attachments/53115340?download=true",
-      "local_path": "attachments/heap-use-after-free on address 0x0fa232b0"
+      "local_path": null
     },
     {
       "id": 53115341,
@@ -35,7 +35,7 @@
       "mime_type": "text/plain",
       "size_bytes": 151,
       "url": "https://issues.chromium.org/action/issues/40086758/attachments/53115341?download=true",
-      "local_path": "attachments/testcase.html"
+      "local_path": null
     },
     {
       "id": 53115342,

@@ -112,7 +112,7 @@ Reporter credit: Abdelhamid Naceri
 
 ## Attachments
 
-- ChromeUpdaterLPE.zip (application/octet-stream, 236.7 KB)
+- [ChromeUpdaterLPE.zip](attachments/ChromeUpdaterLPE.zip) (application/octet-stream, 236.7 KB)
 
 ## Timeline
 

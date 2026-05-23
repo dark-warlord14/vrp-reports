@@ -49,7 +49,7 @@
       "mime_type": "text/plain",
       "size_bytes": 116,
       "url": "https://issues.chromium.org/action/issues/40058333/attachments/53064937?download=true",
-      "local_path": "attachments/open.html"
+      "local_path": null
     },
     {
       "id": 53064938,
@@ -57,7 +57,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1633,
       "url": "https://issues.chromium.org/action/issues/40058333/attachments/53064938?download=true",
-      "local_path": "attachments/1.html"
+      "local_path": null
     },
     {
       "id": 53064939,
@@ -73,7 +73,7 @@
       "mime_type": "video/webm",
       "size_bytes": 5522416,
       "url": "https://issues.chromium.org/action/issues/40058333/attachments/53064964?download=true",
-      "local_path": "attachments/poc_1282480_e.webm"
+      "local_path": null
     },
     {
       "id": 53064973,
@@ -81,7 +81,7 @@
       "mime_type": "video/webm",
       "size_bytes": 8216177,
       "url": "https://issues.chromium.org/action/issues/40058333/attachments/53064973?download=true",
-      "local_path": "attachments/poc_1282480_f.webm"
+      "local_path": null
     },
     {
       "id": 53065161,
@@ -89,7 +89,7 @@
       "mime_type": "video/webm",
       "size_bytes": 1245191,
       "url": "https://issues.chromium.org/action/issues/40058333/attachments/53065161?download=true",
-      "local_path": "attachments/poc_1282480_g.webm"
+      "local_path": null
     },
     {
       "id": 53065173,
@@ -97,7 +97,7 @@
       "mime_type": "video/webm",
       "size_bytes": 2640695,
       "url": "https://issues.chromium.org/action/issues/40058333/attachments/53065173?download=true",
-      "local_path": "attachments/Screen recording 2022-01-18 9.53.03 AM.webm"
+      "local_path": null
     },
     {
       "id": 53065182,

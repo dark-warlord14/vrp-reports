@@ -36,8 +36,8 @@ Go to <https://imagine.microsoft.com/fr-FR> and pray for a redirection to google
 ## Attachments
 
 - [chrome_bug_report.png](attachments/chrome_bug_report.png) (image/png, 92.7 KB)
-- [net-internals-log (1).json](attachments/net-internals-log (1).json) (text/plain, 1.6 MB)
-- [mslog.json](attachments/mslog.json) (text/plain, 1.6 MB)
+- net-internals-log (1).json (text/plain, 1.6 MB)
+- mslog.json (text/plain, 1.6 MB)
 
 ## Timeline
 

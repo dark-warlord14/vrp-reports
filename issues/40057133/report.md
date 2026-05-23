@@ -99,7 +99,7 @@ Shadow byte legend (one shadow byte represents 8 application bytes):
 ## Attachments
 
 - deleted (application/octet-stream, 0 B)
-- asan.txt (text/plain, 2.7 KB)
+- [asan.txt](attachments/asan.txt) (text/plain, 2.7 KB)
 - deleted (application/octet-stream, 0 B)
 
 ## Timeline

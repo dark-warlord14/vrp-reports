@@ -168,12 +168,12 @@ Samet Bekmezci @sametbekmezci
 
 ## Attachments
 
-- [asan.log](attachments/asan.log) (text/plain, 20.2 KB)
-- [PoC.zip](attachments/PoC.zip) (application/octet-stream, 578 B)
-- [base.html](attachments/base.html) (text/plain, 69 B)
-- [manifest.json](attachments/manifest.json) (text/plain, 124 B)
-- [script.js](attachments/script.js) (text/plain, 63 B)
-- [poc.mp4](attachments/poc.mp4) (video/mp4, 4.7 MB)
+- asan.log (text/plain, 20.2 KB)
+- PoC.zip (application/octet-stream, 578 B)
+- base.html (text/plain, 69 B)
+- manifest.json (text/plain, 124 B)
+- script.js (text/plain, 63 B)
+- poc.mp4 (video/mp4, 4.7 MB)
 
 ## Timeline
 

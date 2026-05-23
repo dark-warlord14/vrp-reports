@@ -71,8 +71,8 @@ Operating System: Windows 7
 
 ## Attachments
 
-- [heap-use-after-free on address 0x0fa232b0](attachments/heap-use-after-free on address 0x0fa232b0) (text/plain, 11.9 KB)
-- [testcase.html](attachments/testcase.html) (text/plain, 151 B)
+- heap-use-after-free on address 0x0fa232b0 (text/plain, 11.9 KB)
+- testcase.html (text/plain, 151 B)
 - [Recording.mp4](attachments/Recording.mp4) (video/mp4, 390.4 KB)
 
 ## Timeline

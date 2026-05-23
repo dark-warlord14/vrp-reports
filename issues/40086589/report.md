@@ -140,7 +140,7 @@ trp: 000000000000000e msk: 0000000000000000 cr2: 000025fe8a9a1878
 - [xhr_uaf.html](attachments/xhr_uaf.html) (text/plain, 343 B)
 - [xhrgc.html](attachments/xhrgc.html) (text/plain, 410 B)
 - [xhrgc2.html](attachments/xhrgc2.html) (text/plain, 513 B)
-- [xhrgc3.html](attachments/xhrgc3.html) (text/plain, 395 B)
+- xhrgc3.html (text/plain, 395 B)
 
 ## Timeline
 

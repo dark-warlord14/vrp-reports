@@ -91,9 +91,9 @@ Crash State: see asan.log for details
 
 ## Attachments
 
-- [poc.html](attachments/poc.html) (text/plain, 250 B)
-- [server.js](attachments/server.js) (text/plain, 673 B)
-- [asan.log](attachments/asan.log) (text/plain, 24.9 KB)
+- poc.html (text/plain, 250 B)
+- server.js (text/plain, 673 B)
+- asan.log (text/plain, 24.9 KB)
 
 ## Timeline
 

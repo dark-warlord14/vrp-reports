@@ -27,7 +27,7 @@
       "mime_type": "text/plain",
       "size_bytes": 20726,
       "url": "https://issues.chromium.org/action/issues/40058372/attachments/53111421?download=true",
-      "local_path": "attachments/asan.log"
+      "local_path": null
     },
     {
       "id": 53111440,
@@ -35,7 +35,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 578,
       "url": "https://issues.chromium.org/action/issues/40058372/attachments/53111440?download=true",
-      "local_path": "attachments/PoC.zip"
+      "local_path": null
     },
     {
       "id": 53111456,
@@ -43,7 +43,7 @@
       "mime_type": "text/plain",
       "size_bytes": 69,
       "url": "https://issues.chromium.org/action/issues/40058372/attachments/53111456?download=true",
-      "local_path": "attachments/base.html"
+      "local_path": null
     },
     {
       "id": 53111457,
@@ -51,7 +51,7 @@
       "mime_type": "text/plain",
       "size_bytes": 124,
       "url": "https://issues.chromium.org/action/issues/40058372/attachments/53111457?download=true",
-      "local_path": "attachments/manifest.json"
+      "local_path": null
     },
     {
       "id": 53111458,
@@ -59,7 +59,7 @@
       "mime_type": "text/plain",
       "size_bytes": 63,
       "url": "https://issues.chromium.org/action/issues/40058372/attachments/53111458?download=true",
-      "local_path": "attachments/script.js"
+      "local_path": null
     },
     {
       "id": 53111459,
@@ -67,7 +67,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 4877172,
       "url": "https://issues.chromium.org/action/issues/40058372/attachments/53111459?download=true",
-      "local_path": "attachments/poc.mp4"
+      "local_path": null
     }
   ],
   "update_count": 52,

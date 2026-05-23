@@ -50,7 +50,7 @@ The browser should truncate all "spacing" characters in the domain name.
 
 ## Attachments
 
-- [phishingidn.jpg](attachments/phishingidn.jpg) (image/jpeg, 105.1 KB)
+- phishingidn.jpg (image/jpeg, 105.1 KB)
 - [Songti.nooutline.html](attachments/Songti.nooutline.html) (text/plain, 20.4 KB)
 
 ## Timeline

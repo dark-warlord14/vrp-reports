@@ -29,7 +29,7 @@
       "mime_type": "text/plain",
       "size_bytes": 839,
       "url": "https://issues.chromium.org/action/issues/40086547/attachments/53042355?download=true",
-      "local_path": "attachments/poc1.html"
+      "local_path": null
     },
     {
       "id": 53042356,
@@ -37,7 +37,7 @@
       "mime_type": "text/plain",
       "size_bytes": 3504,
       "url": "https://issues.chromium.org/action/issues/40086547/attachments/53042356?download=true",
-      "local_path": "attachments/poc2.html"
+      "local_path": null
     },
     {
       "id": 53042357,
@@ -53,7 +53,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1312,
       "url": "https://issues.chromium.org/action/issues/40086547/attachments/53042358?download=true",
-      "local_path": "attachments/crash.log"
+      "local_path": null
     },
     {
       "id": 53042462,
@@ -61,7 +61,7 @@
       "mime_type": "text/plain",
       "size_bytes": 10237,
       "url": "https://issues.chromium.org/action/issues/40086547/attachments/53042462?download=true",
-      "local_path": "attachments/linux_exploit.html"
+      "local_path": null
     },
     {
       "id": 53042463,
@@ -69,7 +69,7 @@
       "mime_type": "text/plain",
       "size_bytes": 10151,
       "url": "https://issues.chromium.org/action/issues/40086547/attachments/53042463?download=true",
-      "local_path": "attachments/windows_exploit.html"
+      "local_path": null
     }
   ],
   "update_count": 67,

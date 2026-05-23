@@ -63,7 +63,7 @@ Reporter credit: Leecraso and Guang Gong of 360 Alpha Lab
 
 - [asan](attachments/asan) (text/plain, 13.4 KB)
 - [poc.html](attachments/poc.html) (text/plain, 824 B)
-- [poc2.html](attachments/poc2.html) (text/plain, 55 B)
+- poc2.html (text/plain, 55 B)
 
 ## Timeline
 

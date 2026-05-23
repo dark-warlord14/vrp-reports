@@ -37,7 +37,7 @@ Type of crash: tab
 
 ## Attachments
 
-- [poc.html](attachments/poc.html) (text/plain, 459 B)
+- poc.html (text/plain, 459 B)
 - [stacktrace](attachments/stacktrace) (text/plain, 24.1 KB)
 
 ## Timeline
