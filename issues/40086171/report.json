@@ -1,0 +1,47 @@
+{
+  "id": "40086171",
+  "url": "https://issues.chromium.org/issues/40086171",
+  "title": "Security: non-interactive request forcing",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Cast",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "mf...@chromium.org",
+  "created_date": "2016-12-07T06:30:12+00:00",
+  "modified_date": "2018-04-25T22:47:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53360727,
+      "filename": "packets.pcap",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 13382,
+      "url": "https://issues.chromium.org/action/issues/40086171/attachments/53360727?download=true",
+      "local_path": "attachments/packets.pcap"
+    },
+    {
+      "id": 53360728,
+      "filename": "BadSSDP.java",
+      "mime_type": "text/plain",
+      "size_bytes": 1883,
+      "url": "https://issues.chromium.org/action/issues/40086171/attachments/53360728?download=true",
+      "local_path": "attachments/BadSSDP.java"
+    },
+    {
+      "id": 53360729,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 641,
+      "url": "https://issues.chromium.org/action/issues/40086171/attachments/53360729?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nWhen a user starts the browser, it immediately sends a UDP multicast SSDP request to 239.255.255.250:1900. The purpose of this request is to gather info from other local network devices that Chrome could later use for screen casting.  \n  \nThe problem is that the effec"
+}

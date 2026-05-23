@@ -1,0 +1,24 @@
+{
+  "id": "40086111",
+  "url": "https://issues.chromium.org/issues/40086111",
+  "title": "Heap-use-after-free in printing::PrintWebViewHelper::OnMessageReceived",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Printing",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "th...@chromium.org",
+  "created_date": "2016-11-29T16:00:50+00:00",
+  "modified_date": "2017-03-09T14:02:59+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 36,
+  "description_snippet": "Detailed report: https://cluster-fuzz.appspot.com/testcase?key=5754609055563776\n\nFuzzer: cdiehl_peach\nJob Type: linux_asan_chrome_media\nPlatform Id: linux\n\nCrash Type: Heap-use-after-free READ 4\nCrash Address: 0x61100001b7dc\nCrash State:\n  printing::PrintWebViewHelper::OnMessageReceived\n  content::R"
+}

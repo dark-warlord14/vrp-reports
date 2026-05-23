@@ -1,0 +1,49 @@
+{
+  "id": "40089215",
+  "url": "https://issues.chromium.org/issues/40089215",
+  "title": "Security: URL bar does not update correctly on redirects with extension blocking requests",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions, UI>Browser>Navigation",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2017-15420"
+  ],
+  "reporter": "aa...@umich.edu",
+  "assignee": "cr...@chromium.org",
+  "created_date": "2017-10-05T02:22:34+00:00",
+  "modified_date": "2018-10-05T01:13:03+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53103814,
+      "filename": "URL-bar-mismatch.png",
+      "mime_type": "image/png",
+      "size_bytes": 242957,
+      "url": "https://issues.chromium.org/action/issues/40089215/attachments/53103814?download=true",
+      "local_path": "attachments/URL-bar-mismatch.png"
+    },
+    {
+      "id": 53103825,
+      "filename": "Mismatch-Chrome-62-beta.png",
+      "mime_type": "image/png",
+      "size_bytes": 222719,
+      "url": "https://issues.chromium.org/action/issues/40089215/attachments/53103825?download=true",
+      "local_path": "attachments/Mismatch-Chrome-62-beta.png"
+    },
+    {
+      "id": 53103826,
+      "filename": "Mismatch-Chrome-63-dev.png",
+      "mime_type": "image/png",
+      "size_bytes": 235740,
+      "url": "https://issues.chromium.org/action/issues/40089215/attachments/53103826?download=true",
+      "local_path": "attachments/Mismatch-Chrome-63-dev.png"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "VULNERABILITY DETAILS\r\n\r\nVisiting a URL (URL-1) which redirects via JavaScript to URL-2 which responds with a 301 redirect to URL-3 while in Incognito mode does not update the URL bar to the final location as expected. URL-2 is seen in the URL bar when the URL-3's content is loaded including URL-2's"
+}

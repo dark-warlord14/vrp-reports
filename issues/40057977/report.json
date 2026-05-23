@@ -1,0 +1,46 @@
+{
+  "id": "40057977",
+  "url": "https://issues.chromium.org/issues/40057977",
+  "title": "Security: heap-use-after-free in the media::AudioManagerBase in the browser process",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>GetUserMedia",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "ag...@chromium.org",
+  "created_date": "2021-11-20T11:43:31+00:00",
+  "modified_date": "2024-01-09T04:23:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53172332,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 667,
+      "url": "https://issues.chromium.org/action/issues/40057977/attachments/53172332?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53172333,
+      "filename": "copy_mojo_js_bindings.py",
+      "mime_type": "text/plain",
+      "size_bytes": 514,
+      "url": "https://issues.chromium.org/action/issues/40057977/attachments/53172333?download=true",
+      "local_path": "attachments/copy_mojo_js_bindings.py"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nHeap-use-after-free(Windows) vulnerability in the MediaStreamDispatcherHost mojo interface  \n  \nThis poc can alse triger a container-overflow(Windows&&Linux) asan crash.  \n  \n  \n**VERSION**   \nChrome Version: Version 98.0.4719.0 (Developer Build) (64-bit)  \nOperating Sys"
+}

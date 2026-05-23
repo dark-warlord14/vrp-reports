@@ -1,0 +1,47 @@
+{
+  "id": "40084556",
+  "url": "https://issues.chromium.org/issues/40084556",
+  "title": "Security: Heap Buffer Overflow in opj_j2k_read_SQcd_SQcc",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "oc...@chromium.org",
+  "created_date": "2016-06-12T10:00:05+00:00",
+  "modified_date": "2018-04-25T22:51:47+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52963495,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 1106,
+      "url": "https://issues.chromium.org/action/issues/40084556/attachments/52963495?download=true",
+      "local_path": "attachments/poc.pdf"
+    },
+    {
+      "id": 52963496,
+      "filename": "poc.jp2",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 159,
+      "url": "https://issues.chromium.org/action/issues/40084556/attachments/52963496?download=true",
+      "local_path": "attachments/poc.jp2"
+    },
+    {
+      "id": 52963516,
+      "filename": "0016-read_SQcd_SQcc_overflow.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1304,
+      "url": "https://issues.chromium.org/action/issues/40084556/attachments/52963516?download=true",
+      "local_path": "attachments/0016-read_SQcd_SQcc_overflow.patch"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "Security: PDFium: Heap Buffer Overflow in opj_j2k_read_SQcd_SQcc  \n  \n**VULNERABILITY DETAILS**   \nThis heap-buffer-overflow vulnerability was caused by the malformed jpeg2000 image file embedded in the PDF document.  \nThe latest stable version of Chrome (51.0.2704.84 m) is vulnerable to this issue."
+}

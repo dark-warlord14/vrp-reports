@@ -1,0 +1,61 @@
+{
+  "id": "40057427",
+  "url": "https://issues.chromium.org/issues/40057427",
+  "title": "Security: WebAudio oob read in AudioDelayDSPKernel::ProcessKRate",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>WebAudio",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "su...@gmail.com",
+  "assignee": "ho...@chromium.org",
+  "created_date": "2021-09-28T05:33:44+00:00",
+  "modified_date": "2024-01-09T03:46:19+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53095044,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2092,
+      "url": "https://issues.chromium.org/action/issues/40057427/attachments/53095044?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 53095045,
+      "filename": "crash_sym.log",
+      "mime_type": "text/plain",
+      "size_bytes": 7146,
+      "url": "https://issues.chromium.org/action/issues/40057427/attachments/53095045?download=true",
+      "local_path": "attachments/crash_sym.log"
+    },
+    {
+      "id": 53095064,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1424,
+      "url": "https://issues.chromium.org/action/issues/40057427/attachments/53095064?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53095065,
+      "filename": "audio_sample_smallest.mp3",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 477,
+      "url": "https://issues.chromium.org/action/issues/40057427/attachments/53095065?download=true",
+      "local_path": "attachments/audio_sample_smallest.mp3"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/95.0.4628.3 Safari/537.36  \n  \n**VULNERABILITY DETAILS**   \nIn `AudioDelayDSPKernel::ProcessKRate`, if delay_time is `nan`, the `nan` will be propagated to `read_position`.  \nAfter that `read_position` w"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "40056839",
+  "url": "https://issues.chromium.org/issues/40056839",
+  "title": "Security: heap-use-after-free in in download::NetworkStatusListenerImpl::OnNetworkStatusReady",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "yu...@gmail.com",
+  "assignee": "xi...@chromium.org",
+  "created_date": "2021-08-10T08:26:13+00:00",
+  "modified_date": "2024-01-09T03:33:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53237230,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 15214,
+      "url": "https://issues.chromium.org/action/issues/40056839/attachments/53237230?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53237308,
+      "filename": "patch.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 6318,
+      "url": "https://issues.chromium.org/action/issues/40056839/attachments/53237308?download=true",
+      "local_path": "attachments/patch.txt"
+    },
+    {
+      "id": 53237309,
+      "filename": "logs.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 46623,
+      "url": "https://issues.chromium.org/action/issues/40056839/attachments/53237309?download=true",
+      "local_path": "attachments/logs.txt"
+    },
+    {
+      "id": 53237310,
+      "filename": "record.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 14283813,
+      "url": "https://issues.chromium.org/action/issues/40056839/attachments/53237310?download=true",
+      "local_path": "attachments/record.mov"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThis issue import by https://chromium-review.googlesource.com/c/chromium/src/+/3036233.  \n  \nWhen chrome startup, it associate a download service instance as keyed service and register self as a observer in NetworkStatusListener.  \nhttps://source.chromium.org/chromium"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "40086082",
+  "url": "https://issues.chromium.org/issues/40086082",
+  "title": "Security: Out of Bound Write/Invalid Pointer Write while parsing PDF",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mo...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2016-11-25T15:56:45+00:00",
+  "modified_date": "2018-04-25T22:48:03+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53225351,
+      "filename": "Google Chrome - Invalid Pointer Write.html",
+      "mime_type": "text/plain",
+      "size_bytes": 92228,
+      "url": "https://issues.chromium.org/action/issues/40086082/attachments/53225351?download=true",
+      "local_path": "attachments/Google Chrome - Invalid Pointer Write.html"
+    },
+    {
+      "id": 53225352,
+      "filename": "crash_57b76df0d1b74dbb86d0bbb592b59a37eb9da399.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 693476,
+      "url": "https://issues.chromium.org/action/issues/40086082/attachments/53225352?download=true",
+      "local_path": "attachments/crash_57b76df0d1b74dbb86d0bbb592b59a37eb9da399.pdf"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**This template is ONLY for reporting security bugs. If you are reporting a**   \n**Download Protection Bypass bug, please use the \"Security - Download**   \n**Protection\" template. For all other reports, please use a different**   \n**template.**   \n  \n**Please READ THIS FAQ before filing a bug: https"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "40057482",
+  "url": "https://issues.chromium.org/issues/40057482",
+  "title": "UaF in PDF accessibility due to relayout",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF, UI>Accessibility",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2021-10-02T04:46:39+00:00",
+  "modified_date": "2024-01-09T03:47:53+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53350548,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 160,
+      "url": "https://issues.chromium.org/action/issues/40057482/attachments/53350548?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53350549,
+      "filename": "test.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 176,
+      "url": "https://issues.chromium.org/action/issues/40057482/attachments/53350549?download=true",
+      "local_path": "attachments/test.pdf"
+    },
+    {
+      "id": 53350592,
+      "filename": "repro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4433470,
+      "url": "https://issues.chromium.org/action/issues/40057482/attachments/53350592?download=true",
+      "local_path": "attachments/repro.mp4"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\ntested chromium version:\r\n\tVersion 96.0.4655.0 (Developer Build) (64-bit)  build with ASAN\r\n\tChromium 96.0.4660.0 gs://chromium-browser-as"
+}

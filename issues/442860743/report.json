@@ -1,0 +1,174 @@
+{
+  "id": "442860743",
+  "url": "https://issues.chromium.org/issues/442860743",
+  "title": "Triggering screenshare from an unloading page in a cross-process navigation displays the wrong origin",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>MediaStream, Internals>Sandbox>SiteIsolation, UI>Browser>Navigation, UI>Browser>Navigation>BFCache",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "140.0.7339.81",
+  "cve_ids": [],
+  "reporter": "do...@gmail.com",
+  "assignee": "el...@chromium.org",
+  "created_date": "2025-09-04T01:00:21+00:00",
+  "modified_date": "2026-01-02T12:40:38+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": "High Quality && High Impact UI spoofing",
+  "attachments": [
+    {
+      "id": 69004003,
+      "filename": "PoC-listener.html",
+      "mime_type": "text/html",
+      "size_bytes": 7516,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69004003?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69010047,
+      "filename": "PoC-redir.html",
+      "mime_type": "text/html",
+      "size_bytes": 7192,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69010047?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69010048,
+      "filename": "node-webhook.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1437,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69010048?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69014537,
+      "filename": "2025-09-04 18-48-03.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1595583,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69014537?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69014538,
+      "filename": "PoC-redir.html",
+      "mime_type": "text/html",
+      "size_bytes": 7226,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69014538?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69026087,
+      "filename": "2025-09-04 18-56-14.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 157227,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69026087?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69039737,
+      "filename": "Fri Sep 05 2025 13:01:29 GMT+0300 (Eastern European Summer Time).png",
+      "mime_type": "image/png",
+      "size_bytes": 65915,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69039737?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69039738,
+      "filename": "debug.log",
+      "mime_type": "text/plain",
+      "size_bytes": 37291,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69039738?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69047163,
+      "filename": "PoC-bluetoothcrash.html",
+      "mime_type": "text/html",
+      "size_bytes": 2109,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69047163?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69057501,
+      "filename": "PoC-showmedia.html",
+      "mime_type": "text/html",
+      "size_bytes": 2061,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69057501?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69041601,
+      "filename": "2025-09-06 09-45-07.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 88588,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69041601?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69066353,
+      "filename": "PoC-mediabusysleeprace.html",
+      "mime_type": "text/html",
+      "size_bytes": 2120,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69066353?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69066358,
+      "filename": "PoC-eventlistenerincluded.html",
+      "mime_type": "text/html",
+      "size_bytes": 2127,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69066358?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69085236,
+      "filename": "PoC-indefiniteworker.html",
+      "mime_type": "text/html",
+      "size_bytes": 2321,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69085236?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69128154,
+      "filename": "PoC-asanlesscrash.html",
+      "mime_type": "text/html",
+      "size_bytes": 1058,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69128154?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69220068,
+      "filename": "Thu Sep 11 2025 12_23_28 GMT+0300 (Eastern European Summer Time).mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6592512,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69220068?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69198787,
+      "filename": "recording (1).webm",
+      "mime_type": "video/webm",
+      "size_bytes": 160692,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69198787?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69199981,
+      "filename": "PoC-showmedia.html",
+      "mime_type": "text/html",
+      "size_bytes": 1541,
+      "url": "https://issues.chromium.org/action/issues/442860743/attachments/69199981?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 168,
+  "description_snippet": "# Steps to reproduce the problem\n0. Host the node.js webhook for logging. (Optional)\n1. Serve the provided PoCs (`PoC-redir.html` and `PoC-listener.html`) on a webserver (or any source that isn't plain `file://`).\n2. Load `PoC-redir.html` or `PoC-listener.html` in Chrome Stable\nTrigger navigation as"
+}

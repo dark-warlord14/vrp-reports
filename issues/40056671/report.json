@@ -1,0 +1,60 @@
+{
+  "id": "40056671",
+  "url": "https://issues.chromium.org/issues/40056671",
+  "title": "Security: Heap-use-after-free in AutofillManager::OnLoadedServerPredictions",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "mi...@chromium.org",
+  "created_date": "2021-07-26T08:42:16+00:00",
+  "modified_date": "2024-01-09T03:47:26+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53357496,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40056671/attachments/53357496?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53357497,
+      "filename": "change.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 740,
+      "url": "https://issues.chromium.org/action/issues/40056671/attachments/53357497?download=true",
+      "local_path": "attachments/change.diff"
+    },
+    {
+      "id": 53357498,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 230,
+      "url": "https://issues.chromium.org/action/issues/40056671/attachments/53357498?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53357499,
+      "filename": "patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 752,
+      "url": "https://issues.chromium.org/action/issues/40056671/attachments/53357499?download=true",
+      "local_path": "attachments/patch.diff"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. apply change.diff to chromium and compile it.\r\n2. start a server at the folder of poc.html `python -m SimpleHTTPServer 8605`\r\n3. ./chrome --auto"
+}

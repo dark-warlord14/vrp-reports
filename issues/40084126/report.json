@@ -1,0 +1,43 @@
+{
+  "id": "40084126",
+  "url": "https://issues.chromium.org/issues/40084126",
+  "title": "Compiled regexps execute incorrectly on function source strings",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Language",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2016-1688"
+  ],
+  "reporter": "ma...@gmail.com",
+  "assignee": "ya...@chromium.org",
+  "created_date": "2016-04-19T21:21:28+00:00",
+  "modified_date": "2018-04-25T22:52:55+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53149656,
+      "filename": "Chrome_50.png",
+      "mime_type": "image/png",
+      "size_bytes": 136059,
+      "url": "https://issues.chromium.org/action/issues/40084126/attachments/53149656?download=true",
+      "local_path": "attachments/Chrome_50.png"
+    },
+    {
+      "id": 53149657,
+      "filename": "Chrome_49.png",
+      "mime_type": "image/png",
+      "size_bytes": 161874,
+      "url": "https://issues.chromium.org/action/issues/40084126/attachments/53149657?download=true",
+      "local_path": "attachments/Chrome_49.png"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nSee the result of the following code snippet (or attached screenshots):\r\nhttp://plnkr.co/edit/RFXffpqJRg3L6xoCAbIY?p=preview\r\n\r\nWhat is the exp"
+}

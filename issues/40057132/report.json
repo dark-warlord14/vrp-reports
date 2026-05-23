@@ -1,0 +1,35 @@
+{
+  "id": "40057132",
+  "url": "https://issues.chromium.org/issues/40057132",
+  "title": "Security: Incomplete fix for CVE-2021-30577",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Updater",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2021-30577"
+  ],
+  "reporter": "ve...@gmail.com",
+  "assignee": "ga...@chromium.org",
+  "created_date": "2021-09-02T03:39:01+00:00",
+  "modified_date": "2024-01-09T03:44:15+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53068662,
+      "filename": "ChromeUpdaterLPE.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 242421,
+      "url": "https://issues.chromium.org/action/issues/40057132/attachments/53068662?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nCVE-2021-30577 had an incomplete fix.  \nAnd please note that CVE-2021-30577 has been publicly disclosed before (here - https://github.com/klinix5/GoogleUpdateSvcLPE), I privately reported the bug (see #1183137 for details) but you didn't show any interests to fix it."
+}

@@ -1,0 +1,52 @@
+{
+  "id": "40057844",
+  "url": "https://issues.chromium.org/issues/40057844",
+  "title": "Security:  Web Serial - Out of bound read in SerialPortUnderlyingSink::WriteData().",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Serial",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lo...@gmail.com",
+  "assignee": "re...@chromium.org",
+  "created_date": "2021-11-06T22:57:35+00:00",
+  "modified_date": "2024-01-09T04:09:19+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53114793,
+      "filename": "OOBR_WriteData_PoC_hw.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1349,
+      "url": "https://issues.chromium.org/action/issues/40057844/attachments/53114793?download=true",
+      "local_path": "attachments/OOBR_WriteData_PoC_hw.js"
+    },
+    {
+      "id": 53114815,
+      "filename": "OOBR_WriteData_PoC_hw_rsi0x121212.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1353,
+      "url": "https://issues.chromium.org/action/issues/40057844/attachments/53114815?download=true",
+      "local_path": "attachments/OOBR_WriteData_PoC_hw_rsi0x121212.js"
+    },
+    {
+      "id": 53114848,
+      "filename": "OOBR_WriteData_PoC_emulator.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1599,
+      "url": "https://issues.chromium.org/action/issues/40057844/attachments/53114848?download=true",
+      "local_path": "attachments/OOBR_WriteData_PoC_emulator.js"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nSpecifically crafted HTML file can trigger Out of bound read in SerialPortUnderlyingSink::WriteData(). Only user agents with hardware serial device attached or virtual serial port installed are vulnerable to this bug, and user needs to click a button to select one serial"
+}

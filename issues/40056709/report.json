@@ -1,0 +1,57 @@
+{
+  "id": "40056709",
+  "url": "https://issues.chromium.org/issues/40056709",
+  "title": "Nearby Share UI incorrectly appears in non-ChromeOS browsers: causes UAF",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Sharing",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wx...@gmail.com",
+  "assignee": "kr...@chromium.org",
+  "created_date": "2021-07-28T17:17:35+00:00",
+  "modified_date": "2024-01-09T03:25:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53316548,
+      "filename": "uaf.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 25142,
+      "url": "https://issues.chromium.org/action/issues/40056709/attachments/53316548?download=true",
+      "local_path": "attachments/uaf.txt"
+    },
+    {
+      "id": 53316563,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 9708385,
+      "url": "https://issues.chromium.org/action/issues/40056709/attachments/53316563?download=true",
+      "local_path": "attachments/poc.mp4"
+    },
+    {
+      "id": 53316601,
+      "filename": "chrome_sharing_hub_bubble_controller_browertest.cc",
+      "mime_type": "text/plain",
+      "size_bytes": 2654,
+      "url": "https://issues.chromium.org/action/issues/40056709/attachments/53316601?download=true",
+      "local_path": "attachments/chrome_sharing_hub_bubble_controller_browertest.cc"
+    },
+    {
+      "id": 53316791,
+      "filename": "0001-fix-browser-crash.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1859,
+      "url": "https://issues.chromium.org/action/issues/40056709/attachments/53316791?download=true",
+      "local_path": "attachments/0001-fix-browser-crash.patch"
+    }
+  ],
+  "update_count": 92,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1.open two tabs. the first tab open nearby share\r\n2.then close the first tab\r\n3.close the nearby share\r\n\r\nMy test in chromium linux\r\nvers"
+}

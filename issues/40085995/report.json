@@ -1,0 +1,41 @@
+{
+  "id": "40085995",
+  "url": "https://issues.chromium.org/issues/40085995",
+  "title": "Onbeforeunload use after free",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wa...@gmail.com",
+  "assignee": "lf...@chromium.org",
+  "created_date": "2016-11-18T12:46:02+00:00",
+  "modified_date": "2018-04-25T22:48:13+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52958601,
+      "filename": "testcase.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4966,
+      "url": "https://issues.chromium.org/action/issues/40085995/attachments/52958601?download=true",
+      "local_path": "attachments/testcase.zip"
+    },
+    {
+      "id": 52958769,
+      "filename": "UAF-onbeforeunload.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2751,
+      "url": "https://issues.chromium.org/action/issues/40085995/attachments/52958769?download=true",
+      "local_path": "attachments/UAF-onbeforeunload.zip"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1- open http://localhost/testcase.html\r\n2- click \"click here\" then \"then here\" buttons\r\n3- write something in the URL bar (of the tab containing"
+}

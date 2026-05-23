@@ -1,0 +1,39 @@
+{
+  "id": "40085614",
+  "url": "https://issues.chromium.org/issues/40085614",
+  "title": "Security: Stealing data cross domain using proxies and stealing JSON data using UTF-16BE",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Language",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ga...@portswigger.net",
+  "assignee": "li...@chromium.org",
+  "created_date": "2016-10-06T14:54:37+00:00",
+  "modified_date": "2019-06-27T09:40:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53225080,
+      "filename": "chrome_steal_data_using_proxy.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 779,
+      "url": "https://issues.chromium.org/action/issues/40085614/attachments/53225080?download=true",
+      "local_path": "attachments/chrome_steal_data_using_proxy.zip"
+    },
+    {
+      "id": 53225081,
+      "filename": "chrome_steal_json_data_using_proxy_utf-16BE.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 953,
+      "url": "https://issues.chromium.org/action/issues/40085614/attachments/53225081?download=true",
+      "local_path": "attachments/chrome_steal_json_data_using_proxy_utf-16BE.zip"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhilst doing some research at Portswigger I discovered that in Chrome JavaScript Proxies are leaking undefined JavaScript variables. Using this vulnerability I can steal data cross domain.  \n  \n<script>  \n__proto__.__proto__.__proto__.__proto__.__proto__=new Proxy(__prot"
+}

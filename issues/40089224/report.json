@@ -1,0 +1,39 @@
+{
+  "id": "40089224",
+  "url": "https://issues.chromium.org/issues/40089224",
+  "title": "Security: Use-after-free in Field::UpdateFormControl",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hu...@gmail.com",
+  "assignee": "rh...@chromium.org",
+  "created_date": "2017-10-05T14:14:09+00:00",
+  "modified_date": "2018-01-24T02:45:13+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53362331,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 524286,
+      "url": "https://issues.chromium.org/action/issues/40089224/attachments/53362331?download=true",
+      "local_path": "attachments/poc.pdf"
+    },
+    {
+      "id": 53362332,
+      "filename": "stacktrace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7513,
+      "url": "https://issues.chromium.org/action/issues/40089224/attachments/53362332?download=true",
+      "local_path": "attachments/stacktrace.txt"
+    }
+  ],
+  "update_count": 27,
+  "description_snippet": "VULNERABILITY DETAILS\r\nUse-after-free in Field::UpdateFormControl\r\n\r\nVERSION\r\nOperating System: Windows 10\r\nPDFium with XFA enabled\r\n\r\nSteps to reproduce the problem:\r\n1. Build PDFIUm with XFA\r\n2. run ./pdfium_test ./poc.pdf\r\n\r\nDetails\r\n\r\nIn function `Field::UpdateFormControl`, there is a call to `p"
+}

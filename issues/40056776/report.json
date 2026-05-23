@@ -1,0 +1,52 @@
+{
+  "id": "40056776",
+  "url": "https://issues.chromium.org/issues/40056776",
+  "title": "Security: Extensions with debugger permission can list URLs and send commands to incognito tabs and other profile tabs",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools, Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2021-08-04T03:47:35+00:00",
+  "modified_date": "2022-07-29T21:26:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53309200,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 364,
+      "url": "https://issues.chromium.org/action/issues/40056776/attachments/53309200?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53309201,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1544,
+      "url": "https://issues.chromium.org/action/issues/40056776/attachments/53309201?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53309202,
+      "filename": "extension-debugger.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2901924,
+      "url": "https://issues.chromium.org/action/issues/40056776/attachments/53309202?download=true",
+      "local_path": "attachments/extension-debugger.mp4"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nExtensions with debugger permission installed in a profile without explicit incognito access, and not installed in other profiles, can list URLs of and send commands to:  \n\\* incognito tabs  \n\\* other profiles' tabs  \n  \nTo list the URLs, the extension can use the chrome"
+}

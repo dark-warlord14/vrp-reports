@@ -1,0 +1,37 @@
+{
+  "id": "40058146",
+  "url": "https://issues.chromium.org/issues/40058146",
+  "title": "Security: heap-use-after-free ui::AXEventRecorder::OnEvent",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Accessibility",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2021-12-07T02:16:33+00:00",
+  "modified_date": "2024-01-09T04:31:36+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53277901,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5369505,
+      "url": "https://issues.chromium.org/action/issues/40058146/attachments/53277901?download=true",
+      "local_path": "attachments/demo.mp4"
+    }
+  ],
+  "update_count": 69,
+  "description_snippet": "It looks different from the cause of https://crbug.com/chromium/1277324, trigger this vulnerability needs to be enabled Touch UI Layout.If you need to reproduce the video, I will send it to you.  \n  \n=================================================================  \n==11216==ERROR: AddressSanitizer"
+}

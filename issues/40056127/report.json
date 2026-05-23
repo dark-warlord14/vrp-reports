@@ -1,0 +1,105 @@
+{
+  "id": "40056127",
+  "url": "https://issues.chromium.org/issues/40056127",
+  "title": "Security: An <option> with a long label causes browser crash",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Forms>Select, Internals>GPU",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ba...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2021-06-06T01:18:39+00:00",
+  "modified_date": "2024-01-09T03:28:03+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 6000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53206520,
+      "filename": "chrome.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1207363,
+      "url": "https://issues.chromium.org/action/issues/40056127/attachments/53206520?download=true",
+      "local_path": "attachments/chrome.mp4"
+    },
+    {
+      "id": 53206521,
+      "filename": "poc-exploit.html",
+      "mime_type": "text/plain",
+      "size_bytes": 10103,
+      "url": "https://issues.chromium.org/action/issues/40056127/attachments/53206521?download=true",
+      "local_path": "attachments/poc-exploit.html"
+    },
+    {
+      "id": 53206556,
+      "filename": "crash1.png",
+      "mime_type": "image/png",
+      "size_bytes": 49760,
+      "url": "https://issues.chromium.org/action/issues/40056127/attachments/53206556?download=true",
+      "local_path": "attachments/crash1.png"
+    },
+    {
+      "id": 53206557,
+      "filename": "crash2.png",
+      "mime_type": "image/png",
+      "size_bytes": 165396,
+      "url": "https://issues.chromium.org/action/issues/40056127/attachments/53206557?download=true",
+      "local_path": "attachments/crash2.png"
+    },
+    {
+      "id": 53206558,
+      "filename": "crash3.png",
+      "mime_type": "image/png",
+      "size_bytes": 170438,
+      "url": "https://issues.chromium.org/action/issues/40056127/attachments/53206558?download=true",
+      "local_path": "attachments/crash3.png"
+    },
+    {
+      "id": 53206559,
+      "filename": "st.png",
+      "mime_type": "image/png",
+      "size_bytes": 60714,
+      "url": "https://issues.chromium.org/action/issues/40056127/attachments/53206559?download=true",
+      "local_path": "attachments/st.png"
+    },
+    {
+      "id": 53206560,
+      "filename": "release.png",
+      "mime_type": "image/png",
+      "size_bytes": 118443,
+      "url": "https://issues.chromium.org/action/issues/40056127/attachments/53206560?download=true",
+      "local_path": "attachments/release.png"
+    },
+    {
+      "id": 53206606,
+      "filename": "error.png",
+      "mime_type": "image/png",
+      "size_bytes": 67784,
+      "url": "https://issues.chromium.org/action/issues/40056127/attachments/53206606?download=true",
+      "local_path": "attachments/error.png"
+    },
+    {
+      "id": 53206607,
+      "filename": "console-log.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 42701,
+      "url": "https://issues.chromium.org/action/issues/40056127/attachments/53206607?download=true",
+      "local_path": "attachments/console-log.txt"
+    },
+    {
+      "id": 53206655,
+      "filename": "Chrome_wide_window.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 10076436,
+      "url": "https://issues.chromium.org/action/issues/40056127/attachments/53206655?download=true",
+      "local_path": "attachments/Chrome_wide_window.mp4"
+    }
+  ],
+  "update_count": 83,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nAs an R&D team in securityforeveryone.com, we found a crash bug in Chrome's latest version.  \n  \nWhile developing our project, we accidentally use a debug output in the option part of a select form.   \n  \nThen we realize that each time we select that option, our chrom"
+}

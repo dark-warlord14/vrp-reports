@@ -1,0 +1,41 @@
+{
+  "id": "40055796",
+  "url": "https://issues.chromium.org/issues/40055796",
+  "title": "Security: heap-use-after-free in BrowserView::ProcessFullscreen",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Aura, Internals>Views>Desktop",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "sk...@chromium.org",
+  "created_date": "2021-05-10T07:44:13+00:00",
+  "modified_date": "2024-01-09T03:22:49+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52983835,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 270,
+      "url": "https://issues.chromium.org/action/issues/40055796/attachments/52983835?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52983874,
+      "filename": "video.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 7486184,
+      "url": "https://issues.chromium.org/action/issues/40055796/attachments/52983874?download=true",
+      "local_path": "attachments/video.webm"
+    }
+  ],
+  "update_count": 78,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. download asan-linux-release-880812.zip and poc.html, unzip chrome.\r\n2. start a server at floder of poc.html : python -m SimpleHTTPServer 8605\r\n3."
+}

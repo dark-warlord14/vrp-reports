@@ -1,0 +1,42 @@
+{
+  "id": "40057979",
+  "url": "https://issues.chromium.org/issues/40057979",
+  "title": "Security: CSS transform and backface-visibility: hidden allow to render over Chrome UI",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Compositing, Internals>Skia>Compositing",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "su...@gmail.com",
+  "assignee": "mi...@google.com",
+  "created_date": "2021-11-20T22:36:42+00:00",
+  "modified_date": "2024-01-09T04:20:17+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53136963,
+      "filename": "renderover-backgroundimage.html",
+      "mime_type": "text/plain",
+      "size_bytes": 476,
+      "url": "https://issues.chromium.org/action/issues/40057979/attachments/53136963?download=true",
+      "local_path": "attachments/renderover-backgroundimage.html"
+    },
+    {
+      "id": 53136964,
+      "filename": "renderover-backgroundimage demonstration on Windows 11.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 243593,
+      "url": "https://issues.chromium.org/action/issues/40057979/attachments/53136964?download=true",
+      "local_path": "attachments/renderover-backgroundimage demonstration on Windows 11.mp4"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "After set large CSS transform scale, perspective CSS property, and backface-visibility to hidden interestingly the background-color or background-image will render over Chrome user interface including address bar and download bar.  \n  \nAs image able to render over Chrome UI I assume it's possible to"
+}

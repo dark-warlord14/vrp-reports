@@ -1,0 +1,53 @@
+{
+  "id": "40058243",
+  "url": "https://issues.chromium.org/issues/40058243",
+  "title": "Origin spoofing in WebUSB",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>HID, Blink>Serial, Blink>USB",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "bu...@gmail.com",
+  "assignee": "re...@chromium.org",
+  "created_date": "2021-12-15T12:24:20+00:00",
+  "modified_date": "2022-07-29T21:26:12+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53020314,
+      "filename": "app.vysor.io demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1445089,
+      "url": "https://issues.chromium.org/action/issues/40058243/attachments/53020314?download=true",
+      "local_path": "attachments/app.vysor.io demo.mp4"
+    },
+    {
+      "id": 53020315,
+      "filename": "poc demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3502940,
+      "url": "https://issues.chromium.org/action/issues/40058243/attachments/53020315?download=true",
+      "local_path": "attachments/poc demo.mp4"
+    },
+    {
+      "id": 53020316,
+      "filename": "sample code.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2862,
+      "url": "https://issues.chromium.org/action/issues/40058243/attachments/53020316?download=true",
+      "local_path": "attachments/sample code.zip"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "Chrome Version       : 96.0.4664.93 (Official Build) (64-bit) (cohort: Stable)  \n**URLs (if applicable) :**   \n**Other browsers tested:**   \n  Add OK or FAIL, along with the version, after other browsers where you  \n**have tested this issue:**   \n     Safari: N/A  \n    Firefox: N/A  \n       Edge: OK"
+}

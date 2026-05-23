@@ -1,0 +1,53 @@
+{
+  "id": "40055670",
+  "url": "https://issues.chromium.org/issues/40055670",
+  "title": "Security: Heap-buffer-overflow in TabStripModel::MoveWebContentsAtImpl",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "so...@chromium.org",
+  "created_date": "2021-04-26T06:30:33+00:00",
+  "modified_date": "2024-01-09T03:09:06+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53239099,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 664,
+      "url": "https://issues.chromium.org/action/issues/40055670/attachments/53239099?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53239100,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 389,
+      "url": "https://issues.chromium.org/action/issues/40055670/attachments/53239100?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53239101,
+      "filename": "screen.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 2511085,
+      "url": "https://issues.chromium.org/action/issues/40055670/attachments/53239101?download=true",
+      "local_path": "attachments/screen.mov"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "Chrome Version: 92.0.4488.0 (Official Build) canary (x86_64)  \nOperating System: MacOS  \n  \n**REPRODUCTION CASE**   \n  \n1. Install the extension.  \n2. Move the last \"New Tab\" to the left.  \n  \n  \n==700==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x606000d116d8 at pc 0x0001217a91ae bp 0"
+}

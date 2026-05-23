@@ -1,0 +1,35 @@
+{
+  "id": "40062816",
+  "url": "https://issues.chromium.org/issues/40062816",
+  "title": "Security: SEGV_ACCERR in Maglev",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Maglev",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "p4...@gmail.com",
+  "assignee": "vi...@chromium.org",
+  "created_date": "2023-01-28T03:56:47+00:00",
+  "modified_date": "2023-05-10T17:34:56+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52928303,
+      "filename": "test.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1170,
+      "url": "https://issues.chromium.org/action/issues/40062816/attachments/52928303?download=true",
+      "local_path": "attachments/test.js"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "see details at https://crbug.com/chromium/1410970#c1"
+}

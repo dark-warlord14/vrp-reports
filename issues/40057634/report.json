@@ -1,0 +1,49 @@
+{
+  "id": "40057634",
+  "url": "https://issues.chromium.org/issues/40057634",
+  "title": "Heap-use-after-free in color input on switching screens (MacOS)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Forms>Color",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "dm...@gmail.com",
+  "assignee": "io...@microsoft.com",
+  "created_date": "2021-10-18T12:20:07+00:00",
+  "modified_date": "2024-01-09T04:05:27+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52996818,
+      "filename": "ASANReportHeapUaFInColorInput.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13207,
+      "url": "https://issues.chromium.org/action/issues/40057634/attachments/52996818?download=true",
+      "local_path": "attachments/ASANReportHeapUaFInColorInput.txt"
+    },
+    {
+      "id": 52996819,
+      "filename": "ChromiumHeapUseAfterFreeInColorInput.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 8889704,
+      "url": "https://issues.chromium.org/action/issues/40057634/attachments/52996819?download=true",
+      "local_path": "attachments/ChromiumHeapUseAfterFreeInColorInput.mp4"
+    },
+    {
+      "id": 52996820,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 46,
+      "url": "https://issues.chromium.org/action/issues/40057634/attachments/52996820?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 27,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:78.0) Gecko/20100101 Firefox/78.0\r\n\r\nSteps to reproduce the problem:\r\n0. Prepare MacOS (my version: 11.6 (20G165)) with two spaces (https://support.apple.com/en-bh/guide/mac-help/mh14112/mac).\r\n1. Download file \"poc.html\"\r\n2. Open this file"
+}

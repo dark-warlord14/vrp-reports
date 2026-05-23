@@ -1,0 +1,53 @@
+{
+  "id": "40056584",
+  "url": "https://issues.chromium.org/issues/40056584",
+  "title": "Security: heap-use-after-free in WebDataRequestManager::RequestCompletedOnThread",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "yu...@gmail.com",
+  "assignee": "ba...@chromium.org",
+  "created_date": "2021-07-19T10:37:36+00:00",
+  "modified_date": "2024-01-06T00:11:41+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53189167,
+      "filename": "uaf_asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 22543,
+      "url": "https://issues.chromium.org/action/issues/40056584/attachments/53189167?download=true",
+      "local_path": "attachments/uaf_asan.txt"
+    },
+    {
+      "id": 53189195,
+      "filename": "patch.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2714,
+      "url": "https://issues.chromium.org/action/issues/40056584/attachments/53189195?download=true",
+      "local_path": "attachments/patch.txt"
+    },
+    {
+      "id": 53189196,
+      "filename": "record.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 24864973,
+      "url": "https://issues.chromium.org/action/issues/40056584/attachments/53189196?download=true",
+      "local_path": "attachments/record.mov"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThe AutocompleteHistoryManager class extends WebDataServiceConsumer.  \nhttps://source.chromium.org/chromium/chromium/src/+/main:components/autofill/core/browser/autocomplete_history_manager.h;l=30  \n  \nAnd the instance is holded as a raw pointer in WebDataRequest.  \nh"
+}

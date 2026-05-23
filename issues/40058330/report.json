@@ -1,0 +1,52 @@
+{
+  "id": "40058330",
+  "url": "https://issues.chromium.org/issues/40058330",
+  "title": "Security: UAF in FocusController::SetFocusedWindow",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P0",
+  "component": "UI>Accessibility",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "ks...@microsoft.com",
+  "created_date": "2021-12-23T08:31:35+00:00",
+  "modified_date": "2022-06-23T17:31:34+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53171687,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 13767,
+      "url": "https://issues.chromium.org/action/issues/40058330/attachments/53171687?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53171688,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 824,
+      "url": "https://issues.chromium.org/action/issues/40058330/attachments/53171688?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53171689,
+      "filename": "poc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 55,
+      "url": "https://issues.chromium.org/action/issues/40058330/attachments/53171689?download=true",
+      "local_path": "attachments/poc2.html"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nSorry to interrupt the vacation again, but I found a new uaf while verifying my fix patch of 1275600. This uaf is irrelevant to 1275600, so please do not mark them as duplicates. Since it still needs to turn on the flag AccessibilityTreeForViews, it may not be so urge"
+}

@@ -1,0 +1,61 @@
+{
+  "id": "40057929",
+  "url": "https://issues.chromium.org/issues/40057929",
+  "title": "heap-use-after-free in TabGroupModel::GetTabGroup",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>TopChrome>TabStrip>TabGroups",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "dp...@chromium.org",
+  "created_date": "2021-11-15T23:49:47+00:00",
+  "modified_date": "2024-01-09T06:14:22+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53241696,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 190,
+      "url": "https://issues.chromium.org/action/issues/40057929/attachments/53241696?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53241697,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 380,
+      "url": "https://issues.chromium.org/action/issues/40057929/attachments/53241697?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53241698,
+      "filename": "sw.js",
+      "mime_type": "text/plain",
+      "size_bytes": 52,
+      "url": "https://issues.chromium.org/action/issues/40057929/attachments/53241698?download=true",
+      "local_path": "attachments/sw.js"
+    },
+    {
+      "id": 53241699,
+      "filename": "icon.png",
+      "mime_type": "image/png",
+      "size_bytes": 3111,
+      "url": "https://issues.chromium.org/action/issues/40057929/attachments/53241699?download=true",
+      "local_path": "attachments/icon.png"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nHeap-use-after-free when a tab is added to a tab group in a tabbed PWA window.  \n  \n**VERSION**   \nChrome Version: 98.0.4703.0   \nOperating System: Windows 10  \n  \nI found two different ways to trigger this issue. Since the stack traces point to the same function, I am r"
+}
