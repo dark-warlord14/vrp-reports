@@ -3,8 +3,8 @@ name: Scrape VRP Reports
 on:
   workflow_dispatch:
   schedule:
-    # Run once a day at 03:17 UTC.
-    - cron: '17 3 * * *'
+    # Run weekly on Monday at 03:17 UTC.
+    - cron: '17 3 * * 1'
 
 concurrency:
   group: scrape-vrp-reports
@@ -50,7 +50,7 @@ jobs:
         run: |
           current_year="$(date -u +%Y)"
           previous_year="$((current_year - 1))"
-          vrp run --year "${previous_year}" --year "${current_year}" --refresh-discovery
+          vrp update --year "${previous_year}" --year "${current_year}" --refresh-discovery
 
       - name: Commit data updates
         id: commit_data

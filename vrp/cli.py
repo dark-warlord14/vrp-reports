@@ -97,6 +97,60 @@ def run(years, refresh_discovery, no_headless):
 
 
 @cli.command()
+@click.option("--year", "years", multiple=True, type=int, help="Limit discovery/scraping to a year. Can be repeated.")
+@click.option("--refresh-discovery", is_flag=True, help="Ignore selected year checkpoints and rediscover IDs.")
+@click.option("--no-headless", is_flag=True, help="Show browser window")
+def update(years, refresh_discovery, no_headless):
+    """Incremental pipeline: discover -> scrape missing -> markdown -> index."""
+    from vrp.discovery import discover_all
+    from vrp.extractor import scrape_all
+    from vrp.index_builder import build_stats, rebuild_index
+    from vrp.markdown_gen import generate_all_markdown
+
+    headless = not no_headless
+    selected_years = sorted(set(years)) or None
+
+    try:
+        console.print("[bold]Step 1/4: Discovery[/bold]")
+        ids = asyncio.run(
+            discover_all(
+                years=selected_years,
+                resume=not refresh_discovery,
+                headless=headless,
+            )
+        )
+        if selected_years:
+            ids = _load_year_issue_ids(selected_years)
+            years_str = ", ".join(str(year) for year in selected_years)
+            console.print(f"  -> {len(ids)} issue IDs for {years_str}")
+        else:
+            console.print(f"  -> {len(ids)} issue IDs")
+    except Exception as e:
+        console.print(f"[red]Discovery failed: {e}[/red]")
+        raise SystemExit(1)
+
+    try:
+        console.print("[bold]Step 2/4: Scraping missing reports[/bold]")
+        bounty_count = asyncio.run(scrape_all(issue_ids=ids, headless=headless))
+        console.print(f"  -> {bounty_count} new bounty reports")
+    except Exception as e:
+        console.print(f"[red]Scraping failed: {e}[/red]")
+        raise SystemExit(1)
+
+    console.print("[bold]Step 3/4: Markdown generation[/bold]")
+    generate_all_markdown()
+
+    console.print("[bold]Step 4/4: Building index & stats[/bold]")
+    count = rebuild_index()
+    stats = build_stats()
+
+    console.print("\n[bold green]Incremental update complete![/bold green]")
+    console.print(f"  Reports: {count}")
+    console.print(f"  New bounty reports: {bounty_count}")
+    console.print(f"  Total bounty: ${stats.get('total_bounty', 0):,.2f}")
+
+
+@cli.command()
 def status():
     """Show current project status."""
     # Count issues with report.json

@@ -16,11 +16,11 @@ Cloudflare Pages project `vrp-reports` has auto-builds **disabled** (build comma
 
 - **Manual**: Actions tab → `Deploy VRP Reports` → Run workflow
 - **Auto**: push to `main` that touches `ui/**`, `build.sh`, or the workflow file itself
-- **Daily scrape**: `.github/workflows/scrape.yml` runs once a day, pushes lightweight updates to `data`, and deploys when data changed
+- **Weekly scrape**: `.github/workflows/scrape.yml` runs weekly, pushes lightweight updates to `data`, and deploys when data changed
 
 ## Updating content (new scraped reports)
 
-The scheduled scraper runs daily on GitHub Actions. It refreshes discovery for the previous and current UTC year, scrapes new reports, regenerates markdown/index/stats, pushes lightweight files to the `data` branch, and deploys when data changed.
+The scheduled scraper runs weekly on GitHub Actions. It refreshes discovery for the previous and current UTC year, scrapes only missing reports, regenerates markdown/index/stats, pushes lightweight files to the `data` branch, and deploys when data changed.
 
 You can still scrape locally:
 
@@ -32,7 +32,7 @@ Then push the lightweight files to `data` branch (skip `attachments/` and `raw_*
 
 ```bash
 cd /tmp && rm -rf vrp-data-push
-git clone --branch data --single-branch https://github.com/dark-warlord14/VRP-REPORTS.git vrp-data-push
+git clone --branch data --single-branch https://github.com/dark-warlord14/vrp-reports.git vrp-data-push
 cd vrp-data-push
 cp <repo>/data/{index,stats}.json .
 cp <repo>/data/discovery_*.json .

@@ -33,6 +33,7 @@ vrp serve
 ```
 vrp run [--no-headless]  Full pipeline: discover → scrape → reprocess → markdown → index.
                          Checkpointed — safe to interrupt and re-run.
+vrp update               Incremental pipeline: discover → scrape missing → markdown → index.
 vrp serve [--port N]     Start the local dashboard (default: http://localhost:8080).
 vrp status               Show counts and per-year discovery progress.
 ```
@@ -175,6 +176,6 @@ Deploys to Cloudflare Pages via `.github/workflows/deploy.yml` (manual dispatch 
 - `main` — source code + UI
 - `data` — scraped output (`index.json`, `stats.json`, per-issue `report.json`/`report.md`)
 
-`build.sh` checks out both branches, assembles `dist/`, and `wrangler pages deploy` publishes it. `.github/workflows/scrape.yml` runs once a day, refreshes recent discovery, scrapes new reports, pushes lightweight files to the `data` branch, and deploys when data changed.
+`build.sh` checks out both branches, assembles `dist/`, and `wrangler pages deploy` publishes it. `.github/workflows/scrape.yml` runs weekly, refreshes recent discovery, scrapes only missing reports, pushes lightweight files to the `data` branch, and deploys when data changed.
 
 See [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) for the full flow, secrets setup, and token rotation.

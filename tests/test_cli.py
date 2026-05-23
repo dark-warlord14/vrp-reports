@@ -53,7 +53,7 @@ class TestCLIHelp:
 
     def test_help_lists_commands(self, runner):
         result = runner.invoke(cli, ["--help"])
-        for cmd in ["run", "serve", "status"]:
+        for cmd in ["run", "serve", "status", "update"]:
             assert cmd in result.output
 
     def test_version(self, runner):
@@ -132,4 +132,3 @@ class TestYearScopedRun:
                 p.stop()
 
         assert ids == ["1", "2", "3"]
-
