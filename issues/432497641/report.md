@@ -164,10 +164,10 @@ Regression: Yes \
 
 ## Attachments
 
-- asan.txt (text/plain, 19.5 KB)
-- patch.diff (text/x-diff, 5.0 KB)
-- poc.html (text/html, 451 B)
-- poc_uaf_reproduction.mp4 (video/mp4, 31.9 MB)
+- [asan.txt](attachments/asan.txt) (text/plain, 19.5 KB)
+- [patch.diff](attachments/patch.diff) (text/x-diff, 5.0 KB)
+- [poc.html](attachments/poc.html) (text/html, 451 B)
+- [poc_uaf_reproduction.mp4](attachments/poc_uaf_reproduction.mp4) (video/mp4, 31.9 MB)
 
 ## Timeline
 

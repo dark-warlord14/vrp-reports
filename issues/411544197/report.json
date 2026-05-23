@@ -29,7 +29,7 @@
       "mime_type": "image/png",
       "size_bytes": 13611,
       "url": "https://issues.chromium.org/action/issues/411544197/attachments/65064465?download=true",
-      "local_path": null
+      "local_path": "attachments/Mon Apr 21 2025 09_58_57 GMT+0800 (中国标准时间).png"
     },
     {
       "id": 65098944,
@@ -37,7 +37,7 @@
       "mime_type": "text/plain",
       "size_bytes": 10207,
       "url": "https://issues.chromium.org/action/issues/411544197/attachments/65098944?download=true",
-      "local_path": null
+      "local_path": "attachments/stacktrace.txt"
     }
   ],
   "update_count": 190,

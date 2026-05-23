@@ -78,9 +78,9 @@ Report credit: koocola and Guang Gong of 360 Vulnerability Research Institute
 
 ## Attachments
 
-- [poc1.mp4](attachments/poc1.mp4) (video/mp4, 171.8 KB)
-- [poc.html](attachments/poc.html) (text/plain, 766 B)
-- [exp.html](attachments/exp.html) (text/plain, 787 B)
+- poc1.mp4 (video/mp4, 171.8 KB)
+- poc.html (text/plain, 766 B)
+- exp.html (text/plain, 787 B)
 - [test.app.zip](attachments/test.app.zip) (application/octet-stream, 74.1 KB)
 - [exp_zip.mp4](attachments/exp_zip.mp4) (video/mp4, 242.0 KB)
 

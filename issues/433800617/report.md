@@ -135,13 +135,13 @@ Reporter credit: Alesandro Ortiz <https://AlesandroOrtiz.com>
 
 ## Attachments
 
-- download-cross-site-theft-cr.patch (text/x-diff, 7.2 KB)
-- download-cross-site-theft-cr-multiple.html (text/html, 9.2 KB)
-- download-cross-site-theft-cr-multiple.mp4 (video/mp4, 1.0 MB)
-- get-cookies.php (application/x-httpd-php, 527 B)
-- set-cookies.php (application/x-httpd-php, 1.3 KB)
-- download-cross-site-theft-cr.html (text/html, 5.6 KB)
-- download-cross-site-theft-cr.mp4 (video/mp4, 2.0 MB)
+- [download-cross-site-theft-cr.patch](attachments/download-cross-site-theft-cr.patch) (text/x-diff, 7.2 KB)
+- [download-cross-site-theft-cr-multiple.html](attachments/download-cross-site-theft-cr-multiple.html) (text/html, 9.2 KB)
+- [download-cross-site-theft-cr-multiple.mp4](attachments/download-cross-site-theft-cr-multiple.mp4) (video/mp4, 1.0 MB)
+- [get-cookies.php](attachments/get-cookies.php) (application/x-httpd-php, 527 B)
+- [set-cookies.php](attachments/set-cookies.php) (application/x-httpd-php, 1.3 KB)
+- [download-cross-site-theft-cr.html](attachments/download-cross-site-theft-cr.html) (text/html, 5.6 KB)
+- [download-cross-site-theft-cr.mp4](attachments/download-cross-site-theft-cr.mp4) (video/mp4, 2.0 MB)
 
 ## Timeline
 

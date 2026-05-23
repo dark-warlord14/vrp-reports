@@ -168,9 +168,9 @@ Regression: N/A \
 
 ## Attachments
 
-- poc.html (text/html, 1.2 KB)
-- Sat Nov 29 2025 18:29:55 GMT+0530 (India Standard Time).png (image/png, 164.9 KB)
-- poc.js (text/javascript, 1.2 KB)
+- [poc.html](attachments/poc.html) (text/html, 1.2 KB)
+- [Sat Nov 29 2025 18:29:55 GMT+0530 (India Standard Time).png](attachments/Sat Nov 29 2025 18_29_55 GMT+0530 (India Standard Time).png) (image/png, 164.9 KB)
+- [poc.js](attachments/poc.js) (text/javascript, 1.2 KB)
 
 ## Timeline
 

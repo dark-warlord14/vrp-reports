@@ -29,7 +29,7 @@
       "mime_type": "text/x-c++src",
       "size_bytes": 5982,
       "url": "https://issues.chromium.org/action/issues/430336833/attachments/67414219?download=true",
-      "local_path": null
+      "local_path": "attachments/gen.cpp"
     },
     {
       "id": 67414220,
@@ -37,7 +37,7 @@
       "mime_type": "text/html",
       "size_bytes": 1829,
       "url": "https://issues.chromium.org/action/issues/430336833/attachments/67414220?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     },
     {
       "id": 67414221,
@@ -45,7 +45,7 @@
       "mime_type": "text/x-python",
       "size_bytes": 396,
       "url": "https://issues.chromium.org/action/issues/430336833/attachments/67414221?download=true",
-      "local_path": null
+      "local_path": "attachments/server.py"
     },
     {
       "id": 67567431,
@@ -53,7 +53,7 @@
       "mime_type": "text/x-c++src",
       "size_bytes": 5982,
       "url": "https://issues.chromium.org/action/issues/430336833/attachments/67567431?download=true",
-      "local_path": null
+      "local_path": "attachments/gen.cpp"
     },
     {
       "id": 67537416,
@@ -61,7 +61,7 @@
       "mime_type": "text/x-python",
       "size_bytes": 396,
       "url": "https://issues.chromium.org/action/issues/430336833/attachments/67537416?download=true",
-      "local_path": null
+      "local_path": "attachments/server.py"
     },
     {
       "id": 67567432,
@@ -69,7 +69,7 @@
       "mime_type": "text/html",
       "size_bytes": 1689,
       "url": "https://issues.chromium.org/action/issues/430336833/attachments/67567432?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     },
     {
       "id": 67567463,
@@ -77,7 +77,7 @@
       "mime_type": "text/html",
       "size_bytes": 243,
       "url": "https://issues.chromium.org/action/issues/430336833/attachments/67567463?download=true",
-      "local_path": null
+      "local_path": "attachments/target.html"
     },
     {
       "id": 67587788,
@@ -85,7 +85,7 @@
       "mime_type": "text/html",
       "size_bytes": 1960,
       "url": "https://issues.chromium.org/action/issues/430336833/attachments/67587788?download=true",
-      "local_path": null
+      "local_path": "attachments/poc2.html"
     },
     {
       "id": 67587789,
@@ -93,7 +93,7 @@
       "mime_type": "text/html",
       "size_bytes": 260,
       "url": "https://issues.chromium.org/action/issues/430336833/attachments/67587789?download=true",
-      "local_path": null
+      "local_path": "attachments/target2.html"
     },
     {
       "id": 67627035,
@@ -101,7 +101,7 @@
       "mime_type": "text/x-c++src",
       "size_bytes": 6032,
       "url": "https://issues.chromium.org/action/issues/430336833/attachments/67627035?download=true",
-      "local_path": null
+      "local_path": "attachments/gen.cpp"
     },
     {
       "id": 67627036,
@@ -109,7 +109,7 @@
       "mime_type": "text/html",
       "size_bytes": 2078,
       "url": "https://issues.chromium.org/action/issues/430336833/attachments/67627036?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     },
     {
       "id": 67620884,
@@ -117,7 +117,7 @@
       "mime_type": "text/x-python",
       "size_bytes": 422,
       "url": "https://issues.chromium.org/action/issues/430336833/attachments/67620884?download=true",
-      "local_path": null
+      "local_path": "attachments/server.py"
     }
   ],
   "update_count": 144,

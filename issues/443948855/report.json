@@ -14,7 +14,7 @@
   "reporter": "we...@gmail.com",
   "assignee": "da...@google.com",
   "created_date": "2025-09-09T20:04:11+00:00",
-  "modified_date": "2025-12-26T12:39:17+00:00",
+  "modified_date": "2026-04-17T06:57:21+00:00",
   "bounty_confirmed": true,
   "bounty_amount": 1000.0,
   "bounty_rationale": "security bug with multiple complex gestures so highly mitigated",
@@ -25,7 +25,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 3559747,
       "url": "https://issues.chromium.org/action/issues/443948855/attachments/69143330?download=true",
-      "local_path": null
+      "local_path": "attachments/bandicam 2025-09-10 02-31-41-605.mp4"
     },
     {
       "id": 69345231,
@@ -33,7 +33,7 @@
       "mime_type": "image/png",
       "size_bytes": 1213689,
       "url": "https://issues.chromium.org/action/issues/443948855/attachments/69345231?download=true",
-      "local_path": null
+      "local_path": "attachments/Screenshot 2025-09-16 at 1.13.17 PM.png"
     },
     {
       "id": 69344782,
@@ -41,7 +41,7 @@
       "mime_type": "image/png",
       "size_bytes": 343227,
       "url": "https://issues.chromium.org/action/issues/443948855/attachments/69344782?download=true",
-      "local_path": null
+      "local_path": "attachments/Screenshot 2025-09-16 at 1.12.28 PM.png"
     },
     {
       "id": 69326708,
@@ -49,7 +49,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 3856497,
       "url": "https://issues.chromium.org/action/issues/443948855/attachments/69326708?download=true",
-      "local_path": null
+      "local_path": "attachments/bandicam 2025-09-16 18-39-40-603.mp4"
     },
     {
       "id": 69350938,
@@ -57,7 +57,7 @@
       "mime_type": "image/png",
       "size_bytes": 1118031,
       "url": "https://issues.chromium.org/action/issues/443948855/attachments/69350938?download=true",
-      "local_path": null
+      "local_path": "attachments/Screenshot 2025-09-16 at 4.38.52 PM.png"
     },
     {
       "id": 69326935,
@@ -65,9 +65,9 @@
       "mime_type": "image/png",
       "size_bytes": 84283,
       "url": "https://issues.chromium.org/action/issues/443948855/attachments/69326935?download=true",
-      "local_path": null
+      "local_path": "attachments/Screenshot 2025-09-16 224737.png"
     }
   ],
-  "update_count": 56,
+  "update_count": 58,
   "description_snippet": "**VULNERABILITY DETAILS**\n\n\"Copy as cURL (cmd)\" feature of Chromium DevTools. When exporting requests to Windows cmd.exe, the escaping logic in escapeStringWin fails to correctly sanitize certain control characters\n\nThis allows an attacker to craft malicious requests such that, when copied and execu"
 }

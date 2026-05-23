@@ -117,8 +117,8 @@ Regression: N/A \
 
 ## Attachments
 
-- asan.txt (text/plain, 12.9 KB)
-- full.log (text/plain, 70.5 KB)
+- [asan.txt](attachments/asan.txt) (text/plain, 12.9 KB)
+- [full.log](attachments/full.log) (text/plain, 70.5 KB)
 
 ## Timeline
 

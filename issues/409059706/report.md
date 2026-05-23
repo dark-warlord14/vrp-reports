@@ -20,10 +20,10 @@ deleted
 
 ## Attachments
 
-- UAF_WorkerThread.js (text/javascript, 2.0 KB)
-- worker0.js (text/javascript, 428 B)
-- em_worker.js (text/javascript, 40 B)
-- index.html (text/html, 281 B)
+- [UAF_WorkerThread.js](attachments/UAF_WorkerThread.js) (text/javascript, 2.0 KB)
+- [worker0.js](attachments/worker0.js) (text/javascript, 428 B)
+- [em_worker.js](attachments/em_worker.js) (text/javascript, 40 B)
+- [index.html](attachments/index.html) (text/html, 281 B)
 
 ## Timeline
 

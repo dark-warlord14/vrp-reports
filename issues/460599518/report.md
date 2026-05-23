@@ -171,10 +171,10 @@ Regression: N/A \
 
 ## Attachments
 
-- asan.txt (text/plain, 88.9 KB)
-- change.txt (text/plain, 11.5 KB)
-- poc.html (text/html, 1.1 KB)
-- poc.webm (video/webm, 2.3 MB)
+- [asan.txt](attachments/asan.txt) (text/plain, 88.9 KB)
+- [change.txt](attachments/change.txt) (text/plain, 11.5 KB)
+- [poc.html](attachments/poc.html) (text/html, 1.1 KB)
+- [poc.webm](attachments/poc.webm) (video/webm, 2.3 MB)
 
 ## Timeline
 

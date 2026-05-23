@@ -114,7 +114,7 @@ gfx::Transform DOMFloat32ArrayToTransform(NotShared<DOMFloat32Array> m) {
 
 ## Attachments
 
-- poc-min-leak.js (text/javascript, 3.1 KB)
+- [poc-min-leak.js](attachments/poc-min-leak.js) (text/javascript, 3.1 KB)
 
 ## Timeline
 

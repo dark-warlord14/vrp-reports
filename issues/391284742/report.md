@@ -231,10 +231,10 @@ TargetLibraryInfo const&, llvm::AAResults&, llvm::MemoryDependenceResults*, llvm
 
 ## Attachments
 
-- frag.spv (application/octet-stream, 3.1 KB)
-- vert.spv (application/octet-stream, 512 B)
-- a.html (text/html, 4.7 KB)
-- standalone.cpp (text/x-c++src, 12.0 KB)
+- [frag.spv](attachments/frag.spv) (application/octet-stream, 3.1 KB)
+- [vert.spv](attachments/vert.spv) (application/octet-stream, 512 B)
+- [a.html](attachments/a.html) (text/html, 4.7 KB)
+- [standalone.cpp](attachments/standalone.cpp) (text/x-c++src, 12.0 KB)
 
 ## Timeline
 

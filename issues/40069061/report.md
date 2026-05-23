@@ -60,7 +60,7 @@ Reporter credit: Axel Chong
 - [background.js](attachments/background.js) (text/plain, 298 B)
 - [devtools.html](attachments/devtools.html) (text/plain, 35 B)
 - [devtools.js](attachments/devtools.js) (text/plain, 119 B)
-- [manifest.json](attachments/manifest.json) (text/plain, 184 B)
+- manifest.json (text/plain, 184 B)
 
 ## Timeline
 

@@ -18,9 +18,9 @@
   "chrome_version": null,
   "cve_ids": [],
   "reporter": "we...@gmail.com",
-  "assignee": "ke...@chromium.org",
+  "assignee": "ke...@google.com",
   "created_date": "2025-11-23T21:47:50+00:00",
-  "modified_date": "2026-03-04T00:09:17+00:00",
+  "modified_date": "2026-03-31T22:05:23+00:00",
   "bounty_confirmed": true,
   "bounty_amount": 7000.0,
   "bounty_rationale": "Web platform privilege escalation, high quality and high impact",
@@ -31,7 +31,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 7862,
       "url": "https://issues.chromium.org/action/issues/463155954/attachments/71235720?download=true",
-      "local_path": null
+      "local_path": "attachments/README.md"
     },
     {
       "id": 71235721,
@@ -39,7 +39,7 @@
       "mime_type": "application/json",
       "size_bytes": 4239,
       "url": "https://issues.chromium.org/action/issues/463155954/attachments/71235721?download=true",
-      "local_path": null
+      "local_path": "attachments/rules_pe.json"
     },
     {
       "id": 71235722,
@@ -47,7 +47,7 @@
       "mime_type": "application/json",
       "size_bytes": 3103,
       "url": "https://issues.chromium.org/action/issues/463155954/attachments/71235722?download=true",
-      "local_path": null
+      "local_path": "attachments/rules_intercept.json"
     },
     {
       "id": 71235723,
@@ -55,7 +55,7 @@
       "mime_type": "application/json",
       "size_bytes": 2547,
       "url": "https://issues.chromium.org/action/issues/463155954/attachments/71235723?download=true",
-      "local_path": null
+      "local_path": "attachments/rules.json"
     },
     {
       "id": 71235724,
@@ -63,7 +63,7 @@
       "mime_type": "application/json",
       "size_bytes": 4527,
       "url": "https://issues.chromium.org/action/issues/463155954/attachments/71235724?download=true",
-      "local_path": null
+      "local_path": "attachments/rules_phish.json"
     },
     {
       "id": 71235725,
@@ -71,7 +71,7 @@
       "mime_type": "application/json",
       "size_bytes": 3203,
       "url": "https://issues.chromium.org/action/issues/463155954/attachments/71235725?download=true",
-      "local_path": null
+      "local_path": "attachments/rules_leak_pii.json"
     },
     {
       "id": 71235726,
@@ -79,7 +79,7 @@
       "mime_type": "application/json",
       "size_bytes": 1012,
       "url": "https://issues.chromium.org/action/issues/463155954/attachments/71235726?download=true",
-      "local_path": null
+      "local_path": "attachments/manifest.json"
     },
     {
       "id": 71258559,
@@ -87,7 +87,7 @@
       "mime_type": "video/quicktime",
       "size_bytes": 123646622,
       "url": "https://issues.chromium.org/action/issues/463155954/attachments/71258559?download=true",
-      "local_path": null
+      "local_path": "attachments/gemini_demo2.mov"
     },
     {
       "id": 71263649,
@@ -95,7 +95,7 @@
       "mime_type": "application/pdf",
       "size_bytes": 10498,
       "url": "https://issues.chromium.org/action/issues/463155954/attachments/71263649?download=true",
-      "local_path": null
+      "local_path": "attachments/bnbndddd3.pdf"
     },
     {
       "id": 71263147,
@@ -103,7 +103,7 @@
       "mime_type": "text/html",
       "size_bytes": 11757,
       "url": "https://issues.chromium.org/action/issues/463155954/attachments/71263147?download=true",
-      "local_path": null
+      "local_path": "attachments/index.html"
     },
     {
       "id": 71258560,
@@ -111,7 +111,7 @@
       "mime_type": "application/json",
       "size_bytes": 1120,
       "url": "https://issues.chromium.org/action/issues/463155954/attachments/71258560?download=true",
-      "local_path": null
+      "local_path": "attachments/manifest.json"
     },
     {
       "id": 71263650,
@@ -119,7 +119,7 @@
       "mime_type": "application/json",
       "size_bytes": 11473,
       "url": "https://issues.chromium.org/action/issues/463155954/attachments/71263650?download=true",
-      "local_path": null
+      "local_path": "attachments/rules_local_file_read.json"
     },
     {
       "id": 71258562,
@@ -127,7 +127,7 @@
       "mime_type": "text/markdown",
       "size_bytes": 9156,
       "url": "https://issues.chromium.org/action/issues/463155954/attachments/71258562?download=true",
-      "local_path": null
+      "local_path": "attachments/README.md"
     },
     {
       "id": 71263652,
@@ -135,9 +135,9 @@
       "mime_type": "video/quicktime",
       "size_bytes": 225380174,
       "url": "https://issues.chromium.org/action/issues/463155954/attachments/71263652?download=true",
-      "local_path": null
+      "local_path": "attachments/gemini_demo.mov"
     }
   ],
-  "update_count": 153,
+  "update_count": 155,
   "description_snippet": "---\n\n### Report description\n\n\nExtensions can hijack Gemini in the browser webview process to perform PE attacks by abusing DNR permissions, allowing stealing prompts, PII leakage, unrestricted access to camera-microphone and more\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulner"
 }

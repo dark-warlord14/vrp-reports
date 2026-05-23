@@ -84,8 +84,8 @@ Reporter credit: Jesper van den Ende - Pelican Party Studios
 
 ## Attachments
 
-- Screen Recording 2025 05 12 at 19.24.09.clip.mp4 (video/mp4, 991.1 KB)
-- bfcacheSpeculationRules.ts (text/texmacs, 3.8 KB)
+- [Screen Recording 2025 05 12 at 19.24.09.clip.mp4](attachments/Screen Recording 2025 05 12 at 19.24.09.clip.mp4) (video/mp4, 991.1 KB)
+- [bfcacheSpeculationRules.ts](attachments/bfcacheSpeculationRules.ts) (text/texmacs, 3.8 KB)
 
 ## Timeline
 

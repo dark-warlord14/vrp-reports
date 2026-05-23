@@ -25,7 +25,7 @@
       "mime_type": "application/x-zip-compressed",
       "size_bytes": 16220368,
       "url": "https://issues.chromium.org/action/issues/431309019/attachments/67526761?download=true",
-      "local_path": null
+      "local_path": "attachments/Chrome-report.zip"
     },
     {
       "id": 67582398,
@@ -33,7 +33,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 10508876,
       "url": "https://issues.chromium.org/action/issues/431309019/attachments/67582398?download=true",
-      "local_path": null
+      "local_path": "attachments/zone3.mp4"
     },
     {
       "id": 67582424,
@@ -41,7 +41,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 9495315,
       "url": "https://issues.chromium.org/action/issues/431309019/attachments/67582424?download=true",
-      "local_path": null
+      "local_path": "attachments/zone4.mp4"
     },
     {
       "id": 67582399,
@@ -49,7 +49,7 @@
       "mime_type": "text/x-csrc",
       "size_bytes": 444,
       "url": "https://issues.chromium.org/action/issues/431309019/attachments/67582399?download=true",
-      "local_path": null
+      "local_path": "attachments/calc.c"
     },
     {
       "id": 67582400,
@@ -57,7 +57,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 481,
       "url": "https://issues.chromium.org/action/issues/431309019/attachments/67582400?download=true",
-      "local_path": null
+      "local_path": "attachments/html_loader.ps1"
     },
     {
       "id": 67582425,
@@ -65,7 +65,7 @@
       "mime_type": "text/html",
       "size_bytes": 1262,
       "url": "https://issues.chromium.org/action/issues/431309019/attachments/67582425?download=true",
-      "local_path": null
+      "local_path": "attachments/template.html"
     },
     {
       "id": 67567443,
@@ -73,7 +73,7 @@
       "mime_type": "text/html",
       "size_bytes": 144641,
       "url": "https://issues.chromium.org/action/issues/431309019/attachments/67567443?download=true",
-      "local_path": null
+      "local_path": "attachments/zone4.html"
     },
     {
       "id": 67582426,
@@ -89,7 +89,7 @@
       "mime_type": "text/html",
       "size_bytes": 145010,
       "url": "https://issues.chromium.org/action/issues/431309019/attachments/67582708?download=true",
-      "local_path": null
+      "local_path": "attachments/zone3.html"
     }
   ],
   "update_count": 45,

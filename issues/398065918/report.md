@@ -370,10 +370,10 @@ Reporter credit: Excello s.r.o.
 
 ## Attachments
 
-- case-103-search_allocations.py (text/x-python, 1.6 KB)
-- case-103-poc3.js (text/javascript, 8.7 KB)
-- case-103-poc2.js (text/javascript, 4.4 KB)
-- case-103-poc1.js (text/javascript, 4.5 KB)
+- [case-103-search_allocations.py](attachments/case-103-search_allocations.py) (text/x-python, 1.6 KB)
+- [case-103-poc3.js](attachments/case-103-poc3.js) (text/javascript, 8.7 KB)
+- [case-103-poc2.js](attachments/case-103-poc2.js) (text/javascript, 4.4 KB)
+- [case-103-poc1.js](attachments/case-103-poc1.js) (text/javascript, 4.5 KB)
 
 ## Timeline
 

@@ -27,7 +27,7 @@
       "mime_type": "application/json",
       "size_bytes": 354,
       "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247641?download=true",
-      "local_path": null
+      "local_path": "attachments/manifest.json"
     },
     {
       "id": 68247642,
@@ -35,7 +35,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 2303,
       "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247642?download=true",
-      "local_path": null
+      "local_path": "attachments/background.js"
     },
     {
       "id": 68247643,
@@ -43,7 +43,7 @@
       "mime_type": "text/html",
       "size_bytes": 632,
       "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247643?download=true",
-      "local_path": null
+      "local_path": "attachments/page.html"
     },
     {
       "id": 68247644,
@@ -51,7 +51,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 700,
       "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247644?download=true",
-      "local_path": null
+      "local_path": "attachments/page.js"
     },
     {
       "id": 68247645,
@@ -59,7 +59,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1461144,
       "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247645?download=true",
-      "local_path": null
+      "local_path": "attachments/download-file-resume.mp4"
     },
     {
       "id": 68247646,
@@ -67,7 +67,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1698776,
       "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247646?download=true",
-      "local_path": null
+      "local_path": "attachments/download-file-resume-debug.mp4"
     },
     {
       "id": 68247441,
@@ -75,7 +75,7 @@
       "mime_type": "application/json",
       "size_bytes": 385,
       "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247441?download=true",
-      "local_path": null
+      "local_path": "attachments/manifest.json"
     },
     {
       "id": 68247648,
@@ -83,7 +83,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 2609,
       "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247648?download=true",
-      "local_path": null
+      "local_path": "attachments/background.js"
     },
     {
       "id": 68247649,
@@ -91,7 +91,7 @@
       "mime_type": "text/html",
       "size_bytes": 659,
       "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247649?download=true",
-      "local_path": null
+      "local_path": "attachments/page.html"
     },
     {
       "id": 68247650,
@@ -99,7 +99,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 1093,
       "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247650?download=true",
-      "local_path": null
+      "local_path": "attachments/page.js"
     },
     {
       "id": 68247442,
@@ -107,7 +107,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 804220,
       "url": "https://issues.chromium.org/action/issues/436887350/attachments/68247442?download=true",
-      "local_path": null
+      "local_path": "attachments/download-file-resume-chained-cr.mp4"
     }
   ],
   "update_count": 65,

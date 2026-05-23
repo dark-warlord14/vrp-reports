@@ -280,9 +280,9 @@ Right alloca redzone: cb
 ## Attachments
 
 - [extension.zip](attachments/extension.zip) (application/octet-stream, 1.9 KB)
-- [asan.log](attachments/asan.log) (text/plain, 15.9 KB)
-- [background.js](attachments/background.js) (text/plain, 1.7 KB)
-- [manifest.json](attachments/manifest.json) (text/plain, 1.4 KB)
+- asan.log (text/plain, 15.9 KB)
+- background.js (text/plain, 1.7 KB)
+- manifest.json (text/plain, 1.4 KB)
 
 ## Timeline
 

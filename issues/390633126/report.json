@@ -30,7 +30,7 @@
       "mime_type": "text/plain",
       "size_bytes": 17494,
       "url": "https://issues.chromium.org/action/issues/390633126/attachments/62257211?download=true",
-      "local_path": null
+      "local_path": "attachments/chrome_debug_win10-1405230.txt"
     },
     {
       "id": 62257212,
@@ -38,7 +38,7 @@
       "mime_type": "text/plain",
       "size_bytes": 19416,
       "url": "https://issues.chromium.org/action/issues/390633126/attachments/62257212?download=true",
-      "local_path": null
+      "local_path": "attachments/chrome_debug_win10-1405230-v2.txt"
     },
     {
       "id": 62257213,
@@ -46,7 +46,7 @@
       "mime_type": "text/plain",
       "size_bytes": 14497,
       "url": "https://issues.chromium.org/action/issues/390633126/attachments/62257213?download=true",
-      "local_path": null
+      "local_path": "attachments/linux-release_asan-linux-release-1407906.txt"
     },
     {
       "id": 62257214,
@@ -54,7 +54,7 @@
       "mime_type": "image/png",
       "size_bytes": 27511,
       "url": "https://issues.chromium.org/action/issues/390633126/attachments/62257214?download=true",
-      "local_path": null
+      "local_path": "attachments/manyHandles.PNG"
     },
     {
       "id": 62257215,
@@ -62,7 +62,7 @@
       "mime_type": "video/webm",
       "size_bytes": 22136396,
       "url": "https://issues.chromium.org/action/issues/390633126/attachments/62257215?download=true",
-      "local_path": null
+      "local_path": "attachments/PoC.webm"
     },
     {
       "id": 62257216,
@@ -70,7 +70,7 @@
       "mime_type": "text/html",
       "size_bytes": 635,
       "url": "https://issues.chromium.org/action/issues/390633126/attachments/62257216?download=true",
-      "local_path": null
+      "local_path": "attachments/test.html"
     },
     {
       "id": 62257217,
@@ -78,7 +78,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 515,
       "url": "https://issues.chromium.org/action/issues/390633126/attachments/62257217?download=true",
-      "local_path": null
+      "local_path": "attachments/test.js"
     },
     {
       "id": 62257218,
@@ -86,7 +86,7 @@
       "mime_type": "text/plain",
       "size_bytes": 136809,
       "url": "https://issues.chromium.org/action/issues/390633126/attachments/62257218?download=true",
-      "local_path": null
+      "local_path": "attachments/variations-linux.txt"
     },
     {
       "id": 62383312,
@@ -94,7 +94,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 4697440,
       "url": "https://issues.chromium.org/action/issues/390633126/attachments/62383312?download=true",
-      "local_path": null
+      "local_path": "attachments/1507bb54-8016-4bda-b8be-3b9977f71f41-Stable.dmp"
     },
     {
       "id": 62383313,
@@ -102,7 +102,7 @@
       "mime_type": "text/plain",
       "size_bytes": 137201,
       "url": "https://issues.chromium.org/action/issues/390633126/attachments/62383313?download=true",
-      "local_path": null
+      "local_path": "attachments/variations-local-linux.txt"
     },
     {
       "id": 62534829,
@@ -110,7 +110,7 @@
       "mime_type": "text/plain",
       "size_bytes": 144380,
       "url": "https://issues.chromium.org/action/issues/390633126/attachments/62534829?download=true",
-      "local_path": null
+      "local_path": "attachments/ASANCmdVariations.txt"
     },
     {
       "id": 62537351,
@@ -118,7 +118,7 @@
       "mime_type": "text/plain",
       "size_bytes": 68644,
       "url": "https://issues.chromium.org/action/issues/390633126/attachments/62537351?download=true",
-      "local_path": null
+      "local_path": "attachments/CanaryCmdVariations.txt"
     },
     {
       "id": 62534830,
@@ -126,7 +126,7 @@
       "mime_type": "image/png",
       "size_bytes": 148940,
       "url": "https://issues.chromium.org/action/issues/390633126/attachments/62534830?download=true",
-      "local_path": null
+      "local_path": "attachments/postShutdown.PNG"
     },
     {
       "id": 63139346,

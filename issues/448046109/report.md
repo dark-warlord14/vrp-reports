@@ -139,10 +139,10 @@ Regression: N/A \
 
 ## Attachments
 
-- poc.html (text/html, 3.1 KB)
-- asan.log (text/plain, 17.2 KB)
-- poc.html (text/html, 3.3 KB)
-- poc.html (text/html, 3.3 KB)
+- [poc.html](attachments/poc.html) (text/html, 3.1 KB)
+- [asan.log](attachments/asan.log) (text/plain, 17.2 KB)
+- [poc.html](attachments/poc.html) (text/html, 3.3 KB)
+- [poc.html](attachments/poc.html) (text/html, 3.3 KB)
 
 ## Timeline
 

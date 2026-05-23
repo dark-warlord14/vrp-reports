@@ -70,14 +70,14 @@ Reporter credit: Lyra Rebane (rebane2001)
 ## Attachments
 
 - deleted (application/octet-stream, 0 B)
-- chrome_2025-03-30_19-51-07.mp4 (video/mp4, 324.5 KB)
-- crash.html (text/html, 318 B)
-- asan2.log (text/plain, 35.9 KB)
-- crash2.html (text/html, 372 B)
-- crash2.html (text/html, 372 B)
-- crash3.html (text/html, 846 B)
-- demo.webm (video/webm, 2.9 MB)
-- crash.html (text/html, 590 B)
+- [chrome_2025-03-30_19-51-07.mp4](attachments/chrome_2025-03-30_19-51-07.mp4) (video/mp4, 324.5 KB)
+- [crash.html](attachments/crash.html) (text/html, 318 B)
+- [asan2.log](attachments/asan2.log) (text/plain, 35.9 KB)
+- [crash2.html](attachments/crash2.html) (text/html, 372 B)
+- [crash2.html](attachments/crash2.html) (text/html, 372 B)
+- [crash3.html](attachments/crash3.html) (text/html, 846 B)
+- [demo.webm](attachments/demo.webm) (video/webm, 2.9 MB)
+- [crash.html](attachments/crash.html) (text/html, 590 B)
 
 ## Timeline
 

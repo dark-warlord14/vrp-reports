@@ -48,7 +48,7 @@ Reporter credit: Zhenghang Xiao of Hunan University
 ## Attachments
 
 - [poc.js](attachments/poc.js) (text/plain, 234 B)
-- [exp.js](attachments/exp.js) (text/plain, 4.2 KB)
+- exp.js (text/plain, 4.2 KB)
 
 ## Timeline
 

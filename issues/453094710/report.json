@@ -27,7 +27,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 706,
       "url": "https://issues.chromium.org/action/issues/453094710/attachments/70215500?download=true",
-      "local_path": null
+      "local_path": "attachments/7475_patch_renderer_poc.diff"
     },
     {
       "id": 70215501,
@@ -35,7 +35,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 34509,
       "url": "https://issues.chromium.org/action/issues/453094710/attachments/70215501?download=true",
-      "local_path": null
+      "local_path": "attachments/7475_patch_renderer_exp.diff"
     },
     {
       "id": 70238319,
@@ -43,7 +43,7 @@
       "mime_type": "text/html",
       "size_bytes": 2613,
       "url": "https://issues.chromium.org/action/issues/453094710/attachments/70238319?download=true",
-      "local_path": null
+      "local_path": "attachments/play.html"
     },
     {
       "id": 70238320,
@@ -51,7 +51,7 @@
       "mime_type": "audio/mpeg",
       "size_bytes": 1954212,
       "url": "https://issues.chromium.org/action/issues/453094710/attachments/70238320?download=true",
-      "local_path": null
+      "local_path": "attachments/sample1.mp3"
     },
     {
       "id": 70899084,
@@ -59,7 +59,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 299431520,
       "url": "https://issues.chromium.org/action/issues/453094710/attachments/70899084?download=true",
-      "local_path": null
+      "local_path": "attachments/exploit.mp4"
     }
   ],
   "update_count": 57,

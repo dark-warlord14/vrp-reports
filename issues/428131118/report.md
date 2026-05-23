@@ -294,7 +294,7 @@ Shadow byte legend (one shadow byte represents 8 application bytes):
 
 ## Attachments
 
-- bug.js (text/javascript, 8.4 KB)
+- [bug.js](attachments/bug.js) (text/javascript, 8.4 KB)
 
 ## Timeline
 

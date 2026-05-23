@@ -1,0 +1,102 @@
+{
+  "id": "471257336",
+  "url": "https://issues.chromium.org/issues/471257336",
+  "title": "Security: heap-use-after-free in v8::Isolate::SuppressMicrotaskExecutionScope::~SuppressMicrotaskExe",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "143.0.0.0",
+  "cve_ids": [],
+  "reporter": "zh...@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2025-12-24T11:58:59+00:00",
+  "modified_date": "2026-04-25T07:59:34+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "bounty_rationale": "High quality memory corruption in a sandboxed process with a bisect",
+  "attachments": [
+    {
+      "id": 72055115,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1038,
+      "url": "https://issues.chromium.org/action/issues/471257336/attachments/72055115?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 72055116,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 38691,
+      "url": "https://issues.chromium.org/action/issues/471257336/attachments/72055116?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 72035912,
+      "filename": "poc.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 591459,
+      "url": "https://issues.chromium.org/action/issues/471257336/attachments/72035912?download=true",
+      "local_path": "attachments/poc.diff"
+    },
+    {
+      "id": 72050832,
+      "filename": "poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 85249210,
+      "url": "https://issues.chromium.org/action/issues/471257336/attachments/72050832?download=true",
+      "local_path": "attachments/poc.mov"
+    },
+    {
+      "id": 72093096,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/471257336/attachments/72093096?download=true",
+      "local_path": null
+    },
+    {
+      "id": 72093097,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/471257336/attachments/72093097?download=true",
+      "local_path": null
+    },
+    {
+      "id": 72074726,
+      "filename": "a.html",
+      "mime_type": "text/html",
+      "size_bytes": 2252,
+      "url": "https://issues.chromium.org/action/issues/471257336/attachments/72074726?download=true",
+      "local_path": "attachments/a.html"
+    },
+    {
+      "id": 72074727,
+      "filename": "b.html",
+      "mime_type": "text/html",
+      "size_bytes": 4728,
+      "url": "https://issues.chromium.org/action/issues/471257336/attachments/72074727?download=true",
+      "local_path": "attachments/b.html"
+    },
+    {
+      "id": 72082742,
+      "filename": "newpoc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 104999653,
+      "url": "https://issues.chromium.org/action/issues/471257336/attachments/72082742?download=true",
+      "local_path": "attachments/newpoc.mov"
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "# Steps to reproduce the problem\n1. compile asan chromium on MacOS\n```\ngit checkout ae55321b9e200251d87f1a5c3f83c9b29b81dad1\ngit apply poc.diff\ngn gen out/asan-1220 --args=\"is_component_build=true is_debug=false is_asan=true symbol_level=2 dcheck_always_on=false treat_warnings_as_errors=false\"\n```\n2"
+}

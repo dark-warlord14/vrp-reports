@@ -30,7 +30,7 @@
       "mime_type": "text/plain",
       "size_bytes": 15873,
       "url": "https://issues.chromium.org/action/issues/388400226/attachments/62027151?download=true",
-      "local_path": null
+      "local_path": "attachments/asan.txt"
     },
     {
       "id": 62027152,
@@ -38,7 +38,7 @@
       "mime_type": "text/html",
       "size_bytes": 202,
       "url": "https://issues.chromium.org/action/issues/388400226/attachments/62027152?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     },
     {
       "id": 62027153,
@@ -46,7 +46,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 1122,
       "url": "https://issues.chromium.org/action/issues/388400226/attachments/62027153?download=true",
-      "local_path": null
+      "local_path": "attachments/run_poc.js"
     },
     {
       "id": 62027154,
@@ -54,7 +54,7 @@
       "mime_type": "text/html",
       "size_bytes": 74,
       "url": "https://issues.chromium.org/action/issues/388400226/attachments/62027154?download=true",
-      "local_path": null
+      "local_path": "attachments/sub.html"
     },
     {
       "id": 62054837,
@@ -62,7 +62,7 @@
       "mime_type": "text/plain",
       "size_bytes": 21564,
       "url": "https://issues.chromium.org/action/issues/388400226/attachments/62054837?download=true",
-      "local_path": null
+      "local_path": "attachments/asan_1403981.txt"
     }
   ],
   "update_count": 94,

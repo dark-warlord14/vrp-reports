@@ -58,9 +58,9 @@ Reporter credit: Seunghyun Lee (@0x10n) of CMU CSD / CyLab
 
 ## Attachments
 
-- poc.html (text/html, 14.3 KB)
-- serviceworker.js (text/javascript, 3.5 KB)
-- wasm-module-builder.js (text/javascript, 76.7 KB)
+- [poc.html](attachments/poc.html) (text/html, 14.3 KB)
+- [serviceworker.js](attachments/serviceworker.js) (text/javascript, 3.5 KB)
+- [wasm-module-builder.js](attachments/wasm-module-builder.js) (text/javascript, 76.7 KB)
 
 ## Timeline
 

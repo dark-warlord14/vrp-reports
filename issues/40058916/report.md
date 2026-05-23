@@ -109,11 +109,11 @@ Reporter credit: Alesandro Ortiz <https://AlesandroOrtiz.com>
 - [extension-interaction-offscreen.mp4](attachments/extension-interaction-offscreen.mp4) (video/mp4, 2.7 MB)
 - [offscreen.html](attachments/offscreen.html) (text/plain, 3.7 KB)
 - [offscreen-instructions.html](attachments/offscreen-instructions.html) (text/plain, 1.7 KB)
-- [manifest-offscreen-bookmark-xss.json](attachments/manifest-offscreen-bookmark-xss.json) (text/plain, 346 B)
-- [bg-offscreen-bookmark-xss.js](attachments/bg-offscreen-bookmark-xss.js) (text/plain, 1.7 KB)
+- manifest-offscreen-bookmark-xss.json (text/plain, 346 B)
+- bg-offscreen-bookmark-xss.js (text/plain, 1.7 KB)
 - [offscreen.html](attachments/offscreen.html) (text/plain, 4.5 KB)
 - [offscreen-instructions.html](attachments/offscreen-instructions.html) (text/plain, 1.9 KB)
-- [offscreen-bookmark-xss.mp4](attachments/offscreen-bookmark-xss.mp4) (video/mp4, 1.2 MB)
+- offscreen-bookmark-xss.mp4 (video/mp4, 1.2 MB)
 
 ## Timeline
 

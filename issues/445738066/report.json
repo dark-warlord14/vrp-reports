@@ -1,0 +1,51 @@
+{
+  "id": "445738066",
+  "url": "https://issues.chromium.org/issues/445738066",
+  "title": "(Switch statement) Google Chrome on iPadOS 26.0 sad tabs",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Mobile>iOSWeb>Security",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2025-43427"
+  ],
+  "reporter": "nt...@gmail.com",
+  "assignee": "mi...@google.com",
+  "created_date": "2025-09-18T10:56:43+00:00",
+  "modified_date": "2026-05-08T08:10:24+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 0.0,
+  "bounty_rationale": "Controlled assertion failure\n\n\nNote that the fact that this issue is not being rewarded does not mean\nthat the product team won't fix the issue. We have filed a bug with the product\nteam and they will review your report and decide if a fix is required. We'll\nlet you know if the issue was fixed.\n\nRegards, \\\nGoogle Security Bot\n\n*How did we do? Please fill out a [short anonymous survey](https://goo.gl/IR3KRH).*",
+  "attachments": [
+    {
+      "id": 69399892,
+      "filename": "testcase.html",
+      "mime_type": "text/html",
+      "size_bytes": 174,
+      "url": "https://issues.chromium.org/action/issues/445738066/attachments/69399892?download=true",
+      "local_path": "attachments/testcase.html"
+    },
+    {
+      "id": 69414893,
+      "filename": "debug-stack.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3190,
+      "url": "https://issues.chromium.org/action/issues/445738066/attachments/69414893?download=true",
+      "local_path": "attachments/debug-stack.txt"
+    },
+    {
+      "id": 69414894,
+      "filename": "opt-stack.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 5043,
+      "url": "https://issues.chromium.org/action/issues/445738066/attachments/69414894?download=true",
+      "local_path": "attachments/opt-stack.txt"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "VULNERABILITY DETAILS\n\nOpen the following testcase in Google Chrome on iPadOS 26.0.\n\nVERSION\nChrome Version: 140.0.7339.122\nOperating System: iPadOS 26.0 (23A341)\n\nREPRODUCTION CASE\n\nAs attached.\n\nI will have a bisection result soon.\n\nFOR CRASHES, PLEASE INCLUDE THE FOLLOWING ADDITIONAL INFORMATION"
+}

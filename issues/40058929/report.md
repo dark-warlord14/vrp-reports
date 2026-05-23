@@ -51,9 +51,9 @@ Reporter credit: Irvan Kurniawan (sourc7)
 
 ## Attachments
 
-- [hidecustomtoast.zip](attachments/hidecustomtoast.zip) (application/octet-stream, 628.0 KB)
-- [hidecustomtoast + select dropdown on Mi 9T.mp4](attachments/hidecustomtoast + select dropdown on Mi 9T.mp4) (video/mp4, 276.5 KB)
-- [hidecustomtoast + select dropdown on Android Emulator.webm](attachments/hidecustomtoast + select dropdown on Android Emulator.webm) (video/webm, 1.5 MB)
+- hidecustomtoast.zip (application/octet-stream, 628.0 KB)
+- hidecustomtoast + select dropdown on Mi 9T.mp4 (video/mp4, 276.5 KB)
+- hidecustomtoast + select dropdown on Android Emulator.webm (video/webm, 1.5 MB)
 - [testcase.html](attachments/testcase.html) (text/plain, 1.2 KB)
 
 ## Timeline

@@ -9,7 +9,7 @@
 | **Component** | Blink>SecurityFeature>ContentSecurityPolicy |
 | **Platforms** | Android, Fuchsia, Linux, Mac, Windows, iOS, ChromeOS |
 | **Reporter** | we...@gmail.com |
-| **Assignee** | ke...@chromium.org |
+| **Assignee** | ke...@google.com |
 | **Created** | 2025-11-23 |
 | **Bounty** | $7,000.00 |
 
@@ -109,20 +109,20 @@ Gal Weizman
 
 ## Attachments
 
-- README.md (application/octet-stream, 7.7 KB)
-- rules_pe.json (application/json, 4.1 KB)
-- rules_intercept.json (application/json, 3.0 KB)
-- rules.json (application/json, 2.5 KB)
-- rules_phish.json (application/json, 4.4 KB)
-- rules_leak_pii.json (application/json, 3.1 KB)
-- manifest.json (application/json, 1012 B)
-- gemini_demo2.mov (video/quicktime, 117.9 MB)
-- bnbndddd3.pdf (application/pdf, 10.3 KB)
-- index.html (text/html, 11.5 KB)
-- manifest.json (application/json, 1.1 KB)
-- rules_local_file_read.json (application/json, 11.2 KB)
-- README.md (text/markdown, 8.9 KB)
-- gemini_demo.mov (video/quicktime, 214.9 MB)
+- [README.md](attachments/README.md) (application/octet-stream, 7.7 KB)
+- [rules_pe.json](attachments/rules_pe.json) (application/json, 4.1 KB)
+- [rules_intercept.json](attachments/rules_intercept.json) (application/json, 3.0 KB)
+- [rules.json](attachments/rules.json) (application/json, 2.5 KB)
+- [rules_phish.json](attachments/rules_phish.json) (application/json, 4.4 KB)
+- [rules_leak_pii.json](attachments/rules_leak_pii.json) (application/json, 3.1 KB)
+- [manifest.json](attachments/manifest.json) (application/json, 1012 B)
+- [gemini_demo2.mov](attachments/gemini_demo2.mov) (video/quicktime, 117.9 MB)
+- [bnbndddd3.pdf](attachments/bnbndddd3.pdf) (application/pdf, 10.3 KB)
+- [index.html](attachments/index.html) (text/html, 11.5 KB)
+- [manifest.json](attachments/manifest.json) (application/json, 1.1 KB)
+- [rules_local_file_read.json](attachments/rules_local_file_read.json) (application/json, 11.2 KB)
+- [README.md](attachments/README.md) (text/markdown, 8.9 KB)
+- [gemini_demo.mov](attachments/gemini_demo.mov) (video/quicktime, 214.9 MB)
 
 ## Timeline
 

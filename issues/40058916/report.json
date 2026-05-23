@@ -69,7 +69,7 @@
       "mime_type": "text/plain",
       "size_bytes": 346,
       "url": "https://issues.chromium.org/action/issues/40058916/attachments/52921896?download=true",
-      "local_path": "attachments/manifest-offscreen-bookmark-xss.json"
+      "local_path": null
     },
     {
       "id": 52921897,
@@ -77,7 +77,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1707,
       "url": "https://issues.chromium.org/action/issues/40058916/attachments/52921897?download=true",
-      "local_path": "attachments/bg-offscreen-bookmark-xss.js"
+      "local_path": null
     },
     {
       "id": 52921898,
@@ -101,7 +101,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1246330,
       "url": "https://issues.chromium.org/action/issues/40058916/attachments/52921900?download=true",
-      "local_path": "attachments/offscreen-bookmark-xss.mp4"
+      "local_path": null
     }
   ],
   "update_count": 53,

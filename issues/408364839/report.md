@@ -194,8 +194,8 @@ Command line: `/proc/self/exe --type=gpu-process --no-sandbox --ozone-platform=w
 
 ## Attachments
 
-- gfxrecon_capture_20250404T174811.gfxr (application/octet-stream, 10.4 KB)
-- nir_extract_bits.html (text/html, 2.8 KB)
+- [gfxrecon_capture_20250404T174811.gfxr](attachments/gfxrecon_capture_20250404T174811.gfxr) (application/octet-stream, 10.4 KB)
+- [nir_extract_bits.html](attachments/nir_extract_bits.html) (text/html, 2.8 KB)
 
 ## Timeline
 

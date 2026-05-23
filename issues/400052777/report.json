@@ -30,7 +30,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 361,
       "url": "https://issues.chromium.org/action/issues/400052777/attachments/63379873?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.js"
     },
     {
       "id": 63464813,
@@ -38,7 +38,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 2810,
       "url": "https://issues.chromium.org/action/issues/400052777/attachments/63464813?download=true",
-      "local_path": null
+      "local_path": "attachments/rw_exploit.js"
     },
     {
       "id": 63466799,
@@ -46,7 +46,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 3561,
       "url": "https://issues.chromium.org/action/issues/400052777/attachments/63466799?download=true",
-      "local_path": null
+      "local_path": "attachments/rw_exploit_no_flags.js"
     },
     {
       "id": 63522907,
@@ -54,7 +54,7 @@
       "mime_type": "image/jpeg",
       "size_bytes": 188210,
       "url": "https://issues.chromium.org/action/issues/400052777/attachments/63522907?download=true",
-      "local_path": null
+      "local_path": "attachments/demo.jpg"
     },
     {
       "id": 63525862,
@@ -62,7 +62,7 @@
       "mime_type": "text/html",
       "size_bytes": 5075,
       "url": "https://issues.chromium.org/action/issues/400052777/attachments/63525862?download=true",
-      "local_path": null
+      "local_path": "attachments/exploit.html"
     }
   ],
   "update_count": 92,

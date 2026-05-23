@@ -174,10 +174,10 @@ Received signal 11 SEGV_ACCERR 78baa6b691a0
 
 ## Attachments
 
-- combine.gfxr (application/octet-stream, 11.3 KB)
-- combine.wgsl (application/octet-stream, 186 B)
-- combine.html (text/html, 2.7 KB)
-- Dockerfile (application/octet-stream, 1.9 KB)
+- [combine.gfxr](attachments/combine.gfxr) (application/octet-stream, 11.3 KB)
+- [combine.wgsl](attachments/combine.wgsl) (application/octet-stream, 186 B)
+- [combine.html](attachments/combine.html) (text/html, 2.7 KB)
+- [Dockerfile](attachments/Dockerfile) (application/octet-stream, 1.9 KB)
 
 ## Timeline
 

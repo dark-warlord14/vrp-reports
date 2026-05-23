@@ -53,11 +53,11 @@ Regression: N/A \
 
 ## Attachments
 
-- chrome repro.mp4 (video/mp4, 2.6 MB)
+- [chrome repro.mp4](attachments/chrome repro.mp4) (video/mp4, 2.6 MB)
 - expected.png (image/png, 77.1 KB)
 - actual.png (image/png, 49.6 KB)
 - deleted (application/octet-stream, 0 B)
-- Verified Fix.mp4 (video/mp4, 313.6 KB)
+- [Verified Fix.mp4](attachments/Verified Fix.mp4) (video/mp4, 313.6 KB)
 
 ## Timeline
 

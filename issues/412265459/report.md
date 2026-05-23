@@ -187,9 +187,9 @@ Regression: N/A
 
 ## Attachments
 
-- poc.html (text/html, 7.5 KB)
-- poc2.html (text/html, 24.1 KB)
-- 2025-04-23 17-10-09.mkv (video/x-matroska, 4.1 MB)
+- [poc.html](attachments/poc.html) (text/html, 7.5 KB)
+- [poc2.html](attachments/poc2.html) (text/html, 24.1 KB)
+- [2025-04-23 17-10-09.mkv](attachments/2025-04-23 17-10-09.mkv) (video/x-matroska, 4.1 MB)
 
 ## Timeline
 

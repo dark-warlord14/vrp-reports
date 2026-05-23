@@ -1,0 +1,162 @@
+{
+  "id": "444176961",
+  "url": "https://issues.chromium.org/issues/444176961",
+  "title": "use-after-poison in ContextInvalidationListener",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": "142.0.7405.2",
+  "cve_ids": [],
+  "reporter": "vm...@gmail.com",
+  "assignee": "rd...@chromium.org",
+  "created_date": "2025-09-10T16:18:53+00:00",
+  "modified_date": "2026-05-17T07:57:37+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "Moderately mitigated (sandboxed)",
+  "attachments": [
+    {
+      "id": 69187236,
+      "filename": "poc.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 9900,
+      "url": "https://issues.chromium.org/action/issues/444176961/attachments/69187236?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 69187237,
+      "filename": "uap.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2537083,
+      "url": "https://issues.chromium.org/action/issues/444176961/attachments/69187237?download=true",
+      "local_path": "attachments/uap.mp4"
+    },
+    {
+      "id": 69533537,
+      "filename": "Screencast from 2025年09月23日 15时34分46秒.webm",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 9670811,
+      "url": "https://issues.chromium.org/action/issues/444176961/attachments/69533537?download=true",
+      "local_path": "attachments/Screencast from 2025年09月23日 15时34分46秒.webm"
+    },
+    {
+      "id": 69533538,
+      "filename": "Screencast from 2025年09月23日 15时08分32秒.webm",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2650189,
+      "url": "https://issues.chromium.org/action/issues/444176961/attachments/69533538?download=true",
+      "local_path": "attachments/Screencast from 2025年09月23日 15时08分32秒.webm"
+    },
+    {
+      "id": 69583792,
+      "filename": "crashlog_CL",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 11460,
+      "url": "https://issues.chromium.org/action/issues/444176961/attachments/69583792?download=true",
+      "local_path": "attachments/crashlog_CL"
+    },
+    {
+      "id": 70374349,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 1502,
+      "url": "https://issues.chromium.org/action/issues/444176961/attachments/70374349?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 70372903,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 137,
+      "url": "https://issues.chromium.org/action/issues/444176961/attachments/70372903?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 70372904,
+      "filename": "main.html",
+      "mime_type": "text/html",
+      "size_bytes": 55,
+      "url": "https://issues.chromium.org/action/issues/444176961/attachments/70372904?download=true",
+      "local_path": "attachments/main.html"
+    },
+    {
+      "id": 70374350,
+      "filename": "main.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 39797,
+      "url": "https://issues.chromium.org/action/issues/444176961/attachments/70374350?download=true",
+      "local_path": "attachments/main.js"
+    },
+    {
+      "id": 71264062,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/444176961/attachments/71264062?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71274951,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/444176961/attachments/71274951?download=true",
+      "local_path": null
+    },
+    {
+      "id": 71274952,
+      "filename": "log-1522585",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 5491,
+      "url": "https://issues.chromium.org/action/issues/444176961/attachments/71274952?download=true",
+      "local_path": "attachments/log-1522585"
+    },
+    {
+      "id": 71270130,
+      "filename": "log-1549553",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 5486,
+      "url": "https://issues.chromium.org/action/issues/444176961/attachments/71270130?download=true",
+      "local_path": "attachments/log-1549553"
+    },
+    {
+      "id": 72018335,
+      "filename": "log-1562390",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 12232,
+      "url": "https://issues.chromium.org/action/issues/444176961/attachments/72018335?download=true",
+      "local_path": "attachments/log-1562390"
+    },
+    {
+      "id": 72035908,
+      "filename": "log-debug-1562437",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 49239,
+      "url": "https://issues.chromium.org/action/issues/444176961/attachments/72035908?download=true",
+      "local_path": "attachments/log-debug-1562437"
+    },
+    {
+      "id": 72962183,
+      "filename": "log-1576996",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 10625,
+      "url": "https://issues.chromium.org/action/issues/444176961/attachments/72962183?download=true",
+      "local_path": "attachments/log-1576996"
+    },
+    {
+      "id": 72960752,
+      "filename": "log-debug-1577024",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 16884,
+      "url": "https://issues.chromium.org/action/issues/444176961/attachments/72960752?download=true",
+      "local_path": "attachments/log-debug-1577024"
+    }
+  ],
+  "update_count": 130,
+  "description_snippet": "# Steps to reproduce the problem\n1. load extension poc.zip. (**disable --no-sandbox **; If it does not crash, try several times.)\n\n# Problem Description\nIn the process of `UnloadExtension` when `extensions::APIBindingsSystem::WillReleaseContext(v8::Local<v8::Context>)` triggers context invalidation."
+}

@@ -14,7 +14,7 @@
   "reporter": "zh...@gmail.com",
   "assignee": "ni...@intel.com",
   "created_date": "2024-01-09T17:37:53+00:00",
-  "modified_date": "2026-03-26T21:28:03+00:00",
+  "modified_date": "2026-03-31T22:41:21+00:00",
   "bounty_confirmed": true,
   "bounty_amount": 10000.0,
   "bounty_rationale": null,
@@ -60,6 +60,6 @@
       "local_path": "attachments/heap-buffer-overflow"
     }
   ],
-  "update_count": 60,
+  "update_count": 61,
   "description_snippet": "---\n\n### Report description\n\n\nSecurity: use-after-poison in blink::MLGraphXnnpack::ComputeAsyncImpl\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nGoogle Chrome\n\n\n---\n\n### The problem\n\n\n#### Please describe the technical details of the vulnerability\n\nVULN"
 }

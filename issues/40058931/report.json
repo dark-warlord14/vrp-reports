@@ -25,7 +25,7 @@
       "mime_type": "text/plain",
       "size_bytes": 769,
       "url": "https://issues.chromium.org/action/issues/40058931/attachments/53063135?download=true",
-      "local_path": "attachments/webshare_poc1.html"
+      "local_path": null
     },
     {
       "id": 53063136,
@@ -33,7 +33,7 @@
       "mime_type": "text/plain",
       "size_bytes": 928,
       "url": "https://issues.chromium.org/action/issues/40058931/attachments/53063136?download=true",
-      "local_path": "attachments/webshare_poc2.html"
+      "local_path": null
     }
   ],
   "update_count": 68,

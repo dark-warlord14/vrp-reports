@@ -25,7 +25,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1967676,
       "url": "https://issues.chromium.org/action/issues/40060685/attachments/53018945?download=true",
-      "local_path": "attachments/poc-fullscreen-chrome.mp4"
+      "local_path": null
     },
     {
       "id": 53018946,
@@ -33,7 +33,7 @@
       "mime_type": "text/plain",
       "size_bytes": 358,
       "url": "https://issues.chromium.org/action/issues/40060685/attachments/53018946?download=true",
-      "local_path": "attachments/poc-external-notif.html"
+      "local_path": null
     },
     {
       "id": 53019051,
@@ -41,7 +41,7 @@
       "mime_type": "image/png",
       "size_bytes": 51706,
       "url": "https://issues.chromium.org/action/issues/40060685/attachments/53019051?download=true",
-      "local_path": "attachments/fs-bottom.png"
+      "local_path": null
     }
   ],
   "update_count": 49,

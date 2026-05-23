@@ -158,10 +158,10 @@ Command line: `/proc/self/exe --type=renderer --crashpad-handler-pid=2287 --enab
 
 ## Attachments
 
-- poc.html (text/html, 379 B)
-- frame1.html (text/html, 640 B)
-- frame2.html (text/html, 17.7 KB)
-- stackscan1.log (text/plain, 587.4 KB)
+- [poc.html](attachments/poc.html) (text/html, 379 B)
+- [frame1.html](attachments/frame1.html) (text/html, 640 B)
+- [frame2.html](attachments/frame2.html) (text/html, 17.7 KB)
+- [stackscan1.log](attachments/stackscan1.log) (text/plain, 587.4 KB)
 
 ## Timeline
 

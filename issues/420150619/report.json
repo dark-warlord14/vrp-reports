@@ -30,7 +30,7 @@
       "mime_type": "text/html",
       "size_bytes": 3220,
       "url": "https://issues.chromium.org/action/issues/420150619/attachments/66155442?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     },
     {
       "id": 66155443,
@@ -38,7 +38,7 @@
       "mime_type": "video/webm",
       "size_bytes": 2165175,
       "url": "https://issues.chromium.org/action/issues/420150619/attachments/66155443?download=true",
-      "local_path": null
+      "local_path": "attachments/big-buck-bunny_trailer.webm"
     },
     {
       "id": 66162091,
@@ -46,7 +46,7 @@
       "mime_type": "text/html",
       "size_bytes": 3191,
       "url": "https://issues.chromium.org/action/issues/420150619/attachments/66162091?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     }
   ],
   "update_count": 87,

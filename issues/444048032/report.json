@@ -19,7 +19,7 @@
   "reporter": "vs...@gmail.com",
   "assignee": "jk...@chromium.org",
   "created_date": "2025-09-10T12:45:03+00:00",
-  "modified_date": "2025-12-19T12:43:43+00:00",
+  "modified_date": "2026-03-25T15:15:05+00:00",
   "bounty_confirmed": true,
   "bounty_amount": 5000.0,
   "bounty_rationale": "v8 sandbox bypass with uncontrolled write",
@@ -30,9 +30,9 @@
       "mime_type": "text/javascript",
       "size_bytes": 1133,
       "url": "https://issues.chromium.org/action/issues/444048032/attachments/69167653?download=true",
-      "local_path": null
+      "local_path": "attachments/bug.js"
     }
   ],
-  "update_count": 43,
+  "update_count": 46,
   "description_snippet": "#### VULNERABILITY DETAILS\nConcurrently modifying a `BigInt` when it is processed by `MultiplyToomCook` causes an OOB write. The value mutated by the reproducer is read here:\n```\n#10 0x000055555d1d1ec7 in v8::bigint::Digits::read_4byte_aligned (i=<optimized out>, this=<optimized out>) at ../../src/b"
 }

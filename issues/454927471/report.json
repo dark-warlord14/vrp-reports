@@ -30,7 +30,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 3144,
       "url": "https://issues.chromium.org/action/issues/454927471/attachments/70394631?download=true",
-      "local_path": null
+      "local_path": "attachments/maglev-known-builtin-poc.js"
     },
     {
       "id": 70394632,
@@ -38,7 +38,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 892,
       "url": "https://issues.chromium.org/action/issues/454927471/attachments/70394632?download=true",
-      "local_path": null
+      "local_path": "attachments/fix.patch"
     }
   ],
   "update_count": 34,

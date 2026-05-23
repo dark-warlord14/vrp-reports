@@ -36,12 +36,12 @@ Steps to reproduce:
 
 ## Attachments
 
-- spoofdomain.mp4 (video/mp4, 4.8 MB)
-- googlevk.jpg (image/jpeg, 24.5 KB)
-- googlevk1.jpg (image/jpeg, 24.5 KB)
-- spoofdomainx.html (text/html, 1.0 KB)
-- fixurladdressbar.mp4 (video/mp4, 1.7 MB)
-- fixurladdressbar.jpg (image/jpeg, 26.4 KB)
+- [spoofdomain.mp4](attachments/spoofdomain.mp4) (video/mp4, 4.8 MB)
+- [googlevk.jpg](attachments/googlevk.jpg) (image/jpeg, 24.5 KB)
+- [googlevk1.jpg](attachments/googlevk1.jpg) (image/jpeg, 24.5 KB)
+- [spoofdomainx.html](attachments/spoofdomainx.html) (text/html, 1.0 KB)
+- [fixurladdressbar.mp4](attachments/fixurladdressbar.mp4) (video/mp4, 1.7 MB)
+- [fixurladdressbar.jpg](attachments/fixurladdressbar.jpg) (image/jpeg, 26.4 KB)
 
 ## Timeline
 

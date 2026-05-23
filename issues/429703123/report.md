@@ -183,7 +183,7 @@ Reporter credit: Seunghyun Lee (@0x10n) of CMU CyLab
 
 ## Attachments
 
-- osr-to-baseline-code-confusion.js (text/javascript, 87.3 KB)
+- [osr-to-baseline-code-confusion.js](attachments/osr-to-baseline-code-confusion.js) (text/javascript, 87.3 KB)
 
 ## Timeline
 

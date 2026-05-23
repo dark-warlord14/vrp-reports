@@ -27,7 +27,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 2190216,
       "url": "https://issues.chromium.org/action/issues/420734141/attachments/66220260?download=true",
-      "local_path": null
+      "local_path": "attachments/bandicam 2025-05-28 07-56-04-516.mp4"
     },
     {
       "id": 66220261,
@@ -35,7 +35,7 @@
       "mime_type": "text/html",
       "size_bytes": 1942,
       "url": "https://issues.chromium.org/action/issues/420734141/attachments/66220261?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     },
     {
       "id": 66220262,
@@ -43,7 +43,7 @@
       "mime_type": "application/x-x509-ca-cert",
       "size_bytes": 1064,
       "url": "https://issues.chromium.org/action/issues/420734141/attachments/66220262?download=true",
-      "local_path": null
+      "local_path": "attachments/server.crt"
     },
     {
       "id": 66220263,
@@ -51,7 +51,7 @@
       "mime_type": "application/x-iwork-keynote-sffkey",
       "size_bytes": 1732,
       "url": "https://issues.chromium.org/action/issues/420734141/attachments/66220263?download=true",
-      "local_path": null
+      "local_path": "attachments/server.key"
     },
     {
       "id": 66220264,
@@ -59,7 +59,7 @@
       "mime_type": "text/x-python",
       "size_bytes": 715,
       "url": "https://issues.chromium.org/action/issues/420734141/attachments/66220264?download=true",
-      "local_path": null
+      "local_path": "attachments/https_server_fileserve.py"
     }
   ],
   "update_count": 113,

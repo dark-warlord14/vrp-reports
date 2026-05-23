@@ -215,11 +215,11 @@ Refer to https://chromium.googlesource.com/chromium/src/+/main/base/memory/raw_p
 
 ## Attachments
 
-- extension.zip (application/zip, 1.2 KB)
-- popup.js (text/javascript, 859 B)
-- background.js (text/javascript, 38 B)
-- manifest.json (application/json, 281 B)
-- popup.html (text/html, 188 B)
+- [extension.zip](attachments/extension.zip) (application/zip, 1.2 KB)
+- [popup.js](attachments/popup.js) (text/javascript, 859 B)
+- [background.js](attachments/background.js) (text/javascript, 38 B)
+- [manifest.json](attachments/manifest.json) (application/json, 281 B)
+- [popup.html](attachments/popup.html) (text/html, 188 B)
 
 ## Timeline
 

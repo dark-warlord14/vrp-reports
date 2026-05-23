@@ -187,8 +187,8 @@ Received signal 11 SEGV_MAPERR 7fae64004f57
 
 ## Attachments
 
-- [poc_code.js](attachments/poc_code.js) (text/plain, 15.1 KB)
-- [poc.js](attachments/poc.js) (text/plain, 3.2 KB)
+- poc_code.js (text/plain, 15.1 KB)
+- poc.js (text/plain, 3.2 KB)
 
 ## Timeline
 

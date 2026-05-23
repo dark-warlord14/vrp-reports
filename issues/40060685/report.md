@@ -51,9 +51,9 @@ Reporter credit: Axel Chong
 
 ## Attachments
 
-- [poc-fullscreen-chrome.mp4](attachments/poc-fullscreen-chrome.mp4) (video/mp4, 1.9 MB)
-- [poc-external-notif.html](attachments/poc-external-notif.html) (text/plain, 358 B)
-- [fs-bottom.png](attachments/fs-bottom.png) (image/png, 50.5 KB)
+- poc-fullscreen-chrome.mp4 (video/mp4, 1.9 MB)
+- poc-external-notif.html (text/plain, 358 B)
+- fs-bottom.png (image/png, 50.5 KB)
 
 ## Timeline
 

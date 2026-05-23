@@ -138,8 +138,8 @@ Regression: Yes
 
 ## Attachments
 
-- Mon Apr 21 2025 09:58:57 GMT+0800 (中国标准时间).png (image/png, 13.3 KB)
-- stacktrace.txt (text/plain, 10.0 KB)
+- [Mon Apr 21 2025 09:58:57 GMT+0800 (中国标准时间).png](attachments/Mon Apr 21 2025 09_58_57 GMT+0800 (中国标准时间).png) (image/png, 13.3 KB)
+- [stacktrace.txt](attachments/stacktrace.txt) (text/plain, 10.0 KB)
 
 ## Timeline
 

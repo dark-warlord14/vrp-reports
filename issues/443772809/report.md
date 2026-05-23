@@ -102,7 +102,7 @@ Reporter credit: Krishna Ravishankar (@krsh732)
 
 ## Attachments
 
-- dispatch-entry-uaf.js (text/javascript, 2.2 KB)
+- [dispatch-entry-uaf.js](attachments/dispatch-entry-uaf.js) (text/javascript, 2.2 KB)
 
 ## Timeline
 

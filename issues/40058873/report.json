@@ -149,7 +149,7 @@
       "mime_type": "text/plain",
       "size_bytes": 2306,
       "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386583?download=true",
-      "local_path": "attachments/extension-over-prompt-openPopup-june2022.html"
+      "local_path": null
     },
     {
       "id": 53386584,
@@ -157,7 +157,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 4243095,
       "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386584?download=true",
-      "local_path": "attachments/PoC-openPopup-v104-Canary-June2022.mp4"
+      "local_path": null
     },
     {
       "id": 53386691,
@@ -181,7 +181,7 @@
       "mime_type": "text/plain",
       "size_bytes": 926,
       "url": "https://issues.chromium.org/action/issues/40058873/attachments/53386693?download=true",
-      "local_path": "attachments/manifest.json"
+      "local_path": null
     },
     {
       "id": 53386694,

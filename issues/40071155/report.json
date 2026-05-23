@@ -15,7 +15,7 @@
   "reporter": "he...@gmail.com",
   "assignee": "sz...@google.com",
   "created_date": "2023-09-01T16:25:22+00:00",
-  "modified_date": "2026-03-17T07:55:20+00:00",
+  "modified_date": "2026-04-21T02:58:16+00:00",
   "bounty_confirmed": true,
   "bounty_amount": 1000.0,
   "bounty_rationale": "Highly mitigated code execution in a sandboxed process",
@@ -61,6 +61,6 @@
       "local_path": "attachments/poc.js"
     }
   ],
-  "update_count": 133,
+  "update_count": 137,
   "description_snippet": "**Steps to reproduce the problem:**   \nwill attach details soon.  \n  \n**Problem Description:**   \nrenderer UAF  \n  \n**Additional Comments:**   \n  \n  \n**Chrome version: ** 118.0.5979.0 **Channel: ** Dev  \n  \n**OS:** Linux"
 }

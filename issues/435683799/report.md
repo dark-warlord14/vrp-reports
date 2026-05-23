@@ -87,8 +87,8 @@ if (check == gl.FRAMEBUFFER_COMPLETE) {
 
 ## Attachments
 
-- testcase.html (text/html, 2.2 KB)
-- asan_crashlog.txt (text/plain, 39.5 KB)
+- [testcase.html](attachments/testcase.html) (text/html, 2.2 KB)
+- [asan_crashlog.txt](attachments/asan_crashlog.txt) (text/plain, 39.5 KB)
 
 ## Timeline
 

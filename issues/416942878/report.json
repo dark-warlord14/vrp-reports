@@ -28,7 +28,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1122635,
       "url": "https://issues.chromium.org/action/issues/416942878/attachments/65715163?download=true",
-      "local_path": null
+      "local_path": "attachments/samesite-example.mp4"
     },
     {
       "id": 65690885,
@@ -36,7 +36,7 @@
       "mime_type": "application/pdf",
       "size_bytes": 10028,
       "url": "https://issues.chromium.org/action/issues/416942878/attachments/65690885?download=true",
-      "local_path": null
+      "local_path": "attachments/samesitetest-link.pdf"
     }
   ],
   "update_count": 39,

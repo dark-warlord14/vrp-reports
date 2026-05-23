@@ -44,8 +44,8 @@ Regression: N/A
 - VID-20250210-WA0003.mp4 (video/mp4, 17.7 MB)
 - VID-20250210-WA0004.mp4 (video/mp4, 13.5 MB)
 - VID-20250211-WA0006.mp4 (video/mp4, 17.9 MB)
-- VID-20250212-WA0000.mp4 (video/mp4, 41.3 MB)
-- VID-20250212-WA0001.mp4 (video/mp4, 9.6 MB)
+- [VID-20250212-WA0000.mp4](attachments/VID-20250212-WA0000.mp4) (video/mp4, 41.3 MB)
+- [VID-20250212-WA0001.mp4](attachments/VID-20250212-WA0001.mp4) (video/mp4, 9.6 MB)
 
 ## Timeline
 

@@ -298,12 +298,12 @@ Regression: N/A \
 
 ## Attachments
 
-- asan.log (text/plain, 23.6 KB)
-- diff.patch (text/x-diff, 4.9 KB)
-- poc.html (text/html, 396 B)
-- asan2.log (text/plain, 8.3 KB)
-- diff2.patch (text/x-diff, 6.1 KB)
-- poc.mov (video/quicktime, 26.1 MB)
+- [asan.log](attachments/asan.log) (text/plain, 23.6 KB)
+- [diff.patch](attachments/diff.patch) (text/x-diff, 4.9 KB)
+- [poc.html](attachments/poc.html) (text/html, 396 B)
+- [asan2.log](attachments/asan2.log) (text/plain, 8.3 KB)
+- [diff2.patch](attachments/diff2.patch) (text/x-diff, 6.1 KB)
+- [poc.mov](attachments/poc.mov) (video/quicktime, 26.1 MB)
 
 ## Timeline
 

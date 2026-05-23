@@ -30,7 +30,7 @@
       "mime_type": "text/html",
       "size_bytes": 1238,
       "url": "https://issues.chromium.org/action/issues/464459404/attachments/71352639?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     },
     {
       "id": 71369094,
@@ -38,7 +38,7 @@
       "mime_type": "image/png",
       "size_bytes": 168841,
       "url": "https://issues.chromium.org/action/issues/464459404/attachments/71369094?download=true",
-      "local_path": null
+      "local_path": "attachments/Sat Nov 29 2025 18_29_55 GMT+0530 (India Standard Time).png"
     },
     {
       "id": 71368977,
@@ -46,7 +46,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 1238,
       "url": "https://issues.chromium.org/action/issues/464459404/attachments/71368977?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.js"
     }
   ],
   "update_count": 59,

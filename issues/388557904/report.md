@@ -92,8 +92,8 @@ Command line: `"./chrome.exe" --type=renderer --string-annotations --user-data-d
 
 ## Attachments
 
-- poc.html (text/html, 39 B)
-- poc.pdf (application/pdf, 124 B)
+- [poc.html](attachments/poc.html) (text/html, 39 B)
+- [poc.pdf](attachments/poc.pdf) (application/pdf, 124 B)
 
 ## Timeline
 

@@ -1,121 +1,119 @@
 {
-  "total_reports": 1954,
-  "total_bounty": 13518789.0,
-  "avg_bounty": 6954.11,
+  "total_reports": 1698,
+  "total_bounty": 12211789.0,
+  "avg_bounty": 7221.64,
   "by_year": {
     "2015": {
-      "count": 37,
-      "total_bounty": 81337.0
+      "count": 19,
+      "total_bounty": 46337.0
     },
     "2016": {
-      "count": 43,
-      "total_bounty": 95500.0
+      "count": 5,
+      "total_bounty": 4000.0
     },
     "2017": {
-      "count": 41,
-      "total_bounty": 97000.0
+      "count": 14,
+      "total_bounty": 33000.0
     },
     "2018": {
-      "count": 24,
-      "total_bounty": 37000.0
+      "count": 20,
+      "total_bounty": 27000.0
     },
     "2019": {
       "count": 17,
       "total_bounty": 59000.0
     },
     "2020": {
-      "count": 154,
-      "total_bounty": 1024500.0
+      "count": 153,
+      "total_bounty": 1019500.0
     },
     "2021": {
-      "count": 369,
-      "total_bounty": 2948000.0
+      "count": 186,
+      "total_bounty": 1557500.0
     },
     "2022": {
       "count": 446,
       "total_bounty": 2752000.0
     },
     "2023": {
-      "count": 460,
-      "total_bounty": 2466587.0
+      "count": 444,
+      "total_bounty": 2387587.0
     },
     "2024": {
-      "count": 100,
-      "total_bounty": 903365.0
+      "count": 98,
+      "total_bounty": 897365.0
     },
     "2025": {
-      "count": 238,
-      "total_bounty": 2971500.0
+      "count": 262,
+      "total_bounty": 3134500.0
     },
     "2026": {
-      "count": 20,
-      "total_bounty": 83000.0
+      "count": 34,
+      "total_bounty": 294000.0
     }
   },
   "by_severity": {
-    "S3-Low": 1745,
-    "S4-Minimal": 200,
-    "Unknown": 5,
+    "S3-Low": 1525,
+    "S4-Minimal": 169,
     "S1-High": 4
   },
   "by_status": {
-    "Assigned": 1510,
-    "Accepted": 341,
-    "Fixed": 59,
-    "New": 28,
-    "Verified": 11,
-    "Unknown": 5
+    "Assigned": 1289,
+    "Accepted": 320,
+    "Fixed": 51,
+    "New": 25,
+    "Verified": 13
   },
   "by_component": {
-    "Blink": 865,
-    "Internals": 365,
-    "UI": 357,
-    "Platform": 140,
-    "Unknown": 125,
+    "Blink": 763,
+    "UI": 307,
+    "Internals": 290,
+    "Platform": 125,
+    "Unknown": 111,
+    "Dawn": 29,
     "Mobile": 29,
-    "Dawn": 27,
     "Enterprise": 10,
-    "OS": 7,
+    "OS": 6,
     "Speed": 4,
     "IO": 4,
     "Services (Use Subcomponents)": 3,
-    "Privacy": 3,
     "PDFium": 2,
     "Dawn, Dawn": 2,
-    "Privacy, UI": 2,
     "Enterprise, Platform": 2,
     "Infra": 2,
+    "Privacy": 2,
+    "Test (Use Subcomponents)": 1,
     "Dawn, Internals": 1,
     "Issue Tracker, Platform": 1
   },
   "bounty_histogram": [
     {
       "range": "$0-500",
-      "count": 11
+      "count": 13
     },
     {
       "range": "$500-1K",
-      "count": 109
+      "count": 95
     },
     {
       "range": "$1K-3K",
-      "count": 501
+      "count": 433
     },
     {
       "range": "$3K-5K",
-      "count": 273
+      "count": 229
     },
     {
       "range": "$5K-10K",
-      "count": 600
+      "count": 522
     },
     {
       "range": "$10K-20K",
-      "count": 286
+      "count": 244
     },
     {
       "range": "$20K+",
-      "count": 164
+      "count": 155
     }
   ],
   "top_bounties": [
@@ -225,6 +223,13 @@
       "year": 2024
     },
     {
+      "id": "483569511",
+      "title": "Heap-use-after-free in blink::FontFeatureValuesMapIterationSource::FetchNextItem",
+      "bounty_amount": 50000.0,
+      "severity": "S3-Low",
+      "year": 2026
+    },
+    {
       "id": "467247247",
       "title": "Maglev's handling of target and new.target is incorrect",
       "bounty_amount": 50000.0,
@@ -248,13 +253,6 @@
     {
       "id": "447613211",
       "title": "Type confusion in inline cache prototype loading with Webassembly object prototype",
-      "bounty_amount": 50000.0,
-      "severity": "S3-Low",
-      "year": 2025
-    },
-    {
-      "id": "403211343",
-      "title": "Improper Error Handling in LateLoadElimination for String Map in Turboshaft Leads to RCE",
       "bounty_amount": 50000.0,
       "severity": "S3-Low",
       "year": 2025

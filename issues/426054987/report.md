@@ -51,8 +51,8 @@ Coming soon.
 
 ## Attachments
 
-- asan.txt (text/plain, 21.9 KB)
-- poc.html (text/html, 1.7 KB)
+- [asan.txt](attachments/asan.txt) (text/plain, 21.9 KB)
+- [poc.html](attachments/poc.html) (text/html, 1.7 KB)
 
 ## Timeline
 

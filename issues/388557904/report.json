@@ -29,7 +29,7 @@
       "mime_type": "text/html",
       "size_bytes": 39,
       "url": "https://issues.chromium.org/action/issues/388557904/attachments/62057278?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     },
     {
       "id": 62057279,
@@ -37,7 +37,7 @@
       "mime_type": "application/pdf",
       "size_bytes": 124,
       "url": "https://issues.chromium.org/action/issues/388557904/attachments/62057279?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.pdf"
     }
   ],
   "update_count": 45,

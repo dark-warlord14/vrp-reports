@@ -25,7 +25,7 @@
       "mime_type": "text/plain",
       "size_bytes": 60934,
       "url": "https://issues.chromium.org/action/issues/40060701/attachments/53352343?download=true",
-      "local_path": "attachments/asan.log"
+      "local_path": null
     },
     {
       "id": 53352344,
@@ -33,7 +33,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1528,
       "url": "https://issues.chromium.org/action/issues/40060701/attachments/53352344?download=true",
-      "local_path": "attachments/poc.html"
+      "local_path": null
     },
     {
       "id": 53352345,

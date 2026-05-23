@@ -43,9 +43,9 @@ Regression: N/A \
 
 ## Attachments
 
-- alert.html (text/html, 357 B)
-- index.html (text/html, 278 B)
-- screen.mp4 (video/mp4, 548.1 KB)
+- [alert.html](attachments/alert.html) (text/html, 357 B)
+- [index.html](attachments/index.html) (text/html, 278 B)
+- [screen.mp4](attachments/screen.mp4) (video/mp4, 548.1 KB)
 
 ## Timeline
 

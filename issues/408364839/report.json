@@ -26,7 +26,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 10648,
       "url": "https://issues.chromium.org/action/issues/408364839/attachments/64568956?download=true",
-      "local_path": null
+      "local_path": "attachments/gfxrecon_capture_20250404T174811.gfxr"
     },
     {
       "id": 64568957,
@@ -34,7 +34,7 @@
       "mime_type": "text/html",
       "size_bytes": 2903,
       "url": "https://issues.chromium.org/action/issues/408364839/attachments/64568957?download=true",
-      "local_path": null
+      "local_path": "attachments/nir_extract_bits.html"
     }
   ],
   "update_count": 46,

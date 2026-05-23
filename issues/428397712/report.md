@@ -66,7 +66,7 @@ Regression: N/A \
 
 ## Attachments
 
-- chromium-access-ext-files.zip (application/zip, 2.1 KB)
+- [chromium-access-ext-files.zip](attachments/chromium-access-ext-files.zip) (application/zip, 2.1 KB)
 
 ## Timeline
 

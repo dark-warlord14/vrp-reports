@@ -28,7 +28,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 1474,
       "url": "https://issues.chromium.org/action/issues/382540635/attachments/61337513?download=true",
-      "local_path": null
+      "local_path": "attachments/bg-keyboard.js"
     },
     {
       "id": 61337514,
@@ -36,7 +36,7 @@
       "mime_type": "application/json",
       "size_bytes": 494,
       "url": "https://issues.chromium.org/action/issues/382540635/attachments/61337514?download=true",
-      "local_path": null
+      "local_path": "attachments/manifest.json"
     },
     {
       "id": 61337515,
@@ -44,7 +44,7 @@
       "mime_type": "text/html",
       "size_bytes": 1584,
       "url": "https://issues.chromium.org/action/issues/382540635/attachments/61337515?download=true",
-      "local_path": null
+      "local_path": "attachments/popup.html"
     },
     {
       "id": 61337516,

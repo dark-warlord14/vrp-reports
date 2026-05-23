@@ -26,7 +26,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 12943,
       "url": "https://issues.chromium.org/action/issues/419939693/attachments/66091267?download=true",
-      "local_path": null
+      "local_path": "attachments/gfxrecon_capture_20250524T090556.gfxr"
     },
     {
       "id": 66091268,
@@ -34,7 +34,7 @@
       "mime_type": "text/html",
       "size_bytes": 3226,
       "url": "https://issues.chromium.org/action/issues/419939693/attachments/66091268?download=true",
-      "local_path": null
+      "local_path": "attachments/build_interference_graph.html"
     }
   ],
   "update_count": 96,

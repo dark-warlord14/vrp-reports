@@ -140,9 +140,9 @@ Reporter credit: Man Yue Mo of GitHub Security Lab
 
 ## Attachments
 
-- poc.js (text/javascript, 1.2 KB)
-- cage_rw.js (text/javascript, 2.8 KB)
-- wasm-module-builder.js (text/javascript, 76.5 KB)
+- [poc.js](attachments/poc.js) (text/javascript, 1.2 KB)
+- [cage_rw.js](attachments/cage_rw.js) (text/javascript, 2.8 KB)
+- [wasm-module-builder.js](attachments/wasm-module-builder.js) (text/javascript, 76.5 KB)
 
 ## Timeline
 

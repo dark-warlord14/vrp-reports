@@ -212,7 +212,7 @@ Refer to https://chromium.googlesource.com/chromium/src/+/main/base/memory/raw_p
 
 ## Attachments
 
-- poc.gif (image/gif, 7.9 MB)
+- [poc.gif](attachments/poc.gif) (image/gif, 7.9 MB)
 
 ## Timeline
 

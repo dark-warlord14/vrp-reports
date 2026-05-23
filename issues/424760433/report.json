@@ -26,7 +26,7 @@
       "mime_type": "text/html",
       "size_bytes": 2893,
       "url": "https://issues.chromium.org/action/issues/424760433/attachments/66724325?download=true",
-      "local_path": null
+      "local_path": "attachments/subgroup.html"
     },
     {
       "id": 66724326,
@@ -34,7 +34,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 10708,
       "url": "https://issues.chromium.org/action/issues/424760433/attachments/66724326?download=true",
-      "local_path": null
+      "local_path": "attachments/gfxrecon_capture_20250613T172703.gfxr"
     },
     {
       "id": 66768950,
@@ -42,7 +42,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 2050,
       "url": "https://issues.chromium.org/action/issues/424760433/attachments/66768950?download=true",
-      "local_path": null
+      "local_path": "attachments/Dockerfile"
     }
   ],
   "update_count": 97,

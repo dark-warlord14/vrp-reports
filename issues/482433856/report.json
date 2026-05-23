@@ -1,0 +1,89 @@
+{
+  "id": "482433856",
+  "url": "https://issues.chromium.org/issues/482433856",
+  "title": "Spoof on virtual keyboard",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "pn...@chromium.org",
+  "created_date": "2026-02-07T23:01:51+00:00",
+  "modified_date": "2026-05-22T07:55:58+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "Baseline. Security UI Spoofing",
+  "attachments": [
+    {
+      "id": 73209786,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/482433856/attachments/73209786?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73225263,
+      "filename": "detx1.html",
+      "mime_type": "text/html",
+      "size_bytes": 4473,
+      "url": "https://issues.chromium.org/action/issues/482433856/attachments/73225263?download=true",
+      "local_path": "attachments/detx1.html"
+    },
+    {
+      "id": 73216890,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/482433856/attachments/73216890?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73234884,
+      "filename": "spoofkeyboard1.html",
+      "mime_type": "text/html",
+      "size_bytes": 1142,
+      "url": "https://issues.chromium.org/action/issues/482433856/attachments/73234884?download=true",
+      "local_path": "attachments/spoofkeyboard1.html"
+    },
+    {
+      "id": 73234017,
+      "filename": "2026-02-08_new.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1170065,
+      "url": "https://issues.chromium.org/action/issues/482433856/attachments/73234017?download=true",
+      "local_path": "attachments/2026-02-08_new.mp4"
+    },
+    {
+      "id": 73216892,
+      "filename": "Screenshot_20260208_080900_Chrome Canary.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 211565,
+      "url": "https://issues.chromium.org/action/issues/482433856/attachments/73216892?download=true",
+      "local_path": "attachments/Screenshot_20260208_080900_Chrome Canary.jpg"
+    },
+    {
+      "id": 73234018,
+      "filename": "Screenshot_20260208_080843_Chrome Canary.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 91483,
+      "url": "https://issues.chromium.org/action/issues/482433856/attachments/73234018?download=true",
+      "local_path": "attachments/Screenshot_20260208_080843_Chrome Canary.jpg"
+    },
+    {
+      "id": 73328852,
+      "filename": "Screen_Recording_20260211_190100_Chrome Canary.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3136623,
+      "url": "https://issues.chromium.org/action/issues/482433856/attachments/73328852?download=true",
+      "local_path": "attachments/Screen_Recording_20260211_190100_Chrome Canary.mp4"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "VULNERABILITY DETAILS\n\nThe bug https://issues.chromium.org/issues/446463993 has been fixed, but this bug appears again in version 146.0.7673.0\n\nwhen the virtual keyboard is displayed and at the same time the navigation is directed to the other pagethe virtual keyboard still appears and the color of"
+}

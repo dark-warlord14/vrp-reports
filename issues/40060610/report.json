@@ -9,14 +9,15 @@
   "os_platforms": [
     "Android",
     "Linux",
-    "Windows"
+    "Windows",
+    "ChromeOS"
   ],
   "chrome_version": null,
   "cve_ids": [],
   "reporter": "gg...@gmail.com",
   "assignee": "jm...@chromium.org",
   "created_date": "2022-08-18T18:44:26+00:00",
-  "modified_date": "2024-01-09T06:31:46+00:00",
+  "modified_date": "2026-04-01T07:56:48+00:00",
   "bounty_confirmed": true,
   "bounty_amount": 15000.0,
   "bounty_rationale": null,
@@ -30,6 +31,6 @@
       "local_path": "attachments/poc.html"
     }
   ],
-  "update_count": 51,
+  "update_count": 54,
   "description_snippet": "**VULNERABILITY DETAILS**   \nThere is a heap buffer overflow vulnerability that exists in the Vulkan backend.  \n  \nIn the QueryVk::allocateQuery, call getCurrentViewCount() to get the current viewCount value.  \nAnd in the allocatePoolEntries function, there is a conditional statement as below.  \n**-"
 }

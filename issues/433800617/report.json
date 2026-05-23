@@ -28,7 +28,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 7365,
       "url": "https://issues.chromium.org/action/issues/433800617/attachments/67866012?download=true",
-      "local_path": null
+      "local_path": "attachments/download-cross-site-theft-cr.patch"
     },
     {
       "id": 67866013,
@@ -36,7 +36,7 @@
       "mime_type": "text/html",
       "size_bytes": 9444,
       "url": "https://issues.chromium.org/action/issues/433800617/attachments/67866013?download=true",
-      "local_path": null
+      "local_path": "attachments/download-cross-site-theft-cr-multiple.html"
     },
     {
       "id": 67866014,
@@ -44,7 +44,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1062292,
       "url": "https://issues.chromium.org/action/issues/433800617/attachments/67866014?download=true",
-      "local_path": null
+      "local_path": "attachments/download-cross-site-theft-cr-multiple.mp4"
     },
     {
       "id": 67866015,
@@ -52,7 +52,7 @@
       "mime_type": "application/x-httpd-php",
       "size_bytes": 527,
       "url": "https://issues.chromium.org/action/issues/433800617/attachments/67866015?download=true",
-      "local_path": null
+      "local_path": "attachments/get-cookies.php"
     },
     {
       "id": 67866016,
@@ -60,7 +60,7 @@
       "mime_type": "application/x-httpd-php",
       "size_bytes": 1282,
       "url": "https://issues.chromium.org/action/issues/433800617/attachments/67866016?download=true",
-      "local_path": null
+      "local_path": "attachments/set-cookies.php"
     },
     {
       "id": 67866038,
@@ -68,7 +68,7 @@
       "mime_type": "text/html",
       "size_bytes": 5693,
       "url": "https://issues.chromium.org/action/issues/433800617/attachments/67866038?download=true",
-      "local_path": null
+      "local_path": "attachments/download-cross-site-theft-cr.html"
     },
     {
       "id": 67866039,
@@ -76,7 +76,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 2114552,
       "url": "https://issues.chromium.org/action/issues/433800617/attachments/67866039?download=true",
-      "local_path": null
+      "local_path": "attachments/download-cross-site-theft-cr.mp4"
     }
   ],
   "update_count": 118,

@@ -190,7 +190,7 @@ The gfxrecon capture can be replayed with:
 
 ## Attachments
 
-- brw_fs_opt_split_virtual_grfs.html (text/html, 3.6 KB)
+- [brw_fs_opt_split_virtual_grfs.html](attachments/brw_fs_opt_split_virtual_grfs.html) (text/html, 3.6 KB)
 - [gfxrecon_capture_20241217T134513.gfxr](attachments/gfxrecon_capture_20241217T134513.gfxr) (application/octet-stream, 8.0 KB)
 - [gfxrecon_capture_20250322T211754.gfxr](attachments/gfxrecon_capture_20250322T211754.gfxr) (application/octet-stream, 12.7 KB)
 

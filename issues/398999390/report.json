@@ -30,7 +30,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 634,
       "url": "https://issues.chromium.org/action/issues/398999390/attachments/63223764?download=true",
-      "local_path": null
+      "local_path": "attachments/bug.js"
     },
     {
       "id": 63223765,
@@ -38,7 +38,7 @@
       "mime_type": "text/x-c++src",
       "size_bytes": 256594,
       "url": "https://issues.chromium.org/action/issues/398999390/attachments/63223765?download=true",
-      "local_path": null
+      "local_path": "attachments/d8.cc"
     },
     {
       "id": 63242268,
@@ -46,7 +46,7 @@
       "mime_type": "text/html",
       "size_bytes": 841,
       "url": "https://issues.chromium.org/action/issues/398999390/attachments/63242268?download=true",
-      "local_path": null
+      "local_path": "attachments/bug.html"
     }
   ],
   "update_count": 83,

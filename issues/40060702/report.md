@@ -38,8 +38,8 @@ Reporter credit: Hafiizh (<https://www.linkedin.com/in/hafiizh-7aa6bb31/>)
 
 ## Attachments
 
-- [poccursors.html](attachments/poccursors.html) (text/plain, 3.1 KB)
-- [bandicam 2022-08-29 09-27-18-095.mp4](attachments/bandicam 2022-08-29 09-27-18-095.mp4) (video/mp4, 1.7 MB)
+- poccursors.html (text/plain, 3.1 KB)
+- bandicam 2022-08-29 09-27-18-095.mp4 (video/mp4, 1.7 MB)
 
 ## Timeline
 

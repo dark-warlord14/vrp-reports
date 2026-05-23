@@ -1,0 +1,57 @@
+{
+  "id": "421690383",
+  "url": "https://issues.chromium.org/issues/421690383",
+  "title": "Improper eliding of data uri causes URL spoofing in preview page.",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Security (Use Subcomponent)>UrlFormatting",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": "136.0.7103.127",
+  "cve_ids": [],
+  "reporter": "x4...@gmail.com",
+  "assignee": "ji...@chromium.org",
+  "created_date": "2025-06-01T17:18:55+00:00",
+  "modified_date": "2026-05-19T22:55:29+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": null,
+  "bounty_rationale": "The panel reviewed this again based on reporters request, and stands by the decision made to not award as noted in Comment 9\n\n\nNote that the fact that this issue is not being rewarded does not mean\nthat the product team won't fix the issue. We have filed a bug with the product\nteam and they will review your report and decide if a fix is required. We'll\nlet you know if the issue was fixed.\n\nRegards, \\\nGoogle Security Bot\n\n*How did we do? Please fill out a [short anonymous survey](https://goo.gl/I",
+  "attachments": [
+    {
+      "id": 66331751,
+      "filename": "not working version 129.x.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 8347646,
+      "url": "https://issues.chromium.org/action/issues/421690383/attachments/66331751?download=true",
+      "local_path": "attachments/not working version 129.x.mp4"
+    },
+    {
+      "id": 66331752,
+      "filename": "POC urlspoof.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4041612,
+      "url": "https://issues.chromium.org/action/issues/421690383/attachments/66331752?download=true",
+      "local_path": "attachments/POC urlspoof.mp4"
+    },
+    {
+      "id": 71960826,
+      "filename": "Fri Dec 19 2025 23:18:17 GMT+0530 (India Standard Time).png",
+      "mime_type": "image/png",
+      "size_bytes": 163847,
+      "url": "https://issues.chromium.org/action/issues/421690383/attachments/71960826?download=true",
+      "local_path": "attachments/Fri Dec 19 2025 23_18_17 GMT+0530 (India Standard Time).png"
+    },
+    {
+      "id": 73504743,
+      "filename": "Screenshot_20260211_231949.png",
+      "mime_type": "image/png",
+      "size_bytes": 467917,
+      "url": "https://issues.chromium.org/action/issues/421690383/attachments/73504743?download=true",
+      "local_path": "attachments/Screenshot_20260211_231949.png"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "# Steps to reproduce the problem\n1. Visit https://gojo-satorou-v7.github.io/chigorin/mahoraga.html or host the code `<a href=\"data://text/html,<iframe src='https://example.com/https://google.com/fakepath1'>\">click_me</a>`\n2. Hold on the click me button and click on preview button.\n3. Notice that the"
+}

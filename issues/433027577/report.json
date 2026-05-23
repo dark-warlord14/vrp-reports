@@ -26,7 +26,7 @@
       "mime_type": "text/plain",
       "size_bytes": 13244,
       "url": "https://issues.chromium.org/action/issues/433027577/attachments/67754456?download=true",
-      "local_path": null
+      "local_path": "attachments/asan.txt"
     },
     {
       "id": 67791520,
@@ -34,7 +34,7 @@
       "mime_type": "text/plain",
       "size_bytes": 72161,
       "url": "https://issues.chromium.org/action/issues/433027577/attachments/67791520?download=true",
-      "local_path": null
+      "local_path": "attachments/full.log"
     }
   ],
   "update_count": 44,

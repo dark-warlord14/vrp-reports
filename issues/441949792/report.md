@@ -124,7 +124,7 @@ Marking any rewards for charity in advance.
 
 ## Attachments
 
-- bound-args-shift.js (text/javascript, 2.2 KB)
+- [bound-args-shift.js](attachments/bound-args-shift.js) (text/javascript, 2.2 KB)
 
 ## Timeline
 

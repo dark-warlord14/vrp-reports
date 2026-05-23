@@ -58,7 +58,7 @@ Reporter credit: Axel Chong
 - [pip-exploit.html](attachments/pip-exploit.html) (text/plain, 411 B)
 - [Untitled_ Jul 3, 2023 10_57 PM.webm](attachments/Untitled_ Jul 3, 2023 10_57 PM.webm) (video/webm, 613.3 KB)
 - [Untitled_ Jul 30, 2023 3_06 PM.webm](attachments/Untitled_ Jul 30, 2023 3_06 PM.webm) (video/webm, 801.1 KB)
-- [Screenshot 2023-08-03 (1).png](attachments/Screenshot 2023-08-03 (1).png) (image/png, 24.2 KB)
+- Screenshot 2023-08-03 (1).png (image/png, 24.2 KB)
 - [Screenshot 2023-08-03 (2).png](attachments/Screenshot 2023-08-03 (2).png) (image/png, 12.6 KB)
 - [Screenshot 2023-08-03 (3).png](attachments/Screenshot 2023-08-03 (3).png) (image/png, 15.8 KB)
 - [Screenshot 2023-08-03 (4).png](attachments/Screenshot 2023-08-03 (4).png) (image/png, 18.2 KB)

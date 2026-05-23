@@ -28,7 +28,7 @@
       "mime_type": "text/plain",
       "size_bytes": 27307,
       "url": "https://issues.chromium.org/action/issues/390590778/attachments/62250169?download=true",
-      "local_path": null
+      "local_path": "attachments/asan.txt"
     },
     {
       "id": 62250170,
@@ -36,7 +36,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 30951,
       "url": "https://issues.chromium.org/action/issues/390590778/attachments/62250170?download=true",
-      "local_path": null
+      "local_path": "attachments/pwn-iwa.swbn"
     },
     {
       "id": 62250171,
@@ -44,7 +44,7 @@
       "mime_type": "text/x-python",
       "size_bytes": 578,
       "url": "https://issues.chromium.org/action/issues/390590778/attachments/62250171?download=true",
-      "local_path": null
+      "local_path": "attachments/server.py"
     },
     {
       "id": 62250172,
@@ -52,7 +52,7 @@
       "mime_type": "application/zip",
       "size_bytes": 145555,
       "url": "https://issues.chromium.org/action/issues/390590778/attachments/62250172?download=true",
-      "local_path": null
+      "local_path": "attachments/pwn-iwa.zip"
     },
     {
       "id": 62250173,
@@ -60,7 +60,7 @@
       "mime_type": "text/plain",
       "size_bytes": 23761,
       "url": "https://issues.chromium.org/action/issues/390590778/attachments/62250173?download=true",
-      "local_path": null
+      "local_path": "attachments/patch.txt"
     },
     {
       "id": 62277463,
@@ -68,7 +68,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 23753,
       "url": "https://issues.chromium.org/action/issues/390590778/attachments/62277463?download=true",
-      "local_path": null
+      "local_path": "attachments/fix.patch"
     }
   ],
   "update_count": 72,

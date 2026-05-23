@@ -179,9 +179,9 @@ Command line: `/proc/self/exe --type=gpu-process --no-sandbox --ozone-platform=w
 
 ## Attachments
 
-- radv_nir_op_vec.html (text/html, 2.7 KB)
-- gfxrecon_capture_radv_nir_op_vec.gfxr (application/octet-stream, 7.9 KB)
-- Dockerfile (application/octet-stream, 2.0 KB)
+- [radv_nir_op_vec.html](attachments/radv_nir_op_vec.html) (text/html, 2.7 KB)
+- [gfxrecon_capture_radv_nir_op_vec.gfxr](attachments/gfxrecon_capture_radv_nir_op_vec.gfxr) (application/octet-stream, 7.9 KB)
+- [Dockerfile](attachments/Dockerfile) (application/octet-stream, 2.0 KB)
 
 ## Timeline
 

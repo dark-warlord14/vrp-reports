@@ -14,7 +14,7 @@
   "reporter": "am...@gmail.com",
   "assignee": "da...@google.com",
   "created_date": "2025-03-27T11:22:58+00:00",
-  "modified_date": "2025-08-28T12:43:29+00:00",
+  "modified_date": "2026-04-17T06:57:10+00:00",
   "bounty_confirmed": true,
   "bounty_amount": 1000.0,
   "bounty_rationale": "report of lower impact web platform privilege escalation",
@@ -25,7 +25,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 3880483,
       "url": "https://issues.chromium.org/action/issues/406631048/attachments/64308363?download=true",
-      "local_path": null
+      "local_path": "attachments/Chrome-Copy-As-Curl(windows)-CodeExecution.mp4"
     },
     {
       "id": 64323845,
@@ -33,9 +33,9 @@
       "mime_type": "text/html",
       "size_bytes": 916,
       "url": "https://issues.chromium.org/action/issues/406631048/attachments/64323845?download=true",
-      "local_path": null
+      "local_path": "attachments/test.html"
     }
   ],
-  "update_count": 49,
+  "update_count": 51,
   "description_snippet": "# Steps to reproduce the problem\n1. Copy and run the payload in console (we can achieve it via html page too)\n2. Copy the request with copy as curl (windows)\n3. Paste on the windows cmd you can see calc triggers\n\n# Problem Description\nHI Team, chrome latest on windows is vulnerable for code executio"
 }

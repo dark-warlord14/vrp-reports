@@ -75,9 +75,9 @@ Regression: N/A \
 
 ## Attachments
 
-- asan.txt (text/plain, 12.6 KB)
-- 0001-chrome-test-patch.patch (text/x-diff, 3.1 KB)
-- 0001-suggest-fix-patch.patch (text/x-diff, 1.0 KB)
+- [asan.txt](attachments/asan.txt) (text/plain, 12.6 KB)
+- [0001-chrome-test-patch.patch](attachments/0001-chrome-test-patch.patch) (text/x-diff, 3.1 KB)
+- [0001-suggest-fix-patch.patch](attachments/0001-suggest-fix-patch.patch) (text/x-diff, 1.0 KB)
 
 ## Timeline
 

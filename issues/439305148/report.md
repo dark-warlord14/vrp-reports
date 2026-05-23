@@ -121,13 +121,13 @@ Reporter credit: Sahan Fernando & Anon
 
 ## Attachments
 
-- poc1.html (text/html, 1.3 KB)
-- poc1-stack-browser.txt (text/plain, 5.2 KB)
-- poc1-stack-renderer.txt (text/plain, 8.8 KB)
-- poc2.html (text/html, 942 B)
-- poc3.html (text/html, 581 B)
-- poc3-evil.html (text/html, 380 B)
-- poc3-victim.html (text/html, 300 B)
+- [poc1.html](attachments/poc1.html) (text/html, 1.3 KB)
+- [poc1-stack-browser.txt](attachments/poc1-stack-browser.txt) (text/plain, 5.2 KB)
+- [poc1-stack-renderer.txt](attachments/poc1-stack-renderer.txt) (text/plain, 8.8 KB)
+- [poc2.html](attachments/poc2.html) (text/html, 942 B)
+- [poc3.html](attachments/poc3.html) (text/html, 581 B)
+- [poc3-evil.html](attachments/poc3-evil.html) (text/html, 380 B)
+- [poc3-victim.html](attachments/poc3-victim.html) (text/html, 300 B)
 
 ## Timeline
 

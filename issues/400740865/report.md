@@ -100,10 +100,10 @@ As the installer may be used on both, Windows client computers as well as Window
 
 ## Attachments
 
-- FilesystemEoPsNewChrome.7z (application/x-7z-compressed, 49.4 KB)
-- FolderContentsDeleteToFolderDelete.exe (application/x-msdos-program, 233.5 KB)
-- FolderOrFileDeleteToSystem.exe (application/x-msdos-program, 507.0 KB)
-- PoC-Google-ChromeUpdater-EoP.mkv (video/x-matroska, 1.8 MB)
+- [FilesystemEoPsNewChrome.7z](attachments/FilesystemEoPsNewChrome.7z) (application/x-7z-compressed, 49.4 KB)
+- [FolderContentsDeleteToFolderDelete.exe](attachments/FolderContentsDeleteToFolderDelete.exe) (application/x-msdos-program, 233.5 KB)
+- [FolderOrFileDeleteToSystem.exe](attachments/FolderOrFileDeleteToSystem.exe) (application/x-msdos-program, 507.0 KB)
+- [PoC-Google-ChromeUpdater-EoP.mkv](attachments/PoC-Google-ChromeUpdater-EoP.mkv) (video/x-matroska, 1.8 MB)
 
 ## Timeline
 

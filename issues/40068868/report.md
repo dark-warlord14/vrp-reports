@@ -116,7 +116,7 @@ Reporter credit: ChaobinZhang
 - [bg.js](attachments/bg.js) (text/plain, 525 B)
 - [remoting.asan](attachments/remoting.asan) (text/plain, 24.7 KB)
 - [remoting-poc.mp4](attachments/remoting-poc.mp4) (video/mp4, 8.5 MB)
-- [remoting-poc-2.mp4](attachments/remoting-poc-2.mp4) (video/mp4, 6.5 MB)
+- remoting-poc-2.mp4 (video/mp4, 6.5 MB)
 
 ## Timeline
 

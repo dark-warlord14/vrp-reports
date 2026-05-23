@@ -282,7 +282,7 @@ Marking any rewards for charity in advance.
 
 ## Attachments
 
-- v8sbx-unlock-intrinsics.html (text/html, 87.0 KB)
+- [v8sbx-unlock-intrinsics.html](attachments/v8sbx-unlock-intrinsics.html) (text/html, 87.0 KB)
 
 ## Timeline
 

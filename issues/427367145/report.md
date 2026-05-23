@@ -57,9 +57,9 @@ Regression: N/A \
 
 ## Attachments
 
-- Chrome-CopyAsCurl-Codeexecution.mp4 (video/mp4, 2.7 MB)
-- test.html (text/html, 436 B)
-- Wed Jul 02 2025 19:50:03 GMT+0530 (India Standard Time).png (image/png, 209.8 KB)
+- [Chrome-CopyAsCurl-Codeexecution.mp4](attachments/Chrome-CopyAsCurl-Codeexecution.mp4) (video/mp4, 2.7 MB)
+- [test.html](attachments/test.html) (text/html, 436 B)
+- [Wed Jul 02 2025 19:50:03 GMT+0530 (India Standard Time).png](attachments/Wed Jul 02 2025 19_50_03 GMT+0530 (India Standard Time).png) (image/png, 209.8 KB)
 
 ## Timeline
 

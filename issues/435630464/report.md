@@ -107,7 +107,7 @@ Marking any rewards for charity in advance.
 
 ## Attachments
 
-- v8sbx-unlock-sharedstruct.js (text/javascript, 83.9 KB)
+- [v8sbx-unlock-sharedstruct.js](attachments/v8sbx-unlock-sharedstruct.js) (text/javascript, 83.9 KB)
 
 ## Timeline
 

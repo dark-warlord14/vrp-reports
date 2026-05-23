@@ -44,18 +44,18 @@ Reporter credit: Mate Marjanović (SharpEdged)
 
 ## Attachments
 
-- gen.cpp (text/x-c++src, 5.8 KB)
-- poc.html (text/html, 1.8 KB)
-- server.py (text/x-python, 396 B)
-- gen.cpp (text/x-c++src, 5.8 KB)
-- server.py (text/x-python, 396 B)
-- poc.html (text/html, 1.6 KB)
-- target.html (text/html, 243 B)
-- poc2.html (text/html, 1.9 KB)
-- target2.html (text/html, 260 B)
-- gen.cpp (text/x-c++src, 5.9 KB)
-- poc.html (text/html, 2.0 KB)
-- server.py (text/x-python, 422 B)
+- [gen.cpp](attachments/gen.cpp) (text/x-c++src, 5.8 KB)
+- [poc.html](attachments/poc.html) (text/html, 1.8 KB)
+- [server.py](attachments/server.py) (text/x-python, 396 B)
+- [gen.cpp](attachments/gen.cpp) (text/x-c++src, 5.8 KB)
+- [server.py](attachments/server.py) (text/x-python, 396 B)
+- [poc.html](attachments/poc.html) (text/html, 1.6 KB)
+- [target.html](attachments/target.html) (text/html, 243 B)
+- [poc2.html](attachments/poc2.html) (text/html, 1.9 KB)
+- [target2.html](attachments/target2.html) (text/html, 260 B)
+- [gen.cpp](attachments/gen.cpp) (text/x-c++src, 5.9 KB)
+- [poc.html](attachments/poc.html) (text/html, 2.0 KB)
+- [server.py](attachments/server.py) (text/x-python, 422 B)
 
 ## Timeline
 

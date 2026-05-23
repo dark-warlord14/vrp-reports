@@ -42,7 +42,7 @@ Reporter credit: Shaheen Fazim
 - [demo.mp4](attachments/demo.mp4) (video/mp4, 2.8 MB)
 - [poc.html](attachments/poc.html) (text/plain, 2.4 KB)
 - [test.apk](attachments/test.apk) (application/octet-stream, 1.9 KB)
-- [exp.mp4](attachments/exp.mp4) (video/mp4, 5.3 MB)
+- exp.mp4 (video/mp4, 5.3 MB)
 - [chrome permission.mp4](attachments/chrome permission.mp4) (video/mp4, 909.8 KB)
 
 ## Timeline

@@ -7,7 +7,7 @@
 | **Severity** | S3-Low |
 | **Priority** | P2 |
 | **Component** | Platform>DevTools>Extensions |
-| **Platforms** | Linux, Mac, Windows |
+| **Platforms** | Linux, Mac, Windows, ChromeOS |
 | **Chrome Version** | 134.0.0.0 |
 | **Reporter** | ma...@gmail.com |
 | **Assignee** | pf...@google.com |
@@ -67,14 +67,14 @@ Regression: N/A
 
 ## Attachments
 
-- standalone-bug.js (text/javascript, 437 B)
-- background.js (text/javascript, 227 B)
-- manifest.json (application/json, 207 B)
-- devtools.html (text/html, 36 B)
-- devtools.js (text/javascript, 357 B)
-- devtools.js (text/javascript, 373 B)
-- standalone-bug.js (text/javascript, 453 B)
-- standalone-bug-still-works.js (text/javascript, 784 B)
+- [standalone-bug.js](attachments/standalone-bug.js) (text/javascript, 437 B)
+- [background.js](attachments/background.js) (text/javascript, 227 B)
+- [manifest.json](attachments/manifest.json) (application/json, 207 B)
+- [devtools.html](attachments/devtools.html) (text/html, 36 B)
+- [devtools.js](attachments/devtools.js) (text/javascript, 357 B)
+- [devtools.js](attachments/devtools.js) (text/javascript, 373 B)
+- [standalone-bug.js](attachments/standalone-bug.js) (text/javascript, 453 B)
+- [standalone-bug-still-works.js](attachments/standalone-bug-still-works.js) (text/javascript, 784 B)
 
 ## Timeline
 

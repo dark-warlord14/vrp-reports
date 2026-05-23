@@ -1,0 +1,29 @@
+{
+  "id": "471580187",
+  "url": "https://issues.chromium.org/issues/471580187",
+  "title": "CSA_DCHECK failed: IsNotCleared(value)",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ha...@intel.com",
+  "created_date": "2025-12-25T14:07:36+00:00",
+  "modified_date": "2026-04-17T07:55:14+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "bounty_rationale": "baseline memory corruption in sandboxed process with a bisect bonus",
+  "attachments": [],
+  "update_count": 40,
+  "description_snippet": "## Bisect\n\n- Version: 103495\n- Commit: 2bf36e101794fe961ac3983fad216708d4254c21\n- Link: https://crrev.com/2bf36e101794fe961ac3983fad216708d4254c21\n\n```\ncommit 2bf36e101794fe961ac3983fad216708d4254c21\nAuthor: Hao Xu <hao.a.xu@intel.com>\nDate:   Tue Nov 4 21:13:40 2025 +0800\n\n    Sparkplug+: support p"
+}

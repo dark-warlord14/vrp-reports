@@ -40,8 +40,8 @@ Reporter Credit: if applicable, please credit my pseudonym Popax21 in regards to
 
 ## Attachments
 
-- poc.js (text/javascript, 4.0 KB)
-- exploit.js (text/javascript, 60.6 KB)
+- [poc.js](attachments/poc.js) (text/javascript, 4.0 KB)
+- [exploit.js](attachments/exploit.js) (text/javascript, 60.6 KB)
 
 ## Timeline
 

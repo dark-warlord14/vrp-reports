@@ -204,10 +204,10 @@ Chaning this primitive to RCE is trivial, will upload soon(tm).
 
 ## Attachments
 
-- exp.html (text/html, 88.2 KB)
-- exploit-ab3b8cf0af3f30d97084b8a727cb40f7a0b81cbadd53195eb840cca943ff810e.tar.gz (application/x-gzip, 20.0 KB)
-- stack-433533359.txt (text/plain, 1.7 KB)
-- stack-asan-v8-sandbox-testing-linux-release-1490481.txt (text/plain, 9.0 KB)
+- [exp.html](attachments/exp.html) (text/html, 88.2 KB)
+- [exploit-ab3b8cf0af3f30d97084b8a727cb40f7a0b81cbadd53195eb840cca943ff810e.tar.gz](attachments/exploit-ab3b8cf0af3f30d97084b8a727cb40f7a0b81cbadd53195eb840cca943ff810e.tar.gz) (application/x-gzip, 20.0 KB)
+- [stack-433533359.txt](attachments/stack-433533359.txt) (text/plain, 1.7 KB)
+- [stack-asan-v8-sandbox-testing-linux-release-1490481.txt](attachments/stack-asan-v8-sandbox-testing-linux-release-1490481.txt) (text/plain, 9.0 KB)
 
 ## Timeline
 

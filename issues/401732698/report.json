@@ -25,7 +25,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 507,
       "url": "https://issues.chromium.org/action/issues/401732698/attachments/63598023?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.js"
     },
     {
       "id": 63598931,
@@ -33,7 +33,7 @@
       "mime_type": "text/x-c++src",
       "size_bytes": 34243,
       "url": "https://issues.chromium.org/action/issues/401732698/attachments/63598931?download=true",
-      "local_path": null
+      "local_path": "attachments/CollectKeysFromDictionary-decompile.cpp"
     },
     {
       "id": 63598027,
@@ -41,7 +41,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 112057,
       "url": "https://issues.chromium.org/action/issues/401732698/attachments/63598027?download=true",
-      "local_path": null
+      "local_path": "attachments/CollectKeysFromDictionary-disasm.asm"
     }
   ],
   "update_count": 46,

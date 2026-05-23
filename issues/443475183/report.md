@@ -167,7 +167,7 @@ Received signal 11 <unknown> 5555bb640000
 
 ## Attachments
 
-- bug.js (text/javascript, 243 B)
+- [bug.js](attachments/bug.js) (text/javascript, 243 B)
 
 ## Timeline
 

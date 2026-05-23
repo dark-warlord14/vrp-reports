@@ -75,7 +75,7 @@ Attach **poc.py** (serves a self-contained HTML page and `Content-Disposition` e
 
 ## Attachments
 
-- poc.py (text/x-python, 9.1 KB)
+- [poc.py](attachments/poc.py) (text/x-python, 9.1 KB)
 
 ## Timeline
 

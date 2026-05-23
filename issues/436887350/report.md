@@ -134,17 +134,17 @@ Reporter credit: Alesandro Ortiz <https://AlesandroOrtiz.com>
 
 ## Attachments
 
-- manifest.json (application/json, 354 B)
-- background.js (text/javascript, 2.2 KB)
-- page.html (text/html, 632 B)
-- page.js (text/javascript, 700 B)
-- download-file-resume.mp4 (video/mp4, 1.4 MB)
-- download-file-resume-debug.mp4 (video/mp4, 1.6 MB)
-- manifest.json (application/json, 385 B)
-- background.js (text/javascript, 2.5 KB)
-- page.html (text/html, 659 B)
-- page.js (text/javascript, 1.1 KB)
-- download-file-resume-chained-cr.mp4 (video/mp4, 785.4 KB)
+- [manifest.json](attachments/manifest.json) (application/json, 354 B)
+- [background.js](attachments/background.js) (text/javascript, 2.2 KB)
+- [page.html](attachments/page.html) (text/html, 632 B)
+- [page.js](attachments/page.js) (text/javascript, 700 B)
+- [download-file-resume.mp4](attachments/download-file-resume.mp4) (video/mp4, 1.4 MB)
+- [download-file-resume-debug.mp4](attachments/download-file-resume-debug.mp4) (video/mp4, 1.6 MB)
+- [manifest.json](attachments/manifest.json) (application/json, 385 B)
+- [background.js](attachments/background.js) (text/javascript, 2.5 KB)
+- [page.html](attachments/page.html) (text/html, 659 B)
+- [page.js](attachments/page.js) (text/javascript, 1.1 KB)
+- [download-file-resume-chained-cr.mp4](attachments/download-file-resume-chained-cr.mp4) (video/mp4, 785.4 KB)
 
 ## Timeline
 

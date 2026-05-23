@@ -130,7 +130,7 @@ Reporter credit: Seunghyun Lee (@0x10n)
 
 ## Attachments
 
-- liftoff-wasmarray-i64-indexing.js (text/javascript, 75.3 KB)
+- [liftoff-wasmarray-i64-indexing.js](attachments/liftoff-wasmarray-i64-indexing.js) (text/javascript, 75.3 KB)
 
 ## Timeline
 

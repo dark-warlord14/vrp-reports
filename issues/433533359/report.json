@@ -29,7 +29,7 @@
       "mime_type": "text/html",
       "size_bytes": 90325,
       "url": "https://issues.chromium.org/action/issues/433533359/attachments/67822512?download=true",
-      "local_path": null
+      "local_path": "attachments/exp.html"
     },
     {
       "id": 67827914,
@@ -37,7 +37,7 @@
       "mime_type": "application/x-gzip",
       "size_bytes": 20477,
       "url": "https://issues.chromium.org/action/issues/433533359/attachments/67827914?download=true",
-      "local_path": null
+      "local_path": "attachments/exploit-ab3b8cf0af3f30d97084b8a727cb40f7a0b81cbadd53195eb840cca943ff810e.tar.gz"
     },
     {
       "id": 67904723,
@@ -45,7 +45,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1786,
       "url": "https://issues.chromium.org/action/issues/433533359/attachments/67904723?download=true",
-      "local_path": null
+      "local_path": "attachments/stack-433533359.txt"
     },
     {
       "id": 67895832,
@@ -53,7 +53,7 @@
       "mime_type": "text/plain",
       "size_bytes": 9177,
       "url": "https://issues.chromium.org/action/issues/433533359/attachments/67895832?download=true",
-      "local_path": null
+      "local_path": "attachments/stack-asan-v8-sandbox-testing-linux-release-1490481.txt"
     }
   ],
   "update_count": 120,

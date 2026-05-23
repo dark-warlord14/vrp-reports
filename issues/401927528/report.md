@@ -7,7 +7,7 @@
 | **Severity** | S3-Low |
 | **Priority** | P3 |
 | **Component** | Platform>DevTools>Recorder |
-| **Platforms** | Linux, Mac, Windows |
+| **Platforms** | Linux, Mac, Windows, ChromeOS |
 | **Reporter** | bi...@gmail.com |
 | **Assignee** | al...@google.com |
 | **Created** | 2025-03-10 |
@@ -64,10 +64,10 @@ Reporter credit: vanillawebdev
 
 ## Attachments
 
-- devtools-recorder-misuse-demo.html (text/html, 4.6 KB)
-- devtools recorder misuse demo.webm (video/webm, 11.5 MB)
-- download.json (application/json, 1.3 KB)
-- devtools_recorder_toggle-extensions-on-chrome-urls_flag.json (application/json, 3.0 KB)
+- [devtools-recorder-misuse-demo.html](attachments/devtools-recorder-misuse-demo.html) (text/html, 4.6 KB)
+- [devtools recorder misuse demo.webm](attachments/devtools recorder misuse demo.webm) (video/webm, 11.5 MB)
+- [download.json](attachments/download.json) (application/json, 1.3 KB)
+- [devtools_recorder_toggle-extensions-on-chrome-urls_flag.json](attachments/devtools_recorder_toggle-extensions-on-chrome-urls_flag.json) (application/json, 3.0 KB)
 
 ## Timeline
 

@@ -25,7 +25,7 @@
       "mime_type": "text/plain",
       "size_bytes": 7963,
       "url": "https://issues.chromium.org/action/issues/40060700/attachments/52951676?download=true",
-      "local_path": "attachments/patch.diff"
+      "local_path": null
     },
     {
       "id": 52951677,
@@ -33,7 +33,7 @@
       "mime_type": "text/plain",
       "size_bytes": 537,
       "url": "https://issues.chromium.org/action/issues/40060700/attachments/52951677?download=true",
-      "local_path": "attachments/manifest.json"
+      "local_path": null
     },
     {
       "id": 52951678,
@@ -41,7 +41,7 @@
       "mime_type": "text/plain",
       "size_bytes": 80,
       "url": "https://issues.chromium.org/action/issues/40060700/attachments/52951678?download=true",
-      "local_path": "attachments/test.js"
+      "local_path": null
     },
     {
       "id": 52951679,

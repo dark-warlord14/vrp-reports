@@ -125,7 +125,7 @@ s,ExperimentalContentSecurityPolicyFeatures,OriginIsolationHeader,PartitionedPop
 
 ## Attachments
 
-- heap-buffer-overflow-dawnnativeReflectEntryPointUsingTint.html (text/html, 6.3 KB)
+- [heap-buffer-overflow-dawnnativeReflectEntryPointUsingTint.html](attachments/heap-buffer-overflow-dawnnativeReflectEntryPointUsingTint.html) (text/html, 6.3 KB)
 
 ## Timeline
 

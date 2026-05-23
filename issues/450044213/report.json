@@ -25,7 +25,7 @@
       "mime_type": "text/plain",
       "size_bytes": 9866,
       "url": "https://issues.chromium.org/action/issues/450044213/attachments/69946676?download=true",
-      "local_path": null
+      "local_path": "attachments/gwp-asan-crash.txt"
     },
     {
       "id": 70506985,
@@ -33,7 +33,7 @@
       "mime_type": "application/zip",
       "size_bytes": 2532,
       "url": "https://issues.chromium.org/action/issues/450044213/attachments/70506985?download=true",
-      "local_path": null
+      "local_path": "attachments/bt_classic_min_extension.zip"
     },
     {
       "id": 70495490,
@@ -41,7 +41,7 @@
       "mime_type": "image/png",
       "size_bytes": 109637,
       "url": "https://issues.chromium.org/action/issues/450044213/attachments/70495490?download=true",
-      "local_path": null
+      "local_path": "attachments/Snipaste_2025-10-29_19-07-44.png"
     },
     {
       "id": 70492402,
@@ -49,7 +49,7 @@
       "mime_type": "image/png",
       "size_bytes": 1781916,
       "url": "https://issues.chromium.org/action/issues/450044213/attachments/70492402?download=true",
-      "local_path": null
+      "local_path": "attachments/Snipaste_2025-10-29_19-08-10.png"
     },
     {
       "id": 70495491,
@@ -57,7 +57,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 11566640,
       "url": "https://issues.chromium.org/action/issues/450044213/attachments/70495491?download=true",
-      "local_path": null
+      "local_path": "attachments/20251029-190452.mp4"
     }
   ],
   "update_count": 42,

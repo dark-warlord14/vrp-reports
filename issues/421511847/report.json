@@ -25,7 +25,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 5591945,
       "url": "https://issues.chromium.org/action/issues/421511847/attachments/66326458?download=true",
-      "local_path": null
+      "local_path": "attachments/not-working-version-129.mp4"
     },
     {
       "id": 66326459,
@@ -33,7 +33,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 19459508,
       "url": "https://issues.chromium.org/action/issues/421511847/attachments/66326459?download=true",
-      "local_path": null
+      "local_path": "attachments/oldest-working-version.mp4"
     },
     {
       "id": 66326460,
@@ -41,7 +41,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 8101042,
       "url": "https://issues.chromium.org/action/issues/421511847/attachments/66326460?download=true",
-      "local_path": null
+      "local_path": "attachments/POC.mp4"
     },
     {
       "id": 66403960,
@@ -49,7 +49,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 3293953,
       "url": "https://issues.chromium.org/action/issues/421511847/attachments/66403960?download=true",
-      "local_path": null
+      "local_path": "attachments/POC updated.mp4"
     }
   ],
   "update_count": 80,

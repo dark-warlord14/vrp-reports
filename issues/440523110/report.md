@@ -50,10 +50,10 @@ Regression: N/A \
 ## Attachments
 
 - deleted (application/octet-stream, 0 B)
-- Repro.mp4 (video/mp4, 577.8 KB)
-- poc.html (text/html, 1012 B)
+- [Repro.mp4](attachments/Repro.mp4) (video/mp4, 577.8 KB)
+- [poc.html](attachments/poc.html) (text/html, 1012 B)
 - deleted (application/octet-stream, 0 B)
-- chrome.png (image/png, 173.5 KB)
+- [chrome.png](attachments/chrome.png) (image/png, 173.5 KB)
 
 ## Timeline
 

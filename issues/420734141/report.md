@@ -63,11 +63,11 @@ Regression: N/A
 
 ## Attachments
 
-- bandicam 2025-05-28 07-56-04-516.mp4 (video/mp4, 2.1 MB)
-- poc.html (text/html, 1.9 KB)
-- server.crt (application/x-x509-ca-cert, 1.0 KB)
-- server.key (application/x-iwork-keynote-sffkey, 1.7 KB)
-- https_server_fileserve.py (text/x-python, 715 B)
+- [bandicam 2025-05-28 07-56-04-516.mp4](attachments/bandicam 2025-05-28 07-56-04-516.mp4) (video/mp4, 2.1 MB)
+- [poc.html](attachments/poc.html) (text/html, 1.9 KB)
+- [server.crt](attachments/server.crt) (application/x-x509-ca-cert, 1.0 KB)
+- [server.key](attachments/server.key) (application/x-iwork-keynote-sffkey, 1.7 KB)
+- [https_server_fileserve.py](attachments/https_server_fileserve.py) (text/x-python, 715 B)
 
 ## Timeline
 

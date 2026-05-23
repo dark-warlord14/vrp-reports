@@ -30,7 +30,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 1460,
       "url": "https://issues.chromium.org/action/issues/440454442/attachments/68676531?download=true",
-      "local_path": null
+      "local_path": "attachments/UAF_FinishRequestWithFetchCount_PoC.js"
     },
     {
       "id": 68676532,
@@ -38,7 +38,7 @@
       "mime_type": "text/plain",
       "size_bytes": 48348,
       "url": "https://issues.chromium.org/action/issues/440454442/attachments/68676532?download=true",
-      "local_path": null
+      "local_path": "attachments/UAF_FinishRequestWithFetchCount_ASAN.txt"
     },
     {
       "id": 68676533,
@@ -46,7 +46,7 @@
       "mime_type": "text/plain",
       "size_bytes": 10694,
       "url": "https://issues.chromium.org/action/issues/440454442/attachments/68676533?download=true",
-      "local_path": null
+      "local_path": "attachments/UAF_FinishRequestWithFetchCount_crashState_Mac.txt"
     },
     {
       "id": 68754454,
@@ -54,7 +54,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 1732,
       "url": "https://issues.chromium.org/action/issues/440454442/attachments/68754454?download=true",
-      "local_path": null
+      "local_path": "attachments/UAF_FinishRequestWithFetchCount_PoC_OnPipeConnectionError.js"
     },
     {
       "id": 68754482,
@@ -62,7 +62,7 @@
       "mime_type": "text/plain",
       "size_bytes": 49855,
       "url": "https://issues.chromium.org/action/issues/440454442/attachments/68754482?download=true",
-      "local_path": null
+      "local_path": "attachments/UAF_FinishRequestWithFetchCount_OnPipeConnectionError_ASAN.txt"
     },
     {
       "id": 68754626,
@@ -70,7 +70,7 @@
       "mime_type": "text/plain",
       "size_bytes": 15547,
       "url": "https://issues.chromium.org/action/issues/440454442/attachments/68754626?download=true",
-      "local_path": null
+      "local_path": "attachments/UAF_FinishRequestWithFetchCount_OnPipeConnectionError_crashState_dev.txt"
     }
   ],
   "update_count": 106,

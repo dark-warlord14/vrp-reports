@@ -171,8 +171,8 @@ Regression: N/A \
 
 ## Attachments
 
-- Asan_logs.txt (text/plain, 38.3 KB)
-- PoC.html (text/html, 1.6 KB)
+- [Asan_logs.txt](attachments/Asan_logs.txt) (text/plain, 38.3 KB)
+- [PoC.html](attachments/PoC.html) (text/html, 1.6 KB)
 
 ## Timeline
 

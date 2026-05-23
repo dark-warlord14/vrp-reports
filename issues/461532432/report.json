@@ -25,7 +25,7 @@
       "mime_type": "text/html",
       "size_bytes": 2768,
       "url": "https://issues.chromium.org/action/issues/461532432/attachments/71074301?download=true",
-      "local_path": null
+      "local_path": "attachments/testcase.html"
     },
     {
       "id": 71074302,
@@ -33,7 +33,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 6506300,
       "url": "https://issues.chromium.org/action/issues/461532432/attachments/71074302?download=true",
-      "local_path": null
+      "local_path": "attachments/screen.mp4"
     },
     {
       "id": 71258551,
@@ -41,7 +41,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 6453504,
       "url": "https://issues.chromium.org/action/issues/461532432/attachments/71258551?download=true",
-      "local_path": null
+      "local_path": "attachments/screen-20251124-192944.mp4"
     }
   ],
   "update_count": 56,

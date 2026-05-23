@@ -33,7 +33,7 @@
       "mime_type": "image/jpeg",
       "size_bytes": 111574,
       "url": "https://issues.chromium.org/action/issues/410960670/attachments/64929165?download=true",
-      "local_path": null
+      "local_path": "attachments/spooflongdomain.jpeg"
     },
     {
       "id": 70551659,
@@ -41,7 +41,7 @@
       "mime_type": "image/jpeg",
       "size_bytes": 45758,
       "url": "https://issues.chromium.org/action/issues/410960670/attachments/70551659?download=true",
-      "local_path": null
+      "local_path": "attachments/longdomain.jpg"
     },
     {
       "id": 70546685,
@@ -49,7 +49,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 3214788,
       "url": "https://issues.chromium.org/action/issues/410960670/attachments/70546685?download=true",
-      "local_path": null
+      "local_path": "attachments/longdomain.mp4"
     }
   ],
   "update_count": 122,

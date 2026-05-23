@@ -108,7 +108,7 @@ Reporter credit: v8sbxfuzz
 
 ## Attachments
 
-- bug.js (text/javascript, 3.7 KB)
+- [bug.js](attachments/bug.js) (text/javascript, 3.7 KB)
 
 ## Timeline
 

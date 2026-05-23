@@ -260,8 +260,8 @@ Right alloca redzone: cb
 
 ## Attachments
 
-- [poc.pdf](attachments/poc.pdf) (application/pdf, 3.0 KB)
-- [0044-opj_t1_allocate_buffers.patch](attachments/0044-opj_t1_allocate_buffers.patch) (text/plain, 869 B)
+- poc.pdf (application/pdf, 3.0 KB)
+- 0044-opj_t1_allocate_buffers.patch (text/plain, 869 B)
 
 ## Timeline
 

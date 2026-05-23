@@ -33,7 +33,7 @@
       "mime_type": "text/plain",
       "size_bytes": 16320,
       "url": "https://issues.chromium.org/action/issues/40060660/attachments/53169403?download=true",
-      "local_path": "attachments/asan.log"
+      "local_path": null
     },
     {
       "id": 53169515,
@@ -41,7 +41,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1708,
       "url": "https://issues.chromium.org/action/issues/40060660/attachments/53169515?download=true",
-      "local_path": "attachments/background.js"
+      "local_path": null
     },
     {
       "id": 53169516,
@@ -49,7 +49,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1418,
       "url": "https://issues.chromium.org/action/issues/40060660/attachments/53169516?download=true",
-      "local_path": "attachments/manifest.json"
+      "local_path": null
     }
   ],
   "update_count": 34,

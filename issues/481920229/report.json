@@ -1,0 +1,49 @@
+{
+  "id": "481920229",
+  "url": "https://issues.chromium.org/issues/481920229",
+  "title": "UAF in JsCommunication, leading to RCE",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Mobile>WebView",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": "144.0.0.0",
+  "cve_ids": [],
+  "reporter": "po...@gmail.com",
+  "assignee": "dt...@chromium.org",
+  "created_date": "2026-02-05T10:51:58+00:00",
+  "modified_date": "2026-05-22T07:56:06+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": "Baseline. Renderer RCE / memory corruption in a sandboxed process",
+  "attachments": [
+    {
+      "id": 73145440,
+      "filename": "8df049fc-f7d5-4f0f-94b8-76e914f9b6f9.dmp",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 162272,
+      "url": "https://issues.chromium.org/action/issues/481920229/attachments/73145440?download=true",
+      "local_path": "attachments/8df049fc-f7d5-4f0f-94b8-76e914f9b6f9.dmp"
+    },
+    {
+      "id": 73145441,
+      "filename": "app.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 80486,
+      "url": "https://issues.chromium.org/action/issues/481920229/attachments/73145441?download=true",
+      "local_path": "attachments/app.zip"
+    },
+    {
+      "id": 73145442,
+      "filename": "js_communication_poc.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 1874,
+      "url": "https://issues.chromium.org/action/issues/481920229/attachments/73145442?download=true",
+      "local_path": "attachments/js_communication_poc.zip"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "# Steps to reproduce the problem\nTested on Pixel 9 Pro, Chromium version 144.0.7559.109.\n1. Build `app.zip` and Install\n2. `python -m http.server`\n3. Visit `index.html`\n4. UAF and Crash\n\n# Problem Description\n\n`JsCommunication` is a `content::RenderFrameObserver`, which is destructed along with the"
+}

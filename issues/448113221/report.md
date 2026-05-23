@@ -66,10 +66,10 @@ This allows a non-privileged user to overwrite any file in the filesystem. Howev
 
 ## Attachments
 
-- arbitrary-file-write.mov (video/quicktime, 39.1 MB)
-- arbitrary-file-write.png (image/png, 489.9 KB)
-- behavior.PNG (image/png, 451.4 KB)
-- shared.PNG (image/png, 400.6 KB)
+- [arbitrary-file-write.mov](attachments/arbitrary-file-write.mov) (video/quicktime, 39.1 MB)
+- [arbitrary-file-write.png](attachments/arbitrary-file-write.png) (image/png, 489.9 KB)
+- [behavior.PNG](attachments/behavior.PNG) (image/png, 451.4 KB)
+- [shared.PNG](attachments/shared.PNG) (image/png, 400.6 KB)
 
 ## Timeline
 

@@ -123,21 +123,21 @@ Reporter credit: Alesandro Ortiz <https://AlesandroOrtiz.com>
 
 ## Attachments
 
-- filepicker-pip.html (text/html, 6.2 KB)
-- filepicker-pip-minimal.html (text/html, 1.4 KB)
-- filepicker-pip.mp4 (video/mp4, 3.1 MB)
-- filepicker-pip-minimal-FileDialogsTuckPictureInPicture.mp4 (video/mp4, 2.7 MB)
-- filepicker-pip-minimal-FileDialogsBlockPictureInPicture.mp4 (video/mp4, 2.0 MB)
-- filepicker-pip-rce.html (text/html, 4.2 KB)
-- filepicker-pip-rce.mp4 (video/mp4, 11.0 MB)
-- filepicker-pip-rce-cr.patch (text/x-diff, 2.2 KB)
-- filepicker-pip-rce-cr.html (text/html, 2.7 KB)
-- filepicker-pip-rce-cr.mp4 (video/mp4, 7.5 MB)
-- filepicker-pip-rce-cr.patch (text/x-diff, 3.2 KB)
-- filepicker-pip-rce-bg-cr.html (text/html, 3.1 KB)
-- filepicker-pip-rce-bg-cr.mp4 (video/mp4, 3.1 MB)
-- Screencast From 2025-08-05 15-48-28.mp4 (video/mp4, 1.8 MB)
-- Untitled.png (image/png, 23.4 KB)
+- [filepicker-pip.html](attachments/filepicker-pip.html) (text/html, 6.2 KB)
+- [filepicker-pip-minimal.html](attachments/filepicker-pip-minimal.html) (text/html, 1.4 KB)
+- [filepicker-pip.mp4](attachments/filepicker-pip.mp4) (video/mp4, 3.1 MB)
+- [filepicker-pip-minimal-FileDialogsTuckPictureInPicture.mp4](attachments/filepicker-pip-minimal-FileDialogsTuckPictureInPicture.mp4) (video/mp4, 2.7 MB)
+- [filepicker-pip-minimal-FileDialogsBlockPictureInPicture.mp4](attachments/filepicker-pip-minimal-FileDialogsBlockPictureInPicture.mp4) (video/mp4, 2.0 MB)
+- [filepicker-pip-rce.html](attachments/filepicker-pip-rce.html) (text/html, 4.2 KB)
+- [filepicker-pip-rce.mp4](attachments/filepicker-pip-rce.mp4) (video/mp4, 11.0 MB)
+- [filepicker-pip-rce-cr.patch](attachments/filepicker-pip-rce-cr.patch) (text/x-diff, 2.2 KB)
+- [filepicker-pip-rce-cr.html](attachments/filepicker-pip-rce-cr.html) (text/html, 2.7 KB)
+- [filepicker-pip-rce-cr.mp4](attachments/filepicker-pip-rce-cr.mp4) (video/mp4, 7.5 MB)
+- [filepicker-pip-rce-cr.patch](attachments/filepicker-pip-rce-cr.patch) (text/x-diff, 3.2 KB)
+- [filepicker-pip-rce-bg-cr.html](attachments/filepicker-pip-rce-bg-cr.html) (text/html, 3.1 KB)
+- [filepicker-pip-rce-bg-cr.mp4](attachments/filepicker-pip-rce-bg-cr.mp4) (video/mp4, 3.1 MB)
+- [Screencast From 2025-08-05 15-48-28.mp4](attachments/Screencast From 2025-08-05 15-48-28.mp4) (video/mp4, 1.8 MB)
+- [Untitled.png](attachments/Untitled.png) (image/png, 23.4 KB)
 
 ## Timeline
 

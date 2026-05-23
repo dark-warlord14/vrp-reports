@@ -41,10 +41,10 @@ Reporter credit: [goes here]
 - bandicam 2025-02-24 15-01-45-096.mp4 (video/mp4, 2.6 MB)
 - version 134.mp4 (video/mp4, 1.6 MB)
 - version 136.mp4 (video/mp4, 2.2 MB)
-- enterjacking.html (text/html, 1.5 KB)
-- bandicam 2025-05-31 04-21-18-553.mp4 (video/mp4, 1.4 MB)
+- [enterjacking.html](attachments/enterjacking.html) (text/html, 1.5 KB)
+- [bandicam 2025-05-31 04-21-18-553.mp4](attachments/bandicam 2025-05-31 04-21-18-553.mp4) (video/mp4, 1.4 MB)
 - bandicam 2025-10-23 15-36-08-756.mp4 (video/mp4, 1.4 MB)
-- enterjacking (1).html (text/html, 1.5 KB)
+- [enterjacking (1).html](attachments/enterjacking (1).html) (text/html, 1.5 KB)
 
 ## Timeline
 

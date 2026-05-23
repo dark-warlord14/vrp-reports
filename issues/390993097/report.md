@@ -119,7 +119,7 @@ Marking any potential VRP reward for this bug in advance to be processed for cha
 
 ## Attachments
 
-- bytecodegen-async-confusion.js (text/javascript, 3.4 KB)
+- [bytecodegen-async-confusion.js](attachments/bytecodegen-async-confusion.js) (text/javascript, 3.4 KB)
 
 ## Timeline
 

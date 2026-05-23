@@ -30,7 +30,7 @@
       "mime_type": "text/html",
       "size_bytes": 14690,
       "url": "https://issues.chromium.org/action/issues/452605804/attachments/70182411?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     },
     {
       "id": 70182412,
@@ -38,7 +38,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 3622,
       "url": "https://issues.chromium.org/action/issues/452605804/attachments/70182412?download=true",
-      "local_path": null
+      "local_path": "attachments/serviceworker.js"
     },
     {
       "id": 70182413,
@@ -46,7 +46,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 78553,
       "url": "https://issues.chromium.org/action/issues/452605804/attachments/70182413?download=true",
-      "local_path": null
+      "local_path": "attachments/wasm-module-builder.js"
     }
   ],
   "update_count": 47,

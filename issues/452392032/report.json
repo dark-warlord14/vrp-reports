@@ -25,7 +25,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 6335780,
       "url": "https://issues.chromium.org/action/issues/452392032/attachments/70163184?download=true",
-      "local_path": null
+      "local_path": "attachments/spoofsplitview.mp4"
     },
     {
       "id": 70163185,
@@ -33,7 +33,7 @@
       "mime_type": "text/html",
       "size_bytes": 3633,
       "url": "https://issues.chromium.org/action/issues/452392032/attachments/70163185?download=true",
-      "local_path": null
+      "local_path": "attachments/spoofnewxiov.html"
     },
     {
       "id": 70191235,
@@ -41,7 +41,7 @@
       "mime_type": "image/png",
       "size_bytes": 285508,
       "url": "https://issues.chromium.org/action/issues/452392032/attachments/70191235?download=true",
-      "local_path": null
+      "local_path": "attachments/8eWXXFfj3qsanP5.png"
     },
     {
       "id": 70231837,
@@ -49,7 +49,7 @@
       "mime_type": "image/jpeg",
       "size_bytes": 212898,
       "url": "https://issues.chromium.org/action/issues/452392032/attachments/70231837?download=true",
-      "local_path": null
+      "local_path": "attachments/Screenshot_20251018_182618_Chrome Canary~2.jpg"
     }
   ],
   "update_count": 52,

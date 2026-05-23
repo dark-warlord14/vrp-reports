@@ -52,11 +52,11 @@ void BluetoothAdapterWin::AdapterStateChanged(
 
 ## Attachments
 
-- gwp-asan-crash.txt (text/plain, 9.6 KB)
-- bt_classic_min_extension.zip (application/zip, 2.5 KB)
-- Snipaste_2025-10-29_19-07-44.png (image/png, 107.1 KB)
-- Snipaste_2025-10-29_19-08-10.png (image/png, 1.7 MB)
-- 20251029-190452.mp4 (video/mp4, 11.0 MB)
+- [gwp-asan-crash.txt](attachments/gwp-asan-crash.txt) (text/plain, 9.6 KB)
+- [bt_classic_min_extension.zip](attachments/bt_classic_min_extension.zip) (application/zip, 2.5 KB)
+- [Snipaste_2025-10-29_19-07-44.png](attachments/Snipaste_2025-10-29_19-07-44.png) (image/png, 107.1 KB)
+- [Snipaste_2025-10-29_19-08-10.png](attachments/Snipaste_2025-10-29_19-08-10.png) (image/png, 1.7 MB)
+- [20251029-190452.mp4](attachments/20251029-190452.mp4) (video/mp4, 11.0 MB)
 
 ## Timeline
 

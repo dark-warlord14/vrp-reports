@@ -250,7 +250,7 @@ Reporter credit: xia0o0o0o (@Nyaaaaa\_ovo) at University of California, San Dieg
 
 ## Attachments
 
-- trigger_dcheck.js (text/javascript, 390 B)
+- [trigger_dcheck.js](attachments/trigger_dcheck.js) (text/javascript, 390 B)
 
 ## Timeline
 

@@ -47,8 +47,8 @@ Regression: N/A
 
 - [screen-capture (2).webm](attachments/screen-capture (2).webm) (video/webm, 781.9 KB)
 - [extensionpopuppwa.zip](attachments/extensionpopuppwa.zip) (application/zip, 3.0 KB)
-- pwa.zip (application/zip, 3.5 KB)
-- screen-capture (21).webm (video/webm, 1.1 MB)
+- [pwa.zip](attachments/pwa.zip) (application/zip, 3.5 KB)
+- [screen-capture (21).webm](attachments/screen-capture (21).webm) (video/webm, 1.1 MB)
 
 ## Timeline
 

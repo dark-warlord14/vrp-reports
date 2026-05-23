@@ -224,8 +224,8 @@ Command line: `/proc/self/exe --type=gpu-process --no-sandbox --ozone-platform=w
 
 ## Attachments
 
-- gfxrecon_capture_20250524T090556.gfxr (application/octet-stream, 12.6 KB)
-- build_interference_graph.html (text/html, 3.2 KB)
+- [gfxrecon_capture_20250524T090556.gfxr](attachments/gfxrecon_capture_20250524T090556.gfxr) (application/octet-stream, 12.6 KB)
+- [build_interference_graph.html](attachments/build_interference_graph.html) (text/html, 3.2 KB)
 
 ## Timeline
 

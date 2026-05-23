@@ -7,14 +7,15 @@
   "priority": "P0",
   "component": "Blink>WebGPU",
   "os_platforms": [
-    "Linux"
+    "Linux",
+    "ChromeOS"
   ],
   "chrome_version": null,
   "cve_ids": [],
   "reporter": "wg...@gmail.com",
   "assignee": "ro...@google.com",
   "created_date": "2024-08-15T08:45:37+00:00",
-  "modified_date": "2026-03-27T17:00:36+00:00",
+  "modified_date": "2026-03-28T08:02:16+00:00",
   "bounty_confirmed": true,
   "bounty_amount": 10000.0,
   "bounty_rationale": "baseline report of memory corruption a highly-privileged process (GPU)",
@@ -44,6 +45,6 @@
       "local_path": "attachments/gfxrecon_capture_20240815T130508.gfxr"
     }
   ],
-  "update_count": 73,
+  "update_count": 74,
   "description_snippet": "##### VULNERABILITY DETAILS\nThe following vulnerabilitiy describes an issue in Mesa, reachable via WebGPU shaders on Linux. I'm aware that WebGPU is not yet enabled by default on Linux, so just let me know if this type of issue is not yet in scope. If such issues are in scope but only on some specif"
 }

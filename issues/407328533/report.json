@@ -37,7 +37,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 332301,
       "url": "https://issues.chromium.org/action/issues/407328533/attachments/64413763?download=true",
-      "local_path": null
+      "local_path": "attachments/chrome_2025-03-30_19-51-07.mp4"
     },
     {
       "id": 64413764,
@@ -45,7 +45,7 @@
       "mime_type": "text/html",
       "size_bytes": 318,
       "url": "https://issues.chromium.org/action/issues/407328533/attachments/64413764?download=true",
-      "local_path": null
+      "local_path": "attachments/crash.html"
     },
     {
       "id": 64413765,
@@ -53,7 +53,7 @@
       "mime_type": "text/plain",
       "size_bytes": 36805,
       "url": "https://issues.chromium.org/action/issues/407328533/attachments/64413765?download=true",
-      "local_path": null
+      "local_path": "attachments/asan2.log"
     },
     {
       "id": 64417137,
@@ -61,7 +61,7 @@
       "mime_type": "text/html",
       "size_bytes": 372,
       "url": "https://issues.chromium.org/action/issues/407328533/attachments/64417137?download=true",
-      "local_path": null
+      "local_path": "attachments/crash2.html"
     },
     {
       "id": 64408507,
@@ -69,7 +69,7 @@
       "mime_type": "text/html",
       "size_bytes": 372,
       "url": "https://issues.chromium.org/action/issues/407328533/attachments/64408507?download=true",
-      "local_path": null
+      "local_path": "attachments/crash2.html"
     },
     {
       "id": 64417139,
@@ -77,7 +77,7 @@
       "mime_type": "text/html",
       "size_bytes": 846,
       "url": "https://issues.chromium.org/action/issues/407328533/attachments/64417139?download=true",
-      "local_path": null
+      "local_path": "attachments/crash3.html"
     },
     {
       "id": 64417140,
@@ -85,7 +85,7 @@
       "mime_type": "video/webm",
       "size_bytes": 2990047,
       "url": "https://issues.chromium.org/action/issues/407328533/attachments/64417140?download=true",
-      "local_path": null
+      "local_path": "attachments/demo.webm"
     },
     {
       "id": 65471578,
@@ -93,7 +93,7 @@
       "mime_type": "text/html",
       "size_bytes": 590,
       "url": "https://issues.chromium.org/action/issues/407328533/attachments/65471578?download=true",
-      "local_path": null
+      "local_path": "attachments/crash.html"
     }
   ],
   "update_count": 112,

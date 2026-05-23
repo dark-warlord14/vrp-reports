@@ -30,7 +30,7 @@
       "mime_type": "text/plain",
       "size_bytes": 132,
       "url": "https://issues.chromium.org/action/issues/41483297/attachments/53059229?download=true",
-      "local_path": "attachments/repro.js"
+      "local_path": null
     },
     {
       "id": 53059230,
@@ -38,7 +38,7 @@
       "mime_type": "text/plain",
       "size_bytes": 3148,
       "url": "https://issues.chromium.org/action/issues/41483297/attachments/53059230?download=true",
-      "local_path": "attachments/ex.js"
+      "local_path": null
     },
     {
       "id": 53059231,

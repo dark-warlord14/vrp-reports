@@ -58,7 +58,7 @@ Regression: N/A
 
 ## Attachments
 
-- repro.mp4 (video/mp4, 296.3 KB)
+- [repro.mp4](attachments/repro.mp4) (video/mp4, 296.3 KB)
 - deleted (application/octet-stream, 0 B)
 
 ## Timeline

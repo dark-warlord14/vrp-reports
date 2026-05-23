@@ -25,7 +25,7 @@
       "mime_type": "video/quicktime",
       "size_bytes": 15162771,
       "url": "https://issues.chromium.org/action/issues/419721056/attachments/66102559?download=true",
-      "local_path": null
+      "local_path": "attachments/showsavefilepicker can overlaid on other origin.mov"
     },
     {
       "id": 66101083,
@@ -33,7 +33,7 @@
       "mime_type": "text/html",
       "size_bytes": 1353,
       "url": "https://issues.chromium.org/action/issues/419721056/attachments/66101083?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     }
   ],
   "update_count": 47,

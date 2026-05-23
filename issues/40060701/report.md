@@ -149,8 +149,8 @@ WRITE of size 4 at 0x6020007fa590 thread T25 (ThreadPoolForeg)
 
 ## Attachments
 
-- [asan.log](attachments/asan.log) (text/plain, 59.5 KB)
-- [poc.html](attachments/poc.html) (text/plain, 1.5 KB)
+- asan.log (text/plain, 59.5 KB)
+- poc.html (text/plain, 1.5 KB)
 - [launcher.sh](attachments/launcher.sh) (text/plain, 2.4 KB)
 - [fake-video.y4m](attachments/fake-video.y4m) (application/octet-stream, 8.1 MB)
 

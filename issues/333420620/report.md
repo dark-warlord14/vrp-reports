@@ -7,7 +7,7 @@
 | **Severity** | S3-Low |
 | **Priority** | P1 |
 | **Component** | Blink>WebGPU, Internals>GPU>Dawn, Internals>GPU>Tint |
-| **Platforms** | Linux, Windows |
+| **Platforms** | Linux, Windows, ChromeOS |
 | **Reporter** | wg...@gmail.com |
 | **Assignee** | am...@google.com |
 | **Created** | 2024-04-09 |

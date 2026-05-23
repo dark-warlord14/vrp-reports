@@ -25,7 +25,7 @@
       "mime_type": "application/x-7z-compressed",
       "size_bytes": 50606,
       "url": "https://issues.chromium.org/action/issues/400740865/attachments/63462605?download=true",
-      "local_path": null
+      "local_path": "attachments/FilesystemEoPsNewChrome.7z"
     },
     {
       "id": 63462606,
@@ -33,7 +33,7 @@
       "mime_type": "application/x-msdos-program",
       "size_bytes": 239104,
       "url": "https://issues.chromium.org/action/issues/400740865/attachments/63462606?download=true",
-      "local_path": null
+      "local_path": "attachments/FolderContentsDeleteToFolderDelete.exe"
     },
     {
       "id": 63462607,
@@ -41,7 +41,7 @@
       "mime_type": "application/x-msdos-program",
       "size_bytes": 519168,
       "url": "https://issues.chromium.org/action/issues/400740865/attachments/63462607?download=true",
-      "local_path": null
+      "local_path": "attachments/FolderOrFileDeleteToSystem.exe"
     },
     {
       "id": 63462608,
@@ -49,7 +49,7 @@
       "mime_type": "video/x-matroska",
       "size_bytes": 1864673,
       "url": "https://issues.chromium.org/action/issues/400740865/attachments/63462608?download=true",
-      "local_path": null
+      "local_path": "attachments/PoC-Google-ChromeUpdater-EoP.mkv"
     }
   ],
   "update_count": 68,

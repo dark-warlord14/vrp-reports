@@ -39,7 +39,7 @@ Reporter credit: Shaheen Fazim
 
 ## Attachments
 
-- [poc.html](attachments/poc.html) (text/plain, 889 B)
+- poc.html (text/plain, 889 B)
 - [spoof.png](attachments/spoof.png) (image/png, 337.6 KB)
 - [demo.mp4](attachments/demo.mp4) (video/mp4, 2.2 MB)
 - [spoofing-fixed-test.mp4](attachments/spoofing-fixed-test.mp4) (video/mp4, 1.7 MB)

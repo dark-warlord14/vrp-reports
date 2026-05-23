@@ -29,7 +29,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 83420,
       "url": "https://issues.chromium.org/action/issues/432289371/attachments/67663972?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.js"
     },
     {
       "id": 67846555,
@@ -37,7 +37,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 83472,
       "url": "https://issues.chromium.org/action/issues/432289371/attachments/67846555?download=true",
-      "local_path": null
+      "local_path": "attachments/recreate_funcref.js"
     },
     {
       "id": 68028724,
@@ -45,7 +45,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 84220,
       "url": "https://issues.chromium.org/action/issues/432289371/attachments/68028724?download=true",
-      "local_path": null
+      "local_path": "attachments/recreate_funcref.js"
     }
   ],
   "update_count": 74,

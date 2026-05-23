@@ -61,9 +61,9 @@ Regression: N/A
 
 ## Attachments
 
-- IMG_2208.MOV (video/quicktime, 78.1 MB)
-- uaf (1).html (text/html, 5.4 KB)
-- crash.out (application/octet-stream, 149.0 KB)
+- [IMG_2208.MOV](attachments/IMG_2208.MOV) (video/quicktime, 78.1 MB)
+- [uaf (1).html](attachments/uaf (1).html) (text/html, 5.4 KB)
+- [crash.out](attachments/crash.out) (application/octet-stream, 149.0 KB)
 
 ## Timeline
 

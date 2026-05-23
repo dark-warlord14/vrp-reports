@@ -1,0 +1,68 @@
+{
+  "id": "435684924",
+  "url": "https://issues.chromium.org/issues/435684924",
+  "title": "Security: Compromised renderer can read files through file picker dialog with kSave mode + prefilled filename",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Storage>FileAPI",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "my...@chromium.org",
+  "created_date": "2025-08-02T01:33:05+00:00",
+  "modified_date": "2026-05-20T07:57:56+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "Low impact user information disclosure",
+  "attachments": [
+    {
+      "id": 68102014,
+      "filename": "filepicker-ksave-cr.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 3458,
+      "url": "https://issues.chromium.org/action/issues/435684924/attachments/68102014?download=true",
+      "local_path": "attachments/filepicker-ksave-cr.patch"
+    },
+    {
+      "id": 68102015,
+      "filename": "download-theft-input-ksave-cr.html",
+      "mime_type": "text/html",
+      "size_bytes": 6290,
+      "url": "https://issues.chromium.org/action/issues/435684924/attachments/68102015?download=true",
+      "local_path": "attachments/download-theft-input-ksave-cr.html"
+    },
+    {
+      "id": 68102016,
+      "filename": "download-theft-input-ksave-cr.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3908336,
+      "url": "https://issues.chromium.org/action/issues/435684924/attachments/68102016?download=true",
+      "local_path": "attachments/download-theft-input-ksave-cr.mp4"
+    },
+    {
+      "id": 68102017,
+      "filename": "set-cookies.php",
+      "mime_type": "application/x-httpd-php",
+      "size_bytes": 1282,
+      "url": "https://issues.chromium.org/action/issues/435684924/attachments/68102017?download=true",
+      "local_path": "attachments/set-cookies.php"
+    },
+    {
+      "id": 68102018,
+      "filename": "get-cookies.php",
+      "mime_type": "application/x-httpd-php",
+      "size_bytes": 527,
+      "url": "https://issues.chromium.org/action/issues/435684924/attachments/68102018?download=true",
+      "local_path": "attachments/get-cookies.php"
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "## SUMMARY\n\nA compromised renderer can use a file picker dialog with `kSave` mode and prefilled filename to read local files. In ideal scenarios, this occurs with minimal user interaction (holding enter) and can be used to read one or multiple files.\n\nThis is similar to issue 433800617 that I report"
+}

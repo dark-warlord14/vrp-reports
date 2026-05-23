@@ -36,9 +36,9 @@ OS Version: 10.0
 
 - [asan.txt](attachments/asan.txt) (text/plain, 17.4 KB)
 - [issue_poc.png](attachments/issue_poc.png) (image/png, 67.0 KB)
-- [0001-fix-issue-1301840-uaf.patch](attachments/0001-fix-issue-1301840-uaf.patch) (text/plain, 2.0 KB)
-- [poc1.png](attachments/poc1.png) (image/png, 92.0 KB)
-- [test.html](attachments/test.html) (text/plain, 172 B)
+- 0001-fix-issue-1301840-uaf.patch (text/plain, 2.0 KB)
+- poc1.png (image/png, 92.0 KB)
+- test.html (text/plain, 172 B)
 - [poc1.mp4](attachments/poc1.mp4) (video/mp4, 8.2 MB)
 
 ## Timeline

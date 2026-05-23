@@ -120,8 +120,8 @@ Reporter credit: Krishna Ravishankar (@krsh732)
 
 ## Attachments
 
-- oob-builtin-poc.js (text/javascript, 2.6 KB)
-- 0001-sandbox-Ensure-builtin-is-within-bounds-for-CSA-Load.patch (text/x-diff, 2.8 KB)
+- [oob-builtin-poc.js](attachments/oob-builtin-poc.js) (text/javascript, 2.6 KB)
+- [0001-sandbox-Ensure-builtin-is-within-bounds-for-CSA-Load.patch](attachments/0001-sandbox-Ensure-builtin-is-within-bounds-for-CSA-Load.patch) (text/x-diff, 2.8 KB)
 
 ## Timeline
 

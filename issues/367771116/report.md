@@ -41,15 +41,15 @@ Reporter credit: [goes here]
 ## Attachments
 
 - [extensionpopup-.zip](attachments/extensionpopup-.zip) (application/zip, 7.5 KB)
-- [bandicam 2024-09-18 14-33-42-940.mp4](attachments/bandicam 2024-09-18 14-33-42-940.mp4) (video/mp4, 2.3 MB)
+- bandicam 2024-09-18 14-33-42-940.mp4 (video/mp4, 2.3 MB)
 - [downloadspoof.png](attachments/downloadspoof.png) (image/png, 105.8 KB)
 - [manifest.json](attachments/manifest.json) (application/json, 467 B)
 - [popup.html](attachments/popup.html) (text/html, 2.3 KB)
 - [popup-screenshare.html](attachments/popup-screenshare.html) (text/html, 430 B)
 - [bg-keyboard.js](attachments/bg-keyboard.js) (text/javascript, 2.2 KB)
 - [bandicam 2025-03-25 12-32-53-235.mp4](attachments/bandicam 2025-03-25 12-32-53-235.mp4) (video/mp4, 1.5 MB)
-- [bandicam 2025-03-29 07-59-21-393.mp4](attachments/bandicam 2025-03-29 07-59-21-393.mp4) (video/mp4, 2.2 MB)
-- [bandicam 2025-03-29 08-25-04-755.mp4](attachments/bandicam 2025-03-29 08-25-04-755.mp4) (video/mp4, 1.8 MB)
+- bandicam 2025-03-29 07-59-21-393.mp4 (video/mp4, 2.2 MB)
+- bandicam 2025-03-29 08-25-04-755.mp4 (video/mp4, 1.8 MB)
 - [bandicam 2025-03-29 08-45-30-613.mp4](attachments/bandicam 2025-03-29 08-45-30-613.mp4) (video/mp4, 1.5 MB)
 
 ## Timeline

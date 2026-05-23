@@ -26,7 +26,7 @@
       "mime_type": "text/plain",
       "size_bytes": 15424,
       "url": "https://issues.chromium.org/action/issues/41483711/attachments/53374616?download=true",
-      "local_path": "attachments/poc_code.js"
+      "local_path": null
     },
     {
       "id": 53374617,
@@ -34,7 +34,7 @@
       "mime_type": "text/plain",
       "size_bytes": 3315,
       "url": "https://issues.chromium.org/action/issues/41483711/attachments/53374617?download=true",
-      "local_path": "attachments/poc.js"
+      "local_path": null
     }
   ],
   "update_count": 41,

@@ -59,7 +59,7 @@ Marking any rewards for charity in advance.
 
 ## Attachments
 
-- v8sbx-unlock-debugbreaktrampoline.js (text/javascript, 81.6 KB)
+- [v8sbx-unlock-debugbreaktrampoline.js](attachments/v8sbx-unlock-debugbreaktrampoline.js) (text/javascript, 81.6 KB)
 
 ## Timeline
 

@@ -53,8 +53,8 @@ Reporter credit: yuki yamaoto
 
 ## Attachments
 
-- Screenshot_20250124-021309.png (image/png, 132.1 KB)
-- Screenshot_20250124-021345.png (image/png, 220.4 KB)
+- [Screenshot_20250124-021309.png](attachments/Screenshot_20250124-021309.png) (image/png, 132.1 KB)
+- [Screenshot_20250124-021345.png](attachments/Screenshot_20250124-021345.png) (image/png, 220.4 KB)
 - Screenshot_20250124-021519.png (image/png, 170.1 KB)
 - Screenshot 2025-01-23 at 11.04.40 AM.png (image/png, 285.8 KB)
 

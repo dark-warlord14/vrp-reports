@@ -173,7 +173,7 @@ Reporter credit: Changheon Lee
 ## Attachments
 
 - deleted (application/octet-stream, 0 B)
-- poc.js (text/javascript, 424 B)
+- [poc.js](attachments/poc.js) (text/javascript, 424 B)
 
 ## Timeline
 

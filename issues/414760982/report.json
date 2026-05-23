@@ -28,7 +28,7 @@
       "mime_type": "application/json",
       "size_bytes": 585,
       "url": "https://issues.chromium.org/action/issues/414760982/attachments/65375332?download=true",
-      "local_path": null
+      "local_path": "attachments/manifest.json"
     },
     {
       "id": 65375333,
@@ -36,7 +36,7 @@
       "mime_type": "image/png",
       "size_bytes": 429,
       "url": "https://issues.chromium.org/action/issues/414760982/attachments/65375333?download=true",
-      "local_path": null
+      "local_path": "attachments/icon.png"
     },
     {
       "id": 65375334,
@@ -44,7 +44,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 550,
       "url": "https://issues.chromium.org/action/issues/414760982/attachments/65375334?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.js"
     },
     {
       "id": 65375335,
@@ -52,7 +52,7 @@
       "mime_type": "text/html",
       "size_bytes": 170,
       "url": "https://issues.chromium.org/action/issues/414760982/attachments/65375335?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     }
   ],
   "update_count": 108,

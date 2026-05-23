@@ -250,7 +250,7 @@ Description   : heap-buffer-overflow
 
 ## Attachments
 
-- bug.js (text/javascript, 1.1 KB)
+- [bug.js](attachments/bug.js) (text/javascript, 1.1 KB)
 
 ## Timeline
 

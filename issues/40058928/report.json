@@ -41,7 +41,7 @@
       "mime_type": "text/plain",
       "size_bytes": 2081,
       "url": "https://issues.chromium.org/action/issues/40058928/attachments/52895462?download=true",
-      "local_path": "attachments/0001-fix-issue-1301840-uaf.patch"
+      "local_path": null
     },
     {
       "id": 52895527,
@@ -49,7 +49,7 @@
       "mime_type": "image/png",
       "size_bytes": 94215,
       "url": "https://issues.chromium.org/action/issues/40058928/attachments/52895527?download=true",
-      "local_path": "attachments/poc1.png"
+      "local_path": null
     },
     {
       "id": 52895528,
@@ -57,7 +57,7 @@
       "mime_type": "text/plain",
       "size_bytes": 172,
       "url": "https://issues.chromium.org/action/issues/40058928/attachments/52895528?download=true",
-      "local_path": "attachments/test.html"
+      "local_path": null
     },
     {
       "id": 52895529,

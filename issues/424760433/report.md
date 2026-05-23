@@ -276,9 +276,9 @@ Refer to https://chromium.googlesource.com/chromium/src/+/main/base/memory/raw_p
 
 ## Attachments
 
-- subgroup.html (text/html, 2.8 KB)
-- gfxrecon_capture_20250613T172703.gfxr (application/octet-stream, 10.5 KB)
-- Dockerfile (application/octet-stream, 2.0 KB)
+- [subgroup.html](attachments/subgroup.html) (text/html, 2.8 KB)
+- [gfxrecon_capture_20250613T172703.gfxr](attachments/gfxrecon_capture_20250613T172703.gfxr) (application/octet-stream, 10.5 KB)
+- [Dockerfile](attachments/Dockerfile) (application/octet-stream, 2.0 KB)
 
 ## Timeline
 

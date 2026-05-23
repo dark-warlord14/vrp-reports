@@ -126,7 +126,7 @@ Marking any potential VRP reward for this bug in advance to be processed for cha
 
 ## Attachments
 
-- array-sort-sortstate-corruption.js (text/javascript, 2.2 KB)
+- [array-sort-sortstate-corruption.js](attachments/array-sort-sortstate-corruption.js) (text/javascript, 2.2 KB)
 
 ## Timeline
 

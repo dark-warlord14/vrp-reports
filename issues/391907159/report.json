@@ -30,7 +30,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 4072,
       "url": "https://issues.chromium.org/action/issues/391907159/attachments/62392689?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.js"
     },
     {
       "id": 62392690,
@@ -38,7 +38,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 62029,
       "url": "https://issues.chromium.org/action/issues/391907159/attachments/62392690?download=true",
-      "local_path": null
+      "local_path": "attachments/exploit.js"
     }
   ],
   "update_count": 78,

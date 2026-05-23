@@ -281,12 +281,12 @@ Reporter credit: Looben Yang
 
 ## Attachments
 
-- UAF_FinishRequestWithFetchCount_PoC.js (text/javascript, 1.4 KB)
-- UAF_FinishRequestWithFetchCount_ASAN.txt (text/plain, 47.2 KB)
-- UAF_FinishRequestWithFetchCount_crashState_Mac.txt (text/plain, 10.4 KB)
-- UAF_FinishRequestWithFetchCount_PoC_OnPipeConnectionError.js (text/javascript, 1.7 KB)
-- UAF_FinishRequestWithFetchCount_OnPipeConnectionError_ASAN.txt (text/plain, 48.7 KB)
-- UAF_FinishRequestWithFetchCount_OnPipeConnectionError_crashState_dev.txt (text/plain, 15.2 KB)
+- [UAF_FinishRequestWithFetchCount_PoC.js](attachments/UAF_FinishRequestWithFetchCount_PoC.js) (text/javascript, 1.4 KB)
+- [UAF_FinishRequestWithFetchCount_ASAN.txt](attachments/UAF_FinishRequestWithFetchCount_ASAN.txt) (text/plain, 47.2 KB)
+- [UAF_FinishRequestWithFetchCount_crashState_Mac.txt](attachments/UAF_FinishRequestWithFetchCount_crashState_Mac.txt) (text/plain, 10.4 KB)
+- [UAF_FinishRequestWithFetchCount_PoC_OnPipeConnectionError.js](attachments/UAF_FinishRequestWithFetchCount_PoC_OnPipeConnectionError.js) (text/javascript, 1.7 KB)
+- [UAF_FinishRequestWithFetchCount_OnPipeConnectionError_ASAN.txt](attachments/UAF_FinishRequestWithFetchCount_OnPipeConnectionError_ASAN.txt) (text/plain, 48.7 KB)
+- [UAF_FinishRequestWithFetchCount_OnPipeConnectionError_crashState_dev.txt](attachments/UAF_FinishRequestWithFetchCount_OnPipeConnectionError_crashState_dev.txt) (text/plain, 15.2 KB)
 
 ## Timeline
 

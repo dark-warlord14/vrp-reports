@@ -41,8 +41,8 @@ Regression: N/A
 
 ## Attachments
 
-- bg-keyboard.js (text/javascript, 1.9 KB)
-- manifest.json (application/json, 494 B)
+- [bg-keyboard.js](attachments/bg-keyboard.js) (text/javascript, 1.9 KB)
+- [manifest.json](attachments/manifest.json) (application/json, 494 B)
 - [popup.html](attachments/popup.html) (text/html, 2.1 KB)
 - [screen-capture.webm](attachments/screen-capture.webm) (video/webm, 1.7 MB)
 - [screen.webm](attachments/screen.webm) (video/webm, 2.1 MB)

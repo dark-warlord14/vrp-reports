@@ -42,9 +42,9 @@ Regression: N/A \
 
 ## Attachments
 
-- js-dialog-origin-spoof-frame.html (text/html, 2.0 KB)
-- sandbox.html (text/html, 571 B)
-- screen.mp4 (video/mp4, 852.4 KB)
+- [js-dialog-origin-spoof-frame.html](attachments/js-dialog-origin-spoof-frame.html) (text/html, 2.0 KB)
+- [sandbox.html](attachments/sandbox.html) (text/html, 571 B)
+- [screen.mp4](attachments/screen.mp4) (video/mp4, 852.4 KB)
 
 ## Timeline
 

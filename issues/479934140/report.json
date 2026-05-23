@@ -1,0 +1,66 @@
+{
+  "id": "479934140",
+  "url": "https://issues.chromium.org/issues/479934140",
+  "title": "Heap-buffer-overflow in FFmpeg (mov.c) via malformed stsd atom in MP4/DASH",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media>FFmpeg",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "da...@gmail.com",
+  "assignee": "tm...@chromium.org",
+  "created_date": "2026-01-30T01:25:13+00:00",
+  "modified_date": "2026-05-16T07:59:24+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "bounty_rationale": "Renderer RCE / memory corruption in a sandboxed process",
+  "attachments": [
+    {
+      "id": 72964447,
+      "filename": "trigger.html",
+      "mime_type": "text/html",
+      "size_bytes": 733,
+      "url": "https://issues.chromium.org/action/issues/479934140/attachments/72964447?download=true",
+      "local_path": "attachments/trigger.html"
+    },
+    {
+      "id": 72964448,
+      "filename": "poc_stsd",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2349,
+      "url": "https://issues.chromium.org/action/issues/479934140/attachments/72964448?download=true",
+      "local_path": "attachments/poc_stsd"
+    },
+    {
+      "id": 72964449,
+      "filename": "chrome_asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 9810,
+      "url": "https://issues.chromium.org/action/issues/479934140/attachments/72964449?download=true",
+      "local_path": "attachments/chrome_asan.txt"
+    },
+    {
+      "id": 72964450,
+      "filename": "trigger.html",
+      "mime_type": "text/html",
+      "size_bytes": 733,
+      "url": "https://issues.chromium.org/action/issues/479934140/attachments/72964450?download=true",
+      "local_path": "attachments/trigger.html"
+    },
+    {
+      "id": 72964451,
+      "filename": "poc_stsd",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2349,
+      "url": "https://issues.chromium.org/action/issues/479934140/attachments/72964451?download=true",
+      "local_path": "attachments/poc_stsd"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "---\n\n### Report description\n\n\nHeap-buffer-overflow in FFmpeg (mov.c) via malformed stsd atom in MP4/DASH\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com"
+}

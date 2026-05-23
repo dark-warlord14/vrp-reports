@@ -84,8 +84,8 @@ Vincent Dragnea
 
 ## Attachments
 
-- samesite-example.mp4 (video/mp4, 1.1 MB)
-- samesitetest-link.pdf (application/pdf, 9.8 KB)
+- [samesite-example.mp4](attachments/samesite-example.mp4) (video/mp4, 1.1 MB)
+- [samesitetest-link.pdf](attachments/samesitetest-link.pdf) (application/pdf, 9.8 KB)
 
 ## Timeline
 

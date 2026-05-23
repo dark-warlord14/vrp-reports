@@ -1,0 +1,38 @@
+{
+  "id": "444865195",
+  "url": "https://issues.chromium.org/issues/444865195",
+  "title": "V8 Sandbox Bypass: Referencing non-shared heap data across isolates leads to UAF -> AAW/PC control",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Sandbox",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "kr...@gmail.com",
+  "assignee": "om...@chromium.org",
+  "created_date": "2025-09-13T23:13:32+00:00",
+  "modified_date": "2026-05-06T08:01:21+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "bounty_rationale": "Controlled write outside the V8 sandbox",
+  "attachments": [
+    {
+      "id": 69287408,
+      "filename": "cross-isolate-uaf.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2768,
+      "url": "https://issues.chromium.org/action/issues/444865195/attachments/69287408?download=true",
+      "local_path": "attachments/cross-isolate-uaf.js"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Details\n\nNormally, [per this document](https://docs.google.com/document/d/18lYuaEsDSudzl2TDu-nc-0sVXW7WTGAs14k64GEhnFg/), data that is shared between Isolates resides in a shared heap so garbage collection can properly account for it. However, with in-sandbox memory c"
+}

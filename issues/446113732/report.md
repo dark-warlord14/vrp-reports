@@ -136,8 +136,8 @@ Reporter credit: Seunghyun Lee (@0x10n) of CMU CSD / CyLab
 
 ## Attachments
 
-- poc.js (text/javascript, 81.5 KB)
-- rce.html (text/html, 91.2 KB)
+- [poc.js](attachments/poc.js) (text/javascript, 81.5 KB)
+- [rce.html](attachments/rce.html) (text/html, 91.2 KB)
 
 ## Timeline
 

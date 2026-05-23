@@ -149,7 +149,7 @@ Marking any potential VRP reward for this bug in advance to be processed for cha
 
 ## Attachments
 
-- typedarray-set-wildcopy.js (text/javascript, 3.0 KB)
+- [typedarray-set-wildcopy.js](attachments/typedarray-set-wildcopy.js) (text/javascript, 3.0 KB)
 
 ## Timeline
 

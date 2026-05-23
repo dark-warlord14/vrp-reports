@@ -22,8 +22,8 @@ references for some css that can and cannot be embedded in the <permission> tag:
 
 ## Attachments
 
-- fontpepc.html (text/html, 1.4 KB)
-- bandicam 2025-06-10 11-19-20-944.mp4 (video/mp4, 2.6 MB)
+- [fontpepc.html](attachments/fontpepc.html) (text/html, 1.4 KB)
+- [bandicam 2025-06-10 11-19-20-944.mp4](attachments/bandicam 2025-06-10 11-19-20-944.mp4) (video/mp4, 2.6 MB)
 
 ## Timeline
 

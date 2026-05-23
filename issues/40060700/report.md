@@ -81,9 +81,9 @@ Reporter credit: Chaobin Zhang
 
 ## Attachments
 
-- [patch.diff](attachments/patch.diff) (text/plain, 7.8 KB)
-- [manifest.json](attachments/manifest.json) (text/plain, 537 B)
-- [test.js](attachments/test.js) (text/plain, 80 B)
+- patch.diff (text/plain, 7.8 KB)
+- manifest.json (text/plain, 537 B)
+- test.js (text/plain, 80 B)
 - [asan.txt](attachments/asan.txt) (text/plain, 23.4 KB)
 - [poc.webm](attachments/poc.webm) (video/webm, 9.4 MB)
 

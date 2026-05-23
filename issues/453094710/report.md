@@ -174,11 +174,11 @@ Regression: N/A \
 
 ## Attachments
 
-- 7475_patch_renderer_poc.diff (text/x-diff, 706 B)
-- 7475_patch_renderer_exp.diff (text/x-diff, 33.7 KB)
-- play.html (text/html, 2.6 KB)
-- sample1.mp3 (audio/mpeg, 1.9 MB)
-- exploit.mp4 (video/mp4, 285.6 MB)
+- [7475_patch_renderer_poc.diff](attachments/7475_patch_renderer_poc.diff) (text/x-diff, 706 B)
+- [7475_patch_renderer_exp.diff](attachments/7475_patch_renderer_exp.diff) (text/x-diff, 33.7 KB)
+- [play.html](attachments/play.html) (text/html, 2.6 KB)
+- [sample1.mp3](attachments/sample1.mp3) (audio/mpeg, 1.9 MB)
+- [exploit.mp4](attachments/exploit.mp4) (video/mp4, 285.6 MB)
 
 ## Timeline
 

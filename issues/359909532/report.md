@@ -7,7 +7,7 @@
 | **Severity** | S3-Low |
 | **Priority** | P0 |
 | **Component** | Blink>WebGPU |
-| **Platforms** | Linux |
+| **Platforms** | Linux, ChromeOS |
 | **Reporter** | wg...@gmail.com |
 | **Assignee** | ro...@google.com |
 | **Created** | 2024-08-15 |

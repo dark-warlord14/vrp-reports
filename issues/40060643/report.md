@@ -145,7 +145,7 @@ Right alloca redzone: cb
 
 ## Attachments
 
-- asan.txt (text/plain, 3.6 KB)
+- [asan.txt](attachments/asan.txt) (text/plain, 3.6 KB)
 - [poc.html](attachments/poc.html) (text/plain, 4.1 KB)
 
 ## Timeline

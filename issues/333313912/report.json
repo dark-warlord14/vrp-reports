@@ -14,7 +14,7 @@
   "reporter": "ch...@gmail.com",
   "assignee": "mu...@google.com",
   "created_date": "2024-04-08T06:54:59+00:00",
-  "modified_date": "2026-03-21T08:00:21+00:00",
+  "modified_date": "2026-03-28T03:17:58+00:00",
   "bounty_confirmed": true,
   "bounty_amount": 1000.0,
   "bounty_rationale": "highly mitigated security UI spoofing",
@@ -36,6 +36,6 @@
       "local_path": "attachments/screen-20250219-063310.mp4"
     }
   ],
-  "update_count": 67,
+  "update_count": 68,
   "description_snippet": "# Steps to reproduce the problem\n1. Go to https://lbstyle.github.io/alert.html\n2. Click on the button and select \"Use a different phone or tablet.\"\n3. Observe that the full-screen notification doesn't appear at the right time. \n\n# Problem Description\nThe full-screen notification should appear after"
 }

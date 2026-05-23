@@ -1,0 +1,49 @@
+{
+  "id": "442273697",
+  "url": "https://issues.chromium.org/issues/442273697",
+  "title": "libGLES_mali UAF via WebGPU shaders at llvm::BasicBlock::getTerminator",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Dawn>Tint",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "a7...@gmail.com",
+  "assignee": "pe...@google.com",
+  "created_date": "2025-09-01T11:03:56+00:00",
+  "modified_date": "2026-04-17T07:55:28+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 25000.0,
+  "bounty_rationale": "Baseline Memory corruption in a non-sandboxed process (GPU on Android)",
+  "attachments": [
+    {
+      "id": 68918297,
+      "filename": "standalone.cpp",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 8092,
+      "url": "https://issues.chromium.org/action/issues/442273697/attachments/68918297?download=true",
+      "local_path": "attachments/standalone.cpp"
+    },
+    {
+      "id": 68918298,
+      "filename": "comp.spv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3956,
+      "url": "https://issues.chromium.org/action/issues/442273697/attachments/68918298?download=true",
+      "local_path": "attachments/comp.spv"
+    },
+    {
+      "id": 68918299,
+      "filename": "a.html",
+      "mime_type": "text/html",
+      "size_bytes": 4271,
+      "url": "https://issues.chromium.org/action/issues/442273697/attachments/68918299?download=true",
+      "local_path": "attachments/a.html"
+    }
+  ],
+  "update_count": 76,
+  "description_snippet": "#### VULNERABILITY DETAILS\n\nChrome on Android translates WebGPU shaders to SPIR-V. These SPIR-V shaders are eventually passed to libGLES_mali.so for optimization and native code generation. This bug report is about a WebGPU shader that crashes the GPU process of com.android.chrome with an MTE violat"
+}

@@ -57,12 +57,12 @@ query=evil\ncmd /c calc.exe\x0b\ncmd /c calc.exe\x0c
 
 ## Attachments
 
-- bandicam 2025-09-10 02-31-41-605.mp4 (video/mp4, 3.4 MB)
-- Screenshot 2025-09-16 at 1.13.17 PM.png (image/png, 1.2 MB)
-- Screenshot 2025-09-16 at 1.12.28 PM.png (image/png, 335.2 KB)
-- bandicam 2025-09-16 18-39-40-603.mp4 (video/mp4, 3.7 MB)
-- Screenshot 2025-09-16 at 4.38.52 PM.png (image/png, 1.1 MB)
-- Screenshot 2025-09-16 224737.png (image/png, 82.3 KB)
+- [bandicam 2025-09-10 02-31-41-605.mp4](attachments/bandicam 2025-09-10 02-31-41-605.mp4) (video/mp4, 3.4 MB)
+- [Screenshot 2025-09-16 at 1.13.17 PM.png](attachments/Screenshot 2025-09-16 at 1.13.17 PM.png) (image/png, 1.2 MB)
+- [Screenshot 2025-09-16 at 1.12.28 PM.png](attachments/Screenshot 2025-09-16 at 1.12.28 PM.png) (image/png, 335.2 KB)
+- [bandicam 2025-09-16 18-39-40-603.mp4](attachments/bandicam 2025-09-16 18-39-40-603.mp4) (video/mp4, 3.7 MB)
+- [Screenshot 2025-09-16 at 4.38.52 PM.png](attachments/Screenshot 2025-09-16 at 4.38.52 PM.png) (image/png, 1.1 MB)
+- [Screenshot 2025-09-16 224737.png](attachments/Screenshot 2025-09-16 224737.png) (image/png, 82.3 KB)
 
 ## Timeline
 

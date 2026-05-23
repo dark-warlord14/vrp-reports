@@ -29,7 +29,7 @@
       "mime_type": "text/plain",
       "size_bytes": 22391,
       "url": "https://issues.chromium.org/action/issues/426054987/attachments/66891229?download=true",
-      "local_path": null
+      "local_path": "attachments/asan.txt"
     },
     {
       "id": 66891230,
@@ -37,7 +37,7 @@
       "mime_type": "text/html",
       "size_bytes": 1713,
       "url": "https://issues.chromium.org/action/issues/426054987/attachments/66891230?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     }
   ],
   "update_count": 71,

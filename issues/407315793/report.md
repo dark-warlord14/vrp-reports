@@ -261,10 +261,10 @@ Regression: N/A
 
 ## Attachments
 
-- asan.txt (text/plain, 27.5 KB)
-- index.html (text/html, 191.0 KB)
-- poc.diff (text/x-diff, 457.1 KB)
-- poc.mov (video/quicktime, 104.1 MB)
+- [asan.txt](attachments/asan.txt) (text/plain, 27.5 KB)
+- [index.html](attachments/index.html) (text/html, 191.0 KB)
+- [poc.diff](attachments/poc.diff) (text/x-diff, 457.1 KB)
+- [poc.mov](attachments/poc.mov) (video/quicktime, 104.1 MB)
 
 ## Timeline
 

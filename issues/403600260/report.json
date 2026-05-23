@@ -30,7 +30,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 2936,
       "url": "https://issues.chromium.org/action/issues/403600260/attachments/63813918?download=true",
-      "local_path": null
+      "local_path": "attachments/maglev-jsgenobj-inline-uninit-switch.js"
     }
   ],
   "update_count": 43,

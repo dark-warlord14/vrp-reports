@@ -29,7 +29,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1014880,
       "url": "https://issues.chromium.org/action/issues/417215501/attachments/65738176?download=true",
-      "local_path": null
+      "local_path": "attachments/Screen Recording 2025 05 12 at 19.24.09.clip.mp4"
     },
     {
       "id": 65742263,
@@ -37,7 +37,7 @@
       "mime_type": "text/texmacs",
       "size_bytes": 3891,
       "url": "https://issues.chromium.org/action/issues/417215501/attachments/65742263?download=true",
-      "local_path": null
+      "local_path": "attachments/bfcacheSpeculationRules.ts"
     }
   ],
   "update_count": 81,

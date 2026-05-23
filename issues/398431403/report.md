@@ -107,7 +107,7 @@ Reporter credit: Changheon Lee (@2rr0r4o3)
 
 ## Attachments
 
-- poc.js (text/javascript, 195 B)
+- [poc.js](attachments/poc.js) (text/javascript, 195 B)
 
 ## Timeline
 

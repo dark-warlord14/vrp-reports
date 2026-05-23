@@ -58,16 +58,16 @@ Coming soon
 
 ## Attachments
 
-- poc.html (text/html, 1.4 KB)
-- poc.html (text/html, 1.4 KB)
-- asan.txt (text/plain, 9.0 KB)
-- dbg.patch.diff (text/x-diff, 1.3 KB)
-- poc.html (text/html, 1.4 KB)
-- Video2.webm (video/webm, 2.2 MB)
-- many-watchers-in-cancel-event-crash.html (text/html, 522 B)
+- [poc.html](attachments/poc.html) (text/html, 1.4 KB)
+- [poc.html](attachments/poc.html) (text/html, 1.4 KB)
+- [asan.txt](attachments/asan.txt) (text/plain, 9.0 KB)
+- [dbg.patch.diff](attachments/dbg.patch.diff) (text/x-diff, 1.3 KB)
+- [poc.html](attachments/poc.html) (text/html, 1.4 KB)
+- [Video2.webm](attachments/Video2.webm) (video/webm, 2.2 MB)
+- [many-watchers-in-cancel-event-crash.html](attachments/many-watchers-in-cancel-event-crash.html) (text/html, 522 B)
 - deleted (application/octet-stream, 0 B)
-- poc_with_memcontrol.html (text/html, 3.5 KB)
-- dbg_print_MEMADDRESS_log.patch (text/x-diff, 4.4 KB)
+- [poc_with_memcontrol.html](attachments/poc_with_memcontrol.html) (text/html, 3.5 KB)
+- [dbg_print_MEMADDRESS_log.patch](attachments/dbg_print_MEMADDRESS_log.patch) (text/x-diff, 4.4 KB)
 
 ## Timeline
 

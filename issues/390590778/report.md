@@ -129,12 +129,12 @@ Reporter credit: Tal Keren, Sam Agranat, Eran Rom, Edouard Bochin, Adam Hatsir o
 
 ## Attachments
 
-- asan.txt (text/plain, 26.7 KB)
-- pwn-iwa.swbn (application/octet-stream, 30.2 KB)
-- server.py (text/x-python, 578 B)
-- pwn-iwa.zip (application/zip, 142.1 KB)
-- patch.txt (text/plain, 23.2 KB)
-- fix.patch (text/x-diff, 23.2 KB)
+- [asan.txt](attachments/asan.txt) (text/plain, 26.7 KB)
+- [pwn-iwa.swbn](attachments/pwn-iwa.swbn) (application/octet-stream, 30.2 KB)
+- [server.py](attachments/server.py) (text/x-python, 578 B)
+- [pwn-iwa.zip](attachments/pwn-iwa.zip) (application/zip, 142.1 KB)
+- [patch.txt](attachments/patch.txt) (text/plain, 23.2 KB)
+- [fix.patch](attachments/fix.patch) (text/x-diff, 23.2 KB)
 
 ## Timeline
 

@@ -30,7 +30,7 @@
       "mime_type": "text/html",
       "size_bytes": 1478,
       "url": "https://issues.chromium.org/action/issues/444755026/attachments/69275673?download=true",
-      "local_path": null
+      "local_path": "attachments/y16_auto_final.html"
     },
     {
       "id": 69275674,
@@ -38,7 +38,7 @@
       "mime_type": "application/zip",
       "size_bytes": 112001,
       "url": "https://issues.chromium.org/action/issues/444755026/attachments/69275674?download=true",
-      "local_path": null
+      "local_path": "attachments/vivid.zip"
     },
     {
       "id": 69275675,
@@ -46,7 +46,7 @@
       "mime_type": "image/png",
       "size_bytes": 176672,
       "url": "https://issues.chromium.org/action/issues/444755026/attachments/69275675?download=true",
-      "local_path": null
+      "local_path": "attachments/processname_chrome_y16.png"
     },
     {
       "id": 69275676,
@@ -54,7 +54,7 @@
       "mime_type": "image/png",
       "size_bytes": 407002,
       "url": "https://issues.chromium.org/action/issues/444755026/attachments/69275676?download=true",
-      "local_path": null
+      "local_path": "attachments/chrome_y16_camera_access_violation.png"
     },
     {
       "id": 69275677,
@@ -62,7 +62,7 @@
       "mime_type": "image/png",
       "size_bytes": 373336,
       "url": "https://issues.chromium.org/action/issues/444755026/attachments/69275677?download=true",
-      "local_path": null
+      "local_path": "attachments/chrome_y16_access_violation_2.png"
     },
     {
       "id": 69277684,
@@ -70,7 +70,7 @@
       "mime_type": "application/zip",
       "size_bytes": 93731,
       "url": "https://issues.chromium.org/action/issues/444755026/attachments/69277684?download=true",
-      "local_path": null
+      "local_path": "attachments/VCamSample.zip"
     },
     {
       "id": 69277685,
@@ -78,7 +78,7 @@
       "mime_type": "text/html",
       "size_bytes": 1478,
       "url": "https://issues.chromium.org/action/issues/444755026/attachments/69277685?download=true",
-      "local_path": null
+      "local_path": "attachments/y16_auto_final.html"
     },
     {
       "id": 69277686,
@@ -86,7 +86,7 @@
       "mime_type": "application/zip",
       "size_bytes": 112001,
       "url": "https://issues.chromium.org/action/issues/444755026/attachments/69277686?download=true",
-      "local_path": null
+      "local_path": "attachments/vivid.zip"
     },
     {
       "id": 69277687,
@@ -94,7 +94,7 @@
       "mime_type": "application/zip",
       "size_bytes": 93731,
       "url": "https://issues.chromium.org/action/issues/444755026/attachments/69277687?download=true",
-      "local_path": null
+      "local_path": "attachments/VCamSample.zip"
     },
     {
       "id": 69346360,
@@ -102,7 +102,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 4801,
       "url": "https://issues.chromium.org/action/issues/444755026/attachments/69346360?download=true",
-      "local_path": null
+      "local_path": "attachments/vivid_y16_padding_after_each_row.patch"
     }
   ],
   "update_count": 108,

@@ -157,8 +157,8 @@ Reporter credit: Seongjoon Cho of CW Research Inc.
 
 ## Attachments
 
-- [repro.js](attachments/repro.js) (text/plain, 132 B)
-- [ex.js](attachments/ex.js) (text/plain, 3.1 KB)
+- repro.js (text/plain, 132 B)
+- ex.js (text/plain, 3.1 KB)
 - [ex.html](attachments/ex.html) (text/plain, 3.9 KB)
 - [1510709_asan.txt](attachments/1510709_asan.txt) (text/plain, 8.6 KB)
 

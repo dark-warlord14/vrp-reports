@@ -30,7 +30,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 4479,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/69530864?download=true",
-      "local_path": null
+      "local_path": "attachments/exploit.patch"
     },
     {
       "id": 69530865,
@@ -38,7 +38,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 796,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/69530865?download=true",
-      "local_path": null
+      "local_path": "attachments/renderer.patch"
     },
     {
       "id": 69530866,
@@ -46,7 +46,7 @@
       "mime_type": "text/html",
       "size_bytes": 451,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/69530866?download=true",
-      "local_path": null
+      "local_path": "attachments/index.html"
     },
     {
       "id": 69530867,
@@ -54,7 +54,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 10372,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/69530867?download=true",
-      "local_path": null
+      "local_path": "attachments/main.js"
     },
     {
       "id": 69530868,
@@ -62,7 +62,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 36597307,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/69530868?download=true",
-      "local_path": null
+      "local_path": "attachments/video.mp4"
     },
     {
       "id": 69737064,
@@ -70,7 +70,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 1113,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/69737064?download=true",
-      "local_path": null
+      "local_path": "attachments/uaf-database-runtasks.textproto"
     },
     {
       "id": 70122400,
@@ -126,7 +126,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 796,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/70188312?download=true",
-      "local_path": null
+      "local_path": "attachments/renderer.patch"
     },
     {
       "id": 70188969,
@@ -134,7 +134,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 6463,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/70188969?download=true",
-      "local_path": null
+      "local_path": "attachments/v8.patch"
     },
     {
       "id": 70193572,
@@ -142,7 +142,7 @@
       "mime_type": "application/zip",
       "size_bytes": 14891,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/70193572?download=true",
-      "local_path": null
+      "local_path": "attachments/exploit.zip"
     },
     {
       "id": 70188313,
@@ -150,7 +150,7 @@
       "mime_type": "text/x-python",
       "size_bytes": 697,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/70188313?download=true",
-      "local_path": null
+      "local_path": "attachments/copy_mojo_js_bindings.py"
     },
     {
       "id": 70188970,
@@ -158,7 +158,7 @@
       "mime_type": "text/x-python",
       "size_bytes": 1202,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/70188970?download=true",
-      "local_path": null
+      "local_path": "attachments/disable_aslr.py"
     },
     {
       "id": 70193573,
@@ -166,7 +166,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 2680450,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/70193573?download=true",
-      "local_path": null
+      "local_path": "attachments/rce_64bit_NoASLR.mp4"
     },
     {
       "id": 70188971,
@@ -174,7 +174,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 10942836,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/70188971?download=true",
-      "local_path": null
+      "local_path": "attachments/rce_32bit.mp4"
     },
     {
       "id": 70644848,
@@ -182,7 +182,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 1682,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/70644848?download=true",
-      "local_path": null
+      "local_path": "attachments/renderer.patch"
     },
     {
       "id": 70644877,
@@ -190,7 +190,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 22221,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/70644877?download=true",
-      "local_path": null
+      "local_path": "attachments/main32.js"
     },
     {
       "id": 70644849,
@@ -198,7 +198,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 12316,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/70644849?download=true",
-      "local_path": null
+      "local_path": "attachments/pe.js"
     },
     {
       "id": 70648826,
@@ -206,7 +206,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 18347572,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/70648826?download=true",
-      "local_path": null
+      "local_path": "attachments/rce_32bit_reliable.mp4"
     }
   ],
   "update_count": 129,

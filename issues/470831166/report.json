@@ -1,0 +1,29 @@
+{
+  "id": "470831166",
+  "url": "https://issues.chromium.org/issues/470831166",
+  "title": "Crash in Maglev due to Stale ScopeInfo Cache with Async Generators",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hu...@gmail.com",
+  "assignee": "ve...@chromium.org",
+  "created_date": "2025-12-22T16:17:44+00:00",
+  "modified_date": "2026-04-17T07:55:16+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": "high quality memory corruption in a sandboxed process",
+  "attachments": [],
+  "update_count": 44,
+  "description_snippet": "## Details\n\n### Context Node\nFor `opt_me`, since it is an async generator function, its execution will be suspended (`SuspendGenerator`) and resumed (`ResumeGenerator`) multiple times. Each time it resumes, the context and the Ignition register file are restored based on the `generator_state`.\n\nTher"
+}

@@ -61,9 +61,9 @@ Reporter credit: [zeroxiaobai@gmail.com](mailto:zeroxiaobai@gmail.com)
 
 ## Attachments
 
-- bug.js (text/javascript, 634 B)
-- d8.cc (text/x-c++src, 250.6 KB)
-- bug.html (text/html, 841 B)
+- [bug.js](attachments/bug.js) (text/javascript, 634 B)
+- [d8.cc](attachments/d8.cc) (text/x-c++src, 250.6 KB)
+- [bug.html](attachments/bug.html) (text/html, 841 B)
 
 ## Timeline
 

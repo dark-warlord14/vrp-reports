@@ -30,7 +30,7 @@
       "mime_type": "text/html",
       "size_bytes": 1413,
       "url": "https://issues.chromium.org/action/issues/409911705/attachments/64777203?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     },
     {
       "id": 64852765,
@@ -38,7 +38,7 @@
       "mime_type": "text/html",
       "size_bytes": 1445,
       "url": "https://issues.chromium.org/action/issues/409911705/attachments/64852765?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     },
     {
       "id": 64852766,
@@ -46,7 +46,7 @@
       "mime_type": "text/plain",
       "size_bytes": 9199,
       "url": "https://issues.chromium.org/action/issues/409911705/attachments/64852766?download=true",
-      "local_path": null
+      "local_path": "attachments/asan.txt"
     },
     {
       "id": 64852767,
@@ -54,7 +54,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 1365,
       "url": "https://issues.chromium.org/action/issues/409911705/attachments/64852767?download=true",
-      "local_path": null
+      "local_path": "attachments/dbg.patch.diff"
     },
     {
       "id": 64850519,
@@ -62,7 +62,7 @@
       "mime_type": "text/html",
       "size_bytes": 1397,
       "url": "https://issues.chromium.org/action/issues/409911705/attachments/64850519?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     },
     {
       "id": 64850520,
@@ -70,7 +70,7 @@
       "mime_type": "video/webm",
       "size_bytes": 2305878,
       "url": "https://issues.chromium.org/action/issues/409911705/attachments/64850520?download=true",
-      "local_path": null
+      "local_path": "attachments/Video2.webm"
     },
     {
       "id": 64959501,
@@ -78,7 +78,7 @@
       "mime_type": "text/html",
       "size_bytes": 522,
       "url": "https://issues.chromium.org/action/issues/409911705/attachments/64959501?download=true",
-      "local_path": null
+      "local_path": "attachments/many-watchers-in-cancel-event-crash.html"
     },
     {
       "id": 65236475,
@@ -94,7 +94,7 @@
       "mime_type": "text/html",
       "size_bytes": 3608,
       "url": "https://issues.chromium.org/action/issues/409911705/attachments/65236476?download=true",
-      "local_path": null
+      "local_path": "attachments/poc_with_memcontrol.html"
     },
     {
       "id": 65236477,
@@ -102,7 +102,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 4520,
       "url": "https://issues.chromium.org/action/issues/409911705/attachments/65236477?download=true",
-      "local_path": null
+      "local_path": "attachments/dbg_print_MEMADDRESS_log.patch"
     }
   ],
   "update_count": 90,

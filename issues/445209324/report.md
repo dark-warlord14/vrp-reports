@@ -165,7 +165,7 @@ Reporter credit: Krishna Ravishankar (@krsh732)
 
 ## Attachments
 
-- c-dispatch-poc.js (text/javascript, 1.3 KB)
+- [c-dispatch-poc.js](attachments/c-dispatch-poc.js) (text/javascript, 1.3 KB)
 
 ## Timeline
 

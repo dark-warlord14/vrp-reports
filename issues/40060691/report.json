@@ -27,7 +27,7 @@
       "mime_type": "application/pdf",
       "size_bytes": 3059,
       "url": "https://issues.chromium.org/action/issues/40060691/attachments/52948898?download=true",
-      "local_path": "attachments/poc.pdf"
+      "local_path": null
     },
     {
       "id": 52948929,
@@ -35,7 +35,7 @@
       "mime_type": "text/plain",
       "size_bytes": 869,
       "url": "https://issues.chromium.org/action/issues/40060691/attachments/52948929?download=true",
-      "local_path": "attachments/0044-opj_t1_allocate_buffers.patch"
+      "local_path": null
     }
   ],
   "update_count": 44,

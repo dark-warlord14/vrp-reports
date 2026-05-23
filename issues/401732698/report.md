@@ -75,9 +75,9 @@ Reporter credit: Zhenghang Xiao (@Kipreyyy) and Nan Wang (@eternalsakura13)
 
 ## Attachments
 
-- poc.js (text/javascript, 507 B)
-- CollectKeysFromDictionary-decompile.cpp (text/x-c++src, 33.4 KB)
-- CollectKeysFromDictionary-disasm.asm (application/octet-stream, 109.4 KB)
+- [poc.js](attachments/poc.js) (text/javascript, 507 B)
+- [CollectKeysFromDictionary-decompile.cpp](attachments/CollectKeysFromDictionary-decompile.cpp) (text/x-c++src, 33.4 KB)
+- [CollectKeysFromDictionary-disasm.asm](attachments/CollectKeysFromDictionary-disasm.asm) (application/octet-stream, 109.4 KB)
 
 ## Timeline
 

@@ -29,7 +29,7 @@
       "mime_type": "application/zip",
       "size_bytes": 1218,
       "url": "https://issues.chromium.org/action/issues/405910169/attachments/64195611?download=true",
-      "local_path": null
+      "local_path": "attachments/extension1.zip"
     },
     {
       "id": 64195612,
@@ -37,7 +37,7 @@
       "mime_type": "application/zip",
       "size_bytes": 435,
       "url": "https://issues.chromium.org/action/issues/405910169/attachments/64195612?download=true",
-      "local_path": null
+      "local_path": "attachments/extension2.zip"
     },
     {
       "id": 64195613,
@@ -45,7 +45,7 @@
       "mime_type": "application/json",
       "size_bytes": 194,
       "url": "https://issues.chromium.org/action/issues/405910169/attachments/64195613?download=true",
-      "local_path": null
+      "local_path": "attachments/manifest.json"
     },
     {
       "id": 64195614,
@@ -53,7 +53,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 864,
       "url": "https://issues.chromium.org/action/issues/405910169/attachments/64195614?download=true",
-      "local_path": null
+      "local_path": "attachments/background.js"
     },
     {
       "id": 64195615,
@@ -61,7 +61,7 @@
       "mime_type": "text/html",
       "size_bytes": 53,
       "url": "https://issues.chromium.org/action/issues/405910169/attachments/64195615?download=true",
-      "local_path": null
+      "local_path": "attachments/test.html"
     },
     {
       "id": 64195616,
@@ -69,7 +69,7 @@
       "mime_type": "application/json",
       "size_bytes": 243,
       "url": "https://issues.chromium.org/action/issues/405910169/attachments/64195616?download=true",
-      "local_path": null
+      "local_path": "attachments/manifest.json"
     },
     {
       "id": 64333911,
@@ -77,7 +77,7 @@
       "mime_type": "image/png",
       "size_bytes": 813088,
       "url": "https://issues.chromium.org/action/issues/405910169/attachments/64333911?download=true",
-      "local_path": null
+      "local_path": "attachments/Thu Mar 27 2025 10_26_01 GMT-0400 (Eastern Daylight Time).png"
     }
   ],
   "update_count": 46,

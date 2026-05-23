@@ -1,0 +1,77 @@
+{
+  "id": "483569511",
+  "url": "https://issues.chromium.org/issues/483569511",
+  "title": "Heap-use-after-free in blink::FontFeatureValuesMapIterationSource::FetchNextItem",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>CSS",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fa...@gmail.com",
+  "assignee": "dr...@chromium.org",
+  "created_date": "2026-02-11T11:57:18+00:00",
+  "modified_date": "2026-05-22T07:56:08+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 50000.0,
+  "bounty_rationale": "High Quality with Functional Exploit. Renderer RCE / memory corruption in a sandboxed process",
+  "attachments": [
+    {
+      "id": 73328851,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 416,
+      "url": "https://issues.chromium.org/action/issues/483569511/attachments/73328851?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 73464440,
+      "filename": "exploit.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 3152,
+      "url": "https://issues.chromium.org/action/issues/483569511/attachments/73464440?download=true",
+      "local_path": "attachments/exploit.md"
+    },
+    {
+      "id": 73464576,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1277,
+      "url": "https://issues.chromium.org/action/issues/483569511/attachments/73464576?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 73471683,
+      "filename": "poc-write.html",
+      "mime_type": "text/html",
+      "size_bytes": 9788,
+      "url": "https://issues.chromium.org/action/issues/483569511/attachments/73471683?download=true",
+      "local_path": "attachments/poc-write.html"
+    },
+    {
+      "id": 73471707,
+      "filename": "v8.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 6529,
+      "url": "https://issues.chromium.org/action/issues/483569511/attachments/73471707?download=true",
+      "local_path": "attachments/v8.patch"
+    },
+    {
+      "id": 73471708,
+      "filename": "exploit-write.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 5661,
+      "url": "https://issues.chromium.org/action/issues/483569511/attachments/73471708?download=true",
+      "local_path": "attachments/exploit-write.md"
+    }
+  ],
+  "update_count": 108,
+  "description_snippet": "```bash\n=================================================================\n==14716==ERROR: AddressSanitizer: heap-use-after-free on address 0x1299338070a0 at pc 0x7fff28a19313 bp 0x00e5f864bca0 sp 0x00e5f864bce8\nREAD of size 8 at 0x1299338070a0 thread T78\n    #0 0x7fff28a19312 in blink::String::opera"
+}

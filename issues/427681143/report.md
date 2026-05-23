@@ -58,9 +58,9 @@ Regression: N/A \
 
 ## Attachments
 
-- asan (application/octet-stream, 21.2 KB)
-- diff (text/x-diff, 4.2 KB)
-- poc.html (text/html, 2.9 KB)
+- [asan](attachments/asan) (application/octet-stream, 21.2 KB)
+- [diff](attachments/diff) (text/x-diff, 4.2 KB)
+- [poc.html](attachments/poc.html) (text/html, 2.9 KB)
 
 ## Timeline
 

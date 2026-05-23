@@ -229,7 +229,7 @@ Reporter: @natsumikyono23
 
 ## Attachments
 
-- swap_module.js (text/javascript, 82.9 KB)
+- [swap_module.js](attachments/swap_module.js) (text/javascript, 82.9 KB)
 
 ## Timeline
 

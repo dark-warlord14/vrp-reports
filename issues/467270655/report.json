@@ -1,0 +1,38 @@
+{
+  "id": "467270655",
+  "url": "https://issues.chromium.org/issues/467270655",
+  "title": "V8 SBX bypass: Perfetto Heap-Buffer-Overflow",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": " V8 version 14.5.0 (candidate)",
+  "cve_ids": [],
+  "reporter": "am...@gmail.com",
+  "assignee": "is...@chromium.org",
+  "created_date": "2025-12-09T15:17:11+00:00",
+  "modified_date": "2026-04-21T07:57:23+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "Highly Mitigated Memory corruption in a sandboxed process + bisect bonus",
+  "attachments": [
+    {
+      "id": 71908992,
+      "filename": "perfetto_heap_bof_fix.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 950,
+      "url": "https://issues.chromium.org/action/issues/467270655/attachments/71908992?download=true",
+      "local_path": "attachments/perfetto_heap_bof_fix.diff"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "# Steps to reproduce the problem\n1. code analysis\n\n# Problem Description\nHI Team, While doing code analysis found **PerfettoV8String::PerfettoV8String** in tracing-category-observer.cc is vulnerable for Heap Buffer Overflow\n\n```\nPerfettoV8String::PerfettoV8String(Tagged<String> string)\n    : is_one_"
+}

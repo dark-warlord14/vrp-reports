@@ -1,0 +1,49 @@
+{
+  "id": "476862276",
+  "url": "https://issues.chromium.org/issues/476862276",
+  "title": "Chrome (Windows): Opening download “demo. txt” executes sibling “demo. txt.exe” (object-level target confusion / unsafe Shell fallback)",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>PlatformIntegration",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "li...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2026-01-19T03:24:16+00:00",
+  "modified_date": "2026-05-21T22:55:40+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "bounty_rationale": "web platform privilege escalation, low impact",
+  "attachments": [
+    {
+      "id": 72613524,
+      "filename": "chrome_windows_download_open_exec_mismatch.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 3528539,
+      "url": "https://issues.chromium.org/action/issues/476862276/attachments/72613524?download=true",
+      "local_path": "attachments/chrome_windows_download_open_exec_mismatch.zip"
+    },
+    {
+      "id": 72613525,
+      "filename": "demo. txt",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/476862276/attachments/72613525?download=true",
+      "local_path": "attachments/demo. txt"
+    },
+    {
+      "id": 72613526,
+      "filename": "demo. txt.exe",
+      "mime_type": "application/x-msdownload",
+      "size_bytes": 49152,
+      "url": "https://issues.chromium.org/action/issues/476862276/attachments/72613526?download=true",
+      "local_path": "attachments/demo. txt.exe"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "---\n\n### Report description\n\n\nChrome (Windows): Opening download “demo. txt” executes sibling “demo. txt.exe” (object-level target confusion / unsafe Shell fallback)\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chro"
+}

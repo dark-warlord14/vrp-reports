@@ -27,7 +27,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 16777,
       "url": "https://issues.chromium.org/action/issues/412578726/attachments/65117625?download=true",
-      "local_path": null
+      "local_path": "attachments/patch.diff"
     },
     {
       "id": 65117626,
@@ -35,7 +35,7 @@
       "mime_type": "text/plain",
       "size_bytes": 2864,
       "url": "https://issues.chromium.org/action/issues/412578726/attachments/65117626?download=true",
-      "local_path": null
+      "local_path": "attachments/handle.txt"
     },
     {
       "id": 65145515,
@@ -43,7 +43,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 17529,
       "url": "https://issues.chromium.org/action/issues/412578726/attachments/65145515?download=true",
-      "local_path": null
+      "local_path": "attachments/ajgo.patch"
     },
     {
       "id": 65349042,
@@ -51,7 +51,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 6603398,
       "url": "https://issues.chromium.org/action/issues/412578726/attachments/65349042?download=true",
-      "local_path": null
+      "local_path": "attachments/exploit.mp4"
     },
     {
       "id": 65348951,
@@ -59,7 +59,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 23380,
       "url": "https://issues.chromium.org/action/issues/412578726/attachments/65348951?download=true",
-      "local_path": null
+      "local_path": "attachments/exploit.diff"
     },
     {
       "id": 68311871,

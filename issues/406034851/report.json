@@ -9,14 +9,15 @@
   "os_platforms": [
     "Linux",
     "Mac",
-    "Windows"
+    "Windows",
+    "ChromeOS"
   ],
   "chrome_version": "134.0.0.0",
   "cve_ids": [],
   "reporter": "ma...@gmail.com",
   "assignee": "pf...@google.com",
   "created_date": "2025-03-26T19:29:04+00:00",
-  "modified_date": "2025-07-08T12:39:56+00:00",
+  "modified_date": "2026-04-17T07:58:46+00:00",
   "bounty_confirmed": true,
   "bounty_amount": 1000.0,
   "bounty_rationale": "report of lower impact user information disclosure",
@@ -27,7 +28,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 437,
       "url": "https://issues.chromium.org/action/issues/406034851/attachments/64301874?download=true",
-      "local_path": null
+      "local_path": "attachments/standalone-bug.js"
     },
     {
       "id": 64301875,
@@ -35,7 +36,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 227,
       "url": "https://issues.chromium.org/action/issues/406034851/attachments/64301875?download=true",
-      "local_path": null
+      "local_path": "attachments/background.js"
     },
     {
       "id": 64301876,
@@ -43,7 +44,7 @@
       "mime_type": "application/json",
       "size_bytes": 207,
       "url": "https://issues.chromium.org/action/issues/406034851/attachments/64301876?download=true",
-      "local_path": null
+      "local_path": "attachments/manifest.json"
     },
     {
       "id": 64301877,
@@ -51,7 +52,7 @@
       "mime_type": "text/html",
       "size_bytes": 36,
       "url": "https://issues.chromium.org/action/issues/406034851/attachments/64301877?download=true",
-      "local_path": null
+      "local_path": "attachments/devtools.html"
     },
     {
       "id": 64301878,
@@ -59,7 +60,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 357,
       "url": "https://issues.chromium.org/action/issues/406034851/attachments/64301878?download=true",
-      "local_path": null
+      "local_path": "attachments/devtools.js"
     },
     {
       "id": 64254741,
@@ -67,7 +68,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 373,
       "url": "https://issues.chromium.org/action/issues/406034851/attachments/64254741?download=true",
-      "local_path": null
+      "local_path": "attachments/devtools.js"
     },
     {
       "id": 64301879,
@@ -75,7 +76,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 453,
       "url": "https://issues.chromium.org/action/issues/406034851/attachments/64301879?download=true",
-      "local_path": null
+      "local_path": "attachments/standalone-bug.js"
     },
     {
       "id": 64254764,
@@ -83,9 +84,9 @@
       "mime_type": "text/javascript",
       "size_bytes": 784,
       "url": "https://issues.chromium.org/action/issues/406034851/attachments/64254764?download=true",
-      "local_path": null
+      "local_path": "attachments/standalone-bug-still-works.js"
     }
   ],
-  "update_count": 47,
+  "update_count": 50,
   "description_snippet": "# Steps to reproduce the problem\n(This is more of a theoretical repro because the buggy fix doesn't seem to be merged into anything yet, even canary)\nFor completeness, I'm re-entering the steps from https://issues.chromium.org/issues/376625003 :\n1. Install the files as a Chrome extension on Mac or L"
 }

@@ -1,0 +1,74 @@
+{
+  "id": "417599694",
+  "url": "https://issues.chromium.org/issues/417599694",
+  "title": "OOB read in skia::BGRAConvolve2D",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Skia",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": "137.0.7122.0",
+  "cve_ids": [],
+  "reporter": "vm...@gmail.com",
+  "assignee": "kj...@google.com",
+  "created_date": "2025-05-14T08:36:10+00:00",
+  "modified_date": "2026-05-01T07:55:10+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "bounty_rationale": "Mildly mitigated memory corruption in a sandboxed process",
+  "attachments": [
+    {
+      "id": 65791473,
+      "filename": "out_better1crash-a849b610d97bc4bf8be154b2d226a4353b8fd93e",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 46,
+      "url": "https://issues.chromium.org/action/issues/417599694/attachments/65791473?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65791474,
+      "filename": "image_operations_resize_fuzzer__better",
+      "mime_type": "application/x-sharedlib",
+      "size_bytes": 8640504,
+      "url": "https://issues.chromium.org/action/issues/417599694/attachments/65791474?download=true",
+      "local_path": null
+    },
+    {
+      "id": 65792147,
+      "filename": "image_operations_resize_fuzzer__better.cc",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 2092,
+      "url": "https://issues.chromium.org/action/issues/417599694/attachments/65792147?download=true",
+      "local_path": null
+    },
+    {
+      "id": 69234886,
+      "filename": "logv142.asan",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 15459,
+      "url": "https://issues.chromium.org/action/issues/417599694/attachments/69234886?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73292482,
+      "filename": "poc.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 822963,
+      "url": "https://issues.chromium.org/action/issues/417599694/attachments/73292482?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73286484,
+      "filename": "repro.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 6605099,
+      "url": "https://issues.chromium.org/action/issues/417599694/attachments/73286484?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 75,
+  "description_snippet": "# Steps to reproduce the problem\n1. ./image_operations_resize_fuzzer__better ./out_better1crash-a849b610d97bc4bf8be154b2d226a4353b8fd93e\n\n# Problem Description\nIn `skia::ImageOperations::Resize` of `VizCompositorTh` process, `source_byte_row_stride` in `skia::BGRAConvolve2D` can larger than `source_"
+}

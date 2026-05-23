@@ -55,10 +55,10 @@ Crash ID: crash/f9d9ae28f307b76a
 
 ## Attachments
 
-- Chrome-138-crashes.txt (text/plain, 23.0 KB)
-- chrome-asan-crash-stackwalk-stacks.txt (text/plain, 964.4 KB)
-- chrome-asan-crash-stackwalk.txt (text/plain, 279.3 KB)
-- chrome-asan-crash.txt (text/plain, 31.5 KB)
+- [Chrome-138-crashes.txt](attachments/Chrome-138-crashes.txt) (text/plain, 23.0 KB)
+- [chrome-asan-crash-stackwalk-stacks.txt](attachments/chrome-asan-crash-stackwalk-stacks.txt) (text/plain, 964.4 KB)
+- [chrome-asan-crash-stackwalk.txt](attachments/chrome-asan-crash-stackwalk.txt) (text/plain, 279.3 KB)
+- [chrome-asan-crash.txt](attachments/chrome-asan-crash.txt) (text/plain, 31.5 KB)
 
 ## Timeline
 

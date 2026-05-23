@@ -282,9 +282,9 @@ Refer to https://chromium.googlesource.com/chromium/src/+/main/base/memory/raw_p
 
 ## Attachments
 
-- manifest.json (application/json, 252 B)
-- background.js (text/javascript, 138 B)
-- popup.html (text/html, 268 B)
+- [manifest.json](attachments/manifest.json) (application/json, 252 B)
+- [background.js](attachments/background.js) (text/javascript, 138 B)
+- [popup.html](attachments/popup.html) (text/html, 268 B)
 
 ## Timeline
 

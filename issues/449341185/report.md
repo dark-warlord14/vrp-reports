@@ -79,7 +79,7 @@ Segmentation fault
 
 ## Attachments
 
-- poc.js (text/javascript, 1.1 KB)
+- [poc.js](attachments/poc.js) (text/javascript, 1.1 KB)
 
 ## Timeline
 

@@ -51,9 +51,9 @@ Regression: No
 
 ## Attachments
 
-- manifest.json (application/json, 157 B)
-- patch.patch (text/x-diff, 2.4 KB)
-- background.js (text/javascript, 640 B)
+- [manifest.json](attachments/manifest.json) (application/json, 157 B)
+- [patch.patch](attachments/patch.patch) (text/x-diff, 2.4 KB)
+- [background.js](attachments/background.js) (text/javascript, 640 B)
 
 ## Timeline
 

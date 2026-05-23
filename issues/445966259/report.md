@@ -121,7 +121,7 @@ Reporter credit: Krishna Ravishankar (@krsh732)
 
 ## Attachments
 
-- debug-break-trampoline-poc.js (text/javascript, 2.1 KB)
+- [debug-break-trampoline-poc.js](attachments/debug-break-trampoline-poc.js) (text/javascript, 2.1 KB)
 
 ## Timeline
 

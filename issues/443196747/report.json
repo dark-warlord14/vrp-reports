@@ -29,7 +29,7 @@
       "mime_type": "text/plain",
       "size_bytes": 12883,
       "url": "https://issues.chromium.org/action/issues/443196747/attachments/69050878?download=true",
-      "local_path": null
+      "local_path": "attachments/asan.txt"
     },
     {
       "id": 69050880,
@@ -37,7 +37,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 3225,
       "url": "https://issues.chromium.org/action/issues/443196747/attachments/69050880?download=true",
-      "local_path": null
+      "local_path": "attachments/0001-chrome-test-patch.patch"
     },
     {
       "id": 69042557,
@@ -45,7 +45,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 1035,
       "url": "https://issues.chromium.org/action/issues/443196747/attachments/69042557?download=true",
-      "local_path": null
+      "local_path": "attachments/0001-suggest-fix-patch.patch"
     }
   ],
   "update_count": 100,

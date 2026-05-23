@@ -49,7 +49,7 @@ Regression: N/A
 
 ## Attachments
 
-- variations.txt (text/plain, 46.3 KB)
+- [variations.txt](attachments/variations.txt) (text/plain, 46.3 KB)
 
 ## Timeline
 

@@ -30,7 +30,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 2002,
       "url": "https://issues.chromium.org/action/issues/409059706/attachments/64656204?download=true",
-      "local_path": null
+      "local_path": "attachments/UAF_WorkerThread.js"
     },
     {
       "id": 64742561,
@@ -38,7 +38,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 428,
       "url": "https://issues.chromium.org/action/issues/409059706/attachments/64742561?download=true",
-      "local_path": null
+      "local_path": "attachments/worker0.js"
     },
     {
       "id": 64742519,
@@ -46,7 +46,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 40,
       "url": "https://issues.chromium.org/action/issues/409059706/attachments/64742519?download=true",
-      "local_path": null
+      "local_path": "attachments/em_worker.js"
     },
     {
       "id": 64742415,
@@ -54,7 +54,7 @@
       "mime_type": "text/html",
       "size_bytes": 281,
       "url": "https://issues.chromium.org/action/issues/409059706/attachments/64742415?download=true",
-      "local_path": null
+      "local_path": "attachments/index.html"
     }
   ],
   "update_count": 140,

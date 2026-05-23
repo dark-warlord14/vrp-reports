@@ -14,7 +14,7 @@
   "reporter": "wl...@gmail.com",
   "assignee": "lo...@google.com",
   "created_date": "2025-08-03T03:54:17+00:00",
-  "modified_date": "2026-03-05T16:43:53+00:00",
+  "modified_date": "2026-03-27T17:02:41+00:00",
   "bounty_confirmed": true,
   "bounty_amount": 15000.0,
   "bounty_rationale": "high quality report of memory corruption in the GPU",
@@ -25,7 +25,7 @@
       "mime_type": "text/plain",
       "size_bytes": 39188,
       "url": "https://issues.chromium.org/action/issues/435875050/attachments/68137197?download=true",
-      "local_path": null
+      "local_path": "attachments/Asan_logs.txt"
     },
     {
       "id": 68137198,
@@ -33,9 +33,9 @@
       "mime_type": "text/html",
       "size_bytes": 1602,
       "url": "https://issues.chromium.org/action/issues/435875050/attachments/68137198?download=true",
-      "local_path": null
+      "local_path": "attachments/PoC.html"
     }
   ],
-  "update_count": 82,
+  "update_count": 84,
   "description_snippet": "# Steps to reproduce the problem\n## Steps to reproduce\n\n1. Run open_PoC.bat (launches a local HTTP server and opens chromium)\n2. Navigates to PoC.html, The flag —no-sandbox is used for ASAN output.  ⇒ `./chrome.exe --no-sandbox http://localhost:8000/PoC.html`\n3. After a few reload cycles, the GPU pr"
 }

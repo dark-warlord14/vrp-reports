@@ -46,9 +46,9 @@ Running JavaScript on file:// URI allowing to access information and access came
 
 - [chrome302js.php](attachments/chrome302js.php) (text/plain, 83 B)
 - [chrome302js2.php](attachments/chrome302js2.php) (text/plain, 300 B)
-- [chrome302js2.mp4](attachments/chrome302js2.mp4) (video/mp4, 3.1 MB)
-- [chrome302js.mp4](attachments/chrome302js.mp4) (video/mp4, 2.2 MB)
-- [index.php](attachments/index.php) (text/plain, 1.6 KB)
+- chrome302js2.mp4 (video/mp4, 3.1 MB)
+- chrome302js.mp4 (video/mp4, 2.2 MB)
+- index.php (text/plain, 1.6 KB)
 - [getcamera.js](attachments/getcamera.js) (text/plain, 2.5 KB)
 - [camera302.php](attachments/camera302.php) (application/x-httpd-php, 607 B)
 - [chrome302js_loc.php](attachments/chrome302js_loc.php) (application/x-httpd-php, 76 B)

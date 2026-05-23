@@ -26,7 +26,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 12235,
       "url": "https://issues.chromium.org/action/issues/428515091/attachments/67156917?download=true",
-      "local_path": null
+      "local_path": "attachments/gfxrecon_capture_do_pack_2x16.gfxr"
     },
     {
       "id": 67156918,
@@ -34,7 +34,7 @@
       "mime_type": "text/html",
       "size_bytes": 3512,
       "url": "https://issues.chromium.org/action/issues/428515091/attachments/67156918?download=true",
-      "local_path": null
+      "local_path": "attachments/radv_do_pack_2x16.html"
     },
     {
       "id": 67156919,
@@ -42,7 +42,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 2014,
       "url": "https://issues.chromium.org/action/issues/428515091/attachments/67156919?download=true",
-      "local_path": null
+      "local_path": "attachments/Dockerfile"
     }
   ],
   "update_count": 108,

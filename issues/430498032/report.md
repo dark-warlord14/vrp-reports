@@ -449,7 +449,7 @@ Reporter credit: David Hirsch
 
 ## Attachments
 
-- poc.js (text/javascript, 907 B)
+- [poc.js](attachments/poc.js) (text/javascript, 907 B)
 
 ## Timeline
 

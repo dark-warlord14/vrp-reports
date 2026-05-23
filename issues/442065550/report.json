@@ -25,7 +25,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 280,
       "url": "https://issues.chromium.org/action/issues/442065550/attachments/68899562?download=true",
-      "local_path": null
+      "local_path": "attachments/comp.spv"
     },
     {
       "id": 68899563,
@@ -33,7 +33,7 @@
       "mime_type": "text/html",
       "size_bytes": 2794,
       "url": "https://issues.chromium.org/action/issues/442065550/attachments/68899563?download=true",
-      "local_path": null
+      "local_path": "attachments/a.html"
     },
     {
       "id": 68899564,
@@ -41,7 +41,7 @@
       "mime_type": "text/x-c++src",
       "size_bytes": 7765,
       "url": "https://issues.chromium.org/action/issues/442065550/attachments/68899564?download=true",
-      "local_path": null
+      "local_path": "attachments/standalone.cpp"
     }
   ],
   "update_count": 66,

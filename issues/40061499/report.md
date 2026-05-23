@@ -60,7 +60,7 @@ Reporter credit: Axel Chong
 ## Attachments
 
 - [input.html](attachments/input.html) (text/plain, 54 B)
-- [poc-folder.zip](attachments/poc-folder.zip) (application/octet-stream, 196 B)
+- poc-folder.zip (application/octet-stream, 196 B)
 
 ## Timeline
 

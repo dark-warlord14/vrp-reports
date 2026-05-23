@@ -268,12 +268,12 @@ Reporter credit: TBA
 
 ## Attachments
 
-- poc.html (text/html, 465 B)
-- font.woff2 (application/octet-stream, 1.9 KB)
-- UaF_debug.log (text/plain, 35.4 KB)
-- repro.tar.gz (application/x-gzip, 2.4 KB)
-- UaF_new.log (text/plain, 27.7 KB)
-- UaF_132.log (text/plain, 28.5 KB)
+- [poc.html](attachments/poc.html) (text/html, 465 B)
+- [font.woff2](attachments/font.woff2) (application/octet-stream, 1.9 KB)
+- [UaF_debug.log](attachments/UaF_debug.log) (text/plain, 35.4 KB)
+- [repro.tar.gz](attachments/repro.tar.gz) (application/x-gzip, 2.4 KB)
+- [UaF_new.log](attachments/UaF_new.log) (text/plain, 27.7 KB)
+- [UaF_132.log](attachments/UaF_132.log) (text/plain, 28.5 KB)
 
 ## Timeline
 

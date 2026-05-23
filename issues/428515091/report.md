@@ -303,9 +303,9 @@ Refer to https://chromium.googlesource.com/chromium/src/+/main/base/memory/raw_p
 
 ## Attachments
 
-- gfxrecon_capture_do_pack_2x16.gfxr (application/octet-stream, 11.9 KB)
-- radv_do_pack_2x16.html (text/html, 3.4 KB)
-- Dockerfile (application/octet-stream, 2.0 KB)
+- [gfxrecon_capture_do_pack_2x16.gfxr](attachments/gfxrecon_capture_do_pack_2x16.gfxr) (application/octet-stream, 11.9 KB)
+- [radv_do_pack_2x16.html](attachments/radv_do_pack_2x16.html) (text/html, 3.4 KB)
+- [Dockerfile](attachments/Dockerfile) (application/octet-stream, 2.0 KB)
 
 ## Timeline
 

@@ -222,7 +222,7 @@ Reporter credit: Malcolm Stagg (@malcolmst) of SODIUM-24, LLC
 - [crx3_pb2.py](attachments/crx3_pb2.py) (text/plain, 6.6 KB)
 - [my_sample_app.crx](attachments/my_sample_app.crx) (application/octet-stream, 47.2 KB)
 - [my_sample_app.xml](attachments/my_sample_app.xml) (text/plain, 266 B)
-- payload.zip (application/octet-stream, 46.9 KB)
+- [payload.zip](attachments/payload.zip) (application/octet-stream, 46.9 KB)
 - [windows_lpe_poc.exe](attachments/windows_lpe_poc.exe) (application/octet-stream, 145.5 KB)
 - [windows_lpe_payload.zip](attachments/windows_lpe_payload.zip) (application/octet-stream, 60.9 KB)
 - [windows_lpe_poc.bat](attachments/windows_lpe_poc.bat) (text/plain, 114 B)

@@ -198,7 +198,7 @@ Reporter credit: Krishna Ravishankar (@krsh732)
 
 ## Attachments
 
-- tail-dispatch-uaf-poc.js (text/javascript, 3.8 KB)
+- [tail-dispatch-uaf-poc.js](attachments/tail-dispatch-uaf-poc.js) (text/javascript, 3.8 KB)
 
 ## Timeline
 

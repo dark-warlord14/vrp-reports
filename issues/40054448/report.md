@@ -141,7 +141,7 @@ Flash Version:
 
 ## Attachments
 
-- [crash.html](attachments/crash.html) (text/plain, 322 B)
+- crash.html (text/plain, 322 B)
 - [asan-89.0.4388.0.log](attachments/asan-89.0.4388.0.log) (text/plain, 13.8 KB)
 
 ## Timeline

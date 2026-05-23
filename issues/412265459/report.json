@@ -25,7 +25,7 @@
       "mime_type": "text/html",
       "size_bytes": 7645,
       "url": "https://issues.chromium.org/action/issues/412265459/attachments/65080222?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     },
     {
       "id": 65135903,
@@ -33,7 +33,7 @@
       "mime_type": "text/html",
       "size_bytes": 24635,
       "url": "https://issues.chromium.org/action/issues/412265459/attachments/65135903?download=true",
-      "local_path": null
+      "local_path": "attachments/poc2.html"
     },
     {
       "id": 65137960,
@@ -41,7 +41,7 @@
       "mime_type": "video/x-matroska",
       "size_bytes": 4326438,
       "url": "https://issues.chromium.org/action/issues/412265459/attachments/65137960?download=true",
-      "local_path": null
+      "local_path": "attachments/2025-04-23 17-10-09.mkv"
     }
   ],
   "update_count": 193,

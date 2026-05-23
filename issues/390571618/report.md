@@ -59,8 +59,8 @@ Regression: N/A
 
 ## Attachments
 
-- Screen Recording 2025-01-18 at 10.35.42.mov (video/quicktime, 2.5 MB)
-- fs-c.html (text/html, 29.4 KB)
+- [Screen Recording 2025-01-18 at 10.35.42.mov](attachments/Screen Recording 2025-01-18 at 10.35.42.mov) (video/quicktime, 2.5 MB)
+- [fs-c.html](attachments/fs-c.html) (text/html, 29.4 KB)
 
 ## Timeline
 

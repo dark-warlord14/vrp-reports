@@ -30,7 +30,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 78347,
       "url": "https://issues.chromium.org/action/issues/447613211/attachments/69644198?download=true",
-      "local_path": null
+      "local_path": "attachments/wasm-module-builder.js"
     },
     {
       "id": 69644199,
@@ -38,7 +38,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 1211,
       "url": "https://issues.chromium.org/action/issues/447613211/attachments/69644199?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.js"
     },
     {
       "id": 69698080,
@@ -46,7 +46,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 2827,
       "url": "https://issues.chromium.org/action/issues/447613211/attachments/69698080?download=true",
-      "local_path": null
+      "local_path": "attachments/cage_rw.js"
     },
     {
       "id": 69690538,
@@ -54,7 +54,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 1194,
       "url": "https://issues.chromium.org/action/issues/447613211/attachments/69690538?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.js"
     },
     {
       "id": 69687645,
@@ -62,7 +62,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 78347,
       "url": "https://issues.chromium.org/action/issues/447613211/attachments/69687645?download=true",
-      "local_path": null
+      "local_path": "attachments/wasm-module-builder.js"
     }
   ],
   "update_count": 83,

@@ -25,7 +25,7 @@
       "mime_type": "video/quicktime",
       "size_bytes": 81875050,
       "url": "https://issues.chromium.org/action/issues/408093267/attachments/64545748?download=true",
-      "local_path": null
+      "local_path": "attachments/IMG_2208.MOV"
     },
     {
       "id": 64545749,
@@ -33,7 +33,7 @@
       "mime_type": "text/html",
       "size_bytes": 5566,
       "url": "https://issues.chromium.org/action/issues/408093267/attachments/64545749?download=true",
-      "local_path": null
+      "local_path": "attachments/uaf (1).html"
     },
     {
       "id": 64545750,
@@ -41,7 +41,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 152622,
       "url": "https://issues.chromium.org/action/issues/408093267/attachments/64545750?download=true",
-      "local_path": null
+      "local_path": "attachments/crash.out"
     }
   ],
   "update_count": 78,

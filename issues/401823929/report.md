@@ -38,8 +38,8 @@ Reporter credit: [goes here]
 
 ## Attachments
 
-- 0da04336.diff (text/x-diff, 1.2 KB)
-- index.html (text/html, 1.8 KB)
+- [0da04336.diff](attachments/0da04336.diff) (text/x-diff, 1.2 KB)
+- [index.html](attachments/index.html) (text/html, 1.8 KB)
 
 ## Timeline
 

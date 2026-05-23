@@ -30,7 +30,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 2681,
       "url": "https://issues.chromium.org/action/issues/451355210/attachments/70065190?download=true",
-      "local_path": null
+      "local_path": "attachments/oob-builtin-poc.js"
     },
     {
       "id": 70065191,
@@ -38,7 +38,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 2882,
       "url": "https://issues.chromium.org/action/issues/451355210/attachments/70065191?download=true",
-      "local_path": null
+      "local_path": "attachments/0001-sandbox-Ensure-builtin-is-within-bounds-for-CSA-Load.patch"
     }
   ],
   "update_count": 40,

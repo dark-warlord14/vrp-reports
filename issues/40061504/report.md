@@ -97,7 +97,7 @@ Nan Wang(@eternalsakura13) and Yong Liu of 360 Vulnerability Research Institute
 ## Attachments
 
 - [poc.html](attachments/poc.html) (text/plain, 1.8 KB)
-- [repro.mp4](attachments/repro.mp4) (video/mp4, 600.5 KB)
+- repro.mp4 (video/mp4, 600.5 KB)
 - [crash.log](attachments/crash.log) (text/plain, 9.7 KB)
 - [chrome_gpu.config](attachments/chrome_gpu.config) (application/octet-stream, 54.7 KB)
 - [libvulkan_intel.zip](attachments/libvulkan_intel.zip) (application/octet-stream, 3.5 MB)

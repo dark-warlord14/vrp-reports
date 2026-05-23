@@ -90,8 +90,8 @@ Author:Kaijie Xu @<https://twitter.com/kaijieguigui>
 
 ## Attachments
 
-- [1.png](attachments/1.png) (image/png, 39.5 KB)
-- [poc.zip](attachments/poc.zip) (application/octet-stream, 781 B)
+- 1.png (image/png, 39.5 KB)
+- poc.zip (application/octet-stream, 781 B)
 
 ## Timeline
 

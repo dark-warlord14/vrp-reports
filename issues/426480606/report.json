@@ -25,7 +25,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 2742647,
       "url": "https://issues.chromium.org/action/issues/426480606/attachments/66940112?download=true",
-      "local_path": null
+      "local_path": "attachments/chrome repro.mp4"
     },
     {
       "id": 67029781,
@@ -57,7 +57,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 321172,
       "url": "https://issues.chromium.org/action/issues/426480606/attachments/68402609?download=true",
-      "local_path": null
+      "local_path": "attachments/Verified Fix.mp4"
     }
   ],
   "update_count": 79,

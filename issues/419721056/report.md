@@ -40,8 +40,8 @@ Regression: N/A
 
 ## Attachments
 
-- showsavefilepicker can overlaid on other origin.mov (video/quicktime, 14.5 MB)
-- poc.html (text/html, 1.3 KB)
+- [showsavefilepicker can overlaid on other origin.mov](attachments/showsavefilepicker can overlaid on other origin.mov) (video/quicktime, 14.5 MB)
+- [poc.html](attachments/poc.html) (text/html, 1.3 KB)
 
 ## Timeline
 

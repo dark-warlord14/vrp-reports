@@ -280,7 +280,7 @@ Refer to <https://chromium.googlesource.com/chromium/src/+/main/base/memory/raw_
 
 ## Attachments
 
-- [poc1.webm](attachments/poc1.webm) (video/webm, 2.5 MB)
+- poc1.webm (video/webm, 2.5 MB)
 
 ## Timeline
 

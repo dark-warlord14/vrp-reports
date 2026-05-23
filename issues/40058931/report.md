@@ -54,8 +54,8 @@ Reporter credit: Abdel Adim [`smaury`](https://twitter.com/smaury92) Oisfi of [S
 
 ## Attachments
 
-- [webshare_poc1.html](attachments/webshare_poc1.html) (text/plain, 769 B)
-- [webshare_poc2.html](attachments/webshare_poc2.html) (text/plain, 928 B)
+- webshare_poc1.html (text/plain, 769 B)
+- webshare_poc2.html (text/plain, 928 B)
 
 ## Timeline
 

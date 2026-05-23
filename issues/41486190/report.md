@@ -40,7 +40,7 @@ Reporter credit: Hafiizh (<https://www.linkedin.com/in/hafiizh-7aa6bb31/>)
 
 ## Attachments
 
-- bandicam 2023-12-21 14-00-02-731.mp4 (video/mp4, 1.9 MB)
+- [bandicam 2023-12-21 14-00-02-731.mp4](attachments/bandicam 2023-12-21 14-00-02-731.mp4) (video/mp4, 1.9 MB)
 - [fullscreenspf.html](attachments/fullscreenspf.html) (text/plain, 2.8 KB)
 - [fullscreenspf.html](attachments/fullscreenspf.html) (text/plain, 270 B)
 - [bandicam 2025-01-16 09-41-51-757.mp4](attachments/bandicam 2025-01-16 09-41-51-757.mp4) (video/mp4, 1.2 MB)

@@ -130,9 +130,9 @@ ome_64.so (offset 0x8dc000) (BuildId: 1486a57a4ba7b56144721fcd544c8b14f165e53b)
 
 ## Attachments
 
-- comp.spv (application/octet-stream, 280 B)
-- a.html (text/html, 2.7 KB)
-- standalone.cpp (text/x-c++src, 7.6 KB)
+- [comp.spv](attachments/comp.spv) (application/octet-stream, 280 B)
+- [a.html](attachments/a.html) (text/html, 2.7 KB)
+- [standalone.cpp](attachments/standalone.cpp) (text/x-c++src, 7.6 KB)
 
 ## Timeline
 

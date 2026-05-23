@@ -173,9 +173,9 @@ Received signal 11 SEGV_ACCERR 001001784d7b
 
 ## Attachments
 
-- radv_nir_def_rewrite_uses.html (text/html, 3.0 KB)
-- gfxrecon_capture_radv_nir_def_rewrite_uses.gfxr (application/octet-stream, 10.1 KB)
-- Dockerfile (application/octet-stream, 2.0 KB)
+- [radv_nir_def_rewrite_uses.html](attachments/radv_nir_def_rewrite_uses.html) (text/html, 3.0 KB)
+- [gfxrecon_capture_radv_nir_def_rewrite_uses.gfxr](attachments/gfxrecon_capture_radv_nir_def_rewrite_uses.gfxr) (application/octet-stream, 10.1 KB)
+- [Dockerfile](attachments/Dockerfile) (application/octet-stream, 2.0 KB)
 
 ## Timeline
 

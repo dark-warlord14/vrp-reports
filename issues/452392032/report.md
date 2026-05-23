@@ -30,10 +30,10 @@ REPRODUCTION CASE
 
 ## Attachments
 
-- spoofsplitview.mp4 (video/mp4, 6.0 MB)
-- spoofnewxiov.html (text/html, 3.5 KB)
-- 8eWXXFfj3qsanP5.png (image/png, 278.8 KB)
-- Screenshot_20251018_182618_Chrome Canary~2.jpg (image/jpeg, 207.9 KB)
+- [spoofsplitview.mp4](attachments/spoofsplitview.mp4) (video/mp4, 6.0 MB)
+- [spoofnewxiov.html](attachments/spoofnewxiov.html) (text/html, 3.5 KB)
+- [8eWXXFfj3qsanP5.png](attachments/8eWXXFfj3qsanP5.png) (image/png, 278.8 KB)
+- [Screenshot_20251018_182618_Chrome Canary~2.jpg](attachments/Screenshot_20251018_182618_Chrome Canary~2.jpg) (image/jpeg, 207.9 KB)
 
 ## Timeline
 

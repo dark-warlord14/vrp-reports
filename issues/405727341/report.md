@@ -36,9 +36,9 @@ Reporter credit: [goes here]
 
 ## Attachments
 
-- enterjack3.html (text/html, 1.1 KB)
-- bandicam 2025-03-24 11-30-17-311.mp4 (video/mp4, 1.4 MB)
-- bandicam 2025-10-16 10-02-11-145.mp4 (video/mp4, 1.2 MB)
+- [enterjack3.html](attachments/enterjack3.html) (text/html, 1.1 KB)
+- [bandicam 2025-03-24 11-30-17-311.mp4](attachments/bandicam 2025-03-24 11-30-17-311.mp4) (video/mp4, 1.4 MB)
+- [bandicam 2025-10-16 10-02-11-145.mp4](attachments/bandicam 2025-10-16 10-02-11-145.mp4) (video/mp4, 1.2 MB)
 
 ## Timeline
 

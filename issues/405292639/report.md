@@ -110,9 +110,9 @@ retsew0x01
 
 ## Attachments
 
-- asan.txt (text/plain, 11.5 KB)
-- poc.html (text/html, 493 B)
-- asan.log (text/plain, 19.4 KB)
+- [asan.txt](attachments/asan.txt) (text/plain, 11.5 KB)
+- [poc.html](attachments/poc.html) (text/html, 493 B)
+- [asan.log](attachments/asan.log) (text/plain, 19.4 KB)
 
 ## Timeline
 

@@ -43,7 +43,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 3222796,
       "url": "https://issues.chromium.org/action/issues/41481877/attachments/53180723?download=true",
-      "local_path": "attachments/chrome302js2.mp4"
+      "local_path": null
     },
     {
       "id": 53180724,
@@ -51,7 +51,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 2298586,
       "url": "https://issues.chromium.org/action/issues/41481877/attachments/53180724?download=true",
-      "local_path": "attachments/chrome302js.mp4"
+      "local_path": null
     },
     {
       "id": 53180751,
@@ -59,7 +59,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1619,
       "url": "https://issues.chromium.org/action/issues/41481877/attachments/53180751?download=true",
-      "local_path": "attachments/index.php"
+      "local_path": null
     },
     {
       "id": 53180752,

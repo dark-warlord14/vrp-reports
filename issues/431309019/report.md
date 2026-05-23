@@ -95,15 +95,15 @@ Yes, I plan to disclose
 
 ## Attachments
 
-- Chrome-report.zip (application/x-zip-compressed, 15.5 MB)
-- zone3.mp4 (video/mp4, 10.0 MB)
-- zone4.mp4 (video/mp4, 9.1 MB)
-- calc.c (text/x-csrc, 444 B)
-- html_loader.ps1 (application/octet-stream, 481 B)
-- template.html (text/html, 1.2 KB)
-- zone4.html (text/html, 141.3 KB)
+- [Chrome-report.zip](attachments/Chrome-report.zip) (application/x-zip-compressed, 15.5 MB)
+- [zone3.mp4](attachments/zone3.mp4) (video/mp4, 10.0 MB)
+- [zone4.mp4](attachments/zone4.mp4) (video/mp4, 9.1 MB)
+- [calc.c](attachments/calc.c) (text/x-csrc, 444 B)
+- [html_loader.ps1](attachments/html_loader.ps1) (application/octet-stream, 481 B)
+- [template.html](attachments/template.html) (text/html, 1.2 KB)
+- [zone4.html](attachments/zone4.html) (text/html, 141.3 KB)
 - deleted (application/octet-stream, 0 B)
-- zone3.html (text/html, 141.6 KB)
+- [zone3.html](attachments/zone3.html) (text/html, 141.6 KB)
 
 ## Timeline
 

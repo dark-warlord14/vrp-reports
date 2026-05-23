@@ -30,7 +30,7 @@
       "mime_type": "text/html",
       "size_bytes": 465,
       "url": "https://issues.chromium.org/action/issues/390889644/attachments/62269328?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     },
     {
       "id": 62269329,
@@ -38,7 +38,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 1984,
       "url": "https://issues.chromium.org/action/issues/390889644/attachments/62269329?download=true",
-      "local_path": null
+      "local_path": "attachments/font.woff2"
     },
     {
       "id": 62269330,
@@ -46,7 +46,7 @@
       "mime_type": "text/plain",
       "size_bytes": 36271,
       "url": "https://issues.chromium.org/action/issues/390889644/attachments/62269330?download=true",
-      "local_path": null
+      "local_path": "attachments/UaF_debug.log"
     },
     {
       "id": 62282857,
@@ -54,7 +54,7 @@
       "mime_type": "application/x-gzip",
       "size_bytes": 2477,
       "url": "https://issues.chromium.org/action/issues/390889644/attachments/62282857?download=true",
-      "local_path": null
+      "local_path": "attachments/repro.tar.gz"
     },
     {
       "id": 62293174,
@@ -62,7 +62,7 @@
       "mime_type": "text/plain",
       "size_bytes": 28342,
       "url": "https://issues.chromium.org/action/issues/390889644/attachments/62293174?download=true",
-      "local_path": null
+      "local_path": "attachments/UaF_new.log"
     },
     {
       "id": 62293175,
@@ -70,7 +70,7 @@
       "mime_type": "text/plain",
       "size_bytes": 29175,
       "url": "https://issues.chromium.org/action/issues/390889644/attachments/62293175?download=true",
-      "local_path": null
+      "local_path": "attachments/UaF_132.log"
     }
   ],
   "update_count": 103,

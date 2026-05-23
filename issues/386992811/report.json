@@ -25,7 +25,7 @@
       "mime_type": "text/plain",
       "size_bytes": 28679,
       "url": "https://issues.chromium.org/action/issues/386992811/attachments/61890662?download=true",
-      "local_path": null
+      "local_path": "attachments/asan-PictureLayerTilingSet.txt"
     },
     {
       "id": 61890663,
@@ -33,7 +33,7 @@
       "mime_type": "text/plain",
       "size_bytes": 34533,
       "url": "https://issues.chromium.org/action/issues/386992811/attachments/61890663?download=true",
-      "local_path": null
+      "local_path": "attachments/asan-RemoveTilesInRegion.txt"
     },
     {
       "id": 61890664,
@@ -41,7 +41,7 @@
       "mime_type": "text/plain",
       "size_bytes": 32308,
       "url": "https://issues.chromium.org/action/issues/386992811/attachments/61890664?download=true",
-      "local_path": null
+      "local_path": "attachments/asan-SetRasterSourceAndResize.txt"
     },
     {
       "id": 61890665,
@@ -49,7 +49,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 430866,
       "url": "https://issues.chromium.org/action/issues/386992811/attachments/61890665?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.diff"
     },
     {
       "id": 61897528,
@@ -57,7 +57,7 @@
       "mime_type": "video/quicktime",
       "size_bytes": 141745352,
       "url": "https://issues.chromium.org/action/issues/386992811/attachments/61897528?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.mov"
     },
     {
       "id": 61893817,
@@ -65,7 +65,7 @@
       "mime_type": "video/quicktime",
       "size_bytes": 251340612,
       "url": "https://issues.chromium.org/action/issues/386992811/attachments/61893817?download=true",
-      "local_path": null
+      "local_path": "attachments/PoC-final.mov"
     }
   ],
   "update_count": 84,

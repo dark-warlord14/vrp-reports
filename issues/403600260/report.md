@@ -214,7 +214,7 @@ Marking any rewards for charity in advance.
 
 ## Attachments
 
-- maglev-jsgenobj-inline-uninit-switch.js (text/javascript, 2.9 KB)
+- [maglev-jsgenobj-inline-uninit-switch.js](attachments/maglev-jsgenobj-inline-uninit-switch.js) (text/javascript, 2.9 KB)
 
 ## Timeline
 

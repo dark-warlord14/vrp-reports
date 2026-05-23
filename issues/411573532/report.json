@@ -29,7 +29,7 @@
       "mime_type": "text/html",
       "size_bytes": 1259,
       "url": "https://issues.chromium.org/action/issues/411573532/attachments/65004101?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     },
     {
       "id": 65004102,
@@ -37,7 +37,7 @@
       "mime_type": "text/plain",
       "size_bytes": 61571,
       "url": "https://issues.chromium.org/action/issues/411573532/attachments/65004102?download=true",
-      "local_path": null
+      "local_path": "attachments/asan.txt"
     },
     {
       "id": 65069761,
@@ -53,7 +53,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 526,
       "url": "https://issues.chromium.org/action/issues/411573532/attachments/65282527?download=true",
-      "local_path": null
+      "local_path": "attachments/fixpatch.diff"
     },
     {
       "id": 65307716,
@@ -61,7 +61,7 @@
       "mime_type": "text/html",
       "size_bytes": 1901,
       "url": "https://issues.chromium.org/action/issues/411573532/attachments/65307716?download=true",
-      "local_path": null
+      "local_path": "attachments/simple_poc.html"
     },
     {
       "id": 65399781,
@@ -69,7 +69,7 @@
       "mime_type": "text/markdown",
       "size_bytes": 17648,
       "url": "https://issues.chromium.org/action/issues/411573532/attachments/65399781?download=true",
-      "local_path": null
+      "local_path": "attachments/writeup_en.md"
     },
     {
       "id": 65399782,
@@ -77,7 +77,7 @@
       "mime_type": "text/html",
       "size_bytes": 4192,
       "url": "https://issues.chromium.org/action/issues/411573532/attachments/65399782?download=true",
-      "local_path": null
+      "local_path": "attachments/exp.html"
     },
     {
       "id": 65388969,

@@ -29,7 +29,7 @@
       "mime_type": "image/png",
       "size_bytes": 40410,
       "url": "https://issues.chromium.org/action/issues/40060669/attachments/52886252?download=true",
-      "local_path": "attachments/1.png"
+      "local_path": null
     },
     {
       "id": 52886253,
@@ -37,7 +37,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 781,
       "url": "https://issues.chromium.org/action/issues/40060669/attachments/52886253?download=true",
-      "local_path": "attachments/poc.zip"
+      "local_path": null
     }
   ],
   "update_count": 51,

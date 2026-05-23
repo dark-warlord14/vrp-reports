@@ -85,17 +85,17 @@ Regression: N/A
 
 ## Attachments
 
-- attack-servers.mjs (text/javascript, 1.5 KB)
-- BreakpointDataLeak.PNG (image/png, 15.1 KB)
-- index.html (text/html, 1.9 KB)
-- installer_drag.png (image/png, 6.6 KB)
-- package.json (application/json, 180 B)
-- update_link2.PNG (image/png, 30.9 KB)
-- websocket-server.js (text/javascript, 1.7 KB)
-- XSS.PNG (image/png, 17.9 KB)
-- background.js (text/javascript, 2.3 KB)
-- devtools.html (text/html, 45 B)
-- manifest.json (application/json, 217 B)
+- [attack-servers.mjs](attachments/attack-servers.mjs) (text/javascript, 1.5 KB)
+- [BreakpointDataLeak.PNG](attachments/BreakpointDataLeak.PNG) (image/png, 15.1 KB)
+- [index.html](attachments/index.html) (text/html, 1.9 KB)
+- [installer_drag.png](attachments/installer_drag.png) (image/png, 6.6 KB)
+- [package.json](attachments/package.json) (application/json, 180 B)
+- [update_link2.PNG](attachments/update_link2.PNG) (image/png, 30.9 KB)
+- [websocket-server.js](attachments/websocket-server.js) (text/javascript, 1.7 KB)
+- [XSS.PNG](attachments/XSS.PNG) (image/png, 17.9 KB)
+- [background.js](attachments/background.js) (text/javascript, 2.3 KB)
+- [devtools.html](attachments/devtools.html) (text/html, 45 B)
+- [manifest.json](attachments/manifest.json) (application/json, 217 B)
 
 ## Timeline
 

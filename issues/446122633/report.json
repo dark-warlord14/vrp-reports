@@ -30,7 +30,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 84271,
       "url": "https://issues.chromium.org/action/issues/446122633/attachments/69447043?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.js"
     },
     {
       "id": 69447044,
@@ -38,7 +38,7 @@
       "mime_type": "text/html",
       "size_bytes": 94036,
       "url": "https://issues.chromium.org/action/issues/446122633/attachments/69447044?download=true",
-      "local_path": null
+      "local_path": "attachments/rce.html"
     }
   ],
   "update_count": 55,

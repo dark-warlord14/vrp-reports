@@ -20,7 +20,7 @@ redacted
 ## Attachments
 
 - index6.js (text/javascript, 1.2 KB)
-- pxtm.html (text/html, 2.9 KB)
+- [pxtm.html](attachments/pxtm.html) (text/html, 2.9 KB)
 - bandicam 2025-01-09 15-01-06-539.mp4 (video/mp4, 2.5 MB)
 
 ## Timeline

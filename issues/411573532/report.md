@@ -282,13 +282,13 @@ Reporter credit: [f4@dnpushme]
 
 ## Attachments
 
-- poc.html (text/html, 1.2 KB)
-- asan.txt (text/plain, 60.1 KB)
+- [poc.html](attachments/poc.html) (text/html, 1.2 KB)
+- [asan.txt](attachments/asan.txt) (text/plain, 60.1 KB)
 - deleted (application/octet-stream, 0 B)
-- fixpatch.diff (text/x-diff, 526 B)
-- simple_poc.html (text/html, 1.9 KB)
-- writeup_en.md (text/markdown, 17.2 KB)
-- exp.html (text/html, 4.1 KB)
+- [fixpatch.diff](attachments/fixpatch.diff) (text/x-diff, 526 B)
+- [simple_poc.html](attachments/simple_poc.html) (text/html, 1.9 KB)
+- [writeup_en.md](attachments/writeup_en.md) (text/markdown, 17.2 KB)
+- [exp.html](attachments/exp.html) (text/html, 4.1 KB)
 - deleted (application/octet-stream, 0 B)
 - deleted (application/octet-stream, 0 B)
 

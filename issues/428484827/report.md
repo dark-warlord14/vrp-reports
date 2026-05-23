@@ -36,9 +36,9 @@ REPRODUCTION CASE
 
 ## Attachments
 
-- bandicam 2025-06-29 21-30-09-024.mp4 (video/mp4, 2.1 MB)
-- spoofpermisx.html (text/html, 1.3 KB)
-- perm.html (text/html, 228 B)
+- [bandicam 2025-06-29 21-30-09-024.mp4](attachments/bandicam 2025-06-29 21-30-09-024.mp4) (video/mp4, 2.1 MB)
+- [spoofpermisx.html](attachments/spoofpermisx.html) (text/html, 1.3 KB)
+- [perm.html](attachments/perm.html) (text/html, 228 B)
 
 ## Timeline
 

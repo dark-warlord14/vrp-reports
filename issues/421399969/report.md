@@ -227,8 +227,8 @@ Command line: `/proc/self/exe --type=gpu-process --no-sandbox --ozone-platform=w
 
 ## Attachments
 
-- gfxrecon_capture_20250524T100402.gfxr (application/octet-stream, 11.4 KB)
-- anv_nir_compute_push_layout.html (text/html, 3.3 KB)
+- [gfxrecon_capture_20250524T100402.gfxr](attachments/gfxrecon_capture_20250524T100402.gfxr) (application/octet-stream, 11.4 KB)
+- [anv_nir_compute_push_layout.html](attachments/anv_nir_compute_push_layout.html) (text/html, 3.3 KB)
 
 ## Timeline
 

@@ -14,7 +14,7 @@
   "reporter": "xu...@gmail.com",
   "assignee": "pf...@google.com",
   "created_date": "2025-07-10T10:18:25+00:00",
-  "modified_date": "2025-10-25T08:40:54+00:00",
+  "modified_date": "2026-04-17T06:57:17+00:00",
   "bounty_confirmed": true,
   "bounty_amount": 1000.0,
   "bounty_rationale": "report of heavily mitigated memory corruption in a non-sandboxed process",
@@ -25,7 +25,7 @@
       "mime_type": "text/plain",
       "size_bytes": 60917,
       "url": "https://issues.chromium.org/action/issues/430635213/attachments/67464821?download=true",
-      "local_path": null
+      "local_path": "attachments/android_crash.hwasan.log"
     },
     {
       "id": 67530391,
@@ -33,7 +33,7 @@
       "mime_type": "video/x-matroska",
       "size_bytes": 13096659,
       "url": "https://issues.chromium.org/action/issues/430635213/attachments/67530391?download=true",
-      "local_path": null
+      "local_path": "attachments/2025-07-13 06-09-57.mkv"
     },
     {
       "id": 67530394,
@@ -41,7 +41,7 @@
       "mime_type": "video/x-matroska",
       "size_bytes": 15853080,
       "url": "https://issues.chromium.org/action/issues/430635213/attachments/67530394?download=true",
-      "local_path": null
+      "local_path": "attachments/win_crash.mkv"
     },
     {
       "id": 67536251,
@@ -49,9 +49,9 @@
       "mime_type": "text/plain",
       "size_bytes": 93534,
       "url": "https://issues.chromium.org/action/issues/430635213/attachments/67536251?download=true",
-      "local_path": null
+      "local_path": "attachments/win_crash.asan.log"
     }
   ],
-  "update_count": 55,
+  "update_count": 57,
   "description_snippet": "# VULNERABILITY DETAILS\nThis vulnerability occurs in the Chrome DevTools protocol input handling mechanism, specifically within the InputInjector class that manages mouse event injection for automation and debugging purposes.\n\nThe vulnerability stems from a race condition in the asynchronous callbac"
 }

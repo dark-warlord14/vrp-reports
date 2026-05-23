@@ -155,10 +155,10 @@ Regression: No
 
 ## Attachments
 
-- not-working-version-129.mp4 (video/mp4, 5.3 MB)
-- oldest-working-version.mp4 (video/mp4, 18.6 MB)
-- POC.mp4 (video/mp4, 7.7 MB)
-- POC updated.mp4 (video/mp4, 3.1 MB)
+- [not-working-version-129.mp4](attachments/not-working-version-129.mp4) (video/mp4, 5.3 MB)
+- [oldest-working-version.mp4](attachments/oldest-working-version.mp4) (video/mp4, 18.6 MB)
+- [POC.mp4](attachments/POC.mp4) (video/mp4, 7.7 MB)
+- [POC updated.mp4](attachments/POC updated.mp4) (video/mp4, 3.1 MB)
 
 ## Timeline
 

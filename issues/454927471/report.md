@@ -157,8 +157,8 @@ Reporter credit: Krishna Ravishankar (@krsh732)
 
 ## Attachments
 
-- maglev-known-builtin-poc.js (text/javascript, 3.1 KB)
-- fix.patch (text/x-diff, 892 B)
+- [maglev-known-builtin-poc.js](attachments/maglev-known-builtin-poc.js) (text/javascript, 3.1 KB)
+- [fix.patch](attachments/fix.patch) (text/x-diff, 892 B)
 
 ## Timeline
 

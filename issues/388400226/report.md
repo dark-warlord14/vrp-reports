@@ -46,11 +46,11 @@ Reporter credit: ret2happy
 
 ## Attachments
 
-- asan.txt (text/plain, 15.5 KB)
-- poc.html (text/html, 202 B)
-- run_poc.js (text/javascript, 1.1 KB)
-- sub.html (text/html, 74 B)
-- asan_1403981.txt (text/plain, 21.1 KB)
+- [asan.txt](attachments/asan.txt) (text/plain, 15.5 KB)
+- [poc.html](attachments/poc.html) (text/html, 202 B)
+- [run_poc.js](attachments/run_poc.js) (text/javascript, 1.1 KB)
+- [sub.html](attachments/sub.html) (text/html, 74 B)
+- [asan_1403981.txt](attachments/asan_1403981.txt) (text/plain, 21.1 KB)
 
 ## Timeline
 

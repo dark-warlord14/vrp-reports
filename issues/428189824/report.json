@@ -28,7 +28,7 @@
       "mime_type": "text/html",
       "size_bytes": 6309,
       "url": "https://issues.chromium.org/action/issues/428189824/attachments/67108012?download=true",
-      "local_path": null
+      "local_path": "attachments/filepicker-pip.html"
     },
     {
       "id": 67133866,
@@ -36,7 +36,7 @@
       "mime_type": "text/html",
       "size_bytes": 1433,
       "url": "https://issues.chromium.org/action/issues/428189824/attachments/67133866?download=true",
-      "local_path": null
+      "local_path": "attachments/filepicker-pip-minimal.html"
     },
     {
       "id": 67133867,
@@ -44,7 +44,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 3287319,
       "url": "https://issues.chromium.org/action/issues/428189824/attachments/67133867?download=true",
-      "local_path": null
+      "local_path": "attachments/filepicker-pip.mp4"
     },
     {
       "id": 67133868,
@@ -52,7 +52,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 2846907,
       "url": "https://issues.chromium.org/action/issues/428189824/attachments/67133868?download=true",
-      "local_path": null
+      "local_path": "attachments/filepicker-pip-minimal-FileDialogsTuckPictureInPicture.mp4"
     },
     {
       "id": 67133869,
@@ -60,7 +60,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 2107320,
       "url": "https://issues.chromium.org/action/issues/428189824/attachments/67133869?download=true",
-      "local_path": null
+      "local_path": "attachments/filepicker-pip-minimal-FileDialogsBlockPictureInPicture.mp4"
     },
     {
       "id": 67333633,
@@ -68,7 +68,7 @@
       "mime_type": "text/html",
       "size_bytes": 4317,
       "url": "https://issues.chromium.org/action/issues/428189824/attachments/67333633?download=true",
-      "local_path": null
+      "local_path": "attachments/filepicker-pip-rce.html"
     },
     {
       "id": 67346603,
@@ -76,7 +76,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 11549118,
       "url": "https://issues.chromium.org/action/issues/428189824/attachments/67346603?download=true",
-      "local_path": null
+      "local_path": "attachments/filepicker-pip-rce.mp4"
     },
     {
       "id": 67378542,
@@ -84,7 +84,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 2222,
       "url": "https://issues.chromium.org/action/issues/428189824/attachments/67378542?download=true",
-      "local_path": null
+      "local_path": "attachments/filepicker-pip-rce-cr.patch"
     },
     {
       "id": 67378543,
@@ -92,7 +92,7 @@
       "mime_type": "text/html",
       "size_bytes": 2814,
       "url": "https://issues.chromium.org/action/issues/428189824/attachments/67378543?download=true",
-      "local_path": null
+      "local_path": "attachments/filepicker-pip-rce-cr.html"
     },
     {
       "id": 67378544,
@@ -100,7 +100,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 7821162,
       "url": "https://issues.chromium.org/action/issues/428189824/attachments/67378544?download=true",
-      "local_path": null
+      "local_path": "attachments/filepicker-pip-rce-cr.mp4"
     },
     {
       "id": 67379411,
@@ -108,7 +108,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 3305,
       "url": "https://issues.chromium.org/action/issues/428189824/attachments/67379411?download=true",
-      "local_path": null
+      "local_path": "attachments/filepicker-pip-rce-cr.patch"
     },
     {
       "id": 67414202,
@@ -116,7 +116,7 @@
       "mime_type": "text/html",
       "size_bytes": 3145,
       "url": "https://issues.chromium.org/action/issues/428189824/attachments/67414202?download=true",
-      "local_path": null
+      "local_path": "attachments/filepicker-pip-rce-bg-cr.html"
     },
     {
       "id": 67414203,
@@ -124,7 +124,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 3215814,
       "url": "https://issues.chromium.org/action/issues/428189824/attachments/67414203?download=true",
-      "local_path": null
+      "local_path": "attachments/filepicker-pip-rce-bg-cr.mp4"
     },
     {
       "id": 68193855,
@@ -132,7 +132,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1930922,
       "url": "https://issues.chromium.org/action/issues/428189824/attachments/68193855?download=true",
-      "local_path": null
+      "local_path": "attachments/Screencast From 2025-08-05 15-48-28.mp4"
     },
     {
       "id": 68226289,
@@ -140,7 +140,7 @@
       "mime_type": "image/png",
       "size_bytes": 23989,
       "url": "https://issues.chromium.org/action/issues/428189824/attachments/68226289?download=true",
-      "local_path": null
+      "local_path": "attachments/Untitled.png"
     }
   ],
   "update_count": 92,

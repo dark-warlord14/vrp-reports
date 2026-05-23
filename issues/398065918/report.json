@@ -30,7 +30,7 @@
       "mime_type": "text/x-python",
       "size_bytes": 1678,
       "url": "https://issues.chromium.org/action/issues/398065918/attachments/63140401?download=true",
-      "local_path": null
+      "local_path": "attachments/case-103-search_allocations.py"
     },
     {
       "id": 63140402,
@@ -38,7 +38,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 8897,
       "url": "https://issues.chromium.org/action/issues/398065918/attachments/63140402?download=true",
-      "local_path": null
+      "local_path": "attachments/case-103-poc3.js"
     },
     {
       "id": 63140403,
@@ -46,7 +46,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 4519,
       "url": "https://issues.chromium.org/action/issues/398065918/attachments/63140403?download=true",
-      "local_path": null
+      "local_path": "attachments/case-103-poc2.js"
     },
     {
       "id": 63140404,
@@ -54,7 +54,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 4561,
       "url": "https://issues.chromium.org/action/issues/398065918/attachments/63140404?download=true",
-      "local_path": null
+      "local_path": "attachments/case-103-poc1.js"
     }
   ],
   "update_count": 100,

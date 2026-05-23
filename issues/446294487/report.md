@@ -73,11 +73,11 @@ Regression: N/A \
 
 ## Attachments
 
-- asan.txt (text/plain, 24.5 KB)
+- [asan.txt](attachments/asan.txt) (text/plain, 24.5 KB)
 - deleted (application/octet-stream, 0 B)
-- ufff.mp4 (video/mp4, 1.1 MB)
+- [ufff.mp4](attachments/ufff.mp4) (video/mp4, 1.1 MB)
 - deleted (application/octet-stream, 0 B)
-- Repro.mp4 (video/mp4, 1.1 MB)
+- [Repro.mp4](attachments/Repro.mp4) (video/mp4, 1.1 MB)
 
 ## Timeline
 

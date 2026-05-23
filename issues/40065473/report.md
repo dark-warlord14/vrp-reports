@@ -58,7 +58,7 @@ Reporter credit: Man Yue Mo of GitHub Security Lab
 
 ## Attachments
 
-- [stackcheck.js](attachments/stackcheck.js) (text/plain, 879 B)
+- stackcheck.js (text/plain, 879 B)
 - [exploit.js](attachments/exploit.js) (text/plain, 2.8 KB)
 
 ## Timeline

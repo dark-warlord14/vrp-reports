@@ -62,8 +62,8 @@ Regression: N/A
 
 ## Attachments
 
-- Chrome-Copy-As-Curl(windows)-CodeExecution.mp4 (video/mp4, 3.7 MB)
-- test.html (text/html, 916 B)
+- [Chrome-Copy-As-Curl(windows)-CodeExecution.mp4](attachments/Chrome-Copy-As-Curl(windows)-CodeExecution.mp4) (video/mp4, 3.7 MB)
+- [test.html](attachments/test.html) (text/html, 916 B)
 
 ## Timeline
 

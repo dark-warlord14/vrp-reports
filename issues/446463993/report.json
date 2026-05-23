@@ -33,7 +33,7 @@
       "mime_type": "text/html",
       "size_bytes": 3847,
       "url": "https://issues.chromium.org/action/issues/446463993/attachments/69496395?download=true",
-      "local_path": null
+      "local_path": "attachments/detx.html"
     },
     {
       "id": 69496396,
@@ -41,7 +41,7 @@
       "mime_type": "text/html",
       "size_bytes": 701,
       "url": "https://issues.chromium.org/action/issues/446463993/attachments/69496396?download=true",
-      "local_path": null
+      "local_path": "attachments/spoofkeyboard.html"
     },
     {
       "id": 69533388,
@@ -65,7 +65,7 @@
       "mime_type": "text/html",
       "size_bytes": 3852,
       "url": "https://issues.chromium.org/action/issues/446463993/attachments/69532486?download=true",
-      "local_path": null
+      "local_path": "attachments/detx1.html"
     },
     {
       "id": 69532487,
@@ -73,7 +73,7 @@
       "mime_type": "text/html",
       "size_bytes": 705,
       "url": "https://issues.chromium.org/action/issues/446463993/attachments/69532487?download=true",
-      "local_path": null
+      "local_path": "attachments/spoofkeyboard1.html"
     },
     {
       "id": 69532488,
@@ -105,7 +105,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 2120239,
       "url": "https://issues.chromium.org/action/issues/446463993/attachments/69603858?download=true",
-      "local_path": null
+      "local_path": "attachments/VID-20250925-WA0003.mp4"
     },
     {
       "id": 69603859,
@@ -113,7 +113,7 @@
       "mime_type": "image/jpeg",
       "size_bytes": 35913,
       "url": "https://issues.chromium.org/action/issues/446463993/attachments/69603859?download=true",
-      "local_path": null
+      "local_path": "attachments/IMG-20250925-WA0002.jpg"
     }
   ],
   "update_count": 79,

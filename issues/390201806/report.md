@@ -128,7 +128,7 @@ This was discovered during a test run of a WIP v8 sandbox fuzzer.
 
 ## Attachments
 
-- typedarray-length-double-fetch.js (text/javascript, 2.7 KB)
+- [typedarray-length-double-fetch.js](attachments/typedarray-length-double-fetch.js) (text/javascript, 2.7 KB)
 
 ## Timeline
 

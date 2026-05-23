@@ -341,7 +341,7 @@ Refer to <https://chromium.googlesource.com/chromium/src/+/main/base/memory/raw_
 
 ## Attachments
 
-- [asan.txt](attachments/asan.txt) (text/plain, 25.1 KB)
+- asan.txt (text/plain, 25.1 KB)
 - [poc.zip](attachments/poc.zip) (application/octet-stream, 162.2 KB)
 - [poc.html](attachments/poc.html) (text/plain, 241.0 KB)
 - [ch.test.js](attachments/ch.test.js) (text/plain, 5.3 KB)

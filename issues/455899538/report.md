@@ -68,8 +68,8 @@ query=evil\ncmd /c calc.exe\x0e\ncmd /c calc.exe\x0f
 
 ## Attachments
 
-- chrome_curl.mp4 (video/mp4, 2.9 MB)
-- chromeCanary_curl.mp4 (video/mp4, 2.5 MB)
+- [chrome_curl.mp4](attachments/chrome_curl.mp4) (video/mp4, 2.9 MB)
+- [chromeCanary_curl.mp4](attachments/chromeCanary_curl.mp4) (video/mp4, 2.5 MB)
 
 ## Timeline
 

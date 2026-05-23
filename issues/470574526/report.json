@@ -1,0 +1,76 @@
+{
+  "id": "470574526",
+  "url": "https://issues.chromium.org/issues/470574526",
+  "title": "DevTools Sources panel with Service Worker causes POST to be resent bypassing SameSite=Strict",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Network>Cookies, Platform>DevTools>Sources",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "143.0.0.0",
+  "cve_ids": [],
+  "reporter": "j....@gmail.com",
+  "assignee": "al...@google.com",
+  "created_date": "2025-12-21T15:09:31+00:00",
+  "modified_date": "2026-04-22T07:59:14+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "Web Exploitation mitigation bypass mitigated by devtools requirement",
+  "attachments": [
+    {
+      "id": 71974503,
+      "filename": "samesite-post-bypass-sw.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2397184,
+      "url": "https://issues.chromium.org/action/issues/470574526/attachments/71974503?download=true",
+      "local_path": "attachments/samesite-post-bypass-sw.mp4"
+    },
+    {
+      "id": 71974504,
+      "filename": "samesite-post-bypass-sw.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 875,
+      "url": "https://issues.chromium.org/action/issues/470574526/attachments/71974504?download=true",
+      "local_path": "attachments/samesite-post-bypass-sw.zip"
+    },
+    {
+      "id": 72012640,
+      "filename": "csrf.html",
+      "mime_type": "text/html",
+      "size_bytes": 208,
+      "url": "https://issues.chromium.org/action/issues/470574526/attachments/72012640?download=true",
+      "local_path": "attachments/csrf.html"
+    },
+    {
+      "id": 72017499,
+      "filename": "target.php",
+      "mime_type": "application/x-httpd-php",
+      "size_bytes": 430,
+      "url": "https://issues.chromium.org/action/issues/470574526/attachments/72017499?download=true",
+      "local_path": "attachments/target.php"
+    },
+    {
+      "id": 72011299,
+      "filename": "sw.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/470574526/attachments/72011299?download=true",
+      "local_path": "attachments/sw.js"
+    },
+    {
+      "id": 72043350,
+      "filename": "Tue Dec 23 2025 13:27:23 GMT-0800 (Pacific Standard Time).png",
+      "mime_type": "image/png",
+      "size_bytes": 97002,
+      "url": "https://issues.chromium.org/action/issues/470574526/attachments/72043350?download=true",
+      "local_path": "attachments/Tue Dec 23 2025 13_27_23 GMT-0800 (Pacific Standard Time).png"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "# Steps to reproduce the problem\n1. Visit https:// jtw.sh/ samesite-post-bypass-ce7139c3/target-sw.php so that cookies are set and a service worker is registered on the target website (`jtw.sh`)\n2. Visit the attacker's site: https:// vps.jorianwoltjer.com/ samesite-post-bypass-ce7139c3/csrf-sw.html"
+}

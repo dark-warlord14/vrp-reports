@@ -218,11 +218,11 @@ Regression: N/A
 
 ## Attachments
 
-- asas.txt (text/plain, 16.9 KB)
-- 1.html (text/html, 210.5 KB)
-- poc.diff (text/x-diff, 452.7 KB)
-- poc.mp4 (video/mp4, 25.7 MB)
-- poc_streamlined.mp4 (video/mp4, 75.2 MB)
+- [asas.txt](attachments/asas.txt) (text/plain, 16.9 KB)
+- [1.html](attachments/1.html) (text/html, 210.5 KB)
+- [poc.diff](attachments/poc.diff) (text/x-diff, 452.7 KB)
+- [poc.mp4](attachments/poc.mp4) (video/mp4, 25.7 MB)
+- [poc_streamlined.mp4](attachments/poc_streamlined.mp4) (video/mp4, 75.2 MB)
 
 ## Timeline
 

@@ -90,11 +90,11 @@ Reporter credit: Zhenghang Xiao (@Kipreyyy) and Nan Wang (@eternalsakura13)
 
 ## Attachments
 
-- poc.js (text/javascript, 361 B)
-- rw_exploit.js (text/javascript, 2.7 KB)
-- rw_exploit_no_flags.js (text/javascript, 3.5 KB)
-- demo.jpg (image/jpeg, 183.8 KB)
-- exploit.html (text/html, 5.0 KB)
+- [poc.js](attachments/poc.js) (text/javascript, 361 B)
+- [rw_exploit.js](attachments/rw_exploit.js) (text/javascript, 2.7 KB)
+- [rw_exploit_no_flags.js](attachments/rw_exploit_no_flags.js) (text/javascript, 3.5 KB)
+- [demo.jpg](attachments/demo.jpg) (image/jpeg, 183.8 KB)
+- [exploit.html](attachments/exploit.html) (text/html, 5.0 KB)
 
 ## Timeline
 

@@ -26,7 +26,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 1956,
       "url": "https://issues.chromium.org/action/issues/384068255/attachments/61522109?download=true",
-      "local_path": null
+      "local_path": "attachments/bg-keyboard.js"
     },
     {
       "id": 61522110,
@@ -34,7 +34,7 @@
       "mime_type": "application/json",
       "size_bytes": 494,
       "url": "https://issues.chromium.org/action/issues/384068255/attachments/61522110?download=true",
-      "local_path": null
+      "local_path": "attachments/manifest.json"
     },
     {
       "id": 61522111,

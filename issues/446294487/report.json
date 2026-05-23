@@ -28,7 +28,7 @@
       "mime_type": "text/plain",
       "size_bytes": 25062,
       "url": "https://issues.chromium.org/action/issues/446294487/attachments/69483804?download=true",
-      "local_path": null
+      "local_path": "attachments/asan.txt"
     },
     {
       "id": 69496391,
@@ -44,7 +44,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1106555,
       "url": "https://issues.chromium.org/action/issues/446294487/attachments/69493623?download=true",
-      "local_path": null
+      "local_path": "attachments/ufff.mp4"
     },
     {
       "id": 69493624,
@@ -60,7 +60,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1106555,
       "url": "https://issues.chromium.org/action/issues/446294487/attachments/69496457?download=true",
-      "local_path": null
+      "local_path": "attachments/Repro.mp4"
     }
   ],
   "update_count": 66,

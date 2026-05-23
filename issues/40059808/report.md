@@ -151,7 +151,7 @@ The same vulnerability exists in ManagedConfigurationAPI::PostStoreConfiguration
 
 ## Attachments
 
-- [test.html](attachments/test.html) (text/plain, 182 B)
+- test.html (text/plain, 182 B)
 - [repro.mp4](attachments/repro.mp4) (video/mp4, 2.6 MB)
 - [asan.log](attachments/asan.log) (text/plain, 27.1 KB)
 - [repro_bug.diff](attachments/repro_bug.diff) (text/plain, 2.4 KB)

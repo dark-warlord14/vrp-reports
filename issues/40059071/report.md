@@ -641,11 +641,9 @@ It does not look to be possible to change tab once the picker is open in both ch
 ### nd...@protonmail.com (2024-06-25)
 
 There seems to be no reason to not apply the fix to `showOpenFilePicker()`
-
 - fileselect.click() has a patch <https://chromium-review.googlesource.com/c/chromium/src/+/4755412>
 - fileselect.showPicker() has a patch <https://chromium-review.googlesource.com/c/chromium/src/+/5235516>
-
-Based of <https://github.com/whatwg/html/pull/10344> consuming user activation is the correct thing to do here I don't see why this should be delayed any longer.
+Based of [https://github.com/whatwg/html/pull/10344](https://www.google.com/url?q=https://github.com/whatwg/html/pull/10344&sa=D&source=buganizer&usg=AOvVaw2IuncxmVwI-Rvc9FKeC0bi) consuming user activation is the correct thing to do here I don't see why this should be delayed any longer.
 
 ### ja...@chromium.org (2024-07-08)
 
@@ -696,9 +694,8 @@ I don't think closing the file picker is going to happen anytime soon.
 
 ### nd...@protonmail.com (2024-07-09)
 
-By the looks of it `.click()` blocks `window.open()` but does not consume user activation so focusing a hidden tab works.  
-
-`onclick = () => {file.click(); setTimeout(() => { w.focus(); w.location='https://www.google.com' }, 10)}`
+By the looks of it `.click()` blocks `window.open()` but does not consume user activation so focusing a hidden tab works.
+`onclick = () => {file.click(); setTimeout(() => { w.focus(); w.location='<https://www.google.com>' }, 10)}`
 
 ### ds...@chromium.org (2024-07-09)
 

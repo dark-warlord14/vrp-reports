@@ -37,9 +37,9 @@ Reporter credit: [goes here]
 
 ## Attachments
 
-- bandicam 2025-03-05 03-40-23-623.mp4 (video/mp4, 3.3 MB)
-- pypi.html (text/html, 17.4 KB)
-- bandicam 2025-11-05 13-40-56-043.mp4 (video/mp4, 2.7 MB)
+- [bandicam 2025-03-05 03-40-23-623.mp4](attachments/bandicam 2025-03-05 03-40-23-623.mp4) (video/mp4, 3.3 MB)
+- [pypi.html](attachments/pypi.html) (text/html, 17.4 KB)
+- [bandicam 2025-11-05 13-40-56-043.mp4](attachments/bandicam 2025-11-05 13-40-56-043.mp4) (video/mp4, 2.7 MB)
 
 ## Timeline
 

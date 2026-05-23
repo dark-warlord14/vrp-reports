@@ -30,7 +30,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 2133,
       "url": "https://issues.chromium.org/action/issues/445966259/attachments/69440789?download=true",
-      "local_path": null
+      "local_path": "attachments/debug-break-trampoline-poc.js"
     }
   ],
   "update_count": 35,

@@ -41,7 +41,7 @@
       "mime_type": "application/zip",
       "size_bytes": 3550,
       "url": "https://issues.chromium.org/action/issues/382190924/attachments/61293105?download=true",
-      "local_path": null
+      "local_path": "attachments/pwa.zip"
     },
     {
       "id": 65779421,
@@ -49,7 +49,7 @@
       "mime_type": "video/webm",
       "size_bytes": 1204406,
       "url": "https://issues.chromium.org/action/issues/382190924/attachments/65779421?download=true",
-      "local_path": null
+      "local_path": "attachments/screen-capture (21).webm"
     }
   ],
   "update_count": 48,

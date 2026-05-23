@@ -29,7 +29,7 @@
       "mime_type": "application/json",
       "size_bytes": 466,
       "url": "https://issues.chromium.org/action/issues/447192722/attachments/69603852?download=true",
-      "local_path": null
+      "local_path": "attachments/manifest.json"
     },
     {
       "id": 69603853,
@@ -37,7 +37,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 794,
       "url": "https://issues.chromium.org/action/issues/447192722/attachments/69603853?download=true",
-      "local_path": null
+      "local_path": "attachments/background.js"
     },
     {
       "id": 69603854,
@@ -45,7 +45,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 158,
       "url": "https://issues.chromium.org/action/issues/447192722/attachments/69603854?download=true",
-      "local_path": null
+      "local_path": "attachments/content.js"
     }
   ],
   "update_count": 94,

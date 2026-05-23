@@ -15,422 +15,215 @@
 
 ## Description
 
-**VULNERABILITY DETAILS**  
-
+\*\*VULNERABILITY DETAILS\*\*
 UAF in blink::NGTextDecorationPainter::UpdateDecorationInfo ng\_text\_decoration\_painter.cc:46:15
-
-**VERSION**
-
+\*\*VERSION\*\*
 Chromium: 1114386
-
-**REPRODUCTION CASE**  
-
-The case was discovered by my fuzzer running on CF, but it cannot be reproduced stably, so I submitted the report manually  
-
-<https://clusterfuzz.com/testcase-detail/5878562507390976>
-
+\*\*REPRODUCTION CASE\*\*
+The case was discovered by my fuzzer running on CF, but it cannot be reproduced stably, so I submitted the report manually
+[https://clusterfuzz.com/testcase-detail/5878562507390976](https://www.google.com/url?q=https://clusterfuzz.com/testcase-detail/5878562507390976&sa=D&source=buganizer&usg=AOvVaw1BeOL8vzVKS8rjqFvVXuwY)
 Type of crash: [tab]
-
-# #ASAN
-
-==1==ERROR: AddressSanitizer: heap-use-after-free on address 0x60b000128c30 at pc 0x5652c2a5ec0f bp 0x7ffca8adcb70 sp 0x7ffca8adcb68  
-
-READ of size 8 at 0x60b000128c30 thread T0 (chrome)  
-
-SCARINESS: 51 (8-byte-read-heap-use-after-free)  
-
-#0 0x5652c2a5ec0e in get base/memory/scoped\_refptr.h:283:27  
-
-#1 0x5652c2a5ec0e in Get third\_party/blink/renderer/core/style/data\_ref.h:37:39  
-
-#2 0x5652c2a5ec0e in operator-> third\_party/blink/renderer/core/style/data\_ref.h:40:40  
-
-#3 0x5652c2a5ec0e in GetTextDecorationLine gen/third\_party/blink/renderer/core/style/computed\_style\_base.h:3653:44  
-
-#4 0x5652c2a5ec0e in IsDecoratingBox third\_party/blink/renderer/core/style/computed\_style.h:1851:9  
-
-#5 0x5652c2a5ec0e in HasAppliedTextDecorations third\_party/blink/renderer/core/style/computed\_style.h:1862:9  
-
-#6 0x5652c2a5ec0e in blink::NGTextDecorationPainter::UpdateDecorationInfo(absl::optional[blink::TextDecorationInfo](javascript:void(0);)&, blink::ComputedStyle const&, blink::TextPaintStyle const&, absl::optional[blink::PhysicalRect](javascript:void(0);), blink::AppliedTextDecoration const\*) third\_party/blink/renderer/core/paint/ng/ng\_text\_decoration\_painter.cc:46:15  
-
-#7 0x5652c2a773b9 in blink::NGHighlightPainter::PaintDecorationsExceptLineThrough(blink::NGHighlightOverlay::HighlightPart const&, blink::TextDecorationLine) third\_party/blink/renderer/core/paint/ng/ng\_highlight\_painter.cc:1144:25  
-
-#8 0x5652c2a72346 in blink::NGHighlightPainter::PaintDecorationsExceptLineThrough(blink::NGHighlightOverlay::HighlightPart const&) third\_party/blink/renderer/core/paint/ng/ng\_highlight\_painter.cc:1102:3  
-
-#9 0x5652c2a7657e in blink::NGHighlightPainter::PaintHighlightOverlays(blink::TextPaintStyle const&, int, bool, absl::optional[blink::AffineTransform](javascript:void(0);)) third\_party/blink/renderer/core/paint/ng/ng\_highlight\_painter.cc:1055:9  
-
-#10 0x5652c2a5a731 in blink::NGTextFragmentPainter::Paint(blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_text\_fragment\_painter.cc:453:25  
-
-#11 0x5652c2a18bf6 in blink::NGBoxFragmentPainter::PaintTextItem(blink::NGInlineCursor const&, blink::PaintInfo const&, blink::PhysicalOffset const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1678:16  
-
-#12 0x5652c2a0ae3c in blink::NGBoxFragmentPainter::PaintInlineItems(blink::PaintInfo const&, blink::PhysicalOffset const&, blink::PhysicalOffset const&, blink::NGInlineCursor\*) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1501:11  
-
-#13 0x5652c2a0f0b0 in blink::NGBoxFragmentPainter::PaintLineBoxChildItems(blink::NGInlineCursor\*, blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1596:7  
-
-#14 0x5652c2a0bb84 in blink::NGBoxFragmentPainter::PaintLineBoxes(blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:824:3  
-
-#15 0x5652c2a041a9 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:663:9  
-
-#16 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7  
-
-#17 0x5652c29ffb25 in blink::NGBoxFragmentPainter::PaintAllPhasesAtomically(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1476:3  
-
-#18 0x5652c29ff791 in blink::NGBoxFragmentPainter::Paint(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:412:5  
-
-#19 0x5652c2a1014e in blink::NGBoxFragmentPainter::PaintBlockChild(blink::NGLink const&, blink::PaintInfo const&, blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:873:46  
-
-#20 0x5652c2a0c6fc in blink::NGBoxFragmentPainter::PaintBlockChildren(blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:837:5  
-
-#21 0x5652c2a04356 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:665:9  
-
-#22 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7  
-
-#23 0x5652c29ffb25 in blink::NGBoxFragmentPainter::PaintAllPhasesAtomically(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1476:3  
-
-#24 0x5652c29ff791 in blink::NGBoxFragmentPainter::Paint(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:412:5  
-
-#25 0x5652c2a11298 in blink::(anonymous namespace)::PaintFragment(blink::NGPhysicalBoxFragment const&, blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:364:36  
-
-#26 0x5652c2a18264 in blink::NGBoxFragmentPainter::PaintBoxItem(blink::NGFragmentItem const&, blink::NGPhysicalBoxFragment const&, blink::NGInlineCursor const&, blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1702:5  
-
-#27 0x5652c2a194d8 in blink::NGBoxFragmentPainter::PaintBoxItem(blink::NGFragmentItem const&, blink::NGInlineCursor const&, blink::PaintInfo const&, blink::PhysicalOffset const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1732:7  
-
-#28 0x5652c2a0ae65 in blink::NGBoxFragmentPainter::PaintInlineItems(blink::PaintInfo const&, blink::PhysicalOffset const&, blink::PhysicalOffset const&, blink::NGInlineCursor\*) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1506:11  
-
-#29 0x5652c2a0f0b0 in blink::NGBoxFragmentPainter::PaintLineBoxChildItems(blink::NGInlineCursor\*, blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1596:7  
-
-#30 0x5652c2a0bb84 in blink::NGBoxFragmentPainter::PaintLineBoxes(blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:824:3  
-
-#31 0x5652c2a041a9 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:663:9  
-
-#32 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7  
-
-#33 0x5652c29ff70e in blink::NGBoxFragmentPainter::Paint(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:418:5  
-
-#34 0x5652c2a1014e in blink::NGBoxFragmentPainter::PaintBlockChild(blink::NGLink const&, blink::PaintInfo const&, blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:873:46  
-
-#35 0x5652c2a0c6fc in blink::NGBoxFragmentPainter::PaintBlockChildren(blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:837:5  
-
-#36 0x5652c2a04356 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:665:9  
-
-#37 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7  
-
-#38 0x5652c29ff70e in blink::NGBoxFragmentPainter::Paint(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:418:5  
-
-#39 0x5652c2a1014e in blink::NGBoxFragmentPainter::PaintBlockChild(blink::NGLink const&, blink::PaintInfo const&, blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:873:46  
-
-#40 0x5652c2a0c6fc in blink::NGBoxFragmentPainter::PaintBlockChildren(blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:837:5  
-
-#41 0x5652c2a04356 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:665:9  
-
-#42 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7  
-
-#43 0x5652c29ff70e in blink::NGBoxFragmentPainter::Paint(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:418:5  
-
-#44 0x5652c2b02679 in blink::PaintLayerPainter::PaintFragmentWithPhase(blink::PaintPhase, blink::FragmentData const&, blink::NGPhysicalBoxFragment const\*, blink::GraphicsContext&, unsigned int) third\_party/blink/renderer/core/paint/paint\_layer\_painter.cc:378:46  
-
-#45 0x5652c2b00cc1 in blink::PaintLayerPainter::PaintWithPhase(blink::PaintPhase, blink::GraphicsContext&, unsigned int) third\_party/blink/renderer/core/paint/paint\_layer\_painter.cc:412:5  
-
-#46 0x5652c2b019a6 in blink::PaintLayerPainter::PaintForegroundPhases(blink::GraphicsContext&, unsigned int) third\_party/blink/renderer/core/paint/paint\_layer\_painter.cc:435:3  
-
-#47 0x5652c2aff651 in blink::PaintLayerPainter::Paint(blink::GraphicsContext&, unsigned int) third\_party/blink/renderer/core/paint/paint\_layer\_painter.cc:253:7  
-
-#48 0x5652c2b01163 in blink::PaintLayerPainter::PaintChildren(blink::PaintLayerIteration, blink::GraphicsContext&, unsigned int) third\_party/blink/renderer/core/paint/paint\_layer\_painter.cc:316:35  
-
-#49 0x5652c2aff829 in blink::PaintLayerPainter::Paint(blink::GraphicsContext&, unsigned int) third\_party/blink/renderer/core/paint/paint\_layer\_painter.cc:265:7  
-
-#50 0x5652c29b2fd9 in blink::FramePainter::Paint(blink::GraphicsContext&, unsigned int) third\_party/blink/renderer/core/paint/frame\_painter.cc:91:17  
-
-#51 0x5652c0cae05c in PaintFrame third\_party/blink/renderer/core/frame/local\_frame\_view.cc:4028:23  
-
-#52 0x5652c0cae05c in blink::LocalFrameView::PaintTree(blink::PaintBenchmarkMode) third\_party/blink/renderer/core/frame/local\_frame\_view.cc:2952:7  
-
-#53 0x5652c0caba29 in blink::LocalFrameView::RunPaintLifecyclePhase(blink::PaintBenchmarkMode) third\_party/blink/renderer/core/frame/local\_frame\_view.cc:2763:22  
-
-#54 0x5652c0ca9579 in blink::LocalFrameView::UpdateLifecyclePhasesInternal(blink::DocumentLifecycle::LifecycleState) third\_party/blink/renderer/core/frame/local\_frame\_view.cc:2510:3  
-
-#55 0x5652c0ca696f in blink::LocalFrameView::UpdateLifecyclePhases(blink::DocumentLifecycle::LifecycleState, blink::DocumentUpdateReason) third\_party/blink/renderer/core/frame/local\_frame\_view.cc:2311:3  
-
-#56 0x5652c0ca61e7 in blink::LocalFrameView::UpdateAllLifecyclePhases(blink::DocumentUpdateReason) third\_party/blink/renderer/core/frame/local\_frame\_view.cc:2074:54  
-
-#57 0x5652c28a5567 in blink::PageAnimator::UpdateAllLifecyclePhases(blink::LocalFrame&, blink::DocumentUpdateReason) third\_party/blink/renderer/core/page/page\_animator.cc:315:9  
-
-#58 0x5652c0e034e5 in blink::WebFrameWidgetImpl::UpdateLifecycle(blink::WebLifecycleUpdate, blink::DocumentUpdateReason) third\_party/blink/renderer/core/frame/web\_frame\_widget\_impl.cc:1449:14  
-
-#59 0x5652c3ac6235 in UpdateVisualState third\_party/blink/renderer/platform/widget/widget\_base.cc:884:12  
-
-#60 0x5652c3ac6235 in non-virtual thunk to blink::WidgetBase::UpdateVisualState() third\_party/blink/renderer/platform/widget/widget\_base.cc:0  
-
-#61 0x5652b91cb5b6 in cc::LayerTreeHost::RequestMainFrameUpdate(bool) cc/trees/layer\_tree\_host.cc:376:12  
-
-#62 0x5652b945b775 in cc::ProxyMain::BeginMainFrame(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);)>) cc/trees/proxy\_main.cc:285:21  
-
-#63 0x5652b947c51f in Invoke<void (cc::ProxyMain::\*)(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);) >), base::WeakPtr[cc::ProxyMain](javascript:void(0);), std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);) > > base/functional/bind\_internal.h:760:12  
-
-#64 0x5652b947c51f in MakeItSo<void (cc::ProxyMain::\*)(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);) >), std::Cr::tuple<base::WeakPtr[cc::ProxyMain](javascript:void(0);), std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);) > > > base/functional/bind\_internal.h:962:5  
-
-#65 0x5652b947c51f in RunImpl<void (cc::ProxyMain::\*)(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);) >), std::Cr::tuple<base::WeakPtr[cc::ProxyMain](javascript:void(0);), std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);) > >, 0UL, 1UL> base/functional/bind\_internal.h:1034:12  
-
-#66 0x5652b947c51f in base::internal::Invoker<base::internal::BindState<void (cc::ProxyMain::\*)(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);)>), base::WeakPtr[cc::ProxyMain](javascript:void(0);), std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);)>>, void ()>::RunOnce(base::internal::BindStateBase\*) base/functional/bind\_internal.h:985:12  
-
-#67 0x5652b3c3311a in Run base/functional/callback.h:152:12  
-
-#68 0x5652b3c3311a in base::TaskAnnotator::RunTaskImpl(base::PendingTask&) base/task/common/task\_annotator.cc:162:32  
-
-#69 0x5652b3c8a5ab in RunTask<(lambda at ../../base/task/sequence\_manager/thread\_controller\_with\_message\_pump\_impl.cc:475:11)> base/task/common/task\_annotator.h:88:5  
-
-#70 0x5652b3c8a5ab in base::sequence\_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl(base::LazyNow\*) base/task/sequence\_manager/thread\_controller\_with\_message\_pump\_impl.cc:473:23  
-
-#71 0x5652b3c89375 in base::sequence\_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork() base/task/sequence\_manager/thread\_controller\_with\_message\_pump\_impl.cc:339:41  
-
-#72 0x5652b3c8bc44 in non-virtual thunk to base::sequence\_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork() base/task/sequence\_manager/thread\_controller\_with\_message\_pump\_impl.cc:0  
-
-#73 0x5652b3b1acd3 in base::MessagePumpDefault::Run(base::MessagePump::Delegate\*) base/message\_loop/message\_pump\_default.cc:48:55  
-
-#74 0x5652b3c8c909 in base::sequence\_manager::internal::ThreadControllerWithMessagePumpImpl::Run(bool, base::TimeDelta) base/task/sequence\_manager/thread\_controller\_with\_message\_pump\_impl.cc:634:12  
-
-#75 0x5652b3bb566f in base::RunLoop::Run(base::Location const&) base/run\_loop.cc:140:14  
-
-#76 0x5652cb17219e in content::RendererMain(content::MainFunctionParams) content/renderer/renderer\_main.cc:336:16  
-
-#77 0x5652b1162ab9 in content::RunZygote(content::ContentMainDelegate\*) content/app/content\_main\_runner\_impl.cc:707:14  
-
-#78 0x5652b1164d40 in content::RunOtherNamedProcessTypeMain(std::Cr::basic\_string<char, std::Cr::char\_traits<char>, std::Cr::allocator<char>> const&, content::MainFunctionParams, content::ContentMainDelegate\*) content/app/content\_main\_runner\_impl.cc:792:12  
-
-#79 0x5652b116724a in content::ContentMainRunnerImpl::Run() content/app/content\_main\_runner\_impl.cc:1154:10  
-
-#80 0x5652b115f445 in content::RunContentProcess(content::ContentMainParams, content::ContentMainRunner\*) content/app/content\_main.cc:326:36  
-
-#81 0x5652b115f980 in content::ContentMain(content::ContentMainParams) content/app/content\_main.cc:343:10  
-
-#82 0x5652a2840c76 in ChromeMain chrome/app/chrome\_main.cc:190:12  
-
-#83 0x7f7b0b33b082 in \_\_libc\_start\_main /build/glibc-SzIz7B/glibc-2.31/csu/libc-start.c:308:16  
-
-0x60b000128c30 is located 16 bytes inside of 104-byte region [0x60b000128c20,0x60b000128c88)  
-
-freed by thread T0 (chrome) here:  
-
-#0 0x5652a280d246 in free third\_party/llvm/compiler-rt/lib/asan/asan\_malloc\_linux.cpp:52:3  
-
-#1 0x5652c2a664da in operator delete third\_party/blink/renderer/core/style/computed\_style.h:332:7  
-
-#2 0x5652c2a664da in DeleteInternal[blink::ComputedStyle](javascript:void(0);) third\_party/blink/renderer/platform/wtf/ref\_counted.h:54:5  
-
-#3 0x5652c2a664da in Destruct third\_party/blink/renderer/platform/wtf/ref\_counted.h:35:5  
-
-#4 0x5652c2a664da in Release base/memory/ref\_counted.h:356:7  
-
-#5 0x5652c2a664da in Release base/memory/scoped\_refptr.h:382:8  
-
-#6 0x5652c2a664da in ~scoped\_refptr base/memory/scoped\_refptr.h:280:7  
-
-#7 0x5652c2a664da in blink::NGHighlightPainter::NGHighlightPainter(blink::NGTextFragmentPaintInfo const&, blink::NGTextPainter&, blink::NGTextDecorationPainter&, blink::PaintInfo const&, blink::NGInlineCursor const&, blink::NGFragmentItem const&, absl::optional[blink::AffineTransform](javascript:void(0);), blink::PhysicalRect const&, blink::PhysicalOffset const&, blink::ComputedStyle const&, blink::TextPaintStyle const&, blink::NGHighlightPainter::SelectionPaintState\*, bool) third\_party/blink/renderer/core/paint/ng/ng\_highlight\_painter.cc:563:9  
-
-#8 0x5652c2a59797 in blink::NGTextFragmentPainter::Paint(blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_text\_fragment\_painter.cc:341:22  
-
-#9 0x5652c2a18bf6 in blink::NGBoxFragmentPainter::PaintTextItem(blink::NGInlineCursor const&, blink::PaintInfo const&, blink::PhysicalOffset const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1678:16  
-
-#10 0x5652c2a0ae3c in blink::NGBoxFragmentPainter::PaintInlineItems(blink::PaintInfo const&, blink::PhysicalOffset const&, blink::PhysicalOffset const&, blink::NGInlineCursor\*) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1501:11  
-
-#11 0x5652c2a0f0b0 in blink::NGBoxFragmentPainter::PaintLineBoxChildItems(blink::NGInlineCursor\*, blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1596:7  
-
-#12 0x5652c2a0bb84 in blink::NGBoxFragmentPainter::PaintLineBoxes(blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:824:3  
-
-#13 0x5652c2a041a9 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:663:9  
-
-#14 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7  
-
-#15 0x5652c29ffb25 in blink::NGBoxFragmentPainter::PaintAllPhasesAtomically(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1476:3  
-
-#16 0x5652c29ff791 in blink::NGBoxFragmentPainter::Paint(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:412:5  
-
-#17 0x5652c2a1014e in blink::NGBoxFragmentPainter::PaintBlockChild(blink::NGLink const&, blink::PaintInfo const&, blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:873:46  
-
-#18 0x5652c2a0c6fc in blink::NGBoxFragmentPainter::PaintBlockChildren(blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:837:5  
-
-#19 0x5652c2a04356 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:665:9  
-
-#20 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7  
-
-#21 0x5652c29ffb25 in blink::NGBoxFragmentPainter::PaintAllPhasesAtomically(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1476:3  
-
-#22 0x5652c29ff791 in blink::NGBoxFragmentPainter::Paint(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:412:5  
-
-#23 0x5652c2a11298 in blink::(anonymous namespace)::PaintFragment(blink::NGPhysicalBoxFragment const&, blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:364:36  
-
-#24 0x5652c2a18264 in blink::NGBoxFragmentPainter::PaintBoxItem(blink::NGFragmentItem const&, blink::NGPhysicalBoxFragment const&, blink::NGInlineCursor const&, blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1702:5  
-
-#25 0x5652c2a194d8 in blink::NGBoxFragmentPainter::PaintBoxItem(blink::NGFragmentItem const&, blink::NGInlineCursor const&, blink::PaintInfo const&, blink::PhysicalOffset const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1732:7  
-
-#26 0x5652c2a0ae65 in blink::NGBoxFragmentPainter::PaintInlineItems(blink::PaintInfo const&, blink::PhysicalOffset const&, blink::PhysicalOffset const&, blink::NGInlineCursor\*) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1506:11  
-
-#27 0x5652c2a0f0b0 in blink::NGBoxFragmentPainter::PaintLineBoxChildItems(blink::NGInlineCursor\*, blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1596:7  
-
-#28 0x5652c2a0bb84 in blink::NGBoxFragmentPainter::PaintLineBoxes(blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:824:3  
-
-#29 0x5652c2a041a9 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:663:9  
-
-#30 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7  
-
-#31 0x5652c29ff70e in blink::NGBoxFragmentPainter::Paint(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:418:5  
-
-#32 0x5652c2a1014e in blink::NGBoxFragmentPainter::PaintBlockChild(blink::NGLink const&, blink::PaintInfo const&, blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:873:46  
-
-#33 0x5652c2a0c6fc in blink::NGBoxFragmentPainter::PaintBlockChildren(blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:837:5  
-
-#34 0x5652c2a04356 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:665:9  
-
-#35 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7  
-
-previously allocated by thread T0 (chrome) here:  
-
-#0 0x5652a280d4ee in malloc third\_party/llvm/compiler-rt/lib/asan/asan\_malloc\_linux.cpp:69:3  
-
-#1 0x5652b1998d88 in AllocWithFlagsInternal base/allocator/partition\_allocator/partition\_root.h:1870:49  
-
-#2 0x5652b1998d88 in AllocWithFlags base/allocator/partition\_allocator/partition\_root.h:1847:10  
-
-#3 0x5652b1998d88 in partition\_alloc::PartitionRoot<true>::Alloc(unsigned long, char const\*) base/allocator/partition\_allocator/partition\_root.h:2204:10  
-
-#4 0x5652c2e7f743 in operator new third\_party/blink/renderer/core/style/computed\_style.h:325:12  
-
-#5 0x5652c2e7f743 in blink::ComputedStyleBuilder::CloneStyle() const third\_party/blink/renderer/core/style/computed\_style.cc:2475:25  
-
-#6 0x5652c42d58ca in blink::StyleResolver::ApplyAnimatedStyle(blink::StyleResolverState&, blink::StyleCascade&) third\_party/blink/renderer/core/css/resolver/style\_resolver.cc:1878:30  
-
-#7 0x5652c42d2951 in blink::StyleResolver::ResolveStyle(blink::Element\*, blink::StyleRecalcContext const&, blink::StyleRequest const&) third\_party/blink/renderer/core/css/resolver/style\_resolver.cc:1014:7  
-
-#8 0x5652c400295a in OriginalStyleForLayoutObject third\_party/blink/renderer/core/dom/element.cc:3150:43  
-
-#9 0x5652c400295a in blink::Element::StyleForLayoutObject(blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/element.cc:3099:13  
-
-#10 0x5652c4009288 in blink::Element::RecalcOwnStyle(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/element.cc:3633:17  
-
-#11 0x5652c40062c5 in blink::Element::RecalcStyle(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/element.cc:3288:20  
-
-#12 0x5652c3d3b568 in blink::ContainerNode::RecalcDescendantStyles(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/container\_node.cc:1396:26  
-
-#13 0x5652c4007064 in blink::Element::RecalcStyle(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/element.cc:3393:7  
-
-#14 0x5652c3d3b568 in blink::ContainerNode::RecalcDescendantStyles(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/container\_node.cc:1396:26  
-
-#15 0x5652c4006ec7 in blink::Element::RecalcStyle(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/element.cc:3385:13  
-
-#16 0x5652c3d3b568 in blink::ContainerNode::RecalcDescendantStyles(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/container\_node.cc:1396:26  
-
-#17 0x5652c4007064 in blink::Element::RecalcStyle(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/element.cc:3393:7  
-
-#18 0x5652c00e52a5 in blink::StyleEngine::RecalcStyle(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/css/style\_engine.cc:3137:20  
-
-#19 0x5652c00e8267 in blink::StyleEngine::RecalcStyle() third\_party/blink/renderer/core/css/style\_engine.cc:3167:3  
-
-#20 0x5652c00e8c89 in blink::StyleEngine::UpdateStyleAndLayoutTree() third\_party/blink/renderer/core/css/style\_engine.cc:3275:7  
-
-#21 0x5652c3d7410c in blink::Document::UpdateStyle() third\_party/blink/renderer/core/dom/document.cc:2300:16  
-
-#22 0x5652c3d720df in blink::Document::UpdateStyleAndLayoutTreeForThisDocument() third\_party/blink/renderer/core/dom/document.cc:2243:3  
-
-#23 0x5652c0cb3736 in blink::LocalFrameView::UpdateStyleAndLayoutInternal() third\_party/blink/renderer/core/frame/local\_frame\_view.cc:3266:30  
-
-#24 0x5652c0c9d9a4 in blink::LocalFrameView::UpdateStyleAndLayout() third\_party/blink/renderer/core/frame/local\_frame\_view.cc:3214:18  
-
-#25 0x5652c3d72937 in blink::Document::UpdateStyleAndLayout(blink::DocumentUpdateReason) third\_party/blink/renderer/core/dom/document.cc:2608:17  
-
-#26 0x5652c07172ab in blink::FrameSelection::ComputeAbsoluteBounds(gfx::Rect&, gfx::Rect&) const third\_party/blink/renderer/core/editing/frame\_selection.cc:619:26  
-
-#27 0x5652c0e1c8a0 in blink::WebFrameWidgetImpl::CalculateSelectionBounds(gfx::Rect&, gfx::Rect&, gfx::Rect\*) third\_party/blink/renderer/core/frame/web\_frame\_widget\_impl.cc:4036:18  
-
-#28 0x5652c0e1bcb3 in blink::WebFrameWidgetImpl::GetSelectionBoundsInWindow(gfx::Rect\*, gfx::Rect\*, gfx::Rect\*, base::i18n::TextDirection\*, base::i18n::TextDirection\*, bool\*) third\_party/blink/renderer/core/frame/web\_frame\_widget\_impl.cc:3363:3  
-
-#29 0x5652c3ac5a59 in blink::WidgetBase::UpdateSelectionBounds() third\_party/blink/renderer/platform/widget/widget\_base.cc:1284:23  
-
-#30 0x5652c3ac56d0 in blink::WidgetBase::WillBeginMainFrame() third\_party/blink/renderer/platform/widget/widget\_base.cc:851:3  
-
-#31 0x5652b91cb051 in cc::LayerTreeHost::WillBeginMainFrame() cc/trees/layer\_tree\_host.cc:346:12  
-
-#32 0x5652b945b610 in cc::ProxyMain::BeginMainFrame(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);)>) cc/trees/proxy\_main.cc:262:21  
-
-#33 0x5652b947c51f in Invoke<void (cc::ProxyMain::\*)(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);) >), base::WeakPtr[cc::ProxyMain](javascript:void(0);), std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);) > > base/functional/bind\_internal.h:760:12  
-
-#34 0x5652b947c51f in MakeItSo<void (cc::ProxyMain::\*)(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);) >), std::Cr::tuple<base::WeakPtr[cc::ProxyMain](javascript:void(0);), std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);) > > > base/functional/bind\_internal.h:962:5  
-
-#35 0x5652b947c51f in RunImpl<void (cc::ProxyMain::\*)(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);) >), std::Cr::tuple<base::WeakPtr[cc::ProxyMain](javascript:void(0);), std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);) > >, 0UL, 1UL> base/functional/bind\_internal.h:1034:12  
-
-#36 0x5652b947c51f in base::internal::Invoker<base::internal::BindState<void (cc::ProxyMain::\*)(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);)>), base::WeakPtr[cc::ProxyMain](javascript:void(0);), std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete[cc::BeginMainFrameAndCommitState](javascript:void(0);)>>, void ()>::RunOnce(base::internal::BindStateBase\*) base/functional/bind\_internal.h:985:12  
-
-SUMMARY: AddressSanitizer: heap-use-after-free (/mnt/scratch0/clusterfuzz/bot/builds/chrome-test-builds\_media\_linux-release\_eb660d5ee526c9c1c1608a71fcbe7a713c490533/revisions/asan-linux-release-1114386/chrome+0x2ca8cc0e) (BuildId: 82ef17887df3d138)  
-
-Shadow bytes around the buggy address:  
-
-0x60b000128980: fd fd fd fd fd fd fd fd fd fa fa fa fa fa fa fa  
-
-0x60b000128a00: fa fa fd fd fd fd fd fd fd fd fd fd fd fd fd fd  
-
-0x60b000128a80: fa fa fa fa fa fa fa fa fd fd fd fd fd fd fd fd  
-
-0x60b000128b00: fd fd fd fd fd fa fa fa fa fa fa fa fa fa fd fd  
-
-0x60b000128b80: fd fd fd fd fd fd fd fd fd fd fd fa fa fa fa fa  
-
-=>0x60b000128c00: fa fa fa fa fd fd[fd]fd fd fd fd fd fd fd fd fd  
-
-0x60b000128c80: fd fa fa fa fa fa fa fa fa fa 00 00 00 00 00 00  
-
-0x60b000128d00: 00 00 00 00 00 00 00 00 fa fa fa fa fa fa fa fa  
-
-0x60b000128d80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fa fa  
-
-0x60b000128e00: fa fa fa fa fa fa 00 00 00 00 00 00 00 00 00 00  
-
-0x60b000128e80: 00 00 00 00 fa fa fa fa fa fa fa fa 00 00 00 00  
-
-Shadow byte legend (one shadow byte represents 8 application bytes):  
-
-Addressable:00  
-
-Partially addressable: 01 02 03 04 05 06 07  
-
-Heap left redzone: fa  
-
-Freed heap region: fd  
-
-Stack left redzone: f1  
-
-Stack mid redzone: f2  
-
-Stack right redzone: f3  
-
-Stack after return: f5  
-
-Stack use after scope: f8  
-
-Global redzone: f9  
-
-Global init order: f6  
-
-Poisoned by user: f7  
-
-Container overflow: fc  
-
-Array cookie: ac  
-
-Intra object redzone: bb  
-
-ASan internal: fe  
-
-Left alloca redzone: ca  
-
-Right alloca redzone: cb  
-
-==1==ADDITIONAL INFO  
-
-==1==Note: Please include this section with the ASan report.  
-
-Task trace:  
-
-#0 0x5652b9474a3c in cc::ProxyImpl::ScheduledActionSendBeginMainFrame(viz::BeginFrameArgs const&) cc/trees/proxy\_impl.cc:770:7  
-
+#ASAN
+=================================================================
+==1==ERROR: AddressSanitizer: heap-use-after-free on address 0x60b000128c30 at pc 0x5652c2a5ec0f bp 0x7ffca8adcb70 sp 0x7ffca8adcb68
+READ of size 8 at 0x60b000128c30 thread T0 (chrome)
+SCARINESS: 51 (8-byte-read-heap-use-after-free)
+#0 0x5652c2a5ec0e in get base/memory/scoped\_refptr.h:283:27
+#1 0x5652c2a5ec0e in Get third\_party/blink/renderer/core/style/data\_ref.h:37:39
+#2 0x5652c2a5ec0e in operator-> third\_party/blink/renderer/core/style/data\_ref.h:40:40
+#3 0x5652c2a5ec0e in GetTextDecorationLine gen/third\_party/blink/renderer/core/style/computed\_style\_base.h:3653:44
+#4 0x5652c2a5ec0e in IsDecoratingBox third\_party/blink/renderer/core/style/computed\_style.h:1851:9
+#5 0x5652c2a5ec0e in HasAppliedTextDecorations third\_party/blink/renderer/core/style/computed\_style.h:1862:9
+#6 0x5652c2a5ec0e in blink::NGTextDecorationPainter::UpdateDecorationInfo(absl::optional<blink::TextDecorationInfo>&, blink::ComputedStyle const&, blink::TextPaintStyle const&, absl::optional<blink::PhysicalRect>, blink::AppliedTextDecoration const\\*) third\_party/blink/renderer/core/paint/ng/ng\_text\_decoration\_painter.cc:46:15
+#7 0x5652c2a773b9 in blink::NGHighlightPainter::PaintDecorationsExceptLineThrough(blink::NGHighlightOverlay::HighlightPart const&, blink::TextDecorationLine) third\_party/blink/renderer/core/paint/ng/ng\_highlight\_painter.cc:1144:25
+#8 0x5652c2a72346 in blink::NGHighlightPainter::PaintDecorationsExceptLineThrough(blink::NGHighlightOverlay::HighlightPart const&) third\_party/blink/renderer/core/paint/ng/ng\_highlight\_painter.cc:1102:3
+#9 0x5652c2a7657e in blink::NGHighlightPainter::PaintHighlightOverlays(blink::TextPaintStyle const&, int, bool, absl::optional<blink::AffineTransform>) third\_party/blink/renderer/core/paint/ng/ng\_highlight\_painter.cc:1055:9
+#10 0x5652c2a5a731 in blink::NGTextFragmentPainter::Paint(blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_text\_fragment\_painter.cc:453:25
+#11 0x5652c2a18bf6 in blink::NGBoxFragmentPainter::PaintTextItem(blink::NGInlineCursor const&, blink::PaintInfo const&, blink::PhysicalOffset const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1678:16
+#12 0x5652c2a0ae3c in blink::NGBoxFragmentPainter::PaintInlineItems(blink::PaintInfo const&, blink::PhysicalOffset const&, blink::PhysicalOffset const&, blink::NGInlineCursor\\*) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1501:11
+#13 0x5652c2a0f0b0 in blink::NGBoxFragmentPainter::PaintLineBoxChildItems(blink::NGInlineCursor\\*, blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1596:7
+#14 0x5652c2a0bb84 in blink::NGBoxFragmentPainter::PaintLineBoxes(blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:824:3
+#15 0x5652c2a041a9 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:663:9
+#16 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7
+#17 0x5652c29ffb25 in blink::NGBoxFragmentPainter::PaintAllPhasesAtomically(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1476:3
+#18 0x5652c29ff791 in blink::NGBoxFragmentPainter::Paint(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:412:5
+#19 0x5652c2a1014e in blink::NGBoxFragmentPainter::PaintBlockChild(blink::NGLink const&, blink::PaintInfo const&, blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:873:46
+#20 0x5652c2a0c6fc in blink::NGBoxFragmentPainter::PaintBlockChildren(blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:837:5
+#21 0x5652c2a04356 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:665:9
+#22 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7
+#23 0x5652c29ffb25 in blink::NGBoxFragmentPainter::PaintAllPhasesAtomically(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1476:3
+#24 0x5652c29ff791 in blink::NGBoxFragmentPainter::Paint(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:412:5
+#25 0x5652c2a11298 in blink::(anonymous namespace)::PaintFragment(blink::NGPhysicalBoxFragment const&, blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:364:36
+#26 0x5652c2a18264 in blink::NGBoxFragmentPainter::PaintBoxItem(blink::NGFragmentItem const&, blink::NGPhysicalBoxFragment const&, blink::NGInlineCursor const&, blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1702:5
+#27 0x5652c2a194d8 in blink::NGBoxFragmentPainter::PaintBoxItem(blink::NGFragmentItem const&, blink::NGInlineCursor const&, blink::PaintInfo const&, blink::PhysicalOffset const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1732:7
+#28 0x5652c2a0ae65 in blink::NGBoxFragmentPainter::PaintInlineItems(blink::PaintInfo const&, blink::PhysicalOffset const&, blink::PhysicalOffset const&, blink::NGInlineCursor\\*) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1506:11
+#29 0x5652c2a0f0b0 in blink::NGBoxFragmentPainter::PaintLineBoxChildItems(blink::NGInlineCursor\\*, blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1596:7
+#30 0x5652c2a0bb84 in blink::NGBoxFragmentPainter::PaintLineBoxes(blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:824:3
+#31 0x5652c2a041a9 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:663:9
+#32 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7
+#33 0x5652c29ff70e in blink::NGBoxFragmentPainter::Paint(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:418:5
+#34 0x5652c2a1014e in blink::NGBoxFragmentPainter::PaintBlockChild(blink::NGLink const&, blink::PaintInfo const&, blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:873:46
+#35 0x5652c2a0c6fc in blink::NGBoxFragmentPainter::PaintBlockChildren(blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:837:5
+#36 0x5652c2a04356 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:665:9
+#37 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7
+#38 0x5652c29ff70e in blink::NGBoxFragmentPainter::Paint(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:418:5
+#39 0x5652c2a1014e in blink::NGBoxFragmentPainter::PaintBlockChild(blink::NGLink const&, blink::PaintInfo const&, blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:873:46
+#40 0x5652c2a0c6fc in blink::NGBoxFragmentPainter::PaintBlockChildren(blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:837:5
+#41 0x5652c2a04356 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:665:9
+#42 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7
+#43 0x5652c29ff70e in blink::NGBoxFragmentPainter::Paint(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:418:5
+#44 0x5652c2b02679 in blink::PaintLayerPainter::PaintFragmentWithPhase(blink::PaintPhase, blink::FragmentData const&, blink::NGPhysicalBoxFragment const\\*, blink::GraphicsContext&, unsigned int) third\_party/blink/renderer/core/paint/paint\_layer\_painter.cc:378:46
+#45 0x5652c2b00cc1 in blink::PaintLayerPainter::PaintWithPhase(blink::PaintPhase, blink::GraphicsContext&, unsigned int) third\_party/blink/renderer/core/paint/paint\_layer\_painter.cc:412:5
+#46 0x5652c2b019a6 in blink::PaintLayerPainter::PaintForegroundPhases(blink::GraphicsContext&, unsigned int) third\_party/blink/renderer/core/paint/paint\_layer\_painter.cc:435:3
+#47 0x5652c2aff651 in blink::PaintLayerPainter::Paint(blink::GraphicsContext&, unsigned int) third\_party/blink/renderer/core/paint/paint\_layer\_painter.cc:253:7
+#48 0x5652c2b01163 in blink::PaintLayerPainter::PaintChildren(blink::PaintLayerIteration, blink::GraphicsContext&, unsigned int) third\_party/blink/renderer/core/paint/paint\_layer\_painter.cc:316:35
+#49 0x5652c2aff829 in blink::PaintLayerPainter::Paint(blink::GraphicsContext&, unsigned int) third\_party/blink/renderer/core/paint/paint\_layer\_painter.cc:265:7
+#50 0x5652c29b2fd9 in blink::FramePainter::Paint(blink::GraphicsContext&, unsigned int) third\_party/blink/renderer/core/paint/frame\_painter.cc:91:17
+#51 0x5652c0cae05c in PaintFrame third\_party/blink/renderer/core/frame/local\_frame\_view.cc:4028:23
+#52 0x5652c0cae05c in blink::LocalFrameView::PaintTree(blink::PaintBenchmarkMode) third\_party/blink/renderer/core/frame/local\_frame\_view.cc:2952:7
+#53 0x5652c0caba29 in blink::LocalFrameView::RunPaintLifecyclePhase(blink::PaintBenchmarkMode) third\_party/blink/renderer/core/frame/local\_frame\_view.cc:2763:22
+#54 0x5652c0ca9579 in blink::LocalFrameView::UpdateLifecyclePhasesInternal(blink::DocumentLifecycle::LifecycleState) third\_party/blink/renderer/core/frame/local\_frame\_view.cc:2510:3
+#55 0x5652c0ca696f in blink::LocalFrameView::UpdateLifecyclePhases(blink::DocumentLifecycle::LifecycleState, blink::DocumentUpdateReason) third\_party/blink/renderer/core/frame/local\_frame\_view.cc:2311:3
+#56 0x5652c0ca61e7 in blink::LocalFrameView::UpdateAllLifecyclePhases(blink::DocumentUpdateReason) third\_party/blink/renderer/core/frame/local\_frame\_view.cc:2074:54
+#57 0x5652c28a5567 in blink::PageAnimator::UpdateAllLifecyclePhases(blink::LocalFrame&, blink::DocumentUpdateReason) third\_party/blink/renderer/core/page/page\_animator.cc:315:9
+#58 0x5652c0e034e5 in blink::WebFrameWidgetImpl::UpdateLifecycle(blink::WebLifecycleUpdate, blink::DocumentUpdateReason) third\_party/blink/renderer/core/frame/web\_frame\_widget\_impl.cc:1449:14
+#59 0x5652c3ac6235 in UpdateVisualState third\_party/blink/renderer/platform/widget/widget\_base.cc:884:12
+#60 0x5652c3ac6235 in non-virtual thunk to blink::WidgetBase::UpdateVisualState() third\_party/blink/renderer/platform/widget/widget\_base.cc:0
+#61 0x5652b91cb5b6 in cc::LayerTreeHost::RequestMainFrameUpdate(bool) cc/trees/layer\_tree\_host.cc:376:12
+#62 0x5652b945b775 in cc::ProxyMain::BeginMainFrame(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState>>) cc/trees/proxy\_main.cc:285:21
+#63 0x5652b947c51f in Invoke<void (cc::ProxyMain::\\*)(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState> >), base::WeakPtr<cc::ProxyMain>, std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState> > > base/functional/bind\_internal.h:760:12
+#64 0x5652b947c51f in MakeItSo<void (cc::ProxyMain::\\*)(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState> >), std::Cr::tuple<base::WeakPtr<cc::ProxyMain>, std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState> > > > base/functional/bind\_internal.h:962:5
+#65 0x5652b947c51f in RunImpl<void (cc::ProxyMain::\\*)(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState> >), std::Cr::tuple<base::WeakPtr<cc::ProxyMain>, std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState> > >, 0UL, 1UL> base/functional/bind\_internal.h:1034:12
+#66 0x5652b947c51f in base::internal::Invoker<base::internal::BindState<void (cc::ProxyMain::\\*)(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState>>), base::WeakPtr<cc::ProxyMain>, std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState>>>, void ()>::RunOnce(base::internal::BindStateBase\\*) base/functional/bind\_internal.h:985:12
+#67 0x5652b3c3311a in Run base/functional/callback.h:152:12
+#68 0x5652b3c3311a in base::TaskAnnotator::RunTaskImpl(base::PendingTask&) base/task/common/task\_annotator.cc:162:32
+#69 0x5652b3c8a5ab in RunTask<(lambda at ../../base/task/sequence\_manager/thread\_controller\_with\_message\_pump\_impl.cc:475:11)> base/task/common/task\_annotator.h:88:5
+#70 0x5652b3c8a5ab in base::sequence\_manager::internal::ThreadControllerWithMessagePumpImpl::DoWorkImpl(base::LazyNow\\*) base/task/sequence\_manager/thread\_controller\_with\_message\_pump\_impl.cc:473:23
+#71 0x5652b3c89375 in base::sequence\_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork() base/task/sequence\_manager/thread\_controller\_with\_message\_pump\_impl.cc:339:41
+#72 0x5652b3c8bc44 in non-virtual thunk to base::sequence\_manager::internal::ThreadControllerWithMessagePumpImpl::DoWork() base/task/sequence\_manager/thread\_controller\_with\_message\_pump\_impl.cc:0
+#73 0x5652b3b1acd3 in base::MessagePumpDefault::Run(base::MessagePump::Delegate\\*) base/message\_loop/message\_pump\_default.cc:48:55
+#74 0x5652b3c8c909 in base::sequence\_manager::internal::ThreadControllerWithMessagePumpImpl::Run(bool, base::TimeDelta) base/task/sequence\_manager/thread\_controller\_with\_message\_pump\_impl.cc:634:12
+#75 0x5652b3bb566f in base::RunLoop::Run(base::Location const&) base/run\_loop.cc:140:14
+#76 0x5652cb17219e in content::RendererMain(content::MainFunctionParams) content/renderer/renderer\_main.cc:336:16
+#77 0x5652b1162ab9 in content::RunZygote(content::ContentMainDelegate\\*) content/app/content\_main\_runner\_impl.cc:707:14
+#78 0x5652b1164d40 in content::RunOtherNamedProcessTypeMain(std::Cr::basic\_string<char, std::Cr::char\_traits<char>, std::Cr::allocator<char>> const&, content::MainFunctionParams, content::ContentMainDelegate\\*) content/app/content\_main\_runner\_impl.cc:792:12
+#79 0x5652b116724a in content::ContentMainRunnerImpl::Run() content/app/content\_main\_runner\_impl.cc:1154:10
+#80 0x5652b115f445 in content::RunContentProcess(content::ContentMainParams, content::ContentMainRunner\\*) content/app/content\_main.cc:326:36
+#81 0x5652b115f980 in content::ContentMain(content::ContentMainParams) content/app/content\_main.cc:343:10
+#82 0x5652a2840c76 in ChromeMain chrome/app/chrome\_main.cc:190:12
+#83 0x7f7b0b33b082 in \_\_libc\_start\_main /build/glibc-SzIz7B/glibc-2.31/csu/libc-start.c:308:16
+0x60b000128c30 is located 16 bytes inside of 104-byte region [0x60b000128c20,0x60b000128c88)
+freed by thread T0 (chrome) here:
+#0 0x5652a280d246 in free third\_party/llvm/compiler-rt/lib/asan/asan\_malloc\_linux.cpp:52:3
+#1 0x5652c2a664da in operator delete third\_party/blink/renderer/core/style/computed\_style.h:332:7
+#2 0x5652c2a664da in DeleteInternal<blink::ComputedStyle> third\_party/blink/renderer/platform/wtf/ref\_counted.h:54:5
+#3 0x5652c2a664da in Destruct third\_party/blink/renderer/platform/wtf/ref\_counted.h:35:5
+#4 0x5652c2a664da in Release base/memory/ref\_counted.h:356:7
+#5 0x5652c2a664da in Release base/memory/scoped\_refptr.h:382:8
+#6 0x5652c2a664da in ~scoped\_refptr base/memory/scoped\_refptr.h:280:7
+#7 0x5652c2a664da in blink::NGHighlightPainter::NGHighlightPainter(blink::NGTextFragmentPaintInfo const&, blink::NGTextPainter&, blink::NGTextDecorationPainter&, blink::PaintInfo const&, blink::NGInlineCursor const&, blink::NGFragmentItem const&, absl::optional<blink::AffineTransform>, blink::PhysicalRect const&, blink::PhysicalOffset const&, blink::ComputedStyle const&, blink::TextPaintStyle const&, blink::NGHighlightPainter::SelectionPaintState\\*, bool) third\_party/blink/renderer/core/paint/ng/ng\_highlight\_painter.cc:563:9
+#8 0x5652c2a59797 in blink::NGTextFragmentPainter::Paint(blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_text\_fragment\_painter.cc:341:22
+#9 0x5652c2a18bf6 in blink::NGBoxFragmentPainter::PaintTextItem(blink::NGInlineCursor const&, blink::PaintInfo const&, blink::PhysicalOffset const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1678:16
+#10 0x5652c2a0ae3c in blink::NGBoxFragmentPainter::PaintInlineItems(blink::PaintInfo const&, blink::PhysicalOffset const&, blink::PhysicalOffset const&, blink::NGInlineCursor\\*) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1501:11
+#11 0x5652c2a0f0b0 in blink::NGBoxFragmentPainter::PaintLineBoxChildItems(blink::NGInlineCursor\\*, blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1596:7
+#12 0x5652c2a0bb84 in blink::NGBoxFragmentPainter::PaintLineBoxes(blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:824:3
+#13 0x5652c2a041a9 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:663:9
+#14 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7
+#15 0x5652c29ffb25 in blink::NGBoxFragmentPainter::PaintAllPhasesAtomically(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1476:3
+#16 0x5652c29ff791 in blink::NGBoxFragmentPainter::Paint(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:412:5
+#17 0x5652c2a1014e in blink::NGBoxFragmentPainter::PaintBlockChild(blink::NGLink const&, blink::PaintInfo const&, blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:873:46
+#18 0x5652c2a0c6fc in blink::NGBoxFragmentPainter::PaintBlockChildren(blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:837:5
+#19 0x5652c2a04356 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:665:9
+#20 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7
+#21 0x5652c29ffb25 in blink::NGBoxFragmentPainter::PaintAllPhasesAtomically(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1476:3
+#22 0x5652c29ff791 in blink::NGBoxFragmentPainter::Paint(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:412:5
+#23 0x5652c2a11298 in blink::(anonymous namespace)::PaintFragment(blink::NGPhysicalBoxFragment const&, blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:364:36
+#24 0x5652c2a18264 in blink::NGBoxFragmentPainter::PaintBoxItem(blink::NGFragmentItem const&, blink::NGPhysicalBoxFragment const&, blink::NGInlineCursor const&, blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1702:5
+#25 0x5652c2a194d8 in blink::NGBoxFragmentPainter::PaintBoxItem(blink::NGFragmentItem const&, blink::NGInlineCursor const&, blink::PaintInfo const&, blink::PhysicalOffset const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1732:7
+#26 0x5652c2a0ae65 in blink::NGBoxFragmentPainter::PaintInlineItems(blink::PaintInfo const&, blink::PhysicalOffset const&, blink::PhysicalOffset const&, blink::NGInlineCursor\\*) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1506:11
+#27 0x5652c2a0f0b0 in blink::NGBoxFragmentPainter::PaintLineBoxChildItems(blink::NGInlineCursor\\*, blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:1596:7
+#28 0x5652c2a0bb84 in blink::NGBoxFragmentPainter::PaintLineBoxes(blink::PaintInfo const&, blink::PhysicalOffset const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:824:3
+#29 0x5652c2a041a9 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:663:9
+#30 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7
+#31 0x5652c29ff70e in blink::NGBoxFragmentPainter::Paint(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:418:5
+#32 0x5652c2a1014e in blink::NGBoxFragmentPainter::PaintBlockChild(blink::NGLink const&, blink::PaintInfo const&, blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:873:46
+#33 0x5652c2a0c6fc in blink::NGBoxFragmentPainter::PaintBlockChildren(blink::PaintInfo const&, blink::PhysicalOffset) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:837:5
+#34 0x5652c2a04356 in blink::NGBoxFragmentPainter::PaintObject(blink::PaintInfo const&, blink::PhysicalOffset const&, bool) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:665:9
+#35 0x5652c2a00e95 in blink::NGBoxFragmentPainter::PaintInternal(blink::PaintInfo const&) third\_party/blink/renderer/core/paint/ng/ng\_box\_fragment\_painter.cc:511:7
+previously allocated by thread T0 (chrome) here:
+#0 0x5652a280d4ee in malloc third\_party/llvm/compiler-rt/lib/asan/asan\_malloc\_linux.cpp:69:3
+#1 0x5652b1998d88 in AllocWithFlagsInternal base/allocator/partition\_allocator/partition\_root.h:1870:49
+#2 0x5652b1998d88 in AllocWithFlags base/allocator/partition\_allocator/partition\_root.h:1847:10
+#3 0x5652b1998d88 in partition\_alloc::PartitionRoot<true>::Alloc(unsigned long, char const\\*) base/allocator/partition\_allocator/partition\_root.h:2204:10
+#4 0x5652c2e7f743 in operator new third\_party/blink/renderer/core/style/computed\_style.h:325:12
+#5 0x5652c2e7f743 in blink::ComputedStyleBuilder::CloneStyle() const third\_party/blink/renderer/core/style/computed\_style.cc:2475:25
+#6 0x5652c42d58ca in blink::StyleResolver::ApplyAnimatedStyle(blink::StyleResolverState&, blink::StyleCascade&) third\_party/blink/renderer/core/css/resolver/style\_resolver.cc:1878:30
+#7 0x5652c42d2951 in blink::StyleResolver::ResolveStyle(blink::Element\\*, blink::StyleRecalcContext const&, blink::StyleRequest const&) third\_party/blink/renderer/core/css/resolver/style\_resolver.cc:1014:7
+#8 0x5652c400295a in OriginalStyleForLayoutObject third\_party/blink/renderer/core/dom/element.cc:3150:43
+#9 0x5652c400295a in blink::Element::StyleForLayoutObject(blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/element.cc:3099:13
+#10 0x5652c4009288 in blink::Element::RecalcOwnStyle(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/element.cc:3633:17
+#11 0x5652c40062c5 in blink::Element::RecalcStyle(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/element.cc:3288:20
+#12 0x5652c3d3b568 in blink::ContainerNode::RecalcDescendantStyles(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/container\_node.cc:1396:26
+#13 0x5652c4007064 in blink::Element::RecalcStyle(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/element.cc:3393:7
+#14 0x5652c3d3b568 in blink::ContainerNode::RecalcDescendantStyles(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/container\_node.cc:1396:26
+#15 0x5652c4006ec7 in blink::Element::RecalcStyle(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/element.cc:3385:13
+#16 0x5652c3d3b568 in blink::ContainerNode::RecalcDescendantStyles(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/container\_node.cc:1396:26
+#17 0x5652c4007064 in blink::Element::RecalcStyle(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/dom/element.cc:3393:7
+#18 0x5652c00e52a5 in blink::StyleEngine::RecalcStyle(blink::StyleRecalcChange, blink::StyleRecalcContext const&) third\_party/blink/renderer/core/css/style\_engine.cc:3137:20
+#19 0x5652c00e8267 in blink::StyleEngine::RecalcStyle() third\_party/blink/renderer/core/css/style\_engine.cc:3167:3
+#20 0x5652c00e8c89 in blink::StyleEngine::UpdateStyleAndLayoutTree() third\_party/blink/renderer/core/css/style\_engine.cc:3275:7
+#21 0x5652c3d7410c in blink::Document::UpdateStyle() third\_party/blink/renderer/core/dom/document.cc:2300:16
+#22 0x5652c3d720df in blink::Document::UpdateStyleAndLayoutTreeForThisDocument() third\_party/blink/renderer/core/dom/document.cc:2243:3
+#23 0x5652c0cb3736 in blink::LocalFrameView::UpdateStyleAndLayoutInternal() third\_party/blink/renderer/core/frame/local\_frame\_view.cc:3266:30
+#24 0x5652c0c9d9a4 in blink::LocalFrameView::UpdateStyleAndLayout() third\_party/blink/renderer/core/frame/local\_frame\_view.cc:3214:18
+#25 0x5652c3d72937 in blink::Document::UpdateStyleAndLayout(blink::DocumentUpdateReason) third\_party/blink/renderer/core/dom/document.cc:2608:17
+#26 0x5652c07172ab in blink::FrameSelection::ComputeAbsoluteBounds(gfx::Rect&, gfx::Rect&) const third\_party/blink/renderer/core/editing/frame\_selection.cc:619:26
+#27 0x5652c0e1c8a0 in blink::WebFrameWidgetImpl::CalculateSelectionBounds(gfx::Rect&, gfx::Rect&, gfx::Rect\\*) third\_party/blink/renderer/core/frame/web\_frame\_widget\_impl.cc:4036:18
+#28 0x5652c0e1bcb3 in blink::WebFrameWidgetImpl::GetSelectionBoundsInWindow(gfx::Rect\\*, gfx::Rect\\*, gfx::Rect\\*, base::i18n::TextDirection\\*, base::i18n::TextDirection\\*, bool\\*) third\_party/blink/renderer/core/frame/web\_frame\_widget\_impl.cc:3363:3
+#29 0x5652c3ac5a59 in blink::WidgetBase::UpdateSelectionBounds() third\_party/blink/renderer/platform/widget/widget\_base.cc:1284:23
+#30 0x5652c3ac56d0 in blink::WidgetBase::WillBeginMainFrame() third\_party/blink/renderer/platform/widget/widget\_base.cc:851:3
+#31 0x5652b91cb051 in cc::LayerTreeHost::WillBeginMainFrame() cc/trees/layer\_tree\_host.cc:346:12
+#32 0x5652b945b610 in cc::ProxyMain::BeginMainFrame(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState>>) cc/trees/proxy\_main.cc:262:21
+#33 0x5652b947c51f in Invoke<void (cc::ProxyMain::\\*)(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState> >), base::WeakPtr<cc::ProxyMain>, std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState> > > base/functional/bind\_internal.h:760:12
+#34 0x5652b947c51f in MakeItSo<void (cc::ProxyMain::\\*)(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState> >), std::Cr::tuple<base::WeakPtr<cc::ProxyMain>, std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState> > > > base/functional/bind\_internal.h:962:5
+#35 0x5652b947c51f in RunImpl<void (cc::ProxyMain::\\*)(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState> >), std::Cr::tuple<base::WeakPtr<cc::ProxyMain>, std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState> > >, 0UL, 1UL> base/functional/bind\_internal.h:1034:12
+#36 0x5652b947c51f in base::internal::Invoker<base::internal::BindState<void (cc::ProxyMain::\\*)(std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState>>), base::WeakPtr<cc::ProxyMain>, std::Cr::unique\_ptr<cc::BeginMainFrameAndCommitState, std::Cr::default\_delete<cc::BeginMainFrameAndCommitState>>>, void ()>::RunOnce(base::internal::BindStateBase\\*) base/functional/bind\_internal.h:985:12
+SUMMARY: AddressSanitizer: heap-use-after-free (/mnt/scratch0/clusterfuzz/bot/builds/chrome-test-builds\_media\_linux-release\_eb660d5ee526c9c1c1608a71fcbe7a713c490533/revisions/asan-linux-release-1114386/chrome+0x2ca8cc0e) (BuildId: 82ef17887df3d138)
+Shadow bytes around the buggy address:
+0x60b000128980: fd fd fd fd fd fd fd fd fd fa fa fa fa fa fa fa
+0x60b000128a00: fa fa fd fd fd fd fd fd fd fd fd fd fd fd fd fd
+0x60b000128a80: fa fa fa fa fa fa fa fa fd fd fd fd fd fd fd fd
+0x60b000128b00: fd fd fd fd fd fa fa fa fa fa fa fa fa fa fd fd
+0x60b000128b80: fd fd fd fd fd fd fd fd fd fd fd fa fa fa fa fa
+=>0x60b000128c00: fa fa fa fa fd fd[fd]fd fd fd fd fd fd fd fd fd
+0x60b000128c80: fd fa fa fa fa fa fa fa fa fa 00 00 00 00 00 00
+0x60b000128d00: 00 00 00 00 00 00 00 00 fa fa fa fa fa fa fa fa
+0x60b000128d80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 fa fa
+0x60b000128e00: fa fa fa fa fa fa 00 00 00 00 00 00 00 00 00 00
+0x60b000128e80: 00 00 00 00 fa fa fa fa fa fa fa fa 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+Addressable:00
+Partially addressable: 01 02 03 04 05 06 07
+Heap left redzone: fa
+Freed heap region: fd
+Stack left redzone: f1
+Stack mid redzone: f2
+Stack right redzone: f3
+Stack after return: f5
+Stack use after scope: f8
+Global redzone: f9
+Global init order: f6
+Poisoned by user: f7
+Container overflow: fc
+Array cookie: ac
+Intra object redzone: bb
+ASan internal: fe
+Left alloca redzone: ca
+Right alloca redzone: cb
+==1==ADDITIONAL INFO
+==1==Note: Please include this section with the ASan report.
+Task trace:
+#0 0x5652b9474a3c in cc::ProxyImpl::ScheduledActionSendBeginMainFrame(viz::BeginFrameArgs const&) cc/trees/proxy\_impl.cc:770:7
 #1 0x5652b6094218 in mojo::SimpleWatcher::Context::Notify(unsigned int, MojoHandleSignalsState, unsigned int) mojo/public/cpp/system/simple\_watcher.cc:102:13
 
 ## Attachments

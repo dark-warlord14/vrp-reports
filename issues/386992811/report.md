@@ -182,12 +182,12 @@ Regression: N/A
 
 ## Attachments
 
-- asan-PictureLayerTilingSet.txt (text/plain, 28.0 KB)
-- asan-RemoveTilesInRegion.txt (text/plain, 33.7 KB)
-- asan-SetRasterSourceAndResize.txt (text/plain, 31.6 KB)
-- poc.diff (text/x-diff, 420.8 KB)
-- poc.mov (video/quicktime, 135.2 MB)
-- PoC-final.mov (video/quicktime, 239.7 MB)
+- [asan-PictureLayerTilingSet.txt](attachments/asan-PictureLayerTilingSet.txt) (text/plain, 28.0 KB)
+- [asan-RemoveTilesInRegion.txt](attachments/asan-RemoveTilesInRegion.txt) (text/plain, 33.7 KB)
+- [asan-SetRasterSourceAndResize.txt](attachments/asan-SetRasterSourceAndResize.txt) (text/plain, 31.6 KB)
+- [poc.diff](attachments/poc.diff) (text/x-diff, 420.8 KB)
+- [poc.mov](attachments/poc.mov) (video/quicktime, 135.2 MB)
+- [PoC-final.mov](attachments/PoC-final.mov) (video/quicktime, 239.7 MB)
 
 ## Timeline
 

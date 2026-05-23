@@ -48,9 +48,9 @@ Regression: N/A
 
 ## Attachments
 
-- asan.txt (text/plain, 93.0 KB)
-- asan.txt (text/plain, 93.0 KB)
-- fuzz_c5a39b1725b58e96ef18a1a0a1257893.html (text/html, 107.6 KB)
+- [asan.txt](attachments/asan.txt) (text/plain, 93.0 KB)
+- [asan.txt](attachments/asan.txt) (text/plain, 93.0 KB)
+- [fuzz_c5a39b1725b58e96ef18a1a0a1257893.html](attachments/fuzz_c5a39b1725b58e96ef18a1a0a1257893.html) (text/html, 107.6 KB)
 
 ## Timeline
 

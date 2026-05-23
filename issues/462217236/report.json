@@ -30,7 +30,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 3885,
       "url": "https://issues.chromium.org/action/issues/462217236/attachments/71148124?download=true",
-      "local_path": null
+      "local_path": "attachments/tail-dispatch-uaf-poc.js"
     }
   ],
   "update_count": 45,

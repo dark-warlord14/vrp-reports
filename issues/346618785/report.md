@@ -156,7 +156,7 @@ Task trace:
 - [indexDropAllReferences.html](attachments/indexDropAllReferences.html) (text/html, 2.2 KB)
 - [standalone.hlsl](attachments/standalone.hlsl) (application/octet-stream, 179 B)
 - [standalone.wgsl](attachments/standalone.wgsl) (application/octet-stream, 205 B)
-- [deleted](attachments/deleted) (application/octet-stream, 0 B)
+- deleted (application/octet-stream, 0 B)
 
 ## Timeline
 

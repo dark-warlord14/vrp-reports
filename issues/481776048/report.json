@@ -1,0 +1,95 @@
+{
+  "id": "481776048",
+  "url": "https://issues.chromium.org/issues/481776048",
+  "title": "WebNN ScatterND integer overflow in TFLite bounds check allows for 512MB controlled heap OOB write",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2022-35939"
+  ],
+  "reporter": "ci...@gmail.com",
+  "assignee": "ju...@intel.com",
+  "created_date": "2026-02-04T22:02:19+00:00",
+  "modified_date": "2026-05-17T07:57:41+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 43000.0,
+  "bounty_rationale": "High Quality with Bisect. Memory corruption in a highly privileged process (e.g. GPU, network processes)",
+  "attachments": [
+    {
+      "id": 73137977,
+      "filename": "scatternd_heap_oob.html",
+      "mime_type": "text/html",
+      "size_bytes": 2397,
+      "url": "https://issues.chromium.org/action/issues/481776048/attachments/73137977?download=true",
+      "local_path": "attachments/scatternd_heap_oob.html"
+    },
+    {
+      "id": 73137978,
+      "filename": "bug370_asan_proof.cc",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 9791,
+      "url": "https://issues.chromium.org/action/issues/481776048/attachments/73137978?download=true",
+      "local_path": "attachments/bug370_asan_proof.cc"
+    },
+    {
+      "id": 73137979,
+      "filename": "crash_chrome_stable.ips",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 88578,
+      "url": "https://issues.chromium.org/action/issues/481776048/attachments/73137979?download=true",
+      "local_path": "attachments/crash_chrome_stable.ips"
+    },
+    {
+      "id": 73137980,
+      "filename": "crash_asan_standalone.ips",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 6825,
+      "url": "https://issues.chromium.org/action/issues/481776048/attachments/73137980?download=true",
+      "local_path": "attachments/crash_asan_standalone.ips"
+    },
+    {
+      "id": 73137981,
+      "filename": "crash_report_chrome_dev.ips",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 94315,
+      "url": "https://issues.chromium.org/action/issues/481776048/attachments/73137981?download=true",
+      "local_path": "attachments/crash_report_chrome_dev.ips"
+    },
+    {
+      "id": 73137982,
+      "filename": "scatternd_heap_oob.html",
+      "mime_type": "text/html",
+      "size_bytes": 2397,
+      "url": "https://issues.chromium.org/action/issues/481776048/attachments/73137982?download=true",
+      "local_path": "attachments/scatternd_heap_oob.html"
+    },
+    {
+      "id": 73134805,
+      "filename": "scatternd_small_tensor_oob.html",
+      "mime_type": "text/html",
+      "size_bytes": 3053,
+      "url": "https://issues.chromium.org/action/issues/481776048/attachments/73134805?download=true",
+      "local_path": "attachments/scatternd_small_tensor_oob.html"
+    },
+    {
+      "id": 73972978,
+      "filename": "symbolized_crash.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3000,
+      "url": "https://issues.chromium.org/action/issues/481776048/attachments/73972978?download=true",
+      "local_path": "attachments/symbolized_crash.txt"
+    }
+  ],
+  "update_count": 86,
+  "description_snippet": "---\n\n### Report description\n\n\nWebNN ScatterND integer overflow in TFLite bounds check allows for 512MB controlled heap OOB write\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https"
+}

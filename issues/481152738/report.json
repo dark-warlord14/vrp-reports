@@ -1,0 +1,356 @@
+{
+  "id": "481152738",
+  "url": "https://issues.chromium.org/issues/481152738",
+  "title": "Heap buffer overflow WRITE in FFmpeg mov_read_sample_encryption_info via crafted MP4 CENC/SENC atoms (renderer, no user interaction)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "da...@gmail.com",
+  "assignee": "tm...@chromium.org",
+  "created_date": "2026-02-03T04:58:57+00:00",
+  "modified_date": "2026-05-19T07:58:20+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "bounty_rationale": "Renderer RCE / memory corruption in a sandboxed process + patch",
+  "attachments": [
+    {
+      "id": 73071744,
+      "filename": "chrome_asan_crash.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 9289,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73071744?download=true",
+      "local_path": "attachments/chrome_asan_crash.txt"
+    },
+    {
+      "id": 73071745,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 495,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73071745?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 73071746,
+      "filename": "poc_video_first.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 76015,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73071746?download=true",
+      "local_path": "attachments/poc_video_first.mp4"
+    },
+    {
+      "id": 73071747,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 495,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73071747?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 73071748,
+      "filename": "poc_video_first.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 76015,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73071748?download=true",
+      "local_path": "attachments/poc_video_first.mp4"
+    },
+    {
+      "id": 73073816,
+      "filename": "macos.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 113226,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73073816?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73073842,
+      "filename": "android.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 52987,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73073842?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73073817,
+      "filename": "controlled_write_evidence.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3709,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73073817?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73073818,
+      "filename": "poc_size32_dawgyg.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 76015,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73073818?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73073843,
+      "filename": "poc_size100_dawgyg.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 76015,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73073843?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73073819,
+      "filename": "poc_content_dawgyg.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 76015,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73073819?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73097714,
+      "filename": "Screen Recording 2026-02-03 at 9.35.33 PM.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 36583510,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73097714?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73090350,
+      "filename": "Screen Recording 2026-02-03 at 9.38.20 PM.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 9366316,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73090350?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73109939,
+      "filename": "asan_stdout.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8476,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73109939?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73134790,
+      "filename": "fix_cenc_heap_overflow.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1136,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73134790?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73790546,
+      "filename": "exploit.html",
+      "mime_type": "text/html",
+      "size_bytes": 906,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73790546?download=true",
+      "local_path": "attachments/exploit.html"
+    },
+    {
+      "id": 73790572,
+      "filename": "serve_exploit.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 3101,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73790572?download=true",
+      "local_path": "attachments/serve_exploit.py"
+    },
+    {
+      "id": 73790547,
+      "filename": "poc_rce_exploit.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 76015,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73790547?download=true",
+      "local_path": "attachments/poc_rce_exploit.mp4"
+    },
+    {
+      "id": 73790548,
+      "filename": "exploit_filedata.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 6827,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73790548?download=true",
+      "local_path": "attachments/exploit_filedata.patch"
+    },
+    {
+      "id": 73790573,
+      "filename": "chrome_rce_filedata_output.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2262,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73790573?download=true",
+      "local_path": "attachments/chrome_rce_filedata_output.txt"
+    },
+    {
+      "id": 73790549,
+      "filename": "chrome_rce_filedata_complete.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3628,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73790549?download=true",
+      "local_path": "attachments/chrome_rce_filedata_complete.txt"
+    },
+    {
+      "id": 73790598,
+      "filename": "poc_full_bypass.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 76015,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73790598?download=true",
+      "local_path": "attachments/poc_full_bypass.mp4"
+    },
+    {
+      "id": 73790550,
+      "filename": "Screen Recording 2026-02-26 at 2.07.45 PM.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 31821245,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73790550?download=true",
+      "local_path": "attachments/Screen Recording 2026-02-26 at 2.07.45 PM.mov"
+    },
+    {
+      "id": 73812346,
+      "filename": "poc_final_rce_n8.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 76015,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73812346?download=true",
+      "local_path": "attachments/poc_final_rce_n8.mp4"
+    },
+    {
+      "id": 73812367,
+      "filename": "trigger_final_rce_n8.html",
+      "mime_type": "text/html",
+      "size_bytes": 319,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73812367?download=true",
+      "local_path": "attachments/trigger_final_rce_n8.html"
+    },
+    {
+      "id": 73812347,
+      "filename": "run_rce_demo.sh",
+      "mime_type": "text/x-sh",
+      "size_bytes": 1688,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73812347?download=true",
+      "local_path": "attachments/run_rce_demo.sh"
+    },
+    {
+      "id": 73823040,
+      "filename": "craft_rce_final.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 3064,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73823040?download=true",
+      "local_path": "attachments/craft_rce_final.py"
+    },
+    {
+      "id": 73812348,
+      "filename": "RCE_PROOF_rce_n8_34.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13781,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73812348?download=true",
+      "local_path": "attachments/RCE_PROOF_rce_n8_34.txt"
+    },
+    {
+      "id": 73823041,
+      "filename": "RCE_PROOF_rce_n8_3_79.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13701,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73823041?download=true",
+      "local_path": "attachments/RCE_PROOF_rce_n8_3_79.txt"
+    },
+    {
+      "id": 73812368,
+      "filename": "run_rce_demo_cycle.sh",
+      "mime_type": "text/x-sh",
+      "size_bytes": 2167,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73812368?download=true",
+      "local_path": "attachments/run_rce_demo_cycle.sh"
+    },
+    {
+      "id": 73823042,
+      "filename": "serve_exploit.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 3155,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73823042?download=true",
+      "local_path": "attachments/serve_exploit.py"
+    },
+    {
+      "id": 73823043,
+      "filename": "Screen Recording 2026-02-27 at 9.54.10 AM.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 2285827,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73823043?download=true",
+      "local_path": "attachments/Screen Recording 2026-02-27 at 9.54.10 AM.mov"
+    },
+    {
+      "id": 73823044,
+      "filename": "run_rce_demo_cycle.sh",
+      "mime_type": "text/x-sh",
+      "size_bytes": 2166,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73823044?download=true",
+      "local_path": "attachments/run_rce_demo_cycle.sh"
+    },
+    {
+      "id": 73812350,
+      "filename": "poc_rce_box2.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 76015,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73812350?download=true",
+      "local_path": "attachments/poc_rce_box2.mp4"
+    },
+    {
+      "id": 73812369,
+      "filename": "poc_rce_box3.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 76015,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73812369?download=true",
+      "local_path": "attachments/poc_rce_box3.mp4"
+    },
+    {
+      "id": 73812370,
+      "filename": "poc_rce_box4.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 76015,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73812370?download=true",
+      "local_path": "attachments/poc_rce_box4.mp4"
+    },
+    {
+      "id": 73826010,
+      "filename": "poc_rce_box5.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 76015,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73826010?download=true",
+      "local_path": "attachments/poc_rce_box5.mp4"
+    },
+    {
+      "id": 73823045,
+      "filename": "trigger_box2.html",
+      "mime_type": "text/html",
+      "size_bytes": 295,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73823045?download=true",
+      "local_path": "attachments/trigger_box2.html"
+    },
+    {
+      "id": 73826011,
+      "filename": "trigger_box3.html",
+      "mime_type": "text/html",
+      "size_bytes": 295,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73826011?download=true",
+      "local_path": "attachments/trigger_box3.html"
+    },
+    {
+      "id": 73812371,
+      "filename": "trigger_box4.html",
+      "mime_type": "text/html",
+      "size_bytes": 295,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73812371?download=true",
+      "local_path": "attachments/trigger_box4.html"
+    },
+    {
+      "id": 73826012,
+      "filename": "trigger_box5.html",
+      "mime_type": "text/html",
+      "size_bytes": 295,
+      "url": "https://issues.chromium.org/action/issues/481152738/attachments/73826012?download=true",
+      "local_path": "attachments/trigger_box5.html"
+    }
+  ],
+  "update_count": 118,
+  "description_snippet": "---\n\n### Report description\n\n\nHeap buffer overflow WRITE in FFmpeg mov_read_sample_encryption_info via crafted MP4 CENC/SENC atoms (renderer, no user interaction)\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome"
+}

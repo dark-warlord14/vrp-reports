@@ -15,7 +15,7 @@
   "reporter": "a7...@gmail.com",
   "assignee": "ms...@google.com",
   "created_date": "2025-06-16T19:26:26+00:00",
-  "modified_date": "2025-10-01T12:40:01+00:00",
+  "modified_date": "2026-03-27T17:00:26+00:00",
   "bounty_confirmed": true,
   "bounty_amount": 10000.0,
   "bounty_rationale": "report of memory corruption in a highly-privileged process (GPU)",
@@ -26,7 +26,7 @@
       "mime_type": "text/html",
       "size_bytes": 3041,
       "url": "https://issues.chromium.org/action/issues/425390965/attachments/66808739?download=true",
-      "local_path": null
+      "local_path": "attachments/radv_nir_def_rewrite_uses.html"
     },
     {
       "id": 66808740,
@@ -34,7 +34,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 10367,
       "url": "https://issues.chromium.org/action/issues/425390965/attachments/66808740?download=true",
-      "local_path": null
+      "local_path": "attachments/gfxrecon_capture_radv_nir_def_rewrite_uses.gfxr"
     },
     {
       "id": 66808741,
@@ -42,9 +42,9 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 2011,
       "url": "https://issues.chromium.org/action/issues/425390965/attachments/66808741?download=true",
-      "local_path": null
+      "local_path": "attachments/Dockerfile"
     }
   ],
-  "update_count": 49,
+  "update_count": 50,
   "description_snippet": "#### VULNERABILITY DETAILS\nThis report is about a wild-deref in the Mesa shader compiler, reachable via WebGPU shaders emitted by dawn/tint. The offending shader looks as follows:\n\n```\nenable subgroups;\n\nvar<workgroup> a: atomic<i32>;\n\n@compute @workgroup_size(1)\nfn main() {\n    let d = vec4();"
 }

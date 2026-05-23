@@ -135,7 +135,7 @@ Reporter Credit: @streypaws
 
 ## Attachments
 
-- poc.js (text/javascript, 312 B)
+- [poc.js](attachments/poc.js) (text/javascript, 312 B)
 
 ## Timeline
 

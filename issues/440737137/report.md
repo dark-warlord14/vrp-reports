@@ -106,10 +106,10 @@ Regression: N/A \
 
 ## Attachments
 
-- test0.html (text/html, 2.3 KB)
-- asan.log (text/plain, 18.0 KB)
-- poc.html (text/html, 2.3 KB)
-- pocv2.html (text/html, 2.8 KB)
+- [test0.html](attachments/test0.html) (text/html, 2.3 KB)
+- [asan.log](attachments/asan.log) (text/plain, 18.0 KB)
+- [poc.html](attachments/poc.html) (text/html, 2.3 KB)
+- [pocv2.html](attachments/pocv2.html) (text/html, 2.8 KB)
 
 ## Timeline
 

@@ -7,7 +7,7 @@
 | **Severity** | S3-Low |
 | **Priority** | P1 |
 | **Component** | Internals>GPU>Vulkan |
-| **Platforms** | Android, Linux, Windows |
+| **Platforms** | Android, Linux, Windows, ChromeOS |
 | **Reporter** | gg...@gmail.com |
 | **Assignee** | jm...@chromium.org |
 | **Created** | 2022-08-18 |

@@ -162,7 +162,7 @@ chrome!views::View::UpdateTooltip+0x6 [inlined in chrome!views::View::RemoveAllC
 - [repro.html](attachments/repro.html) (text/plain, 379 B)
 - [screen.mov](attachments/screen.mov) (video/quicktime, 11.2 MB)
 - [repro.mkv](attachments/repro.mkv) (application/octet-stream, 1.8 MB)
-- [Screen Shot 2021-01-18 at 11.26.25.png](attachments/Screen Shot 2021-01-18 at 11.26.25.png) (image/png, 81.2 KB)
+- Screen Shot 2021-01-18 at 11.26.25.png (image/png, 81.2 KB)
 
 ## Timeline
 

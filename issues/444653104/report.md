@@ -32,8 +32,8 @@ REPRODUCTION CASE
 
 ## Attachments
 
-- bandicam 2025-09-13 02-29-30-559.mp4 (video/mp4, 2.2 MB)
-- uyx.html (text/html, 1.3 KB)
+- [bandicam 2025-09-13 02-29-30-559.mp4](attachments/bandicam 2025-09-13 02-29-30-559.mp4) (video/mp4, 2.2 MB)
+- [uyx.html](attachments/uyx.html) (text/html, 1.3 KB)
 
 ## Timeline
 

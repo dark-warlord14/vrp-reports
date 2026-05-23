@@ -27,7 +27,7 @@
       "mime_type": "text/plain",
       "size_bytes": 34715,
       "url": "https://issues.chromium.org/action/issues/409342999/attachments/64694400?download=true",
-      "local_path": null
+      "local_path": "attachments/cmdlinevariations.txt"
     },
     {
       "id": 64798016,
@@ -35,7 +35,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 46309507,
       "url": "https://issues.chromium.org/action/issues/409342999/attachments/64798016?download=true",
-      "local_path": null
+      "local_path": "attachments/409342999-CL-Canary.mp4"
     },
     {
       "id": 64862845,
@@ -43,7 +43,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 10637474,
       "url": "https://issues.chromium.org/action/issues/409342999/attachments/64862845?download=true",
-      "local_path": null
+      "local_path": "attachments/409342999-CL-Canary.mp4"
     }
   ],
   "update_count": 64,

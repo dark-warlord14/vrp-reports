@@ -25,7 +25,7 @@
       "mime_type": "text/html",
       "size_bytes": 2005,
       "url": "https://issues.chromium.org/action/issues/437147699/attachments/68268325?download=true",
-      "local_path": null
+      "local_path": "attachments/js-dialog-origin-spoof-frame.html"
     },
     {
       "id": 68273336,
@@ -33,7 +33,7 @@
       "mime_type": "text/html",
       "size_bytes": 571,
       "url": "https://issues.chromium.org/action/issues/437147699/attachments/68273336?download=true",
-      "local_path": null
+      "local_path": "attachments/sandbox.html"
     },
     {
       "id": 68246882,
@@ -41,7 +41,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 872897,
       "url": "https://issues.chromium.org/action/issues/437147699/attachments/68246882?download=true",
-      "local_path": null
+      "local_path": "attachments/screen.mp4"
     }
   ],
   "update_count": 62,

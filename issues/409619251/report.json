@@ -25,7 +25,7 @@
       "mime_type": "text/html",
       "size_bytes": 49466,
       "url": "https://issues.chromium.org/action/issues/409619251/attachments/64741793?download=true",
-      "local_path": null
+      "local_path": "attachments/video13_configurable.html"
     },
     {
       "id": 64741794,
@@ -33,7 +33,7 @@
       "mime_type": "image/png",
       "size_bytes": 152646,
       "url": "https://issues.chromium.org/action/issues/409619251/attachments/64741794?download=true",
-      "local_path": null
+      "local_path": "attachments/gpu_process_crash.png"
     },
     {
       "id": 64741795,
@@ -41,7 +41,7 @@
       "mime_type": "text/html",
       "size_bytes": 43857,
       "url": "https://issues.chromium.org/action/issues/409619251/attachments/64741795?download=true",
-      "local_path": null
+      "local_path": "attachments/video15_autoload.html"
     },
     {
       "id": 64741796,
@@ -49,7 +49,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 28957915,
       "url": "https://issues.chromium.org/action/issues/409619251/attachments/64741796?download=true",
-      "local_path": null
+      "local_path": "attachments/chromium-exploit-video.mp4"
     },
     {
       "id": 64741797,
@@ -57,7 +57,7 @@
       "mime_type": "text/html",
       "size_bytes": 43857,
       "url": "https://issues.chromium.org/action/issues/409619251/attachments/64741797?download=true",
-      "local_path": null
+      "local_path": "attachments/video15_autoload.html"
     },
     {
       "id": 64774930,
@@ -65,7 +65,7 @@
       "mime_type": "image/png",
       "size_bytes": 332878,
       "url": "https://issues.chromium.org/action/issues/409619251/attachments/64774930?download=true",
-      "local_path": null
+      "local_path": "attachments/chrome-video-callstack-2.png"
     }
   ],
   "update_count": 75,

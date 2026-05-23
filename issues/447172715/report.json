@@ -25,7 +25,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 16900,
       "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608919?download=true",
-      "local_path": null
+      "local_path": "attachments/dragclick-patch.diff"
     },
     {
       "id": 69608920,
@@ -33,7 +33,7 @@
       "mime_type": "text/html",
       "size_bytes": 18449,
       "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608920?download=true",
-      "local_path": null
+      "local_path": "attachments/touch-drag-click-cr.html"
     },
     {
       "id": 69608921,
@@ -41,7 +41,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1781216,
       "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608921?download=true",
-      "local_path": null
+      "local_path": "attachments/dragclick-uxss.mp4"
     },
     {
       "id": 69608922,
@@ -49,7 +49,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 675680,
       "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608922?download=true",
-      "local_path": null
+      "local_path": "attachments/dragclick-uxss-open-settings-show-bookmarks-bar.mp4"
     },
     {
       "id": 69608923,
@@ -57,7 +57,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 4487321,
       "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608923?download=true",
-      "local_path": null
+      "local_path": "attachments/dragclick-pwn-all-the-things.mp4"
     },
     {
       "id": 69608924,
@@ -65,7 +65,7 @@
       "mime_type": "application/json",
       "size_bytes": 402,
       "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608924?download=true",
-      "local_path": null
+      "local_path": "attachments/manifest.json"
     },
     {
       "id": 69608944,
@@ -81,7 +81,7 @@
       "mime_type": "text/html",
       "size_bytes": 390,
       "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608925?download=true",
-      "local_path": null
+      "local_path": "attachments/page.html"
     },
     {
       "id": 69609325,
@@ -97,7 +97,7 @@
       "mime_type": "text/html",
       "size_bytes": 90,
       "url": "https://issues.chromium.org/action/issues/447172715/attachments/69608926?download=true",
-      "local_path": null
+      "local_path": "attachments/self-closing.html"
     },
     {
       "id": 69609326,
@@ -105,7 +105,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 15,
       "url": "https://issues.chromium.org/action/issues/447172715/attachments/69609326?download=true",
-      "local_path": null
+      "local_path": "attachments/self-closing.js"
     },
     {
       "id": 69608928,
@@ -129,7 +129,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1206,
       "url": "https://issues.chromium.org/action/issues/447172715/attachments/69705283?download=true",
-      "local_path": null
+      "local_path": "attachments/drag_diffs.txt"
     },
     {
       "id": 69782972,
@@ -137,7 +137,7 @@
       "mime_type": "text/plain",
       "size_bytes": 20653,
       "url": "https://issues.chromium.org/action/issues/447172715/attachments/69782972?download=true",
-      "local_path": null
+      "local_path": "attachments/mitigations.txt"
     },
     {
       "id": 69848678,
@@ -145,7 +145,7 @@
       "mime_type": "text/html",
       "size_bytes": 620,
       "url": "https://issues.chromium.org/action/issues/447172715/attachments/69848678?download=true",
-      "local_path": null
+      "local_path": "attachments/persistent-touch-state.html"
     },
     {
       "id": 69848679,
@@ -153,7 +153,7 @@
       "mime_type": "text/html",
       "size_bytes": 2019,
       "url": "https://issues.chromium.org/action/issues/447172715/attachments/69848679?download=true",
-      "local_path": null
+      "local_path": "attachments/basic-click-demo.html"
     },
     {
       "id": 69848680,
@@ -161,7 +161,7 @@
       "mime_type": "text/html",
       "size_bytes": 535,
       "url": "https://issues.chromium.org/action/issues/447172715/attachments/69848680?download=true",
-      "local_path": null
+      "local_path": "attachments/click-monitor.html"
     },
     {
       "id": 69848681,
@@ -169,7 +169,7 @@
       "mime_type": "text/plain",
       "size_bytes": 7200,
       "url": "https://issues.chromium.org/action/issues/447172715/attachments/69848681?download=true",
-      "local_path": null
+      "local_path": "attachments/basic-repro.log"
     },
     {
       "id": 69895481,
@@ -185,7 +185,7 @@
       "mime_type": "text/plain",
       "size_bytes": 4401,
       "url": "https://issues.chromium.org/action/issues/447172715/attachments/69916554?download=true",
-      "local_path": null
+      "local_path": "attachments/touch_diffs.txt"
     },
     {
       "id": 70193566,
@@ -193,7 +193,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1318984,
       "url": "https://issues.chromium.org/action/issues/447172715/attachments/70193566?download=true",
-      "local_path": null
+      "local_path": "attachments/dragclick-web-contents-bounds-bypass.mp4"
     }
   ],
   "update_count": 108,

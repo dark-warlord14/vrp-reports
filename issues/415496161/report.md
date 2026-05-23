@@ -44,8 +44,8 @@ Regression: Yes
 
 ## Attachments
 
-- regression - file download pop-up chrome.mp4 (video/mp4, 7.8 MB)
-- poc.html (text/html, 601 B)
+- [regression - file download pop-up chrome.mp4](attachments/regression - file download pop-up chrome.mp4) (video/mp4, 7.8 MB)
+- [poc.html](attachments/poc.html) (text/html, 601 B)
 
 ## Timeline
 

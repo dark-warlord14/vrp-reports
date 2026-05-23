@@ -55,7 +55,7 @@ Marking any rewards for charity in advance.
 
 ## Attachments
 
-- jspi-central-stack-confusion.js (text/javascript, 75.6 KB)
+- [jspi-central-stack-confusion.js](attachments/jspi-central-stack-confusion.js) (text/javascript, 75.6 KB)
 
 ## Timeline
 

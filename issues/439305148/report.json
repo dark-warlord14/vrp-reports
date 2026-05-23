@@ -27,7 +27,7 @@
       "mime_type": "text/html",
       "size_bytes": 1320,
       "url": "https://issues.chromium.org/action/issues/439305148/attachments/68523097?download=true",
-      "local_path": null
+      "local_path": "attachments/poc1.html"
     },
     {
       "id": 68523098,
@@ -35,7 +35,7 @@
       "mime_type": "text/plain",
       "size_bytes": 5307,
       "url": "https://issues.chromium.org/action/issues/439305148/attachments/68523098?download=true",
-      "local_path": null
+      "local_path": "attachments/poc1-stack-browser.txt"
     },
     {
       "id": 68523099,
@@ -43,7 +43,7 @@
       "mime_type": "text/plain",
       "size_bytes": 8999,
       "url": "https://issues.chromium.org/action/issues/439305148/attachments/68523099?download=true",
-      "local_path": null
+      "local_path": "attachments/poc1-stack-renderer.txt"
     },
     {
       "id": 68523100,
@@ -51,7 +51,7 @@
       "mime_type": "text/html",
       "size_bytes": 942,
       "url": "https://issues.chromium.org/action/issues/439305148/attachments/68523100?download=true",
-      "local_path": null
+      "local_path": "attachments/poc2.html"
     },
     {
       "id": 68523101,
@@ -59,7 +59,7 @@
       "mime_type": "text/html",
       "size_bytes": 581,
       "url": "https://issues.chromium.org/action/issues/439305148/attachments/68523101?download=true",
-      "local_path": null
+      "local_path": "attachments/poc3.html"
     },
     {
       "id": 68523102,
@@ -67,7 +67,7 @@
       "mime_type": "text/html",
       "size_bytes": 380,
       "url": "https://issues.chromium.org/action/issues/439305148/attachments/68523102?download=true",
-      "local_path": null
+      "local_path": "attachments/poc3-evil.html"
     },
     {
       "id": 68523103,
@@ -75,7 +75,7 @@
       "mime_type": "text/html",
       "size_bytes": 300,
       "url": "https://issues.chromium.org/action/issues/439305148/attachments/68523103?download=true",
-      "local_path": null
+      "local_path": "attachments/poc3-victim.html"
     }
   ],
   "update_count": 107,

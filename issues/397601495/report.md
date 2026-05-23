@@ -44,7 +44,7 @@ Reporter credit: [f4]
 
 ## Attachments
 
-- poc.html (text/html, 2.1 KB)
+- [poc.html](attachments/poc.html) (text/html, 2.1 KB)
 - deleted (application/octet-stream, 0 B)
 
 ## Timeline

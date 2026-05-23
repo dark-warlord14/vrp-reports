@@ -246,9 +246,9 @@ Reporter: @natsumikyono23
 
 ## Attachments
 
-- poc.js (text/javascript, 81.5 KB)
-- recreate_funcref.js (text/javascript, 81.5 KB)
-- recreate_funcref.js (text/javascript, 82.2 KB)
+- [poc.js](attachments/poc.js) (text/javascript, 81.5 KB)
+- [recreate_funcref.js](attachments/recreate_funcref.js) (text/javascript, 81.5 KB)
+- [recreate_funcref.js](attachments/recreate_funcref.js) (text/javascript, 82.2 KB)
 
 ## Timeline
 

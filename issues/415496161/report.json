@@ -25,7 +25,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 8166702,
       "url": "https://issues.chromium.org/action/issues/415496161/attachments/65504006?download=true",
-      "local_path": null
+      "local_path": "attachments/regression - file download pop-up chrome.mp4"
     },
     {
       "id": 65504007,
@@ -33,7 +33,7 @@
       "mime_type": "text/html",
       "size_bytes": 601,
       "url": "https://issues.chromium.org/action/issues/415496161/attachments/65504007?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     }
   ],
   "update_count": 56,

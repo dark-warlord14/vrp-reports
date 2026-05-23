@@ -1,0 +1,42 @@
+{
+  "id": "470928605",
+  "url": "https://issues.chromium.org/issues/470928605",
+  "title": "On Ubuntu (or other Linux-based systems) an attacker can steal files uploaded to other sites with little user interaction.",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Linux Toolkit Theming",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "va...@hotmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2025-12-22T13:10:05+00:00",
+  "modified_date": "2026-04-15T07:53:56+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "bounty_rationale": "low impact UI spoofing with user gestures",
+  "attachments": [
+    {
+      "id": 72004005,
+      "filename": "chrome.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 7708630,
+      "url": "https://issues.chromium.org/action/issues/470928605/attachments/72004005?download=true",
+      "local_path": "attachments/chrome.mp4"
+    },
+    {
+      "id": 72004006,
+      "filename": "test.html",
+      "mime_type": "text/html",
+      "size_bytes": 2555,
+      "url": "https://issues.chromium.org/action/issues/470928605/attachments/72004006?download=true",
+      "local_path": "attachments/test.html"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "---\n\n### Report description\n\n\nOn Ubuntu (or other Linux-based systems) an attacker can steal files uploaded to other sites with little user interaction.\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. ["
+}

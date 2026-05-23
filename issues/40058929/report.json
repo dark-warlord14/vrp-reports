@@ -25,7 +25,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 643102,
       "url": "https://issues.chromium.org/action/issues/40058929/attachments/53396636?download=true",
-      "local_path": "attachments/hidecustomtoast.zip"
+      "local_path": null
     },
     {
       "id": 53396637,
@@ -33,7 +33,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 283147,
       "url": "https://issues.chromium.org/action/issues/40058929/attachments/53396637?download=true",
-      "local_path": "attachments/hidecustomtoast + select dropdown on Mi 9T.mp4"
+      "local_path": null
     },
     {
       "id": 53396638,
@@ -41,7 +41,7 @@
       "mime_type": "video/webm",
       "size_bytes": 1539964,
       "url": "https://issues.chromium.org/action/issues/40058929/attachments/53396638?download=true",
-      "local_path": "attachments/hidecustomtoast + select dropdown on Android Emulator.webm"
+      "local_path": null
     },
     {
       "id": 53396659,

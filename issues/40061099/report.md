@@ -15,67 +15,38 @@
 
 ## Description
 
-**Steps to reproduce the problem:**  
-
-tested os:ubuntu 22.04  
-
-tested chrome:  
-
-Version 106.0.5249.12 (Official Build) dev (64-bit)  
-
+\*\*Steps to reproduce the problem:\*\*
+tested os:ubuntu 22.04
+tested chrome:
+Version 106.0.5249.12 (Official Build) dev (64-bit)
 Chromium 108.0.5312.0
-
 This issue can be reproduced in scenarios where automation tools are used, such as puppeteer.
-
 1. install puppeteer.
 2. node ./test.js
 3. immediately crash.
-
-**Problem Description:**  
-
-==311686==ERROR: AddressSanitizer: heap-use-after-free on address 0x6110000d6be8 at pc 0x7f89998a37e1 bp 0x7ffcbe9ea300 sp 0x7ffcbe9ea2f8  
-
-READ of size 8 at 0x6110000d6be8 thread T0 (chrome)  
-
-#0 0x7f89998a37e0 in size ./../../buildtools/third\_party/libc++/trunk/include/\_\_hash\_table:777:55  
-
-#1 0x7f89998a37e0 in bucket\_count ./../../buildtools/third\_party/libc++/trunk/include/\_\_hash\_table:1173:45  
-
-#2 0x7f89998a37e0 in std::Cr::pair<std::Cr::\_\_hash\_iterator<std::Cr::\_\_hash\_node<v8\_inspector::EvaluateCallback\*, void\*>\*>, bool> std::Cr::\_\_hash\_table<v8\_inspector::EvaluateCallback\*, std::Cr::hash<v8\_inspector::EvaluateCallback\*>, std::Cr::equal\_to<v8\_inspector::EvaluateCallback\*>, std::Cr::allocator<v8\_inspector::EvaluateCallback\*>>::\_\_emplace\_unique\_key\_args<v8\_inspector::EvaluateCallback\*, v8\_inspector::EvaluateCallback\*>(v8\_inspector::EvaluateCallback\* const&, v8\_inspector::EvaluateCallback\*&&) ./../../buildtools/third\_party/libc++/trunk/include/\_\_hash\_table:2002:22  
-
-#3 0x7f89998858e3 in \_\_insert\_unique ./../../buildtools/third\_party/libc++/trunk/include/\_\_hash\_table:1102:14  
-
-#4 0x7f89998858e3 in insert ./../../buildtools/third\_party/libc++/trunk/include/unordered\_set:669:26  
-
-#5 0x7f89998858e3 in v8\_inspector::InjectedScript::addPromiseCallback(v8\_inspector::V8InspectorSessionImpl\*, v8::MaybeLocal[v8::Value](javascript:void(0);), v8\_inspector::String16 const&, v8\_inspector::WrapMode, bool, bool, std::Cr::unique\_ptr<v8\_inspector::EvaluateCallback, std::Cr::default\_delete<v8\_inspector::EvaluateCallback>>) ./../../v8/src/inspector/injected-script.cc:669:25  
-
-#6 0x7f89999d4dc8 in v8\_inspector::(anonymous namespace)::innerCallFunctionOn(v8\_inspector::V8InspectorSessionImpl\*, v8\_inspector::InjectedScript::Scope&, v8::Local[v8::Value](javascript:void(0);), v8\_inspector::String16 const&, v8\_crdtp::detail::PtrMaybe<std::Cr::vector<std::Cr::unique\_ptr<v8\_inspector::protocol::Runtime::CallArgument, std::Cr::default\_delete<v8\_inspector::protocol::Runtime::CallArgument>>, std::Cr::allocator<std::Cr::unique\_ptr<v8\_inspector::protocol::Runtime::CallArgument, std::Cr::default\_delete<v8\_inspector::protocol::Runtime::CallArgument>>>>>, bool, v8\_inspector::WrapMode, bool, bool, v8\_inspector::String16 const&, bool, std::Cr::unique\_ptr<v8\_inspector::protocol::Runtime::Backend::CallFunctionOnCallback, std::Cr::default\_delete<v8\_inspector::protocol::Runtime::Backend::CallFunctionOnCallback>>) ./../../v8/src/inspector/v8-runtime-agent-impl.cc:205:27  
-
-#7 0x7f89999d320b in v8\_inspector::V8RuntimeAgentImpl::callFunctionOn(v8\_inspector::String16 const&, v8\_crdtp::detail::ValueMaybe<v8\_inspector::String16>, v8\_crdtp::detail::PtrMaybe<std::Cr::vector<std::Cr::unique\_ptr<v8\_inspector::protocol::Runtime::CallArgument, std::Cr::default\_delete<v8\_inspector::protocol::Runtime::CallArgument>>, std::Cr::allocator<std::Cr::unique\_ptr<v8\_inspector::protocol::Runtime::CallArgument, std::Cr::default\_delete<v8\_inspector::protocol::Runtime::CallArgument>>>>>, v8\_crdtp::detail::ValueMaybe<bool>, v8\_crdtp::detail::ValueMaybe<bool>, v8\_crdtp::detail::ValueMaybe<bool>, v8\_crdtp::detail::ValueMaybe<bool>, v8\_crdtp::detail::ValueMaybe<bool>, v8\_crdtp::detail::ValueMaybe<int>, v8\_crdtp::detail::ValueMaybe<v8\_inspector::String16>, v8\_crdtp::detail::ValueMaybe<bool>, v8\_crdtp::detail::ValueMaybe<bool>, std::Cr::unique\_ptr<v8\_inspector::protocol::Runtime::Backend::CallFunctionOnCallback, std::Cr::default\_delete<v8\_inspector::protocol::Runtime::Backend::CallFunctionOnCallback>>) ./../../v8/src/inspector/v8-runtime-agent-impl.cc:422:5  
-
-#8 0x7f89998561b4 in v8\_inspector::protocol::Runtime::DomainDispatcherImpl::callFunctionOn(v8\_crdtp::Dispatchable const&) ./gen/v8/src/inspector/protocol/Runtime.cpp:811:16  
-
-#9 0x7f8999a57505 in operator() ./../../buildtools/third\_party/libc++/trunk/include/\_\_functional/function.h:854:16  
-
-#10 0x7f8999a57505 in operator() ./../../buildtools/third\_party/libc++/trunk/include/\_\_functional/function.h:1193:12  
-
-#11 0x7f8999a57505 in v8\_crdtp::UberDispatcher::DispatchResult::Run() ./../../v8/third\_party/inspector\_protocol/crdtp/dispatch.cc:509:3  
-
-#12 0x7f89999b0490 in v8\_inspector::V8InspectorSessionImpl::dispatchProtocolMessage(v8\_inspector::StringView) ./../../v8/src/inspector/v8-inspector-session-impl.cc:401:39  
-
-#13 0x7f89a3c08add in blink::DevToolsSession::DispatchProtocolCommandImpl(int, WTF::String const&, base::span<unsigned char const, 18446744073709551615ul>) ./../../third\_party/blink/renderer/core/inspector/devtools\_session.cc:232:18  
-
-#14 0x7f89a3c07fa8 in blink::DevToolsSession::DispatchProtocolCommand(int, WTF::String const&, base::span<unsigned char const, 18446744073709551615ul>) ./../../third\_party/blink/renderer/core/inspector/devtools\_session.cc:203:10  
-
-#15 0x7f899dc28fcf in blink::mojom::blink::DevToolsSessionStubDispatch::Accept(blink::mojom::blink::DevToolsSession\*, mojo::Message\*) ./gen/third\_party/blink/public/mojom/devtools/devtools\_agent.mojom-blink.cc:1085:13  
-
+\*\*Problem Description:\*\*
+==311686==ERROR: AddressSanitizer: heap-use-after-free on address 0x6110000d6be8 at pc 0x7f89998a37e1 bp 0x7ffcbe9ea300 sp 0x7ffcbe9ea2f8
+READ of size 8 at 0x6110000d6be8 thread T0 (chrome)
+#0 0x7f89998a37e0 in size ./../../buildtools/third\_party/libc++/trunk/include/\_\_hash\_table:777:55
+#1 0x7f89998a37e0 in bucket\_count ./../../buildtools/third\_party/libc++/trunk/include/\_\_hash\_table:1173:45
+#2 0x7f89998a37e0 in std::Cr::pair<std::Cr::\_\_hash\_iterator<std::Cr::\_\_hash\_node<v8\_inspector::EvaluateCallback\\*, void\\*>\\*>, bool> std::Cr::\_\_hash\_table<v8\_inspector::EvaluateCallback\\*, std::Cr::hash<v8\_inspector::EvaluateCallback\\*>, std::Cr::equal\_to<v8\_inspector::EvaluateCallback\\*>, std::Cr::allocator<v8\_inspector::EvaluateCallback\\*>>::\_\_emplace\_unique\_key\_args<v8\_inspector::EvaluateCallback\\*, v8\_inspector::EvaluateCallback\\*>(v8\_inspector::EvaluateCallback\\* const&, v8\_inspector::EvaluateCallback\\*&&) ./../../buildtools/third\_party/libc++/trunk/include/\_\_hash\_table:2002:22
+#3 0x7f89998858e3 in \_\_insert\_unique ./../../buildtools/third\_party/libc++/trunk/include/\_\_hash\_table:1102:14
+#4 0x7f89998858e3 in insert ./../../buildtools/third\_party/libc++/trunk/include/unordered\_set:669:26
+#5 0x7f89998858e3 in v8\_inspector::InjectedScript::addPromiseCallback(v8\_inspector::V8InspectorSessionImpl\\*, v8::MaybeLocal<v8::Value>, v8\_inspector::String16 const&, v8\_inspector::WrapMode, bool, bool, std::Cr::unique\_ptr<v8\_inspector::EvaluateCallback, std::Cr::default\_delete<v8\_inspector::EvaluateCallback>>) ./../../v8/src/inspector/injected-script.cc:669:25
+#6 0x7f89999d4dc8 in v8\_inspector::(anonymous namespace)::innerCallFunctionOn(v8\_inspector::V8InspectorSessionImpl\\*, v8\_inspector::InjectedScript::Scope&, v8::Local<v8::Value>, v8\_inspector::String16 const&, v8\_crdtp::detail::PtrMaybe<std::Cr::vector<std::Cr::unique\_ptr<v8\_inspector::protocol::Runtime::CallArgument, std::Cr::default\_delete<v8\_inspector::protocol::Runtime::CallArgument>>, std::Cr::allocator<std::Cr::unique\_ptr<v8\_inspector::protocol::Runtime::CallArgument, std::Cr::default\_delete<v8\_inspector::protocol::Runtime::CallArgument>>>>>, bool, v8\_inspector::WrapMode, bool, bool, v8\_inspector::String16 const&, bool, std::Cr::unique\_ptr<v8\_inspector::protocol::Runtime::Backend::CallFunctionOnCallback, std::Cr::default\_delete<v8\_inspector::protocol::Runtime::Backend::CallFunctionOnCallback>>) ./../../v8/src/inspector/v8-runtime-agent-impl.cc:205:27
+#7 0x7f89999d320b in v8\_inspector::V8RuntimeAgentImpl::callFunctionOn(v8\_inspector::String16 const&, v8\_crdtp::detail::ValueMaybe<v8\_inspector::String16>, v8\_crdtp::detail::PtrMaybe<std::Cr::vector<std::Cr::unique\_ptr<v8\_inspector::protocol::Runtime::CallArgument, std::Cr::default\_delete<v8\_inspector::protocol::Runtime::CallArgument>>, std::Cr::allocator<std::Cr::unique\_ptr<v8\_inspector::protocol::Runtime::CallArgument, std::Cr::default\_delete<v8\_inspector::protocol::Runtime::CallArgument>>>>>, v8\_crdtp::detail::ValueMaybe<bool>, v8\_crdtp::detail::ValueMaybe<bool>, v8\_crdtp::detail::ValueMaybe<bool>, v8\_crdtp::detail::ValueMaybe<bool>, v8\_crdtp::detail::ValueMaybe<bool>, v8\_crdtp::detail::ValueMaybe<int>, v8\_crdtp::detail::ValueMaybe<v8\_inspector::String16>, v8\_crdtp::detail::ValueMaybe<bool>, v8\_crdtp::detail::ValueMaybe<bool>, std::Cr::unique\_ptr<v8\_inspector::protocol::Runtime::Backend::CallFunctionOnCallback, std::Cr::default\_delete<v8\_inspector::protocol::Runtime::Backend::CallFunctionOnCallback>>) ./../../v8/src/inspector/v8-runtime-agent-impl.cc:422:5
+#8 0x7f89998561b4 in v8\_inspector::protocol::Runtime::DomainDispatcherImpl::callFunctionOn(v8\_crdtp::Dispatchable const&) ./gen/v8/src/inspector/protocol/Runtime.cpp:811:16
+#9 0x7f8999a57505 in operator() ./../../buildtools/third\_party/libc++/trunk/include/\_\_functional/function.h:854:16
+#10 0x7f8999a57505 in operator() ./../../buildtools/third\_party/libc++/trunk/include/\_\_functional/function.h:1193:12
+#11 0x7f8999a57505 in v8\_crdtp::UberDispatcher::DispatchResult::Run() ./../../v8/third\_party/inspector\_protocol/crdtp/dispatch.cc:509:3
+#12 0x7f89999b0490 in v8\_inspector::V8InspectorSessionImpl::dispatchProtocolMessage(v8\_inspector::StringView) ./../../v8/src/inspector/v8-inspector-session-impl.cc:401:39
+#13 0x7f89a3c08add in blink::DevToolsSession::DispatchProtocolCommandImpl(int, WTF::String const&, base::span<unsigned char const, 18446744073709551615ul>) ./../../third\_party/blink/renderer/core/inspector/devtools\_session.cc:232:18
+#14 0x7f89a3c07fa8 in blink::DevToolsSession::DispatchProtocolCommand(int, WTF::String const&, base::span<unsigned char const, 18446744073709551615ul>) ./../../third\_party/blink/renderer/core/inspector/devtools\_session.cc:203:10
+#15 0x7f899dc28fcf in blink::mojom::blink::DevToolsSessionStubDispatch::Accept(blink::mojom::blink::DevToolsSession\\*, mojo::Message\\*) ./gen/third\_party/blink/public/mojom/devtools/devtools\_agent.mojom-blink.cc:1085:13
 #16 0x7f89d2934605 in mojo::InterfaceEndpointClie
-
-**Additional Comments:**
-
+\*\*Additional Comments:\*\*
 \*\*Chrome version: \*\* 106.0.5249.12 \*\*Channel: \*\* Not sure
-
-**OS:** Linux
+\*\*OS:\*\* Linux
 
 ## Attachments
 

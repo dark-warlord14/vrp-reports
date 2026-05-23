@@ -140,7 +140,7 @@ Maybe we can let `rfh` also a weak ptr or observe this `rfh` by WebContentsObser
 
 ## Attachments
 
-- [asan.txt](attachments/asan.txt) (text/plain, 30.8 KB)
+- asan.txt (text/plain, 30.8 KB)
 - [poc.html](attachments/poc.html) (text/plain, 299 B)
 - [poc1.html](attachments/poc1.html) (text/plain, 12 B)
 - [poc.webm](attachments/poc.webm) (video/webm, 685.2 KB)

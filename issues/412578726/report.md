@@ -68,11 +68,11 @@ Regression: N/A
 
 ## Attachments
 
-- patch.diff (text/x-diff, 16.4 KB)
-- handle.txt (text/plain, 2.8 KB)
-- ajgo.patch (text/x-diff, 17.1 KB)
-- exploit.mp4 (video/mp4, 6.3 MB)
-- exploit.diff (text/x-diff, 22.8 KB)
+- [patch.diff](attachments/patch.diff) (text/x-diff, 16.4 KB)
+- [handle.txt](attachments/handle.txt) (text/plain, 2.8 KB)
+- [ajgo.patch](attachments/ajgo.patch) (text/x-diff, 17.1 KB)
+- [exploit.mp4](attachments/exploit.mp4) (video/mp4, 6.3 MB)
+- [exploit.diff](attachments/exploit.diff) (text/x-diff, 22.8 KB)
 - deleted (application/octet-stream, 0 B)
 - deleted (application/octet-stream, 0 B)
 - deleted (application/octet-stream, 0 B)

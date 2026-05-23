@@ -27,7 +27,7 @@ Reporter credit: if applicable, please credit my pseudonym Popax21 in regards to
 
 ## Attachments
 
-- poc.js (text/javascript, 3.5 KB)
+- [poc.js](attachments/poc.js) (text/javascript, 3.5 KB)
 
 ## Timeline
 

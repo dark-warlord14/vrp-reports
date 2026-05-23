@@ -191,7 +191,7 @@ Reporter credit: Aki Helin
 
 ## Attachments
 
-- crash-sdcheck-layoutline.html (text/plain, 1.7 KB)
+- [crash-sdcheck-layoutline.html](attachments/crash-sdcheck-layoutline.html) (text/plain, 1.7 KB)
 
 ## Timeline
 

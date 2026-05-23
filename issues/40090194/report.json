@@ -18,7 +18,7 @@
   "reporter": "s....@gmail.com",
   "assignee": "ca...@chromium.org",
   "created_date": "2018-01-15T11:03:30+00:00",
-  "modified_date": "2026-02-25T12:34:39+00:00",
+  "modified_date": "2026-04-21T15:04:09+00:00",
   "bounty_confirmed": true,
   "bounty_amount": 1000.0,
   "bounty_rationale": "report of lower impact security UI issue",
@@ -32,6 +32,6 @@
       "local_path": "attachments/Screenshot 2026-02-24 at 3.30.21 PM.png"
     }
   ],
-  "update_count": 123,
+  "update_count": 124,
   "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Go to https://test.shhnjk.com/iframer.php?url=//vuln.shhnjk.com/xssable.php?xss=%3Ciframe%3E%3C/iframe%3E%20%3Cscript%3E%20window[0].p"
 }

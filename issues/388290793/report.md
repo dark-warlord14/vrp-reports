@@ -188,9 +188,9 @@ Reporter credit: Seunghyun Lee (@0x10n) of CMU CyLab
 
 ## Attachments
 
-- poc.js (text/javascript, 73.7 KB)
-- poc-crash.html (text/html, 77.7 KB)
-- exp.html (text/html, 92.6 KB)
+- [poc.js](attachments/poc.js) (text/javascript, 73.7 KB)
+- [poc-crash.html](attachments/poc-crash.html) (text/html, 77.7 KB)
+- [exp.html](attachments/exp.html) (text/html, 92.6 KB)
 
 ## Timeline
 

@@ -29,7 +29,7 @@
       "mime_type": "application/pdf",
       "size_bytes": 2944926,
       "url": "https://issues.chromium.org/action/issues/397878997/attachments/63110064?download=true",
-      "local_path": null
+      "local_path": "attachments/finding (23).pdf"
     },
     {
       "id": 63110065,
@@ -37,7 +37,7 @@
       "mime_type": "text/html",
       "size_bytes": 2255,
       "url": "https://issues.chromium.org/action/issues/397878997/attachments/63110065?download=true",
-      "local_path": null
+      "local_path": "attachments/pocwin.html"
     },
     {
       "id": 63110066,
@@ -45,7 +45,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 638277,
       "url": "https://issues.chromium.org/action/issues/397878997/attachments/63110066?download=true",
-      "local_path": null
+      "local_path": "attachments/v4.mp4"
     },
     {
       "id": 63110067,
@@ -53,7 +53,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 662819,
       "url": "https://issues.chromium.org/action/issues/397878997/attachments/63110067?download=true",
-      "local_path": null
+      "local_path": "attachments/v2.mp4"
     },
     {
       "id": 63110068,
@@ -61,7 +61,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 987557,
       "url": "https://issues.chromium.org/action/issues/397878997/attachments/63110068?download=true",
-      "local_path": null
+      "local_path": "attachments/v1.mp4"
     },
     {
       "id": 63110069,
@@ -69,7 +69,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1075919,
       "url": "https://issues.chromium.org/action/issues/397878997/attachments/63110069?download=true",
-      "local_path": null
+      "local_path": "attachments/v3.mp4"
     },
     {
       "id": 63090694,
@@ -77,7 +77,7 @@
       "mime_type": "video/quicktime",
       "size_bytes": 12261142,
       "url": "https://issues.chromium.org/action/issues/397878997/attachments/63090694?download=true",
-      "local_path": null
+      "local_path": "attachments/Screen Recording 2025-02-20 at 11.56.07.mov"
     },
     {
       "id": 63140405,
@@ -85,7 +85,7 @@
       "mime_type": "video/quicktime",
       "size_bytes": 39663790,
       "url": "https://issues.chromium.org/action/issues/397878997/attachments/63140405?download=true",
-      "local_path": null
+      "local_path": "attachments/finalpoc.mov"
     }
   ],
   "update_count": 100,

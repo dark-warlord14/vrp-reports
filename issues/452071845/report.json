@@ -30,7 +30,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 3219,
       "url": "https://issues.chromium.org/action/issues/452071845/attachments/70140705?download=true",
-      "local_path": null
+      "local_path": "attachments/poc-min-leak.js"
     }
   ],
   "update_count": 62,

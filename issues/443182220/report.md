@@ -172,7 +172,7 @@ Reporter credit: Picasso
 
 ## Attachments
 
-- poc.js (text/javascript, 1.4 KB)
+- [poc.js](attachments/poc.js) (text/javascript, 1.4 KB)
 
 ## Timeline
 

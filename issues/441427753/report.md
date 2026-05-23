@@ -62,7 +62,7 @@ Reporter credit: Shaheen Fazim
 
 ## Attachments
 
-- poc.js (text/javascript, 537 B)
+- [poc.js](attachments/poc.js) (text/javascript, 537 B)
 
 ## Timeline
 

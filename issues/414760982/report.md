@@ -220,10 +220,10 @@ Refer to https://chromium.googlesource.com/chromium/src/+/main/base/memory/raw_p
 
 ## Attachments
 
-- manifest.json (application/json, 585 B)
-- icon.png (image/png, 429 B)
-- poc.js (text/javascript, 550 B)
-- poc.html (text/html, 170 B)
+- [manifest.json](attachments/manifest.json) (application/json, 585 B)
+- [icon.png](attachments/icon.png) (image/png, 429 B)
+- [poc.js](attachments/poc.js) (text/javascript, 550 B)
+- [poc.html](attachments/poc.html) (text/html, 170 B)
 
 ## Timeline
 

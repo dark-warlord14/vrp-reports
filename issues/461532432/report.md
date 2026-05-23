@@ -40,9 +40,9 @@ Regression: N/A \
 
 ## Attachments
 
-- testcase.html (text/html, 2.7 KB)
-- screen.mp4 (video/mp4, 6.2 MB)
-- screen-20251124-192944.mp4 (video/mp4, 6.2 MB)
+- [testcase.html](attachments/testcase.html) (text/html, 2.7 KB)
+- [screen.mp4](attachments/screen.mp4) (video/mp4, 6.2 MB)
+- [screen-20251124-192944.mp4](attachments/screen-20251124-192944.mp4) (video/mp4, 6.2 MB)
 
 ## Timeline
 

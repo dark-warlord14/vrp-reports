@@ -33,17 +33,17 @@ Steps to reproduce:
 ## Attachments
 
 - spoofkeyboard.mp4 (video/mp4, 1.8 MB)
-- detx.html (text/html, 3.8 KB)
-- spoofkeyboard.html (text/html, 701 B)
+- [detx.html](attachments/detx.html) (text/html, 3.8 KB)
+- [spoofkeyboard.html](attachments/spoofkeyboard.html) (text/html, 701 B)
 - IMG-20250923-WA0000.jpg (image/jpeg, 61.8 KB)
 - VID-20250923-WA0001.mp4 (video/mp4, 1.9 MB)
-- detx1.html (text/html, 3.8 KB)
-- spoofkeyboard1.html (text/html, 705 B)
+- [detx1.html](attachments/detx1.html) (text/html, 3.8 KB)
+- [spoofkeyboard1.html](attachments/spoofkeyboard1.html) (text/html, 705 B)
 - beta.mp4 (video/mp4, 1.8 MB)
 - stable.mp4 (video/mp4, 1.8 MB)
 - bgcolorwhite.mp4 (video/mp4, 2.0 MB)
-- VID-20250925-WA0003.mp4 (video/mp4, 2.0 MB)
-- IMG-20250925-WA0002.jpg (image/jpeg, 35.1 KB)
+- [VID-20250925-WA0003.mp4](attachments/VID-20250925-WA0003.mp4) (video/mp4, 2.0 MB)
+- [IMG-20250925-WA0002.jpg](attachments/IMG-20250925-WA0002.jpg) (image/jpeg, 35.1 KB)
 
 ## Timeline
 

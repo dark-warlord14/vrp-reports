@@ -125,7 +125,7 @@ READ of size 8 at 0x50400042a350 thread T12 (WebRTC\_W\_and\_N)
 - [uaf-asan.log](attachments/uaf-asan.log) (text/plain, 50.4 KB)
 - [heap-buffer-overflow-asan.log](attachments/heap-buffer-overflow-asan.log) (text/plain, 33.3 KB)
 - [poc2.html](attachments/poc2.html) (text/plain, 1.9 KB)
-- [launcher2.sh](attachments/launcher2.sh) (text/plain, 2.4 KB)
+- launcher2.sh (text/plain, 2.4 KB)
 
 ## Timeline
 

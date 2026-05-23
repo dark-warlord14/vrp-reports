@@ -56,7 +56,7 @@ Reporter credit: Roman Starkov
 - [map.png](attachments/map.png) (image/png, 452 B)
 - [pipe2.jpg](attachments/pipe2.jpg) (image/jpeg, 7.6 KB)
 - [wall.jpg](attachments/wall.jpg) (image/jpeg, 56.2 KB)
-- [screenshot.png](attachments/screenshot.png) (image/png, 802.0 KB)
+- screenshot.png (image/png, 802.0 KB)
 - [Screenshot 2021-01-04 at 1.08.18 PM.png](attachments/Screenshot 2021-01-04 at 1.08.18 PM.png) (image/png, 1.1 MB)
 - [about_gpu_linux.txt](attachments/about_gpu_linux.txt) (text/plain, 21.6 KB)
 - [about_gpu_chromeos.txt](attachments/about_gpu_chromeos.txt) (text/plain, 64.4 KB)

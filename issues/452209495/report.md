@@ -27,7 +27,7 @@ https://developer.chrome.com/blog/digital-credentials-api-shipped?hl=en . In the
 
 ## Attachments
 
-- longdomaintruncated.png (image/png, 324.3 KB)
+- [longdomaintruncated.png](attachments/longdomaintruncated.png) (image/png, 324.3 KB)
 
 ## Timeline
 

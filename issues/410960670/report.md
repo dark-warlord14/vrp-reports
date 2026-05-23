@@ -20,9 +20,9 @@ deleted
 ## Attachments
 
 - deleted (application/octet-stream, 0 B)
-- spooflongdomain.jpeg (image/jpeg, 109.0 KB)
-- longdomain.jpg (image/jpeg, 44.7 KB)
-- longdomain.mp4 (video/mp4, 3.1 MB)
+- [spooflongdomain.jpeg](attachments/spooflongdomain.jpeg) (image/jpeg, 109.0 KB)
+- [longdomain.jpg](attachments/longdomain.jpg) (image/jpeg, 44.7 KB)
+- [longdomain.mp4](attachments/longdomain.mp4) (video/mp4, 3.1 MB)
 
 ## Timeline
 

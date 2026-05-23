@@ -175,19 +175,19 @@ Regression: N/A
 
 ## Attachments
 
-- chrome_debug_win10-1405230.txt (text/plain, 17.1 KB)
-- chrome_debug_win10-1405230-v2.txt (text/plain, 19.0 KB)
-- linux-release_asan-linux-release-1407906.txt (text/plain, 14.2 KB)
-- manyHandles.PNG (image/png, 26.9 KB)
-- PoC.webm (video/webm, 21.1 MB)
-- test.html (text/html, 635 B)
-- test.js (text/javascript, 515 B)
-- variations-linux.txt (text/plain, 133.6 KB)
-- 1507bb54-8016-4bda-b8be-3b9977f71f41-Stable.dmp (application/octet-stream, 4.5 MB)
-- variations-local-linux.txt (text/plain, 134.0 KB)
-- ASANCmdVariations.txt (text/plain, 141.0 KB)
-- CanaryCmdVariations.txt (text/plain, 67.0 KB)
-- postShutdown.PNG (image/png, 145.4 KB)
+- [chrome_debug_win10-1405230.txt](attachments/chrome_debug_win10-1405230.txt) (text/plain, 17.1 KB)
+- [chrome_debug_win10-1405230-v2.txt](attachments/chrome_debug_win10-1405230-v2.txt) (text/plain, 19.0 KB)
+- [linux-release_asan-linux-release-1407906.txt](attachments/linux-release_asan-linux-release-1407906.txt) (text/plain, 14.2 KB)
+- [manyHandles.PNG](attachments/manyHandles.PNG) (image/png, 26.9 KB)
+- [PoC.webm](attachments/PoC.webm) (video/webm, 21.1 MB)
+- [test.html](attachments/test.html) (text/html, 635 B)
+- [test.js](attachments/test.js) (text/javascript, 515 B)
+- [variations-linux.txt](attachments/variations-linux.txt) (text/plain, 133.6 KB)
+- [1507bb54-8016-4bda-b8be-3b9977f71f41-Stable.dmp](attachments/1507bb54-8016-4bda-b8be-3b9977f71f41-Stable.dmp) (application/octet-stream, 4.5 MB)
+- [variations-local-linux.txt](attachments/variations-local-linux.txt) (text/plain, 134.0 KB)
+- [ASANCmdVariations.txt](attachments/ASANCmdVariations.txt) (text/plain, 141.0 KB)
+- [CanaryCmdVariations.txt](attachments/CanaryCmdVariations.txt) (text/plain, 67.0 KB)
+- [postShutdown.PNG](attachments/postShutdown.PNG) (image/png, 145.4 KB)
 - deleted (application/octet-stream, 0 B)
 
 ## Timeline

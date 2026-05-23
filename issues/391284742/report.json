@@ -27,7 +27,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 3152,
       "url": "https://issues.chromium.org/action/issues/391284742/attachments/62302437?download=true",
-      "local_path": null
+      "local_path": "attachments/frag.spv"
     },
     {
       "id": 62302438,
@@ -35,7 +35,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 512,
       "url": "https://issues.chromium.org/action/issues/391284742/attachments/62302438?download=true",
-      "local_path": null
+      "local_path": "attachments/vert.spv"
     },
     {
       "id": 62316182,
@@ -43,7 +43,7 @@
       "mime_type": "text/html",
       "size_bytes": 4820,
       "url": "https://issues.chromium.org/action/issues/391284742/attachments/62316182?download=true",
-      "local_path": null
+      "local_path": "attachments/a.html"
     },
     {
       "id": 62316183,
@@ -51,7 +51,7 @@
       "mime_type": "text/x-c++src",
       "size_bytes": 12248,
       "url": "https://issues.chromium.org/action/issues/391284742/attachments/62316183?download=true",
-      "local_path": null
+      "local_path": "attachments/standalone.cpp"
     }
   ],
   "update_count": 79,

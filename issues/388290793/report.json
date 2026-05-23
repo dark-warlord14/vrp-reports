@@ -30,7 +30,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 75515,
       "url": "https://issues.chromium.org/action/issues/388290793/attachments/62023540?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.js"
     },
     {
       "id": 62023541,
@@ -38,7 +38,7 @@
       "mime_type": "text/html",
       "size_bytes": 79591,
       "url": "https://issues.chromium.org/action/issues/388290793/attachments/62023541?download=true",
-      "local_path": null
+      "local_path": "attachments/poc-crash.html"
     },
     {
       "id": 62023557,
@@ -46,7 +46,7 @@
       "mime_type": "text/html",
       "size_bytes": 94818,
       "url": "https://issues.chromium.org/action/issues/388290793/attachments/62023557?download=true",
-      "local_path": null
+      "local_path": "attachments/exp.html"
     }
   ],
   "update_count": 73,

@@ -17,7 +17,7 @@
   "reporter": "al...@alesandroortiz.com",
   "assignee": "sc...@google.com",
   "created_date": "2021-08-17T04:15:04+00:00",
-  "modified_date": "2025-07-02T12:50:17+00:00",
+  "modified_date": "2026-04-14T07:38:26+00:00",
   "bounty_confirmed": true,
   "bounty_amount": 3000.0,
   "bounty_rationale": null,
@@ -95,6 +95,6 @@
       "local_path": "attachments/autofill-move-two-clicks-stable.mp4"
     }
   ],
-  "update_count": 69,
+  "update_count": 70,
   "description_snippet": "**VULNERABILITY DETAILS**   \nA page can make a user select an autofill item with two consecutive clicks (three in limited cases), without moving their mouse or pressing keyboard keys after the autofill prompt appears.  \n  \nNormally Chrome requires an intentional selection by the user, either by movi"
 }

@@ -238,10 +238,10 @@ Reporter credit: [xuanocto]
 
 ## Attachments
 
-- android_crash.hwasan.log (text/plain, 59.5 KB)
-- 2025-07-13 06-09-57.mkv (video/x-matroska, 12.5 MB)
-- win_crash.mkv (video/x-matroska, 15.1 MB)
-- win_crash.asan.log (text/plain, 91.3 KB)
+- [android_crash.hwasan.log](attachments/android_crash.hwasan.log) (text/plain, 59.5 KB)
+- [2025-07-13 06-09-57.mkv](attachments/2025-07-13 06-09-57.mkv) (video/x-matroska, 12.5 MB)
+- [win_crash.mkv](attachments/win_crash.mkv) (video/x-matroska, 15.1 MB)
+- [win_crash.asan.log](attachments/win_crash.asan.log) (text/plain, 91.3 KB)
 
 ## Timeline
 
