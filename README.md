@@ -1,6 +1,6 @@
 # Chromium VRP Reports
 
-Scrapes and archives Chromium Vulnerability Reward Program (VRP) bug bounty reports from the [Chromium Issue Tracker](https://issues.chromium.org). Collects all bounty-awarded reports back to 2015, downloads all artifacts (PoC files, diffs, videos, screenshots), generates structured markdown, and provides a local dashboard for browsing everything offline.
+Scrapes and archives Chromium Vulnerability Reward Program (VRP) bug bounty reports from the [Chromium Issue Tracker](https://issues.chromium.org). Collects all bounty-awarded reports back to 2015, downloads all artifacts (PoC files, diffs, videos, screenshots), generates structured markdown, and provides a local dashboard for browsing everything offline. Maintained as part of Shantanu Ghumade's professional security tooling network.
 
 **Live site:** https://vrp-reports.aivault.securityjunky.com/ — editorial archive, agent-accessible via [`/skill.md`](https://vrp-reports.aivault.securityjunky.com/skill.md), [`/schema.json`](https://vrp-reports.aivault.securityjunky.com/schema.json), [`/llms.txt`](https://vrp-reports.aivault.securityjunky.com/llms.txt).
 

@@ -3,6 +3,8 @@
 > Structured archive of Chromium Vulnerability Reward Program (VRP) bug bounty reports. All data is served as static JSON over CDN — no authentication, no rate limits beyond Cloudflare's defaults.
 
 Base URL: https://vrp-reports.aivault.securityjunky.com
+Maintainer: Shantanu Ghumade, Security Tech Lead - Security Assurance at Deriv.
+Professional network: https://resume.aivault.securityjunky.com/ and https://securityjunky.com/
 
 ## Discovery
 
