@@ -1,0 +1,126 @@
+{
+  "id": "482862710",
+  "url": "https://issues.chromium.org/issues/482862710",
+  "title": "Missing range validation on second_chroma_qp_index_offset in H.264 PPS parser (h264_parser.cc:1151) allows out-of-spec values to reach kernel GPU drivers",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media",
+  "os_platforms": [
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2022-21813",
+    "CVE-2022-21814"
+  ],
+  "reporter": "lu...@icloud.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2026-02-09T01:32:49+00:00",
+  "modified_date": "2026-05-23T07:56:54+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": "Baseline. Memory corruption in a highly privileged process (e.g. GPU, network processes).",
+  "attachments": [
+    {
+      "id": 73251395,
+      "filename": "off100_qp25_cabac.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 8871,
+      "url": "https://issues.chromium.org/action/issues/482862710/attachments/73251395?download=true",
+      "local_path": "attachments/off100_qp25_cabac.mp4"
+    },
+    {
+      "id": 73251396,
+      "filename": "poc_chroma_qp_long_neg128.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1388875,
+      "url": "https://issues.chromium.org/action/issues/482862710/attachments/73251396?download=true",
+      "local_path": "attachments/poc_chroma_qp_long_neg128.mp4"
+    },
+    {
+      "id": 73251397,
+      "filename": "media-internals.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 15673,
+      "url": "https://issues.chromium.org/action/issues/482862710/attachments/73251397?download=true",
+      "local_path": "attachments/media-internals.txt"
+    },
+    {
+      "id": 73251398,
+      "filename": "poc_chroma_qp.py",
+      "mime_type": "text/x-python-script",
+      "size_bytes": 19078,
+      "url": "https://issues.chromium.org/action/issues/482862710/attachments/73251398?download=true",
+      "local_path": "attachments/poc_chroma_qp.py"
+    },
+    {
+      "id": 73251399,
+      "filename": "poc_v2.py",
+      "mime_type": "text/x-python-script",
+      "size_bytes": 12646,
+      "url": "https://issues.chromium.org/action/issues/482862710/attachments/73251399?download=true",
+      "local_path": "attachments/poc_v2.py"
+    },
+    {
+      "id": 73251400,
+      "filename": "off100_qp25_cabac.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 8871,
+      "url": "https://issues.chromium.org/action/issues/482862710/attachments/73251400?download=true",
+      "local_path": "attachments/off100_qp25_cabac.mp4"
+    },
+    {
+      "id": 73251401,
+      "filename": "poc_v2.py",
+      "mime_type": "text/x-python-script",
+      "size_bytes": 12646,
+      "url": "https://issues.chromium.org/action/issues/482862710/attachments/73251401?download=true",
+      "local_path": "attachments/poc_v2.py"
+    },
+    {
+      "id": 73241327,
+      "filename": "Chromium VA-API PoC Test Results.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2280,
+      "url": "https://issues.chromium.org/action/issues/482862710/attachments/73241327?download=true",
+      "local_path": "attachments/Chromium VA-API PoC Test Results.txt"
+    },
+    {
+      "id": 73234032,
+      "filename": "media_internals_output.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 4299,
+      "url": "https://issues.chromium.org/action/issues/482862710/attachments/73234032?download=true",
+      "local_path": "attachments/media_internals_output.txt"
+    },
+    {
+      "id": 73518471,
+      "filename": "media-internals (2).txt",
+      "mime_type": "text/plain",
+      "size_bytes": 8808,
+      "url": "https://issues.chromium.org/action/issues/482862710/attachments/73518471?download=true",
+      "local_path": "attachments/media-internals (2).txt"
+    },
+    {
+      "id": 73519943,
+      "filename": "poc_v2.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 12646,
+      "url": "https://issues.chromium.org/action/issues/482862710/attachments/73519943?download=true",
+      "local_path": "attachments/poc_v2.py"
+    },
+    {
+      "id": 73523138,
+      "filename": "media-internals__18_.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 9999,
+      "url": "https://issues.chromium.org/action/issues/482862710/attachments/73523138?download=true",
+      "local_path": "attachments/media-internals_18_.txt"
+    }
+  ],
+  "update_count": 93,
+  "description_snippet": "---\n\n### Report description\n\n\nMissing range validation on second_chroma_qp_index_offset in H.264 PPS parser (h264_parser.cc:1151) allows out-of-spec values to reach kernel GPU drivers\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues"
+}

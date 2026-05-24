@@ -1,0 +1,42 @@
+{
+  "id": "483853103",
+  "url": "https://issues.chromium.org/issues/483853103",
+  "title": "UAF in ModelContext::ForEachScriptTool",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Agentic Platform>WebMCP",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2026-02-12T08:31:41+00:00",
+  "modified_date": "2026-05-23T07:56:56+00:00",
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "bounty_rationale": "High Quality. Renderer RCE / memory corruption in a sandboxed process.",
+  "attachments": [
+    {
+      "id": 73380978,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 9335,
+      "url": "https://issues.chromium.org/action/issues/483853103/attachments/73380978?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 73380979,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 3221,
+      "url": "https://issues.chromium.org/action/issues/483853103/attachments/73380979?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "### Summary\n`navigator.modelContextTesting.listTools()` reaches [`ModelContext::ForEachScriptTool`](https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/core/script_tools/model_context.cc;l=160), which unconditionally calls `ComputeInputSchema()` on each declarative to"
+}

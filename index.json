@@ -1,5 +1,19 @@
 [
   {
+    "id": "483853103",
+    "title": "UAF in ModelContext::ForEachScriptTool",
+    "url": "https://issues.chromium.org/issues/483853103",
+    "status": "Assigned",
+    "severity": "S3-Low",
+    "component": "Blink>Agentic Platform>WebMCP",
+    "bounty_amount": 10000.0,
+    "created_date": "2026-02-12T08:31:41+00:00",
+    "year": 2026,
+    "attachment_count": 2,
+    "local_path": "issues/483853103",
+    "has_markdown": true
+  },
+  {
     "id": "483751167",
     "title": "WebGPU (Dawn/Tint Metal) SubstituteOverrides integer overflow causes threadgroup OOB read/write",
     "url": "https://issues.chromium.org/issues/483751167",
@@ -25,6 +39,34 @@
     "year": 2026,
     "attachment_count": 6,
     "local_path": "issues/483569511",
+    "has_markdown": true
+  },
+  {
+    "id": "483220222",
+    "title": "V8 sandbox bypass: reuse `protected_uses` of `WasmDispatchTable` after grow",
+    "url": "https://issues.chromium.org/issues/483220222",
+    "status": "Accepted",
+    "severity": "S3-Low",
+    "component": "Blink>JavaScript>Sandbox, Blink>JavaScript>WebAssembly",
+    "bounty_amount": 20000.0,
+    "created_date": "2026-02-10T10:22:15+00:00",
+    "year": 2026,
+    "attachment_count": 1,
+    "local_path": "issues/483220222",
+    "has_markdown": true
+  },
+  {
+    "id": "482862710",
+    "title": "Missing range validation on second_chroma_qp_index_offset in H.264 PPS parser (h264_parser.cc:1151) allows out-of-spec values to reach kernel GPU drivers",
+    "url": "https://issues.chromium.org/issues/482862710",
+    "status": "Assigned",
+    "severity": "S3-Low",
+    "component": "Internals>Media",
+    "bounty_amount": 10000.0,
+    "created_date": "2026-02-09T01:32:49+00:00",
+    "year": 2026,
+    "attachment_count": 12,
+    "local_path": "issues/482862710",
     "has_markdown": true
   },
   {
