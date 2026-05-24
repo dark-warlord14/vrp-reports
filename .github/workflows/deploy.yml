@@ -17,12 +17,12 @@ jobs:
 
     steps:
       - name: Checkout code (main)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: main
 
       - name: Checkout data branch into data/
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: data
           path: data
@@ -32,7 +32,7 @@ jobs:
         run: bash build.sh
 
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

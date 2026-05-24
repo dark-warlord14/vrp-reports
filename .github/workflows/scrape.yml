@@ -24,12 +24,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: main
 
       - name: Checkout data branch
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: data
           path: data
@@ -78,7 +78,7 @@ jobs:
 
       - name: Deploy to Cloudflare Pages
         if: steps.commit_data.outputs.changed == 'true'
-        uses: cloudflare/wrangler-action@v3
+        uses: cloudflare/wrangler-action@v4
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
