@@ -121,6 +121,10 @@ const Components = {
         return div.innerHTML;
     },
 
+    escapeAttr(text) {
+        return this.escapeHtml(text).replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    },
+
     // Allow only https:// and http:// URLs to prevent javascript: injection
     safeUrl(url) {
         if (!url) return '#';

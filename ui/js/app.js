@@ -133,8 +133,14 @@ const App = {
     },
 
     // === LIST VIEW ===
-    showList() {
+    showList(options = {}) {
         const app = document.getElementById('app');
+        const activeSearch = document.activeElement?.classList?.contains('search-box')
+            ? {
+                selectionStart: document.activeElement.selectionStart,
+                selectionEnd: document.activeElement.selectionEnd,
+            }
+            : null;
         const filtered = this.getFilteredData();
         const sorted = this.getSortedData(filtered);
         const totalPages = Math.max(1, Math.ceil(sorted.length / this.pageSize));
@@ -176,7 +182,7 @@ const App = {
                 <input type="search" class="search-box"
                     placeholder="Search by ID, title, or component..."
                     aria-label="Search reports"
-                    value="${Components.escapeHtml(this.filters.search)}"
+                    value="${Components.escapeAttr(this.filters.search)}"
                     oninput="App.onFilterDebounced('search', this.value)">
                 <select aria-label="Filter by year" onchange="App.onFilter('year', this.value)">
                     <option value="">All Years</option>
@@ -240,6 +246,17 @@ const App = {
                 })
             );
         }
+
+        if (options.restoreSearchFocus && activeSearch) {
+            const searchBox = app.querySelector('.search-box');
+            if (searchBox) {
+                searchBox.focus();
+                const end = searchBox.value.length;
+                const start = Math.min(activeSearch.selectionStart ?? end, end);
+                const finish = Math.min(activeSearch.selectionEnd ?? start, end);
+                searchBox.setSelectionRange(start, finish);
+            }
+        }
     },
 
     thSortable(field, label, cls) {
@@ -272,8 +289,13 @@ const App = {
     },
 
     onFilterDebounced(key, value) {
+        this.filters[key] = value;
+        this.currentPage = 1;
         clearTimeout(this._debounceTimer);
-        this._debounceTimer = setTimeout(() => this.onFilter(key, value), 150);
+        this._debounceTimer = setTimeout(() => {
+            this.updateHash();
+            this.showList({ restoreSearchFocus: key === 'search' });
+        }, 150);
     },
 
     clearFilters() {
