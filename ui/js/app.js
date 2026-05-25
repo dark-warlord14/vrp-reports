@@ -13,6 +13,11 @@ const App = {
     filters: { search: '', year: '', severity: '', status: '' },
     chartInstances: {},
 
+    escapeAttr(text) {
+        if (Components.escapeAttr) return Components.escapeAttr(text);
+        return Components.escapeHtml(text).replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+    },
+
     async init() {
         this.md = window.markdownit({ html: false, linkify: true, breaks: true });
         this.deployMode = document.querySelector('meta[name="vrp-deploy-mode"]')?.content || 'local';
@@ -182,7 +187,7 @@ const App = {
                 <input type="search" class="search-box"
                     placeholder="Search by ID, title, or component..."
                     aria-label="Search reports"
-                    value="${Components.escapeAttr(this.filters.search)}"
+                    value="${this.escapeAttr(this.filters.search)}"
                     oninput="App.onFilterDebounced('search', this.value)">
                 <select aria-label="Filter by year" onchange="App.onFilter('year', this.value)">
                     <option value="">All Years</option>
