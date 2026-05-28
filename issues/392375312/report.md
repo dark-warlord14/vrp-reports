@@ -523,9 +523,5 @@ This case is a read from a buffer with no attacker control of that value and fal
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of user information disclosure
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/392375312)*

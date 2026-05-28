@@ -425,9 +425,5 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 
 Team still i havent received the bounty for this issue, i have completed all the details at embark to receive the payment but even after following up in vrp-support mail there is no response on this, Kindly help me to get the bounty reflect in my account
 
-## Bounty Award
-
-> report of lower impact web platform privilege escalation || exploitation mitigation bypass
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40062534)*

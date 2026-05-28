@@ -332,9 +332,5 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 
 Removing `Clusterfuzz-ignore` hotlist from some old bugs as it's preventing Clusterfuzz from filing similar bugs.
 
-## Bounty Award
-
-> $7,000 for report of memory corruption in a sandboxed process + $1,000 bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/348793144)*

@@ -806,9 +806,5 @@ This issue requires additional review before it can be merged to the LTS channel
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> demonstration of controlled write outside the V8 sandbox directly from Wasm (renderer controlled write + V8 sandbox bypass demonstrating controlled write outside the sandbox)
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/433533359)*

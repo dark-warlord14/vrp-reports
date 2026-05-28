@@ -656,9 +656,5 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 
 This issue was was discovered as under active ITW exploitation, and reported to us by a third-party as such on 2 May 2025, despite being long since resolved and the fix shipping in Stable Chrome back in December 2024.
 
-## Bounty Award
-
-> $7,000 for report of memory corruption in the renderer + $1,000 bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/379009132)*

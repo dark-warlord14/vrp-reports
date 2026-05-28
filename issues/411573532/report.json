@@ -19,9 +19,14 @@
   "assignee": "vm...@chromium.org",
   "created_date": "2025-04-18T10:17:14+00:00",
   "modified_date": "2025-08-21T12:38:29+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
-  "bounty_amount": 11000.0,
-  "bounty_rationale": "$10,000 for high-quality report demonstrating memory corruption in a sandboxed process / the renderer + $1,000 bisect bonus",
+  "bounty_amount": 50000.0,
+  "reward_amount_meta": 50000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 65004101,

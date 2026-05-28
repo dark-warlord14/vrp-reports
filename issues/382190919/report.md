@@ -1028,9 +1028,5 @@ Date:  Thu Dec 05 16:03:33 2024
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> high-quality report of V8 security bug that impacts Stable and older versions of Chrome
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/382190919)*

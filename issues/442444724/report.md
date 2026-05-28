@@ -802,9 +802,5 @@ Labeled as not applicable for M138 LTS because the issue doesn't happen in M138 
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Sandbox escape in GPU on android (non-sandboxed)
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/442444724)*

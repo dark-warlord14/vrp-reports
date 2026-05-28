@@ -240,9 +240,5 @@ Congratulations v8sbxfuzz on another one! Thank you for your efforts fuzzing the
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of V8 sandbox bypass demonstrating memory corruption outside the V8 heap sandbox
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/398773898)*

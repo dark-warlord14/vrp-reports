@@ -854,9 +854,5 @@ Please contact security-vrp@chromium.org with any questions.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> base value $2000, moderately mitigated (needs extension and user gesture) + 1k patch + 1k bisect
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/453147449)*

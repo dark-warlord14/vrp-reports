@@ -340,9 +340,5 @@ Thanks to Chrome VRP, I'll start working on the exploit.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Renderer RCE / memory corruption in a sandboxed process with a bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/460678755)*

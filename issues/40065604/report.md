@@ -808,9 +808,5 @@ Thanks for the rewards and for considering the bypasses separately!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $10,000 total reward for this report of multiple user information disclosure issues: $5,000 for high-quality, moderate impact user information disclosure + $2,000 for report of lower impact information disclosure + $2,000 for report of lower impact information disclosure + $1,000 bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40065604)*

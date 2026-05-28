@@ -11,7 +11,7 @@
 | **Reporter** | me...@gmail.com |
 | **Assignee** | ro...@chromium.org |
 | **Created** | 2022-09-22 |
-| **Bounty** | $30,000.00 |
+| **Bounty** | $38,000.00 |
 
 ## Description
 

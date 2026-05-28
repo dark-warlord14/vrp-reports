@@ -995,9 +995,5 @@ The issue's primary component must be in the Component Tags, so re-adding it. To
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> high-quality report demonstrating controlled write in a sandboxed process / the renderer
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/392521083)*

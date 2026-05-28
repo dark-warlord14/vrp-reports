@@ -15,8 +15,13 @@
   "assignee": "al...@google.com",
   "created_date": "2022-12-07T17:28:10+00:00",
   "modified_date": "2024-01-09T09:48:51+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
   "bounty_rationale": null,
   "attachments": [
     {

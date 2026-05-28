@@ -446,9 +446,5 @@ Date:  Wed Jun 18 06:11:24 2025
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> high quality report of an exploitation mitigation bypass, but lower impact due to the low attacker utility outside of a physically local attack
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/417215501)*

@@ -633,9 +633,5 @@ Thank you for the report. Sorry this issue fell through the cracks for some time
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> thank you for your report that resulted in upstream changes for inclusion in Chrome
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40086026)*

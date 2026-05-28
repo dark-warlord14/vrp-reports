@@ -359,11 +359,5 @@ Thank you very much for the explanation. And thank you for the reward!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $1,000 for this report of highly mitigated memory corruption, mitigated by substantial user interaction. While we appreciate all bug reports and the effort it takes to discover and report security issues, it is important to mention that bugs that involve a series of implausible user interactions may not be eligible for VRP rewards as there is a very low likelihood of real world exploitability of issues involving such user interactions.
-> 
-> Thank you for your efforts and helping us make Chrome more 
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40062622)*

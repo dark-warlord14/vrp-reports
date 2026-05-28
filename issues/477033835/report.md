@@ -665,9 +665,5 @@ Nevermind, i just received the e-mail about new rules, etc
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Renderer RCE / memory corruption in a sandboxed process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/477033835)*

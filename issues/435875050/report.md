@@ -608,9 +608,5 @@ tsepez@ do you know who could answer #28?
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> high quality report of memory corruption in the GPU
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/435875050)*

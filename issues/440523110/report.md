@@ -285,9 +285,5 @@ Labeled as not applicable for M132/138 LTS because the issue doesn't happen befo
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Security UI spoofing, Baseline // Lower Impact
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/440523110)*

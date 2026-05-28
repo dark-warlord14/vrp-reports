@@ -637,19 +637,5 @@ Thank you for your continued WebGPU research and fuzzing discoveries -- and repo
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> OOB write / memory corruption in the GPU process 
-> 
-> Thank you for your efforts and helping us make Chrome more secure for all users!
-> 
-> Cheers,
-> Chrome VRP Panel Bot
-> 
-> 
-> P.S. Two other things we'd like to mention:
-> 
-> * Please do NOT publicly disclose details until a fix has been released to all our users. Early public disclosure may cancel the provisional reward. Also, please be considerate about disclosure when the bug affects a core library that may be used by other products. Please do NOT share this 
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/338161969)*

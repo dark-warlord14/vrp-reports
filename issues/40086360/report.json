@@ -1,0 +1,52 @@
+{
+  "id": "40086360",
+  "url": "https://issues.chromium.org/issues/40086360",
+  "title": "contentSettings API is too powerful",
+  "status": "Accepted",
+  "severity": "S0-Critical",
+  "priority": "P4",
+  "component": "Platform>Extensions",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "es...@chromium.org",
+  "assignee": null,
+  "created_date": "2017-01-01T07:26:57+00:00",
+  "modified_date": "2026-03-30T10:29:34+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 253,
+  "bounty_rationale": "reward for report issue that resulted in some long-term considerations contentSettings API and potential abuse of it by extensions",
+  "attachments": [
+    {
+      "id": 53200180,
+      "filename": "Screenshot from 2017-01-01 12-17-38.png",
+      "mime_type": "image/png",
+      "size_bytes": 7127,
+      "url": "https://issues.chromium.org/action/issues/40086360/attachments/53200180?download=true",
+      "local_path": "attachments/Screenshot from 2017-01-01 12-17-38.png"
+    },
+    {
+      "id": 53200181,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40086360/attachments/53200181?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53200191,
+      "filename": "contentSetting-POC.crx",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1152,
+      "url": "https://issues.chromium.org/action/issues/40086360/attachments/53200191?download=true",
+      "local_path": "attachments/contentSetting-POC.crx"
+    }
+  ],
+  "update_count": 268,
+  "description_snippet": "A chrome extension, with the help of permissions - contentSettings and activeTab, can grant itself access to all the features like geolocation data, microphone, camera etc. without exclusively asking it from the End User.  \n  \n**VULNERABILITY DETAILS**   \n  \nNormally (as per the codebase https://chr"
+}

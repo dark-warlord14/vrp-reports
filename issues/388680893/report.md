@@ -108,9 +108,5 @@ thank you amy..
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> thank you reward for report of a low impact security UI issue with low potential for exploitability and user harm; since we were able to make a beneficial change here, we do want to acknowledge your efforts with a small reward
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/388680893)*

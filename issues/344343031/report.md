@@ -184,9 +184,5 @@ Congratulations Fabian! Thank you for this V8 sandbox bypass submission -- nice 
 
 Removing `Clusterfuzz-ignore` hotlist from some old bugs as it's preventing Clusterfuzz from filing similar bugs.
 
-## Bounty Award
-
-> V8 sandbox bypass reward
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/344343031)*

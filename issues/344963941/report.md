@@ -208,9 +208,5 @@ You can use my Twitter/X: @ju256\_
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> V8 heap sandbox bypass reward + $250 patch bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/344963941)*

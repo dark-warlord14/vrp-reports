@@ -513,9 +513,5 @@ Thanks for the reward and Bonus
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $2,000 for report of lower impact user information disclosure + $1,000 bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40074918)*

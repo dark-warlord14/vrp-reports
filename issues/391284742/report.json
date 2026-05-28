@@ -17,9 +17,14 @@
   "assignee": "am...@chromium.org",
   "created_date": "2025-01-21T16:02:55+00:00",
   "modified_date": "2026-03-05T16:41:26+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 5000.0,
-  "bounty_rationale": "Since while this issue was known and patched upstream in LLVM before this report, it seems that it was only based on this report that ARM knew of this issue and was able to backport that change into Mali as a result of this report. \nTherefore, while we can't issue a full reward for this report, we wanted to show our appreciation for this this issue being reported to us and Arm ensuring full resolution.",
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 62302437,

@@ -223,9 +223,5 @@ Please contact security-vrp@chromium.org with any questions.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> UI spoofing requiring complex prerequisites and multiple gestures
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40946724)*

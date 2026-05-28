@@ -15,8 +15,13 @@
   "assignee": "rb...@chromium.org",
   "created_date": "2023-11-08T10:58:05+00:00",
   "modified_date": "2024-03-27T15:41:59+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
-  "bounty_amount": 37000.0,
+  "bounty_amount": 38000.0,
+  "reward_amount_meta": 38000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
   "bounty_rationale": null,
   "attachments": [
     {

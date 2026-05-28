@@ -211,9 +211,5 @@ Congratulations! Thank you for your efforts and reporting this issue to us!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> moderately mitigated memory corruption in a highly privileged process (GPU), lacking a POC / demonstrable information
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/354748063)*

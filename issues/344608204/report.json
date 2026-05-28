@@ -1,0 +1,77 @@
+{
+  "id": "344608204",
+  "url": "https://issues.chromium.org/issues/344608204",
+  "title": "Google Chrome RCE (no sandbox)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2024-2887"
+  ],
+  "reporter": "no...@ssd-disclosure.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2024-06-04T09:57:35+00:00",
+  "modified_date": "2025-03-26T05:25:31+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "reward_amount_meta": 0.0,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 63,
+  "bounty_rationale": "$20,000 total reward for high quality report (with functional exploit) of memory corruption / RCE in a sandboxed process for a V8 issue impacting >= Stable channel",
+  "attachments": [
+    {
+      "id": 56870020,
+      "filename": "writeup.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 21294,
+      "url": "https://issues.chromium.org/action/issues/344608204/attachments/56870020?download=true",
+      "local_path": "attachments/writeup.md"
+    },
+    {
+      "id": 56870021,
+      "filename": "exp.(html)",
+      "mime_type": "text/html",
+      "size_bytes": 92964,
+      "url": "https://issues.chromium.org/action/issues/344608204/attachments/56870021?download=true",
+      "local_path": "attachments/exp.(html)"
+    },
+    {
+      "id": 56870022,
+      "filename": "wasm-module-builder.(js)",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 71077,
+      "url": "https://issues.chromium.org/action/issues/344608204/attachments/56870022?download=true",
+      "local_path": "attachments/wasm-module-builder.(js)"
+    },
+    {
+      "id": 56870023,
+      "filename": "poc.(js)",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1868,
+      "url": "https://issues.chromium.org/action/issues/344608204/attachments/56870023?download=true",
+      "local_path": "attachments/poc.(js)"
+    },
+    {
+      "id": 56870024,
+      "filename": "poc.(html)",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 80,
+      "url": "https://issues.chromium.org/action/issues/344608204/attachments/56870024?download=true",
+      "local_path": "attachments/poc.(html)"
+    }
+  ],
+  "update_count": 116,
+  "description_snippet": "WASM isorecursive canonical type id <-> `wasm::HeapType` / `wasm::ValueType` confusion in JS-to-WASM conversion functions and their wrappers (`FromJS()`, `(Wasm)JSToWasmObject()`, etc.), resulting in type confusion between arbitrary WASM types.\n\nThis can be considered a variant bug of [CVE-2024-288"
+}

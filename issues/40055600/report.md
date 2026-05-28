@@ -40,9 +40,9 @@ Reporter credit: David Erceg
 
 - [asan_output_874108.txt](attachments/asan_output_874108.txt) (text/plain, 12.4 KB)
 - [background.js](attachments/background.js) (text/plain, 39 B)
-- [manifest.json](attachments/manifest.json) (text/plain, 169 B)
-- [page.html](attachments/page.html) (text/plain, 98 B)
-- [page.js](attachments/page.js) (text/plain, 135 B)
+- manifest.json (text/plain, 169 B)
+- page.html (text/plain, 98 B)
+- page.js (text/plain, 135 B)
 
 ## Timeline
 

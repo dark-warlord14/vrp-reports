@@ -16,9 +16,14 @@
   "assignee": "jk...@google.com",
   "created_date": "2023-07-24T21:41:51+00:00",
   "modified_date": "2025-06-06T12:45:11+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 1000.0,
-  "bounty_rationale": "report of highly mitigated user information disclosure / exploitation mitigation bypass, mitigated by precondition of specific resizing conditions and sufficient user gesture to allow an attacker to take advantage of this issue and result in harm to someone using Chrome",
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 53074028,

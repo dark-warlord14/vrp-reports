@@ -628,9 +628,5 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 
 Was this crash related to a device with my email address? Nasiyisrael2414@gmail.com is my email
 
-## Bounty Award
-
-> report of memory corruption in a sandboxed process / the renderer
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/432035817)*

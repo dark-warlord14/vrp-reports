@@ -11,7 +11,7 @@
 | **Reporter** | m....@gmail.com |
 | **Assignee** | ho...@gmail.com |
 | **Created** | 2022-10-16 |
-| **Bounty** | $7,000.00 |
+| **Bounty** | $8,000.00 |
 
 ## Description
 

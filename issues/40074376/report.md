@@ -612,9 +612,5 @@ Processing rewards for donation is a manual process, not one handled by automati
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> thank you reward report of issue with low security impact and requiring specific preconditions of the website and providing limited attacker utility; since this did allow us to make a beneficial change to Chrome, we did want to extend a reward of appreciation
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40074376)*

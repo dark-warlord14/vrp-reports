@@ -451,9 +451,5 @@ This research was done during my pre-final year. I’m still learning about chro
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of moderate impact security UI / origin information spoof
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/421511847)*

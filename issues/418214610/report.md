@@ -618,9 +618,5 @@ Thanks for reward! On my end I'll split 80% with NDevTK, please make sure that 8
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> High Quality & High Impact UI spoof find
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/418214610)*

@@ -272,9 +272,5 @@ Date: Fri Feb 27 12:30:17 2026
 
 ---
 
-## Bounty Award
-
-> v8 sandbox escape demonstrating a controllable write
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/451355210)*

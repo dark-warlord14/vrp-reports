@@ -409,9 +409,5 @@ edit: jk found it!! (Huuuuu)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of web platform privilege escalation where an updated POC and helpful information was provided to better demonstrate the potential for security consequences
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/411544197)*

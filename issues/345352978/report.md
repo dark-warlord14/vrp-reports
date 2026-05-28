@@ -327,9 +327,5 @@ Labelling as not applicable for LTS 120/126 (see [comment #17](https://issues.ch
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Thank you reward for pointing out public upstream ICU vulnerabilities so that we could make a security relevant change.
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/345352978)*

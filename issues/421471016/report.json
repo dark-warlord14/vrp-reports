@@ -19,9 +19,14 @@
   "assignee": "th...@google.com",
   "created_date": "2025-05-31T14:36:22+00:00",
   "modified_date": "2025-09-13T12:37:04+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 4000.0,
-  "bounty_rationale": "$3,000 for report of moderately mitigated memory corruption in a non-sandboxed process, mitigated by race and lower potential for reliable attacker control and exploitability + $1,000 bisect bonus",
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 66294310,

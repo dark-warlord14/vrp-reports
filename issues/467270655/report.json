@@ -20,9 +20,14 @@
   "assignee": "is...@chromium.org",
   "created_date": "2025-12-09T15:17:11+00:00",
   "modified_date": "2026-04-21T07:57:23+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 2000.0,
-  "bounty_rationale": "Highly Mitigated Memory corruption in a sandboxed process + bisect bonus",
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 71908992,

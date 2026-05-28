@@ -648,9 +648,5 @@ I am currently further improving my fuzzer, and once it's completed, I will cont
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> memory corruption in the GPU process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/345822331)*

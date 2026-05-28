@@ -532,9 +532,5 @@ Labelling as not applicable for LTS 132 and LTS 126, because the suspected CL[1]
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of OOB read in a sandbox process / information disclosure
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/398999390)*

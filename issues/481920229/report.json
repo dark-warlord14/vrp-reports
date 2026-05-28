@@ -15,9 +15,14 @@
   "assignee": "dt...@chromium.org",
   "created_date": "2026-02-05T10:51:58+00:00",
   "modified_date": "2026-05-22T07:56:06+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 7000.0,
-  "bounty_rationale": "Baseline. Renderer RCE / memory corruption in a sandboxed process",
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 73145440,

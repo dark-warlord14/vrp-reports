@@ -15,9 +15,14 @@
   "assignee": "ga...@chromium.org",
   "created_date": "2024-07-30T13:49:25+00:00",
   "modified_date": "2026-03-20T16:52:28+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 2000.0,
-  "bounty_rationale": "$2,000 for report of lower impact LPE with significant preconditions for exploitation",
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 58273093,

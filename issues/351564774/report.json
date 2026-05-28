@@ -15,9 +15,14 @@
   "assignee": "la...@google.com",
   "created_date": "2024-07-07T19:54:12+00:00",
   "modified_date": "2025-11-14T02:48:49+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 500.0,
-  "bounty_rationale": "low impact security UI issue",
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 57758384,

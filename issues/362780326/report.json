@@ -1,0 +1,58 @@
+{
+  "id": "362780326",
+  "url": "https://issues.chromium.org/issues/362780326",
+  "title": "WebAssembly OOB memory access due to cached memory index confusion",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2024-08-29T02:39:37+00:00",
+  "modified_date": "2025-03-26T05:32:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "reward_amount_meta": 20000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58996995,
+      "filename": "d8",
+      "mime_type": "application/x-sharedlib",
+      "size_bytes": 39905848,
+      "url": "https://issues.chromium.org/action/issues/362780326/attachments/58996995?download=true",
+      "local_path": "attachments/d8"
+    },
+    {
+      "id": 58996996,
+      "filename": "snapshot_blob.bin",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 394300,
+      "url": "https://issues.chromium.org/action/issues/362780326/attachments/58996996?download=true",
+      "local_path": "attachments/snapshot_blob.bin"
+    },
+    {
+      "id": 58996997,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 73953,
+      "url": "https://issues.chromium.org/action/issues/362780326/attachments/58996997?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Summary\n\nWebAssembly OOB memory access on `SmiTagging<8>` platforms due to i31.get_s sign extension\n\n#### Details\n\nOn platforms where `SmiTagging<8>` is used, the following Liftoff code is generated for `i31.get_s` opcode:\n\n```cpp\n  void I31GetS(FullDecoder* decoder,"
+}

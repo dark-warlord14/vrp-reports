@@ -750,9 +750,5 @@ However, as I said in [comment #22](https://issues.chromium.org/issues/439058242
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Moderate Impact Web Platform Privilege Escalation with a High Quality with Functional Exploit
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/439058242)*

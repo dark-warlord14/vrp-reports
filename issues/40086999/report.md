@@ -987,9 +987,5 @@ Re: my [comment #170](https://issues.chromium.org/issues/40086999#comment170), r
 
 What a surprise! I have forgot this. But this story tell me: Google never forget. Thank you guys.
 
-## Bounty Award
-
-> report of lower impact exploitation mitigation bypass
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40086999)*

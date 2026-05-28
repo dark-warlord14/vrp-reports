@@ -15,8 +15,13 @@
   "assignee": "ji...@chromium.org",
   "created_date": "2025-06-01T17:18:55+00:00",
   "modified_date": "2026-05-19T22:55:29+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": null,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 39,
   "bounty_rationale": "The panel reviewed this again based on reporters request, and stands by the decision made to not award as noted in Comment 9\n\n\nNote that the fact that this issue is not being rewarded does not mean\nthat the product team won't fix the issue. We have filed a bug with the product\nteam and they will review your report and decide if a fix is required. We'll\nlet you know if the issue was fixed.\n\nRegards, \\\nGoogle Security Bot\n\n*How did we do? Please fill out a [short anonymous survey](https://goo.gl/I",
   "attachments": [
     {

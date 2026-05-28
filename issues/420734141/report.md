@@ -724,9 +724,5 @@ Date: Wed Jan 14 08:57:00 2026
 
 ---
 
-## Bounty Award
-
-> mitigated baseline UI spoof
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/420734141)*

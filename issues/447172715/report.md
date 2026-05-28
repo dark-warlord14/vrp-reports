@@ -1052,9 +1052,5 @@ If the non-extension sandbox escape might be rewarded higher, can I request a re
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> sandbox escape // UXSS mitigated by needing a colluding extension
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/447172715)*

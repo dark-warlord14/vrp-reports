@@ -555,9 +555,5 @@ Thank you so much for the reward!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> consolidated reward for high quality report of crbug.com/338248595, crbug.com/341136300, crbug.com/341875171 -- resulting in a sandbox escape
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/338248595)*

@@ -433,9 +433,5 @@ Congratulations parkminchan! Thank you for your efforts and reporting this issue
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of moderately mitigated memory corruption in a non-sandboxed process, mitigated by precondition to install extension and UI interaction
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/376493203)*

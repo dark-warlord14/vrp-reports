@@ -642,9 +642,5 @@ Congratulations Kiprey and Sakura! Thank you for your efforts and reporting this
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report demonstrating RCE in a sandboxed process / renderer
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/400052777)*

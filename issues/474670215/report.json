@@ -18,9 +18,14 @@
   "assignee": "pf...@google.com",
   "created_date": "2026-01-10T13:26:48+00:00",
   "modified_date": "2026-05-06T08:01:28+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 1000.0,
-  "bounty_rationale": "Low impact user information disclosure plus a patch bonus",
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 72360842,

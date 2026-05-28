@@ -345,9 +345,5 @@ It has come to our attention that your are spamming report comments, such as wit
 
 I commented to already public from your side for easier search to reread. Sorry for that.
 
-## Bounty Award
-
-> baseline report of lower impact user information disclosure
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40070964)*

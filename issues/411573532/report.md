@@ -11,7 +11,7 @@
 | **Reporter** | m....@gmail.com |
 | **Assignee** | vm...@chromium.org |
 | **Created** | 2025-04-18 |
-| **Bounty** | $11,000.00 |
+| **Bounty** | $50,000.00 |
 
 ## Description
 
@@ -848,10 +848,6 @@ Date:  Tue Jun 17 16:48:48 2025
 ### ch...@google.com (2025-08-21)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> $10,000 for high-quality report demonstrating memory corruption in a sandboxed process / the renderer + $1,000 bisect bonus
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/411573532)*

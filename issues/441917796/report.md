@@ -284,9 +284,5 @@ Hey y'all, are we confident the CVE number is assigned correctly? It looks like 
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> baseline user information disclosure (data READ) with a bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/441917796)*

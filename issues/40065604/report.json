@@ -19,9 +19,14 @@
   "assignee": "jk...@google.com",
   "created_date": "2023-06-09T23:50:10+00:00",
   "modified_date": "2024-10-05T15:39:56+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 10000.0,
-  "bounty_rationale": "$10,000 total reward for this report of multiple user information disclosure issues: $5,000 for high-quality, moderate impact user information disclosure + $2,000 for report of lower impact information disclosure + $2,000 for report of lower impact information disclosure + $1,000 bisect bonus",
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 53380369,

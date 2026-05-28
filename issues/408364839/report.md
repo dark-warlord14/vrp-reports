@@ -345,9 +345,5 @@ Congratulations! Thank you for your efforts and reporting this Mesa driver issue
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of memory corruption in a highly-privileged process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/408364839)*

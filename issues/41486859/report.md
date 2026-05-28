@@ -11,7 +11,7 @@
 | **Reporter** | vu...@darknavy.com |
 | **Assignee** | me...@chromium.org |
 | **Created** | 2023-12-26 |
-| **Bounty** | $20,000.00 |
+| **Bounty** | $21,000.00 |
 
 ## Description
 

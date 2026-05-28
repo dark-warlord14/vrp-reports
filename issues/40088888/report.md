@@ -1064,9 +1064,5 @@ Hello, we don't handle payments or the enrollment for payments processing, pleas
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> baseline report of user information disclosure
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40088888)*

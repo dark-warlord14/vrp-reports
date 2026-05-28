@@ -432,9 +432,5 @@ Congratulations Seunghyun! Thank you for another excellent report of V8 in-sandb
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $55,000 for report demonstrating RCE in a sandboxed process / the renderer + $7,000 for renderer memory corruption reward / bonus for identifying that the planned fix introduces a new vulnerability
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/400086889)*

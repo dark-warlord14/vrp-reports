@@ -1014,9 +1014,5 @@ this is already resolved, but realizing this was still assigned to me
 
 deleted
 
-## Bounty Award
-
-> report of memory corruption in a sandboxed process / renderer
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/398065918)*

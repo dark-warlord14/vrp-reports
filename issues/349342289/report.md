@@ -940,9 +940,5 @@ Date: Thu Jul 31 04:51:12 2025
 
 ---
 
-## Bounty Award
-
-> $7,000 for report of memory corruption in a sandboxed process + $1,000 bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/349342289)*

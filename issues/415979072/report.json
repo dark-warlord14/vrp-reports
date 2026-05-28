@@ -1,0 +1,48 @@
+{
+  "id": "415979072",
+  "url": "https://issues.chromium.org/issues/415979072",
+  "title": "Save As file dialog steal focus behind the PictureinPictureAPI save malicious file at arbitrary path",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Media>PictureInPicture",
+  "os_platforms": [
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "132.0.6834.46 ",
+  "cve_ids": [],
+  "reporter": "pu...@gmail.com",
+  "assignee": "st...@chromium.org",
+  "created_date": "2025-05-06T21:22:13+00:00",
+  "modified_date": "2025-09-23T12:40:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 65571284,
+      "filename": "2025-05-07 04-12-58.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1265114,
+      "url": "https://issues.chromium.org/action/issues/415979072/attachments/65571284?download=true",
+      "local_path": "attachments/2025-05-07 04-12-58.mp4"
+    },
+    {
+      "id": 65571285,
+      "filename": "Poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 5382,
+      "url": "https://issues.chromium.org/action/issues/415979072/attachments/65571285?download=true",
+      "local_path": "attachments/Poc.html"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "# Steps to reproduce the problem\n1. Host the provided HTML file.\n2. Open the link in Chrome Browser.\n3. Click the \"Treasure Box\" button and move the box to the center of the screen.\n4. Click the \"Choose a folder to save the reward\" button and select a folder.\n5. After selecting the folder, press the"
+}

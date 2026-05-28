@@ -176,9 +176,5 @@ Congratulations on another sandbox bypass, Seunghyun! Thanks for your efforts an
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $5,000 V8 heap sandbox bypass reward
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/349529650)*

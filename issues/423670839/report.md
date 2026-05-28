@@ -129,9 +129,5 @@ Please unrestrict pocs, description and comments.
 
 hi sorry i have unrestricted it thank you
 
-## Bounty Award
-
-> Thank you reward for report of a lower-impact issue that resulted in a security beneficial change
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/423670839)*

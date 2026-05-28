@@ -732,9 +732,5 @@ Thank you for your efforts and reporting this issue to us!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $3,000 for high quality report of OOB read / user information disclosure + $1,000 bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/423459708)*

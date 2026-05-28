@@ -452,9 +452,5 @@ Thanks for your time! To disable nags, add Disable-Nags (case sensitive) to the 
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of V8 sandbox bypass demonstrating controlled write outside the V8 heap sandbox
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/421403261)*

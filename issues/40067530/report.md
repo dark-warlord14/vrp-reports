@@ -11,7 +11,7 @@
 | **Reporter** | m-...@github.com |
 | **Assignee** | ve...@chromium.org |
 | **Created** | 2023-07-17 |
-| **Bounty** | $20,000.00 |
+| **Bounty** | $21,000.00 |
 
 ## Description
 

@@ -207,9 +207,5 @@ Thank you very much team for the bounty decision.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of lower impact web platform privilege escalation / security UI bug
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/352516283)*

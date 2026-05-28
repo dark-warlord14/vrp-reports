@@ -214,9 +214,5 @@ We recommend reviewing our considerations related to UI spoofs when researching 
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of a lower impact UI spoofing issue that resulted in a beneficial change in Chrome
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/373794472)*

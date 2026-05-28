@@ -465,9 +465,5 @@ Date:  Mon Nov 11 18:56:56 2024
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $5,000 for high quality report of moderate impact security UI spoof / web platform privilege escalation
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40076120)*

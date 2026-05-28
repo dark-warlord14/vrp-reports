@@ -1,0 +1,46 @@
+{
+  "id": "429093433",
+  "url": "https://issues.chromium.org/issues/429093433",
+  "title": "Security: WebAuthn dialog URL is not elided correctly on macOS\n",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Blink>WebAuthentication",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": "138.0.7204.93",
+  "cve_ids": [],
+  "reporter": "sy...@gmail.com",
+  "assignee": "ns...@chromium.org",
+  "created_date": "2025-07-02T13:08:15+00:00",
+  "modified_date": "2025-11-06T12:39:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": null,
+  "reward_amount_meta": 0.0,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 27,
+  "bounty_rationale": "Thank you for the report. This appears to be a functional issue rather than an issue that would result in security implications to a user, as the full and correct origin information is clearly presented to the user in the omnibox. Since there are not security consequences here, we are unfortunately unable to extend a Chrome VRP reward for this report. \n\nPlease note that the fact that this issue is not being rewarded does not mean that the product team won't fix the issue. We have filed a bug wit",
+  "attachments": [
+    {
+      "id": 67232570,
+      "filename": "Screenshot 2025-07-02 at 20.03.52.png",
+      "mime_type": "image/png",
+      "size_bytes": 1083959,
+      "url": "https://issues.chromium.org/action/issues/429093433/attachments/67232570?download=true",
+      "local_path": "attachments/Screenshot 2025-07-02 at 20.03.52.png"
+    },
+    {
+      "id": 67231396,
+      "filename": "Screen Recording 2025-07-02 at 20.02.18.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 26145365,
+      "url": "https://issues.chromium.org/action/issues/429093433/attachments/67231396?download=true",
+      "local_path": "attachments/Screen Recording 2025-07-02 at 20.02.18.mov"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "# Steps to reproduce the problem\n1. Visit: [https://longextendedsubdomainnamewithoutdashesinordertotestwordwrapping.badssl.com/](https://longextendedsubdomainnamewithoutdashesinordertotestwordwrapping.badssl.com/)\n2. Copy paste this script to console tab\n\n```\nsetTimeout(async () => {\n  if (!window.P"
+}

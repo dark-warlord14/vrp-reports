@@ -322,9 +322,5 @@ Regarding comment #39, do you have a reference to the other issue?
 
 The test case at https://lbstyle.github.io/repro.html is still reproducible in Chrome and in most other Chromium based web browsers. As a developer of a chromium based browser affected by the same problem it would be very beneficial for us to know what you are doing to fix the issue so that we can ensure that we apply the same fix in our browser as well.
 
-## Bounty Award
-
-> report of lower impact security UI issue
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/329476341)*

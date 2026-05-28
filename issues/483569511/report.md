@@ -1041,9 +1041,5 @@ Labeled `LTS-Merge-Merged-144` because the patch was already merged to M144.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> High Quality with Functional Exploit. Renderer RCE / memory corruption in a sandboxed process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/483569511)*

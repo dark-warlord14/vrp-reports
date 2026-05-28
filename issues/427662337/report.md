@@ -875,9 +875,5 @@ Just fyi, the fuzzer was also unable to find anything related in the meantime.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of a V8 sandbox bypass that did not fully demonstrate potentially exploitability in shipped, production versions of Chrome, but did result in a security beneficial change
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/427662337)*

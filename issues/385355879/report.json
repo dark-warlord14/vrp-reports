@@ -17,9 +17,14 @@
   "assignee": "am...@google.com",
   "created_date": "2025-01-01T18:58:01+00:00",
   "modified_date": "2025-04-15T12:39:41+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 2000.0,
-  "bounty_rationale": "$1,000 for this report of a highly mitigated (mitigated by user gesture and that this would resulted in test failures upon enabling this feature and running CQ) memory corruption bug in a non-sandboxed process + $1,000 bisect bonus",
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 61721871,

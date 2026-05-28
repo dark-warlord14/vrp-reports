@@ -1,0 +1,74 @@
+{
+  "id": "434499328",
+  "url": "https://issues.chromium.org/issues/434499328",
+  "title": "Chrome bookmarks menu crash due to assertion failure in BookmarkMenuDelegate",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "UI>Browser>Bookmarks",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ta...@gmail.com",
+  "assignee": "dl...@chromium.org",
+  "created_date": "2025-07-27T16:22:22+00:00",
+  "modified_date": "2025-11-11T12:42:42+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": null,
+  "reward_amount_meta": 0.0,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 27,
+  "bounty_rationale": "Thank you for the report. This appears to be a CHECK failure and also is in code that appears to be in code that would be BRP protected and not result in an exploitable security issue. Furthermore, this issue is not remote exploitable and involves significant direct user interactions preconditions to the extent, even if potentially exploitable, we would consider this significantly mitigated. As such, we are unfortunately unable to extend a Chrome VRP reward for this report.  \n\nPlease note that t",
+  "attachments": [
+    {
+      "id": 67963733,
+      "filename": "chrome.log",
+      "mime_type": "text/x-log",
+      "size_bytes": 19579,
+      "url": "https://issues.chromium.org/action/issues/434499328/attachments/67963733?download=true",
+      "local_path": "attachments/chrome.log"
+    },
+    {
+      "id": 67963734,
+      "filename": "chrome.log",
+      "mime_type": "text/x-log",
+      "size_bytes": 19579,
+      "url": "https://issues.chromium.org/action/issues/434499328/attachments/67963734?download=true",
+      "local_path": "attachments/chrome.log"
+    },
+    {
+      "id": 67963735,
+      "filename": "1.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 720,
+      "url": "https://issues.chromium.org/action/issues/434499328/attachments/67963735?download=true",
+      "local_path": "attachments/1.txt"
+    },
+    {
+      "id": 67992108,
+      "filename": "2025-07-29 10-10-20.mkv",
+      "mime_type": "video/x-matroska",
+      "size_bytes": 20958739,
+      "url": "https://issues.chromium.org/action/issues/434499328/attachments/67992108?download=true",
+      "local_path": "attachments/2025-07-29 10-10-20.mkv"
+    },
+    {
+      "id": 68056118,
+      "filename": "asan",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 8593,
+      "url": "https://issues.chromium.org/action/issues/434499328/attachments/68056118?download=true",
+      "local_path": "attachments/asan"
+    }
+  ],
+  "update_count": 31,
+  "description_snippet": "---\n\n### Report description\n\n\nChrome bookmarks menu crash due to assertion failure in BookmarkMenuDelegate\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.c"
+}

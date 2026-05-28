@@ -448,9 +448,5 @@ Ok.Thank you for your hard work again.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> mildly mitigated memory corruption in the browser process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/443196747)*

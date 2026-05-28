@@ -260,9 +260,5 @@ Thank you for your efforts and reporting this issue to us, lime!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of highly mitigated memory corruption in a non-sandboxed process -- mitigated by preconditions to exploit and user gesture
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/349653218)*

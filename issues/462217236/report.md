@@ -397,9 +397,5 @@ Please contact security-vrp@chromium.org with any questions.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> V8 sandbox bypass with control of PC
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/462217236)*

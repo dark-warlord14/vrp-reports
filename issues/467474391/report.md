@@ -195,9 +195,5 @@ Please answer the following questions so that we can safely process this merge r
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> baseline memory corruption in a sandboxed process + fuzzer program bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/467474391)*

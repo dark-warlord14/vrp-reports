@@ -406,9 +406,5 @@ Date:  Thu May 29 20:15:53 2025
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of mildly mitigated memory corruption in a sandboxed process / renderer, mitigated by precondition to install malicious extension with debugger permissions
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/395032416)*

@@ -388,9 +388,5 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 
 Re [comment #20](https://issues.chromium.org/issues/397731718#comment20): Is S1 actually accurate here? If this is not exploitable, should we treat it as denial of service instead and convert to a bug?
 
-## Bounty Award
-
-> report of memory corruption in a sandboxed process / renderer
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/397731718)*

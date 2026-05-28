@@ -315,9 +315,5 @@ Congratulations on another one, Seunghyun! Thanks for another excellent report a
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> V8 sandbox bypass demonstrating controlled write outside the V8 heap sandbox
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/394635429)*

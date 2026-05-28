@@ -446,9 +446,5 @@ Date: Tue Dec 23 16:00:31 2025
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> baseline user information disclosure i.e. a read in the renderer
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/452071845)*

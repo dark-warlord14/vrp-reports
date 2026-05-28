@@ -1,0 +1,30 @@
+{
+  "id": "436306681",
+  "url": "https://issues.chromium.org/issues/436306681",
+  "title": "[V8] Received signal 11 SEGV_ACCERR 794bb021ffe0",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Blink>JavaScript>Regexp, Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Linux",
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rh...@gmail.com",
+  "assignee": "jg...@chromium.org",
+  "created_date": "2025-08-05T08:43:01+00:00",
+  "modified_date": "2025-11-26T12:45:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": null,
+  "reward_amount_meta": 0.0,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 39,
+  "bounty_rationale": "Thank you for the report. As this appears to be a report of a functional issue, rather than a security issue, this report is unfortunately not eligible for a Chrome VRP reward.\n\nPlease note that the fact that this issue is not being rewarded does not mean that the product team won't fix the issue. We have filed a bug with the product team and they will review your report and decide if a fix is required. We'll let you know if the issue was fixed.\n\nRegards,\nGoogle Security Bot\n\n\n--\nHow did we do? ",
+  "attachments": [],
+  "update_count": 43,
+  "description_snippet": "```\nReceived signal 11 SEGV_MAPERR 7ffcdfd3df00\n\n==== C stack trace ===============================\n\n../v8/v8/out/x64.build/d8(__interceptor_backtrace+0x46)[0x55b20ef35286]\n/home/user/v8/v8/out/x64.build/libv8_libbase.so(_ZN2v84base5debug10StackTraceC2Ev+0x13)[0x7fb50020c0b3]\n/home/user/v8/v8/out/x6"
+}

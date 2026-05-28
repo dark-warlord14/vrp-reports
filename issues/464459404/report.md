@@ -502,9 +502,5 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 
 Team Seems the CVE Details are not updated, Kindly share the CVE Details for this issue
 
-## Bounty Award
-
-> V8 sandbox escape
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/464459404)*

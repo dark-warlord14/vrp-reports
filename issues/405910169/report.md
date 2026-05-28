@@ -423,9 +423,5 @@ Please contact security-vrp@chromium.org with any questions.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> significantly mitigated memory corruption in a non-sandboxed process, with the precondition of installing two extensions, one of which must be side-loaded and use of devtools for tabs
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/405910169)*

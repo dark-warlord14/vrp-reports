@@ -227,9 +227,5 @@ Please credit me as Tom Haas.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> exploit mitigation bypass, moderate impact, but mitigated
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/431309019)*

@@ -1,0 +1,44 @@
+{
+  "id": "440964231",
+  "url": "https://issues.chromium.org/issues/440964231",
+  "title": "heap-use-after-free in Tint SPIR-V parser",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Dawn>Tint",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "vu...@darknavy.com",
+  "assignee": "ds...@chromium.org",
+  "created_date": "2025-08-25T08:45:18+00:00",
+  "modified_date": "2025-12-02T12:44:06+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": null,
+  "reward_amount_meta": 0.0,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 17,
+  "bounty_rationale": "Thank you for the report. As this issue does not impact shipped, production versions of Chrome, this issue is unfortunately not eligible for a Chrome VRP reward.\n\nPlease note that the fact that this issue is not being rewarded does not mean that the product team won't fix the issue. We have filed a bug with the product team and they will review your report and decide if a fix is required. We'll let you know if the issue was fixed.\n\nRegards,\nGoogle Security Bot\n\n\n--\nHow did we do? Please fill out",
+  "attachments": [
+    {
+      "id": 68725125,
+      "filename": "tint_uaf.spv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1112,
+      "url": "https://issues.chromium.org/action/issues/440964231/attachments/68725125?download=true",
+      "local_path": "attachments/tint_uaf.spv"
+    },
+    {
+      "id": 68725126,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18796,
+      "url": "https://issues.chromium.org/action/issues/440964231/attachments/68725126?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 21,
+  "description_snippet": "# VULNERABILITY DETAILS\n\nWhen calling `tint::spirv::reader::ReadIR` to load malicious SPIR-V code and parse it into IR, a UAF vulnerability occurs in the Tint parser.\n\n```c++\n        auto& switch_blocks = current_switch_blocks_.back(); // [0]\n\n        auto* default_blk = b_.DefaultCase(switch_);"
+}

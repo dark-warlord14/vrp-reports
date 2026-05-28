@@ -276,9 +276,5 @@ no cve ?
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> security bug with multiple complex gestures so highly mitigated
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/443948855)*

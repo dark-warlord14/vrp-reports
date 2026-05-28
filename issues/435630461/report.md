@@ -688,9 +688,5 @@ Date: Thu Mar 5 13:05:57 2026
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Memory corruption outside the V8 sandbox plus a patch bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/435630461)*

@@ -16,9 +16,14 @@
   "assignee": "li...@chromium.org",
   "created_date": "2025-01-23T01:25:10+00:00",
   "modified_date": "2025-05-15T12:39:32+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 5000.0,
-  "bounty_rationale": "report of mildly mitigated memory corruption bug in a non-sandboxed process, mitigated by precondition to download app (since <webview> tag is specific to apps) + install malicious extension",
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 62357757,

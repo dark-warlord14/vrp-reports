@@ -19,9 +19,14 @@
   "assignee": "is...@chromium.org",
   "created_date": "2025-08-02T05:40:21+00:00",
   "modified_date": "2025-11-28T12:45:29+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 20000.0,
-  "bounty_rationale": "report of V8 sandbox bypass demonstrating attacker stack spray and stack control outside of the V8 heap sandbox",
+  "reward_amount_meta": 20000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 68111343,

@@ -249,9 +249,5 @@ Lijo
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> thank you reward for low impact security bug report, from which we were able to make a security relevant change
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40056040)*

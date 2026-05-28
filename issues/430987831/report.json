@@ -1,0 +1,46 @@
+{
+  "id": "430987831",
+  "url": "https://issues.chromium.org/issues/430987831",
+  "title": "The Windows 10 \"Show text suggestions as I type\" feature does not work",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Blink>Editing>IME, Blink>Input, Internals>PlatformIntegration, Internals>Views, UI>Input>Text",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ph...@gmail.com",
+  "assignee": "si...@microsoft.com",
+  "created_date": "2025-07-10T22:08:21+00:00",
+  "modified_date": "2025-10-31T12:44:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": null,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 35,
+  "bounty_rationale": "Thank you for the report. This appears to be a functional issue rather than an exploitable security issue, therefore, we are unable to extend a Chrome VRP reward for this report. \n\nPlease note that the fact that this issue is not being rewarded does not mean that the product team won't fix the issue. We have filed a bug with the product team and they will review your report and decide if a fix is required. We'll let you know if the issue was fixed.\n\nRegards,\nGoogle Security Bot\n\n\n--\nHow did we d",
+  "attachments": [
+    {
+      "id": 67782900,
+      "filename": "Mon Jul 21 2025 17:57:23 GMT+0200 (Central European Summer Time).png",
+      "mime_type": "image/png",
+      "size_bytes": 17666,
+      "url": "https://issues.chromium.org/action/issues/430987831/attachments/67782900?download=true",
+      "local_path": "attachments/Mon Jul 21 2025 17_57_23 GMT+0200 (Central European Summer Time).png"
+    },
+    {
+      "id": 67884262,
+      "filename": "Recording 2025-07-24 141433.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 13918060,
+      "url": "https://issues.chromium.org/action/issues/430987831/attachments/67884262?download=true",
+      "local_path": "attachments/Recording 2025-07-24 141433.mp4"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

@@ -357,9 +357,5 @@ Congratulations and thank you for reporting this issue to us!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of highly mitigated security bug in a non-sandboxed process, mitigated by precondition to install malicious extension, race condition, precondition of passing the --disable-print-preview, and limited attacker control from the single attempt given extension install and race condition
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/390459306)*

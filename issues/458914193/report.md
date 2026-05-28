@@ -458,9 +458,5 @@ Labeled as not applicable for M138 because the suspected CL[1] was not included 
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Renderer RCE / memory corruption in a sandboxed process with a bisect
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/458914193)*

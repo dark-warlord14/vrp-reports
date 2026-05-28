@@ -19,8 +19,13 @@
   "assignee": "li...@google.com",
   "created_date": "2023-12-21T08:19:08+00:00",
   "modified_date": "2026-02-11T12:48:57+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": null,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 60,
   "bounty_rationale": "The panel determined that this was not a convincing spoof and a \"reasonable and prudent\" user would never end up in a situation where this would impact their safety and security.\n\n\nNote that the fact that this issue is not being rewarded does not mean\nthat the product team won't fix the issue. We have filed a bug with the product\nteam and they will review your report and decide if a fix is required. We'll\nlet you know if the issue was fixed.\n\nRegards, \\\nGoogle Security Bot\n\n*How did we do? Pleas",
   "attachments": [
     {

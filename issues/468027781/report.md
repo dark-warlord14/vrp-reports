@@ -314,9 +314,5 @@ Thank you for your contribution to the VRP! Keep the bugs coming!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> mitigated user information disclosure
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/468027781)*

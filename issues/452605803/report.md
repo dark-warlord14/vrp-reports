@@ -508,9 +508,5 @@ Please contact security-vrp@chromium.org with any questions.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> v8 sandbox bypass with controllable write
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/452605803)*

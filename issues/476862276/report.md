@@ -558,9 +558,5 @@ P.S. One other thing we'd like to mention:
 
 Please contact security-vrp@chromium.org with any questions.
 
-## Bounty Award
-
-> web platform privilege escalation, low impact
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/476862276)*

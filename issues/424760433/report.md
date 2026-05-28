@@ -709,9 +709,5 @@ Date: Thu Aug 14 17:44:48 2025
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Baseline memory Corruption in a highly privileged process (GPU) with a bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/424760433)*

@@ -297,9 +297,5 @@ Congratulations! Thank you for your efforts and reporting this issue to us.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $2,000 for report of lower impact LPE with significant preconditions for exploitation
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/356328460)*

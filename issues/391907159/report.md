@@ -383,9 +383,5 @@ Labeled LTS-Merge-Merge-132 for M132 LTS because the fix[1] was already merged t
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> high-quality report demonstrating RCE in a sandboxed process / the renderer
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/391907159)*

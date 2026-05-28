@@ -1,0 +1,115 @@
+{
+  "id": "370069678",
+  "url": "https://issues.chromium.org/issues/370069678",
+  "title": "Heap-use-after-free in · content::CacheStorageScheduler::CompleteOperationAndRunNext",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Storage>CacheStorage",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "es...@chromium.org",
+  "created_date": "2024-09-28T10:34:44+00:00",
+  "modified_date": "2025-01-10T15:41:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 6000.0,
+  "reward_amount_meta": 6000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 59727835,
+      "filename": "patch_for_reproduce.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 967,
+      "url": "https://issues.chromium.org/action/issues/370069678/attachments/59727835?download=true",
+      "local_path": "attachments/patch_for_reproduce.diff"
+    },
+    {
+      "id": 59727836,
+      "filename": "h1.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3781,
+      "url": "https://issues.chromium.org/action/issues/370069678/attachments/59727836?download=true",
+      "local_path": "attachments/h1.js"
+    },
+    {
+      "id": 59717866,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 202020,
+      "url": "https://issues.chromium.org/action/issues/370069678/attachments/59717866?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 59727837,
+      "filename": "worklet-reftest.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1204,
+      "url": "https://issues.chromium.org/action/issues/370069678/attachments/59727837?download=true",
+      "local_path": "attachments/worklet-reftest.js"
+    },
+    {
+      "id": 59728889,
+      "filename": "min.html",
+      "mime_type": "text/html",
+      "size_bytes": 2447,
+      "url": "https://issues.chromium.org/action/issues/370069678/attachments/59728889?download=true",
+      "local_path": "attachments/min.html"
+    },
+    {
+      "id": 59752196,
+      "filename": "Video.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 6421674,
+      "url": "https://issues.chromium.org/action/issues/370069678/attachments/59752196?download=true",
+      "local_path": "attachments/Video.webm"
+    },
+    {
+      "id": 60033674,
+      "filename": "h1.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3781,
+      "url": "https://issues.chromium.org/action/issues/370069678/attachments/60033674?download=true",
+      "local_path": "attachments/h1.js"
+    },
+    {
+      "id": 60023237,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 202172,
+      "url": "https://issues.chromium.org/action/issues/370069678/attachments/60023237?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 60023238,
+      "filename": "Video2.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 5848500,
+      "url": "https://issues.chromium.org/action/issues/370069678/attachments/60023238?download=true",
+      "local_path": "attachments/Video2.webm"
+    },
+    {
+      "id": 60043207,
+      "filename": "min.html",
+      "mime_type": "text/html",
+      "size_bytes": 1486,
+      "url": "https://issues.chromium.org/action/issues/370069678/attachments/60043207?download=true",
+      "local_path": "attachments/min.html"
+    }
+  ],
+  "update_count": 73,
+  "description_snippet": "# VULNERABILITY DETAILS\nPlease provide a brief explanation of the security issue.\n\n# BISECT\nhttps://chromium-review.googlesource.com/c/chromium/src/+/5871445\n\n# REPRODUCTION CASE\nfound by myfuzzer run on cf\n\nhttps://clusterfuzz.com/testcase-detail/4855330047459328\n\n> I will provide a more stable Po"
+}

@@ -1029,9 +1029,5 @@ re: #32 - no, we reward $7 for the renderer bonus here.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $35,000 for high quality memory corruption in a non-sandboxed process + $7,000 for baseline renderer memory corruption (since exploitation does not require renderer m/c) + $1,000 bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/440454442)*

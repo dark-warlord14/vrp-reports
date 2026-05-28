@@ -815,9 +815,5 @@ Date: Wed Feb 25 10:02:09 2026
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Highly mitigated code execution in a sandboxed process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40071155)*

@@ -266,9 +266,5 @@ Thanks for reward!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of lower impact security UI issue with multiple UI interaction preconditions
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40067401)*

@@ -15,9 +15,14 @@
   "assignee": "ay...@chromium.org",
   "created_date": "2024-05-24T17:44:58+00:00",
   "modified_date": "2025-08-26T17:07:36+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 500.0,
-  "bounty_rationale": "thank you reward -- while this report was the first report of this issue, a newer report of higher quality and demonstrating higher impact was also reported and helped to achieve the issue being prioritized and resolved",
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 56648871,

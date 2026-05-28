@@ -1,0 +1,46 @@
+{
+  "id": "40075394",
+  "url": "https://issues.chromium.org/issues/40075394",
+  "title": "Security: Google Chrome MetalCompiler OOB Access Vulnerability",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebGL, Internals>GPU, Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pw...@gmail.com",
+  "assignee": "ge...@chromium.org",
+  "created_date": "2023-10-22T11:43:24+00:00",
+  "modified_date": "2025-03-14T17:31:28+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53047311,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2958,
+      "url": "https://issues.chromium.org/action/issues/40075394/attachments/53047311?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53047349,
+      "filename": "translated_essl.tar",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 32256,
+      "url": "https://issues.chromium.org/action/issues/40075394/attachments/53047349?download=true",
+      "local_path": "attachments/translated_essl.tar"
+    }
+  ],
+  "update_count": 68,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nSecurity: WebGL ANGLE MTLCompilerService OOB Write  \n  \n**VERSION**   \nChrome Version: 120.0.6082.0 canary (arm64) / Google Chrome Stable  \nOperating System: 14.1 Beta(23B5067a)  \n  \n**REPRODUCTION CASE**   \n1. python3 -m http.server 9292  \n2. ./chrome http://localhost:9"
+}

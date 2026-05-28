@@ -676,9 +676,5 @@ Date: Mon Jun 2 21:10:45 2025
 
 ---
 
-## Bounty Award
-
-> report of memory corruption in a highly privileged process (GPU)
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/421399969)*

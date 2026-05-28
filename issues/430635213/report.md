@@ -520,9 +520,5 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 
 Hey xuanocto, can you please help me with the steps to building hwasan for android? I tried building it, it was successful but chromium crashes as soon as I start the app. I would appreciate your help, you can email me at [x4nd3r.h1.dump@gmail.com](mailto:x4nd3r.h1.dump@gmail.com)
 
-## Bounty Award
-
-> report of heavily mitigated memory corruption in a non-sandboxed process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/430635213)*

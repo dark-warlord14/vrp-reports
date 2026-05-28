@@ -419,19 +419,5 @@ only the Weakxxx Object suffer from the GC issues, while the Persistent / Member
 Specifically, original [b/40053095](https://issues.chromium.org/issues/40053095) can free the `client_` [0] because `client_` is a WeakPersistent object, which does not guarantee the object is alive.
 However, the `request_` in this report is a `Persistent` object [1], "which makes the referred object alive unconditionally". Thus, I consider this issue as an FP.
 
-## Bounty Award
-
-> While we were able to make a security relevant change, the report lacks a POC and /or demonstration of the potential or reachability of UAF or exploitability.
-> 
-> Thank you for your efforts and helping us make Chrome more secure for all users!
-> 
-> Cheers,
-> Chrome VRP Panel Bot
-> 
-> 
-> P.S. Two other things we'd like to mention:
-> 
-> * Please do NOT publicly disclose details until a fix has been released to all our users. Early public disclosure may cancel the provisional reward. Also, please be considerate about
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/339588211)*

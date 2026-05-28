@@ -538,9 +538,5 @@ To opt-out from this automation rule, please add Optout-Blintz-Nextaction-Alert 
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> limited impact privilege escalation (no control of data written) with a high quality report
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/448113221)*

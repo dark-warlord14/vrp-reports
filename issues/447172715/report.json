@@ -15,9 +15,14 @@
   "assignee": "da...@chromium.org",
   "created_date": "2025-09-25T06:51:00+00:00",
   "modified_date": "2026-01-30T12:39:00+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 30000.0,
-  "bounty_rationale": "sandbox escape // UXSS mitigated by needing a colluding extension",
+  "reward_amount_meta": 30000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 69608919,

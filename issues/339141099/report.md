@@ -476,9 +476,5 @@ Date:  Tue Jun 11 16:53:40 2024
 
 The reward for this issue has been abandoned for over one year. As is our policy for abandoned rewards, it has been processed for donation. The reward for this issue has been donated to the Spyware Accountability Initiative (<https://stopspyware.fund/>)
 
-## Bounty Award
-
-> $3,000 for report of mildly mitigated memory corruption in a sandboxed process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/339141099)*

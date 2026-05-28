@@ -471,9 +471,5 @@ Date:  Thu May 29 20:08:44 2025
 
 ---
 
-## Bounty Award
-
-> $3,000 for report of mildly mitigated memory corruption in a sandboxed process / the renderer + $1,000 patch bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/390590778)*

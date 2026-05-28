@@ -280,9 +280,5 @@ https://dawn-review.googlesource.com/191841
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $5,000 for report of potential, but not demonstrated, memory corruption in the GPU process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/342840932)*

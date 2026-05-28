@@ -17,9 +17,14 @@
   "assignee": "st...@chromium.org",
   "created_date": "2024-12-14T10:57:17+00:00",
   "modified_date": "2025-10-02T12:45:45+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 1000.0,
-  "bounty_rationale": "report of lower impact web platform privilege escalation / UI spoof",
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 61523353,

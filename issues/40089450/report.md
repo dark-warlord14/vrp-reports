@@ -745,9 +745,5 @@ Date:  Wed Jun 18 16:06:21 2025
 
 This was filed a very long while ago, but we are here (: @reporter! How would you like to be credited for this report?
 
-## Bounty Award
-
-> report of exploitation mitigation bypass
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40089450)*

@@ -385,9 +385,5 @@ I see, my bad. Thanks!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> below baseline / speculative report of V8 sandbox bypass that resulted in a security beneficial change
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/425121216)*

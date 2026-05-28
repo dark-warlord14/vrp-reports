@@ -504,9 +504,5 @@ Thank you for your past efforts in discovering and reporting this issue to us. A
 
 Security shepherd: this bug seems to be gone, but it's impossible to tell when it was actually fixed. The current behavior of the PoC (still live after all these years!) is as attached - we no longer show an incorrect origin. Fixed!
 
-## Bounty Award
-
-> report of lower impact security UI issue
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40090194)*

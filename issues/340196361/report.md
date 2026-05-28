@@ -614,9 +614,5 @@ This has been merged to M126: <https://chromium.googlesource.com/chromium/src.gi
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of memory corruption in the GPU process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/340196361)*

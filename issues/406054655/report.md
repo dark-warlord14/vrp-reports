@@ -370,9 +370,5 @@ As pointed out in [#comment16](https://issues.chromium.org/issues/406054655#comm
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $7,000 for report of memory corruption in a sandboxed process + $2,000 fuzzer bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/406054655)*

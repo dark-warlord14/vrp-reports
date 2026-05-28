@@ -432,11 +432,5 @@ This issue was migrated from crbug.com/chromium/1420107?no_tracker_redirect=1
 [Auto-CCs applied]
 [Monorail components added to Component Tags custom field.]
 
-## Bounty Award
-
-> Target is in "Standard OSS projects" tier.
-> Issue category is "Product vulnerabilities".
-> We applied 1 downgrade from the base amount, since the exploitation requires an OOM condition.
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40063285)*

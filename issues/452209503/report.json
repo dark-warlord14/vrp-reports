@@ -19,9 +19,14 @@
   "assignee": "ge...@chromium.org",
   "created_date": "2025-10-15T17:27:35+00:00",
   "modified_date": "2026-04-22T07:59:04+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 1000.0,
-  "bounty_rationale": "Highly Mitigated Memory corruption in a non-sandboxed process",
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 70145596,

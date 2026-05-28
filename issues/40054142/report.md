@@ -11,7 +11,7 @@
 | **Reporter** | zy...@gmail.com |
 | **Assignee** | qi...@chromium.org |
 | **Created** | 2020-12-11 |
-| **Bounty** | $500.00 |
+| **Bounty** | $2,500.00 |
 
 ## Description
 

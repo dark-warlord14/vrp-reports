@@ -20,9 +20,14 @@
   "assignee": "is...@chromium.org",
   "created_date": "2025-10-25T02:05:07+00:00",
   "modified_date": "2026-02-07T12:47:16+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 22000.0,
-  "bounty_rationale": "Exploitation Mitigation Bypass (v8 sandbox) with a patch bonus",
+  "reward_amount_meta": 22000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 70394631,

@@ -570,9 +570,5 @@ Date: Fri Aug 8 10:10:04 2025
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of memory corruption in the network process, which is not sandboxed on all devices this issue was demonstrated to impact
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/427681143)*

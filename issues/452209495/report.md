@@ -225,9 +225,5 @@ Date: Tue Feb 10 20:31:48 2026
 
 ---
 
-## Bounty Award
-
-> low impact ui spoofing issue
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/452209495)*

@@ -1,0 +1,212 @@
+{
+  "id": "438916130",
+  "url": "https://issues.chromium.org/issues/438916130",
+  "title": "---",
+  "status": "Unknown",
+  "severity": "Unknown",
+  "priority": "Unknown",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "Unknown",
+  "assignee": null,
+  "created_date": "2025-08-15T10:30:25+00:00",
+  "modified_date": "2025-11-29T12:45:39+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": null,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 105,
+  "bounty_rationale": "While we appreciate the report and the effort, this does not appear to be an exploitable security issue. There was no demonstrable evidence of an exploitable security bug provided in this report or discovered from our attempts to reproduce and investigation. This report is unfortunately not eligible for a Chrome VRP reward.\n\nPlease note that the fact that this issue is not being rewarded does not mean that the product team won't fix the issue. We have filed a bug with the product team and they w",
+  "attachments": [
+    {
+      "id": 68491678,
+      "filename": "uaf_tsan.cpp",
+      "mime_type": "text/plain",
+      "size_bytes": 978,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68491678?download=true",
+      "local_path": "attachments/uaf_tsan.cpp"
+    },
+    {
+      "id": 68491679,
+      "filename": "uaf_test.cpp",
+      "mime_type": "text/plain",
+      "size_bytes": 790,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68491679?download=true",
+      "local_path": "attachments/uaf_test.cpp"
+    },
+    {
+      "id": 68491680,
+      "filename": "tsan_log.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3185,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68491680?download=true",
+      "local_path": "attachments/tsan_log.txt"
+    },
+    {
+      "id": 68491681,
+      "filename": "uaf_asan.cpp",
+      "mime_type": "text/plain",
+      "size_bytes": 936,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68491681?download=true",
+      "local_path": "attachments/uaf_asan.cpp"
+    },
+    {
+      "id": 68491682,
+      "filename": "asan_log.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 20036,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68491682?download=true",
+      "local_path": "attachments/asan_log.txt"
+    },
+    {
+      "id": 68491683,
+      "filename": "data_pipe_consumer_dispatcher.h",
+      "mime_type": "text/plain",
+      "size_bytes": 614,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68491683?download=true",
+      "local_path": "attachments/data_pipe_consumer_dispatcher.h"
+    },
+    {
+      "id": 68491684,
+      "filename": "data_pipe_consumer_dispatcher.cc",
+      "mime_type": "text/plain",
+      "size_bytes": 1059,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68491684?download=true",
+      "local_path": "attachments/data_pipe_consumer_dispatcher.cc"
+    },
+    {
+      "id": 68491685,
+      "filename": "uaf_tsan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1585312,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68491685?download=true",
+      "local_path": "attachments/uaf_tsan.txt"
+    },
+    {
+      "id": 68491686,
+      "filename": "uaf_test.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1604080,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68491686?download=true",
+      "local_path": "attachments/uaf_test.txt"
+    },
+    {
+      "id": 68491687,
+      "filename": "uaf_asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1745840,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68491687?download=true",
+      "local_path": "attachments/uaf_asan.txt"
+    },
+    {
+      "id": 68491688,
+      "filename": "a.html",
+      "mime_type": "text/html",
+      "size_bytes": 713,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68491688?download=true",
+      "local_path": "attachments/a.html"
+    },
+    {
+      "id": 68477435,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68477435?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68475832,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68475832?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68475800,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68475800?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68477439,
+      "filename": "a.html",
+      "mime_type": "text/html",
+      "size_bytes": 3159,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68477439?download=true",
+      "local_path": "attachments/a.html"
+    },
+    {
+      "id": 68490972,
+      "filename": "Screen Recording 2025-08-15 222252.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 49148030,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68490972?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68495389,
+      "filename": "a.html",
+      "mime_type": "text/html",
+      "size_bytes": 1359,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68495389?download=true",
+      "local_path": "attachments/a.html"
+    },
+    {
+      "id": 68495391,
+      "filename": "a.html",
+      "mime_type": "text/html",
+      "size_bytes": 1681,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68495391?download=true",
+      "local_path": "attachments/a.html"
+    },
+    {
+      "id": 68498627,
+      "filename": "Screen Recording 2025-08-16 143709.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 25462307,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68498627?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68495392,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68495392?download=true",
+      "local_path": null
+    },
+    {
+      "id": 68495396,
+      "filename": "Screen Recording 2025-08-16 193748.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 189337475,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68495396?download=true",
+      "local_path": "attachments/Screen Recording 2025-08-16 193748.mp4"
+    },
+    {
+      "id": 68512501,
+      "filename": "a.html",
+      "mime_type": "text/html",
+      "size_bytes": 1357,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68512501?download=true",
+      "local_path": "attachments/a.html"
+    },
+    {
+      "id": 68521450,
+      "filename": "modified-but-not-crashing-much-still.html",
+      "mime_type": "text/html",
+      "size_bytes": 1405,
+      "url": "https://issues.chromium.org/action/issues/438916130/attachments/68521450?download=true",
+      "local_path": "attachments/modified-but-not-crashing-much-still.html"
+    }
+  ],
+  "update_count": 113,
+  "description_snippet": "---\n\n### Report description\n\n\nUse-After-Free in DataPipeConsumerDispatcher::Close() Due to Concurrent Access\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google"
+}

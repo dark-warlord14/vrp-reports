@@ -20,9 +20,14 @@
   "assignee": "ni...@chromium.org",
   "created_date": "2026-02-01T07:59:56+00:00",
   "modified_date": "2026-05-13T07:58:00+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 11000.0,
-  "bounty_rationale": "High-quality report of demonstrated memory corruption in a sandboxed process plus a bisect bonus",
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 73016499,

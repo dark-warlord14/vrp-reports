@@ -548,9 +548,5 @@ Thanks for the response! $70,000 has now been donated to Mutual Aid Disaster Rel
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of demonstrated memory corruption in a non-sandboxed process -- GPU process in Chrome on Android platform
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/375123371)*

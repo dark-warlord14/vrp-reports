@@ -283,11 +283,5 @@ Please contact security-vrp@chromium.org with any questions.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of moderate impact security UI spoof
-> 
-> It's important to not that future reports related to this specific UI surface, unless demonstrated to be highly and convincingly spoofable with little to no user interaction, may not be eligible for as high of rewards. Given that this report resulted in hardening of a new UI surface, we feel this report warrants this reward.
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/437147699)*

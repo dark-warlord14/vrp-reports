@@ -1,0 +1,67 @@
+{
+  "id": "439920787",
+  "url": "https://issues.chromium.org/issues/439920787",
+  "title": "Controlled memory corruption leading to segmentation fault in V8 locale validation due to argument mismatch in blink caller",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P4",
+  "component": "Blink>JavaScript>Compiler>Maglev",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "is...@chromium.org",
+  "created_date": "2025-08-19T23:25:20+00:00",
+  "modified_date": "2025-12-05T12:42:25+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": null,
+  "reward_amount_meta": 0.0,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 58,
+  "bounty_rationale": "Thank you for the report. As this issue is not an exploitable security issue resulting in security consequences for a user, this issue is unfortunately not eligible for a Chrome VRP reward.\n\nPlease note that the fact that this issue is not being rewarded does not mean that the product team won't fix the issue. We have filed a bug with the product team and they will review your report and decide if a fix is required. We'll let you know if the issue was fixed.\n\nRegards,\nGoogle Security Bot\n\n\n--\nHo",
+  "attachments": [
+    {
+      "id": 68593142,
+      "filename": "Large Offset_EXC_BAD_ACCESS.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11973,
+      "url": "https://issues.chromium.org/action/issues/439920787/attachments/68593142?download=true",
+      "local_path": "attachments/Large Offset_EXC_BAD_ACCESS.txt"
+    },
+    {
+      "id": 68593143,
+      "filename": "Valid Offset_EXC_BREAKPOINT.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 12428,
+      "url": "https://issues.chromium.org/action/issues/439920787/attachments/68593143?download=true",
+      "local_path": "attachments/Valid Offset_EXC_BREAKPOINT.txt"
+    },
+    {
+      "id": 68593144,
+      "filename": "summarizer.html",
+      "mime_type": "text/html",
+      "size_bytes": 476,
+      "url": "https://issues.chromium.org/action/issues/439920787/attachments/68593144?download=true",
+      "local_path": "attachments/summarizer.html"
+    },
+    {
+      "id": 68593145,
+      "filename": "translator.html",
+      "mime_type": "text/html",
+      "size_bytes": 475,
+      "url": "https://issues.chromium.org/action/issues/439920787/attachments/68593145?download=true",
+      "local_path": "attachments/translator.html"
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "---\n\n### Report description\n\n\nControlled memory corruption leading to segmentation fault in V8 locale validation due to argument mismatch in blink caller\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser."
+}

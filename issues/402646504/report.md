@@ -445,9 +445,5 @@ Labelling as not applicable for LTS 132 and 126 because the suspected CLs[1][2] 
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $5,000 for high-quality report of memory read / user information disclosure + $1,000 bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/402646504)*

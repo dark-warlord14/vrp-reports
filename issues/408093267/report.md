@@ -399,9 +399,5 @@ Thank you !
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Thank you report for this report of an issue known and resolved by AMD, resolved by an upstream change in December 2024, resulting in backporting of this fix to some active kernel versions.
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/408093267)*

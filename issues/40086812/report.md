@@ -362,9 +362,5 @@ Thank you for the reward and for recognizing my efforts. I appreciate your suppo
 
 Security triage: this doesn't repro for me on 147.0.7702.0. Given how old the bug is, odds are good it was fixed by accident at some point in the past 9 years (!). Marking Fixed :)
 
-## Bounty Award
-
-> report of a lower-impact user information disclosure
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40086812)*

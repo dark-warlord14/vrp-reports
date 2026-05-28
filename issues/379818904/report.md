@@ -296,9 +296,5 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 
 Still no CVE assigned? Or it will not be assigned?
 
-## Bounty Award
-
-> report of lower impact security UI spoof
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/379818904)*

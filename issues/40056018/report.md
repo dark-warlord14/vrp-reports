@@ -321,9 +321,5 @@ Thank you for the effort and reporting this issue to us, Lijo.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $500 thank you reward for report of lower impact security UI bug
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40056018)*

@@ -332,9 +332,5 @@ Thanks. I'd like to donate the reward to charity. I've included a poc in the rep
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> high quality memory corruption in a sandboxed process. the panel thanks you in particular for going the extra mile and noticing this issue might be exposed to users via origin trial.
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/452541294)*

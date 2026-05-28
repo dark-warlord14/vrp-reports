@@ -11,7 +11,7 @@
 | **Reporter** | ro...@rorym.cnamara.com |
 | **Assignee** | mo...@google.com |
 | **Created** | 2023-02-09 |
-| **Bounty** | $30,000.00 |
+| **Bounty** | $31,000.00 |
 
 ## Description
 

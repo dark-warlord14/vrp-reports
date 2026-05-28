@@ -11,7 +11,7 @@
 | **Reporter** | ki...@gmail.com |
 | **Assignee** | wa...@chromium.org |
 | **Created** | 2020-08-13 |
-| **Bounty** | $3,000.00 |
+| **Bounty** | $3,200.00 |
 
 ## Description
 

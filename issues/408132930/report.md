@@ -586,9 +586,5 @@ Thank you very much Amy, Cheers🍻
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> moderately mitigated memory corruption in a non-sandboxed process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/408132930)*

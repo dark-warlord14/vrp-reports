@@ -862,9 +862,5 @@ Thank you Amy
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of highly mitigated user information disclosure / exploitation mitigation bypass, mitigated by precondition of specific resizing conditions and sufficient user gesture to allow an attacker to take advantage of this issue and result in harm to someone using Chrome
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40068001)*

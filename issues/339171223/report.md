@@ -1073,9 +1073,5 @@ https://dawn-review.googlesource.com/194160
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of memory corruption in the GPU process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/339171223)*

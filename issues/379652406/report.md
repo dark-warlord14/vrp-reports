@@ -846,9 +846,5 @@ Ok, so based on that, what we have isn't far off. We could adjust to first meani
 
 I'm not opposed to starting the timer at first meaningful paint instead of at navigation commit time-- that seems like an improvement to me for the reasons mentioned. One issue for implementation is that the NavigationHandle is deleted at commit time (and many observers rely on this), so it can't stick around until the later stages of loading. That may just require a different technique for doing the bookkeeping for the timer, though.
 
-## Bounty Award
-
-> $5,000 for report of high-quality, moderate impact security UI spoof + $1,000 bisect bonus + $1,000 bonus for overall helpfulness and responsiveness in investigation and resolution
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/379652406)*

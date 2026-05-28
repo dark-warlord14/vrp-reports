@@ -1,14 +1,17 @@
-# Stealing emails via FedCM clickjacking in Chrome Android [415262406] - Chromium
+# Intersection Observer v2 API fails to reliably determine target's visibility, which enables clickjacking against Google One Tap
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [415262406](https://issues.chromium.org/issues/415262406) |
-| **Status** | Unknown |
-| **Severity** | Unknown |
-| **Priority** | Unknown |
-| **Component** | Unknown |
-| **Reporter** | Unknown |
-| **Bounty** | Confirmed (amount unknown) |
+| **Status** | Assigned |
+| **Severity** | S3-Low |
+| **Priority** | P2 |
+| **Component** | Blink>Geometry |
+| **Platforms** | Android, Linux, Mac, Windows, ChromeOS |
+| **Reporter** | lo...@icloud.com |
+| **Assignee** | sz...@chromium.org |
+| **Created** | 2025-05-03 |
+| **Bounty** | $5,000.00 |
 
 ## Description
 
@@ -30,17 +33,17 @@ Stealing emails via FedCM clickjacking in Chrome Android
 # Additional Data
 
 Category: Security   
+
 Chrome Channel: Canary   
+
 Regression: N/A
 
 ## Attachments
 
-- unknown (, 0 B)
-- unknown (, 0 B)
-- unknown (, 0 B)
-- unknown (, 0 B)
-- unknown (, 0 B)
-- unknown (, 0 B)
+- [testcase.html](attachments/testcase.html) (text/html, 1.9 KB)
+- [screen.mp4](attachments/screen.mp4) (video/mp4, 795.2 KB)
+- [testcase.html](attachments/testcase.html) (text/html, 1.9 KB)
+- [screen-20250626-205457.mp4](attachments/screen-20250626-205457.mp4) (video/mp4, 3.3 MB)
 
 ## Timeline
 
@@ -208,6 +211,7 @@ Also, if you have not already done so, create a profile on [the Google Bughunter
 **Note that we only act on reports concerning vulnerabilities or technical security problems in one of our products. This is not the correct channel if you need to resolve a problem with your account, or want to report non-security bugs or suggest a new product feature.**
 
 Cheers,   
+
 Google Security Bot
 
 [Follow us](https://twitter.com/googlevrp) on Twitter!
@@ -217,6 +221,7 @@ Google Security Bot
 Thank you, I forwarded this report to the Google VRP reward panel. They will review it to see whether it is eligible for a reward. This usually takes a couple of weeks, please be patient.
 
 Thank you,  
+
 The Google Bug Hunters team
 
 ### sp...@google.com (2025-07-01)
@@ -230,6 +235,7 @@ We just want to let you know that your report was **triaged** and we're currentl
 You should receive further information in a couple of days, but it might take up to a week if we're particularly busy. In the meantime, you might want to take a look at [the list of frequently asked questions about Google Bug Hunters](https://bughunters.google.com/about/4925519884451840/frequently-asked-questions).
 
 Thanks,   
+
 Google Security Bot
 
 ### mo...@google.com (2025-07-15)

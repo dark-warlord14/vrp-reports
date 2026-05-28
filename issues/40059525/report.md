@@ -119,9 +119,5 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 
 I suspect that this method can bypass the Navigation API, given that the 'fix' was just removing navigate-to...
 
-## Bounty Award
-
-> report of lower impact web platform privilege escalation
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40059525)*

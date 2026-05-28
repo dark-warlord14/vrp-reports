@@ -11,7 +11,7 @@
 | **Reporter** | xp...@gmail.com |
 | **Assignee** | ga...@microsoft.com |
 | **Created** | 2025-07-17 |
-| **Bounty** | $10,000.00 |
+| **Bounty** | $11,000.00 |
 
 ## Description
 
@@ -748,10 +748,6 @@ Thank you for the reward. I wish you the best on your new endeavors amy@.
 ### ch...@google.com (2025-11-04)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> report of mildly mitigated memory corruption in a non-sandboxed process
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/432497641)*

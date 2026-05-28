@@ -392,9 +392,5 @@ Per [#comment13](https://issues.chromium.org/issues/471363817#comment13), updati
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> high quality memory corruption in a sandboxed process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/471363817)*

@@ -400,20 +400,5 @@ Please contact security-vrp@chromium.org with any questions.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> The Chrome VRP panel decided to award you $2,000 for this report, based on this being a highly mitigated bug, mitigated by fairly significant user interaction. The reward amount also includes a $1,000 bisect bonus. 
-> Thank you for your efforts and reporting this issue to us!
-> 
-> Thank you for your efforts and helping us make Chrome more secure for all users!
-> 
-> Cheers,
-> Chrome VRP Panel Bot
-> 
-> 
-> P.S. Two other things we'd like to mention:
-> 
-> * Please do NOT publicly disclose details until a fix has been rel
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40066754)*

@@ -17,9 +17,14 @@
   "assignee": "es...@chromium.org",
   "created_date": "2024-01-17T12:31:17+00:00",
   "modified_date": "2025-08-15T20:55:01+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 5000.0,
-  "bounty_rationale": "$5,000 for this high-quality report of an exploit mitigation bypass with functional exploit -- great work! \n\nThank you for your efforts and helping us make Chrome more secure for all users!\n\nCheers,\nChrome VRP Panel Bot\n\n\nP.S. Two other things we'd like to mention:\n\n* Please do NOT publicly disclose details until a fix has been released to all our users. Early public disclosure may cancel the provisional reward. Also, please be considerate about disclosure when the bug affects a core library tha",
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 53253974,

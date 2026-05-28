@@ -796,9 +796,5 @@ The VRP panel did a very rigorous re-evaluation of the reward amount for this is
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> high quality but lower impact user information disclosure
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/430336833)*

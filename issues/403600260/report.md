@@ -432,9 +432,5 @@ Congratulations Seunghyun! Thank you for your continued efforts against the V8 s
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $20,000 for report of V8 sandbox bypass demonstrating the potential for code execution outside the V8 heap sandbox + $5,000 for identifying the insufficient initial patch to remediate
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/403600260)*

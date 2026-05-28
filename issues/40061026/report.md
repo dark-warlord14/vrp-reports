@@ -523,9 +523,5 @@ Thanks for the reward!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $2,000 for report of lower impact web platform privilege escalation
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40061026)*

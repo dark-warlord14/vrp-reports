@@ -557,9 +557,5 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 
 hey no cve for these issue ?
 
-## Bounty Award
-
-> low impact security UI issue
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/351564774)*

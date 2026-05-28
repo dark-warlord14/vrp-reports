@@ -197,9 +197,5 @@ Hi - it is Chrome VRP policy and a requirement for receiving VRP payments that i
 
 hi sorry i have unrestricted it thank you
 
-## Bounty Award
-
-> report of lower impact security UI / web platform privilege escalation bug
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/361611809)*

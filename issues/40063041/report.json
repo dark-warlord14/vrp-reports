@@ -15,9 +15,14 @@
   "assignee": "av...@chromium.org",
   "created_date": "2023-02-12T13:04:03+00:00",
   "modified_date": "2025-03-18T12:39:00+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 1000.0,
-  "bounty_rationale": "report of lower impact security UI spoof / exploit mitigation bypass",
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 53386285,

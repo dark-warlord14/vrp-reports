@@ -1732,9 +1732,5 @@ Date: Fri Jul 18 15:41:37 2025
 
 ---
 
-## Bounty Award
-
-> report of lower impact web platform privilege escalation
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40060076)*

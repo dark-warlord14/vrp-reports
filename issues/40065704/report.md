@@ -11,7 +11,7 @@
 | **Reporter** | yq...@gmail.com |
 | **Assignee** | ch...@google.com |
 | **Created** | 2023-06-13 |
-| **Bounty** | $1,250.00 |
+| **Bounty** | $1,500.00 |
 
 ## Description
 

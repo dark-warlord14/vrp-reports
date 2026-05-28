@@ -499,9 +499,5 @@ Date:  Tue Aug 20 14:26:39 2024
 
 ---
 
-## Bounty Award
-
-> baseline report of memory corruption in a sandboxed process / renderer
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/351865302)*

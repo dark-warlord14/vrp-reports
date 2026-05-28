@@ -370,9 +370,5 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 
 deleted
 
-## Bounty Award
-
-> High-quality report with demonstration of RCE in unsandboxed process. Congratulations, nice catch!
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/453094710)*

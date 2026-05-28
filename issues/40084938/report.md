@@ -430,9 +430,5 @@ Cheers!
 
 WPTs were added for this case in [crrev.com/c/848836](https://crrev.com/c/848836), which if this had not been fixed yet may have incidentally fixed this issue as well. Those tests are passing (see [wpt.fyi](https://wpt.fyi/results/upgrade-insecure-requests/link-upgrade.sub.https.html?label=master&label=experimental&aligned&q=upgrade-insecure-requests%2F)) so I think we can close this bug as Fixed.
 
-## Bounty Award
-
-> report of lower impact exploitation mitigation bypass
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40084938)*

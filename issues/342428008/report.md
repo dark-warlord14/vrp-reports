@@ -385,9 +385,5 @@ And another one -- congratulations! Thank you for your fuzzing efforts and repor
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> memory corruption in the GPU process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/342428008)*

@@ -915,9 +915,5 @@ Something broke with the bot merge log, removing merge requests as this fix land
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of lower impact security UI issue
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40059071)*

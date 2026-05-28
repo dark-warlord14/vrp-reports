@@ -11,7 +11,7 @@
 | **Reporter** | ha...@gmail.com |
 | **Assignee** | ge...@google.com |
 | **Created** | 2026-01-08 |
-| **Bounty** | $25,000.00 |
+| **Bounty** | $32,000.00 |
 
 ## Description
 
@@ -1038,10 +1038,6 @@ I created an new issue <https://issues.chromium.org/issues/499467136>
 ### ch...@google.com (2026-05-21)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> Memory corruption in a highly privileged process (e.g. GPU, network processes).
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/474266014)*

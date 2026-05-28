@@ -803,9 +803,5 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 
 The unexpected pass finder removed the last expectation associated with this bug. An associated CL should be landing shortly, after which this bug can be closed once a human confirms there is no more work to be done.
 
-## Bounty Award
-
-> high quality report demonstrating controlled write in a sandboxed process / renderer
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/379516109)*

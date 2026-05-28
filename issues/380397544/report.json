@@ -20,9 +20,14 @@
   "assignee": "cl...@chromium.org",
   "created_date": "2024-11-23T00:56:29+00:00",
   "modified_date": "2025-09-28T23:51:01+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 55000.0,
-  "bounty_rationale": "high quality report of demonstrated RCE in a sandboxed process / the renderer",
+  "reward_amount_meta": 55000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 60999740,

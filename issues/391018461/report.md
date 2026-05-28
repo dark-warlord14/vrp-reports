@@ -694,9 +694,5 @@ I don't think anything needs. to be backermged here.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> baseline report of memory corruption in a sandboxed process / the renderer
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/391018461)*

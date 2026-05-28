@@ -187,9 +187,5 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 On Friday, 2 May 2025, a third-party reported to us that they have witnessed ITW exploitation of this sandbox bypass as part of an exploit chain involving an exploit for CVE-2024-12053, despite both issues being long since resolved and fixes (for both) being included in Stable channel of Chrome as of early January / 132.
 (The fix for CVE-2024-12053 shipped a month earlier in December as part of a 131 Stable update.)
 
-## Bounty Award
-
-> V8 sandbox bypass reward
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/361862752)*

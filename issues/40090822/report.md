@@ -345,9 +345,5 @@ Maybe it's not obsolete until the very last NTLM server has been turned down?
 
 It's certainly lower priority than it used to be. I propose reducing priority to P3 to reflect reduced impact and better availability of workarounds (ie. disable NTLM).
 
-## Bounty Award
-
-> report of lower impact user information disclosure
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40090822)*

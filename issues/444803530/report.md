@@ -212,9 +212,5 @@ Please contact security-vrp@chromium.org with any questions.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> 1k for the bug (highly mitigated exploitation mitigation bypass), 1k for the patch, 1k for the bisect = 3k
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/444803530)*

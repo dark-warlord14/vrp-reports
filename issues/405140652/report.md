@@ -456,9 +456,5 @@ I mistakenly overlooked the notification for the m134 approval.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $3,000 for report of moderately mitigated (mitigated by precise timing, race condition with lower potential for exploitability) memory corruption in a non-sandboxed process + $1,000 bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/405140652)*

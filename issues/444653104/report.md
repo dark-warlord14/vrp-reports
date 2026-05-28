@@ -166,9 +166,5 @@ Please contact security-vrp@chromium.org with any questions.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> mitigated low impact ui spoofing requiring multiple complex gestures
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/444653104)*

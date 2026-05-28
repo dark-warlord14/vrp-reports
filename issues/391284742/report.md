@@ -473,10 +473,5 @@ Please contact security-vrp@chromium.org with any questions.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Since while this issue was known and patched upstream in LLVM before this report, it seems that it was only based on this report that ARM knew of this issue and was able to backport that change into Mali as a result of this report. 
-> Therefore, while we can't issue a full reward for this report, we wanted to show our appreciation for this this issue being reported to us and Arm ensuring full resolution.
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/391284742)*

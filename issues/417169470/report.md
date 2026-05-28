@@ -1111,9 +1111,5 @@ Date:  Mon May 19 12:48:48 2025
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> below baseline report of memory corruption in a sandboxed process, as presented this issue was specific to the experimental configuration of V8 and would not have been considered a security issue or eligible for VRP reward
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/417169470)*

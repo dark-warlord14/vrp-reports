@@ -735,9 +735,5 @@ Date:  Fri Feb 21 10:32:51 2025
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of mildly mitigated memory corruption bug in a non-sandboxed process, mitigated by precondition to download app (since <webview> tag is specific to apps) + install malicious extension
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/391666328)*

@@ -218,9 +218,5 @@ Thank you for your efforts and reporting this issue to us!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of V8 sandbox bypass issue that does not meet the full conditions of a V8 heap bypass report eligible for a reward, but did result in a security beneficial change
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/425122187)*

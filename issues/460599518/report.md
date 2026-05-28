@@ -12,7 +12,7 @@
 | **Reporter** | me...@gmail.com |
 | **Assignee** | vs...@google.com |
 | **Created** | 2025-11-14 |
-| **Bounty** | $2,000.00 |
+| **Bounty** | $3,000.00 |
 
 ## Description
 
@@ -422,10 +422,6 @@ Thank you for your explanation!
 ### ch...@google.com (2026-02-28)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> Heavily mitigated memory corruption in a non-sandboxed process
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/460599518)*

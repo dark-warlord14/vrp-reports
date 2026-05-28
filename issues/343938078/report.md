@@ -344,9 +344,5 @@ Yes -- it is incorrect. I had to make updates to our automation now that the bug
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $5,000 for report of moderate impact security UI spoof + $1,000 bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/343938078)*

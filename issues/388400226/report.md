@@ -756,9 +756,5 @@ Thanks, on my side, I have to say that the repro steps were super useful. :)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Report of highly mitigated issue in a non-sandboxed process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/388400226)*

@@ -364,9 +364,5 @@ thank you
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> security UI spoofing but mitigated as needs some complex gesture from user. thank you for the bug report on this new feature.
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/438226517)*

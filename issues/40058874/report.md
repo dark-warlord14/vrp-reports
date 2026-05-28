@@ -882,9 +882,5 @@ Re #49: Manual testing for me shows 0.0.0.0 is correctly treated as a loopback a
 
 Great resource for all of us that I found very relevant: https://localmess.github.io/assets/bridges-to-self-localmess-usenix-security-26.pdf
 
-## Bounty Award
-
-> report of lower impact privilege escalation that has contributed to overall Private Network Access considerations
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40058874)*

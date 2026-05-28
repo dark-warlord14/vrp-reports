@@ -1,0 +1,72 @@
+{
+  "id": "399131922",
+  "url": "https://issues.chromium.org/issues/399131922",
+  "title": "Improper restriction in password saving form, while navigation from one site to another site",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Privacy, UI>Browser>Passwords",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "va...@chromium.org",
+  "created_date": "2025-02-26T04:53:38+00:00",
+  "modified_date": "2025-06-06T12:45:09+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 63257489,
+      "filename": "save-creds-cross-site-form.html",
+      "mime_type": "text/html",
+      "size_bytes": 2665,
+      "url": "https://issues.chromium.org/action/issues/399131922/attachments/63257489?download=true",
+      "local_path": "attachments/save-creds-cross-site-form.html"
+    },
+    {
+      "id": 63257490,
+      "filename": "save-creds-cross-site-api.html",
+      "mime_type": "text/html",
+      "size_bytes": 1989,
+      "url": "https://issues.chromium.org/action/issues/399131922/attachments/63257490?download=true",
+      "local_path": "attachments/save-creds-cross-site-api.html"
+    },
+    {
+      "id": 63257491,
+      "filename": "login-form.html",
+      "mime_type": "text/html",
+      "size_bytes": 481,
+      "url": "https://issues.chromium.org/action/issues/399131922/attachments/63257491?download=true",
+      "local_path": "attachments/login-form.html"
+    },
+    {
+      "id": 63257492,
+      "filename": "save-creds-cross-site-form.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2663198,
+      "url": "https://issues.chromium.org/action/issues/399131922/attachments/63257492?download=true",
+      "local_path": "attachments/save-creds-cross-site-form.mp4"
+    },
+    {
+      "id": 63257493,
+      "filename": "save-creds-cross-site-api.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2417148,
+      "url": "https://issues.chromium.org/action/issues/399131922/attachments/63257493?download=true",
+      "local_path": "attachments/save-creds-cross-site-api.mp4"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "## SUMMARY\n\nThe Save Password bubble can save attacker-provided credentials to the wrong site under certain circumstances.\n\nThis occurs when a second Save Password bubble is opened while the first bubble is still open, and then the tab is navigated to the target cross-site page with a login form. Wh"
+}

@@ -1,0 +1,106 @@
+{
+  "id": "337222641",
+  "url": "https://issues.chromium.org/issues/337222641",
+  "title": "Autofill Drop Down List Scroll Swaps Datalist Leading To Clickjacking",
+  "status": "Accepted",
+  "severity": "S1-High",
+  "priority": "P3",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "124.0.6367.78",
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "ta...@google.com",
+  "created_date": "2024-04-26T19:16:08+00:00",
+  "modified_date": "2026-05-24T07:54:42+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 55871441,
+      "filename": "poc video.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 888897,
+      "url": "https://issues.chromium.org/action/issues/337222641/attachments/55871441?download=true",
+      "local_path": "attachments/poc video.mp4"
+    },
+    {
+      "id": 55871442,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1614,
+      "url": "https://issues.chromium.org/action/issues/337222641/attachments/55871442?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 55937384,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/337222641/attachments/55937384?download=true",
+      "local_path": null
+    },
+    {
+      "id": 55984186,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/337222641/attachments/55984186?download=true",
+      "local_path": null
+    },
+    {
+      "id": 56138519,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1612,
+      "url": "https://issues.chromium.org/action/issues/337222641/attachments/56138519?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 56139651,
+      "filename": "example_form.html",
+      "mime_type": "text/html",
+      "size_bytes": 723,
+      "url": "https://issues.chromium.org/action/issues/337222641/attachments/56139651?download=true",
+      "local_path": "attachments/example_form.html"
+    },
+    {
+      "id": 56139674,
+      "filename": "poc-337222641-2024-05-06_16.11.05.mkv",
+      "mime_type": "video/x-matroska",
+      "size_bytes": 456935,
+      "url": "https://issues.chromium.org/action/issues/337222641/attachments/56139674?download=true",
+      "local_path": "attachments/poc-337222641-2024-05-06_16.11.05.mkv"
+    },
+    {
+      "id": 56139675,
+      "filename": "autofill-clickjack.png",
+      "mime_type": "image/png",
+      "size_bytes": 118184,
+      "url": "https://issues.chromium.org/action/issues/337222641/attachments/56139675?download=true",
+      "local_path": "attachments/autofill-clickjack.png"
+    },
+    {
+      "id": 59509148,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/337222641/attachments/59509148?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 79,
+  "description_snippet": "# Steps to reproduce the problem\n1. Upload poc.html file to your server\n2. Open the poc.html link via your windows 64 bit (Chrome Browser)\n3. Click the green box. Autofill dropdown will popup and then as you point the drop down with the mouse it will scroll downwards.\n\n# Problem Description\nWhen the"
+}

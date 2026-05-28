@@ -437,9 +437,5 @@ Date: Tue Jan 6 18:25:34 2026
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Security UI spoofing baseline lower impact
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/467448811)*

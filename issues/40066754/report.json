@@ -18,9 +18,14 @@
   "assignee": "sr...@chromium.org",
   "created_date": "2023-07-03T10:03:07+00:00",
   "modified_date": "2024-08-01T15:44:53+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 3000.0,
-  "bounty_rationale": "The Chrome VRP panel decided to award you $2,000 for this report, based on this being a highly mitigated bug, mitigated by fairly significant user interaction. The reward amount also includes a $1,000 bisect bonus. \nThank you for your efforts and reporting this issue to us!\n\nThank you for your efforts and helping us make Chrome more secure for all users!\n\nCheers,\nChrome VRP Panel Bot\n\n\nP.S. Two other things we'd like to mention:\n\n* Please do NOT publicly disclose details until a fix has been rel",
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 53042949,

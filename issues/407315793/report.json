@@ -15,9 +15,14 @@
   "assignee": "mf...@chromium.org",
   "created_date": "2025-03-30T14:32:53+00:00",
   "modified_date": "2025-07-30T12:41:58+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 3000.0,
-  "bounty_rationale": "$2,000 for report of significantly mitigated memory corruption in a non-sandboxed project, mitigated by precondition for shutdown and UI gestures / user granting permissions + $1,000 patch bonus",
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 64415305,

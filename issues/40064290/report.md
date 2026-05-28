@@ -11,7 +11,7 @@
 | **Reporter** | zh...@gmail.com |
 | **Assignee** | ch...@google.com |
 | **Created** | 2023-04-30 |
-| **Bounty** | $1,000.00 |
+| **Bounty** | $5,000.00 |
 
 ## Description
 

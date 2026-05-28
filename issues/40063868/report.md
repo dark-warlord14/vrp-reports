@@ -321,9 +321,5 @@ Thanks :)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> thank you for report of issue in a feature that did not ship, but helped us make considerations regarding service worker handling in local network access
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40063868)*

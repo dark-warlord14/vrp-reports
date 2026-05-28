@@ -167,9 +167,5 @@ Thank you for your efforts and reporting this issue to us!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of lower impact user information disclosure
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/387583503)*

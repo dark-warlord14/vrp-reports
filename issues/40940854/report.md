@@ -555,9 +555,5 @@ Thank you Amy!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Thank you reward for helping also demonstrate security implications of known, on-going, previously documented work (crbug.com/40280009 and b/297885233 -- security bug in internal component) in this feature.
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40940854)*

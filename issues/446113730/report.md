@@ -391,9 +391,5 @@ deleted
 
 deleted
 
-## Bounty Award
-
-> v8 sandbox bypass with controllable write
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/446113730)*

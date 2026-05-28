@@ -344,9 +344,5 @@ Team Kindly update the CVE ID for this issue, Seems the issue is public but CVE 
 
 @ds...@chromium.org can you check this case
 
-## Bounty Award
-
-> $500 thank you reward for report of very low impact issue with little potential for security harm + $1000 patch bonus for very low size and complexity self-committed patch
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/427367145)*

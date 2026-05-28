@@ -421,9 +421,5 @@ Date: Fri Sep 5 10:46:03 2025
 
 ---
 
-## Bounty Award
-
-> report of V8 sandbox bypass demonstrating memory corruption outside the V8 sandbox
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/385775375)*

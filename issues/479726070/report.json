@@ -20,9 +20,14 @@
   "assignee": "vi...@chromium.org",
   "created_date": "2026-01-29T12:53:31+00:00",
   "modified_date": "2026-05-09T07:54:04+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 10000.0,
-  "bounty_rationale": "High quality memory corruption in a sandboxed process",
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 72919541,

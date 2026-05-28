@@ -225,9 +225,5 @@ Thank you, this report was indeed helpful. It helped us pinpoint the problem and
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $1,000 for this report of a highly mitigated (mitigated by user gesture and that this would resulted in test failures upon enabling this feature and running CQ) memory corruption bug in a non-sandboxed process + $1,000 bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/385355879)*

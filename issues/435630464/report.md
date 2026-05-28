@@ -807,9 +807,5 @@ Removing `Clusterfuzz-ignore` hotlist from some old bugs as it's preventing Clus
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> thank you for pointing out a class of issues here
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/435630464)*

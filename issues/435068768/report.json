@@ -19,8 +19,13 @@
   "assignee": "cl...@chromium.org",
   "created_date": "2025-07-30T15:42:26+00:00",
   "modified_date": "2025-11-11T12:42:45+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
-  "bounty_amount": 0.0,
+  "bounty_amount": null,
+  "reward_amount_meta": 0.0,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 40,
   "bounty_rationale": "Thank you for the report. There is no demonstration of exploitability presented and in evaluation this does not appear to be potentially exploitable, therefore, we are unfortunately unable to extend a Chrome VRP reward for this report. \n\nPlease note that the fact that this issue is not being rewarded does not mean that the product team won't fix the issue. We have filed a bug with the product team and they will review your report and decide if a fix is required. We'll let you know if the issue w",
   "attachments": [
     {

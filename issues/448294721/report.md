@@ -747,9 +747,5 @@ Labeling this issue as not applicable for LTS M138 because the fix[1] causes con
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Memory corruption in a highly privileged process (e.g. GPU, network processes)
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/448294721)*

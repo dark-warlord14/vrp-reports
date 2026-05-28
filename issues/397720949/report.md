@@ -389,9 +389,5 @@ Labelling as not applicable for LTS 132 and 126 because the suspected CL[1]  isn
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $10,000 for high-quality report of memory corruption in a sandboxed process / the renderer + $1,000 bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/397720949)*

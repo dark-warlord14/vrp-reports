@@ -752,9 +752,5 @@ Thanks for your time! To disable nags, add Disable-Nags (case sensitive) to the 
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $1,000 for report of lower impact web platform privilege escalation + $2,000 patch bonus + $1,000 bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/402791076)*

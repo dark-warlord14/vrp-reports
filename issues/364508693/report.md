@@ -265,9 +265,5 @@ Date:  Tue Jun 10 21:08:05 2025
 
 ---
 
-## Bounty Award
-
-> report of lower impact web platform privilege escalation / security UI bug
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/364508693)*

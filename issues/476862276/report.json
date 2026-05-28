@@ -15,9 +15,14 @@
   "assignee": "ro...@chromium.org",
   "created_date": "2026-01-19T03:24:16+00:00",
   "modified_date": "2026-05-21T22:55:40+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 2000.0,
-  "bounty_rationale": "web platform privilege escalation, low impact",
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 72613524,

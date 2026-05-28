@@ -380,9 +380,5 @@ Thanks for fixing the main scenario!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> high quality medium impact exploit mitigation bypass
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/436887350)*

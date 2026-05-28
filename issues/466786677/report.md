@@ -522,9 +522,5 @@ Hi, bisect reward is missing. I identified and commented the first bad commit in
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> baseline memory corruption in a sandboxed process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/466786677)*

@@ -382,9 +382,5 @@ deleted
 
 deleted
 
-## Bounty Award
-
-> lower impact security UI issue / spoof
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/352681108)*

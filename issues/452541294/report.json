@@ -20,9 +20,14 @@
   "assignee": "jk...@chromium.org",
   "created_date": "2025-10-16T15:11:48+00:00",
   "modified_date": "2026-01-27T12:41:03+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 10000.0,
-  "bounty_rationale": "high quality memory corruption in a sandboxed process. the panel thanks you in particular for going the extra mile and noticing this issue might be exposed to users via origin trial.",
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 70176785,

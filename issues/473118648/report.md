@@ -312,9 +312,5 @@ We are increasingly strict about what constitutes an "interesting" UI spoof bug 
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Security UI spoofing baseline / lower impact
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/473118648)*

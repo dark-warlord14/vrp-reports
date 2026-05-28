@@ -1,0 +1,60 @@
+{
+  "id": "332410234",
+  "url": "https://issues.chromium.org/issues/332410234",
+  "title": "Security: Private Network Access (PNA) Bypass Allows Access to localhost on macOS & Linux using 0.0.0.0",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>CORS>PrivateNetworkAccess",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2023-48022"
+  ],
+  "reporter": "sa...@gmail.com",
+  "assignee": "es...@chromium.org",
+  "created_date": "2024-04-02T14:35:52+00:00",
+  "modified_date": "2025-03-21T00:15:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 55160588,
+      "filename": "chrome-1-click-rce-fast.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 18619333,
+      "url": "https://issues.chromium.org/action/issues/332410234/attachments/55160588?download=true",
+      "local_path": "attachments/chrome-1-click-rce-fast.mov"
+    },
+    {
+      "id": 55160589,
+      "filename": "Browsers Localhost Bypass.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 1473896,
+      "url": "https://issues.chromium.org/action/issues/332410234/attachments/55160589?download=true",
+      "local_path": "attachments/Browsers Localhost Bypass.pdf"
+    },
+    {
+      "id": 55160590,
+      "filename": "0.0.0.0 Day.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 56115,
+      "url": "https://issues.chromium.org/action/issues/332410234/attachments/55160590?download=true",
+      "local_path": "attachments/0.0.0.0 Day.jpg"
+    }
+  ],
+  "update_count": 9,
+  "description_snippet": "Security Bug\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Home/chromium-security/reporting-security-bugs\n\nReports may be eligible"
+}

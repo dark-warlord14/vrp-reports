@@ -1,0 +1,66 @@
+{
+  "id": "351327767",
+  "url": "https://issues.chromium.org/issues/351327767",
+  "title": "WebAssembly OOB memory access due to cached memory index confusion",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2024-07-06T09:13:19+00:00",
+  "modified_date": "2025-03-26T05:34:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "reward_amount_meta": 20000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 57744129,
+      "filename": "wasm-ic-memory-oob.html",
+      "mime_type": "text/html",
+      "size_bytes": 74704,
+      "url": "https://issues.chromium.org/action/issues/351327767/attachments/57744129?download=true",
+      "local_path": "attachments/wasm-ic-memory-oob.html"
+    },
+    {
+      "id": 57749269,
+      "filename": "wasm-ic-memory-oob-v8sbx.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 76037,
+      "url": "https://issues.chromium.org/action/issues/351327767/attachments/57749269?download=true",
+      "local_path": "attachments/wasm-ic-memory-oob-v8sbx.js"
+    },
+    {
+      "id": 57760088,
+      "filename": "exp.html",
+      "mime_type": "text/html",
+      "size_bytes": 104020,
+      "url": "https://issues.chromium.org/action/issues/351327767/attachments/57760088?download=true",
+      "local_path": "attachments/exp.html"
+    },
+    {
+      "id": 57866121,
+      "filename": "wasm-memory64-v8sbx.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 76823,
+      "url": "https://issues.chromium.org/action/issues/351327767/attachments/57866121?download=true",
+      "local_path": "attachments/wasm-memory64-v8sbx.js"
+    }
+  ],
+  "update_count": 89,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Summary\n\nWebAssembly OOB memory access due to cached memory index confusion with multi-memory.\n\n#### Details\n\nTo speed up WebAssembly memory access, it maintains one cached memory in its instance cache. It heuristically finds the first memory access and caches it.\n\n``"
+}

@@ -11,7 +11,7 @@
 | **Reporter** | cl...@chromium.org |
 | **Assignee** | at...@chromium.org |
 | **Created** | 2021-02-14 |
-| **Bounty** | $5,000.00 |
+| **Bounty** | $6,000.00 |
 
 ## Description
 

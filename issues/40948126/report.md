@@ -181,9 +181,5 @@ Thanks for your efforts Shaheen!
 
 I hoped I was getting the same 1k reward as the duplicate report, but nevertheless, thank you for the bounty. I guess the rationale for receiving half the bounty is that my report is less detailed. I thought I covered more by providing a working PoC and demo.
 
-## Bounty Award
-
-> Thank you reward for the initial report of the CSP issues in the chrome://whats-new/ page that was highlighted and resolved in crbug.com/328690293
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40948126)*

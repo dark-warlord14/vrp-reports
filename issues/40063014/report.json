@@ -15,9 +15,14 @@
   "assignee": "dr...@chromium.org",
   "created_date": "2023-02-10T16:32:10+00:00",
   "modified_date": "2024-10-16T15:49:02+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 500.0,
-  "bounty_rationale": "$500 reward for report of low impact issue",
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 53271111,

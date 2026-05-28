@@ -1,0 +1,46 @@
+{
+  "id": "415838602",
+  "url": "https://issues.chromium.org/issues/415838602",
+  "title": "Security: Autofill prompt can be obscured by FedCM bubble dialog",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Identity>FedCM",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "yi...@chromium.org",
+  "created_date": "2025-05-06T03:02:24+00:00",
+  "modified_date": "2025-10-18T12:47:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 65543809,
+      "filename": "autofill.html",
+      "mime_type": "text/html",
+      "size_bytes": 4180,
+      "url": "https://issues.chromium.org/action/issues/415838602/attachments/65543809?download=true",
+      "local_path": "attachments/autofill.html"
+    },
+    {
+      "id": 65543810,
+      "filename": "screen.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 196997,
+      "url": "https://issues.chromium.org/action/issues/415838602/attachments/65543810?download=true",
+      "local_path": "attachments/screen.mp4"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "# Steps to reproduce the problem\nSimilar to issue 339481295 \n\n1. Go to https://lbstyle.github.io/autofill.html\n2. Click somewhere\n3. Press down arrow, then press enter\n\n# Problem Description\nThe Autofill prompt might be hidden under the permission dialog, making it non-interactive or invisible.\n\n# S"
+}

@@ -386,9 +386,5 @@ This fix landed on 132, so it will receive a CVE when 132 Stable ships on 14 Jan
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> with the addition of the new and more security impactful POC in c#36, $5,000 for report of moderate impact security UI spoof
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40067914)*

@@ -258,9 +258,5 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 
 This V8 bug has been marked as either a release blocker or a vulnerability bug. V8 bugs affect all OSs supported by Chrome, so the OS field has been updated to reflect this. Please update the bug with the correct OS field if it only affects a subset of OSes.
 
-## Bounty Award
-
-> v8 sandbox bypass only demonstrating a read
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/441949792)*

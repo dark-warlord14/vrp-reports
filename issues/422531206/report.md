@@ -355,9 +355,5 @@ Bummer, but thanks for confirming.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> high quality web platform privilege escalation with a bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/422531206)*

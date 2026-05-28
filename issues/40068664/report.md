@@ -11,7 +11,7 @@
 | **Reporter** | ka...@gmail.com |
 | **Assignee** | yo...@chromium.org |
 | **Created** | 2023-08-03 |
-| **Bounty** | $10,000.00 |
+| **Bounty** | $11,000.00 |
 
 ## Description
 

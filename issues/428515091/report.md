@@ -654,9 +654,5 @@ Date: Mon Jun 30 13:25:17 2025
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Report of memory corruption in a highly-privileged process (GPU)
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/428515091)*

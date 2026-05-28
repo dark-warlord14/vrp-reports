@@ -19,9 +19,14 @@
   "assignee": "vs...@google.com",
   "created_date": "2025-11-14T07:22:54+00:00",
   "modified_date": "2026-02-28T12:44:00+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
-  "bounty_amount": 2000.0,
-  "bounty_rationale": "Heavily mitigated memory corruption in a non-sandboxed process",
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 71004691,

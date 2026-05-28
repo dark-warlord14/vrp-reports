@@ -289,9 +289,5 @@ Thank you both for your efforts on this issue. Based on the comments above and a
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of mitigated memory corruption in a sandboxed process / the renderer
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/415523530)*

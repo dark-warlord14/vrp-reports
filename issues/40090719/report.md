@@ -585,9 +585,5 @@ To opt-out from this automation rule, please add Optout-Blintz-Nextaction-Alert 
 
 re c#102, hi, yes that is correct. This issue is now publicly disclosed, so it is no longer restricted.
 
-## Bounty Award
-
-> report of lower impact user information disclosure
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40090719)*

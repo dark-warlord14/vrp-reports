@@ -1017,9 +1017,5 @@ Thank you very much. I have seen the payment invoice.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $2,000 for report of significantly mitigated memory corruption in a non-sandboxed project, mitigated by precondition for shutdown and UI gestures / user granting permissions + $1,000 patch bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/407315793)*

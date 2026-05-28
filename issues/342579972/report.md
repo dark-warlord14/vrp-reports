@@ -255,9 +255,5 @@ deleted
 
 deleted
 
-## Bounty Award
-
-> thank you reward -- while this report was the first report of this issue, a newer report of higher quality and demonstrating higher impact was also reported and helped to achieve the issue being prioritized and resolved
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/342579972)*

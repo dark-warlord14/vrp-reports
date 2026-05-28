@@ -309,9 +309,5 @@ Congratulations 303f06e3! Thank you for your efforts and reporting this issue to
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> high-quality report of memory corruption in a sandboxed process / renderer
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/400584607)*

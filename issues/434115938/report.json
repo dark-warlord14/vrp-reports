@@ -1,0 +1,51 @@
+{
+  "id": "434115938",
+  "url": "https://issues.chromium.org/issues/434115938",
+  "title": "Fatal error in V8 API due to microtask queue depth inconsistency during IndexedDB operation.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Blink>Bindings, Blink>JavaScript, Blink>Storage>IndexedDB",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "138.0.7186.0",
+  "cve_ids": [],
+  "reporter": "cj...@gmail.com",
+  "assignee": "ca...@google.com",
+  "created_date": "2025-07-25T13:21:51+00:00",
+  "modified_date": "2025-11-20T12:43:10+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": null,
+  "reward_amount_meta": 0.0,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 40,
+  "bounty_rationale": "Hello, thank you for the report. Based on our assessment, this does not appear to be any evidence of an exploitable security issue here and this appears to be a functional issue. Therefore, this report is unfortunately not eligible for a Chrome VRP reward.\n\nPlease note that the fact that this issue is not being rewarded does not mean that the product team won't fix the issue. We have filed a bug with the product team and they will review your report and decide if a fix is required. We'll let you",
+  "attachments": [
+    {
+      "id": 67902316,
+      "filename": "test.html",
+      "mime_type": "text/html",
+      "size_bytes": 478,
+      "url": "https://issues.chromium.org/action/issues/434115938/attachments/67902316?download=true",
+      "local_path": "attachments/test.html"
+    },
+    {
+      "id": 67923875,
+      "filename": "args.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 261298,
+      "url": "https://issues.chromium.org/action/issues/434115938/attachments/67923875?download=true",
+      "local_path": "attachments/args.txt"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "# Steps to reproduce the problem\n1.  gn gen out/IndexedDBDebug\n2. rm -rf /tmp/chrome-tmp && /chromium/src/out/IndexedDBDebug/chrome   --no-sandbox   --disable-gpu   --enable-logging=stderr     --user-data-dir=/tmp/chrome-tmp  /test.html\ntest.html: \n<!DOCTYPE html>\n<html><head><meta charset=\"UTF-8\"><"
+}

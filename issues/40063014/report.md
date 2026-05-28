@@ -150,9 +150,5 @@ Thank you for the report. Given the lower impact and low potential for user harm
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $500 reward for report of low impact issue
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40063014)*

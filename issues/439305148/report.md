@@ -579,9 +579,5 @@ Date: Wed Oct 1 02:06:46 2025
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> While this report didn't fully demonstrate memory corruption or RCE, we do believe this was a sufficient and high-impact report of a site-isolation bypass, qualifying for a $30,000 reward accordingly
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/439305148)*

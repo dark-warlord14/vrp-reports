@@ -447,9 +447,5 @@ Date:  Fri Feb 21 10:27:54 2025
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $10,000 for report of high-quality && high-impact security UI issue + $5,000 bonus for unique, novel cool bug -- this was a very neat discovery!
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/391788835)*

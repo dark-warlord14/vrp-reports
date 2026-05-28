@@ -294,9 +294,5 @@ Hi Amy,
 I assume getting paid via Bugcrowd is not possible when p2p-vrp has already been involved?
 Anyway, working on getting this done.
 
-## Bounty Award
-
-> $10,000 for high quality report of memory corruption in a non-sandboxed process + $1,000 bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/345960102)*

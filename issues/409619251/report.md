@@ -568,9 +568,5 @@ If you are interested in my code that I used to analyze the encoder behavior, fe
 
 Regarding the bounty - I understand that the GPU process is sandboxed on Windows, which means - according to my understanding - it falls in the middle of the three categories in the table (privileged process, where the GPU process is specifically mentioned. I conclude this refers to a sandboxed GPU process, because the unsandboxed Android GPU process is specified in the high category), which assigns $15000 bounty for a high-quality memory corruption report. If the GPU process was unsandboxed on Windows, I think it would fall into the high category (where the Android GPU process is specifically mentioned because it is unsandboxed). However, that's not the case and that's not what I was referring to - I was referring to the footnote [2] "Amounts are based on the precondition of a compromised renderer, otherwise the equivalent renderer reward will also be added.", which is present for both the middle and high categories. That's how I understood it, but maybe I am just reading it the wrong way. In any case, thanks a lot for the bounty that I already received!
 
-## Bounty Award
-
-> high-quality report of memory corruption in a highly privileged process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/409619251)*

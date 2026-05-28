@@ -195,9 +195,5 @@ In review of this issue, I believe this should have been assessed at low severit
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $2,000 for report of lower impact user information disclosure + $2,000 patch bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/391114799)*

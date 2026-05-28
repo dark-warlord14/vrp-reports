@@ -330,9 +330,5 @@ I've added the security release tag as well as the hotlist to ensure this issue 
 
 cc: pgrace@
 
-## Bounty Award
-
-> $5,000 for report of moderate impact exploitation mitigation bypass / security UI spoofing
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40068607)*

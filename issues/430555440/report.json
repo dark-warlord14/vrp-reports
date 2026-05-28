@@ -18,8 +18,13 @@
   "assignee": "ku...@google.com",
   "created_date": "2025-07-09T15:33:38+00:00",
   "modified_date": "2025-12-18T12:45:57+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
-  "bounty_amount": 0.0,
+  "bounty_amount": null,
+  "reward_amount_meta": 0.0,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 52,
   "bounty_rationale": "The panel believed this level of interaction is beyond what a “reasonable and prudent” user would do (see FAQ). if you can demonstrate programmatic ability to shift window off screen to hide suggestions the panel will consider a re-evaluation of this reward.\n\n\nNote that the fact that this issue is not being rewarded does not mean\nthat the product team won't fix the issue. We have filed a bug with the product\nteam and they will review your report and decide if a fix is required. We'll\nlet you kno",
   "attachments": [
     {

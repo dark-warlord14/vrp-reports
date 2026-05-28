@@ -601,9 +601,5 @@ Date: Tue Mar 10 04:02:22 2026
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Baseline / Lower Impact user information disclosure plus a bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/474435504)*

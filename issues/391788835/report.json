@@ -15,9 +15,14 @@
   "assignee": "me...@chromium.org",
   "created_date": "2025-01-23T17:43:03+00:00",
   "modified_date": "2025-08-12T01:05:06+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 15000.0,
-  "bounty_rationale": "$10,000 for report of high-quality && high-impact security UI issue + $5,000 bonus for unique, novel cool bug -- this was a very neat discovery!",
+  "reward_amount_meta": 15000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 62369093,

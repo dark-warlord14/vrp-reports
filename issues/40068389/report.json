@@ -18,8 +18,13 @@
   "assignee": "bc...@google.com",
   "created_date": "2023-07-30T23:09:39+00:00",
   "modified_date": "2026-03-05T16:41:40+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
-  "bounty_amount": 10000.0,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
   "bounty_rationale": null,
   "attachments": [
     {

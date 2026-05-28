@@ -1120,19 +1120,5 @@ Based on comment#25, not applicable fro LTS-120.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $100,115 MiraclePtr Bypass Reward (https://g.co/chrome/vrp#miracleptr-bypass-reward)!!!
-> 
-> Thank you for your efforts and helping us make Chrome more secure for all users!
-> 
-> Cheers,
-> Chrome VRP Panel Bot
-> 
-> 
-> P.S. Two other things we'd like to mention:
-> 
-> * Please do NOT publicly disclose details until a fix has been released to all our users. Early public disclosure may cancel the provisional reward. Also, please be considerate about disclosure when the bug affects a core library that may be used by oth
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/340122160)*

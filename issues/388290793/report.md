@@ -545,9 +545,5 @@ Labelling as not applicable for LTS 132, the related feature only shipped in 133
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> reward for demonstration of RCE in a sandboxed process / the renderer
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/388290793)*

@@ -189,9 +189,5 @@ Thank you for reporting this issue to us!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Thank you reward for allowing us to make a security relevant change to better protect out Chrome supply chain.
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40055191)*

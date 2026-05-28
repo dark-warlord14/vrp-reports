@@ -240,9 +240,5 @@ Congratulations on another one, Seunghyun! Thank you for your efforts researcher
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> V8 sandbox bypass report demonstrating attacker controlled control flow hijack
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/390639820)*

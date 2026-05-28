@@ -21,9 +21,14 @@
   "assignee": "ke...@google.com",
   "created_date": "2025-11-23T21:47:50+00:00",
   "modified_date": "2026-03-31T22:05:23+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 7000.0,
-  "bounty_rationale": "Web platform privilege escalation, high quality and high impact",
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 71235720,

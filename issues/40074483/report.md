@@ -197,19 +197,5 @@ This should have been triaged as SI-None since this specific to features that we
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Thank you for the report. Based on this as a low impact, low severity issue, the Chrome VRP Panel has decided to award you $500 for this report. 
-> 
-> Thank you for your efforts and helping us make Chrome more secure for all users!
-> 
-> Cheers,
-> Chrome VRP Panel Bot
-> 
-> 
-> P.S. Two other things we'd like to mention:
-> 
-> * Please do NOT publicly disclose details until a fix has been released to all our users. Early public disclosure may cancel the provisional reward. Also, please be considerate about disclosure w
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40074483)*

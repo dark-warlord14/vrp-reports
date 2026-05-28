@@ -11,7 +11,7 @@
 | **Reporter** | al...@alesandroortiz.com |
 | **Assignee** | en...@google.com |
 | **Created** | 2023-09-21 |
-| **Bounty** | $7,500.00 |
+| **Bounty** | $8,500.00 |
 
 ## Description
 

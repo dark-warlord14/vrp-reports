@@ -673,9 +673,5 @@ Date:  Thu May 29 20:20:51 2025
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $10,000 for report of mildly mitigated memory corruption in a sandboxed process + $1,000 bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/405292639)*

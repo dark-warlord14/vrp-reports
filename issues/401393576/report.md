@@ -867,9 +867,5 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of moderately mitigated memory corruption in a non-sandboxed process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/401393576)*

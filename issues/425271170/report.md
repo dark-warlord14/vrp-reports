@@ -308,9 +308,5 @@ Thank you for your report to us and upstream that resulted in the fix for this i
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Thank you reward for report that result in backmerges of GPU driver change upstream
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/425271170)*

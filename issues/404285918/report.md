@@ -312,9 +312,5 @@ Congratulations Seunghyun! Thank you for your continued efforts hunting in the V
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> V8 sandbox bypass report demonstrating control of stack and control flow outside the V8 sandbox
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/404285918)*

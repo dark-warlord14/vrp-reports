@@ -227,9 +227,5 @@ Updating OSes as this does not appear to be a Mac specific issue (but please cor
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Thank you reward for report of issue with low potential for user harm and issue requiring the user engage with the downloads workflow in a non-standard way. We were able to make a beneficial change from this report, so we wanted to acknowledge that contribution with a small reward.
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/392818696)*

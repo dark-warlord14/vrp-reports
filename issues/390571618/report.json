@@ -15,9 +15,14 @@
   "assignee": "ke...@chromium.org",
   "created_date": "2025-01-18T03:37:50+00:00",
   "modified_date": "2026-01-30T14:42:15+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 3000.0,
-  "bounty_rationale": "Baseline / Lower Impact Security UI spoofing",
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 62263762,

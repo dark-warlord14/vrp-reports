@@ -833,9 +833,5 @@ return false; // Prevent cross-extension/site-to-extension dynamic import hijack
 return true;
 }
 
-## Bounty Award
-
-> report of high quality, moderate impact user information web platform privilege escalation with information disclosure
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/371011220)*

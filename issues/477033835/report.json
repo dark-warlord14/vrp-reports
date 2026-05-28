@@ -18,9 +18,14 @@
   "assignee": "ts...@chromium.org",
   "created_date": "2026-01-19T21:15:03+00:00",
   "modified_date": "2026-05-14T07:56:45+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 11000.0,
-  "bounty_rationale": "Renderer RCE / memory corruption in a sandboxed process",
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 72628329,

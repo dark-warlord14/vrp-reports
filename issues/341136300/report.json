@@ -1,0 +1,105 @@
+{
+  "id": "341136300",
+  "url": "https://issues.chromium.org/issues/341136300",
+  "title": "Extensions can run JS on any priveledged origin by using chrome.devtools.inspectedWindow.reload and crashing the page",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ad...@gmail.com",
+  "assignee": "pf...@google.com",
+  "created_date": "2024-05-16T20:39:13+00:00",
+  "modified_date": "2025-01-21T11:55:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": null,
+  "reward_amount_meta": 0.0,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 74,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 56445089,
+      "filename": "devtools.html",
+      "mime_type": "text/html",
+      "size_bytes": 73,
+      "url": "https://issues.chromium.org/action/issues/341136300/attachments/56445089?download=true",
+      "local_path": "attachments/devtools.html"
+    },
+    {
+      "id": 56445090,
+      "filename": "devtools.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1307,
+      "url": "https://issues.chromium.org/action/issues/341136300/attachments/56445090?download=true",
+      "local_path": "attachments/devtools.js"
+    },
+    {
+      "id": 56445091,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 274,
+      "url": "https://issues.chromium.org/action/issues/341136300/attachments/56445091?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 56445092,
+      "filename": "worker.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 149,
+      "url": "https://issues.chromium.org/action/issues/341136300/attachments/56445092?download=true",
+      "local_path": "attachments/worker.js"
+    },
+    {
+      "id": 56445093,
+      "filename": "fix-devtools-reload-bug.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 817,
+      "url": "https://issues.chromium.org/action/issues/341136300/attachments/56445093?download=true",
+      "local_path": "attachments/fix-devtools-reload-bug.patch"
+    },
+    {
+      "id": 56445094,
+      "filename": "chrome_devtools_exploit.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 803360,
+      "url": "https://issues.chromium.org/action/issues/341136300/attachments/56445094?download=true",
+      "local_path": "attachments/chrome_devtools_exploit.mp4"
+    },
+    {
+      "id": 56647205,
+      "filename": "chrome_devtools_bug.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 948928,
+      "url": "https://issues.chromium.org/action/issues/341136300/attachments/56647205?download=true",
+      "local_path": "attachments/chrome_devtools_bug.mp4"
+    },
+    {
+      "id": 56648867,
+      "filename": "Screenshot_2024-05-24_09-54-39.png",
+      "mime_type": "image/png",
+      "size_bytes": 79178,
+      "url": "https://issues.chromium.org/action/issues/341136300/attachments/56648867?download=true",
+      "local_path": "attachments/Screenshot_2024-05-24_09-54-39.png"
+    },
+    {
+      "id": 56647206,
+      "filename": "devtools.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1307,
+      "url": "https://issues.chromium.org/action/issues/341136300/attachments/56647206?download=true",
+      "local_path": "attachments/devtools.js"
+    }
+  ],
+  "update_count": 93,
+  "description_snippet": "As requested, I am submitted this as a separate issue. The original bug report (with the full chain leading to a sandbox escape) is located at https://issues.chromium.org/issues/338248595 \n\n## VULNERABILITY DETAILS\n1. The user opens devtools on any unprivileged page, which will load our devtools ext"
+}

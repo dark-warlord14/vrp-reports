@@ -216,9 +216,5 @@ Since this is mitigated to being constrained to being exploitable on specific si
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> $2,000 for report of low-to-moderate impact exploit mitigation bypass
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40942069)*

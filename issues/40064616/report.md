@@ -347,9 +347,5 @@ Thank you for disclosing this issue to us ahead of publication. While we do not 
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Thank you for report demonstrating a security impact resulting that helped valid our planned work and prioritization of partitioning of :visited links history.
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40064616)*

@@ -1022,9 +1022,5 @@ Congratulations @ha... fantastic work! Finding a reliable sandbox escape and pro
 
 deleted
 
-## Bounty Award
-
-> report demonstrating a Chrome sandbox escape -- while arguably there is a race here, this is a very complex logic bug and high quality report with a functional exploit, with good analysis and demonstration of a sandbox escape. This is amazing work and the type of researcher we want to reward with these types of rewards and incentivize future investment in this type of research
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/412578726)*

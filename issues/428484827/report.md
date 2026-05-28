@@ -225,9 +225,5 @@ Please contact security-vrp@chromium.org with any questions.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> permission prompt spoof but the origin is correct so mitigated
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/428484827)*

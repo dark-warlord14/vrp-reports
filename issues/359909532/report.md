@@ -551,9 +551,5 @@ https://chromium-review.googlesource.com/5872307
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> baseline report of memory corruption a highly-privileged process (GPU)
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/359909532)*

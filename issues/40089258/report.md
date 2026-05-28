@@ -437,9 +437,5 @@ In the interim, we've gone ahead and assessed it for VRP reward as well. Cheers!
 
 Thanks!
 
-## Bounty Award
-
-> report of lower impact web platform privilege escalation
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40089258)*

@@ -11,7 +11,7 @@
 | **Reporter** | zh...@gmail.com |
 | **Assignee** | ni...@intel.com |
 | **Created** | 2024-01-09 |
-| **Bounty** | $10,000.00 |
+| **Bounty** | $11,000.00 |
 
 ## Description
 

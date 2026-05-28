@@ -159,9 +159,5 @@ Please unrestrict pocs, description and comments.
 
 hi sorry i have unrestricted it thank you
 
-## Bounty Award
-
-> $1,000 comprehensive reward for multiple reports of this low impact security UI issue in various places in Permission Element (for issue 428455319, 429440615, 433820888, 437510229, and not yet resolved issues 429270814 and 425159951)
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/428455319)*

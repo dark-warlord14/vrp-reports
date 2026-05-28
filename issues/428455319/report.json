@@ -19,9 +19,14 @@
   "assignee": "an...@chromium.org",
   "created_date": "2025-06-29T13:59:55+00:00",
   "modified_date": "2025-11-07T23:31:48+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 1000.0,
-  "bounty_rationale": "$1,000 comprehensive reward for multiple reports of this low impact security UI issue in various places in Permission Element (for issue 428455319, 429440615, 433820888, 437510229, and not yet resolved issues 429270814 and 425159951)",
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 67152916,

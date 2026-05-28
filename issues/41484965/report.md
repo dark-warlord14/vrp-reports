@@ -294,9 +294,5 @@ Please contact security-vrp@chromium.org with any questions.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> for pointing out a potential gap in our policy enforcement
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/41484965)*

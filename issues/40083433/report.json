@@ -1,0 +1,60 @@
+{
+  "id": "40083433",
+  "url": "https://issues.chromium.org/issues/40083433",
+  "title": "Security: Prompt boxes steal focus in popups",
+  "status": "Accepted",
+  "severity": "Unknown",
+  "priority": "P3",
+  "component": "Blink>HTML",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "dy...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2015-12-22T06:07:50+00:00",
+  "modified_date": "2025-07-02T17:51:42+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53223991,
+      "filename": "KeyLogger-PoC.html",
+      "mime_type": "text/html",
+      "size_bytes": 1261,
+      "url": "https://issues.chromium.org/action/issues/40083433/attachments/53223991?download=true",
+      "local_path": "attachments/KeyLogger-PoC.html"
+    },
+    {
+      "id": 53224153,
+      "filename": "KeyLogger-PoC.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1278,
+      "url": "https://issues.chromium.org/action/issues/40083433/attachments/53224153?download=true",
+      "local_path": "attachments/KeyLogger-PoC.html"
+    },
+    {
+      "id": 60673043,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1295,
+      "url": "https://issues.chromium.org/action/issues/40083433/attachments/60673043?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 67133769,
+      "filename": "Screenshot 2025-06-27 at 2.05.57 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 210003,
+      "url": "https://issues.chromium.org/action/issues/40083433/attachments/67133769?download=true",
+      "local_path": "attachments/Screenshot 2025-06-27 at 2.05.57 PM.png"
+    }
+  ],
+  "update_count": 140,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nHello! This may seem trivial, but I've written a proof of concept. Using another bug I've reported to you (https://crbug.com/chromium/467329), chained with this one, I've managed to create a semi-effective keylogger that runs in the background and has the ability to gath"
+}

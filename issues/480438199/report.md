@@ -634,9 +634,5 @@ If there was a change to the classification of such bugs I'm sorry for causing t
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> High-quality report of demonstrated memory corruption in a sandboxed process plus a bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/480438199)*

@@ -227,9 +227,5 @@ Hi, thanks for the bounty. You can credit: Simon Rawet.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of moderate impact web platform privilege escalation
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/401823929)*

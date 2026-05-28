@@ -11,7 +11,7 @@
 | **Reporter** | al...@alesandroortiz.com |
 | **Assignee** | fi...@chromium.org |
 | **Created** | 2022-09-23 |
-| **Bounty** | $500.00 |
+| **Bounty** | $1,000.00 |
 
 ## Description
 

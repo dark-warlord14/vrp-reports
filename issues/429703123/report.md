@@ -578,9 +578,5 @@ As usual, please mark the rewards towards charity, thanks!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of V8 sandbox bypass demonstrating arbitrary code execution outside the V8 heap sandbox
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/429703123)*

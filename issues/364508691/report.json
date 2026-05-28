@@ -1,0 +1,62 @@
+{
+  "id": "364508691",
+  "url": "https://issues.chromium.org/issues/364508691",
+  "title": "Security: `Android` Top-level redirect from cross-origin iframe by setting `Content-Security-Policy: sandbox allow-top-navigation` Bypass of Issue 1251790",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>PopupBlocker",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "el...@gmail.com",
+  "assignee": "lb...@google.com",
+  "created_date": "2024-09-04T17:21:08+00:00",
+  "modified_date": "2025-11-26T12:45:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 59141034,
+      "filename": "allow.html",
+      "mime_type": "text/html",
+      "size_bytes": 2410,
+      "url": "https://issues.chromium.org/action/issues/364508691/attachments/59141034?download=true",
+      "local_path": "attachments/allow.html"
+    },
+    {
+      "id": 59141035,
+      "filename": "CANARY_130.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5424168,
+      "url": "https://issues.chromium.org/action/issues/364508691/attachments/59141035?download=true",
+      "local_path": "attachments/CANARY_130.mp4"
+    },
+    {
+      "id": 59141036,
+      "filename": "Chrome_128.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5553200,
+      "url": "https://issues.chromium.org/action/issues/364508691/attachments/59141036?download=true",
+      "local_path": "attachments/Chrome_128.mp4"
+    },
+    {
+      "id": 59155861,
+      "filename": "demo.htm",
+      "mime_type": "text/html",
+      "size_bytes": 67,
+      "url": "https://issues.chromium.org/action/issues/364508691/attachments/59155861?download=true",
+      "local_path": "attachments/demo.htm"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

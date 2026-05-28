@@ -1800,9 +1800,5 @@ https://chromium-review.googlesource.com/5644917
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> mildly mitigated (very racy) memory corruption in the GPU process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40942995)*

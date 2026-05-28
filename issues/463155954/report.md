@@ -854,9 +854,5 @@ Opening access. Thanks for the update.
 
 For payment please follow the instructions in comment 47.
 
-## Bounty Award
-
-> Web platform privilege escalation, high quality and high impact
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/463155954)*

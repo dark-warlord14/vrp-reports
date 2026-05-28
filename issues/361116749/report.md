@@ -356,9 +356,5 @@ I believe my report should be acknowledged and accepted just as well as this one
 
 Would appreciate your response on this, thanks.
 
-## Bounty Award
-
-> report of lower impact exploitation mitigation bypass, mitigated due to preconditions of lack of remote exploitability and user interaction
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/361116749)*

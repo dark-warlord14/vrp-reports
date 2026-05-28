@@ -583,9 +583,5 @@ deleted
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Renderer memory corruption in a sandboxed process with high-quality report demonstrating controlled write
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/450618029)*

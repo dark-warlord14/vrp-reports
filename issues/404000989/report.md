@@ -12,7 +12,7 @@
 | **Reporter** | da...@gmail.com |
 | **Assignee** | dc...@chromium.org |
 | **Created** | 2025-03-16 |
-| **Bounty** | $2,000.00 |
+| **Bounty** | $3,000.00 |
 
 ## Description
 
@@ -304,10 +304,6 @@ P.S. One other thing we'd like to mention:
 * Please do NOT publicly disclose details until a fix has been released to all our users. Early public disclosure may cancel the provisional reward. Also, please be considerate about disclosure when the bug affects a core library that may be used by other products. Please do NOT share this information with third parties who are not directly involved in fixing the bug. Doing so may cancel the provisional reward. Please be honest if you have already disclosed anything publicly or to third parties. Lastly, we understand that some of you are not interested in money. We offer the option to donate your reward to an eligible charity. If you prefer this option, let us know and we will also match your donation - subject to our discretion. Any rewards that are unclaimed after 12 months will be donated to a charity of our choosing.
 
 Please contact security-vrp@chromium.org with any questions.
-
-## Bounty Award
-
-> report of lower impact information disclosure
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/404000989)*

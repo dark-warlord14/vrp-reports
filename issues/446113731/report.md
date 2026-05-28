@@ -364,9 +364,5 @@ Updating Security\_Impact hotlist since the code changes didn't go out until M14
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> High-quality report with demonstration of RCE in a sandboxed process
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/446113731)*

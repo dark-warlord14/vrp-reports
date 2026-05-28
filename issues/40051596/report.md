@@ -436,9 +436,5 @@ Congratulations David! Thank you for past efforts (almost five years back) and r
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of lower impact security UI spoof
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40051596)*

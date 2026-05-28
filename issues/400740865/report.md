@@ -11,7 +11,7 @@
 | **Reporter** | s3...@gmx.net |
 | **Assignee** | ga...@chromium.org |
 | **Created** | 2025-03-04 |
-| **Bounty** | $5,000.00 |
+| **Bounty** | $10,000.00 |
 
 ## Description
 
@@ -379,10 +379,6 @@ Sandro
 ### ch...@google.com (2025-06-14)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> high-quality report of moderate impact local privilege escalation
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/400740865)*

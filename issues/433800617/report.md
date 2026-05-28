@@ -11,7 +11,7 @@
 | **Reporter** | al...@alesandroortiz.com |
 | **Assignee** | cr...@chromium.org |
 | **Created** | 2025-07-23 |
-| **Bounty** | $5,000.00 |
+| **Bounty** | $7,000.00 |
 
 ## Description
 
@@ -835,10 +835,6 @@ Date: Fri Sep 26 19:51:29 2025
 ### ch...@google.com (2025-11-05)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> high quality report of mitigated site isolation bypass / user information disclosure, requiring compromised renderer, user interaction, and not covert / can be quite apparent to a user during exploitation
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/433800617)*

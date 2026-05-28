@@ -302,9 +302,5 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 
 i think this report have only one exploit and your old one have two bugs maybe btw i am big fan of you bro.
 
-## Bounty Award
-
-> report of lower impact exploitation mitigation bypass
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/335611025)*

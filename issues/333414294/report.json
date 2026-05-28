@@ -15,9 +15,14 @@
   "assignee": "am...@google.com",
   "created_date": "2024-04-09T12:10:31+00:00",
   "modified_date": "2026-03-27T17:01:53+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 10000.0,
-  "bounty_rationale": "$10,000 for this report of memory corruption in the GPU process \n\nThank you for your efforts and helping us make Chrome more secure for all users!\n\nCheers,\nChrome VRP Panel Bot\n\n\nP.S. Two other things we'd like to mention:\n\n* Please do NOT publicly disclose details until a fix has been released to all our users. Early public disclosure may cancel the provisional reward. Also, please be considerate about disclosure when the bug affects a core library that may be used by other products. Please do ",
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 55329211,

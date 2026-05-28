@@ -18,9 +18,14 @@
   "assignee": "jl...@chromium.org",
   "created_date": "2024-10-02T19:32:32+00:00",
   "modified_date": "2026-02-25T23:16:21+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 10000.0,
-  "bounty_rationale": "report of high quality, moderate impact user information web platform privilege escalation with information disclosure",
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 59802611,

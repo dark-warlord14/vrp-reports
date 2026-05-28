@@ -1,0 +1,139 @@
+{
+  "id": "393431136",
+  "url": "https://issues.chromium.org/issues/393431136",
+  "title": "Fake Downloads and Deceptive Notifications through Browsing History Manipulation.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Downloads, UI>Browser>Navigation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "qi...@chromium.org",
+  "created_date": "2025-01-30T23:21:53+00:00",
+  "modified_date": "2025-05-16T12:43:37+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 62538147,
+      "filename": "empty.html",
+      "mime_type": "text/html",
+      "size_bytes": 4,
+      "url": "https://issues.chromium.org/action/issues/393431136/attachments/62538147?download=true",
+      "local_path": "attachments/empty.html"
+    },
+    {
+      "id": 62538148,
+      "filename": "googledown.html",
+      "mime_type": "text/html",
+      "size_bytes": 371,
+      "url": "https://issues.chromium.org/action/issues/393431136/attachments/62538148?download=true",
+      "local_path": "attachments/googledown.html"
+    },
+    {
+      "id": 62538149,
+      "filename": "googledowner.html",
+      "mime_type": "text/html",
+      "size_bytes": 803,
+      "url": "https://issues.chromium.org/action/issues/393431136/attachments/62538149?download=true",
+      "local_path": "attachments/googledowner.html"
+    },
+    {
+      "id": 62538150,
+      "filename": "googledowner.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 996447,
+      "url": "https://issues.chromium.org/action/issues/393431136/attachments/62538150?download=true",
+      "local_path": "attachments/googledowner.mp4"
+    },
+    {
+      "id": 62537476,
+      "filename": "googledown.php",
+      "mime_type": "application/x-httpd-php",
+      "size_bytes": 371,
+      "url": "https://issues.chromium.org/action/issues/393431136/attachments/62537476?download=true",
+      "local_path": "attachments/googledown.php"
+    },
+    {
+      "id": 62539129,
+      "filename": "Chrome_Actual_behaviour.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1281788,
+      "url": "https://issues.chromium.org/action/issues/393431136/attachments/62539129?download=true",
+      "local_path": "attachments/Chrome_Actual_behaviour.mp4"
+    },
+    {
+      "id": 62549679,
+      "filename": "empty.html",
+      "mime_type": "text/html",
+      "size_bytes": 4,
+      "url": "https://issues.chromium.org/action/issues/393431136/attachments/62549679?download=true",
+      "local_path": "attachments/empty.html"
+    },
+    {
+      "id": 62549680,
+      "filename": "googledown.php",
+      "mime_type": "application/x-httpd-php",
+      "size_bytes": 371,
+      "url": "https://issues.chromium.org/action/issues/393431136/attachments/62549680?download=true",
+      "local_path": "attachments/googledown.php"
+    },
+    {
+      "id": 62556616,
+      "filename": "googledowner.html",
+      "mime_type": "text/html",
+      "size_bytes": 803,
+      "url": "https://issues.chromium.org/action/issues/393431136/attachments/62556616?download=true",
+      "local_path": "attachments/googledowner.html"
+    },
+    {
+      "id": 62644173,
+      "filename": "wincloser.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1163812,
+      "url": "https://issues.chromium.org/action/issues/393431136/attachments/62644173?download=true",
+      "local_path": "attachments/wincloser.mp4"
+    },
+    {
+      "id": 62644151,
+      "filename": "empty.html",
+      "mime_type": "text/html",
+      "size_bytes": 4,
+      "url": "https://issues.chromium.org/action/issues/393431136/attachments/62644151?download=true",
+      "local_path": "attachments/empty.html"
+    },
+    {
+      "id": 62644174,
+      "filename": "googledownertest.html",
+      "mime_type": "text/html",
+      "size_bytes": 816,
+      "url": "https://issues.chromium.org/action/issues/393431136/attachments/62644174?download=true",
+      "local_path": "attachments/googledownertest.html"
+    },
+    {
+      "id": 62644152,
+      "filename": "googledown.php",
+      "mime_type": "application/x-httpd-php",
+      "size_bytes": 371,
+      "url": "https://issues.chromium.org/action/issues/393431136/attachments/62644152?download=true",
+      "local_path": "attachments/googledown.php"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

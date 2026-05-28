@@ -726,9 +726,5 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 
 Removing `Clusterfuzz-ignore` hotlist from some old bugs as it's preventing Clusterfuzz from filing similar bugs.
 
-## Bounty Award
-
-> report of V8 sandbox bypass demonstrating memory corruption outside the V8 heap sandbox
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/427918760)*

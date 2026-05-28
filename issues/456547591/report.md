@@ -424,9 +424,5 @@ Thanks for the reward! I have an additional request, if this bug is showcased in
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> High-quality report of demonstrated memory corruption in a sandboxed renderer process with a bisect bonus
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/456547591)*

@@ -19,9 +19,14 @@
   "assignee": "jk...@chromium.org",
   "created_date": "2025-01-15T13:02:59+00:00",
   "modified_date": "2025-04-26T12:38:11+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 5000.0,
-  "bounty_rationale": "V8 sandbox bypass demonstrating memory corruption outside the sandbox",
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 62176622,

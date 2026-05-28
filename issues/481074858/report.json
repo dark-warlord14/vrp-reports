@@ -1,0 +1,51 @@
+{
+  "id": "481074858",
+  "url": "https://issues.chromium.org/issues/481074858",
+  "title": "V8: Integer Truncation in Turboshaft PhiOp input_count via WASM br_table",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ca...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2026-02-03T04:46:16+00:00",
+  "modified_date": "2026-05-24T07:59:26+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73064206,
+      "filename": "poc-v1.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 6031,
+      "url": "https://issues.chromium.org/action/issues/481074858/attachments/73064206?download=true",
+      "local_path": "attachments/poc-v1.js"
+    },
+    {
+      "id": 73064207,
+      "filename": "poc-v2.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 6474,
+      "url": "https://issues.chromium.org/action/issues/481074858/attachments/73064207?download=true",
+      "local_path": "attachments/poc-v2.js"
+    }
+  ],
+  "update_count": 105,
+  "description_snippet": "## VULNERABILITY DETAILS\n\n### Summary\n\nThis is an integer truncation vulnerability in V8's Turboshaft compiler when processing WASM br_table instructions. The `Operation::input_count` field is a `uint16_t` (max 65535), but multiple br_table instructions targeting the same merge block can produce mor"
+}

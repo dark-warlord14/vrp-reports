@@ -15,9 +15,14 @@
   "assignee": "jr...@google.com",
   "created_date": "2024-07-22T10:34:04+00:00",
   "modified_date": "2026-03-05T16:41:35+00:00",
+  "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 1000.0,
-  "bounty_rationale": "Report of ICE in GPU process, this is generally not considered a security issue and results in a safe crash and there was no demonstration or evidence of memory corruption based on the report. Since we were able to make a potentially security relevant change, we did want to extend a reward for this report.",
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 58104414,

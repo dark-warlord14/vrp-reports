@@ -1,0 +1,83 @@
+{
+  "id": "377803496",
+  "url": "https://issues.chromium.org/issues/377803496",
+  "title": "MiraclePtr bypass due to PtrCount overflow",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": "124.0.0.0",
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "gl...@google.com",
+  "created_date": "2024-11-07T14:27:03+00:00",
+  "modified_date": "2026-03-18T16:23:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 100115.0,
+  "reward_amount_meta": 100115.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 60658114,
+      "filename": "patch1.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 6180,
+      "url": "https://issues.chromium.org/action/issues/377803496/attachments/60658114?download=true",
+      "local_path": "attachments/patch1.diff"
+    },
+    {
+      "id": 60658115,
+      "filename": "patch2.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 2727,
+      "url": "https://issues.chromium.org/action/issues/377803496/attachments/60658115?download=true",
+      "local_path": "attachments/patch2.diff"
+    },
+    {
+      "id": 60658116,
+      "filename": "copy_mojo_js_bindings.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 653,
+      "url": "https://issues.chromium.org/action/issues/377803496/attachments/60658116?download=true",
+      "local_path": "attachments/copy_mojo_js_bindings.py"
+    },
+    {
+      "id": 60658117,
+      "filename": "miracle.html",
+      "mime_type": "text/html",
+      "size_bytes": 888,
+      "url": "https://issues.chromium.org/action/issues/377803496/attachments/60658117?download=true",
+      "local_path": "attachments/miracle.html"
+    },
+    {
+      "id": 60658118,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18676,
+      "url": "https://issues.chromium.org/action/issues/377803496/attachments/60658118?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 60658119,
+      "filename": "fix.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1041,
+      "url": "https://issues.chromium.org/action/issues/377803496/attachments/60658119?download=true",
+      "local_path": "attachments/fix.diff"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "# PROBLEM DETAILS\n\n## Root Cause Analysis\n\nPartitionAlloc supports multi-threaded allocations. When BRP is enabled, each slot contains a metadata field to store information such as refcount, which also supports read/write in parallel.\n\nIn the function `PartitionRoot::FreeNoHooksImmediate`:\n\n```C++"
+}

@@ -571,9 +571,5 @@ Cheers, thanks for the full context!
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> high quality report of lower-end of moderate user information disclosure; there was some sufficient and specific gestures here need here to make this possible
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/428189824)*

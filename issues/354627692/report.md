@@ -220,9 +220,5 @@ Looking back we did extend a higher reward for [crbug.com/342840932](https://crb
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> Report of ICE in GPU process, this is generally not considered a security issue and results in a safe crash and there was no demonstration or evidence of memory corruption based on the report. Since we were able to make a potentially security relevant change, we did want to extend a reward for this report.
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/354627692)*

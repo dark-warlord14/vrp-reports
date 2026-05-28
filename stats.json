@@ -1,11 +1,11 @@
 {
-  "total_reports": 1998,
-  "total_bounty": 13943789.0,
-  "avg_bounty": 7028.12,
+  "total_reports": 2021,
+  "total_bounty": 14601354.0,
+  "avg_bounty": 7344.75,
   "by_year": {
     "2015": {
-      "count": 37,
-      "total_bounty": 81337.0
+      "count": 38,
+      "total_bounty": 82337.0
     },
     "2016": {
       "count": 43,
@@ -16,8 +16,8 @@
       "total_bounty": 97000.0
     },
     "2018": {
-      "count": 24,
-      "total_bounty": 37000.0
+      "count": 22,
+      "total_bounty": 32000.0
     },
     "2019": {
       "count": 17,
@@ -25,64 +25,65 @@
     },
     "2020": {
       "count": 154,
-      "total_bounty": 1024500.0
+      "total_bounty": 1026700.0
     },
     "2021": {
-      "count": 369,
-      "total_bounty": 2948000.0
+      "count": 370,
+      "total_bounty": 2956000.0
     },
     "2022": {
       "count": 446,
-      "total_bounty": 2752000.0
+      "total_bounty": 2866000.0
     },
     "2023": {
       "count": 460,
-      "total_bounty": 2466587.0
+      "total_bounty": 2641337.0
     },
     "2024": {
-      "count": 102,
-      "total_bounty": 904365.0
+      "count": 116,
+      "total_bounty": 1165480.0
     },
     "2025": {
-      "count": 263,
-      "total_bounty": 3144500.0
+      "count": 279,
+      "total_bounty": 3268000.0
     },
     "2026": {
-      "count": 37,
-      "total_bounty": 334000.0
+      "count": 35,
+      "total_bounty": 312000.0
     }
   },
   "by_severity": {
-    "S3-Low": 1785,
-    "S4-Minimal": 204,
-    "Unknown": 5,
-    "S1-High": 4
+    "S3-Low": 1804,
+    "S4-Minimal": 207,
+    "S1-High": 5,
+    "Unknown": 4,
+    "S0-Critical": 1
   },
   "by_status": {
-    "Assigned": 1534,
-    "Accepted": 355,
-    "Fixed": 60,
-    "New": 31,
-    "Verified": 13,
-    "Unknown": 5
+    "Assigned": 1552,
+    "Accepted": 362,
+    "Fixed": 61,
+    "New": 30,
+    "Verified": 15,
+    "Unknown": 1
   },
   "by_component": {
-    "Blink": 888,
-    "Internals": 373,
-    "UI": 363,
-    "Platform": 142,
-    "Unknown": 125,
+    "Blink": 906,
+    "Internals": 372,
+    "UI": 367,
+    "Platform": 144,
+    "Unknown": 123,
     "Mobile": 31,
-    "Dawn": 29,
+    "Dawn": 30,
     "Enterprise": 10,
     "OS": 7,
     "Speed": 4,
     "IO": 4,
     "Services (Use Subcomponents)": 3,
+    "Privacy, UI": 3,
     "Privacy": 3,
     "PDFium": 2,
     "Dawn, Dawn": 2,
-    "Privacy, UI": 2,
     "Enterprise, Platform": 2,
     "Infra": 2,
     "Test (Use Subcomponents)": 1,
@@ -91,31 +92,31 @@
   "bounty_histogram": [
     {
       "range": "$0-500",
-      "count": 14
+      "count": 1
     },
     {
       "range": "$500-1K",
-      "count": 109
+      "count": 108
     },
     {
       "range": "$1K-3K",
-      "count": 511
+      "count": 492
     },
     {
       "range": "$3K-5K",
-      "count": 275
+      "count": 291
     },
     {
       "range": "$5K-10K",
-      "count": 608
+      "count": 619
     },
     {
       "range": "$10K-20K",
-      "count": 294
+      "count": 298
     },
     {
       "range": "$20K+",
-      "count": 173
+      "count": 179
     }
   ],
   "top_bounties": [
@@ -134,11 +135,25 @@
       "year": 2025
     },
     {
+      "id": "377803496",
+      "title": "MiraclePtr bypass due to PtrCount overflow",
+      "bounty_amount": 100115.0,
+      "severity": "S3-Low",
+      "year": 2024
+    },
+    {
       "id": "340122160",
       "title": "MiraclePtr bypass due to PtrCount overflow",
       "bounty_amount": 100115.0,
       "severity": "S3-Low",
       "year": 2024
+    },
+    {
+      "id": "446722008",
+      "title": "heap-use-after-free in content::indexed_db::Database::connections_ when force_closing_ is true",
+      "bounty_amount": 100000.0,
+      "severity": "S3-Low",
+      "year": 2025
     },
     {
       "id": "433533359",
@@ -241,20 +256,6 @@
     {
       "id": "454485895",
       "title": "Incorrect Optimization of ArrayConstructor by Maglev Leads to Creation of Malformed JSArray Objects",
-      "bounty_amount": 50000.0,
-      "severity": "S3-Low",
-      "year": 2025
-    },
-    {
-      "id": "450618029",
-      "title": "TDZ check elision leading to hole leak",
-      "bounty_amount": 50000.0,
-      "severity": "S3-Low",
-      "year": 2025
-    },
-    {
-      "id": "447613211",
-      "title": "Type confusion in inline cache prototype loading with Webassembly object prototype",
       "bounty_amount": 50000.0,
       "severity": "S3-Low",
       "year": 2025

@@ -180,9 +180,5 @@ Please contact security-vrp@chromium.org with any questions.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
-## Bounty Award
-
-> report of lower impact security UI issue with low potential for exploitation and security implications, but did allow us to make a security beneficial change
-
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40075024)*
