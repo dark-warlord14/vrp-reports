@@ -1,0 +1,185 @@
+{
+  "id": "338233148",
+  "url": "https://issues.chromium.org/issues/338233148",
+  "title": "Security: FedCM prompt bubble renders outside of opening window, causing various issues",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Identity>FedCM",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "ta...@google.com",
+  "created_date": "2024-05-01T21:16:29+00:00",
+  "modified_date": "2024-08-23T15:45:09+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 55997113,
+      "filename": "fedcm-placement.html",
+      "mime_type": "text/html",
+      "size_bytes": 427,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/55997113?download=true",
+      "local_path": "attachments/fedcm-placement.html"
+    },
+    {
+      "id": 55997114,
+      "filename": "fedcm-overlay.html",
+      "mime_type": "text/html",
+      "size_bytes": 1309,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/55997114?download=true",
+      "local_path": "attachments/fedcm-overlay.html"
+    },
+    {
+      "id": 55997115,
+      "filename": "fedcm-offscreen.html",
+      "mime_type": "text/html",
+      "size_bytes": 1325,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/55997115?download=true",
+      "local_path": "attachments/fedcm-offscreen.html"
+    },
+    {
+      "id": 55997116,
+      "filename": "fedcm-perm-obscured.html",
+      "mime_type": "text/html",
+      "size_bytes": 2632,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/55997116?download=true",
+      "local_path": "attachments/fedcm-perm-obscured.html"
+    },
+    {
+      "id": 55997117,
+      "filename": "old-chrome.png",
+      "mime_type": "image/png",
+      "size_bytes": 273025,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/55997117?download=true",
+      "local_path": "attachments/old-chrome.png"
+    },
+    {
+      "id": 55997118,
+      "filename": "old-chrome-expanded.png",
+      "mime_type": "image/png",
+      "size_bytes": 203733,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/55997118?download=true",
+      "local_path": "attachments/old-chrome-expanded.png"
+    },
+    {
+      "id": 55997119,
+      "filename": "fedcm-placement.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 27593486,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/55997119?download=true",
+      "local_path": "attachments/fedcm-placement.mp4"
+    },
+    {
+      "id": 55997120,
+      "filename": "fedcm-placement-google-quora.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 23201218,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/55997120?download=true",
+      "local_path": "attachments/fedcm-placement-google-quora.mp4"
+    },
+    {
+      "id": 56004364,
+      "filename": "fedcm-overlay.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3423450,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/56004364?download=true",
+      "local_path": "attachments/fedcm-overlay.mp4"
+    },
+    {
+      "id": 56004365,
+      "filename": "fedcm-offscreen.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 857716,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/56004365?download=true",
+      "local_path": "attachments/fedcm-offscreen.mp4"
+    },
+    {
+      "id": 56004384,
+      "filename": "fedcm-perm-obscured.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1469316,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/56004384?download=true",
+      "local_path": "attachments/fedcm-perm-obscured.mp4"
+    },
+    {
+      "id": 55997126,
+      "filename": "fedcm-multiple.png",
+      "mime_type": "image/png",
+      "size_bytes": 907601,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/55997126?download=true",
+      "local_path": "attachments/fedcm-multiple.png"
+    },
+    {
+      "id": 56400995,
+      "filename": "modal-hanging-outside-webcontents.png",
+      "mime_type": "image/png",
+      "size_bytes": 137955,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/56400995?download=true",
+      "local_path": "attachments/modal-hanging-outside-webcontents.png"
+    },
+    {
+      "id": 56401717,
+      "filename": "passkey-modal-hanging-outside-webcontents.png",
+      "mime_type": "image/png",
+      "size_bytes": 102575,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/56401717?download=true",
+      "local_path": "attachments/passkey-modal-hanging-outside-webcontents.png"
+    },
+    {
+      "id": 56403521,
+      "filename": "linux-clipping-2.png",
+      "mime_type": "image/png",
+      "size_bytes": 192280,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/56403521?download=true",
+      "local_path": "attachments/linux-clipping-2.png"
+    },
+    {
+      "id": 56406112,
+      "filename": "linux-clipping-1.png",
+      "mime_type": "image/png",
+      "size_bytes": 211992,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/56406112?download=true",
+      "local_path": "attachments/linux-clipping-1.png"
+    },
+    {
+      "id": 56724781,
+      "filename": "fedcm-offscreen-v2.html",
+      "mime_type": "text/html",
+      "size_bytes": 1902,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/56724781?download=true",
+      "local_path": "attachments/fedcm-offscreen-v2.html"
+    },
+    {
+      "id": 56722931,
+      "filename": "fedcm-offscreen-v2.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1730840,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/56722931?download=true",
+      "local_path": "attachments/fedcm-offscreen-v2.mp4"
+    },
+    {
+      "id": 56725612,
+      "filename": "server-single-account.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2372,
+      "url": "https://issues.chromium.org/action/issues/338233148/attachments/56725612?download=true",
+      "local_path": "attachments/server-single-account.js"
+    }
+  ],
+  "update_count": 93,
+  "description_snippet": "#### SUMMARY\nThe FedCM prompt has two dialog types [1]: bubble and modal. The bubble dialog can render outside of the page, causing impacts such as:\n* Origin confusion by user\n* Hidden login\n* Obscuring sensitive UI\n\n(It also feels broken when in the wrong place, so this is a functional issue too.)"
+}

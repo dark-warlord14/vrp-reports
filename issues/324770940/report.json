@@ -1,0 +1,31 @@
+{
+  "id": "324770940",
+  "url": "https://issues.chromium.org/issues/324770940",
+  "title": "Chrome Update Elevation of Privilege",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Installer",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2020-1170"
+  ],
+  "reporter": "do...@pksecurity.io",
+  "assignee": "ga...@chromium.org",
+  "created_date": "2024-02-11T15:34:10+00:00",
+  "modified_date": "2024-11-06T15:43:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 77,
+  "description_snippet": "---\n\n### Report description\n\n\nChrome Update Elevation of Privilege\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nGoogle Chrome\n\n\n#### Which URL (or repository) have you found the vulnerability in?\n\nN/A\n\n\n---\n\n### The problem\n\n\n#### Please describe the te"
+}

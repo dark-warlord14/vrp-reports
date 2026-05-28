@@ -1,0 +1,59 @@
+{
+  "id": "339061099",
+  "url": "https://issues.chromium.org/issues/339061099",
+  "title": "Security: container-overflow in chrome::ReloadInternal",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Input>KeyboardShortcuts",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "124.0.6324.0",
+  "cve_ids": [
+    "CVE-2024-5497"
+  ],
+  "reporter": "zh...@gmail.com",
+  "assignee": "tb...@google.com",
+  "created_date": "2024-05-07T04:30:23+00:00",
+  "modified_date": "2024-08-30T17:06:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 56138523,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 21490,
+      "url": "https://issues.chromium.org/action/issues/339061099/attachments/56138523?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 56138524,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 1056,
+      "url": "https://issues.chromium.org/action/issues/339061099/attachments/56138524?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 56139681,
+      "filename": "poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 26809773,
+      "url": "https://issues.chromium.org/action/issues/339061099/attachments/56139681?download=true",
+      "local_path": "attachments/poc.mov"
+    }
+  ],
+  "update_count": 111,
+  "description_snippet": "# Steps to reproduce the problem\n1. Download asan mac 1265061\n2. `./Chromium.app/Contents/MacOS/Chromium --no-sandbox  http://127.0.0.1/ about:blank --user-data-dir=/tmp/userdata/t1`\n3. Just submit any information that meets the requirements in the form of index.html, \n4. Then hold down shift to sel"
+}

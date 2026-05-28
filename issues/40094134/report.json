@@ -1,0 +1,33 @@
+{
+  "id": "40094134",
+  "url": "https://issues.chromium.org/issues/40094134",
+  "title": "Security: Address bar spoofing with mishandling canceled requests.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Navigation, UI>Browser>Omnibox>SecurityIndicators",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ju...@gmail.com",
+  "assignee": "cr...@chromium.org",
+  "created_date": null,
+  "modified_date": null,
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 0,
+  "description_snippet": ""
+}

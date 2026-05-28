@@ -1,0 +1,46 @@
+{
+  "id": "40054036",
+  "url": "https://issues.chromium.org/issues/40054036",
+  "title": "Security: Self-XSS in Google Chrome mobile browser",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "bu...@gmail.com",
+  "assignee": "ga...@chromium.org",
+  "created_date": "2020-12-01T19:26:35+00:00",
+  "modified_date": "2022-10-06T14:36:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52982139,
+      "filename": "Chome_PoC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3572509,
+      "url": "https://issues.chromium.org/action/issues/40054036/attachments/52982139?download=true",
+      "local_path": "attachments/Chome_PoC.mp4"
+    },
+    {
+      "id": 52982365,
+      "filename": "poc_patch.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 486994,
+      "url": "https://issues.chromium.org/action/issues/40054036/attachments/52982365?download=true",
+      "local_path": "attachments/poc_patch.mp4"
+    }
+  ],
+  "update_count": 87,
+  "description_snippet": "Dear team,  \n  \nThis issue has been reported to Android Security Team with reference (issue #174157709, https://issuetracker.google.com/174157709)). The Android Security Team forwarded this issue for you. Here, we submit the issue for you with further details just in case you haven't received it fro"
+}

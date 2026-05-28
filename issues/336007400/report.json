@@ -1,0 +1,38 @@
+{
+  "id": "336007400",
+  "url": "https://issues.chromium.org/issues/336007400",
+  "title": "v8_wasm_fuzzer Debug check failed: begin.valid() in v8/src/compiler/turboshaft/graph.h, line 946",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler, Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@goodmanemail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2024-04-21T10:54:21+00:00",
+  "modified_date": "2024-11-04T17:08:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 55707596,
+      "filename": "crash-dcheck-begin",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 100,
+      "url": "https://issues.chromium.org/action/issues/336007400/attachments/55707596?download=true",
+      "local_path": "attachments/crash-dcheck-begin"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "VULNERABILITY DETAILS\n# Fatal error in ../../v8/src/compiler/turboshaft/graph.h, line 946\n# Debug check failed: begin.valid().\n\nVERSION\nChrome Version: be0b3aaa7aa7e8271feecde55d39e86891d91e6f + V8 5536989289b4f6e923fb2f4e40f829480136573c\nOperating System: Ubuntu 22.04\n\nREPRODUCTION CASE\n(Attached)"
+}

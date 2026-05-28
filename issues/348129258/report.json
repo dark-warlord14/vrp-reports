@@ -1,0 +1,32 @@
+{
+  "id": "348129258",
+  "url": "https://issues.chromium.org/issues/348129258",
+  "title": "Pdfium Heap-buffer-overflow in in opj_t1_decode_cblk",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "PDFium",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ke...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": null,
+  "modified_date": null,
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 0,
+  "description_snippet": ""
+}

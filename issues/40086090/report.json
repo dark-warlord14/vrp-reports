@@ -1,0 +1,72 @@
+{
+  "id": "40086090",
+  "url": "https://issues.chromium.org/issues/40086090",
+  "title": "Security: [FG-VD-16-084] Adobe Flash Player Handing MP4 Memory Corruption Vulnerability",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2017-2984"
+  ],
+  "reporter": "ke...@gmail.com",
+  "assignee": "na...@google.com",
+  "created_date": "2016-11-26T20:03:33+00:00",
+  "modified_date": "2017-05-25T13:04:09+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52901661,
+      "filename": "FG-VD-16-084_PoC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1002301,
+      "url": "https://issues.chromium.org/action/issues/40086090/attachments/52901661?download=true",
+      "local_path": "attachments/FG-VD-16-084_PoC.mp4"
+    },
+    {
+      "id": 52901662,
+      "filename": "LoadMP42.swf",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1052,
+      "url": "https://issues.chromium.org/action/issues/40086090/attachments/52901662?download=true",
+      "local_path": "attachments/LoadMP42.swf"
+    },
+    {
+      "id": 52901663,
+      "filename": "crashlog1.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 5480,
+      "url": "https://issues.chromium.org/action/issues/40086090/attachments/52901663?download=true",
+      "local_path": "attachments/crashlog1.txt"
+    },
+    {
+      "id": 52901664,
+      "filename": "fuzzed-Fri_Nov_25_00-28-43_2016.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 424925,
+      "url": "https://issues.chromium.org/action/issues/40086090/attachments/52901664?download=true",
+      "local_path": "attachments/fuzzed-Fri_Nov_25_00-28-43_2016.mp4"
+    },
+    {
+      "id": 52901716,
+      "filename": "flashplayer_23_sa.7z",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4614877,
+      "url": "https://issues.chromium.org/action/issues/40086090/attachments/52901716?download=true",
+      "local_path": "attachments/flashplayer_23_sa.7z"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt is a use-after-free vulnerability in MP4 processing. The crash occurs in write AV.  \n  \n**VERSION**   \nAdobe Flash Player  23.0.0.207  \nOther versions may be affected too  \n  \n**REPRODUCTION CASE**   \nput LoadMP42.swf and FG-VD-16-084_PoC.mp4 on a server and load h"
+}

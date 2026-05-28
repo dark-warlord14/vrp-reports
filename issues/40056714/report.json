@@ -1,0 +1,46 @@
+{
+  "id": "40056714",
+  "url": "https://issues.chromium.org/issues/40056714",
+  "title": "container overflow in Browser Process(PermissionUmaUtil::PermissionPromptResolved)",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "UI>Browser>Permissions",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "el...@chromium.org",
+  "created_date": "2021-07-29T05:35:42+00:00",
+  "modified_date": "2022-01-04T18:29:25+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52894097,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 218,
+      "url": "https://issues.chromium.org/action/issues/40056714/attachments/52894097?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 52894149,
+      "filename": "crash2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 289,
+      "url": "https://issues.chromium.org/action/issues/40056714/attachments/52894149?download=true",
+      "local_path": "attachments/crash2.html"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nChrome Version:\r\nChromium 93.0.4573.0\r\nChromium 94.0.4591.0(gs://chromium-browser-asan/linux-release/asan-linux-release-906563.zip)\r\nOS v"
+}

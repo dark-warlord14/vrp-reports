@@ -1,0 +1,32 @@
+{
+  "id": "347664964",
+  "url": "https://issues.chromium.org/issues/347664964",
+  "title": "Security: heap-use-after-free in GetModalDialogBounds",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "tl...@google.com",
+  "created_date": null,
+  "modified_date": null,
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 0,
+  "description_snippet": ""
+}

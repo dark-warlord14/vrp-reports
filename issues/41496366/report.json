@@ -1,0 +1,44 @@
+{
+  "id": "41496366",
+  "url": "https://issues.chromium.org/issues/41496366",
+  "title": "Security: Debug check failed: op.input_count >= 2  in v8",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Turbofan",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ni...@chromium.org",
+  "created_date": "2024-01-31T00:58:44+00:00",
+  "modified_date": "2024-05-14T15:41:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53120959,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 4380,
+      "url": "https://issues.chromium.org/action/issues/41496366/attachments/53120959?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53162762,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 4380,
+      "url": "https://issues.chromium.org/action/issues/41496366/attachments/53162762?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "see comment https://crbug.com/chromium/1523415#c2\n\n\nVULNERABILITY DETAILS\n## INTRODUCE\nAfter bisect, it was determined that following commit caused this problem.\n\n- Commit Info\n    - Version: 91976\n    - link: https://crrev.com/e08a30ef808cc7fce03279d4f327ad6505050c4d \n- Commit Message\n\n```\ncommit e"
+}

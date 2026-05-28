@@ -1,0 +1,42 @@
+{
+  "id": "352720899",
+  "url": "https://issues.chromium.org/issues/352720899",
+  "title": "Security: Debug check failed: !type.is_uninhabited()",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler, Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rh...@gmail.com",
+  "assignee": "ml...@chromium.org",
+  "created_date": "2024-07-12T17:57:09+00:00",
+  "modified_date": "2024-10-23T15:43:43+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 57890500,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 150752,
+      "url": "https://issues.chromium.org/action/issues/352720899/attachments/57890500?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "#### Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.o"
+}

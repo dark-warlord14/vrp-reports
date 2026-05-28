@@ -1,0 +1,98 @@
+{
+  "id": "335613092",
+  "url": "https://issues.chromium.org/issues/335613092",
+  "title": "heap-buffer-overflow in SpirvTransformerBase::copyInstruction",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE, Internals>GPU>SwiftShader",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "da...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2024-04-18T17:30:49+00:00",
+  "modified_date": "2024-08-10T15:45:53+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 55644985,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1178,
+      "url": "https://issues.chromium.org/action/issues/335613092/attachments/55644985?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 55679767,
+      "filename": "asan_poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1300,
+      "url": "https://issues.chromium.org/action/issues/335613092/attachments/55679767?download=true",
+      "local_path": "attachments/asan_poc.html"
+    },
+    {
+      "id": 55679768,
+      "filename": "trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 34759,
+      "url": "https://issues.chromium.org/action/issues/335613092/attachments/55679768?download=true",
+      "local_path": "attachments/trace.txt"
+    },
+    {
+      "id": 56684247,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1482,
+      "url": "https://issues.chromium.org/action/issues/335613092/attachments/56684247?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 56684248,
+      "filename": "gen_shader.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 14651,
+      "url": "https://issues.chromium.org/action/issues/335613092/attachments/56684248?download=true",
+      "local_path": "attachments/gen_shader.js"
+    },
+    {
+      "id": 56875069,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6353927,
+      "url": "https://issues.chromium.org/action/issues/335613092/attachments/56875069?download=true",
+      "local_path": "attachments/poc.mp4"
+    },
+    {
+      "id": 56875070,
+      "filename": "exploit.html",
+      "mime_type": "text/html",
+      "size_bytes": 3780,
+      "url": "https://issues.chromium.org/action/issues/335613092/attachments/56875070?download=true",
+      "local_path": "attachments/exploit.html"
+    },
+    {
+      "id": 56875071,
+      "filename": "exploit.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 35012,
+      "url": "https://issues.chromium.org/action/issues/335613092/attachments/56875071?download=true",
+      "local_path": "attachments/exploit.js"
+    }
+  ],
+  "update_count": 134,
+  "description_snippet": "Hi, I was able to hit the same assertion as issue 40945594.\nI'm not entirely sure about the exploitability of this to be honest but since it's very similar to the other issue I'm reporting this as a security issue.\n\nA switch case inside he glsl shader code is translated to a spirv Switch operation."
+}

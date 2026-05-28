@@ -1,0 +1,81 @@
+{
+  "id": "341875171",
+  "url": "https://issues.chromium.org/issues/341875171",
+  "title": "Sandbox escape from extensions due to insufficent checks in chrome.devtools.inspectedWindow.reload and chrome://policy",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ad...@gmail.com",
+  "assignee": "yd...@google.com",
+  "created_date": "2024-05-21T12:06:54+00:00",
+  "modified_date": "2024-11-04T17:25:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "reward_amount_meta": 20000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 56544856,
+      "filename": "chrome_devtools_bug.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 605345,
+      "url": "https://issues.chromium.org/action/issues/341875171/attachments/56544856?download=true",
+      "local_path": "attachments/chrome_devtools_bug.mp4"
+    },
+    {
+      "id": 56544857,
+      "filename": "worker.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 149,
+      "url": "https://issues.chromium.org/action/issues/341875171/attachments/56544857?download=true",
+      "local_path": "attachments/worker.js"
+    },
+    {
+      "id": 56544858,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 243,
+      "url": "https://issues.chromium.org/action/issues/341875171/attachments/56544858?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 56544859,
+      "filename": "devtools.html",
+      "mime_type": "text/html",
+      "size_bytes": 73,
+      "url": "https://issues.chromium.org/action/issues/341875171/attachments/56544859?download=true",
+      "local_path": "attachments/devtools.html"
+    },
+    {
+      "id": 56544860,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 191,
+      "url": "https://issues.chromium.org/action/issues/341875171/attachments/56544860?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 56544861,
+      "filename": "devtools.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1386,
+      "url": "https://issues.chromium.org/action/issues/341875171/attachments/56544861?download=true",
+      "local_path": "attachments/devtools.js"
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "As requested, I am submitting this as a separate issue. The original bug report (with the full chain leading to a sandbox escape) is located at https://issues.chromium.org/issues/338248595\n\nNote that this bug was already fixed in the original issue. I was just asked to submit this as a separate repo"
+}

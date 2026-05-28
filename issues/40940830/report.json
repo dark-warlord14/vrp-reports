@@ -1,0 +1,65 @@
+{
+  "id": "40940830",
+  "url": "https://issues.chromium.org/issues/40940830",
+  "title": "Security: heap-buffer-overflow in gfx::RenderText::TextIndexToDisplayIndex",
+  "status": "Fixed",
+  "severity": "S4-Minimal",
+  "priority": "P0",
+  "component": "UI>GFX",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "da...@chromium.org",
+  "created_date": "2023-11-08T11:48:26+00:00",
+  "modified_date": "2024-03-04T23:00:11+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52922372,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 12735,
+      "url": "https://issues.chromium.org/action/issues/40940830/attachments/52922372?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 52922373,
+      "filename": "repro.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 370935,
+      "url": "https://issues.chromium.org/action/issues/40940830/attachments/52922373?download=true",
+      "local_path": "attachments/repro.jpg"
+    },
+    {
+      "id": 52922387,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 12735,
+      "url": "https://issues.chromium.org/action/issues/40940830/attachments/52922387?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 52922438,
+      "filename": "repro.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 370935,
+      "url": "https://issues.chromium.org/action/issues/40940830/attachments/52922438?download=true",
+      "local_path": "attachments/repro.jpg"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "VULNERABILITY DETAILS\n\nVERSION\nchrome commit run by fuzzer:\nNOTE THAT IT'S NOT A GIT COMMIT FOR BISECTION.\n\n```\ncommit 337b838893c1443b63acdd970ba844af5fdb4d5d (HEAD -> main, origin/main, origin/HEAD)\nAuthor: James Zern <jzern@chromium.org>\nDate:   Wed Nov 8 01:59:48 2023 +0000\n\n    libaom,cmake_upd"
+}

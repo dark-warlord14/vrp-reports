@@ -1,0 +1,54 @@
+{
+  "id": "350256147",
+  "url": "https://issues.chromium.org/issues/350256147",
+  "title": "Fatal error in ../../src/heap/mark-compact.cc, line 3665",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript, Blink>JavaScript>GarbageCollection",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "da...@gmail.com",
+  "assignee": "ni...@chromium.org",
+  "created_date": "2024-07-01T03:02:42+00:00",
+  "modified_date": "2024-10-11T15:57:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 57590846,
+      "filename": "mini-poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 718,
+      "url": "https://issues.chromium.org/action/issues/350256147/attachments/57590846?download=true",
+      "local_path": "attachments/mini-poc.js"
+    },
+    {
+      "id": 57590847,
+      "filename": "poc_for_clusterfuzz.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 76388,
+      "url": "https://issues.chromium.org/action/issues/350256147/attachments/57590847?download=true",
+      "local_path": "attachments/poc_for_clusterfuzz.js"
+    },
+    {
+      "id": 57612396,
+      "filename": "poc_with_ismap_dcheck.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 766,
+      "url": "https://issues.chromium.org/action/issues/350256147/attachments/57612396?download=true",
+      "local_path": "attachments/poc_with_ismap_dcheck.js"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "VULNERABILITY DETAILS\n## INTRODUCE\nAfter bisect, it was determined that following commit caused this problem.\n\n- Commit Info\n    - Version: 94662\n    - link: https://crrev.com/739f6d2b1f3350033c24a118b8d98ba6b8bec9a9 \n- Commit Message\n\n```\ncommit 739f6d2b1f3350033c24a118b8d98ba6b8bec9a9\nAuthor: Niko"
+}

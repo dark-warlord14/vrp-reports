@@ -1,0 +1,30 @@
+{
+  "id": "40062320",
+  "url": "https://issues.chromium.org/issues/40062320",
+  "title": "Debug check failed: value.IsForeign().",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript, Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Linux",
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "qp...@gmail.com",
+  "assignee": "cl...@chromium.org",
+  "created_date": "2022-12-18T07:28:37+00:00",
+  "modified_date": "2023-03-30T18:42:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 53,
+  "description_snippet": "Version: 11.0.0 (candidate) bfb41bd6eef20577d3057e8428d753ddd0ce2977  \nOS: Linux  \nArchitecture: x64  \n  \npoc  \n```  \nfunction __f_0(__v_0) {  \n  console.trace(Intl, 138982, \"/0/\", -9007199254740992, 2147483649);  \n}  \n  \nfunction __f_1(__v_1, __v_2) {  \n  'use asm';  \n  \n  var __v_3 = __v_2.print_s"
+}

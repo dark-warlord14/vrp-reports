@@ -1,0 +1,41 @@
+{
+  "id": "40057655",
+  "url": "https://issues.chromium.org/issues/40057655",
+  "title": "Security: UAF during sharesheet teardown with animation running",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "UI>Browser>Sharing",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "el...@chromium.org",
+  "created_date": "2021-10-19T17:00:44+00:00",
+  "modified_date": "2024-01-09T04:06:22+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53331245,
+      "filename": "screen.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2787145,
+      "url": "https://issues.chromium.org/action/issues/40057655/attachments/53331245?download=true",
+      "local_path": "attachments/screen.mp4"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "Chrome Version: 97.0.4674.0   \nOperating System: Ozone X11  \n  \n**REPRODUCTION CASE**   \n1. Open a new tab   \n2. Click on 'Sharesheet' icon and close the tab (sometimes looks like it can take several tries to repro the crash).  \n  \n==3334==ERROR: AddressSanitizer: heap-use-after-free on address 0x60"
+}

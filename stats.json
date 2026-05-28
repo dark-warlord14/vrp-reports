@@ -1,15 +1,15 @@
 {
-  "total_reports": 2021,
-  "total_bounty": 14601354.0,
-  "avg_bounty": 7344.75,
+  "total_reports": 2056,
+  "total_bounty": 14812854.0,
+  "avg_bounty": 7322.22,
   "by_year": {
     "2015": {
       "count": 38,
       "total_bounty": 82337.0
     },
     "2016": {
-      "count": 43,
-      "total_bounty": 95500.0
+      "count": 44,
+      "total_bounty": 96000.0
     },
     "2017": {
       "count": 41,
@@ -24,24 +24,24 @@
       "total_bounty": 59000.0
     },
     "2020": {
-      "count": 154,
-      "total_bounty": 1026700.0
+      "count": 155,
+      "total_bounty": 1027200.0
     },
     "2021": {
-      "count": 370,
-      "total_bounty": 2956000.0
+      "count": 375,
+      "total_bounty": 2984500.0
     },
     "2022": {
-      "count": 446,
-      "total_bounty": 2866000.0
+      "count": 449,
+      "total_bounty": 2876500.0
     },
     "2023": {
-      "count": 460,
-      "total_bounty": 2641337.0
+      "count": 461,
+      "total_bounty": 2642337.0
     },
     "2024": {
-      "count": 116,
-      "total_bounty": 1165480.0
+      "count": 133,
+      "total_bounty": 1281480.0
     },
     "2025": {
       "count": 279,
@@ -53,25 +53,25 @@
     }
   },
   "by_severity": {
-    "S3-Low": 1804,
-    "S4-Minimal": 207,
+    "S3-Low": 1830,
+    "S4-Minimal": 212,
+    "Unknown": 8,
     "S1-High": 5,
-    "Unknown": 4,
     "S0-Critical": 1
   },
   "by_status": {
-    "Assigned": 1552,
-    "Accepted": 362,
-    "Fixed": 61,
+    "Assigned": 1581,
+    "Accepted": 365,
+    "Fixed": 64,
     "New": 30,
     "Verified": 15,
     "Unknown": 1
   },
   "by_component": {
-    "Blink": 906,
-    "Internals": 372,
-    "UI": 367,
-    "Platform": 144,
+    "Blink": 921,
+    "Internals": 379,
+    "UI": 376,
+    "Platform": 147,
     "Unknown": 123,
     "Mobile": 31,
     "Dawn": 30,
@@ -79,10 +79,10 @@
     "OS": 7,
     "Speed": 4,
     "IO": 4,
+    "PDFium": 3,
     "Services (Use Subcomponents)": 3,
     "Privacy, UI": 3,
     "Privacy": 3,
-    "PDFium": 2,
     "Dawn, Dawn": 2,
     "Enterprise, Platform": 2,
     "Infra": 2,
@@ -96,27 +96,27 @@
     },
     {
       "range": "$500-1K",
-      "count": 108
+      "count": 111
     },
     {
       "range": "$1K-3K",
-      "count": 492
+      "count": 501
     },
     {
       "range": "$3K-5K",
-      "count": 291
+      "count": 294
     },
     {
       "range": "$5K-10K",
-      "count": 619
+      "count": 631
     },
     {
       "range": "$10K-20K",
-      "count": 298
+      "count": 305
     },
     {
       "range": "$20K+",
-      "count": 179
+      "count": 180
     }
   ],
   "top_bounties": [

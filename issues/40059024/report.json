@@ -1,0 +1,33 @@
+{
+  "id": "40059024",
+  "url": "https://issues.chromium.org/issues/40059024",
+  "title": "Security: Potential Use After Free in ManagedValueStoreCache::OnPolicyUpdated",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "vi...@gmail.com",
+  "assignee": "rd...@chromium.org",
+  "created_date": null,
+  "modified_date": null,
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 0,
+  "description_snippet": ""
+}

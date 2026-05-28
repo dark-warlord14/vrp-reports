@@ -1,0 +1,44 @@
+{
+  "id": "40055006",
+  "url": "https://issues.chromium.org/issues/40055006",
+  "title": "Security: ",
+  "status": "Fixed",
+  "severity": "Unknown",
+  "priority": "P4",
+  "component": "Internals>Installer",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ve...@gmail.com",
+  "assignee": null,
+  "created_date": "2021-02-28T14:02:03+00:00",
+  "modified_date": "2021-09-13T14:53:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53041555,
+      "filename": "poc_img.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 199971,
+      "url": "https://issues.chromium.org/action/issues/40055006/attachments/53041555?download=true",
+      "local_path": "attachments/poc_img.jpg"
+    },
+    {
+      "id": 53041556,
+      "filename": "ChromeUpdaterLPE.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 75077,
+      "url": "https://issues.chromium.org/action/issues/40055006/attachments/53041556?download=true",
+      "local_path": "attachments/ChromeUpdaterLPE.zip"
+    }
+  ],
+  "update_count": 19,
+  "description_snippet": "Platform : Windows 10 2009\r\nClass : Elevation of Privileges\r\nSecurity Boundary : Users\r\nSeverity : High\r\nSummary:\r\nThe Google Update Service allow authenticated users to specify the log file path resulting in privilege escalation.\r\n\r\nDescription:\r\nWhen google chrome is being installed as an administ"
+}

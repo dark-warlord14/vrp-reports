@@ -1,0 +1,33 @@
+{
+  "id": "339753685",
+  "url": "https://issues.chromium.org/issues/339753685",
+  "title": "Type Confusion between WasmObject and JSObject in Array Concat",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime, Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "ml...@chromium.org",
+  "created_date": "2024-05-10T10:57:04+00:00",
+  "modified_date": "2024-08-21T15:43:41+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 83,
+  "description_snippet": "## TITLE\nCheck failed: !v8::internal::v8_flags.enable_slow_asserts.value() || (IsJSObject_NonInline(*this)).\n\n## VULNERABILITY DETAILS\n\nWhile auditing, I found there is a type confusion between WasmArray/WasmStruct and JSObject during construction of TypedArray.\n\nConstruction of TypedArray can final"
+}
