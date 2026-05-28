@@ -16,11 +16,11 @@ Cloudflare Pages project `vrp-reports` has auto-builds **disabled** (build comma
 
 - **Manual**: Actions tab → `Deploy VRP Reports` → Run workflow
 - **Auto**: push to `main` that touches `ui/**`, `build.sh`, or the workflow file itself
-- **Weekly scrape**: `.github/workflows/scrape.yml` runs every Sunday, pushes lightweight updates to `data`, and deploys when data changed
+- **Weekly scrape**: `.github/workflows/scrape.yml` runs every Sunday, refreshes both the current and previous UTC year, pushes lightweight updates to `data`, and deploys when data changed
 
 ## Updating content (new scraped reports)
 
-The scheduled scraper runs weekly on GitHub Actions. It refreshes discovery for the latest/current UTC year, scrapes only missing reports, regenerates markdown/index/stats, pushes lightweight files to the `data` branch, and deploys when data changed.
+The scheduled scraper runs weekly on GitHub Actions. It refreshes discovery for both the current and previous UTC year, scrapes only missing reports, regenerates markdown/index/stats, pushes lightweight files to the `data` branch, and deploys when data changed.
 
 You can still scrape locally:
 
@@ -41,6 +41,15 @@ git add -A && git commit -m "chore: update data $(date -u +%Y-%m-%d)" && git pus
 ```
 
 Then trigger the deploy workflow manually.
+
+## Inclusion Scope
+
+The archive is intentionally narrower than "all `vrp-reward` issues". A report is included only when:
+
+- the issue is public
+- the public issue itself exposes reward evidence, either numeric reward metadata or public award text
+
+This keeps the dataset aligned with public, awarded Chromium issues and excludes companion, duplicate, or workflow-only bugs that do not prove an award on the public page.
 
 ## Updating UI / code
 

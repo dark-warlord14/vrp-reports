@@ -1,14 +1,14 @@
 # Chromium VRP Reports
 
-Scrapes and archives Chromium Vulnerability Reward Program (VRP) bug bounty reports from the [Chromium Issue Tracker](https://issues.chromium.org). Collects all bounty-awarded reports back to 2015, downloads all artifacts (PoC files, diffs, videos, screenshots), generates structured markdown, and provides a local dashboard for browsing everything offline. Maintained as part of Shantanu Ghumade's professional security tooling network.
+Scrapes and archives Chromium Vulnerability Reward Program (VRP) reports from the [Chromium Issue Tracker](https://issues.chromium.org). The archive targets public issues with public reward evidence, downloads public artifacts (PoC files, diffs, videos, screenshots), generates structured markdown, and provides a local dashboard for browsing everything offline. Maintained as part of Shantanu Ghumade's professional security tooling network.
 
 **Live site:** https://vrp-reports.aivault.securityjunky.com/ — editorial archive, agent-accessible via [`/skill.md`](https://vrp-reports.aivault.securityjunky.com/skill.md), [`/schema.json`](https://vrp-reports.aivault.securityjunky.com/schema.json), [`/llms.txt`](https://vrp-reports.aivault.securityjunky.com/llms.txt).
 
 ## Features
 
-- **Full history** — discovers all bounty-awarded reports from 2015 to present, year by year
+- **Full history** — discovers public rewarded issues from 2015 to present, year by year
 - **Complete artifacts** — downloads real attachment filenames (`poc.html`, `browser.diff`, `demo.mp4`, ASAN logs, etc.)
-- **Enriched metadata** — extracts bounty amount, severity, status, component, OS platforms, Chrome version, CVE IDs, reporter/assignee
+- **Enriched metadata** — extracts bounty amount, reward evidence source, severity, status, component, OS platforms, Chrome version, CVE IDs, reporter/assignee
 - **Markdown export** — each report rendered as a standalone `report.md`
 - **Local dashboard** — SPA with filtering, sorting, inline previews, and statistics charts
 - **Offline-first** — all JS/CSS vendored; dashboard works without internet
@@ -38,6 +38,8 @@ vrp serve [--port N]     Start the local dashboard (default: http://localhost:80
 vrp status               Show counts and per-year discovery progress.
 ```
 
+`vrp run` and `vrp update` also support `--year` for scoped backfills and `--seed-file` for audit-driven candidate IDs.
+
 ## Workflow
 
 ### First-time full collection (2015–present)
@@ -57,6 +59,15 @@ vrp serve           # refreshed dashboard
 ## Data Structure
 
 ```
+
+## Inclusion Rule
+
+An issue is archived only when both are true:
+
+- the Chromium issue is public
+- the public record shows reward evidence, either through reward metadata or public award text
+
+`vrp-reward` by itself is not enough for inclusion.
 data/
 ├── index.json               # Enriched index of all reports (sorted by date)
 ├── stats.json               # Precomputed analytics
@@ -176,6 +187,6 @@ Deploys to Cloudflare Pages via `.github/workflows/deploy.yml` (manual dispatch 
 - `main` — source code + UI
 - `data` — scraped output (`index.json`, `stats.json`, per-issue `report.json`/`report.md`)
 
-`build.sh` checks out both branches, assembles `dist/`, and `wrangler pages deploy` publishes it. `.github/workflows/scrape.yml` runs every Sunday, refreshes the latest/current UTC year, scrapes only missing reports, pushes lightweight files to the `data` branch, and deploys when data changed.
+`build.sh` checks out both branches, assembles `dist/`, and `wrangler pages deploy` publishes it. `.github/workflows/scrape.yml` runs every Sunday, refreshes both the current and previous UTC year, scrapes only missing reports, pushes lightweight files to the `data` branch, and deploys when data changed.
 
 See [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) for the full flow, secrets setup, and token rotation.
