@@ -70,6 +70,9 @@ class TestRebuildIndex:
         assert "severity" in entry
         assert "created_date" in entry
         assert "local_path" in entry
+        assert entry["public_issue"] is True
+        assert "inclusion_reason" in entry
+        assert "reward_amount_meta" in entry
 
     def test_index_sorted_newest_first(self, tmp_path):
         issues_dir = tmp_path / "issues"

@@ -16,26 +16,32 @@ QUEUE_FILE = DATA_DIR / "discovery_queue.json"
 UI_DIR = PROJECT_ROOT / "ui"
 
 # --- Search ---
-BASE_SEARCH_TEMPLATE = (
-    "https://issues.chromium.org/issues?q="
-    "Type:Vulnerability"
-    "%20-status:infeasible"
-    "%20-status:not_reproducible"
-    "%20-status:intended_behavior"
-    "%20-status:obsolete"
-    "%20-status:duplicate"
-    "%20created%3E{start_date}"
-    "%20created%3C{end_date}"
-)
+CANDIDATE_SEARCH_TEMPLATES = [
+    (
+        "https://issues.chromium.org/issues?q="
+        "allpublic"
+        "%20vrp-reward%3E0"
+        "%20modified%3E{start_date}"
+        "%20modified%3C{end_date}"
+    ),
+]
 SEARCH_SORT = "&s=modified_time:desc"
 MAX_SEARCH_PAGES = 200
 
 
 def build_search_url(year: int) -> str:
-    """Build search URL for a specific year."""
+    """Build the primary search URL for a specific year."""
+    return build_search_urls(year)[0]
+
+
+def build_search_urls(year: int) -> list[str]:
+    """Build candidate search URLs for a specific year."""
     start = f"{year}-01-01"
     end = f"{year + 1}-01-01"
-    return BASE_SEARCH_TEMPLATE.format(start_date=start, end_date=end) + SEARCH_SORT
+    return [
+        template.format(start_date=start, end_date=end) + SEARCH_SORT
+        for template in CANDIDATE_SEARCH_TEMPLATES
+    ]
 
 
 def get_all_years() -> list[int]:

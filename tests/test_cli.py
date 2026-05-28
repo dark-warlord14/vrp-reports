@@ -6,6 +6,7 @@ from unittest.mock import patch
 import pytest
 from click.testing import CliRunner
 from vrp.cli import _load_year_issue_ids, cli
+from vrp.discovery import load_seed_issue_ids
 from vrp.parser import build_issue
 from vrp.utils import save_json
 
@@ -132,3 +133,10 @@ class TestYearScopedRun:
                 p.stop()
 
         assert ids == ["1", "2", "3"]
+
+
+class TestSeedLoading:
+    def test_load_seed_issue_ids_from_json(self, tmp_path):
+        seed_file = tmp_path / "seeds.json"
+        seed_file.write_text('["123", "456", "abc"]')
+        assert load_seed_issue_ids(seed_file) == ["123", "456"]

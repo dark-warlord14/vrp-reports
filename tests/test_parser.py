@@ -212,22 +212,22 @@ class TestExtractBountyInfo:
     def test_no_bounty(self):
         raw = make_raw_updates(bounty_text="Just a comment with no bounty.")
         updates = parse_updates(raw, ISSUE_ID)
-        confirmed, amount, rationale = extract_bounty_info(updates)
-        assert confirmed is False
-        assert amount is None
-        assert rationale is None
+        result = extract_bounty_info(updates)
+        assert result["confirmed"] is False
+        assert result["bounty_amount"] is None
+        assert result["bounty_rationale"] is None
 
     def test_bounty_detected(self):
         raw = make_raw_updates()
         updates = parse_updates(raw, ISSUE_ID)
-        confirmed, amount, rationale = extract_bounty_info(updates)
-        assert confirmed is True
-        assert amount == 5000.0
+        result = extract_bounty_info(updates)
+        assert result["confirmed"] is True
+        assert result["bounty_amount"] == 5000.0
 
     def test_rationale_extracted(self):
         raw = make_raw_updates()
         updates = parse_updates(raw, ISSUE_ID)
-        _, _, rationale = extract_bounty_info(updates)
+        rationale = extract_bounty_info(updates)["bounty_rationale"]
         assert rationale is not None
         assert "use-after-free" in rationale.lower()
 
@@ -235,7 +235,7 @@ class TestExtractBountyInfo:
         text = "We have decided to award you $15,000 for this report."
         raw = make_raw_updates(bounty_text=text)
         updates = parse_updates(raw, ISSUE_ID)
-        _, amount, _ = extract_bounty_info(updates)
+        amount = extract_bounty_info(updates)["bounty_amount"]
         assert amount == 15000.0
 
     def test_rationale_extracted_case_insensitive(self):
@@ -247,7 +247,7 @@ class TestExtractBountyInfo:
         )
         raw = make_raw_updates(bounty_text=bounty_text)
         updates = parse_updates(raw, ISSUE_ID)
-        _, _, rationale = extract_bounty_info(updates)
+        rationale = extract_bounty_info(updates)["bounty_rationale"]
         assert rationale is not None
         assert "sandbox escape" in rationale
 
@@ -259,7 +259,7 @@ class TestExtractBountyInfo:
         )
         raw = make_raw_updates(bounty_text=bounty_text)
         updates = parse_updates(raw, ISSUE_ID)
-        _, _, rationale = extract_bounty_info(updates)
+        rationale = extract_bounty_info(updates)["bounty_rationale"]
         assert rationale is not None
         assert "buffer overflow" in rationale
 
@@ -379,6 +379,26 @@ class TestBuildIssue:
         issue = build_issue(ISSUE_ID, raw_u, raw_m)
         assert issue is not None
         assert issue.bounty_amount == 3000.0
+        assert issue.public_issue is True
+        assert issue.inclusion_reason == "reward_amount_meta"
+        assert issue.reward_amount_meta == 3000.0
+        assert issue.award_text_found is False
+        assert issue.award_text_source_update is None
+
+    def test_bounty_from_award_text_sets_inclusion_reason(self):
+        raw_u = make_raw_updates()
+        raw_m = make_raw_metadata(bounty_amount=None)
+        issue = build_issue(ISSUE_ID, raw_u, raw_m)
+        assert issue is not None
+        assert issue.inclusion_reason == "award_text"
+        assert issue.reward_amount_meta is None
+        assert issue.award_text_found is True
+        assert issue.award_text_source_update == 1
+
+    def test_public_issue_without_public_award_evidence_returns_none(self):
+        raw_u = make_raw_updates(bounty_text="Just a regular comment.")
+        raw_m = make_raw_metadata(bounty_amount=None)
+        assert build_issue(ISSUE_ID, raw_u, raw_m) is None
 
     def test_title_fallback_to_description(self):
         raw_u = make_raw_updates(description="Memory corruption in audio decoder")

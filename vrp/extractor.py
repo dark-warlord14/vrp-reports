@@ -12,7 +12,6 @@ import aiohttp
 from playwright.async_api import BrowserContext, async_playwright
 
 from vrp.config import (
-    BOUNTY_INDICATORS,
     BROWSER_RESTART_INTERVAL,
     CONCURRENCY_LIMIT,
     CORPUS_DIR,
@@ -91,15 +90,6 @@ async def scrape_issue(
 
         # Extract cookies after navigation so auth cookies are populated
         cookies = await _extract_cookies(context)
-
-        # Quick bounty check on raw text before full parsing
-        if captured["updates"]:
-            all_text = json.dumps(captured["updates"]).lower()
-            has_bounty_hint = any(
-                ind.lower() in all_text for ind in BOUNTY_INDICATORS
-            )
-            if not has_bounty_hint:
-                return False
 
         if not captured["updates"]:
             logger.warning(f"No updates captured for {issue_id}")

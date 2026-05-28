@@ -204,8 +204,22 @@ def parse_metadata(raw: Any) -> dict:
     return result
 
 
-def extract_bounty_info(updates: list[Update]) -> tuple[bool, Optional[float], Optional[str]]:
-    """Extract bounty confirmation, amount, and rationale from updates."""
+def extract_bounty_info(
+    updates: list[Update],
+    meta_amount: Optional[float] = None,
+) -> dict[str, Any]:
+    """Extract structured public award evidence from updates and metadata."""
+    if meta_amount is not None and meta_amount > 0:
+        return {
+            "confirmed": True,
+            "bounty_amount": meta_amount,
+            "bounty_rationale": None,
+            "reward_amount_meta": meta_amount,
+            "award_text_found": False,
+            "award_text_source_update": None,
+            "inclusion_reason": "reward_amount_meta",
+        }
+
     for update in updates:
         if not update.is_bounty_award:
             continue
@@ -223,9 +237,25 @@ def extract_bounty_info(updates: list[Update]) -> tuple[bool, Optional[float], O
         if rat_match:
             rationale = rat_match.group(1).strip()[:500]
 
-        return True, amount, rationale
+        return {
+            "confirmed": True,
+            "bounty_amount": amount,
+            "bounty_rationale": rationale,
+            "reward_amount_meta": meta_amount,
+            "award_text_found": True,
+            "award_text_source_update": update.index,
+            "inclusion_reason": "award_text",
+        }
 
-    return False, None, None
+    return {
+        "confirmed": False,
+        "bounty_amount": None,
+        "bounty_rationale": None,
+        "reward_amount_meta": meta_amount,
+        "award_text_found": False,
+        "award_text_source_update": None,
+        "inclusion_reason": None,
+    }
 
 
 def extract_cve_ids(updates: list[Update]) -> list[str]:
@@ -266,15 +296,10 @@ def build_issue(issue_id: str, raw_updates: Any, raw_metadata: Any) -> Optional[
         logger.error("parse_metadata failed for issue %s", issue_id, exc_info=True)
         return None
 
-    bounty_confirmed, bounty_amount, bounty_rationale = extract_bounty_info(updates)
-
-    # Also check metadata for bounty amount
     meta_amount = metadata.get("bounty_amount_meta")
-    if meta_amount and not bounty_amount:
-        bounty_amount = meta_amount
-        bounty_confirmed = True
+    bounty_info = extract_bounty_info(updates, meta_amount=meta_amount)
 
-    if not bounty_confirmed and not meta_amount:
+    if not bounty_info["confirmed"]:
         return None
 
     # Collect attachments
@@ -323,9 +348,14 @@ def build_issue(issue_id: str, raw_updates: Any, raw_metadata: Any) -> Optional[
         assignee=metadata.get("assignee"),
         created_date=created_date,
         modified_date=modified_date,
+        public_issue=True,
         bounty_confirmed=True,
-        bounty_amount=bounty_amount or meta_amount,
-        bounty_rationale=bounty_rationale,
+        bounty_amount=bounty_info["bounty_amount"],
+        reward_amount_meta=bounty_info["reward_amount_meta"],
+        inclusion_reason=bounty_info["inclusion_reason"],
+        award_text_found=bounty_info["award_text_found"],
+        award_text_source_update=bounty_info["award_text_source_update"],
+        bounty_rationale=bounty_info["bounty_rationale"],
         attachments=attachments,
         update_count=len(updates),
         description_snippet=description,

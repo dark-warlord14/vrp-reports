@@ -40,8 +40,13 @@ class Issue(BaseModel):
     assignee: Optional[str] = None
     created_date: Optional[str] = None
     modified_date: Optional[str] = None
+    public_issue: bool = True
     bounty_confirmed: bool = False
     bounty_amount: Optional[float] = None
+    reward_amount_meta: Optional[float] = None
+    inclusion_reason: Optional[str] = None
+    award_text_found: bool = False
+    award_text_source_update: Optional[int] = None
     bounty_rationale: Optional[str] = None
     attachments: list[Attachment] = Field(default_factory=list)
     update_count: int = 0

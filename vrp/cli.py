@@ -1,6 +1,7 @@
 """CLI interface for VRP Reports."""
 
 import asyncio
+from pathlib import Path
 
 import click
 from rich.console import Console
@@ -44,15 +45,21 @@ def serve(port):
 @click.option("--year", "years", multiple=True, type=int, help="Limit discovery/scraping to a year. Can be repeated.")
 @click.option("--refresh-discovery", is_flag=True, help="Ignore selected year checkpoints and rediscover IDs.")
 @click.option("--no-headless", is_flag=True, help="Show browser window")
-def run(years, refresh_discovery, no_headless):
+@click.option(
+    "--seed-file",
+    type=click.Path(exists=True, path_type=Path),
+    help="Optional JSON/CSV/text file of explicit issue IDs to include.",
+)
+def run(years, refresh_discovery, no_headless, seed_file):
     """Full pipeline: discover -> scrape -> reprocess -> markdown -> index."""
-    from vrp.discovery import discover_all
+    from vrp.discovery import discover_all, load_seed_issue_ids
     from vrp.extractor import reprocess_existing, scrape_all
     from vrp.index_builder import build_stats, rebuild_index
     from vrp.markdown_gen import generate_all_markdown
 
     headless = not no_headless
     selected_years = sorted(set(years)) or None
+    seed_ids = load_seed_issue_ids(seed_file) if seed_file else None
 
     try:
         console.print("[bold]Step 1/5: Discovery[/bold]")
@@ -61,10 +68,10 @@ def run(years, refresh_discovery, no_headless):
                 years=selected_years,
                 resume=not refresh_discovery,
                 headless=headless,
+                seed_ids=seed_ids,
             )
         )
         if selected_years:
-            ids = _load_year_issue_ids(selected_years)
             years_str = ", ".join(str(year) for year in selected_years)
             console.print(f"  -> {len(ids)} issue IDs for {years_str}")
         else:
@@ -100,15 +107,21 @@ def run(years, refresh_discovery, no_headless):
 @click.option("--year", "years", multiple=True, type=int, help="Limit discovery/scraping to a year. Can be repeated.")
 @click.option("--refresh-discovery", is_flag=True, help="Ignore selected year checkpoints and rediscover IDs.")
 @click.option("--no-headless", is_flag=True, help="Show browser window")
-def update(years, refresh_discovery, no_headless):
+@click.option(
+    "--seed-file",
+    type=click.Path(exists=True, path_type=Path),
+    help="Optional JSON/CSV/text file of explicit issue IDs to include.",
+)
+def update(years, refresh_discovery, no_headless, seed_file):
     """Incremental pipeline: discover -> scrape missing -> markdown -> index."""
-    from vrp.discovery import discover_all
+    from vrp.discovery import discover_all, load_seed_issue_ids
     from vrp.extractor import scrape_all
     from vrp.index_builder import build_stats, rebuild_index
     from vrp.markdown_gen import generate_all_markdown
 
     headless = not no_headless
     selected_years = sorted(set(years)) or None
+    seed_ids = load_seed_issue_ids(seed_file) if seed_file else None
 
     try:
         console.print("[bold]Step 1/4: Discovery[/bold]")
@@ -117,10 +130,10 @@ def update(years, refresh_discovery, no_headless):
                 years=selected_years,
                 resume=not refresh_discovery,
                 headless=headless,
+                seed_ids=seed_ids,
             )
         )
         if selected_years:
-            ids = _load_year_issue_ids(selected_years)
             years_str = ", ".join(str(year) for year in selected_years)
             console.print(f"  -> {len(ids)} issue IDs for {years_str}")
         else:
