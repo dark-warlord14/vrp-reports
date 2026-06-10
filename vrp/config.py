@@ -16,14 +16,31 @@ QUEUE_FILE = DATA_DIR / "discovery_queue.json"
 UI_DIR = PROJECT_ROOT / "ui"
 
 # --- Search ---
+# Reward-detection qualifiers. Discovery runs ONE search per qualifier and
+# UNIONS the results (see discover_ids_for_year), so a single field rename on
+# the tracker can never silently make us miss rewarded issues — the other nets
+# still catch them. This is deliberately redundant for resilience: as the
+# tracker's schema evolves over the years, add/adjust qualifiers here.
+#
+#   customfield1223135>0  the numeric VRP reward field the parser reads
+#                         (FIELD_BOUNTY below) — the precise, authoritative net.
+#   Reward>0              broad reward qualifier; a superset that also catches
+#                         pending/variant rewards. The parser re-validates every
+#                         hit, so over-inclusion costs scrape time, never data.
+#   vrp-reward>0          legacy reward tag; kept purely as a safety net.
+#
+# Each entry is URL-encoded (%3E == '>', %20 == ' ').
+REWARD_SEARCH_QUALIFIERS = [
+    "customfield1223135%3E0",
+    "Reward%3E0",
+    "vrp-reward%3E0",
+]
+
 CANDIDATE_SEARCH_TEMPLATES = [
-    (
-        "https://issues.chromium.org/issues?q="
-        "allpublic"
-        "%20vrp-reward%3E0"
-        "%20modified%3E{start_date}"
-        "%20modified%3C{end_date}"
-    ),
+    "https://issues.chromium.org/issues?q=allpublic%20"
+    + qualifier
+    + "%20modified%3E{start_date}%20modified%3C{end_date}"
+    for qualifier in REWARD_SEARCH_QUALIFIERS
 ]
 SEARCH_SORT = "&s=modified_time:desc"
 MAX_SEARCH_PAGES = 200

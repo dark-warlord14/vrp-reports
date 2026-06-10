@@ -1,14 +1,20 @@
 """Tests for vrp/discovery.py and discovery-related config."""
 
-from vrp.config import build_search_urls
+from vrp.config import REWARD_SEARCH_QUALIFIERS, build_search_urls
 from vrp.discovery import extract_issue_ids_from_links
 
 
 def test_build_search_urls_targets_candidate_searches():
     urls = build_search_urls(2025)
-    assert len(urls) == 1
+    # One search per reward qualifier, unioned by discovery so a single renamed
+    # field cannot make us silently miss rewarded issues.
+    assert len(urls) == len(REWARD_SEARCH_QUALIFIERS)
+    assert len(urls) >= 2
+    # The precise reward field the parser reads (FIELD_BOUNTY = customfield1223135).
+    assert any("customfield1223135%3E0" in url for url in urls)
+    # Legacy reward tag retained as a safety net.
     assert any("vrp-reward%3E0" in url for url in urls)
-    assert any("allpublic" in url for url in urls)
+    assert all("allpublic" in url for url in urls)
     assert all("modified%3E2025-01-01" in url for url in urls)
     assert all("modified%3C2026-01-01" in url for url in urls)
     assert all("Type:Vulnerability" not in url for url in urls)

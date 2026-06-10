@@ -300,6 +300,11 @@ def build_issue(issue_id: str, raw_updates: Any, raw_metadata: Any) -> Optional[
     bounty_info = extract_bounty_info(updates, meta_amount=meta_amount)
 
     if not bounty_info["confirmed"]:
+        logger.debug(
+            "Issue %s: no bounty detected (parsed_updates=%d, meta_amount=%s, "
+            "title=%r)",
+            issue_id, len(updates), meta_amount, metadata.get("title"),
+        )
         return None
 
     # Collect attachments
