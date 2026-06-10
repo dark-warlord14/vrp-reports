@@ -90,10 +90,16 @@ async def scrape_issue(
 
     try:
         await page.goto(url, wait_until="networkidle", timeout=TIMEOUT)
-        await asyncio.sleep(1)
 
-        # Drain in-flight response-body reads before inspecting captured data;
-        # page.close() would otherwise kill them and lose the scrape.
+        # The updates XHR can fire after networkidle, and its body read can
+        # still be in flight; poll for the capture instead of sampling a
+        # single instant, so page.close() cannot kill it and lose the scrape.
+        for _ in range(20):
+            if pending:
+                await asyncio.gather(*pending, return_exceptions=True)
+            if captured["updates"]:
+                break
+            await asyncio.sleep(0.5)
         if pending:
             await asyncio.gather(*pending, return_exceptions=True)
 
