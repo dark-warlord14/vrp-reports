@@ -73,6 +73,10 @@ class TestRebuildIndex:
         assert entry["public_issue"] is True
         assert "inclusion_reason" in entry
         assert "reward_amount_meta" in entry
+        # Searchable fields surfaced into the index for the dashboard.
+        assert "reporter" in entry
+        assert "cve_ids" in entry
+        assert isinstance(entry["cve_ids"], list)
 
     def test_index_sorted_newest_first(self, tmp_path):
         issues_dir = tmp_path / "issues"

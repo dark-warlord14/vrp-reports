@@ -41,6 +41,9 @@ def rebuild_index() -> int:
                     "status": report.get("status", "Unknown"),
                     "severity": report.get("severity", "Unknown"),
                     "component": report.get("component", "Unknown"),
+                    # Included so the dashboard can search by reporter and CVE.
+                    "reporter": report.get("reporter", "Unknown"),
+                    "cve_ids": report.get("cve_ids", []),
                     "bounty_amount": report.get("bounty_amount"),
                     "reward_amount_meta": report.get("reward_amount_meta"),
                     "public_issue": report.get("public_issue", True),
