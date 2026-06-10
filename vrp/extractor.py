@@ -63,23 +63,27 @@ async def scrape_issue(
 
     url = f"https://issues.chromium.org/issues/{issue_id}"
     captured = {"updates": None, "metadata": None}
+    pending: set[asyncio.Task] = set()
 
-    async def on_response(response):
+    async def _capture(response):
         try:
-            ct = response.headers.get("content-type", "")
-            if "json" not in ct:
-                return
-            if "updates" in response.url or "getIssue" in response.url:
-                body = await response.text()
-                if body.startswith(")]}'"):
-                    body = body[4:].strip()
-                data = json.loads(body)
-                if "updates" in response.url:
-                    captured["updates"] = data
-                else:
-                    captured["metadata"] = data
+            body = await response.text()
+            if body.startswith(")]}'"):
+                body = body[4:].strip()
+            data = json.loads(body)
+            if "updates" in response.url:
+                captured["updates"] = data
+            else:
+                captured["metadata"] = data
         except Exception as e:
             logger.warning(f"Response handler error for {issue_id}: {e}")
+
+    def on_response(response):
+        ct = response.headers.get("content-type", "")
+        if "json" in ct and ("updates" in response.url or "getIssue" in response.url):
+            task = asyncio.create_task(_capture(response))
+            pending.add(task)
+            task.add_done_callback(pending.discard)
 
     page = await context.new_page()
     page.on("response", on_response)
@@ -87,6 +91,11 @@ async def scrape_issue(
     try:
         await page.goto(url, wait_until="networkidle", timeout=TIMEOUT)
         await asyncio.sleep(1)
+
+        # Drain in-flight response-body reads before inspecting captured data;
+        # page.close() would otherwise kill them and lose the scrape.
+        if pending:
+            await asyncio.gather(*pending, return_exceptions=True)
 
         # Extract cookies after navigation so auth cookies are populated
         cookies = await _extract_cookies(context)
