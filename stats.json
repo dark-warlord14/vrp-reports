@@ -1,5 +1,5 @@
 {
-  "total_reports": 2056,
+  "total_reports": 2057,
   "total_bounty": 14812854.0,
   "avg_bounty": 7322.22,
   "by_year": {
@@ -36,7 +36,7 @@
       "total_bounty": 2876500.0
     },
     "2023": {
-      "count": 461,
+      "count": 462,
       "total_bounty": 2642337.0
     },
     "2024": {
@@ -53,7 +53,7 @@
     }
   },
   "by_severity": {
-    "S3-Low": 1830,
+    "S3-Low": 1831,
     "S4-Minimal": 212,
     "Unknown": 8,
     "S1-High": 5,
@@ -61,14 +61,14 @@
   },
   "by_status": {
     "Assigned": 1581,
-    "Accepted": 365,
+    "Accepted": 366,
     "Fixed": 64,
     "New": 30,
     "Verified": 15,
     "Unknown": 1
   },
   "by_component": {
-    "Blink": 921,
+    "Blink": 922,
     "Internals": 379,
     "UI": 376,
     "Platform": 147,

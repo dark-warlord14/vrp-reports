@@ -9108,6 +9108,24 @@
     "has_markdown": true
   },
   {
+    "id": "40076292",
+    "title": "Security: In File System Access API Hide Extension & Dangerous Warning Using PiP - Picture in Picture",
+    "url": "https://issues.chromium.org/issues/40076292",
+    "status": "Accepted",
+    "severity": "S3-Low",
+    "component": "Blink>Media>PictureInPicture, Blink>Storage>FileSystem",
+    "bounty_amount": null,
+    "reward_amount_meta": 0.0,
+    "public_issue": true,
+    "inclusion_reason": "award_text",
+    "award_text_found": true,
+    "created_date": "2023-11-07T17:43:29+00:00",
+    "year": 2023,
+    "attachment_count": 13,
+    "local_path": "issues/40076292",
+    "has_markdown": true
+  },
+  {
     "id": "40076226",
     "title": "Security: Heap-use-after-free in ChromeComposeClient::ShowComposeDialog",
     "url": "https://issues.chromium.org/issues/40076226",
