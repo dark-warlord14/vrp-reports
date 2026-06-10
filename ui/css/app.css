@@ -196,6 +196,11 @@ code, pre { font-family: var(--mono); }
     transition: color .15s, background .15s;
 }
 .theme-toggle:hover { color: var(--fg); background: var(--bg-hover); }
+.theme-toggle .icon { width: 16px; height: 16px; }
+/* Show the moon in dark mode, the sun in light mode. Toggling via CSS (not by
+   injecting text into the <svg>, which would never render). */
+html[data-theme="dark"]  .theme-toggle .icon-sun  { display: none; }
+html[data-theme="light"] .theme-toggle .icon-moon { display: none; }
 
 /* ---------- Page ---------- */
 .page {
@@ -325,6 +330,14 @@ code, pre { font-family: var(--mono); }
     margin: 0 0 .75rem;
 }
 
+/* Search match highlight */
+.report-table mark {
+    background: color-mix(in srgb, var(--amber) 32%, transparent);
+    color: var(--fg);
+    border-radius: 2px;
+    padding: 0 1px;
+}
+
 /* ---------- Table card ---------- */
 .table-wrapper {
     border: 1px solid var(--border);
@@ -352,10 +365,7 @@ code, pre { font-family: var(--mono); }
     cursor: pointer;
     user-select: none;
     white-space: nowrap;
-    position: sticky;
-    top: var(--header-h);
     background: var(--bg-subtle);
-    z-index: 1;
     transition: color .15s;
 }
 .report-table thead th:hover { color: var(--fg); }
@@ -958,7 +968,6 @@ code, pre { font-family: var(--mono); }
     .report-table { font-size: 12.5px; }
     .report-table .col-status,
     .report-table .col-date { display: none; }
-    .report-table thead th { top: 0; }
     .metadata-grid { grid-template-columns: 1fr 1fr; }
     .colophon-inner { grid-template-columns: 1fr 1fr; }
     .page > h1 { font-size: 24px; }

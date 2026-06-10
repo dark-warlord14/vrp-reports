@@ -160,6 +160,12 @@ const App = {
         const severities = [...new Set(this.data.map(r => r.severity).filter(Boolean))].sort();
         const statuses = [...new Set(this.data.map(r => r.status).filter(Boolean))].sort();
 
+        // Faceted counts for each filter, reflecting the search + other facets.
+        const yearCounts = this.facetCounts('year');
+        const sevCounts = this.facetCounts('severity');
+        const statusCounts = this.facetCounts('status');
+        const terms = this.searchTerms();
+
         const hasActiveFilters = this.filters.search || this.filters.year ||
             this.filters.severity || this.filters.status;
 
@@ -185,21 +191,21 @@ const App = {
 
             <div class="filters">
                 <input type="search" class="search-box"
-                    placeholder="Search by ID, title, or component..."
+                    placeholder="Search ID, title, component, CVE, reporter…"
                     aria-label="Search reports"
                     value="${this.escapeAttr(this.filters.search)}"
                     oninput="App.onFilterDebounced('search', this.value)">
                 <select aria-label="Filter by year" onchange="App.onFilter('year', this.value)">
-                    <option value="">All Years</option>
-                    ${years.map(y => `<option value="${y}" ${this.filters.year == y ? 'selected' : ''}>${y}</option>`).join('')}
+                    <option value="">All Years (${this.data.length})</option>
+                    ${years.map(y => `<option value="${y}" ${this.filters.year == y ? 'selected' : ''}>${y} (${yearCounts.get(String(y)) || 0})</option>`).join('')}
                 </select>
                 <select aria-label="Filter by severity" onchange="App.onFilter('severity', this.value)">
                     <option value="">All Severities</option>
-                    ${severities.map(s => `<option value="${s}" ${this.filters.severity === s ? 'selected' : ''}>${Components.escapeHtml(s)}</option>`).join('')}
+                    ${severities.map(s => `<option value="${s}" ${this.filters.severity === s ? 'selected' : ''}>${Components.escapeHtml(s)} (${sevCounts.get(s) || 0})</option>`).join('')}
                 </select>
                 <select aria-label="Filter by status" onchange="App.onFilter('status', this.value)">
                     <option value="">All Statuses</option>
-                    ${statuses.map(s => `<option value="${s}" ${this.filters.status === s ? 'selected' : ''}>${Components.escapeHtml(s)}</option>`).join('')}
+                    ${statuses.map(s => `<option value="${s}" ${this.filters.status === s ? 'selected' : ''}>${Components.escapeHtml(s)} (${statusCounts.get(s) || 0})</option>`).join('')}
                 </select>
                 ${hasActiveFilters ? `<button class="outline small clear-btn" onclick="App.clearFilters()">Clear filters</button>` : ''}
                 <button class="outline small" onclick="App.exportCSV()" title="Export filtered results as CSV">Export CSV</button>
@@ -228,8 +234,8 @@ const App = {
                                 tabindex="0"
                                 onkeydown="if(event.key==='Enter')location.hash='#/report/${r.id}'"
                                 aria-label="Report ${r.id}: ${Components.escapeHtml(r.title || 'Untitled')}">
-                                <td class="col-id"><code>${Components.escapeHtml(r.id || '')}</code></td>
-                                <td class="col-title">${Components.escapeHtml(r.title || 'Untitled')}</td>
+                                <td class="col-id"><code>${this.highlight(r.id || '', terms)}</code></td>
+                                <td class="col-title">${this.highlight(r.title || 'Untitled', terms)}</td>
                                 <td class="col-severity">${Components.severityBadge(r.severity)}</td>
                                 <td class="col-bounty">${Components.bountyBadge(r.bounty_amount)}</td>
                                 <td class="col-status">${Components.statusBadge(r.status)}</td>
@@ -333,15 +339,82 @@ const App = {
         URL.revokeObjectURL(url);
     },
 
+    // --- Search ---
+    // Multi-term AND search across id, title, component, severity, status,
+    // reporter and CVE IDs. (reporter/cve_ids are present once the index has
+    // been rebuilt; matching degrades gracefully when they're absent.)
+    searchTerms() {
+        return (this.filters.search || '').toLowerCase().split(/\s+/).filter(Boolean);
+    },
+
+    searchHaystack(r) {
+        const cve = Array.isArray(r.cve_ids) ? r.cve_ids.join(' ') : (r.cve_ids || '');
+        return [r.id, r.title, r.component, r.severity, r.status, r.reporter, cve]
+            .filter(Boolean).join('  ').toLowerCase();
+    },
+
+    matchesSearch(r) {
+        const terms = this.searchTerms();
+        if (!terms.length) return true;
+        const hay = this.searchHaystack(r);
+        return terms.every(t => hay.includes(t));
+    },
+
+    // Relevance score so the most pertinent reports rise to the top when searching.
+    searchScore(r) {
+        const terms = this.searchTerms();
+        if (!terms.length) return 0;
+        const title = (r.title || '').toLowerCase();
+        const id    = (r.id || '').toLowerCase();
+        const comp  = (r.component || '').toLowerCase();
+        const rep   = (r.reporter || '').toLowerCase();
+        const cve   = (Array.isArray(r.cve_ids) ? r.cve_ids.join(' ') : (r.cve_ids || '')).toLowerCase();
+        let score = 0;
+        for (const t of terms) {
+            if (id === t) score += 10; else if (id.includes(t)) score += 4;
+            if (title.includes(t)) score += title.startsWith(t) ? 6 : 4;
+            if (cve.includes(t))  score += 5;
+            if (comp.includes(t)) score += 2;
+            if (rep.includes(t))  score += 2;
+        }
+        return score;
+    },
+
+    // Count of reports per value for a facet, honoring the search and every
+    // OTHER active facet (so counts reflect what selecting this value yields).
+    facetCounts(field) {
+        const counts = new Map();
+        for (const r of this.data) {
+            if (!this.matchesSearch(r)) continue;
+            if (field !== 'year'     && this.filters.year     && r.year != this.filters.year) continue;
+            if (field !== 'severity' && this.filters.severity && r.severity !== this.filters.severity) continue;
+            if (field !== 'status'   && this.filters.status   && r.status !== this.filters.status) continue;
+            const v = String(r[field] ?? '');
+            if (!v) continue;
+            counts.set(v, (counts.get(v) || 0) + 1);
+        }
+        return counts;
+    },
+
+    // Escape text, then wrap search-term matches in <mark> for highlighting.
+    highlight(text, terms) {
+        const safe = Components.escapeHtml(text || '');
+        if (!terms || !terms.length) return safe;
+        const pattern = terms
+            .map(t => t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&'))
+            .filter(Boolean)
+            .join('|');
+        if (!pattern) return safe;
+        try {
+            return safe.replace(new RegExp(`(${pattern})`, 'gi'), '<mark>$1</mark>');
+        } catch {
+            return safe;
+        }
+    },
+
     getFilteredData() {
         return this.data.filter(r => {
-            if (this.filters.search) {
-                const q = this.filters.search.toLowerCase();
-                const match = (r.id || '').toLowerCase().includes(q) ||
-                    (r.title || '').toLowerCase().includes(q) ||
-                    (r.component || '').toLowerCase().includes(q);
-                if (!match) return false;
-            }
+            if (!this.matchesSearch(r)) return false;
             if (this.filters.year && r.year != this.filters.year) return false;
             if (this.filters.severity && r.severity !== this.filters.severity) return false;
             if (this.filters.status && r.status !== this.filters.status) return false;
@@ -351,6 +424,15 @@ const App = {
 
     getSortedData(data) {
         const { field, dir } = this.currentSort;
+        // When searching with the default sort, order by relevance first.
+        const isDefaultSort = field === 'created_date' && dir === 'desc';
+        if (this.searchTerms().length && isDefaultSort) {
+            return [...data].sort((a, b) => {
+                const d = this.searchScore(b) - this.searchScore(a);
+                if (d) return d;
+                return String(b.created_date || '').localeCompare(String(a.created_date || ''));
+            });
+        }
         const mult = dir === 'asc' ? 1 : -1;
         return [...data].sort((a, b) => {
             let va = this.sortValue(a, field), vb = this.sortValue(b, field);
@@ -750,13 +832,13 @@ const App = {
     },
 };
 
-// Theme toggle
+// Theme toggle. The sun/moon icons are two inline SVGs shown/hidden purely via
+// CSS keyed off [data-theme] — so all this needs to do is flip the attribute.
 function toggleTheme() {
     const html = document.documentElement;
     const next = html.dataset.theme === 'dark' ? 'light' : 'dark';
     html.dataset.theme = next;
     localStorage.setItem('vrp-theme', next);
-    document.getElementById('themeIcon').innerHTML = next === 'dark' ? '&#9790;' : '&#9728;';
     if (location.hash.startsWith('#/stats') && App.stats) {
         App.renderCharts(App.stats);
     }
@@ -765,10 +847,7 @@ function toggleTheme() {
 // Load saved theme
 (function() {
     const saved = localStorage.getItem('vrp-theme');
-    if (saved) {
-        document.documentElement.dataset.theme = saved;
-        document.getElementById('themeIcon').innerHTML = saved === 'dark' ? '&#9790;' : '&#9728;';
-    }
+    if (saved) document.documentElement.dataset.theme = saved;
 })();
 
 document.addEventListener('DOMContentLoaded', () => App.init());
