@@ -61,42 +61,56 @@ async def discover_ids_for_year(year: int, headless: bool = HEADLESS, resume: bo
 
         try:
             for search_idx, search_url in enumerate(search_urls, start=1):
-                await page.goto(search_url, wait_until="networkidle", timeout=TIMEOUT)
-                page_count = 0
+                # Each search is independent and best-effort: if one qualifier
+                # breaks (e.g. the tracker renames a field), the remaining
+                # searches still run so we don't lose the whole year's coverage.
+                before = len(issue_ids)
+                try:
+                    await page.goto(search_url, wait_until="networkidle", timeout=TIMEOUT)
+                    page_count = 0
 
-                while page_count < MAX_SEARCH_PAGES:
-                    await asyncio.sleep(3)
+                    while page_count < MAX_SEARCH_PAGES:
+                        await asyncio.sleep(3)
 
-                    links = await page.locator("a").evaluate_all(
-                        "elements => elements.map(e => e.href)"
-                    )
-                    found_ids = extract_issue_ids_from_links(links)
-                    found_new = 0
-                    for iid in found_ids:
-                        if iid not in issue_ids:
-                            issue_ids.add(iid)
-                            found_new += 1
+                        links = await page.locator("a").evaluate_all(
+                            "elements => elements.map(e => e.href)"
+                        )
+                        found_ids = extract_issue_ids_from_links(links)
+                        found_new = 0
+                        for iid in found_ids:
+                            if iid not in issue_ids:
+                                issue_ids.add(iid)
+                                found_new += 1
 
-                    logger.info(
-                        f"[{year}] Search {search_idx}/{len(search_urls)} "
-                        f"page {page_count + 1}: +{found_new} new, "
-                        f"{len(issue_ids)} total"
-                    )
-
-                    next_btn = page.locator("button[aria-label='Go to next page']")
-                    if await next_btn.is_visible() and await next_btn.is_enabled():
-                        await next_btn.click()
-                        await page.wait_for_load_state("networkidle")
-                        page_count += 1
-                    else:
                         logger.info(
                             f"[{year}] Search {search_idx}/{len(search_urls)} "
-                            f"reached end at page {page_count + 1}"
+                            f"page {page_count + 1}: +{found_new} new, "
+                            f"{len(issue_ids)} total"
                         )
-                        break
 
-        except Exception as e:
-            logger.error(f"[{year}] Discovery error: {e}")
+                        next_btn = page.locator("button[aria-label='Go to next page']")
+                        if await next_btn.is_visible() and await next_btn.is_enabled():
+                            await next_btn.click()
+                            await page.wait_for_load_state("networkidle")
+                            page_count += 1
+                        else:
+                            logger.info(
+                                f"[{year}] Search {search_idx}/{len(search_urls)} "
+                                f"reached end at page {page_count + 1}"
+                            )
+                            break
+                except Exception as e:
+                    logger.error(
+                        f"[{year}] Search {search_idx}/{len(search_urls)} failed "
+                        f"({search_url}): {e} — continuing with remaining searches"
+                    )
+                    continue
+
+                logger.info(
+                    f"[{year}] Search {search_idx}/{len(search_urls)} done: "
+                    f"+{len(issue_ids) - before} new this search, "
+                    f"{len(issue_ids)} total so far"
+                )
         finally:
             await page.close()
             await browser.close()

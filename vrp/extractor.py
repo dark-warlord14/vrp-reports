@@ -50,16 +50,21 @@ async def scrape_issue(
     issue_id: str,
     context: BrowserContext,
     force: bool = False,
-) -> bool:
+) -> str:
     """Scrape a single issue from the Chromium Issue Tracker.
 
-    Returns True if bounty report was found and saved.
+    Returns an outcome string describing what happened:
+      - "exists":     already scraped, skipped
+      - "bounty":     bounty report found and saved
+      - "no_capture": page loaded but no updates JSON was captured
+      - "no_bounty":  data captured/parsed but no bounty award present
+      - "error":      an exception occurred while scraping
     """
     idir = _issue_dir(issue_id)
 
     # Skip if already processed (unless force)
     if not force and _has_report(issue_id):
-        return True
+        return "exists"
 
     url = f"https://issues.chromium.org/issues/{issue_id}"
     captured = {"updates": None, "metadata": None}
@@ -107,8 +112,16 @@ async def scrape_issue(
         cookies = await _extract_cookies(context)
 
         if not captured["updates"]:
-            logger.warning(f"No updates captured for {issue_id}")
-            return False
+            logger.warning(
+                f"{issue_id}: no updates JSON captured "
+                f"(metadata captured: {captured['metadata'] is not None})"
+            )
+            return "no_capture"
+
+        logger.debug(
+            f"{issue_id}: captured updates (metadata: "
+            f"{captured['metadata'] is not None}), parsing..."
+        )
 
         # Save raw data first (for reprocessing later)
         idir.mkdir(parents=True, exist_ok=True)
@@ -123,7 +136,7 @@ async def scrape_issue(
             for f in idir.iterdir():
                 f.unlink()
             idir.rmdir()
-            return False
+            return "no_bounty"
 
         logger.info(f"BOUNTY: {issue_id} - ${issue.bounty_amount or '?'} - {issue.title[:60]}")
 
@@ -147,11 +160,11 @@ async def scrape_issue(
         save_json(idir / "report.json", issue.model_dump())
         write_issue_corpus(issue, idir, CORPUS_DIR)
 
-        return True
+        return "bounty"
 
     except Exception as e:
         logger.error(f"Error scraping {issue_id}: {e}")
-        return False
+        return "error"
     finally:
         await page.close()
 
@@ -191,6 +204,15 @@ async def scrape_all(
         return 0
 
     bounty_count = 0
+    # Tally every per-issue outcome so the run summary explains *why* issues
+    # were or weren't included (visible in CI logs and locally).
+    outcomes: dict[str, int] = {
+        "exists": 0,
+        "bounty": 0,
+        "no_capture": 0,
+        "no_bounty": 0,
+        "error": 0,
+    }
     semaphore = asyncio.Semaphore(CONCURRENCY_LIMIT)
 
     async with async_playwright() as pw:
@@ -205,7 +227,8 @@ async def scrape_all(
                 nonlocal bounty_count, processed
                 async with semaphore:
                     result = await scrape_issue(iid, context, force=force)
-                    if result:
+                    outcomes[result] = outcomes.get(result, 0) + 1
+                    if result == "bounty":
                         bounty_count += 1
                     processed += 1
                     progress.update(task, advance=1)
@@ -230,7 +253,24 @@ async def scrape_all(
 
         await browser.close()
 
-    logger.info(f"Scraping complete: {bounty_count} bounty reports found out of {len(issue_ids)} processed")
+    logger.info(
+        f"Scraping complete: {bounty_count} bounty reports found out of "
+        f"{len(issue_ids)} processed"
+    )
+    logger.info(
+        "Outcome breakdown: "
+        f"bounty={outcomes['bounty']}, "
+        f"no_bounty={outcomes['no_bounty']}, "
+        f"no_capture={outcomes['no_capture']}, "
+        f"error={outcomes['error']}, "
+        f"already_had_report={outcomes['exists']}"
+    )
+    if outcomes["no_capture"] or outcomes["error"]:
+        logger.warning(
+            f"{outcomes['no_capture']} issues yielded no captured data and "
+            f"{outcomes['error']} errored — these were NOT inspected for bounties. "
+            "Run with VRP_LOG_LEVEL=DEBUG to see per-issue detail."
+        )
     return bounty_count
 
 

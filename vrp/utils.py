@@ -12,8 +12,11 @@ from rich.logging import RichHandler
 from rich.progress import BarColumn, Progress, SpinnerColumn, TaskProgressColumn, TextColumn
 
 # --- Logging ---
+# Level overridable via VRP_LOG_LEVEL (e.g. DEBUG) so both CI and local runs
+# can surface per-issue detail without a code change.
+_LOG_LEVEL = os.environ.get("VRP_LOG_LEVEL", "INFO").upper()
 logging.basicConfig(
-    level=logging.INFO,
+    level=getattr(logging, _LOG_LEVEL, logging.INFO),
     format="%(message)s",
     datefmt="[%X]",
     handlers=[RichHandler(rich_tracebacks=True)],

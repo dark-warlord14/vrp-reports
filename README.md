@@ -68,6 +68,16 @@ An issue is archived only when both are true:
 - the public record shows reward evidence, either through reward metadata or public award text
 
 `vrp-reward` by itself is not enough for inclusion.
+
+Discovery deliberately casts a **wide net**: it runs several independent reward
+searches (the numeric reward field `customfield1223135>0`, the broader
+`Reward>0`, and the legacy `vrp-reward>0` tag) and unions the results. This is
+intentional resilience — the tracker has renamed/changed reward fields over the
+years, and relying on any single qualifier silently dropped hundreds of
+genuinely rewarded reports. Over-discovered candidates that turn out to have no
+reward are re-validated and rejected by the parser, so the wide net costs scrape
+time but never loses a report. To extend discovery as the schema evolves, add a
+qualifier to `REWARD_SEARCH_QUALIFIERS` in `vrp/config.py`.
 data/
 ├── index.json               # Enriched index of all reports (sorted by date)
 ├── stats.json               # Precomputed analytics
@@ -129,7 +139,7 @@ vrp/
 ├── config.py        Configuration, paths, enums, year-based URL builder
 ├── models.py        Pydantic models: Issue, Update, Attachment, IndexEntry
 ├── parser.py        Structured parsing of Chromium Issue Tracker API responses
-├── discovery.py     Year-by-year issue ID discovery via Playwright
+├── discovery.py     Year-by-year issue ID discovery via Playwright (multiple unioned reward searches)
 ├── extractor.py     Per-issue data extraction + artifact downloads
 ├── corpus.py        JS corpus extraction from PoC attachments (for fuzzers)
 ├── markdown_gen.py  Markdown report generation
@@ -161,6 +171,7 @@ All defaults can be overridden with environment variables:
 | `VRP_TIMEOUT` | `60000` | Page load timeout (ms) |
 | `VRP_DELAY` | `2` | Delay between issues (seconds) |
 | `VRP_BROWSER_RESTART` | `100` | Restart browser every N issues |
+| `VRP_LOG_LEVEL` | `INFO` | Log verbosity; set `DEBUG` for per-issue scrape/parse detail |
 
 ## Testing
 

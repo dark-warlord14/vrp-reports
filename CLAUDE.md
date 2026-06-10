@@ -19,7 +19,7 @@ vrp status         # show current project state
 ```
 
 ## Pipeline stages (internal, all run via `vrp run`)
-1. discover — finds issue IDs from Chromium Issue Tracker (year-by-year, checkpointed)
+1. discover — finds issue IDs from Chromium Issue Tracker (year-by-year, checkpointed). Runs multiple independent reward searches (`REWARD_SEARCH_QUALIFIERS` in `config.py`) and unions them so a renamed tracker field can't silently drop reports.
 2. scrape — scrapes each issue with Playwright, downloads attachments
 3. reprocess — re-parses raw JSON without re-scraping (offline)
 4. markdown — generates report.md for each issue
