@@ -1,11 +1,14 @@
 """Tests for vrp/extractor.py."""
 
+import asyncio
 import json
 from unittest.mock import AsyncMock, patch
 
 import pytest
 
 from tests.fixtures import ISSUE_ID, make_raw_metadata, make_raw_updates
+
+_real_sleep = asyncio.sleep
 
 
 class _FakeResponse:
@@ -30,7 +33,7 @@ class _FakePage:
     async def goto(self, url, wait_until=None, timeout=None):
         assert self._handler is not None
         for response in self._responses:
-            await self._handler(response)
+            self._handler(response)
 
     async def close(self):
         return None
@@ -72,4 +75,43 @@ async def test_metadata_only_reward_is_not_rejected_by_preparse_gate(tmp_path):
     assert result is True
     assert (issue_dir / ISSUE_ID / "raw_updates.json").exists()
     assert (issue_dir / ISSUE_ID / "raw_metadata.json").exists()
+    assert (issue_dir / ISSUE_ID / "report.json").exists()
+
+
+class _SlowResponse(_FakeResponse):
+    """Response whose body read is still in flight when goto() returns."""
+
+    async def text(self):
+        for _ in range(3):
+            await _real_sleep(0)
+        return self._body
+
+
+@pytest.mark.asyncio
+async def test_in_flight_response_body_is_drained_before_capture_check(tmp_path):
+    issue_dir = tmp_path / "issues"
+    issue_dir.mkdir(parents=True)
+
+    raw_updates = make_raw_updates(bounty_text="No public award text.")
+    raw_metadata = make_raw_metadata(bounty_amount=3000)
+    page = _FakePage(
+        [
+            _SlowResponse("https://issues.chromium.org/action/issues/123/updates", raw_updates),
+            _SlowResponse("https://issues.chromium.org/action/issues/123/getIssue", raw_metadata),
+        ]
+    )
+    context = _FakeContext(page)
+
+    with patch("vrp.extractor.ISSUES_DIR", issue_dir), \
+         patch("vrp.extractor.CORPUS_DIR", tmp_path / "corpus"), \
+         patch("vrp.extractor._extract_cookies", AsyncMock(return_value={})), \
+         patch("vrp.extractor.write_issue_corpus"), \
+         patch("vrp.extractor.aiohttp.ClientSession"), \
+         patch("vrp.extractor.asyncio.sleep", AsyncMock()):
+        from vrp.extractor import scrape_issue
+
+        result = await scrape_issue(ISSUE_ID, context)
+
+    assert result is True
+    assert (issue_dir / ISSUE_ID / "raw_updates.json").exists()
     assert (issue_dir / ISSUE_ID / "report.json").exists()
