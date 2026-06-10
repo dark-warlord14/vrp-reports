@@ -1,0 +1,46 @@
+{
+  "id": "479122455",
+  "url": "https://issues.chromium.org/issues/479122455",
+  "title": "Mini bar not rendering when omnibox is hidden on Pixel 8 and 9",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Mobile>Toolbar",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": "146.0.7651.0",
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "pn...@google.com",
+  "created_date": "2026-01-27T16:49:19+00:00",
+  "modified_date": "2026-05-29T07:56:41+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 72863483,
+      "filename": "testcase.html",
+      "mime_type": "text/html",
+      "size_bytes": 3336,
+      "url": "https://issues.chromium.org/action/issues/479122455/attachments/72863483?download=true",
+      "local_path": "attachments/testcase.html"
+    },
+    {
+      "id": 72863484,
+      "filename": "screen.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3442409,
+      "url": "https://issues.chromium.org/action/issues/479122455/attachments/72863484?download=true",
+      "local_path": "attachments/screen.mp4"
+    }
+  ],
+  "update_count": 28,
+  "description_snippet": "# Steps to reproduce the problem\nIssue 467448811 appears to be fixed on other devices, but I am still able to consistently reproduce the problem on Pixel 8 and Pixel 9.\nI am not able to reproduce the issue on Pixel 7 or on Samsung devices using the same Chrome Canary build and reproduction steps.\n\n1"
+}

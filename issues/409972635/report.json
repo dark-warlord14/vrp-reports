@@ -1,0 +1,58 @@
+{
+  "id": "409972635",
+  "url": "https://issues.chromium.org/issues/409972635",
+  "title": "Tricking a user into a same-page drag-and-drop can disclose data to cross-origin frames",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>DataTransfer, Blink>FencedFrames, Blink>Portals, UI>Browser>Navigation>MPArch",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lu...@chromium.org",
+  "assignee": "dt...@chromium.org",
+  "created_date": "2025-04-11T18:59:49+00:00",
+  "modified_date": "2026-05-27T23:55:47+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 48,
+  "bounty_rationale": "Baseline. User information disclosure",
+  "attachments": [
+    {
+      "id": 64776084,
+      "filename": "drag-bug.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 32158,
+      "url": "https://issues.chromium.org/action/issues/409972635/attachments/64776084?download=true",
+      "local_path": "attachments/drag-bug.zip"
+    },
+    {
+      "id": 64776085,
+      "filename": "variations.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 55264,
+      "url": "https://issues.chromium.org/action/issues/409972635/attachments/64776085?download=true",
+      "local_path": "attachments/variations.txt"
+    },
+    {
+      "id": 64879784,
+      "filename": "Chrome Iframe Drag Bug.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 62791956,
+      "url": "https://issues.chromium.org/action/issues/409972635/attachments/64879784?download=true",
+      "local_path": "attachments/Chrome Iframe Drag Bug.mov"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "# Steps to reproduce the problem\n1. Clone https://github.com/KallynGowdy/chrome-iframe-bug or use the attached .zip file\n2. Serve index.html and iframe.html on port http://localhost:8081.\n3. Go to http://localhost:8081 and open the console.\n4. Drag a file into the window.\n5. Observe that MAIN WINDOW"
+}

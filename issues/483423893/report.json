@@ -1,0 +1,51 @@
+{
+  "id": "483423893",
+  "url": "https://issues.chromium.org/issues/483423893",
+  "title": "WebSocketConnector.Connect() passes renderer-controlled site_for_cookies and storage_access_api_status unvalidated, enabling third-party cookie blocking bypass",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Network>WebSockets",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ke...@gmail.com",
+  "assignee": "cf...@chromium.org",
+  "created_date": "2026-02-10T21:18:38+00:00",
+  "modified_date": "2026-06-06T07:53:08+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73327712,
+      "filename": "ws-cookie-bypass-poc.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 15909,
+      "url": "https://issues.chromium.org/action/issues/483423893/attachments/73327712?download=true",
+      "local_path": "attachments/ws-cookie-bypass-poc.py"
+    },
+    {
+      "id": 73412037,
+      "filename": "ws-session-hijack-poc.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 9604,
+      "url": "https://issues.chromium.org/action/issues/483423893/attachments/73412037?download=true",
+      "local_path": "attachments/ws-session-hijack-poc.zip"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "WebSocketConnector.Connect() takes site_for_cookies and\n  storage_access_api_status as renderer-supplied Mojo parameters. Neither is\n  validated against browser-side state before being passed through to the\n  network stack.\n\n  Data flow (zero validation at every hop):\n    Renderer → WebSocketConne"
+}

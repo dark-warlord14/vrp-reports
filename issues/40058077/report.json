@@ -1,0 +1,41 @@
+{
+  "id": "40058077",
+  "url": "https://issues.chromium.org/issues/40058077",
+  "title": "Security: Samesite Cookies sent in a cross-site request navigated from Chrome's PDF viewer",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature, Internals>Network>Cookies, Internals>Plugins>PDF, Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "na...@chromium.org",
+  "created_date": "2021-11-30T13:41:28+00:00",
+  "modified_date": "2026-05-02T07:52:54+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53205850,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1155,
+      "url": "https://issues.chromium.org/action/issues/40058077/attachments/53205850?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. On the target set a cookie using document.cookie = \"A=A;Secure;SameSite=Strict\";\r\n2. Create a PDF with a URL bookmark or use https://gi"
+}

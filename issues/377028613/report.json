@@ -1,0 +1,49 @@
+{
+  "id": "377028613",
+  "url": "https://issues.chromium.org/issues/377028613",
+  "title": "Drag link 🔗 to Tab leads to the origin of an external protocol handler prompt could have been obscured with spoofing ",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Blink>DataTransfer, UI>Browser>Navigation",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pu...@gmail.com",
+  "assignee": "sa...@microsoft.com",
+  "created_date": "2024-11-03T10:40:32+00:00",
+  "modified_date": "2025-06-03T23:04:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 60524189,
+      "filename": "Puf_POC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 994331,
+      "url": "https://issues.chromium.org/action/issues/377028613/attachments/60524189?download=true",
+      "local_path": "attachments/Puf_POC.mp4"
+    },
+    {
+      "id": 60524190,
+      "filename": "pufindex.html",
+      "mime_type": "text/html",
+      "size_bytes": 1031,
+      "url": "https://issues.chromium.org/action/issues/377028613/attachments/60524190?download=true",
+      "local_path": "attachments/pufindex.html"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "VULNERABILITY DETAILS\n\nDrag link 🔗 to new Tab leads to the origin of an external protocol handler prompt could have been obscured\n\nIf a User Drag protocol link 🔗 to New Tab 📑, it does not show origin information📄 in external protocol Permission prompt \n\nthere is threat to exploit this Vulnerability:"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "41494860",
+  "url": "https://issues.chromium.org/issues/41494860",
+  "title": "Security: heap-buffer-overflow in Blink",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Image, Internals>Skia",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jo...@ret2.one",
+  "assignee": "am...@chromium.org",
+  "created_date": "2024-01-25T21:21:30+00:00",
+  "modified_date": "2025-04-08T02:06:05+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "reward_amount_meta": 15000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53052836,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 418,
+      "url": "https://issues.chromium.org/action/issues/41494860/attachments/53052836?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53052837,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8696,
+      "url": "https://issues.chromium.org/action/issues/41494860/attachments/53052837?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53052838,
+      "filename": "bad.bmp",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 235,
+      "url": "https://issues.chromium.org/action/issues/41494860/attachments/53052838?download=true",
+      "local_path": "attachments/bad.bmp"
+    },
+    {
+      "id": 53756683,
+      "filename": "xcalc-popped.png",
+      "mime_type": "image/png",
+      "size_bytes": 2503044,
+      "url": "https://issues.chromium.org/action/issues/41494860/attachments/53756683?download=true",
+      "local_path": "attachments/xcalc-popped.png"
+    },
+    {
+      "id": 53754762,
+      "filename": "deadbeef.png",
+      "mime_type": "image/png",
+      "size_bytes": 2736780,
+      "url": "https://issues.chromium.org/action/issues/41494860/attachments/53754762?download=true",
+      "local_path": "attachments/deadbeef.png"
+    },
+    {
+      "id": 53746947,
+      "filename": "cross-libc.html",
+      "mime_type": "text/html",
+      "size_bytes": 12552,
+      "url": "https://issues.chromium.org/action/issues/41494860/attachments/53746947?download=true",
+      "local_path": "attachments/cross-libc.html"
+    }
+  ],
+  "update_count": 92,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nBMP image parsing crash with ASAN because of a wrong address calculation and crash inside a DCHECK because of this same wrong address:  \n  \nAddress calculate: https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/platform/image-decoders/bmp/"
+}

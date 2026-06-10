@@ -1,0 +1,38 @@
+{
+  "id": "40093770",
+  "url": "https://issues.chromium.org/issues/40093770",
+  "title": "Chromium - Exposed GPU profiler allows to dump all URLs and headers from requested pages",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Mobile>WebView",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "aw...@google.com",
+  "created_date": "2019-01-16T18:42:20+00:00",
+  "modified_date": "2025-08-28T15:27:28+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53306978,
+      "filename": "2018-12-24_1727.png",
+      "mime_type": "image/png",
+      "size_bytes": 115805,
+      "url": "https://issues.chromium.org/action/issues/40093770/attachments/53306978?download=true",
+      "local_path": "attachments/2018-12-24_1727.png"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "================\r\nThis issue was originally reported on 1/11/19 in Public Trackers > Android External Security Reports as b/122676405, so this bug should be flagged as externally reported. Reporter is stoshins@gmail.com. I'm filing this bug per a separate email thread. Original report is copied belo"
+}

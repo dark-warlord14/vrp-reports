@@ -1,0 +1,49 @@
+{
+  "id": "373263969",
+  "url": "https://issues.chromium.org/issues/373263969",
+  "title": "Ensure not reusing ScriptResource via Blink MemoryCache across worlds",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P1",
+  "component": "Blink>Loader, Blink>Workers",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jl...@chromium.org",
+  "assignee": "yy...@chromium.org",
+  "created_date": "2024-10-14T13:33:56+00:00",
+  "modified_date": "2025-02-12T15:44:11+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 67,
+  "bounty_rationale": "$1,000 for report baseline / lower impact web platform privilege escalation as a carry over from the already rewarded report of crbug.com/371011220",
+  "attachments": [
+    {
+      "id": 60030087,
+      "filename": "content.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 396,
+      "url": "https://issues.chromium.org/action/issues/373263969/attachments/60030087?download=true",
+      "local_path": "attachments/content.js"
+    },
+    {
+      "id": 60030088,
+      "filename": "index.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 659,
+      "url": "https://issues.chromium.org/action/issues/373263969/attachments/60030088?download=true",
+      "local_path": "attachments/index.py"
+    }
+  ],
+  "update_count": 92,
+  "description_snippet": "# Steps to reproduce the problem\n1. Copy payload from https://issues.chromium.org/issues/371011220\n2. Replace content.js\n3. Start server via index.py\n\n# Problem Description\nHello, this ticket is a continuation of the issue: https://issues.chromium.org/issues/371011220.\n\nUnlike Firefox and Safari, Ch"
+}

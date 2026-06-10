@@ -1,0 +1,90 @@
+{
+  "id": "40085079",
+  "url": "https://issues.chromium.org/issues/40085079",
+  "title": "Security: Read all local files using minimal user interaction and gesture laundering",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Forms>File>Directory",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gr...@hotmail.com",
+  "assignee": "pb...@chromium.org",
+  "created_date": "2016-08-11T21:45:51+00:00",
+  "modified_date": "2025-01-31T17:44:22+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53087738,
+      "filename": "PoC-Read-all-Files.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1258,
+      "url": "https://issues.chromium.org/action/issues/40085079/attachments/53087738?download=true",
+      "local_path": "attachments/PoC-Read-all-Files.html"
+    },
+    {
+      "id": 53088541,
+      "filename": "PoC-Read-all-Filesv2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1395,
+      "url": "https://issues.chromium.org/action/issues/40085079/attachments/53088541?download=true",
+      "local_path": "attachments/PoC-Read-all-Filesv2.html"
+    },
+    {
+      "id": 53089174,
+      "filename": "folder-confirmation-dialog-update.png",
+      "mime_type": "image/png",
+      "size_bytes": 21168,
+      "url": "https://issues.chromium.org/action/issues/40085079/attachments/53089174?download=true",
+      "local_path": "attachments/folder-confirmation-dialog-update.png"
+    },
+    {
+      "id": 53089216,
+      "filename": "folder_upload_update.png",
+      "mime_type": "image/png",
+      "size_bytes": 7044,
+      "url": "https://issues.chromium.org/action/issues/40085079/attachments/53089216?download=true",
+      "local_path": "attachments/folder_upload_update.png"
+    },
+    {
+      "id": 53089226,
+      "filename": "637098@mac.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 524148,
+      "url": "https://issues.chromium.org/action/issues/40085079/attachments/53089226?download=true",
+      "local_path": "attachments/637098@mac.mp4"
+    },
+    {
+      "id": 53089227,
+      "filename": "637098@win10.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 631344,
+      "url": "https://issues.chromium.org/action/issues/40085079/attachments/53089227?download=true",
+      "local_path": "attachments/637098@win10.mp4"
+    },
+    {
+      "id": 53089238,
+      "filename": "PoC-Read-all-Files.html",
+      "mime_type": "text/plain",
+      "size_bytes": 450,
+      "url": "https://issues.chromium.org/action/issues/40085079/attachments/53089238?download=true",
+      "local_path": "attachments/PoC-Read-all-Files.html"
+    }
+  ],
+  "update_count": 177,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUsing a hidden input[type=file] element, in conjuncture with minimal user interaction I am able to read _ALL THE FILES IN A VICTIMS LOCAL DISK_  \n  \nPlease refer to the PoC for a live example.  \n  \n**VERSION**   \nChrome Version: Version 52.0.2743.116 m + stable (64-bit)"
+}

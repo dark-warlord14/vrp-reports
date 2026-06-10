@@ -1,0 +1,137 @@
+{
+  "id": "382399969",
+  "url": "https://issues.chromium.org/issues/382399969",
+  "title": "heap-use-after-free on FedCmAccountSelectionView::ShowDialogWidget",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Identity>FedCM",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "131.0.0.0",
+  "cve_ids": [],
+  "reporter": "li...@gmail.com",
+  "assignee": "np...@google.com",
+  "created_date": "2024-12-05T17:48:28+00:00",
+  "modified_date": "2025-04-24T15:54:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 36000.0,
+  "reward_amount_meta": 36000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 61328791,
+      "filename": "login.html",
+      "mime_type": "text/html",
+      "size_bytes": 73,
+      "url": "https://issues.chromium.org/action/issues/382399969/attachments/61328791?download=true",
+      "local_path": "attachments/login.html"
+    },
+    {
+      "id": 61328792,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 701,
+      "url": "https://issues.chromium.org/action/issues/382399969/attachments/61328792?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 61328793,
+      "filename": "server.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2091,
+      "url": "https://issues.chromium.org/action/issues/382399969/attachments/61328793?download=true",
+      "local_path": "attachments/server.js"
+    },
+    {
+      "id": 61328794,
+      "filename": "uaf16.log",
+      "mime_type": "text/plain",
+      "size_bytes": 164488,
+      "url": "https://issues.chromium.org/action/issues/382399969/attachments/61328794?download=true",
+      "local_path": "attachments/uaf16.log"
+    },
+    {
+      "id": 61328795,
+      "filename": "poc1.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 22356495,
+      "url": "https://issues.chromium.org/action/issues/382399969/attachments/61328795?download=true",
+      "local_path": "attachments/poc1.mov"
+    },
+    {
+      "id": 61339999,
+      "filename": "symbolized_stacktrace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 168403,
+      "url": "https://issues.chromium.org/action/issues/382399969/attachments/61339999?download=true",
+      "local_path": "attachments/symbolized_stacktrace.txt"
+    },
+    {
+      "id": 61356030,
+      "filename": "login.html",
+      "mime_type": "text/html",
+      "size_bytes": 73,
+      "url": "https://issues.chromium.org/action/issues/382399969/attachments/61356030?download=true",
+      "local_path": "attachments/login.html"
+    },
+    {
+      "id": 61340024,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 710,
+      "url": "https://issues.chromium.org/action/issues/382399969/attachments/61340024?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 61353438,
+      "filename": "server.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1928,
+      "url": "https://issues.chromium.org/action/issues/382399969/attachments/61353438?download=true",
+      "local_path": "attachments/server.js"
+    },
+    {
+      "id": 61356031,
+      "filename": "poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 30474295,
+      "url": "https://issues.chromium.org/action/issues/382399969/attachments/61356031?download=true",
+      "local_path": "attachments/poc.mov"
+    },
+    {
+      "id": 61376081,
+      "filename": "RCA.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 13593,
+      "url": "https://issues.chromium.org/action/issues/382399969/attachments/61376081?download=true",
+      "local_path": "attachments/RCA.md"
+    },
+    {
+      "id": 61466242,
+      "filename": "permissions_bypass",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1439,
+      "url": "https://issues.chromium.org/action/issues/382399969/attachments/61466242?download=true",
+      "local_path": "attachments/permissions_bypass"
+    },
+    {
+      "id": 61465878,
+      "filename": "permissions_bypass.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 18645684,
+      "url": "https://issues.chromium.org/action/issues/382399969/attachments/61465878?download=true",
+      "local_path": "attachments/permissions_bypass.mov"
+    }
+  ],
+  "update_count": 91,
+  "description_snippet": "# Steps to reproduce the problem\nI'll take up some space for the report first. RCA analysis, bitset, and the fix patch will be uploaded tomorrow because it's a bit late now and I need to go to bed.\n\n# Problem Description\nI'll take up some space for the report first. RCA analysis, bitset, and patch w"
+}

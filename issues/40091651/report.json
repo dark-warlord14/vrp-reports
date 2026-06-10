@@ -1,0 +1,41 @@
+{
+  "id": "40091651",
+  "url": "https://issues.chromium.org/issues/40091651",
+  "title": "requestFullscreen should consume user activation to prevent UI/URL spoofing",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Fullscreen, Blink>Input",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "la...@chromium.org",
+  "created_date": "2018-06-14T03:13:28+00:00",
+  "modified_date": "2025-06-03T18:56:43+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53366758,
+      "filename": "spoof.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1823498,
+      "url": "https://issues.chromium.org/action/issues/40091651/attachments/53366758?download=true",
+      "local_path": "attachments/spoof.mp4"
+    }
+  ],
+  "update_count": 111,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe webkitRequestFullscreen function isn't consuming user gestures, allowing an attacker to set fullscreen on two different windows with the same click. When this happens, both warning messages saying the user entered fullscreen overlap, appearing as if they were only on"
+}

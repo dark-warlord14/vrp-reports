@@ -1,0 +1,31 @@
+{
+  "id": "40083779",
+  "url": "https://issues.chromium.org/issues/40083779",
+  "title": "Heap-use-after-free in blink::FrameView::performLayout",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Layout",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2016-1644"
+  ],
+  "reporter": "cl...@chromium.org",
+  "assignee": "ko...@chromium.org",
+  "created_date": "2016-02-29T00:10:16+00:00",
+  "modified_date": "2025-02-13T00:20:41+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3500.0,
+  "reward_amount_meta": 3500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 49,
+  "description_snippet": "Detailed report: https://cluster-fuzz.appspot.com/testcase?key=5304655887728640\n\nFuzzer: attekett_surku_fuzzer\nJob Type: linux_asan_chrome_media\nPlatform Id: linux\n\nCrash Type: Heap-use-after-free READ 8\nCrash Address: 0x6030000fd040\nCrash State:\n  blink::FrameView::performLayout\n  blink::FrameView:"
+}

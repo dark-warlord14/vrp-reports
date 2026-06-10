@@ -1,0 +1,43 @@
+{
+  "id": "378623799",
+  "url": "https://issues.chromium.org/issues/378623799",
+  "title": "TOCTOU in PersistentHistogramAllocator::GetHistogram",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Metrics",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "131.0.6778.20",
+  "cve_ids": [],
+  "reporter": "bl...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2024-11-12T15:05:01+00:00",
+  "modified_date": "2025-04-24T15:51:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 60758174,
+      "filename": "patch_renderer.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 3611,
+      "url": "https://issues.chromium.org/action/issues/378623799/attachments/60758174?download=true",
+      "local_path": "attachments/patch_renderer.diff"
+    }
+  ],
+  "update_count": 88,
+  "description_snippet": "# Steps to reproduce the problem\n1. Apply the patch_renderer.diff with `--ignore-whitespace` argument.\n2. Build the release version of Chrome and start it.\n3. Open a new tab and visit any URL.\n4. Close the tab. If the issue does not trigger, repeat the process of opening a new tab, visiting a URL, a"
+}

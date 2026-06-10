@@ -1,0 +1,46 @@
+{
+  "id": "384277487",
+  "url": "https://issues.chromium.org/issues/384277487",
+  "title": "Improve User Gesture detection",
+  "status": "Accepted",
+  "severity": "S0-Critical",
+  "priority": "P4",
+  "component": "Mobile>iOSWeb",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mr...@chromium.org",
+  "assignee": null,
+  "created_date": "2024-12-15T23:28:14+00:00",
+  "modified_date": "2025-05-16T12:43:41+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 62,
+  "bounty_rationale": "for report of lower impact issue where the potential for user harm are more DOS / abuse side rather than potential for security harm; we were able to make a helpful change so the reward acknowledges that",
+  "attachments": [
+    {
+      "id": 61554113,
+      "filename": "chrome_popups2.html",
+      "mime_type": "text/html",
+      "size_bytes": 1253,
+      "url": "https://issues.chromium.org/action/issues/384277487/attachments/61554113?download=true",
+      "local_path": "attachments/chrome_popups2.html"
+    },
+    {
+      "id": 62654915,
+      "filename": "crbug384277487.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 104076,
+      "url": "https://issues.chromium.org/action/issues/384277487/attachments/62654915?download=true",
+      "local_path": "attachments/crbug384277487.zip"
+    }
+  ],
+  "update_count": 77,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

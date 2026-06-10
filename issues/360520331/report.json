@@ -1,0 +1,57 @@
+{
+  "id": "360520331",
+  "url": "https://issues.chromium.org/issues/360520331",
+  "title": "Security: PaymentRequest dialog susceptible to clickjacking",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Payments",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "np...@chromium.org",
+  "created_date": "2024-08-18T18:14:12+00:00",
+  "modified_date": "2025-01-02T15:41:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58721866,
+      "filename": "card.html",
+      "mime_type": "text/html",
+      "size_bytes": 3250,
+      "url": "https://issues.chromium.org/action/issues/360520331/attachments/58721866?download=true",
+      "local_path": "attachments/card.html"
+    },
+    {
+      "id": 58721867,
+      "filename": "Chrome_AndroidPOC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 18415962,
+      "url": "https://issues.chromium.org/action/issues/360520331/attachments/58721867?download=true",
+      "local_path": "attachments/Chrome_AndroidPOC.mp4"
+    },
+    {
+      "id": 58996774,
+      "filename": "input-protection-3-seconds.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3151045,
+      "url": "https://issues.chromium.org/action/issues/360520331/attachments/58996774?download=true",
+      "local_path": "attachments/input-protection-3-seconds.mp4"
+    }
+  ],
+  "update_count": 98,
+  "description_snippet": "Edit by smcgruer@:\n\nAfter an investigation on Clank by darwinyang@, it seems that we already have [input protection for touch to fill](https://crsrc.org/c/chrome/browser/touch_to_fill/autofill/android/internal/java/src/org/chromium/chrome/browser/touch_to_fill/payments/TouchToFillPaymentMethodMediat"
+}

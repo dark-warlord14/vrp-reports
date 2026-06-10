@@ -1,0 +1,59 @@
+{
+  "id": "485677960",
+  "url": "https://issues.chromium.org/issues/485677960",
+  "title": "Use-After-Free in Canvas2D beginLayer Filter Parsing Leads to Renderer Crash and Potential RCE",
+  "status": "Verified",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Canvas",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "jp...@chromium.org",
+  "created_date": "2026-02-19T10:22:32+00:00",
+  "modified_date": "2026-06-02T07:56:10+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 50000.0,
+  "reward_amount_meta": 50000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73673833,
+      "filename": "exp.html",
+      "mime_type": "text/html",
+      "size_bytes": 5268,
+      "url": "https://issues.chromium.org/action/issues/485677960/attachments/73673833?download=true",
+      "local_path": "attachments/exp.html"
+    },
+    {
+      "id": 73673834,
+      "filename": "exp.png",
+      "mime_type": "image/png",
+      "size_bytes": 1022932,
+      "url": "https://issues.chromium.org/action/issues/485677960/attachments/73673834?download=true",
+      "local_path": "attachments/exp.png"
+    },
+    {
+      "id": 73666748,
+      "filename": "exploit-writeup.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 19938,
+      "url": "https://issues.chromium.org/action/issues/485677960/attachments/73666748?download=true",
+      "local_path": "attachments/exploit-writeup.md"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "# Use-After-Free in Canvas2D beginLayer Filter Parsing Leads to Renderer Crash and Potential RCE\n\n## Summary\n\nThe Canvas2D `beginLayer()` function caches a pointer to `MemoryManagedPaintRecorder` before parsing user-provided filter objects. When a filter object with a malicious JavaScript getter is"
+}

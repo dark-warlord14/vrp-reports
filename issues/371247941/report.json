@@ -1,0 +1,91 @@
+{
+  "id": "371247941",
+  "url": "https://issues.chromium.org/issues/371247941",
+  "title": "Bypass of https://issues.chromium.org/issues/333708039",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Geometry",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "sz...@chromium.org",
+  "created_date": "2024-10-03T21:19:14+00:00",
+  "modified_date": "2025-02-01T15:45:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 59834558,
+      "filename": "bandicam 2024-10-04 04-12-43-143.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1988312,
+      "url": "https://issues.chromium.org/action/issues/371247941/attachments/59834558?download=true",
+      "local_path": "attachments/bandicam 2024-10-04 04-12-43-143.mp4"
+    },
+    {
+      "id": 59832802,
+      "filename": "spoofh.html",
+      "mime_type": "text/html",
+      "size_bytes": 2272,
+      "url": "https://issues.chromium.org/action/issues/371247941/attachments/59832802?download=true",
+      "local_path": "attachments/spoofh.html"
+    },
+    {
+      "id": 59830185,
+      "filename": "gis.html",
+      "mime_type": "text/html",
+      "size_bytes": 946,
+      "url": "https://issues.chromium.org/action/issues/371247941/attachments/59830185?download=true",
+      "local_path": "attachments/gis.html"
+    },
+    {
+      "id": 59830193,
+      "filename": "spoofhnew.html",
+      "mime_type": "text/html",
+      "size_bytes": 2797,
+      "url": "https://issues.chromium.org/action/issues/371247941/attachments/59830193?download=true",
+      "local_path": "attachments/spoofhnew.html"
+    },
+    {
+      "id": 60195325,
+      "filename": "bandicam 2024-10-21 07-51-51-804.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2036463,
+      "url": "https://issues.chromium.org/action/issues/371247941/attachments/60195325?download=true",
+      "local_path": "attachments/bandicam 2024-10-21 07-51-51-804.mp4"
+    },
+    {
+      "id": 60196747,
+      "filename": "bandicam 2024-10-21 08-25-57-832.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1665097,
+      "url": "https://issues.chromium.org/action/issues/371247941/attachments/60196747?download=true",
+      "local_path": "attachments/bandicam 2024-10-21 08-25-57-832.mp4"
+    },
+    {
+      "id": 60314600,
+      "filename": "bandicam 2024-10-25 08-01-33-765.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2306463,
+      "url": "https://issues.chromium.org/action/issues/371247941/attachments/60314600?download=true",
+      "local_path": "attachments/bandicam 2024-10-25 08-01-33-765.mp4"
+    }
+  ],
+  "update_count": 79,
+  "description_snippet": "VULNERABILITY DETAILS\n\nThis vulnerability is similar to https://issues.chromium.org/issues/333708039, in this bug when the cursor focus on google one tap button  after that the opacity the frame set 0 (obscured by \"click me see funny cats\" button) the focus still to  google tap button lead to click"
+}

@@ -1,0 +1,98 @@
+{
+  "id": "484027094",
+  "url": "https://issues.chromium.org/issues/484027094",
+  "title": "WebNN ScatterND integer overflow in TFLite bounds check allows for 512MB controlled heap OOB write",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ci...@gmail.com",
+  "assignee": "ju...@intel.com",
+  "created_date": "2026-02-12T18:02:36+00:00",
+  "modified_date": "2026-05-22T07:56:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 43000.0,
+  "reward_amount_meta": 43000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73402926,
+      "filename": "webnn_scatternd_crash_report.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 4760,
+      "url": "https://issues.chromium.org/action/issues/484027094/attachments/73402926?download=true",
+      "local_path": "attachments/webnn_scatternd_crash_report.txt"
+    },
+    {
+      "id": 73402927,
+      "filename": "webnn_scatternd_simple.html",
+      "mime_type": "text/html",
+      "size_bytes": 3698,
+      "url": "https://issues.chromium.org/action/issues/484027094/attachments/73402927?download=true",
+      "local_path": "attachments/webnn_scatternd_simple.html"
+    },
+    {
+      "id": 73402928,
+      "filename": "webnn_scatternd_simple.html",
+      "mime_type": "text/html",
+      "size_bytes": 3698,
+      "url": "https://issues.chromium.org/action/issues/484027094/attachments/73402928?download=true",
+      "local_path": "attachments/webnn_scatternd_simple.html"
+    },
+    {
+      "id": 73398177,
+      "filename": "webnn_scatternd_oob_write_fix.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 931,
+      "url": "https://issues.chromium.org/action/issues/484027094/attachments/73398177?download=true",
+      "local_path": "attachments/webnn_scatternd_oob_write_fix.patch"
+    },
+    {
+      "id": 73411567,
+      "filename": "webnn_scatternd_writebehind.html",
+      "mime_type": "text/html",
+      "size_bytes": 2017,
+      "url": "https://issues.chromium.org/action/issues/484027094/attachments/73411567?download=true",
+      "local_path": "attachments/webnn_scatternd_writebehind.html"
+    },
+    {
+      "id": 73411568,
+      "filename": "webnn_scatternd_precision_write.html",
+      "mime_type": "text/html",
+      "size_bytes": 11343,
+      "url": "https://issues.chromium.org/action/issues/484027094/attachments/73411568?download=true",
+      "local_path": "attachments/webnn_scatternd_precision_write.html"
+    },
+    {
+      "id": 73412316,
+      "filename": "webnn_scatternd_evidence.html",
+      "mime_type": "text/html",
+      "size_bytes": 8426,
+      "url": "https://issues.chromium.org/action/issues/484027094/attachments/73412316?download=true",
+      "local_path": "attachments/webnn_scatternd_evidence.html"
+    },
+    {
+      "id": 73412318,
+      "filename": "scatternd_crash_evidence.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2404,
+      "url": "https://issues.chromium.org/action/issues/484027094/attachments/73412318?download=true",
+      "local_path": "attachments/scatternd_crash_evidence.txt"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "---\n\n### Report description\n\n\nHeap out-of-bounds write in WebNN TFLite ScatterND via int32 overflow\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/abou"
+}

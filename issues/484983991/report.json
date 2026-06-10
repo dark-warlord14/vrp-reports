@@ -1,0 +1,42 @@
+{
+  "id": "484983991",
+  "url": "https://issues.chromium.org/issues/484983991",
+  "title": "Heap-buffer-overflow in Skia PathStencilCoverOp via AtlasPathRenderer integer overflow",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>Skia",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "si...@gmail.com",
+  "assignee": "mi...@google.com",
+  "created_date": "2026-02-17T10:25:05+00:00",
+  "modified_date": "2026-06-02T07:56:11+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 32000.0,
+  "reward_amount_meta": 32000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73488254,
+      "filename": "skia_atlas_overflow_poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1086,
+      "url": "https://issues.chromium.org/action/issues/484983991/attachments/73488254?download=true",
+      "local_path": "attachments/skia_atlas_overflow_poc.html"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\n\nVULNERABILITY DETAILS\n\nComponent: Skia Ganesh GPU backend — `AtlasPathRenderer` / `PathStencilCoverOp` (Canvas 2D fill path)\n\n\nAn integer overflow in `AtlasRenderTask::AtlasPathList::add()` allows a user to trigger a"
+}

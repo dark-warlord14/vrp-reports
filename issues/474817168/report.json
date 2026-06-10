@@ -1,0 +1,89 @@
+{
+  "id": "474817168",
+  "url": "https://issues.chromium.org/issues/474817168",
+  "title": "Unviersal CSP Bypass/XSS & Privileged chrome:// page XSS via Browser History Sidebar navigation",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "143.0.7499.170",
+  "cve_ids": [],
+  "reporter": "is...@gmail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2026-01-11T21:16:39+00:00",
+  "modified_date": "2026-05-29T07:56:38+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 72360855,
+      "filename": "chromium-poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 73507819,
+      "url": "https://issues.chromium.org/action/issues/474817168/attachments/72360855?download=true",
+      "local_path": "attachments/chromium-poc.mp4"
+    },
+    {
+      "id": 72383242,
+      "filename": "chromium_csp_bypass_poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 7104,
+      "url": "https://issues.chromium.org/action/issues/474817168/attachments/72383242?download=true",
+      "local_path": "attachments/chromium_csp_bypass_poc.html"
+    },
+    {
+      "id": 72415792,
+      "filename": "test_with_blob.html",
+      "mime_type": "text/html",
+      "size_bytes": 963,
+      "url": "https://issues.chromium.org/action/issues/474817168/attachments/72415792?download=true",
+      "local_path": "attachments/test_with_blob.html"
+    },
+    {
+      "id": 72412953,
+      "filename": "blob_poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 31909505,
+      "url": "https://issues.chromium.org/action/issues/474817168/attachments/72412953?download=true",
+      "local_path": "attachments/blob_poc.mp4"
+    },
+    {
+      "id": 72429127,
+      "filename": "Tue Jan 13 2026 21:16:55 GMT+0400 (Azerbaijan Standard Time).png",
+      "mime_type": "image/png",
+      "size_bytes": 32537,
+      "url": "https://issues.chromium.org/action/issues/474817168/attachments/72429127?download=true",
+      "local_path": "attachments/Tue Jan 13 2026 21_16_55 GMT+0400 (Azerbaijan Standard Time).png"
+    },
+    {
+      "id": 72429128,
+      "filename": "Tue Jan 13 2026 21:19:47 GMT+0400 (Azerbaijan Standard Time).png",
+      "mime_type": "image/png",
+      "size_bytes": 10639,
+      "url": "https://issues.chromium.org/action/issues/474817168/attachments/72429128?download=true",
+      "local_path": "attachments/Tue Jan 13 2026 21_19_47 GMT+0400 (Azerbaijan Standard Time).png"
+    },
+    {
+      "id": 72462678,
+      "filename": "chrome_poc_prompt.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 34113567,
+      "url": "https://issues.chromium.org/action/issues/474817168/attachments/72462678?download=true",
+      "local_path": "attachments/chrome_poc_prompt.mp4"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "# Steps to reproduce the problem\nData URIs containing JavaScript payloads bypass Content Security Policy when reopened from Chrome's history sidebar, leading to XSS on the original origin. Additionally, this can be escalated to execute JavaScript in the privileged `chrome://history/` context.\n\n# Pro"
+}

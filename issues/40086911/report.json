@@ -1,0 +1,68 @@
+{
+  "id": "40086911",
+  "url": "https://issues.chromium.org/issues/40086911",
+  "title": "Security: Filesystem dialog box to cover the self-window and no origin for spoof",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>WindowDialog, UI>Browser, UI>Browser>Omnibox>SecurityIndicators",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "xi...@gmail.com",
+  "assignee": "av...@chromium.org",
+  "created_date": "2017-02-27T09:27:43+00:00",
+  "modified_date": "2025-05-15T19:35:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53187176,
+      "filename": "dialog1.png",
+      "mime_type": "image/png",
+      "size_bytes": 298336,
+      "url": "https://issues.chromium.org/action/issues/40086911/attachments/53187176?download=true",
+      "local_path": "attachments/dialog1.png"
+    },
+    {
+      "id": 53187227,
+      "filename": "Screenshot from 2017-02-27 10:24:56.png",
+      "mime_type": "image/png",
+      "size_bytes": 12339,
+      "url": "https://issues.chromium.org/action/issues/40086911/attachments/53187227?download=true",
+      "local_path": "attachments/Screenshot from 2017-02-27 10_24_56.png"
+    },
+    {
+      "id": 53187291,
+      "filename": "60-3093.png",
+      "mime_type": "image/png",
+      "size_bytes": 37112,
+      "url": "https://issues.chromium.org/action/issues/40086911/attachments/53187291?download=true",
+      "local_path": "attachments/60-3093.png"
+    },
+    {
+      "id": 53187309,
+      "filename": "Variant.png",
+      "mime_type": "image/png",
+      "size_bytes": 102177,
+      "url": "https://issues.chromium.org/action/issues/40086911/attachments/53187309?download=true",
+      "local_path": "attachments/Variant.png"
+    }
+  ],
+  "update_count": 98,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nChrome in the MAC version, when the window's width=1 and height=1, the dialog box can override self-window。And in the dialog's UI is no origin.The issue may allow a remote attacker to carry out phishing style attacks.  \n  \n**VERSION**   \nChrome Version:56.0.2924.87 (64-b"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "40061023",
+  "url": "https://issues.chromium.org/issues/40061023",
+  "title": "Lack of security measure for origin of downloaded files: iOS and non-iOS",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Mobile>iOSWeb, UI>Browser>Downloads",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pr...@gmail.com",
+  "assignee": "ol...@google.com",
+  "created_date": "2022-09-18T02:35:36+00:00",
+  "modified_date": "2025-10-29T22:15:32+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58908235,
+      "filename": "Mon Aug 26 2024 14:36:00 GMT+0200 (heure d’été d’Europe centrale).png",
+      "mime_type": "image/png",
+      "size_bytes": 33436,
+      "url": "https://issues.chromium.org/action/issues/40061023/attachments/58908235?download=true",
+      "local_path": "attachments/Mon Aug 26 2024 14_36_00 GMT+0200 (heure d’été d’Europe centrale).png"
+    },
+    {
+      "id": 58963019,
+      "filename": "iOS_Chrome_downspoof.html",
+      "mime_type": "text/html",
+      "size_bytes": 291,
+      "url": "https://issues.chromium.org/action/issues/40061023/attachments/58963019?download=true",
+      "local_path": "attachments/iOS_Chrome_downspoof.html"
+    },
+    {
+      "id": 58963796,
+      "filename": "iOS_Chrome_chrome-urls_no_download.png",
+      "mime_type": "image/png",
+      "size_bytes": 150670,
+      "url": "https://issues.chromium.org/action/issues/40061023/attachments/58963796?download=true",
+      "local_path": "attachments/iOS_Chrome_chrome-urls_no_download.png"
+    }
+  ],
+  "update_count": 972,
+  "description_snippet": "**Steps to reproduce the problem:**   \nWe can trick users as if file was downloaded from arbitrary trusted sites on iOS Chrome since browser does not show the origin of downloaded file.  \n  \nTest on: http://pwning.click/downorigin.php  \n  \n**Problem Description:**   \nLack of security measure for ori"
+}

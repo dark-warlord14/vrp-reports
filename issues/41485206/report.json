@@ -1,0 +1,51 @@
+{
+  "id": "41485206",
+  "url": "https://issues.chromium.org/issues/41485206",
+  "title": "Security: Guess a cross-origin iframe URL by firing multiple navigations",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "re...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2023-12-18T16:33:22+00:00",
+  "modified_date": "2026-06-03T07:51:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52927481,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1157,
+      "url": "https://issues.chromium.org/action/issues/41485206/attachments/52927481?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52927483,
+      "filename": "demo.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 2721450,
+      "url": "https://issues.chromium.org/action/issues/41485206/attachments/52927483?download=true",
+      "local_path": "attachments/demo.mov"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis is a bypass for https://crbug.com/chromium/1248444.  \n  \nIt is possible to figure out whether a cross-origin iframe is on a specific URL by firing multiple hash-navigations at the same time, and then counting the onload events fired. If the URL you're navigating to"
+}

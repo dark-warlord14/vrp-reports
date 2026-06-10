@@ -1,0 +1,46 @@
+{
+  "id": "349062458",
+  "url": "https://issues.chromium.org/issues/349062458",
+  "title": "Picture Capture Camera Prompt On Different Origin - Chrome iOS.",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Mobile>iOSWeb",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": "124.0.0.0",
+  "cve_ids": [],
+  "reporter": "ia...@gmail.com",
+  "assignee": "aj...@google.com",
+  "created_date": "2024-06-24T18:56:48+00:00",
+  "modified_date": "2025-02-04T15:40:19+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 57434827,
+      "filename": "cam2.html",
+      "mime_type": "text/html",
+      "size_bytes": 1433,
+      "url": "https://issues.chromium.org/action/issues/349062458/attachments/57434827?download=true",
+      "local_path": "attachments/cam2.html"
+    },
+    {
+      "id": 57434870,
+      "filename": "Picture Capture Camera Prompt On Different Origin - Chrome iOS..MP4",
+      "mime_type": "video/mp4",
+      "size_bytes": 63861798,
+      "url": "https://issues.chromium.org/action/issues/349062458/attachments/57434870?download=true",
+      "local_path": "attachments/Picture Capture Camera Prompt On Different Origin - Chrome iOS..MP4"
+    }
+  ],
+  "update_count": 82,
+  "description_snippet": "# Steps to reproduce the problem\n1. Host the attached `cam2.html` file on your server.\n2. Open Chrome on an iOS device and navigate to the hosted `cam2.html` file.\n3. Click on the \"Tap to open camera\" button located at the top left of the page.\n4. This action will open a new tab with `google.com`. A"
+}

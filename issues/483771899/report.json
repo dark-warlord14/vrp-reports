@@ -1,0 +1,70 @@
+{
+  "id": "483771899",
+  "url": "https://issues.chromium.org/issues/483771899",
+  "title": "---",
+  "status": "Unknown",
+  "severity": "Unknown",
+  "priority": "Unknown",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2017-2371"
+  ],
+  "reporter": "Unknown",
+  "assignee": null,
+  "created_date": "2026-02-11T22:16:33+00:00",
+  "modified_date": "2026-05-30T16:14:58+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 66,
+  "bounty_rationale": "Baseline. Web Platform Privilege Escalation",
+  "attachments": [
+    {
+      "id": 73368948,
+      "filename": "2026-02-11_21-58-01.ffmpeg.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 129935,
+      "url": "https://issues.chromium.org/action/issues/483771899/attachments/73368948?download=true",
+      "local_path": "attachments/2026-02-11_21-58-01.ffmpeg.mp4"
+    },
+    {
+      "id": 73368949,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 1875,
+      "url": "https://issues.chromium.org/action/issues/483771899/attachments/73368949?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 73506846,
+      "filename": "popups_bypass.html",
+      "mime_type": "text/html",
+      "size_bytes": 1223,
+      "url": "https://issues.chromium.org/action/issues/483771899/attachments/73506846?download=true",
+      "local_path": "attachments/popups_bypass.html"
+    },
+    {
+      "id": 73519940,
+      "filename": "electron-test.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 1313,
+      "url": "https://issues.chromium.org/action/issues/483771899/attachments/73519940?download=true",
+      "local_path": "attachments/electron-test.zip"
+    },
+    {
+      "id": 73752560,
+      "filename": "drive_by_download_demo.html",
+      "mime_type": "text/html",
+      "size_bytes": 1149,
+      "url": "https://issues.chromium.org/action/issues/483771899/attachments/73752560?download=true",
+      "local_path": "attachments/drive_by_download_demo.html"
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": "---\n\n### Report description\n\n\nHTML5 Sandbox Security Model Violation with auxiliary browsing contexts being created despite the lack of \"allow-popups\" keyword within iframes\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting"
+}

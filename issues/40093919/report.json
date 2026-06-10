@@ -1,0 +1,67 @@
+{
+  "id": "40093919",
+  "url": "https://issues.chromium.org/issues/40093919",
+  "title": "Security: heap-use-after-free in blink::LayoutObject::SetShouldCheckForPaintInvalidationWithoutGeometryChange",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Editing>Selection",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@gmail.com",
+  "assignee": "xi...@chromium.org",
+  "created_date": "2019-02-01T08:11:10+00:00",
+  "modified_date": "2026-05-06T21:51:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53357975,
+      "filename": "patched_crash.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 23614,
+      "url": "https://issues.chromium.org/action/issues/40093919/attachments/53357975?download=true",
+      "local_path": "attachments/patched_crash.txt"
+    },
+    {
+      "id": 53357985,
+      "filename": "patched_crash2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 29498,
+      "url": "https://issues.chromium.org/action/issues/40093919/attachments/53357985?download=true",
+      "local_path": "attachments/patched_crash2.txt"
+    },
+    {
+      "id": 53358011,
+      "filename": "patched_crash3.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 27089,
+      "url": "https://issues.chromium.org/action/issues/40093919/attachments/53358011?download=true",
+      "local_path": "attachments/patched_crash3.txt"
+    },
+    {
+      "id": 53358022,
+      "filename": "patched_crash4.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 35249,
+      "url": "https://issues.chromium.org/action/issues/40093919/attachments/53358022?download=true",
+      "local_path": "attachments/patched_crash4.txt"
+    }
+  ],
+  "update_count": 75,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe attached testcase crashes the latest ASAN build of content_shell. It requires an empty file 'empty.html' in the same directory as the testcase both served from a HTTP server. The testcase could require a few attempts to trigger.  \n  \n**VERSION**   \nChrome Version: as"
+}

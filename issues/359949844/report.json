@@ -1,0 +1,66 @@
+{
+  "id": "359949844",
+  "url": "https://issues.chromium.org/issues/359949844",
+  "title": "Security: Extension popup can render over permission prompts and screen share dialog",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2024-08-15T06:52:01+00:00",
+  "modified_date": "2025-02-18T17:00:51+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58670086,
+      "filename": "extension.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 2381,
+      "url": "https://issues.chromium.org/action/issues/359949844/attachments/58670086?download=true",
+      "local_path": "attachments/extension.zip"
+    },
+    {
+      "id": 58670087,
+      "filename": "bandicam 2024-08-15 11-37-54-824.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2090910,
+      "url": "https://issues.chromium.org/action/issues/359949844/attachments/58670087?download=true",
+      "local_path": "attachments/bandicam 2024-08-15 11-37-54-824.mp4"
+    },
+    {
+      "id": 63017561,
+      "filename": "bandicam 2024-08-15 11-37-54-824 (1).mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2090910,
+      "url": "https://issues.chromium.org/action/issues/359949844/attachments/63017561?download=true",
+      "local_path": "attachments/bandicam 2024-08-15 11-37-54-824 (1).mp4"
+    },
+    {
+      "id": 63017562,
+      "filename": "extension.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 2381,
+      "url": "https://issues.chromium.org/action/issues/359949844/attachments/63017562?download=true",
+      "local_path": "attachments/extension.zip"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "VULNERABILITY DETAILS\nThis vulnerability is almost the same as https://issues.chromium.org/issues/40058873 but it occurs on PWA prompt\n\n\nVERSION\nChrome Version:  129.0.6657.0 (Official Build) canary (64-bit)\nOperating System: Windows 10\n\nREPRODUCTION CASE\n\n1. Install attached extension: manifest-ke"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "363640098",
+  "url": "https://issues.chromium.org/issues/363640098",
+  "title": "Security: Download notification can hide 'Press Esc to exit fullscreen and see download' warning",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "UI>Browser>Bubbles>Download",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@gmail.com",
+  "assignee": "ch...@chromium.org",
+  "created_date": "2024-09-01T10:39:50+00:00",
+  "modified_date": "2025-04-23T12:39:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 59070837,
+      "filename": "record.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 6397836,
+      "url": "https://issues.chromium.org/action/issues/363640098/attachments/59070837?download=true",
+      "local_path": "attachments/record.mov"
+    },
+    {
+      "id": 59070838,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 1649,
+      "url": "https://issues.chromium.org/action/issues/363640098/attachments/59070838?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 59070839,
+      "filename": "malicious-script.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 644,
+      "url": "https://issues.chromium.org/action/issues/363640098/attachments/59070839?download=true",
+      "local_path": "attachments/malicious-script.js"
+    },
+    {
+      "id": 59083497,
+      "filename": "test_windows.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4737227,
+      "url": "https://issues.chromium.org/action/issues/363640098/attachments/59083497?download=true",
+      "local_path": "attachments/test_windows.mp4"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "Default notification in fullscreen and download notif is 'Press Esc to exit fullscreen and see download', but in this case after fullscren and file download success notif only 'To exit fullscreen press esc'\n\nVERSION\nChrome Version : Version 128.0.6613.114 (Official Build) (x86_64)\nOperating System:"
+}

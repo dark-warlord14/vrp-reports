@@ -1,0 +1,66 @@
+{
+  "id": "488188166",
+  "url": "https://issues.chromium.org/issues/488188166",
+  "title": "UAF in blink RuleMap",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>CSS",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "se...@chromium.org",
+  "created_date": "2026-02-27T07:55:23+00:00",
+  "modified_date": "2026-06-09T07:52:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73806576,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 44941,
+      "url": "https://issues.chromium.org/action/issues/488188166/attachments/73806576?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 73806577,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1334,
+      "url": "https://issues.chromium.org/action/issues/488188166/attachments/73806577?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 73815822,
+      "filename": "uaf_asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 35845,
+      "url": "https://issues.chromium.org/action/issues/488188166/attachments/73815822?download=true",
+      "local_path": "attachments/uaf_asan.txt"
+    },
+    {
+      "id": 73811916,
+      "filename": "uaf_poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1549,
+      "url": "https://issues.chromium.org/action/issues/488188166/attachments/73811916?download=true",
+      "local_path": "attachments/uaf_poc.html"
+    }
+  ],
+  "update_count": 86,
+  "description_snippet": "### Summary\n\nWhen Blink builds a “diff ruleset” during stylesheet mutation, [`RuleMap::AddFilteredRulesFromOtherSet`](https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/core/css/rule_set.cc;l=1592) copies selected `RuleData` entries into a new `RuleMap` but ignores t"
+}

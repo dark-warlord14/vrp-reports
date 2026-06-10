@@ -1,0 +1,81 @@
+{
+  "id": "377948403",
+  "url": "https://issues.chromium.org/issues/377948403",
+  "title": "blank <select> and <optgroup> inside iframe can be drawn outside of iframe",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Compositing>Scroll",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": "130.0.6723.116",
+  "cve_ids": [],
+  "reporter": "tr...@gmail.com",
+  "assignee": "wa...@chromium.org",
+  "created_date": "2024-11-08T05:51:56+00:00",
+  "modified_date": "2025-04-24T15:50:41+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 60682251,
+      "filename": "frame_1920x1080.html",
+      "mime_type": "text/html",
+      "size_bytes": 1063,
+      "url": "https://issues.chromium.org/action/issues/377948403/attachments/60682251?download=true",
+      "local_path": "attachments/frame_1920x1080.html"
+    },
+    {
+      "id": 60682252,
+      "filename": "screenshot.png",
+      "mime_type": "image/png",
+      "size_bytes": 71572,
+      "url": "https://issues.chromium.org/action/issues/377948403/attachments/60682252?download=true",
+      "local_path": "attachments/screenshot.png"
+    },
+    {
+      "id": 60682253,
+      "filename": "src.html",
+      "mime_type": "text/html",
+      "size_bytes": 226,
+      "url": "https://issues.chromium.org/action/issues/377948403/attachments/60682253?download=true",
+      "local_path": "attachments/src.html"
+    },
+    {
+      "id": 60682254,
+      "filename": "variations.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 98483,
+      "url": "https://issues.chromium.org/action/issues/377948403/attachments/60682254?download=true",
+      "local_path": "attachments/variations.txt"
+    },
+    {
+      "id": 60741346,
+      "filename": "bisect_result.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 5047,
+      "url": "https://issues.chromium.org/action/issues/377948403/attachments/60741346?download=true",
+      "local_path": "attachments/bisect_result.txt"
+    },
+    {
+      "id": 60719976,
+      "filename": "screencast.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2474976,
+      "url": "https://issues.chromium.org/action/issues/377948403/attachments/60719976?download=true",
+      "local_path": "attachments/screencast.mp4"
+    }
+  ],
+  "update_count": 83,
+  "description_snippet": "# Steps to reproduce the problem\n1. Locate frame_1920x1080.html and src.html to same directory\n2. Open frame_1920x1080.html, the grey box overflows outside of iframe\n\n# Problem Description\nOf the iframes placed in 3x3, only the iframe in the middle has src. The content that should only be drawn in t"
+}

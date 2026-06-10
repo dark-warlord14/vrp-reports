@@ -1,0 +1,42 @@
+{
+  "id": "40052135",
+  "url": "https://issues.chromium.org/issues/40052135",
+  "title": "Security: Side-channel attack against Autofill Preview that can steal user's data (e.g., credit card number).",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jp...@gmail.com",
+  "assignee": "ba...@chromium.org",
+  "created_date": "2020-04-27T21:18:11+00:00",
+  "modified_date": "2025-07-02T12:50:11+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53263544,
+      "filename": "Autofill-Attacks.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 95922,
+      "url": "https://issues.chromium.org/action/issues/40052135/attachments/53263544?download=true",
+      "local_path": "attachments/Autofill-Attacks.pdf"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "**This template is ONLY for reporting security bugs. If you are reporting a**   \n**Download Protection Bypass bug, please use the \"Security - Download**   \n**Protection\" template. For all other reports, please use a different**   \n**template.**   \n  \n**Please READ THIS FAQ before filing a bug: https"
+}

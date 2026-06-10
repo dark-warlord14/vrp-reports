@@ -1,0 +1,51 @@
+{
+  "id": "380487912",
+  "url": "https://issues.chromium.org/issues/380487912",
+  "title": "Use-After-Free in blink::ClipboardItem::ClipboardItem",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Bindings",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2024-11-23T14:37:20+00:00",
+  "modified_date": "2025-03-06T12:45:06+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 61044574,
+      "filename": "crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 768,
+      "url": "https://issues.chromium.org/action/issues/380487912/attachments/61044574?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 61044575,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 25636,
+      "url": "https://issues.chromium.org/action/issues/380487912/attachments/61044575?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "**Tested OS:** Ubuntu 22.04  \n**Tested Chrome Version:** Chromium 133.0.6847.2\n\n---\n\n**Reproduction Steps:**\n\nRun the following command:\n```bash\n./chrome http://localhost:8880/poc.html\n```\n\n---\n\n**Bisection:**\n\nThe issue appears to have been introduced in this changelist (CL):  \n[https://chromium-r"
+}

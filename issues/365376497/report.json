@@ -1,0 +1,75 @@
+{
+  "id": "365376497",
+  "url": "https://issues.chromium.org/issues/365376497",
+  "title": "V8 Sandbox Bypass: compiled JS-to-WASM wrappers don't guard against `trusted_function_data` overwrites",
+  "status": "Fixed",
+  "severity": "S4-Minimal",
+  "priority": "P3",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@popax21.dev",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2024-09-08T19:57:12+00:00",
+  "modified_date": "2025-03-06T17:47:39+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 59242418,
+      "filename": "exploit.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 16381,
+      "url": "https://issues.chromium.org/action/issues/365376497/attachments/59242418?download=true",
+      "local_path": "attachments/exploit.js"
+    },
+    {
+      "id": 59242419,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1975,
+      "url": "https://issues.chromium.org/action/issues/365376497/attachments/59242419?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 59242420,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2896,
+      "url": "https://issues.chromium.org/action/issues/365376497/attachments/59242420?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 59252685,
+      "filename": "poc_crash.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2864,
+      "url": "https://issues.chromium.org/action/issues/365376497/attachments/59252685?download=true",
+      "local_path": "attachments/poc_crash.js"
+    },
+    {
+      "id": 59254642,
+      "filename": "patch_traversal.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1698,
+      "url": "https://issues.chromium.org/action/issues/365376497/attachments/59254642?download=true",
+      "local_path": "attachments/patch_traversal.diff"
+    }
+  ],
+  "update_count": 96,
+  "description_snippet": "Wasm JSPI (JavaScript Promise Integration) is an experimental feature allowing Wasm functions to suspend and resume execution, integrating with JavaScript promises.\nThis is implemented by executing asynchronous Wasm functions on a separately allocated stack, and switching to/from this stack when nee"
+}

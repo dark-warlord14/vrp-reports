@@ -1,0 +1,38 @@
+{
+  "id": "40090046",
+  "url": "https://issues.chromium.org/issues/40090046",
+  "title": "Chrome for Android - Window.open combined with the onbeforeunload dialog crashes Chrome's WebView render",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Mobile>CompositedUI, UI>Browser>Mobile>CustomTabs",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "ba...@chromium.org",
+  "created_date": "2018-01-04T04:22:49+00:00",
+  "modified_date": "2026-02-12T02:03:18+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53075348,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5632940,
+      "url": "https://issues.chromium.org/action/issues/40090046/attachments/53075348?download=true",
+      "local_path": "attachments/poc.mp4"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nOpening a new window while in Chrome's WebView and redirecting the opener's location to trigger an onbeforeunload dialog crashes the render while still allowing the user to interact with the page in the background.  \nThis allows the attacker to spoof the URL and also to"
+}

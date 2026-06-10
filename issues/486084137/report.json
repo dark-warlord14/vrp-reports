@@ -1,0 +1,67 @@
+{
+  "id": "486084137",
+  "url": "https://issues.chromium.org/issues/486084137",
+  "title": "V8 Sandbox Bypass: controlled OOB write to `Isolate` via RegExp source corruption during tier-up.",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Regexp",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "145.0.7632.46",
+  "cve_ids": [],
+  "reporter": "ma...@advert.com.au",
+  "assignee": "jg...@chromium.org",
+  "created_date": "2026-02-20T15:43:29+00:00",
+  "modified_date": "2026-06-02T07:56:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "reward_amount_meta": 20000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73582867,
+      "filename": "clusterfuzz_regexp_oob_write.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1825,
+      "url": "https://issues.chromium.org/action/issues/486084137/attachments/73582867?download=true",
+      "local_path": "attachments/clusterfuzz_regexp_oob_write.js"
+    },
+    {
+      "id": 73582868,
+      "filename": "poc_standalone.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 6234,
+      "url": "https://issues.chromium.org/action/issues/486084137/attachments/73582868?download=true",
+      "local_path": "attachments/poc_standalone.js"
+    },
+    {
+      "id": 73582869,
+      "filename": "poc_per_register.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3219,
+      "url": "https://issues.chromium.org/action/issues/486084137/attachments/73582869?download=true",
+      "local_path": "attachments/poc_per_register.js"
+    },
+    {
+      "id": 73582872,
+      "filename": "poc_controlled_write.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 4460,
+      "url": "https://issues.chromium.org/action/issues/486084137/attachments/73582872?download=true",
+      "local_path": "attachments/poc_controlled_write.js"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "# Steps to reproduce the problem\nDeterministic, 100% reliable on Linux arm64.\n```\nd8 --sandbox-testing clusterfuzz_regexp_oob_write.js\nd8 --sandbox-testing poc_standalone.js\nd8 --sandbox-testing poc_per_register.js\n```\n\nBoth PoCs assume in-cage R/W (simulated via `Sandbox.MemoryView` with `--sandbox"
+}

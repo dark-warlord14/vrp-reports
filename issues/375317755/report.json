@@ -1,0 +1,47 @@
+{
+  "id": "375317755",
+  "url": "https://issues.chromium.org/issues/375317755",
+  "title": "type confusion between ScriptWrappable and EventTarget by StorageManager",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P1",
+  "component": "Blink>Storage",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "es...@chromium.org",
+  "created_date": "2024-10-24T16:10:12+00:00",
+  "modified_date": "2025-02-17T14:27:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 60311549,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 71,
+      "url": "https://issues.chromium.org/action/issues/375317755/attachments/60311549?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 60314150,
+      "filename": "fix.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 689,
+      "url": "https://issues.chromium.org/action/issues/375317755/attachments/60314150?download=true",
+      "local_path": "attachments/fix.diff"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "# Reproduce\nasan-win32-release_x64-1371981\n1. chrome --no-sandbox --user-data-dir=test poc.html\n\n# Bisect\nhttps://chromium-review.googlesource.com/c/chromium/src/+/5930607\n\n# RCA\nStorageManager is defined as a ScriptWrappable[1] object in the code, but as a EventTarget[2] object in the IDL file, lea"
+}

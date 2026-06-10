@@ -1,0 +1,33 @@
+{
+  "id": "375314963",
+  "url": "https://issues.chromium.org/issues/375314963",
+  "title": "Debug check failed: kCanBeWeak || (!IsSmi() == HAS_STRONG_HEAP_OBJECT_TAG(ptr_)).",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Turbofan, Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jo...@gmail.com",
+  "assignee": "cl...@chromium.org",
+  "created_date": "2024-10-24T09:39:50+00:00",
+  "modified_date": "2025-02-04T15:40:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 108,
+  "description_snippet": "# Title:\n\nDebug check failed: kCanBeWeak || (!IsSmi() == HAS_STRONG_HEAP_OBJECT_TAG(ptr_)).\n\n## Component:\n\nBlink>JavaScript>Runtime\n\n## Description:\n\nIn some situations, during the gc iteration of ```TurbofanJSOptimizedFrame```, the ```TaggedOutgoingParams``` may be unexpectedly controlled.\n\n```cpp"
+}

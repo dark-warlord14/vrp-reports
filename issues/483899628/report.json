@@ -1,0 +1,54 @@
+{
+  "id": "483899628",
+  "url": "https://issues.chromium.org/issues/483899628",
+  "title": "URL Spoofing on Block or allow pop-ups in Chrome",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Services (Use Subcomponents)>Safebrowsing",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "145.0.7632.46",
+  "cve_ids": [],
+  "reporter": "mu...@gmail.com",
+  "assignee": "np...@chromium.org",
+  "created_date": "2026-02-12T17:37:49+00:00",
+  "modified_date": "2026-05-30T08:02:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73389694,
+      "filename": "2026-02-13 00-34-36.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3582442,
+      "url": "https://issues.chromium.org/action/issues/483899628/attachments/73389694?download=true",
+      "local_path": "attachments/2026-02-13 00-34-36.mp4"
+    },
+    {
+      "id": 73389695,
+      "filename": "fake.html",
+      "mime_type": "text/html",
+      "size_bytes": 126,
+      "url": "https://issues.chromium.org/action/issues/483899628/attachments/73389695?download=true",
+      "local_path": "attachments/fake.html"
+    },
+    {
+      "id": 73389696,
+      "filename": "orig.html",
+      "mime_type": "text/html",
+      "size_bytes": 103,
+      "url": "https://issues.chromium.org/action/issues/483899628/attachments/73389696?download=true",
+      "local_path": "attachments/orig.html"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "# Steps to reproduce the problem\n1. Save this 2 HTML files (orig.html and fake.html) and analyze the link in the popup message, it looks the same\n2. Allow the popup\n3. The victim redirected to evil.com instead of google.com\n\n# Problem Description\nWhen using window.open, Chrome shows a popup listing"
+}

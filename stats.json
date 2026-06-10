@@ -1,125 +1,137 @@
 {
-  "total_reports": 2057,
-  "total_bounty": 14812854.0,
-  "avg_bounty": 7322.22,
+  "total_reports": 2263,
+  "total_bounty": 17117192.0,
+  "avg_bounty": 7713.92,
   "by_year": {
+    "2014": {
+      "count": 2,
+      "total_bounty": 2500.0
+    },
     "2015": {
-      "count": 38,
-      "total_bounty": 82337.0
+      "count": 39,
+      "total_bounty": 82837.0
     },
     "2016": {
-      "count": 44,
-      "total_bounty": 96000.0
+      "count": 50,
+      "total_bounty": 118500.0
     },
     "2017": {
-      "count": 41,
-      "total_bounty": 97000.0
+      "count": 44,
+      "total_bounty": 104837.0
     },
     "2018": {
-      "count": 22,
-      "total_bounty": 32000.0
+      "count": 37,
+      "total_bounty": 138000.0
     },
     "2019": {
-      "count": 17,
-      "total_bounty": 59000.0
+      "count": 28,
+      "total_bounty": 113000.0
     },
     "2020": {
-      "count": 155,
-      "total_bounty": 1027200.0
+      "count": 161,
+      "total_bounty": 1040200.0
     },
     "2021": {
-      "count": 375,
-      "total_bounty": 2984500.0
+      "count": 378,
+      "total_bounty": 2990500.0
     },
     "2022": {
-      "count": 449,
-      "total_bounty": 2876500.0
+      "count": 452,
+      "total_bounty": 2881500.0
     },
     "2023": {
-      "count": 462,
-      "total_bounty": 2642337.0
+      "count": 471,
+      "total_bounty": 2660837.0
     },
     "2024": {
-      "count": 133,
-      "total_bounty": 1281480.0
+      "count": 206,
+      "total_bounty": 2240481.0
     },
     "2025": {
-      "count": 279,
-      "total_bounty": 3268000.0
+      "count": 294,
+      "total_bounty": 3375500.0
     },
     "2026": {
-      "count": 35,
-      "total_bounty": 312000.0
+      "count": 94,
+      "total_bounty": 1314000.0
     }
   },
   "by_severity": {
-    "S3-Low": 1831,
-    "S4-Minimal": 212,
-    "Unknown": 8,
-    "S1-High": 5,
-    "S0-Critical": 1
+    "S3-Low": 1988,
+    "S4-Minimal": 240,
+    "Unknown": 22,
+    "S1-High": 9,
+    "S0-Critical": 3,
+    "S2-Medium": 1
   },
   "by_status": {
-    "Assigned": 1581,
-    "Accepted": 366,
-    "Fixed": 64,
-    "New": 30,
-    "Verified": 15,
-    "Unknown": 1
+    "Assigned": 1714,
+    "Accepted": 416,
+    "Fixed": 70,
+    "New": 33,
+    "Verified": 21,
+    "Unknown": 9
   },
   "by_component": {
-    "Blink": 922,
-    "Internals": 379,
-    "UI": 376,
-    "Platform": 147,
-    "Unknown": 123,
-    "Mobile": 31,
-    "Dawn": 30,
+    "Blink": 1023,
+    "Internals": 416,
+    "UI": 396,
+    "Platform": 164,
+    "Unknown": 138,
+    "Mobile": 37,
+    "Dawn": 32,
     "Enterprise": 10,
-    "OS": 7,
-    "Speed": 4,
+    "OS": 8,
+    "Speed": 6,
+    "PDFium": 4,
+    "Privacy": 4,
+    "Services (Use Subcomponents)": 4,
     "IO": 4,
-    "PDFium": 3,
-    "Services (Use Subcomponents)": 3,
     "Privacy, UI": 3,
-    "Privacy": 3,
+    "Enterprise, UI": 2,
     "Dawn, Dawn": 2,
     "Enterprise, Platform": 2,
     "Infra": 2,
-    "Test (Use Subcomponents)": 1,
-    "Dawn, Internals": 1
+    "Test (Use Subcomponents)": 1
   },
   "bounty_histogram": [
     {
       "range": "$0-500",
-      "count": 1
+      "count": 2
     },
     {
       "range": "$500-1K",
-      "count": 111
+      "count": 129
     },
     {
       "range": "$1K-3K",
-      "count": 501
+      "count": 562
     },
     {
       "range": "$3K-5K",
-      "count": 294
+      "count": 314
     },
     {
       "range": "$5K-10K",
-      "count": 631
+      "count": 668
     },
     {
       "range": "$10K-20K",
-      "count": 305
+      "count": 330
     },
     {
       "range": "$20K+",
-      "count": 180
+      "count": 214
     }
   ],
   "top_bounties": [
+    {
+      "id": "481277120",
+      "title": "ipcz bug can allow renderer duplicate browser process handle to escape sandbox",
+      "bounty_amount": 250000.0,
+      "severity": "S3-Low",
+      "year": 2026
+    },
     {
       "id": "453094710",
       "title": "Out-of-bound read in the jmp table of ActiveMediaSessionController leads to sandbox escape.",
@@ -156,6 +168,20 @@
       "year": 2025
     },
     {
+      "id": "487338366",
+      "title": "Use-after-free in CreateNewWindow via SINGLETON_TAB disposition leads to sandbox escape",
+      "bounty_amount": 90000.0,
+      "severity": "Unknown",
+      "year": 2026
+    },
+    {
+      "id": "40093479",
+      "title": "Security: ChromeOS Persistent root Command Execution",
+      "bounty_amount": 75000.0,
+      "severity": "S3-Low",
+      "year": 2018
+    },
+    {
       "id": "433533359",
       "title": "Consumers of ReadableStream subject to data race with SharedArrayBuffer, leading to RCE + V8 Sandbox bypass",
       "bounty_amount": 70000.0,
@@ -168,6 +194,13 @@
       "bounty_amount": 62000.0,
       "severity": "S3-Low",
       "year": 2025
+    },
+    {
+      "id": "486657483",
+      "title": "Incorrect Maglev assumption leading to SIGSEGV ",
+      "bounty_amount": 55000.0,
+      "severity": "S4-Minimal",
+      "year": 2026
     },
     {
       "id": "446113732",
@@ -226,39 +259,11 @@
       "year": 2025
     },
     {
-      "id": "380397544",
-      "title": "Arbitrary WASM type confusion due to improper fix of b/379009132",
+      "id": "383356864",
+      "title": "WasmGCTypeAnalyzer improperly revisits single-block loops, leading to type confusion",
       "bounty_amount": 55000.0,
       "severity": "S3-Low",
       "year": 2024
-    },
-    {
-      "id": "368241697",
-      "title": "Type confusion due to improper WASM module size check in `AsyncStreamingDecoder`",
-      "bounty_amount": 55000.0,
-      "severity": "S3-Low",
-      "year": 2024
-    },
-    {
-      "id": "483569511",
-      "title": "Heap-use-after-free in blink::FontFeatureValuesMapIterationSource::FetchNextItem",
-      "bounty_amount": 50000.0,
-      "severity": "S3-Low",
-      "year": 2026
-    },
-    {
-      "id": "467247247",
-      "title": "Maglev's handling of target and new.target is incorrect",
-      "bounty_amount": 50000.0,
-      "severity": "S3-Low",
-      "year": 2025
-    },
-    {
-      "id": "454485895",
-      "title": "Incorrect Optimization of ArrayConstructor by Maglev Leads to Creation of Malformed JSArray Objects",
-      "bounty_amount": 50000.0,
-      "severity": "S3-Low",
-      "year": 2025
     }
   ]
 }

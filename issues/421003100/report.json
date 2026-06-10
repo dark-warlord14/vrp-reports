@@ -1,0 +1,52 @@
+{
+  "id": "421003100",
+  "url": "https://issues.chromium.org/issues/421003100",
+  "title": "use-after-poison on address  thread T0",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Speed>Tracing",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2025-5419"
+  ],
+  "reporter": "mu...@gmail.com",
+  "assignee": "et...@chromium.org",
+  "created_date": "2025-05-28T23:44:43+00:00",
+  "modified_date": "2026-01-15T08:43:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 66258991,
+      "filename": "2025-05-29 05-59-37.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 15880420,
+      "url": "https://issues.chromium.org/action/issues/421003100/attachments/66258991?download=true",
+      "local_path": "attachments/2025-05-29 05-59-37.zip"
+    },
+    {
+      "id": 66378173,
+      "filename": "2025-06-03 01-48-01.mkv",
+      "mime_type": "video/x-matroska",
+      "size_bytes": 28190416,
+      "url": "https://issues.chromium.org/action/issues/421003100/attachments/66378173?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "---\n\n### Report description\n\n\nV8 JavaScript OOM (invalid array length) when rendering GIF response in Network tab DevTools\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bug"
+}

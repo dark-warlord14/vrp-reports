@@ -1,0 +1,43 @@
+{
+  "id": "485203821",
+  "url": "https://issues.chromium.org/issues/485203821",
+  "title": "Signed Integer overflow in H264 SEI Parsing",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Media",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "144.0.0.0",
+  "cve_ids": [],
+  "reporter": "b....@gmail.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2026-02-17T18:23:49+00:00",
+  "modified_date": "2026-05-28T08:01:25+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73506347,
+      "filename": "h264_sei_overflow.h264",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1052696,
+      "url": "https://issues.chromium.org/action/issues/485203821/attachments/73506347?download=true",
+      "local_path": "attachments/h264_sei_overflow.h264"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "# Steps to reproduce the problem\n1. Build chrome libfuzzer with below mentioned args\n2. execute the fuzzer with the attached malformed H264 file \n3. Signed Integer overflow crash detected\n\n# Problem Description\nA signed integer overflow occurs in chromiums H264 parser while processing SEI. The crash"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "40082700",
+  "url": "https://issues.chromium.org/issues/40082700",
+  "title": "Security: Minor data leak in pdfium",
+  "status": "Accepted",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF, Privacy",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "th...@chromium.org",
+  "created_date": "2015-08-19T23:14:24+00:00",
+  "modified_date": "2025-02-13T00:21:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53399558,
+      "filename": "sample_output.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 946,
+      "url": "https://issues.chromium.org/action/issues/40082700/attachments/53399558?download=true",
+      "local_path": "attachments/sample_output.txt"
+    },
+    {
+      "id": 53399559,
+      "filename": "server.py",
+      "mime_type": "text/plain",
+      "size_bytes": 629,
+      "url": "https://issues.chromium.org/action/issues/40082700/attachments/53399559?download=true",
+      "local_path": "attachments/server.py"
+    },
+    {
+      "id": 53399581,
+      "filename": "js-leak.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 845,
+      "url": "https://issues.chromium.org/action/issues/40082700/attachments/53399581?download=true",
+      "local_path": "attachments/js-leak.pdf"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThis is about an overlooked aspect of https://code.google.com/p/chromium/issues/detail?id=425025 - there's no way to prevent a local, malicious PDF file from leaking its path to a remote server.  \n  \n  \n**VERSION**   \n  \nChrome Version: 44.0.2403.155 stable  \nOperatin"
+}

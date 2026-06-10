@@ -1,0 +1,32 @@
+{
+  "id": "485935302",
+  "url": "https://issues.chromium.org/issues/485935302",
+  "title": "Use-After-Free in WebGPU Worker Multithreaded Dawn Wire Path Leading to Potential Remote Code Execution",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Dawn",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "lo...@google.com",
+  "created_date": "2026-02-20T02:48:35+00:00",
+  "modified_date": "2026-06-08T15:52:03+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 67,
+  "description_snippet": "# Use-After-Free in WebGPU Worker Multithreaded Dawn Wire Path Leading to Potential Remote Code Execution\n\n## Summary\n\nA use-after-free vulnerability exists in Chromium's WebGPU implementation when using the experimental multithreaded Dawn wire feature in Web Workers. The vulnerability occurs due to"
+}

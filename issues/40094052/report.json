@@ -1,0 +1,42 @@
+{
+  "id": "40094052",
+  "url": "https://issues.chromium.org/issues/40094052",
+  "title": "Security: CSP violation reports leak the destination origin of a blocked redirect in the blocked-uri / blockedURI field",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature, Blink>SecurityFeature>ContentSecurityPolicy",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "an...@chromium.org",
+  "created_date": "2019-02-16T13:16:47+00:00",
+  "modified_date": "2025-10-21T09:06:20+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53234041,
+      "filename": "securitypolicyviolation-blocked-uri.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2364,
+      "url": "https://issues.chromium.org/action/issues/40094052/attachments/53234041?download=true",
+      "local_path": "attachments/securitypolicyviolation-blocked-uri.html"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA malicious page can abuse CSP violation reports to determine not only whether a request results in a cross-origin redirect, but also the origin of the redirection target, because the origin of the blocked resource is sent in the blocked-uri field of CSP reports and the"
+}

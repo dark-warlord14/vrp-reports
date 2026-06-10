@@ -1,0 +1,54 @@
+{
+  "id": "40060173",
+  "url": "https://issues.chromium.org/issues/40060173",
+  "title": "chrome.debugger 'Page.navigate' can navigate iframes to file:// when not enabled.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>DevTools>Privacy and Security",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "nd...@protonmail.com",
+  "assignee": "ds...@chromium.org",
+  "created_date": "2022-07-06T01:35:17+00:00",
+  "modified_date": "2025-02-12T08:27:29+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53018912,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 826,
+      "url": "https://issues.chromium.org/action/issues/40060173/attachments/53018912?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53018913,
+      "filename": "iframe.html",
+      "mime_type": "text/plain",
+      "size_bytes": 24,
+      "url": "https://issues.chromium.org/action/issues/40060173/attachments/53018913?download=true",
+      "local_path": "attachments/iframe.html"
+    },
+    {
+      "id": 53018914,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 179,
+      "url": "https://issues.chromium.org/action/issues/40060173/attachments/53018914?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "**Steps to reproduce the problem:**   \nchrome.debugger.attach({tabId: <TARGET>}, '1.3', console.log);  \nchrome.debugger.sendCommand({tabId: <TARGET>}, 'Page.navigate', {frameId: <FRAME ID AS SEEN FROM EVENTS), url: 'file:///d:/demo.txt'}, console.log);  \nchrome.pageCapture.saveAsMHTML({tabId: 800972"
+}

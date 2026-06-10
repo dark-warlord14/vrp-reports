@@ -1,0 +1,67 @@
+{
+  "id": "486657483",
+  "url": "https://issues.chromium.org/issues/486657483",
+  "title": "Incorrect Maglev assumption leading to SIGSEGV ",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Maglev",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "er...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2026-02-23T14:13:32+00:00",
+  "modified_date": "2026-06-04T07:51:54+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 55000.0,
+  "reward_amount_meta": 55000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73641888,
+      "filename": "x.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 355,
+      "url": "https://issues.chromium.org/action/issues/486657483/attachments/73641888?download=true",
+      "local_path": "attachments/x.js"
+    },
+    {
+      "id": 73672035,
+      "filename": "repro_loop.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 336,
+      "url": "https://issues.chromium.org/action/issues/486657483/attachments/73672035?download=true",
+      "local_path": "attachments/repro_loop.js"
+    },
+    {
+      "id": 73755513,
+      "filename": "x.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1859,
+      "url": "https://issues.chromium.org/action/issues/486657483/attachments/73755513?download=true",
+      "local_path": "attachments/x.js"
+    },
+    {
+      "id": 73835818,
+      "filename": "m145_rce.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 8451,
+      "url": "https://issues.chromium.org/action/issues/486657483/attachments/73835818?download=true",
+      "local_path": "attachments/m145_rce.js"
+    }
+  ],
+  "update_count": 104,
+  "description_snippet": "##### VERSION\nV8 Git Commit: c0a41078e69f23668c8d34c61f286a1b5b211f19\n\n##### REPRODUCTION CASE\n```js\nfunction make_heapnum(v) { const a=[1.1]; a[0]=v; return a[0]; }\n\nconst H0 = make_heapnum(-1.0);\nconst H1 = make_heapnum(-1.0);\n\nfunction f(c, target) {\n  let v = c ? H0 : H1;\n  let y = v + 0.1;\n  ta"
+}

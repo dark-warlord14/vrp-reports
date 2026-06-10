@@ -1,0 +1,33 @@
+{
+  "id": "335222589",
+  "url": "https://issues.chromium.org/issues/335222589",
+  "title": "Test Security ITW",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Unknown",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ph...@google.com",
+  "assignee": "pg...@google.com",
+  "created_date": "2024-04-16T16:34:59+00:00",
+  "modified_date": "2025-01-09T13:01:24+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1.0,
+  "reward_amount_meta": 1.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 97,
+  "description_snippet": "This is a test bug to test the Security-ITW automation"
+}

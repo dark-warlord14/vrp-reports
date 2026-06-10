@@ -1,0 +1,38 @@
+{
+  "id": "40061477",
+  "url": "https://issues.chromium.org/issues/40061477",
+  "title": "Security: FSA API's directory methods allows traversing symlinks in folders on Windows (even to restricted directories)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Blink>Storage>FileSystem",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "dc...@chromium.org",
+  "created_date": "2022-10-26T08:19:58+00:00",
+  "modified_date": "2026-02-25T20:07:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53384889,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1259,
+      "url": "https://issues.chromium.org/action/issues/40061477/attachments/53384889?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 118,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAfter reading https://chromium-review.googlesource.com/c/chromium/src/+/3866767, I noticed that the FSA (FileSystemAccess) API methods still allows traversing symlinks on Windows, more specifically, FSA (FileSystemAccess) will still allow a  symlink present in a selected"
+}

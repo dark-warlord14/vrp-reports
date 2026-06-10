@@ -1,0 +1,58 @@
+{
+  "id": "361711121",
+  "url": "https://issues.chromium.org/issues/361711121",
+  "title": "Security: Extension popup can render over permission prompts and screen share dialog",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2024-08-23T17:58:07+00:00",
+  "modified_date": "2025-02-19T00:45:47+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58875323,
+      "filename": "bandicam 2024-08-24 00-49-56-017.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2808145,
+      "url": "https://issues.chromium.org/action/issues/361711121/attachments/58875323?download=true",
+      "local_path": "attachments/bandicam 2024-08-24 00-49-56-017.mp4"
+    },
+    {
+      "id": 58875324,
+      "filename": "extensionpopup.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 2436,
+      "url": "https://issues.chromium.org/action/issues/361711121/attachments/58875324?download=true",
+      "local_path": "attachments/extensionpopup.zip"
+    },
+    {
+      "id": 58875325,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/361711121/attachments/58875325?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "VULNERABILITY DETAILS\nThis vulnerability is almost the same as https://issues.chromium.org/issues/40058873 but it occurs on Payment request prompt\n\n\nVERSION\nChrome Version 130.0.6670.0 (Official Build) canary (64-bit)\nOperating System: Windows 10\n\nREPRODUCTION CASE\n\n1. Install attached extension: ma"
+}

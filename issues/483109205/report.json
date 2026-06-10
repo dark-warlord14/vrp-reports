@@ -1,0 +1,38 @@
+{
+  "id": "483109205",
+  "url": "https://issues.chromium.org/issues/483109205",
+  "title": "TOCTOU in NdkVideoEncodeAccelerator: shared memory re-read after write allows attacker-controlled bitstream parsing",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Media",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lu...@icloud.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2026-02-10T01:10:44+00:00",
+  "modified_date": "2026-05-27T03:22:25+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": null,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 33,
+  "bounty_rationale": "No vulnerability demonstrated\n\n\nNote that the fact that this issue is not being rewarded does not mean\nthat the product team won't fix the issue. We have filed a bug with the product\nteam and they will review your report and decide if a fix is required. We'll\nlet you know if the issue was fixed.\n\nRegards, \\\nGoogle Security Bot\n\n*How did we do? Please fill out a [short anonymous survey](https://goo.gl/IR3KRH).*",
+  "attachments": [
+    {
+      "id": 73286468,
+      "filename": "M-061-F02_poc.cc",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 9870,
+      "url": "https://issues.chromium.org/action/issues/483109205/attachments/73286468?download=true",
+      "local_path": "attachments/M-061-F02_poc.cc"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "VULNERABILITY DETAILS\n\nThe Android NDK Video Encode Accelerator (NdkVideoEncodeAccelerator) writes encoded bitstream data into an UnsafeSharedMemoryRegion, then re-reads from that same shared memory to parse temporal scalability metadata. The renderer retains write access to this region. A compromis"
+}

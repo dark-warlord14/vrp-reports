@@ -1,0 +1,43 @@
+{
+  "id": "352689356",
+  "url": "https://issues.chromium.org/issues/352689356",
+  "title": "V8 Sandbox Bypass: AAR/W via WASM function signature confusion in TurboFan call_ref",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>JavaScript>Sandbox, Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2024-07-13T02:55:15+00:00",
+  "modified_date": "2025-02-14T23:02:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 57890529,
+      "filename": "call-ref-tf.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 74988,
+      "url": "https://issues.chromium.org/action/issues/352689356/attachments/57890529?download=true",
+      "local_path": "attachments/call-ref-tf.js"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "### VULNERABILITY DETAILS\n\nV8 sandbox bypass, arbitrary address read/write via wasm function signature confusion in TurboFan `call_ref` with in-sandbox exploit primitives.\n\nTo prevent signature confusion in `call_ref`, commit 47ac44d introduced `signature_hash` verification followed by commit a6f1ec"
+}

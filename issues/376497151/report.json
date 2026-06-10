@@ -1,0 +1,92 @@
+{
+  "id": "376497151",
+  "url": "https://issues.chromium.org/issues/376497151",
+  "title": " Extension popup can render over FEDCM prompts",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2024-10-31T02:21:37+00:00",
+  "modified_date": "2025-02-18T17:05:32+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 60476133,
+      "filename": "bandicam 2024-10-31 09-12-50-722.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1701386,
+      "url": "https://issues.chromium.org/action/issues/376497151/attachments/60476133?download=true",
+      "local_path": "attachments/bandicam 2024-10-31 09-12-50-722.mp4"
+    },
+    {
+      "id": 60476134,
+      "filename": "bg-keyboard.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1155,
+      "url": "https://issues.chromium.org/action/issues/376497151/attachments/60476134?download=true",
+      "local_path": "attachments/bg-keyboard.js"
+    },
+    {
+      "id": 60476135,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 462,
+      "url": "https://issues.chromium.org/action/issues/376497151/attachments/60476135?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 60476136,
+      "filename": "popup.html",
+      "mime_type": "text/html",
+      "size_bytes": 2390,
+      "url": "https://issues.chromium.org/action/issues/376497151/attachments/60476136?download=true",
+      "local_path": "attachments/popup.html"
+    },
+    {
+      "id": 63015659,
+      "filename": "popup.html",
+      "mime_type": "text/html",
+      "size_bytes": 2390,
+      "url": "https://issues.chromium.org/action/issues/376497151/attachments/63015659?download=true",
+      "local_path": "attachments/popup.html"
+    },
+    {
+      "id": 63010321,
+      "filename": "manifest (1).json",
+      "mime_type": "application/json",
+      "size_bytes": 462,
+      "url": "https://issues.chromium.org/action/issues/376497151/attachments/63010321?download=true",
+      "local_path": "attachments/manifest (1).json"
+    },
+    {
+      "id": 63010322,
+      "filename": "bg-keyboard.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1155,
+      "url": "https://issues.chromium.org/action/issues/376497151/attachments/63010322?download=true",
+      "local_path": "attachments/bg-keyboard.js"
+    },
+    {
+      "id": 63010323,
+      "filename": "bandicam 2024-10-31 09-12-50-722 (1).mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1701386,
+      "url": "https://issues.chromium.org/action/issues/376497151/attachments/63010323?download=true",
+      "local_path": "attachments/bandicam 2024-10-31 09-12-50-722 (1).mp4"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "VULNERABILITY DETAILS\nThis vulnerability is almost the same as https://issues.chromium.org/issues/40058873 , https://issues.chromium.org/issues/361711121,\nhttps://issues.chromium.org/issues/367771116,\nhttps://issues.chromium.org/issues/359949844\n\nbut it occurs on FEDCM request prompt\n\n\nVERSION\nChrom"
+}

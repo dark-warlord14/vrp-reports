@@ -1,0 +1,49 @@
+{
+  "id": "481882038",
+  "url": "https://issues.chromium.org/issues/481882038",
+  "title": "Cross-origin PDF placeholder download misclassified as browser-initiated request",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "po...@gmail.com",
+  "assignee": "lu...@google.com",
+  "created_date": "2026-02-05T06:27:17+00:00",
+  "modified_date": "2026-05-30T08:02:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73153447,
+      "filename": "open_pdf_none.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2192976,
+      "url": "https://issues.chromium.org/action/issues/481882038/attachments/73153447?download=true",
+      "local_path": "attachments/open_pdf_none.mp4"
+    },
+    {
+      "id": 73153448,
+      "filename": "open_pdf_none.zip",
+      "mime_type": "application/x-zip-compressed",
+      "size_bytes": 3041,
+      "url": "https://issues.chromium.org/action/issues/481882038/attachments/73153448?download=true",
+      "local_path": "attachments/open_pdf_none.zip"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "---\n\n### Report description\n\n\nCross-origin PDF placeholder download misclassified as browser-initiated request\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.goog"
+}

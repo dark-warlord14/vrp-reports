@@ -1,0 +1,84 @@
+{
+  "id": "40068069",
+  "url": "https://issues.chromium.org/issues/40068069",
+  "title": "**Steps to reproduce the problem:**",
+  "status": "Unknown",
+  "severity": "Unknown",
+  "priority": "Unknown",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "Unknown",
+  "assignee": null,
+  "created_date": "2023-07-25T20:05:24+00:00",
+  "modified_date": "2026-05-13T07:57:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 89,
+  "bounty_rationale": "Mitigated baseline / low impact user information disclosure",
+  "attachments": [
+    {
+      "id": 52974338,
+      "filename": "InvisibleActivity.java",
+      "mime_type": "text/plain",
+      "size_bytes": 1802,
+      "url": "https://issues.chromium.org/action/issues/40068069/attachments/52974338?download=true",
+      "local_path": "attachments/InvisibleActivity.java"
+    },
+    {
+      "id": 52974339,
+      "filename": "MainActivity.java",
+      "mime_type": "text/plain",
+      "size_bytes": 1304,
+      "url": "https://issues.chromium.org/action/issues/40068069/attachments/52974339?download=true",
+      "local_path": "attachments/MainActivity.java"
+    },
+    {
+      "id": 52974340,
+      "filename": "AndroidManifest.xml",
+      "mime_type": "text/plain",
+      "size_bytes": 1235,
+      "url": "https://issues.chromium.org/action/issues/40068069/attachments/52974340?download=true",
+      "local_path": "attachments/AndroidManifest.xml"
+    },
+    {
+      "id": 52974341,
+      "filename": "activity_main.xml",
+      "mime_type": "text/plain",
+      "size_bytes": 778,
+      "url": "https://issues.chromium.org/action/issues/40068069/attachments/52974341?download=true",
+      "local_path": "attachments/activity_main.xml"
+    },
+    {
+      "id": 52974342,
+      "filename": "invisible_activity.xml",
+      "mime_type": "text/plain",
+      "size_bytes": 529,
+      "url": "https://issues.chromium.org/action/issues/40068069/attachments/52974342?download=true",
+      "local_path": "attachments/invisible_activity.xml"
+    },
+    {
+      "id": 52974343,
+      "filename": "themes.xml",
+      "mime_type": "text/plain",
+      "size_bytes": 1432,
+      "url": "https://issues.chromium.org/action/issues/40068069/attachments/52974343?download=true",
+      "local_path": "attachments/themes.xml"
+    },
+    {
+      "id": 52974344,
+      "filename": "CCT Clipboard Sniffing PoC Video Compress.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 7640975,
+      "url": "https://issues.chromium.org/action/issues/40068069/attachments/52974344?download=true",
+      "local_path": "attachments/CCT Clipboard Sniffing PoC Video Compress.mp4"
+    }
+  ],
+  "update_count": 94,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Watch attached video  \n2. See attached source code / install Apk demo to your device and follow the reproduction steps in the video.  \n  \nPoC Video, Source Code and Apk are attached here https://drive.google.com/drive/folders/1WcZECOpRIoX34KZ5nK8FCJGxd40IXNj"
+}

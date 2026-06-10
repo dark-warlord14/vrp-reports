@@ -1,0 +1,99 @@
+{
+  "id": "372269618",
+  "url": "https://issues.chromium.org/issues/372269618",
+  "title": "Type confusion due to DefaultReferenceValue() `undefined` default value for kNoExtern",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "ml...@chromium.org",
+  "created_date": "2024-10-09T08:50:31+00:00",
+  "modified_date": "2026-05-29T13:41:18+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 55000.0,
+  "reward_amount_meta": 55000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 59930756,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 75638,
+      "url": "https://issues.chromium.org/action/issues/372269618/attachments/59930756?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 59962840,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 79102,
+      "url": "https://issues.chromium.org/action/issues/372269618/attachments/59962840?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 59963612,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 79044,
+      "url": "https://issues.chromium.org/action/issues/372269618/attachments/59963612?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 59963412,
+      "filename": "turboshaft-typer-logging-patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 13588,
+      "url": "https://issues.chromium.org/action/issues/372269618/attachments/59963412?download=true",
+      "local_path": "attachments/turboshaft-typer-logging-patch.diff"
+    },
+    {
+      "id": 59963613,
+      "filename": "log_unreachable.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 10291,
+      "url": "https://issues.chromium.org/action/issues/372269618/attachments/59963613?download=true",
+      "local_path": "attachments/log_unreachable.txt"
+    },
+    {
+      "id": 59963614,
+      "filename": "log_normal.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11788,
+      "url": "https://issues.chromium.org/action/issues/372269618/attachments/59963614?download=true",
+      "local_path": "attachments/log_normal.txt"
+    },
+    {
+      "id": 59963617,
+      "filename": "exp_372269618_turboshaft_noextern.html",
+      "mime_type": "text/html",
+      "size_bytes": 91748,
+      "url": "https://issues.chromium.org/action/issues/372269618/attachments/59963617?download=true",
+      "local_path": "attachments/exp_372269618_turboshaft_noextern.html"
+    },
+    {
+      "id": 59963413,
+      "filename": "exp_364917763_turboshaft_wrapper.html",
+      "mime_type": "text/html",
+      "size_bytes": 91654,
+      "url": "https://issues.chromium.org/action/issues/372269618/attachments/59963413?download=true",
+      "local_path": "attachments/exp_364917763_turboshaft_wrapper.html"
+    }
+  ],
+  "update_count": 108,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Summary\n\nNote: Bug split out from b/372285204 as this is technically a different bug.\n\n[`DefaultReferenceValue()`](https://source.chromium.org/chromium/chromium/src/+/main:v8/src/wasm/wasm-js.cc;drc=cf19534baf3ebba000e3cfaeba535e80d4806886;l=1383) returns `undefined`"
+}

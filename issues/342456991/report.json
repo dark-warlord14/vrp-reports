@@ -1,0 +1,55 @@
+{
+  "id": "342456991",
+  "url": "https://issues.chromium.org/issues/342456991",
+  "title": "Security: Type confusion in v8 value serializer",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m-...@github.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2024-05-24T12:40:05+00:00",
+  "modified_date": "2026-05-29T13:41:18+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 56637281,
+      "filename": "crash.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 448,
+      "url": "https://issues.chromium.org/action/issues/342456991/attachments/56637281?download=true",
+      "local_path": "attachments/crash.js"
+    },
+    {
+      "id": 56637282,
+      "filename": "leak_hole.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 762,
+      "url": "https://issues.chromium.org/action/issues/342456991/attachments/56637282?download=true",
+      "local_path": "attachments/leak_hole.js"
+    },
+    {
+      "id": 56793245,
+      "filename": "calc.html",
+      "mime_type": "text/html",
+      "size_bytes": 5897,
+      "url": "https://issues.chromium.org/action/issues/342456991/attachments/56793245?download=true",
+      "local_path": "attachments/calc.html"
+    }
+  ],
+  "update_count": 97,
+  "description_snippet": "VULNERABILITY DETAILS\n\nWhen cloning an object using `FastAssign` [1], if the `source` object has an accessor, it'll be called to get the property value that is then used in the call of `CreateDataProperty` [2]. In particular, the accessor can cause the map of `target` to become deprecated:\n\n```\nvar"
+}

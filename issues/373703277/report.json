@@ -1,0 +1,67 @@
+{
+  "id": "373703277",
+  "url": "https://issues.chromium.org/issues/373703277",
+  "title": "DCHECK failure in Handle<To> v8::internal::Cast(Handle<From>, const v8::SourceLocation &) [To = v8",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime, Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2024-10-16T08:43:56+00:00",
+  "modified_date": "2025-01-26T15:40:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 55000.0,
+  "reward_amount_meta": 55000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 60096765,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 75104,
+      "url": "https://issues.chromium.org/action/issues/373703277/attachments/60096765?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 60118779,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 75101,
+      "url": "https://issues.chromium.org/action/issues/373703277/attachments/60118779?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 60216636,
+      "filename": "exp.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 80708,
+      "url": "https://issues.chromium.org/action/issues/373703277/attachments/60216636?download=true",
+      "local_path": "attachments/exp.js"
+    },
+    {
+      "id": 60222993,
+      "filename": "exp.html",
+      "mime_type": "text/html",
+      "size_bytes": 93614,
+      "url": "https://issues.chromium.org/action/issues/373703277/attachments/60222993?download=true",
+      "local_path": "attachments/exp.html"
+    }
+  ],
+  "update_count": 72,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Summary\n\nSimple variant of b/372285204 and b/332081797. For (null)exnref table types [`InstanceBuilder::Build()`](https://source.chromium.org/chromium/chromium/src/+/main:v8/src/wasm/module-instantiate.cc;drc=c658efa26d8eef733fd77263802d57d4efcf3c04;l=1276) uses `Wasm"
+}

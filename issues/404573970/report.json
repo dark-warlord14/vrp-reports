@@ -1,0 +1,59 @@
+{
+  "id": "404573970",
+  "url": "https://issues.chromium.org/issues/404573970",
+  "title": "Compromised renderer can inject invalid Sec-WebSocket-Protocol header values.",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Network>WebSockets",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "origin/main (59cdc128f)",
+  "cve_ids": [],
+  "reporter": "i....@gmail.com",
+  "assignee": "ri...@chromium.org",
+  "created_date": "2025-03-19T01:51:30+00:00",
+  "modified_date": "2026-01-26T12:40:53+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": null,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 31,
+  "bounty_rationale": "this was determined to be a spec violation and a functional bug\n\n\nNote that the fact that this issue is not being rewarded does not mean\nthat the product team won't fix the issue. We have filed a bug with the product\nteam and they will review your report and decide if a fix is required. We'll\nlet you know if the issue was fixed.\n\nRegards, \\\nGoogle Security Bot\n\n*How did we do? Please fill out a [short anonymous survey](https://goo.gl/IR3KRH).*",
+  "attachments": [
+    {
+      "id": 64012343,
+      "filename": "diff.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1072,
+      "url": "https://issues.chromium.org/action/issues/404573970/attachments/64012343?download=true",
+      "local_path": "attachments/diff.patch"
+    },
+    {
+      "id": 64012344,
+      "filename": "page.html",
+      "mime_type": "text/html",
+      "size_bytes": 87,
+      "url": "https://issues.chromium.org/action/issues/404573970/attachments/64012344?download=true",
+      "local_path": "attachments/page.html"
+    },
+    {
+      "id": 64012345,
+      "filename": "server.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 111,
+      "url": "https://issues.chromium.org/action/issues/404573970/attachments/64012345?download=true",
+      "local_path": "attachments/server.js"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "# Steps to reproduce the problem\n1. apply the below patch (attached as `diff.patch`)\n```\ndiff --git a/third_party/blink/renderer/modules/websockets/websocket_channel_impl.cc b/third_party/blink/renderer/modules/websockets/websocket_channel_impl.cc\nindex d7f5c10b6f82..734fd042c852 100644\n--- a/third_"
+}

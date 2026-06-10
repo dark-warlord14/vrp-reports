@@ -1,0 +1,92 @@
+{
+  "id": "385538383",
+  "url": "https://issues.chromium.org/issues/385538383",
+  "title": "---",
+  "status": "Unknown",
+  "severity": "Unknown",
+  "priority": "Unknown",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "Unknown",
+  "assignee": null,
+  "created_date": "2024-12-22T03:32:34+00:00",
+  "modified_date": "2025-04-11T12:51:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 62,
+  "bounty_rationale": "Thank you reward: this issue only impacted <M125 versions of Chrome and did not impact any active release versions of Chrome at the time it was reported. We did, however, appreciate this report and would like to see types of report of this kind that potentially impact users on active release channels.",
+  "attachments": [
+    {
+      "id": 61730486,
+      "filename": "hats1.png",
+      "mime_type": "image/png",
+      "size_bytes": 147342,
+      "url": "https://issues.chromium.org/action/issues/385538383/attachments/61730486?download=true",
+      "local_path": "attachments/hats1.png"
+    },
+    {
+      "id": 61730487,
+      "filename": "hats3.png",
+      "mime_type": "image/png",
+      "size_bytes": 84575,
+      "url": "https://issues.chromium.org/action/issues/385538383/attachments/61730487?download=true",
+      "local_path": "attachments/hats3.png"
+    },
+    {
+      "id": 61730488,
+      "filename": "hats4.png",
+      "mime_type": "image/png",
+      "size_bytes": 12267,
+      "url": "https://issues.chromium.org/action/issues/385538383/attachments/61730488?download=true",
+      "local_path": "attachments/hats4.png"
+    },
+    {
+      "id": 61730489,
+      "filename": "hats2.png",
+      "mime_type": "image/png",
+      "size_bytes": 339967,
+      "url": "https://issues.chromium.org/action/issues/385538383/attachments/61730489?download=true",
+      "local_path": "attachments/hats2.png"
+    },
+    {
+      "id": 61730043,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/385538383/attachments/61730043?download=true",
+      "local_path": null
+    },
+    {
+      "id": 61709899,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/385538383/attachments/61709899?download=true",
+      "local_path": null
+    },
+    {
+      "id": 61721865,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/385538383/attachments/61721865?download=true",
+      "local_path": null
+    },
+    {
+      "id": 61721866,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/385538383/attachments/61721866?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 70,
+  "description_snippet": "---\n\n### Report description\n\n\nHard coded storage bucket URL in Chrome allows for malicious Javascript / HTML to be run on numerous users without they knowledge\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome bro"
+}

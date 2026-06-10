@@ -1,0 +1,51 @@
+{
+  "id": "377620832",
+  "url": "https://issues.chromium.org/issues/377620832",
+  "title": "Wasm type confusion due to DefaultReferenceValue() JS null for noexn type",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "th...@google.com",
+  "created_date": "2024-11-06T13:55:41+00:00",
+  "modified_date": "2025-02-17T14:27:10+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 55000.0,
+  "reward_amount_meta": 55000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 60605213,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 82022,
+      "url": "https://issues.chromium.org/action/issues/377620832/attachments/60605213?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 60605214,
+      "filename": "exp.html",
+      "mime_type": "text/html",
+      "size_bytes": 92249,
+      "url": "https://issues.chromium.org/action/issues/377620832/attachments/60605214?download=true",
+      "local_path": "attachments/exp.html"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Summary\n\nEquivalent to b/372285204 but in \"backwards\", now with `null` being a problem instead of `wasm_null`. b/374790906 \"internalized\" `exn` type hierarchy to use `wasm_null` for null value, but `DefaultReferenceValue()` still uses JS `null` value resulting in type"
+}

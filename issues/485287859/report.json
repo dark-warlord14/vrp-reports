@@ -1,0 +1,156 @@
+{
+  "id": "485287859",
+  "url": "https://issues.chromium.org/issues/485287859",
+  "title": "Audit and add validation for extension IPCs",
+  "status": "Accepted",
+  "severity": "S1-High",
+  "priority": "P4",
+  "component": "Platform>Extensions",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ka...@chromium.org",
+  "assignee": "lu...@google.com",
+  "created_date": "2026-02-17T20:17:31+00:00",
+  "modified_date": "2026-05-29T07:56:39+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 93,
+  "bounty_rationale": "High Quality. Web Platform Privilege Escalation",
+  "attachments": [
+    {
+      "id": 73516653,
+      "filename": "Screen Recording 2026-02-18 031057.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 8957934,
+      "url": "https://issues.chromium.org/action/issues/485287859/attachments/73516653?download=true",
+      "local_path": "attachments/Screen Recording 2026-02-18 031057.mp4"
+    },
+    {
+      "id": 73516654,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 4172,
+      "url": "https://issues.chromium.org/action/issues/485287859/attachments/73516654?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 73516655,
+      "filename": "background.js",
+      "mime_type": "application/x-javascript",
+      "size_bytes": 685,
+      "url": "https://issues.chromium.org/action/issues/485287859/attachments/73516655?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 73516656,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 204,
+      "url": "https://issues.chromium.org/action/issues/485287859/attachments/73516656?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 73519949,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1161,
+      "url": "https://issues.chromium.org/action/issues/485287859/attachments/73519949?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 73523139,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 204,
+      "url": "https://issues.chromium.org/action/issues/485287859/attachments/73523139?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 73523140,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 6951,
+      "url": "https://issues.chromium.org/action/issues/485287859/attachments/73523140?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 73523141,
+      "filename": "poc-final.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 7734718,
+      "url": "https://issues.chromium.org/action/issues/485287859/attachments/73523141?download=true",
+      "local_path": "attachments/poc-final.mp4"
+    },
+    {
+      "id": 73518474,
+      "filename": "faq-proof.png",
+      "mime_type": "image/png",
+      "size_bytes": 193992,
+      "url": "https://issues.chromium.org/action/issues/485287859/attachments/73518474?download=true",
+      "local_path": "attachments/faq-proof.png"
+    },
+    {
+      "id": 73532578,
+      "filename": "retest-m144-m145-m146-m147.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2080498,
+      "url": "https://issues.chromium.org/action/issues/485287859/attachments/73532578?download=true",
+      "local_path": "attachments/retest-m144-m145-m146-m147.mp4"
+    },
+    {
+      "id": 73632668,
+      "filename": "read-result.png",
+      "mime_type": "image/png",
+      "size_bytes": 121374,
+      "url": "https://issues.chromium.org/action/issues/485287859/attachments/73632668?download=true",
+      "local_path": "attachments/read-result.png"
+    },
+    {
+      "id": 73623855,
+      "filename": "run-impact-test.png",
+      "mime_type": "image/png",
+      "size_bytes": 139777,
+      "url": "https://issues.chromium.org/action/issues/485287859/attachments/73623855?download=true",
+      "local_path": "attachments/run-impact-test.png"
+    },
+    {
+      "id": 73632669,
+      "filename": "attacker.html",
+      "mime_type": "text/html",
+      "size_bytes": 3720,
+      "url": "https://issues.chromium.org/action/issues/485287859/attachments/73632669?download=true",
+      "local_path": "attachments/attacker.html"
+    },
+    {
+      "id": 73623856,
+      "filename": "victim.html",
+      "mime_type": "text/html",
+      "size_bytes": 237,
+      "url": "https://issues.chromium.org/action/issues/485287859/attachments/73623856?download=true",
+      "local_path": "attachments/victim.html"
+    },
+    {
+      "id": 73637145,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1977,
+      "url": "https://issues.chromium.org/action/issues/485287859/attachments/73637145?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 73642445,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 227,
+      "url": "https://issues.chromium.org/action/issues/485287859/attachments/73642445?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 117,
+  "description_snippet": "---\n\n### Report description\n\n\nAuthorization Bypass in Target.exposeDevToolsProtocol via Missing Early Return\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google"
+}

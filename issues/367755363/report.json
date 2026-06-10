@@ -1,0 +1,98 @@
+{
+  "id": "367755363",
+  "url": "https://issues.chromium.org/issues/367755363",
+  "title": "Security: heap-use-after-free in content::RenderFrameHostImpl::delegate",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Portals",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gl...@google.com",
+  "assignee": "mc...@chromium.org",
+  "created_date": "2024-09-18T01:54:34+00:00",
+  "modified_date": "2025-01-09T15:42:51+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 36000.0,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 59,
+  "bounty_rationale": "$35,000 for high quality report of memory corruption in a non-sandboxed process + $1,000 bisect bonus",
+  "attachments": [
+    {
+      "id": 59459359,
+      "filename": "crash.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 27971,
+      "url": "https://issues.chromium.org/action/issues/367755363/attachments/59459359?download=true",
+      "local_path": "attachments/crash.txt"
+    },
+    {
+      "id": 59459360,
+      "filename": "windbg.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 10682,
+      "url": "https://issues.chromium.org/action/issues/367755363/attachments/59459360?download=true",
+      "local_path": "attachments/windbg.txt"
+    },
+    {
+      "id": 59459361,
+      "filename": "copy_mojo_js_bindings.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 653,
+      "url": "https://issues.chromium.org/action/issues/367755363/attachments/59459361?download=true",
+      "local_path": "attachments/copy_mojo_js_bindings.py"
+    },
+    {
+      "id": 59459362,
+      "filename": "poc.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 2875,
+      "url": "https://issues.chromium.org/action/issues/367755363/attachments/59459362?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 59493553,
+      "filename": "child.html",
+      "mime_type": "text/html",
+      "size_bytes": 308,
+      "url": "https://issues.chromium.org/action/issues/367755363/attachments/59493553?download=true",
+      "local_path": "attachments/child.html"
+    },
+    {
+      "id": 59489003,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 514,
+      "url": "https://issues.chromium.org/action/issues/367755363/attachments/59489003?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 59491167,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1409,
+      "url": "https://issues.chromium.org/action/issues/367755363/attachments/59491167?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 59489004,
+      "filename": "utils.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2800,
+      "url": "https://issues.chromium.org/action/issues/367755363/attachments/59489004?download=true",
+      "local_path": "attachments/utils.js"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "# VULNERABILITY DETAILS\n\nThe `AIManager` mojo interface can be obtained by the renderer. When binding the receiver, the browser will save the corresponding context to the ReceiverSet [0].\n\n```cpp\nvoid AIManagerKeyedService::AddReceiver(\n    mojo::PendingReceiver<blink::mojom::AIManager> receiver,"
+}

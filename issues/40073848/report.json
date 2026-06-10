@@ -1,0 +1,70 @@
+{
+  "id": "40073848",
+  "url": "https://issues.chromium.org/issues/40073848",
+  "title": "ArrayBuffer OOR/W in glBufferData_Exec",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "no...@ssd-disclosure.com",
+  "assignee": "ge...@chromium.org",
+  "created_date": "2023-10-01T10:32:00+00:00",
+  "modified_date": "2026-06-09T07:52:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53186347,
+      "filename": "readme.md",
+      "mime_type": "text/plain",
+      "size_bytes": 3819,
+      "url": "https://issues.chromium.org/action/issues/40073848/attachments/53186347?download=true",
+      "local_path": "attachments/readme.md"
+    },
+    {
+      "id": 53186348,
+      "filename": "asan2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17622,
+      "url": "https://issues.chromium.org/action/issues/40073848/attachments/53186348?download=true",
+      "local_path": "attachments/asan2.txt"
+    },
+    {
+      "id": 53186349,
+      "filename": "asan1.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 28037,
+      "url": "https://issues.chromium.org/action/issues/40073848/attachments/53186349?download=true",
+      "local_path": "attachments/asan1.txt"
+    },
+    {
+      "id": 53186350,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1315,
+      "url": "https://issues.chromium.org/action/issues/40073848/attachments/53186350?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53186351,
+      "filename": "GPU Internals.html",
+      "mime_type": "text/plain",
+      "size_bytes": 138032,
+      "url": "https://issues.chromium.org/action/issues/40073848/attachments/53186351?download=true",
+      "local_path": "attachments/GPU Internals.html"
+    }
+  ],
+  "update_count": 81,
+  "description_snippet": "**Steps to reproduce the problem:**   \nInsufficient input validation for large size ArrayBuffer results in an Out of Bound (R/W) vulnerability in the `glBufferData_Exec` function of the GL driver.  \n  \n**Problem Description:**   \n### ROOT CAUSE ANALYSIS  \n  \n\\* Due to various characteristics, it wil"
+}

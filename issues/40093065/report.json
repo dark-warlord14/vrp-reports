@@ -1,0 +1,49 @@
+{
+  "id": "40093065",
+  "url": "https://issues.chromium.org/issues/40093065",
+  "title": "Security: CSP does not propagate to blob: URIs",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pa...@googlemail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2018-11-14T14:58:06+00:00",
+  "modified_date": "2025-02-13T00:21:31+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53354110,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 243,
+      "url": "https://issues.chromium.org/action/issues/40093065/attachments/53354110?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53354111,
+      "filename": "script.js",
+      "mime_type": "text/plain",
+      "size_bytes": 358,
+      "url": "https://issues.chromium.org/action/issues/40093065/attachments/53354111?download=true",
+      "local_path": "attachments/script.js"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen setting a CSP that allows blob: URIs, creating a blob: of type \"text/html\" and then navigating to that blob removes the CSP restrictions.  \n  \n**VERSION**   \nChromium Version: 70.0.3538.77 stable  \nOperating System: ArchLinux x64, rolling release  \n  \n**REPRODUCTION"
+}

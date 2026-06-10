@@ -1,0 +1,39 @@
+{
+  "id": "40051212",
+  "url": "https://issues.chromium.org/issues/40051212",
+  "title": "pdfium (XFA): use-of-uninitialized-value in CFWL_DateTimePicker::DrawWidget",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pd...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2020-01-13T01:48:20+00:00",
+  "modified_date": "2026-03-25T07:55:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53217354,
+      "filename": "chromium-1041303.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 634,
+      "url": "https://issues.chromium.org/action/issues/40051212/attachments/53217354?download=true",
+      "local_path": "attachments/chromium-1041303.pdf"
+    }
+  ],
+  "update_count": 27,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.130 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nWARNING: MemorySanitizer: use-of-uninitialized-value\r\n\r\n    #0 0x5627b80f3de6 in CFX_RectF::IsEmpty() const core/fxcrt/fx_coordinates.h:412:44"
+}

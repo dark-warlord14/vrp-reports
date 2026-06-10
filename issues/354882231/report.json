@@ -1,0 +1,92 @@
+{
+  "id": "354882231",
+  "url": "https://issues.chromium.org/issues/354882231",
+  "title": "Steps to reproduce the problem",
+  "status": "Unknown",
+  "severity": "Unknown",
+  "priority": "Unknown",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "Unknown",
+  "assignee": null,
+  "created_date": "2024-07-23T12:39:18+00:00",
+  "modified_date": "2025-05-09T12:38:31+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 87,
+  "bounty_rationale": "Thank you reward for a report of an issue with a very low potential for user harm and requiring the user to engage in a non-standard workflow to go back to full from minimized CCT as minimized CCT is not an interactable surface. We were able to make a beneficial change from this report, so we wanted to acknowledge that with a small reward.",
+  "attachments": [
+    {
+      "id": 58135010,
+      "filename": "blob (1).html",
+      "mime_type": "text/html",
+      "size_bytes": 1125,
+      "url": "https://issues.chromium.org/action/issues/354882231/attachments/58135010?download=true",
+      "local_path": "attachments/blob (1).html"
+    },
+    {
+      "id": 58135011,
+      "filename": "screen-20240723-180036.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1462240,
+      "url": "https://issues.chromium.org/action/issues/354882231/attachments/58135011?download=true",
+      "local_path": "attachments/screen-20240723-180036.mp4"
+    },
+    {
+      "id": 58133260,
+      "filename": "screen-20240723-232027.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6546440,
+      "url": "https://issues.chromium.org/action/issues/354882231/attachments/58133260?download=true",
+      "local_path": "attachments/screen-20240723-232027.mp4"
+    },
+    {
+      "id": 58161508,
+      "filename": "Screenshot_20240724-230110.png",
+      "mime_type": "image/png",
+      "size_bytes": 2915110,
+      "url": "https://issues.chromium.org/action/issues/354882231/attachments/58161508?download=true",
+      "local_path": "attachments/Screenshot_20240724-230110.png"
+    },
+    {
+      "id": 58293126,
+      "filename": "Screenshot_20240730-223324.png",
+      "mime_type": "image/png",
+      "size_bytes": 2860756,
+      "url": "https://issues.chromium.org/action/issues/354882231/attachments/58293126?download=true",
+      "local_path": "attachments/Screenshot_20240730-223324.png"
+    },
+    {
+      "id": 58301256,
+      "filename": "screen-20240730-223314.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4904786,
+      "url": "https://issues.chromium.org/action/issues/354882231/attachments/58301256?download=true",
+      "local_path": "attachments/screen-20240730-223314.mp4"
+    },
+    {
+      "id": 58452172,
+      "filename": "screen-20240806-155927.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2915940,
+      "url": "https://issues.chromium.org/action/issues/354882231/attachments/58452172?download=true",
+      "local_path": "attachments/screen-20240806-155927.mp4"
+    },
+    {
+      "id": 62511685,
+      "filename": "screen-20250130-212333.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 10607613,
+      "url": "https://issues.chromium.org/action/issues/354882231/attachments/62511685?download=true",
+      "local_path": "attachments/screen-20250130-212333.mp4"
+    }
+  ],
+  "update_count": 96,
+  "description_snippet": "# Steps to reproduce the problem\n1. go to mrnoob790.github.io/blob.html\nclick on click so url will show about:blank\ntitle show google.com and site information show about:blank#https://www.google.com\nso user will be confused and easily attacker can spoof it \n2. \n3. \n\n# Problem Description\nsite inform"
+}

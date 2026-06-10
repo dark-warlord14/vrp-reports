@@ -1,0 +1,42 @@
+{
+  "id": "367818758",
+  "url": "https://issues.chromium.org/issues/367818758",
+  "title": "invariant of cve-2024-7550",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler, Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "in...@starlabs.sg",
+  "assignee": "vi...@chromium.org",
+  "created_date": "2024-09-18T03:18:51+00:00",
+  "modified_date": "2025-01-09T15:42:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 59504525,
+      "filename": "patch_fix.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 868,
+      "url": "https://issues.chromium.org/action/issues/367818758/attachments/59504525?download=true",
+      "local_path": "attachments/patch_fix.diff"
+    }
+  ],
+  "update_count": 99,
+  "description_snippet": "#  report\n\nHi, there is a invariant bug of `|cve-2024-7550|`. The patch only fixed the maglev part, however, the patch didn't fixed turbofan part.\n\nHere is the poc, which should trigger a DCHECK:\n\n``` javascript\nload('wasm-module-builder.js');\nlet builder = new WasmModuleBuilder();\nlet struct_type ="
+}

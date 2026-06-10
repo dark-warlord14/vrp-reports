@@ -1,0 +1,79 @@
+{
+  "id": "485683110",
+  "url": "https://issues.chromium.org/issues/485683110",
+  "title": "Heap Buffer Overflow in BackgroundReadback GPU Readback with Non-Zero visibleRect Offset Leads to Renderer Process Memory Corruption",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Media>WebCodecs",
+  "os_platforms": [
+    "Android",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2026-02-19T07:52:40+00:00",
+  "modified_date": "2026-06-02T07:56:19+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 50000.0,
+  "reward_amount_meta": 50000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73583522,
+      "filename": "poc_background_readback_oob.html",
+      "mime_type": "text/html",
+      "size_bytes": 7100,
+      "url": "https://issues.chromium.org/action/issues/485683110/attachments/73583522?download=true",
+      "local_path": "attachments/poc_background_readback_oob.html"
+    },
+    {
+      "id": 73714693,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/485683110/attachments/73714693?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73714694,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/485683110/attachments/73714694?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73714589,
+      "filename": "exp.png",
+      "mime_type": "image/png",
+      "size_bytes": 770432,
+      "url": "https://issues.chromium.org/action/issues/485683110/attachments/73714589?download=true",
+      "local_path": "attachments/exp.png"
+    },
+    {
+      "id": 73709294,
+      "filename": "exp_vtable_dispatch_crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 5233,
+      "url": "https://issues.chromium.org/action/issues/485683110/attachments/73709294?download=true",
+      "local_path": "attachments/exp_vtable_dispatch_crash.html"
+    },
+    {
+      "id": 73709295,
+      "filename": "exploit.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 15326,
+      "url": "https://issues.chromium.org/action/issues/485683110/attachments/73709295?download=true",
+      "local_path": "attachments/exploit.md"
+    }
+  ],
+  "update_count": 82,
+  "description_snippet": "# Heap Buffer Overflow in BackgroundReadback GPU Readback with Non-Zero visibleRect Offset Leads to Renderer Process Memory Corruption\n\n## Summary\n\nA heap buffer overflow vulnerability exists in the WebCodecs BackgroundReadback implementation where GPU pixel readback writes beyond allocated buffer b"
+}

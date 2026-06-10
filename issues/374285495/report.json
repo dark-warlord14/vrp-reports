@@ -1,0 +1,46 @@
+{
+  "id": "374285495",
+  "url": "https://issues.chromium.org/issues/374285495",
+  "title": "Chrome iOS Address Bar Spoof Using 2 RTL (Arabic Characters) Subdomains",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Mobile>iOSWeb>Security",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "re...@gmail.com",
+  "assignee": "am...@google.com",
+  "created_date": "2024-10-18T19:25:15+00:00",
+  "modified_date": "2026-06-08T18:56:12+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 60153731,
+      "filename": "chrome_ios_spoof.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 7607069,
+      "url": "https://issues.chromium.org/action/issues/374285495/attachments/60153731?download=true",
+      "local_path": "attachments/chrome_ios_spoof.mp4"
+    },
+    {
+      "id": 60153732,
+      "filename": "chrome_ios_spoof.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 56749,
+      "url": "https://issues.chromium.org/action/issues/374285495/attachments/60153732?download=true",
+      "local_path": "attachments/chrome_ios_spoof.jpg"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "## Security Bug\n-------------------------\n\n## VERSION\nChrome Version: 130.0.6723.37 (Official Build) stable (64-bit)\nOperating System: iOS 18 on iPhone 16\n\n## REPRODUCTION CASE\n- Using Chrome iOS open `https://xn--llb.login.wwww.accounts.google.com.xn--llb.pwr.wtf/`\n\n## Expected Result\nAddress bar s"
+}

@@ -1,0 +1,65 @@
+{
+  "id": "368222741",
+  "url": "https://issues.chromium.org/issues/368222741",
+  "title": "heap-use-after-free cc\\tiles\\gpu_image_decode_cache.cc:2469 in cc::GpuImageDecodeCache::DecodeImageIfNecessary",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Compositing",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "sz...@chromium.org",
+  "created_date": "2024-09-19T10:35:58+00:00",
+  "modified_date": "2025-03-20T12:39:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 59493571,
+      "filename": "001-expected.png",
+      "mime_type": "image/png",
+      "size_bytes": 135759,
+      "url": "https://issues.chromium.org/action/issues/368222741/attachments/59493571?download=true",
+      "local_path": "attachments/001-expected.png"
+    },
+    {
+      "id": 59493572,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18192,
+      "url": "https://issues.chromium.org/action/issues/368222741/attachments/59493572?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 59504508,
+      "filename": "debug.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 4721,
+      "url": "https://issues.chromium.org/action/issues/368222741/attachments/59504508?download=true",
+      "local_path": "attachments/debug.patch"
+    },
+    {
+      "id": 59504509,
+      "filename": "test.html",
+      "mime_type": "text/html",
+      "size_bytes": 483,
+      "url": "https://issues.chromium.org/action/issues/368222741/attachments/59504509?download=true",
+      "local_path": "attachments/test.html"
+    }
+  ],
+  "update_count": 83,
+  "description_snippet": "#Summary\nheap-use-after-free cc\\tiles\\gpu_image_decode_cache.cc:2469 in cc::GpuImageDecodeCache::DecodeImageIfNecessary\n\n#Reproduce\nasan-win32-release_x64-1353186\nThis issue occurred unintentionally while I was browsing a normal page.\nI attempted some analysis to identify the root cause of the vulne"
+}

@@ -1,0 +1,83 @@
+{
+  "id": "485152421",
+  "url": "https://issues.chromium.org/issues/485152421",
+  "title": "use-after-poison write in WasmFunctionBuilder::WriteBody",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "v8 14.7.0",
+  "cve_ids": [],
+  "reporter": "qy...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2026-02-17T17:01:43+00:00",
+  "modified_date": "2026-06-02T07:56:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73507617,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1336,
+      "url": "https://issues.chromium.org/action/issues/485152421/attachments/73507617?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 73518946,
+      "filename": "poc2.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 408,
+      "url": "https://issues.chromium.org/action/issues/485152421/attachments/73518946?download=true",
+      "local_path": "attachments/poc2.js"
+    },
+    {
+      "id": 73607150,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/485152421/attachments/73607150?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73613679,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/485152421/attachments/73613679?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73619393,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/485152421/attachments/73619393?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73619394,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/485152421/attachments/73619394?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 103,
+  "description_snippet": "# Steps to reproduce the problem\nran with:\nasan/d8 poc.js \n\n# Problem Description\n1. The parser uses shared mutable state for heap-access shift recognition:\n\n- heap_access_shift_position_ / heap_access_shift_value_ in src/asmjs/asm-parser.h:235.\n- In ShiftExpression, a >> imm pattern stores a code p"
+}

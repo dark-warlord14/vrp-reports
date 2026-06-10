@@ -1,0 +1,57 @@
+{
+  "id": "368628042",
+  "url": "https://issues.chromium.org/issues/368628042",
+  "title": "FencedFrame allows loading local file directories in http(s?) context",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>FencedFrames",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": "129.0.0.0",
+  "cve_ids": [],
+  "reporter": "so...@proton.me",
+  "assignee": "lb...@google.com",
+  "created_date": "2024-09-21T13:56:56+00:00",
+  "modified_date": "2025-01-23T15:43:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 59536801,
+      "filename": "variations.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 67810,
+      "url": "https://issues.chromium.org/action/issues/368628042/attachments/59536801?download=true",
+      "local_path": "attachments/variations.txt"
+    },
+    {
+      "id": 59536802,
+      "filename": "Screen Recording 2024-09-21 at 15.54.11.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 35100763,
+      "url": "https://issues.chromium.org/action/issues/368628042/attachments/59536802?download=true",
+      "local_path": "attachments/Screen Recording 2024-09-21 at 15.54.11.mov"
+    },
+    {
+      "id": 59536803,
+      "filename": "fencedframe_copy.html",
+      "mime_type": "text/html",
+      "size_bytes": 1022,
+      "url": "https://issues.chromium.org/action/issues/368628042/attachments/59536803?download=true",
+      "local_path": "attachments/fencedframe_copy.html"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "# Steps to reproduce the problem\n1. Enable fenced frame for your PoC server (#privacy-sandbox-enrollment-overrides flag, add your PoC server domain to this list; or do PoC on websites where fencedframe usage is allowed by default)\n2. serve exploit.html file, navigate to //$my_poc_server_url/exploit."
+}

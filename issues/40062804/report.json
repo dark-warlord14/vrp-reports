@@ -1,0 +1,36 @@
+{
+  "id": "40062804",
+  "url": "https://issues.chromium.org/issues/40062804",
+  "title": "**Does this work in other browsers? **  Yes - This is just a Chrome problem",
+  "status": "Unknown",
+  "severity": "Unknown",
+  "priority": "Unknown",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "Unknown",
+  "assignee": null,
+  "created_date": "2023-01-27T04:15:03+00:00",
+  "modified_date": "2026-05-20T17:11:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 49,
+  "bounty_rationale": "Baseline. User information disclosure",
+  "attachments": [
+    {
+      "id": 53422630,
+      "filename": "Screen Recording 2023-07-28 at 09.41.00.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 657033,
+      "url": "https://issues.chromium.org/action/issues/40062804/attachments/53422630?download=true",
+      "local_path": "attachments/Screen Recording 2023-07-28 at 09.41.00.mp4"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**Does this work in other browsers? **  Yes - This is just a Chrome problem  \n  \n**Steps to reproduce the problem:**   \n1. go to https://jsgist.org/?src=dbb12ec6674cfca052f5040f89c118fe  \n  \n**Problem Description:**   \nImageBitmapRenderingContext is typically made in the main page and then some othe"
+}

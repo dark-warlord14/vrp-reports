@@ -1,0 +1,62 @@
+{
+  "id": "40095155",
+  "url": "https://issues.chromium.org/issues/40095155",
+  "title": "UAF in content::IndexedDBDatabase::ProcessRequestQueueAndMaybeRelease",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Storage>IndexedDB",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cd...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2019-05-24T08:40:38+00:00",
+  "modified_date": "2025-02-13T00:21:47+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10500.0,
+  "reward_amount_meta": 10500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53297496,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40095155/attachments/53297496?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53297497,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40095155/attachments/53297497?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53297514,
+      "filename": "diff",
+      "mime_type": "text/plain",
+      "size_bytes": 718,
+      "url": "https://issues.chromium.org/action/issues/40095155/attachments/53297514?download=true",
+      "local_path": "attachments/diff"
+    },
+    {
+      "id": 53297515,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 5765,
+      "url": "https://issues.chromium.org/action/issues/40095155/attachments/53297515?download=true",
+      "local_path": "attachments/crash.html"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Build asan version of chromium. \r\n2. Make a dir named mojotest in out/gen and set up a webserver in mojotest.Put crash.html in it.\r\n3. Run ./chr"
+}

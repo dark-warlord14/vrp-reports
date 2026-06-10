@@ -1,0 +1,206 @@
+{
+  "id": "40057499",
+  "url": "https://issues.chromium.org/issues/40057499",
+  "title": "Security: Busy Rendering Cause Layer to Persist on Target Website Allow Address Bar Spoofing & Clickjacking Attack",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Input",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "su...@gmail.com",
+  "assignee": "mu...@chromium.org",
+  "created_date": "2021-10-04T01:25:41+00:00",
+  "modified_date": "2026-04-22T07:59:10+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53164935,
+      "filename": "spoof-locationhref.html",
+      "mime_type": "text/plain",
+      "size_bytes": 765,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/53164935?download=true",
+      "local_path": "attachments/spoof-locationhref.html"
+    },
+    {
+      "id": 53164936,
+      "filename": "spoof-windowopen.html",
+      "mime_type": "text/plain",
+      "size_bytes": 751,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/53164936?download=true",
+      "local_path": "attachments/spoof-windowopen.html"
+    },
+    {
+      "id": 53164937,
+      "filename": "Busy Rendering Spoof Layer with window.open (interactable clickjack to GitHub).mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 225751,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/53164937?download=true",
+      "local_path": "attachments/Busy Rendering Spoof Layer with window.open (interactable clickjack to GitHub).mp4"
+    },
+    {
+      "id": 53164953,
+      "filename": "Spoof Layer reproducible on Android Emulator Pixel_2_API_29 with Vivaldi UA Chrome 94.0.4606.47.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 373009,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/53164953?download=true",
+      "local_path": "attachments/Spoof Layer reproducible on Android Emulator Pixel_2_API_29 with Vivaldi UA Chrome 94.0.4606.47.mp4"
+    },
+    {
+      "id": 53164969,
+      "filename": "spoof-windowopen-badssl.html",
+      "mime_type": "text/plain",
+      "size_bytes": 759,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/53164969?download=true",
+      "local_path": "attachments/spoof-windowopen-badssl.html"
+    },
+    {
+      "id": 53164970,
+      "filename": "Spoof layer and click passthrough on security_interstitials page.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 917547,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/53164970?download=true",
+      "local_path": "attachments/Spoof layer and click passthrough on security_interstitials page.mp4"
+    },
+    {
+      "id": 53165033,
+      "filename": "spoof-locationhref-fps.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1289,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/53165033?download=true",
+      "local_path": "attachments/spoof-locationhref-fps.html"
+    },
+    {
+      "id": 53165034,
+      "filename": "spoof-locationhref-badssl-fps.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1266,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/53165034?download=true",
+      "local_path": "attachments/spoof-locationhref-badssl-fps.html"
+    },
+    {
+      "id": 53165035,
+      "filename": "spoof layer click passthrough to googlechrome.github.io.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5054414,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/53165035?download=true",
+      "local_path": "attachments/spoof layer click passthrough to googlechrome.github.io.mp4"
+    },
+    {
+      "id": 53165138,
+      "filename": "trace_android.json.gz",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 337216,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/53165138?download=true",
+      "local_path": "attachments/trace_android.json.gz"
+    },
+    {
+      "id": 53165427,
+      "filename": "android-stable.png",
+      "mime_type": "image/png",
+      "size_bytes": 52312,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/53165427?download=true",
+      "local_path": "attachments/android-stable.png"
+    },
+    {
+      "id": 55956904,
+      "filename": "crbug40057499-uma-affected-by-preloading.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1268388,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/55956904?download=true",
+      "local_path": "attachments/crbug40057499-uma-affected-by-preloading.webm"
+    },
+    {
+      "id": 72742057,
+      "filename": "spoof4-tweaked-rescale1.html",
+      "mime_type": "text/html",
+      "size_bytes": 1255,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/72742057?download=true",
+      "local_path": "attachments/spoof4-tweaked-rescale1.html"
+    },
+    {
+      "id": 72742058,
+      "filename": "Screen_Recording_20260123_034711_Chrome_Samsung_S23+.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 444065,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/72742058?download=true",
+      "local_path": "attachments/Screen_Recording_20260123_034711_Chrome_Samsung_S23+.mp4"
+    },
+    {
+      "id": 72741023,
+      "filename": "spoof4-tweaked-timed-touchscreentest.html",
+      "mime_type": "text/html",
+      "size_bytes": 832,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/72741023?download=true",
+      "local_path": "attachments/spoof4-tweaked-timed-touchscreentest.html"
+    },
+    {
+      "id": 72741025,
+      "filename": "touch_interactable_passthrough_test_Chrome_Samsung_S23+.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 440556,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/72741025?download=true",
+      "local_path": "attachments/touch_interactable_passthrough_test_Chrome_Samsung_S23+.mp4"
+    },
+    {
+      "id": 72819889,
+      "filename": "Facebook_Tiktok_Request_Access_Chrome.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 274660,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/72819889?download=true",
+      "local_path": "attachments/Facebook_Tiktok_Request_Access_Chrome.jpg"
+    },
+    {
+      "id": 72819890,
+      "filename": "Facebook_Canva_Request_Access_Chrome.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 226108,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/72819890?download=true",
+      "local_path": "attachments/Facebook_Canva_Request_Access_Chrome.jpg"
+    },
+    {
+      "id": 72819892,
+      "filename": "Facebook_Overlay_Page_One_Tap_Authorize_App_Chrome_Samsung_S23+.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1178920,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/72819892?download=true",
+      "local_path": "attachments/Facebook_Overlay_Page_One_Tap_Authorize_App_Chrome_Samsung_S23+.mp4"
+    },
+    {
+      "id": 72806835,
+      "filename": "spoof4-tweaked-timed-facebook-authorize.html",
+      "mime_type": "text/html",
+      "size_bytes": 1849,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/72806835?download=true",
+      "local_path": "attachments/spoof4-tweaked-timed-facebook-authorize.html"
+    },
+    {
+      "id": 72824183,
+      "filename": "GitHub_Authorize_Apps.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 311673,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/72824183?download=true",
+      "local_path": "attachments/GitHub_Authorize_Apps.jpg"
+    },
+    {
+      "id": 72823467,
+      "filename": "GitLab_Authorize_Apps.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 380921,
+      "url": "https://issues.chromium.org/action/issues/40057499/attachments/72823467?download=true",
+      "local_path": "attachments/GitLab_Authorize_Apps.jpg"
+    }
+  ],
+  "update_count": 467,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen using huge CSS font-size, line height then combined with large border radius, Chromium will appear sluggish when rendering the page. After first-paint rendering, zooming in and scroling the page will also prolong busy rendering times.  \n  \nWhile Google Chrome busy r"
+}

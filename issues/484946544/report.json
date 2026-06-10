@@ -1,0 +1,39 @@
+{
+  "id": "484946544",
+  "url": "https://issues.chromium.org/issues/484946544",
+  "title": "[PassAsSpan] ArrayBuffer.transfer() re-entrancy UAF / SEGV in TextDecoder.decode",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>TextEncoding",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pk...@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2026-02-17T04:42:56+00:00",
+  "modified_date": "2026-06-04T07:51:52+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73483403,
+      "filename": "passasspan_textdecoder_uaf.html",
+      "mime_type": "text/html",
+      "size_bytes": 676,
+      "url": "https://issues.chromium.org/action/issues/484946544/attachments/73483403?download=true",
+      "local_path": "attachments/passasspan_textdecoder_uaf.html"
+    }
+  ],
+  "update_count": 106,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

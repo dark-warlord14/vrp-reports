@@ -1,0 +1,50 @@
+{
+  "id": "484665123",
+  "url": "https://issues.chromium.org/issues/484665123",
+  "title": "Missing range validation on slice_qp_delta",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Media",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2022-21813",
+    "CVE-2022-21814"
+  ],
+  "reporter": "lu...@icloud.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2026-02-15T04:24:11+00:00",
+  "modified_date": "2026-05-28T08:01:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73460925,
+      "filename": "slice_qp_delta_test.cc",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 6068,
+      "url": "https://issues.chromium.org/action/issues/484665123/attachments/73460925?download=true",
+      "local_path": "attachments/slice_qp_delta_test.cc"
+    },
+    {
+      "id": 73460926,
+      "filename": "slice_qp_delta_poc.cc",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 6506,
+      "url": "https://issues.chromium.org/action/issues/484665123/attachments/73460926?download=true",
+      "local_path": "attachments/slice_qp_delta_poc.cc"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "---\n\n### Report description\n\n\nMissing range validation on slice_qp_delta\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/rules/5745167867576320/ch"
+}
