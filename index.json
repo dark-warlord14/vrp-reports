@@ -1,5 +1,45 @@
 [
   {
+    "id": "490023239",
+    "title": "Type confusion in InspectorCSSAgent::setScopeText",
+    "url": "https://issues.chromium.org/issues/490023239",
+    "status": "Fixed",
+    "severity": "S3-Low",
+    "component": "Blink>CSS",
+    "reporter": "he...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 2000.0,
+    "reward_amount_meta": 2000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-03-05T18:00:40+00:00",
+    "year": 2026,
+    "attachment_count": 3,
+    "local_path": "issues/490023239",
+    "has_markdown": true
+  },
+  {
+    "id": "489619753",
+    "title": "heap-use-after-free in extensions::ChromeContentRulesRegistry::RemoveRulesImpl",
+    "url": "https://issues.chromium.org/issues/489619753",
+    "status": "Accepted",
+    "severity": "S3-Low",
+    "component": "Platform>Extensions",
+    "reporter": "fa...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 5000.0,
+    "reward_amount_meta": 5000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-03-04T15:40:47+00:00",
+    "year": 2026,
+    "attachment_count": 2,
+    "local_path": "issues/489619753",
+    "has_markdown": true
+  },
+  {
     "id": "488803413",
     "title": "Turboshaft saturated use-count misclassification causes Wasm compressed/tagged base mismatch SIGSEGV",
     "url": "https://issues.chromium.org/issues/488803413",
@@ -40,6 +80,46 @@
     "has_markdown": true
   },
   {
+    "id": "488585488",
+    "title": "Heap UAF in `network::SharedDictionaryOnDisk::SetStat`",
+    "url": "https://issues.chromium.org/issues/488585488",
+    "status": "Assigned",
+    "severity": "S3-Low",
+    "component": "Internals>Network",
+    "reporter": "sh...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 15000.0,
+    "reward_amount_meta": 15000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-03-01T01:16:30+00:00",
+    "year": 2026,
+    "attachment_count": 4,
+    "local_path": "issues/488585488",
+    "has_markdown": true
+  },
+  {
+    "id": "488270255",
+    "title": "css.ResolveValues() does not check validity of reserved values",
+    "url": "https://issues.chromium.org/issues/488270255",
+    "status": "Fixed",
+    "severity": "S3-Low",
+    "component": "Blink>CSS",
+    "reporter": "he...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 2000.0,
+    "reward_amount_meta": 2000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-02-27T17:34:27+00:00",
+    "year": 2026,
+    "attachment_count": 7,
+    "local_path": "issues/488270255",
+    "has_markdown": true
+  },
+  {
     "id": "488188166",
     "title": "UAF in blink RuleMap",
     "url": "https://issues.chromium.org/issues/488188166",
@@ -60,6 +140,26 @@
     "has_markdown": true
   },
   {
+    "id": "487768779",
+    "title": "Sandbox Escape: Arbitrary Local File Read via Missing CanReadRequestBody Validation in CreateNewWindow's opener_suppressed Path",
+    "url": "https://issues.chromium.org/issues/487768779",
+    "status": "Assigned",
+    "severity": "S3-Low",
+    "component": "UI>Browser>Navigation",
+    "reporter": "je...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 26000.0,
+    "reward_amount_meta": 26000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-02-26T13:31:43+00:00",
+    "year": 2026,
+    "attachment_count": 5,
+    "local_path": "issues/487768779",
+    "has_markdown": true
+  },
+  {
     "id": "487746373",
     "title": "Concurrent GSAB Growth Causes OOB Write in Key Enumeration",
     "url": "https://issues.chromium.org/issues/487746373",
@@ -77,6 +177,26 @@
     "year": 2026,
     "attachment_count": 4,
     "local_path": "issues/487746373",
+    "has_markdown": true
+  },
+  {
+    "id": "487821920",
+    "title": "[HIGH] nameConstraints: excluded dNSName can be bypassed with wildcard SAN",
+    "url": "https://issues.chromium.org/issues/487821920",
+    "status": "Accepted",
+    "severity": "S3-Low",
+    "component": "BoringSSL",
+    "reporter": "ko...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 2000.0,
+    "reward_amount_meta": 2000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-02-26T02:59:14+00:00",
+    "year": 2026,
+    "attachment_count": 3,
+    "local_path": "issues/487821920",
     "has_markdown": true
   },
   {
@@ -140,6 +260,26 @@
     "has_markdown": true
   },
   {
+    "id": "486972661",
+    "title": "Heap buffer overflow in ANGLE copyImageDataToBuffer",
+    "url": "https://issues.chromium.org/issues/486972661",
+    "status": "Assigned",
+    "severity": "S3-Low",
+    "component": "Internals>GPU>ANGLE",
+    "reporter": "oj...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 15000.0,
+    "reward_amount_meta": 15000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-02-23T22:11:58+00:00",
+    "year": 2026,
+    "attachment_count": 7,
+    "local_path": "issues/486972661",
+    "has_markdown": true
+  },
+  {
     "id": "486927780",
     "title": "Chrome V8 Inspector InjectedScript Use-After-Free Vulnerability",
     "url": "https://issues.chromium.org/issues/486927780",
@@ -200,6 +340,66 @@
     "has_markdown": true
   },
   {
+    "id": "486421954",
+    "title": "Use-after-free in WebRTC ProxySink via unsignaled-to-signaled stream promotion leads to renderer compromise",
+    "url": "https://issues.chromium.org/issues/486421954",
+    "status": "New",
+    "severity": "S3-Low",
+    "component": "Blink>WebRTC",
+    "reporter": "je...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 11000.0,
+    "reward_amount_meta": 11000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-02-22T00:39:10+00:00",
+    "year": 2026,
+    "attachment_count": 0,
+    "local_path": "issues/486421954",
+    "has_markdown": true
+  },
+  {
+    "id": "486421953",
+    "title": "Use-after-free in WebRTC dav1d AV1 decoder due to missing buffer lifetime management leads to heap read of freed memory",
+    "url": "https://issues.chromium.org/issues/486421953",
+    "status": "Assigned",
+    "severity": "S4-Minimal",
+    "component": "Blink>WebRTC",
+    "reporter": "je...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 11000.0,
+    "reward_amount_meta": 11000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-02-22T00:24:19+00:00",
+    "year": 2026,
+    "attachment_count": 2,
+    "local_path": "issues/486421953",
+    "has_markdown": true
+  },
+  {
+    "id": "486349161",
+    "title": "Stack buffer overflow in WebRTC ResamplerHelper::MaybeResample leads to renderer process crash via crafted SDP and Insertable Streams",
+    "url": "https://issues.chromium.org/issues/486349161",
+    "status": "New",
+    "severity": "S3-Low",
+    "component": "Blink>WebRTC",
+    "reporter": "je...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 11000.0,
+    "reward_amount_meta": 11000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-02-21T13:39:05+00:00",
+    "year": 2026,
+    "attachment_count": 0,
+    "local_path": "issues/486349161",
+    "has_markdown": true
+  },
+  {
     "id": "486084137",
     "title": "V8 Sandbox Bypass: controlled OOB write to `Isolate` via RegExp source corruption during tier-up.",
     "url": "https://issues.chromium.org/issues/486084137",
@@ -240,6 +440,26 @@
     "has_markdown": true
   },
   {
+    "id": "485935305",
+    "title": "Arbitrary Memory Read/Write via WebGLBuffer Created During Context Loss Combined with PBO Operations",
+    "url": "https://issues.chromium.org/issues/485935305",
+    "status": "New",
+    "severity": "S4-Minimal",
+    "component": "Internals>GPU>Internals",
+    "reporter": "je...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 90000.0,
+    "reward_amount_meta": 90000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-02-20T04:00:18+00:00",
+    "year": 2026,
+    "attachment_count": 4,
+    "local_path": "issues/485935305",
+    "has_markdown": true
+  },
+  {
     "id": "485935302",
     "title": "Use-After-Free in WebGPU Worker Multithreaded Dawn Wire Path Leading to Potential Remote Code Execution",
     "url": "https://issues.chromium.org/issues/485935302",
@@ -257,6 +477,26 @@
     "year": 2026,
     "attachment_count": 0,
     "local_path": "issues/485935302",
+    "has_markdown": true
+  },
+  {
+    "id": "485785246",
+    "title": "static `import` declarations in service workers do not respect `worker-src` CSP directive",
+    "url": "https://issues.chromium.org/issues/485785246",
+    "status": "Fixed",
+    "severity": "S3-Low",
+    "component": "Blink>SecurityFeature>ContentSecurityPolicy",
+    "reporter": "al...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 1000.0,
+    "reward_amount_meta": 1000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-02-19T14:03:44+00:00",
+    "year": 2026,
+    "attachment_count": 3,
+    "local_path": "issues/485785246",
     "has_markdown": true
   },
   {
@@ -300,6 +540,26 @@
     "has_markdown": true
   },
   {
+    "id": "485683099",
+    "title": "Missing Payload Length Check in DTLS-SRTP Send Path Leads to Heap Out-of-Bounds Read in the Renderer Process",
+    "url": "https://issues.chromium.org/issues/485683099",
+    "status": "Verified",
+    "severity": "S4-Minimal",
+    "component": "Internals>Core",
+    "reporter": "je...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 2000.0,
+    "reward_amount_meta": 2000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-02-19T02:23:26+00:00",
+    "year": 2026,
+    "attachment_count": 0,
+    "local_path": "issues/485683099",
+    "has_markdown": true
+  },
+  {
     "id": "485622239",
     "title": "ANGLE Vulkan reinitImageAsRenderable uint32 Overflow causes GPU OOB Write",
     "url": "https://issues.chromium.org/issues/485622239",
@@ -337,6 +597,26 @@
     "year": 2026,
     "attachment_count": 0,
     "local_path": "issues/485397139",
+    "has_markdown": true
+  },
+  {
+    "id": "485292589",
+    "title": "Heap Buffer Overflow in RealtimeAnalyser::WriteInput via Configurable Render Quantum Leads to Renderer Remote Code Execution",
+    "url": "https://issues.chromium.org/issues/485292589",
+    "status": "Assigned",
+    "severity": "S4-Minimal",
+    "component": "Blink>WebAudio",
+    "reporter": "je...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 11000.0,
+    "reward_amount_meta": 11000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-02-18T14:51:16+00:00",
+    "year": 2026,
+    "attachment_count": 0,
+    "local_path": "issues/485292589",
     "has_markdown": true
   },
   {
@@ -640,6 +920,26 @@
     "year": 2026,
     "attachment_count": 5,
     "local_path": "issues/484088917",
+    "has_markdown": true
+  },
+  {
+    "id": "484082189",
+    "title": "Security Regression: Trusted UI (Omnibox) fails to render/disappears due to CoordinatorLayout migration logic failure.",
+    "url": "https://issues.chromium.org/issues/484082189",
+    "status": "Accepted",
+    "severity": "S3-Low",
+    "component": "UI>Browser>Omnibox>SecurityIndicators",
+    "reporter": "mo...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 2000.0,
+    "reward_amount_meta": 2000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-02-13T01:19:14+00:00",
+    "year": 2026,
+    "attachment_count": 16,
+    "local_path": "issues/484082189",
     "has_markdown": true
   },
   {
@@ -1132,6 +1432,26 @@
     "has_markdown": true
   },
   {
+    "id": "480442279",
+    "title": "V8 Sandbox Bypass: UB in MessageHandler::GetMessage because of invalid MessageTemplate variant",
+    "url": "https://issues.chromium.org/issues/480442279",
+    "status": "Assigned",
+    "severity": "S3-Low",
+    "component": "Blink>JavaScript>Sandbox",
+    "reporter": "v8...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 5000.0,
+    "reward_amount_meta": 5000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-02-01T12:17:29+00:00",
+    "year": 2026,
+    "attachment_count": 4,
+    "local_path": "issues/480442279",
+    "has_markdown": true
+  },
+  {
     "id": "480438199",
     "title": "Improper handling of side-effects of CopyFastSmiOrObjectElements in LateLoadElimination leads to a fake object / arbitrary write primitive",
     "url": "https://issues.chromium.org/issues/480438199",
@@ -1391,6 +1711,26 @@
     "year": 2026,
     "attachment_count": 0,
     "local_path": "issues/475877320",
+    "has_markdown": true
+  },
+  {
+    "id": "475893566",
+    "title": "use-after-poison on address  thread T0",
+    "url": "https://issues.chromium.org/issues/475893566",
+    "status": "Assigned",
+    "severity": "S4-Minimal",
+    "component": "Speed>Tracing",
+    "reporter": "mu...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 2000.0,
+    "reward_amount_meta": 2000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-01-14T21:12:24+00:00",
+    "year": 2026,
+    "attachment_count": 1,
+    "local_path": "issues/475893566",
     "has_markdown": true
   },
   {
@@ -2993,6 +3333,28 @@
     "year": 2025,
     "attachment_count": 1,
     "local_path": "issues/445966259",
+    "has_markdown": true
+  },
+  {
+    "id": "445738066",
+    "title": "Google Chrome on iOS sad tabs with the following testcase.",
+    "url": "https://issues.chromium.org/issues/445738066",
+    "status": "Accepted",
+    "severity": "S3-Low",
+    "component": "Mobile>iOSWeb>Security",
+    "reporter": "nt...@gmail.com",
+    "cve_ids": [
+      "CVE-2025-43427"
+    ],
+    "bounty_amount": 5000.0,
+    "reward_amount_meta": 5000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2025-09-18T10:56:43+00:00",
+    "year": 2025,
+    "attachment_count": 3,
+    "local_path": "issues/445738066",
     "has_markdown": true
   },
   {
@@ -14154,7 +14516,7 @@
     "year": 2024,
     "attachment_count": 4,
     "local_path": "issues/41497180",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41496366",
@@ -14214,7 +14576,7 @@
     "year": 2024,
     "attachment_count": 2,
     "local_path": "issues/41495878",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41495060",
@@ -14234,7 +14596,7 @@
     "year": 2024,
     "attachment_count": 4,
     "local_path": "issues/41495060",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41494860",
@@ -14274,7 +14636,7 @@
     "year": 2024,
     "attachment_count": 1,
     "local_path": "issues/41494611",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41494539",
@@ -14294,7 +14656,7 @@
     "year": 2024,
     "attachment_count": 8,
     "local_path": "issues/41494539",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41494315",
@@ -14314,7 +14676,7 @@
     "year": 2024,
     "attachment_count": 2,
     "local_path": "issues/41494315",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41493771",
@@ -14354,7 +14716,7 @@
     "year": 2024,
     "attachment_count": 2,
     "local_path": "issues/41493674",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41493458",
@@ -14374,7 +14736,7 @@
     "year": 2024,
     "attachment_count": 2,
     "local_path": "issues/41493458",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41493290",
@@ -14394,7 +14756,7 @@
     "year": 2024,
     "attachment_count": 3,
     "local_path": "issues/41493290",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41493286",
@@ -14414,7 +14776,7 @@
     "year": 2024,
     "attachment_count": 10,
     "local_path": "issues/41493286",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41493285",
@@ -14434,7 +14796,7 @@
     "year": 2024,
     "attachment_count": 4,
     "local_path": "issues/41493285",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41493175",
@@ -14454,7 +14816,7 @@
     "year": 2024,
     "attachment_count": 2,
     "local_path": "issues/41493175",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41492634",
@@ -14474,7 +14836,7 @@
     "year": 2024,
     "attachment_count": 6,
     "local_path": "issues/41492634",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41492103",
@@ -14514,7 +14876,7 @@
     "year": 2024,
     "attachment_count": 11,
     "local_path": "issues/41492087",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41491428",
@@ -14534,7 +14896,7 @@
     "year": 2024,
     "attachment_count": 2,
     "local_path": "issues/41491428",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41491379",
@@ -14554,7 +14916,7 @@
     "year": 2024,
     "attachment_count": 4,
     "local_path": "issues/41491379",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41491373",
@@ -14577,7 +14939,7 @@
     "year": 2024,
     "attachment_count": 3,
     "local_path": "issues/41491373",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41490491",
@@ -14597,7 +14959,7 @@
     "year": 2024,
     "attachment_count": 2,
     "local_path": "issues/41490491",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41489926",
@@ -14637,7 +14999,7 @@
     "year": 2024,
     "attachment_count": 2,
     "local_path": "issues/41488920",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41488824",
@@ -14657,7 +15019,7 @@
     "year": 2024,
     "attachment_count": 0,
     "local_path": "issues/41488824",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41487933",
@@ -14697,7 +15059,7 @@
     "year": 2024,
     "attachment_count": 2,
     "local_path": "issues/41487774",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41487721",
@@ -14717,7 +15079,7 @@
     "year": 2024,
     "attachment_count": 4,
     "local_path": "issues/41487721",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41487478",
@@ -14737,7 +15099,7 @@
     "year": 2024,
     "attachment_count": 2,
     "local_path": "issues/41487478",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41487330",
@@ -15039,7 +15401,7 @@
     "year": 2023,
     "attachment_count": 4,
     "local_path": "issues/41484271",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41484151",
@@ -16383,7 +16745,7 @@
     "year": 2023,
     "attachment_count": 3,
     "local_path": "issues/40074906",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40936265",
@@ -16603,7 +16965,7 @@
     "year": 2023,
     "attachment_count": 5,
     "local_path": "issues/40074299",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40074269",
@@ -16763,7 +17125,7 @@
     "year": 2023,
     "attachment_count": 8,
     "local_path": "issues/40073755",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40073505",
@@ -16843,7 +17205,7 @@
     "year": 2023,
     "attachment_count": 2,
     "local_path": "issues/40073262",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40072988",
@@ -16923,7 +17285,7 @@
     "year": 2023,
     "attachment_count": 1,
     "local_path": "issues/40072662",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40072651",
@@ -16963,7 +17325,7 @@
     "year": 2023,
     "attachment_count": 2,
     "local_path": "issues/40072461",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40072430",
@@ -17143,7 +17505,7 @@
     "year": 2023,
     "attachment_count": 0,
     "local_path": "issues/40071635",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40071416",
@@ -17163,7 +17525,7 @@
     "year": 2023,
     "attachment_count": 4,
     "local_path": "issues/40071416",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40071366",
@@ -17243,7 +17605,7 @@
     "year": 2023,
     "attachment_count": 1,
     "local_path": "issues/40071209",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40071202",
@@ -17263,7 +17625,7 @@
     "year": 2023,
     "attachment_count": 2,
     "local_path": "issues/40071202",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40071201",
@@ -17283,7 +17645,7 @@
     "year": 2023,
     "attachment_count": 2,
     "local_path": "issues/40071201",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40071200",
@@ -17303,7 +17665,7 @@
     "year": 2023,
     "attachment_count": 2,
     "local_path": "issues/40071200",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40071186",
@@ -17563,7 +17925,7 @@
     "year": 2023,
     "attachment_count": 0,
     "local_path": "issues/40070140",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40070139",
@@ -17583,7 +17945,7 @@
     "year": 2023,
     "attachment_count": 0,
     "local_path": "issues/40070139",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40070117",
@@ -17603,7 +17965,7 @@
     "year": 2023,
     "attachment_count": 4,
     "local_path": "issues/40070117",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40070055",
@@ -18003,7 +18365,7 @@
     "year": 2023,
     "attachment_count": 1,
     "local_path": "issues/40069052",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40926043",
@@ -18065,7 +18427,7 @@
     "year": 2023,
     "attachment_count": 0,
     "local_path": "issues/40068966",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40068868",
@@ -18645,7 +19007,7 @@
     "year": 2023,
     "attachment_count": 5,
     "local_path": "issues/40067517",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40067505",
@@ -18945,7 +19307,7 @@
     "year": 2023,
     "attachment_count": 6,
     "local_path": "issues/40067213",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40067195",
@@ -18985,7 +19347,7 @@
     "year": 2023,
     "attachment_count": 2,
     "local_path": "issues/40067181",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40067152",
@@ -19045,7 +19407,7 @@
     "year": 2023,
     "attachment_count": 2,
     "local_path": "issues/40067078",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40067050",
@@ -19465,7 +19827,7 @@
     "year": 2023,
     "attachment_count": 5,
     "local_path": "issues/40066346",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40066280",
@@ -19685,7 +20047,7 @@
     "year": 2023,
     "attachment_count": 1,
     "local_path": "issues/40065774",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40065759",
@@ -20345,7 +20707,7 @@
     "year": 2023,
     "attachment_count": 0,
     "local_path": "issues/40065052",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40065050",
@@ -21165,7 +21527,7 @@
     "year": 2023,
     "attachment_count": 2,
     "local_path": "issues/40064406",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40064398",
@@ -21267,7 +21629,7 @@
     "year": 2023,
     "attachment_count": 8,
     "local_path": "issues/40064335",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40064307",
@@ -22287,7 +22649,7 @@
     "year": 2023,
     "attachment_count": 0,
     "local_path": "issues/40063741",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40063734",
@@ -22647,7 +23009,7 @@
     "year": 2023,
     "attachment_count": 1,
     "local_path": "issues/40063579",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40063572",
@@ -22687,7 +23049,7 @@
     "year": 2023,
     "attachment_count": 3,
     "local_path": "issues/40063547",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40063545",
@@ -24327,7 +24689,7 @@
     "year": 2023,
     "attachment_count": 0,
     "local_path": "issues/40887781",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40062647",
@@ -24367,7 +24729,7 @@
     "year": 2023,
     "attachment_count": 0,
     "local_path": "issues/40062646",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40062622",
@@ -24587,7 +24949,7 @@
     "year": 2023,
     "attachment_count": 1,
     "local_path": "issues/40062541",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40062534",
@@ -24747,7 +25109,7 @@
     "year": 2023,
     "attachment_count": 1,
     "local_path": "issues/40062470",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40062462",
@@ -25403,7 +25765,7 @@
     "year": 2022,
     "attachment_count": 0,
     "local_path": "issues/40062113",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40062108",
@@ -25785,7 +26147,7 @@
     "year": 2022,
     "attachment_count": 1,
     "local_path": "issues/40061948",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40061945",
@@ -27390,7 +27752,7 @@
     "year": 2022,
     "attachment_count": 3,
     "local_path": "issues/40061219",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40061217",
@@ -28518,7 +28880,7 @@
     "year": 2022,
     "attachment_count": 2,
     "local_path": "issues/40060641",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40060617",
@@ -29445,7 +29807,7 @@
     "year": 2022,
     "attachment_count": 6,
     "local_path": "issues/40060235",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40060220",
@@ -30405,7 +30767,7 @@
     "year": 2022,
     "attachment_count": 0,
     "local_path": "issues/40059888",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40059882",
@@ -30745,7 +31107,7 @@
     "year": 2022,
     "attachment_count": 0,
     "local_path": "issues/40059754",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40059725",
@@ -31067,7 +31429,7 @@
     "year": 2022,
     "attachment_count": 22,
     "local_path": "issues/40224936",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40059595",
@@ -31871,7 +32233,7 @@
     "year": 2022,
     "attachment_count": 2,
     "local_path": "issues/40059315",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40059305",
@@ -32393,7 +32755,7 @@
     "year": 2022,
     "attachment_count": 0,
     "local_path": "issues/40059101",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40059077",
@@ -33195,7 +33557,7 @@
     "year": 2022,
     "attachment_count": 2,
     "local_path": "issues/40058798",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40058794",
@@ -34095,7 +34457,7 @@
     "year": 2022,
     "attachment_count": 22,
     "local_path": "issues/40813839",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40058379",
@@ -34135,7 +34497,7 @@
     "year": 2021,
     "attachment_count": 6,
     "local_path": "issues/40058375",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40058372",
@@ -34275,7 +34637,7 @@
     "year": 2021,
     "attachment_count": 2,
     "local_path": "issues/40058326",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40058319",
@@ -34415,7 +34777,7 @@
     "year": 2021,
     "attachment_count": 4,
     "local_path": "issues/40058284",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40058283",
@@ -34735,7 +35097,7 @@
     "year": 2021,
     "attachment_count": 0,
     "local_path": "issues/40058147",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40058146",
@@ -35075,7 +35437,7 @@
     "year": 2021,
     "attachment_count": 4,
     "local_path": "issues/40058028",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40058015",
@@ -35395,7 +35757,7 @@
     "year": 2021,
     "attachment_count": 1,
     "local_path": "issues/40057910",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40057908",
@@ -35415,7 +35777,7 @@
     "year": 2021,
     "attachment_count": 1,
     "local_path": "issues/40057908",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40057906",
@@ -35615,7 +35977,7 @@
     "year": 2021,
     "attachment_count": 1,
     "local_path": "issues/40057859",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40057858",
@@ -35775,7 +36137,7 @@
     "year": 2021,
     "attachment_count": 0,
     "local_path": "issues/40057831",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40057826",
@@ -35795,7 +36157,7 @@
     "year": 2021,
     "attachment_count": 0,
     "local_path": "issues/40057826",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40057825",
@@ -35915,7 +36277,7 @@
     "year": 2021,
     "attachment_count": 0,
     "local_path": "issues/40057777",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40057776",
@@ -36015,7 +36377,7 @@
     "year": 2021,
     "attachment_count": 2,
     "local_path": "issues/40057743",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40057716",
@@ -36055,7 +36417,7 @@
     "year": 2021,
     "attachment_count": 0,
     "local_path": "issues/40800189",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40057696",
@@ -36859,7 +37221,7 @@
     "year": 2021,
     "attachment_count": 5,
     "local_path": "issues/40057344",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40057334",
@@ -37501,7 +37863,7 @@
     "year": 2021,
     "attachment_count": 4,
     "local_path": "issues/40057057",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40057030",
@@ -37901,7 +38263,7 @@
     "year": 2021,
     "attachment_count": 0,
     "local_path": "issues/40056896",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40056885",
@@ -38361,7 +38723,7 @@
     "year": 2021,
     "attachment_count": 4,
     "local_path": "issues/40056729",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40056720",
@@ -39270,7 +39632,7 @@
     "year": 2021,
     "attachment_count": 0,
     "local_path": "issues/40772521",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40056198",
@@ -39310,7 +39672,7 @@
     "year": 2021,
     "attachment_count": 2,
     "local_path": "issues/40056191",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40056186",
@@ -39410,7 +39772,7 @@
     "year": 2021,
     "attachment_count": 0,
     "local_path": "issues/40769704",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40056058",
@@ -40518,7 +40880,7 @@
     "year": 2021,
     "attachment_count": 1,
     "local_path": "issues/40761656",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40055576",
@@ -42542,7 +42904,7 @@
     "year": 2020,
     "attachment_count": 0,
     "local_path": "issues/40738834",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40054275",
@@ -48501,7 +48863,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40096164",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40096143",
@@ -48521,7 +48883,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40096143",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40096142",
@@ -48541,7 +48903,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40096142",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40096129",
@@ -48561,7 +48923,7 @@
     "year": 2019,
     "attachment_count": 5,
     "local_path": "issues/40096129",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40096127",
@@ -48581,7 +48943,7 @@
     "year": 2019,
     "attachment_count": 3,
     "local_path": "issues/40096127",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40096119",
@@ -48601,7 +48963,7 @@
     "year": 2019,
     "attachment_count": 4,
     "local_path": "issues/40096119",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40096102",
@@ -48621,7 +48983,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40096102",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40096072",
@@ -48721,7 +49083,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40095978",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095955",
@@ -48741,7 +49103,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40095955",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095928",
@@ -48761,7 +49123,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40095928",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095913",
@@ -48781,7 +49143,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40095913",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095912",
@@ -48801,7 +49163,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40095912",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095900",
@@ -48841,7 +49203,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40095870",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095808",
@@ -48861,7 +49223,7 @@
     "year": 2019,
     "attachment_count": 3,
     "local_path": "issues/40095808",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095798",
@@ -48881,7 +49243,7 @@
     "year": 2019,
     "attachment_count": 3,
     "local_path": "issues/40095798",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095777",
@@ -48901,7 +49263,7 @@
     "year": 2019,
     "attachment_count": 3,
     "local_path": "issues/40095777",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095775",
@@ -48921,7 +49283,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40095775",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095773",
@@ -48941,7 +49303,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40095773",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095719",
@@ -48981,7 +49343,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40095714",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095597",
@@ -49001,7 +49363,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40095597",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095590",
@@ -49021,7 +49383,7 @@
     "year": 2019,
     "attachment_count": 4,
     "local_path": "issues/40095590",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095528",
@@ -49041,7 +49403,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40095528",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095527",
@@ -49061,7 +49423,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40095527",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095512",
@@ -49081,7 +49443,7 @@
     "year": 2019,
     "attachment_count": 3,
     "local_path": "issues/40095512",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095506",
@@ -49101,7 +49463,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40095506",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095490",
@@ -49121,7 +49483,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40095490",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095468",
@@ -49141,7 +49503,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40095468",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095442",
@@ -49161,7 +49523,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40095442",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095425",
@@ -49181,7 +49543,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40095425",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095396",
@@ -49221,7 +49583,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40095364",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095359",
@@ -49241,7 +49603,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40095359",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095348",
@@ -49261,7 +49623,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40095348",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095317",
@@ -49281,7 +49643,7 @@
     "year": 2019,
     "attachment_count": 4,
     "local_path": "issues/40095317",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095316",
@@ -49301,7 +49663,7 @@
     "year": 2019,
     "attachment_count": 3,
     "local_path": "issues/40095316",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095298",
@@ -49321,7 +49683,7 @@
     "year": 2019,
     "attachment_count": 4,
     "local_path": "issues/40095298",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095297",
@@ -49381,7 +49743,7 @@
     "year": 2019,
     "attachment_count": 3,
     "local_path": "issues/40095196",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095183",
@@ -49421,7 +49783,7 @@
     "year": 2019,
     "attachment_count": 10,
     "local_path": "issues/40095159",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095156",
@@ -49481,7 +49843,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40095146",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40095115",
@@ -49521,7 +49883,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40095069",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094988",
@@ -49541,7 +49903,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40094988",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094895",
@@ -49561,7 +49923,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40094895",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094891",
@@ -49581,7 +49943,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40094891",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094869",
@@ -49601,7 +49963,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40094869",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094866",
@@ -49621,7 +49983,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40094866",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094855",
@@ -49641,7 +50003,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40094855",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094770",
@@ -49761,7 +50123,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40094709",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094660",
@@ -49781,7 +50143,7 @@
     "year": 2019,
     "attachment_count": 3,
     "local_path": "issues/40094660",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094557",
@@ -49801,7 +50163,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40094557",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094554",
@@ -49821,7 +50183,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40094554",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094529",
@@ -49841,7 +50203,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40094529",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094502",
@@ -49861,7 +50223,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40094502",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094426",
@@ -49881,7 +50243,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40094426",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094390",
@@ -49901,7 +50263,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40094390",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094386",
@@ -49943,7 +50305,7 @@
     "year": 2019,
     "attachment_count": 3,
     "local_path": "issues/40094379",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094352",
@@ -49963,7 +50325,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40094352",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094331",
@@ -49983,7 +50345,7 @@
     "year": 2019,
     "attachment_count": 3,
     "local_path": "issues/40094331",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094327",
@@ -50003,7 +50365,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40094327",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094323",
@@ -50023,7 +50385,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40094323",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094318",
@@ -50043,7 +50405,7 @@
     "year": 2019,
     "attachment_count": 3,
     "local_path": "issues/40094318",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094312",
@@ -50063,7 +50425,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40094312",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094308",
@@ -50083,7 +50445,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40094308",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094304",
@@ -50103,7 +50465,7 @@
     "year": 2019,
     "attachment_count": 3,
     "local_path": "issues/40094304",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094293",
@@ -50123,7 +50485,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40094293",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094242",
@@ -50143,7 +50505,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40094242",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094236",
@@ -50163,7 +50525,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40094236",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094180",
@@ -50183,7 +50545,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40094180",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094105",
@@ -50203,7 +50565,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40094105",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094073",
@@ -50223,7 +50585,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40094073",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094068",
@@ -50243,7 +50605,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40094068",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094057",
@@ -50263,7 +50625,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40094057",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094055",
@@ -50283,7 +50645,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40094055",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40094052",
@@ -50343,7 +50705,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40094011",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093998",
@@ -50363,7 +50725,7 @@
     "year": 2019,
     "attachment_count": 6,
     "local_path": "issues/40093998",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093992",
@@ -50383,7 +50745,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40093992",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093979",
@@ -50403,7 +50765,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40093979",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093972",
@@ -50423,7 +50785,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40093972",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093968",
@@ -50443,7 +50805,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40093968",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093919",
@@ -50483,7 +50845,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40093917",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093907",
@@ -50523,7 +50885,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40093900",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093876",
@@ -50563,7 +50925,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40093874",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093873",
@@ -50583,7 +50945,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40093873",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093865",
@@ -50603,7 +50965,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40093865",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093864",
@@ -50623,7 +50985,7 @@
     "year": 2019,
     "attachment_count": 3,
     "local_path": "issues/40093864",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093821",
@@ -50643,7 +51005,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40093821",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093777",
@@ -50663,7 +51025,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40093777",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093770",
@@ -50703,7 +51065,7 @@
     "year": 2019,
     "attachment_count": 1,
     "local_path": "issues/40093766",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093749",
@@ -50743,7 +51105,7 @@
     "year": 2019,
     "attachment_count": 2,
     "local_path": "issues/40093740",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093680",
@@ -50763,7 +51125,7 @@
     "year": 2019,
     "attachment_count": 3,
     "local_path": "issues/40093680",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093674",
@@ -50783,7 +51145,7 @@
     "year": 2019,
     "attachment_count": 0,
     "local_path": "issues/40093674",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093606",
@@ -50803,7 +51165,7 @@
     "year": 2018,
     "attachment_count": 2,
     "local_path": "issues/40093606",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093588",
@@ -50823,7 +51185,7 @@
     "year": 2018,
     "attachment_count": 2,
     "local_path": "issues/40093588",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093523",
@@ -50843,7 +51205,7 @@
     "year": 2018,
     "attachment_count": 2,
     "local_path": "issues/40093523",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093496",
@@ -50863,7 +51225,7 @@
     "year": 2018,
     "attachment_count": 3,
     "local_path": "issues/40093496",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093479",
@@ -50903,7 +51265,7 @@
     "year": 2018,
     "attachment_count": 4,
     "local_path": "issues/40093477",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093443",
@@ -50923,7 +51285,7 @@
     "year": 2018,
     "attachment_count": 2,
     "local_path": "issues/40093443",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093436",
@@ -50963,7 +51325,7 @@
     "year": 2018,
     "attachment_count": 2,
     "local_path": "issues/40093422",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093383",
@@ -50983,7 +51345,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40093383",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093380",
@@ -51003,7 +51365,7 @@
     "year": 2018,
     "attachment_count": 4,
     "local_path": "issues/40093380",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093366",
@@ -51043,7 +51405,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40093360",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093356",
@@ -51065,7 +51427,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40093356",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093288",
@@ -51085,7 +51447,7 @@
     "year": 2018,
     "attachment_count": 2,
     "local_path": "issues/40093288",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093235",
@@ -51125,7 +51487,7 @@
     "year": 2018,
     "attachment_count": 2,
     "local_path": "issues/40093207",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093194",
@@ -51185,7 +51547,7 @@
     "year": 2018,
     "attachment_count": 8,
     "local_path": "issues/40093139",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093097",
@@ -51205,7 +51567,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40093097",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093088",
@@ -51225,7 +51587,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40093088",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093065",
@@ -51265,7 +51627,7 @@
     "year": 2018,
     "attachment_count": 3,
     "local_path": "issues/40093054",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40093028",
@@ -51285,7 +51647,7 @@
     "year": 2018,
     "attachment_count": 3,
     "local_path": "issues/40093028",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092965",
@@ -51305,7 +51667,7 @@
     "year": 2018,
     "attachment_count": 3,
     "local_path": "issues/40092965",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092907",
@@ -51345,7 +51707,7 @@
     "year": 2018,
     "attachment_count": 5,
     "local_path": "issues/40092844",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092807",
@@ -51365,7 +51727,7 @@
     "year": 2018,
     "attachment_count": 3,
     "local_path": "issues/40092807",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092801",
@@ -51385,7 +51747,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40092801",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092762",
@@ -51405,7 +51767,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40092762",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092761",
@@ -51425,7 +51787,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40092761",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092758",
@@ -51445,7 +51807,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40092758",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092752",
@@ -51465,7 +51827,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40092752",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092698",
@@ -51505,7 +51867,7 @@
     "year": 2018,
     "attachment_count": 2,
     "local_path": "issues/40092689",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092671",
@@ -51525,7 +51887,7 @@
     "year": 2018,
     "attachment_count": 6,
     "local_path": "issues/40092671",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092668",
@@ -51545,7 +51907,7 @@
     "year": 2018,
     "attachment_count": 5,
     "local_path": "issues/40092668",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092664",
@@ -51565,7 +51927,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40092664",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092641",
@@ -51585,7 +51947,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40092641",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092636",
@@ -51605,7 +51967,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40092636",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092590",
@@ -51625,7 +51987,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40092590",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092582",
@@ -51645,7 +52007,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40092582",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092580",
@@ -51665,7 +52027,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40092580",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092560",
@@ -51685,7 +52047,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40092560",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092538",
@@ -51705,7 +52067,7 @@
     "year": 2018,
     "attachment_count": 2,
     "local_path": "issues/40092538",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092500",
@@ -51725,7 +52087,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40092500",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092472",
@@ -51745,7 +52107,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40092472",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092465",
@@ -51765,7 +52127,7 @@
     "year": 2018,
     "attachment_count": 7,
     "local_path": "issues/40092465",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092424",
@@ -51785,7 +52147,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40092424",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092420",
@@ -51805,7 +52167,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40092420",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092417",
@@ -51825,7 +52187,7 @@
     "year": 2018,
     "attachment_count": 3,
     "local_path": "issues/40092417",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092414",
@@ -51845,7 +52207,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40092414",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092396",
@@ -51865,7 +52227,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40092396",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092387",
@@ -51885,7 +52247,7 @@
     "year": 2018,
     "attachment_count": 3,
     "local_path": "issues/40092387",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092386",
@@ -51905,7 +52267,7 @@
     "year": 2018,
     "attachment_count": 4,
     "local_path": "issues/40092386",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092380",
@@ -51925,7 +52287,7 @@
     "year": 2018,
     "attachment_count": 3,
     "local_path": "issues/40092380",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092368",
@@ -51945,7 +52307,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40092368",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092363",
@@ -51965,7 +52327,7 @@
     "year": 2018,
     "attachment_count": 2,
     "local_path": "issues/40092363",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092287",
@@ -51985,7 +52347,7 @@
     "year": 2018,
     "attachment_count": 2,
     "local_path": "issues/40092287",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092286",
@@ -52025,7 +52387,7 @@
     "year": 2018,
     "attachment_count": 2,
     "local_path": "issues/40092270",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092215",
@@ -52045,7 +52407,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40092215",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092212",
@@ -52085,7 +52447,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40092207",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092093",
@@ -52105,7 +52467,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40092093",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092064",
@@ -52145,7 +52507,7 @@
     "year": 2018,
     "attachment_count": 4,
     "local_path": "issues/40092040",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092033",
@@ -52165,7 +52527,7 @@
     "year": 2018,
     "attachment_count": 3,
     "local_path": "issues/40092033",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092024",
@@ -52185,7 +52547,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40092024",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40092022",
@@ -52205,7 +52567,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40092022",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091989",
@@ -52245,7 +52607,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40091960",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091946",
@@ -52305,7 +52667,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40091930",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091919",
@@ -52325,7 +52687,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40091919",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091851",
@@ -52345,7 +52707,7 @@
     "year": 2018,
     "attachment_count": 4,
     "local_path": "issues/40091851",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091828",
@@ -52365,7 +52727,7 @@
     "year": 2018,
     "attachment_count": 4,
     "local_path": "issues/40091828",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091816",
@@ -52385,7 +52747,7 @@
     "year": 2018,
     "attachment_count": 3,
     "local_path": "issues/40091816",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091762",
@@ -52405,7 +52767,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40091762",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091710",
@@ -52465,7 +52827,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40091706",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091693",
@@ -52485,7 +52847,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40091693",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091690",
@@ -52505,7 +52867,7 @@
     "year": 2018,
     "attachment_count": 4,
     "local_path": "issues/40091690",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091681",
@@ -52525,7 +52887,7 @@
     "year": 2018,
     "attachment_count": 18,
     "local_path": "issues/40091681",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091651",
@@ -52565,7 +52927,7 @@
     "year": 2018,
     "attachment_count": 2,
     "local_path": "issues/40091646",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091613",
@@ -52605,7 +52967,7 @@
     "year": 2018,
     "attachment_count": 3,
     "local_path": "issues/40091605",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091565",
@@ -52625,7 +52987,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40091565",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091547",
@@ -52645,7 +53007,7 @@
     "year": 2018,
     "attachment_count": 2,
     "local_path": "issues/40091547",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091542",
@@ -52665,7 +53027,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40091542",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091536",
@@ -52685,7 +53047,7 @@
     "year": 2018,
     "attachment_count": 2,
     "local_path": "issues/40091536",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091514",
@@ -52705,7 +53067,7 @@
     "year": 2018,
     "attachment_count": 2,
     "local_path": "issues/40091514",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091428",
@@ -52725,7 +53087,7 @@
     "year": 2018,
     "attachment_count": 6,
     "local_path": "issues/40091428",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091383",
@@ -52745,7 +53107,7 @@
     "year": 2018,
     "attachment_count": 9,
     "local_path": "issues/40091383",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091380",
@@ -52765,7 +53127,7 @@
     "year": 2018,
     "attachment_count": 5,
     "local_path": "issues/40091380",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091358",
@@ -52785,7 +53147,7 @@
     "year": 2018,
     "attachment_count": 4,
     "local_path": "issues/40091358",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091350",
@@ -52805,7 +53167,7 @@
     "year": 2018,
     "attachment_count": 3,
     "local_path": "issues/40091350",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091300",
@@ -52865,7 +53227,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40091123",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091113",
@@ -52885,7 +53247,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40091113",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091076",
@@ -52965,7 +53327,7 @@
     "year": 2018,
     "attachment_count": 7,
     "local_path": "issues/40091050",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091031",
@@ -53065,7 +53427,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40090901",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40090896",
@@ -53085,7 +53447,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40090896",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40090883",
@@ -53105,7 +53467,7 @@
     "year": 2018,
     "attachment_count": 6,
     "local_path": "issues/40090883",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40090870",
@@ -53127,7 +53489,7 @@
     "year": 2018,
     "attachment_count": 3,
     "local_path": "issues/40090870",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40090857",
@@ -53287,7 +53649,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40090721",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40090719",
@@ -53367,7 +53729,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40090289",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40090287",
@@ -53387,7 +53749,7 @@
     "year": 2018,
     "attachment_count": 1,
     "local_path": "issues/40090287",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40090246",
@@ -53407,7 +53769,7 @@
     "year": 2018,
     "attachment_count": 3,
     "local_path": "issues/40090246",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40090228",
@@ -53427,7 +53789,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40090228",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40090214",
@@ -53447,7 +53809,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40090214",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40090194",
@@ -53487,7 +53849,7 @@
     "year": 2018,
     "attachment_count": 0,
     "local_path": "issues/40090110",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40090046",
@@ -53527,7 +53889,7 @@
     "year": 2017,
     "attachment_count": 1,
     "local_path": "issues/40090013",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40089950",
@@ -53547,7 +53909,7 @@
     "year": 2017,
     "attachment_count": 1,
     "local_path": "issues/40089950",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40089937",
@@ -53567,7 +53929,7 @@
     "year": 2017,
     "attachment_count": 2,
     "local_path": "issues/40089937",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40089615",
@@ -53609,7 +53971,7 @@
     "year": 2017,
     "attachment_count": 2,
     "local_path": "issues/40089597",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40089489",
@@ -53629,7 +53991,7 @@
     "year": 2017,
     "attachment_count": 2,
     "local_path": "issues/40089489",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40089450",
@@ -53669,7 +54031,7 @@
     "year": 2017,
     "attachment_count": 1,
     "local_path": "issues/40089425",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40089392",
@@ -53689,7 +54051,7 @@
     "year": 2017,
     "attachment_count": 5,
     "local_path": "issues/40089392",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40089387",
@@ -53793,7 +54155,7 @@
     "year": 2017,
     "attachment_count": 5,
     "local_path": "issues/40089264",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40089258",
@@ -53895,7 +54257,7 @@
     "year": 2017,
     "attachment_count": 0,
     "local_path": "issues/40089095",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40089016",
@@ -53915,7 +54277,7 @@
     "year": 2017,
     "attachment_count": 0,
     "local_path": "issues/40089016",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40088936",
@@ -53995,7 +54357,7 @@
     "year": 2017,
     "attachment_count": 4,
     "local_path": "issues/40088882",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40088802",
@@ -54015,7 +54377,7 @@
     "year": 2017,
     "attachment_count": 2,
     "local_path": "issues/40088802",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40088758",
@@ -54035,7 +54397,7 @@
     "year": 2017,
     "attachment_count": 2,
     "local_path": "issues/40088758",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40088749",
@@ -54055,7 +54417,7 @@
     "year": 2017,
     "attachment_count": 3,
     "local_path": "issues/40088749",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40088664",
@@ -54075,7 +54437,7 @@
     "year": 2017,
     "attachment_count": 7,
     "local_path": "issues/40088664",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40088597",
@@ -54095,7 +54457,7 @@
     "year": 2017,
     "attachment_count": 6,
     "local_path": "issues/40088597",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40088533",
@@ -54135,7 +54497,7 @@
     "year": 2017,
     "attachment_count": 0,
     "local_path": "issues/40088514",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40088404",
@@ -54155,7 +54517,7 @@
     "year": 2017,
     "attachment_count": 1,
     "local_path": "issues/40088404",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40088378",
@@ -54175,7 +54537,7 @@
     "year": 2017,
     "attachment_count": 1,
     "local_path": "issues/40088378",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40088288",
@@ -54357,7 +54719,7 @@
     "year": 2017,
     "attachment_count": 1,
     "local_path": "issues/40087462",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40087440",
@@ -54377,7 +54739,7 @@
     "year": 2017,
     "attachment_count": 3,
     "local_path": "issues/40087440",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "41313869",
@@ -54397,7 +54759,7 @@
     "year": 2017,
     "attachment_count": 7,
     "local_path": "issues/41313869",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40087317",
@@ -54437,7 +54799,7 @@
     "year": 2017,
     "attachment_count": 1,
     "local_path": "issues/40087297",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40087257",
@@ -54457,7 +54819,7 @@
     "year": 2017,
     "attachment_count": 3,
     "local_path": "issues/40087257",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40086999",
@@ -54557,7 +54919,7 @@
     "year": 2017,
     "attachment_count": 0,
     "local_path": "issues/40086896",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40086850",
@@ -55039,7 +55401,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40086197",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40086171",
@@ -55223,7 +55585,7 @@
     "year": 2016,
     "attachment_count": 1,
     "local_path": "issues/40085972",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40085928",
@@ -55283,7 +55645,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40085822",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40085755",
@@ -55303,7 +55665,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40085755",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40085717",
@@ -55323,7 +55685,7 @@
     "year": 2016,
     "attachment_count": 3,
     "local_path": "issues/40085717",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40085709",
@@ -55343,7 +55705,7 @@
     "year": 2016,
     "attachment_count": 10,
     "local_path": "issues/40085709",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40085615",
@@ -55363,7 +55725,7 @@
     "year": 2016,
     "attachment_count": 1,
     "local_path": "issues/40085615",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40085614",
@@ -55403,7 +55765,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40085579",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40085493",
@@ -55443,7 +55805,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40085361",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40085275",
@@ -55525,7 +55887,7 @@
     "year": 2016,
     "attachment_count": 1,
     "local_path": "issues/40085155",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40085151",
@@ -55545,7 +55907,7 @@
     "year": 2016,
     "attachment_count": 2,
     "local_path": "issues/40085151",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40085079",
@@ -55585,7 +55947,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40085053",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40085010",
@@ -55625,7 +55987,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40084983",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40084938",
@@ -55665,7 +56027,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40084936",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40084900",
@@ -55705,7 +56067,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40084844",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40084834",
@@ -55745,7 +56107,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40084831",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40084752",
@@ -55805,7 +56167,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40084728",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40084711",
@@ -55825,7 +56187,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40084711",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40084702",
@@ -55865,7 +56227,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40084668",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40084603",
@@ -55947,7 +56309,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40084557",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40084556",
@@ -55987,7 +56349,7 @@
     "year": 2016,
     "attachment_count": 2,
     "local_path": "issues/40084511",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40084497",
@@ -56007,7 +56369,7 @@
     "year": 2016,
     "attachment_count": 1,
     "local_path": "issues/40084497",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40084393",
@@ -56109,7 +56471,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40084289",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40084275",
@@ -56129,7 +56491,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40084275",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40084274",
@@ -56149,7 +56511,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40084274",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40084252",
@@ -56189,7 +56551,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40084223",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40084206",
@@ -56383,7 +56745,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40083992",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40083949",
@@ -56403,7 +56765,7 @@
     "year": 2016,
     "attachment_count": 2,
     "local_path": "issues/40083949",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40083945",
@@ -56445,7 +56807,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40083887",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40083834",
@@ -56549,7 +56911,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40083689",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40083628",
@@ -56657,7 +57019,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40083582",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40083539",
@@ -56717,7 +57079,7 @@
     "year": 2016,
     "attachment_count": 0,
     "local_path": "issues/40083487",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40083476",
@@ -56737,7 +57099,7 @@
     "year": 2015,
     "attachment_count": 5,
     "local_path": "issues/40083476",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40083475",
@@ -56757,7 +57119,7 @@
     "year": 2015,
     "attachment_count": 0,
     "local_path": "issues/40083475",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40083472",
@@ -56817,7 +57179,7 @@
     "year": 2015,
     "attachment_count": 1,
     "local_path": "issues/40083362",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40083252",
@@ -56904,7 +57266,7 @@
     "year": 2015,
     "attachment_count": 0,
     "local_path": "issues/40083158",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40083150",
@@ -56946,7 +57308,7 @@
     "year": 2015,
     "attachment_count": 0,
     "local_path": "issues/40083118",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40083111",
@@ -57030,7 +57392,7 @@
     "year": 2015,
     "attachment_count": 0,
     "local_path": "issues/40083011",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40083010",
@@ -57176,7 +57538,7 @@
     "year": 2015,
     "attachment_count": 0,
     "local_path": "issues/40082850",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40082830",
@@ -57236,7 +57598,7 @@
     "year": 2015,
     "attachment_count": 0,
     "local_path": "issues/40082666",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40082665",
@@ -57276,7 +57638,7 @@
     "year": 2015,
     "attachment_count": 3,
     "local_path": "issues/40082652",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40082640",
@@ -57356,7 +57718,7 @@
     "year": 2015,
     "attachment_count": 0,
     "local_path": "issues/40082480",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40082450",
@@ -57376,7 +57738,7 @@
     "year": 2015,
     "attachment_count": 0,
     "local_path": "issues/40082450",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40082431",
@@ -57496,7 +57858,7 @@
     "year": 2015,
     "attachment_count": 0,
     "local_path": "issues/40082061",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40082059",
@@ -57516,7 +57878,7 @@
     "year": 2015,
     "attachment_count": 0,
     "local_path": "issues/40082059",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40082058",
@@ -57556,7 +57918,7 @@
     "year": 2015,
     "attachment_count": 0,
     "local_path": "issues/40082057",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40082014",
@@ -57782,7 +58144,7 @@
     "year": 2015,
     "attachment_count": 2,
     "local_path": "issues/40081378",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40081328",
@@ -57845,7 +58207,7 @@
     "year": 2014,
     "attachment_count": 3,
     "local_path": "issues/40081020",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40080154",
@@ -57905,7 +58267,7 @@
     "year": 2014,
     "attachment_count": 0,
     "local_path": "issues/40079379",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40078126",
@@ -57925,7 +58287,7 @@
     "year": 2013,
     "attachment_count": 1,
     "local_path": "issues/40078126",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40077097",
@@ -57945,7 +58307,7 @@
     "year": 2013,
     "attachment_count": 0,
     "local_path": "issues/40077097",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40064753",
@@ -57965,7 +58327,7 @@
     "year": 2012,
     "attachment_count": 1,
     "local_path": "issues/40064753",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40063405",
@@ -57985,7 +58347,7 @@
     "year": 2012,
     "attachment_count": 9,
     "local_path": "issues/40063405",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40063240",
@@ -58005,7 +58367,7 @@
     "year": 2012,
     "attachment_count": 6,
     "local_path": "issues/40063240",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40060118",
@@ -58025,7 +58387,7 @@
     "year": 2012,
     "attachment_count": 2,
     "local_path": "issues/40060118",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40056732",
@@ -58947,7 +59309,7 @@
     "year": 2011,
     "attachment_count": 1,
     "local_path": "issues/40095231",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40091029",
@@ -58967,7 +59329,7 @@
     "year": 2011,
     "attachment_count": 1,
     "local_path": "issues/40091029",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40089159",
@@ -58987,7 +59349,7 @@
     "year": 2011,
     "attachment_count": 6,
     "local_path": "issues/40089159",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40086206",
@@ -59007,7 +59369,7 @@
     "year": 2010,
     "attachment_count": 2,
     "local_path": "issues/40086206",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40081489",
@@ -59027,7 +59389,7 @@
     "year": 2010,
     "attachment_count": 1,
     "local_path": "issues/40081489",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40080247",
@@ -59047,7 +59409,7 @@
     "year": 2010,
     "attachment_count": 2,
     "local_path": "issues/40080247",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40080063",
@@ -59067,7 +59429,7 @@
     "year": 2010,
     "attachment_count": 0,
     "local_path": "issues/40080063",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40079555",
@@ -59087,7 +59449,7 @@
     "year": 2010,
     "attachment_count": 1,
     "local_path": "issues/40079555",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40079507",
@@ -59107,7 +59469,7 @@
     "year": 2010,
     "attachment_count": 3,
     "local_path": "issues/40079507",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40079041",
@@ -59127,7 +59489,7 @@
     "year": 2010,
     "attachment_count": 1,
     "local_path": "issues/40079041",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40078529",
@@ -59149,7 +59511,7 @@
     "year": 2010,
     "attachment_count": 0,
     "local_path": "issues/40078529",
-    "has_markdown": false
+    "has_markdown": true
   },
   {
     "id": "40058369",

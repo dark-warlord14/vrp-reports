@@ -1,0 +1,84 @@
+{
+  "id": "488270255",
+  "url": "https://issues.chromium.org/issues/488270255",
+  "title": "css.ResolveValues() does not check validity of reserved values",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>CSS",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "se...@chromium.org",
+  "created_date": "2026-02-27T17:34:27+00:00",
+  "modified_date": "2026-06-12T07:56:37+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73811926,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13982,
+      "url": "https://issues.chromium.org/action/issues/488270255/attachments/73811926?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 73811927,
+      "filename": "run_poc.mjs",
+      "mime_type": "text/javascript",
+      "size_bytes": 4137,
+      "url": "https://issues.chromium.org/action/issues/488270255/attachments/73811927?download=true",
+      "local_path": "attachments/run_poc.mjs"
+    },
+    {
+      "id": 73815840,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 176,
+      "url": "https://issues.chromium.org/action/issues/488270255/attachments/73815840?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74019022,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3411,
+      "url": "https://issues.chromium.org/action/issues/488270255/attachments/74019022?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 74019023,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 215,
+      "url": "https://issues.chromium.org/action/issues/488270255/attachments/74019023?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 74019024,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 252,
+      "url": "https://issues.chromium.org/action/issues/488270255/attachments/74019024?download=true",
+      "local_path": "attachments/poc_74019024.html"
+    },
+    {
+      "id": 73994961,
+      "filename": "resolve_values_asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 8924,
+      "url": "https://issues.chromium.org/action/issues/488270255/attachments/73994961?download=true",
+      "local_path": "attachments/resolve_values_asan.txt"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "NOTE: The text below is for another bug. This bug was repurposed to deal with the issue of invalid env() or attr() inside CSS.resolveValues (from Devtools).\n\n### Summary\n\n`CSS.setScopeText` (via [`InspectorCSSAgent::setScopeText`](https://source.chromium.org/chromium/chromium/src/+/main:third_party/"
+}

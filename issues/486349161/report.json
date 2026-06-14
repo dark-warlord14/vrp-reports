@@ -1,0 +1,33 @@
+{
+  "id": "486349161",
+  "url": "https://issues.chromium.org/issues/486349161",
+  "title": "Stack buffer overflow in WebRTC ResamplerHelper::MaybeResample leads to renderer process crash via crafted SDP and Insertable Streams",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebRTC",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "to...@chromium.org",
+  "created_date": "2026-02-21T13:39:05+00:00",
+  "modified_date": "2026-06-13T07:56:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 88,
+  "description_snippet": "## Title\n\nStack buffer overflow in WebRTC ResamplerHelper::MaybeResample leads to renderer process crash via crafted SDP and Insertable Streams\n\n## Summary\n\nThe WebRTC audio resampler contains a stack buffer overflow in `ResamplerHelper::MaybeResample`. When an audio frame decoded by the L16 codec c"
+}

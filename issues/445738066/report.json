@@ -1,0 +1,56 @@
+{
+  "id": "445738066",
+  "url": "https://issues.chromium.org/issues/445738066",
+  "title": "Google Chrome on iOS sad tabs with the following testcase.",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Mobile>iOSWeb>Security",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": "128.0.6613.34",
+  "cve_ids": [
+    "CVE-2025-43427"
+  ],
+  "reporter": "nt...@gmail.com",
+  "assignee": "mi...@google.com",
+  "created_date": "2025-09-18T10:56:43+00:00",
+  "modified_date": "2026-05-08T08:10:24+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 69399892,
+      "filename": "testcase.html",
+      "mime_type": "text/html",
+      "size_bytes": 174,
+      "url": "https://issues.chromium.org/action/issues/445738066/attachments/69399892?download=true",
+      "local_path": "attachments/testcase.html"
+    },
+    {
+      "id": 69414893,
+      "filename": "debug-stack.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3190,
+      "url": "https://issues.chromium.org/action/issues/445738066/attachments/69414893?download=true",
+      "local_path": "attachments/debug-stack.txt"
+    },
+    {
+      "id": 69414894,
+      "filename": "opt-stack.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 5043,
+      "url": "https://issues.chromium.org/action/issues/445738066/attachments/69414894?download=true",
+      "local_path": "attachments/opt-stack.txt"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "VULNERABILITY DETAILS\n\nOpen the following testcase in Google Chrome on iPadOS 26.0.\n\nVERSION\nChrome Version: 140.0.7339.122\nOperating System: iPadOS 26.0 (23A341)\n\nREPRODUCTION CASE\n\nAs attached.\n\nI will have a bisection result soon.\n\nFOR CRASHES, PLEASE INCLUDE THE FOLLOWING ADDITIONAL INFORMATION"
+}

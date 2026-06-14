@@ -1,7 +1,7 @@
 {
-  "total_reports": 2949,
-  "total_bounty": 20210554.0,
-  "avg_bounty": 6860.34,
+  "total_reports": 2967,
+  "total_bounty": 20428554.0,
+  "avg_bounty": 6892.22,
   "by_year": {
     "2010": {
       "count": 8,
@@ -64,41 +64,41 @@
       "total_bounty": 3443981.0
     },
     "2025": {
-      "count": 275,
-      "total_bounty": 3389500.0
+      "count": 276,
+      "total_bounty": 3394500.0
     },
     "2026": {
-      "count": 80,
-      "total_bounty": 1314000.0
+      "count": 97,
+      "total_bounty": 1527000.0
     }
   },
   "by_severity": {
-    "S3-Low": 2530,
-    "S4-Minimal": 367,
+    "S3-Low": 2543,
+    "S4-Minimal": 372,
     "Unknown": 45,
     "S1-High": 6,
     "S2-Medium": 1
   },
   "by_status": {
-    "Assigned": 2279,
-    "Accepted": 511,
-    "Fixed": 73,
-    "New": 57,
-    "Verified": 28,
+    "Assigned": 2286,
+    "Accepted": 515,
+    "Fixed": 76,
+    "New": 60,
+    "Verified": 29,
     "Unknown": 1
   },
   "by_component": {
-    "Blink": 1344,
-    "Internals": 557,
-    "UI": 504,
-    "Platform": 202,
+    "Blink": 1352,
+    "Internals": 561,
+    "UI": 506,
+    "Platform": 203,
     "Unknown": 176,
-    "Mobile": 54,
+    "Mobile": 55,
     "Dawn": 31,
     "Enterprise": 11,
     "OS": 11,
     "Blink, Blink": 10,
-    "Speed": 6,
+    "Speed": 7,
     "Internals, Internals": 6,
     "PDFium": 5,
     "Privacy": 4,
@@ -120,7 +120,7 @@
     },
     {
       "range": "$1K-3K",
-      "count": 785
+      "count": 792
     },
     {
       "range": "$3K-5K",
@@ -128,15 +128,15 @@
     },
     {
       "range": "$5K-10K",
-      "count": 807
+      "count": 810
     },
     {
       "range": "$10K-20K",
-      "count": 392
+      "count": 398
     },
     {
       "range": "$20K+",
-      "count": 241
+      "count": 243
     }
   ],
   "top_bounties": [
@@ -187,6 +187,13 @@
       "title": "Use-after-free in CreateNewWindow via SINGLETON_TAB disposition leads to sandbox escape",
       "bounty_amount": 90000.0,
       "severity": "S3-Low",
+      "year": 2026
+    },
+    {
+      "id": "485935305",
+      "title": "Arbitrary Memory Read/Write via WebGLBuffer Created During Context Loss Combined with PBO Operations",
+      "bounty_amount": 90000.0,
+      "severity": "S4-Minimal",
       "year": 2026
     },
     {
@@ -272,13 +279,6 @@
       "bounty_amount": 55000.0,
       "severity": "S3-Low",
       "year": 2025
-    },
-    {
-      "id": "383356864",
-      "title": "WasmGCTypeAnalyzer improperly revisits single-block loops, leading to type confusion",
-      "bounty_amount": 55000.0,
-      "severity": "S3-Low",
-      "year": 2024
     }
   ]
 }

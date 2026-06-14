@@ -1,0 +1,67 @@
+{
+  "id": "485935305",
+  "url": "https://issues.chromium.org/issues/485935305",
+  "title": "Arbitrary Memory Read/Write via WebGLBuffer Created During Context Loss Combined with PBO Operations",
+  "status": "New",
+  "severity": "S4-Minimal",
+  "priority": "P0",
+  "component": "Internals>GPU>Internals",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ka...@google.com",
+  "created_date": "2026-02-20T04:00:18+00:00",
+  "modified_date": "2026-06-11T07:54:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 90000.0,
+  "reward_amount_meta": 90000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74036234,
+      "filename": "readme.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 2432,
+      "url": "https://issues.chromium.org/action/issues/485935305/attachments/74036234?download=true",
+      "local_path": "attachments/readme.md"
+    },
+    {
+      "id": 74036235,
+      "filename": "pa_discover.sh",
+      "mime_type": "text/x-sh",
+      "size_bytes": 1618,
+      "url": "https://issues.chromium.org/action/issues/485935305/attachments/74036235?download=true",
+      "local_path": "attachments/pa_discover.sh"
+    },
+    {
+      "id": 74036563,
+      "filename": "writeup.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 24652,
+      "url": "https://issues.chromium.org/action/issues/485935305/attachments/74036563?download=true",
+      "local_path": "attachments/writeup.md"
+    },
+    {
+      "id": 74031237,
+      "filename": "exp.html",
+      "mime_type": "text/html",
+      "size_bytes": 19000,
+      "url": "https://issues.chromium.org/action/issues/485935305/attachments/74031237?download=true",
+      "local_path": "attachments/exp.html"
+    }
+  ],
+  "update_count": 115,
+  "description_snippet": "# Arbitrary Memory Read/Write via WebGLBuffer Created During Context Loss Combined with PBO Operations\n\n## Summary\n\nA state synchronization failure exists between Blink and the GPU command decoder when handling WebGLBuffer objects created during context loss. When a buffer is created while the WebGL"
+}

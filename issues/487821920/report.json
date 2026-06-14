@@ -1,0 +1,52 @@
+{
+  "id": "487821920",
+  "url": "https://issues.chromium.org/issues/487821920",
+  "title": "[HIGH] nameConstraints: excluded dNSName can be bypassed with wildcard SAN",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "BoringSSL",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ko...@gmail.com",
+  "assignee": "rp...@google.com",
+  "created_date": "2026-02-26T02:59:14+00:00",
+  "modified_date": "2026-06-13T07:56:42+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73761271,
+      "filename": "attack_scenario.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 2079,
+      "url": "https://issues.chromium.org/action/issues/487821920/attachments/73761271?download=true",
+      "local_path": "attachments/attack_scenario.md"
+    },
+    {
+      "id": 73761272,
+      "filename": "poc.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 21973,
+      "url": "https://issues.chromium.org/action/issues/487821920/attachments/73761272?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 73761273,
+      "filename": "PR_DESCRIPTION.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 395,
+      "url": "https://issues.chromium.org/action/issues/487821920/attachments/73761273?download=true",
+      "local_path": "attachments/PR_DESCRIPTION.md"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**Summary:** [HIGH] nameConstraints: excluded dNSName can be bypassed with wildcard SAN\n\n**Program:** OSS VRP\n\n**URL:** https://github.com/google/boringssl\n\n**Vulnerability type:** Other\n\n### Details\n\n# summary\n\nlegacy `crypto/x509` nameConstraints enforcement can be bypassed for excluded `dNSName`"
+}

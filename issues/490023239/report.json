@@ -1,0 +1,58 @@
+{
+  "id": "490023239",
+  "url": "https://issues.chromium.org/issues/490023239",
+  "title": "Type confusion in InspectorCSSAgent::setScopeText",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>CSS",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "se...@chromium.org",
+  "created_date": "2026-03-05T18:00:40+00:00",
+  "modified_date": "2026-06-13T07:56:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74019048,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7841,
+      "url": "https://issues.chromium.org/action/issues/490023239/attachments/74019048?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 74026188,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 272,
+      "url": "https://issues.chromium.org/action/issues/490023239/attachments/74026188?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 74026189,
+      "filename": "service_worker.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 9009,
+      "url": "https://issues.chromium.org/action/issues/490023239/attachments/74026189?download=true",
+      "local_path": "attachments/service_worker.js"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "### Summary\n\n`CSS.setScopeText` (via [`InspectorCSSAgent::setScopeText`](https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/core/inspector/inspector_css_agent.cc;l=3092)) desynchronizes nested `@scope` wrappers: [`CSSScopeRule::SetPreludeText`](https://source.chromiu"
+}

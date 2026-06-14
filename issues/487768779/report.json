@@ -1,0 +1,75 @@
+{
+  "id": "487768779",
+  "url": "https://issues.chromium.org/issues/487768779",
+  "title": "Sandbox Escape: Arbitrary Local File Read via Missing CanReadRequestBody Validation in CreateNewWindow's opener_suppressed Path",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "cr...@chromium.org",
+  "created_date": "2026-02-26T13:31:43+00:00",
+  "modified_date": "2026-06-12T07:56:35+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 26000.0,
+  "reward_amount_meta": 26000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73769763,
+      "filename": "readme.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 2241,
+      "url": "https://issues.chromium.org/action/issues/487768779/attachments/73769763?download=true",
+      "local_path": "attachments/readme.md"
+    },
+    {
+      "id": 73769764,
+      "filename": "poc_server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 1813,
+      "url": "https://issues.chromium.org/action/issues/487768779/attachments/73769764?download=true",
+      "local_path": "attachments/poc_server.py"
+    },
+    {
+      "id": 73769765,
+      "filename": "trigger.html",
+      "mime_type": "text/html",
+      "size_bytes": 804,
+      "url": "https://issues.chromium.org/action/issues/487768779/attachments/73769765?download=true",
+      "local_path": "attachments/trigger.html"
+    },
+    {
+      "id": 73769766,
+      "filename": "render_frame_impl.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 5100,
+      "url": "https://issues.chromium.org/action/issues/487768779/attachments/73769766?download=true",
+      "local_path": "attachments/render_frame_impl.patch"
+    },
+    {
+      "id": 73995700,
+      "filename": "reproduce.sh",
+      "mime_type": "text/x-sh",
+      "size_bytes": 8992,
+      "url": "https://issues.chromium.org/action/issues/487768779/attachments/73995700?download=true",
+      "local_path": "attachments/reproduce.sh"
+    }
+  ],
+  "update_count": 102,
+  "description_snippet": "# Sandbox Escape: Arbitrary Local File Read via Missing CanReadRequestBody Validation in CreateNewWindow's opener_suppressed Path\n\n## Summary\n\nA compromised renderer process can read and exfiltrate arbitrary local files by exploiting a missing security validation in the `CreateNewWindow` IPC handler"
+}

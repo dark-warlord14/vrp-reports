@@ -1,0 +1,33 @@
+{
+  "id": "485292589",
+  "url": "https://issues.chromium.org/issues/485292589",
+  "title": "Heap Buffer Overflow in RealtimeAnalyser::WriteInput via Configurable Render Quantum Leads to Renderer Remote Code Execution",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>WebAudio",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "mj...@chromium.org",
+  "created_date": "2026-02-18T14:51:16+00:00",
+  "modified_date": "2026-06-14T07:52:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 86,
+  "description_snippet": "## Summary\n\nThe `RealtimeAnalyser` class in Chromium's WebAudio implementation maintains a fixed-size ring buffer (`input_buffer_`) of 65536 floats, but the `WriteInput` method copies audio data whose size is determined by the render quantum, which can be set to an arbitrarily large value via the `r"
+}
