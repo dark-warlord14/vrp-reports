@@ -88,3 +88,27 @@ jobs:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           command: pages deploy dist --project-name=vrp-reports --commit-dirty=true
+
+      - name: Purge Cloudflare cache
+        env:
+          CF_ZONE: ${{ secrets.CLOUDFLARE_ZONE_ID }}
+          CF_TOKEN: ${{ secrets.CLOUDFLARE_CACHE_PURGE_TOKEN || secrets.CLOUDFLARE_API_TOKEN }}
+        run: |
+          # Purge the edge cache so refreshed data files are served immediately.
+          # Requires CLOUDFLARE_ZONE_ID + a token with the Zone→Cache Purge perm.
+          if [ -z "${CF_ZONE}" ]; then
+            echo "::error::CLOUDFLARE_ZONE_ID secret is not set — cannot purge cache."
+            exit 1
+          fi
+          resp="$(curl -sS -w '\n%{http_code}' -X POST \
+            "https://api.cloudflare.com/client/v4/zones/${CF_ZONE}/purge_cache" \
+            -H "Authorization: Bearer ${CF_TOKEN}" \
+            -H "Content-Type: application/json" \
+            --data '{"purge_everything":true}')"
+          body="$(printf '%s' "$resp" | sed '$d')"; code="$(printf '%s' "$resp" | tail -n1)"
+          echo "$body"
+          if [ "$code" != "200" ]; then
+            echo "::error::Cache purge failed (HTTP $code). Ensure the token has Zone→Cache Purge for this zone."
+            exit 1
+          fi
+          echo "Cloudflare cache purged."

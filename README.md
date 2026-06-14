@@ -199,6 +199,8 @@ Deploys to Cloudflare Pages via `.github/workflows/deploy.yml` (manual dispatch 
 - `main` — source code + UI
 - `data` — scraped output (`index.json`, `stats.json`, per-issue `report.json`/`report.md`)
 
-`build.sh` checks out both branches, assembles `dist/`, and `wrangler pages deploy` publishes it. `.github/workflows/scrape.yml` runs every Sunday, refreshes both the current and previous UTC year, scrapes only missing reports, pushes lightweight files to the `data` branch, and deploys when data changed. Data files are served with a short `/data/*` edge TTL (5 min, `must-revalidate`) so refreshed reports surface quickly after a deploy.
+`build.sh` checks out both branches, assembles `dist/`, and `wrangler pages deploy` publishes it. `.github/workflows/scrape.yml` runs every Sunday, refreshes both the current and previous UTC year, scrapes only missing reports, pushes lightweight files to the `data` branch, and deploys when data changed. Data files are served with a short `/data/*` edge TTL (5 min, `must-revalidate`).
+
+After each deploy both workflows run a **Purge Cloudflare cache** step (`purge_everything`) so refreshed data files appear on the custom domain immediately. It requires two secrets: `CLOUDFLARE_ZONE_ID` (the zone id for the site's domain) and a token with the **Zone → Cache Purge** permission — set `CLOUDFLARE_CACHE_PURGE_TOKEN`, or grant Cache Purge to the existing `CLOUDFLARE_API_TOKEN` (the Pages-deploy token does not include it by default).
 
 See [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) for the full flow, secrets setup, and token rotation.
