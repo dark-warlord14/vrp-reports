@@ -313,3 +313,31 @@ def test_reprocess_removes_disqualified_report(tmp_path):
 
     assert not d.exists(), "stale false-positive report should be removed"
     assert iid in set(_json.loads(nb.read_text()))
+
+
+# ---------------------------------------------------------------------------
+# Missing metadata must NOT become a sticky no-bounty (false-negative guard)
+# ---------------------------------------------------------------------------
+
+@pytest.mark.asyncio
+async def test_missing_metadata_returns_no_capture_not_no_bounty(tmp_path):
+    """If the getIssue metadata XHR isn't captured we can't read the reward
+    field, so the issue must stay retryable (no_capture), never no_bounty."""
+    issue_dir = tmp_path / "issues"
+    issue_dir.mkdir(parents=True)
+    # Only the updates response is emitted; metadata never arrives.
+    page = _FakePage([
+        _FakeResponse("https://issues.chromium.org/action/issues/123/updates",
+                      make_raw_updates(bounty_text="No public award text.")),
+    ])
+    context = _FakeContext(page)
+    with patch("vrp.extractor.ISSUES_DIR", issue_dir), \
+         patch("vrp.extractor.CORPUS_DIR", tmp_path / "corpus"), \
+         patch("vrp.extractor._extract_cookies", AsyncMock(return_value={})), \
+         patch("vrp.extractor.write_issue_corpus"), \
+         patch("vrp.extractor.aiohttp.ClientSession"), \
+         patch("vrp.extractor.asyncio.sleep", AsyncMock()):
+        from vrp.extractor import scrape_issue
+        result = await scrape_issue(ISSUE_ID, context)
+    assert result == "no_capture"
+    assert not (issue_dir / ISSUE_ID).exists()

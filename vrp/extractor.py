@@ -138,13 +138,17 @@ async def scrape_issue(
     try:
         await page.goto(url, wait_until="networkidle", timeout=TIMEOUT)
 
-        # The updates XHR can fire after networkidle, and its body read can
-        # still be in flight; poll for the capture instead of sampling a
-        # single instant, so page.close() cannot kill it and lose the scrape.
+        # Both XHRs (updates + getIssue metadata) can fire after networkidle, and
+        # their body reads can still be in flight; poll until BOTH are captured
+        # rather than breaking on the first. The metadata holds the authoritative
+        # numeric reward field, so breaking as soon as `updates` arrived (the old
+        # behavior) meant a lagging/throttled metadata response was missed and a
+        # reward-field-only bounty got mis-classified as no-bounty — then cached
+        # stickily. Waiting for both prevents that false negative.
         for _ in range(20):
             if pending:
                 await asyncio.gather(*pending, return_exceptions=True)
-            if captured["updates"]:
+            if captured["updates"] and captured["metadata"]:
                 break
             await asyncio.sleep(0.5)
         if pending:
@@ -164,6 +168,13 @@ async def scrape_issue(
             # Access-restricted issue: keep it retryable (do NOT record no-bounty)
             # since it may be opened to the public later.
             logger.warning(f"{issue_id}: access-restricted (not public) — leaving retryable")
+            return "no_capture"
+
+        if not captured["metadata"]:
+            # Without the metadata response we can't read the authoritative reward
+            # field, so we cannot safely conclude "no bounty". Keep it retryable
+            # rather than risk a sticky false-negative.
+            logger.warning(f"{issue_id}: metadata not captured — leaving retryable (not no-bounty)")
             return "no_capture"
 
         logger.debug(
@@ -382,7 +393,12 @@ def reprocess_existing() -> int:
                 continue
 
             issue = build_issue(issue_id, raw_updates, raw_metadata)
-            if issue is None and (idir / "report.json").exists() and parse_updates(raw_updates, issue_id):
+            if (
+                issue is None
+                and raw_metadata
+                and (idir / "report.json").exists()
+                and parse_updates(raw_updates, issue_id)
+            ):
                 # Previously stored as a bounty, but re-evaluation with the
                 # current parser finds none. The raw updates parsed cleanly (a
                 # non-empty list), so this is a genuine de-qualification — e.g. a
