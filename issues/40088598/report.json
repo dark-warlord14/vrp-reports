@@ -1,0 +1,44 @@
+{
+  "id": "40088598",
+  "url": "https://issues.chromium.org/issues/40088598",
+  "title": "Security: `String` not isolated from global in ReadableStream.js, allowing out-of-order JavaScript execution",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P4",
+  "component": "Blink>Network>StreamsAPI",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sk...@chromium.org",
+  "assignee": "ri...@chromium.org",
+  "created_date": "2017-08-03T16:46:29+00:00",
+  "modified_date": "2017-11-11T14:04:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53146230,
+      "filename": "repro.html",
+      "mime_type": "text/plain",
+      "size_bytes": 233,
+      "url": "https://issues.chromium.org/action/issues/40088598/attachments/53146230?download=true",
+      "local_path": "attachments/repro.html"
+    },
+    {
+      "id": 53146231,
+      "filename": "Assert f35.6a4 @ chrome.exe!chrome_child.dll!blink։։ReadableStreamOperations։։CreateReadableStream.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1146550,
+      "url": "https://issues.chromium.org/action/issues/40088598/attachments/53146231?download=true",
+      "local_path": "attachments/Assert f35.6a4 @ chrome.exe!chrome_child.dll!blink։։ReadableStreamOperations։։CreateReadableStream.html"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "VULNERABILITY DETAILS\r\nThe code in core/streams/ReadableStream.js makes copies of many global JavaScript functions it wants to use, in order to prevent them being manipulated by JavaScript running on the web-page, as this could otherwise affect its functioning. Unfortunately, the code does not make"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "40081367",
+  "url": "https://issues.chromium.org/issues/40081367",
+  "title": "Security: MidiHostMsg_SendData vector OOB on Android",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2015-1232"
+  ],
+  "reporter": "gz...@gmail.com",
+  "assignee": "yh...@chromium.org",
+  "created_date": "2015-02-07T22:15:27+00:00",
+  "modified_date": "2018-04-25T23:02:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52917437,
+      "filename": "midi_poc.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 916,
+      "url": "https://issues.chromium.org/action/issues/40081367/attachments/52917437?download=true",
+      "local_path": "attachments/midi_poc.patch"
+    },
+    {
+      "id": 52917438,
+      "filename": "crash.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1026,
+      "url": "https://issues.chromium.org/action/issues/40081367/attachments/52917438?download=true",
+      "local_path": "attachments/crash.txt"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "MidiHostMsg_SendData is handled in content/browser/media/midi_host.cc:90:  \nvoid MidiHost::OnSendData(uint32 port,  \n  ...  \n  midi_manager_->DispatchSendMidiData(this, port, data, timestamp);  \n  \nMidiManager implementation on Android at media/midi/midi_manager_usb.cc:42 does:  \nvoid MidiManagerUsb"
+}

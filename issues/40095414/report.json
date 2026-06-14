@@ -1,0 +1,29 @@
+{
+  "id": "40095414",
+  "url": "https://issues.chromium.org/issues/40095414",
+  "title": "Security: heap-use-after-free in blink::NGBlockNode::SaveStaticOffsetForLegacy",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Layout",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@gmail.com",
+  "assignee": "at...@chromium.org",
+  "created_date": "2019-06-17T13:06:51+00:00",
+  "modified_date": "2020-03-30T01:57:22+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 35,
+  "description_snippet": "**-------------------------**   \n  \n**VULNERABILITY DETAILS**   \nThe following testcase crashes the latest ASAN build of content_shell.  \n  \n**VERSION**   \nChrome Version: asan-linux-release-669630  \nOperating System: Linux 64bit  \n  \n**REPRODUCTION CASE**   \n<script>  \nfunction start() {"
+}

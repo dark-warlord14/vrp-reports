@@ -1,0 +1,36 @@
+{
+  "id": "40079044",
+  "url": "https://issues.chromium.org/issues/40079044",
+  "title": "ASSERTION FAILED: !object || (object->isListBox()), UNKNOWN in WebCore::HTMLSelectElement::listBoxDefaultEventHandler",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Layout",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "tk...@chromium.org",
+  "created_date": "2014-03-06T14:03:08+00:00",
+  "modified_date": "2018-04-25T23:08:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "reward_amount_meta": 1500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53364842,
+      "filename": "renderer_bad_cast.html",
+      "mime_type": "text/html",
+      "size_bytes": 583,
+      "url": "https://issues.chromium.org/action/issues/40079044/attachments/53364842?download=true",
+      "local_path": "attachments/renderer_bad_cast.html"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nSelect elements with a size property of more than one, or with the multiple property set are rendered as a RenderListBox by the rendering layer. HTMLSelectElement::listBoxDefaultEventHandler handles dispatched events for these objects.  \n  \nWhen a mousedown event is fire"
+}

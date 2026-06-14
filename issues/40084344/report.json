@@ -1,0 +1,44 @@
+{
+  "id": "40084344",
+  "url": "https://issues.chromium.org/issues/40084344",
+  "title": "Security: Universal XSS via reentrancy in FrameLoader::startLoad",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>HTML>Frame",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2016-05-19T19:45:50+00:00",
+  "modified_date": "2018-04-25T22:52:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53269499,
+      "filename": "exploit.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1256,
+      "url": "https://issues.chromium.org/action/issues/40084344/attachments/53269499?download=true",
+      "local_path": "attachments/exploit.html"
+    },
+    {
+      "id": 53269538,
+      "filename": "exploit.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1052,
+      "url": "https://issues.chromium.org/action/issues/40084344/attachments/53269538?download=true",
+      "local_path": "attachments/exploit_53269538.html"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nFrom /third_party/WebKit/Source/core/loader/FrameLoader.cpp:  \n----------------  \nvoid FrameLoader::startLoad(...)  \n{  \n    ASSERT(client()->hasWebView());  \n    if (m_frame->document()->pageDismissalEventBeingDispatched() != Document::NoDismissal)  \n        return;"
+}

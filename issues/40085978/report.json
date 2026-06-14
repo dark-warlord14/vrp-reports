@@ -1,0 +1,36 @@
+{
+  "id": "40085978",
+  "url": "https://issues.chromium.org/issues/40085978",
+  "title": "Security: Storage Manager - Memory corruption in mojo::internal::InterfacePtrState::Swap()",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Mojo",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lo...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2016-11-17T08:38:17+00:00",
+  "modified_date": "2017-05-09T13:03:35+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53413382,
+      "filename": "Swap_repro.html",
+      "mime_type": "text/plain",
+      "size_bytes": 268,
+      "url": "https://issues.chromium.org/action/issues/40085978/attachments/53413382?download=true",
+      "local_path": "attachments/Swap_repro.html"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n\tSteps to reproduce:  \n\t  \n\t1. Open Swap_repro.html in  Chrome browser.  \n\t2. Chrome crashes in mojo::internal::InterfacePtrState::Swap() by accessing arbitrary memory.  \n  \n\t\t(1964.adc): Access violation - code c0000005 (!!! second chance !!!)  \n\t\teax=5f9a1888 ebx=00"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "40096058",
+  "url": "https://issues.chromium.org/issues/40096058",
+  "title": "OOB read in vp8_decode_frame",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Internals>Media",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "in...@chromium.org",
+  "assignee": "sc...@chromium.org",
+  "created_date": "2011-10-10T04:27:52+00:00",
+  "modified_date": "2016-10-02T20:23:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52939085,
+      "filename": "fuzz-bitflip-sc4wtO.webm",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 630770,
+      "url": "https://issues.chromium.org/action/issues/40096058/attachments/52939085?download=true",
+      "local_path": "attachments/fuzz-bitflip-sc4wtO.webm"
+    },
+    {
+      "id": 52940266,
+      "filename": "fix-fuzz-crash.patch",
+      "mime_type": "text/x-diff; charset=us-ascii",
+      "size_bytes": 1613,
+      "url": "https://issues.chromium.org/action/issues/40096058/attachments/52940266?download=true",
+      "local_path": "attachments/fix-fuzz-crash.patch"
+    },
+    {
+      "id": 52940292,
+      "filename": "fix-fuzz-crash.patch",
+      "mime_type": "text/x-diff; charset=us-ascii",
+      "size_bytes": 1911,
+      "url": "https://issues.chromium.org/action/issues/40096058/attachments/52940292?download=true",
+      "local_path": "attachments/fix-fuzz-crash_52940292.patch"
+    },
+    {
+      "id": 52940368,
+      "filename": "mkv-fuxx.patch",
+      "mime_type": "text/x-diff; charset=us-ascii",
+      "size_bytes": 531,
+      "url": "https://issues.chromium.org/action/issues/40096058/attachments/52940368?download=true",
+      "local_path": "attachments/mkv-fuxx.patch"
+    }
+  ],
+  "update_count": 77,
+  "description_snippet": "credit: Cris + ASAN + ClusterFuzz\r\n\r\nBot CLUSTER_FUZZ_181 on platform LINUX\r\nChromium Revision : 104057\r\nWebkit Revision : 96650\r\n\r\n/mnt/scratch0/chrome/src/out/Release/chrome --allow-file-access-from-files --disable-click-to-play --disable-hang-monitor --disable-metrics --disable-popup-blocking --d"
+}

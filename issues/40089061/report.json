@@ -1,0 +1,68 @@
+{
+  "id": "40089061",
+  "url": "https://issues.chromium.org/issues/40089061",
+  "title": "URL bar spoof",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ku...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2011-03-18T12:27:43+00:00",
+  "modified_date": "2018-04-26T00:12:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53349725,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40089061/attachments/53349725?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53349726,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40089061/attachments/53349726?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53349739,
+      "filename": "stable screen.gif",
+      "mime_type": "image/gif; charset=binary",
+      "size_bytes": 764604,
+      "url": "https://issues.chromium.org/action/issues/40089061/attachments/53349739?download=true",
+      "local_path": "attachments/stable screen.gif"
+    },
+    {
+      "id": 53349740,
+      "filename": "new testcase.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 824,
+      "url": "https://issues.chromium.org/action/issues/40089061/attachments/53349740?download=true",
+      "local_path": "attachments/new testcase.zip"
+    },
+    {
+      "id": 53349776,
+      "filename": "spoof.htm",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 391,
+      "url": "https://issues.chromium.org/action/issues/40089061/attachments/53349776?download=true",
+      "local_path": "attachments/spoof.htm"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "Test chrome 11.0.696.14 dev windows xp sp3"
+}

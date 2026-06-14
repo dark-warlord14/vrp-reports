@@ -1,0 +1,52 @@
+{
+  "id": "40091635",
+  "url": "https://issues.chromium.org/issues/40091635",
+  "title": "Use after free in SVGUseElement::buildShadowTree",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2011-06-07T18:18:10+00:00",
+  "modified_date": "2018-04-26T00:06:18+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53195600,
+      "filename": "svgx.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 98,
+      "url": "https://issues.chromium.org/action/issues/40091635/attachments/53195600?download=true",
+      "local_path": "attachments/svgx.html"
+    },
+    {
+      "id": 53195619,
+      "filename": "vg-google-chrome.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 7356,
+      "url": "https://issues.chromium.org/action/issues/40091635/attachments/53195619?download=true",
+      "local_path": "attachments/vg-google-chrome.txt"
+    },
+    {
+      "id": 53195620,
+      "filename": "vg-chromium-nightly.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 20314,
+      "url": "https://issues.chromium.org/action/issues/40091635/attachments/53195620?download=true",
+      "local_path": "attachments/vg-chromium-nightly.txt"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "**VERSION**   \nChrome Version: stable, & daily  \nOperating System: osx, linux  \n  \n**REPRODUCTION CASE**   \n<svg>  \n<g>  \n<use xlink:href=\"#g\"/>  \n</g>  \n<g id=\"g\">  \n<script>  \ndocument.body.innerText = \"\";  \n</script>  \n  \n**FOR CRASHES, PLEASE INCLUDE THE FOLLOWING ADDITIONAL INFORMATION"
+}

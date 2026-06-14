@@ -1,0 +1,44 @@
+{
+  "id": "40076341",
+  "url": "https://issues.chromium.org/issues/40076341",
+  "title": "Heap-use-after-free in WebCore::DateTimeFieldElement::didBlur",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "yo...@chromium.org",
+  "created_date": "2012-09-23T18:16:32+00:00",
+  "modified_date": "2016-10-02T20:22:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52905687,
+      "filename": "96216.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 13085,
+      "url": "https://issues.chromium.org/action/issues/40076341/attachments/52905687?download=true",
+      "local_path": "attachments/96216.txt"
+    },
+    {
+      "id": 52905688,
+      "filename": "96216.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 444,
+      "url": "https://issues.chromium.org/action/issues/40076341/attachments/52905688?download=true",
+      "local_path": "attachments/96216.html"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nuse-after-free in WebCore::DateTimeFieldElement::didBlur  \n  \n**VERSION**   \nChrome Version: dev  \nOperating System: linux + osx  \n  \n**REPRODUCTION CASE**   \n<html>  \n  <head>  \n    <script>  \n      onload = function() {  \n        el0=document.createElement('input')"
+}

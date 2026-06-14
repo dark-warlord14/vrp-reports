@@ -1,0 +1,92 @@
+{
+  "id": "40052364",
+  "url": "https://issues.chromium.org/issues/40052364",
+  "title": "Heap-buffer-overflow in WebCore::Font::codePath",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "to...@chromium.org",
+  "created_date": "2011-12-22T21:10:31+00:00",
+  "modified_date": "2016-10-02T20:24:22+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53146661,
+      "filename": "second.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 920,
+      "url": "https://issues.chromium.org/action/issues/40052364/attachments/53146661?download=true",
+      "local_path": "attachments/second.html"
+    },
+    {
+      "id": 53146662,
+      "filename": "firstb.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1006,
+      "url": "https://issues.chromium.org/action/issues/40052364/attachments/53146662?download=true",
+      "local_path": "attachments/firstb.html"
+    },
+    {
+      "id": 53146663,
+      "filename": "first.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1103,
+      "url": "https://issues.chromium.org/action/issues/40052364/attachments/53146663?download=true",
+      "local_path": "attachments/first.html"
+    },
+    {
+      "id": 53146664,
+      "filename": "second-asan.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 1666,
+      "url": "https://issues.chromium.org/action/issues/40052364/attachments/53146664?download=true",
+      "local_path": "attachments/second-asan.txt"
+    },
+    {
+      "id": 53146665,
+      "filename": "secondb-asan.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 1663,
+      "url": "https://issues.chromium.org/action/issues/40052364/attachments/53146665?download=true",
+      "local_path": "attachments/secondb-asan.txt"
+    },
+    {
+      "id": 53146666,
+      "filename": "firstb-asan.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 1666,
+      "url": "https://issues.chromium.org/action/issues/40052364/attachments/53146666?download=true",
+      "local_path": "attachments/firstb-asan.txt"
+    },
+    {
+      "id": 53146667,
+      "filename": "secondb.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 823,
+      "url": "https://issues.chromium.org/action/issues/40052364/attachments/53146667?download=true",
+      "local_path": "attachments/secondb.html"
+    },
+    {
+      "id": 53146668,
+      "filename": "first-asan.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 1669,
+      "url": "https://issues.chromium.org/action/issues/40052364/attachments/53146668?download=true",
+      "local_path": "attachments/first-asan.txt"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nbuffer overflow with text and flexbox  \n**VERSION**   \nChrome Version:   \n  \nChromium\t18.0.980.0 (Developer Build 115549)  \nOS\tLinux  \nWebKit\t535.14 (@103399)  \nJavaScript\tV8 3.8.2.1  \n  \nOperating System: linux 64bit  \n  \n**REPRODUCTION CASE**   \nattached  \n  \n**FOR"
+}

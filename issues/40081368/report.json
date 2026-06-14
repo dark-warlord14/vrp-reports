@@ -1,0 +1,36 @@
+{
+  "id": "40081368",
+  "url": "https://issues.chromium.org/issues/40081368",
+  "title": "HTML parser may leave frame element in an incorrect state",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "ko...@chromium.org",
+  "created_date": "2015-02-07T22:57:17+00:00",
+  "modified_date": "2019-03-15T03:57:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53327438,
+      "filename": "debug.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7674,
+      "url": "https://issues.chromium.org/action/issues/40081368/attachments/53327438?download=true",
+      "local_path": "attachments/debug.txt"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.111 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n\r\nWhat is the expected behavior?\r\n\r\nWhat went wrong?\r\nWhen the HTML parser encounters misnested tags, it may perform the reparenting process\r\nu"
+}

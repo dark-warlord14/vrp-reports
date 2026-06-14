@@ -1,0 +1,44 @@
+{
+  "id": "40083621",
+  "url": "https://issues.chromium.org/issues/40083621",
+  "title": "Heap-buffer-overflow in ConvertWOFF2ToTTF",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>WebFonts",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ks...@chromium.org",
+  "created_date": "2016-02-03T04:24:17+00:00",
+  "modified_date": "2016-10-02T19:51:38+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52990691,
+      "filename": "corruptFont.woff2",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 64,
+      "url": "https://issues.chromium.org/action/issues/40083621/attachments/52990691?download=true",
+      "local_path": "attachments/corruptFont.woff2"
+    },
+    {
+      "id": 52990692,
+      "filename": "testfont.html",
+      "mime_type": "text/html",
+      "size_bytes": 158,
+      "url": "https://issues.chromium.org/action/issues/40083621/attachments/52990692?download=true",
+      "local_path": "attachments/testfont.html"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nHeap buffer overflow exists in ConvertWOFF2ToTTF method of woff2_dec.cc file.  \nCode:  \nif (PREDICT_FALSE(!Read255UShort(&file, &table_idx))) {  \n    return FONT_COMPRESSION_FAILURE();  \n}  \nttc_font.table_indices[j] = table_idx;  \nconst Table& table = tables[table_idx];"
+}

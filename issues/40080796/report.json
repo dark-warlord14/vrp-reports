@@ -1,0 +1,44 @@
+{
+  "id": "40080796",
+  "url": "https://issues.chromium.org/issues/40080796",
+  "title": "Heap-buffer-overflow in opj_jp2_apply_pclr",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fu...@gmail.com",
+  "assignee": "bo...@foxitsoftware.com",
+  "created_date": "2014-11-05T19:22:52+00:00",
+  "modified_date": "2018-04-25T23:04:28+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53152037,
+      "filename": "asan_sym.log",
+      "mime_type": "text/plain",
+      "size_bytes": 7427,
+      "url": "https://issues.chromium.org/action/issues/40080796/attachments/53152037?download=true",
+      "local_path": "attachments/asan_sym.log"
+    },
+    {
+      "id": 53152038,
+      "filename": "testcase.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 35743,
+      "url": "https://issues.chromium.org/action/issues/40080796/attachments/53152038?download=true",
+      "local_path": "attachments/testcase.pdf"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nLoading the attached testcase.pdf in pdfium_test causes a crash in libopenjpeg.  \n  \n**VERSION**   \nChrome Version: Tested in the ASAN prebuild \"asan-symbolized-linux-release-302783\"  \nOperating System: Linux debian 3.16-3-amd64 #1 SMP Debian 3.16.5-1 (2014-10-10) x86_64"
+}

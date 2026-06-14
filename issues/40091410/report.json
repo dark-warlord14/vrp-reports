@@ -1,0 +1,43 @@
+{
+  "id": "40091410",
+  "url": "https://issues.chromium.org/issues/40091410",
+  "title": "Security: SpeechSynthesisEvent exposes high-resolution timestamps",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Privacy",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "md...@gmail.com",
+  "assignee": "ka...@chromium.org",
+  "created_date": "2018-05-17T21:25:01+00:00",
+  "modified_date": "2018-09-01T14:24:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53007321,
+      "filename": "demo.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3710,
+      "url": "https://issues.chromium.org/action/issues/40091410/attachments/53007321?download=true",
+      "local_path": "attachments/demo.html"
+    }
+  ],
+  "update_count": 21,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nSpeechSynthesisEvent#elapsedTime is specified to return the elapsed time in  \nseconds since the associated SpeechSynthesisUtterance began playing to the user.  \nChrome instead returns the elapsed time in milliseconds.  \n  \nMoreover, SpeechSynthesis::StartSpeakingImmed"
+}

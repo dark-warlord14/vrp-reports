@@ -1,0 +1,54 @@
+{
+  "id": "40086846",
+  "url": "https://issues.chromium.org/issues/40086846",
+  "title": "Corrupted memory use in blink::visualRectForDisplayItem",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Paint",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wa...@gmail.com",
+  "assignee": "wk...@chromium.org",
+  "created_date": "2017-02-19T02:59:34+00:00",
+  "modified_date": "2018-04-25T22:44:19+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53250695,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3440,
+      "url": "https://issues.chromium.org/action/issues/40086846/attachments/53250695?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 53250725,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1089,
+      "url": "https://issues.chromium.org/action/issues/40086846/attachments/53250725?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53250726,
+      "filename": "iframe.html",
+      "mime_type": "text/plain",
+      "size_bytes": 235,
+      "url": "https://issues.chromium.org/action/issues/40086846/attachments/53250726?download=true",
+      "local_path": "attachments/iframe.html"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Open http://localhost/poc.html \r\n\r\nWhat is the expected behavior?\r\nNo crash should occur\r\n\r\nWhat went wrong?\r\nUnder certain conditions, setti"
+}

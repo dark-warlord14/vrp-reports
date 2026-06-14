@@ -1,0 +1,92 @@
+{
+  "id": "40083564",
+  "url": "https://issues.chromium.org/issues/40083564",
+  "title": "Heap-use-after-free when a content script synchronously removes a frame at document_start or document_end",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "ro...@robwu.nl",
+  "created_date": "2016-01-28T09:30:20+00:00",
+  "modified_date": "2018-04-25T22:54:29+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "reward_amount_meta": 1500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53000101,
+      "filename": "index_at_start.html",
+      "mime_type": "text/html",
+      "size_bytes": 91,
+      "url": "https://issues.chromium.org/action/issues/40083564/attachments/53000101?download=true",
+      "local_path": "attachments/index_at_start.html"
+    },
+    {
+      "id": 53000102,
+      "filename": "asan_at_document_start.log",
+      "mime_type": "text/plain",
+      "size_bytes": 12360,
+      "url": "https://issues.chromium.org/action/issues/40083564/attachments/53000102?download=true",
+      "local_path": "attachments/asan_at_document_start.log"
+    },
+    {
+      "id": 53000103,
+      "filename": "asan_at_document_end.log",
+      "mime_type": "text/plain",
+      "size_bytes": 12122,
+      "url": "https://issues.chromium.org/action/issues/40083564/attachments/53000103?download=true",
+      "local_path": "attachments/asan_at_document_end.log"
+    },
+    {
+      "id": 53000104,
+      "filename": "stack_trace_at_document_start.log",
+      "mime_type": "text/plain",
+      "size_bytes": 5251,
+      "url": "https://issues.chromium.org/action/issues/40083564/attachments/53000104?download=true",
+      "local_path": "attachments/stack_trace_at_document_start.log"
+    },
+    {
+      "id": 53000105,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 545,
+      "url": "https://issues.chromium.org/action/issues/40083564/attachments/53000105?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53000106,
+      "filename": "index_at_end.html",
+      "mime_type": "text/html",
+      "size_bytes": 89,
+      "url": "https://issues.chromium.org/action/issues/40083564/attachments/53000106?download=true",
+      "local_path": "attachments/index_at_end.html"
+    },
+    {
+      "id": 53000107,
+      "filename": "remove_self.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 44,
+      "url": "https://issues.chromium.org/action/issues/40083564/attachments/53000107?download=true",
+      "local_path": "attachments/remove_self.js"
+    },
+    {
+      "id": 53000108,
+      "filename": "stack_trace_at_document_end.log",
+      "mime_type": "text/plain",
+      "size_bytes": 4514,
+      "url": "https://issues.chromium.org/action/issues/40083564/attachments/53000108?download=true",
+      "local_path": "attachments/stack_trace_at_document_end.log"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "Chrome version: stable (48.0.2564.82) and master (50.0.2629.0).  \nThis is a non-regression, I've also tried Chrome 25, 34, 35, 40 (Linux), 48.0.2552.0 (Mac and Win).  \n  \n**What steps will reproduce the problem?**   \n1. Download the attached extension.  \n2. Start a HTTP server in that directory.  \n3"
+}

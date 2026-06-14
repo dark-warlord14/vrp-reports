@@ -1,0 +1,49 @@
+{
+  "id": "40096130",
+  "url": "https://issues.chromium.org/issues/40096130",
+  "title": "Security: Crash in content::`anonymous namespace'::OnInstallPaymentApp",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>Payments",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2019-08-28T18:17:56+00:00",
+  "modified_date": "2020-01-07T21:52:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53397962,
+      "filename": "screen.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 452331,
+      "url": "https://issues.chromium.org/action/issues/40096130/attachments/53397962?download=true",
+      "local_path": "attachments/screen.mp4"
+    },
+    {
+      "id": 53397963,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1200,
+      "url": "https://issues.chromium.org/action/issues/40096130/attachments/53397963?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "Chrome Version: 78.0.3895.0 (Official Build) canary (64-bit)\r\nOperating System: MacOS\r\n\r\n1. Lunch a new incognito window and open the test case.\r\n2. Click somewhere.\r\n3. After two seconds click on the backward arrow to go back to the test case \r\n4. Click quickly on the forward arrow to go google.com"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "40094181",
+  "url": "https://issues.chromium.org/issues/40094181",
+  "title": "pdfium (XFA): heap-use-after-free in CFX_ReadOnlyMemoryStream::ReadBlockAtOffset",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pd...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2019-03-01T07:14:24+00:00",
+  "modified_date": "2019-06-18T14:23:35+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52899771,
+      "filename": "chromium-937199.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 573,
+      "url": "https://issues.chromium.org/action/issues/40094181/attachments/52899771?download=true",
+      "local_path": "attachments/chromium-937199.pdf"
+    }
+  ],
+  "update_count": 20,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.124 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n==1336==ERROR: AddressSanitizer: heap-use-after-free on address 0x60c00000ab58 at pc 0x55de0d710989 bp 0x7ffe786d52d0 sp 0x7ffe786d4a80\r\nREAD of si"
+}

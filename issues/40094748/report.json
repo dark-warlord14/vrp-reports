@@ -1,0 +1,67 @@
+{
+  "id": "40094748",
+  "url": "https://issues.chromium.org/issues/40094748",
+  "title": "Heap-use-after-free in CPDF_ShadingPattern::Load()",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2019-04-26T09:13:56+00:00",
+  "modified_date": "2019-11-23T00:04:54+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 6000.0,
+  "reward_amount_meta": 6000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53268568,
+      "filename": "pattern.html",
+      "mime_type": "text/plain",
+      "size_bytes": 202,
+      "url": "https://issues.chromium.org/action/issues/40094748/attachments/53268568?download=true",
+      "local_path": "attachments/pattern.html"
+    },
+    {
+      "id": 53268569,
+      "filename": "pattern.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 1318,
+      "url": "https://issues.chromium.org/action/issues/40094748/attachments/53268569?download=true",
+      "local_path": "attachments/pattern.pdf"
+    },
+    {
+      "id": 53268654,
+      "filename": "pattern2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 203,
+      "url": "https://issues.chromium.org/action/issues/40094748/attachments/53268654?download=true",
+      "local_path": "attachments/pattern2.html"
+    },
+    {
+      "id": 53268655,
+      "filename": "pattern2.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 1403,
+      "url": "https://issues.chromium.org/action/issues/40094748/attachments/53268655?download=true",
+      "local_path": "attachments/pattern2.pdf"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThis is same bug as 901654. Only free stack is different.  \n  \ncpdf_shadingpattern.h class has below mentioned member.  \n   UnownedPtr<const CPDF_Object> m_pShadingObj;  \nIt is possible to create a pdf file which uses same dictionary for  \n   1. Above mentioned \"m_pSh"
+}

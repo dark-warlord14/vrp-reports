@@ -1,0 +1,76 @@
+{
+  "id": "40089318",
+  "url": "https://issues.chromium.org/issues/40089318",
+  "title": "OOB read with Flash",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink, Internals, Internals>Plugins>Flash",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ph...@gmail.com",
+  "assignee": "js...@chromium.org",
+  "created_date": "2011-03-26T02:42:24+00:00",
+  "modified_date": "2018-04-26T00:11:25+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53336028,
+      "filename": "amazon_session.png",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 115701,
+      "url": "https://issues.chromium.org/action/issues/40089318/attachments/53336028?download=true",
+      "local_path": "attachments/amazon_session.png"
+    },
+    {
+      "id": 53336029,
+      "filename": "flash.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 9514,
+      "url": "https://issues.chromium.org/action/issues/40089318/attachments/53336029?download=true",
+      "local_path": "attachments/flash.zip"
+    },
+    {
+      "id": 53336030,
+      "filename": "chrome_leak_iframe.png",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 80514,
+      "url": "https://issues.chromium.org/action/issues/40089318/attachments/53336030?download=true",
+      "local_path": "attachments/chrome_leak_iframe.png"
+    },
+    {
+      "id": 53336039,
+      "filename": "test_windows7.png",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 133932,
+      "url": "https://issues.chromium.org/action/issues/40089318/attachments/53336039?download=true",
+      "local_path": "attachments/test_windows7.png"
+    },
+    {
+      "id": 53336080,
+      "filename": "iframe.png",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 59013,
+      "url": "https://issues.chromium.org/action/issues/40089318/attachments/53336080?download=true",
+      "local_path": "attachments/iframe.png"
+    },
+    {
+      "id": 53336081,
+      "filename": "env_path.png",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 79966,
+      "url": "https://issues.chromium.org/action/issues/40089318/attachments/53336081?download=true",
+      "local_path": "attachments/env_path.png"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nFlash (Actionscript) provide a ways to interact between the browser and the flash applet with the ExternalInterface class.  \n  \nTest.as  \n<<<<<  \nprivate function init(e:Event = null):void {  \n   //Make the method callMe() available to the browser  \n   ExternalInterfa"
+}

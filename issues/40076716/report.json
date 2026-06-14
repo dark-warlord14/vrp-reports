@@ -1,0 +1,29 @@
+{
+  "id": "40076716",
+  "url": "https://issues.chromium.org/issues/40076716",
+  "title": "[LangFuzz] Crash at v8::internal::HeapObject::SizeFromMap with invalid read",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@googlemail.com",
+  "assignee": "ul...@chromium.org",
+  "created_date": "2012-12-18T01:37:12+00:00",
+  "modified_date": "2016-10-02T20:21:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 37,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64; rv:19.0) Gecko/20121216 Firefox/19.0\r\n\r\nSteps to reproduce the problem:\r\nRun the following code in d8 with --expose_gc:\r\n\r\nJSON.stringify(String.fromCharCode(1, -11).toString())\r\ngc();\r\n\r\nWhat is the expected behavior?\r\n\r\nWhat went wrong?\r\nCrash:\r\n\r\n==13010"
+}

@@ -1,0 +1,92 @@
+{
+  "id": "40092715",
+  "url": "https://issues.chromium.org/issues/40092715",
+  "title": "Possible URL Bar Spoofing when history.forward() is ignored using forward button",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals, UI>Browser>Navigation",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jc...@gmail.com",
+  "assignee": "cr...@chromium.org",
+  "created_date": "2011-07-17T20:14:38+00:00",
+  "modified_date": "2018-07-29T14:16:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53317319,
+      "filename": "attacker.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 233,
+      "url": "https://issues.chromium.org/action/issues/40092715/attachments/53317319?download=true",
+      "local_path": "attachments/attacker.html"
+    },
+    {
+      "id": 53317320,
+      "filename": "testcase1.html",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 624,
+      "url": "https://issues.chromium.org/action/issues/40092715/attachments/53317320?download=true",
+      "local_path": "attachments/testcase1.html"
+    },
+    {
+      "id": 53317321,
+      "filename": "ScreenShot Chrome Spoof 14-3.png",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 61294,
+      "url": "https://issues.chromium.org/action/issues/40092715/attachments/53317321?download=true",
+      "local_path": "attachments/ScreenShot Chrome Spoof 14-3.png"
+    },
+    {
+      "id": 53317357,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40092715/attachments/53317357?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53317358,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40092715/attachments/53317358?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53317374,
+      "filename": "attacker.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 261,
+      "url": "https://issues.chromium.org/action/issues/40092715/attachments/53317374?download=true",
+      "local_path": "attachments/attacker_53317374.html"
+    },
+    {
+      "id": 53317375,
+      "filename": "testcase1.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 405,
+      "url": "https://issues.chromium.org/action/issues/40092715/attachments/53317375?download=true",
+      "local_path": "attachments/testcase1_53317375.html"
+    },
+    {
+      "id": 53317406,
+      "filename": "screenshot3.png",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 53180,
+      "url": "https://issues.chromium.org/action/issues/40092715/attachments/53317406?download=true",
+      "local_path": "attachments/screenshot3.png"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIn some cases,after some window.location='attacker' that are used, history.forward() can be ignored.  \nIf the user goes forward on google chrome manually,opens and closes a new tab, Location bar is spoofed (view ScreenShot).  \n  \nAt this point history.forward works only"
+}

@@ -1,0 +1,31 @@
+{
+  "id": "40073052",
+  "url": "https://issues.chromium.org/issues/40073052",
+  "title": "Touch events allow cross-origin access",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals, Internals>Input>Touch>Screen",
+  "os_platforms": [
+    "Android",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ho...@gmail.com",
+  "assignee": "qi...@chromium.org",
+  "created_date": "2012-09-11T22:57:30+00:00",
+  "modified_date": "2016-10-02T20:22:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 81,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nTouching in two different iframes gives both documents accesses to touches in each other. Not only can the page access the touches in the second document, but they can use the target's of these touches to access and modify the DOM of the other document.  \n  \n**VERSION**"
+}

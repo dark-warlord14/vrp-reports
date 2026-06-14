@@ -1,0 +1,44 @@
+{
+  "id": "40080298",
+  "url": "https://issues.chromium.org/issues/40080298",
+  "title": "Global-buffer-overflow in CFX_Font::LoadGlyphPath",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "bo...@foxitsoftware.com",
+  "created_date": "2014-08-26T06:04:38+00:00",
+  "modified_date": "2018-07-28T14:18:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53247583,
+      "filename": "chrome-global-buffer-overflow-CFXFontLoadGlyphPath9.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 19823,
+      "url": "https://issues.chromium.org/action/issues/40080298/attachments/53247583?download=true",
+      "local_path": "attachments/chrome-global-buffer-overflow-CFXFontLoadGlyphPath9.pdf"
+    },
+    {
+      "id": 53247602,
+      "filename": "chrome-SEGV-CFXFontLoadGlyphPath9.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 48063,
+      "url": "https://issues.chromium.org/action/issues/40080298/attachments/53247602?download=true",
+      "local_path": "attachments/chrome-SEGV-CFXFontLoadGlyphPath9.pdf"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "Tested on: \r\n\r\nOs: Ubuntu 12.04\r\n\r\nChromium: 39.0.2136.0 (Developer Build e6f6b730e646) \r\n\r\nASAN-trace:\r\n\r\n==419==ERROR: AddressSanitizer: global-buffer-overflow on address 0x7fc0f5c824ed at pc 0x7fc0f4dd610c bp 0x7fffac1235b0 sp 0x7fffac1235a8\r\nREAD of size 1 at 0x7fc0f5c824ed thread T0 (chrome)"
+}

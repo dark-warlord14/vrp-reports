@@ -1,0 +1,80 @@
+{
+  "id": "40087415",
+  "url": "https://issues.chromium.org/issues/40087415",
+  "title": "Security: Domain spoofing thanks to U+0F8C rendered as 'space' on Mac ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Omnibox, UI>GFX, UI>Internationalization",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2017-7763"
+  ],
+  "reporter": "mi...@bentkowski.info",
+  "assignee": "rs...@chromium.org",
+  "created_date": "2017-04-21T17:48:06+00:00",
+  "modified_date": "2018-11-08T20:42:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53295281,
+      "filename": "uf8c-demo.png",
+      "mime_type": "image/png",
+      "size_bytes": 55589,
+      "url": "https://issues.chromium.org/action/issues/40087415/attachments/53295281?download=true",
+      "local_path": "attachments/uf8c-demo.png"
+    },
+    {
+      "id": 53295287,
+      "filename": "crbug_714196_win.png",
+      "mime_type": "image/png",
+      "size_bytes": 10620,
+      "url": "https://issues.chromium.org/action/issues/40087415/attachments/53295287?download=true",
+      "local_path": "attachments/crbug_714196_win.png"
+    },
+    {
+      "id": 53295288,
+      "filename": "crbug_714196_linux.png",
+      "mime_type": "image/png",
+      "size_bytes": 16966,
+      "url": "https://issues.chromium.org/action/issues/40087415/attachments/53295288?download=true",
+      "local_path": "attachments/crbug_714196_linux.png"
+    },
+    {
+      "id": 53295312,
+      "filename": "safari_editing.png",
+      "mime_type": "image/png",
+      "size_bytes": 28851,
+      "url": "https://issues.chromium.org/action/issues/40087415/attachments/53295312?download=true",
+      "local_path": "attachments/safari_editing.png"
+    },
+    {
+      "id": 53295315,
+      "filename": "safari_committed.png",
+      "mime_type": "image/png",
+      "size_bytes": 26227,
+      "url": "https://issues.chromium.org/action/issues/40087415/attachments/53295315?download=true",
+      "local_path": "attachments/safari_committed.png"
+    },
+    {
+      "id": 53295316,
+      "filename": "mac_views.png",
+      "mime_type": "image/png",
+      "size_bytes": 142539,
+      "url": "https://issues.chromium.org/action/issues/40087415/attachments/53295316?download=true",
+      "local_path": "attachments/mac_views.png"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "The character U+0F8C (TIBETAN SIGN INVERTED MCHU CAN) when used in a domain name in Chrome looks just like a space.\r\n\r\nThis can be abused to spoof a legitimate domain followed by a chain of the character, e.g. \"accounts.google.com<U+0F8C x 52>.bntk.pl\".\r\n\r\nI have created a domain https://important-d"
+}

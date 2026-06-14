@@ -1,0 +1,68 @@
+{
+  "id": "40076318",
+  "url": "https://issues.chromium.org/issues/40076318",
+  "title": "IndexedDB causes V8 heap corruption",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>JavaScript, Blink>Storage>IndexedDB",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "in...@chromium.org",
+  "assignee": "dc...@chromium.org",
+  "created_date": "2012-09-19T08:18:24+00:00",
+  "modified_date": "2016-10-02T20:22:42+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53017884,
+      "filename": "v8_context_null_ptr_trace.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 3007,
+      "url": "https://issues.chromium.org/action/issues/40076318/attachments/53017884?download=true",
+      "local_path": "attachments/v8_context_null_ptr_trace.txt"
+    },
+    {
+      "id": 53017892,
+      "filename": "tov8context_0ptr_repro.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 951,
+      "url": "https://issues.chromium.org/action/issues/40076318/attachments/53017892?download=true",
+      "local_path": "attachments/tov8context_0ptr_repro.html"
+    },
+    {
+      "id": 53017917,
+      "filename": "tov8context_0ptr_improved_repro_linux_trace.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 1312,
+      "url": "https://issues.chromium.org/action/issues/40076318/attachments/53017917?download=true",
+      "local_path": "attachments/tov8context_0ptr_improved_repro_linux_trace.txt"
+    },
+    {
+      "id": 53017918,
+      "filename": "tov8context_0ptr_improved_repro.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 599,
+      "url": "https://issues.chromium.org/action/issues/40076318/attachments/53017918?download=true",
+      "local_path": "attachments/tov8context_0ptr_improved_repro.html"
+    },
+    {
+      "id": 53018137,
+      "filename": "minimal.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 498,
+      "url": "https://issues.chromium.org/action/issues/40076318/attachments/53018137?download=true",
+      "local_path": "attachments/minimal.html"
+    }
+  ],
+  "update_count": 216,
+  "description_snippet": "Detailed report: https://cluster-fuzz.appspot.com/testcase?key=110791598\n\nFuzzer: Inferno_layout_test_unmodified\n\nCrash Type: UNKNOWN\nCrash Address: 0x000000000000\nCrash State:\n  - crash stack -\n  void v8::internal::String::WriteToFlat<unsigned short>\n  v8::internal::String::SlowTryFlatten\n  v8::int"
+}

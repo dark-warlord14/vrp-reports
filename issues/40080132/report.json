@@ -1,0 +1,60 @@
+{
+  "id": "40080132",
+  "url": "https://issues.chromium.org/issues/40080132",
+  "title": "Security: SPDY connection sharing logic errors allows for MITM",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Network>HTTP2, Internals>Network>SSL",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ag...@chromium.org",
+  "assignee": "rc...@chromium.org",
+  "created_date": "2014-07-30T17:01:51+00:00",
+  "modified_date": "2018-04-25T23:06:19+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52953449,
+      "filename": "spdy4.png",
+      "mime_type": "image/png",
+      "size_bytes": 63267,
+      "url": "https://issues.chromium.org/action/issues/40080132/attachments/52953449?download=true",
+      "local_path": "attachments/spdy4.png"
+    },
+    {
+      "id": 52953450,
+      "filename": "spdy2.png",
+      "mime_type": "image/png",
+      "size_bytes": 49784,
+      "url": "https://issues.chromium.org/action/issues/40080132/attachments/52953450?download=true",
+      "local_path": "attachments/spdy2.png"
+    },
+    {
+      "id": 52953451,
+      "filename": "spdy1.png",
+      "mime_type": "image/png",
+      "size_bytes": 59162,
+      "url": "https://issues.chromium.org/action/issues/40080132/attachments/52953451?download=true",
+      "local_path": "attachments/spdy1.png"
+    },
+    {
+      "id": 52953452,
+      "filename": "spdy3.png",
+      "mime_type": "image/png",
+      "size_bytes": 59671,
+      "url": "https://issues.chromium.org/action/issues/40080132/attachments/52953452?download=true",
+      "local_path": "attachments/spdy3.png"
+    }
+  ],
+  "update_count": 91,
+  "description_snippet": "Antoine Delignat-Lavaud from INRIA reports:\r\n\r\n1) That we are connection pooling requests to bad certificates (i.e. ones that the user clicked through an interstitial for). As I recall, we intended for bad certs not to be pooling candidates but we may have missed the check.\r\n\r\n(As an attack: give th"
+}

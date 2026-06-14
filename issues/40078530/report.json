@@ -1,0 +1,46 @@
+{
+  "id": "40078530",
+  "url": "https://issues.chromium.org/issues/40078530",
+  "title": "speech-dispatcher crashes with window.speechSynthesis() ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Speech",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2013-12-10T10:25:07+00:00",
+  "modified_date": "2018-10-15T17:08:35+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53335602,
+      "filename": "speech-repro-file.html",
+      "mime_type": "text/html",
+      "size_bytes": 15682,
+      "url": "https://issues.chromium.org/action/issues/40078530/attachments/53335602?download=true",
+      "local_path": "attachments/speech-repro-file.html"
+    },
+    {
+      "id": 53335748,
+      "filename": "speech-repro-file.html",
+      "mime_type": "text/html",
+      "size_bytes": 549,
+      "url": "https://issues.chromium.org/action/issues/40078530/attachments/53335748?download=true",
+      "local_path": "attachments/speech-repro-file_53335748.html"
+    }
+  ],
+  "update_count": 102,
+  "description_snippet": "Tested on:\r\n\r\nOS: Ubuntu 12.04 Desktop\r\n\r\nChrome/Chromium: \r\n   Google Chrome\t33.0.1729.3 (Official Build 238910) dev\r\n   Chromium\t ASAN   33.0.1732.0 (Developer Build 239266) \r\n\r\n\r\nRepro-file as attachment.\r\n\r\nWhen the repro-file is opened at Chrome, you should hear some stuttering speech.(Note"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "40091372",
+  "url": "https://issues.chromium.org/issues/40091372",
+  "title": "Security: Sandbox Escape - Use After Free with IndexedDBConnection",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Storage>IndexedDB",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lo...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2018-05-15T04:06:44+00:00",
+  "modified_date": "2019-01-04T00:59:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53305175,
+      "filename": "UAF_IndexedDBConnection_PoC_renderrer_patch.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 777,
+      "url": "https://issues.chromium.org/action/issues/40091372/attachments/53305175?download=true",
+      "local_path": "attachments/UAF_IndexedDBConnection_PoC_renderrer_patch.txt"
+    },
+    {
+      "id": 53305176,
+      "filename": "UAF_IndexedDBConnection_PoC.html",
+      "mime_type": "text/plain",
+      "size_bytes": 51,
+      "url": "https://issues.chromium.org/action/issues/40091372/attachments/53305176?download=true",
+      "local_path": "attachments/UAF_IndexedDBConnection_PoC.html"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n\t  \n\tIndexedDBTransaction holds a raw pointer to IndexedDBConnection:  \n  \n\t\tclass CONTENT_EXPORT IndexedDBTransaction {  \n\t\t  ...  \n\t\t  IndexedDBConnection\\* connection_;  \n\t\t    \n\tWhen IndexedDB is force closed while open rquest is still in progress, the IndexedDBCo"
+}

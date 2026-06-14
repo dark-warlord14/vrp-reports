@@ -1,0 +1,44 @@
+{
+  "id": "40080515",
+  "url": "https://issues.chromium.org/issues/40080515",
+  "title": "Chrome exploit: V8 properties + P2PHostMsg_Send",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ae...@chromium.org",
+  "assignee": "ya...@chromium.org",
+  "created_date": "2014-09-22T14:03:14+00:00",
+  "modified_date": "2018-10-03T23:27:34+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 27634.0,
+  "reward_amount_meta": 27634.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53171893,
+      "filename": "writeup.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 160758,
+      "url": "https://issues.chromium.org/action/issues/40080515/attachments/53171893?download=true",
+      "local_path": "attachments/writeup.pdf"
+    },
+    {
+      "id": 53171894,
+      "filename": "v8p2p.tar.gz",
+      "mime_type": "application/x-gzip",
+      "size_bytes": 184536,
+      "url": "https://issues.chromium.org/action/issues/40080515/attachments/53171894?download=true",
+      "local_path": "attachments/v8p2p.tar.gz"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "See writeup.pdf.\r\n\r\n1. V8 slow / fast properties confusion\r\n\r\nCode in src/objects.cc:4089:\r\nMaybeHandle<Object> JSObject::SetOwnPropertyIgnoreAttributes(\r\n  ..\r\n  object­>LookupOwn(name, &lookup, true);\r\n  ..\r\n  if (is_observed && lookup.IsProperty()) { \r\n    if (lookup.IsDataProperty()) { \r\n      o"
+}

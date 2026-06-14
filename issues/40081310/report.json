@@ -1,0 +1,52 @@
+{
+  "id": "40081310",
+  "url": "https://issues.chromium.org/issues/40081310",
+  "title": "Heap Use After Free @blink::BaseMultipleFieldsDateAndTimeInputType::readonlyAttributeChanged",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Forms",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0i...@gmail.com",
+  "assignee": "tk...@chromium.org",
+  "created_date": "2015-02-01T20:32:20+00:00",
+  "modified_date": "2018-04-25T23:02:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53125274,
+      "filename": "19519.html",
+      "mime_type": "text/html",
+      "size_bytes": 893,
+      "url": "https://issues.chromium.org/action/issues/40081310/attachments/53125274?download=true",
+      "local_path": "attachments/19519.html"
+    },
+    {
+      "id": 53125311,
+      "filename": "sym.out",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 33159,
+      "url": "https://issues.chromium.org/action/issues/40081310/attachments/53125311?download=true",
+      "local_path": "attachments/sym.out"
+    },
+    {
+      "id": 53125312,
+      "filename": "19519.html",
+      "mime_type": "text/html",
+      "size_bytes": 321,
+      "url": "https://issues.chromium.org/action/issues/40081310/attachments/53125312?download=true",
+      "local_path": "attachments/19519_53125312.html"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n==5060==ERROR: AddressSanitizer: heap-use-after-free on address 0x0be9ee9c at pc 0x132924c1 bp 0xdeadbeef sp 0x002bb378  \nREAD of size 4 at 0x0be9ee9c thread T0  \n    #0 0x132924c0 in blink::BaseMultipleFieldsDateAndTimeInputType::readonlyAttributeChanged C:\\b\\build\\slav"
+}

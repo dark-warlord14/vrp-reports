@@ -1,0 +1,66 @@
+{
+  "id": "40089008",
+  "url": "https://issues.chromium.org/issues/40089008",
+  "title": "Security: UAF in CFFL_InteractiveFormFiller::OnBeforeKeyStroke",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2017-09-14T20:34:31+00:00",
+  "modified_date": "2018-04-25T22:29:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53238250,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 10818,
+      "url": "https://issues.chromium.org/action/issues/40089008/attachments/53238250?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53238251,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40089008/attachments/53238251?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53238252,
+      "filename": "onbeforekeystroke.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 2581,
+      "url": "https://issues.chromium.org/action/issues/40089008/attachments/53238252?download=true",
+      "local_path": "attachments/onbeforekeystroke.pdf"
+    },
+    {
+      "id": 53238253,
+      "filename": "poc.mov",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 17223328,
+      "url": "https://issues.chromium.org/action/issues/40089008/attachments/53238253?download=true",
+      "local_path": "attachments/poc.mov"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "Notice: this PoC works on stable chrome (XFA disabled)\r\n\r\nTo repro, open pdf file on Chromium ASAN then click anywhere on page 0.\r\n\r\nIt even crash on Stable Chrome (MacOS) since I'm using gc();\r\n\r\n\r\n\r\nhttps://cs.chromium.org/chromium/src/third_party/pdfium/fpdfsdk/formfiller/cffl_interactiveformfill"
+}

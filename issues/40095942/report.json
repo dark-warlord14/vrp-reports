@@ -1,0 +1,50 @@
+{
+  "id": "40095942",
+  "url": "https://issues.chromium.org/issues/40095942",
+  "title": "Security: use-after-free in payment app ",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Unknown",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "da...@chromium.org",
+  "created_date": "2019-08-09T04:27:03+00:00",
+  "modified_date": "2019-11-16T15:40:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53196334,
+      "filename": "screen.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 989905,
+      "url": "https://issues.chromium.org/action/issues/40095942/attachments/53196334?download=true",
+      "local_path": "attachments/screen.mp4"
+    },
+    {
+      "id": 53196335,
+      "filename": "payment.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1122,
+      "url": "https://issues.chromium.org/action/issues/40095942/attachments/53196335?download=true",
+      "local_path": "attachments/payment.html"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "Chrome Version: 78.0.3877.0 (Official Build) canary (64-bit)  \nOperating System: All  \n  \n**REPRODUCTION CASE**   \n1. Lunch Chrome  \n2. Open a new incognito window and open the test case  \n3. Click on pay   \n4. After 2 seconds close the window  \n  \n  \nrax=feeefeeefeeefeee rbx=000000000091e600 rcx=00"
+}

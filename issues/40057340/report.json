@@ -1,0 +1,60 @@
+{
+  "id": "40057340",
+  "url": "https://issues.chromium.org/issues/40057340",
+  "title": "Chrome chrashes when pressing back button on a page that is still downloading a big gif image",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals, Internals>Network>Cache",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ef...@gmail.com",
+  "assignee": "rv...@chromium.org",
+  "created_date": "2012-04-26T09:49:23+00:00",
+  "modified_date": "2018-07-28T14:09:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1337.0,
+  "reward_amount_meta": 1337.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53065980,
+      "filename": "chrome_crash.png",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 230944,
+      "url": "https://issues.chromium.org/action/issues/40057340/attachments/53065980?download=true",
+      "local_path": "attachments/chrome_crash.png"
+    },
+    {
+      "id": 53066019,
+      "filename": "crash_asan_chromium_release_131054.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 10269,
+      "url": "https://issues.chromium.org/action/issues/40057340/attachments/53066019?download=true",
+      "local_path": "attachments/crash_asan_chromium_release_131054.txt"
+    },
+    {
+      "id": 53066020,
+      "filename": "crash_asan_chromium_release_135549.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 10413,
+      "url": "https://issues.chromium.org/action/issues/40057340/attachments/53066020?download=true",
+      "local_path": "attachments/crash_asan_chromium_release_135549.txt"
+    },
+    {
+      "id": 53066048,
+      "filename": "crash_asan_symbolized.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 12488,
+      "url": "https://issues.chromium.org/action/issues/40057340/attachments/53066048?download=true",
+      "local_path": "attachments/crash_asan_symbolized.txt"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "Chrome Version       : 18.0.1025.162 (revision 131933) m  \nOS Version: 6.1 (Windows 7 Pro 64bit)  \n**URLs (if applicable) :**   \n**Other browsers tested:**   \n**Add OK or FAIL after other browsers where you have tested this issue:**   \n     Safari 5:OK  \n  Firefox 4.x:OK  \n     IE 7/8/9:OK  \n  \n**Wh"
+}

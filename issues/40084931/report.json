@@ -1,0 +1,76 @@
+{
+  "id": "40084931",
+  "url": "https://issues.chromium.org/issues/40084931",
+  "title": "Security: Universal XSS by intercepting a UA shadow tree",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>DOM, Blink>SVG",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "ha...@chromium.org",
+  "created_date": "2016-07-24T06:36:46+00:00",
+  "modified_date": "2018-04-25T22:50:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52940267,
+      "filename": "exploit.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1427,
+      "url": "https://issues.chromium.org/action/issues/40084931/attachments/52940267?download=true",
+      "local_path": "attachments/exploit.zip"
+    },
+    {
+      "id": 52940341,
+      "filename": "exploit.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1021,
+      "url": "https://issues.chromium.org/action/issues/40084931/attachments/52940341?download=true",
+      "local_path": "attachments/exploit.html"
+    },
+    {
+      "id": 52940342,
+      "filename": "s.svg",
+      "mime_type": "image/svg+xml",
+      "size_bytes": 234,
+      "url": "https://issues.chromium.org/action/issues/40084931/attachments/52940342?download=true",
+      "local_path": "attachments/s.svg"
+    },
+    {
+      "id": 52940396,
+      "filename": "svg-use-event.html",
+      "mime_type": "text/plain",
+      "size_bytes": 506,
+      "url": "https://issues.chromium.org/action/issues/40084931/attachments/52940396?download=true",
+      "local_path": "attachments/svg-use-event.html"
+    },
+    {
+      "id": 52940434,
+      "filename": "exploit2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 984,
+      "url": "https://issues.chromium.org/action/issues/40084931/attachments/52940434?download=true",
+      "local_path": "attachments/exploit2.html"
+    },
+    {
+      "id": 52940435,
+      "filename": "s.svg",
+      "mime_type": "image/svg+xml",
+      "size_bytes": 227,
+      "url": "https://issues.chromium.org/action/issues/40084931/attachments/52940435?download=true",
+      "local_path": "attachments/s_52940435.svg"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen an event is dispatched to an element in a SVG <use> shadow tree, Event::currentTarget returns the original corresponding node, but Event::target doesn't make any attempt to redirect access. Therefore, the tree can be trivially leaked like this:  \n  \n<svg>  \n<g id=\"a"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "40081494",
+  "url": "https://issues.chromium.org/issues/40081494",
+  "title": "Security: HSTS bypass",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Network>SSL",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2015-0832"
+  ],
+  "reporter": "[Deleted User]",
+  "assignee": "rs...@chromium.org",
+  "created_date": "2015-02-24T20:11:27+00:00",
+  "modified_date": "2018-04-25T23:02:16+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53100886,
+      "filename": "wireshark.png",
+      "mime_type": "image/png",
+      "size_bytes": 269340,
+      "url": "https://issues.chromium.org/action/issues/40081494/attachments/53100886?download=true",
+      "local_path": "attachments/wireshark.png"
+    },
+    {
+      "id": 53100987,
+      "filename": "net-internals-log.json",
+      "mime_type": "application/json",
+      "size_bytes": 399115,
+      "url": "https://issues.chromium.org/action/issues/40081494/attachments/53100987?download=true",
+      "local_path": "attachments/net-internals-log.json"
+    },
+    {
+      "id": 53100992,
+      "filename": "net-internals-log-chrome-43.json",
+      "mime_type": "application/json",
+      "size_bytes": 411550,
+      "url": "https://issues.chromium.org/action/issues/40081494/attachments/53100992?download=true",
+      "local_path": "attachments/net-internals-log-chrome-43.json"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nHSTS can be bypassed via FQDN hostnames in Chrome 40. This goes for preloaded domains too. I was able to reproduce this on domains such as: accounts.google.com., mail.google.com., crowdcurity.com., stripe.com., blockchain.info., etc...  \n  \nI was using incognito mode"
+}

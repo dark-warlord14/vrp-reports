@@ -1,0 +1,36 @@
+{
+  "id": "40084179",
+  "url": "https://issues.chromium.org/issues/40084179",
+  "title": "chrome_55000000!WebCore::FEBlend::apply+0x1a5",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wo...@gmail.com",
+  "assignee": "js...@chromium.org",
+  "created_date": "2010-10-26T06:01:23+00:00",
+  "modified_date": "2016-10-02T20:19:50+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53135914,
+      "filename": "test0.xhtml",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 742,
+      "url": "https://issues.chromium.org/action/issues/40084179/attachments/53135914?download=true",
+      "local_path": "attachments/test0.xhtml"
+    }
+  ],
+  "update_count": 25,
+  "description_snippet": "**VULNERABILITY DETAILS**   \neax=fc5f9e66 ebx=007308a0 ecx=00733b10 edx=00000000 esi=0070fc70 edi=00000000  \neip=55b85f1b esp=0030e990 ebp=0030e9fc iopl=0         nv up ei pl nz na pe nc  \ncs=001b  ss=0023  ds=0023  es=0023  fs=003b  gs=0000             efl=00010206  \nchrome_55000000!WebCore::FEBlen"
+}

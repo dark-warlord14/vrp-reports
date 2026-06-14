@@ -1,0 +1,36 @@
+{
+  "id": "40080286",
+  "url": "https://issues.chromium.org/issues/40080286",
+  "title": "Heap-buffer-overflow in CPDF_DIBSource::TranslateScanline24bpp",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@gmail.com",
+  "assignee": "bo...@foxitsoftware.com",
+  "created_date": "2014-08-24T15:25:34+00:00",
+  "modified_date": "2018-07-28T14:18:25+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53102899,
+      "filename": "repro.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 18005,
+      "url": "https://issues.chromium.org/action/issues/40080286/attachments/53102899?download=true",
+      "local_path": "attachments/repro.pdf"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nVery similar to 406600 and 406895 but crashing in a different function.  \n  \n=================================================================  \n==50349==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x61300001376a at pc 0x0000005ef5f9 bp 0x7fff34b11330 sp 0x7"
+}

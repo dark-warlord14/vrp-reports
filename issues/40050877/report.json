@@ -1,0 +1,68 @@
+{
+  "id": "40050877",
+  "url": "https://issues.chromium.org/issues/40050877",
+  "title": "Security: missing xslt import causes crash w/preloading",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "ga...@chromium.org",
+  "created_date": "2011-11-04T19:58:28+00:00",
+  "modified_date": "2016-10-02T20:23:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53293706,
+      "filename": "xslt-bad-import-uri.xsl",
+      "mime_type": "application/xml; charset=us-ascii",
+      "size_bytes": 242,
+      "url": "https://issues.chromium.org/action/issues/40050877/attachments/53293706?download=true",
+      "local_path": "attachments/xslt-bad-import-uri.xsl"
+    },
+    {
+      "id": 53293707,
+      "filename": "xslt-bad-import-uri.xml",
+      "mime_type": "application/xml; charset=us-ascii",
+      "size_bytes": 129,
+      "url": "https://issues.chromium.org/action/issues/40050877/attachments/53293707?download=true",
+      "local_path": "attachments/xslt-bad-import-uri.xml"
+    },
+    {
+      "id": 53293708,
+      "filename": "72168.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 267,
+      "url": "https://issues.chromium.org/action/issues/40050877/attachments/53293708?download=true",
+      "local_path": "attachments/72168.html"
+    },
+    {
+      "id": 53293709,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40050877/attachments/53293709?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53293722,
+      "filename": "asan72168.txt",
+      "mime_type": "text/x-java; charset=us-ascii",
+      "size_bytes": 8079,
+      "url": "https://issues.chromium.org/action/issues/40050877/attachments/53293722?download=true",
+      "local_path": "attachments/asan72168.txt"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nuse-after-free when altering innerHTML of tag that has an iframe that is trying to load an xslt import that doesn't exist.  \n  \n**VERSION**   \nChrome Version: dev  \n  \nGoogle Chrome\t17.0.928.0 (Official Build 108431) dev  \nOS\tLinux  \nWebKit\t535.8 (@99105)  \nJavaScript"
+}

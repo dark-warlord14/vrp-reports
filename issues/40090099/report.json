@@ -1,0 +1,43 @@
+{
+  "id": "40090099",
+  "url": "https://issues.chromium.org/issues/40090099",
+  "title": "Cross-Origin image data leak via cache and canvas",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Image, Blink>SecurityFeature>CORS",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "hi...@chromium.org",
+  "created_date": "2018-01-05T16:20:02+00:00",
+  "modified_date": "2018-11-14T01:52:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52952694,
+      "filename": "SOPViolationInCanvasMemoryCache..png",
+      "mime_type": "image/png",
+      "size_bytes": 74388,
+      "url": "https://issues.chromium.org/action/issues/40090099/attachments/52952694?download=true",
+      "local_path": "attachments/SOPViolationInCanvasMemoryCache..png"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3312.0 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Go to https://vulnerabledoma.in/chrome_cache_image_leak.html . This page has an img tag which loads a same-origin PNG image and an ifram"
+}

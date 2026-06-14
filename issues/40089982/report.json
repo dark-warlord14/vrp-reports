@@ -1,0 +1,49 @@
+{
+  "id": "40089982",
+  "url": "https://issues.chromium.org/issues/40089982",
+  "title": "Security: Extensions can run code in the local/instant NTP",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "ka...@chromium.org",
+  "created_date": "2017-12-23T00:28:18+00:00",
+  "modified_date": "2019-08-08T15:13:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53410154,
+      "filename": "local-ntp-compromised.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2185,
+      "url": "https://issues.chromium.org/action/issues/40089982/attachments/53410154?download=true",
+      "local_path": "attachments/local-ntp-compromised.zip"
+    },
+    {
+      "id": 53410190,
+      "filename": "remote-ntp-compromised.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2158,
+      "url": "https://issues.chromium.org/action/issues/40089982/attachments/53410190?download=true",
+      "local_path": "attachments/remote-ntp-compromised.zip"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "Chrome version: 63.0.3239.108\r\n\r\nChrome extensions can intercept a script request and run JS code in the local NTP ( chrome-search://local-ntp/local-ntp.html ). This is problematic because the page is a kind of privileged page. For example, the NTP has the following capabilities:\r\n- The omnibox is e"
+}

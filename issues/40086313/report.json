@@ -1,0 +1,38 @@
+{
+  "id": "40086313",
+  "url": "https://issues.chromium.org/issues/40086313",
+  "title": "Security: Adobe Flash Camera Object Use After Free",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2017-3003"
+  ],
+  "reporter": "xi...@gmail.com",
+  "assignee": "na...@google.com",
+  "created_date": "2016-12-23T09:08:33+00:00",
+  "modified_date": "2021-02-25T19:59:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53025432,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40086313/attachments/53025432?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAdobe Flash Camera Object Use After Free  \n  \n**VERSION**   \nChrome Version: 56.0.2924.28 beta (64-bit)  \nOperating System: Windows 7 en 64-bit  \n  \n**REPRODUCTION CASE**   \n  \nOpen \"TestCamera.html.html\" with chrome.  \nWhen the camera settings dialog pops up, click \""
+}

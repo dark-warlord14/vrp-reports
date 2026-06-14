@@ -1,0 +1,44 @@
+{
+  "id": "40058083",
+  "url": "https://issues.chromium.org/issues/40058083",
+  "title": "Dragging a file into a web renderer exposes the file: scheme",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@m-austin.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2012-05-10T07:44:31+00:00",
+  "modified_date": "2018-04-25T23:21:20+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53358024,
+      "filename": "drag.png",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 7173,
+      "url": "https://issues.chromium.org/action/issues/40058083/attachments/53358024?download=true",
+      "local_path": "attachments/drag.png"
+    },
+    {
+      "id": 53358025,
+      "filename": "demo2.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 5248,
+      "url": "https://issues.chromium.org/action/issues/40058083/attachments/53358025?download=true",
+      "local_path": "attachments/demo2.html"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA html <a> tag is created using a file:/// url. The HTML5 \"download\" attribute allowing the attacker to set the name and force the file download.  This allows the attacker to effectively copy any file the user has access to into the downloads directory and rename it. In"
+}

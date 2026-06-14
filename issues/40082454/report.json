@@ -1,0 +1,38 @@
+{
+  "id": "40082454",
+  "url": "https://issues.chromium.org/issues/40082454",
+  "title": "Security: Flash Heap-use-after-free in SurfaceFilterList::C​reateFromScriptAtom. Alwayzzzzzzz",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2015-5563"
+  ],
+  "reporter": "bi...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2015-07-08T12:40:16+00:00",
+  "modified_date": "2016-10-02T19:55:53+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53011984,
+      "filename": "as2filtersUAFbis.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 14038,
+      "url": "https://issues.chromium.org/action/issues/40082454/attachments/53011984?download=true",
+      "local_path": "attachments/as2filtersUAFbis.zip"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nCopy Paste of https://crbug.com/chromium/480496  \n  \n**VERSION**   \nChrome Version: N/A yet, Flash 18.0.0.203  \nOperating System: [Win7 x64 SP1]  \n  \n**REPRODUCTION CASE**   \n  \nFlash 18.0.0.203 patched https://crbug.com/chromium/480496 by checking if the internal filter"
+}

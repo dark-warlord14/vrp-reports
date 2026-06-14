@@ -1,0 +1,73 @@
+{
+  "id": "40091895",
+  "url": "https://issues.chromium.org/issues/40091895",
+  "title": "Security: Bad cast in JSPropGetter in js_define.h",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2018-07-10T07:15:29+00:00",
+  "modified_date": "2019-01-04T01:00:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53317934,
+      "filename": "cast.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 2018,
+      "url": "https://issues.chromium.org/action/issues/40091895/attachments/53317934?download=true",
+      "local_path": "attachments/cast.pdf"
+    },
+    {
+      "id": 53318000,
+      "filename": "cast_global.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 2007,
+      "url": "https://issues.chromium.org/action/issues/40091895/attachments/53318000?download=true",
+      "local_path": "attachments/cast_global.pdf"
+    },
+    {
+      "id": 53318099,
+      "filename": "cast_read.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 4145,
+      "url": "https://issues.chromium.org/action/issues/40091895/attachments/53318099?download=true",
+      "local_path": "attachments/cast_read.pdf"
+    },
+    {
+      "id": 53318100,
+      "filename": "description.png",
+      "mime_type": "image/png",
+      "size_bytes": 21987,
+      "url": "https://issues.chromium.org/action/issues/40091895/attachments/53318100?download=true",
+      "local_path": "attachments/description.png"
+    },
+    {
+      "id": 53318111,
+      "filename": "cast_read_release.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 4175,
+      "url": "https://issues.chromium.org/action/issues/40091895/attachments/53318111?download=true",
+      "local_path": "attachments/cast_read_release.pdf"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThis bug is present in JSPropSetter method in fxjs/js_define.h file.  \nI think JSMethod and JSPropGetter methods in fxjs/js_define.h also has the same bug.  \nBut I could not prepare a test case for those methods.  \n  \nBelow is a code section from JSPropSetter method."
+}

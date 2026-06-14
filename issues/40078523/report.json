@@ -1,0 +1,36 @@
+{
+  "id": "40078523",
+  "url": "https://issues.chromium.org/issues/40078523",
+  "title": "Heap-use-after-free in WebCore::FormAssociatedElement::formRemovedFromTree",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Forms",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "tk...@chromium.org",
+  "created_date": "2013-12-08T20:20:32+00:00",
+  "modified_date": "2018-04-25T23:09:58+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53280210,
+      "filename": "chrome-heap-use-after-free-WebCoreFormAssociatedElementsetForm10.html",
+      "mime_type": "text/html",
+      "size_bytes": 4721,
+      "url": "https://issues.chromium.org/action/issues/40078523/attachments/53280210?download=true",
+      "local_path": "attachments/chrome-heap-use-after-free-WebCoreFormAssociatedElementsetForm10.html"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "Tested on:\r\n\r\nOS: Ubuntu 12.04\r\n\r\nChromium: ASAN 33.0.1732.0 (Developer Build 239266)\r\n\r\nRepro-file:\r\n\r\n<html>\r\n<body>\r\n\t<div id=\"submenu\">\r\n\t <table>\r\n\t  <form id=\"cse-search-box\">\r\n\t   <td align=\"right\" >\r\n\t    <input name=\"q\"/>\r\n<script type=\"text/javascript\"> \r\nvar test0=document.getElementById("
+}

@@ -1,0 +1,36 @@
+{
+  "id": "40077443",
+  "url": "https://issues.chromium.org/issues/40077443",
+  "title": "ASSERTION FAILED: run.charactersLength() >= run.length(), Heap-buffer-overflow in WebCore::Font::characterRangeCodePath",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "aa...@google.com",
+  "assignee": "sc...@chromium.org",
+  "created_date": "2013-04-20T02:33:26+00:00",
+  "modified_date": "2018-04-25T23:13:41+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53325312,
+      "filename": "cr233848-minimized.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 916,
+      "url": "https://issues.chromium.org/action/issues/40077443/attachments/53325312?download=true",
+      "local_path": "attachments/cr233848-minimized.html"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "Detailed report: https://cluster-fuzz.appspot.com/testcase?key=179368951\n\nFuzzer: Miaubiz_svg_fuzzer\n\nCrash Type: Heap-buffer-overflow READ 2\nCrash Address: 0x600800117bf4\nCrash State:\n  - crash stack -\n  WebCore::Font::characterRangeCodePath\n  WebCore::Font::drawText\n  WebCore::SVGInlineTextBox::pa"
+}

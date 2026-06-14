@@ -1,0 +1,46 @@
+{
+  "id": "40091100",
+  "url": "https://issues.chromium.org/issues/40091100",
+  "title": "Security: URL spoofing on iOS  (repro issue 796777)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Navigation, UI>Browser>Omnibox",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2018-04-13T16:57:11+00:00",
+  "modified_date": "2018-08-01T14:23:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52963275,
+      "filename": "screen_shot.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 127903,
+      "url": "https://issues.chromium.org/action/issues/40091100/attachments/52963275?download=true",
+      "local_path": "attachments/screen_shot.jpeg"
+    },
+    {
+      "id": 52963330,
+      "filename": "64BFB742-F73C-4852-8E6E-FBA4BBBEE5F0.png",
+      "mime_type": "image/png",
+      "size_bytes": 161169,
+      "url": "https://issues.chromium.org/action/issues/40091100/attachments/52963330?download=true",
+      "local_path": "attachments/64BFB742-F73C-4852-8E6E-FBA4BBBEE5F0.png"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "Chrome Version: 66.3359.98 beta   \nOperating System: iOS  \n  \nThis is from https://crbug.com/chromium/796777.  \n  \n**REPRODUCTION CASE**   \n1. Load outlook.com  \n2. Load facebook.com  \n3. Click on any comment on facebook.com  \n4. Click the time on the top of the iOS screen UI"
+}

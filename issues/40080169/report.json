@@ -1,0 +1,68 @@
+{
+  "id": "40080169",
+  "url": "https://issues.chromium.org/issues/40080169",
+  "title": "Security: UAF with Blob creation and Shared Workers",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Workers",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "th...@gmail.com",
+  "assignee": "tz...@chromium.org",
+  "created_date": "2014-08-06T16:23:52+00:00",
+  "modified_date": "2018-04-25T23:06:08+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "reward_amount_meta": 1500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53128649,
+      "filename": "blob_sharedworker_asan_trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13272,
+      "url": "https://issues.chromium.org/action/issues/40080169/attachments/53128649?download=true",
+      "local_path": "attachments/blob_sharedworker_asan_trace.txt"
+    },
+    {
+      "id": 53128650,
+      "filename": "blob_sharedworker_repro.html",
+      "mime_type": "text/html",
+      "size_bytes": 545,
+      "url": "https://issues.chromium.org/action/issues/40080169/attachments/53128650?download=true",
+      "local_path": "attachments/blob_sharedworker_repro.html"
+    },
+    {
+      "id": 53128686,
+      "filename": "blob_sharedworker_repro2b.html",
+      "mime_type": "text/html",
+      "size_bytes": 539,
+      "url": "https://issues.chromium.org/action/issues/40080169/attachments/53128686?download=true",
+      "local_path": "attachments/blob_sharedworker_repro2b.html"
+    },
+    {
+      "id": 53128687,
+      "filename": "blob_sharedworkers_36_0_1985_125_stable_asan_trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 9332,
+      "url": "https://issues.chromium.org/action/issues/40080169/attachments/53128687?download=true",
+      "local_path": "attachments/blob_sharedworkers_36_0_1985_125_stable_asan_trace.txt"
+    },
+    {
+      "id": 53128737,
+      "filename": "288859_asan_trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13272,
+      "url": "https://issues.chromium.org/action/issues/40080169/attachments/53128737?download=true",
+      "local_path": "attachments/288859_asan_trace.txt"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAn UAF (or a Segv) happens when a new window is opened and closed (automatically) from an onmessage event triggered by a shared worker with a Blob creation loop.  \n  \n**VERSION**   \nChrome Version: 36.0.1985.125 stable up to ToT 287661 (Asan)  \nOperating System: Ubuntu x"
+}

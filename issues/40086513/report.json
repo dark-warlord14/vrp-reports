@@ -1,0 +1,62 @@
+{
+  "id": "40086513",
+  "url": "https://issues.chromium.org/issues/40086513",
+  "title": "Security: Heap-use-after-free in CPWL_Wnd::GetWindowMatrix",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ne...@gmail.com",
+  "assignee": "ds...@chromium.org",
+  "created_date": "2017-01-15T00:08:38+00:00",
+  "modified_date": "2017-05-03T13:02:58+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53247780,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 2558,
+      "url": "https://issues.chromium.org/action/issues/40086513/attachments/53247780?download=true",
+      "local_path": "attachments/poc.pdf"
+    },
+    {
+      "id": 53247781,
+      "filename": "asan_output",
+      "mime_type": "text/plain",
+      "size_bytes": 24905,
+      "url": "https://issues.chromium.org/action/issues/40086513/attachments/53247781?download=true",
+      "local_path": "attachments/asan_output"
+    },
+    {
+      "id": 53247882,
+      "filename": "register-control.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 2215,
+      "url": "https://issues.chromium.org/action/issues/40086513/attachments/53247882?download=true",
+      "local_path": "attachments/register-control.pdf"
+    },
+    {
+      "id": 53247883,
+      "filename": "traceback",
+      "mime_type": "text/plain",
+      "size_bytes": 3688,
+      "url": "https://issues.chromium.org/action/issues/40086513/attachments/53247883?download=true",
+      "local_path": "attachments/traceback"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe attached poc.pdf contains two widgets on two pages (tf0 and tf1 respectively). When the first page's widget's OnFormat JS contains `this.getField(\"tf1\").setFocus();` and the Document JS (on load) contains `this.getField(\"tf1\").setFocus();`, a use after free occurs wh"
+}

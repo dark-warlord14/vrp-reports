@@ -1,0 +1,44 @@
+{
+  "id": "40083928",
+  "url": "https://issues.chromium.org/issues/40083928",
+  "title": "Security: Universal XSS using a FrameNavigationDisabler bypass",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "dc...@chromium.org",
+  "created_date": "2016-03-24T07:14:54+00:00",
+  "modified_date": "2018-04-25T22:53:35+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53414771,
+      "filename": "exploit.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2643,
+      "url": "https://issues.chromium.org/action/issues/40083928/attachments/53414771?download=true",
+      "local_path": "attachments/exploit.zip"
+    },
+    {
+      "id": 53414909,
+      "filename": "14rrwu.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 80858,
+      "url": "https://issues.chromium.org/action/issues/40083928/attachments/53414909?download=true",
+      "local_path": "attachments/14rrwu.jpg"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen a top-level navigation is triggered on a frame displaying the initial empty document, FrameLoader::load is invoked directly:  \n  \n----------------  \nvoid LocalFrame::navigate(Document& originDocument, const KURL& url, bool replaceCurrentItem, UserGestureStatus userG"
+}

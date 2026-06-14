@@ -1,0 +1,36 @@
+{
+  "id": "40084863",
+  "url": "https://issues.chromium.org/issues/40084863",
+  "title": "Security: heap-buffer-overflow in opj_tcd_code_block_dec_allocate",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "mo...@google.com",
+  "created_date": "2016-07-16T15:18:57+00:00",
+  "modified_date": "2018-04-25T22:51:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3500.0,
+  "reward_amount_meta": 3500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53176720,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 2350,
+      "url": "https://issues.chromium.org/action/issues/40084863/attachments/53176720?download=true",
+      "local_path": "attachments/poc.pdf"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nA heap buffer overflow vulnerability is present in the openjpeg.  \n  \n  \nFile libopenjpeg20/tcd.c, line 842:  \n--------------------------------------------------------------------------------  \n689\tOPJ_UINT32 l_nb_code_blocks_size;  \n\t...  \n842\t\tl_nb_code_blocks ="
+}

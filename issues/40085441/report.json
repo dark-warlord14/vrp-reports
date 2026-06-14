@@ -1,0 +1,73 @@
+{
+  "id": "40085441",
+  "url": "https://issues.chromium.org/issues/40085441",
+  "title": "Security: Address bar spoof with location.replace()",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2016-09-19T05:11:47+00:00",
+  "modified_date": "2018-04-25T22:49:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53215056,
+      "filename": "ScreenShot.png",
+      "mime_type": "image/png",
+      "size_bytes": 42038,
+      "url": "https://issues.chromium.org/action/issues/40085441/attachments/53215056?download=true",
+      "local_path": "attachments/ScreenShot.png"
+    },
+    {
+      "id": 53215057,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40085441/attachments/53215057?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53215058,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40085441/attachments/53215058?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53215069,
+      "filename": "PoC.rar",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 504,
+      "url": "https://issues.chromium.org/action/issues/40085441/attachments/53215069?download=true",
+      "local_path": "attachments/PoC.rar"
+    },
+    {
+      "id": 53215070,
+      "filename": "Recording URL-Spoofing.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 468571,
+      "url": "https://issues.chromium.org/action/issues/40085441/attachments/53215070?download=true",
+      "local_path": "attachments/Recording URL-Spoofing.mp4"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "**VERSION**   \nChrome Version: 55.0.2864.0 canary (64-bit)  \nOperating System: Windows 7  \n  \n**REPRODUCTION CASE**   \n1. Launch chrome and navigate to index.html  \n2. Click on the button  \n3. Click on \"Back to safety\" which is on the interstitial page and wait  \n4. Observe"
+}

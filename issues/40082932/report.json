@@ -1,0 +1,38 @@
+{
+  "id": "40082932",
+  "url": "https://issues.chromium.org/issues/40082932",
+  "title": "Security: Disrupting the omnibox from the attacker's website.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink, UI>Browser>Navigation",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2015-6782"
+  ],
+  "reporter": "he...@gmail.com",
+  "assignee": "dc...@chromium.org",
+  "created_date": "2015-09-28T04:00:00+00:00",
+  "modified_date": "2018-04-25T22:56:32+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52937820,
+      "filename": "prompt.png",
+      "mime_type": "image/png",
+      "size_bytes": 75719,
+      "url": "https://issues.chromium.org/action/issues/40082932/attachments/52937820?download=true",
+      "local_path": "attachments/prompt.png"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis vulnerability makes it possible to display arbitrary content under the URL of the website that the user is trying to access (from the attacker's page, through the omnibox).  \n  \nA variation of this vulnerability can be reproduced on Firefox and IE (when the user tri"
+}

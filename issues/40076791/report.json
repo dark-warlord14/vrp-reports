@@ -1,0 +1,79 @@
+{
+  "id": "40076791",
+  "url": "https://issues.chromium.org/issues/40076791",
+  "title": "Security: memory corruption with webgl on linux intel driver",
+  "status": "New",
+  "severity": "S4-Minimal",
+  "priority": "P0",
+  "component": "Internals, Internals>GPU",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "fj...@chromium.org",
+  "created_date": "2013-01-09T19:38:06+00:00",
+  "modified_date": "2016-10-02T20:21:20+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3133.0,
+  "reward_amount_meta": 3133.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53241542,
+      "filename": "ww.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1291,
+      "url": "https://issues.chromium.org/action/issues/40076791/attachments/53241542?download=true",
+      "local_path": "attachments/ww.html"
+    },
+    {
+      "id": 53241543,
+      "filename": "ww.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 1366,
+      "url": "https://issues.chromium.org/action/issues/40076791/attachments/53241543?download=true",
+      "local_path": "attachments/ww.txt"
+    },
+    {
+      "id": 53241586,
+      "filename": "scarybeasts2.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1631,
+      "url": "https://issues.chromium.org/action/issues/40076791/attachments/53241586?download=true",
+      "local_path": "attachments/scarybeasts2.html"
+    },
+    {
+      "id": 53241587,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40076791/attachments/53241587?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53241595,
+      "filename": "scarybeasts.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1347,
+      "url": "https://issues.chromium.org/action/issues/40076791/attachments/53241595?download=true",
+      "local_path": "attachments/scarybeasts.html"
+    },
+    {
+      "id": 53241604,
+      "filename": "test.c",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 3450,
+      "url": "https://issues.chromium.org/action/issues/40076791/attachments/53241604?download=true",
+      "local_path": "attachments/test.c"
+    }
+  ],
+  "update_count": 83,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAddressSanitizer: attempting free on address which was not malloc()-ed: 0x7fffe551a440  \n  \n**VERSION**   \nChrome Version: stable + dev  \nOperating System: 64bit ubuntu, intel and gallium drivers  \n  \n**REPRODUCTION CASE**   \n--no-sandbox --skip-gpu-data-loading"
+}

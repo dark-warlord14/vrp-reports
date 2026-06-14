@@ -1,0 +1,42 @@
+{
+  "id": "40089994",
+  "url": "https://issues.chromium.org/issues/40089994",
+  "title": "Security: XSS in \"Site blocked\" (supervised user) interstitial and chrome://interstitials/supervised_user",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P3",
+  "component": "UI>Browser>WebUI",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "ro...@robwu.nl",
+  "created_date": "2017-12-24T12:38:41+00:00",
+  "modified_date": "2018-11-14T01:52:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53314409,
+      "filename": "interstitial-supervised-xss.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 563,
+      "url": "https://issues.chromium.org/action/issues/40089994/attachments/53314409?download=true",
+      "local_path": "attachments/interstitial-supervised-xss.zip"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe \"Site blocked\" interstitial for supervised users has multiple XSS vulnerabilities at [1].  \nThe generated HTML is used in two places, and can be used as follows:  \n- Modify the custodian name and/or e-mail to contain a XSS payload. When the user triggers the supervis"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "40093361",
+  "url": "https://issues.chromium.org/issues/40093361",
+  "title": "Security: Permission request UI spoof",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "av...@chromium.org",
+  "created_date": "2018-12-10T04:07:40+00:00",
+  "modified_date": "2019-05-04T14:23:35+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53375198,
+      "filename": "Screen Shot 2018-12-10 at 03.57.12.png",
+      "mime_type": "image/png",
+      "size_bytes": 1380817,
+      "url": "https://issues.chromium.org/action/issues/40093361/attachments/53375198?download=true",
+      "local_path": "attachments/Screen Shot 2018-12-10 at 03.57.12.png"
+    },
+    {
+      "id": 53375243,
+      "filename": "windows.png",
+      "mime_type": "image/png",
+      "size_bytes": 16367,
+      "url": "https://issues.chromium.org/action/issues/40093361/attachments/53375243?download=true",
+      "local_path": "attachments/windows.png"
+    },
+    {
+      "id": 53375376,
+      "filename": "screen.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 5300240,
+      "url": "https://issues.chromium.org/action/issues/40093361/attachments/53375376?download=true",
+      "local_path": "attachments/screen.mov"
+    },
+    {
+      "id": 53375385,
+      "filename": "Enregistrement #5.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 956247,
+      "url": "https://issues.chromium.org/action/issues/40093361/attachments/53375385?download=true",
+      "local_path": "attachments/Enregistrement #5.mp4"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "**VERSION**   \nChrome Version: 73.0.3635.0 (Official Build) canary (64-bit)  \nOperating System: Mac  \n  \nThis is similar to https://crbug.com/chromium/816033  \n  \n**REPRODUCTION CASE**   \n1. Load http://permission.site  \n2. Click on \"Fullscreen\"  \n3. Click on \"Quota Management\"  \n4. Click on \"Popup\""
+}

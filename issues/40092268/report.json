@@ -1,0 +1,36 @@
+{
+  "id": "40092268",
+  "url": "https://issues.chromium.org/issues/40092268",
+  "title": "Regression(89733): Use after free in fast/forms/text-control-intrinsic-widths.html",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2011-06-28T08:52:25+00:00",
+  "modified_date": "2016-10-02T20:22:31+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52968149,
+      "filename": "vg.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 18473,
+      "url": "https://issues.chromium.org/action/issues/40092268/attachments/52968149?download=true",
+      "local_path": "attachments/vg.txt"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nuse-after-free invalid read  \n  \n**VERSION**   \nChrome Version:   \nChromium\t14.0.805.0 (Developer Build 90701) Ubuntu 11.04  \nWebKit\t535.1 (trunk@89816)  \n  \nnot affected: beta and stable  \n  \nOperating System: linux 64bit  \n  \n**REPRODUCTION CASE**   \nthird_party/Web"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "40085594",
+  "url": "https://issues.chromium.org/issues/40085594",
+  "title": "Out of bound read when using modified webp file",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2010-12-03T16:34:05+00:00",
+  "modified_date": "2016-10-02T20:20:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53054605,
+      "filename": "random.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 85,
+      "url": "https://issues.chromium.org/action/issues/40085594/attachments/53054605?download=true",
+      "local_path": "attachments/random.html"
+    },
+    {
+      "id": 53054606,
+      "filename": "test_random.webp",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 4928,
+      "url": "https://issues.chromium.org/action/issues/40085594/attachments/53054606?download=true",
+      "local_path": "attachments/test_random.webp"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nAttached random.html file displays a webp image which will cause an assert failiure on third_party/libwebp/dsp.c at  \n  \nstatic inline uint8_t clip_8b(int v) {  \n  assert(v >= -255 && v <= 255 + 255);  \n  return clip1[255 + v];  \n}  \nWithout the assert it will read va"
+}

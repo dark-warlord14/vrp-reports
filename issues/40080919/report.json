@@ -1,0 +1,36 @@
+{
+  "id": "40080919",
+  "url": "https://issues.chromium.org/issues/40080919",
+  "title": "Heap-buffer-overflow in blink::BidiResolver<blink::InlineIterator, blink::BidiRun>::applyL1Rule",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "ea...@chromium.org",
+  "created_date": "2014-11-28T07:26:43+00:00",
+  "modified_date": "2018-04-25T23:04:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53041918,
+      "filename": "chrome-heap-buffer-overflow-int9-min.html",
+      "mime_type": "text/html",
+      "size_bytes": 337,
+      "url": "https://issues.chromium.org/action/issues/40080919/attachments/53041918?download=true",
+      "local_path": "attachments/chrome-heap-buffer-overflow-int9-min.html"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "Tested on:\r\n\r\nOS: Ubuntu 14.04\r\n\r\n\r\nChromium\t41.0.2233.0 (Developer Build) \r\nRevision\t222b9c08723a0acd0327b8ff7a11f1254d241a99-refs/heads/master@{#305981}\r\n\r\nASAN-trace:\r\n\r\n==15720==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60200004421e at pc 0x7fdc0c38c5e8 bp 0x7fffe76e88e0 sp"
+}

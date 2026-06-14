@@ -1,0 +1,36 @@
+{
+  "id": "40090702",
+  "url": "https://issues.chromium.org/issues/40090702",
+  "title": "use-after-free in imageloader with fallbackcontent",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "ch...@gmail.com",
+  "created_date": "2011-05-08T08:12:17+00:00",
+  "modified_date": "2018-04-26T00:08:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53416582,
+      "filename": "mini.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 102,
+      "url": "https://issues.chromium.org/action/issues/40090702/attachments/53416582?download=true",
+      "local_path": "attachments/mini.html"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nuse-after-free   \n  \n**VERSION**   \nChrome Version: all  \nWin 7 - 11.0.696.65 (Official build 84435)  \nLinux x64 - 13.0.759.0 (Developer Build 84563) Ubuntu 11.04  \nOSX 10.6 Snow Leopard - 11.0.696.65  \n  \n**REPRODUCTION CASE**   \nonly works from a server, and the refere"
+}

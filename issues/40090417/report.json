@@ -1,0 +1,46 @@
+{
+  "id": "40090417",
+  "url": "https://issues.chromium.org/issues/40090417",
+  "title": "Security: Latest Win10 builds fail to set Mark-of-the-Web on downloaded filenames approaching MAX_PATH",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gr...@hotmail.com",
+  "assignee": "qi...@chromium.org",
+  "created_date": "2018-02-06T23:11:59+00:00",
+  "modified_date": "2018-11-14T01:52:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53309965,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4911,
+      "url": "https://issues.chromium.org/action/issues/40090417/attachments/53309965?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 53310079,
+      "filename": "Program.cs",
+      "mime_type": "text/plain",
+      "size_bytes": 5568,
+      "url": "https://issues.chromium.org/action/issues/40090417/attachments/53310079?download=true",
+      "local_path": "attachments/Program.cs"
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIn https://crbug.com/chromium/808827#c3 I mentioned that I discovered a mark of the web bypass, I also noticed we can 'bypass' chrome downloaded executable warning by downloading a .EXE instead. I quote bypass because there is still a ping being sent to chrome safe brows"
+}

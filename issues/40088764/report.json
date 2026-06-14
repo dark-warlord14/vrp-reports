@@ -1,0 +1,36 @@
+{
+  "id": "40088764",
+  "url": "https://issues.chromium.org/issues/40088764",
+  "title": "Integer overflow in style elements",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sc...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2011-03-11T00:34:03+00:00",
+  "modified_date": "2018-04-26T00:12:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1337.0,
+  "reward_amount_meta": 1337.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52943900,
+      "filename": "cr.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1172,
+      "url": "https://issues.chromium.org/action/issues/40088764/attachments/52943900?download=true",
+      "local_path": "attachments/cr.html"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "https://bugs.webkit.org/show_bug.cgi?id=56150"
+}

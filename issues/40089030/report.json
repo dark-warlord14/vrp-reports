@@ -1,0 +1,130 @@
+{
+  "id": "40089030",
+  "url": "https://issues.chromium.org/issues/40089030",
+  "title": "Security: UAF in CPWL_Caret::SetCaret",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "ds...@chromium.org",
+  "created_date": "2017-09-16T12:36:52+00:00",
+  "modified_date": "2018-10-05T01:13:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53271762,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40089030/attachments/53271762?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53271763,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40089030/attachments/53271763?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53271764,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40089030/attachments/53271764?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53271765,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40089030/attachments/53271765?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53271782,
+      "filename": "asan_noui",
+      "mime_type": "text/plain",
+      "size_bytes": 22540,
+      "url": "https://issues.chromium.org/action/issues/40089030/attachments/53271782?download=true",
+      "local_path": "attachments/asan_noui"
+    },
+    {
+      "id": 53271783,
+      "filename": "onsetfocus_noui.in",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3684,
+      "url": "https://issues.chromium.org/action/issues/40089030/attachments/53271783?download=true",
+      "local_path": "attachments/onsetfocus_noui.in"
+    },
+    {
+      "id": 53271784,
+      "filename": "onsetfocus_noui.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 4507,
+      "url": "https://issues.chromium.org/action/issues/40089030/attachments/53271784?download=true",
+      "local_path": "attachments/onsetfocus_noui.pdf"
+    },
+    {
+      "id": 53271785,
+      "filename": "poc_noui.mov",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 5287921,
+      "url": "https://issues.chromium.org/action/issues/40089030/attachments/53271785?download=true",
+      "local_path": "attachments/poc_noui.mov"
+    },
+    {
+      "id": 53271794,
+      "filename": "control_reg.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 4815,
+      "url": "https://issues.chromium.org/action/issues/40089030/attachments/53271794?download=true",
+      "local_path": "attachments/control_reg.pdf"
+    },
+    {
+      "id": 53271795,
+      "filename": "control_reg.in",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3992,
+      "url": "https://issues.chromium.org/action/issues/40089030/attachments/53271795?download=true",
+      "local_path": "attachments/control_reg.in"
+    },
+    {
+      "id": 53271796,
+      "filename": "Screenshot from 2017-09-18 11-59-10.png",
+      "mime_type": "image/png",
+      "size_bytes": 382387,
+      "url": "https://issues.chromium.org/action/issues/40089030/attachments/53271796?download=true",
+      "local_path": "attachments/Screenshot from 2017-09-18 11-59-10.png"
+    },
+    {
+      "id": 53271797,
+      "filename": "poc_gdb",
+      "mime_type": "text/plain",
+      "size_bytes": 3489,
+      "url": "https://issues.chromium.org/action/issues/40089030/attachments/53271797?download=true",
+      "local_path": "attachments/poc_gdb"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "This bug affects on stable Chrome /w XFA disabled.\r\n\r\n\r\n\r\nhttps://cs.chromium.org/chromium/src/third_party/pdfium/fpdfsdk/pwl/cpwl_caret.cpp?sq=package:chromium&l=86\r\n\r\n---------------------------------------------\r\nvoid CPWL_Caret::SetCaret(bool bVisible,\r\n                          const CFX_PointF"
+}

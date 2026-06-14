@@ -1,0 +1,55 @@
+{
+  "id": "40087567",
+  "url": "https://issues.chromium.org/issues/40087567",
+  "title": "Security: disallow \"Canadian Syllabics\" unicode block from IDN domains",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Internationalization",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2017-5076",
+    "CVE-2017-7764"
+  ],
+  "reporter": "sa...@erbbysam.com",
+  "assignee": "js...@chromium.org",
+  "created_date": "2017-05-06T23:42:37+00:00",
+  "modified_date": "2018-10-19T22:32:53+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52993092,
+      "filename": "1-domain_list_sorted_by_alexa.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 165748,
+      "url": "https://issues.chromium.org/action/issues/40087567/attachments/52993092?download=true",
+      "local_path": "attachments/1-domain_list_sorted_by_alexa.txt"
+    },
+    {
+      "id": 52993093,
+      "filename": "2-unicode_chars_observed.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7636,
+      "url": "https://issues.chromium.org/action/issues/40087567/attachments/52993093?download=true",
+      "local_path": "attachments/2-unicode_chars_observed.txt"
+    },
+    {
+      "id": 52993094,
+      "filename": "3-combined_list.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 288528,
+      "url": "https://issues.chromium.org/action/issues/40087567/attachments/52993094?download=true",
+      "local_path": "attachments/3-combined_list.txt"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nChromium should prevent the “Canadian Syllabics” unicode block from rendering in domain names with characters from other unicode blocks. This was observed in data found in the Certificate Transparency log while seeking to quantify the IDN impersonation/phishing proble"
+}

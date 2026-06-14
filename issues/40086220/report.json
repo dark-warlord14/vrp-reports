@@ -1,0 +1,38 @@
+{
+  "id": "40086220",
+  "url": "https://issues.chromium.org/issues/40086220",
+  "title": "tel: URL scheme Reference Origin Spoof in Chrome iOS",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Unknown",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "dd...@apple.com",
+  "created_date": "2016-12-16T12:49:00+00:00",
+  "modified_date": "2018-06-06T14:20:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53371655,
+      "filename": "PoC.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 161030,
+      "url": "https://issues.chromium.org/action/issues/40086220/attachments/53371655?download=true",
+      "local_path": "attachments/PoC.PNG"
+    }
+  ],
+  "update_count": 21,
+  "description_snippet": "Steps to reproduce the problem:\r\nIn the latest Chrome iOS browser, open the PoC.html, the source code is listed below:\r\n<!DOCTYPE HTML>\r\n<html>\r\n\r\n<head>\r\n\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\" />\r\n\r\n</head>\r\n\r\n<body>\r\n\r\n<form action=\"https://www.apple.com\" target=\"aa\""
+}

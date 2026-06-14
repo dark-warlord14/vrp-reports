@@ -1,0 +1,36 @@
+{
+  "id": "40082767",
+  "url": "https://issues.chromium.org/issues/40082767",
+  "title": "Adobe Flash Player PCRE find_parens Out-Of-Bounds Read Access",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "be...@gmail.com",
+  "assignee": "na...@google.com",
+  "created_date": "2015-08-29T02:37:49+00:00",
+  "modified_date": "2018-05-24T14:20:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53220556,
+      "filename": "poc.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 3246,
+      "url": "https://issues.chromium.org/action/issues/40082767/attachments/53220556?download=true",
+      "local_path": "attachments/poc.zip"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "There’s an error in the PCRE engine version used in Flash that leads to an out-of-bounds read access exception.\r\n\r\nAffected version: Adobe Flash Player <= 18.0.0.232\r\n\r\nTested on Windows 7 x64 + IE11(32bit) + fp_18.0.0.232\r\n\r\nCrash:\r\n\r\n---cut---\r\n\r\n0:008> r\r\neax=0000003e ebx=08767025 ecx=0876702e ed"
+}

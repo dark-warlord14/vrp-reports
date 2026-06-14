@@ -1,0 +1,54 @@
+{
+  "id": "40086940",
+  "url": "https://issues.chromium.org/issues/40086940",
+  "title": "Security: Heap-use-after-free in UsbChooserController::DisplayDevice",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>USB",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "re...@chromium.org",
+  "created_date": "2017-03-01T17:04:47+00:00",
+  "modified_date": "2018-07-28T14:03:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53256630,
+      "filename": "repro.html",
+      "mime_type": "text/plain",
+      "size_bytes": 849,
+      "url": "https://issues.chromium.org/action/issues/40086940/attachments/53256630?download=true",
+      "local_path": "attachments/repro.html"
+    },
+    {
+      "id": 53256631,
+      "filename": "heap-use-after-free on address 0x1b50cd9c",
+      "mime_type": "text/plain",
+      "size_bytes": 10501,
+      "url": "https://issues.chromium.org/action/issues/40086940/attachments/53256631?download=true",
+      "local_path": "attachments/heap-use-after-free on address 0x1b50cd9c"
+    },
+    {
+      "id": 53256632,
+      "filename": "Rec.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 205908,
+      "url": "https://issues.chromium.org/action/issues/40086940/attachments/53256632?download=true",
+      "local_path": "attachments/Rec.mp4"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "Chrome Version: 58.0.3027.0 (Official Build) canary (64-bit)\r\nOperating System: Windows 7\r\n\r\n- Run chrome with --enable-experimental-web-platform-features flag.\r\n\r\nrax=0000000000000000 rbx=000000000eb684c0 rcx=feeefeeefeeefeee\r\nrdx=000000000031ec38 rsi=000000000031ed20 rdi=000000000bd8bb20\r\nrip=0000"
+}

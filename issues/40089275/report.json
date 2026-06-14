@@ -1,0 +1,36 @@
+{
+  "id": "40089275",
+  "url": "https://issues.chromium.org/issues/40089275",
+  "title": "Use After Free in Websockets - possible remote code execution within sandbox ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2011-03-25T01:29:28+00:00",
+  "modified_date": "2018-04-26T00:11:42+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53200699,
+      "filename": "websockets-dangling.tar.gz",
+      "mime_type": "application/x-gzip; charset=binary",
+      "size_bytes": 1115,
+      "url": "https://issues.chromium.org/action/issues/40089275/attachments/53200699?download=true",
+      "local_path": "attachments/websockets-dangling.tar.gz"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "Immediately calling a close() method on WebSocket object\r\ncan cause a user-after-free vulnerability.\r\n\r\n\r\nTraceback from 32 bit Ubuntu 10.10:\r\n\r\n$ apt-cache show chromium-browser \r\nArchitecture: i386\r\nVersion: 10.0.648.133~r77742-0ubuntu0.10.10.1\r\nMD5sum: d60ffe21bb75d18013d94ae59ff832c7\r\n\r\n$ apt-ca"
+}

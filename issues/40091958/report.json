@@ -1,0 +1,44 @@
+{
+  "id": "40091958",
+  "url": "https://issues.chromium.org/issues/40091958",
+  "title": "Use after free due to floats not cleared from parent's next siblings blocks (on losing ability to intrude floats)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2011-06-17T14:34:31+00:00",
+  "modified_date": "2018-04-26T00:05:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53109640,
+      "filename": "vg.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 9216,
+      "url": "https://issues.chromium.org/action/issues/40091958/attachments/53109640?download=true",
+      "local_path": "attachments/vg.txt"
+    },
+    {
+      "id": 53109641,
+      "filename": "yesh.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 501,
+      "url": "https://issues.chromium.org/action/issues/40091958/attachments/53109641?download=true",
+      "local_path": "attachments/yesh.html"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nhtml parsing -> bad $rip  \n  \n**VERSION**   \nChrome Version: all  \nOperating System: all  \n  \n**REPRODUCTION CASE**   \nattached  \n  \n**FOR CRASHES, PLEASE INCLUDE THE FOLLOWING ADDITIONAL INFORMATION**   \nType of crash: renderer  \nCrash State:   \nBad permissions for mapp"
+}

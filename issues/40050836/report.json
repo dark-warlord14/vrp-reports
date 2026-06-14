@@ -1,0 +1,38 @@
+{
+  "id": "40050836",
+  "url": "https://issues.chromium.org/issues/40050836",
+  "title": "Security: extensions with downloads.open permission can execute code on the device using .fileloc files",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions>API, UI>Browser>Downloads",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "vl...@gmail.com",
+  "assignee": "dr...@chromium.org",
+  "created_date": "2019-11-28T20:52:12+00:00",
+  "modified_date": "2020-03-19T17:54:06+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53114418,
+      "filename": "chrome-extension-open-fileloc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4245,
+      "url": "https://issues.chromium.org/action/issues/40050836/attachments/53114418?download=true",
+      "local_path": "attachments/chrome-extension-open-fileloc.zip"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n1. .fileloc files behave on macOS similarly to .url files on Windows - as shortcuts that can execute local apps.  \n2. A malicious extension with downloads/downloads.open permissions can download a .fileloc file + execute it to launch arbitrary local apps.  \n3. It looks l"
+}

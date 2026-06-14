@@ -1,0 +1,60 @@
+{
+  "id": "40081528",
+  "url": "https://issues.chromium.org/issues/40081528",
+  "title": "Heap-buffer-overflow in blink::WebString::fromUTF8",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>WebGL",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "w3...@gmail.com",
+  "assignee": "zm...@chromium.org",
+  "created_date": "2015-03-03T19:58:37+00:00",
+  "modified_date": "2018-07-28T14:17:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53336502,
+      "filename": "chrome-fromutf8.html",
+      "mime_type": "text/html",
+      "size_bytes": 2020,
+      "url": "https://issues.chromium.org/action/issues/40081528/attachments/53336502?download=true",
+      "local_path": "attachments/chrome-fromutf8.html"
+    },
+    {
+      "id": 53336516,
+      "filename": "linux_asan_log.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11010,
+      "url": "https://issues.chromium.org/action/issues/40081528/attachments/53336516?download=true",
+      "local_path": "attachments/linux_asan_log.txt"
+    },
+    {
+      "id": 53336559,
+      "filename": "win_gpu.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3377,
+      "url": "https://issues.chromium.org/action/issues/40081528/attachments/53336559?download=true",
+      "local_path": "attachments/win_gpu.txt"
+    },
+    {
+      "id": 53336560,
+      "filename": "linux_gpu.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2518,
+      "url": "https://issues.chromium.org/action/issues/40081528/attachments/53336560?download=true",
+      "local_path": "attachments/linux_gpu.txt"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "Running Chromium with --no-sandbox reproduces the issue  \n  \n  \n**VULNERABILITY DETAILS**   \n==6700==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x04c7d0d0 at pc 0x111ef9b2 bp 0xdeadbeef sp 0x017cb550  \nREAD of size 4 at 0x04c7d0d0 thread T0  \n[0304/012123:ERROR:client_util.cc(258)] Cou"
+}

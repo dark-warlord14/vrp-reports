@@ -1,0 +1,46 @@
+{
+  "id": "40082069",
+  "url": "https://issues.chromium.org/issues/40082069",
+  "title": "Crash in third_party xdg_mime library when unable to handle long file paths",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ls...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2010-07-09T22:23:13+00:00",
+  "modified_date": "2016-10-02T20:18:37+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1337.0,
+  "reward_amount_meta": 1337.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53199719,
+      "filename": "chrome.txt",
+      "mime_type": "text/plain, English; charset=us-ascii",
+      "size_bytes": 15378,
+      "url": "https://issues.chromium.org/action/issues/40082069/attachments/53199719?download=true",
+      "local_path": "attachments/chrome.txt"
+    },
+    {
+      "id": 53199720,
+      "filename": "chrome2.txt",
+      "mime_type": "text/plain, English; charset=utf-8",
+      "size_bytes": 17251,
+      "url": "https://issues.chromium.org/action/issues/40082069/attachments/53199720?download=true",
+      "local_path": "attachments/chrome2.txt"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "Hi again,\r\n\r\nuname -a \r\nLinux berlin 2.6.32-22-generic #36-Ubuntu SMP Thu Jun 3 22:02:19 UTC 2010 i686 GNU/Linux\r\n\r\nFirefox: OK\r\nChrome 5.0.375.99 (latest): (Segmentation Fault) completely crashes with no sad face\r\n\r\nUnder windows get an aw snap screen with sad face.\r\n\r\nThis may be the sick function"
+}

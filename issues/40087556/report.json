@@ -1,0 +1,70 @@
+{
+  "id": "40087556",
+  "url": "https://issues.chromium.org/issues/40087556",
+  "title": "Chrome 32 bit only: Float argument passed to function is garbage inside the function",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ga...@gmail.com",
+  "assignee": "cl...@chromium.org",
+  "created_date": "2017-05-05T13:52:54+00:00",
+  "modified_date": "2020-02-17T14:57:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52911376,
+      "filename": "a.cpp",
+      "mime_type": "text/plain",
+      "size_bytes": 719,
+      "url": "https://issues.chromium.org/action/issues/40087556/attachments/52911376?download=true",
+      "local_path": "attachments/a.cpp"
+    },
+    {
+      "id": 52911377,
+      "filename": "WAST_BUGGY.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1992,
+      "url": "https://issues.chromium.org/action/issues/40087556/attachments/52911377?download=true",
+      "local_path": "attachments/WAST_BUGGY.txt"
+    },
+    {
+      "id": 52911378,
+      "filename": "WAST_ok.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1705,
+      "url": "https://issues.chromium.org/action/issues/40087556/attachments/52911378?download=true",
+      "local_path": "attachments/WAST_ok.txt"
+    },
+    {
+      "id": 52911446,
+      "filename": "b.cpp",
+      "mime_type": "text/plain",
+      "size_bytes": 688,
+      "url": "https://issues.chromium.org/action/issues/40087556/attachments/52911446?download=true",
+      "local_path": "attachments/b.cpp"
+    },
+    {
+      "id": 52911447,
+      "filename": "test.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 90579,
+      "url": "https://issues.chromium.org/action/issues/40087556/attachments/52911447?download=true",
+      "local_path": "attachments/test.zip"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/60.0.3085.1 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Refer attached WAST_BUGGY.txt. Note the signature of __testfunmangled\r\n2. Note how this function is getting called\r\n3. Note the statement imm"
+}

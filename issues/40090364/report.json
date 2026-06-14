@@ -1,0 +1,43 @@
+{
+  "id": "40090364",
+  "url": "https://issues.chromium.org/issues/40090364",
+  "title": "Security: PDFium OOB Read in BMPDecompressor::ReadHeader",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "rh...@chromium.org",
+  "created_date": "2018-02-02T07:24:14+00:00",
+  "modified_date": "2018-05-16T14:19:29+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52961306,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40090364/attachments/52961306?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 27,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe attached pdf file could crash PDFium when XFA and ASAN was enabled on Windows.  \n  \n```  \nis_asan = true  \npdf_enable_xfa = true  \npdf_enable_v8 = true  \n```  \n  \nThe following error log was produced by AddressSanitizer.  \n```  \n======================================"
+}

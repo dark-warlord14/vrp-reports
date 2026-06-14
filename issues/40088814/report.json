@@ -1,0 +1,49 @@
+{
+  "id": "40088814",
+  "url": "https://issues.chromium.org/issues/40088814",
+  "title": "Security: Use after free vulnerability about psdk in the latest version of Flash player",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2017-11215",
+    "CVE-2017-11225"
+  ],
+  "reporter": "ji...@gmail.com",
+  "assignee": "na...@google.com",
+  "created_date": "2017-08-25T08:25:33+00:00",
+  "modified_date": "2018-05-04T14:19:35+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53072726,
+      "filename": "uaf_poc_open.swf",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3807,
+      "url": "https://issues.chromium.org/action/issues/40088814/attachments/53072726?download=true",
+      "local_path": "attachments/uaf_poc_open.swf"
+    },
+    {
+      "id": 53072727,
+      "filename": "uaf_poc_quit.swf",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2209,
+      "url": "https://issues.chromium.org/action/issues/40088814/attachments/53072727?download=true",
+      "local_path": "attachments/uaf_poc_quit.swf"
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "VULNERABILITY DETAILS\r\nThis is a UAF vulnerability about psdk.\r\n\r\nVERSION\r\nFlash Version: pepflashplayer32_26_0_0_151\r\nOperating System: windows 7 x86 （other operating systems may also crash,but not test）\r\n\r\nREPRODUCTION CASE\r\nThere are 2 poc file here.\r\nThe first one will crash when open the file w"
+}

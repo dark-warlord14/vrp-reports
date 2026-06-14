@@ -1,0 +1,38 @@
+{
+  "id": "40083494",
+  "url": "https://issues.chromium.org/issues/40083494",
+  "title": "ASSERTION FAILED: index < arraySize",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>CSS",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "mm...@chromium.org",
+  "created_date": "2016-01-06T15:01:59+00:00",
+  "modified_date": "2018-04-25T22:54:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53311008,
+      "filename": "chrome-SEGV-WTFBitArray396uset10-min.html",
+      "mime_type": "text/html",
+      "size_bytes": 373,
+      "url": "https://issues.chromium.org/action/issues/40083494/attachments/53311008?download=true",
+      "local_path": "attachments/chrome-SEGV-WTFBitArray396uset10-min.html"
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "Tested on:\r\n\r\nOS: Ubuntu 14.04\r\n\r\nChromium: 49.0.2615.0 (Developer Build) (64-bit)\r\n          linux-release-asan-symbolized-linux-release-367812\r\n\r\nRepro-file as an attachment.\r\n\r\nASAN-trace:\r\n\r\nASSERTION FAILED: index < arraySize\r\n../../third_party/WebKit/Source/wtf/BitArray.h(44) : void WTF::Bit"
+}

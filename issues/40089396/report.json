@@ -1,0 +1,68 @@
+{
+  "id": "40089396",
+  "url": "https://issues.chromium.org/issues/40089396",
+  "title": "URL Bar Spoofing using redirection and location.reload();",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jc...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2011-03-29T18:13:19+00:00",
+  "modified_date": "2018-04-26T00:11:05+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53026927,
+      "filename": "chromespoof.png",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 44467,
+      "url": "https://issues.chromium.org/action/issues/40089396/attachments/53026927?download=true",
+      "local_path": "attachments/chromespoof.png"
+    },
+    {
+      "id": 53026980,
+      "filename": "chromeSSLspoof.png",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 50573,
+      "url": "https://issues.chromium.org/action/issues/40089396/attachments/53026980?download=true",
+      "local_path": "attachments/chromeSSLspoof.png"
+    },
+    {
+      "id": 53027158,
+      "filename": "index3.php",
+      "mime_type": "text/x-php; charset=us-ascii",
+      "size_bytes": 174,
+      "url": "https://issues.chromium.org/action/issues/40089396/attachments/53027158?download=true",
+      "local_path": "attachments/index3.php"
+    },
+    {
+      "id": 53027159,
+      "filename": "index.php",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 481,
+      "url": "https://issues.chromium.org/action/issues/40089396/attachments/53027159?download=true",
+      "local_path": "attachments/index.php"
+    },
+    {
+      "id": 53027161,
+      "filename": "index2.php",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 481,
+      "url": "https://issues.chromium.org/action/issues/40089396/attachments/53027161?download=true",
+      "local_path": "attachments/index2.php"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nURL Bar Spoofing using redirection and location.reload()   \n  \n**VERSION**   \nChrome Version: [10.0.648.204] + [stable, beta, or dev]  \nOperating System: [windows 7 and Mac]  \n  \n**REPRODUCTION CASE**   \nhttp://www.alternativ-testing.fr/Research/safari/spoof/654gf6598bf9"
+}

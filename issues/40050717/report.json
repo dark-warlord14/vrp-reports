@@ -1,0 +1,29 @@
+{
+  "id": "40050717",
+  "url": "https://issues.chromium.org/issues/40050717",
+  "title": "Security: <portal>s with an autofocus element get focus",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Portals",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sm...@gmail.com",
+  "assignee": "ad...@chromium.org",
+  "created_date": "2019-11-17T01:58:10+00:00",
+  "modified_date": "2020-10-12T20:51:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 30,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIf a page in a <portal> has an element with the \"autofocus\" attribute, then the page hosting the portal loses focus to that page. Keyboard shortcuts like Ctrl-T don't work, the reload key (on CrOS) doesn't work, etc. Since many websites have autofocused elements, and por"
+}

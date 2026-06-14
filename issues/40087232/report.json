@@ -1,0 +1,54 @@
+{
+  "id": "40087232",
+  "url": "https://issues.chromium.org/issues/40087232",
+  "title": "Security: Persistent pre and post login command execution as chronos user, with noexec bypass allowing any binary",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Enterprise, UI>Settings",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@rorym.cnamara.com",
+  "assignee": "em...@chromium.org",
+  "created_date": "2017-04-01T22:28:35+00:00",
+  "modified_date": "2018-07-28T14:03:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53121645,
+      "filename": "stage1.sh",
+      "mime_type": "text/plain",
+      "size_bytes": 164,
+      "url": "https://issues.chromium.org/action/issues/40087232/attachments/53121645?download=true",
+      "local_path": "attachments/stage1.sh"
+    },
+    {
+      "id": 53121646,
+      "filename": "stage2.sh",
+      "mime_type": "text/plain",
+      "size_bytes": 776,
+      "url": "https://issues.chromium.org/action/issues/40087232/attachments/53121646?download=true",
+      "local_path": "attachments/stage2.sh"
+    },
+    {
+      "id": 53121647,
+      "filename": "Screenshot 2017-04-02 at 12.11.20 AM.png",
+      "mime_type": "image/png",
+      "size_bytes": 197988,
+      "url": "https://issues.chromium.org/action/issues/40087232/attachments/53121647?download=true",
+      "local_path": "attachments/Screenshot 2017-04-02 at 12.11.20 AM.png"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe device owner can bypass --policy-switches-end and persistently configure user session flags for all users, allowing for command execution pre- and  \npost- user login for any user. A noexec bypass allows the execution of any binary as a payload.  \n  \n**VERSION**   \nVe"
+}

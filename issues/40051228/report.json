@@ -1,0 +1,73 @@
+{
+  "id": "40051228",
+  "url": "https://issues.chromium.org/issues/40051228",
+  "title": "Security: tel: protocal spoofing 2",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Sharing",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ti...@gmail.com",
+  "assignee": "es...@chromium.org",
+  "created_date": "2020-01-14T06:04:29+00:00",
+  "modified_date": "2021-04-15T19:15:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52890096,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 161,
+      "url": "https://issues.chromium.org/action/issues/40051228/attachments/52890096?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52890097,
+      "filename": "iframe.html",
+      "mime_type": "text/plain",
+      "size_bytes": 40,
+      "url": "https://issues.chromium.org/action/issues/40051228/attachments/52890097?download=true",
+      "local_path": "attachments/iframe.html"
+    },
+    {
+      "id": 52890098,
+      "filename": "nosandbox.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 54482,
+      "url": "https://issues.chromium.org/action/issues/40051228/attachments/52890098?download=true",
+      "local_path": "attachments/nosandbox.jpg"
+    },
+    {
+      "id": 52890099,
+      "filename": "sandbox.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 53058,
+      "url": "https://issues.chromium.org/action/issues/40051228/attachments/52890099?download=true",
+      "local_path": "attachments/sandbox.jpg"
+    },
+    {
+      "id": 52890114,
+      "filename": "test.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 43792,
+      "url": "https://issues.chromium.org/action/issues/40051228/attachments/52890114?download=true",
+      "local_path": "attachments/test.jpg"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe bubble will display the initiating origin if it is different from the current top level content.(https://bugs.chromium.org/p/chromium/issues/detail?id=1036832#c6)  \nHowever if the \"sandbox\" property in the iframe element, the bubble will not display the initiating or"
+}

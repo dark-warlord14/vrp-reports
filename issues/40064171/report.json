@@ -1,0 +1,36 @@
+{
+  "id": "40064171",
+  "url": "https://issues.chromium.org/issues/40064171",
+  "title": "Heap-use-after-free in WebCore::ElementV8Internal::onclickAttrGetter",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>JavaScript",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2012-08-19T07:33:38+00:00",
+  "modified_date": "2016-10-02T20:23:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53218437,
+      "filename": "chrome-heap-use-after-free-WebCoreElementV8InternalonclickAttrGetter-7e7.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 336,
+      "url": "https://issues.chromium.org/action/issues/40064171/attachments/53218437?download=true",
+      "local_path": "attachments/chrome-heap-use-after-free-WebCoreElementV8InternalonclickAttrGetter-7e7.html"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "Repro-file as attachment.\r\n\r\nReproduces clean on my machines.\r\n\r\nChrome version: ASAN Chromium 23.0.1240.0\r\n\r\nASAN-report:\r\n\r\n==3559== ERROR: AddressSanitizer heap-use-after-free on address 0x7f40e0cc3790 at pc 0x7f40f693a837 bp 0x7fff60e9ee20 sp 0x7fff60e9ee18\r\nREAD of size 8 at 0x7f40e0cc3790 thre"
+}

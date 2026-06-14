@@ -1,0 +1,48 @@
+{
+  "id": "40068064",
+  "url": "https://issues.chromium.org/issues/40068064",
+  "title": "Security: URL bar spoofing with SSL error messages (Chrome on iOS)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2012-0674"
+  ],
+  "reporter": "lp...@gmail.com",
+  "assignee": "qs...@chromium.org",
+  "created_date": "2012-09-06T13:34:58+00:00",
+  "modified_date": "2018-04-25T23:18:11+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53377407,
+      "filename": "chromeios.jpg",
+      "mime_type": "image/jpeg; charset=binary",
+      "size_bytes": 27795,
+      "url": "https://issues.chromium.org/action/issues/40068064/attachments/53377407?download=true",
+      "local_path": "attachments/chromeios.jpg"
+    },
+    {
+      "id": 53377424,
+      "filename": "IMG_0002.PNG",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 27220,
+      "url": "https://issues.chromium.org/action/issues/40068064/attachments/53377424?download=true",
+      "local_path": "attachments/IMG_0002.PNG"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nDear All,  \nI would like to report a less-serious variant of CVE-2012-0674.  \n  \nIt is possible to create a page with attacker-controlled HTML content  \nand URL bar pointing to other domain using SSL error messages.  \n  \nI found it today when checking another CVE-2012-06"
+}

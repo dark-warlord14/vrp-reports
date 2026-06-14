@@ -1,0 +1,36 @@
+{
+  "id": "40084234",
+  "url": "https://issues.chromium.org/issues/40084234",
+  "title": "Security: heap-buffer-overflow in SkRegion::RunHead::findScanline",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Skia",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@gmail.com",
+  "assignee": "se...@chromium.org",
+  "created_date": "2016-05-04T20:51:22+00:00",
+  "modified_date": "2018-04-25T22:52:31+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53100237,
+      "filename": "test.fil",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 108,
+      "url": "https://issues.chromium.org/action/issues/40084234/attachments/53100237?download=true",
+      "local_path": "attachments/test.fil"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe latest 32-bit asan build of filter_fuzz_stub crashes as follows with the attached input:  \n  \n=================================================================  \n==30079==ERROR: AddressSanitizer: heap-buffer-overflow on address 0xf48003b4 at pc 0x082ebb67 bp 0xffa39c"
+}

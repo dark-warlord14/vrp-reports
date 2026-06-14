@@ -1,0 +1,43 @@
+{
+  "id": "40095934",
+  "url": "https://issues.chromium.org/issues/40095934",
+  "title": "SOP & Site Isolation bypass with Reader mode",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Sandbox>SiteIsolation, UI>Browser>ReaderMode",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "Ju...@microsoft.com",
+  "assignee": "wy...@chromium.org",
+  "created_date": "2019-08-08T07:10:05+00:00",
+  "modified_date": "2020-02-20T00:14:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52944579,
+      "filename": "reader_mode.html",
+      "mime_type": "text/plain",
+      "size_bytes": 754,
+      "url": "https://issues.chromium.org/action/issues/40095934/attachments/52944579?download=true",
+      "local_path": "attachments/reader_mode.html"
+    }
+  ],
+  "update_count": 99,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nReader mode allows loading of untrusted image, videos, etc in chrome-distiller://[GUID] origin. Further more, there seems to be weak sanitization of contents. For example, <button> tag can contain `onclick` attribute. But this will be blocked by default CSP set in Reader"
+}

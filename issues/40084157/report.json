@@ -1,0 +1,46 @@
+{
+  "id": "40084157",
+  "url": "https://issues.chromium.org/issues/40084157",
+  "title": "Chrome for Android - Modal dialog being executed after window.open is called allows for URL Spoofing",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>WindowDialog, UI>Browser>Navigation",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "hu...@chromium.org",
+  "created_date": "2016-04-23T01:59:31+00:00",
+  "modified_date": "2019-01-03T15:24:29+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53226587,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 621,
+      "url": "https://issues.chromium.org/action/issues/40084157/attachments/53226587?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53226588,
+      "filename": "spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 67206,
+      "url": "https://issues.chromium.org/action/issues/40084157/attachments/53226588?download=true",
+      "local_path": "attachments/spoof.png"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis vulnerability makes it possible to display an arbitrary modal dialog over a window with a spoofed URL by calling a modal dialog after opening a new window. Thus making the victim believe that the modal dialog is from the website he was trying to access, while in rea"
+}

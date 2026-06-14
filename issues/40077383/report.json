@@ -1,0 +1,68 @@
+{
+  "id": "40077383",
+  "url": "https://issues.chromium.org/issues/40077383",
+  "title": "Heap-use-after-free in webkit_media::WebMediaPlayerImpl::paint",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "ac...@chromium.org",
+  "created_date": "2013-04-10T22:39:55+00:00",
+  "modified_date": "2018-07-29T14:01:39+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53168537,
+      "filename": "crash.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 881,
+      "url": "https://issues.chromium.org/action/issues/40077383/attachments/53168537?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53168538,
+      "filename": "svg1.svg",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 44,
+      "url": "https://issues.chromium.org/action/issues/40077383/attachments/53168538?download=true",
+      "local_path": "attachments/svg1.svg"
+    },
+    {
+      "id": 53168539,
+      "filename": "skeleton.ogv",
+      "mime_type": "application/ogg; charset=binary",
+      "size_bytes": 33478,
+      "url": "https://issues.chromium.org/action/issues/40077383/attachments/53168539?download=true",
+      "local_path": "attachments/skeleton.ogv"
+    },
+    {
+      "id": 53168683,
+      "filename": "skeleton.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 35,
+      "url": "https://issues.chromium.org/action/issues/40077383/attachments/53168683?download=true",
+      "local_path": "attachments/skeleton.html"
+    },
+    {
+      "id": 53168684,
+      "filename": "crash2.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 915,
+      "url": "https://issues.chromium.org/action/issues/40077383/attachments/53168684?download=true",
+      "local_path": "attachments/crash2.html"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe attached testcase (crash.html) crashes when loaded in the current ASAN chromium build. Unfortunately I wasn't able to get rid of the dependencies, svg1.svg and skeleton.ogv have to be placed in the same directory.  \n  \nThe ASAN output looks as follows:  \n  \n==7500=="
+}

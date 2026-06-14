@@ -1,0 +1,60 @@
+{
+  "id": "40059942",
+  "url": "https://issues.chromium.org/issues/40059942",
+  "title": "Heap-use-after-free in SkARGB32_Black_Blitter::blitAntiH",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals, Internals>Skia",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2012-06-19T21:37:04+00:00",
+  "modified_date": "2016-10-02T20:24:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52981298,
+      "filename": "SkARGB32BlackBlitterblitAntiHint37b.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 146019,
+      "url": "https://issues.chromium.org/action/issues/40059942/attachments/52981298?download=true",
+      "local_path": "attachments/SkARGB32BlackBlitterblitAntiHint37b.html"
+    },
+    {
+      "id": 52981299,
+      "filename": "symbolized_log.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 8640,
+      "url": "https://issues.chromium.org/action/issues/40059942/attachments/52981299?download=true",
+      "local_path": "attachments/symbolized_log.txt"
+    },
+    {
+      "id": 52981350,
+      "filename": "crbug133571-cf-minimized.html",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 20732,
+      "url": "https://issues.chromium.org/action/issues/40059942/attachments/52981350?download=true",
+      "local_path": "attachments/crbug133571-cf-minimized.html"
+    },
+    {
+      "id": 52981367,
+      "filename": "asan-log-133571.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 16644,
+      "url": "https://issues.chromium.org/action/issues/40059942/attachments/52981367?download=true",
+      "local_path": "attachments/asan-log-133571.txt"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "Repro-file as attachment.\r\n\r\nChrome version: ASAN 21.0.1170.0\r\nOS:Ubuntu 11.04 x86_64\r\n\r\nI hope you can get the repro-file reduced with better results than I did.\r\n\r\nASAN Report snippet:\r\n\r\n=================================================================\r\n==3174== ERROR: AddressSanitizer heap-use-a"
+}

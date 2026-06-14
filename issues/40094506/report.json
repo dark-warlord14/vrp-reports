@@ -1,0 +1,38 @@
+{
+  "id": "40094506",
+  "url": "https://issues.chromium.org/issues/40094506",
+  "title": "pdfium (XFA): invalid vptr / uaf in CXFA_FFDocView::RunBindItems",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pd...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2019-04-04T03:42:07+00:00",
+  "modified_date": "2019-10-01T14:36:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53237870,
+      "filename": "chromium-949425.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 454,
+      "url": "https://issues.chromium.org/action/issues/40094506/attachments/53237870?download=true",
+      "local_path": "attachments/chromium-949425.pdf"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.124 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n(UBSAN)\r\n\r\nxfa/fxfa/cxfa_ffdocview.cpp:600:15: runtime error: member call on address 0x55e7e795b150 which does not point to an object of type 'CXFA"
+}

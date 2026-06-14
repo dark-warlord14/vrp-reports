@@ -1,0 +1,38 @@
+{
+  "id": "40094258",
+  "url": "https://issues.chromium.org/issues/40094258",
+  "title": "Security: Security: Chrome renderer process persistence bug on android",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Core",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wy...@gmail.com",
+  "assignee": "bo...@chromium.org",
+  "created_date": "2019-03-10T08:35:39+00:00",
+  "modified_date": "2019-06-27T09:41:17+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53293264,
+      "filename": "patch.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 377,
+      "url": "https://issues.chromium.org/action/issues/40094258/attachments/53293264?download=true",
+      "local_path": "attachments/patch.diff"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n#ChildProcessLauncherHelper::GetTerminationInfo# function in child_process_launcher_helper_android.cc maybe not return \"TERMINATION_STATUS_STILL_RUNNING\" status.  \n  \nThen, in #ChildProcessTerminationInfo ChildProcessLauncher::GetChildTerminationInfo#, the #Close# will a"
+}

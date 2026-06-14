@@ -1,0 +1,41 @@
+{
+  "id": "40092358",
+  "url": "https://issues.chromium.org/issues/40092358",
+  "title": "Security: heap-buffer-overflow in CPDF_DIBSource::DownSampleScanline8Bit",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zh...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2018-09-05T03:10:40+00:00",
+  "modified_date": "2018-12-28T15:23:58+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53396157,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40092358/attachments/53396157?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis issue was found by fuzzing against a 64-bit asan linux build of pdfium_test.  \n  \n**VERSION**   \nChrome Version: asan-linux-beta-69.0.3497.23  \nOperating System: Fedora 28 x86_64  \n  \n**REPRODUCTION CASE**   \n./pdfium_test tests_f0608b73459fbaa615f295ee9973f3af4e782"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "40076611",
+  "url": "https://issues.chromium.org/issues/40076611",
+  "title": "Heap-use-after-free in WebCore::PopStateEvent::~PopStateEvent",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>SVG",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "sc...@chromium.org",
+  "created_date": "2012-11-23T19:32:19+00:00",
+  "modified_date": "2016-10-02T20:21:37+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53167408,
+      "filename": "chrome-use-after-free-25d45.svg",
+      "mime_type": "image/svg+xml; charset=us-ascii",
+      "size_bytes": 755,
+      "url": "https://issues.chromium.org/action/issues/40076611/attachments/53167408?download=true",
+      "local_path": "attachments/chrome-use-after-free-25d45.svg"
+    },
+    {
+      "id": 53167423,
+      "filename": "Global-buffer-overflow.svg",
+      "mime_type": "image/svg+xml; charset=us-ascii",
+      "size_bytes": 647,
+      "url": "https://issues.chromium.org/action/issues/40076611/attachments/53167423?download=true",
+      "local_path": "attachments/Global-buffer-overflow.svg"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "Tested on:\r\n\r\nOS: Ubuntu 12.04 x86_64\r\nChromium: ASAN 25.0.1332.0 (Developer Build 169130)\r\n\r\nrepro-file as attachment.\r\n\r\nYou need to load the attached SVG-file into a img-tag with html-file\r\n\r\nhtml-file:\r\n\r\n<html>\r\n<img src='chrome-use-after-free-25d45.svg'></img>\r\n</html>\r\n\r\n\r\n\r\nASAN-report:"
+}

@@ -1,0 +1,84 @@
+{
+  "id": "40055337",
+  "url": "https://issues.chromium.org/issues/40055337",
+  "title": "Heap-use-after-free in WebCore::Node::~Node",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ax...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2012-03-21T17:11:00+00:00",
+  "modified_date": "2016-10-02T20:25:11+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52888090,
+      "filename": "tc-21-03-12-uaf-1.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 594,
+      "url": "https://issues.chromium.org/action/issues/40055337/attachments/52888090?download=true",
+      "local_path": "attachments/tc-21-03-12-uaf-1.zip"
+    },
+    {
+      "id": 52888091,
+      "filename": "tc-21-03-12-uaf-2.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 596,
+      "url": "https://issues.chromium.org/action/issues/40055337/attachments/52888091?download=true",
+      "local_path": "attachments/tc-21-03-12-uaf-2.zip"
+    },
+    {
+      "id": 52888092,
+      "filename": "asan-1.1.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 7052,
+      "url": "https://issues.chromium.org/action/issues/40055337/attachments/52888092?download=true",
+      "local_path": "attachments/asan-1.1.txt"
+    },
+    {
+      "id": 52888093,
+      "filename": "asan-1.2.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 6667,
+      "url": "https://issues.chromium.org/action/issues/40055337/attachments/52888093?download=true",
+      "local_path": "attachments/asan-1.2.txt"
+    },
+    {
+      "id": 52888094,
+      "filename": "asan-2.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 6478,
+      "url": "https://issues.chromium.org/action/issues/40055337/attachments/52888094?download=true",
+      "local_path": "attachments/asan-2.txt"
+    },
+    {
+      "id": 52888121,
+      "filename": "asan-shadow-dom.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 13064,
+      "url": "https://issues.chromium.org/action/issues/40055337/attachments/52888121?download=true",
+      "local_path": "attachments/asan-shadow-dom.txt"
+    },
+    {
+      "id": 52888122,
+      "filename": "asan-shadow-dom-2.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 6014,
+      "url": "https://issues.chromium.org/action/issues/40055337/attachments/52888122?download=true",
+      "local_path": "attachments/asan-shadow-dom-2.txt"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUse-after-free happens when adopting shadow node.  \n  \n**VERSION**   \nVersion 19.0.1068.0 (126348), Developer Build on Ubuntu 10.10  \n  \n**REPRODUCTION CASE**   \nThere are two testcases -   \n    \\* the tc-21-03-12-uaf-1.zip (asan-1.1.txt, asan-1.2.txt accordingly) - can"
+}

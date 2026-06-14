@@ -1,0 +1,29 @@
+{
+  "id": "40092830",
+  "url": "https://issues.chromium.org/issues/40092830",
+  "title": "Tracking bug for ANGLE memory corruption on Windows",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Unknown",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sc...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2011-07-20T03:55:16+00:00",
+  "modified_date": "2018-04-26T00:02:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1337.0,
+  "reward_amount_meta": 1337.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 37,
+  "description_snippet": "https://code.google.com/p/angleproject/source/detail?r=702\r\n(See https://code.google.com/p/angleproject/issues/detail?id=139 for description of code flaw, it's a buffer overflow).\r\n\r\nIt's in Windows-specific code.\r\n\r\nAlready merged to M13, just filing for tracking purposes. I'm trying to track down"
+}

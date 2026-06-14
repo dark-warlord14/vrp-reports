@@ -1,0 +1,36 @@
+{
+  "id": "40091363",
+  "url": "https://issues.chromium.org/issues/40091363",
+  "title": "[LangFuzz] Crash @ MarkCompactCollector::SweepSpaces() or SeqTwoByteString::SeqTwoByteStringReadBlockIntoBuffer() (64 bit)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>JavaScript, Internals",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@googlemail.com",
+  "assignee": "er...@gmail.com",
+  "created_date": "2011-05-27T19:57:17+00:00",
+  "modified_date": "2016-10-02T20:22:10+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52945751,
+      "filename": "testSweepSpaces.tgz",
+      "mime_type": "application/x-gzip; charset=binary",
+      "size_bytes": 6218,
+      "url": "https://issues.chromium.org/action/issues/40091363/attachments/52945751?download=true",
+      "local_path": "attachments/testSweepSpaces.tgz"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe attached archive contains two testcases:  \n  \n- The minimized testcase \"min.js\" crashes at v8::internal::MarkCompactCollector::SweepSpaces() when run with --expose_gc in an optimized shell of the V8 version as in recent Chrome 12.   \n  \n- A less reduced testcase (two"
+}

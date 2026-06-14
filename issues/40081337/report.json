@@ -1,0 +1,44 @@
+{
+  "id": "40081337",
+  "url": "https://issues.chromium.org/issues/40081337",
+  "title": "UNKNOWN in blink::WebSpeechSynthesisVoice::operator",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Speech",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "to...@chromium.org",
+  "created_date": "2015-02-05T15:53:29+00:00",
+  "modified_date": "2016-10-02T20:04:24+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53400682,
+      "filename": "speech.html",
+      "mime_type": "text/html",
+      "size_bytes": 239,
+      "url": "https://issues.chromium.org/action/issues/40081337/attachments/53400682?download=true",
+      "local_path": "attachments/speech.html"
+    },
+    {
+      "id": 53400879,
+      "filename": "2342911.mp4",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 578358,
+      "url": "https://issues.chromium.org/action/issues/40081337/attachments/53400879?download=true",
+      "local_path": "attachments/2342911.mp4"
+    }
+  ],
+  "update_count": 70,
+  "description_snippet": "**VERSION**   \nChrome Version: Chromium 42.0.2295.0 (Build of Dev) (32-bit) + 40.0.2214.94 m  \nOperating System: Windows 7  \n  \n**REPRODUCTION CASE**   \n1. Open Speech.html  \n2. Make the mic disabled  \n3. Crash  \n  \n**FOR CRASHES, PLEASE INCLUDE THE FOLLOWING ADDITIONAL INFORMATION**   \n============"
+}

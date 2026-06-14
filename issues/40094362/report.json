@@ -1,0 +1,52 @@
+{
+  "id": "40094362",
+  "url": "https://issues.chromium.org/issues/40094362",
+  "title": "Security: JSC::Yarr regexp 32/48 to the left of 768 with workers",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "js...@chromium.org",
+  "created_date": "2011-08-27T19:11:43+00:00",
+  "modified_date": "2018-04-25T23:59:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53148118,
+      "filename": "asan-worker.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 8898,
+      "url": "https://issues.chromium.org/action/issues/40094362/attachments/53148118?download=true",
+      "local_path": "attachments/asan-worker.txt"
+    },
+    {
+      "id": 53148119,
+      "filename": "repro.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 366,
+      "url": "https://issues.chromium.org/action/issues/40094362/attachments/53148119?download=true",
+      "local_path": "attachments/repro.html"
+    },
+    {
+      "id": 53148120,
+      "filename": "worker-repro.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 9029,
+      "url": "https://issues.chromium.org/action/issues/40094362/attachments/53148120?download=true",
+      "local_path": "attachments/worker-repro.zip"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThe repro itself is rather large, and it contains a lot of repetition, inside a lot of repetition and it takes a lot of tries to repro it.  \n  \nBut it does happen over and over with this file and not with others.   \n  \nrepro.html is the main file, and the others"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "40083225",
+  "url": "https://issues.chromium.org/issues/40083225",
+  "title": "Segmentation fault at WebCore::ImageLoader::updateFromElement due to malformed HTML",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "ch...@gmail.com",
+  "created_date": "2010-09-16T08:54:44+00:00",
+  "modified_date": "2016-10-02T20:19:27+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53222205,
+      "filename": "small.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 206,
+      "url": "https://issues.chromium.org/action/issues/40083225/attachments/53222205?download=true",
+      "local_path": "attachments/small.html"
+    },
+    {
+      "id": 53222226,
+      "filename": "small-2f2f2f4e.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 228,
+      "url": "https://issues.chromium.org/action/issues/40083225/attachments/53222226?download=true",
+      "local_path": "attachments/small-2f2f2f4e.html"
+    },
+    {
+      "id": 53222248,
+      "filename": "small-2.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 114,
+      "url": "https://issues.chromium.org/action/issues/40083225/attachments/53222248?download=true",
+      "local_path": "attachments/small-2.html"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "A HTML-document with the link '<a> <object type=\"image/png\" data=\"/images/buttons/html401.p\"> </a>' three times causes a renderer segmentation fault in 6.0.472.55 (Official Build 58392) beta and the corresponding Chromium build, running on Ubuntu 10.04 (i386). Not tested with other versions.\r\n\r\nThe"
+}

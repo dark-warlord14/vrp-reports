@@ -1,0 +1,60 @@
+{
+  "id": "40083353",
+  "url": "https://issues.chromium.org/issues/40083353",
+  "title": "segfault in bundled pdf viewer",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2010-09-24T08:10:23+00:00",
+  "modified_date": "2016-10-02T20:19:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53021378,
+      "filename": "segv-ecx.pdf",
+      "mime_type": "application/pdf; charset=binary",
+      "size_bytes": 89238,
+      "url": "https://issues.chromium.org/action/issues/40083353/attachments/53021378?download=true",
+      "local_path": "attachments/segv-ecx.pdf"
+    },
+    {
+      "id": 53021408,
+      "filename": "pdf-test.sh",
+      "mime_type": "text/x-shellscript; charset=us-ascii",
+      "size_bytes": 612,
+      "url": "https://issues.chromium.org/action/issues/40083353/attachments/53021408?download=true",
+      "local_path": "attachments/pdf-test.sh"
+    },
+    {
+      "id": 53021409,
+      "filename": "pdfs.tar.gz",
+      "mime_type": "application/x-gzip; charset=binary",
+      "size_bytes": 118416,
+      "url": "https://issues.chromium.org/action/issues/40083353/attachments/53021409?download=true",
+      "local_path": "attachments/pdfs.tar.gz"
+    },
+    {
+      "id": 53021421,
+      "filename": "malloc.pdf",
+      "mime_type": "application/pdf; charset=binary",
+      "size_bytes": 54554,
+      "url": "https://issues.chromium.org/action/issues/40083353/attachments/53021421?download=true",
+      "local_path": "attachments/malloc.pdf"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "Viewing the attached PDF file causes a renderer process segmentation fault in Google Chrome 7.0.517.13 (Official Build 60244) dev on Ubuntu 10.04 (x86 and x86_64).\r\n\r\nThe error occures when reading ecx having value 0 on both x86 and x86_64, so at least locally just a null deref. In previous version"
+}

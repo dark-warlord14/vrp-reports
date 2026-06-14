@@ -1,0 +1,36 @@
+{
+  "id": "40082661",
+  "url": "https://issues.chromium.org/issues/40082661",
+  "title": "use after free in console.profile calls.",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals, Platform>DevTools",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ku...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2010-08-12T15:29:58+00:00",
+  "modified_date": "2016-10-02T20:19:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53281907,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40082661/attachments/53281907?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 73,
+  "description_snippet": "chromium 6.0.490.0 (55524)"
+}

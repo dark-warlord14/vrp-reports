@@ -1,0 +1,62 @@
+{
+  "id": "40057698",
+  "url": "https://issues.chromium.org/issues/40057698",
+  "title": "Security: Browser crash document.createEvent(\"MouseEvents\").initMouseEvent in background tab",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "de...@chromium.org",
+  "created_date": "2012-05-04T20:49:01+00:00",
+  "modified_date": "2018-04-25T23:21:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53003903,
+      "filename": "link.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 52,
+      "url": "https://issues.chromium.org/action/issues/40057698/attachments/53003903?download=true",
+      "local_path": "attachments/link.html"
+    },
+    {
+      "id": 53003904,
+      "filename": "crash-causing.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1564,
+      "url": "https://issues.chromium.org/action/issues/40057698/attachments/53003904?download=true",
+      "local_path": "attachments/crash-causing.html"
+    },
+    {
+      "id": 53003905,
+      "filename": "link-iframe.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 69,
+      "url": "https://issues.chromium.org/action/issues/40057698/attachments/53003905?download=true",
+      "local_path": "attachments/link-iframe.html"
+    },
+    {
+      "id": 53003922,
+      "filename": "crash-causing.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1576,
+      "url": "https://issues.chromium.org/action/issues/40057698/attachments/53003922?download=true",
+      "local_path": "attachments/crash-causing_53003922.html"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhat steps will reproduce the problem?  \n1. Create a page which causes the crash. I've attached one with further explenation in the code. (cause-crash.html)  \n1. Open a page with a HTML link to the crash causing page. (Attached link.html and link-iframe.html)  \n2. Open t"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "40091647",
+  "url": "https://issues.chromium.org/issues/40091647",
+  "title": "Security: Chrome for iOS URL spoofing using location.replace and history.back",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "vl...@gmail.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2018-06-14T01:27:43+00:00",
+  "modified_date": "2018-12-25T15:23:09+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53272237,
+      "filename": "video (3).mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 851693,
+      "url": "https://issues.chromium.org/action/issues/40091647/attachments/53272237?download=true",
+      "local_path": "attachments/video (3).mp4"
+    },
+    {
+      "id": 53272238,
+      "filename": "spoof.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1270,
+      "url": "https://issues.chromium.org/action/issues/40091647/attachments/53272238?download=true",
+      "local_path": "attachments/spoof.zip"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAttacker could spoof URL using location.replace() behavior.  \nSeems related to https://bugs.chromium.org/p/chromium/issues/detail?id=805900  \n  \n1. Page from victim.com calls location.replace(evil.com)  \n2. Page on evil.com calls history.back()  \n3. At this point, we've"
+}

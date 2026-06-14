@@ -1,0 +1,50 @@
+{
+  "id": "40051405",
+  "url": "https://issues.chromium.org/issues/40051405",
+  "title": "pdfium (XFA): oob read / use-of-uninitialized-value in CXFA_Node::SetSelectedItems",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pd...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2020-02-01T03:45:33+00:00",
+  "modified_date": "2020-05-13T18:54:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53331610,
+      "filename": "chromium-1047914.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 991,
+      "url": "https://issues.chromium.org/action/issues/40051405/attachments/53331610?download=true",
+      "local_path": "attachments/chromium-1047914.pdf"
+    },
+    {
+      "id": 53331611,
+      "filename": "chromium-1047914.evt",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 71,
+      "url": "https://issues.chromium.org/action/issues/40051405/attachments/53331611?download=true",
+      "local_path": "attachments/chromium-1047914.evt"
+    }
+  ],
+  "update_count": 24,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.130 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nERROR: AddressSanitizer: heap-buffer-overflow on address 0x602000028978 at pc 0x5566de033c46 bp 0x7ffc2b6b50a0 sp 0x7ffc2b6b5098\r\nREAD of size 8 at"
+}

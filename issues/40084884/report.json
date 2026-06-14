@@ -1,0 +1,60 @@
+{
+  "id": "40084884",
+  "url": "https://issues.chromium.org/issues/40084884",
+  "title": "<Unloaded_S.DLL>+0x42cd17f crash",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ku...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2010-11-12T07:17:12+00:00",
+  "modified_date": "2016-10-02T20:19:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53247809,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40084884/attachments/53247809?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53247871,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40084884/attachments/53247871?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53248040,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40084884/attachments/53248040?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53248073,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40084884/attachments/53248073?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 92,
+  "description_snippet": "Test chrome 9.0.576.0 dev windows xp sp3\r\n\r\ntest.php\r\n====\r\n<?\r\nsleep(3);\r\n?>\r\n\r\n1,Open a new tab\r\n2,Press CTRL+SHIFT+J open devtools\r\n3,Enter x = open(\"http://127.0.0.1/test.php\");x = open(\"view-source:http://127.0.0.1/test.php\"); press enter\r\n4,At the same time repeat step #3 see crash\r\n\r\nI can't"
+}

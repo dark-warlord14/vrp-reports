@@ -1,0 +1,47 @@
+{
+  "id": "40087233",
+  "url": "https://issues.chromium.org/issues/40087233",
+  "title": "Heap-use-after-free in printing::PrintWebViewHelper::RenderPageContent",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Printing",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2017-04-02T00:51:43+00:00",
+  "modified_date": "2017-08-04T13:03:32+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52926907,
+      "filename": "testcase.html",
+      "mime_type": "text/plain",
+      "size_bytes": 210,
+      "url": "https://issues.chromium.org/action/issues/40087233/attachments/52926907?download=true",
+      "local_path": "attachments/testcase.html"
+    },
+    {
+      "id": 52926908,
+      "filename": "heap-use-after-free on address 0x0113ecd4.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 19488,
+      "url": "https://issues.chromium.org/action/issues/40087233/attachments/52926908?download=true",
+      "local_path": "attachments/heap-use-after-free on address 0x0113ecd4.txt"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "Chrome Version: 59.0.3059.0 canary + stable\r\nOperating System: Windows 7\r\n\r\nStack traces WinDBG:\r\n \r\n00000000`0026cce0 000007fe`ee94702f chrome_child!printing::PrintWebViewHelper::PrintPageInternal+0x20a [c:\\b\\build\\slave\\win64-pgo\\build\\src\\components\\printing\\renderer\\print_web_view_helper.cc @ 19"
+}

@@ -1,0 +1,47 @@
+{
+  "id": "40088042",
+  "url": "https://issues.chromium.org/issues/40088042",
+  "title": "Use after free of frame loader in DocumentLoader::commitLoad",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2011-1291",
+    "CVE-2011-1292"
+  ],
+  "reporter": "sl...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2011-02-16T21:43:44+00:00",
+  "modified_date": "2018-04-26T00:14:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53303507,
+      "filename": "crash1.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 165,
+      "url": "https://issues.chromium.org/action/issues/40088042/attachments/53303507?download=true",
+      "local_path": "attachments/crash1.html"
+    },
+    {
+      "id": 53303508,
+      "filename": "bt1.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 10318,
+      "url": "https://issues.chromium.org/action/issues/40088042/attachments/53303508?download=true",
+      "local_path": "attachments/bt1.txt"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "Looks like null ptr deref but I'm not sure and it try to read not null address - for safety I used security template.\r\nCrashes on linux 32-bit stable [9.0.597.98 (74359)] and dev [10.0.648.45 (74092)].\r\n\r\nRepro file:\r\n----- crash1.html -----\r\n<script>\r\n    function main(){\r\n        window.document.b"
+}

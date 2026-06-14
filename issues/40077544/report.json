@@ -1,0 +1,52 @@
+{
+  "id": "40077544",
+  "url": "https://issues.chromium.org/issues/40077544",
+  "title": "Heap-use-after-free in WebCore::ImageInputType::attach",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2013-05-12T18:00:46+00:00",
+  "modified_date": "2018-04-25T23:13:24+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53411407,
+      "filename": "image-stable.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 14275,
+      "url": "https://issues.chromium.org/action/issues/40077544/attachments/53411407?download=true",
+      "local_path": "attachments/image-stable.txt"
+    },
+    {
+      "id": 53411408,
+      "filename": "image.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 95,
+      "url": "https://issues.chromium.org/action/issues/40077544/attachments/53411408?download=true",
+      "local_path": "attachments/image.html"
+    },
+    {
+      "id": 53411409,
+      "filename": "image.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 11545,
+      "url": "https://issues.chromium.org/action/issues/40077544/attachments/53411409?download=true",
+      "local_path": "attachments/image.txt"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nuse-after-free with input type image  \n  \n**VERSION**   \nChrome Version:stable +dev  \nOperating System: 64bit ubuntu  \n  \n**REPRODUCTION CASE**   \n<html>  \n  <body>  \n    <input id=\"x\" type=\"image\" onerror=\"x.type=''\" src=\"\" />  \n  </body>  \n</html>  \n  \n  \n  \n**FO"
+}

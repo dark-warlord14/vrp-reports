@@ -1,0 +1,44 @@
+{
+  "id": "40079019",
+  "url": "https://issues.chromium.org/issues/40079019",
+  "title": "Security: Integer overflow allocating shared memory in SoftwareFrameManager::SwapToNewFrame()",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>Internals, Internals>Skia, Internals>Skia>Compositing",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "aa...@gmail.com",
+  "assignee": "cc...@chromium.org",
+  "created_date": "2014-03-01T20:12:08+00:00",
+  "modified_date": "2018-04-25T23:08:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52994344,
+      "filename": "diff.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1411,
+      "url": "https://issues.chromium.org/action/issues/40079019/attachments/52994344?download=true",
+      "local_path": "attachments/diff.patch"
+    },
+    {
+      "id": 52994345,
+      "filename": "crash_symbolized.log",
+      "mime_type": "text/plain",
+      "size_bytes": 10321,
+      "url": "https://issues.chromium.org/action/issues/40079019/attachments/52994345?download=true",
+      "local_path": "attachments/crash_symbolized.log"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThere may be an integer overflow allocating shared memory in SoftwareFrameManager::SwapToNewFrame():  \n  \n    const size_t size_in_bytes = 4 \\* frame_data->size.GetArea();  \n  \n    ...  \n  \n    if (!shared_memory->Map(size_in_bytes)) {  \n      DLOG(ERROR) << \"Unable to m"
+}

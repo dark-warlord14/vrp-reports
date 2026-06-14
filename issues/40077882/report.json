@@ -1,0 +1,55 @@
+{
+  "id": "40077882",
+  "url": "https://issues.chromium.org/issues/40077882",
+  "title": "Security: use-after-free Speech with changing of the page",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Speech, UI>Browser>Navigation",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2013-08-05T21:13:41+00:00",
+  "modified_date": "2018-07-29T14:14:39+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53040053,
+      "filename": "repro.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 596,
+      "url": "https://issues.chromium.org/action/issues/40077882/attachments/53040053?download=true",
+      "local_path": "attachments/repro.html"
+    },
+    {
+      "id": 53040054,
+      "filename": "1.png",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 21201,
+      "url": "https://issues.chromium.org/action/issues/40077882/attachments/53040054?download=true",
+      "local_path": "attachments/1.png"
+    },
+    {
+      "id": 53040104,
+      "filename": "Chrome-last.dmp",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 690127,
+      "url": "https://issues.chromium.org/action/issues/40077882/attachments/53040104?download=true",
+      "local_path": "attachments/Chrome-last.dmp"
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": "This is a new security bug and I guess it's looks like use-after-free, actually it's not easy to repro anyway \r\nI've made a video  http://youtu.be/rSWYLLJZnfU to see how I repro it.\r\n\r\nBefore trying to repro the crash you do setting on Microsoft settings => No audio devices are installed, like on th"
+}

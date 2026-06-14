@@ -1,0 +1,65 @@
+{
+  "id": "40089271",
+  "url": "https://issues.chromium.org/issues/40089271",
+  "title": "Security: Use-After-Free in PDFium",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2017-10-10T09:28:38+00:00",
+  "modified_date": "2018-05-15T14:19:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53230910,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40089271/attachments/53230910?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53230911,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40089271/attachments/53230911?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53230912,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40089271/attachments/53230912?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53230913,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40089271/attachments/53230913?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "VULNERABILITY DETAILS\r\n\r\nUAF can be triggered in PDFium with XFA enabled. EIP can be controlled in this case.\r\n\r\nUsing the following |template| code can cause pdfium_test.exe to crash.\r\n```\r\n<template xmlns=\"http://www.xfa.org/schema/xfa-template/2.6/\">\r\n    <subform>\r\n        <field name=\"field1\">"
+}

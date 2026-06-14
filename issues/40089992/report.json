@@ -1,0 +1,41 @@
+{
+  "id": "40089992",
+  "url": "https://issues.chromium.org/issues/40089992",
+  "title": "Security: chrome-devtools://devtools/remote/ can be modified by extensions",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Platform>DevTools, Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "ro...@robwu.nl",
+  "created_date": "2017-12-23T19:13:14+00:00",
+  "modified_date": "2018-10-05T01:13:09+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2500.0,
+  "reward_amount_meta": 2500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52900783,
+      "filename": "devtools-remote-intercept.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1304,
+      "url": "https://issues.chromium.org/action/issues/40089992/attachments/52900783?download=true",
+      "local_path": "attachments/devtools-remote-intercept.zip"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "Chrome version: 63.0.3239.108  \n  \n**VULNERABILITY DETAILS**   \nchrome-devtools://devtools/remote/ loads a remote site (https://chrome-devtools-frontend.appspot.com/) and grants privileged APIs to this page.  \nChrome extensions can intercept and modify these requests and consequently read arbitrary"
+}

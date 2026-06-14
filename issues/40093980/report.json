@@ -1,0 +1,60 @@
+{
+  "id": "40093980",
+  "url": "https://issues.chromium.org/issues/40093980",
+  "title": "Stale node in StyleSheetCandidateListHashSet",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ax...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2011-08-15T22:07:19+00:00",
+  "modified_date": "2018-04-26T00:00:37+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53245236,
+      "filename": "test-case-2.tar.gz",
+      "mime_type": "application/x-gzip; charset=binary",
+      "size_bytes": 1073,
+      "url": "https://issues.chromium.org/action/issues/40093980/attachments/53245236?download=true",
+      "local_path": "attachments/test-case-2.tar.gz"
+    },
+    {
+      "id": 53245237,
+      "filename": "dbg-1.tar.gz",
+      "mime_type": "application/x-gzip; charset=binary",
+      "size_bytes": 13714,
+      "url": "https://issues.chromium.org/action/issues/40093980/attachments/53245237?download=true",
+      "local_path": "attachments/dbg-1.tar.gz"
+    },
+    {
+      "id": 53245238,
+      "filename": "dbg-2.tar.gz",
+      "mime_type": "application/x-gzip; charset=binary",
+      "size_bytes": 15012,
+      "url": "https://issues.chromium.org/action/issues/40093980/attachments/53245238?download=true",
+      "local_path": "attachments/dbg-2.tar.gz"
+    },
+    {
+      "id": 53245249,
+      "filename": "test-case-1.tar.gz",
+      "mime_type": "application/x-gzip; charset=binary",
+      "size_bytes": 3721,
+      "url": "https://issues.chromium.org/action/issues/40093980/attachments/53245249?download=true",
+      "local_path": "attachments/test-case-1.tar.gz"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nTab is crashing when modifying SVG file.  \n  \nI had two different crash places with this test case, probably they are due to one one bug. First crash place is shown in attachment dbg-1.tar.gz. and is related to 15.0.849.0 dev-m (unfortunately, I don't have minimized test"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "40079674",
+  "url": "https://issues.chromium.org/issues/40079674",
+  "title": "Security: Cache-based SOP-Bypass for Images",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Canvas, Blink>SVG",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "pd...@chromium.org",
+  "created_date": "2014-06-04T21:41:27+00:00",
+  "modified_date": "2018-04-25T23:06:53+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53364221,
+      "filename": "Screen Shot 2014-06-05 at 01.24.12.png",
+      "mime_type": "image/png",
+      "size_bytes": 1004496,
+      "url": "https://issues.chromium.org/action/issues/40079674/attachments/53364221?download=true",
+      "local_path": "attachments/Screen Shot 2014-06-05 at 01.24.12.png"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "Hello,\r\n\r\nI've got a cache-based SOP-bypass for images in the current up-to-date versions of Chrome:\r\n\r\nIn essence, I can bypass the SOP restrictions to load any protected image the victim has access to (like from private gallery albums etc.) and exfiltrate it to my attacker origin, as long as the i"
+}

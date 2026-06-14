@@ -1,0 +1,44 @@
+{
+  "id": "40060233",
+  "url": "https://issues.chromium.org/issues/40060233",
+  "title": "Security: Use after free with mouse lock and window.open",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "sc...@chromium.org",
+  "created_date": "2012-06-24T02:08:16+00:00",
+  "modified_date": "2016-10-02T20:23:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53196305,
+      "filename": "mlock.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 292,
+      "url": "https://issues.chromium.org/action/issues/40060233/attachments/53196305?download=true",
+      "local_path": "attachments/mlock.html"
+    },
+    {
+      "id": 53196397,
+      "filename": "asan.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 15354,
+      "url": "https://issues.chromium.org/action/issues/40060233/attachments/53196397?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nChrome tab crashes due to use after free when window.open is called after mouse is locked.  \n  \n**VERSION**   \nChrome Version: [22.0.1185.0 (143805)] + [dev]  \nOperating System: [Ubuntu 12.04 LTS 64 bit]  \n  \n**REPRODUCTION CASE**   \n1. Download mlock.html.  \n2. Open chr"
+}

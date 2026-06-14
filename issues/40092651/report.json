@@ -1,0 +1,116 @@
+{
+  "id": "40092651",
+  "url": "https://issues.chromium.org/issues/40092651",
+  "title": "DocumentLoader use after free in KURL::strippedForUseAsReferrer",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "ab...@chromium.org",
+  "created_date": "2011-07-14T17:45:39+00:00",
+  "modified_date": "2018-04-26T00:03:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53246828,
+      "filename": "kurl.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 316915,
+      "url": "https://issues.chromium.org/action/issues/40092651/attachments/53246828?download=true",
+      "local_path": "attachments/kurl.zip"
+    },
+    {
+      "id": 53246856,
+      "filename": "118.html",
+      "mime_type": "text/html; charset=iso-8859-1",
+      "size_bytes": 13809,
+      "url": "https://issues.chromium.org/action/issues/40092651/attachments/53246856?download=true",
+      "local_path": "attachments/118.html"
+    },
+    {
+      "id": 53246860,
+      "filename": "vg-google-chrome-unstable-89330.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 37749,
+      "url": "https://issues.chromium.org/action/issues/40092651/attachments/53246860?download=true",
+      "local_path": "attachments/vg-google-chrome-unstable-89330.txt"
+    },
+    {
+      "id": 53246891,
+      "filename": "js-test-post.js",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 233,
+      "url": "https://issues.chromium.org/action/issues/40092651/attachments/53246891?download=true",
+      "local_path": "attachments/js-test-post.js"
+    },
+    {
+      "id": 53246892,
+      "filename": "yesh.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 48238,
+      "url": "https://issues.chromium.org/action/issues/40092651/attachments/53246892?download=true",
+      "local_path": "attachments/yesh.html"
+    },
+    {
+      "id": 53246893,
+      "filename": "asan.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 6463,
+      "url": "https://issues.chromium.org/action/issues/40092651/attachments/53246893?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53246919,
+      "filename": "back.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 726,
+      "url": "https://issues.chromium.org/action/issues/40092651/attachments/53246919?download=true",
+      "local_path": "attachments/back.html"
+    },
+    {
+      "id": 53246928,
+      "filename": "asan-symbols.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 19386,
+      "url": "https://issues.chromium.org/action/issues/40092651/attachments/53246928?download=true",
+      "local_path": "attachments/asan-symbols.txt"
+    },
+    {
+      "id": 53246935,
+      "filename": "documentloader.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 726,
+      "url": "https://issues.chromium.org/action/issues/40092651/attachments/53246935?download=true",
+      "local_path": "attachments/documentloader.html"
+    },
+    {
+      "id": 53247012,
+      "filename": "456.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 83814,
+      "url": "https://issues.chromium.org/action/issues/40092651/attachments/53247012?download=true",
+      "local_path": "attachments/456.html"
+    },
+    {
+      "id": 53247021,
+      "filename": "asan456.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 10785,
+      "url": "https://issues.chromium.org/action/issues/40092651/attachments/53247021?download=true",
+      "local_path": "attachments/asan456.txt"
+    }
+  ],
+  "update_count": 74,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nas per discussion with inferno.   \n  \none day I was able to reproduce the 456 inside 3176 bug in a browser with valgrind, but otherwise these are reproducing in DumpRenderTree compiled with asan.   \n  \nstack is either:  \n  \nReply: ==7030== ERROR: AddressSanitizer cras"
+}

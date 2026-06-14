@@ -1,0 +1,41 @@
+{
+  "id": "40079619",
+  "url": "https://issues.chromium.org/issues/40079619",
+  "title": "Linux kernel futex() memory corruption vulnerability and exploit",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2014-3153"
+  ],
+  "reporter": "sc...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2014-05-26T08:00:06+00:00",
+  "modified_date": "2018-09-14T20:04:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53349406,
+      "filename": "fubar.c",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 15352,
+      "url": "https://issues.chromium.org/action/issues/40079619/attachments/53349406?download=true",
+      "local_path": "attachments/fubar.c"
+    }
+  ],
+  "update_count": 89,
+  "description_snippet": "[Reporting on behalf of Pinkie Pie. After chatting to him, he's agreed to let us have first swing at this (the IBB may consider him for a reward in addition later).\r\nAssigning to Kees speculatively.\r\nI've run this on my Ubuntu 12.04 and it oopses at an address near one of the constants in the exploi"
+}

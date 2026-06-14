@@ -1,0 +1,108 @@
+{
+  "id": "40076990",
+  "url": "https://issues.chromium.org/issues/40076990",
+  "title": "postTaskForModeToWorkerContext/dispatchTaskToWorkerThread invalid pointer crash with Workers/FileSystem API",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "th...@gmail.com",
+  "assignee": "me...@chromium.org",
+  "created_date": "2013-02-16T22:33:51+00:00",
+  "modified_date": "2018-04-25T23:14:51+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53099236,
+      "filename": "filesystem_postTaskForModeToWorkerContext_crash_Win7_Stable_trace.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 79894,
+      "url": "https://issues.chromium.org/action/issues/40076990/attachments/53099236?download=true",
+      "local_path": "attachments/filesystem_postTaskForModeToWorkerContext_crash_Win7_Stable_trace.txt"
+    },
+    {
+      "id": 53099237,
+      "filename": "filesystem_postTaskForModeToWorkerContext_crash_WinXP_Stable_trace.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 70950,
+      "url": "https://issues.chromium.org/action/issues/40076990/attachments/53099237?download=true",
+      "local_path": "attachments/filesystem_postTaskForModeToWorkerContext_crash_WinXP_Stable_trace.txt"
+    },
+    {
+      "id": 53099238,
+      "filename": "filesystem_dispatchTaskToWorkerThread_crash_Linux_ToT_trace.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 9957,
+      "url": "https://issues.chromium.org/action/issues/40076990/attachments/53099238?download=true",
+      "local_path": "attachments/filesystem_dispatchTaskToWorkerThread_crash_Linux_ToT_trace.txt"
+    },
+    {
+      "id": 53099239,
+      "filename": "filesystem_dispatchTaskToWorkerThread_crash_WinXP_ToT_trace.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 87229,
+      "url": "https://issues.chromium.org/action/issues/40076990/attachments/53099239?download=true",
+      "local_path": "attachments/filesystem_dispatchTaskToWorkerThread_crash_WinXP_ToT_trace.txt"
+    },
+    {
+      "id": 53099240,
+      "filename": "filesystem_crash_repro.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 1687,
+      "url": "https://issues.chromium.org/action/issues/40076990/attachments/53099240?download=true",
+      "local_path": "attachments/filesystem_crash_repro.html"
+    },
+    {
+      "id": 53099241,
+      "filename": "filesystem_dispatchTaskToWorkerThread_crash_Win7_ToT_trace.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 84532,
+      "url": "https://issues.chromium.org/action/issues/40076990/attachments/53099241?download=true",
+      "local_path": "attachments/filesystem_dispatchTaskToWorkerThread_crash_Win7_ToT_trace.txt"
+    },
+    {
+      "id": 53099288,
+      "filename": "176692_noworkers_trace1.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 65324,
+      "url": "https://issues.chromium.org/action/issues/40076990/attachments/53099288?download=true",
+      "local_path": "attachments/176692_noworkers_trace1.txt"
+    },
+    {
+      "id": 53099289,
+      "filename": "176692_vp8_six_tap_mmx_trace.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 87275,
+      "url": "https://issues.chromium.org/action/issues/40076990/attachments/53099289?download=true",
+      "local_path": "attachments/176692_vp8_six_tap_mmx_trace.txt"
+    },
+    {
+      "id": 53099290,
+      "filename": "176692_noworkers_trace2.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 69749,
+      "url": "https://issues.chromium.org/action/issues/40076990/attachments/53099290?download=true",
+      "local_path": "attachments/176692_noworkers_trace2.txt"
+    },
+    {
+      "id": 53099312,
+      "filename": "176692_crash_addresses.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 5757,
+      "url": "https://issues.chromium.org/action/issues/40076990/attachments/53099312?download=true",
+      "local_path": "attachments/176692_crash_addresses.txt"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA reproducible (freed pointer) postTaskForModeToWorkerContext/dispatchTaskToWorkerThread crash occurs when a (FileSystem) file is continuously read/written (or at least opened) from a worker while the script is reloaded from an onmessage event triggered by Postmessage fr"
+}

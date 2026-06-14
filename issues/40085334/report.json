@@ -1,0 +1,68 @@
+{
+  "id": "40085334",
+  "url": "https://issues.chromium.org/issues/40085334",
+  "title": "Security: Read Access Violation on Control Flow at content::devtools::service_worker::ServiceWorkerHandler::UpdateHosts",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>ServiceWorker, Platform>DevTools, UI>Browser>Navigation",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gr...@hotmail.com",
+  "assignee": "dg...@chromium.org",
+  "created_date": "2016-09-08T00:39:51+00:00",
+  "modified_date": "2018-04-25T22:49:47+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52887669,
+      "filename": "PoC.html",
+      "mime_type": "text/plain",
+      "size_bytes": 212,
+      "url": "https://issues.chromium.org/action/issues/40085334/attachments/52887669?download=true",
+      "local_path": "attachments/PoC.html"
+    },
+    {
+      "id": 52887670,
+      "filename": "BrowserCrash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 11783,
+      "url": "https://issues.chromium.org/action/issues/40085334/attachments/52887670?download=true",
+      "local_path": "attachments/BrowserCrash.log"
+    },
+    {
+      "id": 52887671,
+      "filename": "TabCrash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 11747,
+      "url": "https://issues.chromium.org/action/issues/40085334/attachments/52887671?download=true",
+      "local_path": "attachments/TabCrash.log"
+    },
+    {
+      "id": 52887729,
+      "filename": "PoC2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 375,
+      "url": "https://issues.chromium.org/action/issues/40085334/attachments/52887729?download=true",
+      "local_path": "attachments/PoC2.html"
+    },
+    {
+      "id": 52887736,
+      "filename": "PoC3.html",
+      "mime_type": "text/plain",
+      "size_bytes": 250,
+      "url": "https://issues.chromium.org/action/issues/40085334/attachments/52887736?download=true",
+      "local_path": "attachments/PoC3.html"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAfter a tab crash occurs (which is probably a non exploitable Read Access Violation near NULL) if we try to navigate to another website then either refresh (or sometimes going to a third website) we get a potentially exploitable browser crash.  \n  \n**VERSION**   \nChrome"
+}

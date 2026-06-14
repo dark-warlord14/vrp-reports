@@ -1,0 +1,44 @@
+{
+  "id": "40058999",
+  "url": "https://issues.chromium.org/issues/40058999",
+  "title": "Heap-use-after-free in WebCore::SVGDocumentExtensions::removeAllElementReferencesForTarget",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>SVG",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "pd...@chromium.org",
+  "created_date": "2012-05-30T19:39:49+00:00",
+  "modified_date": "2018-04-25T23:20:16+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53079609,
+      "filename": "0392.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 12721,
+      "url": "https://issues.chromium.org/action/issues/40058999/attachments/53079609?download=true",
+      "local_path": "attachments/0392.txt"
+    },
+    {
+      "id": 53079610,
+      "filename": "0392.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1412,
+      "url": "https://issues.chromium.org/action/issues/40058999/attachments/53079610?download=true",
+      "local_path": "attachments/0392.html"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nuse-after-free in WebCore::SVGDocumentExtensions::removeAllElementReferencesForTarget  \n  \n**VERSION**   \nChrome Version: dev  \n  \nChromium\t21.0.1157.0 (Developer Build 139531)  \nOS\tLinux  \nWebKit\t537.1 (@118843)  \n  \nOperating System: 64bit precise  \n  \n**REPRODUCTIO"
+}

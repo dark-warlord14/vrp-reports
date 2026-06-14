@@ -1,0 +1,33 @@
+{
+  "id": "40090022",
+  "url": "https://issues.chromium.org/issues/40090022",
+  "title": "Security: privileged XSS in chrome-devtools://devtools/remote with old frontend (insufficient validation of remoteFrontendUrl)",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "ro...@robwu.nl",
+  "created_date": "2017-12-31T02:05:09+00:00",
+  "modified_date": "2018-10-05T01:13:09+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2500.0,
+  "reward_amount_meta": 2500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 33,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nchrome-devtools://devtools/remote/ loads remote resources via chrome-devtools-frontend.appspot.com.  \nThis site hosts old versions of the DevTools frontend, including several versions with a XSS vulnerability, e.g. https://chrome-devtools-frontend.appspot.com/serve_rev/@"
+}

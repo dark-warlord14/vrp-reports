@@ -1,0 +1,36 @@
+{
+  "id": "40092269",
+  "url": "https://issues.chromium.org/issues/40092269",
+  "title": "Use after free in third_party/WebKit/LayoutTests/fast/dom/HTMLLinkElement/link-and-subresource-test.html",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "ga...@chromium.org",
+  "created_date": "2011-06-28T08:56:30+00:00",
+  "modified_date": "2018-04-26T00:04:52+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52892894,
+      "filename": "vg.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 4105,
+      "url": "https://issues.chromium.org/action/issues/40092269/attachments/52892894?download=true",
+      "local_path": "attachments/vg.txt"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "**This template is ONLY for reporting security bugs. Please use a different**   \n**template for other types of bug reports.**   \n  \n**Please see the following link for instructions on filing security bugs:**   \n**http://www.chromium.org/Home/chromium-security/reporting-security-bugs**   \n  \n  \n**VUL"
+}

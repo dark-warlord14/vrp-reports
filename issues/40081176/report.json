@@ -1,0 +1,60 @@
+{
+  "id": "40081176",
+  "url": "https://issues.chromium.org/issues/40081176",
+  "title": "Heap-use-after-free in blink::V8PerContextData::constructorForTypeSlowCase",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Bindings",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@gmail.com",
+  "assignee": "dc...@chromium.org",
+  "created_date": "2015-01-13T08:16:12+00:00",
+  "modified_date": "2016-10-02T20:04:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53008181,
+      "filename": "crash.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 3514,
+      "url": "https://issues.chromium.org/action/issues/40081176/attachments/53008181?download=true",
+      "local_path": "attachments/crash.zip"
+    },
+    {
+      "id": 53008273,
+      "filename": "a.html",
+      "mime_type": "text/html",
+      "size_bytes": 401,
+      "url": "https://issues.chromium.org/action/issues/40081176/attachments/53008273?download=true",
+      "local_path": "attachments/a.html"
+    },
+    {
+      "id": 53008274,
+      "filename": "a.svg",
+      "mime_type": "image/svg+xml",
+      "size_bytes": 12,
+      "url": "https://issues.chromium.org/action/issues/40081176/attachments/53008274?download=true",
+      "local_path": "attachments/a.svg"
+    },
+    {
+      "id": 53008312,
+      "filename": "crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 360,
+      "url": "https://issues.chromium.org/action/issues/40081176/attachments/53008312?download=true",
+      "local_path": "attachments/crash.html"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe attached testcase crashes the latest asan build and the stable release build of Chrome. The freed buffer is not protected by PartitionAlloc and Javascript code execution is possible between the free and the use.  \n  \nASAN output:  \n  \n================================"
+}

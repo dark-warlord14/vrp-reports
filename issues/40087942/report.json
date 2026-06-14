@@ -1,0 +1,42 @@
+{
+  "id": "40087942",
+  "url": "https://issues.chromium.org/issues/40087942",
+  "title": "Security: Unknown memory corruption in HTML rendering.",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "Blink>Accessibility",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "be...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2017-05-31T15:33:52+00:00",
+  "modified_date": "2021-11-20T00:12:03+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52904942,
+      "filename": "AVW@Arbitrary 36f.32e @ chrome.exe!chrome_child.dll!blink։։HTMLScriptElement։։InitiatorName.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1558835,
+      "url": "https://issues.chromium.org/action/issues/40087942/attachments/52904942?download=true",
+      "local_path": "attachments/AVW@Arbitrary 36f.32e @ chrome.exe!chrome_child.dll!blink։։HTMLScriptElement։։InitiatorName.html"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**This template is ONLY for reporting security bugs. If you are reporting a**   \n**Download Protection Bypass bug, please use the \"Security - Download**   \n**Protection\" template. For all other reports, please use a different**   \n**template.**   \n  \n**Please READ THIS FAQ before filing a bug: https"
+}

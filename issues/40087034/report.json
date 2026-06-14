@@ -1,0 +1,100 @@
+{
+  "id": "40087034",
+  "url": "https://issues.chromium.org/issues/40087034",
+  "title": "WebGL crashes depending on uniform names",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>WebGL, Internals, Internals>GPU",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "yu...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2011-01-19T06:55:35+00:00",
+  "modified_date": "2017-02-07T04:21:47+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52998907,
+      "filename": "crash_test.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1551,
+      "url": "https://issues.chromium.org/action/issues/40087034/attachments/52998907?download=true",
+      "local_path": "attachments/crash_test.html"
+    },
+    {
+      "id": 52998955,
+      "filename": "screen.png",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 181510,
+      "url": "https://issues.chromium.org/action/issues/40087034/attachments/52998955?download=true",
+      "local_path": "attachments/screen.png"
+    },
+    {
+      "id": 52998956,
+      "filename": "About GPU.htm",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 6435,
+      "url": "https://issues.chromium.org/action/issues/40087034/attachments/52998956?download=true",
+      "local_path": "attachments/About GPU.htm"
+    },
+    {
+      "id": 52998957,
+      "filename": "crash_test2.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1613,
+      "url": "https://issues.chromium.org/action/issues/40087034/attachments/52998957?download=true",
+      "local_path": "attachments/crash_test2.html"
+    },
+    {
+      "id": 52998962,
+      "filename": "About GPU.htm",
+      "mime_type": "text/html; charset=utf-8",
+      "size_bytes": 6365,
+      "url": "https://issues.chromium.org/action/issues/40087034/attachments/52998962?download=true",
+      "local_path": "attachments/About GPU_52998962.htm"
+    },
+    {
+      "id": 52998963,
+      "filename": "screen.PNG",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 80208,
+      "url": "https://issues.chromium.org/action/issues/40087034/attachments/52998963?download=true",
+      "local_path": "attachments/screen.PNG"
+    },
+    {
+      "id": 52998981,
+      "filename": "test3-not-working-vertex.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1828,
+      "url": "https://issues.chromium.org/action/issues/40087034/attachments/52998981?download=true",
+      "local_path": "attachments/test3-not-working-vertex.html"
+    },
+    {
+      "id": 52998982,
+      "filename": "test3-not-working-fragment.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1831,
+      "url": "https://issues.chromium.org/action/issues/40087034/attachments/52998982?download=true",
+      "local_path": "attachments/test3-not-working-fragment.html"
+    },
+    {
+      "id": 52998983,
+      "filename": "test3-working.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1672,
+      "url": "https://issues.chromium.org/action/issues/40087034/attachments/52998983?download=true",
+      "local_path": "attachments/test3-working.html"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "Chrome Version       : 8 stable, 9 beta  \n**URLs (if applicable) :**   \nOther browsers tested: Firefox 4 beta  \n**Add OK or FAIL after other browsers where you have tested this issue:**   \n**Safari 5:**   \n**Firefox 3.x:**   \n**IE 7/8:**   \n  \n**What steps will reproduce the problem?**   \n1. Open th"
+}

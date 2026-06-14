@@ -1,0 +1,36 @@
+{
+  "id": "40092541",
+  "url": "https://issues.chromium.org/issues/40092541",
+  "title": "Use after free with fuzzed ogv file",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Internals>Media",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2011-07-10T09:18:10+00:00",
+  "modified_date": "2016-10-02T20:22:35+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53047928,
+      "filename": "test.ogv",
+      "mime_type": "application/ogg; charset=binary",
+      "size_bytes": 3058031,
+      "url": "https://issues.chromium.org/action/issues/40092541/attachments/53047928?download=true",
+      "local_path": "attachments/test.ogv"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nChrome tab displays sad tab with a fuzzed ogv file.  \n  \nChrome debug build crashes with this assertion failiure.  \nthird_party/WebKit/Source/JavaScriptCore/wtf/RefCounted.h:derefBase()  \nASSERT(!m_deletionHasBegun)  \n  \nGet below mentioned segmentation faults and stack"
+}

@@ -1,0 +1,148 @@
+{
+  "id": "40051697",
+  "url": "https://issues.chromium.org/issues/40051697",
+  "title": "Use after free in V8HTMLElementWrapperFactory.cpp",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>JavaScript",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ad...@chromium.org",
+  "created_date": "2011-11-30T13:02:14+00:00",
+  "modified_date": "2018-04-25T23:53:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53327031,
+      "filename": "geo.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 134,
+      "url": "https://issues.chromium.org/action/issues/40051697/attachments/53327031?download=true",
+      "local_path": "attachments/geo.html"
+    },
+    {
+      "id": 53327032,
+      "filename": "all.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 3368,
+      "url": "https://issues.chromium.org/action/issues/40051697/attachments/53327032?download=true",
+      "local_path": "attachments/all.html"
+    },
+    {
+      "id": 53327054,
+      "filename": "reproduce.ogv",
+      "mime_type": "application/ogg; charset=binary",
+      "size_bytes": 1321983,
+      "url": "https://issues.chromium.org/action/issues/40051697/attachments/53327054?download=true",
+      "local_path": "attachments/reproduce.ogv"
+    },
+    {
+      "id": 53327055,
+      "filename": "all_reduced.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1915,
+      "url": "https://issues.chromium.org/action/issues/40051697/attachments/53327055?download=true",
+      "local_path": "attachments/all_reduced.html"
+    },
+    {
+      "id": 53327096,
+      "filename": "all_reduced2.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1915,
+      "url": "https://issues.chromium.org/action/issues/40051697/attachments/53327096?download=true",
+      "local_path": "attachments/all_reduced2.html"
+    },
+    {
+      "id": 53327097,
+      "filename": "reproduce.ogv",
+      "mime_type": "application/ogg; charset=binary",
+      "size_bytes": 2322457,
+      "url": "https://issues.chromium.org/action/issues/40051697/attachments/53327097?download=true",
+      "local_path": "attachments/reproduce_53327097.ogv"
+    },
+    {
+      "id": 53327152,
+      "filename": "geo.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 134,
+      "url": "https://issues.chromium.org/action/issues/40051697/attachments/53327152?download=true",
+      "local_path": "attachments/geo_53327152.html"
+    },
+    {
+      "id": 53327153,
+      "filename": "all_reduced3.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1973,
+      "url": "https://issues.chromium.org/action/issues/40051697/attachments/53327153?download=true",
+      "local_path": "attachments/all_reduced3.html"
+    },
+    {
+      "id": 53327171,
+      "filename": "geo.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 134,
+      "url": "https://issues.chromium.org/action/issues/40051697/attachments/53327171?download=true",
+      "local_path": "attachments/geo_53327171.html"
+    },
+    {
+      "id": 53327172,
+      "filename": "all_reduced4.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 2106,
+      "url": "https://issues.chromium.org/action/issues/40051697/attachments/53327172?download=true",
+      "local_path": "attachments/all_reduced4.html"
+    },
+    {
+      "id": 53327212,
+      "filename": "root_cause.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 668,
+      "url": "https://issues.chromium.org/action/issues/40051697/attachments/53327212?download=true",
+      "local_path": "attachments/root_cause.html"
+    },
+    {
+      "id": 53327241,
+      "filename": "ContainerNode_before_fix.cpp",
+      "mime_type": "text/x-lisp; charset=us-ascii",
+      "size_bytes": 38438,
+      "url": "https://issues.chromium.org/action/issues/40051697/attachments/53327241?download=true",
+      "local_path": "attachments/ContainerNode_before_fix.cpp"
+    },
+    {
+      "id": 53327242,
+      "filename": "ContainerNode_after_fix.cpp",
+      "mime_type": "text/x-lisp; charset=us-ascii",
+      "size_bytes": 38462,
+      "url": "https://issues.chromium.org/action/issues/40051697/attachments/53327242?download=true",
+      "local_path": "attachments/ContainerNode_after_fix.cpp"
+    },
+    {
+      "id": 53327260,
+      "filename": "ContainerNode_before_fix2.cpp",
+      "mime_type": "text/x-lisp; charset=us-ascii",
+      "size_bytes": 38438,
+      "url": "https://issues.chromium.org/action/issues/40051697/attachments/53327260?download=true",
+      "local_path": "attachments/ContainerNode_before_fix2.cpp"
+    },
+    {
+      "id": 53327261,
+      "filename": "ContainerNode_after_fix2.cpp",
+      "mime_type": "text/x-lisp; charset=us-ascii",
+      "size_bytes": 40737,
+      "url": "https://issues.chromium.org/action/issues/40051697/attachments/53327261?download=true",
+      "local_path": "attachments/ContainerNode_after_fix2.cpp"
+    }
+  ],
+  "update_count": 98,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nRunning attached all.html file causes chrome to display sad tab.  \n  \n**VERSION**   \nChrome Version: [15.0.874.120] + [stable]  \n                [17.0.954.0]+ [Developer Build 111694 Linux]  \nOperating System: [Ubuntu 10.04]  \n  \n**REPRODUCTION CASE**   \n  \n1. Copy at"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "40094689",
+  "url": "https://issues.chromium.org/issues/40094689",
+  "title": "Security: Crosh privilege escalation / sandbox escape via command injection in set_arpgw ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "OS>Systems",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "tm...@acu.edu",
+  "assignee": "jo...@chromium.org",
+  "created_date": "2019-04-21T08:23:18+00:00",
+  "modified_date": "2021-03-23T13:04:26+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5500.0,
+  "reward_amount_meta": 5500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53003082,
+      "filename": "set_arpgw.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 522,
+      "url": "https://issues.chromium.org/action/issues/40094689/attachments/53003082?download=true",
+      "local_path": "attachments/set_arpgw.patch"
+    },
+    {
+      "id": 53003083,
+      "filename": "POCImage.png",
+      "mime_type": "image/png",
+      "size_bytes": 22792,
+      "url": "https://issues.chromium.org/action/issues/40094689/attachments/53003083?download=true",
+      "local_path": "attachments/POCImage.png"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "It is possible for an attacker to escape crosh on chromeOS/chromiumOS\n\nThe set_arpgw method, which is exposed in the default crosh configuration, does not properly validate nor double quote user input, allowing for arbitrary commands to be executed.\n\nFile for reference: https://chromium.googlesource"
+}

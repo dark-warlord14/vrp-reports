@@ -1,0 +1,44 @@
+{
+  "id": "40077608",
+  "url": "https://issues.chromium.org/issues/40077608",
+  "title": "UrlRequestContext can be deleted while a live SocketStream has a pointer to it (vtable UAF)",
+  "status": "New",
+  "severity": "S4-Minimal",
+  "priority": "P0",
+  "component": "Blink>Network>WebSockets, Blink>Workers",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ri...@chromium.org",
+  "assignee": "yh...@chromium.org",
+  "created_date": "2013-05-29T06:57:38+00:00",
+  "modified_date": "2018-04-25T23:13:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3133.0,
+  "reward_amount_meta": 3133.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52987439,
+      "filename": "asan-log.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 8869,
+      "url": "https://issues.chromium.org/action/issues/40077608/attachments/52987439?download=true",
+      "local_path": "attachments/asan-log.txt"
+    },
+    {
+      "id": 52987676,
+      "filename": "shorter.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 344,
+      "url": "https://issues.chromium.org/action/issues/40077608/attachments/52987676?download=true",
+      "local_path": "attachments/shorter.html"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "When SocketStream::Connect() is called, it defers most of the work to DoBeforeConnect(), which is called via a task posted to the MessageLoop. However, the UrlRequestContext object used by DoBeforeConnect() can be deleted (via destruction of ProfileIOData) in-between these two calls."
+}

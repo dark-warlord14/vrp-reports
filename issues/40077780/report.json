@@ -1,0 +1,44 @@
+{
+  "id": "40077780",
+  "url": "https://issues.chromium.org/issues/40077780",
+  "title": "Heap-use-after-free in xsltApplySequenceConstructor",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@gmail.com",
+  "assignee": "ab...@chromium.org",
+  "created_date": "2013-07-13T12:55:15+00:00",
+  "modified_date": "2018-04-25T23:12:24+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53402633,
+      "filename": "crash.log",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 17228,
+      "url": "https://issues.chromium.org/action/issues/40077780/attachments/53402633?download=true",
+      "local_path": "attachments/crash.log"
+    },
+    {
+      "id": 53402634,
+      "filename": "crash_xsl.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 13660,
+      "url": "https://issues.chromium.org/action/issues/40077780/attachments/53402634?download=true",
+      "local_path": "attachments/crash_xsl.zip"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe attached testcase crashes the asan build of chrome (asan-symbolized-linux-release-211418). The stack backtrace and testcase indicate an issue with object tags being created while XSL is evaluated.   \n  \n**VERSION**   \nChrome Version: asan build 211418   \nOperating Sy"
+}

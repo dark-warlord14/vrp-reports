@@ -1,0 +1,60 @@
+{
+  "id": "40081693",
+  "url": "https://issues.chromium.org/issues/40081693",
+  "title": "Renderer crash in CounterNode in documentBeingDestroyed call (similar to 45609)",
+  "status": "Accepted",
+  "severity": "Unknown",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ja...@gmail.com",
+  "assignee": "dg...@chromium.org",
+  "created_date": "2010-06-19T06:13:03+00:00",
+  "modified_date": "2016-10-02T20:18:20+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53016204,
+      "filename": "fuzz.html",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 20156,
+      "url": "https://issues.chromium.org/action/issues/40081693/attachments/53016204?download=true",
+      "local_path": "attachments/fuzz.html"
+    },
+    {
+      "id": 53016223,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40081693/attachments/53016223?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53016248,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40081693/attachments/53016248?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53016249,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40081693/attachments/53016249?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "My css fuzzer stopped here (sad tab). I didn't research it yet. \r\nMarked as security bug for caution.\r\n\r\nReproduce on: \r\n\r\n-Chrome 6.0.437.3 dev\r\n-Chrome 5.0.375.70\r\n\r\nOS: Windows XP SP3\r\n\r\nResult: Crash (sad tab)\r\n\r\nPoC attached."
+}

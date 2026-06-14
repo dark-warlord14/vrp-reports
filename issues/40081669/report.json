@@ -1,0 +1,100 @@
+{
+  "id": "40081669",
+  "url": "https://issues.chromium.org/issues/40081669",
+  "title": "Security: Webpages have access to some extension resources",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions>API",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pi...@live.nl",
+  "assignee": "rd...@chromium.org",
+  "created_date": "2015-03-19T20:51:48+00:00",
+  "modified_date": "2018-04-25T23:01:51+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53270275,
+      "filename": "incognito.html",
+      "mime_type": "text/html",
+      "size_bytes": 2559,
+      "url": "https://issues.chromium.org/action/issues/40081669/attachments/53270275?download=true",
+      "local_path": "attachments/incognito.html"
+    },
+    {
+      "id": 53270276,
+      "filename": "bindtogc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1816,
+      "url": "https://issues.chromium.org/action/issues/40081669/attachments/53270276?download=true",
+      "local_path": "attachments/bindtogc.html"
+    },
+    {
+      "id": 53270277,
+      "filename": "gesture.html",
+      "mime_type": "text/html",
+      "size_bytes": 2524,
+      "url": "https://issues.chromium.org/action/issues/40081669/attachments/53270277?download=true",
+      "local_path": "attachments/gesture.html"
+    },
+    {
+      "id": 53270278,
+      "filename": "blob.html",
+      "mime_type": "text/html",
+      "size_bytes": 4047,
+      "url": "https://issues.chromium.org/action/issues/40081669/attachments/53270278?download=true",
+      "local_path": "attachments/blob.html"
+    },
+    {
+      "id": 53270491,
+      "filename": "crossorigin_parent.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2727,
+      "url": "https://issues.chromium.org/action/issues/40081669/attachments/53270491?download=true",
+      "local_path": "attachments/crossorigin_parent.html"
+    },
+    {
+      "id": 53270492,
+      "filename": "crossorigin_child.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2830,
+      "url": "https://issues.chromium.org/action/issues/40081669/attachments/53270492?download=true",
+      "local_path": "attachments/crossorigin_child.html"
+    },
+    {
+      "id": 53270493,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2600,
+      "url": "https://issues.chromium.org/action/issues/40081669/attachments/53270493?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53270506,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1607,
+      "url": "https://issues.chromium.org/action/issues/40081669/attachments/53270506?download=true",
+      "local_path": "attachments/crash_53270506.html"
+    },
+    {
+      "id": 53270518,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2187,
+      "url": "https://issues.chromium.org/action/issues/40081669/attachments/53270518?download=true",
+      "local_path": "attachments/crash_53270518.html"
+    }
+  ],
+  "update_count": 98,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nIt is possible to load some extension JavaScript resources from a regular webpage by adding setters to `Object.prototype`. In principle, only a couple of such resources are loaded by default when e.g. `chrome.webstore.onDownloadProgress` is accessed from a webpage. Ho"
+}

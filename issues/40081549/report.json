@@ -1,0 +1,52 @@
+{
+  "id": "40081549",
+  "url": "https://issues.chromium.org/issues/40081549",
+  "title": "Heap-use-after-free in blink::ContainerNode::attach",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2015-03-05T22:50:10+00:00",
+  "modified_date": "2019-02-16T00:36:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52980361,
+      "filename": "poc_crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 482,
+      "url": "https://issues.chromium.org/action/issues/40081549/attachments/52980361?download=true",
+      "local_path": "attachments/poc_crash.html"
+    },
+    {
+      "id": 52980362,
+      "filename": "debug_data.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 10641,
+      "url": "https://issues.chromium.org/action/issues/40081549/attachments/52980362?download=true",
+      "local_path": "attachments/debug_data.txt"
+    },
+    {
+      "id": 52980363,
+      "filename": "poc_uxss.html",
+      "mime_type": "text/html",
+      "size_bytes": 794,
+      "url": "https://issues.chromium.org/action/issues/40081549/attachments/52980363?download=true",
+      "local_path": "attachments/poc_uxss.html"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe HTML parser calls |parserRemoveChild| and |parserAppendChild| consecutively to perform reparenting  \nof a node.  \nsrc/third_party/WebKit/Source/core/html/parser/HTMLConstructionSite.cpp:149:  \nstatic inline void executeReparentTask(HTMLConstructionSiteTask& task)  \n{"
+}

@@ -1,0 +1,58 @@
+{
+  "id": "40089359",
+  "url": "https://issues.chromium.org/issues/40089359",
+  "title": "Security: V8:Use After Free Leads to Remote Code Execution",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "so...@gmail.com",
+  "assignee": "gd...@chromium.org",
+  "created_date": "2017-10-20T08:42:47+00:00",
+  "modified_date": "2019-04-05T06:27:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52915171,
+      "filename": "hello_chrome_3.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2395,
+      "url": "https://issues.chromium.org/action/issues/40089359/attachments/52915171?download=true",
+      "local_path": "attachments/hello_chrome_3.zip"
+    },
+    {
+      "id": 52915180,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 553,
+      "url": "https://issues.chromium.org/action/issues/40089359/attachments/52915180?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 52915184,
+      "filename": "lx_clip1508495189568_lx.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 29581,
+      "url": "https://issues.chromium.org/action/issues/40089359/attachments/52915184?download=true",
+      "local_path": "attachments/lx_clip1508495189568_lx.jpg"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "VULNERABILITY DETAILS\r\nThis is a Use After Free Vul in V8.It can cause RCE in the Chrome renderer process.More information please see the html file.It is a full exploit to open \"calc.exe\"\r\n without sandbox.\r\n\r\nVERSION\r\nChrome Version: 62.0.3202.62 Stable (32bit)\r\nOperating System: [Windows 10 1703"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "40080125",
+  "url": "https://issues.chromium.org/issues/40080125",
+  "title": "Security: Crash in memcpy in chrome_pdf::CopyImage",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2014-07-29T12:07:20+00:00",
+  "modified_date": "2018-04-25T23:06:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53082428,
+      "filename": "example.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 14046,
+      "url": "https://issues.chromium.org/action/issues/40080125/attachments/53082428?download=true",
+      "local_path": "attachments/example.pdf"
+    },
+    {
+      "id": 53082429,
+      "filename": "crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 272,
+      "url": "https://issues.chromium.org/action/issues/40080125/attachments/53082429?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53082430,
+      "filename": "debug.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3957,
+      "url": "https://issues.chromium.org/action/issues/40080125/attachments/53082430?download=true",
+      "local_path": "attachments/debug.txt"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe following testcase with the attached example.pdf crashes chrome on Windows and Linux. The latest ASAN build and the current release version are affected. The example.pdf file is not corrupted as far as I am aware.  \n  \n**VERSION**   \nChrome Version: All current versi"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "40076594",
+  "url": "https://issues.chromium.org/issues/40076594",
+  "title": "Security: ffmpeg oob write4 (222)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media>Codecs",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pa...@gmail.com",
+  "assignee": "da...@chromium.org",
+  "created_date": "2012-11-17T21:14:00+00:00",
+  "modified_date": "2018-07-29T14:02:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53393946,
+      "filename": "222.min",
+      "mime_type": "audio/x-hx-aac-adts; charset=binary",
+      "size_bytes": 32690,
+      "url": "https://issues.chromium.org/action/issues/40076594/attachments/53393946?download=true",
+      "local_path": "attachments/222.min"
+    },
+    {
+      "id": 53393990,
+      "filename": "test.m4a",
+      "mime_type": "video/mp4; charset=binary",
+      "size_bytes": 34806,
+      "url": "https://issues.chromium.org/action/issues/40076594/attachments/53393990?download=true",
+      "local_path": "attachments/test.m4a"
+    },
+    {
+      "id": 53393997,
+      "filename": "0001-aac-prevent-stack-overwrite-in-TNS-ma-filter.patch",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 886,
+      "url": "https://issues.chromium.org/action/issues/40076594/attachments/53393997?download=true",
+      "local_path": "attachments/0001-aac-prevent-stack-overwrite-in-TNS-ma-filter.patch"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \n==12054== ERROR: AddressSanitizer stack-buffer-overflow on address 0xbf8f2730 at pc 0x8c02b4d bp 0xbf8f25b8 sp 0xbf8f25b0  \nWRITE of size 4 at 0xbf8f2730 thread T0  \n    #0 0x8c02b4c in apply_tns /home/p/ffmpeg-1.0/libavcodec/aacdec.c:2051  \n    #1 0x8c02188 in apply_"
+}

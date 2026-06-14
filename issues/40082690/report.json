@@ -1,0 +1,29 @@
+{
+  "id": "40082690",
+  "url": "https://issues.chromium.org/issues/40082690",
+  "title": "UNKNOWN in _CMapLookupCallback",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "th...@chromium.org",
+  "created_date": "2015-08-18T16:53:05+00:00",
+  "modified_date": "2018-04-25T22:56:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 53,
+  "description_snippet": "Detailed report: https://cluster-fuzz.appspot.com/testcase?key=5084391036944384\n\nFuzzer: ochang_neurofuzz_borgfuzz\nJob Type: linux_asan_pdfium\nPlatform Id: linux\n\nCrash Type: UNKNOWN\nCrash Address: 0x6080000196f0\nCrash State:\n  _CMapLookupCallback\n  CFX_BaseSegmentedArray::IterateIndex\n  CFX_BaseSeg"
+}

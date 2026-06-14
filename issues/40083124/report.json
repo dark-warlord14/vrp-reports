@@ -1,0 +1,52 @@
+{
+  "id": "40083124",
+  "url": "https://issues.chromium.org/issues/40083124",
+  "title": "Bad cast with svg:g element",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wo...@gmail.com",
+  "assignee": "js...@chromium.org",
+  "created_date": "2010-09-10T16:34:49+00:00",
+  "modified_date": "2016-10-02T20:19:08+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53015190,
+      "filename": "j.rar",
+      "mime_type": "application/x-rar; charset=binary",
+      "size_bytes": 3520,
+      "url": "https://issues.chromium.org/action/issues/40083124/attachments/53015190?download=true",
+      "local_path": "attachments/j.rar"
+    },
+    {
+      "id": 53015237,
+      "filename": "load.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 941,
+      "url": "https://issues.chromium.org/action/issues/40083124/attachments/53015237?download=true",
+      "local_path": "attachments/load.html"
+    },
+    {
+      "id": 53015243,
+      "filename": "ss.dmp",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 33162,
+      "url": "https://issues.chromium.org/action/issues/40083124/attachments/53015243?download=true",
+      "local_path": "attachments/ss.dmp"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "**VERSION**   \nChrome Version: [6.0.472.55] + stable  \nOperating System: win 7 and xp  \n  \n**REPRODUCTION CASE**   \nJust open the xhtml file.  \n  \nType of crash: [tab]  \nCrash State:   \n1.  \neax=02baccc0 ebx=00d41200 ecx=00d413a8 edx=00d414bc esi=00d413a8 edi=00d413a8  \neip=56537265 esp=0012f5"
+}

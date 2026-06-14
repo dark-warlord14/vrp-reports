@@ -1,0 +1,68 @@
+{
+  "id": "40085066",
+  "url": "https://issues.chromium.org/issues/40085066",
+  "title": "Security: heap-buffer-overflow in SkColorSpace",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Skia",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "ms...@chromium.org",
+  "created_date": "2016-08-10T08:18:36+00:00",
+  "modified_date": "2018-01-22T20:21:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3500.0,
+  "reward_amount_meta": 3500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53254002,
+      "filename": "pocgen.py",
+      "mime_type": "text/plain",
+      "size_bytes": 2690,
+      "url": "https://issues.chromium.org/action/issues/40085066/attachments/53254002?download=true",
+      "local_path": "attachments/pocgen.py"
+    },
+    {
+      "id": 53254003,
+      "filename": "asan_trace.log",
+      "mime_type": "text/plain",
+      "size_bytes": 4852,
+      "url": "https://issues.chromium.org/action/issues/40085066/attachments/53254003?download=true",
+      "local_path": "attachments/asan_trace.log"
+    },
+    {
+      "id": 53254004,
+      "filename": "windbg_trace.log",
+      "mime_type": "text/plain",
+      "size_bytes": 4413,
+      "url": "https://issues.chromium.org/action/issues/40085066/attachments/53254004?download=true",
+      "local_path": "attachments/windbg_trace.log"
+    },
+    {
+      "id": 53254060,
+      "filename": "poc.png",
+      "mime_type": "image/png",
+      "size_bytes": 694999,
+      "url": "https://issues.chromium.org/action/issues/40085066/attachments/53254060?download=true",
+      "local_path": "attachments/poc.png"
+    },
+    {
+      "id": 53254061,
+      "filename": "trace.log",
+      "mime_type": "text/plain",
+      "size_bytes": 4041,
+      "url": "https://issues.chromium.org/action/issues/40085066/attachments/53254061?download=true",
+      "local_path": "attachments/trace.log"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThere is a heap buffer overflow vulnerability in Skia.  \n  \nThis bug exists in the deserialisation routines for SkImageFilter, which can be triggered on the host process from a renderer through IPC.  \n  \n  \nFile src/core/SkColorSpace_ICC.cpp, line 1005:  \n---------"
+}

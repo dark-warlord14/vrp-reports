@@ -1,0 +1,62 @@
+{
+  "id": "40076695",
+  "url": "https://issues.chromium.org/issues/40076695",
+  "title": "Heap-use-after-free in WebCore::ChildNodeInsertionNotifier::notifyDescendantInsertedIntoDocument",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ja...@gmail.com",
+  "assignee": "ha...@chromium.org",
+  "created_date": "2012-12-13T05:31:21+00:00",
+  "modified_date": "2018-07-29T14:01:52+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53340555,
+      "filename": "poc.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 577,
+      "url": "https://issues.chromium.org/action/issues/40076695/attachments/53340555?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53340556,
+      "filename": "stack2.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 1128,
+      "url": "https://issues.chromium.org/action/issues/40076695/attachments/53340556?download=true",
+      "local_path": "attachments/stack2.txt"
+    },
+    {
+      "id": 53340557,
+      "filename": "stack1.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 12605,
+      "url": "https://issues.chromium.org/action/issues/40076695/attachments/53340557?download=true",
+      "local_path": "attachments/stack1.txt"
+    },
+    {
+      "id": 53340640,
+      "filename": "poc_2.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 536,
+      "url": "https://issues.chromium.org/action/issues/40076695/attachments/53340640?download=true",
+      "local_path": "attachments/poc_2.html"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.11 (KHTML, like Gecko) Chrome/23.0.1271.97 Safari/537.11\r\n\r\nSteps to reproduce the problem:\r\n1. Upload the poc.html to your server \r\n2. Open chrome.exe\r\n3. Browse to poc.html\r\n\r\nWhat is the expected behavior?\r\nNo crash of the renderer process."
+}

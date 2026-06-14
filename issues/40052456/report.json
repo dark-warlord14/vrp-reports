@@ -1,0 +1,36 @@
+{
+  "id": "40052456",
+  "url": "https://issues.chromium.org/issues/40052456",
+  "title": "Heap-buffer-overflow in compute_pos_tan",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2012-01-01T11:28:20+00:00",
+  "modified_date": "2018-04-25T23:51:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53016198,
+      "filename": "tan.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 433,
+      "url": "https://issues.chromium.org/action/issues/40052456/attachments/53016198?download=true",
+      "local_path": "attachments/tan.html"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA heap buffer overflow occurs when the attached page is opened. The page creates a SVG path element and adds an event listener. I originally misread the report and thought this was furher away from the end of the object. Could be low or no security impact if 0 bytes to t"
+}

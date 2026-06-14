@@ -1,0 +1,38 @@
+{
+  "id": "40088548",
+  "url": "https://issues.chromium.org/issues/40088548",
+  "title": "Heap-buffer-overflow in ClipRestore",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zh...@gmail.com",
+  "assignee": "ds...@chromium.org",
+  "created_date": "2017-07-31T06:03:18+00:00",
+  "modified_date": "2018-11-06T15:24:05+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53383843,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40088548/attachments/53383843?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 25,
+  "description_snippet": "VULNERABILITY DETAILS\r\nThis issue was found by fuzzing against a 64-bit asan linux build of pdfium_test\r\n\r\nThe attached file crashes pdfium_test as follows:\r\n\r\nRendering PDF file /tmp/poc.\r\n=================================================================\r\n==19852==ERROR: AddressSanitizer: heap-buff"
+}

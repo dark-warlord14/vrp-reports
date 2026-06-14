@@ -1,0 +1,73 @@
+{
+  "id": "40090295",
+  "url": "https://issues.chromium.org/issues/40090295",
+  "title": "Security: Bad cast to ChromeDownloadManagerDelegate* from DevToolsDownloadManagerDelegate*",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "pf...@chromium.org",
+  "created_date": "2018-01-25T15:33:07+00:00",
+  "modified_date": "2019-01-04T01:00:19+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52922086,
+      "filename": "downloadBehavior-bad-cast.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1968,
+      "url": "https://issues.chromium.org/action/issues/40090295/attachments/52922086?download=true",
+      "local_path": "attachments/downloadBehavior-bad-cast.zip"
+    },
+    {
+      "id": 52922115,
+      "filename": "asan-manual-repro-63.0.3239.84.log",
+      "mime_type": "text/plain",
+      "size_bytes": 18173,
+      "url": "https://issues.chromium.org/action/issues/40090295/attachments/52922115?download=true",
+      "local_path": "attachments/asan-manual-repro-63.0.3239.84.log"
+    },
+    {
+      "id": 52922116,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 981,
+      "url": "https://issues.chromium.org/action/issues/40090295/attachments/52922116?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 52922117,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 294,
+      "url": "https://issues.chromium.org/action/issues/40090295/attachments/52922117?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 52922124,
+      "filename": "asan-manual-repro-64.0.3282.119.log",
+      "mime_type": "text/plain",
+      "size_bytes": 15127,
+      "url": "https://issues.chromium.org/action/issues/40090295/attachments/52922124?download=true",
+      "local_path": "attachments/asan-manual-repro-64.0.3282.119.log"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nDownloadPrefs::FromDownloadManager is reachable from several places (e.g. when a download is started) and implemented as follows [1]:  \n  DownloadPrefs::FromDownloadManager(  \n      DownloadManager\\* download_manager) {  \n    ChromeDownloadManagerDelegate\\* delegate ="
+}

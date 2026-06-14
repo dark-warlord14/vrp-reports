@@ -1,0 +1,29 @@
+{
+  "id": "40085058",
+  "url": "https://issues.chromium.org/issues/40085058",
+  "title": "Security: Format String Vulnerability in Chrome OS",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "Internals",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "ri...@chromium.org",
+  "created_date": "2016-08-09T13:05:40+00:00",
+  "modified_date": "2018-04-25T22:50:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nNote: Although Google engages GDS for security penetration testing services  \nperiodically, the following vulnerability was discovered by GDS' research team,  \nindependent of any paid contract with Google.  \n  \nI have found a format string and ASLR pointer leaking vulner"
+}

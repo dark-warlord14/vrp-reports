@@ -1,0 +1,36 @@
+{
+  "id": "40086081",
+  "url": "https://issues.chromium.org/issues/40086081",
+  "title": "Security: XSS in chrome://apps (NTP) after drag and drop",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "ro...@robwu.nl",
+  "created_date": "2016-11-25T10:59:57+00:00",
+  "modified_date": "2018-07-28T14:17:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53096554,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1017,
+      "url": "https://issues.chromium.org/action/issues/40086081/attachments/53096554?download=true",
+      "local_path": "attachments/index.html"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "Chrome version: 54.0.2840.90 (stable), 57.0.2933.0 (latest)\r\n\r\nA new tab page (chrome://apps) uses the result of drag and drop in an unsafe way (assigning to innerHTML of a element from an active document) - this is a XSS vulnerability. The page has no content security policy to mitigate this, and t"
+}

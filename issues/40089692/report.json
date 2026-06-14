@@ -1,0 +1,67 @@
+{
+  "id": "40089692",
+  "url": "https://issues.chromium.org/issues/40089692",
+  "title": "Steal local file contents by abusing liberal CSS parsing",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Loader, Blink>Storage",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pv...@gmail.com",
+  "assignee": "mk...@chromium.org",
+  "created_date": "2017-11-27T23:41:20+00:00",
+  "modified_date": "2019-06-27T09:28:47+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53138267,
+      "filename": "redir.html",
+      "mime_type": "text/plain",
+      "size_bytes": 741,
+      "url": "https://issues.chromium.org/action/issues/40089692/attachments/53138267?download=true",
+      "local_path": "attachments/redir.html"
+    },
+    {
+      "id": 53138268,
+      "filename": "localstorage.html",
+      "mime_type": "text/plain",
+      "size_bytes": 822,
+      "url": "https://issues.chromium.org/action/issues/40089692/attachments/53138268?download=true",
+      "local_path": "attachments/localstorage.html"
+    },
+    {
+      "id": 53138269,
+      "filename": "cookiemonster.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2301,
+      "url": "https://issues.chromium.org/action/issues/40089692/attachments/53138269?download=true",
+      "local_path": "attachments/cookiemonster.html"
+    },
+    {
+      "id": 53138270,
+      "filename": "cookiemonster_screenshot.png",
+      "mime_type": "image/png",
+      "size_bytes": 580790,
+      "url": "https://issues.chromium.org/action/issues/40089692/attachments/53138270?download=true",
+      "local_path": "attachments/cookiemonster_screenshot.png"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "Resources from file:/// do not define a Content-Type, hence, a malicious page can load any local resource as CSS and it will be interpreted as such, independently of the MIME type. This allows to exfiltrate data from cross-origin local files via a CSS injection. This is a small variation of @filedes"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "40092593",
+  "url": "https://issues.chromium.org/issues/40092593",
+  "title": "PDF viewer crash",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2011-07-13T08:54:05+00:00",
+  "modified_date": "2018-07-29T14:03:03+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53085783,
+      "filename": "malwarep.pdf",
+      "mime_type": "application/pdf; charset=us-ascii",
+      "size_bytes": 5893,
+      "url": "https://issues.chromium.org/action/issues/40092593/attachments/53085783?download=true",
+      "local_path": "attachments/malwarep.pdf"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \n\\*NOTE\\* The repro below seems to be a part of a malware sample. Have a look before trying to reproduce.  \n  \nOpening the attached PDF document causes invalid reads to high usually page-aligned addresses in current Chrome beta on 64-bit Linux. Similar files crash at v"
+}

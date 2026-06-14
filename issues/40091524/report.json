@@ -1,0 +1,75 @@
+{
+  "id": "40091524",
+  "url": "https://issues.chromium.org/issues/40091524",
+  "title": "Cross-origin-read attack by chaining three vulnerabilities",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "dt...@chromium.org",
+  "created_date": "2018-05-31T01:26:44+00:00",
+  "modified_date": "2018-11-07T15:23:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52995034,
+      "filename": "simulate.html",
+      "mime_type": "text/plain",
+      "size_bytes": 562,
+      "url": "https://issues.chromium.org/action/issues/40091524/attachments/52995034?download=true",
+      "local_path": "attachments/simulate.html"
+    },
+    {
+      "id": 52995035,
+      "filename": "download.html",
+      "mime_type": "text/plain",
+      "size_bytes": 378,
+      "url": "https://issues.chromium.org/action/issues/40091524/attachments/52995035?download=true",
+      "local_path": "attachments/download.html"
+    },
+    {
+      "id": 52995036,
+      "filename": "change.html",
+      "mime_type": "text/plain",
+      "size_bytes": 339,
+      "url": "https://issues.chromium.org/action/issues/40091524/attachments/52995036?download=true",
+      "local_path": "attachments/change.html"
+    },
+    {
+      "id": 52995037,
+      "filename": "bug.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1488,
+      "url": "https://issues.chromium.org/action/issues/40091524/attachments/52995037?download=true",
+      "local_path": "attachments/bug.html"
+    },
+    {
+      "id": 52995070,
+      "filename": "back.html",
+      "mime_type": "text/plain",
+      "size_bytes": 118,
+      "url": "https://issues.chromium.org/action/issues/40091524/attachments/52995070?download=true",
+      "local_path": "attachments/back.html"
+    }
+  ],
+  "update_count": 78,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nBy combining three vulnerabilities it's possible to read data from cross-origin websites when an user opens a local HTML file.  \n  \nThe following vulnerabilities are being chained in this attack:  \n1. Simulating an Alt-Click (click with the alt key pressed) through javas"
+}

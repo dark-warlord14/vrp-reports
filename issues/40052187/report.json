@@ -1,0 +1,52 @@
+{
+  "id": "40052187",
+  "url": "https://issues.chromium.org/issues/40052187",
+  "title": "Heap-use-after-free in WebCore::RenderRegion::offsetFromLogicalTopOfFirstPage",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2011-12-15T20:30:27+00:00",
+  "modified_date": "2018-04-25T23:52:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53252036,
+      "filename": "216224.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1122,
+      "url": "https://issues.chromium.org/action/issues/40052187/attachments/53252036?download=true",
+      "local_path": "attachments/216224.html"
+    },
+    {
+      "id": 53252037,
+      "filename": "216224-asan.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 11639,
+      "url": "https://issues.chromium.org/action/issues/40052187/attachments/53252037?download=true",
+      "local_path": "attachments/216224-asan.txt"
+    },
+    {
+      "id": 53252038,
+      "filename": "backup.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 8000,
+      "url": "https://issues.chromium.org/action/issues/40052187/attachments/53252038?download=true",
+      "local_path": "attachments/backup.zip"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nuse after free with render regions  \n  \n**VERSION**   \nChrome Version:   \n  \nChromium\t18.0.973.0 (Developer Build 114678)  \nOS\tLinux  \nWebKit\t535.14 (trunk@102970)  \nJavaScript\tV8 3.7.12.6  \n  \nOperating System: linux 64bit  \n  \n**REPRODUCTION CASE**   \n<html>  \n  <he"
+}

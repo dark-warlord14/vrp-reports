@@ -1,0 +1,60 @@
+{
+  "id": "40078754",
+  "url": "https://issues.chromium.org/issues/40078754",
+  "title": "Security: unicode character can create phishing-friendly address bar",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ge...@gmail.com",
+  "assignee": "sk...@chromium.org",
+  "created_date": "2014-01-24T05:48:24+00:00",
+  "modified_date": "2018-04-25T23:09:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "reward_amount_meta": 1500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53359147,
+      "filename": "phish.html",
+      "mime_type": "text/html",
+      "size_bytes": 106,
+      "url": "https://issues.chromium.org/action/issues/40078754/attachments/53359147?download=true",
+      "local_path": "attachments/phish.html"
+    },
+    {
+      "id": 53359148,
+      "filename": "chromephish.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 85960,
+      "url": "https://issues.chromium.org/action/issues/40078754/attachments/53359148?download=true",
+      "local_path": "attachments/chromephish.jpg"
+    },
+    {
+      "id": 53359161,
+      "filename": "phishipvshost.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 59697,
+      "url": "https://issues.chromium.org/action/issues/40078754/attachments/53359161?download=true",
+      "local_path": "attachments/phishipvshost.jpg"
+    },
+    {
+      "id": 53359168,
+      "filename": "main.go",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1548,
+      "url": "https://issues.chromium.org/action/issues/40078754/attachments/53359168?download=true",
+      "local_path": "attachments/main.go"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nInserting the Unicode Right-to-Left override character in links allows attackers to construct omnibox displays that result in user confusion that could greatly aid in phishing.  \n  \n**VERSION**   \nChrome Version: 32.0.1700.76 stable  \nOperating System: Windows 8.1  \n  \nC"
+}

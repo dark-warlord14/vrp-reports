@@ -1,0 +1,36 @@
+{
+  "id": "40076548",
+  "url": "https://issues.chromium.org/issues/40076548",
+  "title": "Heap-use-after-free in WebCore::SVGDocumentExtensions::removeAllElementReferencesForTarget",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>SVG",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "sc...@chromium.org",
+  "created_date": "2012-11-04T08:00:35+00:00",
+  "modified_date": "2016-10-02T20:22:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53049210,
+      "filename": "chrome-heap-use-after-free-WebCoreSVGDocumentExtensionsremoveAllElementReferencesForTarget-6cb8.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 640,
+      "url": "https://issues.chromium.org/action/issues/40076548/attachments/53049210?download=true",
+      "local_path": "attachments/chrome-heap-use-after-free-WebCoreSVGDocumentExtensionsremoveAllElementReferencesForTarget-6cb8.html"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "Repro-file as attachment.\r\n\r\nTested on: \r\n\r\nASAN Chrome 25.0.1316.0 (Developer Build 165738) \r\n\r\nASAN-report:\r\n\r\n==2771== ERROR: AddressSanitizer heap-use-after-free on address 0x7f80d58b2240 at pc 0x7f81084752fb bp 0x7fff2272d670 sp 0x7fff2272d668\r\nREAD of size 8 at 0x7f80d58b2240 thread T0"
+}

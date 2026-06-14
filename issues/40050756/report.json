@@ -1,0 +1,67 @@
+{
+  "id": "40050756",
+  "url": "https://issues.chromium.org/issues/40050756",
+  "title": "pdfium (XFA): invalid-vptr / uaf in CPDFSDK_PageView::ExitWidget",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pd...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2019-11-21T03:10:31+00:00",
+  "modified_date": "2020-05-29T18:54:22+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53076347,
+      "filename": "chromium-1026991.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 729,
+      "url": "https://issues.chromium.org/action/issues/40050756/attachments/53076347?download=true",
+      "local_path": "attachments/chromium-1026991.pdf"
+    },
+    {
+      "id": 53076348,
+      "filename": "chromium-1026991.evt",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 87,
+      "url": "https://issues.chromium.org/action/issues/40050756/attachments/53076348?download=true",
+      "local_path": "attachments/chromium-1026991.evt"
+    },
+    {
+      "id": 53076378,
+      "filename": "chromium-1026991-1.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 812,
+      "url": "https://issues.chromium.org/action/issues/40050756/attachments/53076378?download=true",
+      "local_path": "attachments/chromium-1026991-1.pdf"
+    },
+    {
+      "id": 53076379,
+      "filename": "chromium-1026991-1.evt",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 77,
+      "url": "https://issues.chromium.org/action/issues/40050756/attachments/53076379?download=true",
+      "local_path": "attachments/chromium-1026991-1.evt"
+    }
+  ],
+  "update_count": 24,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.101 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n(UBSAN)\r\n\r\nfpdfsdk/cpdfsdk_pageview.cpp:416:22: runtime error: member call on address 0x564f1e52e440 which does not point to an object of type 'fxc"
+}

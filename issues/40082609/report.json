@@ -1,0 +1,124 @@
+{
+  "id": "40082609",
+  "url": "https://issues.chromium.org/issues/40082609",
+  "title": "Memory corruption in WebSocketChannel::skipBuffer() - underflow in buffer size",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "uk...@chromium.org",
+  "created_date": "2010-08-09T22:04:05+00:00",
+  "modified_date": "2016-10-02T20:18:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1337.0,
+  "reward_amount_meta": 1337.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52943772,
+      "filename": "websocket.py",
+      "mime_type": "text/x-java; charset=us-ascii",
+      "size_bytes": 1283,
+      "url": "https://issues.chromium.org/action/issues/40082609/attachments/52943772?download=true",
+      "local_path": "attachments/websocket.py"
+    },
+    {
+      "id": 52943773,
+      "filename": "websocket.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 93,
+      "url": "https://issues.chromium.org/action/issues/40082609/attachments/52943773?download=true",
+      "local_path": "attachments/websocket.html"
+    },
+    {
+      "id": 52943800,
+      "filename": "report1.txt",
+      "mime_type": "text/x-news; charset=us-ascii",
+      "size_bytes": 36207,
+      "url": "https://issues.chromium.org/action/issues/40082609/attachments/52943800?download=true",
+      "local_path": "attachments/report1.txt"
+    },
+    {
+      "id": 52943801,
+      "filename": "report2.txt",
+      "mime_type": "text/x-news; charset=us-ascii",
+      "size_bytes": 37266,
+      "url": "https://issues.chromium.org/action/issues/40082609/attachments/52943801?download=true",
+      "local_path": "attachments/report2.txt"
+    },
+    {
+      "id": 52943825,
+      "filename": "report8.txt",
+      "mime_type": "text/x-news; charset=us-ascii",
+      "size_bytes": 38445,
+      "url": "https://issues.chromium.org/action/issues/40082609/attachments/52943825?download=true",
+      "local_path": "attachments/report8.txt"
+    },
+    {
+      "id": 52943826,
+      "filename": "report4.txt",
+      "mime_type": "text/x-news; charset=us-ascii",
+      "size_bytes": 38019,
+      "url": "https://issues.chromium.org/action/issues/40082609/attachments/52943826?download=true",
+      "local_path": "attachments/report4.txt"
+    },
+    {
+      "id": 52943827,
+      "filename": "report6.txt",
+      "mime_type": "text/x-news; charset=us-ascii",
+      "size_bytes": 36851,
+      "url": "https://issues.chromium.org/action/issues/40082609/attachments/52943827?download=true",
+      "local_path": "attachments/report6.txt"
+    },
+    {
+      "id": 52943828,
+      "filename": "crash.py",
+      "mime_type": "text/x-java; charset=us-ascii",
+      "size_bytes": 1605,
+      "url": "https://issues.chromium.org/action/issues/40082609/attachments/52943828?download=true",
+      "local_path": "attachments/crash.py"
+    },
+    {
+      "id": 52943829,
+      "filename": "report7.txt",
+      "mime_type": "text/x-news; charset=us-ascii",
+      "size_bytes": 37889,
+      "url": "https://issues.chromium.org/action/issues/40082609/attachments/52943829?download=true",
+      "local_path": "attachments/report7.txt"
+    },
+    {
+      "id": 52943830,
+      "filename": "report5.txt",
+      "mime_type": "text/x-news; charset=us-ascii",
+      "size_bytes": 38432,
+      "url": "https://issues.chromium.org/action/issues/40082609/attachments/52943830?download=true",
+      "local_path": "attachments/report5.txt"
+    },
+    {
+      "id": 52943831,
+      "filename": "report3.txt",
+      "mime_type": "text/x-news; charset=us-ascii",
+      "size_bytes": 37734,
+      "url": "https://issues.chromium.org/action/issues/40082609/attachments/52943831?download=true",
+      "local_path": "attachments/report3.txt"
+    },
+    {
+      "id": 52943832,
+      "filename": "crash.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 129,
+      "url": "https://issues.chromium.org/action/issues/40082609/attachments/52943832?download=true",
+      "local_path": "attachments/crash.html"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "This may be related to https://crbug.com/chromium/51536\r\n\r\nChromium 6.0.490.0 on Mac OS 10.6.4\r\n\r\nWhen Chromium receives a string of '/xff' (5 or more) from a WebSocket server after completing a handshake, the tab immediately crashes.  There are variations of this string with other characters mixed"
+}

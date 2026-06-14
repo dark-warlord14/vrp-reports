@@ -1,0 +1,41 @@
+{
+  "id": "40093987",
+  "url": "https://issues.chromium.org/issues/40093987",
+  "title": "Security:  Idn-spoof with using U+00F0 (ð)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "me...@chromium.org",
+  "created_date": "2019-02-07T16:20:20+00:00",
+  "modified_date": "2020-02-10T21:37:37+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52937034,
+      "filename": "Screen Shot 2019-02-07 at 16.19.06.png",
+      "mime_type": "image/png",
+      "size_bytes": 26409,
+      "url": "https://issues.chromium.org/action/issues/40093987/attachments/52937034?download=true",
+      "local_path": "attachments/Screen Shot 2019-02-07 at 16.19.06.png"
+    }
+  ],
+  "update_count": 26,
+  "description_snippet": "Chrome Version: 74.0.3694.0  \nOperating System: All  \n  \n**REPRODUCTION CASE**   \n  \nU+00F0 \"ð\" looks like an \"o\".  \n  \nVisit https://myaccount.gðogle.com"
+}

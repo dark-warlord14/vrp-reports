@@ -1,0 +1,44 @@
+{
+  "id": "40051851",
+  "url": "https://issues.chromium.org/issues/40051851",
+  "title": "Heap-use-after-free in WebCore::RenderObject::childAt",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>DOM, Blink>SVG",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ax...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2011-12-05T23:46:10+00:00",
+  "modified_date": "2018-04-25T23:53:20+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53178368,
+      "filename": "asan-04-12-2011.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 11600,
+      "url": "https://issues.chromium.org/action/issues/40051851/attachments/53178368?download=true",
+      "local_path": "attachments/asan-04-12-2011.txt"
+    },
+    {
+      "id": 53178422,
+      "filename": "DOMSelection.patch",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 2468,
+      "url": "https://issues.chromium.org/action/issues/40051851/attachments/53178422?download=true",
+      "local_path": "attachments/DOMSelection.patch"
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUse-after-free happens while trying to use freed child object wihin selection.  \n  \n**VERSION**   \nChrome 17.0.961.0 (Developer Build 112955 Linux)  \nUnable to reproduce on stable, beta or dev.   \n  \n**REPRODUCTION CASE**   \n  \n<html>  \n    <head>  \n        <script>"
+}

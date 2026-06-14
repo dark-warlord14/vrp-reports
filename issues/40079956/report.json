@@ -1,0 +1,95 @@
+{
+  "id": "40079956",
+  "url": "https://issues.chromium.org/issues/40079956",
+  "title": "Security: Extensions can spoof the list of host permissions in the permission dialog",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Platform>Apps, Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "yo...@chromium.org",
+  "created_date": "2014-07-01T17:53:12+00:00",
+  "modified_date": "2018-04-25T23:06:38+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53272106,
+      "filename": "access-your-data-on-blank.png",
+      "mime_type": "image/png",
+      "size_bytes": 41342,
+      "url": "https://issues.chromium.org/action/issues/40079956/attachments/53272106?download=true",
+      "local_path": "attachments/access-your-data-on-blank.png"
+    },
+    {
+      "id": 53272107,
+      "filename": "contentscript.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 51,
+      "url": "https://issues.chromium.org/action/issues/40079956/attachments/53272107?download=true",
+      "local_path": "attachments/contentscript.js"
+    },
+    {
+      "id": 53272108,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 245,
+      "url": "https://issues.chromium.org/action/issues/40079956/attachments/53272108?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53272122,
+      "filename": "Screen Shot 2014-07-02 at 11.57.29 AM.png",
+      "mime_type": "image/png",
+      "size_bytes": 22141,
+      "url": "https://issues.chromium.org/action/issues/40079956/attachments/53272122?download=true",
+      "local_path": "attachments/Screen Shot 2014-07-02 at 11.57.29 AM.png"
+    },
+    {
+      "id": 53272123,
+      "filename": "Screen Shot 2014-07-02 at 11.59.25 AM.png",
+      "mime_type": "image/png",
+      "size_bytes": 45461,
+      "url": "https://issues.chromium.org/action/issues/40079956/attachments/53272123?download=true",
+      "local_path": "attachments/Screen Shot 2014-07-02 at 11.59.25 AM.png"
+    },
+    {
+      "id": 53272170,
+      "filename": "contentscript.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 51,
+      "url": "https://issues.chromium.org/action/issues/40079956/attachments/53272170?download=true",
+      "local_path": "attachments/contentscript_53272170.js"
+    },
+    {
+      "id": 53272171,
+      "filename": "cws.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 531,
+      "url": "https://issues.chromium.org/action/issues/40079956/attachments/53272171?download=true",
+      "local_path": "attachments/cws.zip"
+    },
+    {
+      "id": 53272172,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 253,
+      "url": "https://issues.chromium.org/action/issues/40079956/attachments/53272172?download=true",
+      "local_path": "attachments/manifest_53272172.json"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**This template is ONLY for reporting security bugs. Please use a different**   \n**template for other types of bug reports.**   \n  \n**Please see the following link for instructions on filing security bugs:**   \n**http://www.chromium.org/Home/chromium-security/reporting-security-bugs**   \n  \n  \n**VUL"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "40083821",
+  "url": "https://issues.chromium.org/issues/40083821",
+  "title": "Segfault in x86_64/memset.S below SkScalerContext::getImage on Linux",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2010-10-15T05:33:51+00:00",
+  "modified_date": "2016-10-02T20:19:34+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53209458,
+      "filename": "mem.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 45,
+      "url": "https://issues.chromium.org/action/issues/40083821/attachments/53209458?download=true",
+      "local_path": "attachments/mem.html"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "A HTML-document with the content '<rt style=\"-webkit-text-stroke:+21016\">crash' causes a segmentation falt in Chromium 7.0.544.0 (Developer Build 61416) Built on Ubuntu running on x86_64 Ubuntu 10.10. The issue also affects current Google Chrome stable on the same machine.\r\n\r\nProgram received signal"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "40078889",
+  "url": "https://issues.chromium.org/issues/40078889",
+  "title": "Security: UXSS via dispatchEvent on iframes (subject to some conditions)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ai...@gmail.com",
+  "assignee": "mk...@chromium.org",
+  "created_date": "2014-02-11T01:53:33+00:00",
+  "modified_date": "2018-04-25T23:09:03+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53006179,
+      "filename": "parent.html",
+      "mime_type": "text/html",
+      "size_bytes": 1095,
+      "url": "https://issues.chromium.org/action/issues/40078889/attachments/53006179?download=true",
+      "local_path": "attachments/parent.html"
+    },
+    {
+      "id": 53006180,
+      "filename": "child.html",
+      "mime_type": "text/html",
+      "size_bytes": 1126,
+      "url": "https://issues.chromium.org/action/issues/40078889/attachments/53006180?download=true",
+      "local_path": "attachments/child.html"
+    },
+    {
+      "id": 53006213,
+      "filename": "docsxss.html",
+      "mime_type": "text/html",
+      "size_bytes": 2501,
+      "url": "https://issues.chromium.org/action/issues/40078889/attachments/53006213?download=true",
+      "local_path": "attachments/docsxss.html"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nPermits a page on an arbitrary site to retrieve the document element of any target page given the following conditions:  \n - the target page may be embedded in an iframe  \n - the target page has a handler for any window event  \n - the target page gets or sets any propert"
+}

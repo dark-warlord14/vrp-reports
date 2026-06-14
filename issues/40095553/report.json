@@ -1,0 +1,48 @@
+{
+  "id": "40095553",
+  "url": "https://issues.chromium.org/issues/40095553",
+  "title": "Security: PDFium (XFA) Use-after-free in CPDFSDK_AnnotHandlerMgr::GetNextAnnot",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hu...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2019-07-01T13:20:14+00:00",
+  "modified_date": "2020-06-02T03:16:06+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5500.0,
+  "reward_amount_meta": 5500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53233304,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 9731,
+      "url": "https://issues.chromium.org/action/issues/40095553/attachments/53233304?download=true",
+      "local_path": "attachments/poc.pdf"
+    },
+    {
+      "id": 53233305,
+      "filename": "crash_info.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18114,
+      "url": "https://issues.chromium.org/action/issues/40095553/attachments/53233305?download=true",
+      "local_path": "attachments/crash_info.txt"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUse-after-free in CPDFSDK_AnnotHandlerMgr::GetNextAnnot  \n  \n**VERSION**   \nOperating System: Windows 10 64bit  \nChrome with enabled XFA PDFium  \n  \n**REPRODUCTION CASE**   \nOpen file `poc.pdf` in chrome.exe with PageHeap is enabled  \nClick to edit box and press `Tab` ke"
+}

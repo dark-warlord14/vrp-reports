@@ -1,0 +1,52 @@
+{
+  "id": "40090967",
+  "url": "https://issues.chromium.org/issues/40090967",
+  "title": "Security: In-memory Cache UaF",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>Network>Cache",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ne...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2018-03-30T07:25:06+00:00",
+  "modified_date": "2018-12-04T06:20:27+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10500.0,
+  "reward_amount_meta": 10500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53148687,
+      "filename": "inmemory_eviction.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2515,
+      "url": "https://issues.chromium.org/action/issues/40090967/attachments/53148687?download=true",
+      "local_path": "attachments/inmemory_eviction.patch"
+    },
+    {
+      "id": 53148688,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 10502,
+      "url": "https://issues.chromium.org/action/issues/40090967/attachments/53148688?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIncognito mode uses an in-memory cache to avoid writing to disk like the blockfile and simple caches. This mode suffers from an issue with sparse writes similar to the bug reported in crbug.com/826626, but the issue is limited to a single function.  \n  \nSee the following"
+}

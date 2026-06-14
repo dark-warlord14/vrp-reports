@@ -1,0 +1,44 @@
+{
+  "id": "40077857",
+  "url": "https://issues.chromium.org/issues/40077857",
+  "title": "Heap-use-after-free in WebCore::RenderBlock::determineStartPosition",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Layout",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "jw...@chromium.org",
+  "created_date": "2013-07-30T12:58:36+00:00",
+  "modified_date": "2018-07-29T14:01:24+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53265145,
+      "filename": "chrome-heap-use-after-free-9c3.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 808,
+      "url": "https://issues.chromium.org/action/issues/40077857/attachments/53265145?download=true",
+      "local_path": "attachments/chrome-heap-use-after-free-9c3.html"
+    },
+    {
+      "id": 53265225,
+      "filename": "minified-repo.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 716,
+      "url": "https://issues.chromium.org/action/issues/40077857/attachments/53265225?download=true",
+      "local_path": "attachments/minified-repo.html"
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": "Tested on:\r\n\r\nOS: Windows 7 x64\r\n\r\nChrome:   30.0.1569.1 (Official build 212521) canary SyzyASan\r\nChromium: 30.0.1582.0 (Developer Build 214332) \r\n\r\nI only managed to get SyzyASAN-trace from Chrome Canary which is little outdated. In Chromium I get sad tab but I'm unable to analyse the crash any f"
+}

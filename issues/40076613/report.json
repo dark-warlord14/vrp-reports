@@ -1,0 +1,36 @@
+{
+  "id": "40076613",
+  "url": "https://issues.chromium.org/issues/40076613",
+  "title": "Access violation write in _VEC_memcpy",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals, Internals>Skia",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "bs...@google.com",
+  "created_date": "2012-11-25T15:38:19+00:00",
+  "modified_date": "2018-07-29T14:01:58+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52939023,
+      "filename": "_VEC_memcpy033.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 1457,
+      "url": "https://issues.chromium.org/action/issues/40076613/attachments/52939023?download=true",
+      "local_path": "attachments/_VEC_memcpy033.zip"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "Tested on:\r\n\r\nOS: Windows 7 x64\r\nChrome: 25.0.1334.0 (169347) canary ( didn't reproduce on current Stable Chrome )\r\n\r\nYou need to have page-heap enabled gflags.exe /p /enable chrome.exe /full and enviromental variable CHROME_ALLOCATOR set to \"winheap\". This issue did not reproduce without those se"
+}

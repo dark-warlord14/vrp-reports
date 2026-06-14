@@ -1,0 +1,44 @@
+{
+  "id": "40081112",
+  "url": "https://issues.chromium.org/issues/40081112",
+  "title": "Security: OOM situation can result in heap buffer overflow in CFX_BinaryBuf (pdfium)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@gmail.com",
+  "assignee": "ju...@foxitsoftware.com",
+  "created_date": "2015-01-04T14:05:13+00:00",
+  "modified_date": "2018-04-25T23:03:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52933680,
+      "filename": "asan_alloc_limit.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3302,
+      "url": "https://issues.chromium.org/action/issues/40081112/attachments/52933680?download=true",
+      "local_path": "attachments/asan_alloc_limit.patch"
+    },
+    {
+      "id": 52933681,
+      "filename": "test.pdf.gz",
+      "mime_type": "application/x-gzip",
+      "size_bytes": 36062,
+      "url": "https://issues.chromium.org/action/issues/40081112/attachments/52933681?download=true",
+      "local_path": "attachments/test.pdf.gz"
+    }
+  ],
+  "update_count": 76,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nCFX_BinaryBuf::ExpandBuf is implemented as follows:  \n  \nvoid CFX_BinaryBuf::ExpandBuf(FX_STRSIZE add_size)  \n{  \n    FX_STRSIZE new_size = add_size + m_DataSize;  \n    if (m_AllocSize >= new_size) {  \n        return;  \n    }  \n    int alloc_step;  \n    if (m_AllocSte"
+}

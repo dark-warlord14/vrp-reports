@@ -1,0 +1,84 @@
+{
+  "id": "40051428",
+  "url": "https://issues.chromium.org/issues/40051428",
+  "title": "Heap-use-after-free in WebCore::InlineFlowBox::computeOverAnnotationAdjustment",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sl...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2011-11-19T11:48:45+00:00",
+  "modified_date": "2016-10-02T20:23:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52947480,
+      "filename": "crash1.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 503,
+      "url": "https://issues.chromium.org/action/issues/40051428/attachments/52947480?download=true",
+      "local_path": "attachments/crash1.html"
+    },
+    {
+      "id": 52947481,
+      "filename": "stack1.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 12587,
+      "url": "https://issues.chromium.org/action/issues/40051428/attachments/52947481?download=true",
+      "local_path": "attachments/stack1.txt"
+    },
+    {
+      "id": 52947498,
+      "filename": "crash2.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 143,
+      "url": "https://issues.chromium.org/action/issues/40051428/attachments/52947498?download=true",
+      "local_path": "attachments/crash2.html"
+    },
+    {
+      "id": 52947517,
+      "filename": "crash3.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 224,
+      "url": "https://issues.chromium.org/action/issues/40051428/attachments/52947517?download=true",
+      "local_path": "attachments/crash3.html"
+    },
+    {
+      "id": 52947518,
+      "filename": "stack3.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 8851,
+      "url": "https://issues.chromium.org/action/issues/40051428/attachments/52947518?download=true",
+      "local_path": "attachments/stack3.txt"
+    },
+    {
+      "id": 52947584,
+      "filename": "stack4.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 6817,
+      "url": "https://issues.chromium.org/action/issues/40051428/attachments/52947584?download=true",
+      "local_path": "attachments/stack4.txt"
+    },
+    {
+      "id": 52947585,
+      "filename": "crash4.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 345,
+      "url": "https://issues.chromium.org/action/issues/40051428/attachments/52947585?download=true",
+      "local_path": "attachments/crash4.html"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "Crashes on dev (17.0.942.0 [110446]) and canary (17.0.943.0 [110669]). I can't reproduce it on stable.\r\n\r\nRepro:\r\n----- crash1.html -----\r\n<!DOCTYPE html>\r\n<script>\r\n    function main(){\r\n        console.log(window.document.documentElement.previousSibling.nextSibling.clientLeft)\r\n        window.docu"
+}

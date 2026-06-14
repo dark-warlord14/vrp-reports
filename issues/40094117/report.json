@@ -1,0 +1,54 @@
+{
+  "id": "40094117",
+  "url": "https://issues.chromium.org/issues/40094117",
+  "title": "Yet another double-free caused by malformed XPath expression in XSLT",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2011-2834"
+  ],
+  "reporter": "ya...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2011-08-19T03:30:38+00:00",
+  "modified_date": "2018-04-26T00:00:11+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52879598,
+      "filename": "demo.xml",
+      "mime_type": "application/xml; charset=us-ascii",
+      "size_bytes": 293,
+      "url": "https://issues.chromium.org/action/issues/40094117/attachments/52879598?download=true",
+      "local_path": "attachments/demo.xml"
+    },
+    {
+      "id": 52879599,
+      "filename": "repro.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 77,
+      "url": "https://issues.chromium.org/action/issues/40094117/attachments/52879599?download=true",
+      "local_path": "attachments/repro.html"
+    },
+    {
+      "id": 52879600,
+      "filename": "demo.xsl",
+      "mime_type": "application/xml; charset=us-ascii",
+      "size_bytes": 321,
+      "url": "https://issues.chromium.org/action/issues/40094117/attachments/52879600?download=true",
+      "local_path": "attachments/demo.xsl"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "This bug is quite similar in nature to https://crbug.com/chromium/63444 and 89402. When the XPath engine processes some malformed expression, say //book[hello:world()][1], it first evaluates the //book part, resulting in a node set filled with book elements. After that, each of these elements is set"
+}

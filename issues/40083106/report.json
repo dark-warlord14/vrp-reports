@@ -1,0 +1,36 @@
+{
+  "id": "40083106",
+  "url": "https://issues.chromium.org/issues/40083106",
+  "title": "Security: Permission bubble runs callbacks on cross-origin pages",
+  "status": "Accepted",
+  "severity": "Unknown",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": null,
+  "created_date": "2015-10-30T20:14:53+00:00",
+  "modified_date": "2017-06-06T13:05:09+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53152799,
+      "filename": "crbug_549724.html",
+      "mime_type": "text/html",
+      "size_bytes": 499,
+      "url": "https://issues.chromium.org/action/issues/40083106/attachments/53152799?download=true",
+      "local_path": "attachments/crbug_549724.html"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis vulnerability makes it possible to display a cross-origin modal dialog. This way it is possible to ask the victim to do some action on behalf of the website.  \n  \n**VERSION**   \nChrome Version: [46.0.2490.80 m] + [stable].  \n  \n**REPRODUCTION CASE**   \n1. Click on t"
+}

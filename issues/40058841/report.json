@@ -1,0 +1,48 @@
+{
+  "id": "40058841",
+  "url": "https://issues.chromium.org/issues/40058841",
+  "title": "Security: libxml2 growBuffer integer overflow on 64-bit machines",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2012-2807"
+  ],
+  "reporter": "as...@ut.ee",
+  "assignee": "[Deleted User]",
+  "created_date": "2012-05-27T10:15:06+00:00",
+  "modified_date": "2018-04-25T23:20:34+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53224774,
+      "filename": "bad.xml.gz",
+      "mime_type": "application/x-gzip; charset=binary",
+      "size_bytes": 208806,
+      "url": "https://issues.chromium.org/action/issues/40058841/attachments/53224774?download=true",
+      "local_path": "attachments/bad.xml.gz"
+    },
+    {
+      "id": 53224842,
+      "filename": "buffer.patch",
+      "mime_type": "text/x-diff; charset=us-ascii",
+      "size_bytes": 9514,
+      "url": "https://issues.chromium.org/action/issues/40058841/attachments/53224842?download=true",
+      "local_path": "attachments/buffer.patch"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "Here is the growBuffer macro at parser.c:  \n  \n#define growBuffer(buffer, n) {\t\t\t\t\t\t\\  \n    xmlChar \\*tmp;\t\t\t\t\t\t\t\\  \n    buffer##_size \\*= 2;\t\t\t\t\t\t\t\\  \n    buffer##_size += n;\t\t\t\t\t\t\t\\  \n    printf(\"growBuffer new_size=%08x\\n\", buffer##_size);\t\t\\  \n    fflush(stdout);\t\t\t\t\t\t\t\\  \n    tmp = (xmlChar \\*)"
+}

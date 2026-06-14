@@ -1,0 +1,43 @@
+{
+  "id": "40093365",
+  "url": "https://issues.chromium.org/issues/40093365",
+  "title": "Security: pdfium heap BOF in RelocateTableRowCells",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2018-12-10T17:57:12+00:00",
+  "modified_date": "2019-05-21T14:25:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53341174,
+      "filename": "victory_c746d4b1f2ad35a8d9652b8cb327caa0fb5849972dba4eae46672d3de0cc803c",
+      "mime_type": "text/plain",
+      "size_bytes": 108150,
+      "url": "https://issues.chromium.org/action/issues/40093365/attachments/53341174?download=true",
+      "local_path": "attachments/victory_c746d4b1f2ad35a8d9652b8cb327caa0fb5849972dba4eae46672d3de0cc803c"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "**VULNERABILITY DETAILS**   \npdfium heap BOF in RelocateTableRowCells (READ of size 4)  \n  \n**VERSION**   \ncommit 841c145e2eb1b44fbaf6a0266181e14b75036266  \nDate:   Sat Dec 8 01:01:57 2018 +0000   \n  \n**REPRODUCTION CASE**   \nOpen attached file.  \n  \nADDITIONAL INFORMATION  \nRendering PDF file /work"
+}

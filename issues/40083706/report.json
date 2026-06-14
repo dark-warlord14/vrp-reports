@@ -1,0 +1,46 @@
+{
+  "id": "40083706",
+  "url": "https://issues.chromium.org/issues/40083706",
+  "title": "Invalid memory access (with possible avenue to corruption)  in the xpath handling libxml",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2010-4008"
+  ],
+  "reporter": "mi...@bkav.com.vn",
+  "assignee": "[Deleted User]",
+  "created_date": "2010-10-11T07:51:11+00:00",
+  "modified_date": "2018-04-26T00:27:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52954482,
+      "filename": "demo.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 424,
+      "url": "https://issues.chromium.org/action/issues/40083706/attachments/52954482?download=true",
+      "local_path": "attachments/demo.zip"
+    },
+    {
+      "id": 52954542,
+      "filename": "libxml2-xpath-ns-attr-axis.patch",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 2261,
+      "url": "https://issues.chromium.org/action/issues/40083706/attachments/52954542?download=true",
+      "local_path": "attachments/libxml2-xpath-ns-attr-axis.patch"
+    }
+  ],
+  "update_count": 95,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nGoogle Chrome processes this .xml file (email attachment), the handling process tab will crash.  \n  \n**VERSION**   \nChrome Version: latest version (stable and beta).  \nOperating System: Windows XP3/Vista/7 (Linux and MacOS are likely to be affected).  \n  \n**REPRODUCTION"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "40083078",
+  "url": "https://issues.chromium.org/issues/40083078",
+  "title": "segmentation fault in bundled pdf plugin",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2010-09-07T14:53:51+00:00",
+  "modified_date": "2016-10-02T20:19:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53286778,
+      "filename": "segv.pdf",
+      "mime_type": "application/pdf; charset=binary",
+      "size_bytes": 168606,
+      "url": "https://issues.chromium.org/action/issues/40083078/attachments/53286778?download=true",
+      "local_path": "attachments/segv.pdf"
+    },
+    {
+      "id": 53286831,
+      "filename": "yannis_sample11.pdf",
+      "mime_type": "application/pdf; charset=binary",
+      "size_bytes": 89238,
+      "url": "https://issues.chromium.org/action/issues/40083078/attachments/53286831?download=true",
+      "local_path": "attachments/yannis_sample11.pdf"
+    },
+    {
+      "id": 53286842,
+      "filename": "segv-2.pdf",
+      "mime_type": "application/pdf; charset=binary",
+      "size_bytes": 54411,
+      "url": "https://issues.chromium.org/action/issues/40083078/attachments/53286842?download=true",
+      "local_path": "attachments/segv-2.pdf"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "Viewing the attached PDF document causes a segmentation fault somewhere in libpdf.so. The error occurs at least in Ubuntu 10.04 (x86_64) with Google Chrome 7.0.503.1 (Official Build 57041) dev.\r\n\r\nNo backtrace, because I do not have debugging symbols for Chrome yet."
+}

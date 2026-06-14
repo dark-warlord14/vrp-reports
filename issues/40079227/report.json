@@ -1,0 +1,52 @@
+{
+  "id": "40079227",
+  "url": "https://issues.chromium.org/issues/40079227",
+  "title": "Security: UAF/Crash in (websockets) onsentdata/reset with web and shared workers combined",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Network>WebSockets, Blink>Workers",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "th...@gmail.com",
+  "assignee": "ri...@chromium.org",
+  "created_date": "2014-03-30T22:25:12+00:00",
+  "modified_date": "2018-04-25T23:07:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53171314,
+      "filename": "websockets_onsentdata_uaf_asan_trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 12846,
+      "url": "https://issues.chromium.org/action/issues/40079227/attachments/53171314?download=true",
+      "local_path": "attachments/websockets_onsentdata_uaf_asan_trace.txt"
+    },
+    {
+      "id": 53171315,
+      "filename": "websockets_onsentdata_uaf_repro.html",
+      "mime_type": "text/html",
+      "size_bytes": 975,
+      "url": "https://issues.chromium.org/action/issues/40079227/attachments/53171315?download=true",
+      "local_path": "attachments/websockets_onsentdata_uaf_repro.html"
+    },
+    {
+      "id": 53171380,
+      "filename": "websocket_worker_repro.html",
+      "mime_type": "text/html",
+      "size_bytes": 1446,
+      "url": "https://issues.chromium.org/action/issues/40079227/attachments/53171380?download=true",
+      "local_path": "attachments/websocket_worker_repro.html"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe repro script causes a browser crash/UAF because shared and web worker (combined) cause Chrome to access already freed websocket related objects after the window/tab has been closed (automatically).  \n  \n**VERSION**   \nChrome Version: 33.0.1750.152 stable - 35.0.1916."
+}

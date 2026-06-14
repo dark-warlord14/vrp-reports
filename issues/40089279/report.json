@@ -1,0 +1,58 @@
+{
+  "id": "40089279",
+  "url": "https://issues.chromium.org/issues/40089279",
+  "title": "Security:  WebRtc - Another Type Confusion in cricket::Codec::Matches()",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lo...@gmail.com",
+  "assignee": "zh...@chromium.org",
+  "created_date": "2017-10-11T09:36:04+00:00",
+  "modified_date": "2018-03-27T13:05:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53229300,
+      "filename": "TypeConfusion_CodecMatches_Repro.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1001,
+      "url": "https://issues.chromium.org/action/issues/40089279/attachments/53229300?download=true",
+      "local_path": "attachments/TypeConfusion_CodecMatches_Repro.html"
+    },
+    {
+      "id": 53229337,
+      "filename": "TypeConfusion_CodecMatches_FullLog.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 463025,
+      "url": "https://issues.chromium.org/action/issues/40089279/attachments/53229337?download=true",
+      "local_path": "attachments/TypeConfusion_CodecMatches_FullLog.txt"
+    },
+    {
+      "id": 53229341,
+      "filename": "TypeConfusion_CodecMatches_FullLog2_webrtc.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2797478,
+      "url": "https://issues.chromium.org/action/issues/40089279/attachments/53229341?download=true",
+      "local_path": "attachments/TypeConfusion_CodecMatches_FullLog2_webrtc.txt"
+    }
+  ],
+  "update_count": 81,
+  "description_snippet": "VULNERABILITY DETAILS\r\n\r\n\tThe fix for https://crbug.com/chromium/763842 can be bypassed.\r\n\t\r\n\tSteps to reproduce:\r\n\t\r\n\t1.Open PoC TypeConfusion_CodecMatches_Repro.html in Chrome browser ASAN build.\r\n\t2.ASAN reports a Heap Buffer Overflow in cricket::Codec::Matches().\r\n\r\n\t\t========================="
+}

@@ -1,0 +1,52 @@
+{
+  "id": "40088648",
+  "url": "https://issues.chromium.org/issues/40088648",
+  "title": "Security: Autocomplete data can be stolen by malicious webpage",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "se...@chromium.org",
+  "created_date": "2017-08-09T02:45:58+00:00",
+  "modified_date": "2018-10-05T01:12:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53333274,
+      "filename": "steal.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1335,
+      "url": "https://issues.chromium.org/action/issues/40088648/attachments/53333274?download=true",
+      "local_path": "attachments/steal.html"
+    },
+    {
+      "id": 53333294,
+      "filename": "cardsteal.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1939,
+      "url": "https://issues.chromium.org/action/issues/40088648/attachments/53333294?download=true",
+      "local_path": "attachments/cardsteal.html"
+    },
+    {
+      "id": 53333301,
+      "filename": "card.html",
+      "mime_type": "text/plain",
+      "size_bytes": 542,
+      "url": "https://issues.chromium.org/action/issues/40088648/attachments/53333301?download=true",
+      "local_path": "attachments/card.html"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "VULNERABILITY DETAILS\r\nChrome autocomplete data (e.g. email addresses) can be stolen by a malicious webpage, if the page can convince the user to hold down the 'up' or 'down' arrow key for a few seconds (maybe by playing a game). This works even in Incognito mode.\r\n\r\nPressing the up/down arrow k"
+}

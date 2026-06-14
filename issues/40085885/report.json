@@ -1,0 +1,46 @@
+{
+  "id": "40085885",
+  "url": "https://issues.chromium.org/issues/40085885",
+  "title": "Security: chrome-devtools protocol allows to read the content of C:\\ drive",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2016-11-07T10:41:30+00:00",
+  "modified_date": "2018-04-25T22:48:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52901962,
+      "filename": "chrome-dev.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1722,
+      "url": "https://issues.chromium.org/action/issues/40085885/attachments/52901962?download=true",
+      "local_path": "attachments/chrome-dev.txt"
+    },
+    {
+      "id": 52901963,
+      "filename": "Recording.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 858428,
+      "url": "https://issues.chromium.org/action/issues/40085885/attachments/52901963?download=true",
+      "local_path": "attachments/Recording.mp4"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**VERSION**   \nChrome Version: 56.0.2912.0  \nOperating System: Win7  \n  \n**REPRODUCTION CASE**   \n1. Navigate to chrome-devtools://devtools/remote/serve_rev/@199588/devtools.html  \n2. Navigate to the link below in chrome-dev.txt (on the same tab)  \n3. Observe  \n  \nDemo Attack Script [pre-encoding]:"
+}

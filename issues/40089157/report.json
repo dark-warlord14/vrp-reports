@@ -1,0 +1,97 @@
+{
+  "id": "40089157",
+  "url": "https://issues.chromium.org/issues/40089157",
+  "title": "Security: UAF in CPWL_ComboBox::KillFocus",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "hn...@chromium.org",
+  "created_date": "2017-09-29T10:13:05+00:00",
+  "modified_date": "2018-10-05T01:13:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52929059,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 23481,
+      "url": "https://issues.chromium.org/action/issues/40089157/attachments/52929059?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 52929060,
+      "filename": "poc.in",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3622,
+      "url": "https://issues.chromium.org/action/issues/40089157/attachments/52929060?download=true",
+      "local_path": "attachments/poc.in"
+    },
+    {
+      "id": 52929061,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 4445,
+      "url": "https://issues.chromium.org/action/issues/40089157/attachments/52929061?download=true",
+      "local_path": "attachments/poc.pdf"
+    },
+    {
+      "id": 52929062,
+      "filename": "poc_mv.mov",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 5758617,
+      "url": "https://issues.chromium.org/action/issues/40089157/attachments/52929062?download=true",
+      "local_path": "attachments/poc_mv.mov"
+    },
+    {
+      "id": 52929077,
+      "filename": "combox_killfocus.in",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3807,
+      "url": "https://issues.chromium.org/action/issues/40089157/attachments/52929077?download=true",
+      "local_path": "attachments/combox_killfocus.in"
+    },
+    {
+      "id": 52929078,
+      "filename": "combox_killfocus.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 4630,
+      "url": "https://issues.chromium.org/action/issues/40089157/attachments/52929078?download=true",
+      "local_path": "attachments/combox_killfocus.pdf"
+    },
+    {
+      "id": 52929079,
+      "filename": "gdb_btfull",
+      "mime_type": "text/plain",
+      "size_bytes": 15299,
+      "url": "https://issues.chromium.org/action/issues/40089157/attachments/52929079?download=true",
+      "local_path": "attachments/gdb_btfull"
+    },
+    {
+      "id": 52929080,
+      "filename": "Screenshot from 2017-09-29 17-54-08.png",
+      "mime_type": "image/png",
+      "size_bytes": 376600,
+      "url": "https://issues.chromium.org/action/issues/40089157/attachments/52929080?download=true",
+      "local_path": "attachments/Screenshot from 2017-09-29 17-54-08.png"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "VULNERABILITY DETAILS\r\n\r\nhttps://cs.chromium.org/chromium/src/third_party/pdfium/fpdfsdk/pwl/cpwl_combo_box.cpp?type=cssq=package:chromium&l=175\r\n\r\nvoid CPWL_ComboBox::KillFocus() {\r\n  SetPopup(false);\r\n  CPWL_Wnd::KillFocus();\r\n}\r\n\r\n------------------------------------------------------------------"
+}

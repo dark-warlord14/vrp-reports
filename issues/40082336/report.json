@@ -1,0 +1,46 @@
+{
+  "id": "40082336",
+  "url": "https://issues.chromium.org/issues/40082336",
+  "title": "Security: adobe flash NetStream.appendBytes ByteArray data Use-After-Free",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2015-6682"
+  ],
+  "reporter": "xi...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2015-06-22T00:48:04+00:00",
+  "modified_date": "2016-12-29T14:02:08+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53205771,
+      "filename": "adobe flash NetStream.appendBytes ByteArray data Use-After-Free.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 302317,
+      "url": "https://issues.chromium.org/action/issues/40082336/attachments/53205771?download=true",
+      "local_path": "attachments/adobe flash NetStream.appendBytes ByteArray data Use-After-Free.zip"
+    },
+    {
+      "id": 53205785,
+      "filename": "poc-leak.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 3494,
+      "url": "https://issues.chromium.org/action/issues/40082336/attachments/53205785?download=true",
+      "local_path": "attachments/poc-leak.zip"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nBy calling NetStream.appendBytes(ByteArray ba, ...)  \nflash will parse the data we passed in the ByteArray, it seems the function will directy pass   \nthe raw buffer in the ByteArray to lower implementation functions, insteading of copying the data.  \n  \nSo if w"
+}

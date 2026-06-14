@@ -1,0 +1,36 @@
+{
+  "id": "40086883",
+  "url": "https://issues.chromium.org/issues/40086883",
+  "title": "Security: type confusion in JSPropGetter of pdfium ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hi...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2017-02-24T12:16:29+00:00",
+  "modified_date": "2018-04-25T22:43:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53298926,
+      "filename": "poc1.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 948,
+      "url": "https://issues.chromium.org/action/issues/40086883/attachments/53298926?download=true",
+      "local_path": "attachments/poc1.pdf"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nembed the following simple JavaScript into a PDF  \nvar obj = new this.constructor;  \nobj.author=3;  \nopen it in Chrome, you'll see the crashed pdfviewer plugin  \n  \nthe constructor of the document object(or app,console,global etc) should not been exported to user JavaScr"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "40082345",
+  "url": "https://issues.chromium.org/issues/40082345",
+  "title": "Security: improperly escaped \"saved from url\" info allows modification of saved pages",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Editing",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2015-6784"
+  ],
+  "reporter": "in...@gmail.com",
+  "assignee": "yo...@chromium.org",
+  "created_date": "2015-06-22T18:44:25+00:00",
+  "modified_date": "2018-07-28T14:25:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52895479,
+      "filename": "poc_screenshot.png",
+      "mime_type": "image/png",
+      "size_bytes": 74056,
+      "url": "https://issues.chromium.org/action/issues/40082345/attachments/52895479?download=true",
+      "local_path": "attachments/poc_screenshot.png"
+    },
+    {
+      "id": 52895480,
+      "filename": "poc.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 26951,
+      "url": "https://issues.chromium.org/action/issues/40082345/attachments/52895480?download=true",
+      "local_path": "attachments/poc.zip"
+    }
+  ],
+  "update_count": 72,
+  "description_snippet": "**This template is ONLY for reporting security bugs. Please use a different**   \n**template for other types of bug reports.**   \n  \n**Please see the following link for instructions on filing security bugs:**   \n**http://www.chromium.org/Home/chromium-security/reporting-security-bugs**   \n  \n  \n**VUL"
+}

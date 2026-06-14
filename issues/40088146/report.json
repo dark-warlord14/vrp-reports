@@ -1,0 +1,124 @@
+{
+  "id": "40088146",
+  "url": "https://issues.chromium.org/issues/40088146",
+  "title": "Floats not cleared to logical height wraps.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2011-02-19T14:12:52+00:00",
+  "modified_date": "2018-04-26T00:14:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53265967,
+      "filename": "insertfloating.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 819,
+      "url": "https://issues.chromium.org/action/issues/40088146/attachments/53265967?download=true",
+      "local_path": "attachments/insertfloating.html"
+    },
+    {
+      "id": 53265982,
+      "filename": "valgrind_73526.txt",
+      "mime_type": "text/x-pascal; charset=us-ascii",
+      "size_bytes": 12926,
+      "url": "https://issues.chromium.org/action/issues/40088146/attachments/53265982?download=true",
+      "local_path": "attachments/valgrind_73526.txt"
+    },
+    {
+      "id": 53265995,
+      "filename": "b3.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 4096,
+      "url": "https://issues.chromium.org/action/issues/40088146/attachments/53265995?download=true",
+      "local_path": "attachments/b3.html"
+    },
+    {
+      "id": 53265996,
+      "filename": "2.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 741,
+      "url": "https://issues.chromium.org/action/issues/40088146/attachments/53265996?download=true",
+      "local_path": "attachments/2.html"
+    },
+    {
+      "id": 53265997,
+      "filename": "b2.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 4096,
+      "url": "https://issues.chromium.org/action/issues/40088146/attachments/53265997?download=true",
+      "local_path": "attachments/b2.html"
+    },
+    {
+      "id": 53265998,
+      "filename": "b1.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 4096,
+      "url": "https://issues.chromium.org/action/issues/40088146/attachments/53265998?download=true",
+      "local_path": "attachments/b1.html"
+    },
+    {
+      "id": 53265999,
+      "filename": "3.html",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 728,
+      "url": "https://issues.chromium.org/action/issues/40088146/attachments/53265999?download=true",
+      "local_path": "attachments/3.html"
+    },
+    {
+      "id": 53266000,
+      "filename": "1.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 722,
+      "url": "https://issues.chromium.org/action/issues/40088146/attachments/53266000?download=true",
+      "local_path": "attachments/1.html"
+    },
+    {
+      "id": 53266001,
+      "filename": "4.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 733,
+      "url": "https://issues.chromium.org/action/issues/40088146/attachments/53266001?download=true",
+      "local_path": "attachments/4.html"
+    },
+    {
+      "id": 53266025,
+      "filename": "null140.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 335,
+      "url": "https://issues.chromium.org/action/issues/40088146/attachments/53266025?download=true",
+      "local_path": "attachments/null140.html"
+    },
+    {
+      "id": 53266047,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40088146/attachments/53266047?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53266048,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40088146/attachments/53266048?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nstale pointer RIP goes to random address  \n  \n**VERSION**   \nGoogle Chrome\t9.0.597.98 (Official Build 74359)  \nChromium\t11.0.673.0 (Developer Build 75059) Ubuntu 10.10  \non Linux 2.6.35-27-generic #47-Ubuntu SMP Fri Feb 11 22:52:49 UTC 2011 x86_64  \n  \nGoogle Chrome 9"
+}

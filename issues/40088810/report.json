@@ -1,0 +1,38 @@
+{
+  "id": "40088810",
+  "url": "https://issues.chromium.org/issues/40088810",
+  "title": "Security:  Use after free vulnerability about psdk in the latest version",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ji...@gmail.com",
+  "assignee": "na...@google.com",
+  "created_date": "2017-08-25T07:39:30+00:00",
+  "modified_date": "2018-05-04T14:19:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53400147,
+      "filename": "uaf_poc.swf",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2398,
+      "url": "https://issues.chromium.org/action/issues/40088810/attachments/53400147?download=true",
+      "local_path": "attachments/uaf_poc.swf"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "VULNERABILITY DETAILS\r\nThis is a UAF vulnerability about psdk.\r\n\r\nVERSION\r\npepflashplayer32_26_0_0_151 windows 7 x86\r\n（ther operating systems may also crash,but not test）\r\n\r\nFOR CRASHES, PLEASE INCLUDE THE FOLLOWING ADDITIONAL INFORMATION\r\nType of crash:\r\n5a6311a0 83c104          add     ecx,4\r\n5a63"
+}

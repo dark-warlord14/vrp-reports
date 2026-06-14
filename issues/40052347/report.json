@@ -1,0 +1,52 @@
+{
+  "id": "40052347",
+  "url": "https://issues.chromium.org/issues/40052347",
+  "title": "Global-buffer-overflow in render_line",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals, Internals>Media",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "sc...@chromium.org",
+  "created_date": "2011-12-22T11:44:03+00:00",
+  "modified_date": "2018-04-25T23:52:05+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52922273,
+      "filename": "bof.webm",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 1048576,
+      "url": "https://issues.chromium.org/action/issues/40052347/attachments/52922273?download=true",
+      "local_path": "attachments/bof.webm"
+    },
+    {
+      "id": 52922317,
+      "filename": "patch.txt",
+      "mime_type": "text/x-diff; charset=us-ascii",
+      "size_bytes": 407,
+      "url": "https://issues.chromium.org/action/issues/40052347/attachments/52922317?download=true",
+      "local_path": "attachments/patch.txt"
+    },
+    {
+      "id": 52922340,
+      "filename": "0001-vorbis-fix-overflows-in-floor1-vector-and-inverse-db.patch",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 3564,
+      "url": "https://issues.chromium.org/action/issues/40052347/attachments/52922340?download=true",
+      "local_path": "attachments/0001-vorbis-fix-overflows-in-floor1-vector-and-inverse-db.patch"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nASan reports a global buffer overflow when the attached video is played. It also crashes renderer in current stable version.  \n  \n**VERSION**   \nChrome Version: 16.0.912.63 and 18.0.979.0  \nOperating System: Linux (Debian 6.0.3, x86_64)  \n  \n**REPRODUCTION CASE**   \n $ c"
+}

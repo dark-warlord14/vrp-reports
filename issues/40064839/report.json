@@ -1,0 +1,44 @@
+{
+  "id": "40064839",
+  "url": "https://issues.chromium.org/issues/40064839",
+  "title": "SkPaint::SkPaint - crash",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals, Internals>Skia",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sl...@gmail.com",
+  "assignee": "da...@chromium.org",
+  "created_date": "2012-08-26T23:22:57+00:00",
+  "modified_date": "2016-10-02T20:23:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53005996,
+      "filename": "crash1.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 279,
+      "url": "https://issues.chromium.org/action/issues/40064839/attachments/53005996?download=true",
+      "local_path": "attachments/crash1.html"
+    },
+    {
+      "id": 53005997,
+      "filename": "stack1.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 3358,
+      "url": "https://issues.chromium.org/action/issues/40064839/attachments/53005997?download=true",
+      "local_path": "attachments/stack1.txt"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "Crashes on windows dev 23.0.1243.2 (153013) and canary 23.0.1245.0 (153342).\r\n\r\nRepro:\r\n----- crash1.html -----\r\n<style>\r\n@-webkit-keyframes kf0 {\r\n   to {\r\n      -webkit-mask: -webkit-radial-gradient(#000, #000);\r\n   }\r\n}\r\n</style>\r\n<video src=\"foo\">foo</video>\r\n<span style=\"-webkit-animation: kf0"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "40090247",
+  "url": "https://issues.chromium.org/issues/40090247",
+  "title": "Security: TexImage3D heap-buffer-overflow in WebKit Webgl",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>WebGL",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "ka...@chromium.org",
+  "created_date": "2018-01-21T01:19:08+00:00",
+  "modified_date": "2019-01-04T01:00:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53176446,
+      "filename": "TexImage3D.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1763,
+      "url": "https://issues.chromium.org/action/issues/40090247/attachments/53176446?download=true",
+      "local_path": "attachments/TexImage3D.html"
+    },
+    {
+      "id": 53176447,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13795,
+      "url": "https://issues.chromium.org/action/issues/40090247/attachments/53176447?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "TexImage3D heap-buffer-overflow in WebKit Webgl on macOS. Tested on asan-mac-release-529226.zip\r\n\r\nAddressSanitizer: heap-buffer-overflow on address 0x61700007c080 at pc 0x00010158b1f2 bp 0x7ffeee70bcd0 sp 0x7ffeee70b480\r\nREAD of size 336 at 0x61700007c080 thread T0\r\n    #0 0x10158b1f1 in __asan_mem"
+}

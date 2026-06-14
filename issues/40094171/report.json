@@ -1,0 +1,57 @@
+{
+  "id": "40094171",
+  "url": "https://issues.chromium.org/issues/40094171",
+  "title": "Security: CORS issue with Chrome Extensions",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature>CORS, Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gr...@gmail.com",
+  "assignee": "to...@chromium.org",
+  "created_date": "2019-02-28T17:46:13+00:00",
+  "modified_date": "2019-11-23T00:04:27+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53072875,
+      "filename": "main.js",
+      "mime_type": "text/plain",
+      "size_bytes": 234,
+      "url": "https://issues.chromium.org/action/issues/40094171/attachments/53072875?download=true",
+      "local_path": "attachments/main.js"
+    },
+    {
+      "id": 53072876,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 229,
+      "url": "https://issues.chromium.org/action/issues/40094171/attachments/53072876?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53072923,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 233,
+      "url": "https://issues.chromium.org/action/issues/40094171/attachments/53072923?download=true",
+      "local_path": "attachments/manifest_53072923.json"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nHello, I found that Chrome Extensions are NOT properly enforcing CORS. Specifically, an extension can successfully fetch a url on a different port than the user is visiting. This is denied by other Browsers such as FireFox. Furthermore, if you are to run the same code on"
+}

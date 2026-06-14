@@ -1,0 +1,68 @@
+{
+  "id": "40088020",
+  "url": "https://issues.chromium.org/issues/40088020",
+  "title": "Crash due to bad cast to rendertextfragment in updatefirstletter.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2011-02-16T07:20:43+00:00",
+  "modified_date": "2018-04-26T00:15:06+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53072941,
+      "filename": "nullptr70.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 246,
+      "url": "https://issues.chromium.org/action/issues/40088020/attachments/53072941?download=true",
+      "local_path": "attachments/nullptr70.html"
+    },
+    {
+      "id": 53072942,
+      "filename": "win.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 944,
+      "url": "https://issues.chromium.org/action/issues/40088020/attachments/53072942?download=true",
+      "local_path": "attachments/win.html"
+    },
+    {
+      "id": 53072943,
+      "filename": "nullptr20.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 251,
+      "url": "https://issues.chromium.org/action/issues/40088020/attachments/53072943?download=true",
+      "local_path": "attachments/nullptr20.html"
+    },
+    {
+      "id": 53072944,
+      "filename": "nullptr38.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 250,
+      "url": "https://issues.chromium.org/action/issues/40088020/attachments/53072944?download=true",
+      "local_path": "attachments/nullptr38.html"
+    },
+    {
+      "id": 53072962,
+      "filename": "crash_wrangler_73134.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 7220,
+      "url": "https://issues.chromium.org/action/issues/40088020/attachments/53072962?download=true",
+      "local_path": "attachments/crash_wrangler_73134.txt"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nrip == 0 with dd, dir tags and designmode  \n  \n**VERSION**   \nChromium 11.0.672.0 Ubuntu 10.10  \nLinux 2.6.35-26-generic #46-Ubuntu SMP Sun Jan 30 06:59:07 UTC 2011 x86_64  \n  \nGoogle Chrome 9.0.597.98   \nLinux 2.6.35-26-generic #46-Ubuntu SMP Sun Jan 30 06:59:07 U"
+}

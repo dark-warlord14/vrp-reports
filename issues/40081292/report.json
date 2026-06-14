@@ -1,0 +1,52 @@
+{
+  "id": "40081292",
+  "url": "https://issues.chromium.org/issues/40081292",
+  "title": "Memory Corruption with invalid svg rendering",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": null,
+  "created_date": "2010-05-28T13:28:00+00:00",
+  "modified_date": "2016-10-02T20:18:18+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53285097,
+      "filename": "bug45331.svg",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 47,
+      "url": "https://issues.chromium.org/action/issues/40081292/attachments/53285097?download=true",
+      "local_path": "attachments/bug45331.svg"
+    },
+    {
+      "id": 53285111,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40081292/attachments/53285111?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53285116,
+      "filename": "segv-getBorderPaddingMargin.svg",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 47,
+      "url": "https://issues.chromium.org/action/issues/40081292/attachments/53285116?download=true",
+      "local_path": "attachments/segv-getBorderPaddingMargin.svg"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "A segmentation fault occurs in 32-bit Chromium (6.0.416.0 (Developer Build\r\n48240) Ubuntu) on Ubuntu 10.04 when a malformed SVG file is opened. To\r\nreproduce:\r\n\r\n $ echo '<g xmlns=\"http://www.w3.org/2000/svg\"><text>a' > test.svg\r\n $ chromium-browser test.svg\r\n\r\nThe issue does not affect Google Chrom"
+}

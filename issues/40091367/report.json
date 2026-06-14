@@ -1,0 +1,41 @@
+{
+  "id": "40091367",
+  "url": "https://issues.chromium.org/issues/40091367",
+  "title": "Security: Uninitialized Memory Read in CXFA_LayoutPageMgr::GetAvailHeight",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "hn...@chromium.org",
+  "created_date": "2018-05-13T10:08:28+00:00",
+  "modified_date": "2018-11-01T14:23:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53135445,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40091367/attachments/53135445?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAn out-of-bounds-read (uninitialized-memory-read) issue was found in PDFium. Following log was produced by AddressSanitizer.  \n  \n=================================================================  \n==9584==ERROR: AddressSanitizer: access-violation on unknown address 0xbe"
+}

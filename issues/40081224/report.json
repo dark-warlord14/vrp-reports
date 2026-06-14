@@ -1,0 +1,48 @@
+{
+  "id": "40081224",
+  "url": "https://issues.chromium.org/issues/40081224",
+  "title": "Adobe Flash Player Out-of-Bound Access Vulnerability",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2013-0634",
+    "CVE-2014-0559",
+    "CVE-2015-0330"
+  ],
+  "reporter": "we...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2015-01-20T11:42:56+00:00",
+  "modified_date": "2018-04-25T23:03:10+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53175092,
+      "filename": "poc.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 5577,
+      "url": "https://issues.chromium.org/action/issues/40081224/attachments/53175092?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 53175155,
+      "filename": "single.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 616477,
+      "url": "https://issues.chromium.org/action/issues/40081224/attachments/53175155?download=true",
+      "local_path": "attachments/single.zip"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "I. Summary\r\nAdobe Flash Player is prone to a vulnerability which leads to Out-of-Bound memory access memory via carefully crafted regular expression. An attacker can exploit this issue to defeat ASLR protection or even execute arbitrary code in the context of affected application (Internet Explore"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "40092604",
+  "url": "https://issues.chromium.org/issues/40092604",
+  "title": "Security: macOS: the option to \"Allow JavaScript From Apple Events\" can easily be activated by malicious apps.",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>PlatformIntegration",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "an...@hegenberg.me",
+  "assignee": "rs...@chromium.org",
+  "created_date": "2018-10-03T13:49:17+00:00",
+  "modified_date": "2019-02-19T03:13:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53290851,
+      "filename": "ExecuteJavaScriptUsingKeyboardShortcut_Source.applescript",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 821,
+      "url": "https://issues.chromium.org/action/issues/40092604/attachments/53290851?download=true",
+      "local_path": "attachments/ExecuteJavaScriptUsingKeyboardShortcut_Source.applescript"
+    },
+    {
+      "id": 53290852,
+      "filename": "ExecuteJavascriptUsingAccessibility_Source.applescript",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 519,
+      "url": "https://issues.chromium.org/action/issues/40092604/attachments/53290852?download=true",
+      "local_path": "attachments/ExecuteJavascriptUsingAccessibility_Source.applescript"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nGoogle Chrome has recently disabled triggering JavaScript using Apple Events on macOS by default - which was a very good idea. As a user I expected this to protect me from attacks based on malicious apps that send Apple Events. However it turns out that it is pretty easy"
+}

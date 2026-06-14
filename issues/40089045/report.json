@@ -1,0 +1,94 @@
+{
+  "id": "40089045",
+  "url": "https://issues.chromium.org/issues/40089045",
+  "title": "Chrome OS exploit: WebAsm, Site Isolation, crosh, crash reporter, cryptohomed",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>JavaScript>WebAssembly, OS>Systems",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gz...@gmail.com",
+  "assignee": "mn...@chromium.org",
+  "created_date": "2017-09-18T18:44:42+00:00",
+  "modified_date": "2018-03-27T13:07:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 100000.0,
+  "reward_amount_meta": 100000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52930238,
+      "filename": "crosxpl2.tar.gz",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 5612881,
+      "url": "https://issues.chromium.org/action/issues/40089045/attachments/52930238?download=true",
+      "local_path": "attachments/crosxpl2.tar.gz"
+    },
+    {
+      "id": 52930239,
+      "filename": "wasm_xpl.js",
+      "mime_type": "text/plain",
+      "size_bytes": 7924,
+      "url": "https://issues.chromium.org/action/issues/40089045/attachments/52930239?download=true",
+      "local_path": "attachments/wasm_xpl.js"
+    },
+    {
+      "id": 52930240,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 5041,
+      "url": "https://issues.chromium.org/action/issues/40089045/attachments/52930240?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 52930241,
+      "filename": "sc.cc",
+      "mime_type": "text/plain",
+      "size_bytes": 24541,
+      "url": "https://issues.chromium.org/action/issues/40089045/attachments/52930241?download=true",
+      "local_path": "attachments/sc.cc"
+    },
+    {
+      "id": 52930242,
+      "filename": "crosher.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3269,
+      "url": "https://issues.chromium.org/action/issues/40089045/attachments/52930242?download=true",
+      "local_path": "attachments/crosher.js"
+    },
+    {
+      "id": 52930243,
+      "filename": "crasher.c",
+      "mime_type": "text/plain",
+      "size_bytes": 4277,
+      "url": "https://issues.chromium.org/action/issues/40089045/attachments/52930243?download=true",
+      "local_path": "attachments/crasher.c"
+    },
+    {
+      "id": 52930244,
+      "filename": "persist",
+      "mime_type": "text/plain",
+      "size_bytes": 1622,
+      "url": "https://issues.chromium.org/action/issues/40089045/attachments/52930244?download=true",
+      "local_path": "attachments/persist"
+    },
+    {
+      "id": 52930427,
+      "filename": "fix_offsets",
+      "mime_type": "text/plain",
+      "size_bytes": 1984,
+      "url": "https://issues.chromium.org/action/issues/40089045/attachments/52930427?download=true",
+      "local_path": "attachments/fix_offsets"
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "[ WebAsm OOB ArrayBuffer ]\r\n\r\nWebAsm instance builder reads imports from an attacker-controlled object in v8/src/wasm/wasm-module.cc:1625 ProcessImports(). Imports can be getters, which run while the instance is being built and is not in a consistent state. If the getter builds another instance for"
+}

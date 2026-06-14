@@ -1,0 +1,36 @@
+{
+  "id": "40080281",
+  "url": "https://issues.chromium.org/issues/40080281",
+  "title": "Heap-use-after-free in CPDF_Object::Release",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "bo...@foxitsoftware.com",
+  "created_date": "2014-08-23T21:20:12+00:00",
+  "modified_date": "2018-04-25T23:05:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "reward_amount_meta": 1500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52883489,
+      "filename": "repro-file.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 634,
+      "url": "https://issues.chromium.org/action/issues/40080281/attachments/52883489?download=true",
+      "local_path": "attachments/repro-file.pdf"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "Tested on:\r\n\r\nOS: Ubuntu 12.04\r\n\r\npdfium_test: The one from ASAN Chrome 39.0.2133.0 (Developer Build 291444)\r\n\r\nThe repro-file causes clean crash in the pdfium_test, but if you open the repro-file in Chrome, Chrome fails to render the file but no crash occurs.\r\n\r\nI would guess you guys still want"
+}

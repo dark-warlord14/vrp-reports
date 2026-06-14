@@ -1,0 +1,62 @@
+{
+  "id": "40081235",
+  "url": "https://issues.chromium.org/issues/40081235",
+  "title": "Heap-buffer-overflow in opj_dwt_decode_1",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@hboeck.de",
+  "assignee": "ju...@foxitsoftware.com",
+  "created_date": "2015-01-22T00:41:44+00:00",
+  "modified_date": "2016-10-02T20:04:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53312108,
+      "filename": "crash2.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 10889,
+      "url": "https://issues.chromium.org/action/issues/40081235/attachments/53312108?download=true",
+      "local_path": "attachments/crash2.pdf"
+    },
+    {
+      "id": 53312109,
+      "filename": "test0.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 1082,
+      "url": "https://issues.chromium.org/action/issues/40081235/attachments/53312109?download=true",
+      "local_path": "attachments/test0.pdf"
+    },
+    {
+      "id": 53312110,
+      "filename": "crash2.pdf.asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 19449,
+      "url": "https://issues.chromium.org/action/issues/40081235/attachments/53312110?download=true",
+      "local_path": "attachments/crash2.pdf.asan.log"
+    },
+    {
+      "id": 53312111,
+      "filename": "test0.pdf.asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 55806,
+      "url": "https://issues.chromium.org/action/issues/40081235/attachments/53312111?download=true",
+      "local_path": "attachments/test0.pdf.asan.log"
+    }
+  ],
+  "update_count": 77,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/40.0.2214.85 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. take the asan-prebuilt chrome package\r\n2. run pdfium_test with attached pdf files, see asan crash report:\r\n\r\n==6815==ERROR: AddressSanitizer: hea"
+}

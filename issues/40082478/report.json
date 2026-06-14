@@ -1,0 +1,46 @@
+{
+  "id": "40082478",
+  "url": "https://issues.chromium.org/issues/40082478",
+  "title": "chrome.embeddedSearch.newTabPage.navigateContentWindow is too powerful",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2016-1625"
+  ],
+  "reporter": "ja...@googlemail.com",
+  "assignee": "dc...@chromium.org",
+  "created_date": "2015-07-12T08:45:57+00:00",
+  "modified_date": "2018-04-25T22:57:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53011816,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40082478/attachments/53011816?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53011817,
+      "filename": "poc_fast.mkv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 621958,
+      "url": "https://issues.chromium.org/action/issues/40082478/attachments/53011817?download=true",
+      "local_path": "attachments/poc_fast.mkv"
+    }
+  ],
+  "update_count": 108,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.132 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Add the following extension to chrome:\r\n===== begin manifest.json =====\r\n{\r\n  \"manifest_version\": 2,\r\n  \"name\": \"evil newtab extension\",\r\n  \"des"
+}

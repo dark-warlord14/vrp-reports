@@ -1,0 +1,52 @@
+{
+  "id": "40051431",
+  "url": "https://issues.chromium.org/issues/40051431",
+  "title": "Heap-use-after-free in WebCore::SubresourceLoader::didFail",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "si...@chromium.org",
+  "created_date": "2011-11-19T14:08:17+00:00",
+  "modified_date": "2018-04-25T23:54:16+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53033476,
+      "filename": "asan-worker-error.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 9538,
+      "url": "https://issues.chromium.org/action/issues/40051431/attachments/53033476?download=true",
+      "local_path": "attachments/asan-worker-error.txt"
+    },
+    {
+      "id": 53033477,
+      "filename": "worker-error.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 114,
+      "url": "https://issues.chromium.org/action/issues/40051431/attachments/53033477?download=true",
+      "local_path": "attachments/worker-error.html"
+    },
+    {
+      "id": 53033478,
+      "filename": "valgrind-worker-error.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 5759,
+      "url": "https://issues.chromium.org/action/issues/40051431/attachments/53033478?download=true",
+      "local_path": "attachments/valgrind-worker-error.txt"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nloading the same nonexistent with multiple workers, leads to a use-after-free condition   \n  \n**VERSION**   \nChrome Version: dev channel only  \n  \nChromium\t17.0.944.0 (Developer Build 110836)  \nOS\tLinux  \nWebKit\t535.10 (trunk@100785)  \nJavaScript\tV8 3.7.8  \n---  \nChro"
+}

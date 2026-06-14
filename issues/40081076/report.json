@@ -1,0 +1,44 @@
+{
+  "id": "40081076",
+  "url": "https://issues.chromium.org/issues/40081076",
+  "title": "ASSERTION FAILED: !value || (value->isPrimitiveValue())",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "rb...@chromium.org",
+  "created_date": "2014-12-29T09:23:25+00:00",
+  "modified_date": "2016-10-02T20:05:06+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "reward_amount_meta": 1500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53340594,
+      "filename": "POC2.html",
+      "mime_type": "text/html",
+      "size_bytes": 236,
+      "url": "https://issues.chromium.org/action/issues/40081076/attachments/53340594?download=true",
+      "local_path": "attachments/POC2.html"
+    },
+    {
+      "id": 53340595,
+      "filename": "ASANlog.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11274,
+      "url": "https://issues.chromium.org/action/issues/40081076/attachments/53340595?download=true",
+      "local_path": "attachments/ASANlog.txt"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \ncrash when setting font-kerning style attribute in web animations to \"unset\" through element.animate() method  \n  \n==8845==ERROR: AddressSanitizer: SEGV on unknown address 0x0000fbadbeef (pc 0x000113cad35f bp 0x7fff5523a4b0 sp 0x7fff5523a4a0 T0)  \n  \n**VERSION**   \nCh"
+}

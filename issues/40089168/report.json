@@ -1,0 +1,43 @@
+{
+  "id": "40089168",
+  "url": "https://issues.chromium.org/issues/40089168",
+  "title": "Stack-buffer-overflow in Runtime_CanonicalizeLanguageTag",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>JavaScript, Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sc...@gmail.com",
+  "assignee": "js...@chromium.org",
+  "created_date": "2017-09-30T07:38:12+00:00",
+  "modified_date": "2018-10-05T01:13:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53031125,
+      "filename": "patch.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 493,
+      "url": "https://issues.chromium.org/action/issues/40089168/attachments/53031125?download=true",
+      "local_path": "attachments/patch.diff"
+    }
+  ],
+  "update_count": 77,
+  "description_snippet": "VULNERABILITY DETAILS\r\n//uloc_tag.cpp\r\n\r\n\r\n2412:\r\nuloc_forLanguageTag(const char* langtag,\r\n                    char* localeID,\r\n                    int32_t localeIDCapacity,\r\n                    int32_t* parsedLength,\r\n                    UErrorCode* status) {\r\n2524:\r\n        len = _appendKeywords("
+}

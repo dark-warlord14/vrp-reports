@@ -1,0 +1,29 @@
+{
+  "id": "40095526",
+  "url": "https://issues.chromium.org/issues/40095526",
+  "title": "Security: Navigating to \"chrome://\" URLs on Android ",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "qi...@chromium.org",
+  "created_date": "2019-06-28T00:01:46+00:00",
+  "modified_date": "2019-12-20T15:40:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 30,
+  "description_snippet": "**VERSION**   \nChrome Version: 77.0.3836.3 canary  \nOperating System: Android  \n  \nSimilar to https://crbug.com/chromium/528505  \n  \n**REPRODUCTION CASE**   \n1. Go to  \nhttps://shhnjk.azurewebsites.net/download_redirector.php?url=chrome://history  \n2. Observe"
+}

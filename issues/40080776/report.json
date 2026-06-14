@@ -1,0 +1,36 @@
+{
+  "id": "40080776",
+  "url": "https://issues.chromium.org/issues/40080776",
+  "title": "Heap-use-after-free in blink::Node::setNeedsStyleRecalc",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "pd...@chromium.org",
+  "created_date": "2014-11-03T15:04:19+00:00",
+  "modified_date": "2018-04-25T23:04:34+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53222537,
+      "filename": "chrome-heap-use-after-free-blinkNodegetFlag.html",
+      "mime_type": "text/html",
+      "size_bytes": 626,
+      "url": "https://issues.chromium.org/action/issues/40080776/attachments/53222537?download=true",
+      "local_path": "attachments/chrome-heap-use-after-free-blinkNodegetFlag.html"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "Tested on:\r\n\r\nOS: Ubuntu 14.04\r\n\r\nChromium: 40.0.2209.0 (Developer Build) \r\nRevision: 09df15868941e7489acff767e00864769ca6338b-refs/heads/master@{#302420}\r\n\r\n\r\n\r\n\r\nASAN-trace:\r\n\r\n==21900==ERROR: AddressSanitizer: heap-use-after-free on address 0x60b000013ea8 at pc 0x7fb419393770 bp 0x7ffff565d270"
+}

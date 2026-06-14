@@ -1,0 +1,36 @@
+{
+  "id": "40076551",
+  "url": "https://issues.chromium.org/issues/40076551",
+  "title": "Security: Use after free on ~AssociatedURLLoader with pdf plugin",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Internals, Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2012-11-05T16:46:13+00:00",
+  "modified_date": "2018-04-25T23:17:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53112171,
+      "filename": "repro.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 490,
+      "url": "https://issues.chromium.org/action/issues/40076551/attachments/53112171?download=true",
+      "local_path": "attachments/repro.html"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nI think this is the same issue as 139814. It is possible to fire dom ready state event when plugin is destroyed.  \n  \n**VERSION**   \nChrome Version: [ 22.0.1229.94] + [stable]  \n                [24.0.1312.2] + [dev]  \n                [25.0.1316.0 (165849)] + [trunk build"
+}

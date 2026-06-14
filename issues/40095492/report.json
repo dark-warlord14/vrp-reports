@@ -1,0 +1,43 @@
+{
+  "id": "40095492",
+  "url": "https://issues.chromium.org/issues/40095492",
+  "title": "Security: pdfium heap-use-after-free in CXFA_ItemLayoutProcessor::InsertFlowedItem",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2019-06-24T10:15:04+00:00",
+  "modified_date": "2019-11-06T15:36:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52917302,
+      "filename": "victory_62f854c0627d7e44c640c74be74dd0a3df5c5711c5bc5f7d4cb1eea6e024d1ea.raw",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 92668,
+      "url": "https://issues.chromium.org/action/issues/40095492/attachments/52917302?download=true",
+      "local_path": "attachments/victory_62f854c0627d7e44c640c74be74dd0a3df5c5711c5bc5f7d4cb1eea6e024d1ea.raw"
+    }
+  ],
+  "update_count": 24,
+  "description_snippet": "**VULNERABILITY DETAILS**   \npdfium heap-use-after-free in CXFA_ItemLayoutProcessor::InsertFlowedItem  \n  \n**VERSION**   \ncommit 9d1193b591c5ac53cf1680c80692911f7dd26607  \nDate:   Fri Jun 21 21:32:51 2019 +0000  \n  \n**REPRODUCTION CASE**   \nOpen attached file.  \n  \nADDITIONAL INFORMATION  \nRendering"
+}

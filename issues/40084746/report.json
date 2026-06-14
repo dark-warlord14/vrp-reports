@@ -1,0 +1,65 @@
+{
+  "id": "40084746",
+  "url": "https://issues.chromium.org/issues/40084746",
+  "title": "Security: Heap-use-after-free in ScriptInjector",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "ro...@robwu.nl",
+  "created_date": "2016-07-02T09:27:23+00:00",
+  "modified_date": "2018-04-25T22:51:20+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53421663,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 325,
+      "url": "https://issues.chromium.org/action/issues/40084746/attachments/53421663?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53421664,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 853,
+      "url": "https://issues.chromium.org/action/issues/40084746/attachments/53421664?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53421665,
+      "filename": "contentscript.js",
+      "mime_type": "text/plain",
+      "size_bytes": 260,
+      "url": "https://issues.chromium.org/action/issues/40084746/attachments/53421665?download=true",
+      "local_path": "attachments/contentscript.js"
+    },
+    {
+      "id": 53421666,
+      "filename": "asan-51.0.2704.79.log",
+      "mime_type": "text/plain",
+      "size_bytes": 13018,
+      "url": "https://issues.chromium.org/action/issues/40084746/attachments/53421666?download=true",
+      "local_path": "attachments/asan-51.0.2704.79.log"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "When an extension is unloaded (or reloaded), all content scripts are unregistered. If this happens in the middle of an injection, a UAF occurs, see attached PoC and explanation.\r\n\r\nSTR:\r\n1. Load the attached extension.\r\n2. The extension will open example.com and synchronously show a dialog.\r\n3. Whil"
+}

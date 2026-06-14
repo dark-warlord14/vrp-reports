@@ -1,0 +1,49 @@
+{
+  "id": "40082658",
+  "url": "https://issues.chromium.org/issues/40082658",
+  "title": "Security: chrome.runtime.setUninstallURL does not validate its URL parameter",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Platform>Apps, Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "ro...@robwu.nl",
+  "created_date": "2015-08-10T12:49:06+00:00",
+  "modified_date": "2018-07-28T14:17:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52987112,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 84,
+      "url": "https://issues.chromium.org/action/issues/40082658/attachments/52987112?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 52987113,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 145,
+      "url": "https://issues.chromium.org/action/issues/40082658/attachments/52987113?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "chrome.runtime.setUninstallURL only checks whether the given parameter is a syntactically valid URL, but it does not enforce the blacklist of disallowed URLs.\r\nThis allows extensions and apps (without requiring any install permissions) to open any URL, including special chrome://-URLs.\r\n\r\nIn the wor"
+}

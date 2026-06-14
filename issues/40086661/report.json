@@ -1,0 +1,137 @@
+{
+  "id": "40086661",
+  "url": "https://issues.chromium.org/issues/40086661",
+  "title": "Security: Cross-origin pixel reading and history sniffing via SVG filter timing attack",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SVG, Privacy",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "fs...@chromium.org",
+  "created_date": "2017-01-27T22:08:17+00:00",
+  "modified_date": "2018-04-25T22:45:28+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52885481,
+      "filename": "chrome_convolve.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4519,
+      "url": "https://issues.chromium.org/action/issues/40086661/attachments/52885481?download=true",
+      "local_path": "attachments/chrome_convolve.html"
+    },
+    {
+      "id": 52885482,
+      "filename": "chrome_pxbench_exp.js",
+      "mime_type": "text/plain",
+      "size_bytes": 8092,
+      "url": "https://issues.chromium.org/action/issues/40086661/attachments/52885482?download=true",
+      "local_path": "attachments/chrome_pxbench_exp.js"
+    },
+    {
+      "id": 52885483,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40086661/attachments/52885483?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52885507,
+      "filename": "example_result.png",
+      "mime_type": "image/png",
+      "size_bytes": 111146,
+      "url": "https://issues.chromium.org/action/issues/40086661/attachments/52885507?download=true",
+      "local_path": "attachments/example_result.png"
+    },
+    {
+      "id": 52885602,
+      "filename": "686253.png",
+      "mime_type": "image/png",
+      "size_bytes": 585916,
+      "url": "https://issues.chromium.org/action/issues/40086661/attachments/52885602?download=true",
+      "local_path": "attachments/686253.png"
+    },
+    {
+      "id": 52885603,
+      "filename": "686253-MAC.png",
+      "mime_type": "image/png",
+      "size_bytes": 254268,
+      "url": "https://issues.chromium.org/action/issues/40086661/attachments/52885603?download=true",
+      "local_path": "attachments/686253-MAC.png"
+    },
+    {
+      "id": 52885645,
+      "filename": "Accuracy_Win7.JPG",
+      "mime_type": "image/jpeg",
+      "size_bytes": 111097,
+      "url": "https://issues.chromium.org/action/issues/40086661/attachments/52885645?download=true",
+      "local_path": "attachments/Accuracy_Win7.JPG"
+    },
+    {
+      "id": 52885693,
+      "filename": "Canary_Win7.JPG",
+      "mime_type": "image/jpeg",
+      "size_bytes": 91737,
+      "url": "https://issues.chromium.org/action/issues/40086661/attachments/52885693?download=true",
+      "local_path": "attachments/Canary_Win7.JPG"
+    },
+    {
+      "id": 52885778,
+      "filename": "Linux.png",
+      "mime_type": "image/png",
+      "size_bytes": 220360,
+      "url": "https://issues.chromium.org/action/issues/40086661/attachments/52885778?download=true",
+      "local_path": "attachments/Linux.png"
+    },
+    {
+      "id": 52885779,
+      "filename": "Windows (1).PNG",
+      "mime_type": "image/png",
+      "size_bytes": 402418,
+      "url": "https://issues.chromium.org/action/issues/40086661/attachments/52885779?download=true",
+      "local_path": "attachments/Windows (1).PNG"
+    },
+    {
+      "id": 52885788,
+      "filename": "686253(Mac).png",
+      "mime_type": "image/png",
+      "size_bytes": 240755,
+      "url": "https://issues.chromium.org/action/issues/40086661/attachments/52885788?download=true",
+      "local_path": "attachments/686253(Mac).png"
+    },
+    {
+      "id": 52885789,
+      "filename": "686253(Windows).PNG",
+      "mime_type": "image/png",
+      "size_bytes": 176682,
+      "url": "https://issues.chromium.org/action/issues/40086661/attachments/52885789?download=true",
+      "local_path": "attachments/686253(Windows).PNG"
+    },
+    {
+      "id": 52885803,
+      "filename": "686253(Linux).png",
+      "mime_type": "image/png",
+      "size_bytes": 222457,
+      "url": "https://issues.chromium.org/action/issues/40086661/attachments/52885803?download=true",
+      "local_path": "attachments/686253(Linux).png"
+    }
+  ],
+  "update_count": 72,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nBy rendering a FeConvolveMatrix SVG filter over a target iframe and timing its execution an attacking page can extract pixel values from a cross-origin page being iframe'd.  \n  \nThis also allows reading ones own origin for history sniffing.  \n  \nThis is based on previous"
+}

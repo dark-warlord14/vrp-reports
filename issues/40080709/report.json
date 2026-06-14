@@ -1,0 +1,40 @@
+{
+  "id": "40080709",
+  "url": "https://issues.chromium.org/issues/40080709",
+  "title": "A vulnerability in run-mailcap can lead to code execution on Debian-based Linux distros with certain (nonstandard) desktop environments",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2014-7209"
+  ],
+  "reporter": "ti...@blindspotsecurity.com",
+  "assignee": "jl...@chromium.org",
+  "created_date": "2014-10-24T16:08:02+00:00",
+  "modified_date": "2016-10-02T20:08:09+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53177081,
+      "filename": "evil-download.py",
+      "mime_type": "text/plain",
+      "size_bytes": 1798,
+      "url": "https://issues.chromium.org/action/issues/40080709/attachments/53177081?download=true",
+      "local_path": "attachments/evil-download.py"
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": "Hi Guys,  \n  \nI'm sitting on a RCE bug that is triggerable in Chrome and Chromium, but the issue is not in the browser itself.  It is in an operating system component that Chrome uses on specific platforms under specific scenarios.  I was hoping to find out if you guys would normally reward a bounty"
+}

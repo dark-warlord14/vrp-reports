@@ -1,0 +1,124 @@
+{
+  "id": "40089981",
+  "url": "https://issues.chromium.org/issues/40089981",
+  "title": "Floats not cleared due to overflow (remaining usecase)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "in...@chromium.org",
+  "assignee": "se...@gtempaccount.com",
+  "created_date": "2011-04-18T15:48:31+00:00",
+  "modified_date": "2018-04-26T00:09:39+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53111295,
+      "filename": "checkFloats73962.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 1046,
+      "url": "https://issues.chromium.org/action/issues/40089981/attachments/53111295?download=true",
+      "local_path": "attachments/checkFloats73962.html"
+    },
+    {
+      "id": 53111314,
+      "filename": "a0f810758b15901be881b9f0d9f61f60.html",
+      "mime_type": "text/html; charset=iso-8859-1",
+      "size_bytes": 4096,
+      "url": "https://issues.chromium.org/action/issues/40089981/attachments/53111314?download=true",
+      "local_path": "attachments/a0f810758b15901be881b9f0d9f61f60.html"
+    },
+    {
+      "id": 53111315,
+      "filename": "639e5a6bfae63b1c73388fa1c8aa3e92.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 6890,
+      "url": "https://issues.chromium.org/action/issues/40089981/attachments/53111315?download=true",
+      "local_path": "attachments/639e5a6bfae63b1c73388fa1c8aa3e92.html"
+    },
+    {
+      "id": 53111316,
+      "filename": "8a99c05f32b97bccb58efc6dd77f198c.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 1046,
+      "url": "https://issues.chromium.org/action/issues/40089981/attachments/53111316?download=true",
+      "local_path": "attachments/8a99c05f32b97bccb58efc6dd77f198c.html"
+    },
+    {
+      "id": 53111317,
+      "filename": "f937de4b9adba72df7e7be2e7d0c6d24.html",
+      "mime_type": "text/html; charset=iso-8859-1",
+      "size_bytes": 7205,
+      "url": "https://issues.chromium.org/action/issues/40089981/attachments/53111317?download=true",
+      "local_path": "attachments/f937de4b9adba72df7e7be2e7d0c6d24.html"
+    },
+    {
+      "id": 53111318,
+      "filename": "00167e7ff4ca78b5c58725d9a4451094.html",
+      "mime_type": "text/html; charset=iso-8859-1",
+      "size_bytes": 7196,
+      "url": "https://issues.chromium.org/action/issues/40089981/attachments/53111318?download=true",
+      "local_path": "attachments/00167e7ff4ca78b5c58725d9a4451094.html"
+    },
+    {
+      "id": 53111319,
+      "filename": "3967b9cc687139407fd542a03ec6c175.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 4203,
+      "url": "https://issues.chromium.org/action/issues/40089981/attachments/53111319?download=true",
+      "local_path": "attachments/3967b9cc687139407fd542a03ec6c175.html"
+    },
+    {
+      "id": 53111320,
+      "filename": "b7ae9b1d929f9f0a05d5ac0ee0b91ed3.html",
+      "mime_type": "text/html; charset=iso-8859-1",
+      "size_bytes": 6462,
+      "url": "https://issues.chromium.org/action/issues/40089981/attachments/53111320?download=true",
+      "local_path": "attachments/b7ae9b1d929f9f0a05d5ac0ee0b91ed3.html"
+    },
+    {
+      "id": 53111321,
+      "filename": "5bdfe520a7f3334a8cb05f6c517621f8.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 7030,
+      "url": "https://issues.chromium.org/action/issues/40089981/attachments/53111321?download=true",
+      "local_path": "attachments/5bdfe520a7f3334a8cb05f6c517621f8.html"
+    },
+    {
+      "id": 53111322,
+      "filename": "5505c199c975a71eebecfd9a16bf4322.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 7026,
+      "url": "https://issues.chromium.org/action/issues/40089981/attachments/53111322?download=true",
+      "local_path": "attachments/5505c199c975a71eebecfd9a16bf4322.html"
+    },
+    {
+      "id": 53111323,
+      "filename": "8174df72d33c2259eb1e2f5d8cb317b5.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 7203,
+      "url": "https://issues.chromium.org/action/issues/40089981/attachments/53111323?download=true",
+      "local_path": "attachments/8174df72d33c2259eb1e2f5d8cb317b5.html"
+    },
+    {
+      "id": 53111359,
+      "filename": "79746-30.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 37934,
+      "url": "https://issues.chromium.org/action/issues/40089981/attachments/53111359?download=true",
+      "local_path": "attachments/79746-30.zip"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "credit: miaubiz\r\n\r\nbranched from http://code.google.com/p/chromium/issues/detail?id=73962"
+}

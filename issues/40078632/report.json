@@ -1,0 +1,60 @@
+{
+  "id": "40078632",
+  "url": "https://issues.chromium.org/issues/40078632",
+  "title": "Security: use-after-free in content::WebContentsImpl::~WebContentsImpl",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2014-01-06T14:05:47+00:00",
+  "modified_date": "2018-04-25T23:09:34+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53282429,
+      "filename": "screenshot.png",
+      "mime_type": "image/png",
+      "size_bytes": 716265,
+      "url": "https://issues.chromium.org/action/issues/40078632/attachments/53282429?download=true",
+      "local_path": "attachments/screenshot.png"
+    },
+    {
+      "id": 53282430,
+      "filename": "how to repro.avi",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3587692,
+      "url": "https://issues.chromium.org/action/issues/40078632/attachments/53282430?download=true",
+      "local_path": "attachments/how to repro.avi"
+    },
+    {
+      "id": 53282431,
+      "filename": "repro.html",
+      "mime_type": "text/html",
+      "size_bytes": 967,
+      "url": "https://issues.chromium.org/action/issues/40078632/attachments/53282431?download=true",
+      "local_path": "attachments/repro.html"
+    },
+    {
+      "id": 53282444,
+      "filename": "Chrome-last.dmp",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 453759,
+      "url": "https://issues.chromium.org/action/issues/40078632/attachments/53282444?download=true",
+      "local_path": "attachments/Chrome-last.dmp"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "**This template is ONLY for reporting security bugs. Please use a different**   \n**template for other types of bug reports.**   \n  \n**Please see the following link for instructions on filing security bugs:**   \n**http://www.chromium.org/Home/chromium-security/reporting-security-bugs**   \n  \n  \n**VUL"
+}

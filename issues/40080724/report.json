@@ -1,0 +1,44 @@
+{
+  "id": "40080724",
+  "url": "https://issues.chromium.org/issues/40080724",
+  "title": "Memory corruption (read random system memory) or crash",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "mo...@google.com",
+  "created_date": "2010-04-28T16:15:13+00:00",
+  "modified_date": "2016-10-02T20:17:58+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53410925,
+      "filename": "google_bug.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 209829,
+      "url": "https://issues.chromium.org/action/issues/40080724/attachments/53410925?download=true",
+      "local_path": "attachments/google_bug.zip"
+    },
+    {
+      "id": 53411063,
+      "filename": "highlight.html",
+      "mime_type": "text/html",
+      "size_bytes": 3307,
+      "url": "https://issues.chromium.org/action/issues/40080724/attachments/53411063?download=true",
+      "local_path": "attachments/highlight.html"
+    }
+  ],
+  "update_count": 69,
+  "description_snippet": "It is possible to crash browser or read some memory using special page.\r\nCheck details (in attach). HTML file (+js) and instructions in it.\r\n\r\nThanks a lot.\r\n\r\n\r\n4.1.249.1064 (45376), Windows XP 32 bit, SP3"
+}

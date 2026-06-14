@@ -1,0 +1,44 @@
+{
+  "id": "40085589",
+  "url": "https://issues.chromium.org/issues/40085589",
+  "title": "Security: UNKNOWN in v8::internal::GlobalHandles::Node::Release",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ko...@chromium.org",
+  "created_date": "2016-10-04T02:19:49+00:00",
+  "modified_date": "2018-04-25T22:49:18+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53174822,
+      "filename": "Recording.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1234461,
+      "url": "https://issues.chromium.org/action/issues/40085589/attachments/53174822?download=true",
+      "local_path": "attachments/Recording.mp4"
+    },
+    {
+      "id": 53174843,
+      "filename": "ASan-output.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 8384,
+      "url": "https://issues.chromium.org/action/issues/40085589/attachments/53174843?download=true",
+      "local_path": "attachments/ASan-output.txt"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**VERSION**   \nChrome Version: 53.0.2785.116 stable  \nOperating System: Windows 7  \n  \n**REPRODUCTION CASE**   \n1. Log into Facebook   \n2. Navigate to https://www.facebook.com/search/top/?q=%D8%A7%D9%84%D8%B4%D8%B1%D8%B7%D9%8A%D8%A9+%D8%A7%D9%84%D9%85%D8%BA%D8%B1%D8%A8%D9%8A%D8%A9+%D8%A7%D9%84%D8%AA"
+}

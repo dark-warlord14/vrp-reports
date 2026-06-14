@@ -1,0 +1,42 @@
+{
+  "id": "40095575",
+  "url": "https://issues.chromium.org/issues/40095575",
+  "title": "Security: WebAssembly Table.Copy lead to OOB Write",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ra...@gmail.com",
+  "assignee": "ah...@chromium.org",
+  "created_date": "2019-07-02T09:29:35+00:00",
+  "modified_date": "2019-10-18T14:36:20+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53364920,
+      "filename": "exploit.js",
+      "mime_type": "text/plain",
+      "size_bytes": 4632,
+      "url": "https://issues.chromium.org/action/issues/40095575/attachments/53364920?download=true",
+      "local_path": "attachments/exploit.js"
+    }
+  ],
+  "update_count": 70,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n```  \nbool WasmInstanceObject::CopyTableEntries(Isolate\\* isolate,  \n                                          Handle<WasmInstanceObject> instance,  \n                                          uint32_t table_src_index,  \n                                          uint32_t"
+}

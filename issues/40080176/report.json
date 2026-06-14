@@ -1,0 +1,44 @@
+{
+  "id": "40080176",
+  "url": "https://issues.chromium.org/issues/40080176",
+  "title": "Heap-use-after-free in CPDF_IndexedCS::~CPDF_IndexedCS",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "bo...@foxitsoftware.com",
+  "created_date": "2014-08-07T06:18:45+00:00",
+  "modified_date": "2016-10-02T20:09:52+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53282897,
+      "filename": "run.html",
+      "mime_type": "text/html",
+      "size_bytes": 273,
+      "url": "https://issues.chromium.org/action/issues/40080176/attachments/53282897?download=true",
+      "local_path": "attachments/run.html"
+    },
+    {
+      "id": 53282898,
+      "filename": "repro-file.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 196586,
+      "url": "https://issues.chromium.org/action/issues/40080176/attachments/53282898?download=true",
+      "local_path": "attachments/repro-file.pdf"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "Tested on:\r\n\r\nOS: Ubuntu 12.04\r\n\r\nChromium: ASAN 38.0.2114.0 (Developer Build 287379) \r\n\r\n\r\nRepro-file as an attachment. The repro-file is little needy so I made a small html-file(run.html) that, at least for me, triggers the crash easily.\r\n\r\n\r\nASAN-report:\r\n\r\n==11286==ERROR: AddressSanitizer: hea"
+}

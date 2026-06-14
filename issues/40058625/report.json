@@ -1,0 +1,29 @@
+{
+  "id": "40058625",
+  "url": "https://issues.chromium.org/issues/40058625",
+  "title": "UNKNOWN in WebCore::HTMLDocumentParser::prepareToStopParsing",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ts...@chromium.org",
+  "assignee": "be...@chromium.org",
+  "created_date": "2012-05-22T17:20:46+00:00",
+  "modified_date": "2016-10-02T20:24:35+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 50,
+  "description_snippet": "Originally reported by Kevin Mahaffey at https://bugs.webkit.org/show_bug.cgi?id=87085\r\n\r\n\r\nSoftware affected (Galaxy Nexus, 4.0.2, ICL53F):\r\n- Chrome Beta for Android v0.18.4409.2396\r\n- AOSP Browser v4.0.2\r\n- AOSP Browser v4.0.4\r\n\r\nSoftware not affected:\r\n- Chrome for OSX v18.0.1025.168\r\n- Safari f"
+}

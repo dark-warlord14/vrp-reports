@@ -1,0 +1,38 @@
+{
+  "id": "40080540",
+  "url": "https://issues.chromium.org/issues/40080540",
+  "title": "Heap-buffer-overflow in void SkMatrixConvolutionImageFilter::filterPixels<ClampPixelFetcher, false>",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Skia",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "se...@chromium.org",
+  "created_date": "2014-09-26T17:51:07+00:00",
+  "modified_date": "2018-04-25T23:05:25+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53348331,
+      "filename": "repro-file.tar.gz",
+      "mime_type": "application/x-gzip",
+      "size_bytes": 16333,
+      "url": "https://issues.chromium.org/action/issues/40080540/attachments/53348331?download=true",
+      "local_path": "attachments/repro-file.tar.gz"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "Tested on:\r\n\r\nOS: Ubuntu 12.04\r\n\r\nChromium\t39.0.2170.0 (Developer Build) \r\nRevision\t6128c200e138d3d7c52aae5e01d0af36a48b1706-refs/heads/master@{#296715}\r\n\r\n\r\nThe repro-file is inside tar.gz package because Chrome crashes every time I try to attach the file. Also Ubuntu nautilus will crash with a"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "40085298",
+  "url": "https://issues.chromium.org/issues/40085298",
+  "title": "Security: chrome_child!mov_read_keys - Heap corruption as a result of an off-by-1 zero allocation",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "wo...@chromium.org",
+  "created_date": "2016-09-03T21:47:59+00:00",
+  "modified_date": "2018-04-25T22:49:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5500.0,
+  "reward_amount_meta": 5500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52880963,
+      "filename": "mov_read_keys-heap_corruption-pmehta.readme.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7070,
+      "url": "https://issues.chromium.org/action/issues/40085298/attachments/52880963?download=true",
+      "local_path": "attachments/mov_read_keys-heap_corruption-pmehta.readme.txt"
+    },
+    {
+      "id": 52880964,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40085298/attachments/52880964?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52880974,
+      "filename": "mov_read_keys-heap_corruption-pmehta.mp4.bin",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 524368,
+      "url": "https://issues.chromium.org/action/issues/40085298/attachments/52880974?download=true",
+      "local_path": "attachments/mov_read_keys-heap_corruption-pmehta.mp4.bin"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nFFMPEG MP4 decoder contains an Off-by-1 validation results in an allocation of size 0, followed by corrupting an arbitrary number of pointers out of bounds on the heap, where each is pointing to controllable or uninitialized data.  \n  \nAdditional details in attached f"
+}

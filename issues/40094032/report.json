@@ -1,0 +1,54 @@
+{
+  "id": "40094032",
+  "url": "https://issues.chromium.org/issues/40094032",
+  "title": "Security: http authentication spoof on chrome iOS",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Network>Auth",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "kk...@chromium.org",
+  "created_date": "2019-02-13T22:46:58+00:00",
+  "modified_date": "2019-12-12T15:34:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53021181,
+      "filename": "WhatsApp Image 2019-02-13 at 11.45.06 PM.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 75147,
+      "url": "https://issues.chromium.org/action/issues/40094032/attachments/53021181?download=true",
+      "local_path": "attachments/WhatsApp Image 2019-02-13 at 11.45.06 PM.jpeg"
+    },
+    {
+      "id": 53021204,
+      "filename": "IMG_0915.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 327842,
+      "url": "https://issues.chromium.org/action/issues/40094032/attachments/53021204?download=true",
+      "local_path": "attachments/IMG_0915.PNG"
+    },
+    {
+      "id": 53021319,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 252,
+      "url": "https://issues.chromium.org/action/issues/40094032/attachments/53021319?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**VERSION**   \nChrome Version: 72.0.3626.100 beta   \nOperating System:  12.1.2  \n  \n  \n**REPRODUCTION CASE**   \n  \n(similar to https://crbug.com/chromium/884179)  \n  \n1. Go to https://lbstyle.github.io/ios.html  \n2. Click  >> observe"
+}

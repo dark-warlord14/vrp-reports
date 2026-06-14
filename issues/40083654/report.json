@@ -1,0 +1,54 @@
+{
+  "id": "40083654",
+  "url": "https://issues.chromium.org/issues/40083654",
+  "title": "Restricted web APIs can easily be accessed from Chrome apps",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Apps, Platform>Apps>API",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2016-1638"
+  ],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "rd...@chromium.org",
+  "created_date": "2016-02-09T00:27:41+00:00",
+  "modified_date": "2018-04-25T22:54:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52895085,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 158,
+      "url": "https://issues.chromium.org/action/issues/40083654/attachments/52895085?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 52895086,
+      "filename": "unexpected-forbidden-dialog.png",
+      "mime_type": "image/png",
+      "size_bytes": 9057,
+      "url": "https://issues.chromium.org/action/issues/40083654/attachments/52895086?download=true",
+      "local_path": "attachments/unexpected-forbidden-dialog.png"
+    },
+    {
+      "id": 52895087,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 411,
+      "url": "https://issues.chromium.org/action/issues/40083654/attachments/52895087?download=true",
+      "local_path": "attachments/background.js"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "Chrome Version: 48.0.2564.103 (stable, and earlier) and 50.0.2633.0 (HEAD)\r\n\r\nSome web platform APIs are disabled in Chrome apps for security reasons (https://developer.chrome.com/apps/app_deprecated). This is implemented in platform_app.js [1].\r\n\r\nThese restrictions can be bypassed:\r\n(I) The restri"
+}

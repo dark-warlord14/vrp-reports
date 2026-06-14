@@ -1,0 +1,32 @@
+{
+  "id": "40050153",
+  "url": "https://issues.chromium.org/issues/40050153",
+  "title": "Security: Multiple file download protection bypass 2",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ti...@gmail.com",
+  "assignee": "ya...@chromium.org",
+  "created_date": "2019-09-18T14:45:24+00:00",
+  "modified_date": "2020-01-17T15:37:34+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nChrome has multiple file download protection. But the iframe.srcdoc attribute can bypass this policy.  \n  \n**VERSION**   \nChrome Version: [77.0.3865.75] + [stable]  \nOperating System: [Windows10 1903]  \n  \n**REPRODUCTION CASE**   \n  \nif the download function is included"
+}

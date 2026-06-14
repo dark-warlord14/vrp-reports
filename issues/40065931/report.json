@@ -1,0 +1,46 @@
+{
+  "id": "40065931",
+  "url": "https://issues.chromium.org/issues/40065931",
+  "title": "Security: integer overflow in gpu process with webgl",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>WebGL",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2012-2896"
+  ],
+  "reporter": "mi...@gmail.com",
+  "assignee": "gm...@chromium.org",
+  "created_date": "2012-08-29T19:29:40+00:00",
+  "modified_date": "2016-10-02T20:23:05+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53320924,
+      "filename": "overflow.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 443,
+      "url": "https://issues.chromium.org/action/issues/40065931/attachments/53320924?download=true",
+      "local_path": "attachments/overflow.html"
+    },
+    {
+      "id": 53320925,
+      "filename": "overflow.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 1286,
+      "url": "https://issues.chromium.org/action/issues/40065931/attachments/53320925?download=true",
+      "local_path": "attachments/overflow.txt"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "**VULNERABILITY DETAILS**   \ninteger overflow in gpu process with webgl  \n  \nthis might be an asan bug.  \n  \nchromium and chrome say:  \n[ERROR:gles2_cmd_decoder.cc(5133)] .WebGLRenderingContext: GL ERROR :GL_INVALID_VALUE : glTexSubImage2D: bad dimensions.  \n  \n**VERSION**   \nChrome Version: d"
+}

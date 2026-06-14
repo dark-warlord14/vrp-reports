@@ -1,0 +1,68 @@
+{
+  "id": "40093891",
+  "url": "https://issues.chromium.org/issues/40093891",
+  "title": "Framebusting protection bypass because a download redirected cross-origin gets processed as a main frame navigation",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "Ju...@microsoft.com",
+  "assignee": "jo...@chromium.org",
+  "created_date": "2019-01-29T07:21:53+00:00",
+  "modified_date": "2019-06-27T09:41:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53046161,
+      "filename": "frame_busted.php",
+      "mime_type": "text/plain",
+      "size_bytes": 112,
+      "url": "https://issues.chromium.org/action/issues/40093891/attachments/53046161?download=true",
+      "local_path": "attachments/frame_busted.php"
+    },
+    {
+      "id": 53046162,
+      "filename": "download_redirector.php",
+      "mime_type": "text/plain",
+      "size_bytes": 197,
+      "url": "https://issues.chromium.org/action/issues/40093891/attachments/53046162?download=true",
+      "local_path": "attachments/download_redirector.php"
+    },
+    {
+      "id": 53046163,
+      "filename": "framebusting.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6059015,
+      "url": "https://issues.chromium.org/action/issues/40093891/attachments/53046163?download=true",
+      "local_path": "attachments/framebusting.mp4"
+    },
+    {
+      "id": 53046164,
+      "filename": "spoof.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 14058055,
+      "url": "https://issues.chromium.org/action/issues/40093891/attachments/53046164?download=true",
+      "local_path": "attachments/spoof.mp4"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.0 Safari/537.36 Edg/73.0.74.0\r\n\r\nSteps to reproduce the problem:\r\n1. Go to https://test.shhnjk.com/frame_busted.php?url=https://www.google.com\r\n\r\nWhat is the expected behavior?\r\nTop frame doe"
+}

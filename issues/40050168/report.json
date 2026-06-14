@@ -1,0 +1,58 @@
+{
+  "id": "40050168",
+  "url": "https://issues.chromium.org/issues/40050168",
+  "title": "Security: UAF in indexed_db_cursor.cc",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Storage>IndexedDB",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hi...@gmail.com",
+  "assignee": "pw...@chromium.org",
+  "created_date": "2019-09-19T11:40:08+00:00",
+  "modified_date": "2020-01-02T15:37:18+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 20500.0,
+  "reward_amount_meta": 20500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53181992,
+      "filename": "reproduce.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 667,
+      "url": "https://issues.chromium.org/action/issues/40050168/attachments/53181992?download=true",
+      "local_path": "attachments/reproduce.patch"
+    },
+    {
+      "id": 53181993,
+      "filename": "patch.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 686,
+      "url": "https://issues.chromium.org/action/issues/40050168/attachments/53181993?download=true",
+      "local_path": "attachments/patch.patch"
+    },
+    {
+      "id": 53181994,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4432,
+      "url": "https://issues.chromium.org/action/issues/40050168/attachments/53181994?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "Note: this is a bug which is triggered from a compromised render process to attack the privileged browser process\r\n\r\nIndexDBTransaction contains a set of raw points of IndexedDBCursor, which are all open cursors in the transaction.\r\n\r\n```c++\r\nclass CONTENT_EXPORT IndexedDBTransaction {\r\n    ...\r\nstd"
+}

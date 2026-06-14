@@ -1,0 +1,60 @@
+{
+  "id": "40052042",
+  "url": "https://issues.chromium.org/issues/40052042",
+  "title": "Heap use after free with malware blocking page",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "UI, UI>Browser>Navigation",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "cr...@chromium.org",
+  "created_date": "2011-12-12T07:08:53+00:00",
+  "modified_date": "2018-04-25T23:52:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3133.0,
+  "reward_amount_meta": 3133.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53361786,
+      "filename": "test1.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 83,
+      "url": "https://issues.chromium.org/action/issues/40052042/attachments/53361786?download=true",
+      "local_path": "attachments/test1.html"
+    },
+    {
+      "id": 53361827,
+      "filename": "version_list.py",
+      "mime_type": "text/x-java; charset=us-ascii",
+      "size_bytes": 5656,
+      "url": "https://issues.chromium.org/action/issues/40052042/attachments/53361827?download=true",
+      "local_path": "attachments/version_list.py"
+    },
+    {
+      "id": 53361890,
+      "filename": "abc2.html",
+      "mime_type": "application/x-empty; charset=binary",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40052042/attachments/53361890?download=true",
+      "local_path": "attachments/abc2.html"
+    },
+    {
+      "id": 53361891,
+      "filename": "abc.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 254,
+      "url": "https://issues.chromium.org/action/issues/40052042/attachments/53361891?download=true",
+      "local_path": "attachments/abc.html"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAttached reproduction case causes a heap use after free.  \n  \n**VERSION**   \nChrome Version: [18.0.969.0 (Developer Build 113965 Linux)] + [dev]  \nOperating System: [Ubuntu 10.04 64 bit]  \n  \n**REPRODUCTION CASE**   \n1.Open attached test1.html in chrome.  \n2. It tries to"
+}

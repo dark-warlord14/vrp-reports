@@ -1,0 +1,36 @@
+{
+  "id": "40076448",
+  "url": "https://issues.chromium.org/issues/40076448",
+  "title": "UNKNOWN in _wordcopy_fwd_aligned",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals, Internals>Skia",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "re...@google.com",
+  "created_date": "2012-10-16T22:57:22+00:00",
+  "modified_date": "2016-10-02T20:22:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53362659,
+      "filename": "chrome-crashed-wordcopyfwdaligned-de49.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 703,
+      "url": "https://issues.chromium.org/action/issues/40076448/attachments/53362659?download=true",
+      "local_path": "attachments/chrome-crashed-wordcopyfwdaligned-de49.html"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "Repro-file as attachment.\r\n\r\nTested on:\r\n\r\nOS: Ubuntu 12.04 x86_64\r\nChromium: ASAN 24.0.1299.0 (Developer Build 162260)\r\n\r\nRepro-file had no effect on Google Chrome: 22.0.1229.94 (Official Build 161065)\r\n\r\nASAN-report:\r\n\r\n==31613== ERROR: AddressSanitizer crashed on unknown address 0x7fc645287080 (p"
+}

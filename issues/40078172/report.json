@@ -1,0 +1,60 @@
+{
+  "id": "40078172",
+  "url": "https://issues.chromium.org/issues/40078172",
+  "title": "HTTP 1xx response handling code allows a website to read memory from the main process' heap.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Network",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sk...@chromium.org",
+  "assignee": "ag...@chromium.org",
+  "created_date": "2013-09-27T18:35:40+00:00",
+  "modified_date": "2018-07-06T22:35:51+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53192954,
+      "filename": "option 2.patch",
+      "mime_type": "text/x-diff; charset=us-ascii",
+      "size_bytes": 3189,
+      "url": "https://issues.chromium.org/action/issues/40078172/attachments/53192954?download=true",
+      "local_path": "attachments/option 2.patch"
+    },
+    {
+      "id": 53192955,
+      "filename": "poc.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 2636,
+      "url": "https://issues.chromium.org/action/issues/40078172/attachments/53192955?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 53192956,
+      "filename": "option 1.patch",
+      "mime_type": "text/x-diff; charset=us-ascii",
+      "size_bytes": 2622,
+      "url": "https://issues.chromium.org/action/issues/40078172/attachments/53192956?download=true",
+      "local_path": "attachments/option 1.patch"
+    },
+    {
+      "id": 53192980,
+      "filename": "101.py",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 3598,
+      "url": "https://issues.chromium.org/action/issues/40078172/attachments/53192980?download=true",
+      "local_path": "attachments/101.py"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "VULNERABILITY DESCRIPTION  \nThrough carefully crafted HTTP responses, a malicious website is able to read information from the main chrome process.  \n  \n**VULNERABILITY DETAILS**   \nThe \"HttpStreamParser\" class (src\\net\\http\\http_stream_parser.cc) is used to send HTTP requests and receive HTTP respo"
+}

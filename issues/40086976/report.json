@@ -1,0 +1,47 @@
+{
+  "id": "40086976",
+  "url": "https://issues.chromium.org/issues/40086976",
+  "title": "UaF outside the sandbox (Print in onunload)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>Printing",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wa...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2017-03-06T02:04:13+00:00",
+  "modified_date": "2018-04-25T22:43:24+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 9337.0,
+  "reward_amount_meta": 9337.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53118029,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2917,
+      "url": "https://issues.chromium.org/action/issues/40086976/attachments/53118029?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 53118192,
+      "filename": "698622_Mar_28.ogv",
+      "mime_type": "video/ogg",
+      "size_bytes": 802290,
+      "url": "https://issues.chromium.org/action/issues/40086976/attachments/53118192?download=true",
+      "local_path": "attachments/698622_Mar_28.ogv"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Open http://localhost/poc.html\r\n\r\nWhat is the expected behavior?\r\nNo crash should occur.\r\n\r\nWhat went wrong?\r\nWhen the cross process navigati"
+}

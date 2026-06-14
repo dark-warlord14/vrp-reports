@@ -1,0 +1,52 @@
+{
+  "id": "40081046",
+  "url": "https://issues.chromium.org/issues/40081046",
+  "title": "security:chrome_1c30000!WebCore::InlineBox::paint+0x70",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wo...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2010-05-18T01:46:15+00:00",
+  "modified_date": "2016-10-02T20:18:16+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53205446,
+      "filename": "webkit21.rar",
+      "mime_type": "application/x-rar",
+      "size_bytes": 1142,
+      "url": "https://issues.chromium.org/action/issues/40081046/attachments/53205446?download=true",
+      "local_path": "attachments/webkit21.rar"
+    },
+    {
+      "id": 53205458,
+      "filename": "1.xhtml",
+      "mime_type": "text/plain; charset=utf-8",
+      "size_bytes": 4439,
+      "url": "https://issues.chromium.org/action/issues/40081046/attachments/53205458?download=true",
+      "local_path": "attachments/1.xhtml"
+    },
+    {
+      "id": 53205459,
+      "filename": "frame.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 215,
+      "url": "https://issues.chromium.org/action/issues/40081046/attachments/53205459?download=true",
+      "local_path": "attachments/frame.html"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "test it on 4.1.249.1064 (45376)\r\nthe stack is like this:\r\nChildEBP RetAddr  Args to Child              \r\n0012edfc 023bbc32 0012ee30 00000000 000000a9\r\nchrome_1f30000!WebCore::InlineBox::paint+0x70 (CONV: thiscall)\r\n[c:\\b\\slave\\chrome-official\\build\\src\\third_party\\webkit\\webcore\\rendering\\inlinebox."
+}

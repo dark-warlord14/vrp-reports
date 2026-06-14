@@ -1,0 +1,52 @@
+{
+  "id": "40050143",
+  "url": "https://issues.chromium.org/issues/40050143",
+  "title": "OOB read in OGV at unpack_vlcs",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "rb...@google.com",
+  "created_date": "2011-10-15T18:25:53+00:00",
+  "modified_date": "2018-04-25T23:55:39+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53004146,
+      "filename": "oobr.ogv",
+      "mime_type": "application/ogg; charset=binary",
+      "size_bytes": 98844,
+      "url": "https://issues.chromium.org/action/issues/40050143/attachments/53004146?download=true",
+      "local_path": "attachments/oobr.ogv"
+    },
+    {
+      "id": 53004201,
+      "filename": "0001-vp3-fix-double-free-and-invalid-read.patch",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 2788,
+      "url": "https://issues.chromium.org/action/issues/40050143/attachments/53004201?download=true",
+      "local_path": "attachments/0001-vp3-fix-double-free-and-invalid-read.patch"
+    },
+    {
+      "id": 53004209,
+      "filename": "0001-vp3-fix-a-series-of-memleaks-and-potential-infloops-.patch",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 5303,
+      "url": "https://issues.chromium.org/action/issues/40050143/attachments/53004209?download=true",
+      "local_path": "attachments/0001-vp3-fix-a-series-of-memleaks-and-potential-infloops-.patch"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nASAN reports a global-buffer-overflow when the attached OGV video is played. I haven't yet had a look if it seems to have security impact, but filing conservatively as a security bug.  \n  \n**VERSION**   \nChrome Version: Chromium 16.0.910.0 (Developer Build 105656)  \nOper"
+}

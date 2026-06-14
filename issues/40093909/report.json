@@ -1,0 +1,36 @@
+{
+  "id": "40093909",
+  "url": "https://issues.chromium.org/issues/40093909",
+  "title": "Github Wiki Pages for GoogleChrome are publicly editable.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Infra>Git",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mk...@gmail.com",
+  "assignee": "je...@chromium.org",
+  "created_date": "2019-01-31T14:09:47+00:00",
+  "modified_date": "2019-05-18T14:23:32+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53243544,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40093909/attachments/53243544?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 27,
+  "description_snippet": "Github.com wikis are editable by anyone\r\n\r\nhttps://github.com/GoogleChrome/webstore-docs/wiki/Hello-google-mkzreport@gmail.com\r\n\r\nand many others... \r\n\r\nCan be edited by any logged in user in the system. This poses security and reputation risk for the company. \r\nAs wikis listed above can be edited b"
+}

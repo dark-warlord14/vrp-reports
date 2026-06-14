@@ -1,0 +1,167 @@
+{
+  "id": "40052594",
+  "url": "https://issues.chromium.org/issues/40052594",
+  "title": "Security: heap-buffer-overflow on media_history::MediaHistoryKeyedService::OnURLsDeleted",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media>History",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "be...@chromium.org",
+  "created_date": "2020-06-16T09:59:21+00:00",
+  "modified_date": "2020-10-07T19:09:03+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53144166,
+      "filename": "123.rar",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3319072,
+      "url": "https://issues.chromium.org/action/issues/40052594/attachments/53144166?download=true",
+      "local_path": "attachments/123.rar"
+    },
+    {
+      "id": 53144167,
+      "filename": "crash.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 5160,
+      "url": "https://issues.chromium.org/action/issues/40052594/attachments/53144167?download=true",
+      "local_path": "attachments/crash.txt"
+    },
+    {
+      "id": 53144188,
+      "filename": "crash.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2508540,
+      "url": "https://issues.chromium.org/action/issues/40052594/attachments/53144188?download=true",
+      "local_path": "attachments/crash.mp4"
+    },
+    {
+      "id": 53144206,
+      "filename": "chromium_version.png",
+      "mime_type": "image/png",
+      "size_bytes": 62042,
+      "url": "https://issues.chromium.org/action/issues/40052594/attachments/53144206?download=true",
+      "local_path": "attachments/chromium_version.png"
+    },
+    {
+      "id": 53144207,
+      "filename": "crash.png",
+      "mime_type": "image/png",
+      "size_bytes": 254091,
+      "url": "https://issues.chromium.org/action/issues/40052594/attachments/53144207?download=true",
+      "local_path": "attachments/crash.png"
+    },
+    {
+      "id": 53144213,
+      "filename": "123.rar",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 687257,
+      "url": "https://issues.chromium.org/action/issues/40052594/attachments/53144213?download=true",
+      "local_path": "attachments/123_53144213.rar"
+    },
+    {
+      "id": 53144214,
+      "filename": "History",
+      "mime_type": "text/plain",
+      "size_bytes": 3407872,
+      "url": "https://issues.chromium.org/action/issues/40052594/attachments/53144214?download=true",
+      "local_path": "attachments/History"
+    },
+    {
+      "id": 53144225,
+      "filename": "crash_linux.png",
+      "mime_type": "image/png",
+      "size_bytes": 618745,
+      "url": "https://issues.chromium.org/action/issues/40052594/attachments/53144225?download=true",
+      "local_path": "attachments/crash_linux.png"
+    },
+    {
+      "id": 53144247,
+      "filename": "blob.html",
+      "mime_type": "text/plain",
+      "size_bytes": 84,
+      "url": "https://issues.chromium.org/action/issues/40052594/attachments/53144247?download=true",
+      "local_path": "attachments/blob.html"
+    },
+    {
+      "id": 53144261,
+      "filename": "History",
+      "mime_type": "text/plain",
+      "size_bytes": 118784,
+      "url": "https://issues.chromium.org/action/issues/40052594/attachments/53144261?download=true",
+      "local_path": "attachments/History_53144261"
+    },
+    {
+      "id": 53144275,
+      "filename": "new_crash.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4230875,
+      "url": "https://issues.chromium.org/action/issues/40052594/attachments/53144275?download=true",
+      "local_path": "attachments/new_crash.mp4"
+    },
+    {
+      "id": 53144285,
+      "filename": "ttt.rar",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3120,
+      "url": "https://issues.chromium.org/action/issues/40052594/attachments/53144285?download=true",
+      "local_path": "attachments/ttt.rar"
+    },
+    {
+      "id": 53144294,
+      "filename": "new_new_crash.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 9906929,
+      "url": "https://issues.chromium.org/action/issues/40052594/attachments/53144294?download=true",
+      "local_path": "attachments/new_new_crash.mp4"
+    },
+    {
+      "id": 53144573,
+      "filename": "extension.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 11744,
+      "url": "https://issues.chromium.org/action/issues/40052594/attachments/53144573?download=true",
+      "local_path": "attachments/extension.zip"
+    },
+    {
+      "id": 53144584,
+      "filename": "crash-extension.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2183686,
+      "url": "https://issues.chromium.org/action/issues/40052594/attachments/53144584?download=true",
+      "local_path": "attachments/crash-extension.mp4"
+    },
+    {
+      "id": 53144609,
+      "filename": "extension.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2811,
+      "url": "https://issues.chromium.org/action/issues/40052594/attachments/53144609?download=true",
+      "local_path": "attachments/extension_53144609.zip"
+    },
+    {
+      "id": 53144610,
+      "filename": "crash_extension.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4156789,
+      "url": "https://issues.chromium.org/action/issues/40052594/attachments/53144610?download=true",
+      "local_path": "attachments/crash_extension.mp4"
+    }
+  ],
+  "update_count": 100,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt looks like the heap-buffer-overflow happened in [1].  \nsrc\\chrome\\browser\\media\\history\\media_history_keyed_service.cc:160  \n  \n  for (const url::Origin& origin : origins) {  \n    const auto& origin_count =  \n        deletion_info.deleted_urls_origin_map().find(ori"
+}

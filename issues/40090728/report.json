@@ -1,0 +1,52 @@
+{
+  "id": "40090728",
+  "url": "https://issues.chromium.org/issues/40090728",
+  "title": "Security: IDN URL Spoofing with using \"U+0437\" (cyrillic small letter Ze)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Internationalization",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "js...@chromium.org",
+  "created_date": "2018-03-08T14:46:03+00:00",
+  "modified_date": "2018-12-04T06:20:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52922729,
+      "filename": "Screen Shot 2018-03-08 at 14.45.02.png",
+      "mime_type": "image/png",
+      "size_bytes": 29080,
+      "url": "https://issues.chromium.org/action/issues/40090728/attachments/52922729?download=true",
+      "local_path": "attachments/Screen Shot 2018-03-08 at 14.45.02.png"
+    },
+    {
+      "id": 52922813,
+      "filename": "Screen Shot 2018-03-16 at 21.23.28.png",
+      "mime_type": "image/png",
+      "size_bytes": 37809,
+      "url": "https://issues.chromium.org/action/issues/40090728/attachments/52922813?download=true",
+      "local_path": "attachments/Screen Shot 2018-03-16 at 21.23.28.png"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VERSION**   \nChrome Version: 67.0.3364.0 (Official Build) canary (64-bit)  \nOperating System: All  \n  \n**REPRODUCTION CASE**   \n  \nhttp://xn--g1amdam3je98g4t.com is shown https://ԝзѕснооӏѕ.com  \n  \nNote: \"w3schools.com\" is  a top-10K site."
+}

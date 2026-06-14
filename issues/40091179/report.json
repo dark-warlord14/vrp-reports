@@ -1,0 +1,50 @@
+{
+  "id": "40091179",
+  "url": "https://issues.chromium.org/issues/40091179",
+  "title": "Security: FileReader - Use After Free in FileReaderLoader::OnCalculatedSize()",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Storage>FileAPI",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lo...@gmail.com",
+  "assignee": "me...@chromium.org",
+  "created_date": "2018-04-22T10:36:44+00:00",
+  "modified_date": "2019-01-04T00:59:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53367817,
+      "filename": "UAF_OnCalculatedSize_PoC.html",
+      "mime_type": "text/plain",
+      "size_bytes": 224,
+      "url": "https://issues.chromium.org/action/issues/40091179/attachments/53367817?download=true",
+      "local_path": "attachments/UAF_OnCalculatedSize_PoC.html"
+    },
+    {
+      "id": 53367883,
+      "filename": "UAF_OnCalculatedSize_PoC_WrittenValue_0x414141.html",
+      "mime_type": "text/plain",
+      "size_bytes": 296,
+      "url": "https://issues.chromium.org/action/issues/40091179/attachments/53367883?download=true",
+      "local_path": "attachments/UAF_OnCalculatedSize_PoC_WrittenValue_0x414141.html"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n\t  \n\tSteps to reproduce:  \n\t  \n\t1.Open PoC UAF_OnCalculatedSize_PoC.html in Chrome browser ASAN Build.  \n\t2.ASAN reports a Use After Free in FileReaderLoader::OnCalculatedSize().  \n  \n\t\t==13480==ERROR: AddressSanitizer: heap-use-after-free on address 0x125ad07b4348 at pc"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "40051656",
+  "url": "https://issues.chromium.org/issues/40051656",
+  "title": "Nasty looking INVALID_POINTER_READ in internal PDF-reader",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2011-11-29T15:59:23+00:00",
+  "modified_date": "2016-10-02T20:24:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53385861,
+      "filename": "reduced_possible_wild_read_29.11.pdf",
+      "mime_type": "application/pdf; charset=binary",
+      "size_bytes": 9391,
+      "url": "https://issues.chromium.org/action/issues/40051656/attachments/53385861?download=true",
+      "local_path": "attachments/reduced_possible_wild_read_29.11.pdf"
+    },
+    {
+      "id": 53385887,
+      "filename": "reduced_later_29.11.pdf",
+      "mime_type": "application/pdf; charset=binary",
+      "size_bytes": 15880,
+      "url": "https://issues.chromium.org/action/issues/40051656/attachments/53385887?download=true",
+      "local_path": "attachments/reduced_later_29.11.pdf"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "Nasty looking tab-crash with high and slightly changing crash address.   \n  \nchrome: segfault at 7f0dcb89ac72 ip 00007f0dc710c2a1 sp 00007ffffdba5288 error 4 in libpdf.so[7f0dc6fe2000+5d4000]  \nchrome: segfault at 7f0dcb899c72 ip 00007f0dc710c2a1 sp 00007ffffdba5288 error 4 in libpdf.so[7f0dc6fe2000"
+}

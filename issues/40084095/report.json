@@ -1,0 +1,46 @@
+{
+  "id": "40084095",
+  "url": "https://issues.chromium.org/issues/40084095",
+  "title": "Security: Leak of extension privates via utils module",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2016-1687"
+  ],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "ro...@robwu.nl",
+  "created_date": "2016-04-14T23:00:22+00:00",
+  "modified_date": "2018-04-25T22:52:58+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53128584,
+      "filename": "module-system-get-privates50.html",
+      "mime_type": "text/plain",
+      "size_bytes": 10105,
+      "url": "https://issues.chromium.org/action/issues/40084095/attachments/53128584?download=true",
+      "local_path": "attachments/module-system-get-privates50.html"
+    },
+    {
+      "id": 53128625,
+      "filename": "privates-not-private.png",
+      "mime_type": "image/png",
+      "size_bytes": 53619,
+      "url": "https://issues.chromium.org/action/issues/40084095/attachments/53128625?download=true",
+      "local_path": "attachments/privates-not-private.png"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "Chrome version: 52.0.2709.0 and earlier\r\n\r\nTo shield extension code from unwanted interference by extensions, the internal state of extensions is stored using \"privates\", which stored the variables in a hidden/private property using V8 magic.\r\n\r\nThe util extension module offers utils.expose to const"
+}

@@ -1,0 +1,67 @@
+{
+  "id": "40086984",
+  "url": "https://issues.chromium.org/issues/40086984",
+  "title": "Security: Canvas composite operations and CSS blend modes leak cross-origin data via timing attacks.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Skia, Privacy",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pe...@gmail.com",
+  "assignee": "ch...@chromium.org",
+  "created_date": "2017-03-07T08:39:48+00:00",
+  "modified_date": "2018-10-05T01:12:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53123312,
+      "filename": "globalCompositeOperation.html",
+      "mime_type": "text/plain",
+      "size_bytes": 7484,
+      "url": "https://issues.chromium.org/action/issues/40086984/attachments/53123312?download=true",
+      "local_path": "attachments/globalCompositeOperation.html"
+    },
+    {
+      "id": 53123313,
+      "filename": "mix-blend-mode.html",
+      "mime_type": "text/plain",
+      "size_bytes": 10812,
+      "url": "https://issues.chromium.org/action/issues/40086984/attachments/53123313?download=true",
+      "local_path": "attachments/mix-blend-mode.html"
+    },
+    {
+      "id": 53123314,
+      "filename": "interface.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 625282,
+      "url": "https://issues.chromium.org/action/issues/40086984/attachments/53123314?download=true",
+      "local_path": "attachments/interface.zip"
+    },
+    {
+      "id": 53123315,
+      "filename": "interface-source.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 14520,
+      "url": "https://issues.chromium.org/action/issues/40086984/attachments/53123315?download=true",
+      "local_path": "attachments/interface-source.zip"
+    }
+  ],
+  "update_count": 93,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nMany of the operations supported by CanvasRenderingContext2D.globalCompositeOperation and the CSS mix-blend-mode property take varying lengths of time to complete depending on the contents of the source and destination images. This allows an attacker to infer the content"
+}

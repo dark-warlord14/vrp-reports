@@ -1,0 +1,38 @@
+{
+  "id": "40094209",
+  "url": "https://issues.chromium.org/issues/40094209",
+  "title": "pdfium (XFA): oob read in CFGAS_FormatString::FormatStrNum",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pd...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2019-03-06T00:50:17+00:00",
+  "modified_date": "2019-06-18T14:23:34+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53418568,
+      "filename": "chromium-938724.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 499,
+      "url": "https://issues.chromium.org/action/issues/40094209/attachments/53418568?download=true",
+      "local_path": "attachments/chromium-938724.pdf"
+    }
+  ],
+  "update_count": 23,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.124 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n==27206==WARNING: MemorySanitizer: use-of-uninitialized-value\r\n\r\n    #0 0x55e31c992104 in CFGAS_FormatString::FormatStrNum(fxcrt::StringViewTemplat"
+}

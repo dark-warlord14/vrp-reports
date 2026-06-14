@@ -1,0 +1,52 @@
+{
+  "id": "40080896",
+  "url": "https://issues.chromium.org/issues/40080896",
+  "title": "Heap-based buffer overflow in Flash PCRE regex engine",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ya...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2014-11-21T00:24:51+00:00",
+  "modified_date": "2018-04-25T23:04:11+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52926923,
+      "filename": "main.as",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 233,
+      "url": "https://issues.chromium.org/action/issues/40080896/attachments/52926923?download=true",
+      "local_path": "attachments/main.as"
+    },
+    {
+      "id": 52926924,
+      "filename": "crasher.swf",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 765,
+      "url": "https://issues.chromium.org/action/issues/40080896/attachments/52926924?download=true",
+      "local_path": "attachments/crasher.swf"
+    },
+    {
+      "id": 52926938,
+      "filename": "gdb.log",
+      "mime_type": "text/plain",
+      "size_bytes": 17603,
+      "url": "https://issues.chromium.org/action/issues/40080896/attachments/52926938?download=true",
+      "local_path": "attachments/gdb.log"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis bug can be triggered by compiling a specifically crafted regexp in ActionScript code. In most cases the crash happens during unloading of the movie, and the disassembly code near the offending instruction indicates something related to custom heap management impleme"
+}

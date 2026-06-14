@@ -1,0 +1,29 @@
+{
+  "id": "40083755",
+  "url": "https://issues.chromium.org/issues/40083755",
+  "title": "Use-of-uninitialized-value in ebml_read_num",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Media>FFmpeg",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "hu...@chromium.org",
+  "created_date": "2016-02-24T17:38:26+00:00",
+  "modified_date": "2018-07-28T14:17:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "reward_amount_meta": 1500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 44,
+  "description_snippet": "Detailed report: https://cluster-fuzz.appspot.com/testcase?key=6299764108296192\n\nFuzzer: attekett_surku_fuzzer\nJob Type: linux_msan_chrome\nPlatform Id: linux\n\nCrash Type: Use-of-uninitialized-value\nCrash Address: \nCrash State:\n  ebml_read_num\n  ebml_parse\n  matroska_parse_seekhead_entry\n  \nRegressed"
+}

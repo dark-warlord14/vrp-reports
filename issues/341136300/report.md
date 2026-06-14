@@ -74,7 +74,7 @@ Reporter credit: Allen Ding
 - [chrome_devtools_exploit.mp4](attachments/chrome_devtools_exploit.mp4) (video/mp4, 784.5 KB)
 - [chrome_devtools_bug.mp4](attachments/chrome_devtools_bug.mp4) (video/mp4, 926.7 KB)
 - [Screenshot_2024-05-24_09-54-39.png](attachments/Screenshot_2024-05-24_09-54-39.png) (image/png, 77.3 KB)
-- devtools.js (text/javascript, 1.3 KB)
+- [devtools.js](attachments/devtools_56647206.js) (text/javascript, 1.3 KB)
 
 ## Timeline
 

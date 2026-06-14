@@ -1,0 +1,49 @@
+{
+  "id": "40086530",
+  "url": "https://issues.chromium.org/issues/40086530",
+  "title": "Security: URL Spoofing (with HTTPS lock) by focusing the omnibox while changing the location hash and calling a modal dialog",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Navigation, UI>Browser>Omnibox, UI>Browser>Omnibox>SecurityIndicators",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "kr...@chromium.org",
+  "created_date": "2017-01-17T04:44:48+00:00",
+  "modified_date": "2018-04-25T22:46:22+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53185236,
+      "filename": "Screen Shot 2017-01-17 at 16.07.16.png",
+      "mime_type": "image/png",
+      "size_bytes": 56851,
+      "url": "https://issues.chromium.org/action/issues/40086530/attachments/53185236?download=true",
+      "local_path": "attachments/Screen Shot 2017-01-17 at 16.07.16.png"
+    },
+    {
+      "id": 53185274,
+      "filename": "spoof.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1194,
+      "url": "https://issues.chromium.org/action/issues/40086530/attachments/53185274?download=true",
+      "local_path": "attachments/spoof.html"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nBy changing the location hash and calling a modal dialog at the same time a user focuses on the omnibox it's possible to spoof the URL and the HTTPS lock.  \nAfter the spoof, if the user tries to interact with the webpage the URL will return to normal, but this can be cir"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "40090566",
+  "url": "https://issues.chromium.org/issues/40090566",
+  "title": "Security: Whole-script confusable domain label spoofing (Cyrillic)",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "UI>Internationalization",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "js...@chromium.org",
+  "created_date": "2018-02-20T16:52:45+00:00",
+  "modified_date": "2018-12-04T06:19:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53228379,
+      "filename": "Screen Shot 2018-03-19 at 17.01.08.png",
+      "mime_type": "image/png",
+      "size_bytes": 34659,
+      "url": "https://issues.chromium.org/action/issues/40090566/attachments/53228379?download=true",
+      "local_path": "attachments/Screen Shot 2018-03-19 at 17.01.08.png"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**VERSION**   \nChrome Version: 66.0.3350.0 (Official Build) canary (64-bit)  \nOperating System: All  \n  \n**REPRODUCTION CASE**   \n  \nhttps://xn--80aa2cah8a7f79b.com is shown https://шӊатѕарр.com  \n  \nNote: This is similar to https://crbug.com/chromium/793628."
+}

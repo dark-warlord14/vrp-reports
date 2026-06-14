@@ -1,0 +1,68 @@
+{
+  "id": "40077669",
+  "url": "https://issues.chromium.org/issues/40077669",
+  "title": "Security: (Shared) (WebSQL) Worker races cause invalid pointers in DatabaseObserver::databaseClosed and DatabaseObserver::reportOpenDatabaseResult",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>Workers",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "th...@gmail.com",
+  "assignee": "me...@chromium.org",
+  "created_date": "2013-06-13T22:09:59+00:00",
+  "modified_date": "2018-04-25T23:12:52+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53397387,
+      "filename": "databaseclosed_crash_trace.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 8768,
+      "url": "https://issues.chromium.org/action/issues/40077669/attachments/53397387?download=true",
+      "local_path": "attachments/databaseclosed_crash_trace.txt"
+    },
+    {
+      "id": 53397388,
+      "filename": "reportopendatabaseresult_crash_trace.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 21206,
+      "url": "https://issues.chromium.org/action/issues/40077669/attachments/53397388?download=true",
+      "local_path": "attachments/reportopendatabaseresult_crash_trace.txt"
+    },
+    {
+      "id": 53397389,
+      "filename": "websql_dbclosed_reportopen_crash_repro.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 786,
+      "url": "https://issues.chromium.org/action/issues/40077669/attachments/53397389?download=true",
+      "local_path": "attachments/websql_dbclosed_reportopen_crash_repro.html"
+    },
+    {
+      "id": 53397430,
+      "filename": "249502_invalid_handle_trace_x32.txt",
+      "mime_type": "text/plain; charset=iso-8859-1",
+      "size_bytes": 5444,
+      "url": "https://issues.chromium.org/action/issues/40077669/attachments/53397430?download=true",
+      "local_path": "attachments/249502_invalid_handle_trace_x32.txt"
+    },
+    {
+      "id": 53397431,
+      "filename": "249502_invalid_handle_trace_x64.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 4683,
+      "url": "https://issues.chromium.org/action/issues/40077669/attachments/53397431?download=true",
+      "local_path": "attachments/249502_invalid_handle_trace_x64.txt"
+    }
+  ],
+  "update_count": 84,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nChrome crashes in DatabaseObserver::databaseClosed and DatabaseObserver::reportOpenDatabaseResult with an invalid pointer when multiple (random name) databases are opened while the script reloads (continuously) from multiple shared workers onmessage events.  \n  \nMany oth"
+}

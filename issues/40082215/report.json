@@ -1,0 +1,60 @@
+{
+  "id": "40082215",
+  "url": "https://issues.chromium.org/issues/40082215",
+  "title": "Security issue in SVGUseElement::buildShadowTree",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wo...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2010-07-20T06:35:49+00:00",
+  "modified_date": "2016-10-02T20:18:39+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53242564,
+      "filename": "45.rar",
+      "mime_type": "application/x-rar",
+      "size_bytes": 3352,
+      "url": "https://issues.chromium.org/action/issues/40082215/attachments/53242564?download=true",
+      "local_path": "attachments/45.rar"
+    },
+    {
+      "id": 53242565,
+      "filename": "47.rar",
+      "mime_type": "application/x-rar",
+      "size_bytes": 2800,
+      "url": "https://issues.chromium.org/action/issues/40082215/attachments/53242565?download=true",
+      "local_path": "attachments/47.rar"
+    },
+    {
+      "id": 53242580,
+      "filename": "1.xhtml",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 5454,
+      "url": "https://issues.chromium.org/action/issues/40082215/attachments/53242580?download=true",
+      "local_path": "attachments/1.xhtml"
+    },
+    {
+      "id": 53242587,
+      "filename": "svg_use.xhtml",
+      "mime_type": "text/html",
+      "size_bytes": 334,
+      "url": "https://issues.chromium.org/action/issues/40082215/attachments/53242587?download=true",
+      "local_path": "attachments/svg_use.xhtml"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "Hi, these two I sent them to ZDI severval months ago , but ZDI refused, so I sent them to google. I tested , it works on newest chrome stable version.\r\n\r\nwushi"
+}

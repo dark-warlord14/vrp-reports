@@ -1,0 +1,38 @@
+{
+  "id": "40091180",
+  "url": "https://issues.chromium.org/issues/40091180",
+  "title": "pdfium: stack-buffer-overflow in IntersectSides",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF, Internals>Skia",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pd...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2018-04-22T19:29:51+00:00",
+  "modified_date": "2018-12-20T15:23:39+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52931588,
+      "filename": "chromium-835667.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 268,
+      "url": "https://issues.chromium.org/action/issues/40091180/attachments/52931588?download=true",
+      "local_path": "attachments/chromium-835667.pdf"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.70 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nI'm not sure what to do with this report. This is in code that's not shipped in Chromium today. I don't know if custom pdfium implementations use it"
+}

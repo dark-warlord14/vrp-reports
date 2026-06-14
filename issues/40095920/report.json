@@ -1,0 +1,46 @@
+{
+  "id": "40095920",
+  "url": "https://issues.chromium.org/issues/40095920",
+  "title": "Security: Privilege Elevation via Google Chrome Elevation Service",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Installer>Components",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ph...@nccgroup.trust",
+  "assignee": "ga...@chromium.org",
+  "created_date": "2019-08-06T08:57:24+00:00",
+  "modified_date": "2019-11-23T15:39:06+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53363501,
+      "filename": "ChromeElevationServiceLPE.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 498190,
+      "url": "https://issues.chromium.org/action/issues/40095920/attachments/53363501?download=true",
+      "local_path": "attachments/ChromeElevationServiceLPE.pdf"
+    },
+    {
+      "id": 53363502,
+      "filename": "ChromeRecoveryLPE.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 15532,
+      "url": "https://issues.chromium.org/action/issues/40095920/attachments/53363502?download=true",
+      "local_path": "attachments/ChromeRecoveryLPE.zip"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThe Chrome Elevation Service exposes the RunRecoveryCRXElevated method that can be abused by low privileged users to obtain a copy of any file on a host.  \n  \nFull details included in attached PDF.  \n  \n**VERSION**   \n  \nChrome Version: 75.0.3770.142 (stable)  \nOpe"
+}

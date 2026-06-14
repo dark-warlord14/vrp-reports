@@ -1,0 +1,50 @@
+{
+  "id": "40050417",
+  "url": "https://issues.chromium.org/issues/40050417",
+  "title": "Security: expose stored (in cache) cross-site response's size",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Storage>CacheStorage, Blink>Storage>Quota",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ba...@gmail.com",
+  "assignee": "wa...@chromium.org",
+  "created_date": "2019-10-12T22:26:32+00:00",
+  "modified_date": "2020-04-14T19:14:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53071647,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 8003,
+      "url": "https://issues.chromium.org/action/issues/40050417/attachments/53071647?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53071648,
+      "filename": "k2.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2749,
+      "url": "https://issues.chromium.org/action/issues/40050417/attachments/53071648?download=true",
+      "local_path": "attachments/k2.js"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nI think that there is a way to expose the size of cross-site responses using storing them in a cache.  \n  \nIntro:   \n1) XS-Search is an attack that tried to distinguish between responses that had search results and responses that did not. Most of the known XS-Search a"
+}

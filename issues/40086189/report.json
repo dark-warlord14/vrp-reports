@@ -1,0 +1,52 @@
+{
+  "id": "40086189",
+  "url": "https://issues.chromium.org/issues/40086189",
+  "title": "renderer crash when playing a corrupt webm video",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Internals>Media",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2010-12-17T13:35:36+00:00",
+  "modified_date": "2018-07-29T14:03:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52888081,
+      "filename": "memcpy.webm",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 630742,
+      "url": "https://issues.chromium.org/action/issues/40086189/attachments/52888081?download=true",
+      "local_path": "attachments/memcpy.webm"
+    },
+    {
+      "id": 52888101,
+      "filename": "memcpy.webm",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 630742,
+      "url": "https://issues.chromium.org/action/issues/40086189/attachments/52888101?download=true",
+      "local_path": "attachments/memcpy_52888101.webm"
+    },
+    {
+      "id": 52888112,
+      "filename": "uninitialize.webm",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 630742,
+      "url": "https://issues.chromium.org/action/issues/40086189/attachments/52888112?download=true",
+      "local_path": "attachments/uninitialize.webm"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nOpening the attached webm video causes a renderer crash in Chrome. The crash happens at memcpy() in Linux. Crash addresses are pretty high and move with the stack pointer when reloading the page.   \n  \nI'll try to minimize the triggering video and have a look at what is"
+}

@@ -1,0 +1,39 @@
+{
+  "id": "40081355",
+  "url": "https://issues.chromium.org/issues/40081355",
+  "title": "Security: Race condition in Flash workers may cause an exploitable double free by abusing bytearray.writeObject",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2014-0574",
+    "CVE-2015-0312"
+  ],
+  "reporter": "bi...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2015-02-06T13:55:42+00:00",
+  "modified_date": "2018-04-25T23:02:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53102970,
+      "filename": "DoubleFreeArrayQuad.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 10690,
+      "url": "https://issues.chromium.org/action/issues/40081355/attachments/53102970?download=true",
+      "local_path": "attachments/DoubleFreeArrayQuad.zip"
+    }
+  ],
+  "update_count": 24,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nRace condition in Flash workers may cause an exploitable double free by abusing bytearray.writeObject.  \n  \n**VERSION**   \nChrome Version: 40.0.2214.111 stable, Flash 16.0.0.305  \nOperating System: Win7 SP1 x64  \n  \nThe bug is very similar to CVE-2014-0574 or CVE-2015-03"
+}

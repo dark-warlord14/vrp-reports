@@ -1,0 +1,44 @@
+{
+  "id": "40082148",
+  "url": "https://issues.chromium.org/issues/40082148",
+  "title": "Heap-buffer-overflow in convolve4RowsHorizontally_SSE2",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Skia",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2015-05-24T09:20:10+00:00",
+  "modified_date": "2018-04-25T23:00:38+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52915384,
+      "filename": "repro.fil",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 96,
+      "url": "https://issues.chromium.org/action/issues/40082148/attachments/52915384?download=true",
+      "local_path": "attachments/repro.fil"
+    },
+    {
+      "id": 52915385,
+      "filename": "debug64.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 6378,
+      "url": "https://issues.chromium.org/action/issues/40082148/attachments/52915385?download=true",
+      "local_path": "attachments/debug64.txt"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe attached testcase crashes filter_fuzz_stub 32 and 64-bit build. ASAN output on 32-bit below (64-bit attached):  \n  \n[0524/111558:INFO:filter_fuzz_stub.cc(60)] Test case: repro.fil  \n[0524/111558:INFO:filter_fuzz_stub.cc(37)] Valid stream detected.  \n================="
+}

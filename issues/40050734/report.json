@@ -1,0 +1,60 @@
+{
+  "id": "40050734",
+  "url": "https://issues.chromium.org/issues/40050734",
+  "title": "Security: Adobe regions use-after-free with multiple region css thingies",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2011-11-02T07:31:53+00:00",
+  "modified_date": "2016-10-02T20:23:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52994141,
+      "filename": "asan-parser.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 10850,
+      "url": "https://issues.chromium.org/action/issues/40050734/attachments/52994141?download=true",
+      "local_path": "attachments/asan-parser.txt"
+    },
+    {
+      "id": 52994142,
+      "filename": "parser2.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 175,
+      "url": "https://issues.chromium.org/action/issues/40050734/attachments/52994142?download=true",
+      "local_path": "attachments/parser2.html"
+    },
+    {
+      "id": 52994143,
+      "filename": "asan-parser2.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 10850,
+      "url": "https://issues.chromium.org/action/issues/40050734/attachments/52994143?download=true",
+      "local_path": "attachments/asan-parser2.txt"
+    },
+    {
+      "id": 52994144,
+      "filename": "parser.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 164,
+      "url": "https://issues.chromium.org/action/issues/40050734/attachments/52994144?download=true",
+      "local_path": "attachments/parser.html"
+    }
+  ],
+  "update_count": 31,
+  "description_snippet": "**VULNERABILITY DETAILS**   \neasily controlled use-after-free  \n  \n**VERSION**   \nChrome Version:   \n  \n  \nChromium\t17.0.926.0 (Developer Build 108154)  \nOS\tLinux  \nWebKit\t535.8 (trunk@98806)  \nJavaScript\tV8 3.6.6.3  \nFlash\t11.0 r1  \n  \nOperating System: 64bit oneiric  \n  \n**REPRODUCTION CASE**"
+}

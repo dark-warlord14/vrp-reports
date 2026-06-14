@@ -1,0 +1,46 @@
+{
+  "id": "40084044",
+  "url": "https://issues.chromium.org/issues/40084044",
+  "title": "Security:  Read access violation on same-origin, cross-process frames",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Sandbox>SiteIsolation",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2016-1661"
+  ],
+  "reporter": "wa...@gmail.com",
+  "assignee": "dc...@chromium.org",
+  "created_date": "2016-04-07T22:41:35+00:00",
+  "modified_date": "2018-04-25T22:53:08+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53074587,
+      "filename": "crashs.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1836,
+      "url": "https://issues.chromium.org/action/issues/40084044/attachments/53074587?download=true",
+      "local_path": "attachments/crashs.html"
+    },
+    {
+      "id": 53074588,
+      "filename": "redirection.html",
+      "mime_type": "text/plain",
+      "size_bytes": 203,
+      "url": "https://issues.chromium.org/action/issues/40084044/attachments/53074588?download=true",
+      "local_path": "attachments/redirection.html"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nOpening a cross origin window X in a separate renderer, then redirecting it to the opener origin can lead to read access violation when the opener manipulates  \nthe X.location object.  \n  \nWhen i know more about how it may be exploitable, i will share it here."
+}

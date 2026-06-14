@@ -1,0 +1,41 @@
+{
+  "id": "40050063",
+  "url": "https://issues.chromium.org/issues/40050063",
+  "title": "pdfium: oob read in PDF_DecodeText",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pd...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2019-09-05T17:36:43+00:00",
+  "modified_date": "2019-12-18T15:34:37+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53364333,
+      "filename": "chromium-1001159.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 122,
+      "url": "https://issues.chromium.org/action/issues/40050063/attachments/53364333?download=true",
+      "local_path": "attachments/chromium-1001159.pdf"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/76.0.3809.133 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n==4947==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x602000004597\r\nREAD of size 1 at 0x602000004597 thread T0\r\nSCARINESS: 12 (1-byte-"
+}

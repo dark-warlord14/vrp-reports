@@ -1,0 +1,57 @@
+{
+  "id": "40051986",
+  "url": "https://issues.chromium.org/issues/40051986",
+  "title": "Security: PDFium (XFA) Use-after-free in function CXFA_FFWidgetHandler::OnRButtonDown",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hu...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2020-04-10T15:55:31+00:00",
+  "modified_date": "2020-07-21T19:00:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53259223,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 6078,
+      "url": "https://issues.chromium.org/action/issues/40051986/attachments/53259223?download=true",
+      "local_path": "attachments/poc.pdf"
+    },
+    {
+      "id": 53259224,
+      "filename": "poc.evt",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 23,
+      "url": "https://issues.chromium.org/action/issues/40051986/attachments/53259224?download=true",
+      "local_path": "attachments/poc.evt"
+    },
+    {
+      "id": 53259225,
+      "filename": "log_crash.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11113,
+      "url": "https://issues.chromium.org/action/issues/40051986/attachments/53259225?download=true",
+      "local_path": "attachments/log_crash.txt"
+    }
+  ],
+  "update_count": 19,
+  "description_snippet": "**VERSION**   \n  \nOperating System: Windows 10 64bit  \nPDFium + enabled XFA (built from 8cc69b1037252e46883624efe239017dfdca5676)   \n  \n**REPRODUCTION CASE**   \n  \nRun pdfium_test.exe with input file poc.pdf + poc.evt  \n  \npdfium_test.exe --send-events poc.pdf  \n  \n**VULNERABILITY DETAILS**   \n  \nTh"
+}

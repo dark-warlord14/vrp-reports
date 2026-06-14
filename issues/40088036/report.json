@@ -1,0 +1,57 @@
+{
+  "id": "40088036",
+  "url": "https://issues.chromium.org/issues/40088036",
+  "title": "Security: Use-after-free in CPDFSDK_WidgetHandler::OnLoad",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2017-06-10T14:49:27+00:00",
+  "modified_date": "2017-09-22T13:04:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53244547,
+      "filename": "test_6.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 5060,
+      "url": "https://issues.chromium.org/action/issues/40088036/attachments/53244547?download=true",
+      "local_path": "attachments/test_6.pdf"
+    },
+    {
+      "id": 53244548,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 23199,
+      "url": "https://issues.chromium.org/action/issues/40088036/attachments/53244548?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53244560,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 2187,
+      "url": "https://issues.chromium.org/action/issues/40088036/attachments/53244560?download=true",
+      "local_path": "attachments/poc.pdf"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "with PDFIUM with XFA enabled, there is a function `DeleteAnnot` which can be triggered by `Field::removeField`.\r\n\r\n*** SNIP ***\r\n\r\nbool Document::removeField(CJS_Runtime* pRuntime,\r\n                           const std::vector<CJS_Value>& params,\r\n                           CJS_Value& vRet,"
+}

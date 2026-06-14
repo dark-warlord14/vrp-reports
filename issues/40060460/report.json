@@ -1,0 +1,36 @@
+{
+  "id": "40060460",
+  "url": "https://issues.chromium.org/issues/40060460",
+  "title": "Bad cast with run-ins and <input>",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "tk...@chromium.org",
+  "created_date": "2012-06-27T20:01:56+00:00",
+  "modified_date": "2018-04-25T23:19:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53074600,
+      "filename": "zero.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 473,
+      "url": "https://issues.chromium.org/action/issues/40060460/attachments/53074600?download=true",
+      "local_path": "attachments/zero.html"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**VULNERABILITY DETAILS**   \njumps to 0  \n  \n==11019== ERROR: AddressSanitizer crashed on unknown address 0x000000000000 (pc 0x000000000000 sp 0x7fffffff87d8 bp 0x7fffffff87f0 T0)  \nAddressSanitizer can not provide additional info. ABORTING  \n  \n**VERSION**   \nChrome Version: stable + dev"
+}

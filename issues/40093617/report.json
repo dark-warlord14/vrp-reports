@@ -1,0 +1,65 @@
+{
+  "id": "40093617",
+  "url": "https://issues.chromium.org/issues/40093617",
+  "title": "Security: Extensions can add host permissions for chrome:// pages",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "rd...@chromium.org",
+  "created_date": "2019-01-02T08:19:28+00:00",
+  "modified_date": "2019-04-19T14:23:27+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53013723,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 78,
+      "url": "https://issues.chromium.org/action/issues/40093617/attachments/53013723?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53013724,
+      "filename": "extension_page.html",
+      "mime_type": "text/plain",
+      "size_bytes": 134,
+      "url": "https://issues.chromium.org/action/issues/40093617/attachments/53013724?download=true",
+      "local_path": "attachments/extension_page.html"
+    },
+    {
+      "id": 53013725,
+      "filename": "main.js",
+      "mime_type": "text/plain",
+      "size_bytes": 357,
+      "url": "https://issues.chromium.org/action/issues/40093617/attachments/53013725?download=true",
+      "local_path": "attachments/main.js"
+    },
+    {
+      "id": 53013726,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 374,
+      "url": "https://issues.chromium.org/action/issues/40093617/attachments/53013726?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nchrome.permissions.request allows an extension to request additional permissions at run time. An extension can use this function to silently add host permissions for chrome:// pages. This process is silent because chrome:// hosts are specifically filtered out when genera"
+}

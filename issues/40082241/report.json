@@ -1,0 +1,46 @@
+{
+  "id": "40082241",
+  "url": "https://issues.chromium.org/issues/40082241",
+  "title": "Security: SEGV on unknown address in offsetHeightAttributeGetter",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>DOM",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2016-1612"
+  ],
+  "reporter": "cl...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2015-06-08T08:22:19+00:00",
+  "modified_date": "2018-04-25T22:57:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53161961,
+      "filename": "cr497632-min.html",
+      "mime_type": "text/html",
+      "size_bytes": 413,
+      "url": "https://issues.chromium.org/action/issues/40082241/attachments/53161961?download=true",
+      "local_path": "attachments/cr497632-min.html"
+    },
+    {
+      "id": 53161974,
+      "filename": "cr497632-min.html",
+      "mime_type": "text/html",
+      "size_bytes": 309,
+      "url": "https://issues.chromium.org/action/issues/40082241/attachments/53161974?download=true",
+      "local_path": "attachments/cr497632-min_53161974.html"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis testcase crashes the latest asan build of chrome as follows:  \n  \nASAN:SIGSEGV  \n=================================================================  \n==23243==ERROR: AddressSanitizer: SEGV on unknown address 0x00000092116c (pc 0x7f4f0081037f bp 0x7ffd1b5fa590 sp 0x7f"
+}

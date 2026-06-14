@@ -1,0 +1,86 @@
+{
+  "id": "40087276",
+  "url": "https://issues.chromium.org/issues/40087276",
+  "title": "Security: RTL character in URL flips domain and path (Android 4.2 and earlier)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Omnibox, UI>Internationalization>RTL",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ra...@gmail.com",
+  "assignee": "to...@chromium.org",
+  "created_date": "2017-04-07T11:16:09+00:00",
+  "modified_date": "2018-07-28T14:03:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53180036,
+      "filename": "PoC.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 18140,
+      "url": "https://issues.chromium.org/action/issues/40087276/attachments/53180036?download=true",
+      "local_path": "attachments/PoC.jpg"
+    },
+    {
+      "id": 53180037,
+      "filename": "Suggested Fixture.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 24647,
+      "url": "https://issues.chromium.org/action/issues/40087276/attachments/53180037?download=true",
+      "local_path": "attachments/Suggested Fixture.jpg"
+    },
+    {
+      "id": 53180202,
+      "filename": "Screenshot_2017-04-21-19-04-50.png",
+      "mime_type": "image/png",
+      "size_bytes": 64082,
+      "url": "https://issues.chromium.org/action/issues/40087276/attachments/53180202?download=true",
+      "local_path": "attachments/Screenshot_2017-04-21-19-04-50.png"
+    },
+    {
+      "id": 53180227,
+      "filename": "Screenshot_2017-04-21-12-26-19.png",
+      "mime_type": "image/png",
+      "size_bytes": 65607,
+      "url": "https://issues.chromium.org/action/issues/40087276/attachments/53180227?download=true",
+      "local_path": "attachments/Screenshot_2017-04-21-12-26-19.png"
+    },
+    {
+      "id": 53180255,
+      "filename": "Screenshot_2017-04-24-13-17-05.png",
+      "mime_type": "image/png",
+      "size_bytes": 55672,
+      "url": "https://issues.chromium.org/action/issues/40087276/attachments/53180255?download=true",
+      "local_path": "attachments/Screenshot_2017-04-24-13-17-05.png"
+    },
+    {
+      "id": 53180256,
+      "filename": "Screenshot_2017-04-24-15-59-51.png",
+      "mime_type": "image/png",
+      "size_bytes": 56363,
+      "url": "https://issues.chromium.org/action/issues/40087276/attachments/53180256?download=true",
+      "local_path": "attachments/Screenshot_2017-04-24-15-59-51.png"
+    },
+    {
+      "id": 53180270,
+      "filename": "Screenshot_2017-04-26-18-31-23.png",
+      "mime_type": "image/png",
+      "size_bytes": 74181,
+      "url": "https://issues.chromium.org/action/issues/40087276/attachments/53180270?download=true",
+      "local_path": "attachments/Screenshot_2017-04-26-18-31-23.png"
+    }
+  ],
+  "update_count": 77,
+  "description_snippet": "Chrome Version: [56] + [stable] (Updated on April 3, 2017)\r\nOperating System: [Android 4.1.2] \r\n\r\n\r\nImpact and Risk: the URL bar is the only reliable security indicator in browsers and if the only reliable security indicator could be controlled by an attacker it could carry adverse affects, For inst"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "40082890",
+  "url": "https://issues.chromium.org/issues/40082890",
+  "title": "Geolocation use after free",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>Geolocation",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "in...@chromium.org",
+  "assignee": "jo...@chromium.org",
+  "created_date": "2010-08-26T03:35:52+00:00",
+  "modified_date": "2017-09-22T19:16:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53092350,
+      "filename": "geo.htm",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 186,
+      "url": "https://issues.chromium.org/action/issues/40082890/attachments/53092350?download=true",
+      "local_path": "attachments/geo.htm"
+    },
+    {
+      "id": 53092351,
+      "filename": "index.htm",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 119,
+      "url": "https://issues.chromium.org/action/issues/40082890/attachments/53092351?download=true",
+      "local_path": "attachments/index.htm"
+    },
+    {
+      "id": 53092401,
+      "filename": "tmpdiff",
+      "mime_type": "text/x-diff; charset=us-ascii",
+      "size_bytes": 1785,
+      "url": "https://issues.chromium.org/action/issues/40082890/attachments/53092401?download=true",
+      "local_path": "attachments/tmpdiff"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "credit: kuzzcc\r\n\r\nKuzzcc emailed me on this again. Looked like a dup of previous bugs. But then I synced to latest trunk 7.0.506.0 (57453) and can reproduce the use after free.\r\n\r\nThere is clear memory corruption in m_service..\r\n\r\nline 257: m_lastPosition = m_service->lastPosition();\r\nStacktrace::"
+}

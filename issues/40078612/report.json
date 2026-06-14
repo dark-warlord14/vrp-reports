@@ -1,0 +1,68 @@
+{
+  "id": "40078612",
+  "url": "https://issues.chromium.org/issues/40078612",
+  "title": "Security: scrollbar-corner can be drawn outside the containing frame, allowing redress of parent frame.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jo...@saynotolinux.com",
+  "assignee": "le...@chromium.org",
+  "created_date": "2013-12-31T04:18:07+00:00",
+  "modified_date": "2018-04-25T23:09:41+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53404231,
+      "filename": "cr_scroll_content_spoofing.tar.gz",
+      "mime_type": "application/x-gzip",
+      "size_bytes": 34019,
+      "url": "https://issues.chromium.org/action/issues/40078612/attachments/53404231?download=true",
+      "local_path": "attachments/cr_scroll_content_spoofing.tar.gz"
+    },
+    {
+      "id": 53404232,
+      "filename": "Clamp-scrollCornerRect-to-the-view-s-frameRect.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 801,
+      "url": "https://issues.chromium.org/action/issues/40078612/attachments/53404232?download=true",
+      "local_path": "attachments/Clamp-scrollCornerRect-to-the-view-s-frameRect.patch"
+    },
+    {
+      "id": 53404259,
+      "filename": "scroll-corner-overflow.html",
+      "mime_type": "text/html",
+      "size_bytes": 384,
+      "url": "https://issues.chromium.org/action/issues/40078612/attachments/53404259?download=true",
+      "local_path": "attachments/scroll-corner-overflow.html"
+    },
+    {
+      "id": 53404273,
+      "filename": "v2-Clip-FrameView-scrollbar-and-scrollcorner-paints-to-.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1917,
+      "url": "https://issues.chromium.org/action/issues/40078612/attachments/53404273?download=true",
+      "local_path": "attachments/v2-Clip-FrameView-scrollbar-and-scrollcorner-paints-to-.patch"
+    },
+    {
+      "id": 53404311,
+      "filename": "cr_active_content_spoofing.tar.gz",
+      "mime_type": "application/x-gzip",
+      "size_bytes": 26215,
+      "url": "https://issues.chromium.org/action/issues/40078612/attachments/53404311?download=true",
+      "local_path": "attachments/cr_active_content_spoofing.tar.gz"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nScrollbar corner rects are not constrained to the owning viewport, allowing child documents to draw over their parents by specifying overly large dimensions for ::webkit-scrollbar pseudo-elements.  \n  \nAn attacker may then selectively overlay their own content using a"
+}

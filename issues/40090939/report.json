@@ -1,0 +1,57 @@
+{
+  "id": "40090939",
+  "url": "https://issues.chromium.org/issues/40090939",
+  "title": "Security: Blockfile Media Cache UaF",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>Network>Cache",
+  "os_platforms": [
+    "Fuchsia",
+    "Mac",
+    "Windows",
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ne...@gmail.com",
+  "assignee": "mo...@chromium.org",
+  "created_date": "2018-03-28T07:09:19+00:00",
+  "modified_date": "2018-12-04T06:20:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53391595,
+      "filename": "testcase.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1490,
+      "url": "https://issues.chromium.org/action/issues/40090939/attachments/53391595?download=true",
+      "local_path": "attachments/testcase.patch"
+    },
+    {
+      "id": 53391596,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 12615,
+      "url": "https://issues.chromium.org/action/issues/40090939/attachments/53391596?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53391641,
+      "filename": "likely_fix.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3403,
+      "url": "https://issues.chromium.org/action/issues/40090939/attachments/53391641?download=true",
+      "local_path": "attachments/likely_fix.diff"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe disk_cache component of the net subsystem in the browser process handles caching using a few different backends. The blockfile cache is the default cache when browsing the web. This is used by HTTP requests and media requests (video/audio tags in HTML5).  \n  \nWhen de"
+}

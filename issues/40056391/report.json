@@ -1,0 +1,30 @@
+{
+  "id": "40056391",
+  "url": "https://issues.chromium.org/issues/40056391",
+  "title": "Heap-use-after-free in ModuleSystem::LazyFieldGetter",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ax...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2012-04-08T12:50:43+00:00",
+  "modified_date": "2016-10-02T20:24:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 37,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nHeap-use-after-free can be triggered when accessing properties from closed window.  \n  \n**VERSION**   \nVersion 20.0.1091.0 (130353) Ubuntu 10.10 x64  \nVersion 20.0.1091.0 (130362) Ubuntu 11.10 x64  \n20.0.1094.1 canary Windows 7 x64  \nDoes not work on 18.0.1025.151 m Wind"
+}

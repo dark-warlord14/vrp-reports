@@ -1,0 +1,96 @@
+{
+  "id": "40080597",
+  "url": "https://issues.chromium.org/issues/40080597",
+  "title": "Security: Completely spoofable origin, including lock sign",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Omnibox, UI>Internationalization",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zc...@gmail.com",
+  "assignee": "mg...@chromium.org",
+  "created_date": "2014-10-08T06:53:53+00:00",
+  "modified_date": "2018-04-25T23:05:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53419363,
+      "filename": "lockicon.png",
+      "mime_type": "image/png",
+      "size_bytes": 42513,
+      "url": "https://issues.chromium.org/action/issues/40080597/attachments/53419363?download=true",
+      "local_path": "attachments/lockicon.png"
+    },
+    {
+      "id": 53419371,
+      "filename": "Screen Shot 2014-10-10 at 10.25.11 AM.png",
+      "mime_type": "image/png",
+      "size_bytes": 7201,
+      "url": "https://issues.chromium.org/action/issues/40080597/attachments/53419371?download=true",
+      "local_path": "attachments/Screen Shot 2014-10-10 at 10.25.11 AM.png"
+    },
+    {
+      "id": 53419372,
+      "filename": "Screen Shot 2014-10-10 at 10.24.42 AM.png",
+      "mime_type": "image/png",
+      "size_bytes": 41255,
+      "url": "https://issues.chromium.org/action/issues/40080597/attachments/53419372?download=true",
+      "local_path": "attachments/Screen Shot 2014-10-10 at 10.24.42 AM.png"
+    },
+    {
+      "id": 53419387,
+      "filename": "Screen Shot 2014-10-10 at 4.01.26 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 23388,
+      "url": "https://issues.chromium.org/action/issues/40080597/attachments/53419387?download=true",
+      "local_path": "attachments/Screen Shot 2014-10-10 at 4.01.26 PM.png"
+    },
+    {
+      "id": 53419388,
+      "filename": "Screen Shot 2014-10-10 at 3.59.55 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 14060,
+      "url": "https://issues.chromium.org/action/issues/40080597/attachments/53419388?download=true",
+      "local_path": "attachments/Screen Shot 2014-10-10 at 3.59.55 PM.png"
+    },
+    {
+      "id": 53419396,
+      "filename": "Screen Shot 2014-10-10 at 4.09.14 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 23061,
+      "url": "https://issues.chromium.org/action/issues/40080597/attachments/53419396?download=true",
+      "local_path": "attachments/Screen Shot 2014-10-10 at 4.09.14 PM.png"
+    },
+    {
+      "id": 53419402,
+      "filename": "windows_phish.png",
+      "mime_type": "image/png",
+      "size_bytes": 32926,
+      "url": "https://issues.chromium.org/action/issues/40080597/attachments/53419402?download=true",
+      "local_path": "attachments/windows_phish.png"
+    },
+    {
+      "id": 53419434,
+      "filename": "Screen Shot 2014-10-29 at 10.48.16 AM.png",
+      "mime_type": "image/png",
+      "size_bytes": 18224,
+      "url": "https://issues.chromium.org/action/issues/40080597/attachments/53419434?download=true",
+      "local_path": "attachments/Screen Shot 2014-10-29 at 10.48.16 AM.png"
+    }
+  ],
+  "update_count": 92,
+  "description_snippet": "**This template is ONLY for reporting security bugs. Please use a different**   \n**template for other types of bug reports.**   \n  \n**Please see the following link for instructions on filing security bugs:**   \n**http://www.chromium.org/Home/chromium-security/reporting-security-bugs**   \n  \n  \n**VUL"
+}

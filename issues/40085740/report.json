@@ -1,0 +1,52 @@
+{
+  "id": "40085740",
+  "url": "https://issues.chromium.org/issues/40085740",
+  "title": "Security: Heap-use-after-free in InspectedContext::createInjectedScript",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "ro...@robwu.nl",
+  "created_date": "2016-10-19T19:20:04+00:00",
+  "modified_date": "2018-04-25T22:49:03+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "reward_amount_meta": 1500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53134800,
+      "filename": "uaf-inspector-injected-script.html",
+      "mime_type": "text/plain",
+      "size_bytes": 161,
+      "url": "https://issues.chromium.org/action/issues/40085740/attachments/53134800?download=true",
+      "local_path": "attachments/uaf-inspector-injected-script.html"
+    },
+    {
+      "id": 53134811,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 242,
+      "url": "https://issues.chromium.org/action/issues/40085740/attachments/53134811?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53134812,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 697,
+      "url": "https://issues.chromium.org/action/issues/40085740/attachments/53134812?download=true",
+      "local_path": "attachments/background.js"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "Chrome version: 54.0.2840.59 (stable) and latest (56.0.2892.0)\r\n\r\nSteps to reproduce (the order of steps does not matter):\r\n1. Open attached file in Chrome.\r\n2. Open the Devtools (F12, inspect element, whatever).\r\n\r\nExpected: Nothing special should happen.\r\nActual: Tab crashes due to a use-after-fre"
+}

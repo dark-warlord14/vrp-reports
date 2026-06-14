@@ -1,0 +1,54 @@
+{
+  "id": "40075829",
+  "url": "https://issues.chromium.org/issues/40075829",
+  "title": "Security: integer overflow in webgl on osx",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals, Internals>GPU",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "gm...@chromium.org",
+  "created_date": "2012-09-14T19:46:02+00:00",
+  "modified_date": "2016-10-02T20:22:41+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53213317,
+      "filename": "really.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 529,
+      "url": "https://issues.chromium.org/action/issues/40075829/attachments/53213317?download=true",
+      "local_path": "attachments/really.html"
+    },
+    {
+      "id": 53213318,
+      "filename": "really.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 4065,
+      "url": "https://issues.chromium.org/action/issues/40075829/attachments/53213318?download=true",
+      "local_path": "attachments/really.txt"
+    },
+    {
+      "id": 53213319,
+      "filename": "really.crashlog.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 43750,
+      "url": "https://issues.chromium.org/action/issues/40075829/attachments/53213319?download=true",
+      "local_path": "attachments/really.crashlog.txt"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "**VULNERABILITY DETAILS**   \ninteger overflow in webgl on osx  \n  \n**VERSION**   \nChrome Version: stable + dev  \nOperating System: 64bit osx mountain lion (10.8)  \n   \n**REPRODUCTION CASE**   \n  \n<html>  \n  <head>  \n    <script>  \n      onload = function() {  \n        var gl = document.createE"
+}

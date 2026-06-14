@@ -1,0 +1,63 @@
+{
+  "id": "40089298",
+  "url": "https://issues.chromium.org/issues/40089298",
+  "title": "Security: Permission request UI spoof (improper URL truncation)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "do...@chromium.org",
+  "created_date": "2017-10-13T11:06:29+00:00",
+  "modified_date": "2018-10-05T01:13:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53048134,
+      "filename": "camera.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 17385,
+      "url": "https://issues.chromium.org/action/issues/40089298/attachments/53048134?download=true",
+      "local_path": "attachments/camera.jpg"
+    },
+    {
+      "id": 53048135,
+      "filename": "location.png",
+      "mime_type": "image/png",
+      "size_bytes": 5959,
+      "url": "https://issues.chromium.org/action/issues/40089298/attachments/53048135?download=true",
+      "local_path": "attachments/location.png"
+    },
+    {
+      "id": 53048176,
+      "filename": "Screenshot from 2017-11-14 14:22:10.png",
+      "mime_type": "image/png",
+      "size_bytes": 92136,
+      "url": "https://issues.chromium.org/action/issues/40089298/attachments/53048176?download=true",
+      "local_path": "attachments/Screenshot from 2017-11-14 14_22_10.png"
+    },
+    {
+      "id": 53048177,
+      "filename": "Screenshot from 2017-11-14 15:52:29.png",
+      "mime_type": "image/png",
+      "size_bytes": 74006,
+      "url": "https://issues.chromium.org/action/issues/40089298/attachments/53048177?download=true",
+      "local_path": "attachments/Screenshot from 2017-11-14 15_52_29.png"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "VERSION\r\nChrome Version: 61.0.3163.100/62.0.3202.52\r\nOperating System: windows\r\n\r\nDetails\r\nspoof the origin to '*.google.com'\r\nwhen the html page request camera or other permission\r\n\r\nOnline Demo\r\nhttps://www.math1as.com/chrome/camera_spoof.html\r\nhttps://www.math1as.com/chrome/location_spoof.html"
+}

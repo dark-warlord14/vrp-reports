@@ -1,0 +1,132 @@
+{
+  "id": "40088277",
+  "url": "https://issues.chromium.org/issues/40088277",
+  "title": "use after free due to floats not cleared (overflow)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2011-02-24T05:35:29+00:00",
+  "modified_date": "2018-04-26T00:14:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53090904,
+      "filename": "134.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 4219,
+      "url": "https://issues.chromium.org/action/issues/40088277/attachments/53090904?download=true",
+      "local_path": "attachments/134.html"
+    },
+    {
+      "id": 53090905,
+      "filename": "stillInserting.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 899,
+      "url": "https://issues.chromium.org/action/issues/40088277/attachments/53090905?download=true",
+      "local_path": "attachments/stillInserting.html"
+    },
+    {
+      "id": 53090927,
+      "filename": "73962.tbz2",
+      "mime_type": "application/x-bzip2; charset=binary",
+      "size_bytes": 19659,
+      "url": "https://issues.chromium.org/action/issues/40088277/attachments/53090927?download=true",
+      "local_path": "attachments/73962.tbz2"
+    },
+    {
+      "id": 53090932,
+      "filename": "73962_and_then_017281118.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 29887,
+      "url": "https://issues.chromium.org/action/issues/40088277/attachments/53090932?download=true",
+      "local_path": "attachments/73962_and_then_017281118.html"
+    },
+    {
+      "id": 53090933,
+      "filename": "73962_and_then_012266131.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 12970,
+      "url": "https://issues.chromium.org/action/issues/40088277/attachments/53090933?download=true",
+      "local_path": "attachments/73962_and_then_012266131.html"
+    },
+    {
+      "id": 53090934,
+      "filename": "73962_and_then_005138659.html",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 58877,
+      "url": "https://issues.chromium.org/action/issues/40088277/attachments/53090934?download=true",
+      "local_path": "attachments/73962_and_then_005138659.html"
+    },
+    {
+      "id": 53090935,
+      "filename": "73962_and_then_032739559.html",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 43231,
+      "url": "https://issues.chromium.org/action/issues/40088277/attachments/53090935?download=true",
+      "local_path": "attachments/73962_and_then_032739559.html"
+    },
+    {
+      "id": 53090936,
+      "filename": "73962_and_then_037409112.html",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 56106,
+      "url": "https://issues.chromium.org/action/issues/40088277/attachments/53090936?download=true",
+      "local_path": "attachments/73962_and_then_037409112.html"
+    },
+    {
+      "id": 53090937,
+      "filename": "73962_and_then_022397075.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 106119,
+      "url": "https://issues.chromium.org/action/issues/40088277/attachments/53090937?download=true",
+      "local_path": "attachments/73962_and_then_022397075.html"
+    },
+    {
+      "id": 53090938,
+      "filename": "73962_and_then_027756414.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 26829,
+      "url": "https://issues.chromium.org/action/issues/40088277/attachments/53090938?download=true",
+      "local_path": "attachments/73962_and_then_027756414.html"
+    },
+    {
+      "id": 53091031,
+      "filename": "73962-repro.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 279,
+      "url": "https://issues.chromium.org/action/issues/40088277/attachments/53091031?download=true",
+      "local_path": "attachments/73962-repro.html"
+    },
+    {
+      "id": 53091036,
+      "filename": "73962-x.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 362,
+      "url": "https://issues.chromium.org/action/issues/40088277/attachments/53091036?download=true",
+      "local_path": "attachments/73962-x.html"
+    },
+    {
+      "id": 53091067,
+      "filename": "checkFloats73962.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 1046,
+      "url": "https://issues.chromium.org/action/issues/40088277/attachments/53091067?download=true",
+      "local_path": "attachments/checkFloats73962.html"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "**VULNERABILITY DETAILS**   \ncontinued from https://crbug.com/chromium/73526  \n  \n**VERSION**   \nChrome Version:   \nChromium\t11.0.682.0 (Developer Build f504cfe)  \nWebKit\t534.22 (git@58b0446) == r79479  \n  \n**REPRODUCTION CASE**   \nattached   \n**FOR CRASHES, PLEASE INCLUDE THE FOLLOWING ADDITI"
+}

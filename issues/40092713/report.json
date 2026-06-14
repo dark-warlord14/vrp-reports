@@ -1,0 +1,60 @@
+{
+  "id": "40092713",
+  "url": "https://issues.chromium.org/issues/40092713",
+  "title": "Use after free in SVGUseElement::buildShadowTree",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "si...@chromium.org",
+  "created_date": "2011-07-17T18:37:30+00:00",
+  "modified_date": "2016-10-02T20:22:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53054971,
+      "filename": "6110cd5b86ac0bd6d1cd5ce03d8399eff41a3f44.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 338,
+      "url": "https://issues.chromium.org/action/issues/40092713/attachments/53054971?download=true",
+      "local_path": "attachments/6110cd5b86ac0bd6d1cd5ce03d8399eff41a3f44.html"
+    },
+    {
+      "id": 53054988,
+      "filename": "vg-89558.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 15545,
+      "url": "https://issues.chromium.org/action/issues/40092713/attachments/53054988?download=true",
+      "local_path": "attachments/vg-89558.txt"
+    },
+    {
+      "id": 53055018,
+      "filename": "asan-89558.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 8642,
+      "url": "https://issues.chromium.org/action/issues/40092713/attachments/53055018?download=true",
+      "local_path": "attachments/asan-89558.txt"
+    },
+    {
+      "id": 53055025,
+      "filename": "svg.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 102,
+      "url": "https://issues.chromium.org/action/issues/40092713/attachments/53055025?download=true",
+      "local_path": "attachments/svg.html"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nuse-after-free  \n  \n**VERSION**   \nChrome Version: trunk, chromium-nightly  \nOperating System: linux 64bit  \n  \n**REPRODUCTION CASE**   \nattached  \n  \n**FOR CRASHES, PLEASE INCLUDE THE FOLLOWING ADDITIONAL INFORMATION**   \nType of crash: renderer"
+}

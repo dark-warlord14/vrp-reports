@@ -1,0 +1,38 @@
+{
+  "id": "40089012",
+  "url": "https://issues.chromium.org/issues/40089012",
+  "title": "Security: heap buffer overflow in WebGLImageConversion::PackPixels",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebGL, Internals>GPU",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "zm...@chromium.org",
+  "created_date": "2017-09-14T23:10:13+00:00",
+  "modified_date": "2018-04-25T22:29:24+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53058825,
+      "filename": "Chrome_Stable_ByteSwap.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2596,
+      "url": "https://issues.chromium.org/action/issues/40089012/attachments/53058825?download=true",
+      "local_path": "attachments/Chrome_Stable_ByteSwap.html"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "This is tested on Windows 10 / Chrome Version 61.0.3163.91 (Official Build) (64-bit)\r\n\r\nA heap buffer overflow in WebGLImageConversion::PackPixels\r\n\r\n\r\n5:020> r\r\nrax=0000000000000000 rbx=4141414141414141 rcx=0000039f180015a0\r\nrdx=00000000000000a0 rsi=00007ffedd999628 rdi=0000000000000008\r\nrip=00007f"
+}

@@ -1,0 +1,45 @@
+{
+  "id": "40090886",
+  "url": "https://issues.chromium.org/issues/40090886",
+  "title": "Security: Bug in X509_VERIFY_PARAM_set1_host() with namelen 0",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Network>SSL",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2018-8970"
+  ],
+  "reporter": "ti...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2018-03-22T16:19:33+00:00",
+  "modified_date": "2018-07-28T14:23:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52909891,
+      "filename": "client.c",
+      "mime_type": "text/plain",
+      "size_bytes": 2440,
+      "url": "https://issues.chromium.org/action/issues/40090886/attachments/52909891?download=true",
+      "local_path": "attachments/client.c"
+    }
+  ],
+  "update_count": 26,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nBoringSSL's and LibreSSL's X509_VERIFY_PARAM_set1_host() function behaves differently than OpenSSL's implementation in a rather subtle and hard to detect way. As a consequence, X509_VERIFY_PARAM_set1_host(param, \"hostname\", 0) does NOT validate the hostname against SAN f"
+}

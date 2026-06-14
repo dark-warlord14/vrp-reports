@@ -1,0 +1,36 @@
+{
+  "id": "40082731",
+  "url": "https://issues.chromium.org/issues/40082731",
+  "title": "Adobe Flash Player AdBreakTimelineItem class Memory Corruption Vulnerability",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "we...@gmail.com",
+  "assignee": "na...@google.com",
+  "created_date": "2015-08-26T07:41:19+00:00",
+  "modified_date": "2016-10-02T19:54:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52931597,
+      "filename": "crash_AdBreakTimelineItem.swf",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 697,
+      "url": "https://issues.chromium.org/action/issues/40082731/attachments/52931597?download=true",
+      "local_path": "attachments/crash_AdBreakTimelineItem.swf"
+    }
+  ],
+  "update_count": 84,
+  "description_snippet": "I. Summary\r\nAdobe Flash Player is prone to a vulnerability which leads to memory corruption because of improper initialization of AdBreakTimelineItem.\r\n------------------------------------------------------------------\r\nII. Description\r\nAdobe Flash is a multimedia and software platform used for auth"
+}

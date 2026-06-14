@@ -1,0 +1,76 @@
+{
+  "id": "40078911",
+  "url": "https://issues.chromium.org/issues/40078911",
+  "title": "Security: UAF while deleting IndexedDB databases from (shared) workers",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Workers",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "th...@gmail.com",
+  "assignee": "ho...@chromium.org",
+  "created_date": "2014-02-13T21:33:18+00:00",
+  "modified_date": "2018-04-25T23:08:58+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53218755,
+      "filename": "delete_IDB_workers_repro.html",
+      "mime_type": "text/html",
+      "size_bytes": 407,
+      "url": "https://issues.chromium.org/action/issues/40078911/attachments/53218755?download=true",
+      "local_path": "attachments/delete_IDB_workers_repro.html"
+    },
+    {
+      "id": 53218842,
+      "filename": "delete_IDB_workers_repro.html",
+      "mime_type": "text/html",
+      "size_bytes": 289,
+      "url": "https://issues.chromium.org/action/issues/40078911/attachments/53218842?download=true",
+      "local_path": "attachments/delete_IDB_workers_repro_53218842.html"
+    },
+    {
+      "id": 53218883,
+      "filename": "0x611_base_WeakPtrFactory_UAF.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18846,
+      "url": "https://issues.chromium.org/action/issues/40078911/attachments/53218883?download=true",
+      "local_path": "attachments/0x611_base_WeakPtrFactory_UAF.txt"
+    },
+    {
+      "id": 53218884,
+      "filename": "0x626_std_basic_UAF_251481.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 20313,
+      "url": "https://issues.chromium.org/action/issues/40078911/attachments/53218884?download=true",
+      "local_path": "attachments/0x626_std_basic_UAF_251481.txt"
+    },
+    {
+      "id": 53218885,
+      "filename": "ThreadState_visitStack_SEGV_trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 22070,
+      "url": "https://issues.chromium.org/action/issues/40078911/attachments/53218885?download=true",
+      "local_path": "attachments/ThreadState_visitStack_SEGV_trace.txt"
+    },
+    {
+      "id": 53218886,
+      "filename": "0x626_Pickle_FindNext_UAF.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 19423,
+      "url": "https://issues.chromium.org/action/issues/40078911/attachments/53218886?download=true",
+      "local_path": "attachments/0x626_Pickle_FindNext_UAF.txt"
+    }
+  ],
+  "update_count": 72,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nDeleting a database from a worker while the same database is in use by another worker (and the worker triggers a reload) causes a UAF.  \n  \n**VERSION**   \nChrome Version: 248869(+) ToT/Continuous(/Asan)  \nOperating System: Ubuntu 13.10 x64  \n  \n**REPRODUCTION CASE**   \nL"
+}

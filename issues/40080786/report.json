@@ -1,0 +1,52 @@
+{
+  "id": "40080786",
+  "url": "https://issues.chromium.org/issues/40080786",
+  "title": "Security: OpenSearch description files can be loaded from file:// URLs",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Omnibox, UI>Browser>Search",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ja...@googlemail.com",
+  "assignee": "me...@chromium.org",
+  "created_date": "2014-11-03T22:20:34+00:00",
+  "modified_date": "2018-04-25T23:04:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53386555,
+      "filename": "loader.html",
+      "mime_type": "text/html",
+      "size_bytes": 3523,
+      "url": "https://issues.chromium.org/action/issues/40080786/attachments/53386555?download=true",
+      "local_path": "attachments/loader.html"
+    },
+    {
+      "id": 53386556,
+      "filename": "start.html",
+      "mime_type": "text/html",
+      "size_bytes": 1258,
+      "url": "https://issues.chromium.org/action/issues/40080786/attachments/53386556?download=true",
+      "local_path": "attachments/start.html"
+    },
+    {
+      "id": 53386557,
+      "filename": "server.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2420,
+      "url": "https://issues.chromium.org/action/issues/40080786/attachments/53386557?download=true",
+      "local_path": "attachments/server.js"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "Security: OpenSearch description files can be loaded from file:// URLs  \n  \n**VULNERABILITY DETAILS**   \nWhen a webpage uses <link rel=\"search\" type=\"application/opensearchdescription+xml\" href=\"{url}\" ...> to point to an OpenSearch description file, the renderer will give the URI to the privileged"
+}

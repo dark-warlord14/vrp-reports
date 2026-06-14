@@ -1,0 +1,29 @@
+{
+  "id": "40077606",
+  "url": "https://issues.chromium.org/issues/40077606",
+  "title": "Security: TLS Truncation attack on HTTP headers, including cookie flags",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Network>SSL",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2013-2853"
+  ],
+  "reporter": "an...@gmail.com",
+  "assignee": "ag...@chromium.org",
+  "created_date": "2013-05-27T16:41:12+00:00",
+  "modified_date": "2018-04-25T23:13:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3133.0,
+  "reward_amount_meta": 3133.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 48,
+  "description_snippet": "**VERSION**   \nChrome Version: 27.0.1453.94 stable  \nOperating System: tested on Windows  \n  \n**VULNERABILITY DETAILS**   \n  \nChrome, unlike Firefox, IE or Opera, attempts to defend against TLS truncation attacks by enforcing the Content-Length header to match the length of the query's response body"
+}

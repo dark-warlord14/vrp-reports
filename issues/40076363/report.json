@@ -1,0 +1,44 @@
+{
+  "id": "40076363",
+  "url": "https://issues.chromium.org/issues/40076363",
+  "title": "chrome!std::_Tree<std::_Tmap_traits<tracked_objects::Location,tracked_objects::Births *,std::less<tracked_objects::Location>,std::allocator<std::pair<tracked_objects::Location const ,tracked_objects::Births *> >,0> >::find+15 - crash",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals, Internals>Media>FFmpeg",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sl...@gmail.com",
+  "assignee": "da...@chromium.org",
+  "created_date": "2012-09-27T15:19:25+00:00",
+  "modified_date": "2016-10-02T20:22:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53315902,
+      "filename": "crash1.mp3",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 50193,
+      "url": "https://issues.chromium.org/action/issues/40076363/attachments/53315902?download=true",
+      "local_path": "attachments/crash1.mp3"
+    },
+    {
+      "id": 53315903,
+      "filename": "stack1.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 3144,
+      "url": "https://issues.chromium.org/action/issues/40076363/attachments/53315903?download=true",
+      "local_path": "attachments/stack1.txt"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "Crashes on linux stable 21.0.1180.89 (154005), windows dev 23.0.1271.6 (158449) and canary 24.0.1279.0 (158985).\r\n\r\nTo reproduce open crash1.mp3 in chrome.\r\n\r\n(b78.1074): Access violation - code c0000005 (first chance)\r\nFirst chance exceptions are reported before any exception handling.\r\nThis except"
+}

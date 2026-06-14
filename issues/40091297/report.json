@@ -1,0 +1,33 @@
+{
+  "id": "40091297",
+  "url": "https://issues.chromium.org/issues/40091297",
+  "title": "Security: Use of uninitialized memory caused by AcmReceiver::AcmReceiver()",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>WebRTC>Audio",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zi...@gmail.com",
+  "assignee": "hl...@chromium.org",
+  "created_date": "2018-05-04T19:31:16+00:00",
+  "modified_date": "2020-10-28T20:51:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 44,
+  "description_snippet": "[This is a WebRTC bug, that I am filing here because there doesn't appear to be a security template at https://bugs.chromium.org/p/webrtc/issues/entry]\r\n\r\nAcmReceiver::AcmReceiver() (modules\\audio_coding\\acm2\\acm_receiver.cc) causes other code in its class to use uninitialized memory by failing full"
+}

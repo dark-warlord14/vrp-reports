@@ -1,0 +1,33 @@
+{
+  "id": "40087417",
+  "url": "https://issues.chromium.org/issues/40087417",
+  "title": "Bad-cast to sandbox::bpf_dsl::(anonymous namespace)::ReturnResultExprImpl from invalid vptr;blink::ApplyStyleCommand::applyRelativeFontStyleChange;blink::ApplyStyleCommand::doApply",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Editing",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "yo...@chromium.org",
+  "created_date": "2017-04-21T22:53:29+00:00",
+  "modified_date": "2017-08-05T13:03:54+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3500.0,
+  "reward_amount_meta": 3500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 54,
+  "description_snippet": "Detailed report: https://clusterfuzz.com/testcase?key=4596915422625792\n\nFuzzer: miaubiz_css_fuzzer\nJob Type: linux_cfi_chrome\nPlatform Id: linux\n\nCrash Type: Bad-cast\nCrash Address: 0x7f80890118c0\nCrash State:\n  Bad-cast to sandbox::bpf_dsl::(anonymous namespace)::ReturnResultExprImpl from invalid v"
+}

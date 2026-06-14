@@ -1,0 +1,58 @@
+{
+  "id": "40095922",
+  "url": "https://issues.chromium.org/issues/40095922",
+  "title": "Security: use-after-poison in  blink::VideoTrackRecorder::InitializeEncoder",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>MediaRecording",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jo...@microsoft.com",
+  "assignee": "gu...@chromium.org",
+  "created_date": "2019-08-06T20:27:02+00:00",
+  "modified_date": "2020-01-08T18:12:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53173565,
+      "filename": "asan_output.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7001,
+      "url": "https://issues.chromium.org/action/issues/40095922/attachments/53173565?download=true",
+      "local_path": "attachments/asan_output.txt"
+    },
+    {
+      "id": 53173566,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 614,
+      "url": "https://issues.chromium.org/action/issues/40095922/attachments/53173566?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53173567,
+      "filename": "empty.html",
+      "mime_type": "text/plain",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40095922/attachments/53173567?download=true",
+      "local_path": "attachments/empty.html"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**-------------------------**   \n  \n**VULNERABILITY DETAILS**   \nhave not root caused this one yet. Will update after i dig in a bit more.   \n  \n**VERSION**   \nChrome Version: commit 6c8dec6ff4d51641cf249450fc797f0f03241681   \nOperating System: Windows 10 x64   \n  \n**REPRODUCTION CASE**   \nrepro wit"
+}

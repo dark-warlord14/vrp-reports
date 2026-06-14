@@ -1,0 +1,38 @@
+{
+  "id": "40077743",
+  "url": "https://issues.chromium.org/issues/40077743",
+  "title": "Security: ANGLE libGLESv2 Integer Overflow",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals, Internals>GPU",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@contextis.co.uk",
+  "assignee": "[Deleted User]",
+  "created_date": "2013-07-04T14:18:47+00:00",
+  "modified_date": "2018-04-25T23:12:32+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1337.0,
+  "reward_amount_meta": 1337.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52976251,
+      "filename": "20130704 libGLESv2 Integer Overflow.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 1378,
+      "url": "https://issues.chromium.org/action/issues/40077743/attachments/52976251?download=true",
+      "local_path": "attachments/20130704 libGLESv2 Integer Overflow.zip"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "Description:\t\tAlmost Native Graphics Layer Engine (ANGLE) library Integer Overflow\r\nVersions Affected: \tGoogle Chrome 27.0.1453.116 m\r\nCategory: \t\tMemory Corruption\r\nReporter:\t\tAlex Chapman of Context Information Security \r\n\r\nSummary:\r\n--------\r\n\r\nThe Almost Native Graphics Layer Engine (ANGLE) libr"
+}

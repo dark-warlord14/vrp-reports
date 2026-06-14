@@ -1,0 +1,38 @@
+{
+  "id": "40091295",
+  "url": "https://issues.chromium.org/issues/40091295",
+  "title": "Chrome URL spoofing vulnerability on IOS",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "UI>Browser>Core",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ev...@gmail.com",
+  "assignee": "kk...@chromium.org",
+  "created_date": "2018-05-04T12:18:39+00:00",
+  "modified_date": "2019-01-04T01:00:29+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53410987,
+      "filename": "4201722.png",
+      "mime_type": "image/png",
+      "size_bytes": 471269,
+      "url": "https://issues.chromium.org/action/issues/40091295/attachments/53410987?download=true",
+      "local_path": "attachments/4201722.png"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "Steps to reproduce the problem:\r\n1. Open url: https://server.n0tr00t.com/chrome/mobile_url_spoof.html\r\n2. Click test <a> tag\r\n3. We'll see the effect of a successful hijacking\r\n\r\nWhat is the expected behavior?\r\n\r\nWhat went wrong?\r\nPoC:\r\n\r\n```\r\n\t<html>\r\n\t<head>\r\n\t    <title>Chrome URL spoofing vulner"
+}

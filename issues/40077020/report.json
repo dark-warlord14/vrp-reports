@@ -1,0 +1,54 @@
+{
+  "id": "40077020",
+  "url": "https://issues.chromium.org/issues/40077020",
+  "title": "Security: out of bounds write with webgl and gl.DEPTH_COMPONENT",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Blink, Blink>WebGL",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "kb...@chromium.org",
+  "created_date": "2013-02-23T12:00:14+00:00",
+  "modified_date": "2016-10-02T20:20:27+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53388340,
+      "filename": "sksk.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 6262,
+      "url": "https://issues.chromium.org/action/issues/40077020/attachments/53388340?download=true",
+      "local_path": "attachments/sksk.txt"
+    },
+    {
+      "id": 53388341,
+      "filename": "sksk.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 275,
+      "url": "https://issues.chromium.org/action/issues/40077020/attachments/53388341?download=true",
+      "local_path": "attachments/sksk.html"
+    },
+    {
+      "id": 53388392,
+      "filename": "webgl-depth-texture.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 15638,
+      "url": "https://issues.chromium.org/action/issues/40077020/attachments/53388392?download=true",
+      "local_path": "attachments/webgl-depth-texture.html"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "VULNERABILITY DETAILS\r\nout of bounds write with webgl and gl.DEPTH_COMPONENT\r\n\r\n\r\nVERSION\r\nChrome Version: dev\r\nOperating System: linux + mesa + intel\r\n\r\nREPRODUCTION CASE\r\n<html>\r\n  <head>\r\n    <script>\r\n      var canvas = document.createElement('canvas')\r\n      var gl = canvas.getContext('experi"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "40051543",
+  "url": "https://issues.chromium.org/issues/40051543",
+  "title": "Security: PDFium heap-use-after-free in CFWL_DateTimePicker::SetEditText (XFA)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "my...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2020-02-18T18:53:52+00:00",
+  "modified_date": "2020-05-28T18:56:27+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53359266,
+      "filename": "test.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 7138,
+      "url": "https://issues.chromium.org/action/issues/40051543/attachments/53359266?download=true",
+      "local_path": "attachments/test.pdf"
+    }
+  ],
+  "update_count": 24,
+  "description_snippet": "PDFium heap-use-after-free in CFWL_DateTimePicker::SetEditText (XFA)  \n  \n**VULNERABILITY DETAILS**   \nThe bug is in function CFWL_DateTimePicker::SetEditText()   \n```  \nvoid CFWL_DateTimePicker::SetEditText(const WideString& wsText) {  \n  if (!m_pEdit)  \n    return;  \n  \n  m_pEdit->SetText(wsText);"
+}

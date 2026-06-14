@@ -1,0 +1,52 @@
+{
+  "id": "40081247",
+  "url": "https://issues.chromium.org/issues/40081247",
+  "title": "Heap-use-after-free in content::GpuChannelHost::DestroyChannel()",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "pi...@chromium.org",
+  "created_date": "2015-01-23T16:47:49+00:00",
+  "modified_date": "2018-04-25T23:03:05+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53036973,
+      "filename": "testcase_gpu.html",
+      "mime_type": "text/html",
+      "size_bytes": 1137,
+      "url": "https://issues.chromium.org/action/issues/40081247/attachments/53036973?download=true",
+      "local_path": "attachments/testcase_gpu.html"
+    },
+    {
+      "id": 53037083,
+      "filename": "testcase_gpu2.html",
+      "mime_type": "text/html",
+      "size_bytes": 462,
+      "url": "https://issues.chromium.org/action/issues/40081247/attachments/53037083?download=true",
+      "local_path": "attachments/testcase_gpu2.html"
+    },
+    {
+      "id": 53037113,
+      "filename": "chrome_gpu_output.html",
+      "mime_type": "text/html",
+      "size_bytes": 36937,
+      "url": "https://issues.chromium.org/action/issues/40081247/attachments/53037113?download=true",
+      "local_path": "attachments/chrome_gpu_output.html"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nrender_thread_impl.cc/h contains the code which causes this use after free.  \nrender_thread_impl.cc has these two variables.  \n 1. scoped_refptr<webkit::gpu::ContextProviderWebContext>  shared_main_thread_contexts_;  \n 2. scoped_refptr<GpuChannelHost> gpu_channel_  \n  \ng"
+}

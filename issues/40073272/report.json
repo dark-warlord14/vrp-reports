@@ -1,0 +1,44 @@
+{
+  "id": "40073272",
+  "url": "https://issues.chromium.org/issues/40073272",
+  "title": "Heap-buffer-overflow in SkAAClipBlitter::blitAntiH",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals, Internals>Skia",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2012-09-12T06:08:24+00:00",
+  "modified_date": "2016-10-02T20:22:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53187115,
+      "filename": "chrome-heap-buffer-overflow-SkAAClipBlitterblitAntiH-6ba.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 733,
+      "url": "https://issues.chromium.org/action/issues/40073272/attachments/53187115?download=true",
+      "local_path": "attachments/chrome-heap-buffer-overflow-SkAAClipBlitterblitAntiH-6ba.html"
+    },
+    {
+      "id": 53187193,
+      "filename": "chrome-heap-buffer-overflow-SkAAClipBlitterblitAntiH-e4a.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 20420,
+      "url": "https://issues.chromium.org/action/issues/40073272/attachments/53187193?download=true",
+      "local_path": "attachments/chrome-heap-buffer-overflow-SkAAClipBlitterblitAntiH-e4a.html"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "Repro-file as attachment.\r\n\r\nChromium 23.0.1263.0 (Developer Build 155968)\r\n\r\nASAN-report:\r\n\r\n==5702== ERROR: AddressSanitizer heap-buffer-overflow on address 0x7f68314ff696 at pc 0x7f684807cffa bp 0x7fff5235c140 sp 0x7fff5235c138\r\nREAD of size 1 at 0x7f68314ff696 thread T0\r\n    #0 0x7f684807cff9"
+}

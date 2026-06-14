@@ -1,0 +1,52 @@
+{
+  "id": "40091392",
+  "url": "https://issues.chromium.org/issues/40091392",
+  "title": "use-after-free in svg fontfacelement",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2011-05-29T08:48:17+00:00",
+  "modified_date": "2018-04-26T00:07:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53142859,
+      "filename": "svgf.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 311,
+      "url": "https://issues.chromium.org/action/issues/40091392/attachments/53142859?download=true",
+      "local_path": "attachments/svgf.html"
+    },
+    {
+      "id": 53142877,
+      "filename": "vg-84355-chrome-stable.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 11241,
+      "url": "https://issues.chromium.org/action/issues/40091392/attachments/53142877?download=true",
+      "local_path": "attachments/vg-84355-chrome-stable.txt"
+    },
+    {
+      "id": 53142878,
+      "filename": "vg-84355-chromium.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 22835,
+      "url": "https://issues.chromium.org/action/issues/40091392/attachments/53142878?download=true",
+      "local_path": "attachments/vg-84355-chromium.txt"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nuse-after-free in svg fontfaceelement,  \n  \nn.b. I can only reproduce this 2 ways:  \n  \n1. in linux when I disable tcmalloc with:  \nbuild/gyp_chromium -Dlinux_use_tcmalloc=0  \n  \n2. in valgrind, where it affects also google chrome stable version.  \n  \nvalgrind give"
+}

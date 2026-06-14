@@ -1,0 +1,52 @@
+{
+  "id": "40085645",
+  "url": "https://issues.chromium.org/issues/40085645",
+  "title": "Security: Use of unvalidated URL in PDF viewer",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF, Internals>Sandbox>SiteIsolation",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "ro...@robwu.nl",
+  "created_date": "2016-10-09T16:16:29+00:00",
+  "modified_date": "2018-04-25T22:49:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2500.0,
+  "reward_amount_meta": 2500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53236467,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3815,
+      "url": "https://issues.chromium.org/action/issues/40085645/attachments/53236467?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53236468,
+      "filename": "server.py",
+      "mime_type": "text/plain",
+      "size_bytes": 817,
+      "url": "https://issues.chromium.org/action/issues/40085645/attachments/53236468?download=true",
+      "local_path": "attachments/server.py"
+    },
+    {
+      "id": 53236548,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1040,
+      "url": "https://issues.chromium.org/action/issues/40085645/attachments/53236548?download=true",
+      "local_path": "attachments/index_53236548.html"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "Chrome version: Stable (53.0.2785.116) and latest (56.0.2886.0)\r\n\r\nWhen a PDF is opened in Chrome, the PDFium plugin is used as follows:\r\n\r\n(1) <embed> by webpage -> Chrome loads PDF plugin\r\n  (2) PDF plugin loads <iframe> with PDF helper extension.\r\n    (3) PDF helper extension loads <embed> with p"
+}

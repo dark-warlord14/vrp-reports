@@ -1,0 +1,68 @@
+{
+  "id": "40064825",
+  "url": "https://issues.chromium.org/issues/40064825",
+  "title": "Security: webgl crash on mesa",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Blink>WebGL, Internals",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "kb...@chromium.org",
+  "created_date": "2012-08-26T18:19:56+00:00",
+  "modified_date": "2016-10-03T13:03:37+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3133.0,
+  "reward_amount_meta": 3133.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53145955,
+      "filename": "stable-x1011.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 938,
+      "url": "https://issues.chromium.org/action/issues/40064825/attachments/53145955?download=true",
+      "local_path": "attachments/stable-x1011.txt"
+    },
+    {
+      "id": 53145956,
+      "filename": "x1011.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 350,
+      "url": "https://issues.chromium.org/action/issues/40064825/attachments/53145956?download=true",
+      "local_path": "attachments/x1011.html"
+    },
+    {
+      "id": 53145957,
+      "filename": "x1011.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 3742,
+      "url": "https://issues.chromium.org/action/issues/40064825/attachments/53145957?download=true",
+      "local_path": "attachments/x1011.txt"
+    },
+    {
+      "id": 53145958,
+      "filename": "ff1011.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 902,
+      "url": "https://issues.chromium.org/action/issues/40064825/attachments/53145958?download=true",
+      "local_path": "attachments/ff1011.txt"
+    },
+    {
+      "id": 53146047,
+      "filename": "8.1-lastlevel.patch",
+      "mime_type": "text/x-diff; charset=us-ascii",
+      "size_bytes": 681,
+      "url": "https://issues.chromium.org/action/issues/40064825/attachments/53146047?download=true",
+      "local_path": "attachments/8.1-lastlevel.patch"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nsomekind of crash  \n  \n**VERSION**   \nChrome Version: stable + trunk  \nOperating System: 64bit precise + mesa  \n  \n**REPRODUCTION CASE**   \n<html>  \n  <head>  \n    <script>  \n      var gl = document.createElement('canvas').getContext('experimental-webgl')  \n      v"
+}

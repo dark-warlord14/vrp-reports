@@ -1,0 +1,44 @@
+{
+  "id": "40052624",
+  "url": "https://issues.chromium.org/issues/40052624",
+  "title": "Heap-use-after-free in xsltParseGlobalVariable",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2012-01-10T07:15:37+00:00",
+  "modified_date": "2018-04-25T23:50:22+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52891067,
+      "filename": "xsl.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 481,
+      "url": "https://issues.chromium.org/action/issues/40052624/attachments/52891067?download=true",
+      "local_path": "attachments/xsl.html"
+    },
+    {
+      "id": 52891085,
+      "filename": "xsl (1).html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 333,
+      "url": "https://issues.chromium.org/action/issues/40052624/attachments/52891085?download=true",
+      "local_path": "attachments/xsl (1).html"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nASan reports a heap-use-after-free when the attached page is opened.  \n  \n**VERSION**   \nChrome Version: 18.0.1001.0 (Developer Build 116848)  \nOperating System: Linux, Debian 6.0.3 x86_64  \n  \n**REPRODUCTION CASE**   \n $ chrome-asan xsl.html  \n  \n**FOR CRASHES, PLEASE I"
+}

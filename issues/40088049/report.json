@@ -1,0 +1,57 @@
+{
+  "id": "40088049",
+  "url": "https://issues.chromium.org/issues/40088049",
+  "title": "Use-after-free in CFFL_InteractiveFormFiller::OnFormat",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2017-06-12T09:53:07+00:00",
+  "modified_date": "2017-09-22T13:04:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52946504,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 19069,
+      "url": "https://issues.chromium.org/action/issues/40088049/attachments/52946504?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 52946505,
+      "filename": "poc.in",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1637,
+      "url": "https://issues.chromium.org/action/issues/40088049/attachments/52946505?download=true",
+      "local_path": "attachments/poc.in"
+    },
+    {
+      "id": 52946506,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 2565,
+      "url": "https://issues.chromium.org/action/issues/40088049/attachments/52946506?download=true",
+      "local_path": "attachments/poc.pdf"
+    }
+  ],
+  "update_count": 28,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Build pdfium master branch with XFA\r\n2. ./pdfium_test ./poc.pdf\r\n3. ASAN crash due to UAF\r\n\r\nWhat is the expected behavior?\r\n\r\nW"
+}

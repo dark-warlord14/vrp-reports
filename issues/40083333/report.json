@@ -1,0 +1,44 @@
+{
+  "id": "40083333",
+  "url": "https://issues.chromium.org/issues/40083333",
+  "title": "Security: Drop-downs hiding any part of the browser UI, allowing for several types of spoof attacks",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Forms>Select, Blink>Input",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "dt...@chromium.org",
+  "created_date": "2015-12-04T04:06:48+00:00",
+  "modified_date": "2018-04-25T22:55:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3133.7,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 82,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53411594,
+      "filename": "Screen Shot 2016-03-02 at 11.16.13 AM.png",
+      "mime_type": "image/png",
+      "size_bytes": 75959,
+      "url": "https://issues.chromium.org/action/issues/40083333/attachments/53411594?download=true",
+      "local_path": "attachments/Screen Shot 2016-03-02 at 11.16.13 AM.png"
+    },
+    {
+      "id": 53411676,
+      "filename": "test.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4508,
+      "url": "https://issues.chromium.org/action/issues/40083333/attachments/53411676?download=true",
+      "local_path": "attachments/test.html"
+    }
+  ],
+  "update_count": 97,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis vulnerability makes it possible to hide any part of the browser UI, allowing for several types of spoof attacks.  \n  \nI created three different PoCs demonstrating the attacks mentioned below:  \n1. URL spoofing with HTTPS lock  \n2. Permissions bubble spoofing  \n3. Co"
+}

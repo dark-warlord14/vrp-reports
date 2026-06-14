@@ -1,0 +1,49 @@
+{
+  "id": "40091172",
+  "url": "https://issues.chromium.org/issues/40091172",
+  "title": "Security: CSS Paint API leaks visited status of links (up to ~3k/sec)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Paint, Privacy",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "md...@gmail.com",
+  "assignee": "xi...@chromium.org",
+  "created_date": "2018-04-21T19:36:14+00:00",
+  "modified_date": "2022-08-15T12:33:42+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52960392,
+      "filename": "amplified-attack.html",
+      "mime_type": "text/plain",
+      "size_bytes": 15866,
+      "url": "https://issues.chromium.org/action/issues/40091172/attachments/52960392?download=true",
+      "local_path": "attachments/amplified-attack.html"
+    },
+    {
+      "id": 52960393,
+      "filename": "basic-attack.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3977,
+      "url": "https://issues.chromium.org/action/issues/40091172/attachments/52960393?download=true",
+      "local_path": "attachments/basic-attack.html"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nAn attacker can determine whether a link is visited or not by observing if  \na `paint` method call has been invoked.  \n  \nIn the attached attack, we set a custom painter from a CSS Paint API worklet as  \nthe background of a link element. If we use the DOM to switch th"
+}

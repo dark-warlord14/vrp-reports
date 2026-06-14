@@ -1,0 +1,76 @@
+{
+  "id": "40084127",
+  "url": "https://issues.chromium.org/issues/40084127",
+  "title": "Security: Persistent UXSS via SchemaRegistry ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>Extensions",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "rd...@chromium.org",
+  "created_date": "2016-04-19T21:37:47+00:00",
+  "modified_date": "2018-04-25T22:52:53+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53077546,
+      "filename": "persistent-uxss.html",
+      "mime_type": "text/plain",
+      "size_bytes": 6746,
+      "url": "https://issues.chromium.org/action/issues/40084127/attachments/53077546?download=true",
+      "local_path": "attachments/persistent-uxss.html"
+    },
+    {
+      "id": 53077547,
+      "filename": "persistent-uxss50.png",
+      "mime_type": "image/png",
+      "size_bytes": 25570,
+      "url": "https://issues.chromium.org/action/issues/40084127/attachments/53077547?download=true",
+      "local_path": "attachments/persistent-uxss50.png"
+    },
+    {
+      "id": 53077567,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40084127/attachments/53077567?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53077568,
+      "filename": "persistent-uxss-v2-52.0.2714.0.png",
+      "mime_type": "image/png",
+      "size_bytes": 27561,
+      "url": "https://issues.chromium.org/action/issues/40084127/attachments/53077568?download=true",
+      "local_path": "attachments/persistent-uxss-v2-52.0.2714.0.png"
+    },
+    {
+      "id": 53077579,
+      "filename": "persistent-uxss-v2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 6658,
+      "url": "https://issues.chromium.org/action/issues/40084127/attachments/53077579?download=true",
+      "local_path": "attachments/persistent-uxss-v2.html"
+    },
+    {
+      "id": 53077605,
+      "filename": "frozen-schema-bypass.png",
+      "mime_type": "image/png",
+      "size_bytes": 167268,
+      "url": "https://issues.chromium.org/action/issues/40084127/attachments/53077605?download=true",
+      "local_path": "attachments/frozen-schema-bypass.png"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "Chrome version: 50.0.2661.75 (and still present on current HEAD, 52.0.2713.0)\r\n\r\nThe SchemaRegistry stores extension API schemas in a single v8::Context that lives until the RenderThread (=process?) is destroyed. Due to vulnerabilities in binding.js, these objects can be intercepted by malicious web"
+}

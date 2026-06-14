@@ -1,0 +1,60 @@
+{
+  "id": "40092611",
+  "url": "https://issues.chromium.org/issues/40092611",
+  "title": "Use after free due to document destruction within unload event",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ax...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2011-07-13T19:00:16+00:00",
+  "modified_date": "2018-04-26T00:03:27+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53245179,
+      "filename": "working-tc2.tar.gz",
+      "mime_type": "application/x-gzip; charset=binary",
+      "size_bytes": 11381,
+      "url": "https://issues.chromium.org/action/issues/40092611/attachments/53245179?download=true",
+      "local_path": "attachments/working-tc2.tar.gz"
+    },
+    {
+      "id": 53245180,
+      "filename": "not-working-tc1.tar.gz",
+      "mime_type": "application/x-gzip; charset=binary",
+      "size_bytes": 3539,
+      "url": "https://issues.chromium.org/action/issues/40092611/attachments/53245180?download=true",
+      "local_path": "attachments/not-working-tc1.tar.gz"
+    },
+    {
+      "id": 53245181,
+      "filename": "working-tc1.tar.gz",
+      "mime_type": "application/x-gzip; charset=binary",
+      "size_bytes": 11339,
+      "url": "https://issues.chromium.org/action/issues/40092611/attachments/53245181?download=true",
+      "local_path": "attachments/working-tc1.tar.gz"
+    },
+    {
+      "id": 53245182,
+      "filename": "working-tc3.tar.gz",
+      "mime_type": "application/x-gzip; charset=binary",
+      "size_bytes": 10896,
+      "url": "https://issues.chromium.org/action/issues/40092611/attachments/53245182?download=true",
+      "local_path": "attachments/working-tc3.tar.gz"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nChrome tab is crashing when loading specifically crafted page.  \n  \nSVG file is loaded from object, then event \"onunload\" is attached to any object in SVG file.  \nThen page is reloaded.   \nEvent calls functions like write()/writeln()/open() for document that is already u"
+}

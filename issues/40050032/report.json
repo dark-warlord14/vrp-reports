@@ -1,0 +1,38 @@
+{
+  "id": "40050032",
+  "url": "https://issues.chromium.org/issues/40050032",
+  "title": "Security: OfflinePageAutoFetcher UAF 2",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Offline",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "bt...@gmail.com",
+  "assignee": "ha...@google.com",
+  "created_date": "2019-09-02T12:31:20+00:00",
+  "modified_date": "2020-04-18T11:29:47+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "reward_amount_meta": 20000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53349173,
+      "filename": "repro.tar.gz",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4389259,
+      "url": "https://issues.chromium.org/action/issues/40050032/attachments/53349173?download=true",
+      "local_path": "attachments/repro.tar.gz"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUnder the covers, when AddInterface is called with a task runner (https://cs.chromium.org/chromium/src/chrome/browser/chrome_content_browser_client.cc?l=4423&rcl=7acee7ba237db6175a22c18183556c1858b5fcb8) it ends up posting the `BindInterface` callback to the task runner"
+}

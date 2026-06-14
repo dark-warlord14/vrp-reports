@@ -1,0 +1,46 @@
+{
+  "id": "40090829",
+  "url": "https://issues.chromium.org/issues/40090829",
+  "title": "Security:  egl::Image::loadImageData - SwiftShader",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>GPU",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "zm...@chromium.org",
+  "created_date": "2018-03-16T23:40:47+00:00",
+  "modified_date": "2018-06-30T14:20:06+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53307110,
+      "filename": "loadImageData.html",
+      "mime_type": "text/plain",
+      "size_bytes": 978,
+      "url": "https://issues.chromium.org/action/issues/40090829/attachments/53307110?download=true",
+      "local_path": "attachments/loadImageData.html"
+    },
+    {
+      "id": 53307111,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7579,
+      "url": "https://issues.chromium.org/action/issues/40090829/attachments/53307111?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "I have tested this on asan-win32-release_x64-543221 and asan-linux-stable-65.0.3325.162.\r\n\r\nAttached is the testcase and the asan log from windows.\r\n\r\n==19496==ERROR: AddressSanitizer: access-violation on unknown address 0x25b8413143f0 (pc 0x7ff673cc9965 bp 0x00d61cff9e70 sp 0x00d61cff9de8 T0)\r\n==19"
+}

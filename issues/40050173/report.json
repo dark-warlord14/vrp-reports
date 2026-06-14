@@ -1,0 +1,33 @@
+{
+  "id": "40050173",
+  "url": "https://issues.chromium.org/issues/40050173",
+  "title": "Security: Headers are processed for aborted requests when passed through service worker",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Network>FetchAPI, Blink>ServiceWorker",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "bh...@jackhenry.com",
+  "assignee": "fa...@chromium.org",
+  "created_date": "2019-09-19T20:22:59+00:00",
+  "modified_date": "2020-01-07T15:38:22+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 51,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen a request is passed through a service worker, but is aborted before a response is received from the server, the browser processes response headers once the server returns a response.  \n  \nThe observed security case for this is when a user logs out while an authentic"
+}

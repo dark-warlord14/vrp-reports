@@ -1,0 +1,39 @@
+{
+  "id": "40082219",
+  "url": "https://issues.chromium.org/issues/40082219",
+  "title": "Memory corruption with invalid text node cast for edit commands",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2010-1783",
+    "CVE-2010-3114"
+  ],
+  "reporter": "in...@chromium.org",
+  "assignee": "in...@chromium.org",
+  "created_date": "2010-07-20T15:20:04+00:00",
+  "modified_date": "2018-04-26T00:27:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52893513,
+      "filename": "1.xhtml",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 4973,
+      "url": "https://issues.chromium.org/action/issues/40082219/attachments/52893513?download=true",
+      "local_path": "attachments/1.xhtml"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "Split off from https://crbug.com/chromium/49596 from wooshi. Here src is arbitary, so looks like OOB read.\r\n\r\nmemcpy(unsigned char * dst=0x0b8849b4, unsigned char * src=0x002f0000, unsigned long count=2)  Line 358\tAsm\r\nWebCore::StringImpl::create(const wchar_t * characters=0x002f0000, unsigned int l"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "40094511",
+  "url": "https://issues.chromium.org/issues/40094511",
+  "title": "Use-after-free in CXFA_FFComboBox::OnProcessEvent                                                                                                ",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hu...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2019-04-05T08:54:11+00:00",
+  "modified_date": "2020-06-02T18:55:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53368705,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 1866738,
+      "url": "https://issues.chromium.org/action/issues/40094511/attachments/53368705?download=true",
+      "local_path": "attachments/poc.pdf"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUse-after-free in CXFA_FFComboBox::OnProcessEvent  \n  \n**VERSION**   \nOperating System: Windows 10  \nchrome with pdfium XFA enabled  \n  \n**REPRODUCTION CASE**   \n1. Build chrome with XFA enabled + enable PageHeap  \n2. open file `poc.pdf` in chrome  \n  \nDetails when crash"
+}

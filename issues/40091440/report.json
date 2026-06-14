@@ -1,0 +1,82 @@
+{
+  "id": "40091440",
+  "url": "https://issues.chromium.org/issues/40091440",
+  "title": "heap use-after-free in link::VideoFrameSubmitter::~VideoFrameSubmitter()",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Paint",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cd...@gmail.com",
+  "assignee": "le...@chromium.org",
+  "created_date": "2018-05-21T12:41:33+00:00",
+  "modified_date": "2018-10-09T00:56:16+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52880738,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40091440/attachments/52880738?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52880739,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40091440/attachments/52880739?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52880740,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40091440/attachments/52880740?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52880741,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40091440/attachments/52880741?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52880742,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40091440/attachments/52880742?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52880759,
+      "filename": "845136.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 801529,
+      "url": "https://issues.chromium.org/action/issues/40091440/attachments/52880759?download=true",
+      "local_path": "attachments/845136.zip"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Build source code \r\n    config args.gn file as below:\r\n\t\tuse_sanitizer_coverage = true\r\n\t\tis_asan = true\r\n\t\tis_debug = false\r\n\t\tenable_nacl ="
+}

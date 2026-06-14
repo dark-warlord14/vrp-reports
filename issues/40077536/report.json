@@ -1,0 +1,52 @@
+{
+  "id": "40077536",
+  "url": "https://issues.chromium.org/issues/40077536",
+  "title": "Security: chrome_70ee0000!v8::internal::ScavengingVisitor<1,1>::EvacuateShortcutCandidate crash",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ku...@gmail.com",
+  "assignee": "ms...@chromium.org",
+  "created_date": "2013-05-11T04:55:11+00:00",
+  "modified_date": "2018-07-29T14:14:51+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53219193,
+      "filename": "screen.wmv",
+      "mime_type": "video/x-ms-asf; charset=binary",
+      "size_bytes": 857041,
+      "url": "https://issues.chromium.org/action/issues/40077536/attachments/53219193?download=true",
+      "local_path": "attachments/screen.wmv"
+    },
+    {
+      "id": 53219237,
+      "filename": "screen.wmv",
+      "mime_type": "video/x-ms-asf; charset=binary",
+      "size_bytes": 347265,
+      "url": "https://issues.chromium.org/action/issues/40077536/attachments/53219237?download=true",
+      "local_path": "attachments/screen_53219237.wmv"
+    },
+    {
+      "id": 53219265,
+      "filename": "screen.wmv",
+      "mime_type": "video/x-ms-asf; charset=binary",
+      "size_bytes": 444181,
+      "url": "https://issues.chromium.org/action/issues/40077536/attachments/53219265?download=true",
+      "local_path": "attachments/screen_53219265.wmv"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "Chrome Version: 28.0.1500.5 dev-m\r\nOperating System: Windows 7\r\n\r\n(8b4.f90): Access violation - code c0000005 (!!! second chance !!!)\r\neax=00000000 ebx=00000018 ecx=2eeffff8 edx=2e67422c esi=00259008 edi=00000017\r\neip=71631f76 esp=005aeca8 ebp=005aecac iopl=0         nv up ei pl zr na pe nc\r\ncs=0023"
+}

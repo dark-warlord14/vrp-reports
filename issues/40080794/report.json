@@ -1,0 +1,44 @@
+{
+  "id": "40080794",
+  "url": "https://issues.chromium.org/issues/40080794",
+  "title": "UNKNOWN in icu_52::RegexMatcher::MatchChunkAt",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ya...@gmail.com",
+  "assignee": "js...@chromium.org",
+  "created_date": "2014-11-05T05:34:41+00:00",
+  "modified_date": "2018-04-25T23:04:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53122102,
+      "filename": "asan_log.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 19202,
+      "url": "https://issues.chromium.org/action/issues/40080794/attachments/53122102?download=true",
+      "local_path": "attachments/asan_log.txt"
+    },
+    {
+      "id": 53122103,
+      "filename": "debug_win.png",
+      "mime_type": "image/png",
+      "size_bytes": 68557,
+      "url": "https://issues.chromium.org/action/issues/40080794/attachments/53122103?download=true",
+      "local_path": "attachments/debug_win.png"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThe ICU regexp engine uses int32 type to represent an opcode in the compiled pattern. In this representation, the most significant 8 bits encode the opcode type, and the remaining 24 bits contain the opcode's optional parameter. This is evident from the following macr"
+}

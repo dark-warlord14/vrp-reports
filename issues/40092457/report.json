@@ -1,0 +1,38 @@
+{
+  "id": "40092457",
+  "url": "https://issues.chromium.org/issues/40092457",
+  "title": "Security: http authentication spoof on chrome android",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Network>Auth, UI>Browser>Mobile, UI>Browser>Navigation",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "te...@chromium.org",
+  "created_date": "2018-09-14T12:44:12+00:00",
+  "modified_date": "2018-12-25T15:23:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53195712,
+      "filename": "401_spoof.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 66870,
+      "url": "https://issues.chromium.org/action/issues/40092457/attachments/53195712?download=true",
+      "local_path": "attachments/401_spoof.jpg"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "online demo : http://www.applestore.ac.cn/r/spoof.html  \n  \nsee 401_spoof.jpg  \n  \nthe popup should be closed after navigation  \n  \n**VERSION**   \nChrome Version: chrome 69  \nOperating System: android"
+}

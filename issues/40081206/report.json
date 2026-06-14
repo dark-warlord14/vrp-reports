@@ -1,0 +1,36 @@
+{
+  "id": "40081206",
+  "url": "https://issues.chromium.org/issues/40081206",
+  "title": "Security: Heap-use-after-free SpeechRecognitionDispatcher",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>Speech",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ml...@chromium.org",
+  "created_date": "2015-01-17T02:59:52+00:00",
+  "modified_date": "2016-10-02T20:04:47+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52911915,
+      "filename": "repro.mp4",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 289900,
+      "url": "https://issues.chromium.org/action/issues/40081206/attachments/52911915?download=true",
+      "local_path": "attachments/repro.mp4"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "**VERSION**   \nChrome Version: 42.0.2278.0 canary and Chromium 42.0.2277.0 (Developer Build) (32-bit)  \nOperating System: Win7  \n  \nWhat steps will reproduce the problem?  \n1. Start chrome  \n2. Open http://jsfiddle.net/5xBpW/show in chrome and allow the micro request and click on Result  \n  \n**FOR C"
+}

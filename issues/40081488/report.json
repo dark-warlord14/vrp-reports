@@ -1,0 +1,108 @@
+{
+  "id": "40081488",
+  "url": "https://issues.chromium.org/issues/40081488",
+  "title": "Security: UNKNOWN in RenderFrameImpl::OnMessageReceived ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebRTC",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "cr...@chromium.org",
+  "created_date": "2015-02-24T03:41:48+00:00",
+  "modified_date": "2018-04-25T23:02:18+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53017505,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40081488/attachments/53017505?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53017507,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40081488/attachments/53017507?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53017508,
+      "filename": "Chrome-last.dmp",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 291729,
+      "url": "https://issues.chromium.org/action/issues/40081488/attachments/53017508?download=true",
+      "local_path": "attachments/Chrome-last.dmp"
+    },
+    {
+      "id": 53017521,
+      "filename": "video.mp4",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 500954,
+      "url": "https://issues.chromium.org/action/issues/40081488/attachments/53017521?download=true",
+      "local_path": "attachments/video.mp4"
+    },
+    {
+      "id": 53017522,
+      "filename": "testcase.html",
+      "mime_type": "text/html",
+      "size_bytes": 1103,
+      "url": "https://issues.chromium.org/action/issues/40081488/attachments/53017522?download=true",
+      "local_path": "attachments/testcase.html"
+    },
+    {
+      "id": 53017568,
+      "filename": "1.png",
+      "mime_type": "image/png",
+      "size_bytes": 42283,
+      "url": "https://issues.chromium.org/action/issues/40081488/attachments/53017568?download=true",
+      "local_path": "attachments/1.png"
+    },
+    {
+      "id": 53017569,
+      "filename": "steps.mp4",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1083480,
+      "url": "https://issues.chromium.org/action/issues/40081488/attachments/53017569?download=true",
+      "local_path": "attachments/steps.mp4"
+    },
+    {
+      "id": 53017570,
+      "filename": "testcase.html",
+      "mime_type": "text/html",
+      "size_bytes": 1159,
+      "url": "https://issues.chromium.org/action/issues/40081488/attachments/53017570?download=true",
+      "local_path": "attachments/testcase_53017570.html"
+    },
+    {
+      "id": 53017585,
+      "filename": "screenshot.png",
+      "mime_type": "image/png",
+      "size_bytes": 53224,
+      "url": "https://issues.chromium.org/action/issues/40081488/attachments/53017585?download=true",
+      "local_path": "attachments/screenshot.png"
+    },
+    {
+      "id": 53017587,
+      "filename": "issue 461191.mp4",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1606997,
+      "url": "https://issues.chromium.org/action/issues/40081488/attachments/53017587?download=true",
+      "local_path": "attachments/issue 461191.mp4"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "**VERSION**   \nChrome Version: 43.0.2313.0 canary  \nOperating System: Windows 7  \n  \n**REPRODUCTION CASE**   \nActually this issue needs several attempts for repro the crash, I uploaded a video for see how I repro it   \nbut I'm looking for another way to repro it easily.  \n  \nCrash ID: a20a8abec387ec"
+}

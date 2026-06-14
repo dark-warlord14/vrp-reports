@@ -1,0 +1,36 @@
+{
+  "id": "40085492",
+  "url": "https://issues.chromium.org/issues/40085492",
+  "title": "Security: BroadcastChannel - Use After Free in WeakReference::is_valid()",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Messaging, Internals>Mojo",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lo...@gmail.com",
+  "assignee": "pe...@chromium.org",
+  "created_date": "2016-09-23T11:02:12+00:00",
+  "modified_date": "2017-02-16T14:02:34+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53117794,
+      "filename": "UAF_is_valid_Repro.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1281,
+      "url": "https://issues.chromium.org/action/issues/40085492/attachments/53117794?download=true",
+      "local_path": "attachments/UAF_is_valid_Repro.js"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n\tSteps to reproduce:  \n\t  \n\t1. Run server side script UAF_is_valid_Repro.js in Node.js (node UAF_is_valid_Repro.js ).  \n\t2. Enter http://localhost:12345 in Chrome browser ASAN build.  \n\t3.ASAN reports a Use After Free in WeakReference::is_valid().  \n  \n\tSUMMARY: AddressS"
+}

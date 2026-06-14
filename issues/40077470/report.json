@@ -1,0 +1,52 @@
+{
+  "id": "40077470",
+  "url": "https://issues.chromium.org/issues/40077470",
+  "title": "ASSERTION FAILED: m_table, Heap-use-after-free in WTF::HashTable<WebCore::SVGElement const*, WTF::KeyValuePair<WebCore::SVGElement const*, WebCore::SV",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sl...@gmail.com",
+  "assignee": "sc...@chromium.org",
+  "created_date": "2013-04-25T22:49:52+00:00",
+  "modified_date": "2022-10-12T13:24:16+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53040377,
+      "filename": "asan1.log",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 14778,
+      "url": "https://issues.chromium.org/action/issues/40077470/attachments/53040377?download=true",
+      "local_path": "attachments/asan1.log"
+    },
+    {
+      "id": 53040378,
+      "filename": "repro1.xml",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 429,
+      "url": "https://issues.chromium.org/action/issues/40077470/attachments/53040378?download=true",
+      "local_path": "attachments/repro1.xml"
+    },
+    {
+      "id": 53040532,
+      "filename": "history-2022-10-12.kml",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1483,
+      "url": "https://issues.chromium.org/action/issues/40077470/attachments/53040532?download=true",
+      "local_path": "attachments/history-2022-10-12.kml"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "Tested on linux 195394.\r\n\r\n----- repro1.xml -----\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n    <script>\r\n        setTimeout(\"window.location.reload()\", 1);\r\n    </script>\r\n\r\n    <svg xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\">\r\n        <set attributeName=\"font"
+}

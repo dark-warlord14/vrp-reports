@@ -46,7 +46,7 @@
       "mime_type": "text/plain",
       "size_bytes": 717,
       "url": "https://issues.chromium.org/action/issues/40059591/attachments/53384607?download=true",
-      "local_path": "attachments/crash.html"
+      "local_path": "attachments/crash_53384607.html"
     },
     {
       "id": 53384608,
@@ -62,7 +62,7 @@
       "mime_type": "text/plain",
       "size_bytes": 274,
       "url": "https://issues.chromium.org/action/issues/40059591/attachments/53384609?download=true",
-      "local_path": "attachments/ws.js"
+      "local_path": "attachments/ws_53384609.js"
     }
   ],
   "update_count": 65,

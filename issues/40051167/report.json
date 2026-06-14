@@ -1,0 +1,44 @@
+{
+  "id": "40051167",
+  "url": "https://issues.chromium.org/issues/40051167",
+  "title": "v8_i18n::BCP47ToICUFormat() - crash",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>JavaScript",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sl...@gmail.com",
+  "assignee": "ci...@chromium.org",
+  "created_date": "2011-11-12T13:11:45+00:00",
+  "modified_date": "2016-10-02T20:23:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53015755,
+      "filename": "stack1.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 9518,
+      "url": "https://issues.chromium.org/action/issues/40051167/attachments/53015755?download=true",
+      "local_path": "attachments/stack1.txt"
+    },
+    {
+      "id": 53015756,
+      "filename": "crash1.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 16123,
+      "url": "https://issues.chromium.org/action/issues/40051167/attachments/53015756?download=true",
+      "local_path": "attachments/crash1.html"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "Crashes on windows stable (15.0.874.120 [108895]), dev (17.0.932.0 [108826]) and canary (17.0.936.1 [109705]). Can't reproduce it on linux.\r\nIt doesn't crash every time. Try to open crash1.html in new tab if it not crashes (reload does not lead to crash).\r\n\r\n(14d0.15c8): Access violation - code c000"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "40080447",
+  "url": "https://issues.chromium.org/issues/40080447",
+  "title": "Do Not Cache Resources Retrieved Via Broken HTTPS in AppCache Or Service Worker",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>ServiceWorker",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ji...@gmail.com",
+  "assignee": "mi...@chromium.org",
+  "created_date": "2014-09-13T11:42:30+00:00",
+  "modified_date": "2018-04-25T23:05:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53243457,
+      "filename": "test.html",
+      "mime_type": "text/html",
+      "size_bytes": 102,
+      "url": "https://issues.chromium.org/action/issues/40080447/attachments/53243457?download=true",
+      "local_path": "attachments/test.html"
+    },
+    {
+      "id": 53243458,
+      "filename": "appcache-internals.png",
+      "mime_type": "image/png",
+      "size_bytes": 107323,
+      "url": "https://issues.chromium.org/action/issues/40080447/attachments/53243458?download=true",
+      "local_path": "attachments/appcache-internals.png"
+    },
+    {
+      "id": 53243459,
+      "filename": "test.appcache",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 55,
+      "url": "https://issues.chromium.org/action/issues/40080447/attachments/53243459?download=true",
+      "local_path": "attachments/test.appcache"
+    },
+    {
+      "id": 53243460,
+      "filename": "yahoo1.png",
+      "mime_type": "image/png",
+      "size_bytes": 19245,
+      "url": "https://issues.chromium.org/action/issues/40080447/attachments/53243460?download=true",
+      "local_path": "attachments/yahoo1.png"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nFor the site over HTTPS with an invalid certificate (e.g., self-signed and domain mismatch), Chrome may cache the resources (e.g., pages) over broken HTTPS in HTML5 AppCache, if the site contains AppCache manifest. If the user is under an MITM attack in a public area"
+}

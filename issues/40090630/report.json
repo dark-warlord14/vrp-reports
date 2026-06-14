@@ -1,0 +1,47 @@
+{
+  "id": "40090630",
+  "url": "https://issues.chromium.org/issues/40090630",
+  "title": "Security: IDN URL Spoofing with using U+04CF ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Internationalization",
+  "os_platforms": [
+    "Linux",
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "js...@chromium.org",
+  "created_date": "2018-02-28T07:04:38+00:00",
+  "modified_date": "2019-01-04T00:59:47+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53177570,
+      "filename": "spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 22463,
+      "url": "https://issues.chromium.org/action/issues/40090630/attachments/53177570?download=true",
+      "local_path": "attachments/spoof.png"
+    },
+    {
+      "id": 53177580,
+      "filename": "Screen Shot on Windows 7.png",
+      "mime_type": "image/png",
+      "size_bytes": 15606,
+      "url": "https://issues.chromium.org/action/issues/40090630/attachments/53177580?download=true",
+      "local_path": "attachments/Screen Shot on Windows 7.png"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "Chrome Version: 66.0.3356.0 (Official Build) canary (64-bit)\r\nOperating System: Mac\r\n\r\n- U+04CF (ӏ) looks like an \"I\" \r\n\r\nhttp://xn--80aai1bls6k55bcq.com/ (ӏпѕтаԍгам.com)\r\nhttp://xn--80ajo90d.com/ (ӏкеа.com)\r\n\r\nIt's not easy to catch the spoofing \r\n\r\nNote on Windows: the URLs are blocked."
+}

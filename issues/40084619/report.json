@@ -1,0 +1,36 @@
+{
+  "id": "40084619",
+  "url": "https://issues.chromium.org/issues/40084619",
+  "title": "Security: Universal XSS with Flash calling into JavaScript inside Node::removedFrom",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>HTML",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "dc...@chromium.org",
+  "created_date": "2016-06-19T14:06:15+00:00",
+  "modified_date": "2019-02-16T00:36:22+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52952431,
+      "filename": "repro.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2024,
+      "url": "https://issues.chromium.org/action/issues/40084619/attachments/52952431?download=true",
+      "local_path": "attachments/repro.zip"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n|Node::removedFrom()| is called while the DOM tree is in an inconsistent state and therefore is not supposed  \nto run user JavaScript code. However, HTMLPlugInElement overrides |removedFrom()| to call |Widget::dispose()|,  \nand https://crbug.com/chromium/546545 demonstra"
+}

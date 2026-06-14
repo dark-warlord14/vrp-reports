@@ -1,0 +1,63 @@
+{
+  "id": "40065891",
+  "url": "https://issues.chromium.org/issues/40065891",
+  "title": "Security: heap buffer overflow in gpu process with webgl",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>WebGL",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2012-08-29T18:02:27+00:00",
+  "modified_date": "2018-04-25T23:18:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3500.0,
+  "reward_amount_meta": 3500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53325477,
+      "filename": "gllll.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 1575,
+      "url": "https://issues.chromium.org/action/issues/40065891/attachments/53325477?download=true",
+      "local_path": "attachments/gllll.txt"
+    },
+    {
+      "id": 53325478,
+      "filename": "gllll.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1251,
+      "url": "https://issues.chromium.org/action/issues/40065891/attachments/53325478?download=true",
+      "local_path": "attachments/gllll.html"
+    },
+    {
+      "id": 53325611,
+      "filename": "zl.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1715,
+      "url": "https://issues.chromium.org/action/issues/40065891/attachments/53325611?download=true",
+      "local_path": "attachments/zl.html"
+    },
+    {
+      "id": 53325663,
+      "filename": "zl.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 2350,
+      "url": "https://issues.chromium.org/action/issues/40065891/attachments/53325663?download=true",
+      "local_path": "attachments/zl_53325663.html"
+    }
+  ],
+  "update_count": 103,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nheap buffer overflow in gpu process with webgl   \n  \n**VERSION**   \nChrome Version: dev  \nOperating System: 64bit linux  \n  \n**REPRODUCTION CASE**   \n<html>  \n  <head>  \n    <script id=\"vshader\" type=\"x-shader/x-vertex\">  \n      attribute vec4 vPosition;  \n      vo"
+}

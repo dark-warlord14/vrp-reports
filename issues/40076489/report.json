@@ -1,0 +1,52 @@
+{
+  "id": "40076489",
+  "url": "https://issues.chromium.org/issues/40076489",
+  "title": "Security: Integer overflow in libwebp \"ParseOptionalChunks\" allows memory disclosure",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ph...@gmail.com",
+  "assignee": "jz...@chromium.org",
+  "created_date": "2012-10-22T01:29:12+00:00",
+  "modified_date": "2016-10-02T20:21:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3500.0,
+  "reward_amount_meta": 3500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53130294,
+      "filename": "loop.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 132,
+      "url": "https://issues.chromium.org/action/issues/40076489/attachments/53130294?download=true",
+      "local_path": "attachments/loop.html"
+    },
+    {
+      "id": 53130295,
+      "filename": "leak.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1871,
+      "url": "https://issues.chromium.org/action/issues/40076489/attachments/53130295?download=true",
+      "local_path": "attachments/leak.html"
+    },
+    {
+      "id": 53130296,
+      "filename": "ParseOptionalChunks_integer_overflow.patch",
+      "mime_type": "text/x-diff; charset=us-ascii",
+      "size_bytes": 775,
+      "url": "https://issues.chromium.org/action/issues/40076489/attachments/53130296?download=true",
+      "local_path": "attachments/ParseOptionalChunks_integer_overflow.patch"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAn integer overflow in libwebp 'ParseOptionalChunks' (third_party/libwebp/dec/webp.c)  \nallows an attacker to disclose the contents of the heap and infer the layout of memory.  \n  \nThe calculation of 'disk_chunk_size' in 'ParseOptionalChunks' causes an overflow if  \nthe"
+}

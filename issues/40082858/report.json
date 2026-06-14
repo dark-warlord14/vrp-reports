@@ -1,0 +1,36 @@
+{
+  "id": "40082858",
+  "url": "https://issues.chromium.org/issues/40082858",
+  "title": "Security: Universal XSS using exceptions thrown from Object.observe",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Language, Blink>JavaScript>Runtime",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "ad...@chromium.org",
+  "created_date": "2015-09-15T08:26:24+00:00",
+  "modified_date": "2018-04-25T22:56:41+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53044373,
+      "filename": "exploit.html",
+      "mime_type": "text/html",
+      "size_bytes": 288,
+      "url": "https://issues.chromium.org/action/issues/40082858/attachments/53044373?download=true",
+      "local_path": "attachments/exploit.html"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nFrom /v8/src/object-observe.js:  \n----------------  \nfunction ObjectObserve(object, callback, acceptList) {  \n(...)  \n  var objectObserveFn = %GetObjectContextObjectObserve(object);  \n  return objectObserveFn(object, callback, acceptList);  \n}  \n----------------  \n  \nFro"
+}

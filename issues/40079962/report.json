@@ -1,0 +1,68 @@
+{
+  "id": "40079962",
+  "url": "https://issues.chromium.org/issues/40079962",
+  "title": "Heap-use-after-free in v8::internal::GlobalHandles::Create",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@gmail.com",
+  "assignee": "jo...@chromium.org",
+  "created_date": "2014-07-02T15:13:42+00:00",
+  "modified_date": "2016-10-02T20:10:42+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53069810,
+      "filename": "crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 497,
+      "url": "https://issues.chromium.org/action/issues/40079962/attachments/53069810?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53069811,
+      "filename": "sym3.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 12880,
+      "url": "https://issues.chromium.org/action/issues/40079962/attachments/53069811?download=true",
+      "local_path": "attachments/sym3.txt"
+    },
+    {
+      "id": 53069812,
+      "filename": "sym2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 10127,
+      "url": "https://issues.chromium.org/action/issues/40079962/attachments/53069812?download=true",
+      "local_path": "attachments/sym2.txt"
+    },
+    {
+      "id": 53069813,
+      "filename": "sym.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 16367,
+      "url": "https://issues.chromium.org/action/issues/40079962/attachments/53069813?download=true",
+      "local_path": "attachments/sym.txt"
+    },
+    {
+      "id": 53069814,
+      "filename": "mov_bbb.ogg",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 614492,
+      "url": "https://issues.chromium.org/action/issues/40079962/attachments/53069814?download=true",
+      "local_path": "attachments/mov_bbb.ogg"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe attached testfile (crash.html) triggers a series of different crashes on the latest ASAN build of chrome (maybe a JIT issue?). The ogg file is required to trigger the event.  \n  \nMultiple tabs make the test case more reliable and crashing it multiple times leads to d"
+}

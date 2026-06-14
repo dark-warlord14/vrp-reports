@@ -1,0 +1,156 @@
+{
+  "id": "40051571",
+  "url": "https://issues.chromium.org/issues/40051571",
+  "title": "Use-after frees and bad casts with -webkit-column-span",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2011-11-26T07:47:49+00:00",
+  "modified_date": "2018-04-25T23:54:10+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53310274,
+      "filename": "asan-56296.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 8144,
+      "url": "https://issues.chromium.org/action/issues/40051571/attachments/53310274?download=true",
+      "local_path": "attachments/asan-56296.txt"
+    },
+    {
+      "id": 53310275,
+      "filename": "asan-136184.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 5932,
+      "url": "https://issues.chromium.org/action/issues/40051571/attachments/53310275?download=true",
+      "local_path": "attachments/asan-136184.txt"
+    },
+    {
+      "id": 53310276,
+      "filename": "56296.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 351,
+      "url": "https://issues.chromium.org/action/issues/40051571/attachments/53310276?download=true",
+      "local_path": "attachments/56296.html"
+    },
+    {
+      "id": 53310277,
+      "filename": "31296.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1039,
+      "url": "https://issues.chromium.org/action/issues/40051571/attachments/53310277?download=true",
+      "local_path": "attachments/31296.html"
+    },
+    {
+      "id": 53310279,
+      "filename": "asan-8184.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 9308,
+      "url": "https://issues.chromium.org/action/issues/40051571/attachments/53310279?download=true",
+      "local_path": "attachments/asan-8184.txt"
+    },
+    {
+      "id": 53310280,
+      "filename": "136184.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 949,
+      "url": "https://issues.chromium.org/action/issues/40051571/attachments/53310280?download=true",
+      "local_path": "attachments/136184.html"
+    },
+    {
+      "id": 53310281,
+      "filename": "8184.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1046,
+      "url": "https://issues.chromium.org/action/issues/40051571/attachments/53310281?download=true",
+      "local_path": "attachments/8184.html"
+    },
+    {
+      "id": 53310282,
+      "filename": "asan-856.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 8231,
+      "url": "https://issues.chromium.org/action/issues/40051571/attachments/53310282?download=true",
+      "local_path": "attachments/asan-856.txt"
+    },
+    {
+      "id": 53310283,
+      "filename": "856.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 665,
+      "url": "https://issues.chromium.org/action/issues/40051571/attachments/53310283?download=true",
+      "local_path": "attachments/856.html"
+    },
+    {
+      "id": 53310285,
+      "filename": "asan-31296.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 9259,
+      "url": "https://issues.chromium.org/action/issues/40051571/attachments/53310285?download=true",
+      "local_path": "attachments/asan-31296.txt"
+    },
+    {
+      "id": 53310302,
+      "filename": "asan-40104.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 8334,
+      "url": "https://issues.chromium.org/action/issues/40051571/attachments/53310302?download=true",
+      "local_path": "attachments/asan-40104.txt"
+    },
+    {
+      "id": 53310303,
+      "filename": "40104.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 778,
+      "url": "https://issues.chromium.org/action/issues/40051571/attachments/53310303?download=true",
+      "local_path": "attachments/40104.html"
+    },
+    {
+      "id": 53310334,
+      "filename": "asan-30296.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 7953,
+      "url": "https://issues.chromium.org/action/issues/40051571/attachments/53310334?download=true",
+      "local_path": "attachments/asan-30296.txt"
+    },
+    {
+      "id": 53310335,
+      "filename": "30296.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 824,
+      "url": "https://issues.chromium.org/action/issues/40051571/attachments/53310335?download=true",
+      "local_path": "attachments/30296.html"
+    },
+    {
+      "id": 53310341,
+      "filename": "56296two.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 872,
+      "url": "https://issues.chromium.org/action/issues/40051571/attachments/53310341?download=true",
+      "local_path": "attachments/56296two.html"
+    },
+    {
+      "id": 53310342,
+      "filename": "asan-56296two.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 8023,
+      "url": "https://issues.chromium.org/action/issues/40051571/attachments/53310342?download=true",
+      "local_path": "attachments/asan-56296two.txt"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "**VULNERABILITY DETAILS**   \ncrash  \n  \n**VERSION**   \nChrome Version:  \nChromium\t17.0.950.0 (Developer Build 111574)  \nOS\tLinux  \nWebKit\t535.10 (trunk@101008)  \nJavaScript\tV8 3.7.10  \n  \nOperating System:   \nlinux 64bit  \n  \n**REPRODUCTION CASE**   \n  \nattached.  \nnot sure if it's 1 bug or mo"
+}

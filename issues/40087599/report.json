@@ -1,0 +1,60 @@
+{
+  "id": "40087599",
+  "url": "https://issues.chromium.org/issues/40087599",
+  "title": "Stale continuation flow pointer for ContinuationOutlineTableMap",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2011-02-05T03:29:58+00:00",
+  "modified_date": "2018-04-26T00:15:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52910242,
+      "filename": "dummy.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 172,
+      "url": "https://issues.chromium.org/action/issues/40087599/attachments/52910242?download=true",
+      "local_path": "attachments/dummy.html"
+    },
+    {
+      "id": 52910243,
+      "filename": "crash.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 819,
+      "url": "https://issues.chromium.org/action/issues/40087599/attachments/52910243?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 52910244,
+      "filename": "gdb.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 10503,
+      "url": "https://issues.chromium.org/action/issues/40087599/attachments/52910244?download=true",
+      "local_path": "attachments/gdb.txt"
+    },
+    {
+      "id": 52910285,
+      "filename": "test2.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 802,
+      "url": "https://issues.chromium.org/action/issues/40087599/attachments/52910285?download=true",
+      "local_path": "attachments/test2.html"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen performing certain DOM operations while quickly switching between documents by setting window.location chromium will crash in WebCore::RenderObject::containingBlock. The crash is usually a null pointer dereference on a call (or callq) instruction with the narrowed v"
+}

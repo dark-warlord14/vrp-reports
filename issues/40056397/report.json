@@ -1,0 +1,60 @@
+{
+  "id": "40056397",
+  "url": "https://issues.chromium.org/issues/40056397",
+  "title": "Security: stack-buffer-overflow in WebCore::GlyphPage::fill with surrogate characters",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "ba...@chromium.org",
+  "created_date": "2012-04-08T19:53:55+00:00",
+  "modified_date": "2018-04-25T23:22:54+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53033003,
+      "filename": "stable-glyphStorage.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 8210,
+      "url": "https://issues.chromium.org/action/issues/40056397/attachments/53033003?download=true",
+      "local_path": "attachments/stable-glyphStorage.txt"
+    },
+    {
+      "id": 53033004,
+      "filename": "glyphStorage.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 8272,
+      "url": "https://issues.chromium.org/action/issues/40056397/attachments/53033004?download=true",
+      "local_path": "attachments/glyphStorage.txt"
+    },
+    {
+      "id": 53033005,
+      "filename": "glyphStorage.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 399,
+      "url": "https://issues.chromium.org/action/issues/40056397/attachments/53033005?download=true",
+      "local_path": "attachments/glyphStorage.html"
+    },
+    {
+      "id": 53033050,
+      "filename": "glyphStorage2.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 699,
+      "url": "https://issues.chromium.org/action/issues/40056397/attachments/53033050?download=true",
+      "local_path": "attachments/glyphStorage2.html"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**This template is ONLY for reporting security bugs. Please use a different**   \n**template for other types of bug reports.**   \n  \n  \n**VULNERABILITY DETAILS**   \nstack-buffer-overflow in WebCore::GlyphPage::fill with surrogate characters  \n  \n**VERSION**   \nChrome Version: stable + dev  \n  \nChromi"
+}

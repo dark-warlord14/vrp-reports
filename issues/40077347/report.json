@@ -1,0 +1,60 @@
+{
+  "id": "40077347",
+  "url": "https://issues.chromium.org/issues/40077347",
+  "title": "Security: Postpwnium: Full exploit chain for ChromeOS",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "es...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2013-04-05T08:19:19+00:00",
+  "modified_date": "2016-10-02T20:19:19+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 31336.0,
+  "reward_amount_meta": 31336.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53248901,
+      "filename": "pwnium.js",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 10585,
+      "url": "https://issues.chromium.org/action/issues/40077347/attachments/53248901?download=true",
+      "local_path": "attachments/pwnium.js"
+    },
+    {
+      "id": 53248902,
+      "filename": "pwnium.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1406,
+      "url": "https://issues.chromium.org/action/issues/40077347/attachments/53248902?download=true",
+      "local_path": "attachments/pwnium.html"
+    },
+    {
+      "id": 53248903,
+      "filename": "testcase_plugin_href0.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 416,
+      "url": "https://issues.chromium.org/action/issues/40077347/attachments/53248903?download=true",
+      "local_path": "attachments/testcase_plugin_href0.html"
+    },
+    {
+      "id": 53248904,
+      "filename": "iframe_href0.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 126,
+      "url": "https://issues.chromium.org/action/issues/40077347/attachments/53248904?download=true",
+      "local_path": "attachments/iframe_href0.html"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n    ____             __                      _                 \n   / __ \\____  _____/ /_____ _      ______  (_)_  ______ ___   \n  / /_/ / __ \\/ ___/ __/ __ \\ | /| / / __ \\/ / / / / __ `__ \\  \n / ____/ /_/ (__  ) /_/ /_/ / |/ |/ / / / / / /_/ / / / / / /  \n/_/    \\____/__"
+}

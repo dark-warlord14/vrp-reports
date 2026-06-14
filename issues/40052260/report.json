@@ -1,0 +1,52 @@
+{
+  "id": "40052260",
+  "url": "https://issues.chromium.org/issues/40052260",
+  "title": "Browser process heap-use-after-free with indexeddb cursors",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink, Blink>Storage>IndexedDB, Internals",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "dg...@chromium.org",
+  "created_date": "2011-12-19T17:10:16+00:00",
+  "modified_date": "2016-10-02T20:24:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3133.0,
+  "reward_amount_meta": 3133.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53153313,
+      "filename": "cursor.html",
+      "mime_type": "text/plain; charset=iso-8859-1",
+      "size_bytes": 2078,
+      "url": "https://issues.chromium.org/action/issues/40052260/attachments/53153313?download=true",
+      "local_path": "attachments/cursor.html"
+    },
+    {
+      "id": 53153347,
+      "filename": "asan.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 6148,
+      "url": "https://issues.chromium.org/action/issues/40052260/attachments/53153347?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53153348,
+      "filename": "cursor-big.html",
+      "mime_type": "text/html; charset=iso-8859-1",
+      "size_bytes": 19174,
+      "url": "https://issues.chromium.org/action/issues/40052260/attachments/53153348?download=true",
+      "local_path": "attachments/cursor-big.html"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nASan reports a heap use after free when the attached page is opened in Chrome.  \n  \n**VERSION**   \nChrome Version: 18.0.973.0 (Developer Build 114785)  \nOperating System: Linux (Debian 6.0.3, x86_64)  \n  \n**REPRODUCTION CASE**   \n $ chrome cursor.html  \n  \n**FOR CRASHES,"
+}

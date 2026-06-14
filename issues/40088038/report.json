@@ -1,0 +1,57 @@
+{
+  "id": "40088038",
+  "url": "https://issues.chromium.org/issues/40088038",
+  "title": "Security: UAF in CFFL_FormFiller::GetPDFWindow()",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2017-06-10T17:32:23+00:00",
+  "modified_date": "2017-09-22T13:04:22+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53370690,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 24544,
+      "url": "https://issues.chromium.org/action/issues/40088038/attachments/53370690?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53370691,
+      "filename": "test_7.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 3897,
+      "url": "https://issues.chromium.org/action/issues/40088038/attachments/53370691?download=true",
+      "local_path": "attachments/test_7.pdf"
+    },
+    {
+      "id": 53370724,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 2562,
+      "url": "https://issues.chromium.org/action/issues/40088038/attachments/53370724?download=true",
+      "local_path": "attachments/poc.pdf"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Build PDFIUm with XFA\r\n2. run ./pdfium_test ./test_7.pdf\r\n3. ASAN crash\r\n\r\nWhat is the expected behavior?\r\n\r\nWhat went wrong?\r\nN"
+}

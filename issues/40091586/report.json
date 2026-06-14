@@ -1,0 +1,44 @@
+{
+  "id": "40091586",
+  "url": "https://issues.chromium.org/issues/40091586",
+  "title": "Parsing issue with -webkit-calc",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "mi...@chromium.org",
+  "created_date": "2011-06-05T21:20:51+00:00",
+  "modified_date": "2018-04-26T00:06:43+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53243640,
+      "filename": "calc.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 58,
+      "url": "https://issues.chromium.org/action/issues/40091586/attachments/53243640?download=true",
+      "local_path": "attachments/calc.html"
+    },
+    {
+      "id": 53243659,
+      "filename": "vg-85003.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 7936,
+      "url": "https://issues.chromium.org/action/issues/40091586/attachments/53243659?download=true",
+      "local_path": "attachments/vg-85003.txt"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nthe following is badly parsed:  \n<a style=\"-webkit-box-reflect:above 1px -webkit-calc(1)\">  \n  \n**VERSION**   \nChrome Version: beta and daily, not stable.  \n  \nGoogle Chrome\t12.0.742.77 (Official Build 87574) beta  \nWebKit\t534.30 (branches/chromium/742@87761)"
+}

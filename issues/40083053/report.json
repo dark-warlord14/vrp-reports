@@ -46,7 +46,7 @@
       "mime_type": "text/html",
       "size_bytes": 1286,
       "url": "https://issues.chromium.org/action/issues/40083053/attachments/53277146?download=true",
-      "local_path": "attachments/index.html"
+      "local_path": "attachments/index_53277146.html"
     },
     {
       "id": 53277147,
@@ -54,7 +54,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 2899,
       "url": "https://issues.chromium.org/action/issues/40083053/attachments/53277147?download=true",
-      "local_path": "attachments/index.js"
+      "local_path": "attachments/index_53277147.js"
     }
   ],
   "update_count": 47,

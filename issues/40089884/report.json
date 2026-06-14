@@ -1,0 +1,29 @@
+{
+  "id": "40089884",
+  "url": "https://issues.chromium.org/issues/40089884",
+  "title": "chrome!ui::AXPlatformNodeWin::IsSameHypertextCharacter out-of-bounds read",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Accessibility, UI>Accessibility",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "j0...@gmail.com",
+  "assignee": "ne...@chromium.org",
+  "created_date": "2017-12-11T18:56:42+00:00",
+  "modified_date": "2018-03-27T13:02:32+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 46,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.84 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n+ Page heap turned on for chrome:\r\n\r\nC:\\Program Files (x86)\\Windows Kits\\10\\Debuggers\\x64>gflags.exe /i chrome.exe\r\nCurrent Registry Setti"
+}

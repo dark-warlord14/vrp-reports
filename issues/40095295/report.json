@@ -1,0 +1,84 @@
+{
+  "id": "40095295",
+  "url": "https://issues.chromium.org/issues/40095295",
+  "title": "Stale canvas used in WebCore::PlatformContextSkia::save()",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sl...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2011-09-19T14:09:13+00:00",
+  "modified_date": "2016-10-02T20:23:31+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52882645,
+      "filename": "stack3.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 6865,
+      "url": "https://issues.chromium.org/action/issues/40095295/attachments/52882645?download=true",
+      "local_path": "attachments/stack3.txt"
+    },
+    {
+      "id": 52882646,
+      "filename": "stack5.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 6972,
+      "url": "https://issues.chromium.org/action/issues/40095295/attachments/52882646?download=true",
+      "local_path": "attachments/stack5.txt"
+    },
+    {
+      "id": 52882647,
+      "filename": "c1.html",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 603,
+      "url": "https://issues.chromium.org/action/issues/40095295/attachments/52882647?download=true",
+      "local_path": "attachments/c1.html"
+    },
+    {
+      "id": 52882648,
+      "filename": "stack4.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 6873,
+      "url": "https://issues.chromium.org/action/issues/40095295/attachments/52882648?download=true",
+      "local_path": "attachments/stack4.txt"
+    },
+    {
+      "id": 52882649,
+      "filename": "stack1.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 6873,
+      "url": "https://issues.chromium.org/action/issues/40095295/attachments/52882649?download=true",
+      "local_path": "attachments/stack1.txt"
+    },
+    {
+      "id": 52882650,
+      "filename": "stack2.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 6972,
+      "url": "https://issues.chromium.org/action/issues/40095295/attachments/52882650?download=true",
+      "local_path": "attachments/stack2.txt"
+    },
+    {
+      "id": 52882651,
+      "filename": "stack6.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 7687,
+      "url": "https://issues.chromium.org/action/issues/40095295/attachments/52882651?download=true",
+      "local_path": "attachments/stack6.txt"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "Crashes on windows dev [15.0.874.15 (101261)] and canary [16.0.883.0 (101461)].\r\n\r\nPossible crashes depend on reproduction way (and lucky :):\r\nAttempt to execute non-executable address 00000000\r\nAttempt to execute non-executable address 00000001\r\nAttempt to execute non-executable address 72756f73\r\nA"
+}

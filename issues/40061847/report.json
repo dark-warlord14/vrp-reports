@@ -1,0 +1,44 @@
+{
+  "id": "40061847",
+  "url": "https://issues.chromium.org/issues/40061847",
+  "title": "Security: Creating a loop in the DOM tree (99% a DoS)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pa...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2012-07-26T18:36:46+00:00",
+  "modified_date": "2016-10-02T20:23:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53306075,
+      "filename": "replace.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1045,
+      "url": "https://issues.chromium.org/action/issues/40061847/attachments/53306075?download=true",
+      "local_path": "attachments/replace.html"
+    },
+    {
+      "id": 53306141,
+      "filename": "new.poc.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 866,
+      "url": "https://issues.chromium.org/action/issues/40061847/attachments/53306141?download=true",
+      "local_path": "attachments/new.poc.html"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VERSION**   \nChrome Version: 20.0.1132.57 m stable  \nOperating System: all  \n  \n  \nSource\\WebCore\\dom\\ContainerNode.cpp  \n  \nbool ContainerNode::replaceChild(PassRefPtr<Node> newChild, Node\\* oldChild, ExceptionCode& ec, bool shouldLazyAttach)  \n{  \n    ...  \n1.  checkReplaceChild(newChild.get(),"
+}

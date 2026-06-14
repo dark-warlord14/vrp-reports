@@ -1,0 +1,44 @@
+{
+  "id": "40083873",
+  "url": "https://issues.chromium.org/issues/40083873",
+  "title": "Security: Navigating to \"chrome://\" URLs and \"file://\" URLs via window.open()",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2016-03-16T15:43:22+00:00",
+  "modified_date": "2018-07-28T14:24:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53167758,
+      "filename": "testcase.html",
+      "mime_type": "text/plain",
+      "size_bytes": 440,
+      "url": "https://issues.chromium.org/action/issues/40083873/attachments/53167758?download=true",
+      "local_path": "attachments/testcase.html"
+    },
+    {
+      "id": 53167759,
+      "filename": "actual.mp4",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 372203,
+      "url": "https://issues.chromium.org/action/issues/40083873/attachments/53167759?download=true",
+      "local_path": "attachments/actual.mp4"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "**VERSION**   \nChrome Version: 51.0.2680.0 canary  \nOperating System: Windows 7  \n  \n**REPRODUCTION CASE**   \nI expect that clicking the link will navigate to \"about:blank\" (which is what happens in 49.0.2623.87 beta-m), since should not be allowed to navigate to \"file://\" URLs and \"chrome://\"."
+}

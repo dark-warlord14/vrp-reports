@@ -1,0 +1,36 @@
+{
+  "id": "40079186",
+  "url": "https://issues.chromium.org/issues/40079186",
+  "title": "Heap-use-after-free in WebCore::HTMLBodyElement::insertedInto",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>HTML",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@gmail.com",
+  "assignee": "tk...@chromium.org",
+  "created_date": "2014-03-25T10:37:33+00:00",
+  "modified_date": "2018-04-25T23:07:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53380363,
+      "filename": "out.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11775,
+      "url": "https://issues.chromium.org/action/issues/40079186/attachments/53380363?download=true",
+      "local_path": "attachments/out.txt"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe following testcase crashes the current Chrome ASAN build.  \n  \nThe vulnerable function:  \n  \nNode::InsertionNotificationRequest HTMLBodyElement::insertedInto(ContainerNode\\* insertionPoint)  \n{  \n    HTMLElement::insertedInto(insertionPoint);  \n    if (insertionPoint"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "40081054",
+  "url": "https://issues.chromium.org/issues/40081054",
+  "title": "Heap/Stack Memory Info Leak - FFMPEG libavformat\\mov.c",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "da...@chromium.org",
+  "created_date": "2014-12-22T12:26:43+00:00",
+  "modified_date": "2018-04-25T23:03:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53031244,
+      "filename": "mov_read_default_int_underflow.mp4",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 64,
+      "url": "https://issues.chromium.org/action/issues/40081054/attachments/53031244?download=true",
+      "local_path": "attachments/mov_read_default_int_underflow.mp4"
+    },
+    {
+      "id": 53031315,
+      "filename": "mov_read_default_fixes.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1165,
+      "url": "https://issues.chromium.org/action/issues/40081054/attachments/53031315?download=true",
+      "local_path": "attachments/mov_read_default_fixes.patch"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/41.0.2251.0 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Browse to sample file (mov_read_default_int_underflow.mp4) and debug ffmpegsumo!mov_read_default to observe behaviour\r\n\r\nWhat is the expected"
+}

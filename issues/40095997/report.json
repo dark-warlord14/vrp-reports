@@ -1,0 +1,46 @@
+{
+  "id": "40095997",
+  "url": "https://issues.chromium.org/issues/40095997",
+  "title": "Security: URL bar spoofing with using a file:/// URL",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "mr...@chromium.org",
+  "created_date": "2019-08-15T02:13:04+00:00",
+  "modified_date": "2020-07-14T16:46:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52946871,
+      "filename": "6843BFFE-6C96-4750-A8C5-B6E1E40321D1.MP4",
+      "mime_type": "video/mp4",
+      "size_bytes": 702391,
+      "url": "https://issues.chromium.org/action/issues/40095997/attachments/52946871?download=true",
+      "local_path": "attachments/6843BFFE-6C96-4750-A8C5-B6E1E40321D1.MP4"
+    },
+    {
+      "id": 52946959,
+      "filename": "test case",
+      "mime_type": "text/plain",
+      "size_bytes": 683,
+      "url": "https://issues.chromium.org/action/issues/40095997/attachments/52946959?download=true",
+      "local_path": "attachments/test case"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**VERSION**   \nChrome Version: 77.0.3865.21 beta  \nOperating System: iOS  \n  \n  \n**REPRODUCTION CASE**   \n  \nThis is similar to https://crbug.com/chromium/989497  \n  \n1. Go to https://lbstyle.github.io/o.html  \n2. Click on the button.  \n4. Focus the address bar clear the existing address.  \n3. Paste"
+}

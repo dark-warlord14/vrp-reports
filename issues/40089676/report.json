@@ -1,0 +1,140 @@
+{
+  "id": "40089676",
+  "url": "https://issues.chromium.org/issues/40089676",
+  "title": "invalid access with bad html",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2011-04-08T19:33:04+00:00",
+  "modified_date": "2018-04-26T00:10:29+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53121817,
+      "filename": "12.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 386,
+      "url": "https://issues.chromium.org/action/issues/40089676/attachments/53121817?download=true",
+      "local_path": "attachments/12.html"
+    },
+    {
+      "id": 53121833,
+      "filename": "crashlog.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 40674,
+      "url": "https://issues.chromium.org/action/issues/40089676/attachments/53121833?download=true",
+      "local_path": "attachments/crashlog.txt"
+    },
+    {
+      "id": 53121847,
+      "filename": "vg78841.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 4162,
+      "url": "https://issues.chromium.org/action/issues/40089676/attachments/53121847?download=true",
+      "local_path": "attachments/vg78841.txt"
+    },
+    {
+      "id": 53121851,
+      "filename": "8.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 303,
+      "url": "https://issues.chromium.org/action/issues/40089676/attachments/53121851?download=true",
+      "local_path": "attachments/8.html"
+    },
+    {
+      "id": 53121865,
+      "filename": "segfault.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 262,
+      "url": "https://issues.chromium.org/action/issues/40089676/attachments/53121865?download=true",
+      "local_path": "attachments/segfault.html"
+    },
+    {
+      "id": 53121866,
+      "filename": "null.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 260,
+      "url": "https://issues.chromium.org/action/issues/40089676/attachments/53121866?download=true",
+      "local_path": "attachments/null.html"
+    },
+    {
+      "id": 53121867,
+      "filename": "gpf-write2.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 329,
+      "url": "https://issues.chromium.org/action/issues/40089676/attachments/53121867?download=true",
+      "local_path": "attachments/gpf-write2.html"
+    },
+    {
+      "id": 53121868,
+      "filename": "otherseg2.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 559,
+      "url": "https://issues.chromium.org/action/issues/40089676/attachments/53121868?download=true",
+      "local_path": "attachments/otherseg2.html"
+    },
+    {
+      "id": 53121869,
+      "filename": "gpf-write.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 263,
+      "url": "https://issues.chromium.org/action/issues/40089676/attachments/53121869?download=true",
+      "local_path": "attachments/gpf-write.html"
+    },
+    {
+      "id": 53121870,
+      "filename": "otherseg.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 352,
+      "url": "https://issues.chromium.org/action/issues/40089676/attachments/53121870?download=true",
+      "local_path": "attachments/otherseg.html"
+    },
+    {
+      "id": 53121891,
+      "filename": "78841-rip.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 569,
+      "url": "https://issues.chromium.org/action/issues/40089676/attachments/53121891?download=true",
+      "local_path": "attachments/78841-rip.html"
+    },
+    {
+      "id": 53121892,
+      "filename": "78841-use-after-free.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 561,
+      "url": "https://issues.chromium.org/action/issues/40089676/attachments/53121892?download=true",
+      "local_path": "attachments/78841-use-after-free.html"
+    },
+    {
+      "id": 53121897,
+      "filename": "78841-rip-vg.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 5329,
+      "url": "https://issues.chromium.org/action/issues/40089676/attachments/53121897?download=true",
+      "local_path": "attachments/78841-rip-vg.txt"
+    },
+    {
+      "id": 53121898,
+      "filename": "78841-use-after-free-vg.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 8153,
+      "url": "https://issues.chromium.org/action/issues/40089676/attachments/53121898?download=true",
+      "local_path": "attachments/78841-use-after-free-vg.txt"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**This template is ONLY for reporting security bugs. Please use a different**   \n**template for other types of bug reports.**   \n  \n**Please see the following link for instructions on filing security bugs:**   \n**http://www.chromium.org/Home/chromium-security/reporting-security-bugs**   \n  \n  \n**VUL"
+}

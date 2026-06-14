@@ -1,0 +1,50 @@
+{
+  "id": "40050154",
+  "url": "https://issues.chromium.org/issues/40050154",
+  "title": "Security: heap-use-after-free in RTCPeerConnectionHandler::SetLocalDescription",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>WebRTC",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ba...@gmail.com",
+  "assignee": "hb...@chromium.org",
+  "created_date": "2019-09-18T15:59:37+00:00",
+  "modified_date": "2020-06-29T06:39:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53150800,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40050154/attachments/53150800?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53150801,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40050154/attachments/53150801?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n- RTCPeerConnection class has 'std::unique_ptr<WebRTCPeerConnectionHandler> peer_handler_'. (https://cs.chromium.org/chromium/src/third_party/blink/renderer/modules/peerconnection/rtc_peer_connection.h?l=539&gsn=peer_handler_)  \nclass MODULES_EXPORT RTCPeerConnection fin"
+}

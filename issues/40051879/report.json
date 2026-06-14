@@ -1,0 +1,92 @@
+{
+  "id": "40051879",
+  "url": "https://issues.chromium.org/issues/40051879",
+  "title": "Heap-buffer-overflow in SkAAClipBlitter::blitAntiH",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals, Internals>GPU, Internals>Skia",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2011-12-06T19:12:46+00:00",
+  "modified_date": "2018-04-25T23:53:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53035123,
+      "filename": "win2.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1171,
+      "url": "https://issues.chromium.org/action/issues/40051879/attachments/53035123?download=true",
+      "local_path": "attachments/win2.html"
+    },
+    {
+      "id": 53035124,
+      "filename": "win-asan.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 10378,
+      "url": "https://issues.chromium.org/action/issues/40051879/attachments/53035124?download=true",
+      "local_path": "attachments/win-asan.txt"
+    },
+    {
+      "id": 53035125,
+      "filename": "win.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1169,
+      "url": "https://issues.chromium.org/action/issues/40051879/attachments/53035125?download=true",
+      "local_path": "attachments/win.html"
+    },
+    {
+      "id": 53035126,
+      "filename": "win2-asan.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 21792,
+      "url": "https://issues.chromium.org/action/issues/40051879/attachments/53035126?download=true",
+      "local_path": "attachments/win2-asan.txt"
+    },
+    {
+      "id": 53035191,
+      "filename": "0110.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 501,
+      "url": "https://issues.chromium.org/action/issues/40051879/attachments/53035191?download=true",
+      "local_path": "attachments/0110.html"
+    },
+    {
+      "id": 53035337,
+      "filename": "asan-log.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 13323,
+      "url": "https://issues.chromium.org/action/issues/40051879/attachments/53035337?download=true",
+      "local_path": "attachments/asan-log.txt"
+    },
+    {
+      "id": 53035338,
+      "filename": "my-dot-gclient.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 797,
+      "url": "https://issues.chromium.org/action/issues/40051879/attachments/53035338?download=true",
+      "local_path": "attachments/my-dot-gclient.txt"
+    },
+    {
+      "id": 53035346,
+      "filename": "asan-no-inline-log.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 14803,
+      "url": "https://issues.chromium.org/action/issues/40051879/attachments/53035346?download=true",
+      "local_path": "attachments/asan-no-inline-log.txt"
+    }
+  ],
+  "update_count": 100,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nskia oob read?  \n  \nthe numbers in the repro are fairly magical. hopefully they aren't dependent on my screen resolution etc. :|  \n  \n**VERSION**   \nChrome Version:   \nChromium\t17.0.961.0 (Developer Build 112957)  \nOS\tLinux  \nWebKit\t535.12 (trunk@101971)  \nJavaScript"
+}

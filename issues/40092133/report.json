@@ -1,0 +1,60 @@
+{
+  "id": "40092133",
+  "url": "https://issues.chromium.org/issues/40092133",
+  "title": "Use after free due to refcounting issue in MediaQueryMatcher::prepareEvaluator",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2011-06-23T09:48:10+00:00",
+  "modified_date": "2018-04-26T00:05:17+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52937800,
+      "filename": "css.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 186,
+      "url": "https://issues.chromium.org/action/issues/40092133/attachments/52937800?download=true",
+      "local_path": "attachments/css.html"
+    },
+    {
+      "id": 52937802,
+      "filename": "vg.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 17381,
+      "url": "https://issues.chromium.org/action/issues/40092133/attachments/52937802?download=true",
+      "local_path": "attachments/vg.txt"
+    },
+    {
+      "id": 52937803,
+      "filename": "vg-google-chrome-stable.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 7304,
+      "url": "https://issues.chromium.org/action/issues/40092133/attachments/52937803?download=true",
+      "local_path": "attachments/vg-google-chrome-stable.txt"
+    },
+    {
+      "id": 52937804,
+      "filename": "asan.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 5858,
+      "url": "https://issues.chromium.org/action/issues/40092133/attachments/52937804?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nnot sure if this is a real bug but reporting anyhow, as per twitter w/ @scarybeasts  \n  \nuse-after-free + invalid read. doesn't crash the regular browser, just valgrind and ASan  \n  \n**VERSION**   \nChrome Version: stable, trunk.  \nOperating System: linux  \n  \n**REPROD"
+}

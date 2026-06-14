@@ -1,0 +1,36 @@
+{
+  "id": "40077965",
+  "url": "https://issues.chromium.org/issues/40077965",
+  "title": "Heap-use-after-free in ppapi::proxy::PluginResource::NotifyInstanceWasDeleted",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "bb...@chromium.org",
+  "created_date": "2013-08-20T15:39:50+00:00",
+  "modified_date": "2018-04-25T23:11:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53024699,
+      "filename": "repro.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 400,
+      "url": "https://issues.chromium.org/action/issues/40077965/attachments/53024699?download=true",
+      "local_path": "attachments/repro.html"
+    }
+  ],
+  "update_count": 70,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nTest case in https://crbug.com/chromium/227350 and 159429 reproduces again.  \n  \n**VERSION**   \nChrome Version: [29.0.1547.57] + [beta]  \n                [31.0.1607.0 (218472)] + [trunk]  \nOperating System: [Ubuntu 12.04 64bit]  \n  \n**REPRODUCTION CASE**   \nppapi PDF plu"
+}

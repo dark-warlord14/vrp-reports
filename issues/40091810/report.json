@@ -1,0 +1,52 @@
+{
+  "id": "40091810",
+  "url": "https://issues.chromium.org/issues/40091810",
+  "title": "chrome_1c30000!webkit::ppapi::PPB_Widget_Impl::Invalidate crash",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Internals, Internals>Plugins, Internals>Plugins>Pepper",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ku...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2011-06-11T16:34:41+00:00",
+  "modified_date": "2018-04-26T00:05:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53371490,
+      "filename": "testcase.htm",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 310,
+      "url": "https://issues.chromium.org/action/issues/40091810/attachments/53371490?download=true",
+      "local_path": "attachments/testcase.htm"
+    },
+    {
+      "id": 53371518,
+      "filename": "log1.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 4280,
+      "url": "https://issues.chromium.org/action/issues/40091810/attachments/53371518?download=true",
+      "local_path": "attachments/log1.txt"
+    },
+    {
+      "id": 53371519,
+      "filename": "log.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 4926,
+      "url": "https://issues.chromium.org/action/issues/40091810/attachments/53371519?download=true",
+      "local_path": "attachments/log.txt"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "Test chrome 13.0.782.14 windows xp sp3\r\n\r\nOpen testcase.htm\r\n\r\n(a40.c74): Access violation - code c0000005 (!!! second chance !!!)\r\neax=019de64d ebx=056fa870 ecx=0117e154 edx=026632f7 esi=056fa870 edi=056fa8a4\r\neip=31018300 esp=0012f7f8 ebp=0012f84c iopl=0         nv up ei pl nz na po nc\r\ncs=001b  s"
+}

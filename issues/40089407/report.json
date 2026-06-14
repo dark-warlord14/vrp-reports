@@ -1,0 +1,67 @@
+{
+  "id": "40089407",
+  "url": "https://issues.chromium.org/issues/40089407",
+  "title": "Security: OOB Write in QuicStreamSequencerBuffer::OnStreamData",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>Network>QUIC",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ne...@gmail.com",
+  "assignee": "rc...@chromium.org",
+  "created_date": "2017-10-26T04:06:41+00:00",
+  "modified_date": "2020-04-30T17:34:22+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10500.0,
+  "reward_amount_meta": 10500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53218150,
+      "filename": "crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 7888,
+      "url": "https://issues.chromium.org/action/issues/40089407/attachments/53218150?download=true",
+      "local_path": "attachments/crash.log"
+    },
+    {
+      "id": 53218151,
+      "filename": "fix.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2220,
+      "url": "https://issues.chromium.org/action/issues/40089407/attachments/53218151?download=true",
+      "local_path": "attachments/fix.patch"
+    },
+    {
+      "id": 53218152,
+      "filename": "server_frame_overflow.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1219,
+      "url": "https://issues.chromium.org/action/issues/40089407/attachments/53218152?download=true",
+      "local_path": "attachments/server_frame_overflow.patch"
+    },
+    {
+      "id": 53218153,
+      "filename": "www.example.org.tar",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 8704,
+      "url": "https://issues.chromium.org/action/issues/40089407/attachments/53218153?download=true",
+      "local_path": "attachments/www.example.org.tar"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "VULNERABILITY DETAILS\r\nParsed QUIC stream packets are handled by QuicStreamSequencerBuffer::OnStreamData.\r\n\r\nThe current 'gap' to be filled in by the packet is found by traversing\r\na list of gaps:\r\n\r\n```\r\n  std::list<Gap>::iterator current_gap = gaps_.begin();\r\n  while (current_gap != gaps_.end() &&"
+}

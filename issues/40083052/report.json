@@ -1,0 +1,31 @@
+{
+  "id": "40083052",
+  "url": "https://issues.chromium.org/issues/40083052",
+  "title": "Use-of-uninitialized-value in blink::encodePixels",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Image",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2016-1614"
+  ],
+  "reporter": "cl...@chromium.org",
+  "assignee": "xi...@chromium.org",
+  "created_date": "2015-10-18T21:09:49+00:00",
+  "modified_date": "2018-04-25T22:56:16+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 40,
+  "description_snippet": "Detailed report: https://cluster-fuzz.appspot.com/testcase?key=4554939064385536\n\nFuzzer: cdiehl_dharma\nJob Type: linux_msan_chrome\nPlatform Id: linux\n\nCrash Type: Use-of-uninitialized-value\nCrash Address: \nCrash State:\n  blink::encodePixels\n  blink::JPEGImageEncoder::encode\n  blink::ImageDataBuffer:"
+}

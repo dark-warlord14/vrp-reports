@@ -1,0 +1,44 @@
+{
+  "id": "40076459",
+  "url": "https://issues.chromium.org/issues/40076459",
+  "title": "Security: use-after-free in WebCore::GraphicsContext::paintingDisabled",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>SVG",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "sc...@chromium.org",
+  "created_date": "2012-10-18T06:33:03+00:00",
+  "modified_date": "2016-10-02T20:22:24+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53080870,
+      "filename": "svg3.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 826,
+      "url": "https://issues.chromium.org/action/issues/40076459/attachments/53080870?download=true",
+      "local_path": "attachments/svg3.html"
+    },
+    {
+      "id": 53080871,
+      "filename": "svg3.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 19747,
+      "url": "https://issues.chromium.org/action/issues/40076459/attachments/53080871?download=true",
+      "local_path": "attachments/svg3.txt"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nuse-after-free in WebCore::GraphicsContext::paintingDisabled  \n  \n**VERSION**   \nChrome Version: dev  \n  \nChromium\t24.0.1301.0 (Developer Build 162597)   \nOS\tLinux   \nWebKit\t537.16 (@131643)  \nJavaScript\tV8 3.14.4.1  \n  \ncauses infinite recursion in older versions (pr"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "40077917",
+  "url": "https://issues.chromium.org/issues/40077917",
+  "title": "Heap-use-after-free in WebCore::AudioDSPKernelProcessor::reset",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Media>Audio",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "ha...@chromium.org",
+  "created_date": "2013-08-10T15:44:41+00:00",
+  "modified_date": "2018-04-25T23:11:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53171330,
+      "filename": "C--clusterfuzz-slave-bot-inputs-fuzzer-testcases-fuzz-8.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 76157,
+      "url": "https://issues.chromium.org/action/issues/40077917/attachments/53171330?download=true",
+      "local_path": "attachments/C--clusterfuzz-slave-bot-inputs-fuzzer-testcases-fuzz-8.html"
+    },
+    {
+      "id": 53171334,
+      "filename": "C--clusterfuzz-slave-bot-inputs-fuzzer-testcases-fuzz-8 (1).html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 6802,
+      "url": "https://issues.chromium.org/action/issues/40077917/attachments/53171334?download=true",
+      "local_path": "attachments/C--clusterfuzz-slave-bot-inputs-fuzzer-testcases-fuzz-8 (1).html"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "Detailed report: https://cluster-fuzz.appspot.com/testcase?key=6662160935550976\n\nFuzzer: Attekett_webaudio_fuzzer\nJob Type: Windows_syzyasan_chrome\n\nCrash Type: Use-after-free READ 4\nCrash Address: 0x050a47c3\nCrash State:\n  - crash stack -\n  WebCore::AudioDSPKernelProcessor::reset\n  WebCore::BiquadP"
+}

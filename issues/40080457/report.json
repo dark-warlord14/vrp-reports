@@ -1,0 +1,36 @@
+{
+  "id": "40080457",
+  "url": "https://issues.chromium.org/issues/40080457",
+  "title": "Use-of-uninitialized-value in unsigned int blink::WidthIterator::advanceInternal<blink::SurrogatePairAwareTextIterator>",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "ds...@chromium.org",
+  "created_date": "2014-09-14T18:26:37+00:00",
+  "modified_date": "2018-04-25T23:05:42+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53072966,
+      "filename": "reduced_test.html",
+      "mime_type": "text/html",
+      "size_bytes": 615,
+      "url": "https://issues.chromium.org/action/issues/40080457/attachments/53072966?download=true",
+      "local_path": "attachments/reduced_test.html"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "Detailed report: https://cluster-fuzz.appspot.com/testcase?key=6192550760153088\n\nFuzzer: Miaubiz_svg_fuzzer\nJob Type: Linux_msan_chrome\n\nCrash Type: Use-of-uninitialized-value\nCrash Address: \nCrash State:\n  unsigned int blink::WidthIterator::advanceInternal<blink::SurrogatePairAwar\n  blink::WidthIte"
+}

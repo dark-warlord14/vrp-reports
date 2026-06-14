@@ -50,8 +50,8 @@ Live demo at <http://zyan.scripts.mit.edu/sniffly/>. Source files also attached.
 
 - [index.html](attachments/index.html) (text/html, 1.2 KB)
 - [index.js](attachments/index.js) (text/javascript, 14.2 KB)
-- [index.html](attachments/index.html) (text/html, 1.3 KB)
-- [index.js](attachments/index.js) (text/javascript, 2.8 KB)
+- [index.html](attachments/index_53277146.html) (text/html, 1.3 KB)
+- [index.js](attachments/index_53277147.js) (text/javascript, 2.8 KB)
 
 ## Timeline
 

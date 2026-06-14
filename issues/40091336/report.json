@@ -1,0 +1,62 @@
+{
+  "id": "40091336",
+  "url": "https://issues.chromium.org/issues/40091336",
+  "title": "Security: uXSS in Chrome on iOS",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "UI>Browser>Mobile",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "th...@inbox.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2018-05-09T04:39:03+00:00",
+  "modified_date": "2019-06-27T09:27:12+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52899938,
+      "filename": "01.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 126642,
+      "url": "https://issues.chromium.org/action/issues/40091336/attachments/52899938?download=true",
+      "local_path": "attachments/01.jpg"
+    },
+    {
+      "id": 52899939,
+      "filename": "02.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 682530,
+      "url": "https://issues.chromium.org/action/issues/40091336/attachments/52899939?download=true",
+      "local_path": "attachments/02.jpg"
+    },
+    {
+      "id": 52899940,
+      "filename": "03.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 718445,
+      "url": "https://issues.chromium.org/action/issues/40091336/attachments/52899940?download=true",
+      "local_path": "attachments/03.jpg"
+    },
+    {
+      "id": 52899941,
+      "filename": "04.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 445577,
+      "url": "https://issues.chromium.org/action/issues/40091336/attachments/52899941?download=true",
+      "local_path": "attachments/04.jpg"
+    }
+  ],
+  "update_count": 68,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUniversal XSS by using \"..;@\" within the url :~D  \n  \n**VERSION**   \nChrome Version: [66.0.3359.122] + [stable]  \nOperating System: [iOS]  \n  \n**REPRODUCTION CASE**   \n  \nBasically if we run this javascript code \" history.replaceState('','','..;@www.google.com:%3443/') \""
+}

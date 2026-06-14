@@ -1,0 +1,62 @@
+{
+  "id": "40080687",
+  "url": "https://issues.chromium.org/issues/40080687",
+  "title": "Security: Flash Cross Domain Policy Bypass by Using File Upload and Redirection - only in Chrome",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2015-0337"
+  ],
+  "reporter": "so...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2014-10-20T21:10:23+00:00",
+  "modified_date": "2016-10-02T20:08:06+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53398800,
+      "filename": "chromeFileUploadCrossDomain.as",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2807,
+      "url": "https://issues.chromium.org/action/issues/40080687/attachments/53398800?download=true",
+      "local_path": "attachments/chromeFileUploadCrossDomain.as"
+    },
+    {
+      "id": 53398801,
+      "filename": "PoC.png",
+      "mime_type": "image/png",
+      "size_bytes": 46531,
+      "url": "https://issues.chromium.org/action/issues/40080687/attachments/53398801?download=true",
+      "local_path": "attachments/PoC.png"
+    },
+    {
+      "id": 53398802,
+      "filename": "redirect.php.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 437,
+      "url": "https://issues.chromium.org/action/issues/40080687/attachments/53398802?download=true",
+      "local_path": "attachments/redirect.php.txt"
+    },
+    {
+      "id": 53398803,
+      "filename": "chromeFileUploadCrossDomain.swf",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1724,
+      "url": "https://issues.chromium.org/action/issues/40080687/attachments/53398803?download=true",
+      "local_path": "attachments/chromeFileUploadCrossDomain.swf"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "==VULNERABILITY DETAILS==\r\nIt is possible to bypass Flash Cross Domain policy in Google Chrome to read other websites' contents after a user uploads a file to a destination that redirects the user to the target website. It is also possible to send a file upload request to a target website without ch"
+}

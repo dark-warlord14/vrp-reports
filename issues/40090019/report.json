@@ -1,0 +1,62 @@
+{
+  "id": "40090019",
+  "url": "https://issues.chromium.org/issues/40090019",
+  "title": "Chromium fails to leave full screen mode",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Input>PointerLock, UI>Browser>FullScreen",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "ct...@chromium.org",
+  "created_date": "2017-12-29T17:16:37+00:00",
+  "modified_date": "2018-06-07T14:20:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53405897,
+      "filename": "WD.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 342243,
+      "url": "https://issues.chromium.org/action/issues/40090019/attachments/53405897?download=true",
+      "local_path": "attachments/WD.zip"
+    },
+    {
+      "id": 53405907,
+      "filename": "complete.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 560092,
+      "url": "https://issues.chromium.org/action/issues/40090019/attachments/53405907?download=true",
+      "local_path": "attachments/complete.zip"
+    },
+    {
+      "id": 53405908,
+      "filename": "orig.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 435459,
+      "url": "https://issues.chromium.org/action/issues/40090019/attachments/53405908?download=true",
+      "local_path": "attachments/orig.zip"
+    },
+    {
+      "id": 53405962,
+      "filename": "cursor.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1447,
+      "url": "https://issues.chromium.org/action/issues/40090019/attachments/53405962?download=true",
+      "local_path": "attachments/cursor.html"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:57.0) Gecko/20100101 Firefox/57.0\r\n\r\nSteps to reproduce the problem:\r\n1. Visit the website logicserverhub.club/USA/chrome/?\r\n2. Click \"ignore alert\"\r\n3. Read the browser message \"Press ESC to leave full screen mode\"\r\n4. Try to leave full screen m"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "40080161",
+  "url": "https://issues.chromium.org/issues/40080161",
+  "title": "Heap-use-after-free in blink::Event::path",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>SVG",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@gmail.com",
+  "assignee": "vo...@chromium.org",
+  "created_date": "2014-08-04T19:54:19+00:00",
+  "modified_date": "2018-04-25T23:06:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53080888,
+      "filename": "svgx.svg",
+      "mime_type": "image/svg+xml",
+      "size_bytes": 123,
+      "url": "https://issues.chromium.org/action/issues/40080161/attachments/53080888?download=true",
+      "local_path": "attachments/svgx.svg"
+    },
+    {
+      "id": 53080889,
+      "filename": "debug.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11194,
+      "url": "https://issues.chromium.org/action/issues/40080161/attachments/53080889?download=true",
+      "local_path": "attachments/debug.txt"
+    },
+    {
+      "id": 53080890,
+      "filename": "crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 569,
+      "url": "https://issues.chromium.org/action/issues/40080161/attachments/53080890?download=true",
+      "local_path": "attachments/crash.html"
+    }
+  ],
+  "update_count": 75,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe attached testcase crashes the latest ASAN build of chrome.  \n  \n**VERSION**   \nChrome Version: asan-symbolized-linux-release-287271  \nOperating System: Linux  \n  \n**REPRODUCTION CASE**   \nAttached  \n  \n**FOR CRASHES, PLEASE INCLUDE THE FOLLOWING ADDITIONAL INFORMATIO"
+}

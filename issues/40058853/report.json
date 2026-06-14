@@ -1,0 +1,60 @@
+{
+  "id": "40058853",
+  "url": "https://issues.chromium.org/issues/40058853",
+  "title": "UNKNOWN in v8::Function::Call",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>JavaScript, Blink>WebGL, Internals",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "ul...@chromium.org",
+  "created_date": "2012-05-27T19:19:18+00:00",
+  "modified_date": "2018-04-25T23:20:28+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53026719,
+      "filename": "stable-typed-arrays.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 5037,
+      "url": "https://issues.chromium.org/action/issues/40058853/attachments/53026719?download=true",
+      "local_path": "attachments/stable-typed-arrays.txt"
+    },
+    {
+      "id": 53026720,
+      "filename": "typed-arrays.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 5020,
+      "url": "https://issues.chromium.org/action/issues/40058853/attachments/53026720?download=true",
+      "local_path": "attachments/typed-arrays.txt"
+    },
+    {
+      "id": 53026721,
+      "filename": "typed-arrays.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 387,
+      "url": "https://issues.chromium.org/action/issues/40058853/attachments/53026721?download=true",
+      "local_path": "attachments/typed-arrays.html"
+    },
+    {
+      "id": 53026770,
+      "filename": "129951",
+      "mime_type": "text/x-diff; charset=us-ascii",
+      "size_bytes": 10664,
+      "url": "https://issues.chromium.org/action/issues/40058853/attachments/53026770?download=true",
+      "local_path": "attachments/129951"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nas per bug:  \nhttps://bugs.webkit.org/show_bug.cgi?id=75532  \n  \nredefining setter on typed array to a number, then calling the constructor for that typed array, with a function as an argument, results in (good|bad) stuff.  \n  \nInt32Array.prototype.set = 0x3ffff"
+}

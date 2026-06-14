@@ -1,0 +1,32 @@
+{
+  "id": "40050204",
+  "url": "https://issues.chromium.org/issues/40050204",
+  "title": "Security: Use after free in MojoCdmProxyService",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media>Encrypted",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hi...@gmail.com",
+  "assignee": "xh...@chromium.org",
+  "created_date": "2019-09-24T09:44:37+00:00",
+  "modified_date": "2020-02-26T19:51:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 43,
+  "description_snippet": "This issue is similar to https://bugs.chromium.org/p/chromium/issues/detail?id=999311\r\n\r\nThe root cause is [MojoCdmProxyService::Initialize](https://cs.chromium.org/chromium/src/media/mojo/services/mojo_cdm_proxy_service.cc?rcl=cd722c54dece3fcc44e9f929d9746866b89f5ec3&l=30) can be called multiple ti"
+}

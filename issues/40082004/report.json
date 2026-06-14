@@ -1,0 +1,44 @@
+{
+  "id": "40082004",
+  "url": "https://issues.chromium.org/issues/40082004",
+  "title": "Security: Flash UAF with Color.setRGB in AS2 ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "bi...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2015-05-05T10:48:21+00:00",
+  "modified_date": "2018-04-25T23:00:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53391761,
+      "filename": "flash_as2_color_TF_UAF.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 5817,
+      "url": "https://issues.chromium.org/action/issues/40082004/attachments/53391761?download=true",
+      "local_path": "attachments/flash_as2_color_TF_UAF.zip"
+    },
+    {
+      "id": 53391814,
+      "filename": "sploit.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 12756,
+      "url": "https://issues.chromium.org/action/issues/40082004/attachments/53391814?download=true",
+      "local_path": "attachments/sploit.zip"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen calling Color.setRGB in AS2 it is possible to free the target_mc object used in the Color constructor while a reference remains in the stack.  \n  \n**VERSION**   \nChrome Version: Chrome stable 42.0.2311.90 with Flash 17.0.0.169  \nOperating System: Win7 x64 SP1  \n  \n*"
+}

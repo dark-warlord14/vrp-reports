@@ -1,0 +1,43 @@
+{
+  "id": "40093153",
+  "url": "https://issues.chromium.org/issues/40093153",
+  "title": "Security: pdfium SEGV on unknown address / wild jump",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2018-11-21T10:31:00+00:00",
+  "modified_date": "2019-03-06T15:23:09+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53399905,
+      "filename": "wild_jump.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 81578,
+      "url": "https://issues.chromium.org/action/issues/40093153/attachments/53399905?download=true",
+      "local_path": "attachments/wild_jump.pdf"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nSEGV on unknown address / wild jump in pdfium.  \n  \n**VERSION**   \ncommit cf927b1f0823b51a519fcec6f1919b092a58918e  \nDate:   Sat Nov 17 07:27:28 2018 +0000  \n  \n**REPRODUCTION CASE**   \nOpen attached file.  \n  \nADDITIONAL INFORMATION  \n  \nRendering PDF file /workarea/sam"
+}

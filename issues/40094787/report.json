@@ -1,0 +1,29 @@
+{
+  "id": "40094787",
+  "url": "https://issues.chromium.org/issues/40094787",
+  "title": "cros-machine-id-regen should quote file path when computing timestamp path",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "OS>Systems",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "tm...@acu.edu",
+  "assignee": "mn...@chromium.org",
+  "created_date": "2019-04-30T16:00:46+00:00",
+  "modified_date": "2019-09-24T14:35:42+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 25,
+  "description_snippet": "This is similar to another issue I reported in crosh (issue tracker here: https://bugs.chromium.org/p/chromium/issues/detail?id=957896). \r\n\r\nMuch like the two bugs in the above issue, an unquoted variable is passed to an echo statement in ~/chromeos/src/third_party/chromiumos-overlay/chromeos-base/c"
+}

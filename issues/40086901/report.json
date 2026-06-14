@@ -1,0 +1,60 @@
+{
+  "id": "40086901",
+  "url": "https://issues.chromium.org/issues/40086901",
+  "title": "Probable memory corruption in WebCore::CounterNode::lastDescendant",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "ch...@gmail.com",
+  "created_date": "2011-01-14T04:29:02+00:00",
+  "modified_date": "2018-04-26T00:17:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53154441,
+      "filename": "trimmed.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 4839,
+      "url": "https://issues.chromium.org/action/issues/40086901/attachments/53154441?download=true",
+      "local_path": "attachments/trimmed.html"
+    },
+    {
+      "id": 53154442,
+      "filename": "gdb_raw.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 6988,
+      "url": "https://issues.chromium.org/action/issues/40086901/attachments/53154442?download=true",
+      "local_path": "attachments/gdb_raw.txt"
+    },
+    {
+      "id": 53154443,
+      "filename": "gdb_trimmed.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 11634,
+      "url": "https://issues.chromium.org/action/issues/40086901/attachments/53154443?download=true",
+      "local_path": "attachments/gdb_trimmed.txt"
+    },
+    {
+      "id": 53154444,
+      "filename": "raw.html",
+      "mime_type": "text/html; charset=unknown-8bit",
+      "size_bytes": 34231,
+      "url": "https://issues.chromium.org/action/issues/40086901/attachments/53154444?download=true",
+      "local_path": "attachments/raw.html"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt appears that under certain circumstances spacer elements (this may be arbitrary) with a value set for their counterIncrement property are not handled properly. In one of the test cases provided, a crash sometimes occurs due to an attempt to write to 0x200038 in WebCor"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "40087322",
+  "url": "https://issues.chromium.org/issues/40087322",
+  "title": "Stale pointer in WebCore::RenderTable::firstLineBoxBaseline",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2011-01-27T22:26:51+00:00",
+  "modified_date": "2016-10-02T20:20:41+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53067802,
+      "filename": "gdb.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 9564,
+      "url": "https://issues.chromium.org/action/issues/40087322/attachments/53067802?download=true",
+      "local_path": "attachments/gdb.txt"
+    },
+    {
+      "id": 53067803,
+      "filename": "outer.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 179,
+      "url": "https://issues.chromium.org/action/issues/40087322/attachments/53067803?download=true",
+      "local_path": "attachments/outer.html"
+    },
+    {
+      "id": 53067804,
+      "filename": "inner.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1307,
+      "url": "https://issues.chromium.org/action/issues/40087322/attachments/53067804?download=true",
+      "local_path": "attachments/inner.html"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUnder certain circumstances, chromium will crash due to an attempt to fetch an instruction from null called from WebCore::RenderTable::firstLineBoxBaseline. This occurs after performing DOM insertions and removals on a document included in a second using an iframe."
+}

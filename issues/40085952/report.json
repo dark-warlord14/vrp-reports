@@ -1,0 +1,50 @@
+{
+  "id": "40085952",
+  "url": "https://issues.chromium.org/issues/40085952",
+  "title": "Security: Crash in Adobe Flash Player (24.0.0.154)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2017-2928"
+  ],
+  "reporter": "ch...@gmail.com",
+  "assignee": "na...@google.com",
+  "created_date": "2016-11-12T20:08:54+00:00",
+  "modified_date": "2017-04-19T13:02:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53207311,
+      "filename": "TestButton.swf",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 27917,
+      "url": "https://issues.chromium.org/action/issues/40085952/attachments/53207311?download=true",
+      "local_path": "attachments/TestButton.swf"
+    },
+    {
+      "id": 53207312,
+      "filename": "7b15927c-76e5-4b6e-a6b9-8d772d95fdcf.dmp",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 280352,
+      "url": "https://issues.chromium.org/action/issues/40085952/attachments/53207312?download=true",
+      "local_path": "attachments/7b15927c-76e5-4b6e-a6b9-8d772d95fdcf.dmp"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "Chrome Version: 56.0.2917.0 canary (64-bit)\r\nOperating System: Windows 7\r\nFlash:\t24.0.0.154\r\n\r\nCrash ID 7b15927c-76e5-4b6e-a6b9-8d772d95fdcf\r\n\r\n\r\nrax=0000000000000001 rbx=000002b1bfbdd660 rcx=000002b1bfc60001\r\nrdx=000002b1bfc60000 rsi=000000000021d1d8 rdi=000000000021d350\r\nrip=000007fed1d9408a rsp=0"
+}

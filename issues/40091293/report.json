@@ -1,0 +1,46 @@
+{
+  "id": "40091293",
+  "url": "https://issues.chromium.org/issues/40091293",
+  "title": "pdfium: global-buffer-overflow in CFX_BidiLine::ResolveImplicit",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pd...@gmail.com",
+  "assignee": "ds...@chromium.org",
+  "created_date": "2018-05-04T04:30:35+00:00",
+  "modified_date": "2018-11-12T03:17:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53035986,
+      "filename": "chromium-839695.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 310,
+      "url": "https://issues.chromium.org/action/issues/40091293/attachments/53035986?download=true",
+      "local_path": "attachments/chromium-839695.pdf"
+    },
+    {
+      "id": 53036018,
+      "filename": "chromium-839695-1.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 310,
+      "url": "https://issues.chromium.org/action/issues/40091293/attachments/53036018?download=true",
+      "local_path": "attachments/chromium-839695-1.pdf"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.70 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n(This is in pdfium XFA, for which I noticed Google is also giving security rewards.)\r\n\r\n==7507==ERROR: AddressSanitizer: global-buffer-overflow on a"
+}

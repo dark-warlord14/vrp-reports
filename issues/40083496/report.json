@@ -1,0 +1,36 @@
+{
+  "id": "40083496",
+  "url": "https://issues.chromium.org/issues/40083496",
+  "title": "Crash in PDF plugin when building cross-refs",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sc...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2010-10-01T01:02:15+00:00",
+  "modified_date": "2016-10-02T20:19:31+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53155466,
+      "filename": "crash-11:14:44.pdf",
+      "mime_type": "application/pdf; charset=binary",
+      "size_bytes": 18574,
+      "url": "https://issues.chromium.org/action/issues/40083496/attachments/53155466?download=true",
+      "local_path": "attachments/crash-11_14_44.pdf"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nMemory corruption with malformed PDF. Due to an off-by-one access when rebuilding cross-refs?  \nSplitting out from https://crbug.com/chromium/56760 on behalf of Aki Helin.  \n  \nErrant PDF is attached.  \n  \nDebug details provided by Aki as follows:  \ncrash-11:14:44.pdf se"
+}

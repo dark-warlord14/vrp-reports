@@ -1,0 +1,44 @@
+{
+  "id": "41247664",
+  "url": "https://issues.chromium.org/issues/41247664",
+  "title": "Download Protection: MPKG file not checked on Mac OS",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ya...@nightwatchcybersecurity.com",
+  "assignee": "np...@chromium.org",
+  "created_date": "2016-04-06T03:35:04+00:00",
+  "modified_date": "2017-03-11T14:02:42+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53270859,
+      "filename": "mpkg.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2937,
+      "url": "https://issues.chromium.org/action/issues/41247664/attachments/53270859?download=true",
+      "local_path": "attachments/mpkg.patch"
+    },
+    {
+      "id": 53270888,
+      "filename": "mpkg_new.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2312,
+      "url": "https://issues.chromium.org/action/issues/41247664/attachments/53270888?download=true",
+      "local_path": "attachments/mpkg_new.patch"
+    }
+  ],
+  "update_count": 28,
+  "description_snippet": "**VERSION**   \nChrome Version: 49.0.2623.87 Official Build  \nOperating System: Mac OS X El Capitan, version 10.11.3  \n  \n**REPRODUCTION CASE**   \nMPKG are another alias for PKG files in Mac OS, which are used by the Mac installer. To reproduce, take any .PKG file, rename it to .MPKG and double click"
+}

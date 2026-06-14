@@ -1,0 +1,110 @@
+{
+  "id": "40086858",
+  "url": "https://issues.chromium.org/issues/40086858",
+  "title": "Security: Heap-use-after-free in PrintPreviewHandler::HandleGetPreview",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>PrintPreview",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2017-02-21T04:18:35+00:00",
+  "modified_date": "2018-07-28T14:03:10+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53356344,
+      "filename": "testcase.html",
+      "mime_type": "text/plain",
+      "size_bytes": 87,
+      "url": "https://issues.chromium.org/action/issues/40086858/attachments/53356344?download=true",
+      "local_path": "attachments/testcase.html"
+    },
+    {
+      "id": 53356345,
+      "filename": "Rec.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 632299,
+      "url": "https://issues.chromium.org/action/issues/40086858/attachments/53356345?download=true",
+      "local_path": "attachments/Rec.mp4"
+    },
+    {
+      "id": 53356378,
+      "filename": "Recording.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 482911,
+      "url": "https://issues.chromium.org/action/issues/40086858/attachments/53356378?download=true",
+      "local_path": "attachments/Recording.mp4"
+    },
+    {
+      "id": 53356481,
+      "filename": "Recording.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 478401,
+      "url": "https://issues.chromium.org/action/issues/40086858/attachments/53356481?download=true",
+      "local_path": "attachments/Recording_53356481.mp4"
+    },
+    {
+      "id": 53356482,
+      "filename": "PoC.rar",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 972,
+      "url": "https://issues.chromium.org/action/issues/40086858/attachments/53356482?download=true",
+      "local_path": "attachments/PoC.rar"
+    },
+    {
+      "id": 53356523,
+      "filename": "694382_Mar_28.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1481529,
+      "url": "https://issues.chromium.org/action/issues/40086858/attachments/53356523?download=true",
+      "local_path": "attachments/694382_Mar_28.mp4"
+    },
+    {
+      "id": 53356541,
+      "filename": "Recording #6.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 705627,
+      "url": "https://issues.chromium.org/action/issues/40086858/attachments/53356541?download=true",
+      "local_path": "attachments/Recording #6.mp4"
+    },
+    {
+      "id": 53356550,
+      "filename": "UAF.html",
+      "mime_type": "text/plain",
+      "size_bytes": 348,
+      "url": "https://issues.chromium.org/action/issues/40086858/attachments/53356550?download=true",
+      "local_path": "attachments/UAF.html"
+    },
+    {
+      "id": 53356594,
+      "filename": "testcase.html",
+      "mime_type": "text/plain",
+      "size_bytes": 112,
+      "url": "https://issues.chromium.org/action/issues/40086858/attachments/53356594?download=true",
+      "local_path": "attachments/testcase_53356594.html"
+    },
+    {
+      "id": 53356595,
+      "filename": "Recording #7.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 568736,
+      "url": "https://issues.chromium.org/action/issues/40086858/attachments/53356595?download=true",
+      "local_path": "attachments/Recording #7.mp4"
+    }
+  ],
+  "update_count": 76,
+  "description_snippet": "**VERSION**   \nChrome Version: 58.0.3018.0 (Build officiel) canary (64 bits)  \nOperating System: Windows 7  \n  \n**REPRODUCTION CASE**   \n1. Visit http://localhost/testcase.html  \n2. Observe an alert is being displayed at the same time try to visit https://example.com  \n3. Crash!  \n  \nCrash/1e71b6b58"
+}

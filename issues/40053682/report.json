@@ -1,0 +1,76 @@
+{
+  "id": "40053682",
+  "url": "https://issues.chromium.org/issues/40053682",
+  "title": "Heap-buffer-overflow in WebCore::previousBoundary",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2012-02-13T20:06:30+00:00",
+  "modified_date": "2018-04-25T23:28:37+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53400276,
+      "filename": "stable-buffer-overflow.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 7837,
+      "url": "https://issues.chromium.org/action/issues/40053682/attachments/53400276?download=true",
+      "local_path": "attachments/stable-buffer-overflow.txt"
+    },
+    {
+      "id": 53400277,
+      "filename": "beta-buffer-overflow.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 12736,
+      "url": "https://issues.chromium.org/action/issues/40053682/attachments/53400277?download=true",
+      "local_path": "attachments/beta-buffer-overflow.txt"
+    },
+    {
+      "id": 53400278,
+      "filename": "buffer-overflow.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1195,
+      "url": "https://issues.chromium.org/action/issues/40053682/attachments/53400278?download=true",
+      "local_path": "attachments/buffer-overflow.html"
+    },
+    {
+      "id": 53400279,
+      "filename": "buffer-overflow.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 12335,
+      "url": "https://issues.chromium.org/action/issues/40053682/attachments/53400279?download=true",
+      "local_path": "attachments/buffer-overflow.txt"
+    },
+    {
+      "id": 53400328,
+      "filename": "122146.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 16246,
+      "url": "https://issues.chromium.org/action/issues/40053682/attachments/53400328?download=true",
+      "local_path": "attachments/122146.txt"
+    },
+    {
+      "id": 53400361,
+      "filename": "buffer-overflow-reduced.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 745,
+      "url": "https://issues.chromium.org/action/issues/40053682/attachments/53400361?download=true",
+      "local_path": "attachments/buffer-overflow-reduced.html"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \n-webkit-text-security + ::first-letter + -webkit-user-modify: read-only => buffer-overflow  \n  \n**VERSION**   \nChrome Version: stable beta dev  \n  \nChromium\t19.0.1040.0 (Developer Build 121661)  \nOS\tLinux  \nWebKit\t535.21 (@107445)  \n  \nOperating System: 64bit linux"
+}

@@ -1,0 +1,92 @@
+{
+  "id": "40081155",
+  "url": "https://issues.chromium.org/issues/40081155",
+  "title": "Heap-use-after-free in blink::DateTimeEditElement::~DateTimeEditElement",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0i...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2015-01-11T17:21:14+00:00",
+  "modified_date": "2018-04-25T23:03:22+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53287274,
+      "filename": "20107_min.html",
+      "mime_type": "text/html",
+      "size_bytes": 694,
+      "url": "https://issues.chromium.org/action/issues/40081155/attachments/53287274?download=true",
+      "local_path": "attachments/20107_min.html"
+    },
+    {
+      "id": 53287317,
+      "filename": "test.html",
+      "mime_type": "text/html",
+      "size_bytes": 1018,
+      "url": "https://issues.chromium.org/action/issues/40081155/attachments/53287317?download=true",
+      "local_path": "attachments/test.html"
+    },
+    {
+      "id": 53287376,
+      "filename": "test.html",
+      "mime_type": "text/html",
+      "size_bytes": 1383,
+      "url": "https://issues.chromium.org/action/issues/40081155/attachments/53287376?download=true",
+      "local_path": "attachments/test_53287376.html"
+    },
+    {
+      "id": 53287393,
+      "filename": "step_DateTimeEditElementlayout_UAF_WRITE.html",
+      "mime_type": "text/html",
+      "size_bytes": 1434,
+      "url": "https://issues.chromium.org/action/issues/40081155/attachments/53287393?download=true",
+      "local_path": "attachments/step_DateTimeEditElementlayout_UAF_WRITE.html"
+    },
+    {
+      "id": 53287394,
+      "filename": "readonly_TimerBaseStop_nullptr.html",
+      "mime_type": "text/html",
+      "size_bytes": 1437,
+      "url": "https://issues.chromium.org/action/issues/40081155/attachments/53287394?download=true",
+      "local_path": "attachments/readonly_TimerBaseStop_nullptr.html"
+    },
+    {
+      "id": 53287395,
+      "filename": "disabled_TimerBaseStop_nullptr.html",
+      "mime_type": "text/html",
+      "size_bytes": 1437,
+      "url": "https://issues.chromium.org/action/issues/40081155/attachments/53287395?download=true",
+      "local_path": "attachments/disabled_TimerBaseStop_nullptr.html"
+    },
+    {
+      "id": 53287396,
+      "filename": "double_free_write_violation.html",
+      "mime_type": "text/html",
+      "size_bytes": 1435,
+      "url": "https://issues.chromium.org/action/issues/40081155/attachments/53287396?download=true",
+      "local_path": "attachments/double_free_write_violation.html"
+    },
+    {
+      "id": 53287431,
+      "filename": "EIP_PWNED.html",
+      "mime_type": "text/html",
+      "size_bytes": 1674,
+      "url": "https://issues.chromium.org/action/issues/40081155/attachments/53287431?download=true",
+      "local_path": "attachments/EIP_PWNED.html"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n**Please provide a brief explanation of the security issue.**   \n  \n**VERSION**   \nChrome Version: Stable, Beta, asan-win32-release-311003  \nOperating System: Windows 7 Enterprise (SP1)  \n  \n**REPRODUCTION CASE**   \nOpen the attached 20107_min.html file under ASAN build"
+}

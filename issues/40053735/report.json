@@ -1,0 +1,36 @@
+{
+  "id": "40053735",
+  "url": "https://issues.chromium.org/issues/40053735",
+  "title": "Stack-buffer-overflow at strcpy",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "js...@chromium.org",
+  "created_date": "2012-02-15T09:12:10+00:00",
+  "modified_date": "2016-10-02T20:25:05+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52935614,
+      "filename": "entryopen.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 143,
+      "url": "https://issues.chromium.org/action/issues/40053735/attachments/52935614?download=true",
+      "local_path": "attachments/entryopen.html"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nASan reports a stack buffer overflow (write of size 1) when the attached page is opened. The write is at offset 512 and the position seems to be controllable by changing the comment nesting level.  \n  \n**VERSION**   \nChrome Version: 19.0.1040.0 (Developer Build 121661)"
+}

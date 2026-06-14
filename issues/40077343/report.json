@@ -1,0 +1,60 @@
+{
+  "id": "40077343",
+  "url": "https://issues.chromium.org/issues/40077343",
+  "title": "Security: use-after-free removing a frame from its parent in a beforeload event of an OBJECT element",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cy...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2013-04-04T20:08:35+00:00",
+  "modified_date": "2018-04-25T23:14:03+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53315303,
+      "filename": "object-beforeload-frame-chrome.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 535,
+      "url": "https://issues.chromium.org/action/issues/40077343/attachments/53315303?download=true",
+      "local_path": "attachments/object-beforeload-frame-chrome.html"
+    },
+    {
+      "id": 53315304,
+      "filename": "object-beforeload-chrome.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 2891,
+      "url": "https://issues.chromium.org/action/issues/40077343/attachments/53315304?download=true",
+      "local_path": "attachments/object-beforeload-chrome.html"
+    },
+    {
+      "id": 53315578,
+      "filename": "pbject-beforeload-crash.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 523,
+      "url": "https://issues.chromium.org/action/issues/40077343/attachments/53315578?download=true",
+      "local_path": "attachments/pbject-beforeload-crash.html"
+    },
+    {
+      "id": 53315579,
+      "filename": "object-beforeload-crash-main.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 329,
+      "url": "https://issues.chromium.org/action/issues/40077343/attachments/53315579?download=true",
+      "local_path": "attachments/object-beforeload-crash-main.html"
+    }
+  ],
+  "update_count": 94,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n   Render process security vulnerability:  \n  \n   A RenderArena use-after-free happens when removing the current frame from its parent in a beforeload event attached to an OBJECT element (child of current frame body).  \n  \n   Spraying some data with JS allows a full cont"
+}

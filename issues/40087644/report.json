@@ -1,0 +1,80 @@
+{
+  "id": "40087644",
+  "url": "https://issues.chromium.org/issues/40087644",
+  "title": "Security: Chrome ᴏꜱ buffer overflow in mount.exfat-fuse after a call to malloc(0)",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P1",
+  "component": "OS>Systems",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2015-8026"
+  ],
+  "reporter": "la...@gmail.com",
+  "assignee": "be...@chromium.org",
+  "created_date": "2017-05-14T18:25:41+00:00",
+  "modified_date": "2018-01-22T21:43:25+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52968894,
+      "filename": "ᴀᴍᴅ⁶⁴ ᴘᴏᴄ for Chrome ᴏꜱ",
+      "mime_type": "text/plain",
+      "size_bytes": 116,
+      "url": "https://issues.chromium.org/action/issues/40087644/attachments/52968894?download=true",
+      "local_path": "attachments/ᴀᴍᴅ⁶⁴ ᴘᴏᴄ for Chrome ᴏꜱ"
+    },
+    {
+      "id": 52968895,
+      "filename": "core",
+      "mime_type": "text/plain",
+      "size_bytes": 520192,
+      "url": "https://issues.chromium.org/action/issues/40087644/attachments/52968895?download=true",
+      "local_path": "attachments/core"
+    },
+    {
+      "id": 52968896,
+      "filename": "annotated malloc for arbitrary address write by fetching partially corrupted pointer from heap.c",
+      "mime_type": "text/plain",
+      "size_bytes": 14467,
+      "url": "https://issues.chromium.org/action/issues/40087644/attachments/52968896?download=true",
+      "local_path": "attachments/annotated malloc for arbitrary address write by fetching partially corrupted pointer from heap.c"
+    },
+    {
+      "id": 52968897,
+      "filename": "second partition containing script data in the case of setresuid(0,0) in the ʀᴏᴘ chain.vfat",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 65537,
+      "url": "https://issues.chromium.org/action/issues/40087644/attachments/52968897?download=true",
+      "local_path": "attachments/second partition containing script data in the case of setresuid(0,0) in the ʀᴏᴘ chain.vfat"
+    },
+    {
+      "id": 52968898,
+      "filename": "partition block device that should be mounted over sbin containing modified chromeos_shutdown script and old firmware.squashfs",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2904064,
+      "url": "https://issues.chromium.org/action/issues/40087644/attachments/52968898?download=true",
+      "local_path": "attachments/partition block device that should be mounted over sbin containing modified chromeos_shutdown script and old firmware.squashfs"
+    },
+    {
+      "id": 52968899,
+      "filename": "chromiumos-overlay.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3845,
+      "url": "https://issues.chromium.org/action/issues/40087644/attachments/52968899?download=true",
+      "local_path": "attachments/chromiumos-overlay.patch"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "ATTACK SCENARIO  \nThis kind of vulnerability is best suited for targeting a single person since an exploit can only work on a single vendor firmware, but here’s the steps :  \nAn ꜱᴅ card is dropped on a car park. Preferably a large ꜱᴅ card (1Tb) in it’s vendor plastic and it’s several hundred dollars"
+}

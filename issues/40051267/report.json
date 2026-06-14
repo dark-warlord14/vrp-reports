@@ -1,0 +1,51 @@
+{
+  "id": "40051267",
+  "url": "https://issues.chromium.org/issues/40051267",
+  "title": "pdfium (XFA): wrong object type in CXFA_FFPageView::GetPageViewRect",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pd...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2020-01-16T22:34:16+00:00",
+  "modified_date": "2020-05-09T18:53:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53309460,
+      "filename": "chromium-1042915.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 938,
+      "url": "https://issues.chromium.org/action/issues/40051267/attachments/53309460?download=true",
+      "local_path": "attachments/chromium-1042915.pdf"
+    },
+    {
+      "id": 53309461,
+      "filename": "chromium-1042915.evt",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 127,
+      "url": "https://issues.chromium.org/action/issues/40051267/attachments/53309461?download=true",
+      "local_path": "attachments/chromium-1042915.evt"
+    }
+  ],
+  "update_count": 28,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.130 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nxfa/fxfa/cxfa_ffpageview.cpp:123:43: runtime error: member call on address 0x563873f7b9c0 which does not point to an object of type 'CXFA_ViewLayou"
+}

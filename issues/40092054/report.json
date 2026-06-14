@@ -1,0 +1,43 @@
+{
+  "id": "40092054",
+  "url": "https://issues.chromium.org/issues/40092054",
+  "title": "Security: Kernel Level Memory Leak as a result of GDI object creations",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2012-2848"
+  ],
+  "reporter": "br...@gmail.com",
+  "assignee": "qi...@chromium.org",
+  "created_date": "2018-07-28T01:23:02+00:00",
+  "modified_date": "2018-11-08T15:23:42+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 0.0,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 12,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53396440,
+      "filename": "issue_111617701.log",
+      "mime_type": "text/plain",
+      "size_bytes": 16026,
+      "url": "https://issues.chromium.org/action/issues/40092054/attachments/53396440?download=true",
+      "local_path": "attachments/issue_111617701.log"
+    }
+  ],
+  "update_count": 15,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nSteps to reproduce:  \n   1. enable 'select where to save downloads' feature in chrome settings so each file download prompts user for destination directory to save new file.  \n   2. visit https://script.google.com/macros/s/AKfycbzGfimeGFEvigB66-uW5id2-JeDGmfoNcudh2n2G"
+}

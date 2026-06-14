@@ -1,0 +1,44 @@
+{
+  "id": "40080450",
+  "url": "https://issues.chromium.org/issues/40080450",
+  "title": "Heap-use-after-free in CPDF_ImageObject::~CPDF_ImageObject",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "ju...@foxitsoftware.com",
+  "created_date": "2014-09-13T18:53:44+00:00",
+  "modified_date": "2016-10-02T20:09:11+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53179144,
+      "filename": "chrome-heap-use-after-free-CPDFImageIsInline9.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 975716,
+      "url": "https://issues.chromium.org/action/issues/40080450/attachments/53179144?download=true",
+      "local_path": "attachments/chrome-heap-use-after-free-CPDFImageIsInline9.pdf"
+    },
+    {
+      "id": 53179224,
+      "filename": "foo.cc",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 422,
+      "url": "https://issues.chromium.org/action/issues/40080450/attachments/53179224?download=true",
+      "local_path": "attachments/foo.cc"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "Tested on:\r\n\r\nOS: Ubuntu 12.04\r\n\r\nChromium: 39.0.2157.0 (Developer Build 67548025123b035f4beacfea3d948e1a1b8eba5b-refs/heads/master@{#294624})\r\n\r\nYou have to load the pdf into Chrome and refresh the tab to reproduce the issue.\r\n\r\nASAN-report:\r\n\r\n==21750==ERROR: AddressSanitizer: heap-use-after-fre"
+}

@@ -1,0 +1,94 @@
+{
+  "id": "40058049",
+  "url": "https://issues.chromium.org/issues/40058049",
+  "title": "Application crashes on Safety warning page when returning to page",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "UI>Browser>Interstitials, UI>Browser>Navigation>BFCache",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "re...@gmail.com",
+  "assignee": "fe...@chromium.org",
+  "created_date": "2021-11-28T06:04:20+00:00",
+  "modified_date": "2022-06-21T17:33:20+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53262180,
+      "filename": "PoC.html",
+      "mime_type": "text/plain",
+      "size_bytes": 318,
+      "url": "https://issues.chromium.org/action/issues/40058049/attachments/53262180?download=true",
+      "local_path": "attachments/PoC.html"
+    },
+    {
+      "id": 53262181,
+      "filename": "Chromium_Crash_Bug.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 13081696,
+      "url": "https://issues.chromium.org/action/issues/40058049/attachments/53262181?download=true",
+      "local_path": "attachments/Chromium_Crash_Bug.mp4"
+    },
+    {
+      "id": 53262182,
+      "filename": "Chromium_RESULT_CODE_KILLED_BAD_MESSAGE.png",
+      "mime_type": "image/png",
+      "size_bytes": 337330,
+      "url": "https://issues.chromium.org/action/issues/40058049/attachments/53262182?download=true",
+      "local_path": "attachments/Chromium_RESULT_CODE_KILLED_BAD_MESSAGE.png"
+    },
+    {
+      "id": 53262216,
+      "filename": "1274308 - No issue.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2148723,
+      "url": "https://issues.chromium.org/action/issues/40058049/attachments/53262216?download=true",
+      "local_path": "attachments/1274308 - No issue.mp4"
+    },
+    {
+      "id": 53262237,
+      "filename": "Chromium_Crash_Bug_2.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 14129093,
+      "url": "https://issues.chromium.org/action/issues/40058049/attachments/53262237?download=true",
+      "local_path": "attachments/Chromium_Crash_Bug_2.mp4"
+    },
+    {
+      "id": 53262297,
+      "filename": "1274308-96.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 10335041,
+      "url": "https://issues.chromium.org/action/issues/40058049/attachments/53262297?download=true",
+      "local_path": "attachments/1274308-96.mp4"
+    },
+    {
+      "id": 53262298,
+      "filename": "1274308-101.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4995928,
+      "url": "https://issues.chromium.org/action/issues/40058049/attachments/53262298?download=true",
+      "local_path": "attachments/1274308-101.mp4"
+    },
+    {
+      "id": 53262320,
+      "filename": "1274308-100.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4678289,
+      "url": "https://issues.chromium.org/action/issues/40058049/attachments/53262320?download=true",
+      "local_path": "attachments/1274308-100.mp4"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/96.0.4664.45 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Open the attached “PoC.html” HTML document.\r\n2. Click “Click me” in the web page.\r\n3. When the Safety warning page is displayed, enter"
+}

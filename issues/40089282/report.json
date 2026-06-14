@@ -1,0 +1,51 @@
+{
+  "id": "40089282",
+  "url": "https://issues.chromium.org/issues/40089282",
+  "title": "Security: Whole-script confusable domain label spoofing (Cyrillic)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Omnibox, UI>Internationalization",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "js...@chromium.org",
+  "created_date": "2017-10-12T01:18:36+00:00",
+  "modified_date": "2018-10-05T01:13:03+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53152355,
+      "filename": "Windows10-Chrome63.png",
+      "mime_type": "image/png",
+      "size_bytes": 7785,
+      "url": "https://issues.chromium.org/action/issues/40089282/attachments/53152355?download=true",
+      "local_path": "attachments/Windows10-Chrome63.png"
+    },
+    {
+      "id": 53152447,
+      "filename": "Screen Shot 2017-12-11 at 23.56.23.png",
+      "mime_type": "image/png",
+      "size_bytes": 165404,
+      "url": "https://issues.chromium.org/action/issues/40089282/attachments/53152447?download=true",
+      "local_path": "attachments/Screen Shot 2017-12-11 at 23.56.23.png"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "VERSION\r\nChrome Version: 63.0.3236.0 (Official Build) canary (64-bit)\r\nOperating System: Mac\r\n\r\nREPRODUCTION CASE\r\n\r\nhttp://xn--c1ad2baa8a0g.com >> \\u0442\\u0448\\u0456\\u0442\\u0442\\u0435\\u0433.com >> тшіттег.com"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "40050142",
+  "url": "https://issues.chromium.org/issues/40050142",
+  "title": "Use-after-free in WebM at decode_mb_mode",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals, Internals>Media",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "rb...@google.com",
+  "created_date": "2011-10-15T18:16:38+00:00",
+  "modified_date": "2016-10-02T20:23:52+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53357510,
+      "filename": "uaf.webm",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 255989,
+      "url": "https://issues.chromium.org/action/issues/40050142/attachments/53357510?download=true",
+      "local_path": "attachments/uaf.webm"
+    },
+    {
+      "id": 53357540,
+      "filename": "0001-vp8-fix-up-handling-of-segmentation_maps-in-referenc.patch",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 7475,
+      "url": "https://issues.chromium.org/action/issues/40050142/attachments/53357540?download=true",
+      "local_path": "attachments/0001-vp8-fix-up-handling-of-segmentation_maps-in-referenc.patch"
+    },
+    {
+      "id": 53357550,
+      "filename": "0001-vp8-fix-up-handling-of-segmentation_maps-in-referenc.patch",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 7589,
+      "url": "https://issues.chromium.org/action/issues/40050142/attachments/53357550?download=true",
+      "local_path": "attachments/0001-vp8-fix-up-handling-of-segmentation_maps-in-referenc_53357550.patch"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nASAN reports a use-after-free when the attached video is played. Reporting as a security bug based on bug type.  \n  \n**VERSION**   \nChrome Version: 16.0.910.0 (Developer Build 105656)  \nOperating System: Linux (Debian 6.0.3, x84_64)  \n  \n**REPRODUCTION CASE**   \n $ chrom"
+}

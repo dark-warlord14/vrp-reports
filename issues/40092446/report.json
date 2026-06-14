@@ -1,0 +1,29 @@
+{
+  "id": "40092446",
+  "url": "https://issues.chromium.org/issues/40092446",
+  "title": "DCHECK failure in !array_buffer_transfer_map_.Find(array_buffer) in value-serializer.cc",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "bi...@chromium.org",
+  "created_date": "2018-09-12T21:24:39+00:00",
+  "modified_date": "2018-12-22T15:23:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3500.0,
+  "reward_amount_meta": 3500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 29,
+  "description_snippet": "Detailed report: https://clusterfuzz.com/testcase?key=4692396494028800\n\nFuzzer: decoder_langfuzz\nJob Type: linux_asan_d8_dbg\nPlatform Id: linux\n\nCrash Type: DCHECK failure\nCrash Address: \nCrash State:\n  !array_buffer_transfer_map_.Find(array_buffer) in value-serializer.cc\n  \nSanitizer: address (ASAN"
+}

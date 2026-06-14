@@ -1,0 +1,38 @@
+{
+  "id": "40081904",
+  "url": "https://issues.chromium.org/issues/40081904",
+  "title": "Security: spell checking dictionaries are fetched over HTTP, and large responses lead to a crash",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Language>Spellcheck",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2015-1288"
+  ],
+  "reporter": "[Deleted User]",
+  "assignee": "gr...@chromium.org",
+  "created_date": "2015-04-21T14:11:09+00:00",
+  "modified_date": "2018-07-28T14:25:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53229303,
+      "filename": "spell-check-downloader-crash.png",
+      "mime_type": "image/png",
+      "size_bytes": 150084,
+      "url": "https://issues.chromium.org/action/issues/40081904/attachments/53229303?download=true",
+      "local_path": "attachments/spell-check-downloader-crash.png"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThis bug is very similar (but different) to another that was worked recently, https://code.google.com/p/chromium/issues/detail?id=477680  \n  \nThis time the insecure URL is used when downloading spell checking dictionaries.  \n  \nThe code that needs to be updated to use"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "40085084",
+  "url": "https://issues.chromium.org/issues/40085084",
+  "title": "Browser crash @ JavaScriptAppModalDialog::Cleanup()",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals, UI>Browser>TabContents",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "av...@gmail.com",
+  "assignee": "aa...@chromium.org",
+  "created_date": "2010-11-19T09:13:53+00:00",
+  "modified_date": "2016-10-02T20:20:12+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52944894,
+      "filename": "ChromeCrashOnbeforeunload.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 5434982,
+      "url": "https://issues.chromium.org/action/issues/40085084/attachments/52944894?download=true",
+      "local_path": "attachments/ChromeCrashOnbeforeunload.zip"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "Chrome Version       : 7.0.517.44  \nURLs (if applicable) : http://4su.ru/index.html  \n**Other browsers tested:**   \n**Add OK or FAIL after other browsers where you have tested this issue:**   \n     Safari 5: OK  \n  Firefox 3.x: OK  \n       IE 7/8: OK  \n  \n**What steps will reproduce the problem?**"
+}

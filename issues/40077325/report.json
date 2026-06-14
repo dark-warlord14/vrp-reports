@@ -1,0 +1,196 @@
+{
+  "id": "40077325",
+  "url": "https://issues.chromium.org/issues/40077325",
+  "title": "Security: u-a-f in shared worker process in Allow{IndexedDB,FileSystem}MainThreadBridge",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>Storage>IndexedDB",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "th...@gmail.com",
+  "assignee": "me...@chromium.org",
+  "created_date": "2013-04-01T21:58:29+00:00",
+  "modified_date": "2018-04-25T23:14:05+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1337.0,
+  "reward_amount_meta": 1337.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53349081,
+      "filename": "IDB_SW_tot_XP_trace.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 121290,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349081?download=true",
+      "local_path": "attachments/IDB_SW_tot_XP_trace.txt"
+    },
+    {
+      "id": 53349082,
+      "filename": "SW_tot_7_trace.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 94980,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349082?download=true",
+      "local_path": "attachments/SW_tot_7_trace.txt"
+    },
+    {
+      "id": 53349083,
+      "filename": "IDB_SW_stable_XP_trace.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 149259,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349083?download=true",
+      "local_path": "attachments/IDB_SW_stable_XP_trace.txt"
+    },
+    {
+      "id": 53349084,
+      "filename": "IDB_SW_small_repro.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 265,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349084?download=true",
+      "local_path": "attachments/IDB_SW_small_repro.html"
+    },
+    {
+      "id": 53349134,
+      "filename": "GetCookieSettings_crash_incognito_stable.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 16757,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349134?download=true",
+      "local_path": "attachments/GetCookieSettings_crash_incognito_stable.txt"
+    },
+    {
+      "id": 53349135,
+      "filename": "GetCookieSettings_crash_normal_ToT.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 91345,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349135?download=true",
+      "local_path": "attachments/GetCookieSettings_crash_normal_ToT.txt"
+    },
+    {
+      "id": 53349136,
+      "filename": "GetURLRequestContext_crash.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 12615,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349136?download=true",
+      "local_path": "attachments/GetURLRequestContext_crash.txt"
+    },
+    {
+      "id": 53349137,
+      "filename": "GetCookieSettings_crash_normal_stable_txt.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 123886,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349137?download=true",
+      "local_path": "attachments/GetCookieSettings_crash_normal_stable_txt.txt"
+    },
+    {
+      "id": 53349145,
+      "filename": "fs_repro.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 410,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349145?download=true",
+      "local_path": "attachments/fs_repro.html"
+    },
+    {
+      "id": 53349146,
+      "filename": "fs_asan_crash.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 11328,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349146?download=true",
+      "local_path": "attachments/fs_asan_crash.txt"
+    },
+    {
+      "id": 53349161,
+      "filename": "shared_worker_crashes.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 27064,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349161?download=true",
+      "local_path": "attachments/shared_worker_crashes.txt"
+    },
+    {
+      "id": 53349208,
+      "filename": "225546_websockets_full_browser_crash.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 51820,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349208?download=true",
+      "local_path": "attachments/225546_websockets_full_browser_crash.txt"
+    },
+    {
+      "id": 53349211,
+      "filename": "225546_xhr_crash.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 78951,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349211?download=true",
+      "local_path": "attachments/225546_xhr_crash.txt"
+    },
+    {
+      "id": 53349220,
+      "filename": "websockets_new_browser_crash.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 65617,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349220?download=true",
+      "local_path": "attachments/websockets_new_browser_crash.txt"
+    },
+    {
+      "id": 53349224,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349224?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53349226,
+      "filename": "websockets_purecall_browser_crash.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 79918,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349226?download=true",
+      "local_path": "attachments/websockets_purecall_browser_crash.txt"
+    },
+    {
+      "id": 53349227,
+      "filename": "WebSocket_browser_crash_repro.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 568,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349227?download=true",
+      "local_path": "attachments/WebSocket_browser_crash_repro.html"
+    },
+    {
+      "id": 53349233,
+      "filename": "XMLHttpRequest_worker_crash_repro.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 599,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349233?download=true",
+      "local_path": "attachments/XMLHttpRequest_worker_crash_repro.html"
+    },
+    {
+      "id": 53349268,
+      "filename": "SharedWorker_Internal_field_out_of_bounds_crash_repro.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 160,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349268?download=true",
+      "local_path": "attachments/SharedWorker_Internal_field_out_of_bounds_crash_repro.html"
+    },
+    {
+      "id": 53349286,
+      "filename": "Debug_SharedWorker_reloading_crash_trace.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 11139,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349286?download=true",
+      "local_path": "attachments/Debug_SharedWorker_reloading_crash_trace.txt"
+    },
+    {
+      "id": 53349287,
+      "filename": "WebSQL_browser_dangerous_mask_break_crash_repro.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 294,
+      "url": "https://issues.chromium.org/action/issues/40077325/attachments/53349287?download=true",
+      "local_path": "attachments/WebSQL_browser_dangerous_mask_break_crash_repro.html"
+    }
+  ],
+  "update_count": 70,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nChrome crashes in commonClient->allowIndexedDB(name) (AllowIndexedDBMainThreadBridge::allowIndexedDBTask) with a zero'd ScriptExecutionContext when an IDB open, or deleteDatabase call is used in a shared worker with a location.reload call in its onmessage event.  \n  \nThe"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "40087592",
+  "url": "https://issues.chromium.org/issues/40087592",
+  "title": "Heap-use-after-free in blink::VisualRectForDisplayItem",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Paint",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "ch...@chromium.org",
+  "created_date": "2017-05-09T05:54:02+00:00",
+  "modified_date": "2018-07-04T01:21:35+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2500.0,
+  "reward_amount_meta": 2500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53417455,
+      "filename": "minimized.html",
+      "mime_type": "text/plain",
+      "size_bytes": 305,
+      "url": "https://issues.chromium.org/action/issues/40087592/attachments/53417455?download=true",
+      "local_path": "attachments/minimized.html"
+    },
+    {
+      "id": 53417508,
+      "filename": "test.html",
+      "mime_type": "text/plain",
+      "size_bytes": 288,
+      "url": "https://issues.chromium.org/action/issues/40087592/attachments/53417508?download=true",
+      "local_path": "attachments/test.html"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "Detailed report: https://clusterfuzz.com/testcase?key=4917785875709952\n\nFuzzer: miaubiz_svg_fuzzer\nJob Type: windows_asan_chrome_no_sandbox\nPlatform Id: windows\n\nCrash Type: Heap-use-after-free READ 4\nCrash Address: 0x07689a80\nCrash State:\n  blink::VisualRectForDisplayItem\n  blink::PaintController::"
+}

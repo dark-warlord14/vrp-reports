@@ -1,0 +1,44 @@
+{
+  "id": "40080210",
+  "url": "https://issues.chromium.org/issues/40080210",
+  "title": "V8 Runtime_ArrayConcat uninitialized memory leak",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ju...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2014-08-13T18:15:40+00:00",
+  "modified_date": "2018-04-25T23:06:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4500.0,
+  "reward_amount_meta": 4500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53100747,
+      "filename": "leak.html",
+      "mime_type": "text/html",
+      "size_bytes": 855,
+      "url": "https://issues.chromium.org/action/issues/40080210/attachments/53100747?download=true",
+      "local_path": "attachments/leak.html"
+    },
+    {
+      "id": 53100748,
+      "filename": "leak.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2925,
+      "url": "https://issues.chromium.org/action/issues/40080210/attachments/53100748?download=true",
+      "local_path": "attachments/leak.patch"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/36.0.1985.125 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nRuntime_ArrayConcat fast double case allocates an uninitialized array:\r\n\r\n  Handle<FixedArrayBase> storage =\r\n      isolate->factory()->NewFixedDou"
+}

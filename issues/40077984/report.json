@@ -1,0 +1,44 @@
+{
+  "id": "40077984",
+  "url": "https://issues.chromium.org/issues/40077984",
+  "title": "Heap-use-after-free in WebCore::XMLDocumentParser::append",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@gmail.com",
+  "assignee": "pd...@chromium.org",
+  "created_date": "2013-08-25T10:33:56+00:00",
+  "modified_date": "2018-04-25T23:11:43+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53197195,
+      "filename": "crash.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 13821,
+      "url": "https://issues.chromium.org/action/issues/40077984/attachments/53197195?download=true",
+      "local_path": "attachments/crash.zip"
+    },
+    {
+      "id": 53197196,
+      "filename": "stack.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 17806,
+      "url": "https://issues.chromium.org/action/issues/40077984/attachments/53197196?download=true",
+      "local_path": "attachments/stack.txt"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe attached testcase crashes the ASAN build of chrome.  \n  \n**VERSION**   \nChrome Version: asan-symbolized-linux-release-219161  \nOperating System: linux 64-bit  \n  \n**REPRODUCTION CASE**   \nThe testcase is attached in crash.zip as it requires multiple files.  \n  \n**FOR"
+}

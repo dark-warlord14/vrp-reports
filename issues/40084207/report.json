@@ -1,0 +1,52 @@
+{
+  "id": "40084207",
+  "url": "https://issues.chromium.org/issues/40084207",
+  "title": "Security: Heap-use-after-free in RuntimeCustomBindings::GetExtensionViews",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "ro...@robwu.nl",
+  "created_date": "2016-04-29T23:37:13+00:00",
+  "modified_date": "2018-04-25T22:52:32+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "reward_amount_meta": 1500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53330254,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 162,
+      "url": "https://issues.chromium.org/action/issues/40084207/attachments/53330254?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53330255,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1745,
+      "url": "https://issues.chromium.org/action/issues/40084207/attachments/53330255?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53330256,
+      "filename": "asan-uaf-getViews-50.0.2661.75.log",
+      "mime_type": "text/plain",
+      "size_bytes": 28358,
+      "url": "https://issues.chromium.org/action/issues/40084207/attachments/53330256?download=true",
+      "local_path": "attachments/asan-uaf-getViews-50.0.2661.75.log"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "Chrome version: 50.0.2661.75\r\n\r\nRuntimeCustomBindings::GetExtensionViews retrieves a vector of RenderFrame*s of the current extension, and stores each item in a v8::Array. But the extension can intercept the setter for a numeric index (e.g. 0), destroy the RenderFrame and cause a UAF. Oops.\r\n\r\nTo re"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "40080305",
+  "url": "https://issues.chromium.org/issues/40080305",
+  "title": "Heap-buffer-overflow in CPDF_LabCS::TranslateImageLine",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@gmail.com",
+  "assignee": "bo...@foxitsoftware.com",
+  "created_date": "2014-08-27T15:57:30+00:00",
+  "modified_date": "2016-10-02T20:09:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53322428,
+      "filename": "repro.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 91775,
+      "url": "https://issues.chromium.org/action/issues/40080305/attachments/53322428?download=true",
+      "local_path": "attachments/repro.pdf"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n=================================================================  \n==54031==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x6160000179ee at pc 0x0000005671ab bp 0x7ffff7330030 sp 0x7ffff7330028  \nWRITE of size 1 at 0x6160000179ee thread T0  \n    #0 0x5671aa i"
+}

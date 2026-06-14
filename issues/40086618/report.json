@@ -1,0 +1,92 @@
+{
+  "id": "40086618",
+  "url": "https://issues.chromium.org/issues/40086618",
+  "title": "Destroying nextblock in RenderBlock::removeChild can cause oldChild and nextblock's next sibling to be merged.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2011-01-03T03:32:15+00:00",
+  "modified_date": "2016-10-02T20:20:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53336551,
+      "filename": "0.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1129,
+      "url": "https://issues.chromium.org/action/issues/40086618/attachments/53336551?download=true",
+      "local_path": "attachments/0.html"
+    },
+    {
+      "id": 53336552,
+      "filename": "1.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1103,
+      "url": "https://issues.chromium.org/action/issues/40086618/attachments/53336552?download=true",
+      "local_path": "attachments/1.html"
+    },
+    {
+      "id": 53336553,
+      "filename": "0_gdb.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 10571,
+      "url": "https://issues.chromium.org/action/issues/40086618/attachments/53336553?download=true",
+      "local_path": "attachments/0_gdb.txt"
+    },
+    {
+      "id": 53336554,
+      "filename": "1_valgrind.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 7588,
+      "url": "https://issues.chromium.org/action/issues/40086618/attachments/53336554?download=true",
+      "local_path": "attachments/1_valgrind.txt"
+    },
+    {
+      "id": 53336555,
+      "filename": "0_valgrind.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 6512,
+      "url": "https://issues.chromium.org/action/issues/40086618/attachments/53336555?download=true",
+      "local_path": "attachments/0_valgrind.txt"
+    },
+    {
+      "id": 53336556,
+      "filename": "1_gdb.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 14863,
+      "url": "https://issues.chromium.org/action/issues/40086618/attachments/53336556?download=true",
+      "local_path": "attachments/1_gdb.txt"
+    },
+    {
+      "id": 53336583,
+      "filename": "repro_server.py",
+      "mime_type": "text/x-pascal; charset=us-ascii",
+      "size_bytes": 17334,
+      "url": "https://issues.chromium.org/action/issues/40086618/attachments/53336583?download=true",
+      "local_path": "attachments/repro_server.py"
+    },
+    {
+      "id": 53336584,
+      "filename": "chrome.dll!WebCore..RenderObject..markContainingBlocksForLayout ExecAV@Arbitrary (973d3e84ba8b317bb30c1e0dd47e9948).repro.pickle.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 8685,
+      "url": "https://issues.chromium.org/action/issues/40086618/attachments/53336584?download=true",
+      "local_path": "attachments/chrome.dll!WebCore..RenderObject..markContainingBlocksForLayout ExecAV@Arbitrary (973d3e84ba8b317bb30c1e0dd47e9948).repro.pickle.zip"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nTwo separate HTML files have been attached which each trigger a jump to null in the 8.0.552.224 Ubuntu 10.10 release of Chromium. In each case, a small number of DOM nodes are created, appended to a document, and removed. When removing certain nodes, a jump to null is tr"
+}

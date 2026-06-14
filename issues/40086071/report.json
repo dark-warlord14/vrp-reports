@@ -1,0 +1,36 @@
+{
+  "id": "40086071",
+  "url": "https://issues.chromium.org/issues/40086071",
+  "title": "Security: Universal XSS by polluting private scripts with named properties",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Bindings",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "ha...@chromium.org",
+  "created_date": "2016-11-24T23:00:33+00:00",
+  "modified_date": "2018-04-25T22:48:09+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "reward_amount_meta": 8000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53333795,
+      "filename": "exploit.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1629,
+      "url": "https://issues.chromium.org/action/issues/40086071/attachments/53333795?download=true",
+      "local_path": "attachments/exploit.zip"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen a private script method is invoked, a ScriptForbiddenScope::AllowUserAgentScript scope is set up to allow running the internal script. It is possible to exploit this scope to execute user code here:  \n  \n----------------  \nstatic v8::Local<v8::Value> compileAndRunPr"
+}

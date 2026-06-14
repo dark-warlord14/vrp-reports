@@ -1,0 +1,44 @@
+{
+  "id": "40077822",
+  "url": "https://issues.chromium.org/issues/40077822",
+  "title": "Heap-use-after-free in WebCore::RootInlineBox::closestLeafChildForPoint",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "[Deleted User]",
+  "created_date": "2013-07-21T05:05:10+00:00",
+  "modified_date": "2016-10-02T20:17:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53243417,
+      "filename": "stack",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 18502,
+      "url": "https://issues.chromium.org/action/issues/40077822/attachments/53243417?download=true",
+      "local_path": "attachments/stack"
+    },
+    {
+      "id": 53243418,
+      "filename": "test.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 2725,
+      "url": "https://issues.chromium.org/action/issues/40077822/attachments/53243418?download=true",
+      "local_path": "attachments/test.html"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "Detailed report: https://cluster-fuzz.appspot.com/testcase?key=4722518136979456\n\nFuzzer: Miaubiz_css_fuzzer\n\nCrash Type: Heap-use-after-free READ 8\nCrash Address: 0x60e00003dfc0\nCrash State:\n  - crash stack -\n  WebCore::RootInlineBox::closestLeafChildForPoint\n  WebCore::previousLinePosition\n  - free"
+}

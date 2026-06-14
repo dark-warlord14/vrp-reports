@@ -1,0 +1,62 @@
+{
+  "id": "40077105",
+  "url": "https://issues.chromium.org/issues/40077105",
+  "title": "Security: Possible path traversal in file_util::AbsolutePath (Windows XP/2K3)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Core",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "kr...@gmail.com",
+  "assignee": "js...@chromium.org",
+  "created_date": "2013-03-11T18:37:01+00:00",
+  "modified_date": "2018-04-25T23:14:28+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1337.0,
+  "reward_amount_meta": 1337.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52984901,
+      "filename": "test1.cpp",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 407,
+      "url": "https://issues.chromium.org/action/issues/40077105/attachments/52984901?download=true",
+      "local_path": "attachments/test1.cpp"
+    },
+    {
+      "id": 52984902,
+      "filename": "Clipboard01.jpg",
+      "mime_type": "image/jpeg; charset=binary",
+      "size_bytes": 85065,
+      "url": "https://issues.chromium.org/action/issues/40077105/attachments/52984902?download=true",
+      "local_path": "attachments/Clipboard01.jpg"
+    },
+    {
+      "id": 52984903,
+      "filename": "src-file_util_AbsolutePath.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 1396,
+      "url": "https://issues.chromium.org/action/issues/40077105/attachments/52984903?download=true",
+      "local_path": "attachments/src-file_util_AbsolutePath.txt"
+    },
+    {
+      "id": 52984970,
+      "filename": "Chrome-on-WXP-r175641.jpg",
+      "mime_type": "image/jpeg; charset=binary",
+      "size_bytes": 301465,
+      "url": "https://issues.chromium.org/action/issues/40077105/attachments/52984970?download=true",
+      "local_path": "attachments/Chrome-on-WXP-r175641.jpg"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThere is a possible path traversal in implementation of file_util::AbsolutePath under Windows (XP/2K3).  \nThis implementation uses _wfullpath http://msdn.microsoft.com/en-us/library/506720ff(v=vs.80).aspx  \nwhich internally calls GetFullPathNameW http://msdn.microsoft.co"
+}

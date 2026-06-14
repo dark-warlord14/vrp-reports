@@ -1,0 +1,32 @@
+{
+  "id": "40089401",
+  "url": "https://issues.chromium.org/issues/40089401",
+  "title": "SPAKE password-scalar not multiplied by 8",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Unknown",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gh...@gmail.com",
+  "assignee": "ag...@chromium.org",
+  "created_date": "2017-10-25T03:55:56+00:00",
+  "modified_date": "2020-02-04T17:27:31+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 51,
+  "description_snippet": "VULNERABILITY DETAILS\r\n\r\nThe M and N constants used by the BoringSSL SPAKE code (crypto/curve25519/spake25519.c) do not appear to be in the prime-order subgroup of the generator:\r\n\r\n$ python -i ed25519.py \r\n>>> N = decodepoint('10e3df0ae37d8e7a99b5fe74b44672103dbddcbd06af680d71329a11693bc778'.decode"
+}

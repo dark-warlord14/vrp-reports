@@ -1,0 +1,108 @@
+{
+  "id": "40088588",
+  "url": "https://issues.chromium.org/issues/40088588",
+  "title": "(WebCore::RenderObjectChildList::destroyLeftoverChildren) Use-after-free with nesting ruby tag and css propierties",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ja...@gmail.com",
+  "assignee": "ro...@gmail.com",
+  "created_date": "2011-03-07T21:37:57+00:00",
+  "modified_date": "2018-04-26T00:13:24+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53159534,
+      "filename": "poc_fuzz.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 112786,
+      "url": "https://issues.chromium.org/action/issues/40088588/attachments/53159534?download=true",
+      "local_path": "attachments/poc_fuzz.html"
+    },
+    {
+      "id": 53159535,
+      "filename": "log[poc_null_ptr.html]_stable&dev.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 17565,
+      "url": "https://issues.chromium.org/action/issues/40088588/attachments/53159535?download=true",
+      "local_path": "attachments/log[poc_null_ptr.html]_stable&dev.txt"
+    },
+    {
+      "id": 53159536,
+      "filename": "log[poc_reduced.html]_stable&dev.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 17063,
+      "url": "https://issues.chromium.org/action/issues/40088588/attachments/53159536?download=true",
+      "local_path": "attachments/log[poc_reduced.html]_stable&dev.txt"
+    },
+    {
+      "id": 53159537,
+      "filename": "poc_reduced.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 272,
+      "url": "https://issues.chromium.org/action/issues/40088588/attachments/53159537?download=true",
+      "local_path": "attachments/poc_reduced.html"
+    },
+    {
+      "id": 53159538,
+      "filename": "log[poc_fuzz.html]_dev.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 441,
+      "url": "https://issues.chromium.org/action/issues/40088588/attachments/53159538?download=true",
+      "local_path": "attachments/log[poc_fuzz.html]_dev.txt"
+    },
+    {
+      "id": 53159539,
+      "filename": "log[poc_fuzz.html]_stable.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 544,
+      "url": "https://issues.chromium.org/action/issues/40088588/attachments/53159539?download=true",
+      "local_path": "attachments/log[poc_fuzz.html]_stable.txt"
+    },
+    {
+      "id": 53159540,
+      "filename": "poc_null_ptr.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 252,
+      "url": "https://issues.chromium.org/action/issues/40088588/attachments/53159540?download=true",
+      "local_path": "attachments/poc_null_ptr.html"
+    },
+    {
+      "id": 53159541,
+      "filename": "full_advisory.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 23452,
+      "url": "https://issues.chromium.org/action/issues/40088588/attachments/53159541?download=true",
+      "local_path": "attachments/full_advisory.txt"
+    },
+    {
+      "id": 53159712,
+      "filename": "new_reduced.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 311,
+      "url": "https://issues.chromium.org/action/issues/40088588/attachments/53159712?download=true",
+      "local_path": "attachments/new_reduced.html"
+    },
+    {
+      "id": 53159713,
+      "filename": "new_stackframes.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 4818,
+      "url": "https://issues.chromium.org/action/issues/40088588/attachments/53159713?download=true",
+      "local_path": "attachments/new_stackframes.txt"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "==================\r\n=    ADVISORY    =\r\n==================\r\n\r\n\r\n-Title: (WebCore::RenderObjectChildList::destroyLeftoverChildren) \r\n\t\tUse-after-free with nesting ruby tag and css \r\n\t\tpropierties \r\n-OS: Windows XP SP3\r\n-Sec-severity: (probably) High\r\n-Tested on: Safari 5.0.3 (not affected) and Ch"
+}

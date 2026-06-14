@@ -1,0 +1,36 @@
+{
+  "id": "40086154",
+  "url": "https://issues.chromium.org/issues/40086154",
+  "title": "Security: Universal XSS through bypassing ScopedPageSuspender with closing windows",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "dc...@chromium.org",
+  "created_date": "2016-12-05T06:26:53+00:00",
+  "modified_date": "2018-04-25T22:48:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 8837.0,
+  "reward_amount_meta": 8837.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53407505,
+      "filename": "exploit.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3035,
+      "url": "https://issues.chromium.org/action/issues/40086154/attachments/53407505?download=true",
+      "local_path": "attachments/exploit.zip"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nScopedPageSuspender works by taking pages from Page::ordinaryPages() and marking them as suspended. When window.close() is called, the following operations are performed:  \n  \nFrom /third_party/WebKit/Source/web/ChromeClientImpl.cpp:  \n----------------  \nvoid ChromeClien"
+}

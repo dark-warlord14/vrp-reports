@@ -1,0 +1,31 @@
+{
+  "id": "40092145",
+  "url": "https://issues.chromium.org/issues/40092145",
+  "title": "Security: fullscreen UI spoof using pdf prompt",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>HTML>Dialog, UI>Browser>FullScreen",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zx...@gmail.com",
+  "assignee": "av...@chromium.org",
+  "created_date": "2018-08-10T08:32:08+00:00",
+  "modified_date": "2018-11-22T15:24:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 42,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. open http://test.au1ge.xyz/pdf.html\r\n2. cick start\r\n\r\nWhat is the expected behavior?\r\nFull screen should be kicked out\r\n\r\nWhat we"
+}

@@ -1,0 +1,75 @@
+{
+  "id": "40093382",
+  "url": "https://issues.chromium.org/issues/40093382",
+  "title": "UAP in blink::FileReaderLoader::OnStartLoading",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Storage>FileAPI",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cd...@gmail.com",
+  "assignee": "me...@chromium.org",
+  "created_date": "2018-12-11T15:48:01+00:00",
+  "modified_date": "2020-10-30T19:38:19+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53310213,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40093382/attachments/53310213?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53310214,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40093382/attachments/53310214?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53310215,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40093382/attachments/53310215?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53310216,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40093382/attachments/53310216?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53310217,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40093382/attachments/53310217?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Install Node.js include npm and express(cuz there is a node webserver)\r\n2. Make a dirctory named \"htm\" in the same dir with sw.js and put crash.h"
+}

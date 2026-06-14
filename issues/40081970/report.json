@@ -1,0 +1,110 @@
+{
+  "id": "40081970",
+  "url": "https://issues.chromium.org/issues/40081970",
+  "title": "EXTERNAL-REPORT: Windows kernel crash on invalid font",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cp...@google.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2010-07-04T07:24:13+00:00",
+  "modified_date": "2016-10-02T20:18:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1337.0,
+  "reward_amount_meta": 1337.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53062475,
+      "filename": "Bug_Report.txt",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 121062,
+      "url": "https://issues.chromium.org/action/issues/40081970/attachments/53062475?download=true",
+      "local_path": "attachments/Bug_Report.txt"
+    },
+    {
+      "id": 53062539,
+      "filename": "AdobeHeitiStd-Regular.otf.38.fuzz-1",
+      "mime_type": "data",
+      "size_bytes": 6291456,
+      "url": "https://issues.chromium.org/action/issues/40081970/attachments/53062539?download=true",
+      "local_path": "attachments/AdobeHeitiStd-Regular.otf.38.fuzz-1"
+    },
+    {
+      "id": 53062540,
+      "filename": "38.v.html",
+      "mime_type": "text/html",
+      "size_bytes": 1959,
+      "url": "https://issues.chromium.org/action/issues/40081970/attachments/53062540?download=true",
+      "local_path": "attachments/38.v.html"
+    },
+    {
+      "id": 53062541,
+      "filename": "419___0.000500___HoboStd.html",
+      "mime_type": "text/html",
+      "size_bytes": 1912,
+      "url": "https://issues.chromium.org/action/issues/40081970/attachments/53062541?download=true",
+      "local_path": "attachments/419_0.000500_HoboStd.html"
+    },
+    {
+      "id": 53062542,
+      "filename": "419___0.000500___HoboStd.otf",
+      "mime_type": "data",
+      "size_bytes": 30416,
+      "url": "https://issues.chromium.org/action/issues/40081970/attachments/53062542?download=true",
+      "local_path": "attachments/419_0.000500_HoboStd.otf"
+    },
+    {
+      "id": 53062543,
+      "filename": "38.v.html.chrome.windbg.txt",
+      "mime_type": "text/x-patch",
+      "size_bytes": 7130,
+      "url": "https://issues.chromium.org/action/issues/40081970/attachments/53062543?download=true",
+      "local_path": "attachments/38.v.html.chrome.windbg.txt"
+    },
+    {
+      "id": 53062546,
+      "filename": "AdobeHeitiStd-Regular.otf.38.fuzz-2",
+      "mime_type": "data",
+      "size_bytes": 5974808,
+      "url": "https://issues.chromium.org/action/issues/40081970/attachments/53062546?download=true",
+      "local_path": "attachments/AdobeHeitiStd-Regular.otf.38.fuzz-2"
+    },
+    {
+      "id": 53062605,
+      "filename": "HoboStd-Minimal.otf",
+      "mime_type": "data",
+      "size_bytes": 30416,
+      "url": "https://issues.chromium.org/action/issues/40081970/attachments/53062605?download=true",
+      "local_path": "attachments/HoboStd-Minimal.otf"
+    },
+    {
+      "id": 53062606,
+      "filename": "HoboStd-Original.otf",
+      "mime_type": "data",
+      "size_bytes": 30416,
+      "url": "https://issues.chromium.org/action/issues/40081970/attachments/53062606?download=true",
+      "local_path": "attachments/HoboStd-Original.otf"
+    },
+    {
+      "id": 53062616,
+      "filename": "ots_header_offsize_check.patch",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 356,
+      "url": "https://issues.chromium.org/action/issues/40081970/attachments/53062616?download=true",
+      "local_path": "attachments/ots_header_offsize_check.patch"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "The following was reported to security@. The attachment has the entire report including example files that were used to cause the crash.\r\n\r\nHi,\r\n\r\nwhen testing my OTF fuzzer, I observed the attached crash case,\r\nwhich repeatedly  loads an OTF font. !exploitable says it is\r\nexploitable. Reproducer an"
+}

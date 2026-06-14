@@ -1,0 +1,36 @@
+{
+  "id": "40085688",
+  "url": "https://issues.chromium.org/issues/40085688",
+  "title": "Security: Universal XSS via fullscreen element updates",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>SVG",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "fo...@chromium.org",
+  "created_date": "2016-10-14T03:44:43+00:00",
+  "modified_date": "2018-04-25T22:49:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53310720,
+      "filename": "exploit.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4579,
+      "url": "https://issues.chromium.org/action/issues/40085688/attachments/53310720?download=true",
+      "local_path": "attachments/exploit.zip"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nFrom /third_party/WebKit/Source/core/dom/Fullscreen.cpp:  \n----------------  \nvoid Fullscreen::didEnterFullscreenForElement(Element\\* element) {  \n(...)  \n  // FIXME: This should not call updateStyleAndLayoutTree.  \n  document()->updateStyleAndLayoutTree();  \n(...)  \n}"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "40076682",
+  "url": "https://issues.chromium.org/issues/40076682",
+  "title": "Use after free in SVG path",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ho...@gmail.com",
+  "assignee": "fm...@chromium.org",
+  "created_date": "2012-12-11T12:15:20+00:00",
+  "modified_date": "2018-04-25T23:16:52+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53330218,
+      "filename": "chrome_snap_2_min.svg",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 5659,
+      "url": "https://issues.chromium.org/action/issues/40076682/attachments/53330218?download=true",
+      "local_path": "attachments/chrome_snap_2_min.svg"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nChrome freezes and crashes when it tries to load the attached SVG file. It complains to free an invalid pointer.  \n  \n**VERSION**   \nChrome Version: 23.0.1271.95 + stable  \nOperating System: Ubuntu 12.04.1 LTS, 3.5.0-030500-generic, x86_64 x86_64 x86_64 GNU/Linux  \n  \nTh"
+}

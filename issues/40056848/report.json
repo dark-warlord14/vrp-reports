@@ -1,0 +1,62 @@
+{
+  "id": "40056848",
+  "url": "https://issues.chromium.org/issues/40056848",
+  "title": "Security: Share dialog on Windows can render over address bar, window controls",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>WebShare",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "mh...@microsoft.com",
+  "created_date": "2021-08-11T03:51:08+00:00",
+  "modified_date": "2022-07-29T21:36:06+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53107265,
+      "filename": "share-shortwin.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 941717,
+      "url": "https://issues.chromium.org/action/issues/40056848/attachments/53107265?download=true",
+      "local_path": "attachments/share-shortwin.mp4"
+    },
+    {
+      "id": 53107266,
+      "filename": "share-shortwin.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1049,
+      "url": "https://issues.chromium.org/action/issues/40056848/attachments/53107266?download=true",
+      "local_path": "attachments/share-shortwin.html"
+    },
+    {
+      "id": 53107267,
+      "filename": "share-shortwin-popup.html",
+      "mime_type": "text/plain",
+      "size_bytes": 326,
+      "url": "https://issues.chromium.org/action/issues/40056848/attachments/53107267?download=true",
+      "local_path": "attachments/share-shortwin-popup.html"
+    },
+    {
+      "id": 53107345,
+      "filename": "crbug-1238631-fixed.png",
+      "mime_type": "image/png",
+      "size_bytes": 175260,
+      "url": "https://issues.chromium.org/action/issues/40056848/attachments/53107345?download=true",
+      "local_path": "attachments/crbug-1238631-fixed.png"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe navigator.share() dialog on Windows can be shown over sensitive browser UI, such as the address bar and window controls, in short windows. A malicious page can effectively trick a user into thinking the shared items (text, URL, files) are coming from a different orig"
+}

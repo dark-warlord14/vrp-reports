@@ -1,0 +1,50 @@
+{
+  "id": "40051537",
+  "url": "https://issues.chromium.org/issues/40051537",
+  "title": "Security: PDFium (XFA) Use-after-free in CXFA_FFTextEdit::UpdateFWLData",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hu...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2020-02-17T09:56:17+00:00",
+  "modified_date": "2020-05-28T18:56:28+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53079740,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 9217,
+      "url": "https://issues.chromium.org/action/issues/40051537/attachments/53079740?download=true",
+      "local_path": "attachments/poc.pdf"
+    },
+    {
+      "id": 53079741,
+      "filename": "log_crash.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 28606,
+      "url": "https://issues.chromium.org/action/issues/40051537/attachments/53079741?download=true",
+      "local_path": "attachments/log_crash.txt"
+    }
+  ],
+  "update_count": 25,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nCXFA_FFTextEdit object use-after-free in function CXFA_FFTextEdit::UpdateFWLData  \n  \n**VERSION**   \nOperating System: Windows 10 64bit  \nChrome with enabled XFA PDFium  \n  \n**REPRODUCTION CASE**   \nOpen file `poc.pdf` in chrome.exe  \n  \nDETAIL INFORMATION  \n  \nThe bug i"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "40051014",
+  "url": "https://issues.chromium.org/issues/40051014",
+  "title": "iframe sandbox allow_top_navigation_by_user_activation can be bypassed with certain extensions",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>IFrameSandbox, Platform>Extensions, UI>Browser>Navigation",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@gmail.com",
+  "assignee": "mu...@chromium.org",
+  "created_date": "2019-12-18T08:50:09+00:00",
+  "modified_date": "2020-06-04T18:59:25+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53341177,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40051014/attachments/53341177?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53341195,
+      "filename": "1035315 - ifram sandbox llow_top_navigation_by_user_activation does not work as expected - chromium - An open-source project to help move the web forward. - Monorail - Google Chrome 2019-12-19 18-44-11~1.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3172040,
+      "url": "https://issues.chromium.org/action/issues/40051014/attachments/53341195?download=true",
+      "local_path": "attachments/1035315 - ifram sandbox llow_top_navigation_by_user_activation does not work as expected - chromium - An open-source project to help move the web forward. - Monorail - Google Chrome 2019-12-19 18-44-11~1.mp4"
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": "Chrome Version       : 78.0.3904.108 (Build officiel) (64 bits) (cohort: Stable)  \n  \n**URLs (if applicable) :**  http://w3c-test.org/html/semantics/embedded-content/the-iframe-element/iframe_sandbox_allow_top_navigation_by_user_activation-manual.html  \n  \n  \n**What steps will reproduce the problem?"
+}

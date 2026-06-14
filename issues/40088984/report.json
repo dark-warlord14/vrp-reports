@@ -1,0 +1,49 @@
+{
+  "id": "40088984",
+  "url": "https://issues.chromium.org/issues/40088984",
+  "title": "Security: PDFium Out-Of-Bounds Read in CJPX_Decoder::Decode",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "rh...@chromium.org",
+  "created_date": "2017-09-12T02:43:11+00:00",
+  "modified_date": "2018-03-27T13:07:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53195134,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40088984/attachments/53195134?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53195212,
+      "filename": "OOB-Write.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 4662,
+      "url": "https://issues.chromium.org/action/issues/40088984/attachments/53195212?download=true",
+      "local_path": "attachments/OOB-Write.txt"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "VULNERABILITY DETAILS\r\n\r\nASAN Log, I'll post the details later.\r\n\r\n==14613==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x60200000ea71 at pc 0x0000009ab948 bp 0x7fffb29d2e40 sp 0x7fffb29d2e38\r\nREAD of size 1 at 0x60200000ea71 thread T0\r\n    #0 0x9ab947 in CJPX_Decoder::Decode(unsigned c"
+}

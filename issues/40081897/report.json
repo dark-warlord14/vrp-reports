@@ -1,0 +1,84 @@
+{
+  "id": "40081897",
+  "url": "https://issues.chromium.org/issues/40081897",
+  "title": "Memory corruption with crash in RenderObject::containingBlock()",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ja...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2010-06-29T16:51:59+00:00",
+  "modified_date": "2016-10-02T20:18:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53302926,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40081897/attachments/53302926?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53302927,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40081897/attachments/53302927?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53302928,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40081897/attachments/53302928?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53302976,
+      "filename": "crash.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 1166,
+      "url": "https://issues.chromium.org/action/issues/40081897/attachments/53302976?download=true",
+      "local_path": "attachments/crash.zip"
+    },
+    {
+      "id": 53302984,
+      "filename": "crash_containingBlock.html",
+      "mime_type": "text/html",
+      "size_bytes": 581,
+      "url": "https://issues.chromium.org/action/issues/40081897/attachments/53302984?download=true",
+      "local_path": "attachments/crash_containingBlock.html"
+    },
+    {
+      "id": 53302993,
+      "filename": "1.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 87,
+      "url": "https://issues.chromium.org/action/issues/40081897/attachments/53302993?download=true",
+      "local_path": "attachments/1.html"
+    },
+    {
+      "id": 53302994,
+      "filename": "2.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 94,
+      "url": "https://issues.chromium.org/action/issues/40081897/attachments/53302994?download=true",
+      "local_path": "attachments/2.html"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "I found a new bug, probably different to previous reports because I deleted of my fuzzer: keygen html tag, border-radius (and their variants) and counter-increment, etc (you know, other issues).\r\n\r\nI had problems to reproduce the issue and I didn't reduce it (I will try it with next comments)..."
+}

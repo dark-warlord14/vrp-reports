@@ -1,0 +1,78 @@
+{
+  "id": "40087467",
+  "url": "https://issues.chromium.org/issues/40087467",
+  "title": "race in base/third_party/xdg_mime (crasher)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink, Internals, Internals>Plugins",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2011-02-01T20:46:08+00:00",
+  "modified_date": "2018-04-26T00:16:12+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53406305,
+      "filename": "a.html",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 10349,
+      "url": "https://issues.chromium.org/action/issues/40087467/attachments/53406305?download=true",
+      "local_path": "attachments/a.html"
+    },
+    {
+      "id": 53406319,
+      "filename": "71586.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 8049,
+      "url": "https://issues.chromium.org/action/issues/40087467/attachments/53406319?download=true",
+      "local_path": "attachments/71586.txt"
+    },
+    {
+      "id": 53406350,
+      "filename": "71586-sort.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 6180,
+      "url": "https://issues.chromium.org/action/issues/40087467/attachments/53406350?download=true",
+      "local_path": "attachments/71586-sort.txt"
+    },
+    {
+      "id": 53406365,
+      "filename": "71586-threads.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 23882,
+      "url": "https://issues.chromium.org/action/issues/40087467/attachments/53406365?download=true",
+      "local_path": "attachments/71586-threads.txt"
+    },
+    {
+      "id": 53406377,
+      "filename": "b.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 67,
+      "url": "https://issues.chromium.org/action/issues/40087467/attachments/53406377?download=true",
+      "local_path": "attachments/b.html"
+    },
+    {
+      "id": 53406410,
+      "filename": "workaround.diff",
+      "mime_type": "text/x-diff; charset=us-ascii",
+      "size_bytes": 1566,
+      "url": "https://issues.chromium.org/action/issues/40087467/attachments/53406410?download=true",
+      "local_path": "attachments/workaround.diff"
+    }
+  ],
+  "update_count": 83,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nOpening suitable pages sometimes causes Chrome to crash at various places on startup. These kind of crashes have been happening for a while now, but have been difficult to isolate and reproduce. The last browser test run found several files which seem to trigger this fai"
+}

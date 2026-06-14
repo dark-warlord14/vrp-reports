@@ -1,0 +1,84 @@
+{
+  "id": "40082252",
+  "url": "https://issues.chromium.org/issues/40082252",
+  "title": "Security: XSS Auditor info disclosure using iframe length from different domains",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ga...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2015-06-10T20:53:47+00:00",
+  "modified_date": "2018-04-27T19:23:47+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1337.0,
+  "reward_amount_meta": 1337.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53070801,
+      "filename": "check_if_email_matches.html",
+      "mime_type": "text/html",
+      "size_bytes": 550,
+      "url": "https://issues.chromium.org/action/issues/40082252/attachments/53070801?download=true",
+      "local_path": "attachments/check_if_email_matches.html"
+    },
+    {
+      "id": 53070802,
+      "filename": "token_example.html",
+      "mime_type": "text/html",
+      "size_bytes": 2326,
+      "url": "https://issues.chromium.org/action/issues/40082252/attachments/53070802?download=true",
+      "local_path": "attachments/token_example.html"
+    },
+    {
+      "id": 53070803,
+      "filename": "test.php",
+      "mime_type": "text/plain",
+      "size_bytes": 126,
+      "url": "https://issues.chromium.org/action/issues/40082252/attachments/53070803?download=true",
+      "local_path": "attachments/test.php"
+    },
+    {
+      "id": 53070804,
+      "filename": "form.php",
+      "mime_type": "text/plain",
+      "size_bytes": 350,
+      "url": "https://issues.chromium.org/action/issues/40082252/attachments/53070804?download=true",
+      "local_path": "attachments/form.php"
+    },
+    {
+      "id": 53070805,
+      "filename": "slow_bruteforce_using_windows.php",
+      "mime_type": "text/plain",
+      "size_bytes": 639,
+      "url": "https://issues.chromium.org/action/issues/40082252/attachments/53070805?download=true",
+      "local_path": "attachments/slow_bruteforce_using_windows.php"
+    },
+    {
+      "id": 53070806,
+      "filename": "test2.php",
+      "mime_type": "text/plain",
+      "size_bytes": 140,
+      "url": "https://issues.chromium.org/action/issues/40082252/attachments/53070806?download=true",
+      "local_path": "attachments/test2.php"
+    },
+    {
+      "id": 53070807,
+      "filename": "bruteforce_uid.html",
+      "mime_type": "text/html",
+      "size_bytes": 936,
+      "url": "https://issues.chromium.org/action/issues/40082252/attachments/53070807?download=true",
+      "local_path": "attachments/bruteforce_uid.html"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUsing contentWindow.length and when the filter uses block mode you can detect if the filter has blocked the page provided there is an existing iframe on the site. You can inject fake XSS payloads and use this detection technique to see if the content has been matched. If"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "40081939",
+  "url": "https://issues.chromium.org/issues/40081939",
+  "title": "Flash use-after-free in display list handling from KEEN Team, round #2",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sc...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2015-04-25T03:10:04+00:00",
+  "modified_date": "2018-04-25T23:01:05+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53183957,
+      "filename": "UAF2.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 8851,
+      "url": "https://issues.chromium.org/action/issues/40081939/attachments/53183957?download=true",
+      "local_path": "attachments/UAF2.zip"
+    }
+  ],
+  "update_count": 19,
+  "description_snippet": "[Chromium bug variant of https://code.google.com/p/google-security-research/issues/detail?id=349 for reward consideration]\r\n\r\n---\r\nCredit is to KEEN Team.\r\n\r\n3 different PoC's in the attached zip.\r\n\r\nFiling as one bug for now; if Adobe say it's multiple different bugs, we'll treat it as such for rew"
+}

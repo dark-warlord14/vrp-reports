@@ -1,0 +1,33 @@
+{
+  "id": "40092342",
+  "url": "https://issues.chromium.org/issues/40092342",
+  "title": "Canceling a browser-initiated navigation by using the history.back function",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "ar...@chromium.org",
+  "created_date": "2018-09-03T04:55:14+00:00",
+  "modified_date": "2020-04-01T16:12:28+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 48,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nBy calling history.back after the onbeforeunload event it's possible to cancel a browser-initiated navigation and trick the user into thinking the navigation happened and that they are in the page they intended to access.  \n  \nWhile it's not possible to know which websit"
+}

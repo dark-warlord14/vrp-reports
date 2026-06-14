@@ -1,0 +1,44 @@
+{
+  "id": "40078067",
+  "url": "https://issues.chromium.org/issues/40078067",
+  "title": "Heap-use-after-free in WebCore::Node::containsIncludingHostElements",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jo...@gmail.com",
+  "assignee": "ad...@chromium.org",
+  "created_date": "2013-09-07T11:55:17+00:00",
+  "modified_date": "2018-04-25T23:11:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53083552,
+      "filename": "asan_sym.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 11199,
+      "url": "https://issues.chromium.org/action/issues/40078067/attachments/53083552?download=true",
+      "local_path": "attachments/asan_sym.txt"
+    },
+    {
+      "id": 53083553,
+      "filename": "repro.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 249,
+      "url": "https://issues.chromium.org/action/issues/40078067/attachments/53083553?download=true",
+      "local_path": "attachments/repro.html"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nReferences to a template's content are not freed when the template is destroyed. Interacting with the template's document fragment (such as appending a child) causes a crash on the latest available asan prebuild.  \n  \nCurrently crashes on a read, but I suspect I can chan"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "40060611",
+  "url": "https://issues.chromium.org/issues/40060611",
+  "title": "Heap-buffer-overflow in skia::BGRAConvolve2D",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals, Internals>Skia",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "to...@chromium.org",
+  "created_date": "2012-07-02T14:35:23+00:00",
+  "modified_date": "2016-10-02T20:23:47+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52963712,
+      "filename": "cnode0002-crashed-sp.html",
+      "mime_type": "text/html; charset=utf-8",
+      "size_bytes": 6252,
+      "url": "https://issues.chromium.org/action/issues/40060611/attachments/52963712?download=true",
+      "local_path": "attachments/cnode0002-crashed-sp.html"
+    },
+    {
+      "id": 52963759,
+      "filename": "crbug135432.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 120,
+      "url": "https://issues.chromium.org/action/issues/40060611/attachments/52963759?download=true",
+      "local_path": "attachments/crbug135432.html"
+    },
+    {
+      "id": 52963809,
+      "filename": "valgrind.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 5732,
+      "url": "https://issues.chromium.org/action/issues/40060611/attachments/52963809?download=true",
+      "local_path": "attachments/valgrind.txt"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "repro-file as attachment.\r\n\r\nChrome version: ASAN Chromium 22.0.1192.0\r\n\r\n==15000== ERROR: AddressSanitizer heap-buffer-overflow on address 0x7f0abb9d5980 at pc 0x7f0ae3c18420 bp 0x7fff49108270 sp 0x7fff49108268\r\nREAD of size 16 at 0x7f0abb9d5980 thread T0\r\n    #0 0x7f0ae3c18420 in skia::BGRAConvolv"
+}

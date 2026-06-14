@@ -1,0 +1,36 @@
+{
+  "id": "40085598",
+  "url": "https://issues.chromium.org/issues/40085598",
+  "title": "Security: Heap-use-after-free in Field::UpdateFormField",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ds...@chromium.org",
+  "created_date": "2016-10-05T13:54:47+00:00",
+  "modified_date": "2018-04-25T22:49:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52945855,
+      "filename": "testcase.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 3470,
+      "url": "https://issues.chromium.org/action/issues/40085598/attachments/52945855?download=true",
+      "local_path": "attachments/testcase.pdf"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThis is a variation of https://crbug.com/chromium/632709. This bug happens because of below mentioned code in Field::UpdateFormField method.  \n  \nstd::vector<CPDFSDK_Widget\\*> widgets;  \n    pInterForm->GetWidgets(pFormField, &widgets);  \n    int nFieldType = pFormFie"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "40094021",
+  "url": "https://issues.chromium.org/issues/40094021",
+  "title": "Security: Invalid read. SEGV on CXFA_Graphics::FillPathWithShading",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2019-02-12T10:39:37+00:00",
+  "modified_date": "2019-05-24T14:25:29+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53403751,
+      "filename": "victory_09c57a954008472cde88f8df1b860e576c0edc4f6ca18d9ebbdd543efde38fc1",
+      "mime_type": "text/plain",
+      "size_bytes": 810220,
+      "url": "https://issues.chromium.org/action/issues/40094021/attachments/53403751?download=true",
+      "local_path": "attachments/victory_09c57a954008472cde88f8df1b860e576c0edc4f6ca18d9ebbdd543efde38fc1"
+    }
+  ],
+  "update_count": 25,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nInvalid read. SEGV on CXFA_Graphics::FillPathWithShading  \n  \n**VERSION**   \ncommit 25d9272255438c45f6d91051a1092b54006eb797  \n  \n**REPRODUCTION CASE**   \n  \nOpen attached file.  \n  \nADDITIONAL INFORMATION  \n  \nRendering PDF file /workarea/samplestore/wip/pdfium/victory/"
+}

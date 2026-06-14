@@ -1,0 +1,44 @@
+{
+  "id": "40079497",
+  "url": "https://issues.chromium.org/issues/40079497",
+  "title": "Security: ASAN heap-use-after-free in SVGElement::propertyFromAttribute",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>SVG",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@gmail.com",
+  "assignee": "ko...@chromium.org",
+  "created_date": "2014-05-04T14:38:08+00:00",
+  "modified_date": "2016-10-02T20:12:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53104043,
+      "filename": "crash.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 1478,
+      "url": "https://issues.chromium.org/action/issues/40079497/attachments/53104043?download=true",
+      "local_path": "attachments/crash.zip"
+    },
+    {
+      "id": 53104044,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 20492,
+      "url": "https://issues.chromium.org/action/issues/40079497/attachments/53104044?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe attached testcase crashes the latest chromium ASAN build. ASAN output attached in asan.txt  \n  \n**VERSION**   \nChrome Version: asan-symbolized-linux-release-267662  \nOperating System: Linux  \n  \n**REPRODUCTION CASE**   \nRequires multiple files, attached in crash.zip."
+}

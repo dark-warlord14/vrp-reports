@@ -1,0 +1,196 @@
+{
+  "id": "40085478",
+  "url": "https://issues.chromium.org/issues/40085478",
+  "title": "Crash when webp image is invalid",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals, Internals>Media",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sl...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2010-12-01T18:43:54+00:00",
+  "modified_date": "2016-10-02T20:20:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53330429,
+      "filename": "original.webp",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 6237,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330429?download=true",
+      "local_path": "attachments/original.webp"
+    },
+    {
+      "id": 53330430,
+      "filename": "crash1.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 109,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330430?download=true",
+      "local_path": "attachments/crash1.html"
+    },
+    {
+      "id": 53330431,
+      "filename": "crash2.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 8438,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330431?download=true",
+      "local_path": "attachments/crash2.html"
+    },
+    {
+      "id": 53330432,
+      "filename": "bt2.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 17184,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330432?download=true",
+      "local_path": "attachments/bt2.txt"
+    },
+    {
+      "id": 53330433,
+      "filename": "bt1.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 11330,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330433?download=true",
+      "local_path": "attachments/bt1.txt"
+    },
+    {
+      "id": 53330434,
+      "filename": "crash.webp",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 6237,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330434?download=true",
+      "local_path": "attachments/crash.webp"
+    },
+    {
+      "id": 53330448,
+      "filename": "bt3.txt",
+      "mime_type": "text/x-c++; charset=utf-8",
+      "size_bytes": 47500,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330448?download=true",
+      "local_path": "attachments/bt3.txt"
+    },
+    {
+      "id": 53330462,
+      "filename": "bt2_html.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 130040,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330462?download=true",
+      "local_path": "attachments/bt2_html.txt"
+    },
+    {
+      "id": 53330463,
+      "filename": "bt3_svg.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 117921,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330463?download=true",
+      "local_path": "attachments/bt3_svg.txt"
+    },
+    {
+      "id": 53330464,
+      "filename": "bt4_svg.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 114708,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330464?download=true",
+      "local_path": "attachments/bt4_svg.txt"
+    },
+    {
+      "id": 53330465,
+      "filename": "bt1_svg.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 126704,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330465?download=true",
+      "local_path": "attachments/bt1_svg.txt"
+    },
+    {
+      "id": 53330466,
+      "filename": "bt2_direct.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 142365,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330466?download=true",
+      "local_path": "attachments/bt2_direct.txt"
+    },
+    {
+      "id": 53330467,
+      "filename": "crash2.webp",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 6237,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330467?download=true",
+      "local_path": "attachments/crash2.webp"
+    },
+    {
+      "id": 53330468,
+      "filename": "bt1_html.txt",
+      "mime_type": "text/x-c++; charset=utf-8",
+      "size_bytes": 150943,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330468?download=true",
+      "local_path": "attachments/bt1_html.txt"
+    },
+    {
+      "id": 53330469,
+      "filename": "bt1_direct.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 109762,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330469?download=true",
+      "local_path": "attachments/bt1_direct.txt"
+    },
+    {
+      "id": 53330470,
+      "filename": "bt2_svg.txt",
+      "mime_type": "text/x-c++; charset=utf-8",
+      "size_bytes": 163699,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330470?download=true",
+      "local_path": "attachments/bt2_svg.txt"
+    },
+    {
+      "id": 53330486,
+      "filename": "crash3.webp",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 11816,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330486?download=true",
+      "local_path": "attachments/crash3.webp"
+    },
+    {
+      "id": 53330487,
+      "filename": "original2.webp",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 11816,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330487?download=true",
+      "local_path": "attachments/original2.webp"
+    },
+    {
+      "id": 53330554,
+      "filename": "bt4.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 9316,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330554?download=true",
+      "local_path": "attachments/bt4.txt"
+    },
+    {
+      "id": 53330555,
+      "filename": "original4.webp",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 24712,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330555?download=true",
+      "local_path": "attachments/original4.webp"
+    },
+    {
+      "id": 53330556,
+      "filename": "crash4.webp",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 24943,
+      "url": "https://issues.chromium.org/action/issues/40085478/attachments/53330556?download=true",
+      "local_path": "attachments/crash4.webp"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "Crashes on linux 32-bit dev [9.0.587.0 (Build 66374)]\r\nI have attached repro file (crash1.html) and webp image (crash.webp).\r\nIt doesn't crash instantly. You have to refresh even more than 10 times or more to crash.\r\nIn second repro file (crash2.html) I included image in data URI - all in one.\r\nIt c"
+}

@@ -1,0 +1,102 @@
+{
+  "id": "40076366",
+  "url": "https://issues.chromium.org/issues/40076366",
+  "title": "Security: Screenshot theft using WebGL",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "Internals, Internals>GPU",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "dr...@gmail.com",
+  "assignee": "zm...@chromium.org",
+  "created_date": "2012-09-27T19:13:18+00:00",
+  "modified_date": "2016-10-02T20:22:17+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53009751,
+      "filename": "recreated.png",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 52499,
+      "url": "https://issues.chromium.org/action/issues/40076366/attachments/53009751?download=true",
+      "local_path": "attachments/recreated.png"
+    },
+    {
+      "id": 53009752,
+      "filename": "WebGL repro.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 40581,
+      "url": "https://issues.chromium.org/action/issues/40076366/attachments/53009752?download=true",
+      "local_path": "attachments/WebGL repro.zip"
+    },
+    {
+      "id": 53009753,
+      "filename": "garbage.png",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 59726,
+      "url": "https://issues.chromium.org/action/issues/40076366/attachments/53009753?download=true",
+      "local_path": "attachments/garbage.png"
+    },
+    {
+      "id": 53009773,
+      "filename": "other_example.png",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 282374,
+      "url": "https://issues.chromium.org/action/issues/40076366/attachments/53009773?download=true",
+      "local_path": "attachments/other_example.png"
+    },
+    {
+      "id": 53009835,
+      "filename": "chrome   gpu.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 28424,
+      "url": "https://issues.chromium.org/action/issues/40076366/attachments/53009835?download=true",
+      "local_path": "attachments/chrome   gpu.html"
+    },
+    {
+      "id": 53009956,
+      "filename": "lesson05.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 64525,
+      "url": "https://issues.chromium.org/action/issues/40076366/attachments/53009956?download=true",
+      "local_path": "attachments/lesson05.zip"
+    },
+    {
+      "id": 53009971,
+      "filename": "WebGL.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 45336,
+      "url": "https://issues.chromium.org/action/issues/40076366/attachments/53009971?download=true",
+      "local_path": "attachments/WebGL.zip"
+    },
+    {
+      "id": 53009972,
+      "filename": "earth.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 541599,
+      "url": "https://issues.chromium.org/action/issues/40076366/attachments/53009972?download=true",
+      "local_path": "attachments/earth.zip"
+    },
+    {
+      "id": 53009993,
+      "filename": "Screen Shot 2012-10-23 at 6.40.34 PM.png",
+      "mime_type": "image/png; charset=binary",
+      "size_bytes": 213450,
+      "url": "https://issues.chromium.org/action/issues/40076366/attachments/53009993?download=true",
+      "local_path": "attachments/Screen Shot 2012-10-23 at 6.40.34 PM.png"
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nUsing a WebGL canvas, one can get a partial screenshot of the whole computer scene, including (sometimes) areas outside/behind of the browser window, and including area from a different tab if that other tab also uses WebGL.  \n  \n**VERSION**   \n  \nChrome Versions  \n\\*"
+}

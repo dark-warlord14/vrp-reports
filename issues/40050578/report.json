@@ -1,0 +1,70 @@
+{
+  "id": "40050578",
+  "url": "https://issues.chromium.org/issues/40050578",
+  "title": "Security: 'Press Esc to exit fullscreen' covered up by a popup page",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>FullScreen",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "av...@chromium.org",
+  "created_date": "2019-10-31T02:02:56+00:00",
+  "modified_date": "2020-06-20T18:58:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53206058,
+      "filename": "fullscreen.html",
+      "mime_type": "text/plain",
+      "size_bytes": 427,
+      "url": "https://issues.chromium.org/action/issues/40050578/attachments/53206058?download=true",
+      "local_path": "attachments/fullscreen.html"
+    },
+    {
+      "id": 53206059,
+      "filename": "fullscreen2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 507,
+      "url": "https://issues.chromium.org/action/issues/40050578/attachments/53206059?download=true",
+      "local_path": "attachments/fullscreen2.html"
+    },
+    {
+      "id": 53206079,
+      "filename": "screen.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 2402903,
+      "url": "https://issues.chromium.org/action/issues/40050578/attachments/53206079?download=true",
+      "local_path": "attachments/screen.mov"
+    },
+    {
+      "id": 53206138,
+      "filename": "screen2.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 239775,
+      "url": "https://issues.chromium.org/action/issues/40050578/attachments/53206138?download=true",
+      "local_path": "attachments/screen2.mp4"
+    },
+    {
+      "id": 53206150,
+      "filename": "Screen Shot 2019-11-01 at 2.10.58 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 155820,
+      "url": "https://issues.chromium.org/action/issues/40050578/attachments/53206150?download=true",
+      "local_path": "attachments/Screen Shot 2019-11-01 at 2.10.58 PM.png"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**VERSION**   \nChrome Version: 80.0.3953.5 Canary   \nOperating System: Windows  \n  \nThis is the same as https://crbug.com/chromium/882363.  \n  \n  \n**REPRODUCTION CASE**   \n1. Go to http://1vpctucm.3cm.me/fullscreen.html  \n2. Switch http://1vpctucm.3cm.me/fullscreen.html page  \n3. Switch the popup pa"
+}

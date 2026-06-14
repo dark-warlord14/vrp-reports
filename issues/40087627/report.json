@@ -1,0 +1,36 @@
+{
+  "id": "40087627",
+  "url": "https://issues.chromium.org/issues/40087627",
+  "title": "Security: Heap-use-after-free in payments::`anonymous namespace'::SheetView::RequestFocus",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Payments",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2017-05-13T02:51:51+00:00",
+  "modified_date": "2017-08-22T13:03:54+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53194571,
+      "filename": "Recording #16.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 762317,
+      "url": "https://issues.chromium.org/action/issues/40087627/attachments/53194571?download=true",
+      "local_path": "attachments/Recording #16.mp4"
+    }
+  ],
+  "update_count": 22,
+  "description_snippet": "Chrome Version: 60.0.3097 canary\r\nOperating System: windows 7\r\n\r\nDesktop web payments crash when selecting an input field (add an address).\r\n\r\nhttps://emerald-eon.appspot.com\r\n\r\nrax=00000000217b8a00 rbx=00000000239a0ec8 rcx=00000000217b8a00\r\nrdx=6573776f7262ffff rsi=00000000215993d0 rdi=000000000f8a"
+}

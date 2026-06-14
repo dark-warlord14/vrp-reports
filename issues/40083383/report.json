@@ -1,0 +1,46 @@
+{
+  "id": "40083383",
+  "url": "https://issues.chromium.org/issues/40083383",
+  "title": "Security: Universal XSS using Flash message loop",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>Pepper",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2016-1631"
+  ],
+  "reporter": "ma...@gmail.com",
+  "assignee": "yz...@chromium.org",
+  "created_date": "2015-12-14T09:59:35+00:00",
+  "modified_date": "2021-02-25T20:00:32+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53326797,
+      "filename": "exploit.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 2686,
+      "url": "https://issues.chromium.org/action/issues/40083383/attachments/53326797?download=true",
+      "local_path": "attachments/exploit.zip"
+    },
+    {
+      "id": 53326843,
+      "filename": "poc.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 3754,
+      "url": "https://issues.chromium.org/action/issues/40083383/attachments/53326843?download=true",
+      "local_path": "attachments/poc.zip"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nFrom /content/renderer/pepper/ppb_flash_message_loop_impl.cc:  \n----------------  \nint32_t PPB_Flash_MessageLoop_Impl::InternalRun(  \n    const RunFromHostProxyCallback& callback) {  \n(...)  \n  // It is possible that the PPB_Flash_MessageLoop_Impl object has been  \n  //"
+}

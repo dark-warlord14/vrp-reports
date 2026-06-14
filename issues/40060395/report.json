@@ -83,7 +83,7 @@
       "mime_type": "text/plain",
       "size_bytes": 273,
       "url": "https://issues.chromium.org/action/issues/40060395/attachments/53155432?download=true",
-      "local_path": "attachments/poc.html"
+      "local_path": "attachments/poc_53155432.html"
     },
     {
       "id": 53155433,
@@ -91,7 +91,7 @@
       "mime_type": "text/plain",
       "size_bytes": 442,
       "url": "https://issues.chromium.org/action/issues/40060395/attachments/53155433?download=true",
-      "local_path": "attachments/sw.js"
+      "local_path": "attachments/sw_53155433.js"
     }
   ],
   "update_count": 39,

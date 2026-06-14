@@ -1,0 +1,54 @@
+{
+  "id": "40076125",
+  "url": "https://issues.chromium.org/issues/40076125",
+  "title": "Security: webgl - after running out of memory, buffer can still be written",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebGL, Internals",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2012-09-17T10:17:10+00:00",
+  "modified_date": "2018-07-29T14:02:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53093513,
+      "filename": "01.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 4311,
+      "url": "https://issues.chromium.org/action/issues/40076125/attachments/53093513?download=true",
+      "local_path": "attachments/01.txt"
+    },
+    {
+      "id": 53093514,
+      "filename": "01.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 649,
+      "url": "https://issues.chromium.org/action/issues/40076125/attachments/53093514?download=true",
+      "local_path": "attachments/01.html"
+    },
+    {
+      "id": 53093515,
+      "filename": "01-crashwrangler.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 42936,
+      "url": "https://issues.chromium.org/action/issues/40076125/attachments/53093515?download=true",
+      "local_path": "attachments/01-crashwrangler.txt"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nwhen the gpu process runs out of memory, a webgl buffer is destroyed.  \ncalling gl.bufferSubData(gl.ARRAY_BUFFER, 0x1234567, lolBuf) will still attempt to write to the buffer.  \n  \nfwiw, I have 8 gigs of ram on this computer, for ASAN a good value for medium number is"
+}

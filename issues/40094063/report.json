@@ -1,0 +1,70 @@
+{
+  "id": "40094063",
+  "url": "https://issues.chromium.org/issues/40094063",
+  "title": "Security: command line injection in Windows (--user-data-dir)",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P3",
+  "component": "Internals",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jp...@gmail.com",
+  "assignee": "gr...@chromium.org",
+  "created_date": "2019-02-17T23:40:01+00:00",
+  "modified_date": "2019-06-04T14:28:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53063188,
+      "filename": "example.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 69115,
+      "url": "https://issues.chromium.org/action/issues/40094063/attachments/53063188?download=true",
+      "local_path": "attachments/example.PNG"
+    },
+    {
+      "id": 53063189,
+      "filename": "example.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1010,
+      "url": "https://issues.chromium.org/action/issues/40094063/attachments/53063189?download=true",
+      "local_path": "attachments/example.html"
+    },
+    {
+      "id": 53063249,
+      "filename": "xss.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 13820,
+      "url": "https://issues.chromium.org/action/issues/40094063/attachments/53063249?download=true",
+      "local_path": "attachments/xss.PNG"
+    },
+    {
+      "id": 53063250,
+      "filename": "dll hijack.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 95577,
+      "url": "https://issues.chromium.org/action/issues/40094063/attachments/53063250?download=true",
+      "local_path": "attachments/dll hijack.PNG"
+    },
+    {
+      "id": 53063251,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40094063/attachments/53063251?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nChrome parses command line arguments in an insecure way in Windows. The command below demonstrates the issue (note that you must close all chrome.exe processes first):  \n  \n\"C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe\" -- \"tel:#\" --user-data-dir=\"C:\\test\""
+}

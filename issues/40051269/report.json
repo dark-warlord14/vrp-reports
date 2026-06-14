@@ -1,0 +1,41 @@
+{
+  "id": "40051269",
+  "url": "https://issues.chromium.org/issues/40051269",
+  "title": "pdfium (XFA): UAF in CXFA_Node::HasFlag",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pd...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2020-01-17T00:06:04+00:00",
+  "modified_date": "2020-04-30T18:54:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53111996,
+      "filename": "chromium-1042956.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 596,
+      "url": "https://issues.chromium.org/action/issues/40051269/attachments/53111996?download=true",
+      "local_path": "attachments/chromium-1042956.pdf"
+    }
+  ],
+  "update_count": 21,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.130 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nAddressSanitizer: heap-use-after-free on address 0x61100000701a at pc 0x55a82be2fd51 bp 0x7ffd304db380 sp 0x7ffd304db378\r\nREAD of size 2 at 0x61100"
+}

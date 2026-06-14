@@ -1,0 +1,36 @@
+{
+  "id": "40051341",
+  "url": "https://issues.chromium.org/issues/40051341",
+  "title": "PDF-reader tab-crash with editable crash address.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2011-11-16T22:18:44+00:00",
+  "modified_date": "2016-10-02T20:23:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53241862,
+      "filename": "reduced_min.pdf",
+      "mime_type": "application/pdf; charset=iso-8859-1",
+      "size_bytes": 1029,
+      "url": "https://issues.chromium.org/action/issues/40051341/attachments/53241862?download=true",
+      "local_path": "attachments/reduced_min.pdf"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nIn the attached PDF-file editing the line with content 1 1 1 will control the crash address following way.  \n  \n1 1 1 -> chrome: segfault at 3e8000003e8 ip 00007f76f9ae1762 sp 00007fff30e459f8 error 4 in libpdf.so  \n  \n1 2 1 -> chrome: segfault at 7d0000003e8 ip 00"
+}

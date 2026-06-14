@@ -1,0 +1,38 @@
+{
+  "id": "40076978",
+  "url": "https://issues.chromium.org/issues/40076978",
+  "title": "Data extraction with XSS Auditor",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ho...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2013-02-13T22:44:41+00:00",
+  "modified_date": "2020-12-03T16:14:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53312578,
+      "filename": "TXN_รหัสอ้างอิง. 202012031BC2WFdfJLkGvq9qQ.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 154386,
+      "url": "https://issues.chromium.org/action/issues/40076978/attachments/53312578?download=true",
+      "local_path": "attachments/TXN_รหัสอ้างอิง. 202012031BC2WFdfJLkGvq9qQ.jpg"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_8_2) AppleWebKit/537.17 (KHTML, like Gecko) Chrome/24.0.1312.57 Safari/537.17\r\n\r\nSteps to reproduce the problem:\r\nwith mode=block; we can detect if sent payload was found in the response body by checking location.href=='about:blank' (because it in"
+}

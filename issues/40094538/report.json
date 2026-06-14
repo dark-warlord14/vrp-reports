@@ -1,0 +1,76 @@
+{
+  "id": "40094538",
+  "url": "https://issues.chromium.org/issues/40094538",
+  "title": "Use after free due to style not updated for svg text runs.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "in...@chromium.org",
+  "assignee": "in...@chromium.org",
+  "created_date": "2011-09-01T17:16:48+00:00",
+  "modified_date": "2018-04-25T23:59:26+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52968287,
+      "filename": "svgfont.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 239,
+      "url": "https://issues.chromium.org/action/issues/40094538/attachments/52968287?download=true",
+      "local_path": "attachments/svgfont.html"
+    },
+    {
+      "id": 52968288,
+      "filename": "32_1208.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 11279,
+      "url": "https://issues.chromium.org/action/issues/40094538/attachments/52968288?download=true",
+      "local_path": "attachments/32_1208.html"
+    },
+    {
+      "id": 52968350,
+      "filename": "8_inside_56.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 12903,
+      "url": "https://issues.chromium.org/action/issues/40094538/attachments/52968350?download=true",
+      "local_path": "attachments/8_inside_56.txt"
+    },
+    {
+      "id": 52968351,
+      "filename": "8_inside_56.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 11427,
+      "url": "https://issues.chromium.org/action/issues/40094538/attachments/52968351?download=true",
+      "local_path": "attachments/8_inside_56.html"
+    },
+    {
+      "id": 52968368,
+      "filename": "ruby_1165_inside_1208.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 11375,
+      "url": "https://issues.chromium.org/action/issues/40094538/attachments/52968368?download=true",
+      "local_path": "attachments/ruby_1165_inside_1208.txt"
+    },
+    {
+      "id": 52968369,
+      "filename": "ruby_1165_inside_1208.html",
+      "mime_type": "text/html; charset=utf-8",
+      "size_bytes": 727,
+      "url": "https://issues.chromium.org/action/issues/40094538/attachments/52968369?download=true",
+      "local_path": "attachments/ruby_1165_inside_1208.html"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "Branched off http://code.google.com/p/chromium/issues/detail?id=92651"
+}

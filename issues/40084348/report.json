@@ -1,0 +1,44 @@
+{
+  "id": "40084348",
+  "url": "https://issues.chromium.org/issues/40084348",
+  "title": "pdf viewer segfault after js syntax error",
+  "status": "New",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2010-10-30T21:11:57+00:00",
+  "modified_date": "2016-10-02T20:19:52+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52936682,
+      "filename": "js.pdf",
+      "mime_type": "application/pdf; charset=iso-8859-1",
+      "size_bytes": 204,
+      "url": "https://issues.chromium.org/action/issues/40084348/attachments/52936682?download=true",
+      "local_path": "attachments/js.pdf"
+    },
+    {
+      "id": 52936736,
+      "filename": "malloc.pdf",
+      "mime_type": "application/pdf; charset=binary",
+      "size_bytes": 66754,
+      "url": "https://issues.chromium.org/action/issues/40084348/attachments/52936736?download=true",
+      "local_path": "attachments/malloc.pdf"
+    }
+  ],
+  "update_count": 28,
+  "description_snippet": "Opening the attached PDF document in Google Chrome 8.0.552.23 (Official Build 64356) dev causes a renderer segmentation fault on Ubuntu 10.10 (at least 32-bit). The piece of javascript has byte 160 after \"foo = 0\", which likely causes something to go awry in or after handling the syntax error. Segfa"
+}

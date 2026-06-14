@@ -1,0 +1,36 @@
+{
+  "id": "40062705",
+  "url": "https://issues.chromium.org/issues/40062705",
+  "title": "Heap-buffer-overflow in SkA8_Blitter::blitH",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals, Internals>Skia",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2012-08-06T16:23:53+00:00",
+  "modified_date": "2016-10-02T20:23:28+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53355514,
+      "filename": "chrome-heap-buffer-overflow-SkA8BlitterblitH-afb.html",
+      "mime_type": "text/html; charset=utf-8",
+      "size_bytes": 533,
+      "url": "https://issues.chromium.org/action/issues/40062705/attachments/53355514?download=true",
+      "local_path": "attachments/chrome-heap-buffer-overflow-SkA8BlitterblitH-afb.html"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "Repro-file as attachment.\r\n\r\nASAN Chromium 22.0.1228.0 \r\n\r\nASAN-report:\r\n==2861== ERROR: AddressSanitizer heap-buffer-overflow on address 0x7f553684113a at pc 0x7f554e128838 bp 0x7ffff1766c40 sp 0x7ffff1766c38\r\nWRITE of size 1 at 0x7f553684113a thread T0\r\n    #0 0x7f554e128837 in SkA8_Blitter::blitH"
+}

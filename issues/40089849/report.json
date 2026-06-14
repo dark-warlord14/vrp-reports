@@ -1,0 +1,29 @@
+{
+  "id": "40089849",
+  "url": "https://issues.chromium.org/issues/40089849",
+  "title": "Mac: Add hardening to protect against sandboxed processes calling CTFontManagerRegisterFontsForURL(), tricking LoadFontOnFileThread()",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Internals>Sandbox",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2017-12-08T19:28:28+00:00",
+  "modified_date": "2018-12-03T22:26:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 20,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.13; rv:57.0) Gecko/20100101 Firefox/57.0\r\n\r\nSteps to reproduce the problem:\r\nI don't think this problem is exploitable, but a small change to one of the Mac sandbox profiles could inadvertently introduce a sandbox bypass for a compromised child pr"
+}

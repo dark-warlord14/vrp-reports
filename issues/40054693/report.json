@@ -1,0 +1,44 @@
+{
+  "id": "40054693",
+  "url": "https://issues.chromium.org/issues/40054693",
+  "title": "Heap-use-after-free in WebCore::GraphicsContext::paintingDisabled",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>SVG",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "sc...@chromium.org",
+  "created_date": "2012-03-08T23:44:06+00:00",
+  "modified_date": "2018-04-25T23:26:12+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53374614,
+      "filename": "home-heap-use-after-free-08a.svg",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 809,
+      "url": "https://issues.chromium.org/action/issues/40054693/attachments/53374614?download=true",
+      "local_path": "attachments/home-heap-use-after-free-08a.svg"
+    },
+    {
+      "id": 53374635,
+      "filename": "117471_asan.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 21621,
+      "url": "https://issues.chromium.org/action/issues/40054693/attachments/53374635?download=true",
+      "local_path": "attachments/117471_asan.txt"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "Repro-file as attachment.  \n  \n**VERSION**   \nChrome Version: ASAn build 19.0.1063.0  \nOperating System: Ubuntu 11.04 x86_64  \n  \n  \n=================================================================  \n==13338== ERROR: AddressSanitizer heap-use-after-free on address 0x7f57a75f86ec at pc 0x7f57b6d0e08"
+}

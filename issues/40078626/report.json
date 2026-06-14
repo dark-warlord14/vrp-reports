@@ -1,0 +1,29 @@
+{
+  "id": "40078626",
+  "url": "https://issues.chromium.org/issues/40078626",
+  "title": "[LangFuzz] Crash at v8::internal::StoreBuffer::Compact with invalid write",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@googlemail.com",
+  "assignee": "ul...@chromium.org",
+  "created_date": "2014-01-03T02:00:03+00:00",
+  "modified_date": "2018-04-25T23:09:38+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 44,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64; rv:28.0) Gecko/20100101 Firefox/28.0\r\n\r\nSteps to reproduce the problem:\r\n1. Run the following JS code in d8 as used in the specified Chrome version (SVN r18421, branch 3.23, 64 bit):\r\n\r\nfunction boom() {\r\n  var args = [];\r\n  for (var i = 0; i < 125000; i++)"
+}

@@ -1,0 +1,621 @@
+# Security: Drop-downs hiding any part of the browser UI, allowing for several types of spoof attacks
+
+| Field | Value |
+|-------|-------|
+| **Issue ID** | [40083333](https://issues.chromium.org/issues/40083333) |
+| **Status** | Assigned |
+| **Severity** | S3-Low |
+| **Priority** | P2 |
+| **Component** | Blink>Forms>Select, Blink>Input |
+| **Reporter** | he...@gmail.com |
+| **Assignee** | dt...@chromium.org |
+| **Created** | 2015-12-04 |
+| **Bounty** | $3,133.70 |
+
+## Description
+
+**VULNERABILITY DETAILS**  
+
+This vulnerability makes it possible to hide any part of the browser UI, allowing for several types of spoof attacks.
+
+I created three different PoCs demonstrating the attacks mentioned below:
+
+1. URL spoofing with HTTPS lock
+2. Permissions bubble spoofing
+3. Content spoofing on any website
+
+More information about each one can be found on the website provided in the reproduction case.
+
+**VERSION**  
+
+Chrome Version: I tested on 47.0.2526.73 and 48.0.2564.22.
+
+**REPRODUCTION CASE**
+
+1. Access <https://fkp.me/lbhspoofs/>
+2. Click on the links related to each spoof.
+
+\* These PoCs may not work because of different screen resolution. But a dedicated attacker could improve them given he has access to the victim's screen resolution.
+
+Here is a video simulating these attacks:  
+
+<https://www.youtube.com/watch?v=GV9lKUz2WEE>
+
+## Attachments
+
+- [Screen Shot 2016-03-02 at 11.16.13 AM.png](attachments/Screen Shot 2016-03-02 at 11.16.13 AM.png) (image/png, 74.2 KB)
+- [test.html](attachments/test.html) (text/plain, 4.4 KB)
+
+## Timeline
+
+### ts...@chromium.org (2015-12-04)
+
+To security-UI folks for triage.
+
+### ts...@chromium.org (2015-12-04)
+
+[Empty comment from Monorail migration]
+
+### cl...@chromium.org (2015-12-04)
+
+[Empty comment from Monorail migration]
+
+### cl...@chromium.org (2015-12-08)
+
+[Empty comment from Monorail migration]
+
+### fe...@chromium.org (2015-12-09)
+
+[Empty comment from Monorail migration]
+
+### ra...@chromium.org (2016-02-18)
+
+I'm going to undupe this because there are really two different issues here. This one is about drop-downs.
+See an example here: https://fkp.me/lbhspoofs/permissions.html The select drop-down covers the permission bubble. Select drop-downs can escape the content area and cover the omnibox as well which is conerning.
+
+What is the right thing to do here?
+1) Require a user gesture in order to show a select drop down. This would at least prevent it showing up onload.
+2) Ensure that the permission bubble always sits on top of the select drop down (this doesn't fix other cases such as covering the omnibox though, which is also demonstrated).
+3) Color/highlight any select drop-down which escapes the content area so that it is clearly marked as a part of the page (I don't know how we would do this). For example, as a basic mitigation I could imagine clipping the drop down to the content area until the user mouses over it. 
+
+Adding some views folks for their thoughts. 
+
+sky,msw: what do you think the right thing to do here is? 
+
+palmer: I know you have strong thoughts about chrome vs content area separation.
+
+
+### ra...@chromium.org (2016-02-18)
+
+[Empty comment from Monorail migration]
+
+### cl...@chromium.org (2016-02-18)
+
+[Empty comment from Monorail migration]
+
+### sk...@chromium.org (2016-02-18)
+
+I like both 1 and 2. 3 impacts both bad and good sites though, so I wouldn't be inclined to do it. 1 may have subtle ramifications too. I would talk with someone on the blink side to see if they have ideas as to why a user gesture isn't required. One possibility is if a site wants to do some server side validation on input before showing the select.
+
+### ra...@chromium.org (2016-02-22)
+
+dglazkov: could you point us to someone who would know about requiring a user gesture for select drop-downs?
+
+### dg...@chromium.org (2016-02-22)
+
++jochen,mkwst
+
+### ra...@chromium.org (2016-02-29)
+
+jochen, mkwst: any thoughts about #9?
+
+### mk...@chromium.org (2016-02-29)
+
+Requiring a gesture for `select` seems pretty reasonable as a mitigation.
+
+That said, it surprises me that it's possible at all for the page's content to overlay the browser's Chrome, and/or display completely outside the window. I can see some value to expanding out the bottom or sides of the window, but displaying above the content window to cover the omnibox is pretty strange. Perhaps we could stop doing that? :)
+
+### jo...@chromium.org (2016-02-29)
+
+I don't think that requiring a UserGesture for showing a select box is enough to prevent this attack, but it'll be enough to break legitimate use cases.
+
+I agree with Mike that we should stop showing web site controlled content outside of the content area. 
+
+### ra...@chromium.org (2016-03-01)
+
+I just looked more closely into the code of the example. It seems as though a MouseEvent is already required in order to trigger the select drop down, so it seems like it shouldn't be problematic to require this to be a user gesture rather than one generated by JS.
+
+The attack relies on scrolling the select dialog outside of the content area on the page (above the fold) and then triggering the user gesture so that it pops up as if it were clicked, although it could never actually be clicked in that location.
+
+I agree with Mike too. So it seems like the fixes are:
+1) Ensure that a user gesture is required (or debug why popping the thing is possible onload).
+2) Don't pop the bubble unless a) the select element is within the content area and/or b) the drop down overlaps the content area
+3) Change the order such that select drop downs are below permission bubbles
+
+There is also another apparent issue here. It appears that window.scrollTo doesn't cause the bubble to disappear though other forms of scrolling do. We should probably just dismiss the bubble with window.scrollTo as well.
+
+Any objections to the plan above?
+
+### pa...@chromium.org (2016-03-01)
+
+#15: That sounds good to me!
+
+### ta...@chromium.org (2016-03-02)
+
+Some notes for Mac since, except for html5 datalists, we use OS-provided NSMenus there. (HTML5 datalists may have the same/similar/other issues though - see e.g. https://crbug.com/chromium/375637 and https://crbug.com/chromium/587920)
+
+1, 2a -> sgtm
+
+> 2b) don't pop the bubble .. if the drop down overlaps the content area
+
+Mac menus over comboboxes open "centered", with the selected item overlaid over the control. So there are legitimate cases for this (e.g. crbug.com - attached). 
+
+We may be able to instead "confine" the menu to the content area using -[NSMenuDelegate confinementRectForMenu:onScreen:] [1]. However, it could be "feel weird" for a combo box to do this on Mac.
+
+
+3) Change the order such that select drop downs are below permission bubbles
+
+We probably can't change the window layer of the native NSMenu, but we might be able to change the layer of the permission bubble to be "above" native menus. Of course, we could never then display a menu on top of that, so we wouldn't want to do it for all bubble types (the OIB, for example, has menus). Menus are also pretty high in the window layers, so there could be potential to block IME input or a11y overlays.
+
+Alternative: we could stop using native menus for comboboxes/<select> on Mac, but that would probably upset a lot of people unless a really good job is done.
+
+
+[1] https://developer.apple.com/library/mac/documentation/Cocoa/Reference/NSMenuDelegate_Protocol/#//apple_ref/occ/intfm/NSMenuDelegate/confinementRectForMenu:onScreen:
+
+### cl...@chromium.org (2016-03-03)
+
+[Empty comment from Monorail migration]
+
+### cl...@chromium.org (2016-03-23)
+
+raymes@: Uh oh! This issue is still open and hasn't been updated in the last 21 days. Since this is a serious security vulnerability, we want to make sure progress is happening. Can you update the bug with current status, and what, if anything, is blocking?
+
+If you are not the right Owner for this bug, please find someone else to own it as soon as possible and remove yourself as Owner.
+
+If the issue is already fixed or you are to unable to reproduce it, please close the bug. (And thanks for fixing the bug!).
+
+These nags can be disabled by adding a 'WIP' label and an optional codereview link.
+
+- Your friendly ClusterFuzz
+
+### sh...@chromium.org (2016-04-14)
+
+[Empty comment from Monorail migration]
+
+### cl...@chromium.org (2016-04-14)
+
+raymes@: Uh oh! This issue is still open and hasn't been updated in the last 43 days. Since this is a serious security vulnerability, we want to make sure progress is happening. Can you update the bug with current status, and what, if anything, is blocking?
+
+If you are not the right Owner for this bug, please find someone else to own it as soon as possible and remove yourself as Owner.
+
+If the issue is already fixed or you are to unable to reproduce it, please close the bug. (And thanks for fixing the bug!).
+
+These nags can be disabled by adding a 'WIP' label and an optional codereview link.
+
+- Your friendly ClusterFuzz
+
+### he...@gmail.com (2016-04-21)
+
+Is raymes still working on having this bug fixed? If not, can someone else look at this again?
+
+### sh...@chromium.org (2016-04-21)
+
+raymes: Uh oh! This issue still open and hasn't been updated in the last 51 days. This is a serious vulnerability, and we want to ensure that there's progress. Could you please leave an update with the current status and any potential blockers?
+
+If you're not the right owner for this issue, could you please remove yourself as soon as possible or help us find the right one?
+
+If the issue is fixed or you can't reproduce it, please close the bug. If you've started working on a fix, please set the status to Started.
+
+Thanks for your time! To disable nags, add the Disable-Nags label.
+
+For more details visit https://www.chromium.org/issue-tracking/autotriage - Your friendly Sheriffbot
+
+### ra...@chromium.org (2016-04-27)
+
+[Empty comment from Monorail migration]
+
+### ra...@chromium.org (2016-04-27)
+
+[Empty comment from Monorail migration]
+
+### ra...@chromium.org (2016-04-27)
+
+[Empty comment from Monorail migration]
+
+### ra...@chromium.org (2016-04-27)
+
+[Empty comment from Monorail migration]
+
+### ra...@chromium.org (2016-04-27)
+
++tkent,rbyers for context. We have a POC of people doing nasty things with <select> popups. e.g. using it to spoof the omnibox. See the video above: https://www.youtube.com/watch?v=GV9lKUz2WEE
+
+Also I've attached a minimized POC. 
+
+I think from the blink side this is basically https://crbug.com/chromium/90515 and https://crbug.com/chromium/423975.
+
+### tk...@chromium.org (2016-04-27)
+
+This looks a dupe of Isseu 116425, which we assumed non-security issue.
+
+
+### tk...@chromium.org (2016-04-27)
+
+[Comment Deleted]
+
+### tk...@chromium.org (2016-04-27)
+
+typo, https://crbug.com/chromium/116425 :)
+
+### ra...@chromium.org (2016-04-27)
+
+Thanks :) 
+
+palmer: you marked https://crbug.com/chromium/116425 as security severity none. In my view the spoof in this example (as shown in https://youtu.be/GV9lKUz2WEE?t=13 at 0:13) is much more convincing. The omnibox is covered, they managed to put a fake lock icon in and a fake URL. The select popup will still flicker after clicks, but it's still fairly convincing. What do you think? 
+
+### he...@gmail.com (2016-04-27)
+
+This attack relies on:
+[1] The select drop overlaying Chrome content.
+[2] Sending a MouseEvent to trigger the select drop automatically.
+[3] Scrolling the page before triggering the select so that it can pop outside of the content area.
+
+All this was stated in #15 by raymes. https://crbug.com/chromium/116425 only exploits [1], 
+without using [2] and [3]. So IMHO the biggest differences from https://crbug.com/chromium/116425 are that the attack can scroll the page and align the select perfectly with the omnibox and that he can do it automatically.
+About the flicker, it can be avoided as demonstrated in PoC (opening fullscreen when the user clicks). Now it's even better because the fullscreen notification does not display the origin.
+
+### pa...@chromium.org (2016-04-27)
+
+I find the PoC definitely a bad bug that we should fix, but I'm still not super convinced it would work in a real attack — or at least not better than regular old homograph attacks.
+
+### ra...@chromium.org (2016-04-27)
+
+[Empty comment from Monorail migration]
+
+### tk...@chromium.org (2016-04-27)
+
+ok.  IMO we should fix https://crbug.com/chromium/423975 as a security fix now.  The fix would be very small and be able to be merged to branches.
+Then we should fix https://crbug.com/chromium/90515, which requires a larger change.  We can implement https://crbug.com/chromium/520520 after fixing https://crbug.com/chromium/90515.
+
+
+### dt...@chromium.org (2016-04-27)
+
+Fixing 423975 basically is turning on RuntimeEnableFeature TrustedEventsDefaultAction=stable.
+
+Would merge easily into any branch. Can someone confirm the reproduction does work with --enable-blink-features=TrustedEventsDefaultAction passed in on the command line?
+
+### ra...@chromium.org (2016-04-27)
+
+Cool, I tested the PoC attached in #28 and it doesn't work with --enable-blink-features=TrustedEventsDefaultAction (on ToT) :)
+
+### ra...@chromium.org (2016-04-27)
+
+To clarify: it prevents the attack.
+
+### tk...@chromium.org (2016-04-27)
+
+> Fixing 423975 basically is turning on RuntimeEnableFeature TrustedEventsDefaultAction=stable.
+
+Merging it to branches would not be acceptable.  I think adding isTrusted() check to HTMLSelectElement::defaultEventHandler() is better.
+
+
+### tk...@chromium.org (2016-05-02)
+
+I take this.
+https://codereview.chromium.org/1935993003
+
+
+[Monorail components: -Internals>Views Blink>Forms>Select Blink>Input]
+
+### rb...@chromium.org (2016-05-02)
+
+The reason we haven't fixed https://crbug.com/chromium/423975 already is that is breaks some seemingly legitimate use cases where the site has customized the form UX and is relying on being able to open the <select> elements programatically.  https://crbug.com/chromium/520520 tracks adding an explicit API for that use case.
+
+But I agree this security issue is substantial and needs to be addressed.
+
+The options I see:
+
+1) Continue pushing to fix https://crbug.com/chromium/423975 as planned (marking https://crbug.com/chromium/520520 as WontFix as something we'd never want in the platform for these security reasons).
+- Since this may have non-trivial compat impact, I think it requires an intent and (unless we feel the security issue is suddenly urgent - eg. due to active exploitation in the wild) is probably NOT suitable for merging back (we need the normal release process to help evaluate the compat risk).
+
+2) Do the above, but (in parallel) continue to pursue an API (https://crbug.com/chromium/520520) but limit that API to working only in the context of a user gesture. 
+- I think this probably gets us most of the legitimate use cases back, but if that's the plan it's really a shame to break all the use cases with no work-around for awhile.  If our plan is to provide an explicit API for opening a select box, then we shouldn't break most legitimate use cases until we have that API.
+
+3) Focus now on a mitigation for the problem of select UI overlapping browser UI
+This seems like the fundamental bug to me.  Opening drop down UI isn't inherently unsafe, it's just that our implementation of that UI makes it easy to confuse the user.
+
+Personally I'd prefer we focus the urgency here around #3 - to avoid causing compat issues and limiting the power of the web platform for what is perhaps best considered as an implementation bug.  But I recognize that #1 and #2 are probably easier to implement / faster to merge.  If there's some real urgency here, I'm OK with pursuing that, but we can't skip the intent / compat analysis process for breaking changes...
+
+Note I can't get to the repros at https://fkp.me/lbhspoofs/ - getting connection refused.
+
+
+### rb...@chromium.org (2016-05-02)
+
+FWIW, the principle I'd prefer us to apply here is that any content-produced UI (including select boxes) is always underneath any browser-produced UI.  It sounds like there are implementation issues (especially on Mac) where this is hard to achieve.  But it should be the fundamental design principle we're aiming for IMHO.
+
+### rb...@chromium.org (2016-05-02)
+
+In particular, if we rely on a fix based on restricting programmatic opening of <select> boxes, won't the attack just get slightly more sophisticated and have the same effect?  Eg. trick the user into opening a select box, then once it's open change the scroll position / content etc. of the select box to reproduce the same attack?
+
+Note that from the youtube video it's clear this isn't just about the bounds of the select window, but also the stacking.  The last attack shows a select box opening in a background tab overlapping the content in the foreground tab (bounds are fine, just stacking order is no).
+
+It really feels like the fundamental problem here is one of UI layering.  When <select> was re-implemented using SadowDOM I believe the decision was made to keep using all the special container window support in order to allow the select box to exceed the window bounds.  Perhaps now we have strong enough reason to change that and just use same-window rendering like all the other forms shadow dom?  It means select boxes will be clipped when they exceed the window bounds (instead of overhanging them) but is that really so bad?
+
+Like we've learned with alert/confirm (/cc avi@), any time the author can specify UI that appears more like system UI than web page content an attacker will abuse that to confuse the user.
+
+### ra...@chromium.org (2016-05-03)
+
+Thanks for the input rbyers! Re #44: I suggested clipping earlier on but sky@ felt it would be penalizing legitimate sites. I agree with what you're saying about the ability to display system UI being a potential attack vector. I'd be open to clipping but I feel like it may be controversial and require some wider discussion.
+
+The lower hanging fruit seems to be to try to fix the simpler bugs which would mitigate the attack. Maybe you can give input on how technically difficult these are:
+-https://crbug.com/chromium/90515 - don't display the drop down if the element is outside of the viewport. Similarly, the drop down should never be shown if the tab isn't active. Fixing this would break most of the demonstrated attacks.
+-Requiring a user gesture to display a drop down. Regardless of whether we introduce the new API or not, I think we can still implement the requirement of a user gestures.
+
+### dt...@chromium.org (2016-05-04)
+
+Is this not also an issue for iframes being able to bleed outside their iframe bounds? It would see that it is possible for an iframe to take over the entire document?
+
+My simple example of a iframe with just sandbox="allow-scripts" seems to be allowed to take over the entire document without (allow-popups-to-escape-sandbox being set)
+
+I do think we should just attempt to disable programmatic access to these for now.
+
+### tk...@chromium.org (2016-05-06)
+
+I thought fixing https://crbug.com/chromium/423975 was a good solution because it improves interoperability and the fix is small enough to be merged.  However I agree that it has a backward-compatibility risk.
+
+We already missed multiple milestones for this issue. So I don't think we *must* fix this issue for M51.  Fixing https://crbug.com/chromium/90515 and targeting M52 is the safest approach, I think.  Any objections?
+
+
+
+### tk...@chromium.org (2016-05-06)
+
+[Empty comment from Monorail migration]
+
+### bu...@chromium.org (2016-05-07)
+
+The following revision refers to this bug:
+  https://chromium.googlesource.com/chromium/src.git/+/b82a8a7a80fa77005f996f93f60e4f32c8882651
+
+commit b82a8a7a80fa77005f996f93f60e4f32c8882651
+Author: tkent <tkent@chromium.org>
+Date: Sat May 07 03:17:59 2016
+
+Do not open SELECT popup if the SELECT element is not in the viewport.
+
+New behavior is compatible with IE and Firefox.
+The main parts of this CL are:
+  - HTMLSelectElement.cpp, and
+  - menulist-popup-outside-viewport.html
+Changes in other files are just adjustment for the new behavior.
+  - ExternalPopupMenuTest.cpp: The viewport size was too small.
+  - popup-menu-key-operations.html: PASS messages moved out a SELECT element
+  - popup-menu-position.html: Anchor rectangle is clipped.
+
+BUG=90515, 565760
+
+Review-Url: https://codereview.chromium.org/1959583002
+Cr-Commit-Position: refs/heads/master@{#392240}
+
+[modify] https://crrev.com/b82a8a7a80fa77005f996f93f60e4f32c8882651/third_party/WebKit/LayoutTests/TestExpectations
+[modify] https://crrev.com/b82a8a7a80fa77005f996f93f60e4f32c8882651/third_party/WebKit/LayoutTests/fast/forms/select-popup/popup-menu-key-operations.html
+[modify] https://crrev.com/b82a8a7a80fa77005f996f93f60e4f32c8882651/third_party/WebKit/LayoutTests/fast/forms/select-popup/popup-menu-position.html
+[add] https://crrev.com/b82a8a7a80fa77005f996f93f60e4f32c8882651/third_party/WebKit/LayoutTests/fast/forms/select/menulist-popup-outside-viewport.html
+[modify] https://crrev.com/b82a8a7a80fa77005f996f93f60e4f32c8882651/third_party/WebKit/LayoutTests/platform/win/fast/forms/select-popup/popup-menu-position-expected.txt
+[modify] https://crrev.com/b82a8a7a80fa77005f996f93f60e4f32c8882651/third_party/WebKit/Source/core/html/HTMLSelectElement.cpp
+[modify] https://crrev.com/b82a8a7a80fa77005f996f93f60e4f32c8882651/third_party/WebKit/Source/web/ExternalPopupMenuTest.cpp
+
+
+### tk...@chromium.org (2016-05-09)
+
+The latest canary has crrev.com/392240, and test.html in #28 doesn't work any longer.  However, we still have some risk.
+
+- A page can open a popup for a SELECT behind a permission bubble by synthetic events.
+- On Mac, a SELECT box is basically behind its popup.  Opening a popup without user-gesture is unacceptable.
+
+We should fix https://crbug.com/chromium/423975 too.  Assign dtapuska@.
+
+
+
+### tk...@chromium.org (2016-05-09)
+
+[Empty comment from Monorail migration]
+
+### ra...@chromium.org (2016-05-09)
+
+tkent: thanks for your quick work!!
+
+### mb...@chromium.org (2016-05-10)
+
+Adding M-52 based on c#47, though we'd usually try to target an earlier one for a medium severity security issue. Any reason it was removed? Feel free to bump this to an earlier milestone if you think it's reasonable to do so.
+
+### tk...@chromium.org (2016-05-10)
+
+I removed M-52 because I guess fixing https://crbug.com/chromium/423975 for M-52 is hard.  It might need to collect UMA.
+
+
+### fe...@chromium.org (2016-05-10)
+
+Is this bug blocked on https://crbug.com/chromium/423975? Could the code in #49 be merged back?
+
+### tk...@chromium.org (2016-05-11)
+
+> Is this bug blocked on https://crbug.com/chromium/423975?
+
+Yes. https://crbug.com/chromium/423975 is necessary for complete fix.
+
+> Could the code in #49 be merged back?
+
+#49 fixed a part of this issue and reduced the risk, but I don't want to merge it to branches because it is a behavior change rather than a bug fix.
+
+
+### sh...@chromium.org (2016-05-19)
+
+dtapuska: Uh oh! This issue still open and hasn't been updated in the last 14 days. This is a serious vulnerability, and we want to ensure that there's progress. Could you please leave an update with the current status and any potential blockers?
+
+If you're not the right owner for this issue, could you please remove yourself as soon as possible or help us find the right one?
+
+If the issue is fixed or you can't reproduce it, please close the bug. If you've started working on a fix, please set the status to Started.
+
+Thanks for your time! To disable nags, add the Disable-Nags label.
+
+For more details visit https://www.chromium.org/issue-tracking/autotriage - Your friendly Sheriffbot
+
+### dt...@chromium.org (2016-05-19)
+
+Invoking default action for untrusted events was deprecated in M52; see https://crbug.com/chromium/520519.
+
+The goal to remove it is in M53 which would address this issue.
+
+### dt...@chromium.org (2016-05-24)
+
+Moving this to M53. As per https://crbug.com/chromium/565760#c56; some of the change is in M52. We announced deprecation of the events in M52 which we hope to remove in M53.
+
+### bu...@chromium.org (2016-06-22)
+
+The following revision refers to this bug:
+  https://chromium.googlesource.com/chromium/src.git/+/887e8fba784c801afbda06799a99284421408ff1
+
+commit 887e8fba784c801afbda06799a99284421408ff1
+Author: dtapuska <dtapuska@chromium.org>
+Date: Wed Jun 22 23:40:18 2016
+
+Enable do not allow default action for untrusted events.
+
+Approved intent to ship: https://groups.google.com/a/chromium.org/d/msg/blink-dev/WEMnlVIbe70/i2MJcEtNBgAJ
+
+BUG=565760,423975,520519
+
+Review-Url: https://codereview.chromium.org/2070053004
+Cr-Commit-Position: refs/heads/master@{#401463}
+
+[modify] https://crrev.com/887e8fba784c801afbda06799a99284421408ff1/third_party/WebKit/LayoutTests/FlagExpectations/enable-browser-side-navigation
+[modify] https://crrev.com/887e8fba784c801afbda06799a99284421408ff1/third_party/WebKit/LayoutTests/FlagExpectations/root-layer-scrolls
+[modify] https://crrev.com/887e8fba784c801afbda06799a99284421408ff1/third_party/WebKit/LayoutTests/NeverFixTests
+[modify] https://crrev.com/887e8fba784c801afbda06799a99284421408ff1/third_party/WebKit/LayoutTests/TestExpectations
+[modify] https://crrev.com/887e8fba784c801afbda06799a99284421408ff1/third_party/WebKit/LayoutTests/VirtualTestSuites
+[modify] https://crrev.com/887e8fba784c801afbda06799a99284421408ff1/third_party/WebKit/LayoutTests/fast/events/dispatch-synthetic-keyboardevent-no-action-expected.txt
+[delete] https://crrev.com/b2b31390d6845f42b5966f854e90f69ff39705e0/third_party/WebKit/LayoutTests/fast/events/simulated-key-state-expected.txt
+[delete] https://crrev.com/b2b31390d6845f42b5966f854e90f69ff39705e0/third_party/WebKit/LayoutTests/fast/events/simulated-key-state.html
+[modify] https://crrev.com/887e8fba784c801afbda06799a99284421408ff1/third_party/WebKit/LayoutTests/plugins/user-gesture-expected.txt
+[modify] https://crrev.com/887e8fba784c801afbda06799a99284421408ff1/third_party/WebKit/LayoutTests/plugins/user-gesture.html
+[delete] https://crrev.com/b2b31390d6845f42b5966f854e90f69ff39705e0/third_party/WebKit/LayoutTests/virtual/trustedeventsdefaultaction/fast/events/README.txt
+[delete] https://crrev.com/b2b31390d6845f42b5966f854e90f69ff39705e0/third_party/WebKit/LayoutTests/virtual/trustedeventsdefaultaction/fast/events/dispatch-synthetic-keyboardevent-no-action-expected.txt
+[delete] https://crrev.com/b2b31390d6845f42b5966f854e90f69ff39705e0/third_party/WebKit/LayoutTests/virtual/trustedeventsdefaultaction/fast/events/simulated-key-state-expected.txt
+[delete] https://crrev.com/b2b31390d6845f42b5966f854e90f69ff39705e0/third_party/WebKit/LayoutTests/virtual/trustedeventsdefaultaction/fast/events/stop-load-in-unload-handler-using-window-stop-expected.txt
+[modify] https://crrev.com/887e8fba784c801afbda06799a99284421408ff1/third_party/WebKit/Source/platform/RuntimeEnabledFeatures.in
+
+
+### dt...@chromium.org (2016-06-23)
+
+[Empty comment from Monorail migration]
+
+### sh...@chromium.org (2016-06-23)
+
+[Empty comment from Monorail migration]
+
+### cl...@chromium.org (2016-06-23)
+
+Adding Merge-Triage label for tracking purposes.
+
+Once your fix had sufficient bake time (on canary, dev as appropriate), please nominate your fix for merge by adding the Merge-Request-XX label, where XX is the Chrome milestone.
+
+When your merge is approved by the release manager, please start merging with higher milestone label first. Make sure to re-request merge for every milestone in the label list. You can get branch information on omahaproxy.appspot.com.
+
+- Your friendly ClusterFuzz
+
+### aw...@chromium.org (2016-07-08)
+
+[Empty comment from Monorail migration]
+
+### go...@chromium.org (2016-07-14)
+
+Before we approve merge to M53, Could you please confirm whether this change is baked/verified in Canary and safe to merge?
+
+### go...@chromium.org (2016-07-15)
+
+Also is this change applicable to all OS or any specific OS?
+
+### dt...@chromium.org (2016-07-18)
+
+I do not think it is worth the risk merging into M53. There is an associated risk to the web platform (because we are taking away something from them) and we should not rush it. This is why I did not apply the Merge-Request-53 label.
+
+awhalley@ can you provide your justification?
+
+### aw...@chromium.org (2016-07-18)
+
+Hi dtapuska@ - it was based on #58 & #59 but given the timing I'm OK to wait.
+
+### aw...@chromium.org (2016-07-19)
+
+[Empty comment from Monorail migration]
+
+### aw...@chromium.org (2016-07-27)
+
+[Empty comment from Monorail migration]
+
+### aw...@chromium.org (2016-08-30)
+
+[Empty comment from Monorail migration]
+
+### aw...@chromium.org (2016-08-30)
+
+Nice bug!  The panel decided to award $3133.7 for this one. 
+
+### ra...@chromium.org (2016-08-30)
+
+Big thanks to tkent and dtapuska for their work on mitigating this!
+
+### aw...@chromium.org (2016-09-01)
+
+[Empty comment from Monorail migration]
+
+### sh...@chromium.org (2016-09-29)
+
+This bug has been closed for more than 14 weeks. Removing security view restrictions.
+
+For more details visit https://www.chromium.org/issue-tracking/autotriage - Your friendly Sheriffbot
+
+### sh...@chromium.org (2016-10-01)
+
+This bug has been closed for more than 14 weeks. Removing security view restrictions.
+
+For more details visit https://www.chromium.org/issue-tracking/autotriage - Your friendly Sheriffbot
+
+### sh...@chromium.org (2016-10-02)
+
+This bug has been closed for more than 14 weeks. Removing security view restrictions.
+
+For more details visit https://www.chromium.org/issue-tracking/autotriage - Your friendly Sheriffbot
+
+### mb...@chromium.org (2016-10-02)
+
+[Empty comment from Monorail migration]
+
+### aw...@chromium.org (2016-10-10)
+
+[Empty comment from Monorail migration]
+
+### aw...@chromium.org (2016-10-11)
+
+[Empty comment from Monorail migration]
+
+### pa...@chromium.org (2016-10-11)
+
+[Empty comment from Monorail migration]
+
+### aw...@chromium.org (2018-04-25)
+
+[Empty comment from Monorail migration]
+
+### is...@google.com (2018-04-25)
+
+This issue was migrated from crbug.com/chromium/565760?no_tracker_redirect=1
+
+[Auto-CCs applied]
+[Multiple monorail components: Blink>Forms>Select, Blink>Input]
+[Monorail blocked-on: crbug.com/chromium/423975, crbug.com/chromium/607046, crbug.com/chromium/90515]
+[Monorail mergedwith: crbug.com/chromium/116425]
+[Monorail components added to Component Tags custom field.]
+
+---
+*Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40083333)*

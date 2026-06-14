@@ -1,0 +1,71 @@
+{
+  "id": "40080878",
+  "url": "https://issues.chromium.org/issues/40080878",
+  "title": "Security: Heap-use-after-free in SupportsUserData::GetUserData",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2014-11-19T01:50:39+00:00",
+  "modified_date": "2016-10-02T20:07:19+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52917069,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40080878/attachments/52917069?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52917070,
+      "filename": "2.png",
+      "mime_type": "image/png",
+      "size_bytes": 68784,
+      "url": "https://issues.chromium.org/action/issues/40080878/attachments/52917070?download=true",
+      "local_path": "attachments/2.png"
+    },
+    {
+      "id": 52917071,
+      "filename": "1.png",
+      "mime_type": "image/png",
+      "size_bytes": 86598,
+      "url": "https://issues.chromium.org/action/issues/40080878/attachments/52917071?download=true",
+      "local_path": "attachments/1.png"
+    },
+    {
+      "id": 52917080,
+      "filename": "PoC.html",
+      "mime_type": "text/html",
+      "size_bytes": 170,
+      "url": "https://issues.chromium.org/action/issues/40080878/attachments/52917080?download=true",
+      "local_path": "attachments/PoC.html"
+    },
+    {
+      "id": 52917091,
+      "filename": "Screen Shot 2014-11-19 at 11.24.13.png",
+      "mime_type": "image/png",
+      "size_bytes": 163771,
+      "url": "https://issues.chromium.org/action/issues/40080878/attachments/52917091?download=true",
+      "local_path": "attachments/Screen Shot 2014-11-19 at 11.24.13.png"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "**VERSION**   \nChrome Version: stable 39.0.2171.65 m  \nOperating System: Win7  \n  \n**VULNERABILITY DETAILS**   \n1. Open PoC.html  \n2. Click on the button to open google.com link in new tab and click on the padlock on the URL bar as in \"1.png\" then after 3000s the page \"google.com\" will be closed as"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "40081979",
+  "url": "https://issues.chromium.org/issues/40081979",
+  "title": "Security: [FG-VD-15-037] Adobe Flash Player PCRE Handing Heap Overflow Vulnerability",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2015-5129"
+  ],
+  "reporter": "ke...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2015-05-01T06:15:18+00:00",
+  "modified_date": "2016-10-02T19:59:29+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53370868,
+      "filename": "crashinfo_windbg.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 8110,
+      "url": "https://issues.chromium.org/action/issues/40081979/attachments/53370868?download=true",
+      "local_path": "attachments/crashinfo_windbg.txt"
+    },
+    {
+      "id": 53370869,
+      "filename": "Main.as",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 296,
+      "url": "https://issues.chromium.org/action/issues/40081979/attachments/53370869?download=true",
+      "local_path": "attachments/Main.as"
+    },
+    {
+      "id": 53370870,
+      "filename": "repro.swf",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 688,
+      "url": "https://issues.chromium.org/action/issues/40081979/attachments/53370870?download=true",
+      "local_path": "attachments/repro.swf"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThis bug can be triggered by executing string match after compiling a specifically crafted regexp in ActionScript code. It seems that it's a heap overflow issue,but I need more time to confirm it.  \n  \n**VERSION**   \nChrome 42.0.2311.135 m(32-bit) / Windows 8.1 x64  \nChr"
+}

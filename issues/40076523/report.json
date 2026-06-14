@@ -1,0 +1,60 @@
+{
+  "id": "40076523",
+  "url": "https://issues.chromium.org/issues/40076523",
+  "title": "Heap-use-after-free in WebCore::Frame::dispatchVisibilityStateChangeEvent",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2012-10-28T03:48:42+00:00",
+  "modified_date": "2018-04-25T23:17:42+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "reward_amount_meta": 1500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53408332,
+      "filename": "pagevisibility_parent.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 236,
+      "url": "https://issues.chromium.org/action/issues/40076523/attachments/53408332?download=true",
+      "local_path": "attachments/pagevisibility_parent.html"
+    },
+    {
+      "id": 53408333,
+      "filename": "pagevisibility.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 159,
+      "url": "https://issues.chromium.org/action/issues/40076523/attachments/53408333?download=true",
+      "local_path": "attachments/pagevisibility.html"
+    },
+    {
+      "id": 53408395,
+      "filename": "page-visibility-iframe-child-delete-test.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1381,
+      "url": "https://issues.chromium.org/action/issues/40076523/attachments/53408395?download=true",
+      "local_path": "attachments/page-visibility-iframe-child-delete-test.html"
+    },
+    {
+      "id": 53408396,
+      "filename": "page-visibility-iframe-child-delete-test-expected.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 5,
+      "url": "https://issues.chromium.org/action/issues/40076523/attachments/53408396?download=true",
+      "local_path": "attachments/page-visibility-iframe-child-delete-test-expected.txt"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThis vulnerbility is in Frame.cpp->dispatchVisibilityStateChangeEvent method.  \n  \nvoid Frame::dispatchVisibilityStateChangeEvent()  \n{  \n    if (m_doc)  \n        m_doc->dispatchVisibilityStateChangeEvent();  \n    for (Frame\\* child = tree()->firstChild(); child; chil"
+}

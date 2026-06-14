@@ -1,0 +1,60 @@
+{
+  "id": "40079217",
+  "url": "https://issues.chromium.org/issues/40079217",
+  "title": "Security: Renderer segfault when a malformed png file is loaded.",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "pk...@chromium.org",
+  "created_date": "2010-02-14T16:26:45+00:00",
+  "modified_date": "2016-10-02T20:17:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52928089,
+      "filename": "bad.png",
+      "mime_type": "image/x-png",
+      "size_bytes": 6346,
+      "url": "https://issues.chromium.org/action/issues/40079217/attachments/52928089?download=true",
+      "local_path": "attachments/bad.png"
+    },
+    {
+      "id": 52928090,
+      "filename": "png.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 31351,
+      "url": "https://issues.chromium.org/action/issues/40079217/attachments/52928090?download=true",
+      "local_path": "attachments/png.jpeg"
+    },
+    {
+      "id": 52928102,
+      "filename": "chrome-329.tar.gz",
+      "mime_type": "application/x-gzip",
+      "size_bytes": 28516,
+      "url": "https://issues.chromium.org/action/issues/40079217/attachments/52928102?download=true",
+      "local_path": "attachments/chrome-329.tar.gz"
+    },
+    {
+      "id": 52928110,
+      "filename": "segv-18d2-gdb.txt",
+      "mime_type": "text/plain, English; charset=us-ascii",
+      "size_bytes": 6267,
+      "url": "https://issues.chromium.org/action/issues/40079217/attachments/52928110?download=true",
+      "local_path": "attachments/segv-18d2-gdb.txt"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "Loading the attached png file or a page containing it causes two \r\nsegmentation faults and a sad tab in 32-bit Ubuntu, and either normal \r\nerror behavior, tab getting stuck in loading or a browser death via \r\nsegmentation fault (memory corruption or a double free) in Fedora 12 on \r\nx86_64.\r\n\r\nTo rep"
+}

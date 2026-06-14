@@ -1,0 +1,36 @@
+{
+  "id": "40087990",
+  "url": "https://issues.chromium.org/issues/40087990",
+  "title": "Near homograph URL Spoofing with Arabic",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Internationalization",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ra...@gmail.com",
+  "assignee": "js...@chromium.org",
+  "created_date": "2017-06-06T10:30:01+00:00",
+  "modified_date": "2018-04-25T22:35:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52890428,
+      "filename": "PoC.png",
+      "mime_type": "image/png",
+      "size_bytes": 18716,
+      "url": "https://issues.chromium.org/action/issues/40087990/attachments/52890428?download=true",
+      "local_path": "attachments/PoC.png"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "http://xn--google-yri.com/ (does not show in punnycode)\r\n\r\nWhat went wrong?\r\nBy adding this *ِ* (notice the weird thing under asterisk) we can actually spoof the URL (espicially the inexperienced users)\r\n\r\nMore info:\r\n\r\nU+0650, ARABIC KASRA"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "40089935",
+  "url": "https://issues.chromium.org/issues/40089935",
+  "title": "Security: WebRTC - Memory corruption in PeerConnection::RemoveTrack()",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>WebRTC>PeerConnection, Internals>Media",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lo...@gmail.com",
+  "assignee": "hb...@chromium.org",
+  "created_date": "2017-12-17T04:19:24+00:00",
+  "modified_date": "2018-03-28T14:20:12+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52914947,
+      "filename": "RemoveFromPeerConnection_PoC.html",
+      "mime_type": "text/plain",
+      "size_bytes": 476,
+      "url": "https://issues.chromium.org/action/issues/40089935/attachments/52914947?download=true",
+      "local_path": "attachments/RemoveFromPeerConnection_PoC.html"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n\tSteps to reproduce:  \n\t  \n\t1.Open PoC RemoveFromPeerConnection_PoC.html in Chrome browser.  \n\t2.Chrome crashes by executing invalid address pointed to by corrupted EIP from PeerConnection::RemoveTrack().  \n  \n\t\t(1b00.3d28): Access violation - code c0000005 (!!! secon"
+}

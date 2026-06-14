@@ -1,0 +1,59 @@
+{
+  "id": "40093472",
+  "url": "https://issues.chromium.org/issues/40093472",
+  "title": "Security: Background fetch leaks cross-origin response size",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>BackgroundFetch",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "ra...@chromium.org",
+  "created_date": "2018-12-15T06:13:43+00:00",
+  "modified_date": "2019-03-27T14:23:20+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52963373,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 134,
+      "url": "https://issues.chromium.org/action/issues/40093472/attachments/52963373?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 52963374,
+      "filename": "main.js",
+      "mime_type": "text/plain",
+      "size_bytes": 264,
+      "url": "https://issues.chromium.org/action/issues/40093472/attachments/52963374?download=true",
+      "local_path": "attachments/main.js"
+    },
+    {
+      "id": 52963375,
+      "filename": "service_worker.js",
+      "mime_type": "text/plain",
+      "size_bytes": 138,
+      "url": "https://issues.chromium.org/action/issues/40093472/attachments/52963375?download=true",
+      "local_path": "attachments/service_worker.js"
+    }
+  ],
+  "update_count": 20,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe background fetch functionality allows data to be downloaded in the background. Although a site can download cross-origin data using this method, it won't be able to access the response. The site can, however, determine the size of the cross-origin response, as this i"
+}

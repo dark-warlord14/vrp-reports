@@ -1,0 +1,44 @@
+{
+  "id": "40095836",
+  "url": "https://issues.chromium.org/issues/40095836",
+  "title": "Renderer crash with PDF at isalnum",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink, Internals, Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2011-10-02T13:31:23+00:00",
+  "modified_date": "2016-10-02T20:23:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53248803,
+      "filename": "isalnum.pdf",
+      "mime_type": "application/pdf; charset=binary",
+      "size_bytes": 5652,
+      "url": "https://issues.chromium.org/action/issues/40095836/attachments/53248803?download=true",
+      "local_path": "attachments/isalnum.pdf"
+    },
+    {
+      "id": 53248823,
+      "filename": "repro.pdf",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 141,
+      "url": "https://issues.chromium.org/action/issues/40095836/attachments/53248823?download=true",
+      "local_path": "attachments/repro.pdf"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nOpening the attached PDF document causes a renderer crash due to invalid read at isalnum with an addresses like 0xffffffff800acf66.  \n  \n**VERSION**   \nChrome Version: 14.0.835.186 stable (also beta and dev)  \nOperating System: Linux, Debian 6.0.2 (32- and 64-bit)  \n  \n*"
+}

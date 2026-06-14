@@ -1,0 +1,38 @@
+{
+  "id": "40085160",
+  "url": "https://issues.chromium.org/issues/40085160",
+  "title": "Security: Navigating to \"chrome://\" URLs via 'about:' protocol",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2016-08-21T08:33:14+00:00",
+  "modified_date": "2018-04-25T22:50:12+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53088925,
+      "filename": "PoC.html",
+      "mime_type": "text/plain",
+      "size_bytes": 88,
+      "url": "https://issues.chromium.org/action/issues/40085160/attachments/53088925?download=true",
+      "local_path": "attachments/PoC.html"
+    }
+  ],
+  "update_count": 26,
+  "description_snippet": "Steps to reproduce the problem:\r\n1. Open the PoC.html\r\n<a href=\"about:history-frame\" target=\"x\" onclick=\"setTimeout('d()', 2000);\">Click Me</a>\r\n\r\nOr you could visit the online PoC page:\r\nhttp://115.159.58.203/chrome/poc.html\r\n\r\n2. You will find the Chrome iOS version opened a new window and navigat"
+}

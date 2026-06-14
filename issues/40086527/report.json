@@ -1,0 +1,44 @@
+{
+  "id": "40086527",
+  "url": "https://issues.chromium.org/issues/40086527",
+  "title": "invalid free() in bundled pdf viewer",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Internals, Internals>Plugins>PDF",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2010-12-28T18:48:11+00:00",
+  "modified_date": "2016-10-02T20:20:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53008035,
+      "filename": "pointer.pdf",
+      "mime_type": "application/pdf; charset=binary",
+      "size_bytes": 1403,
+      "url": "https://issues.chromium.org/action/issues/40086527/attachments/53008035?download=true",
+      "local_path": "attachments/pointer.pdf"
+    },
+    {
+      "id": 53008079,
+      "filename": "stutr.pdf",
+      "mime_type": "application/pdf; charset=binary",
+      "size_bytes": 110360,
+      "url": "https://issues.chromium.org/action/issues/40086527/attachments/53008079?download=true",
+      "local_path": "attachments/stutr.pdf"
+    }
+  ],
+  "update_count": 31,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nOpening the attached PDF document causes tcmalloc to abort when trying to free an invalid pointer. Changing the content of the PDF document can be used to change the freed address. Sounds like the data in the document can be used to corrupt objects in memory, so reportin"
+}

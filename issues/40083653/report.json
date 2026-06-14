@@ -1,0 +1,54 @@
+{
+  "id": "40083653",
+  "url": "https://issues.chromium.org/issues/40083653",
+  "title": "Heap-use-after-free in LoadWatcher::CallbackAndDie (chrome.app.window.create)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>Apps, Platform>Extensions",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2016-1635"
+  ],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "ro...@robwu.nl",
+  "created_date": "2016-02-08T23:41:31+00:00",
+  "modified_date": "2018-04-25T22:54:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52916485,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 168,
+      "url": "https://issues.chromium.org/action/issues/40083653/attachments/52916485?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 52916486,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 35957,
+      "url": "https://issues.chromium.org/action/issues/40083653/attachments/52916486?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 52916487,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 545,
+      "url": "https://issues.chromium.org/action/issues/40083653/attachments/52916487?download=true",
+      "local_path": "attachments/background.js"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "Chrome Version: 48.0.2564.103 (stable, and earlier) and 50.0.2633.0 (HEAD)\r\n\r\n- extensions::LoadWatcher::CallbackAndDie is called when DidCreateDocumentElement is triggered.\r\n- CallbackAndDie calls a user-defined JavaScript function and then deletes the LoadWatcher instance.\r\n- JavaScript code can e"
+}

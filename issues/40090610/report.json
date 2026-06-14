@@ -1,0 +1,65 @@
+{
+  "id": "40090610",
+  "url": "https://issues.chromium.org/issues/40090610",
+  "title": "Security: Extension popups can read local files if a Browser Action invoked on a file:/// URL",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "93...@gmail.com",
+  "assignee": "ka...@chromium.org",
+  "created_date": "2018-02-26T22:34:17+00:00",
+  "modified_date": "2020-02-04T17:22:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52991724,
+      "filename": "Testcase.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 717,
+      "url": "https://issues.chromium.org/action/issues/40090610/attachments/52991724?download=true",
+      "local_path": "attachments/Testcase.zip"
+    },
+    {
+      "id": 52991725,
+      "filename": "Extension Popup.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 2980,
+      "url": "https://issues.chromium.org/action/issues/40090610/attachments/52991725?download=true",
+      "local_path": "attachments/Extension Popup.PNG"
+    },
+    {
+      "id": 52991890,
+      "filename": "Extension Popup on file URL.png",
+      "mime_type": "image/png",
+      "size_bytes": 132679,
+      "url": "https://issues.chromium.org/action/issues/40090610/attachments/52991890?download=true",
+      "local_path": "attachments/Extension Popup on file URL.png"
+    },
+    {
+      "id": 52991891,
+      "filename": "Extension Page.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 52607,
+      "url": "https://issues.chromium.org/action/issues/40090610/attachments/52991891?download=true",
+      "local_path": "attachments/Extension Page.PNG"
+    }
+  ],
+  "update_count": 70,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nExtension popups can load local files on the disk upon clicking on the extension icon in the toolbar (to open the popup), provided that you are viewing a file:/// URL at that time. Since extensions are exempt from the same origin policy, the parent frame (if there were t"
+}

@@ -1,0 +1,84 @@
+{
+  "id": "40082625",
+  "url": "https://issues.chromium.org/issues/40082625",
+  "title": "Security: WebKit: WebCore::GeolocationService::positionChanged use after free",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>Geolocation",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ku...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2010-08-10T08:11:02+00:00",
+  "modified_date": "2017-09-22T19:16:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53393751,
+      "filename": "GeolocationDispatcher..OnGeolocationPositionUpdated ReadAV@NULL (bf79368734d60c6546b4b60cdb880d11).html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 329958,
+      "url": "https://issues.chromium.org/action/issues/40082625/attachments/53393751?download=true",
+      "local_path": "attachments/GeolocationDispatcher..OnGeolocationPositionUpdated ReadAV@NULL (bf79368734d60c6546b4b60cdb880d11).html"
+    },
+    {
+      "id": 53393752,
+      "filename": "[unknown] in WebCore..GeolocationService..positionChanged ExecAV@Arbitrary (c7a2946e8650aaf22c0d7749ecf19909).html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 362635,
+      "url": "https://issues.chromium.org/action/issues/40082625/attachments/53393752?download=true",
+      "local_path": "attachments/[unknown] in WebCore..GeolocationService..positionChanged ExecAV@Arbitrary (c7a2946e8650aaf22c0d7749ecf19909).html"
+    },
+    {
+      "id": 53393753,
+      "filename": "[unknown] in GeolocationDispatcher..OnGeolocationPositionUpdated ExecAV@NULL (482e3a8f8d81c85ae9d15e7bd1251ebc).html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 328625,
+      "url": "https://issues.chromium.org/action/issues/40082625/attachments/53393753?download=true",
+      "local_path": "attachments/[unknown] in GeolocationDispatcher..OnGeolocationPositionUpdated ExecAV@NULL (482e3a8f8d81c85ae9d15e7bd1251ebc).html"
+    },
+    {
+      "id": 53393754,
+      "filename": "[unknown] in WebCore..GeolocationService..positionChanged ExecAV@NULL (c7a2946e8650aaf22c0d7749ecf19909).html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 363336,
+      "url": "https://issues.chromium.org/action/issues/40082625/attachments/53393754?download=true",
+      "local_path": "attachments/[unknown] in WebCore..GeolocationService..positionChanged ExecAV@NULL (c7a2946e8650aaf22c0d7749ecf19909).html"
+    },
+    {
+      "id": 53393755,
+      "filename": "WebCore..GeolocationService..positionChanged ReadAV@Arbitrary (e31442001d038f64dd61433e0387907f).html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 367658,
+      "url": "https://issues.chromium.org/action/issues/40082625/attachments/53393755?download=true",
+      "local_path": "attachments/WebCore..GeolocationService..positionChanged ReadAV@Arbitrary (e31442001d038f64dd61433e0387907f).html"
+    },
+    {
+      "id": 53393869,
+      "filename": "output.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 5242,
+      "url": "https://issues.chromium.org/action/issues/40082625/attachments/53393869?download=true",
+      "local_path": "attachments/output.txt"
+    },
+    {
+      "id": 53393877,
+      "filename": "output.txt",
+      "mime_type": "text/x-c++; charset=utf-8",
+      "size_bytes": 4001,
+      "url": "https://issues.chromium.org/action/issues/40082625/attachments/53393877?download=true",
+      "local_path": "attachments/output_53393877.txt"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "index.htm\r\n================\r\n<META HTTP-EQUIV=\"refresh\" CONTENT=\"0;url=index.htm\"\"> \r\n<iframe src=\"k.htm\" width=\"800\" height=\"600\"></iframe> \r\n\r\nk.htm\r\n================\r\n<script> \r\nwindow.navigator.geolocation.getCurrentPosition(window.captureEvents)\r\nwindow.navigator.geolocation.getCurrentPosition("
+}

@@ -1,0 +1,54 @@
+{
+  "id": "40076511",
+  "url": "https://issues.chromium.org/issues/40076511",
+  "title": "Heap-use-after-free in skia::BGRAConvolve2D",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Blink, Blink>Layout",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sl...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2012-10-25T09:32:39+00:00",
+  "modified_date": "2016-10-02T20:21:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53280893,
+      "filename": "stack1.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 14455,
+      "url": "https://issues.chromium.org/action/issues/40076511/attachments/53280893?download=true",
+      "local_path": "attachments/stack1.txt"
+    },
+    {
+      "id": 53280894,
+      "filename": "crash1.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 229,
+      "url": "https://issues.chromium.org/action/issues/40076511/attachments/53280894?download=true",
+      "local_path": "attachments/crash1.html"
+    },
+    {
+      "id": 53280895,
+      "filename": "foo.gif",
+      "mime_type": "image/gif; charset=binary",
+      "size_bytes": 24125,
+      "url": "https://issues.chromium.org/action/issues/40076511/attachments/53280895?download=true",
+      "local_path": "attachments/foo.gif"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux i686) AppleWebKit/537.4 (KHTML, like Gecko) Chrome/22.0.1229.94 Safari/537.4\r\n\r\nSteps to reproduce the problem:\r\nRepro file:\r\n----- crash1.html -----\r\n<fieldset style=\"\r\n    -webkit-margin-end: 99999;\r\n    -webkit-animation: foo cubic-bezier(0.1, 0.1, 0.1, 0.1) 0s"
+}

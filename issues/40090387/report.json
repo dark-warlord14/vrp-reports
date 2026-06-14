@@ -1,0 +1,49 @@
+{
+  "id": "40090387",
+  "url": "https://issues.chromium.org/issues/40090387",
+  "title": "Security: Same origin bypass with Service Workers + PDF plugin",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Network>FetchAPI, Blink>ServiceWorker, Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "ro...@robwu.nl",
+  "created_date": "2018-02-04T02:00:46+00:00",
+  "modified_date": "2018-12-04T06:19:38+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4500.0,
+  "reward_amount_meta": 4500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53296346,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1384,
+      "url": "https://issues.chromium.org/action/issues/40090387/attachments/53296346?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53296347,
+      "filename": "serviceworker.js",
+      "mime_type": "text/plain",
+      "size_bytes": 358,
+      "url": "https://issues.chromium.org/action/issues/40090387/attachments/53296347?download=true",
+      "local_path": "attachments/serviceworker.js"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nService workers can be used to intercept same-origin requests and respond with a cross-origin response.  \nChrome's built-in PDF viewer component allows web pages to read the content of same-origin PDF files.  \nAn attacker can bypass this same origin policy by loading a r"
+}

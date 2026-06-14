@@ -1,0 +1,36 @@
+{
+  "id": "40076364",
+  "url": "https://issues.chromium.org/issues/40076364",
+  "title": "Invalid pointer write in GrGpu::clear",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals, Internals>Skia",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "se...@chromium.org",
+  "created_date": "2012-09-27T17:02:10+00:00",
+  "modified_date": "2016-10-02T20:22:17+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53091848,
+      "filename": "repro.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 1345,
+      "url": "https://issues.chromium.org/action/issues/40076364/attachments/53091848?download=true",
+      "local_path": "attachments/repro.zip"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "Tested with: \r\n\r\nOS: Windows 7 x64\r\nGraphics: Intel(R) HD Graphics 4000\r\nChrome 24.0.1279.0 (158985) canary\r\n\r\nThis issue needs two files in a row to be loaded into an iframe. I have created a runner html-file to help in reproducing this issue. All the needed files are in the attached zip-file."
+}

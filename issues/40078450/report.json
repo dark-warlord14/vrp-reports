@@ -1,0 +1,100 @@
+{
+  "id": "40078450",
+  "url": "https://issues.chromium.org/issues/40078450",
+  "title": "URL Spoof Vulnerability",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI, UI>Browser>Omnibox, UI>Browser>PrintPreview",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ba...@gmail.com",
+  "assignee": "cr...@chromium.org",
+  "created_date": "2013-11-24T00:42:34+00:00",
+  "modified_date": "2018-04-25T23:10:05+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53010129,
+      "filename": "poc.png",
+      "mime_type": "image/png",
+      "size_bytes": 17896,
+      "url": "https://issues.chromium.org/action/issues/40078450/attachments/53010129?download=true",
+      "local_path": "attachments/poc.png"
+    },
+    {
+      "id": 53010130,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 2766,
+      "url": "https://issues.chromium.org/action/issues/40078450/attachments/53010130?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53010138,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 979,
+      "url": "https://issues.chromium.org/action/issues/40078450/attachments/53010138?download=true",
+      "local_path": "attachments/poc_53010138.html"
+    },
+    {
+      "id": 53010139,
+      "filename": "url-spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 46582,
+      "url": "https://issues.chromium.org/action/issues/40078450/attachments/53010139?download=true",
+      "local_path": "attachments/url-spoof.png"
+    },
+    {
+      "id": 53010163,
+      "filename": "poc2.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 40731,
+      "url": "https://issues.chromium.org/action/issues/40078450/attachments/53010163?download=true",
+      "local_path": "attachments/poc2.jpg"
+    },
+    {
+      "id": 53010177,
+      "filename": "poc.mp4",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 431919,
+      "url": "https://issues.chromium.org/action/issues/40078450/attachments/53010177?download=true",
+      "local_path": "attachments/poc.mp4"
+    },
+    {
+      "id": 53010183,
+      "filename": "chrome.html",
+      "mime_type": "text/html",
+      "size_bytes": 1101,
+      "url": "https://issues.chromium.org/action/issues/40078450/attachments/53010183?download=true",
+      "local_path": "attachments/chrome.html"
+    },
+    {
+      "id": 53010184,
+      "filename": "chromium.html",
+      "mime_type": "text/html",
+      "size_bytes": 1282,
+      "url": "https://issues.chromium.org/action/issues/40078450/attachments/53010184?download=true",
+      "local_path": "attachments/chromium.html"
+    },
+    {
+      "id": 53010185,
+      "filename": "difference_demonstration.mp4",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4611598,
+      "url": "https://issues.chromium.org/action/issues/40078450/attachments/53010185?download=true",
+      "local_path": "attachments/difference_demonstration.mp4"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.57 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Simply open the poc, click on the button\r\n2. It will automaticly open the spoofed page\r\n3. The spoofed page will get its 'real'/'expected' ur"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "40090119",
+  "url": "https://issues.chromium.org/issues/40090119",
+  "title": "Stack-buffer-overflow in SkPackBits::Unpack8",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Skia",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jo...@gmail.com",
+  "assignee": "re...@google.com",
+  "created_date": "2018-01-08T14:06:23+00:00",
+  "modified_date": "2018-11-14T01:52:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "reward_amount_meta": 1500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52933026,
+      "filename": "skia_sbof.poc",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3444,
+      "url": "https://issues.chromium.org/action/issues/40090119/attachments/52933026?download=true",
+      "local_path": "attachments/skia_sbof.poc"
+    },
+    {
+      "id": 52933027,
+      "filename": "skia_sbof.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 781,
+      "url": "https://issues.chromium.org/action/issues/40090119/attachments/52933027?download=true",
+      "local_path": "attachments/skia_sbof.diff"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.108 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. build https://chromium.googlesource.com/chromium/src/+/65.0.3311.3\r\n2. run ./filter_fuzz_stub path/to/poc\r\n\r\nWhat is the expected behavior?\r\ncra"
+}

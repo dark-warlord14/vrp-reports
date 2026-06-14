@@ -1,0 +1,62 @@
+{
+  "id": "40086361",
+  "url": "https://issues.chromium.org/issues/40086361",
+  "title": "Security: Address spoofing in Omnibox with HTTPS lock",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Navigation, UI>Browser>Omnibox",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gn...@gmail.com",
+  "assignee": "cr...@chromium.org",
+  "created_date": "2017-01-01T08:06:24+00:00",
+  "modified_date": "2018-04-25T22:47:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53333302,
+      "filename": "vlcsnap-2017-01-01-15h15m31s376.png",
+      "mime_type": "image/png",
+      "size_bytes": 145862,
+      "url": "https://issues.chromium.org/action/issues/40086361/attachments/53333302?download=true",
+      "local_path": "attachments/vlcsnap-2017-01-01-15h15m31s376.png"
+    },
+    {
+      "id": 53333305,
+      "filename": "video.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 1221086,
+      "url": "https://issues.chromium.org/action/issues/40086361/attachments/53333305?download=true",
+      "local_path": "attachments/video.webm"
+    },
+    {
+      "id": 53333340,
+      "filename": "chrome_url_spoof_1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 159,
+      "url": "https://issues.chromium.org/action/issues/40086361/attachments/53333340?download=true",
+      "local_path": "attachments/chrome_url_spoof_1.html"
+    },
+    {
+      "id": 53333341,
+      "filename": "chrome_url_spoof_2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 89875,
+      "url": "https://issues.chromium.org/action/issues/40086361/attachments/53333341?download=true",
+      "local_path": "attachments/chrome_url_spoof_2.html"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "DESCRIPTION:  \nAddress spoofing in Omnibox with HTTPS lock  \n  \n**VERSION**   \nChrome Version: Version 55.0.2883.87 (64-bit) stable  \nOperating System: Ubuntu 16.04.1 LTS  \n  \n**REPRODUCTION CASE**   \n  \nOpen a new tab and navigate to https://utf7.ml/t/chrome_url_spoof_1.html.(See the video)  \nTh"
+}

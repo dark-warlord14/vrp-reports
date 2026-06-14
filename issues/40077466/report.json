@@ -1,0 +1,29 @@
+{
+  "id": "40077466",
+  "url": "https://issues.chromium.org/issues/40077466",
+  "title": "[LangFuzz] Crash on heap with invalid read on dangerous (possibly uninitialized) address (64 bit)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@googlemail.com",
+  "assignee": "da...@chromium.org",
+  "created_date": "2013-04-25T02:15:38+00:00",
+  "modified_date": "2018-07-29T14:14:53+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 34,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64; rv:22.0) Gecko/20130413 Firefox/22.0\r\n\r\nSteps to reproduce the problem:\r\n1. Run the following JS code in the browser or d8 shell:\r\n\r\nvar new_space_string = \"\";\r\nfor (var i = 0; i < 12800; ++i) {\r\n  new_space_string += String.fromCharCode(Math.random() * 26"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "40083877",
+  "url": "https://issues.chromium.org/issues/40083877",
+  "title": "Security: Navigating to \"chrome://\" URLs inside pdf (iOS)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Plugins>PDF, UI>Browser>Navigation",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2016-03-17T00:34:39+00:00",
+  "modified_date": "2016-10-02T19:50:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52880065,
+      "filename": "testcase.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 46483,
+      "url": "https://issues.chromium.org/action/issues/40083877/attachments/52880065?download=true",
+      "local_path": "attachments/testcase.pdf"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "**VERSION**   \nChrome Version: 49.0.2623.87 (stable 32-bit)  \nOperating System: iOS  \n  \n**REPRODUCTION CASE**   \nOn my machine (iOS) I can access to \"chrome://\" URLs via a pdf file and this is bad behavior. PDFs in iOS should not be allowed to navigate to \"chrome://\" URLs  \n  \nThis was fixed in htt"
+}

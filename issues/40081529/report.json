@@ -1,0 +1,36 @@
+{
+  "id": "40081529",
+  "url": "https://issues.chromium.org/issues/40081529",
+  "title": "Memory corruption in :first-letter rendering",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "in...@chromium.org",
+  "assignee": "in...@chromium.org",
+  "created_date": "2010-06-11T16:30:11+00:00",
+  "modified_date": "2016-10-02T20:18:20+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53108889,
+      "filename": "wushi509.xhtml",
+      "mime_type": "text/html; charset=utf-8",
+      "size_bytes": 1521,
+      "url": "https://issues.chromium.org/action/issues/40081529/attachments/53108889?download=true",
+      "local_path": "attachments/wushi509.xhtml"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "Another interesting bug from Wushi\r\n\r\naffects chrome 5.0.375.70. inside debugger hits         ASSERT(obj->isRenderInline() || obj == this); (d:\\chrome\\375\\src\\third_party\\WebKit\\WebCore\\rendering\\RenderBlockLineLayout.cpp) which is similar to some other bugs i have seen resulting in memory corruptio"
+}

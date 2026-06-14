@@ -1,0 +1,44 @@
+{
+  "id": "40082005",
+  "url": "https://issues.chromium.org/issues/40082005",
+  "title": "Heap-use-after-free in blink::CSSAnimations::maybeApplyPendingUpdate",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Animation",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2015-05-05T10:59:44+00:00",
+  "modified_date": "2016-10-02T19:59:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53252963,
+      "filename": "chrome-heap-use-after-free-operator10-min.html",
+      "mime_type": "text/html",
+      "size_bytes": 4382,
+      "url": "https://issues.chromium.org/action/issues/40082005/attachments/53252963?download=true",
+      "local_path": "attachments/chrome-heap-use-after-free-operator10-min.html"
+    },
+    {
+      "id": 53252989,
+      "filename": "hand-minimized.html",
+      "mime_type": "text/html",
+      "size_bytes": 592,
+      "url": "https://issues.chromium.org/action/issues/40082005/attachments/53252989?download=true",
+      "local_path": "attachments/hand-minimized.html"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "Tested on:\r\n\r\nOS: Ubuntu 14.04\r\n\r\nChromium: ASAN 44.0.2375.0 (Developer Build) (64-bit) \r\n\r\n2bd42fdbfab81b645ac926bd115e2a0762426b64-refs/heads/master@{#325771}\r\n\r\n\r\nRepro-file as an attachment.\r\n\r\nASAN-trace:\r\n\r\n==23174==ERROR: AddressSanitizer: heap-use-after-free on address 0x607000061800 at"
+}

@@ -118,8 +118,8 @@ Crash State: see asan log
 - [HidExtensionServiceWorker.zip](attachments/HidExtensionServiceWorker.zip) (application/octet-stream, 66.6 KB)
 - [ServiceWorkerHost_destructor_stack.txt](attachments/ServiceWorkerHost_destructor_stack.txt) (text/plain, 5.5 KB)
 - [HidService_destructor_stack.txt](attachments/HidService_destructor_stack.txt) (text/plain, 6.3 KB)
-- [poc.html](attachments/poc.html) (text/plain, 273 B)
-- [sw.js](attachments/sw.js) (text/plain, 442 B)
+- [poc.html](attachments/poc_53155432.html) (text/plain, 273 B)
+- [sw.js](attachments/sw_53155433.js) (text/plain, 442 B)
 
 ## Timeline
 

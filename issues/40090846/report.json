@@ -1,0 +1,49 @@
+{
+  "id": "40090846",
+  "url": "https://issues.chromium.org/issues/40090846",
+  "title": "Security: Long extension name allows spoofing of Debugging InfoBar",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "dg...@chromium.org",
+  "created_date": "2018-03-19T05:55:52+00:00",
+  "modified_date": "2019-01-04T01:01:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53403436,
+      "filename": "test case.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3241,
+      "url": "https://issues.chromium.org/action/issues/40090846/attachments/53403436?download=true",
+      "local_path": "attachments/test case.zip"
+    },
+    {
+      "id": 53403437,
+      "filename": "Screen Shot 2018-03-19 at 05.51.43.png",
+      "mime_type": "image/png",
+      "size_bytes": 203126,
+      "url": "https://issues.chromium.org/action/issues/40090846/attachments/53403437?download=true",
+      "local_path": "attachments/Screen Shot 2018-03-19 at 05.51.43.png"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "Chrome Version: 67.0.3374.0 (Official Build) canary (64-bit)\r\nOperating System: MacOS \r\n\r\nThis is a hyphothetical attack like in https://crbug.com/chromium/673163.\r\n\r\n1. Install the extension.\r\n2. Observe the bubble is over the wrong origin\r\n \r\nNote: I couldn't repro this on M65."
+}
