@@ -82,7 +82,9 @@ def run(years, refresh_discovery, no_headless, seed_file):
 
     try:
         console.print("[bold]Step 2/5: Scraping[/bold]")
-        bounty_count = asyncio.run(scrape_all(issue_ids=ids, headless=headless))
+        bounty_count = asyncio.run(
+            scrape_all(issue_ids=ids, headless=headless, recheck_empty=refresh_discovery)
+        )
         console.print(f"  -> {bounty_count} new bounty reports")
     except Exception as e:
         console.print(f"[red]Scraping failed: {e}[/red]")
@@ -144,7 +146,9 @@ def update(years, refresh_discovery, no_headless, seed_file):
 
     try:
         console.print("[bold]Step 2/4: Scraping missing reports[/bold]")
-        bounty_count = asyncio.run(scrape_all(issue_ids=ids, headless=headless))
+        bounty_count = asyncio.run(
+            scrape_all(issue_ids=ids, headless=headless, recheck_empty=refresh_discovery)
+        )
         console.print(f"  -> {bounty_count} new bounty reports")
     except Exception as e:
         console.print(f"[red]Scraping failed: {e}[/red]")

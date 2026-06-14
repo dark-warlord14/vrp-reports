@@ -59,9 +59,15 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add -- index.json stats.json discovery_queue.json
+          git add -- index.json stats.json discovery_queue.json no_bounty.json
           find . -maxdepth 1 -name 'discovery_*.json' -print0 | xargs -0 -r git add --
           find issues -type f \( -name report.json -o -name report.md \) -print0 | xargs -0 -r git add --
+          # Also stage removals: when an issue is re-classified as no-bounty its
+          # report dir is deleted locally, but `find` can't emit a vanished file,
+          # so without this its deletion would never reach the data branch and the
+          # stale report would linger on the deployed site. `-u` restages tracked
+          # report.json/report.md (modified + deleted) without adding attachments.
+          git add -u -- issues
 
           if git diff --cached --quiet; then
             echo "No VRP data changes to commit."

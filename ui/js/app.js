@@ -533,15 +533,15 @@ const App = {
         const metaItems = [
             Components.metadataItem('Status', Components.statusBadge(report.status)),
             Components.metadataItem('Severity', Components.severityBadge(report.severity)),
-            Components.metadataItem('Priority', report.priority || 'Unknown'),
+            Components.metadataItem('Priority', Components.escapeHtml(report.priority || 'Unknown')),
             Components.metadataItem('Bounty', Components.bountyBadge(report.bounty_amount)),
-            Components.metadataItem('Component', report.component || 'Unknown'),
-            Components.metadataItem('Reporter', report.reporter || 'Unknown'),
+            Components.metadataItem('Component', Components.escapeHtml(report.component || 'Unknown')),
+            Components.metadataItem('Reporter', Components.escapeHtml(report.reporter || 'Unknown')),
         ];
-        if (report.assignee)          metaItems.push(Components.metadataItem('Assignee', report.assignee));
-        if (report.chrome_version)    metaItems.push(Components.metadataItem('Chrome Version', report.chrome_version));
-        if (report.os_platforms?.length) metaItems.push(Components.metadataItem('Platforms', report.os_platforms.join(', ')));
-        if (report.cve_ids?.length)   metaItems.push(Components.metadataItem('CVE IDs', report.cve_ids.join(', ')));
+        if (report.assignee)          metaItems.push(Components.metadataItem('Assignee', Components.escapeHtml(report.assignee)));
+        if (report.chrome_version)    metaItems.push(Components.metadataItem('Chrome Version', Components.escapeHtml(report.chrome_version)));
+        if (report.os_platforms?.length) metaItems.push(Components.metadataItem('Platforms', Components.escapeHtml(report.os_platforms.join(', '))));
+        if (report.cve_ids?.length)   metaItems.push(Components.metadataItem('CVE IDs', Components.escapeHtml(report.cve_ids.join(', '))));
         if (report.created_date)      metaItems.push(Components.metadataItem('Created', Components.formatDate(report.created_date)));
         if (report.update_count)      metaItems.push(Components.metadataItem('Updates', report.update_count));
 

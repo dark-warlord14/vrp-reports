@@ -11,6 +11,7 @@ from typing import Any, Optional
 
 from vrp.config import (
     BOUNTY_AWARD_PATTERN,
+    BOUNTY_DENIAL_INDICATORS,
     BOUNTY_INDICATORS,
     FIELD_BOUNTY,
     FIELD_CHROME_VERSION,
@@ -130,11 +131,15 @@ def parse_updates(raw: Any, issue_id: str = "") -> list[Update]:
             if isinstance(html, str) and html.strip():
                 text_html = html
 
-        # Detect bounty award
-        is_bounty = any(
-            indicator.lower() in text_plain.lower()
-            for indicator in BOUNTY_INDICATORS
-        ) if text_plain else False
+        # Detect bounty award: a positive indicator must be present AND no
+        # denial phrase — the panel's automated grant and denial emails share
+        # boilerplate, so a denial must never count as an award.
+        text_low = text_plain.lower() if text_plain else ""
+        is_bounty = (
+            bool(text_low)
+            and any(ind.lower() in text_low for ind in BOUNTY_INDICATORS)
+            and not any(d.lower() in text_low for d in BOUNTY_DENIAL_INDICATORS)
+        )
 
         results.append(Update(
             index=idx,

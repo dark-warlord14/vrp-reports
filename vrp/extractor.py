@@ -6,6 +6,7 @@ of existing raw JSON files.
 
 import asyncio
 import json
+import shutil
 from pathlib import Path
 
 import aiohttp
@@ -18,13 +19,22 @@ from vrp.config import (
     DELAY_BETWEEN_ISSUES,
     HEADLESS,
     ISSUES_DIR,
+    NO_BOUNTY_FILE,
     QUEUE_FILE,
     TIMEOUT,
     USER_AGENT,
 )
 from vrp.corpus import write_issue_corpus
-from vrp.parser import build_issue
-from vrp.utils import create_progress, download_file, load_json, logger, sanitize_filename, save_json
+from vrp.parser import build_issue, parse_updates
+from vrp.utils import (
+    create_progress,
+    download_file,
+    load_json,
+    logger,
+    sanitize_filename,
+    save_json,
+    save_json_if_changed,
+)
 
 
 def _issue_dir(issue_id: str) -> Path:
@@ -38,6 +48,38 @@ def _has_raw_data(issue_id: str) -> bool:
 
 def _has_report(issue_id: str) -> bool:
     return (_issue_dir(issue_id) / "report.json").exists()
+
+
+def _is_permission_denied(data) -> bool:
+    """True if a captured response is an access-denied error rather than issue data.
+
+    Restricted security issues return {"message": "...PermissionDenied...does not
+    have permission to view issue..."}. These must NOT be treated as "no bounty"
+    (which would cache them in the no-bounty checkpoint and skip them forever):
+    Chrome opens many security bugs to the public weeks later, so they should
+    stay retryable.
+    """
+    return (
+        isinstance(data, dict)
+        and "permission" in str(data.get("message", "")).lower()
+    )
+
+
+def _unique_attachment_name(att, used: set[str]) -> str:
+    """Return a collision-free on-disk filename for an attachment.
+
+    Two distinct attachments (different ids) can carry the same filename. Without
+    disambiguation the second would map onto the first's downloaded file, so its
+    own content is silently dropped. On a clash we append the attachment id,
+    preserving the extension. Deterministic given the (stable) attachment order,
+    so the scrape and offline-reprocess paths agree on the same names.
+    """
+    fname = sanitize_filename(att.filename)
+    if fname in used:
+        stem, dot, ext = fname.rpartition(".")
+        fname = f"{stem}_{att.id}.{ext}" if dot else f"{fname}_{att.id}"
+    used.add(fname)
+    return fname
 
 
 async def _extract_cookies(context: BrowserContext) -> dict:
@@ -118,6 +160,12 @@ async def scrape_issue(
             )
             return "no_capture"
 
+        if _is_permission_denied(captured["updates"]) or _is_permission_denied(captured["metadata"]):
+            # Access-restricted issue: keep it retryable (do NOT record no-bounty)
+            # since it may be opened to the public later.
+            logger.warning(f"{issue_id}: access-restricted (not public) — leaving retryable")
+            return "no_capture"
+
         logger.debug(
             f"{issue_id}: captured updates (metadata: "
             f"{captured['metadata'] is not None}), parsing..."
@@ -142,9 +190,10 @@ async def scrape_issue(
 
         # Download attachments using a shared session for connection reuse
         att_dir = idir / "attachments"
+        used_names: set[str] = set()
         async with aiohttp.ClientSession() as dl_session:
             for att in issue.attachments:
-                fname = sanitize_filename(att.filename)
+                fname = _unique_attachment_name(att, used_names)
                 local_path = att_dir / fname
                 if not local_path.exists():
                     ok = await download_file(
@@ -173,6 +222,7 @@ async def scrape_all(
     issue_ids: list[str] | None = None,
     force: bool = False,
     headless: bool = HEADLESS,
+    recheck_empty: bool = False,
 ) -> int:
     """Scrape all queued issues.
 
@@ -180,6 +230,10 @@ async def scrape_all(
         issue_ids: Specific IDs to scrape. Defaults to discovery queue.
         force: Re-scrape even if report already exists.
         headless: Run browser in headless mode.
+        recheck_empty: Re-scrape issues previously recorded as no-bounty. By
+            default those are skipped (they leave no report.json, so without the
+            no_bounty checkpoint they'd be browser-scraped every run). Set when
+            re-evaluating in case a reward was added since the last scrape.
 
     Returns:
         Number of bounty reports found.
@@ -191,16 +245,32 @@ async def scrape_all(
             return 0
         issue_ids = queue
 
+    no_bounty_ids: set[str] = set(load_json(NO_BOUNTY_FILE) or [])
+
     # Filter out already-processed unless force
     if not force:
-        pending = [iid for iid in issue_ids if not _has_report(iid)]
-        logger.info(f"Queue: {len(issue_ids)} total, {len(pending)} pending")
+        # Skip both issues we already have a report for AND issues previously
+        # confirmed to carry no bounty — re-scraping the latter every run via a
+        # full browser load was the dominant cost of a no-change re-run.
+        skip_empty = set() if recheck_empty else no_bounty_ids
+        pending = [
+            iid for iid in issue_ids
+            if not _has_report(iid) and iid not in skip_empty
+        ]
+        skipped_empty = sum(1 for iid in issue_ids if iid in skip_empty and not _has_report(iid))
+        logger.info(
+            f"Queue: {len(issue_ids)} total, {len(pending)} pending "
+            f"({skipped_empty} known no-bounty skipped)"
+        )
         issue_ids = pending
     else:
         logger.info(f"Queue: {len(issue_ids)} total (force mode)")
 
     if not issue_ids:
         logger.info("Nothing to scrape.")
+        # Persist the (possibly unchanged) checkpoint so the file always exists
+        # for downstream consumers, e.g. the CI commit step.
+        save_json(NO_BOUNTY_FILE, sorted(no_bounty_ids))
         return 0
 
     bounty_count = 0
@@ -230,6 +300,11 @@ async def scrape_all(
                     outcomes[result] = outcomes.get(result, 0) + 1
                     if result == "bounty":
                         bounty_count += 1
+                        # A previously-empty issue that now has a bounty must
+                        # leave the skip list so it isn't filtered out later.
+                        no_bounty_ids.discard(iid)
+                    elif result == "no_bounty":
+                        no_bounty_ids.add(iid)
                     processed += 1
                     progress.update(task, advance=1)
                     await asyncio.sleep(DELAY_BETWEEN_ISSUES)
@@ -252,6 +327,9 @@ async def scrape_all(
                     context = await browser.new_context(user_agent=USER_AGENT)
 
         await browser.close()
+
+    # Persist the no-bounty determinations so subsequent runs can skip them.
+    save_json(NO_BOUNTY_FILE, sorted(no_bounty_ids))
 
     logger.info(
         f"Scraping complete: {bounty_count} bounty reports found out of "
@@ -287,7 +365,9 @@ def reprocess_existing() -> int:
     issue_dirs = sorted([d for d in ISSUES_DIR.iterdir() if d.is_dir()])
     logger.info(f"Reprocessing {len(issue_dirs)} existing issues...")
 
+    no_bounty_ids: set[str] = set(load_json(NO_BOUNTY_FILE) or [])
     count = 0
+    removed = 0
     with create_progress() as progress:
         task = progress.add_task("Reprocessing", total=len(issue_dirs))
 
@@ -302,24 +382,49 @@ def reprocess_existing() -> int:
                 continue
 
             issue = build_issue(issue_id, raw_updates, raw_metadata)
+            if issue is None and (idir / "report.json").exists() and parse_updates(raw_updates, issue_id):
+                # Previously stored as a bounty, but re-evaluation with the
+                # current parser finds none. The raw updates parsed cleanly (a
+                # non-empty list), so this is a genuine de-qualification — e.g. a
+                # report the detection logic no longer counts — not a parse
+                # failure. Remove the stale report so the dataset self-heals when
+                # detection is tightened, and remember it as no-bounty.
+                shutil.rmtree(idir, ignore_errors=True)
+                for cf in CORPUS_DIR.glob(f"{issue_id}_*.js"):
+                    cf.unlink()
+                no_bounty_ids.add(issue_id)
+                removed += 1
+                progress.update(task, advance=1)
+                continue
             if issue:
                 # Update local_path for any existing attachment files
                 att_dir = idir / "attachments"
                 if att_dir.exists():
                     existing_files = {f.name for f in att_dir.iterdir() if f.is_file()}
+                    used_names: set[str] = set()
                     for att in issue.attachments:
-                        fname = sanitize_filename(att.filename)
+                        # Mirror the scrape path's disambiguation so colliding
+                        # filenames resolve to the same on-disk names here.
+                        fname = _unique_attachment_name(att, used_names)
                         if fname in existing_files:
                             att.local_path = f"attachments/{fname}"
                         else:
                             # If file isn't downloaded, clear local_path to avoid broken links
                             att.local_path = None
 
-                save_json(idir / "report.json", issue.model_dump())
-                write_issue_corpus(issue, idir, CORPUS_DIR)
-                count += 1
+                # Only rewrite when the parsed result actually changed. This
+                # keeps report.json's mtime stable on no-change re-runs, so the
+                # markdown stage's mtime-skip isn't defeated and a re-run stays
+                # cheap instead of regenerating everything. Corpus derives from
+                # the same data, so skip it too when nothing changed.
+                if save_json_if_changed(idir / "report.json", issue.model_dump()):
+                    write_issue_corpus(issue, idir, CORPUS_DIR)
+                    count += 1
 
             progress.update(task, advance=1)
 
-    logger.info(f"Reprocessed: {count} bounty reports updated")
+    if removed:
+        save_json(NO_BOUNTY_FILE, sorted(no_bounty_ids))
+        logger.info(f"Removed {removed} reports that no longer qualify as bounties")
+    logger.info(f"Reprocessed: {count} reports changed (of {len(issue_dirs)} scanned)")
     return count

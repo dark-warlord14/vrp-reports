@@ -38,7 +38,7 @@ vrp serve [--port N]     Start the local dashboard (default: http://localhost:80
 vrp status               Show counts and per-year discovery progress.
 ```
 
-`vrp run` and `vrp update` also support `--year` for scoped backfills and `--seed-file` for audit-driven candidate IDs.
+`vrp run` and `vrp update` also support `--year` for scoped backfills and `--seed-file` for audit-driven candidate IDs. Re-runs skip issues already confirmed no-bounty (recorded in `no_bounty.json`) for speed; pass `--refresh-discovery` to re-check them (e.g. when a reward may have been added since).
 
 ## Workflow
 
@@ -67,7 +67,7 @@ An issue is archived only when both are true:
 - the Chromium issue is public
 - the public record shows reward evidence, either through reward metadata or public award text
 
-`vrp-reward` by itself is not enough for inclusion.
+`vrp-reward` by itself is not enough for inclusion. The VRP panel's automated **denial** emails ("…does not meet the criteria to qualify for a reward") share boilerplate with award emails, so reward evidence must be a positive award signal (numeric reward metadata or explicit award text) and is rejected when a denial phrase is present.
 
 Discovery deliberately casts a **wide net**: it runs several independent reward
 searches (the numeric reward field `customfield1223135>0`, the broader
@@ -83,6 +83,7 @@ data/
 ├── stats.json               # Precomputed analytics
 ├── discovery_queue.json     # All discovered issue IDs
 ├── discovery_{year}.json    # Per-year discovery checkpoints
+├── no_bounty.json           # IDs scraped and confirmed no-bounty (skipped on re-runs)
 └── issues/{id}/
     ├── report.json          # Enriched structured metadata
     ├── report.md            # Human-readable markdown

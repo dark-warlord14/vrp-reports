@@ -172,3 +172,26 @@ class TestDownloadFile:
 
         result = asyncio.run(run())
         assert result is False
+
+    def test_cookies_passed_on_shared_session(self, tmp_path):
+        """Regression: the scraper passes a shared session AND auth cookies;
+        those cookies must reach session.get, not be silently dropped."""
+        dest = tmp_path / "att.bin"
+        cookies = {"SID": "secret", "SSID": "token"}
+
+        # Reuse the mock builder, then unwrap the inner session (the object the
+        # caller-provided-session path uses directly).
+        session_cm = _make_aiohttp_mocks(200, b"data")
+
+        async def run():
+            session = await session_cm.__aenter__()
+            return await download_file(
+                "https://issues.chromium.org/f", str(dest),
+                cookies=cookies, session=session,
+            ), session
+
+        result, session = asyncio.run(run())
+        assert result is True
+        # session.get must have been called with our cookies
+        _, kwargs = session.get.call_args
+        assert kwargs.get("cookies") == cookies

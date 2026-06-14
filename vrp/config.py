@@ -13,6 +13,11 @@ CORPUS_DIR = DATA_DIR / "corpus" / "js"
 INDEX_FILE = DATA_DIR / "index.json"
 STATS_FILE = DATA_DIR / "stats.json"
 QUEUE_FILE = DATA_DIR / "discovery_queue.json"
+# Issue IDs that were scraped and confirmed to carry no bounty. No-bounty issues
+# leave no report.json (their dir is removed), so without this record they'd be
+# re-scraped via the browser on every run. Persisting them lets re-runs skip the
+# work; --refresh-discovery re-evaluates them in case a reward was added later.
+NO_BOUNTY_FILE = DATA_DIR / "no_bounty.json"
 UI_DIR = PROJECT_ROOT / "ui"
 
 # --- Search ---
@@ -67,15 +72,32 @@ def get_all_years() -> list[int]:
 
 
 # --- Bounty Detection ---
+# Captures the dollar amount across the common award phrasings the panel uses:
+#   "award you $5,000", "award $500", "awarded $1,000", "a VRP reward of $20,000"
 BOUNTY_AWARD_PATTERN = re.compile(
-    r'award you \$([\d,]+(?:\.\d+)?)', re.IGNORECASE
+    r'(?:award(?:ed)?(?:\s+you)?|reward of)\s+\$([\d,]+(?:\.\d+)?)', re.IGNORECASE
 )
+# Positive award signals.
+# IMPORTANT: do NOT add the bare panel header "Chrome Vulnerability Rewards
+# Program (VRP) Panel" here — the panel's automated emails use that exact header
+# for DENIALS too ("...has decided that ... does not meet the criteria to qualify
+# for a reward"), which previously mis-flagged ~22 denied reports as confirmed
+# bounties. Keep indicators specific to an actual award action.
 BOUNTY_INDICATORS = [
     "decided to award you",
-    "Chrome Vulnerability Rewards Program (VRP) Panel",
-    "Congratulations!",
+    "decided to award",
     "VRP Panel has decided",
     "award you $",
+    "Congratulations!",
+]
+# Hard-negative phrases from the panel's denial email. If any appears in an
+# update, that update is a rejection — never an award — and overrides any
+# positive indicator above. Guards against future header-phrasing changes.
+BOUNTY_DENIAL_INDICATORS = [
+    "does not meet the criteria",
+    "does not meet the bar",
+    "not eligible for",
+    "does not qualify",
 ]
 
 # --- Enum Mappings ---
