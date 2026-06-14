@@ -33,6 +33,30 @@ def save_json(filepath: str | os.PathLike, data: Any) -> None:
         json.dump(data, f, indent=2, ensure_ascii=False, default=str)
 
 
+def save_json_if_changed(filepath: str | os.PathLike, data: Any) -> bool:
+    """Save JSON only if it differs from what's already on disk.
+
+    Returns True if the file was (re)written, False if it was left untouched.
+    Skipping identical writes keeps the file's mtime stable across re-runs, so
+    downstream mtime-based skips (notably markdown regeneration) stay valid and
+    a no-change re-run doesn't needlessly reprocess everything. The serialization
+    must match save_json exactly so the comparison is apples-to-apples.
+    """
+    filepath = str(filepath)
+    new = json.dumps(data, indent=2, ensure_ascii=False, default=str)
+    if os.path.exists(filepath):
+        try:
+            with open(filepath, "r", encoding="utf-8") as f:
+                if f.read() == new:
+                    return False
+        except OSError:
+            pass
+    os.makedirs(os.path.dirname(filepath), exist_ok=True)
+    with open(filepath, "w", encoding="utf-8") as f:
+        f.write(new)
+    return True
+
+
 def load_json(filepath: str | os.PathLike) -> Any:
     """Load JSON from file, returns None if not found or corrupt."""
     filepath = str(filepath)
@@ -87,10 +111,16 @@ async def download_file(
                 _sess = await _ctx.__aenter__()
 
             try:
-                if cookies and session is None:
-                    for name, value in cookies.items():
-                        _sess.cookie_jar.update_cookies({name: value})
-                async with _sess.get(url, timeout=aiohttp.ClientTimeout(total=60)) as resp:
+                # Pass cookies per-request so auth applies whether we own the
+                # session or reuse a caller-provided one. The scraper always
+                # passes a shared session AND cookies; the old "session is None"
+                # guard silently dropped those cookies, so every auth-gated
+                # attachment download received the HTML login page instead.
+                async with _sess.get(
+                    url,
+                    timeout=aiohttp.ClientTimeout(total=60),
+                    cookies=cookies or None,
+                ) as resp:
                     if resp.status == 200:
                         resp_ct = resp.headers.get("content-type", "")
                         # Reject HTML responses when we expect non-HTML content
