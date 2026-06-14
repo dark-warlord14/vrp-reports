@@ -1,0 +1,66 @@
+{
+  "id": "41493285",
+  "url": "https://issues.chromium.org/issues/41493285",
+  "title": "Security: Debug check failed: element_size_log2 == 0 (\\x2 vs. 0). in v8",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript, Blink>JavaScript>Compiler>Turbofan",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2024-01-21T02:51:52+00:00",
+  "modified_date": "2024-05-02T15:41:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53319734,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1541,
+      "url": "https://issues.chromium.org/action/issues/41493285/attachments/53319734?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53319735,
+      "filename": "poc_code.js",
+      "mime_type": "text/plain",
+      "size_bytes": 4977,
+      "url": "https://issues.chromium.org/action/issues/41493285/attachments/53319735?download=true",
+      "local_path": "attachments/poc_code.js"
+    },
+    {
+      "id": 53319761,
+      "filename": "poc_code.js",
+      "mime_type": "text/plain",
+      "size_bytes": 4977,
+      "url": "https://issues.chromium.org/action/issues/41493285/attachments/53319761?download=true",
+      "local_path": "attachments/poc_code_53319761.js"
+    },
+    {
+      "id": 53319762,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1541,
+      "url": "https://issues.chromium.org/action/issues/41493285/attachments/53319762?download=true",
+      "local_path": "attachments/poc_53319762.js"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "VULNERABILITY DETAILS\n## INTRODUCE\nAfter bisect, it was determined that following commit caused this problem.\n\n- Commit Info\n    - Version: 91502\n    - link: https://crrev.com/afee3b501bed785ae1739bb5c8da6ace5c823e7d \n- Commit Message\n\n```\ncommit afee3b501bed785ae1739bb5c8da6ace5c823e7d\nAuthor: Matt"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "40093207",
+  "url": "https://issues.chromium.org/issues/40093207",
+  "title": "Security: WebGL heap-buffer-overflow in clearBufferuiv()",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>WebGL, Internals>GPU",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "zm...@chromium.org",
+  "created_date": "2018-11-27T07:57:24+00:00",
+  "modified_date": "2024-01-08T19:58:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52878384,
+      "filename": "bug_01.html",
+      "mime_type": "text/plain",
+      "size_bytes": 378,
+      "url": "https://issues.chromium.org/action/issues/40093207/attachments/52878384?download=true",
+      "local_path": "attachments/bug_01.html"
+    },
+    {
+      "id": 52878385,
+      "filename": "bug_01-asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 20881,
+      "url": "https://issues.chromium.org/action/issues/40093207/attachments/52878385?download=true",
+      "local_path": "attachments/bug_01-asan.txt"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThis bug tested in stable chrome asan linux build (asan-linux-release-611016) Chromium 72.0.3623.0  \n  \n**FOR CRASHES, PLEASE INCLUDE THE FOLLOWING ADDITIONAL INFORMATION**   \n  \n=================================================================  \n==9880==ERROR:"
+}

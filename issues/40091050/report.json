@@ -1,0 +1,86 @@
+{
+  "id": "40091050",
+  "url": "https://issues.chromium.org/issues/40091050",
+  "title": "Security: heap-use-after-free in check_client_download_request.cc when in incognito mode",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cd...@gmail.com",
+  "assignee": "ji...@chromium.org",
+  "created_date": "2018-04-09T04:05:52+00:00",
+  "modified_date": "2024-01-06T00:16:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53391537,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40091050/attachments/53391537?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53391538,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40091050/attachments/53391538?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53391539,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40091050/attachments/53391539?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53391610,
+      "filename": "repro_video.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 9288204,
+      "url": "https://issues.chromium.org/action/issues/40091050/attachments/53391610?download=true",
+      "local_path": "attachments/repro_video.mp4"
+    },
+    {
+      "id": 53391633,
+      "filename": "repro_video2.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 9414544,
+      "url": "https://issues.chromium.org/action/issues/40091050/attachments/53391633?download=true",
+      "local_path": "attachments/repro_video2.mp4"
+    },
+    {
+      "id": 53391642,
+      "filename": "asan_symbolized2.log",
+      "mime_type": "text/plain",
+      "size_bytes": 52718,
+      "url": "https://issues.chromium.org/action/issues/40091050/attachments/53391642?download=true",
+      "local_path": "attachments/asan_symbolized2.log"
+    },
+    {
+      "id": 53391672,
+      "filename": "ASANsymbolizedvmodule.log",
+      "mime_type": "text/plain",
+      "size_bytes": 52415,
+      "url": "https://issues.chromium.org/action/issues/40091050/attachments/53391672?download=true",
+      "local_path": "attachments/ASANsymbolizedvmodule.log"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nchrome Version: 67.0.3392.0 (Developer Build) (64-bit)\r\nubuntu version: 16.04\r\n\r\nSecurity: heap-use-after-free in check_client_download_request."
+}

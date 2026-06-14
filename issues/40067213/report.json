@@ -1,0 +1,81 @@
+{
+  "id": "40067213",
+  "url": "https://issues.chromium.org/issues/40067213",
+  "title": "Fullscreen Window is opened behind other windows",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "Blink>Fullscreen, UI>Browser>FullScreen",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pu...@gmail.com",
+  "assignee": "ms...@chromium.org",
+  "created_date": "2023-07-11T12:48:54+00:00",
+  "modified_date": "2024-12-09T19:11:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53136755,
+      "filename": "Puf POC Video.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 634966,
+      "url": "https://issues.chromium.org/action/issues/40067213/attachments/53136755?download=true",
+      "local_path": "attachments/Puf POC Video.mp4"
+    },
+    {
+      "id": 53136776,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40067213/attachments/53136776?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53136777,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40067213/attachments/53136777?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53136831,
+      "filename": "New POC Video.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 175548,
+      "url": "https://issues.chromium.org/action/issues/40067213/attachments/53136831?download=true",
+      "local_path": "attachments/New POC Video.mp4"
+    },
+    {
+      "id": 53136832,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40067213/attachments/53136832?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53136833,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40067213/attachments/53136833?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 69,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nAttacker Can Spoof Full Screen Mode on Other Websites (ex:google.com) & Prevent Full Screen Exit   \n  \nFirst User Click On [First Button] and then it will create a new Window.   \nand in that window, there is another button called [Open Gmail]  \n  \nUser Click on [Open"
+}

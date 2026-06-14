@@ -1,0 +1,50 @@
+{
+  "id": "40092270",
+  "url": "https://issues.chromium.org/issues/40092270",
+  "title": "Detecting if the XSS Auditor was triggered by changing the hash",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2018-08-24T03:50:49+00:00",
+  "modified_date": "2024-01-08T22:03:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53087864,
+      "filename": "server1-hash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 816,
+      "url": "https://issues.chromium.org/action/issues/40092270/attachments/53087864?download=true",
+      "local_path": "attachments/server1-hash.html"
+    },
+    {
+      "id": 53087865,
+      "filename": "server2-auditor.html",
+      "mime_type": "text/plain",
+      "size_bytes": 129,
+      "url": "https://issues.chromium.org/action/issues/40092270/attachments/53087865?download=true",
+      "local_path": "attachments/server2-auditor.html"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIf a page is redirected to itself and has a hash set, no navigation is performed, instead, only the hash is changed.  \n  \nThis behavior is different when the page is being blocked by the XSS Auditor. In this case, if the page is redirected to itself and has a hash set, a"
+}

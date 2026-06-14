@@ -1,0 +1,49 @@
+{
+  "id": "40094312",
+  "url": "https://issues.chromium.org/issues/40094312",
+  "title": "UAF in indexeddb  IndexedDBDatabase::RequestComplete",
+  "status": "New",
+  "severity": "S4-Minimal",
+  "priority": "P0",
+  "component": "Blink>Storage>IndexedDB",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cd...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2019-03-17T08:19:30+00:00",
+  "modified_date": "2024-01-08T20:18:51+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53217512,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40094312/attachments/53217512?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53217513,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40094312/attachments/53217513?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. download and unzip the release asan chromium :asan-linux-release-639779 \r\n2. Set up a webserver and put poc.html \r\n3. Run ./chrome  crash.html"
+}

@@ -1,0 +1,38 @@
+{
+  "id": "40094390",
+  "url": "https://issues.chromium.org/issues/40094390",
+  "title": "Security: Chrome (Mac OS X) - Arbitrary File Permission Modification",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Installer",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "mi...@google.com",
+  "created_date": "2019-03-26T21:32:46+00:00",
+  "modified_date": "2024-01-09T01:04:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53067787,
+      "filename": "Chrome.flv",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2878516,
+      "url": "https://issues.chromium.org/action/issues/40094390/attachments/53067787?download=true",
+      "local_path": "attachments/Chrome.flv"
+    }
+  ],
+  "update_count": 87,
+  "description_snippet": "Chrome Version : 73.0.3683.86\r\nOS Version: Mac OS X 10.14.2\r\n\r\nWhat steps will reproduce the problem?\r\n\r\nI noticed when using Google Chrome on Mac OS X that it performs an insecure file write to /private/tmp that could lead to a privilege escalation and/or sensitive data being compromised via a basi"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "40085361",
+  "url": "https://issues.chromium.org/issues/40085361",
+  "title": "Use-after-poison in blink::TimerBase::runInternal",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Scheduling",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2016-09-10T05:12:05+00:00",
+  "modified_date": "2024-08-11T21:23:18+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3500.0,
+  "reward_amount_meta": 3500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 32,
+  "description_snippet": "Detailed report: https://cluster-fuzz.appspot.com/testcase?key=5836363167694848\n\nFuzzer: attekett_dom_fuzzer\nJob Type: linux_asan_chrome_media\nPlatform Id: linux\n\nCrash Type: Use-after-poison READ 8\nCrash Address: 0x7e9026aa55d0\nCrash State:\n  blink::TimerBase::runInternal\n  base::debug::TaskAnnotat"
+}

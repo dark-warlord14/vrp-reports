@@ -1,0 +1,29 @@
+{
+  "id": "40092580",
+  "url": "https://issues.chromium.org/issues/40092580",
+  "title": "Data URLs can be loaded on the top frame using iOS Mobile Chrome",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pi...@gmail.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2018-09-29T07:13:01+00:00",
+  "modified_date": "2024-01-06T00:06:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 35,
+  "description_snippet": "Steps to reproduce the problem:\r\n1. View \"<script>document.location.href = \"data:text/html,Hello!\";</script>\" on Desktop Chrome\r\n2. Notice \"Not allowed to navigate top frame to data URL\" error in developer console\r\n3. View same page in mobile Chrome for iOS\r\n4. Watch top frame load the data URL with"
+}

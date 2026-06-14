@@ -1,0 +1,32 @@
+{
+  "id": "40094557",
+  "url": "https://issues.chromium.org/issues/40094557",
+  "title": "Security: Two autocomplete flaws STILL allow stealing credit card numbers",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@curative.com",
+  "assignee": "ba...@chromium.org",
+  "created_date": "2019-04-10T18:26:55+00:00",
+  "modified_date": "2024-01-08T21:15:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3337.0,
+  "reward_amount_meta": 3337.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 66,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nhttps://bugs.chromium.org/p/chromium/issues/detail?id=916838 detailed an exploit that allowed an attack page to steal users' credit card numbers with minimal user interaction, by getting the user to make their credit card number appear as autocomplete text in the box, th"
+}

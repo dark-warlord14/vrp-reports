@@ -1,0 +1,43 @@
+{
+  "id": "40091930",
+  "url": "https://issues.chromium.org/issues/40091930",
+  "title": "Security:IDN url spoofing using U+4e00",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zx...@gmail.com",
+  "assignee": "me...@chromium.org",
+  "created_date": "2018-07-14T03:05:19+00:00",
+  "modified_date": "2024-01-08T20:42:58+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52938426,
+      "filename": "ip.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 3404,
+      "url": "https://issues.chromium.org/action/issues/40091930/attachments/52938426?download=true",
+      "local_path": "attachments/ip.jpg"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.99 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nhttp://xn--ipaddress-w75n.com/\r\n\r\nWhat is the expected behavior?\r\n\r\nWhat went wrong?\r\nAs you disallow U+30FC(ー), but U+4e00(一) still avail"
+}

@@ -1,0 +1,76 @@
+{
+  "id": "40089159",
+  "url": "https://issues.chromium.org/issues/40089159",
+  "title": "Bypass extension manifest permission",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals, Platform>Extensions",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ku...@gmail.com",
+  "assignee": "aa...@chromium.org",
+  "created_date": "2011-03-22T06:48:04+00:00",
+  "modified_date": "2024-01-06T00:15:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1337.0,
+  "reward_amount_meta": 1337.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53235546,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40089159/attachments/53235546?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53235547,
+      "filename": "testcase.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 1783,
+      "url": "https://issues.chromium.org/action/issues/40089159/attachments/53235547?download=true",
+      "local_path": "attachments/testcase.zip"
+    },
+    {
+      "id": 53235579,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40089159/attachments/53235579?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53235580,
+      "filename": "access chrome.google.com.crx",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 971,
+      "url": "https://issues.chromium.org/action/issues/40089159/attachments/53235580?download=true",
+      "local_path": "attachments/access chrome.google.com.crx"
+    },
+    {
+      "id": 53235581,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40089159/attachments/53235581?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53235582,
+      "filename": "access file.crx",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 933,
+      "url": "https://issues.chromium.org/action/issues/40089159/attachments/53235582?download=true",
+      "local_path": "attachments/access file.crx"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "Test chrome 11.0.696.16 dev windows xp sp3\r\n\r\nfrom https://crbug.com/chromium/76666"
+}

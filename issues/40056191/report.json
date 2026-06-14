@@ -1,0 +1,51 @@
+{
+  "id": "40056191",
+  "url": "https://issues.chromium.org/issues/40056191",
+  "title": "Security: Use-after-free with XSLT strip-space",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>XML",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "we...@aevum.de",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2021-06-12T17:44:36+00:00",
+  "modified_date": "2024-01-09T03:29:26+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52936090,
+      "filename": "uaf.xml",
+      "mime_type": "text/plain",
+      "size_bytes": 912,
+      "url": "https://issues.chromium.org/action/issues/40056191/attachments/52936090?download=true",
+      "local_path": "attachments/uaf.xml"
+    },
+    {
+      "id": 52936118,
+      "filename": "0001-Fix-use-after-free-in-xsltApplyTemplates.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 6109,
+      "url": "https://issues.chromium.org/action/issues/40056191/attachments/52936118?download=true",
+      "local_path": "attachments/0001-Fix-use-after-free-in-xsltApplyTemplates.patch"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThere's a bug in libxslt which can result in use-after-free in connection with the <xsl:strip-space> feature. Under certain circumstances, function xsltApplyTemplates can delete text nodes which are still referenced from variables, keys or possibly other data structures."
+}

@@ -1,0 +1,51 @@
+{
+  "id": "40095714",
+  "url": "https://issues.chromium.org/issues/40095714",
+  "title": "V8 Invalid Read in v8::internal::HeapObject::IsHeapNumber",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lu...@microsoft.com",
+  "assignee": "rm...@chromium.org",
+  "created_date": "2019-07-15T22:49:17+00:00",
+  "modified_date": "2024-01-08T23:07:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53271391,
+      "filename": "reduced_poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 584,
+      "url": "https://issues.chromium.org/action/issues/40095714/attachments/53271391?download=true",
+      "local_path": "attachments/reduced_poc.js"
+    },
+    {
+      "id": 53271392,
+      "filename": "original.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2367,
+      "url": "https://issues.chromium.org/action/issues/40095714/attachments/53271392?download=true",
+      "local_path": "attachments/original.js"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n\r\n1. Test Environment\r\n\r\ncommit: \r\n```\r\n\t117ddc8f6d026dfef11a61a93467956d9247868c\r\n```\r\n\r\nx64.debug args.gn:\r\n\r\n```\r\n\tis_component_build"
+}

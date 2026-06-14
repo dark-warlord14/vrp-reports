@@ -1,0 +1,29 @@
+{
+  "id": "40083582",
+  "url": "https://issues.chromium.org/issues/40083582",
+  "title": "Crash (assert) in blink::AudioDelayDSPKernel::process",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Media>Audio, Blink>WebAudio",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2016-01-30T06:06:43+00:00",
+  "modified_date": "2024-08-11T21:23:20+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "reward_amount_meta": 1500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 36,
+  "description_snippet": "Detailed report: https://cluster-fuzz.appspot.com/testcase?key=5213979443462144\n\nFuzzer: attekett_webaudio_fuzzer\nJob Type: linux_asan_chrome_chromeos\nPlatform Id: linux\n\nCrash Type: UNKNOWN\nCrash Address: 0x7f5f69e0d800\nCrash State:\n  blink::AudioDelayDSPKernel::process\n  blink::AudioDSPKernelProce"
+}

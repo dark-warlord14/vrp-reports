@@ -1,0 +1,62 @@
+{
+  "id": "40091358",
+  "url": "https://issues.chromium.org/issues/40091358",
+  "title": "Security: libglesv2 heap-buffer-overflow in VertexBuffer11::storeVertexAttributes",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "jm...@chromium.org",
+  "created_date": "2018-05-11T01:42:57+00:00",
+  "modified_date": "2024-03-12T13:34:39+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53093586,
+      "filename": "vertex.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3305,
+      "url": "https://issues.chromium.org/action/issues/40091358/attachments/53093586?download=true",
+      "local_path": "attachments/vertex.html"
+    },
+    {
+      "id": 53093587,
+      "filename": "vertex_log.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 9646,
+      "url": "https://issues.chromium.org/action/issues/40091358/attachments/53093587?download=true",
+      "local_path": "attachments/vertex_log.txt"
+    },
+    {
+      "id": 53093637,
+      "filename": "gpu.html",
+      "mime_type": "text/plain",
+      "size_bytes": 184857,
+      "url": "https://issues.chromium.org/action/issues/40091358/attachments/53093637?download=true",
+      "local_path": "attachments/gpu.html"
+    },
+    {
+      "id": 53093665,
+      "filename": "WindowsASANGPUReport.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 15329,
+      "url": "https://issues.chromium.org/action/issues/40091358/attachments/53093665?download=true",
+      "local_path": "attachments/WindowsASANGPUReport.txt"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "I have tested this on the Chrome Canary 68.0.3426.0 and asan-win32-release_x64-554177.\r\n\r\n4:041> r\r\nrax=000001777ff60000 rbx=000001770f196d00 rcx=fffffffff4cbac41\r\nrdx=ffffffff8dc7cc40 rsi=000001770dc92000 rdi=00000177800153c0\r\nrip=00007fff91932377 rsp=00000071fcbfd628 rbp=0000000000000000\r\n r8=0000"
+}

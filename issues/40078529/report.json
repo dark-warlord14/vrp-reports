@@ -1,0 +1,29 @@
+{
+  "id": "40078529",
+  "url": "https://issues.chromium.org/issues/40078529",
+  "title": "Security: Cross-domain bug in password manager",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2010-0556"
+  ],
+  "reporter": "0a...@gmail.com",
+  "assignee": "ti...@chromium.org",
+  "created_date": "2010-01-20T18:27:22+00:00",
+  "modified_date": "2024-02-04T15:52:27+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 44,
+  "description_snippet": "I have not had a lot of time to test various scenarios with this issue.  If\r\nyou have trouble reproducing, just let me know and I can try to get a more\r\nprecise test case.\r\n\r\nIn messing around with HTTP digest authentication, I discovered a behavior\r\nwhere the password manager pre-populates the logi"
+}

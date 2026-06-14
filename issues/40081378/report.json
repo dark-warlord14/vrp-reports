@@ -1,0 +1,44 @@
+{
+  "id": "40081378",
+  "url": "https://issues.chromium.org/issues/40081378",
+  "title": "Security: Extensions can silently debug (run code) in ANY tab and escape the sandbox",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions, Platform>Extensions>API",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "ro...@robwu.nl",
+  "created_date": "2015-02-09T16:24:22+00:00",
+  "modified_date": "2024-01-06T00:15:50+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53326382,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 220,
+      "url": "https://issues.chromium.org/action/issues/40081378/attachments/53326382?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53326383,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 4157,
+      "url": "https://issues.chromium.org/action/issues/40081378/attachments/53326383?download=true",
+      "local_path": "attachments/background.js"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n**Please provide a brief explanation of the security issue.**   \n  \nThe chrome.debugger extension API can attach to targets at any origin, including URLs such as file://, chrome://, chrome-extension:// and the Chrome Web store. Attaching to privileged targets is usually"
+}

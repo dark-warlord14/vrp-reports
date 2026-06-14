@@ -1,0 +1,49 @@
+{
+  "id": "40058326",
+  "url": "https://issues.chromium.org/issues/40058326",
+  "title": "Security: use-after-poison in blink::InspectorAccessibilityAgent::RefreshFrontendNodes ",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Platform>DevTools>Accessibility",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "jo...@chromium.org",
+  "created_date": "2021-12-23T01:48:14+00:00",
+  "modified_date": "2024-01-09T04:36:22+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52883463,
+      "filename": "repro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 27081486,
+      "url": "https://issues.chromium.org/action/issues/40058326/attachments/52883463?download=true",
+      "local_path": "attachments/repro.mp4"
+    },
+    {
+      "id": 52883543,
+      "filename": "ddemo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 13202159,
+      "url": "https://issues.chromium.org/action/issues/40058326/attachments/52883543?download=true",
+      "local_path": "attachments/ddemo.mp4"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nI think this vulnerability can be triggered in a simpler way, but I haven't found it yet.   \n  \n  \n=================================================================  \n==12428==ERROR: AddressSanitizer: use-after-poison on address 0x7e9700534380 at pc 0x7fffc5246bad"
+}

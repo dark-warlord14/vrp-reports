@@ -1,0 +1,54 @@
+{
+  "id": "40093864",
+  "url": "https://issues.chromium.org/issues/40093864",
+  "title": "Security: URL bar spoofing on iOS (repro issue 844881)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Mobile>iOSWeb>PageLoad, UI>Browser>Navigation, UI>Browser>Omnibox",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2019-01-26T03:43:07+00:00",
+  "modified_date": "2024-08-21T11:47:20+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53271061,
+      "filename": "test case.html",
+      "mime_type": "text/plain",
+      "size_bytes": 396,
+      "url": "https://issues.chromium.org/action/issues/40093864/attachments/53271061?download=true",
+      "local_path": "attachments/test case.html"
+    },
+    {
+      "id": 53271076,
+      "filename": "E18AF79B-0805-4B29-BF8A-D8FA96F0728E.MOV",
+      "mime_type": "video/quicktime",
+      "size_bytes": 283849,
+      "url": "https://issues.chromium.org/action/issues/40093864/attachments/53271076?download=true",
+      "local_path": "attachments/E18AF79B-0805-4B29-BF8A-D8FA96F0728E.MOV"
+    },
+    {
+      "id": 53271126,
+      "filename": "97D55D74-2BA9-4797-8FBA-EECDF4827376.MOV",
+      "mime_type": "video/quicktime",
+      "size_bytes": 2838186,
+      "url": "https://issues.chromium.org/action/issues/40093864/attachments/53271126?download=true",
+      "local_path": "attachments/97D55D74-2BA9-4797-8FBA-EECDF4827376.MOV"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "**VERSION**   \nChrome Version: 72.0.3626.73  \nOperating System: iOS 12.1.2  \n  \nSimilar to https://crbug.com/chromium/844881  \n  \n1.  Lunch the test case  \n2. Click Login Twitter  \n3. Spoof"
+}

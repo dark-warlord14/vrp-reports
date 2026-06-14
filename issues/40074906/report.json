@@ -1,0 +1,56 @@
+{
+  "id": "40074906",
+  "url": "https://issues.chromium.org/issues/40074906",
+  "title": "Security: No Origin For PresentAPI",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Internals>Cast>UI",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ia...@gmail.com",
+  "assignee": "ah...@google.com",
+  "created_date": "2023-10-14T09:17:53+00:00",
+  "modified_date": "2024-05-31T15:43:22+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53114292,
+      "filename": "Screen recording 2023 10 14 2 43 59 PM.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 232798,
+      "url": "https://issues.chromium.org/action/issues/40074906/attachments/53114292?download=true",
+      "local_path": "attachments/Screen recording 2023 10 14 2 43 59 PM.mp4"
+    },
+    {
+      "id": 53114371,
+      "filename": "Chrome On ChromeOS.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 256208,
+      "url": "https://issues.chromium.org/action/issues/40074906/attachments/53114371?download=true",
+      "local_path": "attachments/Chrome On ChromeOS.jpg"
+    },
+    {
+      "id": 53114372,
+      "filename": "Chrome on MacOS.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 106145,
+      "url": "https://issues.chromium.org/action/issues/40074906/attachments/53114372?download=true",
+      "local_path": "attachments/Chrome on MacOS.jpg"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "Based on my idea its look like similar to 1374518 (Thanks to alesa) where the window does not show Origin of PresenterAPI.\r\n\r\n\r\nI found that this is not affecting Chrome on Mac and Windows and Android but it is only affecting Chrome Running Chrome OS. Tested On Chrome only.\r\n\r\n\r\n1. Please browse the"
+}

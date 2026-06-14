@@ -1,0 +1,65 @@
+{
+  "id": "40092040",
+  "url": "https://issues.chromium.org/issues/40092040",
+  "title": "Security: Loading mixed content without insecure warning",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Media>Video, Internals>Media>Network, UI>Browser>Omnibox>SecurityIndicators",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "re...@gmail.com",
+  "assignee": "da...@chromium.org",
+  "created_date": "2018-07-26T22:52:24+00:00",
+  "modified_date": "2024-01-08T21:51:08+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53131525,
+      "filename": "mixedmp4.html",
+      "mime_type": "text/plain",
+      "size_bytes": 350,
+      "url": "https://issues.chromium.org/action/issues/40092040/attachments/53131525?download=true",
+      "local_path": "attachments/mixedmp4.html"
+    },
+    {
+      "id": 53131526,
+      "filename": "mixedjs.html",
+      "mime_type": "text/plain",
+      "size_bytes": 235,
+      "url": "https://issues.chromium.org/action/issues/40092040/attachments/53131526?download=true",
+      "local_path": "attachments/mixedjs.html"
+    },
+    {
+      "id": 53131527,
+      "filename": "mixedpng.html",
+      "mime_type": "text/plain",
+      "size_bytes": 283,
+      "url": "https://issues.chromium.org/action/issues/40092040/attachments/53131527?download=true",
+      "local_path": "attachments/mixedpng.html"
+    },
+    {
+      "id": 53131571,
+      "filename": "2018-07-31 12-11-04.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4118090,
+      "url": "https://issues.chromium.org/action/issues/40092040/attachments/53131571?download=true",
+      "local_path": "attachments/2018-07-31 12-11-04.mp4"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe site seems secure but is loading mixed / insecure content.  \n  \nThe first time loading a page, the page is flagged unsecure. When a page refresh happens the page is flagged secure.  \nTo get the secure flagged page a refresh can be done through the meta refresh or a J"
+}

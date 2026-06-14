@@ -1,0 +1,67 @@
+{
+  "id": "40093477",
+  "url": "https://issues.chromium.org/issues/40093477",
+  "title": "Security: Origin header-based CSRF protection bypass",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Forms>Submission, Blink>SecurityFeature, UI>Browser>Navigation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "lu...@chromium.org",
+  "created_date": "2018-12-16T18:50:59+00:00",
+  "modified_date": "2024-01-08T21:50:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53014710,
+      "filename": "chrome origin bypass devtools.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 150807,
+      "url": "https://issues.chromium.org/action/issues/40093477/attachments/53014710?download=true",
+      "local_path": "attachments/chrome origin bypass devtools.mp4"
+    },
+    {
+      "id": 53014711,
+      "filename": "csrf bypass no devtools.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 354465,
+      "url": "https://issues.chromium.org/action/issues/40093477/attachments/53014711?download=true",
+      "local_path": "attachments/csrf bypass no devtools.mp4"
+    },
+    {
+      "id": 53014712,
+      "filename": "csrf-bypass-simple.html",
+      "mime_type": "text/plain",
+      "size_bytes": 649,
+      "url": "https://issues.chromium.org/action/issues/40093477/attachments/53014712?download=true",
+      "local_path": "attachments/csrf-bypass-simple.html"
+    },
+    {
+      "id": 53014739,
+      "filename": "csrf-bypass-simple.html",
+      "mime_type": "text/plain",
+      "size_bytes": 666,
+      "url": "https://issues.chromium.org/action/issues/40093477/attachments/53014739?download=true",
+      "local_path": "attachments/csrf-bypass-simple_53014739.html"
+    }
+  ],
+  "update_count": 86,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nCSRF protection bypass with user input is possible via a bug where refreshing a failed cross-origin form submission changes the request origin upon resubmission.  \n  \n**VERSION**   \nChrome Version: 71.0.3578.98 (Official Build) (64-bit)  \nOperating System: Mac OS Sierra"
+}

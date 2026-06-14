@@ -1,0 +1,49 @@
+{
+  "id": "40092689",
+  "url": "https://issues.chromium.org/issues/40092689",
+  "title": "Security: Markup injection is possible in the Preview feature in the Developer Tools due to mishandling of URI encoded strings",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P3",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sh...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2018-10-13T10:34:09+00:00",
+  "modified_date": "2024-01-08T19:13:31+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53018011,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 301,
+      "url": "https://issues.chromium.org/action/issues/40092689/attachments/53018011?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53018012,
+      "filename": "chrome-preview-injection-8ubB4QAUdhB42iE.png",
+      "mime_type": "image/png",
+      "size_bytes": 574006,
+      "url": "https://issues.chromium.org/action/issues/40092689/attachments/53018012?download=true",
+      "local_path": "attachments/chrome-preview-injection-8ubB4QAUdhB42iE.png"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nPreview feature in the Developer Tools handles URI encoded strings in the response body in an unsafe manner that allows for markup injections. The URI encoded strings are decoded and interpreted as part of the HTML, therefore someone who is able to inject a URI encoded s"
+}

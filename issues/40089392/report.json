@@ -1,0 +1,75 @@
+{
+  "id": "40089392",
+  "url": "https://issues.chromium.org/issues/40089392",
+  "title": "Security: Stack Buffer Overflow in QuicClientPromisedInfo::OnPromiseHeaders",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>Network>QUIC",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ne...@gmail.com",
+  "assignee": "rc...@chromium.org",
+  "created_date": "2017-10-24T05:44:58+00:00",
+  "modified_date": "2024-01-08T22:00:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10500.0,
+  "reward_amount_meta": 10500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53020361,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 10540,
+      "url": "https://issues.chromium.org/action/issues/40089392/attachments/53020361?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53020362,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40089392/attachments/53020362?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53020363,
+      "filename": "server.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1365,
+      "url": "https://issues.chromium.org/action/issues/40089392/attachments/53020363?download=true",
+      "local_path": "attachments/server.patch"
+    },
+    {
+      "id": 53020364,
+      "filename": "www.example.org.tar",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 8704,
+      "url": "https://issues.chromium.org/action/issues/40089392/attachments/53020364?download=true",
+      "local_path": "attachments/www.example.org.tar"
+    },
+    {
+      "id": 53020375,
+      "filename": "fix.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1917,
+      "url": "https://issues.chromium.org/action/issues/40089392/attachments/53020375?download=true",
+      "local_path": "attachments/fix.patch"
+    }
+  ],
+  "update_count": 90,
+  "description_snippet": "VULNERABILITY DETAILS\r\nThe QUIC Protocol has a feature called \"Server Push\", where a server\r\ncan push resources to a client before they are explicitly requested,\r\nto prevent unneeded round-trips. When handling push headers,\r\nQuicClientPromisedInfo::OnPromiseHeaders assumes that the `:method`\r\nheader"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "40067517",
+  "url": "https://issues.chromium.org/issues/40067517",
+  "title": "Initiator origin not propagated on cross-profile navigations",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Internals>Permissions",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@gmail.com",
+  "assignee": "el...@chromium.org",
+  "created_date": "2023-07-17T08:02:23+00:00",
+  "modified_date": "2024-06-06T17:46:28+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53017875,
+      "filename": "open.html",
+      "mime_type": "text/plain",
+      "size_bytes": 205,
+      "url": "https://issues.chromium.org/action/issues/40067517/attachments/53017875?download=true",
+      "local_path": "attachments/open.html"
+    },
+    {
+      "id": 53017876,
+      "filename": "POC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 532674,
+      "url": "https://issues.chromium.org/action/issues/40067517/attachments/53017876?download=true",
+      "local_path": "attachments/POC.mp4"
+    },
+    {
+      "id": 53017910,
+      "filename": "POC_Update.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 412509,
+      "url": "https://issues.chromium.org/action/issues/40067517/attachments/53017910?download=true",
+      "local_path": "attachments/POC_Update.mp4"
+    },
+    {
+      "id": 53017933,
+      "filename": "POC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 386191,
+      "url": "https://issues.chromium.org/action/issues/40067517/attachments/53017933?download=true",
+      "local_path": "attachments/POC_53017933.mp4"
+    },
+    {
+      "id": 53017945,
+      "filename": "pdf-calc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 865,
+      "url": "https://issues.chromium.org/action/issues/40067517/attachments/53017945?download=true",
+      "local_path": "attachments/pdf-calc.html"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "Normally it should open a link like ms-calculator:: , tel:// , or whatsapp: and different link should show Extension URL Access.  \n  \nAfter open link in new tab/window/incognito URL permission is show, but if link open link as different profile URL permission not show.  \n   \n**VERSION**   \n  \nChrome"
+}

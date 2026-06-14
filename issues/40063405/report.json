@@ -1,0 +1,100 @@
+{
+  "id": "40063405",
+  "url": "https://issues.chromium.org/issues/40063405",
+  "title": "Heap-buffer-overflow in SkAlphaRuns::add",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals, Internals>Skia",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2012-08-11T19:25:51+00:00",
+  "modified_date": "2024-01-03T12:51:06+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53180699,
+      "filename": "runner.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 547,
+      "url": "https://issues.chromium.org/action/issues/40063405/attachments/53180699?download=true",
+      "local_path": "attachments/runner.html"
+    },
+    {
+      "id": 53180700,
+      "filename": "chrome-heap-buffer-overflow-SkAlphaRunsadd-c5610.html",
+      "mime_type": "text/html; charset=utf-8",
+      "size_bytes": 22979,
+      "url": "https://issues.chromium.org/action/issues/40063405/attachments/53180700?download=true",
+      "local_path": "attachments/chrome-heap-buffer-overflow-SkAlphaRunsadd-c5610.html"
+    },
+    {
+      "id": 53180701,
+      "filename": "chrome-heap-buffer-overflow-SkAlphaRunsadd-c569.html",
+      "mime_type": "text/html; charset=utf-8",
+      "size_bytes": 25633,
+      "url": "https://issues.chromium.org/action/issues/40063405/attachments/53180701?download=true",
+      "local_path": "attachments/chrome-heap-buffer-overflow-SkAlphaRunsadd-c569.html"
+    },
+    {
+      "id": 53180796,
+      "filename": "chrome-heap-buffer-overflow-SkAlphaRunsadd-c569.html",
+      "mime_type": "text/html; charset=utf-8",
+      "size_bytes": 13415,
+      "url": "https://issues.chromium.org/action/issues/40063405/attachments/53180796?download=true",
+      "local_path": "attachments/chrome-heap-buffer-overflow-SkAlphaRunsadd-c569_53180796.html"
+    },
+    {
+      "id": 53180797,
+      "filename": "chrome-heap-buffer-overflow-SkAlphaRunsadd-c5610.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1492,
+      "url": "https://issues.chromium.org/action/issues/40063405/attachments/53180797?download=true",
+      "local_path": "attachments/chrome-heap-buffer-overflow-SkAlphaRunsadd-c5610_53180797.html"
+    },
+    {
+      "id": 53180804,
+      "filename": "chrome-heap-buffer-overflow-SkAlphaRunsadd-c5610.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1492,
+      "url": "https://issues.chromium.org/action/issues/40063405/attachments/53180804?download=true",
+      "local_path": "attachments/chrome-heap-buffer-overflow-SkAlphaRunsadd-c5610_53180804.html"
+    },
+    {
+      "id": 53180809,
+      "filename": "repro.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 6863,
+      "url": "https://issues.chromium.org/action/issues/40063405/attachments/53180809?download=true",
+      "local_path": "attachments/repro.zip"
+    },
+    {
+      "id": 53180922,
+      "filename": "Repro-8-from-10.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 6637,
+      "url": "https://issues.chromium.org/action/issues/40063405/attachments/53180922?download=true",
+      "local_path": "attachments/Repro-8-from-10.zip"
+    },
+    {
+      "id": 53180925,
+      "filename": "Repro-10-from-10.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 1685,
+      "url": "https://issues.chromium.org/action/issues/40063405/attachments/53180925?download=true",
+      "local_path": "attachments/Repro-10-from-10.zip"
+    }
+  ],
+  "update_count": 79,
+  "description_snippet": "All files needed for reproducing are as attachments.\r\n\r\nThis issue can be hard to reproduce, I created the runner.html to help in reproducing. Place all the attached files in a same folder and open the runner.html with Chrome. I had a success rate of about one of ten tries to reproduce the issue. (I"
+}

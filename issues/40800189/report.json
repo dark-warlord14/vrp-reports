@@ -1,0 +1,29 @@
+{
+  "id": "40800189",
+  "url": "https://issues.chromium.org/issues/40800189",
+  "title": "Non-positive-vla-bound-value in blink::CanvasPath::roundRect",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P4",
+  "component": "Blink>Canvas, Blink>JavaScript>API",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "aa...@chromium.org",
+  "created_date": "2021-10-26T09:34:44+00:00",
+  "modified_date": "2024-08-11T21:22:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 41,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=6010514792316928\n\nFuzzer: b0ring_webidl_fuzzer\nJob Type: linux_ubsan_chrome\nPlatform Id: linux\n\nCrash Type: Non-positive-vla-bound-value\nCrash Address: \nCrash State:\n  blink::CanvasPath::roundRect\n  blink::v8_canvas_rendering_context_2d::RoundRec"
+}

@@ -1,0 +1,49 @@
+{
+  "id": "40091514",
+  "url": "https://issues.chromium.org/issues/40091514",
+  "title": "Chrome URL Spoofing (via refreshed)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Sandbox>SiteIsolation, UI>Browser>Navigation",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ev...@gmail.com",
+  "assignee": "cr...@chromium.org",
+  "created_date": "2018-05-30T03:26:04+00:00",
+  "modified_date": "2024-01-05T22:11:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53355230,
+      "filename": "url_spoof_cmd_r.html",
+      "mime_type": "text/plain",
+      "size_bytes": 558,
+      "url": "https://issues.chromium.org/action/issues/40091514/attachments/53355230?download=true",
+      "local_path": "attachments/url_spoof_cmd_r.html"
+    },
+    {
+      "id": 53355245,
+      "filename": "MG142.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 67554,
+      "url": "https://issues.chromium.org/action/issues/40091514/attachments/53355245?download=true",
+      "local_path": "attachments/MG142.jpeg"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/67.0.3396.62 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Open url: https://server.n0tr00t.com/chrome/url_spoof_cmd_r.html\r\n2. Click test text\r\n3. Try use keyboard `command + r`\r\n4. We wi"
+}

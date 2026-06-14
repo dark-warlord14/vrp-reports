@@ -1,0 +1,62 @@
+{
+  "id": "40095317",
+  "url": "https://issues.chromium.org/issues/40095317",
+  "title": "Security: URL bar spoofing on iOS with history.back()",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ju...@chromium.org",
+  "created_date": "2019-06-06T18:29:18+00:00",
+  "modified_date": "2024-08-21T12:29:37+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53191976,
+      "filename": "0486158C-6CBC-4515-AFAD-6583F55C2672.MP4",
+      "mime_type": "video/mp4",
+      "size_bytes": 251269,
+      "url": "https://issues.chromium.org/action/issues/40095317/attachments/53191976?download=true",
+      "local_path": "attachments/0486158C-6CBC-4515-AFAD-6583F55C2672.MP4"
+    },
+    {
+      "id": 53192009,
+      "filename": "x.html",
+      "mime_type": "text/plain",
+      "size_bytes": 248,
+      "url": "https://issues.chromium.org/action/issues/40095317/attachments/53192009?download=true",
+      "local_path": "attachments/x.html"
+    },
+    {
+      "id": 53192010,
+      "filename": "attack.html",
+      "mime_type": "text/plain",
+      "size_bytes": 502,
+      "url": "https://issues.chromium.org/action/issues/40095317/attachments/53192010?download=true",
+      "local_path": "attachments/attack.html"
+    },
+    {
+      "id": 53192066,
+      "filename": "7DC0D98B-6C50-4E81-8D3D-A7331B8C9420.MP4",
+      "mime_type": "video/mp4",
+      "size_bytes": 958989,
+      "url": "https://issues.chromium.org/action/issues/40095317/attachments/53192066?download=true",
+      "local_path": "attachments/7DC0D98B-6C50-4E81-8D3D-A7331B8C9420.MP4"
+    }
+  ],
+  "update_count": 70,
+  "description_snippet": "**VERSION**   \nChrome Version: 75.0.3770.67 beta  \nOperating System: iOS 12.3.1  \n  \n**REPRODUCTION CASE**   \n  \n- Enable slim-navigation-manager   \n  \n1. Go to https://lbstyle.github.io/x.html  \n2. Click on the button and wait  \n3. On https://lbstyle.github.io/attack.html, click on the button.  \n4."
+}

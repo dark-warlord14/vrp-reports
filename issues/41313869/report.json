@@ -1,0 +1,86 @@
+{
+  "id": "41313869",
+  "url": "https://issues.chromium.org/issues/41313869",
+  "title": "RTL URLs show up in the wrong order in the Omnibox suggestions on iOS",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mg...@chromium.org",
+  "assignee": "jd...@chromium.org",
+  "created_date": "2017-04-19T00:52:53+00:00",
+  "modified_date": "2024-02-15T15:23:51+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53168777,
+      "filename": "IMG_7871.PNG",
+      "mime_type": "image/png",
+      "size_bytes": 114120,
+      "url": "https://issues.chromium.org/action/issues/41313869/attachments/53168777?download=true",
+      "local_path": "attachments/IMG_7871.PNG"
+    },
+    {
+      "id": 53168797,
+      "filename": "Current situation.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 36196,
+      "url": "https://issues.chromium.org/action/issues/41313869/attachments/53168797?download=true",
+      "local_path": "attachments/Current situation.jpg"
+    },
+    {
+      "id": 53168798,
+      "filename": "Suggested Fixture - google chrome (Windows 10).png",
+      "mime_type": "image/png",
+      "size_bytes": 8322,
+      "url": "https://issues.chromium.org/action/issues/41313869/attachments/53168798?download=true",
+      "local_path": "attachments/Suggested Fixture - google chrome (Windows 10).png"
+    },
+    {
+      "id": 53168816,
+      "filename": "IMG_7885.JPG",
+      "mime_type": "image/jpeg",
+      "size_bytes": 100240,
+      "url": "https://issues.chromium.org/action/issues/41313869/attachments/53168816?download=true",
+      "local_path": "attachments/IMG_7885.JPG"
+    },
+    {
+      "id": 53168833,
+      "filename": "Screen Shot 2017-05-01 at 2.56.38 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 65605,
+      "url": "https://issues.chromium.org/action/issues/41313869/attachments/53168833?download=true",
+      "local_path": "attachments/Screen Shot 2017-05-01 at 2.56.38 PM.png"
+    },
+    {
+      "id": 53168834,
+      "filename": "Screen Shot 2017-05-01 at 2.33.03 PM.png",
+      "mime_type": "image/png",
+      "size_bytes": 49514,
+      "url": "https://issues.chromium.org/action/issues/41313869/attachments/53168834?download=true",
+      "local_path": "attachments/Screen Shot 2017-05-01 at 2.33.03 PM.png"
+    },
+    {
+      "id": 53168857,
+      "filename": "PoC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1116583,
+      "url": "https://issues.chromium.org/action/issues/41313869/attachments/53168857?download=true",
+      "local_path": "attachments/PoC.mp4"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "Chrome Version: 57.0.2987.137  \nOS: IOS 10.2.1  \n  \nReported on https://crbug.com/708981#c19 by user rayyanh12.  \n  \n**What steps will reproduce the problem?**   \nI'm not an iOS user so I'm just guessing how to repro this from the screenshot.  \n**(1)**  Copy the following URL: 127.0.0.1/ا/http://att"
+}

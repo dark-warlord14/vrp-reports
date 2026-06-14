@@ -1,0 +1,48 @@
+{
+  "id": "40059315",
+  "url": "https://issues.chromium.org/issues/40059315",
+  "title": "Tab reliably crashing with STATUS_ACCESS_VIOLATION with reproduction steps",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2022-04-07T14:16:39+00:00",
+  "modified_date": "2024-01-09T04:58:52+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53122342,
+      "filename": "out.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 253291,
+      "url": "https://issues.chromium.org/action/issues/40059315/attachments/53122342?download=true",
+      "local_path": "attachments/out.mp4"
+    },
+    {
+      "id": 53122390,
+      "filename": "1314310.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3008652,
+      "url": "https://issues.chromium.org/action/issues/40059315/attachments/53122390?download=true",
+      "local_path": "attachments/1314310.mp4"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "Chrome Version       : 100.0.4896.75 (Official Build) (64-bit) (cohort: Stable)  \n**URLs (if applicable) :**  https://jsbin.com/nowopiw/edit?html,css,output  \n**Other browsers tested:**   \n  Add OK or FAIL, along with the version, after other browsers where you  \n**have tested this issue:**"
+}

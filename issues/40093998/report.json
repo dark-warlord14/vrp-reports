@@ -1,0 +1,83 @@
+{
+  "id": "40093998",
+  "url": "https://issues.chromium.org/issues/40093998",
+  "title": "Security: Possible to override browser-initiated navigation using WindowClient.navigate",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>ServiceWorker, UI>Browser>Navigation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "fa...@chromium.org",
+  "created_date": "2019-02-08T16:10:49+00:00",
+  "modified_date": "2024-01-08T19:46:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53099732,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 134,
+      "url": "https://issues.chromium.org/action/issues/40093998/attachments/53099732?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53099733,
+      "filename": "main.js",
+      "mime_type": "text/plain",
+      "size_bytes": 478,
+      "url": "https://issues.chromium.org/action/issues/40093998/attachments/53099733?download=true",
+      "local_path": "attachments/main.js"
+    },
+    {
+      "id": 53099734,
+      "filename": "service_worker.js",
+      "mime_type": "text/plain",
+      "size_bytes": 521,
+      "url": "https://issues.chromium.org/action/issues/40093998/attachments/53099734?download=true",
+      "local_path": "attachments/service_worker.js"
+    },
+    {
+      "id": 53099748,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 134,
+      "url": "https://issues.chromium.org/action/issues/40093998/attachments/53099748?download=true",
+      "local_path": "attachments/index_53099748.html"
+    },
+    {
+      "id": 53099749,
+      "filename": "main.js",
+      "mime_type": "text/plain",
+      "size_bytes": 413,
+      "url": "https://issues.chromium.org/action/issues/40093998/attachments/53099749?download=true",
+      "local_path": "attachments/main_53099749.js"
+    },
+    {
+      "id": 53099750,
+      "filename": "service_worker.js",
+      "mime_type": "text/plain",
+      "size_bytes": 675,
+      "url": "https://issues.chromium.org/action/issues/40093998/attachments/53099750?download=true",
+      "local_path": "attachments/service_worker_53099750.js"
+    }
+  ],
+  "update_count": 31,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA service worker can call the WindowClient.navigate method to direct a page under its control to a specific URL. Unlike the usual methods of redirecting (e.g. window.location.href = ..., window.location.replace(...), etc), which don't work once the beforeunload event has"
+}

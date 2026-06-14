@@ -1,0 +1,67 @@
+{
+  "id": "41495060",
+  "url": "https://issues.chromium.org/issues/41495060",
+  "title": "Memory corruption in blink::StyleColor",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Color",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2024-01-26T11:37:47+00:00",
+  "modified_date": "2024-05-08T15:42:51+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53264675,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13846,
+      "url": "https://issues.chromium.org/action/issues/41495060/attachments/53264675?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53264676,
+      "filename": "harness.js",
+      "mime_type": "text/plain",
+      "size_bytes": 192088,
+      "url": "https://issues.chromium.org/action/issues/41495060/attachments/53264676?download=true",
+      "local_path": "attachments/harness.js"
+    },
+    {
+      "id": 53264677,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 408,
+      "url": "https://issues.chromium.org/action/issues/41495060/attachments/53264677?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53264696,
+      "filename": "poc2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 373,
+      "url": "https://issues.chromium.org/action/issues/41495060/attachments/53264696?download=true",
+      "local_path": "attachments/poc2.html"
+    }
+  ],
+  "update_count": 155,
+  "description_snippet": "**Steps to reproduce the problem:**   \nI'm still investigating the root cause and will attach more analysis soon.  \n  \nReproduction step:  \n  \n./chrome --no-sandbox http://localhost/poc.html  \n  \n**Problem Description:**   \nrenderer memory corruption  \n  \n**Additional Comments:**   \n  \n  \n**Chrome v"
+}

@@ -1,0 +1,73 @@
+{
+  "id": "40074299",
+  "url": "https://issues.chromium.org/issues/40074299",
+  "title": "Security: Bypassing Chrome's File URI Restrictions with View-Source in Extensions",
+  "status": "Accepted",
+  "severity": "Unknown",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "nd...@protonmail.com",
+  "assignee": "jk...@google.com",
+  "created_date": "2023-10-06T17:42:35+00:00",
+  "modified_date": "2024-08-11T21:28:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53352996,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3103456,
+      "url": "https://issues.chromium.org/action/issues/40074299/attachments/53352996?download=true",
+      "local_path": "attachments/demo.mp4"
+    },
+    {
+      "id": 53352997,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 87,
+      "url": "https://issues.chromium.org/action/issues/40074299/attachments/53352997?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53352998,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 180,
+      "url": "https://issues.chromium.org/action/issues/40074299/attachments/53352998?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53352999,
+      "filename": "error.png",
+      "mime_type": "image/png",
+      "size_bytes": 24653,
+      "url": "https://issues.chromium.org/action/issues/40074299/attachments/53352999?download=true",
+      "local_path": "attachments/error.png"
+    },
+    {
+      "id": 53353101,
+      "filename": "changes-to-file-scheme.png",
+      "mime_type": "image/png",
+      "size_bytes": 82677,
+      "url": "https://issues.chromium.org/action/issues/40074299/attachments/53353101?download=true",
+      "local_path": "attachments/changes-to-file-scheme.png"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIn the latest version of Chrome, navigation to the file URI is disabled when \"Allow File Access\" is turned off. This change addresses most file access vulnerabilities in extensions and aims to prevent future exploitations. However, I've discovered a method where this res"
+}

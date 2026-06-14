@@ -1,0 +1,50 @@
+{
+  "id": "40093777",
+  "url": "https://issues.chromium.org/issues/40093777",
+  "title": "pdfium (XFA): wrong object type in CFXJSE_FormCalcContext::ParseResolveResult",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pd...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2019-01-17T05:41:25+00:00",
+  "modified_date": "2024-01-08T20:17:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53255128,
+      "filename": "chromium-922864.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 418,
+      "url": "https://issues.chromium.org/action/issues/40093777/attachments/53255128?download=true",
+      "local_path": "attachments/chromium-922864.pdf"
+    },
+    {
+      "id": 53255157,
+      "filename": "chromium-922864-2.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 421,
+      "url": "https://issues.chromium.org/action/issues/40093777/attachments/53255157?download=true",
+      "local_path": "attachments/chromium-922864-2.pdf"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.71 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nYou can reproduce with pdfium_test by setting is_ubsan_security or is_ubsan_vptr.\r\n\r\nfxjs/xfa/cjx_node.cpp:460:7: runtime error: member call on addr"
+}

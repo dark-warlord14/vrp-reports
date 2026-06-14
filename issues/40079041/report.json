@@ -1,0 +1,36 @@
+{
+  "id": "40079041",
+  "url": "https://issues.chromium.org/issues/40079041",
+  "title": "WebCore::Document::recalcStyleSelector+0x7c",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wo...@gmail.com",
+  "assignee": "[Deleted User]",
+  "created_date": "2010-02-08T08:27:11+00:00",
+  "modified_date": "2024-02-04T15:51:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53013138,
+      "filename": "webkit21.rar",
+      "mime_type": "application/x-rar",
+      "size_bytes": 1057,
+      "url": "https://issues.chromium.org/action/issues/40079041/attachments/53013138?download=true",
+      "local_path": "attachments/webkit21.rar"
+    }
+  ],
+  "update_count": 25,
+  "description_snippet": "Hi, I think I found a bug of chrome, I test it on chrome 4 and 3 ,on \r\nversion 4, maybe you need refresh some times, it works, and the stack like \r\nthis:\r\n\r\n00aff7a4 01c78fca 00084000 00000000 008f2e70 chrome_1c30000!\r\nWebCore::Document::recalcStyleSelector+0x7c (CONV: thiscall) \r\n[c:\\b\\slave\\chrome"
+}

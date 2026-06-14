@@ -1,0 +1,67 @@
+{
+  "id": "41497180",
+  "url": "https://issues.chromium.org/issues/41497180",
+  "title": "UAF in webrtc::BitrateAllocator::OnNetworkEstimateChanged",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebRTC",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "pe...@chromium.org",
+  "created_date": "2024-02-02T06:25:08+00:00",
+  "modified_date": "2024-05-21T15:42:25+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53032294,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2224,
+      "url": "https://issues.chromium.org/action/issues/41497180/attachments/53032294?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53032300,
+      "filename": "fake-video.y4m",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 8460628,
+      "url": "https://issues.chromium.org/action/issues/41497180/attachments/53032300?download=true",
+      "local_path": "attachments/fake-video.y4m"
+    },
+    {
+      "id": 53032301,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 30275,
+      "url": "https://issues.chromium.org/action/issues/41497180/attachments/53032301?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53032339,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 31956,
+      "url": "https://issues.chromium.org/action/issues/41497180/attachments/53032339?download=true",
+      "local_path": "attachments/asan_53032339.log"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "**Steps to reproduce the problem:**   \nrepro steps:  \n./chrome --use-file-for-fake-video-capture=/xx/fake-video.y4m   --use-fake-ui-for-media-stream --use-fake-device-for-media-stream       --incognito   --user-data-dir=/tmp/xx  --js-flags=--expose-gc http://localhost:8880/crash,html  \n  \n**Problem"
+}

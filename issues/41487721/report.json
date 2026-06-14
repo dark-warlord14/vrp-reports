@@ -1,0 +1,62 @@
+{
+  "id": "41487721",
+  "url": "https://issues.chromium.org/issues/41487721",
+  "title": "Security: Spoofing request source of Apple mobile configuration profile downloads by UI impersonation",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Mobile>iOSWeb>Security",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ni...@gmail.com",
+  "assignee": "aj...@google.com",
+  "created_date": "2024-01-02T23:16:24+00:00",
+  "modified_date": "2024-08-21T12:32:51+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52947233,
+      "filename": "chromium-ios-mobileconfig-download-ui-spoofing.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 433161,
+      "url": "https://issues.chromium.org/action/issues/41487721/attachments/52947233?download=true",
+      "local_path": "attachments/chromium-ios-mobileconfig-download-ui-spoofing.gif"
+    },
+    {
+      "id": 52947298,
+      "filename": "current.png",
+      "mime_type": "image/png",
+      "size_bytes": 534677,
+      "url": "https://issues.chromium.org/action/issues/41487721/attachments/52947298?download=true",
+      "local_path": "attachments/current.png"
+    },
+    {
+      "id": 52947299,
+      "filename": "proposed-fix.png",
+      "mime_type": "image/png",
+      "size_bytes": 532398,
+      "url": "https://issues.chromium.org/action/issues/41487721/attachments/52947299?download=true",
+      "local_path": "attachments/proposed-fix.png"
+    },
+    {
+      "id": 52947325,
+      "filename": "LongURL.png",
+      "mime_type": "image/png",
+      "size_bytes": 1911032,
+      "url": "https://issues.chromium.org/action/issues/41487721/attachments/52947325?download=true",
+      "local_path": "attachments/LongURL.png"
+    }
+  ],
+  "update_count": 135,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen receiving a response with a MIME type of \"application/x-apple-aspen-config\", Chromium for iOS shows a confirmation dialog to ask whether to download the iOS configuration profile, and after that, opens SFSafariViewController.  \nhttps://source.chromium.org/chromium/c"
+}

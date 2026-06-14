@@ -1,0 +1,57 @@
+{
+  "id": "40094660",
+  "url": "https://issues.chromium.org/issues/40094660",
+  "title": "pdfium (XFA): oob read+write in CFDE_TextOut",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pd...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2019-04-17T20:14:23+00:00",
+  "modified_date": "2023-07-31T15:18:51+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52960385,
+      "filename": "chromium-953881.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 689,
+      "url": "https://issues.chromium.org/action/issues/40094660/attachments/52960385?download=true",
+      "local_path": "attachments/chromium-953881.pdf"
+    },
+    {
+      "id": 52960386,
+      "filename": "chromium-953881.ttf",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 7228,
+      "url": "https://issues.chromium.org/action/issues/40094660/attachments/52960386?download=true",
+      "local_path": "attachments/chromium-953881.ttf"
+    },
+    {
+      "id": 52960387,
+      "filename": "chromium-953881-with-font.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 10526,
+      "url": "https://issues.chromium.org/action/issues/40094660/attachments/52960387?download=true",
+      "local_path": "attachments/chromium-953881-with-font.pdf"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.124 Safari/537.36  \n  \nSteps to reproduce the problem:  \nThere are two separate and independent of each other bugs here, which however seem to only reproduce in tandem. The initial ASAN report seems re"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "40090246",
+  "url": "https://issues.chromium.org/issues/40090246",
+  "title": "Security: WriteTexture heap-buffer-overflow in WebGL on macOS",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>GPU",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "zm...@chromium.org",
+  "created_date": "2018-01-20T22:33:10+00:00",
+  "modified_date": "2024-12-16T15:10:53+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53013721,
+      "filename": "writeTexture.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1664,
+      "url": "https://issues.chromium.org/action/issues/40090246/attachments/53013721?download=true",
+      "local_path": "attachments/writeTexture.html"
+    },
+    {
+      "id": 53013722,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 9846,
+      "url": "https://issues.chromium.org/action/issues/40090246/attachments/53013722?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53013860,
+      "filename": "simplied_test_case_for_crbug_804118.html",
+      "mime_type": "text/plain",
+      "size_bytes": 516,
+      "url": "https://issues.chromium.org/action/issues/40090246/attachments/53013860?download=true",
+      "local_path": "attachments/simplied_test_case_for_crbug_804118.html"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "heap overflow in WriteTextureData on macOS, tested on asan-mac-release-529226.zip\r\n\r\n==801==ERROR: AddressSanitizer: heap-buffer-overflow on address 0x602000046a04 at pc 0x000101cc248b bp 0x7ffeedf9f5f0 sp 0x7ffeedf9ed90\r\nREAD of size 8 at 0x602000046a04 thread T0\r\n    #0 0x101cc248a  (libclang_rt.a"
+}

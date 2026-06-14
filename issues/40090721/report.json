@@ -1,0 +1,29 @@
+{
+  "id": "40090721",
+  "url": "https://issues.chromium.org/issues/40090721",
+  "title": "Security: SEE_MASK_FLAG_NO_UI behavior changes in Windows 10, allowing SmartScreen bypass",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jk...@cornell.edu",
+  "assignee": "as...@chromium.org",
+  "created_date": "2018-03-07T22:34:37+00:00",
+  "modified_date": "2024-04-29T14:32:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 47,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIn the next Windows Release (Redstone 4), Windows Defender SmartScreen will honor the SEE_MASK_FLAG_NO_UI flag. This flag is passed through shellexecute when a user runs an executable, or other supported file, through the chrome download manager. Edge/Firefox/Windows Exp"
+}

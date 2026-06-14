@@ -1,0 +1,31 @@
+{
+  "id": "40057826",
+  "url": "https://issues.chromium.org/issues/40057826",
+  "title": "Chrome_ChromeOS: Crash Report - views::Widget::CloseWithReason via TabStripPageHandler::OnTabGroupChanged",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>TopChrome>TabStrip>ThumbnailTabStrip",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "yu...@chromium.org",
+  "created_date": "2021-11-05T00:17:13+00:00",
+  "modified_date": "2024-08-11T21:22:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 59,
+  "description_snippet": "Reported by: kaznacheev@google.com\n\nCrash link: https://crash.corp.google.com/browse?q=product_name%3D%27Chrome_ChromeOS%27+AND+report_type.is_fatal+AND+expanded_custom_data.ChromeCrashProto.ptype%3D%27browser%27+AND+product.Version%3D%2794.0.4606.114%27+AND+expanded_custom_data.ChromeCrashProto.mag"
+}

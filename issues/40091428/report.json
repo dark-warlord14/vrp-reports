@@ -1,0 +1,83 @@
+{
+  "id": "40091428",
+  "url": "https://issues.chromium.org/issues/40091428",
+  "title": "heap-use-after-free on AudioOutputDevi",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Media>Audio, Blink>MediaStream, Blink>WebAudio",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cd...@gmail.com",
+  "assignee": "da...@chromium.org",
+  "created_date": "2018-05-19T05:09:35+00:00",
+  "modified_date": "2024-02-27T13:20:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53161264,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4343,
+      "url": "https://issues.chromium.org/action/issues/40091428/attachments/53161264?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53161265,
+      "filename": "asan_symbolized.log",
+      "mime_type": "text/plain",
+      "size_bytes": 22786,
+      "url": "https://issues.chromium.org/action/issues/40091428/attachments/53161265?download=true",
+      "local_path": "attachments/asan_symbolized.log"
+    },
+    {
+      "id": 53161266,
+      "filename": "res.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2621,
+      "url": "https://issues.chromium.org/action/issues/40091428/attachments/53161266?download=true",
+      "local_path": "attachments/res.zip"
+    },
+    {
+      "id": 53161312,
+      "filename": "844833.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1912,
+      "url": "https://issues.chromium.org/action/issues/40091428/attachments/53161312?download=true",
+      "local_path": "attachments/844833.zip"
+    },
+    {
+      "id": 53161359,
+      "filename": "asan_symbolized2.log",
+      "mime_type": "text/plain",
+      "size_bytes": 20142,
+      "url": "https://issues.chromium.org/action/issues/40091428/attachments/53161359?download=true",
+      "local_path": "attachments/asan_symbolized2.log"
+    },
+    {
+      "id": 53161411,
+      "filename": "asan_symbolized_withpatch.log",
+      "mime_type": "text/plain",
+      "size_bytes": 23340,
+      "url": "https://issues.chromium.org/action/issues/40091428/attachments/53161411?download=true",
+      "local_path": "attachments/asan_symbolized_withpatch.log"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nVersion 68.0.3430.0 (Developer Build) (64-bit)\r\nVersion 66.0.3359.170(Windows Release)(32-bit)\r\nheap-use-after-free on AudioOutputDevi\r\n\r\n1.Get"
+}

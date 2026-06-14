@@ -1,0 +1,41 @@
+{
+  "id": "40761656",
+  "url": "https://issues.chromium.org/issues/40761656",
+  "title": "Loading remotely hosted JavaScript files in V3",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy, Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "rd...@chromium.org",
+  "created_date": "2021-04-19T06:10:03+00:00",
+  "modified_date": "2024-08-11T21:23:16+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52946747,
+      "filename": "V3-loads-remote-hosted-code.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1921,
+      "url": "https://issues.chromium.org/action/issues/40761656/attachments/52946747?download=true",
+      "local_path": "attachments/V3-loads-remote-hosted-code.zip"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "As per the migration guide (https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/#remotely-hosted-code) of the chrome extension V3, the extension can't allow loading of remotely hosted code like JavaScript or Wasm files, and the script-src directive of Content security policy (CSP)"
+}

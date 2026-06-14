@@ -1,0 +1,206 @@
+{
+  "id": "40224936",
+  "url": "https://issues.chromium.org/issues/40224936",
+  "title": "Security: Chrome on Android requestFullscreen then back or forward navigation on BFcache page able to hide omnibox",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "UI>Browser>FullScreen, UI>Browser>Navigation>BFCache",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "su...@gmail.com",
+  "assignee": "ji...@chromium.org",
+  "created_date": "2022-05-10T13:18:25+00:00",
+  "modified_date": "2023-12-06T18:59:29+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53165946,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53165946?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53165947,
+      "filename": "Chrome on Android - requestFullScreen then back on BFCache page able to hide omnibox.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1214818,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53165947?download=true",
+      "local_path": "attachments/Chrome on Android - requestFullScreen then back on BFCache page able to hide omnibox.mp4"
+    },
+    {
+      "id": 53165968,
+      "filename": "spoofpage.html",
+      "mime_type": "text/plain",
+      "size_bytes": 33418,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53165968?download=true",
+      "local_path": "attachments/spoofpage.html"
+    },
+    {
+      "id": 53165969,
+      "filename": "testcase1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 772,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53165969?download=true",
+      "local_path": "attachments/testcase1.html"
+    },
+    {
+      "id": 53165970,
+      "filename": "testcase2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 769,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53165970?download=true",
+      "local_path": "attachments/testcase2.html"
+    },
+    {
+      "id": 53166067,
+      "filename": "back-delayed.html",
+      "mime_type": "text/plain",
+      "size_bytes": 482,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53166067?download=true",
+      "local_path": "attachments/back-delayed.html"
+    },
+    {
+      "id": 53166068,
+      "filename": "back-direct.html",
+      "mime_type": "text/plain",
+      "size_bytes": 234,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53166068?download=true",
+      "local_path": "attachments/back-direct.html"
+    },
+    {
+      "id": 53166089,
+      "filename": "success.log",
+      "mime_type": "text/plain",
+      "size_bytes": 5138,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53166089?download=true",
+      "local_path": "attachments/success.log"
+    },
+    {
+      "id": 53166090,
+      "filename": "failed.log",
+      "mime_type": "text/plain",
+      "size_bytes": 10323,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53166090?download=true",
+      "local_path": "attachments/failed.log"
+    },
+    {
+      "id": 53166103,
+      "filename": "exitpersistentfullscreen.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1115,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53166103?download=true",
+      "local_path": "attachments/exitpersistentfullscreen.patch"
+    },
+    {
+      "id": 53166121,
+      "filename": "omnibox-hidden1.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7715,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53166121?download=true",
+      "local_path": "attachments/omnibox-hidden1.txt"
+    },
+    {
+      "id": 53166122,
+      "filename": "omnibox-hidden2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7715,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53166122?download=true",
+      "local_path": "attachments/omnibox-hidden2.txt"
+    },
+    {
+      "id": 53166123,
+      "filename": "omnibox-restored-with-animation1.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 9352,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53166123?download=true",
+      "local_path": "attachments/omnibox-restored-with-animation1.txt"
+    },
+    {
+      "id": 53166124,
+      "filename": "omnibox-restored-with-animation2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 9352,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53166124?download=true",
+      "local_path": "attachments/omnibox-restored-with-animation2.txt"
+    },
+    {
+      "id": 53166125,
+      "filename": "omnibox-restored-without-animation1.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 6114,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53166125?download=true",
+      "local_path": "attachments/omnibox-restored-without-animation1.txt"
+    },
+    {
+      "id": 53166126,
+      "filename": "omnibox-restored-without-animation2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 6114,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53166126?download=true",
+      "local_path": "attachments/omnibox-restored-without-animation2.txt"
+    },
+    {
+      "id": 53166136,
+      "filename": "app.js",
+      "mime_type": "text/plain",
+      "size_bytes": 462,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53166136?download=true",
+      "local_path": "attachments/app.js"
+    },
+    {
+      "id": 53166137,
+      "filename": "args.gn",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 451,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53166137?download=true",
+      "local_path": "attachments/args.gn"
+    },
+    {
+      "id": 53166138,
+      "filename": "back-delayed.html",
+      "mime_type": "text/plain",
+      "size_bytes": 442,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53166138?download=true",
+      "local_path": "attachments/back-delayed_53166138.html"
+    },
+    {
+      "id": 53166149,
+      "filename": "omnibox-hidden1.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 6069,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53166149?download=true",
+      "local_path": "attachments/omnibox-hidden1_53166149.txt"
+    },
+    {
+      "id": 53166152,
+      "filename": "back-delayed html to Hide Omnibox on Chrome Dev.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 857132,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53166152?download=true",
+      "local_path": "attachments/back-delayed html to Hide Omnibox on Chrome Dev.mp4"
+    },
+    {
+      "id": 53166163,
+      "filename": "omnibox-hidden2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 6243,
+      "url": "https://issues.chromium.org/action/issues/40224936/attachments/53166163?download=true",
+      "local_path": "attachments/omnibox-hidden2_53166163.txt"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAfter requestFullscreen then run window.history.back() to perform back navigation to page stored in BFcache, interestingly with proper timing it will hide Chrome omnibox while Android status bar still remain visible.  \n  \nAs legitimate omnibox is hidden, attacker able to"
+}

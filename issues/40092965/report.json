@@ -1,0 +1,54 @@
+{
+  "id": "40092965",
+  "url": "https://issues.chromium.org/issues/40092965",
+  "title": "Permissions request clickjacking flaw report:",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Mobile>WebAPKs, UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "us...@gmail.com",
+  "assignee": "hu...@chromium.org",
+  "created_date": "2018-11-06T19:43:21+00:00",
+  "modified_date": "2024-01-08T20:14:41+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52943291,
+      "filename": "PWA Overlay Bug Report.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 168045,
+      "url": "https://issues.chromium.org/action/issues/40092965/attachments/52943291?download=true",
+      "local_path": "attachments/PWA Overlay Bug Report.pdf"
+    },
+    {
+      "id": 52943467,
+      "filename": "filter_touch.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 908239,
+      "url": "https://issues.chromium.org/action/issues/40092965/attachments/52943467?download=true",
+      "local_path": "attachments/filter_touch.mp4"
+    },
+    {
+      "id": 52943468,
+      "filename": "not_filter_touch.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1001875,
+      "url": "https://issues.chromium.org/action/issues/40092965/attachments/52943468?download=true",
+      "local_path": "attachments/not_filter_touch.mp4"
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "Dear Chrome team and Android security team,  \n  \nWe're a security research group at Indiana University. Recently we studied Progressive Web App (PWA) on Android and discovered a critical clickjacking-style security flaw in its permission authorization affecting both the latest version of Chrome (v70"
+}

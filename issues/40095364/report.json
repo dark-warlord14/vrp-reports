@@ -1,0 +1,29 @@
+{
+  "id": "40095364",
+  "url": "https://issues.chromium.org/issues/40095364",
+  "title": "URL is updated incorrectly when navigating to external app urls",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2019-06-11T15:19:26+00:00",
+  "modified_date": "2024-08-21T12:46:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 49,
+  "description_snippet": "Splitting https://crbug.com/chromium/973056#c2 from original report http://crbug/972411\r\n\r\nApp Version: M75.0.377.0 stable\r\niOS Version: 12.4\r\nDevice: iPhoneX\r\nURL: \r\n\r\nSteps to reproduce:\r\n  1. Launch Google Chrome\r\n  2. Goto google.com\r\n  3. Goto https://lbstyle.github.io/spoof.html in the same ta"
+}

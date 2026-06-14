@@ -1,0 +1,46 @@
+{
+  "id": "40095348",
+  "url": "https://issues.chromium.org/issues/40095348",
+  "title": "Security: Multiple vulnerabilities in chromeos-disk-firmware.sh",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "OS>Systems",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "tm...@gmail.com",
+  "assignee": "gw...@chromium.org",
+  "created_date": "2019-06-10T03:23:09+00:00",
+  "modified_date": "2024-01-08T22:54:58+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53170158,
+      "filename": "chromeos-disk-firmware-update.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 6514,
+      "url": "https://issues.chromium.org/action/issues/40095348/attachments/53170158?download=true",
+      "local_path": "attachments/chromeos-disk-firmware-update.patch"
+    },
+    {
+      "id": 53170159,
+      "filename": "chromeos-disk-firmware-update-remove-tmpdir-usage.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3848,
+      "url": "https://issues.chromium.org/action/issues/40095348/attachments/53170159?download=true",
+      "local_path": "attachments/chromeos-disk-firmware-update-remove-tmpdir-usage.patch"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "The chromeos-disk-firmware-update.sh[1] script is called at boot from chromeos-disk-firmware-update.conf[2] during init. It is used to check for updates in the root disk firmware.\r\n\r\nTo actually exploit these issues, an attacker requires the following:\r\n1) Deleting the /mnt/stateful_partition/unencr"
+}

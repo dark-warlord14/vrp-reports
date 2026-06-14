@@ -1,0 +1,72 @@
+{
+  "id": "40089264",
+  "url": "https://issues.chromium.org/issues/40089264",
+  "title": "CVE-2017-5123: Chrome Sandbox escape through linux kernel vulnerability introduced in 4.13 in waitid",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2017-5123"
+  ],
+  "reporter": "ch...@gmail.com",
+  "assignee": "gr...@chromium.org",
+  "created_date": "2017-10-09T11:35:23+00:00",
+  "modified_date": "2024-09-23T22:34:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "reward_amount_meta": 15000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53059328,
+      "filename": "exploit_no_smap.c",
+      "mime_type": "text/plain",
+      "size_bytes": 10589,
+      "url": "https://issues.chromium.org/action/issues/40089264/attachments/53059328?download=true",
+      "local_path": "attachments/exploit_no_smap.c"
+    },
+    {
+      "id": 53059329,
+      "filename": "exploit_smap_bypass.c",
+      "mime_type": "text/plain",
+      "size_bytes": 25988,
+      "url": "https://issues.chromium.org/action/issues/40089264/attachments/53059329?download=true",
+      "local_path": "attachments/exploit_smap_bypass.c"
+    },
+    {
+      "id": 53059330,
+      "filename": "standalone_poc_no_smap.c",
+      "mime_type": "text/plain",
+      "size_bytes": 13090,
+      "url": "https://issues.chromium.org/action/issues/40089264/attachments/53059330?download=true",
+      "local_path": "attachments/standalone_poc_no_smap.c"
+    },
+    {
+      "id": 53059331,
+      "filename": "standalone_poc_smap_bypass.c",
+      "mime_type": "text/plain",
+      "size_bytes": 28964,
+      "url": "https://issues.chromium.org/action/issues/40089264/attachments/53059331?download=true",
+      "local_path": "attachments/standalone_poc_smap_bypass.c"
+    },
+    {
+      "id": 53059332,
+      "filename": "chrome_seccomp_filter",
+      "mime_type": "text/plain",
+      "size_bytes": 3712,
+      "url": "https://issues.chromium.org/action/issues/40089264/attachments/53059332?download=true",
+      "local_path": "attachments/chrome_seccomp_filter"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "A linux kernel vulnerability introduced in 4.13 can be used to escape the chrome sandbox. 4.13 is a stable release and is included in Ubuntu 17.10 which is set to be released on October 19th. \r\n\r\nVulnerability Details:\r\nIn the linux kernel, inside the waitid syscall, unsafe_put_user is used to copy"
+}

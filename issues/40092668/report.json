@@ -1,0 +1,73 @@
+{
+  "id": "40092668",
+  "url": "https://issues.chromium.org/issues/40092668",
+  "title": "Security: window.location update methods don't always restrict access to local resources",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions, UI>Browser>Navigation",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2018-10-11T11:31:45+00:00",
+  "modified_date": "2024-01-08T19:42:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53342439,
+      "filename": "window_location_poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1434,
+      "url": "https://issues.chromium.org/action/issues/40092668/attachments/53342439?download=true",
+      "local_path": "attachments/window_location_poc.zip"
+    },
+    {
+      "id": 53342751,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 67,
+      "url": "https://issues.chromium.org/action/issues/40092668/attachments/53342751?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53342752,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 314,
+      "url": "https://issues.chromium.org/action/issues/40092668/attachments/53342752?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53342753,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 273,
+      "url": "https://issues.chromium.org/action/issues/40092668/attachments/53342753?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53342754,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 308,
+      "url": "https://issues.chromium.org/action/issues/40092668/attachments/53342754?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nTwo of the window.location update methods (window.location.replace() and window.location.href = ...) don't always restrict access to local resources. This allows an extension to load an iframe containing a local file resource, even when \"Allow access to file URLs\" is dis"
+}

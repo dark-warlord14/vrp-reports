@@ -1,0 +1,58 @@
+{
+  "id": "40093496",
+  "url": "https://issues.chromium.org/issues/40093496",
+  "title": "V8 HeapObject pointing to JIT memory",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lu...@microsoft.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2018-12-18T01:35:32+00:00",
+  "modified_date": "2024-01-08T19:52:34+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53118748,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 219,
+      "url": "https://issues.chromium.org/action/issues/40093496/attachments/53118748?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53118826,
+      "filename": "mini.js",
+      "mime_type": "text/plain",
+      "size_bytes": 372,
+      "url": "https://issues.chromium.org/action/issues/40093496/attachments/53118826?download=true",
+      "local_path": "attachments/mini.js"
+    },
+    {
+      "id": 53118827,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40093496/attachments/53118827?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.140 Safari/537.36 Edge/18.17763\r\n\r\nSteps to reproduce the problem:\r\n1. I'm currently using V8 debug build with version 7.3.0 (d8-linux-debug-v8-component-58294)\r\n2. OS: x86_64 Linux 4.15.0 /"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "40060641",
+  "url": "https://issues.chromium.org/issues/40060641",
+  "title": "Security: potential buffer overflow in zlib - CVE-2022-37434",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2022-37434"
+  ],
+  "reporter": "ri...@sap.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2022-08-21T21:16:36+00:00",
+  "modified_date": "2024-03-12T19:43:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53329879,
+      "filename": "tot_unpatched.png",
+      "mime_type": "image/png",
+      "size_bytes": 451737,
+      "url": "https://issues.chromium.org/action/issues/40060641/attachments/53329879?download=true",
+      "local_path": "attachments/tot_unpatched.png"
+    },
+    {
+      "id": 53329880,
+      "filename": "sync_patched.png",
+      "mime_type": "image/png",
+      "size_bytes": 516890,
+      "url": "https://issues.chromium.org/action/issues/40060641/attachments/53329880?download=true",
+      "local_path": "attachments/sync_patched.png"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIn zlib a potential buffer overflow was fixed recently. See: https://github.com/madler/zlib/commit/eff308af425b67093bab25f80f1ae950166bece1  \nThe fix introduced a null pointer deref, which was fixed as well. See: https://github.com/madler/zlib/commit/1eb7682f845ac9e9bf9a"
+}

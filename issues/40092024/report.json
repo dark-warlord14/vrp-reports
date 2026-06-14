@@ -1,0 +1,41 @@
+{
+  "id": "40092024",
+  "url": "https://issues.chromium.org/issues/40092024",
+  "title": "Security: Talos Security Advisory for Google PDFium (TALOS-2018-0639)",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2018-07-25T16:52:27+00:00",
+  "modified_date": "2024-01-06T01:14:29+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53033551,
+      "filename": "Google Vulnerability Report.TALOS 2018 0639.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 8605,
+      "url": "https://issues.chromium.org/action/issues/40092024/attachments/53033551?download=true",
+      "local_path": "attachments/Google Vulnerability Report.TALOS 2018 0639.zip"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "### Summary\r\n\r\nAn exploitable out-of-bounds read on the heap vulnerability exists in the JBIG2 parsing code of Google Chrome version 67.0.3396.99. A specially crafted PDF document can trigger an out-of-bounds read, which can possibly lead to an information leak that could be used as part of an explo"
+}

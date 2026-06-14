@@ -1,0 +1,29 @@
+{
+  "id": "40084936",
+  "url": "https://issues.chromium.org/issues/40084936",
+  "title": "Use-after-poison in blink::CompositorAnimationPlayer::NotifyAnimationStarted",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Animation",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2016-07-25T15:21:01+00:00",
+  "modified_date": "2024-08-11T21:23:16+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3500.0,
+  "reward_amount_meta": 3500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 65,
+  "description_snippet": "Detailed report: https://cluster-fuzz.appspot.com/testcase?key=5078527401787392\n\nFuzzer: attekett_dom_fuzzer\nJob Type: linux_asan_chrome_media\nPlatform Id: linux\n\nCrash Type: Use-after-poison READ 8\nCrash Address: 0x7e9287e2d1d0\nCrash State:\n  blink::CompositorAnimationPlayer::NotifyAnimationStarted"
+}

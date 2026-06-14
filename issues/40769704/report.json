@@ -1,0 +1,31 @@
+{
+  "id": "40769704",
+  "url": "https://issues.chromium.org/issues/40769704",
+  "title": "Stack-buffer-overflow in spv::Builder::createMatrixConstructor",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P4",
+  "component": "Internals>GPU>ANGLE, Internals>GPU>Internals",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2021-06-01T08:52:03+00:00",
+  "modified_date": "2024-01-09T03:34:11+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 6000.0,
+  "reward_amount_meta": 6000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 43,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=6215979714281472\n\nFuzzer: aohelin_ni\nJob Type: linux_asan_chrome_mp\nPlatform Id: linux\n\nCrash Type: Stack-buffer-overflow WRITE 4\nCrash Address: 0x7f4caaada160\nCrash State:\n  spv::Builder::createMatrixConstructor\n  TGlslangToSpvTraverser::visitAg"
+}

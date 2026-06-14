@@ -1,0 +1,78 @@
+{
+  "id": "40063240",
+  "url": "https://issues.chromium.org/issues/40063240",
+  "title": "Security: mesa stack scribbling thingamadoo",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P0",
+  "component": "Blink>WebGL, Internals, Internals>GPU",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "jo...@chromium.org",
+  "created_date": "2012-08-10T18:10:02+00:00",
+  "modified_date": "2024-01-06T00:09:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3133.0,
+  "reward_amount_meta": 3133.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53229081,
+      "filename": "chromium1.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1143,
+      "url": "https://issues.chromium.org/action/issues/40063240/attachments/53229081?download=true",
+      "local_path": "attachments/chromium1.html"
+    },
+    {
+      "id": 53229082,
+      "filename": "chromium1.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 1142,
+      "url": "https://issues.chromium.org/action/issues/40063240/attachments/53229082?download=true",
+      "local_path": "attachments/chromium1.txt"
+    },
+    {
+      "id": 53229111,
+      "filename": "ff1.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1143,
+      "url": "https://issues.chromium.org/action/issues/40063240/attachments/53229111?download=true",
+      "local_path": "attachments/ff1.html"
+    },
+    {
+      "id": 53229112,
+      "filename": "fix-security",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 4913,
+      "url": "https://issues.chromium.org/action/issues/40063240/attachments/53229112?download=true",
+      "local_path": "attachments/fix-security"
+    },
+    {
+      "id": 53229267,
+      "filename": "8.1-array-overflow.patch",
+      "mime_type": "text/x-diff; charset=us-ascii",
+      "size_bytes": 486,
+      "url": "https://issues.chromium.org/action/issues/40063240/attachments/53229267?download=true",
+      "local_path": "attachments/8.1-array-overflow.patch"
+    },
+    {
+      "id": 53229392,
+      "filename": "wtfgl.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1188,
+      "url": "https://issues.chromium.org/action/issues/40063240/attachments/53229392?download=true",
+      "local_path": "attachments/wtfgl.html"
+    }
+  ],
+  "update_count": 79,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nhttps://bugzilla.mozilla.org/show_bug.cgi?id=777028  \n  \n  \n**VERSION**   \nChrome Version: dev  \nOperating System: linux64bit  \n  \n**REPRODUCTION CASE**   \n<html>  \n  <head>  \n    <script id=\"vshader\" type=\"x-shader/x-vertex\">  \n      void main()  \n      {"
+}

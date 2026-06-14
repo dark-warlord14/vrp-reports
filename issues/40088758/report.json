@@ -1,0 +1,49 @@
+{
+  "id": "40088758",
+  "url": "https://issues.chromium.org/issues/40088758",
+  "title": "blob:chrome-extension:-URLs should not bypass CSP in extension pages",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy, Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@robwu.nl",
+  "assignee": "rd...@chromium.org",
+  "created_date": "2017-08-18T17:48:18+00:00",
+  "modified_date": "2024-05-31T15:43:24+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53152299,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 155,
+      "url": "https://issues.chromium.org/action/issues/40088758/attachments/53152299?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53152300,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 590,
+      "url": "https://issues.chromium.org/action/issues/40088758/attachments/53152300?download=true",
+      "local_path": "attachments/background.js"
+    }
+  ],
+  "update_count": 114,
+  "description_snippet": "The default Content Security Policy in Chrome extensions is designed to block remote scripts.\r\nExtensions can opt in to allowing remote scripts, but only with a custom content_security_policy (https://developer.chrome.com/extensions/contentSecurityPolicy#relaxing). This makes it easier to audit the"
+}

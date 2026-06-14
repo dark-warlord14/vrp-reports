@@ -1,0 +1,38 @@
+{
+  "id": "40071209",
+  "url": "https://issues.chromium.org/issues/40071209",
+  "title": "Security: heap-buffer-overflow vrend_write_to_iovec",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ph...@gmail.com",
+  "assignee": "st...@google.com",
+  "created_date": "2023-09-02T07:50:55+00:00",
+  "modified_date": "2024-01-18T18:45:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 250.0,
+  "reward_amount_meta": 250.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53174260,
+      "filename": "virgl_fuzzer.c",
+      "mime_type": "text/plain",
+      "size_bytes": 7841,
+      "url": "https://issues.chromium.org/action/issues/40071209/attachments/53174260?download=true",
+      "local_path": "attachments/virgl_fuzzer.c"
+    }
+  ],
+  "update_count": 18,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nheap-buffer-overflow vrend_write_to_iovec  \n  \nvrend_write_to_iovec call memcpy without check for buf size lead to heap buffer overlow  \n```  \n  \nsize_t vrend_write_to_iovec(const struct iovec \\*iov, int iovlen,  \n\t\t\t size_t offset, const char \\*buf, size_t count)  \n{"
+}

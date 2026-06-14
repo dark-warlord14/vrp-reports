@@ -1,0 +1,56 @@
+{
+  "id": "40092387",
+  "url": "https://issues.chromium.org/issues/40092387",
+  "title": "Chrome v69 URL Spoof via FILE_SCHEME",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Network, UI>Browser>Downloads, UI>Browser>Navigation, UI>Browser>Omnibox",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ev...@gmail.com",
+  "assignee": "to...@chromium.org",
+  "created_date": "2018-09-07T03:40:34+00:00",
+  "modified_date": "2024-01-06T00:06:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53334732,
+      "filename": "0c6c898d-6a97-46a2-995a-1e5338d19b01.png",
+      "mime_type": "image/png",
+      "size_bytes": 36804,
+      "url": "https://issues.chromium.org/action/issues/40092387/attachments/53334732?download=true",
+      "local_path": "attachments/0c6c898d-6a97-46a2-995a-1e5338d19b01.png"
+    },
+    {
+      "id": 53334733,
+      "filename": "v69_filescheme_urlspoof2.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 7958988,
+      "url": "https://issues.chromium.org/action/issues/40092387/attachments/53334733?download=true",
+      "local_path": "attachments/v69_filescheme_urlspoof2.mov"
+    },
+    {
+      "id": 53334849,
+      "filename": "Screenshot from 2019-11-05 15-27-01.png",
+      "mime_type": "image/png",
+      "size_bytes": 12751,
+      "url": "https://issues.chromium.org/action/issues/40092387/attachments/53334849?download=true",
+      "local_path": "attachments/Screenshot from 2019-11-05 15-27-01.png"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.81 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. PoC: https://server.n0tr00t.com/chrome/v69_download.php\r\n2. Download & Open file\r\n3. Click <a> tag\r\n\r\nWhat is the expected behavi"
+}

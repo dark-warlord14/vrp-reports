@@ -1,0 +1,29 @@
+{
+  "id": "40090214",
+  "url": "https://issues.chromium.org/issues/40090214",
+  "title": "DCHECK failure in current_ == next_ in node.h",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript, Blink>JavaScript>Compiler",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2018-01-17T10:57:23+00:00",
+  "modified_date": "2024-03-07T18:23:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3500.0,
+  "reward_amount_meta": 3500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 36,
+  "description_snippet": "Detailed report: https://clusterfuzz.com/testcase?key=5874775150034944\n\nFuzzer: decoder_langfuzz\nJob Type: linux_asan_d8_dbg\nPlatform Id: linux\n\nCrash Type: DCHECK failure\nCrash Address: \nCrash State:\n  current_ == next_ in node.h\n  v8::internal::compiler::Node::Uses::const_iterator::operator++\n  v8"
+}

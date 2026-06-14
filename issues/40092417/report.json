@@ -1,0 +1,57 @@
+{
+  "id": "40092417",
+  "url": "https://issues.chromium.org/issues/40092417",
+  "title": "Security: fullscreen notification overlap",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>FullScreen",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "av...@chromium.org",
+  "created_date": "2018-09-10T09:22:24+00:00",
+  "modified_date": "2024-01-08T20:43:24+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52951689,
+      "filename": "fullscreen.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 98020,
+      "url": "https://issues.chromium.org/action/issues/40092417/attachments/52951689?download=true",
+      "local_path": "attachments/fullscreen.gif"
+    },
+    {
+      "id": 52951743,
+      "filename": "fullscreen.html",
+      "mime_type": "text/plain",
+      "size_bytes": 427,
+      "url": "https://issues.chromium.org/action/issues/40092417/attachments/52951743?download=true",
+      "local_path": "attachments/fullscreen.html"
+    },
+    {
+      "id": 52951744,
+      "filename": "fullscreen2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 518,
+      "url": "https://issues.chromium.org/action/issues/40092417/attachments/52951744?download=true",
+      "local_path": "attachments/fullscreen2.html"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "**VERSION**   \nChrome Version: 69  \nOperating System: windows 7  \n  \nsimilar to https://crbug.com/chromium/776418 , https://crbug.com/chromium/806162  \n  \nonline demo: http://f.3cm.me/r/fullscreen.html  \n  \nsee fullscreen.gif for reproduce steps  \n  \npress anykey and you will overlap the notificatio"
+}

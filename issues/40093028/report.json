@@ -1,0 +1,57 @@
+{
+  "id": "40093028",
+  "url": "https://issues.chromium.org/issues/40093028",
+  "title": "Security: Sites can open extension pages using WindowClient.navigate",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>ServiceWorker, Platform>Extensions, UI>Browser>Navigation",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "fa...@chromium.org",
+  "created_date": "2018-11-11T11:41:12+00:00",
+  "modified_date": "2024-01-08T19:45:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53125578,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 134,
+      "url": "https://issues.chromium.org/action/issues/40093028/attachments/53125578?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53125579,
+      "filename": "main.js",
+      "mime_type": "text/plain",
+      "size_bytes": 227,
+      "url": "https://issues.chromium.org/action/issues/40093028/attachments/53125579?download=true",
+      "local_path": "attachments/main.js"
+    },
+    {
+      "id": 53125580,
+      "filename": "service_worker.js",
+      "mime_type": "text/plain",
+      "size_bytes": 578,
+      "url": "https://issues.chromium.org/action/issues/40093028/attachments/53125580?download=true",
+      "local_path": "attachments/service_worker.js"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nNormally, sites are prevented from being able to open extension pages. While this restriction applies to methods like window.open() or window.location.href = ..., it doesn't apply when a site triggers a navigation event using WindowClient.navigate(). In that case, the pa"
+}

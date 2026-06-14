@@ -1,0 +1,29 @@
+{
+  "id": "40086896",
+  "url": "https://issues.chromium.org/issues/40086896",
+  "title": "Security: Chrome extension is disabled by crafted chrome-extension:// URL",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "la...@chromium.org",
+  "created_date": "2017-02-25T17:29:50+00:00",
+  "modified_date": "2024-01-08T21:31:38+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 37,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIf you put a `.` to the end of `chrome-extension://` resource's pathname, the extension is disabled.  \nFor example: `chrome-extension://[extensions]/background.html.`  \n  \nNavigting from the web origin to chrome-extension:// URL is restricted but if the target extension'"
+}

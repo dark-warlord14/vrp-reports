@@ -1,0 +1,86 @@
+{
+  "id": "40092465",
+  "url": "https://issues.chromium.org/issues/40092465",
+  "title": "Security: ChromeOS root Command Execution",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Network>VPN",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@rorym.cnamara.com",
+  "assignee": "xz...@chromium.org",
+  "created_date": "2018-09-15T23:28:23+00:00",
+  "modified_date": "2024-01-08T19:33:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11337.0,
+  "reward_amount_meta": 11337.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53230018,
+      "filename": "exploit.ppd",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 237834,
+      "url": "https://issues.chromium.org/action/issues/40092465/attachments/53230018?download=true",
+      "local_path": "attachments/exploit.ppd"
+    },
+    {
+      "id": 53230019,
+      "filename": "dataurl.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 14879,
+      "url": "https://issues.chromium.org/action/issues/40092465/attachments/53230019?download=true",
+      "local_path": "attachments/dataurl.pdf"
+    },
+    {
+      "id": 53230020,
+      "filename": "shillesc.sh",
+      "mime_type": "text/plain",
+      "size_bytes": 1783,
+      "url": "https://issues.chromium.org/action/issues/40092465/attachments/53230020?download=true",
+      "local_path": "attachments/shillesc.sh"
+    },
+    {
+      "id": 53230021,
+      "filename": "cupstestppd_pathrestriction.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 695,
+      "url": "https://issues.chromium.org/action/issues/40092465/attachments/53230021?download=true",
+      "local_path": "attachments/cupstestppd_pathrestriction.patch"
+    },
+    {
+      "id": 53230022,
+      "filename": "openvpn_management_server_EscapeToQuote_username.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 748,
+      "url": "https://issues.chromium.org/action/issues/40092465/attachments/53230022?download=true",
+      "local_path": "attachments/openvpn_management_server_EscapeToQuote_username.patch"
+    },
+    {
+      "id": 53230023,
+      "filename": "cupsd_init_symlink.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 836,
+      "url": "https://issues.chromium.org/action/issues/40092465/attachments/53230023?download=true",
+      "local_path": "attachments/cupsd_init_symlink.patch"
+    },
+    {
+      "id": 53230024,
+      "filename": "server.conf",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 266,
+      "url": "https://issues.chromium.org/action/issues/40092465/attachments/53230024?download=true",
+      "local_path": "attachments/server.conf"
+    }
+  ],
+  "update_count": 73,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUsing vulnerabilities in cups, shill, and insecure upstart configuration files, it was found to be possible to obtain root command execution in Chrome OS.  \nThis vulnerability chain requires manual installation, and is likely not automatable without substantial browser e"
+}

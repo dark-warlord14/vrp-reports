@@ -1,0 +1,66 @@
+{
+  "id": "40058028",
+  "url": "https://issues.chromium.org/issues/40058028",
+  "title": "AddressSanitizer: heap-use-after-free in blink::Screen::AreWebExposedScreenPropertiesEqual",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Screen>MultiScreen, UI>Browser>WebAppInstalls>Desktop",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "dm...@gmail.com",
+  "assignee": "ms...@chromium.org",
+  "created_date": "2021-11-25T14:06:50+00:00",
+  "modified_date": "2024-05-03T11:48:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53016584,
+      "filename": "heap-uaf-screens.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 33246,
+      "url": "https://issues.chromium.org/action/issues/40058028/attachments/53016584?download=true",
+      "local_path": "attachments/heap-uaf-screens.txt"
+    },
+    {
+      "id": 53016585,
+      "filename": "screens.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 956,
+      "url": "https://issues.chromium.org/action/issues/40058028/attachments/53016585?download=true",
+      "local_path": "attachments/screens.zip"
+    },
+    {
+      "id": 53016595,
+      "filename": "ChromiumHeapUseAfterFreeViaScreens.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 9722750,
+      "url": "https://issues.chromium.org/action/issues/40058028/attachments/53016595?download=true",
+      "local_path": "attachments/ChromiumHeapUseAfterFreeViaScreens.mp4"
+    },
+    {
+      "id": 53016639,
+      "filename": "crbug1273841.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1123,
+      "url": "https://issues.chromium.org/action/issues/40058028/attachments/53016639?download=true",
+      "local_path": "attachments/crbug1273841.html"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:91.0) Gecko/20100101 Firefox/91.0\r\n\r\nSteps to reproduce the problem:\r\nI reproduce this in MacOS Big Sur (11.6) with BetterDummy (https://github.com/waydabber/BetterDummy/releases/tag/v1.0.10) to simulate another screens. Maybe it's reproduc"
+}

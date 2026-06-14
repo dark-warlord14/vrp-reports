@@ -1,0 +1,29 @@
+{
+  "id": "40084275",
+  "url": "https://issues.chromium.org/issues/40084275",
+  "title": "Heap-buffer-overflow in ps_table_add",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "at...@gmail.com",
+  "assignee": "bu...@chromium.org",
+  "created_date": "2016-05-10T10:23:58+00:00",
+  "modified_date": "2024-08-11T21:23:18+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "reward_amount_meta": 1500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 51,
+  "description_snippet": "Detailed report: https://cluster-fuzz.appspot.com/testcase?key=4548226098659328\n\nFuzzer: attekett_surku_fuzzer\nJob Type: linux_asan_chrome_media\nPlatform Id: linux\n\nCrash Type: Heap-buffer-overflow READ 7\nCrash Address: 0x61b000014f90\nCrash State:\n  ps_table_add\n  parse_encoding\n  parse_dict\n  \nReco"
+}

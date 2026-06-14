@@ -1,0 +1,42 @@
+{
+  "id": "40087462",
+  "url": "https://issues.chromium.org/issues/40087462",
+  "title": "Security: Out of bound read in FindSharedFunctionInfo (V8)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cw...@gmail.com",
+  "assignee": "jo...@chromium.org",
+  "created_date": "2017-04-26T15:12:09+00:00",
+  "modified_date": "2024-03-11T12:54:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53307655,
+      "filename": "poc715582.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1595,
+      "url": "https://issues.chromium.org/action/issues/40087462/attachments/53307655?download=true",
+      "local_path": "attachments/poc715582.html"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**VERSION**   \nChrome Version: stable (v8 5.8.283.32)  \n  \n**REPRODUCTION CASE**   \n  \n```test.js  \nthis.__defineGetter__(\"x\", (a = (function f() { return; (function() {}); })()) => { });  \nx;  \n```  \n  \n```Backtrace of debug build  \n$ ../../..//v8/out/ia32.debug/d8 --allow-natives-syntax --expose-g"
+}

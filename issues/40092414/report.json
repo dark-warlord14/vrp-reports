@@ -1,0 +1,41 @@
+{
+  "id": "40092414",
+  "url": "https://issues.chromium.org/issues/40092414",
+  "title": "Security: url spoofing using 304 status code",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Navigation, UI>Browser>Omnibox",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "mm...@chromium.org",
+  "created_date": "2018-09-09T22:21:14+00:00",
+  "modified_date": "2024-01-08T19:29:16+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53151525,
+      "filename": "dangerous.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1028,
+      "url": "https://issues.chromium.org/action/issues/40092414/attachments/53151525?download=true",
+      "local_path": "attachments/dangerous.html"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nBy pasting a url in the omnibox that leads to a request with status code 304 (not modified) and then pressing enter, the page doesn't load but the url stays there. Using window.onbeforeunload it is possible to see when the user hits enter. This way one can create a malic"
+}

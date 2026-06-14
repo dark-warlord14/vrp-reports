@@ -1,0 +1,44 @@
+{
+  "id": "40092396",
+  "url": "https://issues.chromium.org/issues/40092396",
+  "title": "Security:  IDN URL Spoofing with “ก” ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ct...@chromium.org",
+  "created_date": "2018-09-08T01:39:19+00:00",
+  "modified_date": "2024-01-06T01:27:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53212229,
+      "filename": "Screen Shot 2018-09-08 at 02.35.18.png",
+      "mime_type": "image/png",
+      "size_bytes": 31877,
+      "url": "https://issues.chromium.org/action/issues/40092396/attachments/53212229?download=true",
+      "local_path": "attachments/Screen Shot 2018-09-08 at 02.35.18.png"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "**VERSION**   \nChrome Version: 71.0.3545.3 (Official Build) canary (64-bit)  \nOperating System: Mac  \n  \n**REPRODUCTION CASE**   \n  \n  \nVisit http://xn--11-lqi.com/  \n  \n- U+0E01 (ก) is more similar to 'n'  \n  \nNote: n11.com is a top-10K site."
+}

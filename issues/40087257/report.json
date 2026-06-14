@@ -1,0 +1,54 @@
+{
+  "id": "40087257",
+  "url": "https://issues.chromium.org/issues/40087257",
+  "title": "Security: Print Preview allows spoofing on other tab",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>PrintPreview",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2017-04-05T15:42:55+00:00",
+  "modified_date": "2024-01-08T21:45:27+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53168269,
+      "filename": "screenshot.png",
+      "mime_type": "image/png",
+      "size_bytes": 101236,
+      "url": "https://issues.chromium.org/action/issues/40087257/attachments/53168269?download=true",
+      "local_path": "attachments/screenshot.png"
+    },
+    {
+      "id": 53168270,
+      "filename": "PoC.html",
+      "mime_type": "text/plain",
+      "size_bytes": 282,
+      "url": "https://issues.chromium.org/action/issues/40087257/attachments/53168270?download=true",
+      "local_path": "attachments/PoC.html"
+    },
+    {
+      "id": 53168343,
+      "filename": "print_preview_with_source.png",
+      "mime_type": "image/png",
+      "size_bytes": 20938,
+      "url": "https://issues.chromium.org/action/issues/40087257/attachments/53168343?download=true",
+      "local_path": "attachments/print_preview_with_source.png"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "Chrome Version: 57.0.2987.133 stable   \nOperating System: Windows 7  \n  \n**REPRODUCTION CASE**   \nPrint preview can appears over the different origin and that's produces \"spoofing\", the address bar shows google.com but the print preview shows the content that used by document.write() in the PoC."
+}

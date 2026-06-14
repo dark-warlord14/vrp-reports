@@ -1,0 +1,46 @@
+{
+  "id": "40057743",
+  "url": "https://issues.chromium.org/issues/40057743",
+  "title": "Security: UAF in SharingHub",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "UI>Browser>Sharing",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "kr...@chromium.org",
+  "created_date": "2021-10-28T04:59:20+00:00",
+  "modified_date": "2023-05-24T13:06:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53309300,
+      "filename": "asan",
+      "mime_type": "text/plain",
+      "size_bytes": 25106,
+      "url": "https://issues.chromium.org/action/issues/40057743/attachments/53309300?download=true",
+      "local_path": "attachments/asan"
+    },
+    {
+      "id": 53309301,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 123,
+      "url": "https://issues.chromium.org/action/issues/40057743/attachments/53309301?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nI think this bug was caused by this submission: https://source.chromium.org/chromium/chromium/src/+/f50ae42daa8b4d22db68202a38afa9dc17680b06  \n  \n|OnSharesheetClosed| is bound[1] as a callback function |close_callback_|.   \n  \nWhen class |SharingHubBubbleController| i"
+}

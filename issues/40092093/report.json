@@ -1,0 +1,30 @@
+{
+  "id": "40092093",
+  "url": "https://issues.chromium.org/issues/40092093",
+  "title": "Use-after-poison in void blink::Visitor::HandleWeakCell<blink::SVGElement>",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>GarbageCollection",
+  "os_platforms": [
+    "Linux",
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2018-08-02T13:53:54+00:00",
+  "modified_date": "2024-01-06T01:18:31+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3500.0,
+  "reward_amount_meta": 3500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 46,
+  "description_snippet": "Detailed report: https://clusterfuzz.com/testcase?key=5058318557773824\n\nFuzzer: miaubiz_svg_fuzzer\nJob Type: mac_asan_chrome\nPlatform Id: mac\n\nCrash Type: Use-after-poison READ 8\nCrash Address: 0x7ee5e1a2d628\nCrash State:\n  void blink::Visitor::HandleWeakCell<blink::SVGElement>\n  blink::ThreadHeap::"
+}

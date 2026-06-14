@@ -1,0 +1,33 @@
+{
+  "id": "40093383",
+  "url": "https://issues.chromium.org/issues/40093383",
+  "title": "Chrome tab crashes when a pattern containing a Hebrew character followed by 2 horizontal tabs and then another character is clicked.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Layout",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "ea...@chromium.org",
+  "created_date": "2018-12-11T16:13:43+00:00",
+  "modified_date": "2024-01-08T20:09:29+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 53,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.80 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Go to a web page that displays a string with the specified pattern (or type such a string in a text box).\r\n2. For example, \"א\t\t1\"\r\n3. C"
+}

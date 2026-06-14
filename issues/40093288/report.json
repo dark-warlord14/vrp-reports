@@ -1,0 +1,51 @@
+{
+  "id": "40093288",
+  "url": "https://issues.chromium.org/issues/40093288",
+  "title": "Security: XSS Auditor & History Web API can be chained to create a cross-origin covert channel",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>XSSAuditor, UI>Browser>Navigation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "th...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2018-12-03T09:34:28+00:00",
+  "modified_date": "2024-01-08T20:52:09+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53297021,
+      "filename": "attacker.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1235,
+      "url": "https://issues.chromium.org/action/issues/40093288/attachments/53297021?download=true",
+      "local_path": "attachments/attacker.html"
+    },
+    {
+      "id": 53297022,
+      "filename": "victim.html",
+      "mime_type": "text/plain",
+      "size_bytes": 127,
+      "url": "https://issues.chromium.org/action/issues/40093288/attachments/53297022?download=true",
+      "local_path": "attachments/victim.html"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nA cross-origin covert channel that can be used to leak information from a victim origin can be created by chaining the blocking mode of XSS Auditor with the History Web API.  \n  \nBefore we elaborate on the specifics of this attack, we'd like to draw attention to the r"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "40095146",
+  "url": "https://issues.chromium.org/issues/40095146",
+  "title": "Security: Leaking autofill password through XSS, bypassing Chrome protection",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "li...@gmail.com",
+  "assignee": "mu...@chromium.org",
+  "created_date": "2019-05-23T20:04:40+00:00",
+  "modified_date": "2024-01-08T21:39:10+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53042020,
+      "filename": "peterlogin.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3651,
+      "url": "https://issues.chromium.org/action/issues/40095146/attachments/53042020?download=true",
+      "local_path": "attachments/peterlogin.zip"
+    }
+  ],
+  "update_count": 84,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt is possible to leak autofilled/saved passwords in Chrome, even though there are protections against it.  \n  \n**VERSION**   \nChrome Version: Version 74.0.3729.157 (Official Build) (64-bit)  \nOperating System: OSX  \n  \n**REPRODUCTION CASE**   \nI created a login page her"
+}

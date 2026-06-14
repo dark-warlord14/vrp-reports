@@ -1,0 +1,50 @@
+{
+  "id": "40094055",
+  "url": "https://issues.chromium.org/issues/40094055",
+  "title": "pdfium XFA CXFA_FFDocView::RunSubformIndexChange Use After Free",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ho...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2019-02-16T15:18:04+00:00",
+  "modified_date": "2024-01-08T19:52:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52966492,
+      "filename": "5db68c09ecaba144679862bb220ba4ae.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 3168,
+      "url": "https://issues.chromium.org/action/issues/40094055/attachments/52966492?download=true",
+      "local_path": "attachments/5db68c09ecaba144679862bb220ba4ae.pdf"
+    },
+    {
+      "id": 52966493,
+      "filename": "asan_5db68c09ecaba144679862bb220ba4ae",
+      "mime_type": "text/plain",
+      "size_bytes": 19278,
+      "url": "https://issues.chromium.org/action/issues/40094055/attachments/52966493?download=true",
+      "local_path": "attachments/asan_5db68c09ecaba144679862bb220ba4ae"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/12.0.3 Safari/605.1.15\r\n\r\nSteps to reproduce the problem:\r\n1. pdfium with XFA build , ASAN enable\r\n2. ./pdfium_test 5db68c09ecaba144679862bb220ba4ae.pdf\r\n3. \r\n\r\nWhat is the expected behavior?"
+}

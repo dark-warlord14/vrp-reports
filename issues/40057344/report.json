@@ -1,0 +1,71 @@
+{
+  "id": "40057344",
+  "url": "https://issues.chromium.org/issues/40057344",
+  "title": "Security: Continued AddEventListener GC problems",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P1",
+  "component": "Blink>GarbageCollection",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "ml...@chromium.org",
+  "created_date": "2021-09-21T17:30:16+00:00",
+  "modified_date": "2024-08-11T21:22:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53225270,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40057344/attachments/53225270?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53225300,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40057344/attachments/53225300?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53225301,
+      "filename": "fuzz-00004.html",
+      "mime_type": "text/plain",
+      "size_bytes": 217743,
+      "url": "https://issues.chromium.org/action/issues/40057344/attachments/53225301?download=true",
+      "local_path": "attachments/fuzz-00004.html"
+    },
+    {
+      "id": 53225325,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40057344/attachments/53225325?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53225350,
+      "filename": "min.html",
+      "mime_type": "text/plain",
+      "size_bytes": 33042,
+      "url": "https://issues.chromium.org/action/issues/40057344/attachments/53225350?download=true",
+      "local_path": "attachments/min.html"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "https://bugs.chromium.org/p/chromium/issues/detail?id=1248435#c63 suggests that https://crbug.com/chromium/1248435 is not fully fixed. Copied from that comment:\r\n\r\n=========\r\n\r\nI'm very sorry to reopen the case, the fuzzer based on the asan-win32-release_x64-922637.zip version still has the same cra"
+}

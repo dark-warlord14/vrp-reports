@@ -1,0 +1,38 @@
+{
+  "id": "40092215",
+  "url": "https://issues.chromium.org/issues/40092215",
+  "title": "Chrome notification system permits to a domain to request permissions for each 3rd level domain with no restriction",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Permissions>Prompts, UI>Notifications",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@gmail.com",
+  "assignee": "pe...@chromium.org",
+  "created_date": "2018-08-17T23:16:28+00:00",
+  "modified_date": "2024-01-08T22:02:58+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53253270,
+      "filename": "chrome_exploit.html",
+      "mime_type": "text/plain",
+      "size_bytes": 28237,
+      "url": "https://issues.chromium.org/action/issues/40092215/attachments/53253270?download=true",
+      "local_path": "attachments/chrome_exploit.html"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.84 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1.Go to this link https://ovx5b.browsersecurely.com/index2.php?t=90&c=11&hash=5241408335b72b23&subid=52ed9gxuqoja23y801&url=https%3A%2F%2Ftralipon.t"
+}

@@ -1,0 +1,66 @@
+{
+  "id": "40091690",
+  "url": "https://issues.chromium.org/issues/40091690",
+  "title": "SameSite cookies leakage via child browsing context",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature, Internals>Network>Cookies",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pr...@gmail.com",
+  "assignee": "mo...@chromium.org",
+  "created_date": "2018-06-18T09:48:10+00:00",
+  "modified_date": "2024-01-08T22:02:32+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53233551,
+      "filename": "child.png",
+      "mime_type": "image/png",
+      "size_bytes": 60392,
+      "url": "https://issues.chromium.org/action/issues/40091690/attachments/53233551?download=true",
+      "local_path": "attachments/child.png"
+    },
+    {
+      "id": 53233684,
+      "filename": "child2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 913,
+      "url": "https://issues.chromium.org/action/issues/40091690/attachments/53233684?download=true",
+      "local_path": "attachments/child2.html"
+    },
+    {
+      "id": 53233685,
+      "filename": "cookies.php",
+      "mime_type": "text/plain",
+      "size_bytes": 976,
+      "url": "https://issues.chromium.org/action/issues/40091690/attachments/53233685?download=true",
+      "local_path": "attachments/cookies.php"
+    },
+    {
+      "id": 53233708,
+      "filename": "SameSite-cookies.png",
+      "mime_type": "image/png",
+      "size_bytes": 150034,
+      "url": "https://issues.chromium.org/action/issues/40091690/attachments/53233708?download=true",
+      "local_path": "attachments/SameSite-cookies.png"
+    }
+  ],
+  "update_count": 81,
+  "description_snippet": "Chrome Version       : 66.0.3359.181 (Official Build) (64-bit)  \n**URLs (if applicable) :**  http://cm2.pw/xss?xss=%3Ciframe%20style=%27width:100%;height:500px%27%20src=%27http://cm3.pw/httpleaks/child.html%27%3E%3C/iframe%3E  \n  \n**Other browsers tested:**   \n    Firefox: OK (version: 61.0b14 (64-b"
+}

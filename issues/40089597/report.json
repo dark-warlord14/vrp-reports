@@ -1,0 +1,51 @@
+{
+  "id": "40089597",
+  "url": "https://issues.chromium.org/issues/40089597",
+  "title": "Wrong origin shown for permission prompts after navigations that lead to interstitials",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Interstitials, UI>Browser>Permissions>Prompts, UI>Notifications",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ev...@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2017-11-15T07:08:03+00:00",
+  "modified_date": "2024-01-08T23:09:39+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52940442,
+      "filename": "chrome_notification_uijacking.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 23113,
+      "url": "https://issues.chromium.org/action/issues/40089597/attachments/52940442?download=true",
+      "local_path": "attachments/chrome_notification_uijacking.jpg"
+    },
+    {
+      "id": 52940443,
+      "filename": "chrome_notification_uijacking.mov",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 12047426,
+      "url": "https://issues.chromium.org/action/issues/40089597/attachments/52940443?download=true",
+      "local_path": "attachments/chrome_notification_uijacking.mov"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.40 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Open PoC: http://t.cn/RjJursh\r\n2. Click link, wait a moment\r\n\r\nWhen we open a domain(jacking target) with invaild security certif"
+}

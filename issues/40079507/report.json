@@ -1,0 +1,52 @@
+{
+  "id": "40079507",
+  "url": "https://issues.chromium.org/issues/40079507",
+  "title": "WebCore::SVGUseElement::updateContainerOffsets ExecAV@Arbitrary (1dc75f12fe3750aa1828ea20506a5d54)",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2010-03-01T10:18:48+00:00",
+  "modified_date": "2024-02-04T15:59:03+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53355669,
+      "filename": "bad2.svg",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 133,
+      "url": "https://issues.chromium.org/action/issues/40079507/attachments/53355669?download=true",
+      "local_path": "attachments/bad2.svg"
+    },
+    {
+      "id": 53355670,
+      "filename": "svg2-gdb.txt",
+      "mime_type": "text/plain, English; charset=us-ascii",
+      "size_bytes": 6515,
+      "url": "https://issues.chromium.org/action/issues/40079507/attachments/53355670?download=true",
+      "local_path": "attachments/svg2-gdb.txt"
+    },
+    {
+      "id": 53355683,
+      "filename": "WebCore..SVGUseElement..updateContainerOffsets ExecAV@Arbitrary (1dc75f12fe3750aa1828ea20506a5d54).html",
+      "mime_type": "exported SGML document text",
+      "size_bytes": 463741,
+      "url": "https://issues.chromium.org/action/issues/40079507/attachments/53355683?download=true",
+      "local_path": "attachments/WebCore..SVGUseElement..updateContainerOffsets ExecAV@Arbitrary (1dc75f12fe3750aa1828ea20506a5d54).html"
+    }
+  ],
+  "update_count": 31,
+  "description_snippet": "Opening the attached SVG file or a page containing it causes a segmentation\r\nfault in WebCore::SVGUseElement::setHrefBaseValue in 32-bit Ubuntu 9.10.\r\nBuilds 36515 up to the current 40259 appear to be affected. In 64-bit\r\nFedora 12 the issue manifests as the tab getting stuck in loading, sad tab\r\nor"
+}

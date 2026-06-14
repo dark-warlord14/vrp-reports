@@ -1,0 +1,54 @@
+{
+  "id": "40093680",
+  "url": "https://issues.chromium.org/issues/40093680",
+  "title": "Security: http authentication spoof on chrome iOS (repro issue 884179)",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Mobile>iOSWeb>Security",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2019-01-09T01:24:07+00:00",
+  "modified_date": "2024-03-19T12:38:53+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53203340,
+      "filename": "screenshot.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 80318,
+      "url": "https://issues.chromium.org/action/issues/40093680/attachments/53203340?download=true",
+      "local_path": "attachments/screenshot.jpeg"
+    },
+    {
+      "id": 53203341,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1218,
+      "url": "https://issues.chromium.org/action/issues/40093680/attachments/53203341?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53203356,
+      "filename": "AA29DEDB-D2E2-47E9-8335-2C78DAC5AB65.MOV",
+      "mime_type": "video/quicktime",
+      "size_bytes": 1515022,
+      "url": "https://issues.chromium.org/action/issues/40093680/attachments/53203356?download=true",
+      "local_path": "attachments/AA29DEDB-D2E2-47E9-8335-2C78DAC5AB65.MOV"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "**VERSION**   \nChrome Version: 72.0.3626.28 beta   \nOperating System: iOS 12.1.2   \n  \n**REPRODUCTION CASE**   \n  \n1. Lunch the PoC.html   \n2. Click on the red button, then click on the green button quickly.  \n  \nThe authentication dialog should be gone after navigation (see https://crbug.com/chromi"
+}

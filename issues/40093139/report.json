@@ -1,0 +1,99 @@
+{
+  "id": "40093139",
+  "url": "https://issues.chromium.org/issues/40093139",
+  "title": "Security: Possible to retrieve cross-origin image data from canvas",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Canvas, Blink>ServiceWorker",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "fa...@chromium.org",
+  "created_date": "2018-11-20T11:45:16+00:00",
+  "modified_date": "2024-01-08T19:56:10+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53093293,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 266,
+      "url": "https://issues.chromium.org/action/issues/40093139/attachments/53093293?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53093294,
+      "filename": "local.png",
+      "mime_type": "image/png",
+      "size_bytes": 156,
+      "url": "https://issues.chromium.org/action/issues/40093139/attachments/53093294?download=true",
+      "local_path": "attachments/local.png"
+    },
+    {
+      "id": 53093295,
+      "filename": "main.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1593,
+      "url": "https://issues.chromium.org/action/issues/40093139/attachments/53093295?download=true",
+      "local_path": "attachments/main.js"
+    },
+    {
+      "id": 53093296,
+      "filename": "service_worker.js",
+      "mime_type": "text/plain",
+      "size_bytes": 343,
+      "url": "https://issues.chromium.org/action/issues/40093139/attachments/53093296?download=true",
+      "local_path": "attachments/service_worker.js"
+    },
+    {
+      "id": 53093312,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 266,
+      "url": "https://issues.chromium.org/action/issues/40093139/attachments/53093312?download=true",
+      "local_path": "attachments/index_53093312.html"
+    },
+    {
+      "id": 53093313,
+      "filename": "local.png",
+      "mime_type": "image/png",
+      "size_bytes": 156,
+      "url": "https://issues.chromium.org/action/issues/40093139/attachments/53093313?download=true",
+      "local_path": "attachments/local_53093313.png"
+    },
+    {
+      "id": 53093314,
+      "filename": "main.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1612,
+      "url": "https://issues.chromium.org/action/issues/40093139/attachments/53093314?download=true",
+      "local_path": "attachments/main_53093314.js"
+    },
+    {
+      "id": 53093315,
+      "filename": "service_worker.js",
+      "mime_type": "text/plain",
+      "size_bytes": 341,
+      "url": "https://issues.chromium.org/action/issues/40093139/attachments/53093315?download=true",
+      "local_path": "attachments/service_worker_53093315.js"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe canvas element allows cross-origin images to be drawn within it, but will prevent the image data from being read back out. Internally, the canvas caches the list of URLs it's seen before and whether or not they tainted the canvas. That way, when an image is drawn, th"
+}

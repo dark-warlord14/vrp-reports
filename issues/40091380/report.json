@@ -1,0 +1,75 @@
+{
+  "id": "40091380",
+  "url": "https://issues.chromium.org/issues/40091380",
+  "title": "Chrome Url Spoofing via Interstitial content overwrite",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Interstitials",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ev...@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2018-05-15T12:04:54+00:00",
+  "modified_date": "2024-01-08T23:10:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53263275,
+      "filename": "15263854274978.png",
+      "mime_type": "image/png",
+      "size_bytes": 36922,
+      "url": "https://issues.chromium.org/action/issues/40091380/attachments/53263275?download=true",
+      "local_path": "attachments/15263854274978.png"
+    },
+    {
+      "id": 53263276,
+      "filename": "15263854103093.png",
+      "mime_type": "image/png",
+      "size_bytes": 31832,
+      "url": "https://issues.chromium.org/action/issues/40091380/attachments/53263276?download=true",
+      "local_path": "attachments/15263854103093.png"
+    },
+    {
+      "id": 53263291,
+      "filename": "aboutblank.png",
+      "mime_type": "image/png",
+      "size_bytes": 57176,
+      "url": "https://issues.chromium.org/action/issues/40091380/attachments/53263291?download=true",
+      "local_path": "attachments/aboutblank.png"
+    },
+    {
+      "id": 53263292,
+      "filename": "Successful.png",
+      "mime_type": "image/png",
+      "size_bytes": 69892,
+      "url": "https://issues.chromium.org/action/issues/40091380/attachments/53263292?download=true",
+      "local_path": "attachments/Successful.png"
+    },
+    {
+      "id": 53263338,
+      "filename": "c3511b9-7173-49e2-8562-efd3a842c05b.png",
+      "mime_type": "image/png",
+      "size_bytes": 34940,
+      "url": "https://issues.chromium.org/action/issues/40091380/attachments/53263338?download=true",
+      "local_path": "attachments/c3511b9-7173-49e2-8562-efd3a842c05b.png"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/66.0.3359.170 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Open url: https://server.n0tr00t.com/chrome/url_spoof_bypass_dangerous.html\r\n2. Click test <a> tag\r\n3. We'll see the effect of a successful"
+}

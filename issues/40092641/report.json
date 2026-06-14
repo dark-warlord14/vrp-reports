@@ -1,0 +1,41 @@
+{
+  "id": "40092641",
+  "url": "https://issues.chromium.org/issues/40092641",
+  "title": "Security: pageCapture permission allows access to arbitrary local files and chrome:// pages",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions>API",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "bd...@chromium.org",
+  "created_date": "2018-10-08T10:20:33+00:00",
+  "modified_date": "2024-01-08T19:26:12+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53215363,
+      "filename": "pagecapture_poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1039,
+      "url": "https://issues.chromium.org/action/issues/40092641/attachments/53215363?download=true",
+      "local_path": "attachments/pagecapture_poc.zip"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe pageCapture permission allows an extension to call the chrome.pageCapture.saveAsMHTML method. This method will save the page data for any tab, regardless of whether it's a standard web page, chrome:// page or local file. This is true even if \"Allow access to file URL"
+}

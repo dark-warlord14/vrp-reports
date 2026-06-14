@@ -1,0 +1,44 @@
+{
+  "id": "40080247",
+  "url": "https://issues.chromium.org/issues/40080247",
+  "title": "Security: v8: WebKitPoint() memory corruption",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>JavaScript",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sk...@chromium.org",
+  "assignee": "mo...@google.com",
+  "created_date": "2010-04-07T09:46:55+00:00",
+  "modified_date": "2024-01-06T00:09:42+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53282092,
+      "filename": "repro5.2.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 95,
+      "url": "https://issues.chromium.org/action/issues/40080247/attachments/53282092?download=true",
+      "local_path": "attachments/repro5.2.html"
+    },
+    {
+      "id": 53282093,
+      "filename": "repro5.1.html",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 184,
+      "url": "https://issues.chromium.org/action/issues/40080247/attachments/53282093?download=true",
+      "local_path": "attachments/repro5.1.html"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "By calling window.WebKitPoint(), we are causing some kind of memory \r\ncorruption in v8. The following two html files will trigger the issue by \r\ncalling the method in an IFRAME, while the main page refreshes the IFRAME \r\nfrom time to time to cause GarbageCollection, which exposes the memory \r\ncorrup"
+}

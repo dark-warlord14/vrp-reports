@@ -1,0 +1,67 @@
+{
+  "id": "40095590",
+  "url": "https://issues.chromium.org/issues/40095590",
+  "title": "OOB in SwiftShader textureSize",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>GPU>SwiftShader",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cd...@gmail.com",
+  "assignee": "ni...@google.com",
+  "created_date": "2019-07-03T04:24:36+00:00",
+  "modified_date": "2024-01-08T23:04:12+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52891372,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2103,
+      "url": "https://issues.chromium.org/action/issues/40095590/attachments/52891372?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52891373,
+      "filename": "utility.js",
+      "mime_type": "text/plain",
+      "size_bytes": 2051,
+      "url": "https://issues.chromium.org/action/issues/40095590/attachments/52891373?download=true",
+      "local_path": "attachments/utility.js"
+    },
+    {
+      "id": 52891374,
+      "filename": "webgl-utils.js",
+      "mime_type": "text/plain",
+      "size_bytes": 10280,
+      "url": "https://issues.chromium.org/action/issues/40095590/attachments/52891374?download=true",
+      "local_path": "attachments/webgl-utils.js"
+    },
+    {
+      "id": 52891375,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1158,
+      "url": "https://issues.chromium.org/action/issues/40095590/attachments/52891375?download=true",
+      "local_path": "attachments/crash.html"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Put the js file and poc.html,crash.html into same dir and setup a webserver. \r\n2. Run ./chrome --disable-gpu crash.html\r\n\r\nWhat is the expected"
+}

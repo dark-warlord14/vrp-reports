@@ -1,0 +1,76 @@
+{
+  "id": "40088597",
+  "url": "https://issues.chromium.org/issues/40088597",
+  "title": "Security: Arbitrary bad cast in optimized Javascript code",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sk...@chromium.org",
+  "assignee": "ms...@chromium.org",
+  "created_date": "2017-08-03T16:09:40+00:00",
+  "modified_date": "2024-03-11T12:53:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 0.0,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 24,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53208877,
+      "filename": "repro.html",
+      "mime_type": "text/plain",
+      "size_bytes": 133,
+      "url": "https://issues.chromium.org/action/issues/40088597/attachments/53208877?download=true",
+      "local_path": "attachments/repro.html"
+    },
+    {
+      "id": 53208878,
+      "filename": "PoC - write-what-where.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1622,
+      "url": "https://issues.chromium.org/action/issues/40088597/attachments/53208878?download=true",
+      "local_path": "attachments/PoC - write-what-where.html"
+    },
+    {
+      "id": 53208879,
+      "filename": "PoC - information disclosure.html",
+      "mime_type": "text/plain",
+      "size_bytes": 12472,
+      "url": "https://issues.chromium.org/action/issues/40088597/attachments/53208879?download=true",
+      "local_path": "attachments/PoC - information disclosure.html"
+    },
+    {
+      "id": 53208888,
+      "filename": "AVR@NULL fdd.fbd @ chrome.exe!chrome_child.dll!blink։։TransformationMatrix։։M11.html",
+      "mime_type": "text/plain",
+      "size_bytes": 171824,
+      "url": "https://issues.chromium.org/action/issues/40088597/attachments/53208888?download=true",
+      "local_path": "attachments/AVR@NULL fdd.fbd @ chrome.exe!chrome_child.dll!blink։։TransformationMatrix։։M11.html"
+    },
+    {
+      "id": 53208889,
+      "filename": "AV_@Invalid 7b5.537 @ chrome.exe!chrome_child.dll!blink։։TransformationMatrix։։SetM11.html",
+      "mime_type": "text/plain",
+      "size_bytes": 181535,
+      "url": "https://issues.chromium.org/action/issues/40088597/attachments/53208889?download=true",
+      "local_path": "attachments/AV_@Invalid 7b5.537 @ chrome.exe!chrome_child.dll!blink։։TransformationMatrix։։SetM11.html"
+    },
+    {
+      "id": 53209054,
+      "filename": "PoC - code execution.html",
+      "mime_type": "text/plain",
+      "size_bytes": 16292,
+      "url": "https://issues.chromium.org/action/issues/40088597/attachments/53209054?download=true",
+      "local_path": "attachments/PoC - code execution.html"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "VULNERABILITY DETAILS\r\nSpecially crafted JavaScript can cause Chrome to use an instance of any class as if it was an instance of pretty much any other class. This allows an \"arbitrary bad cast\": an attacker can call almost any method of almost any class `A` on an object of almost any other class `B`"
+}

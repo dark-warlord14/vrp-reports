@@ -1,0 +1,78 @@
+{
+  "id": "41492634",
+  "url": "https://issues.chromium.org/issues/41492634",
+  "title": "UAF in gpu::GpuChannelHost",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>GPU",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2024-01-18T21:14:00+00:00",
+  "modified_date": "2024-05-14T15:41:50+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53078123,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 236,
+      "url": "https://issues.chromium.org/action/issues/41492634/attachments/53078123?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 53078124,
+      "filename": "sleep.patch",
+      "mime_type": "text/plain",
+      "size_bytes": 1261,
+      "url": "https://issues.chromium.org/action/issues/41492634/attachments/53078124?download=true",
+      "local_path": "attachments/sleep.patch"
+    },
+    {
+      "id": 53078125,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 34043,
+      "url": "https://issues.chromium.org/action/issues/41492634/attachments/53078125?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53078153,
+      "filename": "asan-new.log",
+      "mime_type": "text/plain",
+      "size_bytes": 35249,
+      "url": "https://issues.chromium.org/action/issues/41492634/attachments/53078153?download=true",
+      "local_path": "attachments/asan-new.log"
+    },
+    {
+      "id": 53078154,
+      "filename": "asan-old.log",
+      "mime_type": "text/plain",
+      "size_bytes": 23248,
+      "url": "https://issues.chromium.org/action/issues/41492634/attachments/53078154?download=true",
+      "local_path": "attachments/asan-old.log"
+    },
+    {
+      "id": 53078196,
+      "filename": "asan-1519655.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 26500,
+      "url": "https://issues.chromium.org/action/issues/41492634/attachments/53078196?download=true",
+      "local_path": "attachments/asan-1519655.txt"
+    }
+  ],
+  "update_count": 69,
+  "description_snippet": "**Steps to reproduce the problem:**   \ntested chrome version:  \nChromium 122.0.6238.2   \nChromium 122.0.6257.0  \n  \nrepro steps:  \n1 git apply sleep.patch  \n2 build chrome with asan:  \n    args.gn is as follows:  \n    is_asan = true  \n    is_debug = false  \n    enable_nacl = false  \n    treat_warnin"
+}

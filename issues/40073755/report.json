@@ -1,0 +1,99 @@
+{
+  "id": "40073755",
+  "url": "https://issues.chromium.org/issues/40073755",
+  "title": "Security: heap after free at `RenderFrameHostManager::GetFrameHostForNavigation`",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "18...@gmail.com",
+  "assignee": "le...@chromium.org",
+  "created_date": "2023-09-29T13:02:23+00:00",
+  "modified_date": "2024-01-19T18:43:18+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53403811,
+      "filename": "patch.cpp",
+      "mime_type": "text/plain",
+      "size_bytes": 3524,
+      "url": "https://issues.chromium.org/action/issues/40073755/attachments/53403811?download=true",
+      "local_path": "attachments/patch.cpp"
+    },
+    {
+      "id": 53403812,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 24085,
+      "url": "https://issues.chromium.org/action/issues/40073755/attachments/53403812?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53403813,
+      "filename": "4278923_issue.cpp",
+      "mime_type": "text/plain",
+      "size_bytes": 3357,
+      "url": "https://issues.chromium.org/action/issues/40073755/attachments/53403813?download=true",
+      "local_path": "attachments/4278923_issue.cpp"
+    },
+    {
+      "id": 53403814,
+      "filename": "4278923_issue_asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 24316,
+      "url": "https://issues.chromium.org/action/issues/40073755/attachments/53403814?download=true",
+      "local_path": "attachments/4278923_issue_asan.txt"
+    },
+    {
+      "id": 53403863,
+      "filename": "server.py",
+      "mime_type": "text/plain",
+      "size_bytes": 1713,
+      "url": "https://issues.chromium.org/action/issues/40073755/attachments/53403863?download=true",
+      "local_path": "attachments/server.py"
+    },
+    {
+      "id": 53403864,
+      "filename": "found_18f.pem",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2868,
+      "url": "https://issues.chromium.org/action/issues/40073755/attachments/53403864?download=true",
+      "local_path": "attachments/found_18f.pem"
+    },
+    {
+      "id": 53403865,
+      "filename": "fake_asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 33206,
+      "url": "https://issues.chromium.org/action/issues/40073755/attachments/53403865?download=true",
+      "local_path": "attachments/fake_asan.log"
+    },
+    {
+      "id": 53403866,
+      "filename": "fake_patch.diff",
+      "mime_type": "text/plain",
+      "size_bytes": 1586,
+      "url": "https://issues.chromium.org/action/issues/40073755/attachments/53403866?download=true",
+      "local_path": "attachments/fake_patch.diff"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "Hey, I want to report a UAF bug at [RenderFrameHostManager::GetFrameHostForNavigation](https://source.chromium.org/chromium/chromium/src/+/main:content/browser/renderer_host/render_frame_host_manager.cc;l=1527). however , The bug is a strange bug(because there not only one bug, and I don't know shou"
+}

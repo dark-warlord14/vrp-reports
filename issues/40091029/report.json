@@ -1,0 +1,36 @@
+{
+  "id": "40091029",
+  "url": "https://issues.chromium.org/issues/40091029",
+  "title": "An extension can access and modify all chrome:// pages, options, etc.",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "tw...@googlemail.com",
+  "assignee": "se...@chromium.org",
+  "created_date": "2011-05-18T03:30:08+00:00",
+  "modified_date": "2024-01-06T00:15:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53131152,
+      "filename": "Hotcleaner_Alpha_Test.crx",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 30733,
+      "url": "https://issues.chromium.org/action/issues/40091029/attachments/53131152?download=true",
+      "local_path": "attachments/Hotcleaner_Alpha_Test.crx"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAn packaged app/extension can access and modify all chrome: pages, read/write preferences, run chrome.send function,   \npass arguments directly to c++,   \nwithout required permissions,  \nwithout using NPAPI plugin,   \ncontent script or chrome.tabs.executeScript  \n  \n**VE"
+}

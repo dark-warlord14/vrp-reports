@@ -1,0 +1,30 @@
+{
+  "id": "40089016",
+  "url": "https://issues.chromium.org/issues/40089016",
+  "title": "Security: METHOD_LOCALTIME browser->renderer infoleak",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Sandbox",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "vi...@microsoft.com",
+  "assignee": "pa...@chromium.org",
+  "created_date": "2017-09-15T01:31:38+00:00",
+  "modified_date": "2023-03-04T13:27:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3337.0,
+  "reward_amount_meta": 3337.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 37,
+  "description_snippet": "VULNERABILITY DETAILS\r\n\r\nIn the IPC method METHOD_LOCALTIME there is a full pointer infoleak when Chromium is built against glibc on Linux.\r\n\r\nThe bug is in the function HandleLocaltime(...).\r\nIt sends an entire “struct tm” from the browser process to renderer:\r\n\r\n  const struct tm* expanded_time ="
+}

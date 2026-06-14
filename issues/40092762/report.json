@@ -1,0 +1,43 @@
+{
+  "id": "40092762",
+  "url": "https://issues.chromium.org/issues/40092762",
+  "title": "Security: Skia: Out-of-bounds Read in src/codec/SkSwizzler",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Skia",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "qu...@gmail.com",
+  "assignee": "sc...@google.com",
+  "created_date": "2018-10-18T18:24:20+00:00",
+  "modified_date": "2024-01-08T19:17:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53139610,
+      "filename": "Sk_android_codec_crash",
+      "mime_type": "text/plain",
+      "size_bytes": 2040,
+      "url": "https://issues.chromium.org/action/issues/40092762/attachments/53139610?download=true",
+      "local_path": "attachments/Sk_android_codec_crash"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nhttps://cs.chromium.org/chromium/src/third_party/skia/src/codec/SkSwizzler.cpp?l=54  \n  \n```  \nstatic void sample6(void\\* dst, const uint8_t\\* src, int width, int bpp, int deltaSrc, int offset,  \n        const SkPMColor ctable[]) {  \n    src += offset;  \n    uint8_t\\*"
+}

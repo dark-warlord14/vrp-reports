@@ -1,0 +1,78 @@
+{
+  "id": "40058375",
+  "url": "https://issues.chromium.org/issues/40058375",
+  "title": "A GPU crash (or anything that causes loss of GPU support for Chrome) will create framebuffer ghosting with ImageBitmap",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Canvas, Blink>WebGPU",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jo...@gmail.com",
+  "assignee": "ju...@chromium.org",
+  "created_date": "2021-12-30T16:27:26+00:00",
+  "modified_date": "2024-01-09T09:22:22+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53389450,
+      "filename": "1283434.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1836577,
+      "url": "https://issues.chromium.org/action/issues/40058375/attachments/53389450?download=true",
+      "local_path": "attachments/1283434.mp4"
+    },
+    {
+      "id": 53389451,
+      "filename": "1283434-M97.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2104549,
+      "url": "https://issues.chromium.org/action/issues/40058375/attachments/53389451?download=true",
+      "local_path": "attachments/1283434-M97.mp4"
+    },
+    {
+      "id": 53389452,
+      "filename": "GPU.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 23843,
+      "url": "https://issues.chromium.org/action/issues/40058375/attachments/53389452?download=true",
+      "local_path": "attachments/GPU.txt"
+    },
+    {
+      "id": 53389470,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 150,
+      "url": "https://issues.chromium.org/action/issues/40058375/attachments/53389470?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53389471,
+      "filename": "main.js",
+      "mime_type": "text/plain",
+      "size_bytes": 343,
+      "url": "https://issues.chromium.org/action/issues/40058375/attachments/53389471?download=true",
+      "local_path": "attachments/main.js"
+    },
+    {
+      "id": 53389472,
+      "filename": "worker.js",
+      "mime_type": "text/plain",
+      "size_bytes": 464,
+      "url": "https://issues.chromium.org/action/issues/40058375/attachments/53389472?download=true",
+      "local_path": "attachments/worker.js"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "Chrome Version       : 96.0.4664.110 (Official Build) (64-bit) (cohort: Stable)  \n**URLs (if applicable) :**  https://www.planetminecraft.com  - currently reproduceable in our dynamic header (the top ~120 pixels at the top that show a rotating planet, if your browser has WebGL support). On Chrome, t"
+}

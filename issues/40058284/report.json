@@ -1,0 +1,66 @@
+{
+  "id": "40058284",
+  "url": "https://issues.chromium.org/issues/40058284",
+  "title": "Security: heap-use-after-free in TabStripLayoutHelper::SlotIsCollapsedTab",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P1",
+  "component": "UI>Browser>TopChrome>TabStrip>TabGroups",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "st...@gmail.com",
+  "assignee": "dp...@chromium.org",
+  "created_date": "2021-12-18T14:30:23+00:00",
+  "modified_date": "2024-01-09T04:35:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52975372,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 91,
+      "url": "https://issues.chromium.org/action/issues/40058284/attachments/52975372?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52975373,
+      "filename": "uaf.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 782408,
+      "url": "https://issues.chromium.org/action/issues/40058284/attachments/52975373?download=true",
+      "local_path": "attachments/uaf.mp4"
+    },
+    {
+      "id": 52975503,
+      "filename": "drag-detach.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1741143,
+      "url": "https://issues.chromium.org/action/issues/40058284/attachments/52975503?download=true",
+      "local_path": "attachments/drag-detach.mp4"
+    },
+    {
+      "id": 52975504,
+      "filename": "detach-drag.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1208217,
+      "url": "https://issues.chromium.org/action/issues/40058284/attachments/52975504?download=true",
+      "local_path": "attachments/detach-drag.mp4"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nDragging a tab group while a new tab in the tab group is opened results in the group being opened across multiple windows, which causes unexpected behaviour.  \n  \n**VERSION**   \nChrome Version: 99.0.4774.0  \nOperating System: Windows 10  \n  \n**REPRODUCTION CASE**   \n1. L"
+}

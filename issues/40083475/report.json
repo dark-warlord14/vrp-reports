@@ -1,0 +1,29 @@
+{
+  "id": "40083475",
+  "url": "https://issues.chromium.org/issues/40083475",
+  "title": "Heap-buffer-overflow in blink::TimerBase::stop",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Forms",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "tk...@chromium.org",
+  "created_date": "2015-12-30T18:40:23+00:00",
+  "modified_date": "2024-08-11T21:22:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3500.0,
+  "reward_amount_meta": 3500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 45,
+  "description_snippet": "Detailed report: https://cluster-fuzz.appspot.com/testcase?key=6507228867067904\n\nFuzzer: miaubiz_css_fuzzer\nJob Type: windows_asan_chrome_no_sandbox\nPlatform Id: windows\n\nCrash Type: Heap-buffer-overflow WRITE 16\nCrash Address: 0x0e10eb80\nCrash State:\n  blink::TimerBase::stop\n  blink::HTMLInputEleme"
+}

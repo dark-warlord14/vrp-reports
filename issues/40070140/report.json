@@ -1,0 +1,29 @@
+{
+  "id": "40070140",
+  "url": "https://issues.chromium.org/issues/40070140",
+  "title": "security: libmbim | heap-buffer-overflow on mbim-message.c",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rh...@gmail.com",
+  "assignee": "st...@google.com",
+  "created_date": "2023-08-21T18:44:26+00:00",
+  "modified_date": "2023-12-25T18:42:22+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 750.0,
+  "reward_amount_meta": 750.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 23,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Tested on zork board Chromebook.  \n  \n**Problem Description:**   \nFound the OOB read by libfuzzer. Tested on zork board Chromebook.  \n  \nTested on main libmbim  \n```  \ncommit 623d6bf0df63b57b2c466677140aadb705c67cc5 (HEAD, m/release-R117-15572.B, m/main, cro"
+}

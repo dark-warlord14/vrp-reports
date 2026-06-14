@@ -1,0 +1,33 @@
+{
+  "id": "40095912",
+  "url": "https://issues.chromium.org/issues/40095912",
+  "title": "Leaking size of cross-origin resource by using Range Requests and Service Workers",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>PerformanceAPIs>ResourceTiming, Blink>ServiceWorker, Internals>Media>Network",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "yo...@chromium.org",
+  "created_date": "2019-08-05T16:53:50+00:00",
+  "modified_date": "2024-01-08T23:11:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 82,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen a cross-origin resource is used in an audio/video tag, a request containing the Range header asking for bytes=0- is issued.  \nIf the request is intercepted using a Service Worker and we respond with an arbitrary body, e.g:  \ne.respondWith(new Response(\"aaa\", {status"
+}

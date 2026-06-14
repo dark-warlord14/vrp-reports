@@ -1,0 +1,44 @@
+{
+  "id": "40060118",
+  "url": "https://issues.chromium.org/issues/40060118",
+  "title": "Security: webRequest API allows extensions to XSS chrome.google.com and gain access to webstorePrivate API",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals, Platform>Extensions, Webstore",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "ba...@chromium.org",
+  "created_date": "2012-06-22T07:35:28+00:00",
+  "modified_date": "2024-01-06T00:15:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53025844,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40060118/attachments/53025844?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53025851,
+      "filename": "bug-134101.patch",
+      "mime_type": "text/x-diff; charset=us-ascii",
+      "size_bytes": 6248,
+      "url": "https://issues.chromium.org/action/issues/40060118/attachments/53025851?download=true",
+      "local_path": "attachments/bug-134101.patch"
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": ""
+}

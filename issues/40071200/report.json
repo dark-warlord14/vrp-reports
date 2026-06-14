@@ -1,0 +1,46 @@
+{
+  "id": "40071200",
+  "url": "https://issues.chromium.org/issues/40071200",
+  "title": "Security: heap-use-after-free in vrend_destroy_sampler_view",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fi...@gmail.com",
+  "assignee": "st...@google.com",
+  "created_date": "2023-09-02T04:31:00+00:00",
+  "modified_date": "2024-01-29T18:44:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53138360,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 6550,
+      "url": "https://issues.chromium.org/action/issues/40071200/attachments/53138360?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53138361,
+      "filename": "virgl_fuzzer.c",
+      "mime_type": "text/plain",
+      "size_bytes": 7696,
+      "url": "https://issues.chromium.org/action/issues/40071200/attachments/53138361?download=true",
+      "local_path": "attachments/virgl_fuzzer.c"
+    }
+  ],
+  "update_count": 20,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n```  \nint vrend_create_sampler_view(struct vrend_context \\*ctx,  \n                              uint32_t handle,  \n                              uint32_t res_handle, uint32_t format,  \n                              uint32_t val0, uint32_t val1, uint32_t swizzle_packed)"
+}

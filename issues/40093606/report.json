@@ -1,0 +1,51 @@
+{
+  "id": "40093606",
+  "url": "https://issues.chromium.org/issues/40093606",
+  "title": "Security: Cross origin resource size infoleak",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Sandbox>SiteIsolation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ad...@gmail.com",
+  "assignee": "st...@chromium.org",
+  "created_date": "2018-12-30T15:55:10+00:00",
+  "modified_date": "2024-01-08T20:44:50+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53320432,
+      "filename": "attack.py",
+      "mime_type": "text/plain",
+      "size_bytes": 313,
+      "url": "https://issues.chromium.org/action/issues/40093606/attachments/53320432?download=true",
+      "local_path": "attachments/attack.py"
+    },
+    {
+      "id": 53320433,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 776,
+      "url": "https://issues.chromium.org/action/issues/40093606/attachments/53320433?download=true",
+      "local_path": "attachments/index.html"
+    }
+  ],
+  "update_count": 72,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt is possible to leak cross-origin resources exact size using appcache + storage estimator.  \n  \nTo exploit it it is enough to have entry in cache manifest file for this cross origin resource and then receive size using storage size estimator. If some more bytes are add"
+}

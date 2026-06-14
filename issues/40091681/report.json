@@ -1,0 +1,174 @@
+{
+  "id": "40091681",
+  "url": "https://issues.chromium.org/issues/40091681",
+  "title": "use-after-free in operator-> buildtools/third_party/libc++/trunk/include/memory (WebAudio thread)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebAudio, Blink>Workers",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cd...@gmail.com",
+  "assignee": "nh...@chromium.org",
+  "created_date": "2018-06-17T04:25:55+00:00",
+  "modified_date": "2024-01-06T01:24:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53053886,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53053886?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53053887,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53053887?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53053888,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53053888?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53053903,
+      "filename": "original_fuzz.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1703,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53053903?download=true",
+      "local_path": "attachments/original_fuzz.html"
+    },
+    {
+      "id": 53053904,
+      "filename": "uaf_symbolised2.log",
+      "mime_type": "text/plain",
+      "size_bytes": 41551,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53053904?download=true",
+      "local_path": "attachments/uaf_symbolised2.log"
+    },
+    {
+      "id": 53053958,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53053958?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53053959,
+      "filename": "audio-worklet.wasmmodule.js",
+      "mime_type": "text/plain",
+      "size_bytes": 164214,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53053959?download=true",
+      "local_path": "attachments/audio-worklet.wasmmodule.js"
+    },
+    {
+      "id": 53053960,
+      "filename": "repro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5976710,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53053960?download=true",
+      "local_path": "attachments/repro.mp4"
+    },
+    {
+      "id": 53053971,
+      "filename": "crash3.html",
+      "mime_type": "text/plain",
+      "size_bytes": 351,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53053971?download=true",
+      "local_path": "attachments/crash3.html"
+    },
+    {
+      "id": 53053997,
+      "filename": "crash4.html",
+      "mime_type": "text/plain",
+      "size_bytes": 351,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53053997?download=true",
+      "local_path": "attachments/crash4.html"
+    },
+    {
+      "id": 53053998,
+      "filename": "back.html",
+      "mime_type": "text/plain",
+      "size_bytes": 100,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53053998?download=true",
+      "local_path": "attachments/back.html"
+    },
+    {
+      "id": 53054013,
+      "filename": "crash4.html",
+      "mime_type": "text/plain",
+      "size_bytes": 355,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53054013?download=true",
+      "local_path": "attachments/crash4_53054013.html"
+    },
+    {
+      "id": 53054016,
+      "filename": "back.html",
+      "mime_type": "text/plain",
+      "size_bytes": 129,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53054016?download=true",
+      "local_path": "attachments/back_53054016.html"
+    },
+    {
+      "id": 53054088,
+      "filename": "new.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 61158,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53054088?download=true",
+      "local_path": "attachments/new.zip"
+    },
+    {
+      "id": 53054243,
+      "filename": "new2.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 34132,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53054243?download=true",
+      "local_path": "attachments/new2.zip"
+    },
+    {
+      "id": 53054282,
+      "filename": "new3.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 8779789,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53054282?download=true",
+      "local_path": "attachments/new3.zip"
+    },
+    {
+      "id": 53054292,
+      "filename": "back.html",
+      "mime_type": "text/plain",
+      "size_bytes": 138,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53054292?download=true",
+      "local_path": "attachments/back_53054292.html"
+    },
+    {
+      "id": 53054293,
+      "filename": "UNKNOWN_ReadAV_windows_release.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3950,
+      "url": "https://issues.chromium.org/action/issues/40091681/attachments/53054293?download=true",
+      "local_path": "attachments/UNKNOWN_ReadAV_windows_release.txt"
+    }
+  ],
+  "update_count": 93,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nVersion 69.0.3451.0 (Developer Build) (64-bit)\r\n\r\nuse-after-free in operator-> buildtools/third_party/libc++/trunk/include/memory (WebAudio thre"
+}

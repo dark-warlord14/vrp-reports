@@ -1,0 +1,42 @@
+{
+  "id": "40091706",
+  "url": "https://issues.chromium.org/issues/40091706",
+  "title": "Security: OOB read in Array.prototype.sort",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "sz...@google.com",
+  "created_date": "2018-06-19T19:21:54+00:00",
+  "modified_date": "2024-01-06T00:30:26+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53388508,
+      "filename": "repro.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1022,
+      "url": "https://issues.chromium.org/action/issues/40091706/attachments/53388508?download=true",
+      "local_path": "attachments/repro.html"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nhttps://cs.chromium.org/chromium/src/v8/src/builtins/array-sort.tq?rcl=dd5dd45db8522e2c7b3b3b9ae80132b6d0b8bc24&l=185  \n  macro ArrayInsertionSort<E : type>(  \n      context: Context, receiver: Object, elements: Object,  \n      initialReceiverMap: Object, initialReceiver"
+}

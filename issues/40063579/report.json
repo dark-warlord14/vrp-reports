@@ -1,0 +1,38 @@
+{
+  "id": "40063579",
+  "url": "https://issues.chromium.org/issues/40063579",
+  "title": "Security: Race Condition UAF in radeon_gem_set_domain_ioctl",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>GPU>VendorSpecific",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lm...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2023-03-14T03:48:37+00:00",
+  "modified_date": "2024-01-05T18:46:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 250.0,
+  "reward_amount_meta": 250.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52952908,
+      "filename": "poc.c",
+      "mime_type": "text/plain",
+      "size_bytes": 1533,
+      "url": "https://issues.chromium.org/action/issues/40063579/attachments/52952908?download=true",
+      "local_path": "attachments/poc.c"
+    }
+  ],
+  "update_count": 32,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThe root cause of this issue is similar to https://crbug.com/chromium/1400113, race condition UAF.  \n  \nioctl$RADEON_GEM_SET_DOMAIN will call \\*radeon_gem_set_domain_ioctl\\* function[1] to set domain. \\*gobj\\* is obtained via \\*drm_gem_object_lookup\\*[1], which refere"
+}

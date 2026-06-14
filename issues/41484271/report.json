@@ -1,0 +1,66 @@
+{
+  "id": "41484271",
+  "url": "https://issues.chromium.org/issues/41484271",
+  "title": "Security: Use After Free in sqlite",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Storage>WebSQL, Internals>Storage>SQLite",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gc...@gmail.com",
+  "assignee": "es...@chromium.org",
+  "created_date": "2023-12-14T17:04:35+00:00",
+  "modified_date": "2024-03-26T15:40:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53182119,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 48994,
+      "url": "https://issues.chromium.org/action/issues/41484271/attachments/53182119?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53182120,
+      "filename": "poc.sql",
+      "mime_type": "text/plain",
+      "size_bytes": 207,
+      "url": "https://issues.chromium.org/action/issues/41484271/attachments/53182120?download=true",
+      "local_path": "attachments/poc.sql"
+    },
+    {
+      "id": 53182121,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1314,
+      "url": "https://issues.chromium.org/action/issues/41484271/attachments/53182121?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53182198,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1429,
+      "url": "https://issues.chromium.org/action/issues/41484271/attachments/53182198?download=true",
+      "local_path": "attachments/poc_53182198.html"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "VULNERABILITY DETAILS\n\n## Introduction\n\nNote: This vulnerability exists in the latest version of Chrome Stable and in the mainline Chrome.\n\n- Versions affected in Chrome: Chrome-Stable-116 to the latest\n- Time introduced in Chromium: https://chromium-review.googlesource.com/c/chromium/src/+/4545677"
+}

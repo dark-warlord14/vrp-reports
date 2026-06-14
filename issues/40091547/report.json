@@ -1,0 +1,46 @@
+{
+  "id": "40091547",
+  "url": "https://issues.chromium.org/issues/40091547",
+  "title": "Security: heap-buffer-overflow in gpu::gles2::StrictIdHandler::FreeIds",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>WebGL, Internals>GPU>Internals",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "kb...@chromium.org",
+  "created_date": "2018-06-01T21:46:47+00:00",
+  "modified_date": "2024-01-05T21:09:34+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52923440,
+      "filename": "gpu_freeids.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2707,
+      "url": "https://issues.chromium.org/action/issues/40091547/attachments/52923440?download=true",
+      "local_path": "attachments/gpu_freeids.html"
+    },
+    {
+      "id": 52923441,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 14569,
+      "url": "https://issues.chromium.org/action/issues/40091547/attachments/52923441?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "I have tested this on the stable asan linux build (asan-linux-stable-67.0.3396.62).\r\n\r\nERROR: AddressSanitizer: heap-buffer-overflow on address 0x602000227832 at pc 0x5642e80f6294 bp 0x7ffec465d810 sp 0x7ffec465d808\r\nWRITE of size 1 at 0x602000227832 thread T0 (chrome)\r\n    #0 0x5642e80f6293 in gpu:"
+}

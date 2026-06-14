@@ -1,0 +1,51 @@
+{
+  "id": "40085151",
+  "url": "https://issues.chromium.org/issues/40085151",
+  "title": "ignored TLS errors propagate from webview to main browser",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Network>SSL, UI>Browser>Interstitials",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ja...@googlemail.com",
+  "assignee": "es...@chromium.org",
+  "created_date": "2016-08-19T02:11:50+00:00",
+  "modified_date": "2024-01-08T21:48:08+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52926928,
+      "filename": "webview-tls-test.crx",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1505,
+      "url": "https://issues.chromium.org/action/issues/40085151/attachments/52926928?download=true",
+      "local_path": "attachments/webview-tls-test.crx"
+    },
+    {
+      "id": 52926929,
+      "filename": "webview-tls-test.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1445,
+      "url": "https://issues.chromium.org/action/issues/40085151/attachments/52926929?download=true",
+      "local_path": "attachments/webview-tls-test.zip"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/52.0.2743.116 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Add the attached app to Chrome. Note that it does not request any user-visible permissions.\r\n2. Go to https://37.221.195.125/. You'll see the TL"
+}

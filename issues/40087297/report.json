@@ -1,0 +1,42 @@
+{
+  "id": "40087297",
+  "url": "https://issues.chromium.org/issues/40087297",
+  "title": "Security: <link rel='prerender'> causes same-site cookies to be sent along with cross-site requests",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature, Internals>Preload",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ge...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2017-04-10T11:12:00+00:00",
+  "modified_date": "2024-01-09T01:38:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52893974,
+      "filename": "prerender.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2533,
+      "url": "https://issues.chromium.org/action/issues/40087297/attachments/52893974?download=true",
+      "local_path": "attachments/prerender.html"
+    }
+  ],
+  "update_count": 87,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIf an HTML-page contains a <link rel=\"prerender\">-tag with the href pointing to a page on another domain than the domain hosting this HTML-page, then upon visiting this HTML-page the browser will send along all strict and lax same-site cookies with this cross-site reques"
+}

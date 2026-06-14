@@ -1,0 +1,63 @@
+{
+  "id": "40088882",
+  "url": "https://issues.chromium.org/issues/40088882",
+  "title": "Security: Address bar RTL spoofing using hebrew",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Omnibox, UI>Internationalization>RTL",
+  "os_platforms": [
+    "Mac",
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "xi...@gmail.com",
+  "assignee": "ct...@chromium.org",
+  "created_date": "2017-08-31T05:11:18+00:00",
+  "modified_date": "2024-01-08T22:00:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53051698,
+      "filename": "spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 1057523,
+      "url": "https://issues.chromium.org/action/issues/40088882/attachments/53051698?download=true",
+      "local_path": "attachments/spoof.png"
+    },
+    {
+      "id": 53051699,
+      "filename": "spoof1.png",
+      "mime_type": "image/png",
+      "size_bytes": 1774926,
+      "url": "https://issues.chromium.org/action/issues/40088882/attachments/53051699?download=true",
+      "local_path": "attachments/spoof1.png"
+    },
+    {
+      "id": 53051700,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 374,
+      "url": "https://issues.chromium.org/action/issues/40088882/attachments/53051700?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53051714,
+      "filename": "mac-hebrew-domain.png",
+      "mime_type": "image/png",
+      "size_bytes": 4592,
+      "url": "https://issues.chromium.org/action/issues/40088882/attachments/53051714?download=true",
+      "local_path": "attachments/mac-hebrew-domain.png"
+    }
+  ],
+  "update_count": 74,
+  "description_snippet": "VULNERABILITY DETAILS\r\nAddress bar RTL spoofing using hebrew\r\n\r\nVERSION\r\nChrome on macOS/IOS\r\n\r\nREPRODUCTION CASE\r\npoc.html\r\n<meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\r\n\r\n<a href=\"https://xn--ggbla1c4e.xn--ngbc5azd/#/סוֹ.סח\" target=\"one\">click me(in macOS)</a>\r\n<a href=\"https"
+}

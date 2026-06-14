@@ -1,0 +1,38 @@
+{
+  "id": "40057910",
+  "url": "https://issues.chromium.org/issues/40057910",
+  "title": "[iOS] CSP Bypass via Service Worker",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Mobile>iOSWeb>Security",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pr...@gmail.com",
+  "assignee": "aj...@google.com",
+  "created_date": "2021-11-14T14:35:27+00:00",
+  "modified_date": "2024-03-19T12:39:27+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53017675,
+      "filename": "csp-sw.html",
+      "mime_type": "text/plain",
+      "size_bytes": 871,
+      "url": "https://issues.chromium.org/action/issues/40057910/attachments/53017675?download=true",
+      "local_path": "attachments/csp-sw.html"
+    }
+  ],
+  "update_count": 25,
+  "description_snippet": "Steps to reproduce the problem:\r\n1. Open https://cm2.pw/research/sw/csp-bypass?url=https://httpbin.org/get\r\n2. Notice the Content-Security-Policy\r\n3. Click on Exec\r\n\r\nYou should see the response from httpbin.org printed on the screen even though the policy does not have httpbin.org in any of the CSP"
+}

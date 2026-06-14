@@ -1,0 +1,49 @@
+{
+  "id": "40096102",
+  "url": "https://issues.chromium.org/issues/40096102",
+  "title": "Security: Possible to retrieve cross-origin data in certain cases using devtools custom formatters",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "bm...@chromium.org",
+  "created_date": "2019-08-26T23:40:54+00:00",
+  "modified_date": "2024-01-08T22:41:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53126909,
+      "filename": "file1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1177,
+      "url": "https://issues.chromium.org/action/issues/40096102/attachments/53126909?download=true",
+      "local_path": "attachments/file1.html"
+    },
+    {
+      "id": 53126910,
+      "filename": "file2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 224,
+      "url": "https://issues.chromium.org/action/issues/40096102/attachments/53126910?download=true",
+      "local_path": "attachments/file2.html"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen using the \"with\" statement on a cross-origin object (at least in the case where the associated cross-origin frame is within the same renderer), the devtools debugger will display the properties of the object, even if the frame being debugged doesn't have access to t"
+}

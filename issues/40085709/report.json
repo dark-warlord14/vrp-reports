@@ -1,0 +1,112 @@
+{
+  "id": "40085709",
+  "url": "https://issues.chromium.org/issues/40085709",
+  "title": "Security: Omnibox scrolls RTL domains off-screen (spoofing)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ja...@gmail.com",
+  "assignee": "mg...@chromium.org",
+  "created_date": "2016-10-16T03:25:07+00:00",
+  "modified_date": "2024-09-16T18:43:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52984669,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40085709/attachments/52984669?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52984675,
+      "filename": "screenshot.png",
+      "mime_type": "image/png",
+      "size_bytes": 71760,
+      "url": "https://issues.chromium.org/action/issues/40085709/attachments/52984675?download=true",
+      "local_path": "attachments/screenshot.png"
+    },
+    {
+      "id": 52984681,
+      "filename": "Link.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 263,
+      "url": "https://issues.chromium.org/action/issues/40085709/attachments/52984681?download=true",
+      "local_path": "attachments/Link.txt"
+    },
+    {
+      "id": 52984721,
+      "filename": "rtl-url-scroll.png",
+      "mime_type": "image/png",
+      "size_bytes": 6781,
+      "url": "https://issues.chromium.org/action/issues/40085709/attachments/52984721?download=true",
+      "local_path": "attachments/rtl-url-scroll.png"
+    },
+    {
+      "id": 52984727,
+      "filename": "omnibox-scrolled-correctly.png",
+      "mime_type": "image/png",
+      "size_bytes": 9328,
+      "url": "https://issues.chromium.org/action/issues/40085709/attachments/52984727?download=true",
+      "local_path": "attachments/omnibox-scrolled-correctly.png"
+    },
+    {
+      "id": 52984761,
+      "filename": "url-middle-out-origin.png",
+      "mime_type": "image/png",
+      "size_bytes": 6497,
+      "url": "https://issues.chromium.org/action/issues/40085709/attachments/52984761?download=true",
+      "local_path": "attachments/url-middle-out-origin.png"
+    },
+    {
+      "id": 52984764,
+      "filename": "Spoofable RTL URLs.png",
+      "mime_type": "image/png",
+      "size_bytes": 217610,
+      "url": "https://issues.chromium.org/action/issues/40085709/attachments/52984764?download=true",
+      "local_path": "attachments/Spoofable RTL URLs.png"
+    },
+    {
+      "id": 52984802,
+      "filename": "Screenshot_20161206-115024.png",
+      "mime_type": "image/png",
+      "size_bytes": 74882,
+      "url": "https://issues.chromium.org/action/issues/40085709/attachments/52984802?download=true",
+      "local_path": "attachments/Screenshot_20161206-115024.png"
+    },
+    {
+      "id": 52984803,
+      "filename": "IMG_3682.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 67915,
+      "url": "https://issues.chromium.org/action/issues/40085709/attachments/52984803?download=true",
+      "local_path": "attachments/IMG_3682.jpg"
+    },
+    {
+      "id": 52984823,
+      "filename": "Screen Shot 2016-12-06 at 14.06.39.png",
+      "mime_type": "image/png",
+      "size_bytes": 160163,
+      "url": "https://issues.chromium.org/action/issues/40085709/attachments/52984823?download=true",
+      "local_path": "attachments/Screen Shot 2016-12-06 at 14.06.39.png"
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": "Chrome Version: 56.0.2891.0  \nOperating System: Windows   \n  \n**REPRODUCTION CASE**   \nOpen http://xn--nebl.xn--9dbq2a/%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20https://www.google.com/search?q=khalil&biw=1360&bih=700&source=lnms&tbm=isch&sa=X&ved=0ahUKEwig9dC0rd7PAhUFshQKHU0JAng"
+}

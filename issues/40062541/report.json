@@ -1,0 +1,38 @@
+{
+  "id": "40062541",
+  "url": "https://issues.chromium.org/issues/40062541",
+  "title": "Security: Race Condition Double Free in adreno_set_param",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P4",
+  "component": "Internals>GPU>VendorSpecific",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lm...@gmail.com",
+  "assignee": "ro...@chromium.org",
+  "created_date": "2023-01-07T03:44:25+00:00",
+  "modified_date": "2023-05-24T13:00:18+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 21000.0,
+  "reward_amount_meta": 21000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53347452,
+      "filename": "poc.c",
+      "mime_type": "text/plain",
+      "size_bytes": 1711,
+      "url": "https://issues.chromium.org/action/issues/40062541/attachments/53347452?download=true",
+      "local_path": "attachments/poc.c"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nioctl$MSM_SET_PARAM will call \\*msm_ioctl_set_param\\* to set param. The real code logic is implemented in the \\*adreno_set_param\\* function. If the \\*param\\* is \\*MSM_PARAM_COMM\\*, \\*ctx->comm\\* will be freed[1]. There is no lock. So if \\*adreno_set_param\\* is called"
+}

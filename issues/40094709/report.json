@@ -1,0 +1,51 @@
+{
+  "id": "40094709",
+  "url": "https://issues.chromium.org/issues/40094709",
+  "title": "Security: Content Security Policy Bypass",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "ar...@chromium.org",
+  "created_date": "2019-04-23T07:58:59+00:00",
+  "modified_date": "2024-01-09T01:04:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53174394,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 170,
+      "url": "https://issues.chromium.org/action/issues/40094709/attachments/53174394?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53174564,
+      "filename": "Screenshot from 2020-05-14 15-05-13.png",
+      "mime_type": "image/png",
+      "size_bytes": 167356,
+      "url": "https://issues.chromium.org/action/issues/40094709/attachments/53174564?download=true",
+      "local_path": "attachments/Screenshot from 2020-05-14 15-05-13.png"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "similar to https://crbug.com/chromium/669086 and https://crbug.com/chromium/747847\r\nbut when navigate iframe to javascript scheme , the problem comes again.\r\n\r\nsee poc.html"
+}

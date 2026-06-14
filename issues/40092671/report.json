@@ -1,0 +1,79 @@
+{
+  "id": "40092671",
+  "url": "https://issues.chromium.org/issues/40092671",
+  "title": "Security: Extensions can continue to temporarily execute code and access file after being uninstalled",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Mac",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "rd...@chromium.org",
+  "created_date": "2018-10-11T16:28:45+00:00",
+  "modified_date": "2024-01-08T21:51:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52975531,
+      "filename": "temporary_persistence_poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2002,
+      "url": "https://issues.chromium.org/action/issues/40092671/attachments/52975531?download=true",
+      "local_path": "attachments/temporary_persistence_poc.zip"
+    },
+    {
+      "id": 52975548,
+      "filename": "about_page.js",
+      "mime_type": "text/plain",
+      "size_bytes": 356,
+      "url": "https://issues.chromium.org/action/issues/40092671/attachments/52975548?download=true",
+      "local_path": "attachments/about_page.js"
+    },
+    {
+      "id": 52975549,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 78,
+      "url": "https://issues.chromium.org/action/issues/40092671/attachments/52975549?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 52975550,
+      "filename": "extension_page.html",
+      "mime_type": "text/plain",
+      "size_bytes": 153,
+      "url": "https://issues.chromium.org/action/issues/40092671/attachments/52975550?download=true",
+      "local_path": "attachments/extension_page.html"
+    },
+    {
+      "id": 52975551,
+      "filename": "extension_page.js",
+      "mime_type": "text/plain",
+      "size_bytes": 393,
+      "url": "https://issues.chromium.org/action/issues/40092671/attachments/52975551?download=true",
+      "local_path": "attachments/extension_page.js"
+    },
+    {
+      "id": 52975552,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 374,
+      "url": "https://issues.chromium.org/action/issues/40092671/attachments/52975552?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nOnce uninstalled, all tabs associated with an extension will be closed. While an extension is still installed, it can open a new tab pointing to about:blank from one of its pages. The new tab will have its origin set to the origin used by the chrome extension page that o"
+}

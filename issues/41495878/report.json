@@ -1,0 +1,46 @@
+{
+  "id": "41495878",
+  "url": "https://issues.chromium.org/issues/41495878",
+  "title": "iOS Chrome External protocol confirmation dialog may overlap with other origins",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Mobile>iOSWeb>Security",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ra...@gmail.com",
+  "assignee": "ol...@chromium.org",
+  "created_date": "2024-01-29T17:53:10+00:00",
+  "modified_date": "2024-05-30T16:00:32+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53267994,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 144,
+      "url": "https://issues.chromium.org/action/issues/41495878/attachments/53267994?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53267995,
+      "filename": "ChromePOC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5680003,
+      "url": "https://issues.chromium.org/action/issues/41495878/attachments/53267995?download=true",
+      "local_path": "attachments/ChromePOC.mp4"
+    }
+  ],
+  "update_count": 914,
+  "description_snippet": "**Steps to reproduce the problem:**   \n1. Open iOS Chrome and go to - https://noirpoc.000webhostapp.com/poc.html  \n2. Click on the button available on webpage  \n3. Next, apple.com will be opened in a new window  \n4. Try to interact with the webpage apple.com like clicking anything or scrolling   \n5."
+}

@@ -1,0 +1,43 @@
+{
+  "id": "40085972",
+  "url": "https://issues.chromium.org/issues/40085972",
+  "title": "Change on the credentials mode on redirect specified by the CORS algorithm should be propagated to net/",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>HTML>Modules, Blink>Loader, Blink>SecurityFeature>CORS",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "dh...@gmail.com",
+  "assignee": "to...@chromium.org",
+  "created_date": "2016-11-16T08:32:01+00:00",
+  "modified_date": "2024-01-08T19:18:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53303764,
+      "filename": "2016-11-16-112918.png",
+      "mime_type": "image/png",
+      "size_bytes": 157193,
+      "url": "https://issues.chromium.org/action/issues/40085972/attachments/53303764?download=true",
+      "local_path": "attachments/2016-11-16-112918.png"
+    }
+  ],
+  "update_count": 95,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nDue to specification [1] import must fetch document in the anonymous mode to CORS and the credentials mode to same-origin.  \nThis works only if initial request referer to cross-origin, if we make request to same-origin and then make redirect to cross-origin - Chromium wi"
+}

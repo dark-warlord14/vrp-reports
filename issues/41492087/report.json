@@ -1,0 +1,118 @@
+{
+  "id": "41492087",
+  "url": "https://issues.chromium.org/issues/41492087",
+  "title": "In Chrome for Android, attackers can display a tel bubble on the Main Page and hijack the domain shown in the Main Page's Address Bar.",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Mobile>Intents, UI>Browser>Navigation",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lu...@gmail.com",
+  "assignee": "ra...@chromium.org",
+  "created_date": "2024-01-17T11:14:00+00:00",
+  "modified_date": "2024-05-14T15:41:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53421809,
+      "filename": "2024-01-17 17-45-34.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4854752,
+      "url": "https://issues.chromium.org/action/issues/41492087/attachments/53421809?download=true",
+      "local_path": "attachments/2024-01-17 17-45-34.mp4"
+    },
+    {
+      "id": 53421810,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 135,
+      "url": "https://issues.chromium.org/action/issues/41492087/attachments/53421810?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53421927,
+      "filename": "back.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 421268,
+      "url": "https://issues.chromium.org/action/issues/41492087/attachments/53421927?download=true",
+      "local_path": "attachments/back.gif"
+    },
+    {
+      "id": 53421928,
+      "filename": "blank.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 1175122,
+      "url": "https://issues.chromium.org/action/issues/41492087/attachments/53421928?download=true",
+      "local_path": "attachments/blank.gif"
+    },
+    {
+      "id": 53421929,
+      "filename": "override.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 1115686,
+      "url": "https://issues.chromium.org/action/issues/41492087/attachments/53421929?download=true",
+      "local_path": "attachments/override.gif"
+    },
+    {
+      "id": 53421984,
+      "filename": "trace_blur_repro_java.json.gz",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 31207,
+      "url": "https://issues.chromium.org/action/issues/41492087/attachments/53421984?download=true",
+      "local_path": "attachments/trace_blur_repro_java.json.gz"
+    },
+    {
+      "id": 53421985,
+      "filename": "trace_no_repro_java.json.gz",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 26913,
+      "url": "https://issues.chromium.org/action/issues/41492087/attachments/53421985?download=true",
+      "local_path": "attachments/trace_no_repro_java.json.gz"
+    },
+    {
+      "id": 53421991,
+      "filename": "tabswitcher.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 246225,
+      "url": "https://issues.chromium.org/action/issues/41492087/attachments/53421991?download=true",
+      "local_path": "attachments/tabswitcher.gif"
+    },
+    {
+      "id": 53421992,
+      "filename": "tabswitcher2.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 249534,
+      "url": "https://issues.chromium.org/action/issues/41492087/attachments/53421992?download=true",
+      "local_path": "attachments/tabswitcher2.gif"
+    },
+    {
+      "id": 53421993,
+      "filename": "tabswitcher3.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 336183,
+      "url": "https://issues.chromium.org/action/issues/41492087/attachments/53421993?download=true",
+      "local_path": "attachments/tabswitcher3.gif"
+    },
+    {
+      "id": 53421994,
+      "filename": "omnibox.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 290647,
+      "url": "https://issues.chromium.org/action/issues/41492087/attachments/53421994?download=true",
+      "local_path": "attachments/omnibox.gif"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "---\n\n### Report description\n\n\nIn Chrome for Android, attackers can display a tel bubble on the Main Page and hijack the domain shown in the Main Page's Address Bar.\n\n\n---\n\n### Bug location\n\n\n#### Which product or website have you found a vulnerability in?\n\nGoogle Chrome (Android)\n\n\n---\n\n### The prob"
+}

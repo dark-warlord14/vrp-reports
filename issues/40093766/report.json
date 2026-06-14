@@ -1,0 +1,38 @@
+{
+  "id": "40093766",
+  "url": "https://issues.chromium.org/issues/40093766",
+  "title": "crash_sender: invalid crash report names can trigger arbitrary file deletion as root",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Unknown",
+  "os_platforms": [
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@ncsc.gov.uk",
+  "assignee": "va...@chromium.org",
+  "created_date": "2019-01-16T12:54:15+00:00",
+  "modified_date": "2024-01-08T22:04:17+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53076836,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40093766/attachments/53076836?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "Summary:\r\n\r\nA Mitigation Bypass has been discovered in Chrome OS which affects the latest version. This vulnerability allows an attacker to bypass a security mitigation. This vulnerability has a Severity Score of 2.1 and a Low  Severity Rating (based on the Common Vulnerability Scoring System v2)."
+}

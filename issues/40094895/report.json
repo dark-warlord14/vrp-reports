@@ -1,0 +1,38 @@
+{
+  "id": "40094895",
+  "url": "https://issues.chromium.org/issues/40094895",
+  "title": "Chrome v74 JS dialog description Spoof vulnerability on IOS",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ev...@gmail.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2019-05-07T14:21:09+00:00",
+  "modified_date": "2024-08-21T12:17:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53133414,
+      "filename": "6541557238833_.pic_hd.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 482962,
+      "url": "https://issues.chromium.org/action/issues/40094895/attachments/53133414?download=true",
+      "local_path": "attachments/6541557238833_.pic_hd.jpg"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. PoC: https://server.n0tr00t.com/chrome/74_mobile_url_spoof.html\r\n2. Click test <a> tag\r\n3. We'll see the effect of a successful"
+}

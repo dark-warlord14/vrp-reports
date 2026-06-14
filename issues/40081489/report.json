@@ -1,0 +1,36 @@
+{
+  "id": "40081489",
+  "url": "https://issues.chromium.org/issues/40081489",
+  "title": "crash with processing invalid x509-user-cert responses.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "in...@chromium.org",
+  "assignee": "[Deleted User]",
+  "created_date": "2010-06-09T02:36:56+00:00",
+  "modified_date": "2024-02-04T15:51:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53160945,
+      "filename": "bug",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 2556,
+      "url": "https://issues.chromium.org/action/issues/40081489/attachments/53160945?download=true",
+      "local_path": "attachments/bug"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "Steps to reproduce\r\n\r\n1. nc -l -p 80 < bug\r\n2  browse to http://localhost:80\r\n3. broswer crashes."
+}

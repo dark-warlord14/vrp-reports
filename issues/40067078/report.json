@@ -1,0 +1,44 @@
+{
+  "id": "40067078",
+  "url": "https://issues.chromium.org/issues/40067078",
+  "title": "Security: Device chooser dialogs do not show origin correctly for web pages with non-standard URLs",
+  "status": "Fixed",
+  "severity": "Unknown",
+  "priority": "P4",
+  "component": "Blink>Bluetooth, Blink>HID, Blink>Serial, Blink>USB",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": null,
+  "created_date": "2023-07-08T00:55:56+00:00",
+  "modified_date": "2024-07-13T02:14:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53347477,
+      "filename": "device-chooser-basic_usb_javascript.png",
+      "mime_type": "image/png",
+      "size_bytes": 30227,
+      "url": "https://issues.chromium.org/action/issues/40067078/attachments/53347477?download=true",
+      "local_path": "attachments/device-chooser-basic_usb_javascript.png"
+    },
+    {
+      "id": 53347478,
+      "filename": "device-chooser-basic_usb_about-blank-origin-spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 30315,
+      "url": "https://issues.chromium.org/action/issues/40067078/attachments/53347478?download=true",
+      "local_path": "attachments/device-chooser-basic_usb_about-blank-origin-spoof.png"
+    }
+  ],
+  "update_count": 27,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nDevice chooser dialogs, such as Bluetooth, USB, Serial, HID, and others, do not show the requesting origin correctly for web pages with non-standard URLs [1], such as `about:blank`, `javascript:`, `blob:`, and `data:` URLs. There may be other unidentified schemes that al"
+}

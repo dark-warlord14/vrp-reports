@@ -1,0 +1,51 @@
+{
+  "id": "41488920",
+  "url": "https://issues.chromium.org/issues/41488920",
+  "title": "Crash in v8::internal::SemiSpaceNewSpace::VerifyObjects",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript, Blink>JavaScript>Compiler>Maglev",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "d8...@gmail.com",
+  "assignee": "le...@chromium.org",
+  "created_date": "2024-01-05T17:41:38+00:00",
+  "modified_date": "2024-05-10T03:26:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 16000.0,
+  "reward_amount_meta": 16000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53350986,
+      "filename": "poc_crash.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1557,
+      "url": "https://issues.chromium.org/action/issues/41488920/attachments/53350986?download=true",
+      "local_path": "attachments/poc_crash.js"
+    },
+    {
+      "id": 53350987,
+      "filename": "poc_rce.js",
+      "mime_type": "text/plain",
+      "size_bytes": 6606,
+      "url": "https://issues.chromium.org/action/issues/41488920/attachments/53350987?download=true",
+      "local_path": "attachments/poc_rce.js"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "When compiling the :\r\n```\r\nclass C3 extends C2 {\r\n    constructor(obj) {\r\n        try { new.target(); } catch (e) {}\r\n        super();\r\n        new Array(32);\r\n            for (let v13 = 0; v13 < 2; v13++) {\r\n                if(!v13) {\r\n                    gc();\r\n                } \r\n            }"
+}
