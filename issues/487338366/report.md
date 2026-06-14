@@ -3,11 +3,13 @@
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [487338366](https://issues.chromium.org/issues/487338366) |
-| **Status** | Unknown |
-| **Severity** | Unknown |
-| **Priority** | Unknown |
-| **Component** | Unknown |
-| **Reporter** | Unknown |
+| **Status** | Assigned |
+| **Severity** | S3-Low |
+| **Priority** | P1 |
+| **Component** | Blink>WindowDialog |
+| **Platforms** | Android, Linux, Mac, Windows, ChromeOS |
+| **Reporter** | je...@gmail.com |
+| **Assignee** | sz...@chromium.org |
 | **Created** | 2026-02-25 |
 | **Bounty** | $90,000.00 |
 
@@ -351,10 +353,10 @@ c6eed09fc8b174b0f3eebedcceb1e792
 - [index.html](attachments/index.html) (text/html, 7.2 KB)
 - [renderer.patch](attachments/renderer.patch) (text/x-diff, 5.2 KB)
 - [README.md](attachments/README.md) (text/markdown, 6.0 KB)
-- [renderer.patch](attachments/renderer.patch) (text/x-diff, 1.6 KB)
+- renderer.patch (text/x-diff, 1.6 KB)
 - [run_servers.py](attachments/run_servers.py) (text/x-python, 787 B)
-- [spray.html](attachments/spray.html) (text/html, 1.9 KB)
-- [index.html](attachments/index.html) (text/html, 2.8 KB)
+- spray.html (text/html, 1.9 KB)
+- index.html (text/html, 2.8 KB)
 
 ## Timeline
 
@@ -1506,10 +1508,6 @@ Date: Tue Jun 9 02:52:17 2026
 
 
 ---
-
-## Bounty Award
-
-> Controlled r/w
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/487338366)*

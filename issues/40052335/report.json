@@ -1,0 +1,110 @@
+{
+  "id": "40052335",
+  "url": "https://issues.chromium.org/issues/40052335",
+  "title": "Security: Android WebView: iframe on different origin can execute arbitrary JavaScript in top document via window.open() or links with _blank target",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Mobile>WebView",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "ct...@chromium.org",
+  "created_date": "2020-05-18T02:17:00+00:00",
+  "modified_date": "2023-07-10T21:09:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "reward_amount_meta": 15000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53260689,
+      "filename": "window-open.html",
+      "mime_type": "text/plain",
+      "size_bytes": 786,
+      "url": "https://issues.chromium.org/action/issues/40052335/attachments/53260689?download=true",
+      "local_path": "attachments/window-open.html"
+    },
+    {
+      "id": 53260690,
+      "filename": "window-open-iframe-js.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1528,
+      "url": "https://issues.chromium.org/action/issues/40052335/attachments/53260690?download=true",
+      "local_path": "attachments/window-open-iframe-js.html"
+    },
+    {
+      "id": 53260691,
+      "filename": "window-open-poc-app.apk",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2895195,
+      "url": "https://issues.chromium.org/action/issues/40052335/attachments/53260691?download=true",
+      "local_path": "attachments/window-open-poc-app.apk"
+    },
+    {
+      "id": 53260692,
+      "filename": "window-open-poc-app.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 138580,
+      "url": "https://issues.chromium.org/action/issues/40052335/attachments/53260692?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53260693,
+      "filename": "window-open.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6224368,
+      "url": "https://issues.chromium.org/action/issues/40052335/attachments/53260693?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53260736,
+      "filename": "window-open-cross-domain.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 368040,
+      "url": "https://issues.chromium.org/action/issues/40052335/attachments/53260736?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53260784,
+      "filename": "window-open-focus.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1422,
+      "url": "https://issues.chromium.org/action/issues/40052335/attachments/53260784?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53260785,
+      "filename": "window-open-focus-iframe-js.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2855,
+      "url": "https://issues.chromium.org/action/issues/40052335/attachments/53260785?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53260786,
+      "filename": "window-open-poc-app-v1.1.apk",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2895571,
+      "url": "https://issues.chromium.org/action/issues/40052335/attachments/53260786?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53260787,
+      "filename": "window-open-focus.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2092500,
+      "url": "https://issues.chromium.org/action/issues/40052335/attachments/53260787?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 89,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nAn Android WebView instance with default configuration and JavaScript enabled allows an iframe on a different origin to bypass same-origin policies and execute arbitrary JavaScript in the top document.  \n  \nTo perform the attack, an iframe can call window.open() with a j"
+}

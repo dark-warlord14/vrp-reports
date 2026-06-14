@@ -226,7 +226,7 @@ Regression: N/A
 
 ## Timeline
 
-### nh...@chromium.org (2025-04-04)
+### [Deleted User] (2025-04-04)
 
 The provided POC is too large for me to attempt to reproduce. Can you provide a minimized POC? It looks like the majority of the 1.html POC provided consists of code from the WPT harness (<http://web-platform-tests.org/writing-tests/testharness-api.html>) - what portions of the POC are original/written by you instead of being copied from web-platform-tests?
 

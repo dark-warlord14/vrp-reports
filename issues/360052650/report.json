@@ -1,0 +1,43 @@
+{
+  "id": "360052650",
+  "url": "https://issues.chromium.org/issues/360052650",
+  "title": "Fatal error in ../../src/compiler/turboshaft/graph.h, line 613",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript, Blink>JavaScript>Compiler",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sw...@gmail.com",
+  "assignee": "ml...@chromium.org",
+  "created_date": "2024-08-15T10:31:26+00:00",
+  "modified_date": "2024-11-27T15:42:32+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58685073,
+      "filename": "2024815",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 294,
+      "url": "https://issues.chromium.org/action/issues/360052650/attachments/58685073?download=true",
+      "local_path": "attachments/2024815"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "## VULNERABILITY DETAILS\nFatal error in ../../src/compiler/turboshaft/graph.h, line 613\nDebug check failed: i.valid().\n\n## VERSION\nV8: HEAD\n\n## REPRODUCTION CASE\n\nCompile `x64.release + is_asan=true` version\n\nRun :\n\n```\n./v8_simple_wasm_deopt_fuzzer 2024815\n```\n\nASAN crash info:\n\n```log\nAddressSanit"
+}

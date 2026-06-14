@@ -80,7 +80,7 @@ Matan.
 - [installer_drag.png](attachments/installer_drag.png) (image/png, 6.6 KB)
 - [update_link.png](attachments/update_link.png) (image/png, 28.9 KB)
 - [package.json](attachments/package.json) (text/plain, 138 B)
-- [devtools-xss.js](attachments/devtools-xss.js) (text/plain, 870 B)
+- [devtools-xss.js](attachments/devtools-xss_53162194.js) (text/plain, 870 B)
 
 ## Timeline
 

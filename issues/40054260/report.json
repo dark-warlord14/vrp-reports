@@ -1,0 +1,46 @@
+{
+  "id": "40054260",
+  "url": "https://issues.chromium.org/issues/40054260",
+  "title": "Security: UAF in ContextMenu",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P1",
+  "component": "UI>Browser",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "ad...@igalia.com",
+  "created_date": "2020-12-22T11:26:54+00:00",
+  "modified_date": "2024-01-09T02:49:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "reward_amount_meta": 20000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52999594,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 169,
+      "url": "https://issues.chromium.org/action/issues/40054260/attachments/52999594?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52999595,
+      "filename": "ContextMenu.asan",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 19811,
+      "url": "https://issues.chromium.org/action/issues/40054260/attachments/52999595?download=true",
+      "local_path": "attachments/ContextMenu.asan"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nWhen right-clicking an editable element, the menu will add the paste item[1]. At the same time, the browser will check whether the content can be pasted[2]. |IsPasteEnabled|[3] will run a nested message loop[4] to continue running the ui thread. If the web content or"
+}

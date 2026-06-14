@@ -1,0 +1,43 @@
+{
+  "id": "40051077",
+  "url": "https://issues.chromium.org/issues/40051077",
+  "title": "Security: Cross-Origin (Partial) Status Code Leakage ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>CORS",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ta...@shift-js.info",
+  "assignee": "yo...@chromium.org",
+  "created_date": "2019-12-27T15:25:51+00:00",
+  "modified_date": "2024-01-08T23:53:35+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53250766,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2149,
+      "url": "https://issues.chromium.org/action/issues/40051077/attachments/53250766?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \n`performance.getEntries()` allows us to leak status codes of cross-origin requests (with cookies).   \n  \nWhen a request initiated by `<object data=\"...\">` ends with 40x or 50x response, `performance.getEntries()` shows no records related to the request. When a request"
+}

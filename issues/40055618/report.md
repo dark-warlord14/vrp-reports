@@ -87,7 +87,7 @@ Reporter credit: Chaoyuan Peng
 
 ## Attachments
 
-- [avif-reformat-use-of-uninitialized-value.avif](attachments/avif-reformat-use-of-uninitialized-value.avif) (application/octet-stream, 322 B)
+- avif-reformat-use-of-uninitialized-value.avif (application/octet-stream, 322 B)
 
 ## Timeline
 

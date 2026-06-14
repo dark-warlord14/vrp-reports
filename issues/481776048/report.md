@@ -198,7 +198,7 @@ cinzinga
 - [crash_chrome_stable.ips](attachments/crash_chrome_stable.ips) (application/octet-stream, 86.5 KB)
 - [crash_asan_standalone.ips](attachments/crash_asan_standalone.ips) (application/octet-stream, 6.7 KB)
 - [crash_report_chrome_dev.ips](attachments/crash_report_chrome_dev.ips) (application/octet-stream, 92.1 KB)
-- [scatternd_heap_oob.html](attachments/scatternd_heap_oob.html) (text/html, 2.3 KB)
+- scatternd_heap_oob.html (text/html, 2.3 KB)
 - [scatternd_small_tensor_oob.html](attachments/scatternd_small_tensor_oob.html) (text/html, 3.0 KB)
 - [symbolized_crash.txt](attachments/symbolized_crash.txt) (text/plain, 2.9 KB)
 

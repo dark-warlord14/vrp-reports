@@ -90,7 +90,7 @@ Reporter credit: Seunghyun Lee (@0x10n)
 
 - [wasm-module-builder.js](attachments/wasm-module-builder.js) (text/javascript, 71.4 KB)
 - [rtt_subtype_check_bypass.js](attachments/rtt_subtype_check_bypass.js) (text/javascript, 2.6 KB)
-- [rtt_subtype_check_bypass.js](attachments/rtt_subtype_check_bypass.js) (text/javascript, 2.6 KB)
+- rtt_subtype_check_bypass.js (text/javascript, 2.6 KB)
 
 ## Timeline
 

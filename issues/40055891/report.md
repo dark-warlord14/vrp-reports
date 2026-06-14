@@ -223,7 +223,7 @@ Flash Version:
 
 ## Attachments
 
-- [poc.zip](attachments/poc.zip) (application/octet-stream, 21.9 KB)
+- poc.zip (application/octet-stream, 21.9 KB)
 - [fuzz-00015.html](attachments/fuzz-00015.html) (text/plain, 63.1 KB)
 - [viper.mp3](attachments/viper.mp3) (application/octet-stream, 3.3 KB)
 - [viper.ogg](attachments/viper.ogg) (application/octet-stream, 2.5 KB)
@@ -239,7 +239,7 @@ Flash Version:
 - [asan_heap-use-after-free_on_address_01621241568684_5470_cr.html](attachments/asan_heap-use-after-free_on_address_01621241568684_5470_cr.html) (text/plain, 20.8 KB)
 - [asan_heap-use-after-free_on_address_01621249625972_718155_cr.html](attachments/asan_heap-use-after-free_on_address_01621249625972_718155_cr.html) (text/plain, 21.8 KB)
 - [Screenshot 2021-05-18 121958.jpg](attachments/Screenshot 2021-05-18 121958.jpg) (image/jpeg, 180.4 KB)
-- [foreproduce.diff](attachments/foreproduce.diff) (text/plain, 2.3 KB)
+- foreproduce.diff (text/plain, 2.3 KB)
 - [asan.txt](attachments/asan.txt) (text/plain, 13.0 KB)
 - [asan_breakpoint_on_unknown_address_0x7ffbce7de56d_pc 0x7ffbce7de56d 1627376232558_674693_cr.txt](attachments/asan_breakpoint_on_unknown_address_0x7ffbce7de56d_pc 0x7ffbce7de56d 1627376232558_674693_cr.txt) (text/plain, 17.0 KB)
 - [asan_breakpoint_on_unknown_address_0x7ffbce7de56d_pc 0x7ffbce7de56d 1627382146697_804060_cr.txt](attachments/asan_breakpoint_on_unknown_address_0x7ffbce7de56d_pc 0x7ffbce7de56d 1627382146697_804060_cr.txt) (text/plain, 15.1 KB)

@@ -1,13 +1,14 @@
-# Spanify AudioBus and AudioBuffer
+# Heap OOB read in SpeechRecognizerImpl::AddAudioFromRenderer 
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [482828615](https://issues.chromium.org/issues/482828615) |
-| **Status** | Accepted |
-| **Severity** | S1-High |
-| **Priority** | P4 |
-| **Component** | Internals>Media>Audio |
-| **Reporter** | tg...@google.com |
+| **Status** | Assigned |
+| **Severity** | S4-Minimal |
+| **Priority** | P1 |
+| **Component** | Internals>Mojo |
+| **Platforms** | Linux, ChromeOS |
+| **Reporter** | gr...@gmail.com |
 | **Assignee** | tg...@chromium.org |
 | **Created** | 2026-02-09 |
 | **Bounty** | $36,000.00 |
@@ -970,10 +971,6 @@ Date: Tue May 19 21:29:49 2026
 ### ch...@google.com (2026-05-29)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> High Quality with Bisect. Sandbox escape / Memory corruption in a non-sandboxed process.
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/482828615)*

@@ -50,12 +50,12 @@ Reporter credit: David Erceg
 - [asan_output_875538.txt](attachments/asan_output_875538.txt) (text/plain, 18.7 KB)
 - [manifest.json](attachments/manifest.json) (text/plain, 222 B)
 - [service_worker.js](attachments/service_worker.js) (text/plain, 2.0 KB)
-- [manifest.json](attachments/manifest.json) (text/plain, 222 B)
-- [service_worker.js](attachments/service_worker.js) (text/plain, 2.7 KB)
-- [manifest.json](attachments/manifest.json) (text/plain, 258 B)
-- [service_worker.js](attachments/service_worker.js) (text/plain, 3.2 KB)
-- [manifest.json](attachments/manifest.json) (text/plain, 235 B)
-- [service_worker.js](attachments/service_worker.js) (text/plain, 1.7 KB)
+- manifest.json (text/plain, 222 B)
+- service_worker.js (text/plain, 2.7 KB)
+- manifest.json (text/plain, 258 B)
+- service_worker.js (text/plain, 3.2 KB)
+- manifest.json (text/plain, 235 B)
+- service_worker.js (text/plain, 1.7 KB)
 
 ## Timeline
 

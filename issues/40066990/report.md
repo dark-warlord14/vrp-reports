@@ -46,7 +46,7 @@ Operating System: Windows 10 Version 22H2 (Build 19045.3086)
 - [accept-da-prompt.html](attachments/accept-da-prompt.html) (text/plain, 370 B)
 - [helper.html](attachments/helper.html) (text/plain, 897 B)
 - [poc.mp4](attachments/poc.mp4) (video/mp4, 179.8 KB)
-- [helper.html](attachments/helper.html) (text/plain, 1.1 KB)
+- [helper.html](attachments/helper_52943003.html) (text/plain, 1.1 KB)
 
 ## Timeline
 

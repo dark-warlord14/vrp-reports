@@ -1,0 +1,29 @@
+{
+  "id": "339686368",
+  "url": "https://issues.chromium.org/issues/339686368",
+  "title": "HeapBufferOverflow in GridNode::ConstructGridItems",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>Layout>Grid",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": "126.0.6452.3",
+  "cve_ids": [],
+  "reporter": "su...@gmail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2024-05-10T03:10:45+00:00",
+  "modified_date": "2024-09-18T15:47:41+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "reward_amount_meta": 8000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 57,
+  "description_snippet": "# Steps to reproduce the problem\n1. Serve poc.html on port 8080\n2. Launch chrome and then access http://127.0.0.1:8080/poc.html\n3. \n\n# Problem Description\n\n```c++\nGridItems GridNode::ConstructGridItems(\n    const GridLineResolver& line_resolver,\n    const ComputedStyle& root_grid_style,\n    const Co"
+}

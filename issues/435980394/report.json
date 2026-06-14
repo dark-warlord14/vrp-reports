@@ -33,7 +33,7 @@
       "mime_type": "video/quicktime",
       "size_bytes": 19852412,
       "url": "https://issues.chromium.org/action/issues/435980394/attachments/68143622?download=true",
-      "local_path": "attachments/Installed_by_user.mov"
+      "local_path": null
     },
     {
       "id": 68143623,
@@ -41,7 +41,7 @@
       "mime_type": "video/quicktime",
       "size_bytes": 18476637,
       "url": "https://issues.chromium.org/action/issues/435980394/attachments/68143623?download=true",
-      "local_path": "attachments/Installed_externally.mov"
+      "local_path": null
     },
     {
       "id": 68184177,

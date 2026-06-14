@@ -1,13 +1,16 @@
-# Steps to reproduce the problem
+# site information  change url to about:blank#https://google.com
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [354882231](https://issues.chromium.org/issues/354882231) |
-| **Status** | Unknown |
-| **Severity** | Unknown |
-| **Priority** | Unknown |
-| **Component** | Unknown |
-| **Reporter** | Unknown |
+| **Status** | Accepted |
+| **Severity** | S3-Low |
+| **Priority** | P4 |
+| **Component** | UI>Browser>Mobile>CustomTabs |
+| **Platforms** | Android |
+| **Chrome Version** | 126.0.0.0 |
+| **Reporter** | bh...@gmail.com |
+| **Assignee** | si...@google.com |
 | **Created** | 2024-07-23 |
 | **Bounty** | $500.00 |
 
@@ -352,10 +355,6 @@ thanks for the reward for credit please put my name Bharat(mrnoob)
 ### ch...@google.com (2025-05-09)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> Thank you reward for a report of an issue with a very low potential for user harm and requiring the user to engage in a non-standard workflow to go back to full from minimized CCT as minimized CCT is not an interactable surface. We were able to make a beneficial change from this report, so we wanted to acknowledge that with a small reward.
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/354882231)*

@@ -53,7 +53,7 @@ Ashish Arun Dhone
 
 - [xss.html](attachments/xss.html) (text/plain, 1.5 KB)
 - [Chrome_XSS_POC.mp4](attachments/Chrome_XSS_POC.mp4) (video/mp4, 3.7 MB)
-- [xss.html](attachments/xss.html) (text/plain, 1.5 KB)
+- [xss.html](attachments/xss_53294242.html) (text/plain, 1.5 KB)
 - [XSS-Redirect-POC.mp4](attachments/XSS-Redirect-POC.mp4) (video/mp4, 3.7 MB)
 
 ## Timeline

@@ -63,7 +63,7 @@ Reporter credit: Luan Herrera (@lbherrera\_)
 - [download.php](attachments/download.php) (text/plain, 1.1 KB)
 - [horse.ogg](attachments/horse.ogg) (application/octet-stream, 13.6 KB)
 - [repro.mkv](attachments/repro.mkv) (application/octet-stream, 1.4 MB)
-- [iframe.html](attachments/iframe.html) (text/html, 717 B)
+- iframe.html (text/html, 717 B)
 - [repro.mp4](attachments/repro.mp4) (video/mp4, 7.6 MB)
 
 ## Timeline

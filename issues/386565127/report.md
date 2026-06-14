@@ -92,7 +92,7 @@ Regression: N/A
 
 - [poc.html](attachments/poc.html) (text/html, 629.3 KB)
 - [asan.txt](attachments/asan.txt) (text/plain, 18.8 KB)
-- [poc.html](attachments/poc.html) (text/html, 5.5 KB)
+- poc.html (text/html, 5.5 KB)
 - [Dockerfile](attachments/Dockerfile) (application/octet-stream, 1.5 KB)
 - [poc_mesa-iris.html](attachments/poc_mesa-iris.html) (text/html, 5.4 KB)
 - [gfxrecon_capture_20250116T002029.gfxr](attachments/gfxrecon_capture_20250116T002029.gfxr) (application/octet-stream, 672.5 KB)

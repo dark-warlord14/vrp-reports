@@ -42,7 +42,7 @@
       "mime_type": "video/quicktime",
       "size_bytes": 2706191,
       "url": "https://issues.chromium.org/action/issues/40054651/attachments/53270054?download=true",
-      "local_path": "attachments/screen.mov"
+      "local_path": null
     },
     {
       "id": 53270111,
@@ -50,7 +50,7 @@
       "mime_type": "video/quicktime",
       "size_bytes": 2800386,
       "url": "https://issues.chromium.org/action/issues/40054651/attachments/53270111?download=true",
-      "local_path": "attachments/screen.mov"
+      "local_path": null
     }
   ],
   "update_count": 40,

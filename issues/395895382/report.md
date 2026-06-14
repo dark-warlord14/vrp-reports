@@ -335,7 +335,7 @@ This was discovered with a v8 sandbox fuzzer.
 
 ## Attachments
 
-- array-spread-call-tierup-inline-oob.js (text/javascript, 3.4 KB)
+- [array-spread-call-tierup-inline-oob.js](attachments/array-spread-call-tierup-inline-oob.js) (text/javascript, 3.4 KB)
 
 ## Timeline
 

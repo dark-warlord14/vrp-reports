@@ -34,7 +34,7 @@
       "mime_type": "text/plain",
       "size_bytes": 21496,
       "url": "https://issues.chromium.org/action/issues/40054952/attachments/53014410?download=true",
-      "local_path": "attachments/asan"
+      "local_path": null
     },
     {
       "id": 53014411,
@@ -42,7 +42,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1584,
       "url": "https://issues.chromium.org/action/issues/40054952/attachments/53014411?download=true",
-      "local_path": "attachments/poc.html"
+      "local_path": null
     },
     {
       "id": 53014412,
@@ -50,7 +50,7 @@
       "mime_type": "text/plain",
       "size_bytes": 514,
       "url": "https://issues.chromium.org/action/issues/40054952/attachments/53014412?download=true",
-      "local_path": "attachments/copy_mojo_js_bindings.py"
+      "local_path": null
     }
   ],
   "update_count": 51,

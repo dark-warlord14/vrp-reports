@@ -1,13 +1,15 @@
-# **Steps to reproduce the problem:**
+# CCT Clipboard Content Sniffing -  Task Hijacking
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [40068069](https://issues.chromium.org/issues/40068069) |
-| **Status** | Unknown |
-| **Severity** | Unknown |
-| **Priority** | Unknown |
-| **Component** | Unknown |
-| **Reporter** | Unknown |
+| **Status** | Assigned |
+| **Severity** | S3-Low |
+| **Priority** | P2 |
+| **Component** | UI>Browser>Mobile>CustomTabs |
+| **Platforms** | Android |
+| **Reporter** | le...@gmail.com |
+| **Assignee** | pe...@chromium.org |
 | **Created** | 2023-07-25 |
 | **Bounty** | $1,000.00 |
 
@@ -435,10 +437,6 @@ Thank you! I appreciate it **Chrome VRP**!
 ### ch...@google.com (2026-05-13)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> Mitigated baseline / low impact user information disclosure
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40068069)*

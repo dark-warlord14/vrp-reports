@@ -65,9 +65,9 @@ Reporter credit: Liang Dong
 
 ## Attachments
 
-- [asan](attachments/asan) (text/plain, 26.0 KB)
-- [asan2](attachments/asan2) (text/plain, 40.5 KB)
-- [uaf.html](attachments/uaf.html) (text/plain, 810 B)
+- asan (text/plain, 26.0 KB)
+- asan2 (text/plain, 40.5 KB)
+- uaf.html (text/plain, 810 B)
 
 ## Timeline
 

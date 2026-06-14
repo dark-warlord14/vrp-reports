@@ -577,5 +577,106 @@ Date: Thu Dec 18 11:56:22 2025
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
+### dx...@google.com (2026-05-29)
+
+Project: v8/v8  
+
+Branch:  main  
+
+Author:  Michael Lippautz [mlippautz@chromium.org](mailto:mlippautz@chromium.org)  
+
+Link:    <https://chromium-review.googlesource.com/7883043>
+
+[test] Last batch of regression tests
+
+---
+
+
+Expand for full commit details
+```
+     
+    TAG=AGY 
+     
+    Bug: 517688821 
+     
+    Bug: 40061466 
+    Bug: 40066473 
+    Bug: 342456991 
+    Bug: 343507800 
+    Bug: 366381662 
+    Bug: 368311899 
+    Bug: 372269618 
+    Bug: 383647255 
+    Bug: 392521083 
+    Bug: 398999390 
+    Bug: 40059920 
+    Bug: 40060821 
+    Bug: 40064370 
+    Bug: 40065138 
+    Bug: 40282100 
+    Bug: 40892749 
+    Bug: 41484971 
+    Bug: 420636529 
+    Bug: 42203224 
+    Bug: 423459708 
+    Bug: 450328966 
+    Bug: 452296415 
+    Bug: 469143679 
+    Bug: 476233066 
+    Bug: 478659010 
+    Bug: 485267831 
+    Bug: 508811477 
+    Change-Id: I692cb14ebeac04eaa77c867e9377ebd19b4b909b 
+    Reviewed-on: https://chromium-review.googlesource.com/c/v8/v8/+/7883043 
+    Auto-Submit: Michael Lippautz <mlippautz@chromium.org> 
+    Commit-Queue: Michael Lippautz <mlippautz@chromium.org> 
+    Reviewed-by: Leszek Swirski <leszeks@chromium.org> 
+    Commit-Queue: Leszek Swirski <leszeks@chromium.org> 
+    Cr-Commit-Position: refs/heads/main@{#107659}
+
+```
+
+---
+
+Files:
+
+- A `test/mjsunit/compiler/regress-40061466.js`
+- A `test/mjsunit/maglev/regress-40066473.js`
+- A `test/mjsunit/regress/regress-342456991.js`
+- A `test/mjsunit/regress/regress-343507800.js`
+- A `test/mjsunit/regress/regress-366381662.js`
+- A `test/mjsunit/regress/regress-368311899.js`
+- A `test/mjsunit/regress/regress-372269618.js`
+- A `test/mjsunit/regress/regress-383647255.js`
+- A `test/mjsunit/regress/regress-392521083.js`
+- A `test/mjsunit/regress/regress-398999390.js`
+- A `test/mjsunit/regress/regress-40059920.js`
+- A `test/mjsunit/regress/regress-40060821.js`
+- A `test/mjsunit/regress/regress-40064370.js`
+- A `test/mjsunit/regress/regress-40065138.js`
+- A `test/mjsunit/regress/regress-40282100.js`
+- A `test/mjsunit/regress/regress-40892749.js`
+- A `test/mjsunit/regress/regress-41484971.js`
+- A `test/mjsunit/regress/regress-420636529.js`
+- A `test/mjsunit/regress/regress-42203224.js`
+- A `test/mjsunit/regress/regress-423459708.js`
+- A `test/mjsunit/regress/regress-450328966.js`
+- A `test/mjsunit/regress/regress-452296415.js`
+- A `test/mjsunit/regress/regress-469143679.js`
+- A `test/mjsunit/regress/regress-476233066-1.js`
+- A `test/mjsunit/regress/regress-476233066-2.js`
+- A `test/mjsunit/regress/regress-478659010.js`
+- A `test/mjsunit/regress/regress-485267831.js`
+- A `test/mjsunit/regress/regress-508811477.js`
+
+---
+
+Hash: [a5d1a1cc6911f1d1c7f30da136c8f252b05a58dc](https://chromiumdash.appspot.com/commit/a5d1a1cc6911f1d1c7f30da136c8f252b05a58dc)  
+
+Date: Fri May 29 12:59:59 2026
+
+
+---
+
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/469143679)*

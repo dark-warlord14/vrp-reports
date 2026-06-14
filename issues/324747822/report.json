@@ -1,0 +1,58 @@
+{
+  "id": "324747822",
+  "url": "https://issues.chromium.org/issues/324747822",
+  "title": "Debug check failed: !type.is_uninhabited(). in v8",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript, Blink>JavaScript>Compiler>Turbofan, Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ml...@chromium.org",
+  "created_date": "2024-02-12T10:55:21+00:00",
+  "modified_date": "2024-05-24T15:53:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "reward_amount_meta": 8000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53555016,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 29343,
+      "url": "https://issues.chromium.org/action/issues/324747822/attachments/53555016?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 53601805,
+      "filename": "wasm.bin",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 9366,
+      "url": "https://issues.chromium.org/action/issues/324747822/attachments/53601805?download=true",
+      "local_path": "attachments/wasm.bin"
+    },
+    {
+      "id": 53602401,
+      "filename": "repro-issue.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1210,
+      "url": "https://issues.chromium.org/action/issues/324747822/attachments/53602401?download=true",
+      "local_path": "attachments/repro-issue.js"
+    }
+  ],
+  "update_count": 79,
+  "description_snippet": "VULNERABILITY DETAILS\n## INTRODUCE\nAfter bisect, it was determined that following commit caused this problem.\n\n- Commit Info\n    - Version: 92242\n    - link: https://crrev.com/3f2471d0abe711c92ddb3d6fe17bc22d9955f2b8 \n- Commit Message\n\n```\ncommit 3f2471d0abe711c92ddb3d6fe17bc22d9955f2b8\nAuthor: Matt"
+}

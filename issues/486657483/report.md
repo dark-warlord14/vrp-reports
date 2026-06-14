@@ -102,7 +102,7 @@ Reporter credit: Erge
 
 - [x.js](attachments/x.js) (text/javascript, 355 B)
 - [repro_loop.js](attachments/repro_loop.js) (text/javascript, 336 B)
-- [x.js](attachments/x.js) (text/javascript, 1.8 KB)
+- x.js (text/javascript, 1.8 KB)
 - [m145_rce.js](attachments/m145_rce.js) (text/javascript, 8.3 KB)
 
 ## Timeline

@@ -4,7 +4,7 @@
 |-------|-------|
 | **Issue ID** | [337222641](https://issues.chromium.org/issues/337222641) |
 | **Status** | Accepted |
-| **Severity** | S1-High |
+| **Severity** | S2-Medium |
 | **Priority** | P3 |
 | **Component** | UI>Browser>Autofill |
 | **Platforms** | Fuchsia, Linux, Mac, Windows, ChromeOS |
@@ -50,7 +50,7 @@ Regression: N/A
 - [poc.html](attachments/poc.html) (text/html, 1.6 KB)
 - deleted (application/octet-stream, 0 B)
 - deleted (application/octet-stream, 0 B)
-- [poc.html](attachments/poc.html) (text/html, 1.6 KB)
+- poc.html (text/html, 1.6 KB)
 - [example_form.html](attachments/example_form.html) (text/html, 723 B)
 - [poc-337222641-2024-05-06_16.11.05.mkv](attachments/poc-337222641-2024-05-06_16.11.05.mkv) (video/x-matroska, 446.2 KB)
 - [autofill-clickjack.png](attachments/autofill-clickjack.png) (image/png, 115.4 KB)
@@ -385,6 +385,57 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 ### ji...@google.com (2026-05-23)
 
 Reopening as the feature still needs to be rolled out and the added metric needs to be extended because it has expired.
+
+### dx...@google.com (2026-06-03)
+
+Project: chromium/src  
+
+Branch:  main  
+
+Author:  Tamino Bauknecht [taminob@chromium.org](mailto:taminob@chromium.org)  
+
+Link:    <https://chromium-review.googlesource.com/7895465>
+
+autofill: Extend histogram deadline to continue rollout
+
+---
+
+
+Expand for full commit details
+```
+     
+    The histogram AutofillPopupDontAcceptNonVisibleEnoughSuggestion is 
+    required for the pending rollout of the feature 
+    AutofillPopupDontAcceptNonVisibleEnoughSuggestion. Thus, its expiration 
+    date was moved to the future and a new owner was assigned. 
+     
+    Since the histogram `Autofill.Suggestions.AcceptedType` is also required 
+    for this rollout, an additional owner was added to it as well. 
+     
+    Bug: 337222641 
+    Change-Id: I87fddfbc602f6457b7ab303df564e195b41d3fad 
+    Reviewed-on: https://chromium-review.googlesource.com/c/chromium/src/+/7895465 
+    Reviewed-by: Jihad Hanna <jihadghanna@google.com> 
+    Commit-Queue: Tamino Bauknecht <taminob@chromium.org> 
+    Reviewed-by: Florian Leimgruber <fleimgruber@google.com> 
+    Cr-Commit-Position: refs/heads/main@{#1640972}
+
+```
+
+---
+
+Files:
+
+- M `tools/metrics/histograms/metadata/autofill/histograms.xml`
+
+---
+
+Hash: [e3dfaf3fae0bfe667ad7fa93259f01a7e5fadc5c](https://chromiumdash.appspot.com/commit/e3dfaf3fae0bfe667ad7fa93259f01a7e5fadc5c)  
+
+Date: Wed Jun 3 15:53:39 2026
+
+
+---
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/337222641)*

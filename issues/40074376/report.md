@@ -111,12 +111,12 @@ Windows 11
 
 ## Attachments
 
-- [chrome_DCUwkDs5ih.png](attachments/chrome_DCUwkDs5ih.png) (image/png, 183.0 KB)
-- [firefox_jrT28YDg6P.png](attachments/firefox_jrT28YDg6P.png) (image/png, 124.8 KB)
-- [chrome_Z8E8AswCZw.mp4](attachments/chrome_Z8E8AswCZw.mp4) (video/mp4, 4.8 MB)
-- [chrome_X4ixxcPPMo.png](attachments/chrome_X4ixxcPPMo.png) (image/png, 30.6 KB)
-- [firefox_Buvk3qW2QH.png](attachments/firefox_Buvk3qW2QH.png) (image/png, 52.5 KB)
-- [index.html](attachments/index.html) (text/plain, 457 B)
+- chrome_DCUwkDs5ih.png (image/png, 183.0 KB)
+- firefox_jrT28YDg6P.png (image/png, 124.8 KB)
+- chrome_Z8E8AswCZw.mp4 (video/mp4, 4.8 MB)
+- chrome_X4ixxcPPMo.png (image/png, 30.6 KB)
+- firefox_Buvk3qW2QH.png (image/png, 52.5 KB)
+- index.html (text/plain, 457 B)
 - [chrome_WYTatcv8sG.png](attachments/chrome_WYTatcv8sG.png) (image/png, 94.0 KB)
 - deleted (application/octet-stream, 0 B)
 

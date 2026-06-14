@@ -35,7 +35,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 257266,
       "url": "https://issues.chromium.org/action/issues/40055171/attachments/53020532?download=true",
-      "local_path": "attachments/python_poc2.zip"
+      "local_path": null
     },
     {
       "id": 53020591,
@@ -43,7 +43,7 @@
       "mime_type": "text/plain",
       "size_bytes": 6150,
       "url": "https://issues.chromium.org/action/issues/40055171/attachments/53020591?download=true",
-      "local_path": "attachments/filtered.log"
+      "local_path": null
     },
     {
       "id": 53020682,
@@ -51,7 +51,7 @@
       "mime_type": "text/plain",
       "size_bytes": 53605,
       "url": "https://issues.chromium.org/action/issues/40055171/attachments/53020682?download=true",
-      "local_path": "attachments/locking_logging.txt"
+      "local_path": null
     },
     {
       "id": 53020716,
@@ -59,7 +59,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 2477692,
       "url": "https://issues.chromium.org/action/issues/40055171/attachments/53020716?download=true",
-      "local_path": "attachments/usrsctp2.zip"
+      "local_path": null
     },
     {
       "id": 53020744,
@@ -67,7 +67,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 2362402,
       "url": "https://issues.chromium.org/action/issues/40055171/attachments/53020744?download=true",
-      "local_path": "attachments/usrsctp3.zip"
+      "local_path": null
     },
     {
       "id": 53020745,
@@ -75,7 +75,7 @@
       "mime_type": "text/plain",
       "size_bytes": 89668,
       "url": "https://issues.chromium.org/action/issues/40055171/attachments/53020745?download=true",
-      "local_path": "attachments/locking_logging_cookie_new.txt"
+      "local_path": null
     }
   ],
   "update_count": 87,

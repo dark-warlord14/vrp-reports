@@ -1,0 +1,43 @@
+{
+  "id": "40050549",
+  "url": "https://issues.chromium.org/issues/40050549",
+  "title": "Security: heap-use-after-free in content::SpeechRecognizerImpl::Abort",
+  "status": "New",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Speech",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ha...@chromium.org",
+  "created_date": "2019-10-28T09:58:50+00:00",
+  "modified_date": "2024-01-08T22:31:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "reward_amount_meta": 15000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53345073,
+      "filename": "repro.html",
+      "mime_type": "text/plain",
+      "size_bytes": 120526,
+      "url": "https://issues.chromium.org/action/issues/40050549/attachments/53345073?download=true",
+      "local_path": "attachments/repro.html"
+    }
+  ],
+  "update_count": 83,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nheap-use-after-free in content::SpeechRecognizerImpl::Abort  \n  \n**VERSION**   \nChrome Version: asan-linux-release-709771  \n  \n**REPRODUCTION CASE**   \n./chrome --headless --screenshot repro.html  \n  \nADDITIONAL INFORMATION  \n  \n[1027/200927.988278:WARNING:ipc_message_at"
+}

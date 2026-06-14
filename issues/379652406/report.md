@@ -143,7 +143,7 @@ I'll continue variations bisect tomorrow.
 
 [1] <https://www.chromium.org/developers/how-tos/run-chromium-with-flags/#android>
 
-### nh...@chromium.org (2024-11-20)
+### [Deleted User] (2024-11-20)
 
 skym: Since you wrote <https://chromium-review.googlesource.com/c/chromium/src/+/4757919> to fix the similar issue [crbug.com/40064686](https://crbug.com/40064686), can you look into this one? It seems like the "wait 3 seconds" in that fix might be related to this issue where the server waits 3 seconds before sending the response. I haven't yet reproduced this.
 

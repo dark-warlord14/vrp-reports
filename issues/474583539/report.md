@@ -85,7 +85,7 @@ Regression: Yes \
 - [poc-spooff.html](attachments/poc-spooff.html) (text/html, 1.3 KB)
 - [chromespoof#1.mp4](attachments/chromespoof#1.mp4) (video/mp4, 5.7 MB)
 - [Screenshot 2026-01-10 202522.png](attachments/Screenshot 2026-01-10 202522.png) (image/png, 475.7 KB)
-- braveExpectedResults.mp4 (video/mp4, 5.1 MB)
+- [braveExpectedResults.mp4](attachments/braveExpectedResults.mp4) (video/mp4, 5.1 MB)
 
 ## Timeline
 

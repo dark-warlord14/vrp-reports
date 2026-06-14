@@ -1,0 +1,76 @@
+{
+  "id": "334120897",
+  "url": "https://issues.chromium.org/issues/334120897",
+  "title": "V8 Sandbox Bypass: wasm function signature confusion leading to out of sandbox arbitrary read/write",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ze...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2024-04-14T23:01:05+00:00",
+  "modified_date": "2024-09-23T22:48:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 6000.0,
+  "reward_amount_meta": 6000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 55482928,
+      "filename": "crash.png",
+      "mime_type": "image/png",
+      "size_bytes": 343693,
+      "url": "https://issues.chromium.org/action/issues/334120897/attachments/55482928?download=true",
+      "local_path": "attachments/crash.png"
+    },
+    {
+      "id": 55482929,
+      "filename": "args.gn",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 244,
+      "url": "https://issues.chromium.org/action/issues/334120897/attachments/55482929?download=true",
+      "local_path": "attachments/args.gn"
+    },
+    {
+      "id": 55482930,
+      "filename": "d8",
+      "mime_type": "application/x-sharedlib",
+      "size_bytes": 56632584,
+      "url": "https://issues.chromium.org/action/issues/334120897/attachments/55482930?download=true",
+      "local_path": "attachments/d8"
+    },
+    {
+      "id": 55482931,
+      "filename": "pwn.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3885,
+      "url": "https://issues.chromium.org/action/issues/334120897/attachments/55482931?download=true",
+      "local_path": "attachments/pwn.js"
+    },
+    {
+      "id": 55482932,
+      "filename": "snapshot_blob.bin",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 309134,
+      "url": "https://issues.chromium.org/action/issues/334120897/attachments/55482932?download=true",
+      "local_path": "attachments/snapshot_blob.bin"
+    },
+    {
+      "id": 55482933,
+      "filename": "exploit.wat",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 653,
+      "url": "https://issues.chromium.org/action/issues/334120897/attachments/55482933?download=true",
+      "local_path": "attachments/exploit.wat"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

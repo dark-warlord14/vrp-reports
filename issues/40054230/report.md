@@ -103,7 +103,7 @@ Flash Version:
 - [crash.html](attachments/crash.html) (text/plain, 445 B)
 - [new.html](attachments/new.html) (text/plain, 768 B)
 - [test.js](attachments/test.js) (text/plain, 5.8 KB)
-- [test.js](attachments/test.js) (text/plain, 7.2 KB)
+- test.js (text/plain, 7.2 KB)
 
 ## Timeline
 

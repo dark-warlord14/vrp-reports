@@ -31,7 +31,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 1956,
       "url": "https://issues.chromium.org/action/issues/384068255/attachments/61522109?download=true",
-      "local_path": "attachments/bg-keyboard.js"
+      "local_path": null
     },
     {
       "id": 61522110,
@@ -39,7 +39,7 @@
       "mime_type": "application/json",
       "size_bytes": 494,
       "url": "https://issues.chromium.org/action/issues/384068255/attachments/61522110?download=true",
-      "local_path": "attachments/manifest.json"
+      "local_path": null
     },
     {
       "id": 61522111,
@@ -47,7 +47,7 @@
       "mime_type": "text/html",
       "size_bytes": 2154,
       "url": "https://issues.chromium.org/action/issues/384068255/attachments/61522111?download=true",
-      "local_path": "attachments/popup.html"
+      "local_path": null
     },
     {
       "id": 61522112,
@@ -55,7 +55,7 @@
       "mime_type": "video/webm",
       "size_bytes": 1769293,
       "url": "https://issues.chromium.org/action/issues/384068255/attachments/61522112?download=true",
-      "local_path": "attachments/screen-capture.webm"
+      "local_path": null
     },
     {
       "id": 64408499,
@@ -63,7 +63,7 @@
       "mime_type": "video/webm",
       "size_bytes": 2253631,
       "url": "https://issues.chromium.org/action/issues/384068255/attachments/64408499?download=true",
-      "local_path": "attachments/screen.webm"
+      "local_path": null
     }
   ],
   "update_count": 45,

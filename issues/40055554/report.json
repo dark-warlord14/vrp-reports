@@ -81,7 +81,7 @@
       "mime_type": "text/plain",
       "size_bytes": 5631,
       "url": "https://issues.chromium.org/action/issues/40055554/attachments/53197864?download=true",
-      "local_path": "attachments/background.js"
+      "local_path": null
     },
     {
       "id": 53197865,
@@ -89,7 +89,7 @@
       "mime_type": "text/plain",
       "size_bytes": 156,
       "url": "https://issues.chromium.org/action/issues/40055554/attachments/53197865?download=true",
-      "local_path": "attachments/manifest.json"
+      "local_path": null
     },
     {
       "id": 53197866,
@@ -97,7 +97,7 @@
       "mime_type": "text/plain",
       "size_bytes": 58,
       "url": "https://issues.chromium.org/action/issues/40055554/attachments/53197866?download=true",
-      "local_path": "attachments/service_worker.js"
+      "local_path": null
     },
     {
       "id": 53197882,

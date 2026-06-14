@@ -14,7 +14,7 @@
   "reporter": "wg...@gmail.com",
   "assignee": "am...@google.com",
   "created_date": "2024-05-07T14:54:28+00:00",
-  "modified_date": "2026-03-05T16:43:45+00:00",
+  "modified_date": "2026-06-08T15:13:50+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 10000.0,
@@ -30,7 +30,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 18792,
       "url": "https://issues.chromium.org/action/issues/339169163/attachments/56161900?download=true",
-      "local_path": "attachments/asancomputeexit"
+      "local_path": null
     },
     {
       "id": 56161901,
@@ -97,6 +97,6 @@
       "local_path": "attachments/DumpLoopCFG.cpp"
     }
   ],
-  "update_count": 121,
+  "update_count": 122,
   "description_snippet": "##### VULNERABILITY DETAILS\n\nChromium translates wgsl shaders via tint to an OS-specific shader format. On Windows, the OS-specific file format is hlsl, processed in dxcompiler.dll. When compiling chrome-generated hlsl files, this triggers an OOB inside the hlsl compiler. Standalone reproducing on l"
 }

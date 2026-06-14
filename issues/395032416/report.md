@@ -37,9 +37,9 @@ Reporter credit: Sakana.S
 
 ## Attachments
 
-- background.js (text/javascript, 1.3 KB)
-- manifest.json (application/json, 160 B)
-- asan.log (text/plain, 36.1 KB)
+- [background.js](attachments/background.js) (text/javascript, 1.3 KB)
+- [manifest.json](attachments/manifest.json) (application/json, 160 B)
+- [asan.log](attachments/asan.log) (text/plain, 36.1 KB)
 - background.js (text/javascript, 1.4 KB)
 
 ## Timeline

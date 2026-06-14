@@ -1,15 +1,15 @@
-# Security: heap-use-after-free in content::RenderFrameHostImpl::delegate
+# UAF in AIContextBoundObjectSet::GetFromContext
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [367755363](https://issues.chromium.org/issues/367755363) |
 | **Status** | Assigned |
-| **Severity** | S4-Minimal |
+| **Severity** | S3-Low |
 | **Priority** | P1 |
-| **Component** | Blink>Portals |
+| **Component** | Blink>AI |
 | **Platforms** | Android, Linux, Mac, Windows, ChromeOS |
-| **Reporter** | gl...@google.com |
-| **Assignee** | mc...@chromium.org |
+| **Reporter** | vu...@darknavy.com |
+| **Assignee** | le...@google.com |
 | **Created** | 2024-09-18 |
 | **Bounty** | $36,000.00 |
 
@@ -464,10 +464,6 @@ Labelling as not applicable for 126 LTS because the affected code isn't present 
 ### pe...@google.com (2025-01-09)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> $35,000 for high quality report of memory corruption in a non-sandboxed process + $1,000 bisect bonus
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/367755363)*

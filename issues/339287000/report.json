@@ -1,0 +1,83 @@
+{
+  "id": "339287000",
+  "url": "https://issues.chromium.org/issues/339287000",
+  "title": "Security: heap-use-after-free in blink::internal::IdleRequestCallbackWrapper::TimeoutFired",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>DOM",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "126.0.0.0",
+  "cve_ids": [],
+  "reporter": "zh...@gmail.com",
+  "assignee": "et...@chromium.org",
+  "created_date": "2024-05-08T03:42:11+00:00",
+  "modified_date": "2024-08-21T15:43:43+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "reward_amount_meta": 8000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 56186156,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 496853,
+      "url": "https://issues.chromium.org/action/issues/339287000/attachments/56186156?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 56186157,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 821,
+      "url": "https://issues.chromium.org/action/issues/339287000/attachments/56186157?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 56186158,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 19922,
+      "url": "https://issues.chromium.org/action/issues/339287000/attachments/56186158?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 56186159,
+      "filename": "poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 20352123,
+      "url": "https://issues.chromium.org/action/issues/339287000/attachments/56186159?download=true",
+      "local_path": "attachments/poc.mov"
+    },
+    {
+      "id": 56223632,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 38519,
+      "url": "https://issues.chromium.org/action/issues/339287000/attachments/56223632?download=true",
+      "local_path": null
+    },
+    {
+      "id": 57794484,
+      "filename": "asan-report.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 55534,
+      "url": "https://issues.chromium.org/action/issues/339287000/attachments/57794484?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 88,
+  "description_snippet": "# Steps to reproduce the problem\n1. For mac and linux systems, download or compile any asan version of chromium after April 16,I use the locally compiled arm mac asan version here, because the downloaded linux asan may lose symbol: `git checkout 22ef2d0e2287f3060397c47b16ce1d466b4549e9`\n2. Deploy `p"
+}

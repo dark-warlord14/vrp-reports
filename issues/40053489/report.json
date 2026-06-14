@@ -1,0 +1,108 @@
+{
+  "id": "40053489",
+  "url": "https://issues.chromium.org/issues/40053489",
+  "title": "Bad casts due to issues in splitAnonymousBlocksAroundChild",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2012-02-09T18:58:23+00:00",
+  "modified_date": "2018-04-25T23:29:25+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53392287,
+      "filename": "asan-renderTable136184.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 6440,
+      "url": "https://issues.chromium.org/action/issues/40053489/attachments/53392287?download=true",
+      "local_path": "attachments/asan-renderTable136184.txt"
+    },
+    {
+      "id": 53392288,
+      "filename": "beta-asan-renderTable136184.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 6014,
+      "url": "https://issues.chromium.org/action/issues/40053489/attachments/53392288?download=true",
+      "local_path": "attachments/beta-asan-renderTable136184.txt"
+    },
+    {
+      "id": 53392289,
+      "filename": "renderTable136184.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1001,
+      "url": "https://issues.chromium.org/action/issues/40053489/attachments/53392289?download=true",
+      "local_path": "attachments/renderTable136184.html"
+    },
+    {
+      "id": 53392290,
+      "filename": "stable-asan-renderTable136184.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 6014,
+      "url": "https://issues.chromium.org/action/issues/40053489/attachments/53392290?download=true",
+      "local_path": "attachments/stable-asan-renderTable136184.txt"
+    },
+    {
+      "id": 53392298,
+      "filename": "136184-three.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 873,
+      "url": "https://issues.chromium.org/action/issues/40053489/attachments/53392298?download=true",
+      "local_path": "attachments/136184-three.html"
+    },
+    {
+      "id": 53392299,
+      "filename": "136184-three.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 6067,
+      "url": "https://issues.chromium.org/action/issues/40053489/attachments/53392299?download=true",
+      "local_path": "attachments/136184-three.txt"
+    },
+    {
+      "id": 53392304,
+      "filename": "136184four.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 5344,
+      "url": "https://issues.chromium.org/action/issues/40053489/attachments/53392304?download=true",
+      "local_path": "attachments/136184four.txt"
+    },
+    {
+      "id": 53392305,
+      "filename": "136184four.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 847,
+      "url": "https://issues.chromium.org/action/issues/40053489/attachments/53392305?download=true",
+      "local_path": "attachments/136184four.html"
+    },
+    {
+      "id": 53392310,
+      "filename": "136184five.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 7264,
+      "url": "https://issues.chromium.org/action/issues/40053489/attachments/53392310?download=true",
+      "local_path": "attachments/136184five.txt"
+    },
+    {
+      "id": 53392311,
+      "filename": "136184five.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 923,
+      "url": "https://issues.chromium.org/action/issues/40053489/attachments/53392311?download=true",
+      "local_path": "attachments/136184five.html"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nREAD of size 1 at 0x7fffece4b5c0 thread T0  \n    #0 0x55555aa7faf8 in WebCore::RenderTableSection::setNeedsCellRecalc() ???:0  \n  \nI think I have 4 or 5 of these stacks. maybe they are all the same bug.  \n  \n  \n**VERSION**   \nChrome Version: stable, beta, dev"
+}

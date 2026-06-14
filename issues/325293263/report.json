@@ -1,0 +1,87 @@
+{
+  "id": "325293263",
+  "url": "https://issues.chromium.org/issues/325293263",
+  "title": "Chrome crashes when dragging tab out during initiation of \"Organize Tabs\" function",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>CrashReporting, UI>Browser>TopChrome",
+  "os_platforms": [
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": "123.0.6301.2",
+  "cve_ids": [],
+  "reporter": "xp...@gmail.com",
+  "assignee": "em...@google.com",
+  "created_date": "2024-02-15T01:17:36+00:00",
+  "modified_date": "2024-09-26T16:50:12+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53648776,
+      "filename": "chrome_rgkGGmLF3s.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1926137,
+      "url": "https://issues.chromium.org/action/issues/325293263/attachments/53648776?download=true",
+      "local_path": "attachments/chrome_rgkGGmLF3s.mp4"
+    },
+    {
+      "id": 56595682,
+      "filename": "uaf_asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 30568,
+      "url": "https://issues.chromium.org/action/issues/325293263/attachments/56595682?download=true",
+      "local_path": "attachments/uaf_asan.txt"
+    },
+    {
+      "id": 56738913,
+      "filename": "Organize Tab.png",
+      "mime_type": "image/png",
+      "size_bytes": 260672,
+      "url": "https://issues.chromium.org/action/issues/325293263/attachments/56738913?download=true",
+      "local_path": "attachments/Organize Tab.png"
+    },
+    {
+      "id": 56818065,
+      "filename": "ASAN-heap-buffer-overflow.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 27297,
+      "url": "https://issues.chromium.org/action/issues/325293263/attachments/56818065?download=true",
+      "local_path": "attachments/ASAN-heap-buffer-overflow.txt"
+    },
+    {
+      "id": 56818066,
+      "filename": "ASAN-heap-use-after-free.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 28030,
+      "url": "https://issues.chromium.org/action/issues/325293263/attachments/56818066?download=true",
+      "local_path": "attachments/ASAN-heap-use-after-free.txt"
+    },
+    {
+      "id": 56829481,
+      "filename": "Chrome-Use-After-Free.html",
+      "mime_type": "text/html",
+      "size_bytes": 1803,
+      "url": "https://issues.chromium.org/action/issues/325293263/attachments/56829481?download=true",
+      "local_path": "attachments/Chrome-Use-After-Free.html"
+    },
+    {
+      "id": 56909865,
+      "filename": "poc.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 1030,
+      "url": "https://issues.chromium.org/action/issues/325293263/attachments/56909865?download=true",
+      "local_path": "attachments/poc.zip"
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "# Steps to reproduce the problem\n1.  Create multiple tabs that are the same e.g. 2 google.com tabs\n2.  Open the menu to start the \"Organize tabs\" function.\n3.  Click \"Start Now\"\n4.  Click and drag the 2 google.com tabs out while the \"Organize Tabs\" function tries to find duplicate tabs. <= Crash\n\n#"
+}

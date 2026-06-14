@@ -52,9 +52,9 @@ Reporter credit: Leecraso and Guang Gong of 360 Alpha Lab
 - [Demo.mp4](attachments/Demo.mp4) (video/mp4, 1.5 MB)
 - [asan](attachments/asan) (text/plain, 14.0 KB)
 - [poc.html](attachments/poc.html) (text/plain, 589 B)
-- [asan](attachments/asan) (text/plain, 11.1 KB)
-- [Demo.mp4](attachments/Demo.mp4) (video/mp4, 1.5 MB)
-- [poc.html](attachments/poc.html) (text/plain, 757 B)
+- asan (text/plain, 11.1 KB)
+- Demo.mp4 (video/mp4, 1.5 MB)
+- poc.html (text/plain, 757 B)
 - [iframe.html](attachments/iframe.html) (text/plain, 349 B)
 
 ## Timeline

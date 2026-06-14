@@ -116,7 +116,7 @@ explanation.png - explanation
 - [picture20.png](attachments/picture20.png) (image/png, 38.5 KB)
 - [picture21.png](attachments/picture21.png) (image/png, 24.0 KB)
 - [picture30.png](attachments/picture30.png) (image/png, 73.1 KB)
-- [picture31.png](attachments/picture31.png) (image/png, 31.3 KB)
+- picture31.png (image/png, 31.3 KB)
 - [spaceEnd.html](attachments/spaceEnd.html) (text/plain, 2.2 KB)
 - [picture40.png](attachments/picture40.png) (image/png, 53.1 KB)
 - [pic1.png](attachments/pic1.png) (image/png, 198.6 KB)

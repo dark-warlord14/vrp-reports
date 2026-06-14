@@ -19,7 +19,7 @@
   "reporter": "ap...@gmail.com",
   "assignee": "jr...@google.com",
   "created_date": "2024-10-23T19:07:49+00:00",
-  "modified_date": "2026-03-27T17:02:45+00:00",
+  "modified_date": "2026-06-08T15:13:21+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 35000.0,
@@ -38,6 +38,6 @@
       "local_path": "attachments/WebGPU, Out-of-bounds GPU buffer access caused by @align.pdf"
     }
   ],
-  "update_count": 87,
+  "update_count": 89,
   "description_snippet": "# Steps to reproduce the problem\n```\n<script>\n  globalThis.testRunner?.waitUntilDone();\n  const log = globalThis.$vm?.print ?? console.log;\n\n  onload = async () => {\n    let adapter = await navigator.gpu.requestAdapter({});\n    let device = await adapter.requestDevice({});\n    device.pushErrorScope("
 }

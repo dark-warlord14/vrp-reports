@@ -210,7 +210,7 @@ Povcfe of Tencent Security Xuanwu Lab
 
 ## Attachments
 
-- fetch_timing.mp4 (video/mp4, 2.0 MB)
+- [fetch_timing.mp4](attachments/fetch_timing.mp4) (video/mp4, 2.0 MB)
 - [fetch_timing.zip](attachments/fetch_timing.zip) (application/x-zip-compressed, 4.9 KB)
 
 ## Timeline

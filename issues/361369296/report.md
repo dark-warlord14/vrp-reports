@@ -78,9 +78,9 @@ SUMMARY: AddressSanitizer: SEGV (/Users/test/WebKit/WebKitBuild/Release/JavaScri
 
 ## Attachments
 
-- [poc.html](attachments/poc.html) (text/html, 2.8 KB)
-- [2.png](attachments/2.png) (image/png, 261.3 KB)
-- [1.png](attachments/1.png) (image/png, 559.9 KB)
+- poc.html (text/html, 2.8 KB)
+- 2.png (image/png, 261.3 KB)
+- 1.png (image/png, 559.9 KB)
 
 ## Timeline
 

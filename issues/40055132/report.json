@@ -35,7 +35,7 @@
       "mime_type": "text/plain",
       "size_bytes": 26623,
       "url": "https://issues.chromium.org/action/issues/40055132/attachments/53399546?download=true",
-      "local_path": "attachments/asan"
+      "local_path": null
     },
     {
       "id": 53399547,
@@ -43,7 +43,7 @@
       "mime_type": "text/plain",
       "size_bytes": 41469,
       "url": "https://issues.chromium.org/action/issues/40055132/attachments/53399547?download=true",
-      "local_path": "attachments/asan2"
+      "local_path": null
     },
     {
       "id": 53399548,
@@ -51,7 +51,7 @@
       "mime_type": "text/plain",
       "size_bytes": 810,
       "url": "https://issues.chromium.org/action/issues/40055132/attachments/53399548?download=true",
-      "local_path": "attachments/uaf.html"
+      "local_path": null
     }
   ],
   "update_count": 41,

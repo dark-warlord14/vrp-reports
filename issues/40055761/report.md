@@ -33,7 +33,7 @@ Operating System: macOS
 - [poc.html](attachments/poc.html) (text/plain, 479 B)
 - [Screen Shot 2021-05-06 at 2.55.12 AM.png](attachments/Screen Shot 2021-05-06 at 2.55.12 AM.png) (image/png, 211.5 KB)
 - [screen.mov](attachments/screen.mov) (video/quicktime, 1.2 MB)
-- [screen.mov](attachments/screen.mov) (video/quicktime, 1.0 MB)
+- screen.mov (video/quicktime, 1.0 MB)
 
 ## Timeline
 

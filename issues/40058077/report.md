@@ -1,17 +1,17 @@
-# Security: Samesite Cookies sent in a cross-site request navigated from Chrome's PDF viewer
+# PDF bookmarks bypass SameSite Strict cookies.
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [40058077](https://issues.chromium.org/issues/40058077) |
-| **Status** | Assigned |
+| **Status** | Accepted |
 | **Severity** | S3-Low |
-| **Priority** | P2 |
-| **Component** | Blink>SecurityFeature, Internals>Network>Cookies, Internals>Plugins>PDF, Platform>Extensions |
-| **Platforms** | Linux, Mac, Windows, ChromeOS |
-| **Reporter** | ha...@gmail.com |
-| **Assignee** | na...@chromium.org |
+| **Priority** | P3 |
+| **Component** | Internals>Network>Cookies, Internals>Plugins>PDF |
+| **Platforms** | Fuchsia, Linux, Mac, Windows, ChromeOS |
+| **Reporter** | nd...@protonmail.com |
+| **Assignee** | th...@chromium.org |
 | **Created** | 2021-11-30 |
-| **Bounty** | $2,000.00 |
+| **Bounty** | $1,000.00 |
 
 ## Description
 

@@ -1014,5 +1014,78 @@ this is already resolved, but realizing this was still assigned to me
 
 deleted
 
+### dx...@google.com (2026-05-29)
+
+Project: v8/v8  
+
+Branch:  main  
+
+Author:  Michael Lippautz [mlippautz@chromium.org](mailto:mlippautz@chromium.org)  
+
+Link:    <https://chromium-review.googlesource.com/7883401>
+
+compiler,maglev: Move regression tests into public repo
+
+---
+
+
+Expand for full commit details
+```
+     
+    Bug: 517688821 
+     
+    Bug: 390465670 
+    Bug: 390743124 
+    Bug: 40061538 
+    Bug: 378014589 
+    Bug: 386143468 
+    Bug: 391412545 
+    Bug: 398065918 
+    Bug: 445380761 
+    Bug: 490558172 
+    Bug: 491410818 
+    Bug: 491884710 
+    Bug: 495679730 
+    Change-Id: I0a68712b7a4d20dc6b31d8e8d714e2124989c3fd 
+    Reviewed-on: https://chromium-review.googlesource.com/c/v8/v8/+/7883401 
+    Auto-Submit: Michael Lippautz <mlippautz@chromium.org> 
+    Reviewed-by: Leszek Swirski <leszeks@chromium.org> 
+    Commit-Queue: Leszek Swirski <leszeks@chromium.org> 
+    Commit-Queue: Michael Lippautz <mlippautz@chromium.org> 
+    Cr-Commit-Position: refs/heads/main@{#107658}
+
+```
+
+---
+
+Files:
+
+- A `test/mjsunit/compiler/regress-390465670.js`
+- A `test/mjsunit/compiler/regress-390743124.js`
+- A `test/mjsunit/compiler/regress-40061538.js`
+- A `test/mjsunit/maglev/regress-378014589.js`
+- A `test/mjsunit/maglev/regress-386143468.js`
+- A `test/mjsunit/maglev/regress-391412545.js`
+- A `test/mjsunit/maglev/regress-398065918.js`
+- A `test/mjsunit/maglev/regress-445380761.js`
+- A `test/mjsunit/maglev/regress-490558172-3.js`
+- A `test/mjsunit/maglev/regress-490558172-4.js`
+- A `test/mjsunit/maglev/regress-491410818-1.js`
+- A `test/mjsunit/maglev/regress-491410818-2.js`
+- A `test/mjsunit/maglev/regress-491410818-3.js`
+- A `test/mjsunit/maglev/regress-491884710-1.js`
+- A `test/mjsunit/maglev/regress-491884710-2.js`
+- A `test/mjsunit/maglev/regress-495679730-1.js`
+- A `test/mjsunit/maglev/regress-495679730-2.js`
+
+---
+
+Hash: [0afe75e63ce8615ed10775b59e9ff6f3a1205a04](https://chromiumdash.appspot.com/commit/0afe75e63ce8615ed10775b59e9ff6f3a1205a04)  
+
+Date: Fri May 29 12:04:33 2026
+
+
+---
+
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/398065918)*

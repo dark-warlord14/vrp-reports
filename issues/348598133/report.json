@@ -1,0 +1,51 @@
+{
+  "id": "348598133",
+  "url": "https://issues.chromium.org/issues/348598133",
+  "title": "DCHECK failure in size() > index in small-vector.h",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler, Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2024-06-22T00:07:16+00:00",
+  "modified_date": "2024-10-04T15:41:35+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 57367003,
+      "filename": "output_poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 302,
+      "url": "https://issues.chromium.org/action/issues/348598133/attachments/57367003?download=true",
+      "local_path": "attachments/output_poc.js"
+    },
+    {
+      "id": 57378971,
+      "filename": "minimized_poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 146,
+      "url": "https://issues.chromium.org/action/issues/348598133/attachments/57378971?download=true",
+      "local_path": "attachments/minimized_poc.js"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "VULNERABILITY DETAILS\n## INTRODUCE\nAfter bisect, it was determined that following commit caused this problem.\n\n- Commit Info\n    - Version: 92983\n    - link: https://crrev.com/0c2b15100d997a8f1b74fcc448da319c75f2e045 \n- Commit Message\n\n```\ncommit 0c2b15100d997a8f1b74fcc448da319c75f2e045\nAuthor: Adam"
+}

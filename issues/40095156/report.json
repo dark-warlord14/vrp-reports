@@ -1,0 +1,46 @@
+{
+  "id": "40095156",
+  "url": "https://issues.chromium.org/issues/40095156",
+  "title": "UAF in content::IndexedDBOriginState::AbortAllTransactions",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>Storage>IndexedDB",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cd...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2019-05-24T10:14:47+00:00",
+  "modified_date": "2025-02-13T00:21:47+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53413337,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40095156/attachments/53413337?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53413338,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40095156/attachments/53413338?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. Build asan version of chromium. \r\n2. Make a dir named mojotest in out/gen and set up a webserver in mojotest.Put crash.html in it.\r\n3. Run ./chr"
+}

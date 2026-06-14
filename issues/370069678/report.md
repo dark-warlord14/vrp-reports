@@ -291,10 +291,10 @@ Refer to https://chromium.googlesource.com/chromium/src/+/main/base/memory/raw_p
 - [worklet-reftest.js](attachments/worklet-reftest.js) (text/javascript, 1.2 KB)
 - [min.html](attachments/min.html) (text/html, 2.4 KB)
 - [Video.webm](attachments/Video.webm) (video/webm, 6.1 MB)
-- [h1.js](attachments/h1.js) (text/javascript, 3.7 KB)
-- [poc.html](attachments/poc.html) (text/html, 197.4 KB)
+- h1.js (text/javascript, 3.7 KB)
+- poc.html (text/html, 197.4 KB)
 - [Video2.webm](attachments/Video2.webm) (video/webm, 5.6 MB)
-- [min.html](attachments/min.html) (text/html, 1.5 KB)
+- min.html (text/html, 1.5 KB)
 
 ## Timeline
 

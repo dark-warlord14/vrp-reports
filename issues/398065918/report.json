@@ -19,7 +19,7 @@
   "reporter": "rz...@excello.cz",
   "assignee": "ol...@chromium.org",
   "created_date": "2025-02-21T10:02:32+00:00",
-  "modified_date": "2025-09-21T16:31:06+00:00",
+  "modified_date": "2026-05-29T12:48:36+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 7000.0,
@@ -62,6 +62,6 @@
       "local_path": "attachments/case-103-poc1.js"
     }
   ],
-  "update_count": 100,
+  "update_count": 104,
   "description_snippet": "VULNERABILITY DETAILS\n\n### Intro\nThe vulnerability uses two V8 concepts:\n- Folded allocation - is an optimization where multiple allocation operations are combined into a single allocation.\n- Memory is divided into two main regions Young Generation (Young Space) and Old Generation (Old Space). When"
 }

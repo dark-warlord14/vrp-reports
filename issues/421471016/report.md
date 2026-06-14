@@ -49,7 +49,7 @@ Regression: N/A
 ## Attachments
 
 - [asan.txt](attachments/asan.txt) (text/plain, 93.0 KB)
-- [asan.txt](attachments/asan.txt) (text/plain, 93.0 KB)
+- [asan.txt](attachments/asan_66331745.txt) (text/plain, 93.0 KB)
 - [fuzz_c5a39b1725b58e96ef18a1a0a1257893.html](attachments/fuzz_c5a39b1725b58e96ef18a1a0a1257893.html) (text/html, 107.6 KB)
 
 ## Timeline
@@ -355,7 +355,7 @@ There are two ways to fix this issue:
 1. Disable the thread\_pool\_runner\_ and use sampling thread to perform the  `StackSampler::RecordStackFrames`.
 2. Use a lock to protect the `non_native_modules_` when iterating it, as `thread_execution_state_lock_` does.
 
-### nh...@chromium.org (2025-06-02)
+### [Deleted User] (2025-06-02)
 
 Thanks for this report. It's unclear how to trigger this crash - are you able to provide a poc or steps to reproduce it?
 

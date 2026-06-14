@@ -110,7 +110,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1989,
       "url": "https://issues.chromium.org/action/issues/40055613/attachments/52951007?download=true",
-      "local_path": "attachments/1. DownloadsHandler UAF.patch"
+      "local_path": null
     },
     {
       "id": 52951008,
@@ -118,7 +118,7 @@
       "mime_type": "text/plain",
       "size_bytes": 2203,
       "url": "https://issues.chromium.org/action/issues/40055613/attachments/52951008?download=true",
-      "local_path": "attachments/2. ImportDataHandler UAF.patch"
+      "local_path": null
     },
     {
       "id": 52951009,
@@ -126,7 +126,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1767,
       "url": "https://issues.chromium.org/action/issues/40055613/attachments/52951009?download=true",
-      "local_path": "attachments/3. SearchTabHelper UAF.patch"
+      "local_path": null
     },
     {
       "id": 52951010,
@@ -134,7 +134,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1869,
       "url": "https://issues.chromium.org/action/issues/40055613/attachments/52951010?download=true",
-      "local_path": "attachments/4. NewTabPageHandler.patch"
+      "local_path": null
     },
     {
       "id": 52951011,
@@ -142,7 +142,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1783,
       "url": "https://issues.chromium.org/action/issues/40055613/attachments/52951011?download=true",
-      "local_path": "attachments/5. PolicyUIHandler UAF.patch"
+      "local_path": null
     },
     {
       "id": 52951019,

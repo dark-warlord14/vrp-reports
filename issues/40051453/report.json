@@ -1,0 +1,33 @@
+{
+  "id": "40051453",
+  "url": "https://issues.chromium.org/issues/40051453",
+  "title": "Unexpected reveal of service worker interception by using nextHopProtocol",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>PerformanceAPIs",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "so...@gmail.com",
+  "assignee": "yo...@chromium.org",
+  "created_date": "2020-02-06T08:52:01+00:00",
+  "modified_date": "2024-09-04T16:29:54+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 31,
+  "description_snippet": "Context: https://bugs.chromium.org/p/chromium/issues/detail?id=1047915#c4\r\n\r\nnextHopProtocol also needs to be protected by Timing-Allow-Origin."
+}

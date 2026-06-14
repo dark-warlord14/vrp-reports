@@ -49,9 +49,9 @@ Reporter credit: David Erceg
 - [service_worker.js](attachments/service_worker.js) (text/plain, 431 B)
 - [Screen Shot 2021-04-20 at 6.08.40 PM.png](attachments/Screen Shot 2021-04-20 at 6.08.40 PM.png) (image/png, 228.6 KB)
 - [Screen Shot 2021-04-20 at 6.09.16 PM.png](attachments/Screen Shot 2021-04-20 at 6.09.16 PM.png) (image/png, 97.9 KB)
-- [background.js](attachments/background.js) (text/plain, 5.5 KB)
-- [manifest.json](attachments/manifest.json) (text/plain, 156 B)
-- [service_worker.js](attachments/service_worker.js) (text/plain, 58 B)
+- background.js (text/plain, 5.5 KB)
+- manifest.json (text/plain, 156 B)
+- service_worker.js (text/plain, 58 B)
 - [web_ui_remove_observers.patch](attachments/web_ui_remove_observers.patch) (text/plain, 1.4 KB)
 
 ## Timeline

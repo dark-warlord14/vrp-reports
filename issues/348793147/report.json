@@ -1,0 +1,51 @@
+{
+  "id": "348793147",
+  "url": "https://issues.chromium.org/issues/348793147",
+  "title": "V8 Sandbox Bypass: AAR/W via table import signature check bypass",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>JavaScript>Sandbox",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2024-06-23T09:41:44+00:00",
+  "modified_date": "2024-11-20T10:31:51+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 57403303,
+      "filename": "exp.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 73331,
+      "url": "https://issues.chromium.org/action/issues/348793147/attachments/57403303?download=true",
+      "local_path": "attachments/exp.js"
+    },
+    {
+      "id": 57473078,
+      "filename": "exp2.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 73615,
+      "url": "https://issues.chromium.org/action/issues/348793147/attachments/57473078?download=true",
+      "local_path": "attachments/exp2.js"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "### VULNERABILITY DETAILS\n\nV8 sandbox bypass, arbitrary address read/write via table import signature check bypass using in-sandbox exploit primitives.\n\nThis is a direct variant of b/336507783, where we now modify the table signature and then pass it as an imported table. The signature is checked vi"
+}

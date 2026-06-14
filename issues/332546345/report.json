@@ -1,0 +1,42 @@
+{
+  "id": "332546345",
+  "url": "https://issues.chromium.org/issues/332546345",
+  "title": "ANGLE compiler ArrayLength transformation type confution lead to Stack Overflow",
+  "status": "New",
+  "severity": "S4-Minimal",
+  "priority": "P0",
+  "component": "Internals>GPU>ANGLE, Internals>GPU>SwiftShader",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "123.0.0.0",
+  "cve_ids": [],
+  "reporter": "d8...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2024-04-02T17:11:56+00:00",
+  "modified_date": "2024-07-17T15:42:38+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 16000.0,
+  "reward_amount_meta": 16000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 55182699,
+      "filename": "poc2.html",
+      "mime_type": "text/html",
+      "size_bytes": 1483,
+      "url": "https://issues.chromium.org/action/issues/332546345/attachments/55182699?download=true",
+      "local_path": "attachments/poc2.html"
+    }
+  ],
+  "update_count": 84,
+  "description_snippet": "# Steps to reproduce the problem\nBuild latest chrome ( a5078aa0394ee87f6370dfaa46219e2bd64abf31 ) \nwith args.gn\n```\nis_asan = true\nis_debug = false\n```\n\n./out/asan/chrome  --disable-gpu --user-data-dir=/tmp/aa http://localhost:8000/poc2.html\n[2367299:2367299:0403/010616.193654:ERROR:object_proxy.cc("
+}

@@ -198,8 +198,8 @@ Flash Version:
 
 ## Attachments
 
-- [poc.html](attachments/poc.html) (text/plain, 456 B)
-- [poc2.zip](attachments/poc2.zip) (application/octet-stream, 8.2 KB)
+- poc.html (text/plain, 456 B)
+- poc2.zip (application/octet-stream, 8.2 KB)
 - [asan_debug_report.txt](attachments/asan_debug_report.txt) (text/plain, 33.5 KB)
 
 ## Timeline

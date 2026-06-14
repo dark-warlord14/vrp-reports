@@ -151,7 +151,7 @@ Reporter credit: Alesandro Ortiz <https://AlesandroOrtiz.com>
 ## Attachments
 
 - [origin-spoof-scroll.html](attachments/origin-spoof-scroll.html) (text/html, 3.5 KB)
-- [origin-spoof-scroll.html](attachments/origin-spoof-scroll.html) (text/html, 3.5 KB)
+- origin-spoof-scroll.html (text/html, 3.5 KB)
 - [origin-spoof-scroll-canary.mp4](attachments/origin-spoof-scroll-canary.mp4) (video/mp4, 6.8 MB)
 - [origin-spoof-scroll-stable.mp4](attachments/origin-spoof-scroll-stable.mp4) (video/mp4, 6.5 MB)
 - [origin-spoof-scroll-manual.mp4](attachments/origin-spoof-scroll-manual.mp4) (video/mp4, 7.5 MB)

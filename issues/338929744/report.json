@@ -1,0 +1,59 @@
+{
+  "id": "338929744",
+  "url": "https://issues.chromium.org/issues/338929744",
+  "title": "UAF in content::MediaSessionImpl::BuildMetadata",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media>Session",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "st...@chromium.org",
+  "created_date": "2024-05-06T16:08:58+00:00",
+  "modified_date": "2024-08-31T15:42:10+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 56106078,
+      "filename": "crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 630,
+      "url": "https://issues.chromium.org/action/issues/338929744/attachments/56106078?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 56106079,
+      "filename": "launcher.sh",
+      "mime_type": "text/x-sh",
+      "size_bytes": 727,
+      "url": "https://issues.chromium.org/action/issues/338929744/attachments/56106079?download=true",
+      "local_path": "attachments/launcher.sh"
+    },
+    {
+      "id": 56106080,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 53844,
+      "url": "https://issues.chromium.org/action/issues/338929744/attachments/56106080?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 93,
+  "description_snippet": "UAF in content::MediaSessionImpl::BuildMetadata\ntested os: Ubuntu 22.04\ntested chrome version:\nChromium 126.0.6461.0\nChromium 121.0.6163.0\n\nrepro steps:\n./chrome --user-data-dir=/tmp/xxs --incognito --disable-gpu  http://localhost:8605/crash2/crash.html  http://localhost:8605/crash2/crash.html  http"
+}

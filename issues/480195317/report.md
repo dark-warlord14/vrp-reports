@@ -86,8 +86,8 @@ Reporter credit: Shaheen Fazim
 - [full-asan.txt](attachments/full-asan.txt) (text/plain, 77.2 KB)
 - [screenrecord.mp4](attachments/screenrecord.mp4) (video/mp4, 798.0 KB)
 - deleted (application/octet-stream, 0 B)
-- [poc.html](attachments/poc.html) (text/html, 454 B)
-- Screen Recording.mov (video/quicktime, 29.4 MB)
+- poc.html (text/html, 454 B)
+- [Screen Recording.mov](attachments/Screen Recording.mov) (video/quicktime, 29.4 MB)
 - [asan-log.txt](attachments/asan-log.txt) (text/plain, 33.9 KB)
 
 ## Timeline

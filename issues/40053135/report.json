@@ -1,0 +1,122 @@
+{
+  "id": "40053135",
+  "url": "https://issues.chromium.org/issues/40053135",
+  "title": "Security: UAF in the DevTools  of the Presentation Cast causes RCE.",
+  "status": "Accepted",
+  "severity": "Unknown",
+  "priority": "P3",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "pb...@chromium.org",
+  "created_date": "2020-08-21T06:41:29+00:00",
+  "modified_date": "2021-11-12T18:31:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53280269,
+      "filename": "presentation.html",
+      "mime_type": "text/plain",
+      "size_bytes": 274,
+      "url": "https://issues.chromium.org/action/issues/40053135/attachments/53280269?download=true",
+      "local_path": "attachments/presentation.html"
+    },
+    {
+      "id": 53280270,
+      "filename": "windbg_crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8005,
+      "url": "https://issues.chromium.org/action/issues/40053135/attachments/53280270?download=true",
+      "local_path": "attachments/windbg_crash.log"
+    },
+    {
+      "id": 53280271,
+      "filename": "poc.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 4918260,
+      "url": "https://issues.chromium.org/action/issues/40053135/attachments/53280271?download=true",
+      "local_path": "attachments/poc.gif"
+    },
+    {
+      "id": 53280327,
+      "filename": "presentation_UAF_asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18166,
+      "url": "https://issues.chromium.org/action/issues/40053135/attachments/53280327?download=true",
+      "local_path": "attachments/presentation_UAF_asan.txt"
+    },
+    {
+      "id": 53280336,
+      "filename": "presentation_devtools.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 4314920,
+      "url": "https://issues.chromium.org/action/issues/40053135/attachments/53280336?download=true",
+      "local_path": "attachments/presentation_devtools.gif"
+    },
+    {
+      "id": 53280337,
+      "filename": "p1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 370,
+      "url": "https://issues.chromium.org/action/issues/40053135/attachments/53280337?download=true",
+      "local_path": "attachments/p1.html"
+    },
+    {
+      "id": 53280338,
+      "filename": "p2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 117,
+      "url": "https://issues.chromium.org/action/issues/40053135/attachments/53280338?download=true",
+      "local_path": "attachments/p2.html"
+    },
+    {
+      "id": 53280350,
+      "filename": "p2.html",
+      "mime_type": "text/plain",
+      "size_bytes": 420,
+      "url": "https://issues.chromium.org/action/issues/40053135/attachments/53280350?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53280374,
+      "filename": "presentation_poc.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 3970893,
+      "url": "https://issues.chromium.org/action/issues/40053135/attachments/53280374?download=true",
+      "local_path": "attachments/presentation_poc.gif"
+    },
+    {
+      "id": 53280375,
+      "filename": "presentation.html",
+      "mime_type": "text/plain",
+      "size_bytes": 359,
+      "url": "https://issues.chromium.org/action/issues/40053135/attachments/53280375?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53280376,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 386,
+      "url": "https://issues.chromium.org/action/issues/40053135/attachments/53280376?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUAF in the DevTools  of the Presentation Cast causes RCE.  \n  \n**VERSION**   \nChrome Version 84.0.4147.135 (Official Build) (64-bit)  \nOperating System: [Windows10 1909]  \n  \n**REPRODUCTION CASE** :  \n1. open http://localhost/presentation.html  with Chrome.exe  \n2. click"
+}

@@ -577,5 +577,9 @@ This issue was migrated from crbug.com/chromium/1352802?no_tracker_redirect=1
 [Auto-CCs applied]
 [Monorail components added to Component Tags custom field.]
 
+### su...@chromium.org (2026-04-22)
+
+Mass migration from sunnyps@chromium.org to sunnyps@google.com
+
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40060580)*

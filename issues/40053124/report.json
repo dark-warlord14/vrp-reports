@@ -1,0 +1,36 @@
+{
+  "id": "40053124",
+  "url": "https://issues.chromium.org/issues/40053124",
+  "title": "Security: Cross-Origin Redirect Detection with fetch (XS-Leak)",
+  "status": "Accepted",
+  "severity": "Unknown",
+  "priority": "P4",
+  "component": "Blink>Network>FetchAPI",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ku...@googlemail.com",
+  "assignee": null,
+  "created_date": "2020-08-19T18:27:50+00:00",
+  "modified_date": "2022-01-29T01:21:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52950224,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1056,
+      "url": "https://issues.chromium.org/action/issues/40053124/attachments/52950224?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 13,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nIt is possible to detect server redirects (3XX) with fetch and redirect mode \"manual\".  \n  \n  \nIf the fetch redirect mode it is set to manual, redirects are not automatically followed and a special \"opaqueredirect\" response is returned. Normally, \"redirect: manual\" ca"
+}

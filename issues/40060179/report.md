@@ -9,7 +9,7 @@
 | **Component** | Blink>WebGPU |
 | **Platforms** | Linux, Mac, Windows, ChromeOS |
 | **Reporter** | lo...@gmail.com |
-| **Assignee** | cw...@chromium.org |
+| **Assignee** | cw...@google.com |
 | **Created** | 2022-07-06 |
 | **Bounty** | $7,500.00 |
 

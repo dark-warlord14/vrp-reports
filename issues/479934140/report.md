@@ -100,8 +100,8 @@ Tommy (dawgyg) DeVoss - Braze Security Team
 - [trigger.html](attachments/trigger.html) (text/html, 733 B)
 - [poc_stsd](attachments/poc_stsd) (application/octet-stream, 2.3 KB)
 - [chrome_asan.txt](attachments/chrome_asan.txt) (text/plain, 9.6 KB)
-- [trigger.html](attachments/trigger.html) (text/html, 733 B)
-- [poc_stsd](attachments/poc_stsd) (application/octet-stream, 2.3 KB)
+- trigger.html (text/html, 733 B)
+- poc_stsd (application/octet-stream, 2.3 KB)
 
 ## Timeline
 

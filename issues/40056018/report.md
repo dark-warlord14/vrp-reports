@@ -63,7 +63,7 @@ Flash Version:
 - [spf.webm](attachments/spf.webm) (video/webm, 3.3 MB)
 - [screen-capture (7).webm](attachments/screen-capture (7).webm) (video/webm, 1.5 MB)
 - [screen-capture (3).webm](attachments/screen-capture (3).webm) (video/webm, 1.1 MB)
-- [screen-capture (4).webm](attachments/screen-capture (4).webm) (video/webm, 351.8 KB)
+- screen-capture (4).webm (video/webm, 351.8 KB)
 - [screen-capture (24).webm](attachments/screen-capture (24).webm) (video/webm, 1.0 MB)
 
 ## Timeline

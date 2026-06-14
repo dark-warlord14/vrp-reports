@@ -204,7 +204,7 @@ Flash Version:
 ## Attachments
 
 - [poc.html](attachments/poc.html) (text/plain, 270 B)
-- [video.webm](attachments/video.webm) (video/webm, 7.1 MB)
+- video.webm (video/webm, 7.1 MB)
 
 ## Timeline
 

@@ -106,7 +106,7 @@ Flash Version:
 - [asan.log](attachments/asan.log) (text/plain, 19.1 KB)
 - [poc1.html](attachments/poc1.html) (text/plain, 375 B)
 - deleted (application/octet-stream, 0 B)
-- [poc1.html](attachments/poc1.html) (text/plain, 621 B)
+- poc1.html (text/plain, 621 B)
 - [1.mp4](attachments/1.mp4) (video/mp4, 648.8 KB)
 
 ## Timeline

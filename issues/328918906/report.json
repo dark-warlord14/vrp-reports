@@ -1,0 +1,88 @@
+{
+  "id": "328918906",
+  "url": "https://issues.chromium.org/issues/328918906",
+  "title": "heap-use-after-free heap-use-after-free media\\audio\\audio_renderer_mixer_manager.cc:228 in blink::AudioRendererMixerManager::ReturnMixer",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Media>Audio, Blink>WebAudio",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "da...@chromium.org",
+  "created_date": "2024-03-11T03:46:02+00:00",
+  "modified_date": "2024-06-19T15:42:29+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "reward_amount_meta": 8000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 54513352,
+      "filename": "abe.png",
+      "mime_type": "image/png",
+      "size_bytes": 12242,
+      "url": "https://issues.chromium.org/action/issues/328918906/attachments/54513352?download=true",
+      "local_path": "attachments/abe.png"
+    },
+    {
+      "id": 54513353,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 19592,
+      "url": "https://issues.chromium.org/action/issues/328918906/attachments/54513353?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 54513354,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 3525,
+      "url": "https://issues.chromium.org/action/issues/328918906/attachments/54513354?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 54513355,
+      "filename": "test.ogv",
+      "mime_type": "video/ogg",
+      "size_bytes": 146510,
+      "url": "https://issues.chromium.org/action/issues/328918906/attachments/54513355?download=true",
+      "local_path": "attachments/test.ogv"
+    },
+    {
+      "id": 54513356,
+      "filename": "testharness.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 185955,
+      "url": "https://issues.chromium.org/action/issues/328918906/attachments/54513356?download=true",
+      "local_path": "attachments/testharness.js"
+    },
+    {
+      "id": 54513357,
+      "filename": "testharnessreport.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2268,
+      "url": "https://issues.chromium.org/action/issues/328918906/attachments/54513357?download=true",
+      "local_path": "attachments/testharnessreport.js"
+    },
+    {
+      "id": 54531155,
+      "filename": "fixpatch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 715,
+      "url": "https://issues.chromium.org/action/issues/328918906/attachments/54531155?download=true",
+      "local_path": "attachments/fixpatch.diff"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "#TESTON\nasan-win32-release_x64-1267730\n\n#REPRODUCTION CASE\nchrome  --no-sandbox --user-data-dir=test --enable-logging=stderr poc.html\n\n#NOTE\ntestharnessreport.js and testharness.js are from the WPT test suite, and you can replace them yourself.\n\n#RCA\nDCHECK is only working on Debug version\n```\nhttps"
+}

@@ -159,12 +159,12 @@ Thank you for your attention. with kind Regards
 
 ## Attachments
 
-- [Bypass-AutofillCap-DEV-V120-2023-10-14_23-44-16.mp4](attachments/Bypass-AutofillCap-DEV-V120-2023-10-14_23-44-16.mp4) (video/mp4, 1.7 MB)
-- [Bypass-Autofill-Cap-StableV118-2023-10-14_23-40-24.mp4](attachments/Bypass-Autofill-Cap-StableV118-2023-10-14_23-40-24.mp4) (video/mp4, 1.3 MB)
-- [show-me-out3-caption.html](attachments/show-me-out3-caption.html) (text/plain, 2.2 KB)
-- [tts-game-instructions.mp3](attachments/tts-game-instructions.mp3) (application/octet-stream, 112.7 KB)
-- [wargame.webp](attachments/wargame.webp) (image/webp, 191.2 KB)
-- [CanaryWin-V120-2023-10-16 21-25-04-382.mp4](attachments/CanaryWin-V120-2023-10-16 21-25-04-382.mp4) (video/mp4, 3.0 MB)
+- Bypass-AutofillCap-DEV-V120-2023-10-14_23-44-16.mp4 (video/mp4, 1.7 MB)
+- Bypass-Autofill-Cap-StableV118-2023-10-14_23-40-24.mp4 (video/mp4, 1.3 MB)
+- show-me-out3-caption.html (text/plain, 2.2 KB)
+- tts-game-instructions.mp3 (application/octet-stream, 112.7 KB)
+- wargame.webp (image/webp, 191.2 KB)
+- CanaryWin-V120-2023-10-16 21-25-04-382.mp4 (video/mp4, 3.0 MB)
 - [Screenshot from 2025-04-07 13-50-37.png](attachments/Screenshot from 2025-04-07 13-50-37.png) (image/png, 507.0 KB)
 
 ## Timeline

@@ -28,7 +28,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 6689305,
       "url": "https://issues.chromium.org/action/issues/361611809/attachments/58858826?download=true",
-      "local_path": "attachments/video6214974538107588499.mp4"
+      "local_path": null
     },
     {
       "id": 58858827,
@@ -36,7 +36,7 @@
       "mime_type": "text/html",
       "size_bytes": 16592,
       "url": "https://issues.chromium.org/action/issues/361611809/attachments/58858827?download=true",
-      "local_path": "attachments/payment.html"
+      "local_path": null
     },
     {
       "id": 64239586,
@@ -44,7 +44,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 3238482,
       "url": "https://issues.chromium.org/action/issues/361611809/attachments/64239586?download=true",
-      "local_path": "attachments/video6273551694387221470.mp4"
+      "local_path": null
     },
     {
       "id": 64285879,
@@ -52,7 +52,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 11765763,
       "url": "https://issues.chromium.org/action/issues/361611809/attachments/64285879?download=true",
-      "local_path": "attachments/2025_03_26_21_17_32.mp4"
+      "local_path": null
     },
     {
       "id": 64275570,
@@ -60,7 +60,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 12767905,
       "url": "https://issues.chromium.org/action/issues/361611809/attachments/64275570?download=true",
-      "local_path": "attachments/2025_03_26_22_17_23.mp4"
+      "local_path": null
     },
     {
       "id": 64275571,
@@ -68,7 +68,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 10408868,
       "url": "https://issues.chromium.org/action/issues/361611809/attachments/64275571?download=true",
-      "local_path": "attachments/2025_03_26_22_29_18.mp4"
+      "local_path": null
     }
   ],
   "update_count": 76,

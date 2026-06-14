@@ -1,0 +1,46 @@
+{
+  "id": "40052830",
+  "url": "https://issues.chromium.org/issues/40052830",
+  "title": "Security: Google Chrome DrawElementsInstanced Information Leak Vulnerability (TALOS-2020-1123)",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "vu...@sourcefire.com",
+  "assignee": "jm...@chromium.org",
+  "created_date": "2020-07-13T21:12:35+00:00",
+  "modified_date": "2024-03-12T14:00:54+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53052325,
+      "filename": "TALOS-2020-1123.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 19221,
+      "url": "https://issues.chromium.org/action/issues/40052830/attachments/53052325?download=true",
+      "local_path": "attachments/TALOS-2020-1123.txt"
+    },
+    {
+      "id": 53052326,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 3154,
+      "url": "https://issues.chromium.org/action/issues/40052830/attachments/53052326?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "### Summary\r\n\r\nAn information disclosure vulnerability exists in the WebGL  functionality of Google Chrome 83.0.4103.116 (Stable) (64-bit) and 86.0.4198.0 (Developer Build) (64-bit). A specially crafted javascript can cause an out-of-bounds read. In order to trigger this vulnerability, victim must v"
+}

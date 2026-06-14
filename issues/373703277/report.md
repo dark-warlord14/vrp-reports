@@ -85,7 +85,7 @@ Reporter credit: Seunghyun Lee (@0x10n) of CMU CyLab
 ## Attachments
 
 - [poc.js](attachments/poc.js) (text/javascript, 73.3 KB)
-- [poc.js](attachments/poc.js) (text/javascript, 73.3 KB)
+- poc.js (text/javascript, 73.3 KB)
 - [exp.js](attachments/exp.js) (text/javascript, 78.8 KB)
 - [exp.html](attachments/exp.html) (text/html, 91.4 KB)
 

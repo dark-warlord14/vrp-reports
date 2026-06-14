@@ -1,0 +1,42 @@
+{
+  "id": "352446085",
+  "url": "https://issues.chromium.org/issues/352446085",
+  "title": "V8 Sandbox Bypass: AAR/W via WASM import race condition leading to broken runtime bounds check with memory64",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2024-07-11T15:27:24+00:00",
+  "modified_date": "2024-10-19T15:39:54+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 57866122,
+      "filename": "wasm-memory64-v8sbx.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 76823,
+      "url": "https://issues.chromium.org/action/issues/352446085/attachments/57866122?download=true",
+      "local_path": "attachments/wasm-memory64-v8sbx.js"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "### VULNERABILITY DETAILS\n\nThis is a v8sbx bypass bug split out from b/351327767#comment9.\n\nV8 sandbox bypass, arbitrary address read/write via WASM memory64 import check race condition leading to broken invariants related with runtime memory index bounds check.\n\nWASM memory access operations requir"
+}

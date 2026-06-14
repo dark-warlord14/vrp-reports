@@ -1,0 +1,142 @@
+{
+  "id": "356423094",
+  "url": "https://issues.chromium.org/issues/356423094",
+  "title": "Security: heap-use-after-free in webrtc::VSyncEncodeAdapterMode::EncodeAllEnqueuedFrames",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>WebRTC",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": "129.0.6627.0",
+  "cve_ids": [],
+  "reporter": "zh...@gmail.com",
+  "assignee": "ha...@google.com",
+  "created_date": "2024-07-31T08:47:55+00:00",
+  "modified_date": "2024-11-25T07:37:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "reward_amount_meta": 8000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58309125,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 44897,
+      "url": "https://issues.chromium.org/action/issues/356423094/attachments/58309125?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 58309126,
+      "filename": "trigger.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 340945,
+      "url": "https://issues.chromium.org/action/issues/356423094/attachments/58309126?download=true",
+      "local_path": "attachments/trigger.diff"
+    },
+    {
+      "id": 58309127,
+      "filename": "trigger.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2619,
+      "url": "https://issues.chromium.org/action/issues/356423094/attachments/58309127?download=true",
+      "local_path": "attachments/trigger.js"
+    },
+    {
+      "id": 58309450,
+      "filename": "asan.png",
+      "mime_type": "image/png",
+      "size_bytes": 1740263,
+      "url": "https://issues.chromium.org/action/issues/356423094/attachments/58309450?download=true",
+      "local_path": "attachments/asan.png"
+    },
+    {
+      "id": 58308605,
+      "filename": "wrapper.html",
+      "mime_type": "text/html",
+      "size_bytes": 561,
+      "url": "https://issues.chromium.org/action/issues/356423094/attachments/58308605?download=true",
+      "local_path": "attachments/wrapper.html"
+    },
+    {
+      "id": 58373153,
+      "filename": "poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 503880300,
+      "url": "https://issues.chromium.org/action/issues/356423094/attachments/58373153?download=true",
+      "local_path": "attachments/poc.mov"
+    },
+    {
+      "id": 58372899,
+      "filename": "webrtc_poc.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 64268,
+      "url": "https://issues.chromium.org/action/issues/356423094/attachments/58372899?download=true",
+      "local_path": "attachments/webrtc_poc.zip"
+    },
+    {
+      "id": 58375301,
+      "filename": "asan_results.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 600594,
+      "url": "https://issues.chromium.org/action/issues/356423094/attachments/58375301?download=true",
+      "local_path": "attachments/asan_results.txt"
+    },
+    {
+      "id": 58415127,
+      "filename": "poc_final.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 375447210,
+      "url": "https://issues.chromium.org/action/issues/356423094/attachments/58415127?download=true",
+      "local_path": "attachments/poc_final.mov"
+    },
+    {
+      "id": 58415128,
+      "filename": "command_line_result.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 757841,
+      "url": "https://issues.chromium.org/action/issues/356423094/attachments/58415128?download=true",
+      "local_path": "attachments/command_line_result.txt"
+    },
+    {
+      "id": 58475200,
+      "filename": "debug_fix_result.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 967390,
+      "url": "https://issues.chromium.org/action/issues/356423094/attachments/58475200?download=true",
+      "local_path": "attachments/debug_fix_result.txt"
+    },
+    {
+      "id": 58484103,
+      "filename": "debug_fix.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 3883,
+      "url": "https://issues.chromium.org/action/issues/356423094/attachments/58484103?download=true",
+      "local_path": "attachments/debug_fix.diff"
+    },
+    {
+      "id": 58506150,
+      "filename": "debug_fix_result.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 960137,
+      "url": "https://issues.chromium.org/action/issues/356423094/attachments/58506150?download=true",
+      "local_path": null
+    },
+    {
+      "id": 58523904,
+      "filename": "debug_fix.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 4231,
+      "url": "https://issues.chromium.org/action/issues/356423094/attachments/58523904?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "# Steps to reproduce the problem\n## Asan chromium environment required to trigger the vulnerability (only tested on macos)\n\n```\ngit checkout 29c6b26f72febe6ee85bcc285b8ef77390d132ec\ngit apply trigger.diff\n```\n- gn args\n```\nis_component_build = true\nis_debug = false\nis_asan = true\nsymbol_level = 2\ndc"
+}

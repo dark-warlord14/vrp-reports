@@ -171,7 +171,7 @@ Reporter credit: Jaehun Jeong(@n3sk) of Theori
 - [asan.log](attachments/asan.log) (text/plain, 7.0 KB)
 - [patch_test.diff](attachments/patch_test.diff) (text/plain, 1.9 KB)
 - [test.asan.log](attachments/test.asan.log) (text/plain, 7.0 KB)
-- [patch_test.diff](attachments/patch_test.diff) (text/plain, 1.9 KB)
+- patch_test.diff (text/plain, 1.9 KB)
 
 ## Timeline
 

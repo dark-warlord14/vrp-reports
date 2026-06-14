@@ -1,0 +1,46 @@
+{
+  "id": "342456975",
+  "url": "https://issues.chromium.org/issues/342456975",
+  "title": " URL spoof in Omnibox",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Accessibility>ReadingMode, UI>Browser>Omnibox",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "127.0.6493.0",
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "jd...@chromium.org",
+  "created_date": "2024-05-24T01:43:40+00:00",
+  "modified_date": "2024-10-25T20:37:05+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 56637267,
+      "filename": "Screencast from 24 ماي, 2024 +01 02:42:44.webm",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 806758,
+      "url": "https://issues.chromium.org/action/issues/342456975/attachments/56637267?download=true",
+      "local_path": "attachments/Screencast from 24 ماي, 2024 +01 02_42_44.webm"
+    },
+    {
+      "id": 56652859,
+      "filename": "screen-capture.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 4163261,
+      "url": "https://issues.chromium.org/action/issues/342456975/attachments/56652859?download=true",
+      "local_path": "attachments/screen-capture.webm"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "# Steps to reproduce the problem\n1. Go to any website e.g badssl.com then navigate to google.com\n2. Right-click and select \"Open in reading mode\" \n3. Go back to badssl.com\n\n# Problem Description\nbadss.com site is displayed in content area but address bar is incorrect. \n\n# Summary\n URL spoof in Omnib"
+}

@@ -33,7 +33,7 @@
       "mime_type": "text/html",
       "size_bytes": 249,
       "url": "https://issues.chromium.org/action/issues/394350433/attachments/62642829?download=true",
-      "local_path": null
+      "local_path": "attachments/wrapper.html"
     },
     {
       "id": 62642830,
@@ -41,7 +41,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 75928,
       "url": "https://issues.chromium.org/action/issues/394350433/attachments/62642830?download=true",
-      "local_path": null
+      "local_path": "attachments/wasmtojs-tierup-isel-crash.js"
     }
   ],
   "update_count": 78,

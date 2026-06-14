@@ -134,7 +134,7 @@
       "mime_type": "text/html",
       "size_bytes": 147,
       "url": "https://issues.chromium.org/action/issues/40091708/attachments/70808620?download=true",
-      "local_path": "attachments/download_redirect.html"
+      "local_path": "attachments/download_redirect_70808620.html"
     },
     {
       "id": 70850657,
@@ -142,7 +142,7 @@
       "mime_type": "application/x-httpd-php",
       "size_bytes": 209,
       "url": "https://issues.chromium.org/action/issues/40091708/attachments/70850657?download=true",
-      "local_path": "attachments/location.php"
+      "local_path": "attachments/location_70850657.php"
     }
   ],
   "update_count": 96,

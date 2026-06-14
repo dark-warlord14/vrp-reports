@@ -251,7 +251,7 @@ This was discovered with a v8 sandbox fuzzer.
 
 ## Attachments
 
-- osr-deoptdata-confusion.js (text/javascript, 3.2 KB)
+- [osr-deoptdata-confusion.js](attachments/osr-deoptdata-confusion.js) (text/javascript, 3.2 KB)
 
 ## Timeline
 

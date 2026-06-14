@@ -110,7 +110,7 @@ Regression: No \
 - [poc.html](attachments/poc.html) (text/html, 3.6 KB)
 - [victim.html](attachments/victim.html) (text/html, 1.1 KB)
 - deleted (application/octet-stream, 0 B)
-- Screen Recording 2026-01-13 at 4.08.34 PM.mov (video/quicktime, 9.2 MB)
+- [Screen Recording 2026-01-13 at 4.08.34 PM.mov](attachments/Screen Recording 2026-01-13 at 4.08.34 PM.mov) (video/quicktime, 9.2 MB)
 
 ## Timeline
 

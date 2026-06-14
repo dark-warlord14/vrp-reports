@@ -55,8 +55,8 @@ Reporter credit: yuki yamaoto
 
 - [Screenshot_20250124-021309.png](attachments/Screenshot_20250124-021309.png) (image/png, 132.1 KB)
 - [Screenshot_20250124-021345.png](attachments/Screenshot_20250124-021345.png) (image/png, 220.4 KB)
-- Screenshot_20250124-021519.png (image/png, 170.1 KB)
-- Screenshot 2025-01-23 at 11.04.40 AM.png (image/png, 285.8 KB)
+- [Screenshot_20250124-021519.png](attachments/Screenshot_20250124-021519.png) (image/png, 170.1 KB)
+- [Screenshot 2025-01-23 at 11.04.40 AM.png](attachments/Screenshot 2025-01-23 at 11.04.40 AM.png) (image/png, 285.8 KB)
 
 ## Timeline
 
@@ -75,7 +75,7 @@ This appears to repro as far back as a Pixel 6 running Android 13 but with moder
 
 Notably there appear to be a number of these ligatures, which I think we could use to make the spoof even better -- see attached screenshot of `glogoligatureoogle.com`. I *think* if we could enumerate all the ligatures for this font we could probably identify all of the ones that are confusables and add them to our skeleton mapping (maybe only on Android build if possible)?
 
-### nh...@chromium.org (2025-01-23)
+### [Deleted User] (2025-01-23)
 
 Looking through the Google Sans font, I found the following ligatures that could be used for similar spoofs:
 

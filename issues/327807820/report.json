@@ -1,0 +1,73 @@
+{
+  "id": "327807820",
+  "url": "https://issues.chromium.org/issues/327807820",
+  "title": "UAF in vk::Buffer::getOffsetPointer",
+  "status": "New",
+  "severity": "S4-Minimal",
+  "priority": "P0",
+  "component": "Internals>GPU>ANGLE, Internals>GPU>SwiftShader",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "ge...@chromium.org",
+  "created_date": "2024-03-03T04:46:45+00:00",
+  "modified_date": "2024-06-22T15:42:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 54309842,
+      "filename": "crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 1844,
+      "url": "https://issues.chromium.org/action/issues/327807820/attachments/54309842?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 54309843,
+      "filename": "debug.log",
+      "mime_type": "text/plain",
+      "size_bytes": 6112,
+      "url": "https://issues.chromium.org/action/issues/327807820/attachments/54309843?download=true",
+      "local_path": "attachments/debug.log"
+    },
+    {
+      "id": 54317461,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 25862,
+      "url": "https://issues.chromium.org/action/issues/327807820/attachments/54317461?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 54322142,
+      "filename": "webgl-test-utils.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 115077,
+      "url": "https://issues.chromium.org/action/issues/327807820/attachments/54322142?download=true",
+      "local_path": "attachments/webgl-test-utils.js"
+    },
+    {
+      "id": 54358208,
+      "filename": "crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 116743,
+      "url": "https://issues.chromium.org/action/issues/327807820/attachments/54358208?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 73,
+  "description_snippet": "tested os:\nubuntu 22.04\ntested chrome version:\nChromium 124.0.6315.2\nrepro steps:\nchrome --incognito --user-data-dir=/tmp/xxx http://localhost:8000/crash.html --disable-gpu\n\n==210209==ERROR: AddressSanitizer: heap-use-after-free on address 0x50700011b748 at pc 0x7f61b285445b bp 0x7f6197280f40 sp 0x7"
+}

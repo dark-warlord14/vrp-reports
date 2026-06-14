@@ -1,0 +1,43 @@
+{
+  "id": "331237485",
+  "url": "https://issues.chromium.org/issues/331237485",
+  "title": "OOB Access in mojo SkBitmap StructTraits",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Services>Viz",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "vu...@darknavy.com",
+  "assignee": "ky...@chromium.org",
+  "created_date": "2024-03-26T02:58:45+00:00",
+  "modified_date": "2024-11-04T17:58:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 21000.0,
+  "reward_amount_meta": 21000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 54973238,
+      "filename": "poc.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1467,
+      "url": "https://issues.chromium.org/action/issues/331237485/attachments/54973238?download=true",
+      "local_path": "attachments/poc.diff"
+    }
+  ],
+  "update_count": 83,
+  "description_snippet": "### VULNERABILITY DETAILS\n\nWhen the browser process receives a mojo param containing BitmapInSharedMemory [0], it will call a handwritten deserialization function `StructTraits<viz::mojom::BitmapInSharedMemoryDataView, SkBitmap>::Read` [1]\n\n\n```C++\n  if (!sk_bitmap->installPixels(image_info, mapping"
+}

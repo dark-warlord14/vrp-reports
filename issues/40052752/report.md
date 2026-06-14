@@ -50,9 +50,9 @@ Reporter credit: David Erceg
 - [manifest.json](attachments/manifest.json) (text/plain, 222 B)
 - [notifier.html](attachments/notifier.html) (text/plain, 127 B)
 - [notifier.js](attachments/notifier.js) (text/plain, 63 B)
-- [devtools_page.html](attachments/devtools_page.html) (text/plain, 132 B)
-- [devtools_page.js](attachments/devtools_page.js) (text/plain, 1.5 KB)
-- [manifest.json](attachments/manifest.json) (text/plain, 165 B)
+- [devtools_page.html](attachments/devtools_page_53017448.html) (text/plain, 132 B)
+- [devtools_page.js](attachments/devtools_page_53017449.js) (text/plain, 1.5 KB)
+- [manifest.json](attachments/manifest_53017450.json) (text/plain, 165 B)
 
 ## Timeline
 

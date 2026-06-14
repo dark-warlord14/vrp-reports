@@ -35,7 +35,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 322,
       "url": "https://issues.chromium.org/action/issues/40055618/attachments/53193778?download=true",
-      "local_path": "attachments/avif-reformat-use-of-uninitialized-value.avif"
+      "local_path": null
     }
   ],
   "update_count": 42,

@@ -1,0 +1,43 @@
+{
+  "id": "40050612",
+  "url": "https://issues.chromium.org/issues/40050612",
+  "title": "Security: Out of bounds index in array in function parameters",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Language",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ad...@chromium.org",
+  "created_date": "2019-11-05T09:35:15+00:00",
+  "modified_date": "2024-01-08T22:34:03+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53113256,
+      "filename": "bug_41414141.js",
+      "mime_type": "text/plain",
+      "size_bytes": 122,
+      "url": "https://issues.chromium.org/action/issues/40050612/attachments/53113256?download=true",
+      "local_path": "attachments/bug_41414141.js"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n**Please provide a brief explanation of the security issue.**   \n  \nThe following code crashes the latest d8 using a pointer at 0x414141414141.  \n  \nclass var6 extends Object {  \n  constructor ( a,b,c,d,e,f,g,h,i,j,k,l,m ) {  \n    super (3.54484805889626e-310 ) 1 ; // th"
+}

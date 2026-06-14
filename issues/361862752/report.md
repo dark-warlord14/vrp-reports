@@ -28,8 +28,8 @@ Reporter credit: if applicable, please credit my pseudonym "Popax21" in regards 
 
 ## Attachments
 
-- [bypass.js](attachments/bypass.js) (text/javascript, 3.1 KB)
-- [bypass.js](attachments/bypass.js) (text/javascript, 3.1 KB)
+- bypass.js (text/javascript, 3.1 KB)
+- bypass.js (text/javascript, 3.1 KB)
 
 ## Timeline
 

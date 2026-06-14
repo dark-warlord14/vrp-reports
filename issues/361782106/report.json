@@ -1,0 +1,51 @@
+{
+  "id": "361782106",
+  "url": "https://issues.chromium.org/issues/361782106",
+  "title": "use-after-poison in mojo::SimpleWatcher::OnHandleReady",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebRTC",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "or...@chromium.org",
+  "created_date": "2024-08-24T07:05:55+00:00",
+  "modified_date": "2024-12-14T15:42:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "reward_amount_meta": 8000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58885070,
+      "filename": "crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 883,
+      "url": "https://issues.chromium.org/action/issues/361782106/attachments/58885070?download=true",
+      "local_path": null
+    },
+    {
+      "id": 58885071,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 7201,
+      "url": "https://issues.chromium.org/action/issues/361782106/attachments/58885071?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 68,
+  "description_snippet": "tested OS:\nUbuntu and macOS\ntested chrome version:\nChromium 129.0.6658.0 \n\nrepro steps:\n./chrome  --user-data-dir=/tmp/xx2 http://localhost:8880/crash.html\nThe issue should reproduce in approximately 30 seconds.\n\n\nAfter bisecting, it was confirmed that the issue started occurring after the following"
+}

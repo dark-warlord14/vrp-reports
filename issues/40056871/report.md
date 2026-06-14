@@ -38,7 +38,7 @@ OS Version: 10.0
 - [uaf.txt](attachments/uaf.txt) (text/plain, 22.5 KB)
 - [poc.mp4](attachments/poc.mp4) (video/mp4, 10.6 MB)
 - [patch.PNG](attachments/patch.PNG) (image/png, 40.9 KB)
-- [patch.PNG](attachments/patch.PNG) (image/png, 43.7 KB)
+- patch.PNG (image/png, 43.7 KB)
 
 ## Timeline
 

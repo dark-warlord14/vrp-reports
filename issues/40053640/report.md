@@ -244,7 +244,7 @@ Reporter credit: Jaehun Jeong(@n3sk) of Theori
 - [crash1.log](attachments/crash1.log) (text/plain, 11.2 KB)
 - [crash2.log](attachments/crash2.log) (text/plain, 11.0 KB)
 - [crash3.log](attachments/crash3.log) (text/plain, 6.4 KB)
-- [patch_test.diff](attachments/patch_test.diff) (text/plain, 2.1 KB)
+- patch_test.diff (text/plain, 2.1 KB)
 
 ## Timeline
 

@@ -35,7 +35,7 @@
       "mime_type": "text/html",
       "size_bytes": 3251,
       "url": "https://issues.chromium.org/action/issues/392375312/attachments/62427105?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.html"
     },
     {
       "id": 62427167,
@@ -43,7 +43,7 @@
       "mime_type": "text/x-python",
       "size_bytes": 826,
       "url": "https://issues.chromium.org/action/issues/392375312/attachments/62427167?download=true",
-      "local_path": null
+      "local_path": "attachments/get_mojomjs.py"
     }
   ],
   "update_count": 51,

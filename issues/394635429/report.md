@@ -174,7 +174,7 @@ This was discovered with a v8 sandbox fuzzer.
 
 ## Attachments
 
-- regexp-capture-double-parse-oob-call.js (text/javascript, 3.3 KB)
+- [regexp-capture-double-parse-oob-call.js](attachments/regexp-capture-double-parse-oob-call.js) (text/javascript, 3.3 KB)
 
 ## Timeline
 

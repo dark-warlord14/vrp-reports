@@ -1,0 +1,84 @@
+{
+  "id": "40055333",
+  "url": "https://issues.chromium.org/issues/40055333",
+  "title": "Heap-use-after-free in WebCore::GenericEventQueue::~GenericEventQueue",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sl...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2012-03-21T13:28:10+00:00",
+  "modified_date": "2018-04-25T23:24:12+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53318951,
+      "filename": "water.mp3",
+      "mime_type": "audio/mpeg; charset=binary",
+      "size_bytes": 90697,
+      "url": "https://issues.chromium.org/action/issues/40055333/attachments/53318951?download=true",
+      "local_path": "attachments/water.mp3"
+    },
+    {
+      "id": 53318952,
+      "filename": "crash1.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 412,
+      "url": "https://issues.chromium.org/action/issues/40055333/attachments/53318952?download=true",
+      "local_path": "attachments/crash1.html"
+    },
+    {
+      "id": 53318953,
+      "filename": "stack1.txt",
+      "mime_type": "text/x-c++; charset=us-ascii",
+      "size_bytes": 8517,
+      "url": "https://issues.chromium.org/action/issues/40055333/attachments/53318953?download=true",
+      "local_path": "attachments/stack1.txt"
+    },
+    {
+      "id": 53318954,
+      "filename": "bear.mp4",
+      "mime_type": "video/mp4; charset=binary",
+      "size_bytes": 41099,
+      "url": "https://issues.chromium.org/action/issues/40055333/attachments/53318954?download=true",
+      "local_path": "attachments/bear.mp4"
+    },
+    {
+      "id": 53318996,
+      "filename": "crash_2.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 306,
+      "url": "https://issues.chromium.org/action/issues/40055333/attachments/53318996?download=true",
+      "local_path": "attachments/crash_2.html"
+    },
+    {
+      "id": 53318997,
+      "filename": "bear_silent.webm",
+      "mime_type": "application/octet-stream; charset=binary",
+      "size_bytes": 45723,
+      "url": "https://issues.chromium.org/action/issues/40055333/attachments/53318997?download=true",
+      "local_path": "attachments/bear_silent.webm"
+    },
+    {
+      "id": 53318998,
+      "filename": "crash_3.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 61277,
+      "url": "https://issues.chromium.org/action/issues/40055333/attachments/53318998?download=true",
+      "local_path": "attachments/crash_3.html"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "Crashes on windows dev 19.0.1068.1 (126852) and canary 19.0.1075.0 (127639). Can't reproduce on stable.\r\n\r\n----- crash1.html -----\r\n\r\n<!DOCTYPE html>\r\n\r\n<script>\r\n    function reloading() {\r\n        window.open('crash1.html', '_self');\r\n    }\r\n    setTimeout(\"reloading()\", 200);\r\n\r\n    window.onload"
+}

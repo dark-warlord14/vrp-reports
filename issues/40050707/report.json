@@ -1,0 +1,126 @@
+{
+  "id": "40050707",
+  "url": "https://issues.chromium.org/issues/40050707",
+  "title": "2 Vulnerabilities in websql & sqlite (Tracking Bug)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Storage>WebSQL, Internals>Storage",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2019-13734",
+    "CVE-2019-13750",
+    "CVE-2019-13751"
+  ],
+  "reporter": "le...@gmail.com",
+  "assignee": "pw...@chromium.org",
+  "created_date": "2019-11-16T04:27:25+00:00",
+  "modified_date": "2024-01-08T22:50:51+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53224881,
+      "filename": "4-chrome_poc_copy_neg.html",
+      "mime_type": "text/plain",
+      "size_bytes": 10334,
+      "url": "https://issues.chromium.org/action/issues/40050707/attachments/53224881?download=true",
+      "local_path": "attachments/4-chrome_poc_copy_neg.html"
+    },
+    {
+      "id": 53224882,
+      "filename": "4-poc_copy_negative.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 10190,
+      "url": "https://issues.chromium.org/action/issues/40050707/attachments/53224882?download=true",
+      "local_path": "attachments/4-poc_copy_negative.txt"
+    },
+    {
+      "id": 53224884,
+      "filename": "5-chrome_poc_copy_neg.html",
+      "mime_type": "text/plain",
+      "size_bytes": 89744,
+      "url": "https://issues.chromium.org/action/issues/40050707/attachments/53224884?download=true",
+      "local_path": "attachments/5-chrome_poc_copy_neg.html"
+    },
+    {
+      "id": 53224885,
+      "filename": "5-poc_incrmerge.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 9754,
+      "url": "https://issues.chromium.org/action/issues/40050707/attachments/53224885?download=true",
+      "local_path": "attachments/5-poc_incrmerge.txt"
+    },
+    {
+      "id": 53224886,
+      "filename": "6-fts4_memory_disclosure.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 309,
+      "url": "https://issues.chromium.org/action/issues/40050707/attachments/53224886?download=true",
+      "local_path": "attachments/6-fts4_memory_disclosure.txt"
+    },
+    {
+      "id": 53224887,
+      "filename": "bug1-poc_nullptr.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 418,
+      "url": "https://issues.chromium.org/action/issues/40050707/attachments/53224887?download=true",
+      "local_path": "attachments/bug1-poc_nullptr.txt"
+    },
+    {
+      "id": 53224888,
+      "filename": "bug2-poc_stackoverflow.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 6087,
+      "url": "https://issues.chromium.org/action/issues/40050707/attachments/53224888?download=true",
+      "local_path": "attachments/bug2-poc_stackoverflow.txt"
+    },
+    {
+      "id": 53224889,
+      "filename": "bug3-poc_windowfunc.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 136,
+      "url": "https://issues.chromium.org/action/issues/40050707/attachments/53224889?download=true",
+      "local_path": "attachments/bug3-poc_windowfunc.txt"
+    },
+    {
+      "id": 53225004,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40050707/attachments/53225004?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53225005,
+      "filename": "poc_divide_by_zero.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7207,
+      "url": "https://issues.chromium.org/action/issues/40050707/attachments/53225005?download=true",
+      "local_path": "attachments/poc_divide_by_zero.txt"
+    },
+    {
+      "id": 53225020,
+      "filename": "fuzzer_fts3_fts4_.cpp",
+      "mime_type": "text/plain",
+      "size_bytes": 14520,
+      "url": "https://issues.chromium.org/action/issues/40050707/attachments/53225020?download=true",
+      "local_path": "attachments/fuzzer_fts3_fts4_.cpp"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.97 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nThese vulnerabilities are different from the 3 bugs we have used on Tianfu Cup 2019. But they need the defense-in-depth bypass to trigger"
+}

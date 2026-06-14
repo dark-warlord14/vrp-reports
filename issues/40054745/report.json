@@ -42,7 +42,7 @@
       "mime_type": "text/plain",
       "size_bytes": 628,
       "url": "https://issues.chromium.org/action/issues/40054745/attachments/52899093?download=true",
-      "local_path": "attachments/bug-1176031.html"
+      "local_path": null
     },
     {
       "id": 52899094,
@@ -50,7 +50,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 721,
       "url": "https://issues.chromium.org/action/issues/40054745/attachments/52899094?download=true",
-      "local_path": "attachments/extension.zip"
+      "local_path": null
     }
   ],
   "update_count": 83,

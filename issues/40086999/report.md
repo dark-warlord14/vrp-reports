@@ -328,7 +328,7 @@ So some of the fundamental challenges:
 
 My understanding is that Mozilla chose 2.c) and chose the format in accordance with that. We don't have an overall cookie storage limit (AFAIK), just a per-domain limit, and while the format (SQLite) doesn't block loading, it's allowed to grow.
 
-### nh...@chromium.org (2018-06-08)
+### [Deleted User] (2018-06-08)
 
 My understanding is that we have both per-domain limits for cookies (kDomainMaxCookies) and an overall limit (kMaxCookies) in net/cookies/cookie_monster.h.
 
@@ -393,7 +393,7 @@ nharper@ said he's interested so assigning it to him for now.
 
 [Empty comment from Monorail migration]
 
-### nh...@chromium.org (2019-05-31)
+### [Deleted User] (2019-05-31)
 
 [Empty comment from Monorail migration]
 
@@ -405,7 +405,7 @@ nharper@ said he's interested so assigning it to him for now.
 
 nharper: Were you able to make any progress on this medium-severity bug?
 
-### nh...@chromium.org (2019-06-13)
+### [Deleted User] (2019-06-13)
 
 No, I haven't made any progress on it.
 
@@ -506,7 +506,7 @@ For more details visit https://www.chromium.org/issue-tracking/autotriage - Your
 
 [Empty comment from Monorail migration]
 
-### nh...@chromium.org (2020-09-09)
+### [Deleted User] (2020-09-09)
 
 There are two issues that have been discussed on this issue.
 
@@ -525,7 +525,7 @@ I think the design would end up similar to what you propose, in that it would li
 
 Just a thought.
 
-### nh...@chromium.org (2020-09-10)
+### [Deleted User] (2020-09-10)
 
 The feasibility concerns around delaying use of the TransportSecurityState are simply me not being familiar with the callers of URLRequestContextBuilder::Build (which is the only place outside of ios and test code that creates a TransportSecurityPersister) to know how easy/hard it would be to add an async wait to them.
 
@@ -539,7 +539,7 @@ The hybrid approach sounds like it could work. Somewhere in URLRequest or HttpNe
 
 friendly marshal, are there any updates?
 
-### nh...@chromium.org (2020-10-19)
+### [Deleted User] (2020-10-19)
 
 https://chromium-review.googlesource.com/c/chromium/src/+/2413174 is in progress.
 
@@ -551,7 +551,7 @@ https://chromium-review.googlesource.com/c/chromium/src/+/2413174 is in progress
 
 Do we get paid if reward potential?
 
-### nh...@chromium.org (2020-11-13)
+### [Deleted User] (2020-11-13)
 
 [Empty comment from Monorail migration]
 
@@ -609,7 +609,7 @@ Ah, carlosil tells me that the network service component delay API he's working 
 
 To add more context, my wait for critical component API is somewhat based on crrev.com/c/2413174, and even though this bug is not the critical component API, we can reuse the waiting parts I will add. Instead of having two different ways URLRequestJob::Start can be delayed.
 
-### nh...@chromium.org (2021-02-24)
+### [Deleted User] (2021-02-24)
 
 The net/http/transport_security_* changes in crrev.com/c/2413174 are probably good to carry forward. It sounds like there's other work being done on blocking the network service on certain conditions, so the URLRequest changes from that CL can probably be replaced by that work.
 

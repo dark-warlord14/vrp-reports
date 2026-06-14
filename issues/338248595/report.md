@@ -105,7 +105,7 @@ Reporter credit: Allen Ding
 - [manifest.json](attachments/manifest.json) (application/json, 248 B)
 - [worker.js](attachments/worker.js) (text/javascript, 149 B)
 - [devtools_downloads.js](attachments/devtools_downloads.js) (text/javascript, 1.9 KB)
-- [devtools.js](attachments/devtools.js) (text/javascript, 3.2 KB)
+- devtools.js (text/javascript, 3.2 KB)
 - [sandbox_escape_linux_v2.mp4](attachments/sandbox_escape_linux_v2.mp4) (video/mp4, 546.5 KB)
 
 ## Timeline

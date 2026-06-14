@@ -1,0 +1,60 @@
+{
+  "id": "40053631",
+  "url": "https://issues.chromium.org/issues/40053631",
+  "title": "Heap-use-after-free in WebCore::InlineBox::root",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2012-02-12T19:32:47+00:00",
+  "modified_date": "2018-04-25T23:28:51+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53363018,
+      "filename": "asan-24152.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 10608,
+      "url": "https://issues.chromium.org/action/issues/40053631/attachments/53363018?download=true",
+      "local_path": "attachments/asan-24152.txt"
+    },
+    {
+      "id": 53363020,
+      "filename": "stable-asan-24152.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 10665,
+      "url": "https://issues.chromium.org/action/issues/40053631/attachments/53363020?download=true",
+      "local_path": "attachments/stable-asan-24152.txt"
+    },
+    {
+      "id": 53363021,
+      "filename": "24152.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 710,
+      "url": "https://issues.chromium.org/action/issues/40053631/attachments/53363021?download=true",
+      "local_path": "attachments/24152.html"
+    },
+    {
+      "id": 53363022,
+      "filename": "beta-asan-24152.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 10122,
+      "url": "https://issues.chromium.org/action/issues/40053631/attachments/53363022?download=true",
+      "local_path": "attachments/beta-asan-24152.txt"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \n==6447== ERROR: AddressSanitizer heap-use-after-free on address 0x7fffecca2098 at pc 0x55555abe0b85 bp 0x7fffffff21e0 sp 0x7fffffff21d8  \nREAD of size 8 at 0x7fffecca2098 thread T0  \n    #0 0x55555abe0b85 in WebCore::InlineBox::root() ???:0  \n    #1 0x55555aea1b"
+}

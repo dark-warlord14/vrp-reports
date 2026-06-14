@@ -64,8 +64,8 @@ Reporter credit: Woojin Oh of STEALIEN(@pwn\_exploit)
 ## Attachments
 
 - [patch.txt](attachments/patch.txt) (text/plain, 18.9 KB)
-- [bandicam 2021-01-29 19-56-47-218.mp4](attachments/bandicam 2021-01-29 19-56-47-218.mp4) (video/mp4, 8.3 MB)
-- [index.html](attachments/index.html) (text/plain, 91 B)
+- bandicam 2021-01-29 19-56-47-218.mp4 (video/mp4, 8.3 MB)
+- index.html (text/plain, 91 B)
 
 ## Timeline
 

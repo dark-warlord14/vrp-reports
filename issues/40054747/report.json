@@ -35,7 +35,7 @@
       "mime_type": "text/plain",
       "size_bytes": 47077,
       "url": "https://issues.chromium.org/action/issues/40054747/attachments/53150703?download=true",
-      "local_path": "attachments/TALOS-2021-1251 - Google_Chrome_WebAudio_blink_AudioNodeOutput_Pull_code_execution_vulnerability.txt"
+      "local_path": null
     },
     {
       "id": 53150704,
@@ -43,7 +43,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1239,
       "url": "https://issues.chromium.org/action/issues/40054747/attachments/53150704?download=true",
-      "local_path": "attachments/poc_min.html"
+      "local_path": null
     },
     {
       "id": 53150705,
@@ -51,7 +51,7 @@
       "mime_type": "text/plain",
       "size_bytes": 128,
       "url": "https://issues.chromium.org/action/issues/40054747/attachments/53150705?download=true",
-      "local_path": "attachments/poc_command_line.txt"
+      "local_path": null
     },
     {
       "id": 53150893,
@@ -59,7 +59,7 @@
       "mime_type": "text/plain",
       "size_bytes": 636,
       "url": "https://issues.chromium.org/action/issues/40054747/attachments/53150893?download=true",
-      "local_path": "attachments/repro-1176218-r2.html"
+      "local_path": null
     }
   ],
   "update_count": 102,

@@ -1,14 +1,15 @@
-# Text selection magnifier gets stuck on screen upon navigation
+# Security: Android selection magnifier persists after navigation, can obscure/spoof browser UI or page content
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [384033062](https://issues.chromium.org/issues/384033062) |
-| **Status** | Fixed |
-| **Severity** | S0-Critical |
-| **Priority** | P4 |
+| **Status** | Accepted |
+| **Severity** | S3-Low |
+| **Priority** | P3 |
 | **Component** | UI>Browser>Selection |
 | **Platforms** | Android |
-| **Reporter** | mu...@gmail.com |
+| **Reporter** | al...@alesandroortiz.com |
+| **Assignee** | ya...@google.com |
 | **Created** | 2024-12-14 |
 | **Bounty** | $5,000.00 |
 
@@ -236,13 +237,13 @@ Reporter credit: Alesandro Ortiz <https://AlesandroOrtiz.com>
 
 ## Attachments
 
-- [android-magnifier-minimal.html](attachments/android-magnifier-minimal.html) (text/html, 1.4 KB)
-- [android-magnifier-minimal-no-delay.html](attachments/android-magnifier-minimal-no-delay.html) (text/html, 1.7 KB)
-- [android-magnifier-omnibox.html](attachments/android-magnifier-omnibox.html) (text/html, 4.9 KB)
-- [android-magnifier-permission.html](attachments/android-magnifier-permission.html) (text/html, 4.8 KB)
-- [slow.php](attachments/slow.php) (application/x-httpd-php, 121 B)
-- [signal-server.js](attachments/signal-server.js) (text/javascript, 2.9 KB)
-- [permission.html](attachments/permission.html) (text/html, 493 B)
+- android-magnifier-minimal.html (text/html, 1.4 KB)
+- android-magnifier-minimal-no-delay.html (text/html, 1.7 KB)
+- android-magnifier-omnibox.html (text/html, 4.9 KB)
+- android-magnifier-permission.html (text/html, 4.8 KB)
+- slow.php (application/x-httpd-php, 121 B)
+- signal-server.js (text/javascript, 2.9 KB)
+- permission.html (text/html, 493 B)
 - [spoof.html](attachments/spoof.html) (text/html, 734 B)
 - [poc-minimal-center.mp4](attachments/poc-minimal-center.mp4) (video/mp4, 1.1 MB)
 - [poc-minimal-top.mp4](attachments/poc-minimal-top.mp4) (video/mp4, 1.5 MB)
@@ -410,10 +411,6 @@ If the bonuses were part of the reward, then a breakdown would be appreciated. :
 ### ch...@google.com (2025-04-19)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> high-quality, comprehensive report of moderate impact security UI issue, specifically the permissions spoof / bypass
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/384033062)*

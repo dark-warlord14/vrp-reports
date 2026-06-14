@@ -1,15 +1,15 @@
-# Security: Download notification can hide 'Press Esc to exit fullscreen and see download' warning
+# Security: Fullscreen Quickly Hide "Press and hold Esc to exit fullscreen and see download" Notification
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [40945077](https://issues.chromium.org/issues/40945077) |
 | **Status** | Accepted |
 | **Severity** | S3-Low |
-| **Priority** | P4 |
-| **Component** | UI>Browser>Bubbles>Download |
-| **Platforms** | Mac |
-| **Reporter** | al...@gmail.com |
-| **Assignee** | ch...@chromium.org |
+| **Priority** | P3 |
+| **Component** | UI>Browser>FullScreen |
+| **Platforms** | Linux, Windows |
+| **Reporter** | pu...@gmail.com |
+| **Assignee** | mu...@google.com |
 | **Created** | 2023-11-22 |
 | **Bounty** | $500.00 |
 

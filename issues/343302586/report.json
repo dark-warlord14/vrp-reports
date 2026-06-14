@@ -1,0 +1,86 @@
+{
+  "id": "343302586",
+  "url": "https://issues.chromium.org/issues/343302586",
+  "title": "Security: heap-use-after-free in MacNotificationServiceUN::CloseNotificationsForProfile",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Notifications",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": "127.0.0.0",
+  "cve_ids": [],
+  "reporter": "zh...@gmail.com",
+  "assignee": "me...@chromium.org",
+  "created_date": "2024-05-29T06:29:33+00:00",
+  "modified_date": "2024-09-07T15:40:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 56724622,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 20267,
+      "url": "https://issues.chromium.org/action/issues/343302586/attachments/56724622?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 56724623,
+      "filename": "features1.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 338129,
+      "url": "https://issues.chromium.org/action/issues/343302586/attachments/56724623?download=true",
+      "local_path": "attachments/features1.diff"
+    },
+    {
+      "id": 56724624,
+      "filename": "features2.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 338806,
+      "url": "https://issues.chromium.org/action/issues/343302586/attachments/56724624?download=true",
+      "local_path": "attachments/features2.diff"
+    },
+    {
+      "id": 56724625,
+      "filename": "main.html",
+      "mime_type": "text/html",
+      "size_bytes": 39,
+      "url": "https://issues.chromium.org/action/issues/343302586/attachments/56724625?download=true",
+      "local_path": "attachments/main.html"
+    },
+    {
+      "id": 56724626,
+      "filename": "asan1.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1413,
+      "url": "https://issues.chromium.org/action/issues/343302586/attachments/56724626?download=true",
+      "local_path": "attachments/asan1.js"
+    },
+    {
+      "id": 56724627,
+      "filename": "asan2.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1427,
+      "url": "https://issues.chromium.org/action/issues/343302586/attachments/56724627?download=true",
+      "local_path": "attachments/asan2.js"
+    },
+    {
+      "id": 56727318,
+      "filename": "uaf.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 484618099,
+      "url": "https://issues.chromium.org/action/issues/343302586/attachments/56727318?download=true",
+      "local_path": "attachments/uaf.mov"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "# Steps to reproduce the problem\n1. This vulnerability needs to be triggered on macos. I chose to compile asan from source code. It can be triggered on two different versions and is relatively stable on my Macos M3 test device. I will optimize the triggering method as much as possible in the future."
+}

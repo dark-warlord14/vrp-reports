@@ -207,7 +207,7 @@ Memory Corruption (in a sandboxed processs)
 - [asan-use-after-poison](attachments/asan-use-after-poison) (text/plain, 18.7 KB)
 - [index.html](attachments/index.html) (text/plain, 522 B)
 - [poc.mov](attachments/poc.mov) (video/quicktime, 4.3 MB)
-- [poc.mov](attachments/poc.mov) (video/quicktime, 7.3 MB)
+- poc.mov (video/quicktime, 7.3 MB)
 - [heap-buffer-overflow](attachments/heap-buffer-overflow) (text/plain, 26.9 KB)
 
 ## Timeline

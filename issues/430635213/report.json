@@ -30,7 +30,7 @@
       "mime_type": "text/plain",
       "size_bytes": 60917,
       "url": "https://issues.chromium.org/action/issues/430635213/attachments/67464821?download=true",
-      "local_path": "attachments/android_crash.hwasan.log"
+      "local_path": null
     },
     {
       "id": 67530391,
@@ -38,7 +38,7 @@
       "mime_type": "video/x-matroska",
       "size_bytes": 13096659,
       "url": "https://issues.chromium.org/action/issues/430635213/attachments/67530391?download=true",
-      "local_path": "attachments/2025-07-13 06-09-57.mkv"
+      "local_path": null
     },
     {
       "id": 67530394,
@@ -46,7 +46,7 @@
       "mime_type": "video/x-matroska",
       "size_bytes": 15853080,
       "url": "https://issues.chromium.org/action/issues/430635213/attachments/67530394?download=true",
-      "local_path": "attachments/win_crash.mkv"
+      "local_path": null
     },
     {
       "id": 67536251,
@@ -54,7 +54,7 @@
       "mime_type": "text/plain",
       "size_bytes": 93534,
       "url": "https://issues.chromium.org/action/issues/430635213/attachments/67536251?download=true",
-      "local_path": "attachments/win_crash.asan.log"
+      "local_path": null
     }
   ],
   "update_count": 57,

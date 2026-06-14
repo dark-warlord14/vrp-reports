@@ -156,7 +156,7 @@ standalone reproducer:
 - [androidoob.html](attachments/androidoob.html) (text/html, 4.1 KB)
 - [comp.spv](attachments/comp.spv) (application/octet-stream, 2.4 KB)
 - [standalone.cpp](attachments/standalone.cpp) (text/x-c++src, 7.6 KB)
-- [androidoob.html](attachments/androidoob.html) (text/html, 4.1 KB)
+- androidoob.html (text/html, 4.1 KB)
 - [androidoob2.html](attachments/androidoob2.html) (text/html, 4.2 KB)
 - [comp(2).spv](attachments/comp(2).spv) (application/octet-stream, 3.7 KB)
 

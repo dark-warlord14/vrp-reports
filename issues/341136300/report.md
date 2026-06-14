@@ -11,7 +11,7 @@
 | **Reporter** | ad...@gmail.com |
 | **Assignee** | pf...@google.com |
 | **Created** | 2024-05-16 |
-| **Bounty** | Confirmed (amount unknown) |
+| **Bounty** | $20,000.00 |
 
 ## Description
 
@@ -74,7 +74,7 @@ Reporter credit: Allen Ding
 - [chrome_devtools_exploit.mp4](attachments/chrome_devtools_exploit.mp4) (video/mp4, 784.5 KB)
 - [chrome_devtools_bug.mp4](attachments/chrome_devtools_bug.mp4) (video/mp4, 926.7 KB)
 - [Screenshot_2024-05-24_09-54-39.png](attachments/Screenshot_2024-05-24_09-54-39.png) (image/png, 77.3 KB)
-- [devtools.js](attachments/devtools.js) (text/javascript, 1.3 KB)
+- devtools.js (text/javascript, 1.3 KB)
 
 ## Timeline
 

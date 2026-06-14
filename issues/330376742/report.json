@@ -1,0 +1,56 @@
+{
+  "id": "330376742",
+  "url": "https://issues.chromium.org/issues/330376742",
+  "title": "Security: HTML injection in chrome://browser-switch/",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Enterprise>BrowserSwitcher",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ol...@gmail.com",
+  "assignee": "ni...@chromium.org",
+  "created_date": "2024-03-19T21:41:03+00:00",
+  "modified_date": "2024-06-29T15:43:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 54795186,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 218,
+      "url": "https://issues.chromium.org/action/issues/330376742/attachments/54795186?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 54795187,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 195,
+      "url": "https://issues.chromium.org/action/issues/330376742/attachments/54795187?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 54795188,
+      "filename": "1337.png",
+      "mime_type": "image/png",
+      "size_bytes": 86758,
+      "url": "https://issues.chromium.org/action/issues/330376742/attachments/54795188?download=true",
+      "local_path": "attachments/1337.png"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "VULNERABILITY DETAILS\nThe \"url\" query parameter of the chrome://browser-switch allows HTML injection when the value is a file:/// scheme URL. This vulnerability could be exploited to craft a malicious link that, when opened, displays a convincing phishing message along with a download link. \nAny att"
+}

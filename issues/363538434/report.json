@@ -1,0 +1,51 @@
+{
+  "id": "363538434",
+  "url": "https://issues.chromium.org/issues/363538434",
+  "title": "DCHECK on V8 Parser while parsing Class Static Functions",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Parser",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ta...@gmail.com",
+  "assignee": "ve...@chromium.org",
+  "created_date": "2024-09-01T16:07:19+00:00",
+  "modified_date": "2024-12-21T15:42:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "reward_amount_meta": 8000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 59072174,
+      "filename": "reduced_dcheck_class_static_function.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 61,
+      "url": "https://issues.chromium.org/action/issues/363538434/attachments/59072174?download=true",
+      "local_path": "attachments/reduced_dcheck_class_static_function.js"
+    },
+    {
+      "id": 59340910,
+      "filename": "static_unreachable.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 39,
+      "url": "https://issues.chromium.org/action/issues/363538434/attachments/59340910?download=true",
+      "local_path": "attachments/static_unreachable.js"
+    }
+  ],
+  "update_count": 94,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

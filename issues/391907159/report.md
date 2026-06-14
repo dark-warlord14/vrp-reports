@@ -383,5 +383,49 @@ Labeled LTS-Merge-Merge-132 for M132 LTS because the fix[1] was already merged t
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
+### dx...@google.com (2026-04-28)
+
+Project: v8/v8  
+
+Branch:  main  
+
+Author:  Jakob Kummerow [jkummerow@chromium.org](mailto:jkummerow@chromium.org)  
+
+Link:    <https://chromium-review.googlesource.com/7795748>
+
+[test] Add two old regression tests
+
+---
+
+
+Expand for full commit details
+```
+     
+    Bug: 391907159 
+    Change-Id: I9d4313254d7faa63b4bb462df5367da0ac3e27f8 
+    Reviewed-on: https://chromium-review.googlesource.com/c/v8/v8/+/7795748 
+    Commit-Queue: Clemens Backes <clemensb@chromium.org> 
+    Reviewed-by: Clemens Backes <clemensb@chromium.org> 
+    Auto-Submit: Jakob Kummerow <jkummerow@chromium.org> 
+    Cr-Commit-Position: refs/heads/main@{#106893}
+
+```
+
+---
+
+Files:
+
+- A `test/mjsunit/regress/wasm/regress-391907159.js`
+- A `test/mjsunit/wasm/compile-time-builtins.js`
+
+---
+
+Hash: [4b0042c2795846af9b0b0d0902e1734f14494314](https://chromiumdash.appspot.com/commit/4b0042c2795846af9b0b0d0902e1734f14494314)  
+
+Date: Tue Apr 28 12:38:25 2026
+
+
+---
+
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/391907159)*

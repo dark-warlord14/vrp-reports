@@ -315,7 +315,7 @@ Regression: N/A \
 ## Attachments
 
 - [change.txt](attachments/change.txt) (text/plain, 3.5 KB)
-- [change.txt](attachments/change.txt) (text/plain, 4.0 KB)
+- change.txt (text/plain, 4.0 KB)
 
 ## Timeline
 

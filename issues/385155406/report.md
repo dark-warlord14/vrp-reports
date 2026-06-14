@@ -87,7 +87,7 @@ Reporter credit: Alan Goodman
 
 ## Attachments
 
-- [program_20241220024106_E23EB080-4FC2-4AF7-9394-F33E868748A2_flaky.js](attachments/program_20241220024106_E23EB080-4FC2-4AF7-9394-F33E868748A2_flaky.js) (text/javascript, 16.7 KB)
+- program_20241220024106_E23EB080-4FC2-4AF7-9394-F33E868748A2_flaky.js (text/javascript, 16.7 KB)
 - [check_mod.js](attachments/check_mod.js) (text/javascript, 13.8 KB)
 - [controlled_read_mod.js](attachments/controlled_read_mod.js) (text/javascript, 49.5 KB)
 

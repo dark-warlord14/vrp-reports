@@ -1,4 +1,4 @@
-# Security: Extension popup can render over permission prompts and screen share dialog
+#  Extension popup can render over Request Payment prompts
 
 | Field | Value |
 |-------|-------|
@@ -8,10 +8,10 @@
 | **Priority** | P3 |
 | **Component** | Platform>Extensions |
 | **Platforms** | Fuchsia, Linux, Mac, Windows, ChromeOS |
-| **Reporter** | al...@alesandroortiz.com |
+| **Reporter** | sa...@gmail.com |
 | **Assignee** | ke...@chromium.org |
 | **Created** | 2024-08-23 |
-| **Bounty** | $5,000.00 |
+| **Bounty** | $3,000.00 |
 
 ## Description
 
@@ -38,8 +38,8 @@ Reporter credit: [goes here]
 
 ## Attachments
 
-- [bandicam 2024-08-24 00-49-56-017.mp4](attachments/bandicam 2024-08-24 00-49-56-017.mp4) (video/mp4, 2.7 MB)
-- [extensionpopup.zip](attachments/extensionpopup.zip) (application/zip, 2.4 KB)
+- bandicam 2024-08-24 00-49-56-017.mp4 (video/mp4, 2.7 MB)
+- extensionpopup.zip (application/zip, 2.4 KB)
 - deleted (application/octet-stream, 0 B)
 
 ## Timeline

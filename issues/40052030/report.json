@@ -1,0 +1,33 @@
+{
+  "id": "40052030",
+  "url": "https://issues.chromium.org/issues/40052030",
+  "title": "Security DCHECK failure: IsA<Derived>(from) in casting.h",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>CSS, Blink>Internals>WTF",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "an...@chromium.org",
+  "created_date": "2020-04-16T16:34:07+00:00",
+  "modified_date": "2024-01-09T01:01:54+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 6000.0,
+  "reward_amount_meta": 6000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 30,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=6087798403170304\n\nFuzzer: jesse_avalanche\nJob Type: windows_asan_chrome\nPlatform Id: windows\n\nCrash Type: Security DCHECK failure\nCrash Address: \nCrash State:\n  IsA<Derived>(from) in casting.h\n  blink::To<blink::CSSValuePair,blink::CSSValue>\n  bl"
+}

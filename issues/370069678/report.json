@@ -83,7 +83,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 3781,
       "url": "https://issues.chromium.org/action/issues/370069678/attachments/60033674?download=true",
-      "local_path": "attachments/h1.js"
+      "local_path": null
     },
     {
       "id": 60023237,
@@ -91,7 +91,7 @@
       "mime_type": "text/html",
       "size_bytes": 202172,
       "url": "https://issues.chromium.org/action/issues/370069678/attachments/60023237?download=true",
-      "local_path": "attachments/poc.html"
+      "local_path": null
     },
     {
       "id": 60023238,
@@ -107,7 +107,7 @@
       "mime_type": "text/html",
       "size_bytes": 1486,
       "url": "https://issues.chromium.org/action/issues/370069678/attachments/60043207?download=true",
-      "local_path": "attachments/min.html"
+      "local_path": null
     }
   ],
   "update_count": 73,

@@ -1,4 +1,4 @@
-# Security: Extension popup can render over permission prompts and screen share dialog
+#  Extension popup can render over PWA prompts 
 
 | Field | Value |
 |-------|-------|
@@ -7,11 +7,11 @@
 | **Severity** | S3-Low |
 | **Priority** | P3 |
 | **Component** | Platform>Extensions |
-| **Platforms** | Fuchsia, Linux, Mac, Windows, ChromeOS |
-| **Reporter** | al...@alesandroortiz.com |
-| **Assignee** | ke...@chromium.org |
+| **Platforms** | Linux, Mac, Windows, ChromeOS |
+| **Reporter** | sa...@gmail.com |
+| **Assignee** | ke...@google.com |
 | **Created** | 2024-08-15 |
-| **Bounty** | $5,000.00 |
+| **Bounty** | $1,000.00 |
 
 ## Description
 
@@ -42,7 +42,7 @@ Reporter credit: [goes here]
 - [extension.zip](attachments/extension.zip) (application/zip, 2.3 KB)
 - [bandicam 2024-08-15 11-37-54-824.mp4](attachments/bandicam 2024-08-15 11-37-54-824.mp4) (video/mp4, 2.0 MB)
 - [bandicam 2024-08-15 11-37-54-824 (1).mp4](attachments/bandicam 2024-08-15 11-37-54-824 (1).mp4) (video/mp4, 2.0 MB)
-- [extension.zip](attachments/extension.zip) (application/zip, 2.3 KB)
+- extension.zip (application/zip, 2.3 KB)
 
 ## Timeline
 

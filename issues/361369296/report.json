@@ -30,7 +30,7 @@
       "mime_type": "text/html",
       "size_bytes": 2857,
       "url": "https://issues.chromium.org/action/issues/361369296/attachments/58824398?download=true",
-      "local_path": "attachments/poc.html"
+      "local_path": null
     },
     {
       "id": 64350153,
@@ -38,7 +38,7 @@
       "mime_type": "image/png",
       "size_bytes": 267556,
       "url": "https://issues.chromium.org/action/issues/361369296/attachments/64350153?download=true",
-      "local_path": "attachments/2.png"
+      "local_path": null
     },
     {
       "id": 64346951,
@@ -46,7 +46,7 @@
       "mime_type": "image/png",
       "size_bytes": 573367,
       "url": "https://issues.chromium.org/action/issues/361369296/attachments/64346951?download=true",
-      "local_path": "attachments/1.png"
+      "local_path": null
     }
   ],
   "update_count": 69,

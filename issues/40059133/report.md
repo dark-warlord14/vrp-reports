@@ -98,7 +98,7 @@ Attached is a reproduction case that does not rely on --expose-gc or --allow-nat
 
 - [dcheck.txt](attachments/dcheck.txt) (text/plain, 4.2 KB)
 - [poc.js](attachments/poc.js) (text/plain, 898 B)
-- [poc.js](attachments/poc.js) (text/plain, 1.0 KB)
+- poc.js (text/plain, 1.0 KB)
 - [chrome.js](attachments/chrome.js) (text/plain, 14.4 KB)
 - [index.html](attachments/index.html) (text/plain, 8.3 KB)
 - [Caddyfile](attachments/Caddyfile) (text/plain, 35 B)

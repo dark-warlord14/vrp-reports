@@ -312,5 +312,9 @@ We are increasingly strict about what constitutes an "interesting" UI spoof bug 
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
+### jd...@google.com (2026-05-19)
+
+Hi, the panel reviewed the appeal. The panel has decided there is no further award to be granted and the feedback given in comment 20 above
+
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/473118648)*

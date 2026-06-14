@@ -1,0 +1,46 @@
+{
+  "id": "329130361",
+  "url": "https://issues.chromium.org/issues/329130361",
+  "title": "use-after-poison on blink::MIDIDispatcher::SessionStarted",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>WebMIDI",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2024-03-12T02:50:39+00:00",
+  "modified_date": "2024-11-04T17:34:43+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 54555840,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 6272,
+      "url": "https://issues.chromium.org/action/issues/329130361/attachments/54555840?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 54669860,
+      "filename": "EXECUTION_LOG.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 73807,
+      "url": "https://issues.chromium.org/action/issues/329130361/attachments/54669860?download=true",
+      "local_path": "attachments/EXECUTION_LOG.txt"
+    }
+  ],
+  "update_count": 79,
+  "description_snippet": "VULNERABILITY DETAILS\nuse-after-poison on blink::MIDIDispatcher::SessionStarted\n\nVERSION\nChrome Version: I tested in chromium head: ea5c6cdc94d3ca4ab0fc7f5207df5edc30609e6a\nOperating System: I tested in Windows\n\nREPRODUCTION CASE\nThis may be a competition issue that I can't reproduce reliably. I wil"
+}

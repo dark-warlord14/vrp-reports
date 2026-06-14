@@ -70,7 +70,7 @@
       "mime_type": "text/plain",
       "size_bytes": 2522,
       "url": "https://issues.chromium.org/action/issues/40053089/attachments/52919091?download=true",
-      "local_path": "attachments/background.js"
+      "local_path": "attachments/background_52919091.js"
     },
     {
       "id": 52919092,
@@ -78,7 +78,7 @@
       "mime_type": "text/plain",
       "size_bytes": 247,
       "url": "https://issues.chromium.org/action/issues/40053089/attachments/52919092?download=true",
-      "local_path": "attachments/manifest.json"
+      "local_path": "attachments/manifest_52919092.json"
     }
   ],
   "update_count": 83,

@@ -1,0 +1,70 @@
+{
+  "id": "326277812",
+  "url": "https://issues.chromium.org/issues/326277812",
+  "title": "UAF in ActiveDevicesMediaCoordinator::GotDeviceIdsOpenedForWebContents",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media>UI",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jt...@gmail.com",
+  "assignee": "br...@chromium.org",
+  "created_date": "2024-02-22T09:36:14+00:00",
+  "modified_date": "2024-11-04T21:04:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53847738,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 15758,
+      "url": "https://issues.chromium.org/action/issues/326277812/attachments/53847738?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 53847739,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1804,
+      "url": "https://issues.chromium.org/action/issues/326277812/attachments/53847739?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 53847740,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 426,
+      "url": "https://issues.chromium.org/action/issues/326277812/attachments/53847740?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53847741,
+      "filename": "fix.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 3004,
+      "url": "https://issues.chromium.org/action/issues/326277812/attachments/53847741?download=true",
+      "local_path": "attachments/fix.diff"
+    },
+    {
+      "id": 53864017,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4595850,
+      "url": "https://issues.chromium.org/action/issues/326277812/attachments/53864017?download=true",
+      "local_path": "attachments/demo.mp4"
+    }
+  ],
+  "update_count": 29,
+  "description_snippet": "**VULNERABILITY DETAILS**\n\nWhen feature kCameraMicPreview is enabled, content view of the permissions subpages in page info would contain camera and mic preview. The function `ActiveDevicesMediaCoordinator::UpdateMediaCoordinatorList` calls `WebContentsImpl::GetMediaCaptureRawDeviceIdsOpened` which"
+}

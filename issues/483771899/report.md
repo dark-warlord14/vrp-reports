@@ -1,14 +1,16 @@
-# ---
+# HTML5 Sandbox Security Model Violation with auxiliary browsing contexts being created despite the lack of "allow-popups" keyword within iframes
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [483771899](https://issues.chromium.org/issues/483771899) |
-| **Status** | Unknown |
-| **Severity** | Unknown |
-| **Priority** | Unknown |
-| **Component** | Unknown |
+| **Status** | Assigned |
+| **Severity** | S3-Low |
+| **Priority** | P3 |
+| **Component** | Blink>SecurityFeature>IFrameSandbox |
+| **Platforms** | Linux, Mac, Windows, ChromeOS |
 | **CVE IDs** | CVE-2017-2371 |
-| **Reporter** | Unknown |
+| **Reporter** | ci...@exploit.cat |
+| **Assignee** | ja...@chromium.org |
 | **Created** | 2026-02-11 |
 | **Bounty** | $1,000.00 |
 
@@ -305,10 +307,6 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 ### ci...@exploit.cat (2026-05-30)
 
 This is still an issue downstream. Was this meant to be made public?
-
-## Bounty Award
-
-> Baseline. Web Platform Privilege Escalation
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/483771899)*

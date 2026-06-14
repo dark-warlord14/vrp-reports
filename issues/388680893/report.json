@@ -29,9 +29,9 @@
   "attachments": [
     {
       "id": 62057292,
-      "filename": "index6.js",
-      "mime_type": "text/javascript",
-      "size_bytes": 1248,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
       "url": "https://issues.chromium.org/action/issues/388680893/attachments/62057292?download=true",
       "local_path": null
     },
@@ -45,9 +45,9 @@
     },
     {
       "id": 62057294,
-      "filename": "bandicam 2025-01-09 15-01-06-539.mp4",
-      "mime_type": "video/mp4",
-      "size_bytes": 2623022,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
       "url": "https://issues.chromium.org/action/issues/388680893/attachments/62057294?download=true",
       "local_path": null
     }

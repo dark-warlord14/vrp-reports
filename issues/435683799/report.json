@@ -30,7 +30,7 @@
       "mime_type": "text/html",
       "size_bytes": 2228,
       "url": "https://issues.chromium.org/action/issues/435683799/attachments/68116017?download=true",
-      "local_path": "attachments/testcase.html"
+      "local_path": null
     },
     {
       "id": 68116018,
@@ -38,7 +38,7 @@
       "mime_type": "text/plain",
       "size_bytes": 40437,
       "url": "https://issues.chromium.org/action/issues/435683799/attachments/68116018?download=true",
-      "local_path": "attachments/asan_crashlog.txt"
+      "local_path": null
     }
   ],
   "update_count": 67,

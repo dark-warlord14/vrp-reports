@@ -44,7 +44,7 @@ Reporter credit: Hafiizh (<https://www.linkedin.com/in/hafiizh-7aa6bb31/>)
 - [downloadspoofbar.html](attachments/downloadspoofbar.html) (text/plain, 628 B)
 - [bandicam 2023-10-17 07-10-46-335.mp4](attachments/bandicam 2023-10-17 07-10-46-335.mp4) (video/mp4, 2.1 MB)
 - [bandicam 2024-12-16 09-34-46-158.mp4](attachments/bandicam 2024-12-16 09-34-46-158.mp4) (video/mp4, 1.5 MB)
-- [bandicam 2024-12-16 09-34-46-158.mp4](attachments/bandicam 2024-12-16 09-34-46-158.mp4) (video/mp4, 1.5 MB)
+- bandicam 2024-12-16 09-34-46-158.mp4 (video/mp4, 1.5 MB)
 
 ## Timeline
 

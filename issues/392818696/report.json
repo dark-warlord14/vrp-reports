@@ -34,7 +34,7 @@
       "mime_type": "text/html",
       "size_bytes": 2012,
       "url": "https://issues.chromium.org/action/issues/392818696/attachments/62474568?download=true",
-      "local_path": null
+      "local_path": "attachments/spoof.html"
     },
     {
       "id": 62474569,
@@ -42,7 +42,7 @@
       "mime_type": "video/quicktime",
       "size_bytes": 8162668,
       "url": "https://issues.chromium.org/action/issues/392818696/attachments/62474569?download=true",
-      "local_path": null
+      "local_path": "attachments/bypass _ chrome.mov"
     }
   ],
   "update_count": 66,

@@ -35,7 +35,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1,
       "url": "https://issues.chromium.org/action/issues/40052718/attachments/53068611?download=true",
-      "local_path": "attachments/download.txt"
+      "local_path": null
     },
     {
       "id": 53068612,
@@ -43,7 +43,7 @@
       "mime_type": "text/plain",
       "size_bytes": 113,
       "url": "https://issues.chromium.org/action/issues/40052718/attachments/53068612?download=true",
-      "local_path": "attachments/iframe.html"
+      "local_path": null
     },
     {
       "id": 53068613,

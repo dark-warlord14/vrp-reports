@@ -1,14 +1,15 @@
-# Improve User Gesture detection
+# window.open doesn't correctly consume user gestures on IOS and Android
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [384277487](https://issues.chromium.org/issues/384277487) |
-| **Status** | Accepted |
-| **Severity** | S0-Critical |
+| **Status** | Assigned |
+| **Severity** | S3-Low |
 | **Priority** | P4 |
-| **Component** | Mobile>iOSWeb |
+| **Component** | UI>Browser>Mobile |
 | **Platforms** | iOS |
-| **Reporter** | mr...@chromium.org |
+| **Reporter** | el...@gmail.com |
+| **Assignee** | mi...@google.com |
 | **Created** | 2024-12-15 |
 | **Bounty** | $1,000.00 |
 
@@ -59,8 +60,8 @@ Reporter credit: hakupiku
 
 ## Attachments
 
-- [chrome_popups2.html](attachments/chrome_popups2.html) (text/html, 1.2 KB)
-- [crbug384277487.zip](attachments/crbug384277487.zip) (application/zip, 101.6 KB)
+- chrome_popups2.html (text/html, 1.2 KB)
+- crbug384277487.zip (application/zip, 101.6 KB)
 
 ## Timeline
 
@@ -381,10 +382,6 @@ Updating this issue to reflect the low potential for security impact and the imp
 ### ch...@google.com (2025-05-16)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> for report of lower impact issue where the potential for user harm are more DOS / abuse side rather than potential for security harm; we were able to make a helpful change so the reward acknowledges that
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/384277487)*

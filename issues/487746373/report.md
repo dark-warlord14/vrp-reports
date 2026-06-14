@@ -1,11 +1,11 @@
-# Debug check failed: IsInBounds(index).
+# Concurrent GSAB Growth Causes OOB Write in Key Enumeration
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [487746373](https://issues.chromium.org/issues/487746373) |
 | **Status** | Assigned |
 | **Severity** | S3-Low |
-| **Priority** | P2 |
+| **Priority** | P1 |
 | **Component** | Blink>JavaScript>Runtime |
 | **Platforms** | Android, Fuchsia, Linux, Mac, Windows, ChromeOS |
 | **Chrome Version** | V8 version 14.7.0 (candidate) |
@@ -127,7 +127,7 @@ Regression: N/A \
 - deleted (application/octet-stream, 0 B)
 - [worker.js](attachments/worker.js) (text/javascript, 561 B)
 - [poc.js](attachments/poc.js) (text/javascript, 254 B)
-- [worker.js](attachments/worker.js) (text/javascript, 226 B)
+- worker.js (text/javascript, 226 B)
 
 ## Timeline
 
@@ -694,10 +694,6 @@ Date: Thu May 7 02:38:02 2026
 ### ch...@google.com (2026-06-10)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> Baseline with bisect. Memory corruption in a sandboxed process
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/487746373)*

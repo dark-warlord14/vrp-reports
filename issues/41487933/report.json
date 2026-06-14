@@ -19,7 +19,7 @@
   "reporter": "ha...@gmail.com",
   "assignee": "cr...@chromium.org",
   "created_date": "2024-01-03T20:49:14+00:00",
-  "modified_date": "2025-12-28T17:25:48+00:00",
+  "modified_date": "2026-05-27T20:11:23+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 8000.0,
@@ -99,9 +99,9 @@
       "mime_type": "text/plain",
       "size_bytes": 725,
       "url": "https://issues.chromium.org/action/issues/41487933/attachments/53225508?download=true",
-      "local_path": "attachments/exp2.html"
+      "local_path": null
     }
   ],
-  "update_count": 61,
+  "update_count": 62,
   "description_snippet": "**VULNERABILITY DETAILS**   \nIt's possible to have two cross-origin parents with insufficient framing protections use the same session history entry when navigating history by using location.replace(). By creating a history entry in a subframe, then replacing the parent frame's active history entry"
 }

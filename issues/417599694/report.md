@@ -210,12 +210,12 @@ Regression: N/A
 
 ## Attachments
 
-- out_better1crash-a849b610d97bc4bf8be154b2d226a4353b8fd93e (application/octet-stream, 46 B)
-- image_operations_resize_fuzzer__better (application/x-sharedlib, 8.2 MB)
-- image_operations_resize_fuzzer__better.cc (text/x-c++src, 2.0 KB)
-- logv142.asan (application/octet-stream, 15.1 KB)
-- poc.zip (application/zip, 803.7 KB)
-- repro.webm (video/webm, 6.3 MB)
+- [out_better1crash-a849b610d97bc4bf8be154b2d226a4353b8fd93e](attachments/out_better1crash-a849b610d97bc4bf8be154b2d226a4353b8fd93e) (application/octet-stream, 46 B)
+- [image_operations_resize_fuzzer__better](attachments/image_operations_resize_fuzzer_better) (application/x-sharedlib, 8.2 MB)
+- [image_operations_resize_fuzzer__better.cc](attachments/image_operations_resize_fuzzer_better.cc) (text/x-c++src, 2.0 KB)
+- [logv142.asan](attachments/logv142.asan) (application/octet-stream, 15.1 KB)
+- [poc.zip](attachments/poc.zip) (application/zip, 803.7 KB)
+- [repro.webm](attachments/repro.webm) (video/webm, 6.3 MB)
 
 ## Timeline
 

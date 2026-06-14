@@ -1,0 +1,46 @@
+{
+  "id": "40051242",
+  "url": "https://issues.chromium.org/issues/40051242",
+  "title": "Security: fullscreen notification spoof (repro issue 882812)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>FullScreen",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "av...@chromium.org",
+  "created_date": "2020-01-15T14:04:21+00:00",
+  "modified_date": "2024-01-09T01:31:43+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52879493,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 336,
+      "url": "https://issues.chromium.org/action/issues/40051242/attachments/52879493?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52879514,
+      "filename": "screen.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 734305,
+      "url": "https://issues.chromium.org/action/issues/40051242/attachments/52879514?download=true",
+      "local_path": "attachments/screen.mov"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "Chrome Version: 81.0.4028.0 (Official Build) canary (64-bit)  \nOperating System: Windows 7  \n  \n**REPRODUCTION CASE**   \n1. Go to http://lbstyle.github.io/ni.html  \n2. Click on the button   \n  \nthe bubble can show up over fullscreen mode and hide the fullscreen notification."
+}

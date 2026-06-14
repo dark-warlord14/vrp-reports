@@ -1,0 +1,46 @@
+{
+  "id": "346835902",
+  "url": "https://issues.chromium.org/issues/346835902",
+  "title": "Debug check failed: Object::FitsRepresentation(*object, representation). in v8",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript, Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "ol...@chromium.org",
+  "created_date": "2024-06-13T03:36:40+00:00",
+  "modified_date": "2024-09-20T15:41:20+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "reward_amount_meta": 8000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 57136464,
+      "filename": "output_poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1237,
+      "url": "https://issues.chromium.org/action/issues/346835902/attachments/57136464?download=true",
+      "local_path": "attachments/output_poc.js"
+    },
+    {
+      "id": 57143453,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 456,
+      "url": "https://issues.chromium.org/action/issues/346835902/attachments/57143453?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "VULNERABILITY DETAILS\n## INTRODUCE\nAfter bisect, it was determined that following commit caused this problem.\n\n- Commit Info\n    - Version: 94239\n    - link: https://crrev.com/d8bc0da831599b038cabab63b45b63cc28db2687 \n- Commit Message\n\n```\ncommit d8bc0da831599b038cabab63b45b63cc28db2687\nAuthor: Oliv"
+}

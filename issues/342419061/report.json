@@ -1,0 +1,47 @@
+{
+  "id": "342419061",
+  "url": "https://issues.chromium.org/issues/342419061",
+  "title": "UaF in LensOverlayController::~LensOverlayController",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": "127.0.6496.0 ",
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "er...@chromium.org",
+  "created_date": "2024-05-24T01:00:21+00:00",
+  "modified_date": "2024-11-04T17:16:52+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 56632171,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 24818,
+      "url": "https://issues.chromium.org/action/issues/342419061/attachments/56632171?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 56630410,
+      "filename": "Screencast from 24 ماي, 2024 +01 01:50:15.webm",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3803198,
+      "url": "https://issues.chromium.org/action/issues/342419061/attachments/56630410?download=true",
+      "local_path": "attachments/Screencast from 24 ماي, 2024 +01 01_50_15.webm"
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "# Steps to reproduce the problem\n1. Run Chromium \n2. Open a new window \n3. Right-click in the opened window and select \"Search with Google Lens\" and move the tab to other window \n4. Close the tab \n\n# Problem Description\nUaF in LensOverlayController::~LensOverlayController\n\n# Summary\nUaF in LensOverl"
+}

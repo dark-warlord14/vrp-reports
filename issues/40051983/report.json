@@ -1,0 +1,49 @@
+{
+  "id": "40051983",
+  "url": "https://issues.chromium.org/issues/40051983",
+  "title": "Security: PDFium (XFA) Use-after-free in function CPDFXFA_Page::GetFirstOrLastXFAAnnot",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hu...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2020-04-10T02:51:22+00:00",
+  "modified_date": "2020-07-21T19:00:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53165163,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 9776,
+      "url": "https://issues.chromium.org/action/issues/40051983/attachments/53165163?download=true",
+      "local_path": "attachments/poc.pdf"
+    },
+    {
+      "id": 53165164,
+      "filename": "log_crash.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18524,
+      "url": "https://issues.chromium.org/action/issues/40051983/attachments/53165164?download=true",
+      "local_path": "attachments/log_crash.txt"
+    }
+  ],
+  "update_count": 24,
+  "description_snippet": "PDFium (XFA) Use-after-free in function CPDFXFA_Page::GetFirstOrLastXFAAnnot  \n  \n**VERSION**   \n  \nOperating System: Windows 10 64bit  \nChrome with enabled XFA PDFium  \n  \n**REPRODUCTION CASE**   \n  \nOpen file `poc.pdf` in chrome.exe  \nClick on a blank space of the first page and press Shift-Tab"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "40052834",
+  "url": "https://issues.chromium.org/issues/40052834",
+  "title": "Security: Type confusion in Promise.allSettled",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2020-07-14T03:36:07+00:00",
+  "modified_date": "2024-08-11T21:23:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53341379,
+      "filename": "v8_poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 946,
+      "url": "https://issues.chromium.org/action/issues/40052834/attachments/53341379?download=true",
+      "local_path": "attachments/v8_poc.js"
+    }
+  ],
+  "update_count": 84,
+  "description_snippet": "from b/161151868:  \n  \n(1) The Chrome vulnerability in v8 js engine  \n**VULNERABILITY DETAILS**   \n  \nType confusion in Promise.allSettled  \n  \nWhen user calls Promise.allSettled, v8 would call following functions:  \nPromiseAllSettled ---> GeneratePromiseAll ---> PerformPromiseAll  \n  \nIn torque fun"
+}

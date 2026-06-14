@@ -35,7 +35,7 @@
       "mime_type": "text/x-python",
       "size_bytes": 3556,
       "url": "https://issues.chromium.org/action/issues/361461526/attachments/58846156?download=true",
-      "local_path": "attachments/genskpic_POSTFIX.py"
+      "local_path": null
     },
     {
       "id": 58846157,
@@ -43,7 +43,7 @@
       "mime_type": "text/html",
       "size_bytes": 191,
       "url": "https://issues.chromium.org/action/issues/361461526/attachments/58846157?download=true",
-      "local_path": "attachments/index.html"
+      "local_path": null
     },
     {
       "id": 58846158,
@@ -51,7 +51,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 6835,
       "url": "https://issues.chromium.org/action/issues/361461526/attachments/58846158?download=true",
-      "local_path": "attachments/chromium.diff"
+      "local_path": null
     }
   ],
   "update_count": 88,

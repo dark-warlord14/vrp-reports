@@ -137,8 +137,8 @@ Reporter credit: Alesandro Ortiz <https://AlesandroOrtiz.com>
 
 ## Attachments
 
-- [filepicker-ksave-cr.patch](attachments/filepicker-ksave-cr.patch) (text/x-diff, 3.4 KB)
-- [download-theft-input-ksave-cr.html](attachments/download-theft-input-ksave-cr.html) (text/html, 6.1 KB)
+- filepicker-ksave-cr.patch (text/x-diff, 3.4 KB)
+- download-theft-input-ksave-cr.html (text/html, 6.1 KB)
 - [download-theft-input-ksave-cr.mp4](attachments/download-theft-input-ksave-cr.mp4) (video/mp4, 3.7 MB)
 - [set-cookies.php](attachments/set-cookies.php) (application/x-httpd-php, 1.3 KB)
 - [get-cookies.php](attachments/get-cookies.php) (application/x-httpd-php, 527 B)

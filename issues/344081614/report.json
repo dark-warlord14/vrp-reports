@@ -1,0 +1,29 @@
+{
+  "id": "344081614",
+  "url": "https://issues.chromium.org/issues/344081614",
+  "title": "LUCI Auth service \"auth-trusted-services\" group bypass",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P3",
+  "component": "Infra>LUCI",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "125.0.0.0",
+  "cve_ids": [],
+  "reporter": "nd...@protonmail.com",
+  "assignee": "ar...@google.com",
+  "created_date": "2024-06-02T02:53:46+00:00",
+  "modified_date": "2024-11-04T17:29:03+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 41,
+  "description_snippet": "# Steps to reproduce the problem\n- Login to this URL as any normal google user.\nhttps://accounts.google.com/o/oauth2/v2/auth?gsiwebsdk=3&client_id=446450136466-tmlcmovb9hnoh8rhs39846vmmd0rrsl0.apps.googleusercontent.com&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&redirect_uri=http"
+}

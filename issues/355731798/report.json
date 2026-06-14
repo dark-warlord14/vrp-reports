@@ -1,0 +1,51 @@
+{
+  "id": "355731798",
+  "url": "https://issues.chromium.org/issues/355731798",
+  "title": "Heap-Buffer-Overflow on Blink Renderer leads to Segmentation Fault",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Fonts",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ta...@gmail.com",
+  "assignee": "ko...@chromium.org",
+  "created_date": "2024-07-27T11:50:53+00:00",
+  "modified_date": "2024-11-20T15:42:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58225590,
+      "filename": "chrome_official_127.0.6533.72_segfault.html",
+      "mime_type": "text/html",
+      "size_bytes": 2339,
+      "url": "https://issues.chromium.org/action/issues/355731798/attachments/58225590?download=true",
+      "local_path": "attachments/chrome_official_127.0.6533.72_segfault.html"
+    },
+    {
+      "id": 58225591,
+      "filename": "segmentation-fault-UTF16TextIterator.html",
+      "mime_type": "text/html",
+      "size_bytes": 1459,
+      "url": "https://issues.chromium.org/action/issues/355731798/attachments/58225591?download=true",
+      "local_path": "attachments/segmentation-fault-UTF16TextIterator.html"
+    }
+  ],
+  "update_count": 169,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

@@ -14,7 +14,7 @@
   "reporter": "de...@gmail.com",
   "assignee": "jr...@google.com",
   "created_date": "2024-07-15T00:59:53+00:00",
-  "modified_date": "2026-03-05T16:43:46+00:00",
+  "modified_date": "2026-06-08T16:17:07+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 10000.0,
@@ -33,6 +33,6 @@
       "local_path": "attachments/poc.wgsl"
     }
   ],
-  "update_count": 79,
+  "update_count": 81,
   "description_snippet": "## REPRODUCE\n1. Download Dawn as follow: https://dawn.googlesource.com/dawn/+/HEAD/docs/building.md\n2. gn gen out/tint\n3. ninja -C out/tint tint\n4. out/tint/tint poc.wgsl\n\n## CRASH LOG\n```\n../../src/tint/lang/wgsl/resolver/uniformity.cc:157 internal compiler error: TINT_ASSERT(to != nullptr)\n*******"
 }

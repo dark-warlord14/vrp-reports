@@ -1,17 +1,17 @@
-# V8 Sandbox Bypass: compiled JS-to-WASM wrappers don't guard against `trusted_function_data` overwrites
+# JSPI stack switching breaks lazy deoptimization guarantees, leading to type confusion
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [365376497](https://issues.chromium.org/issues/365376497) |
-| **Status** | Fixed |
-| **Severity** | S4-Minimal |
-| **Priority** | P3 |
+| **Status** | Assigned |
+| **Severity** | S3-Low |
+| **Priority** | P1 |
 | **Component** | Blink>JavaScript>WebAssembly |
 | **Platforms** | Android, Fuchsia, Linux, Mac, Windows, ChromeOS |
 | **Reporter** | ma...@popax21.dev |
-| **Assignee** | jk...@chromium.org |
+| **Assignee** | th...@chromium.org |
 | **Created** | 2024-09-08 |
-| **Bounty** | $5,000.00 |
+| **Bounty** | $55,000.00 |
 
 ## Description
 

@@ -147,7 +147,7 @@ Memory Corruption (in a non-sandboxed process)
 
 ## Attachments
 
-- 2026-01-14 05-47-59.mp4 (video/mp4, 12.9 MB)
+- [2026-01-14 05-47-59.mp4](attachments/2026-01-14 05-47-59.mp4) (video/mp4, 12.9 MB)
 - [testing.html](attachments/testing.html) (text/html, 11.0 KB)
 
 ## Timeline

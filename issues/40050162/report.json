@@ -1,0 +1,57 @@
+{
+  "id": "40050162",
+  "url": "https://issues.chromium.org/issues/40050162",
+  "title": "Security: tel: URL scheme reference origin spoof",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Sharing",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "kn...@chromium.org",
+  "created_date": "2019-09-19T02:29:51+00:00",
+  "modified_date": "2024-01-08T22:35:28+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52974886,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1133,
+      "url": "https://issues.chromium.org/action/issues/40050162/attachments/52974886?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52974887,
+      "filename": "Screen Shot 2019-09-19 at 03.29.09.png",
+      "mime_type": "image/png",
+      "size_bytes": 493547,
+      "url": "https://issues.chromium.org/action/issues/40050162/attachments/52974887?download=true",
+      "local_path": "attachments/Screen Shot 2019-09-19 at 03.29.09.png"
+    },
+    {
+      "id": 52974908,
+      "filename": "testcase.html",
+      "mime_type": "text/plain",
+      "size_bytes": 163,
+      "url": "https://issues.chromium.org/action/issues/40050162/attachments/52974908?download=true",
+      "local_path": "attachments/testcase.html"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "Chrome Version: 79.0.3917.0   \nOperating System: Mac  \n  \n**REPRODUCTION CASE**   \nThis is another kind of spoof.    \n1. Open the testcase  \n2. Click on the button   \n  \nThe sharing dialog will display on https://www.apple.com/contact/ to call a number chosen by the attacker  \n, and in this case the"
+}

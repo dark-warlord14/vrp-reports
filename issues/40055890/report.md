@@ -39,7 +39,7 @@ Reporter credit: David Erceg
 
 ## Attachments
 
-- [asan_output_883324.txt](attachments/asan_output_883324.txt) (text/plain, 18.4 KB)
+- asan_output_883324.txt (text/plain, 18.4 KB)
 - [background.js](attachments/background.js) (text/plain, 321 B)
 - [manifest.json](attachments/manifest.json) (text/plain, 159 B)
 - [page.html](attachments/page.html) (text/plain, 98 B)

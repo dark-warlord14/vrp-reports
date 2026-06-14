@@ -119,8 +119,8 @@ Regression: N/A
 
 ## Attachments
 
-- poc.html (text/html, 3.2 KB)
-- get_mojomjs.py (text/x-python, 826 B)
+- [poc.html](attachments/poc.html) (text/html, 3.2 KB)
+- [get_mojomjs.py](attachments/get_mojomjs.py) (text/x-python, 826 B)
 
 ## Timeline
 

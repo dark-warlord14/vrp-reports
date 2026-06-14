@@ -1,0 +1,98 @@
+{
+  "id": "40054571",
+  "url": "https://issues.chromium.org/issues/40054571",
+  "title": "Talos Security Advisory for Google Chrome browser (TALOS-2021-1235)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebAudio",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "rt...@chromium.org",
+  "created_date": "2021-01-25T21:52:34+00:00",
+  "modified_date": "2024-01-09T02:55:47+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53043748,
+      "filename": "poc.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 27695,
+      "url": "https://issues.chromium.org/action/issues/40054571/attachments/53043748?download=true",
+      "local_path": "attachments/poc.zip"
+    },
+    {
+      "id": 53043749,
+      "filename": "TALOS-2021-1235 - Google_Chrome_AudioDelayDSPKernel::ProcessKRate_heap-based_buffer_overlow_vulnerability.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 9465,
+      "url": "https://issues.chromium.org/action/issues/40054571/attachments/53043749?download=true",
+      "local_path": "attachments/TALOS-2021-1235 - Google_Chrome_AudioDelayDSPKernel_ProcessKRate_heap-based_buffer_overlow_vulnerability.txt"
+    },
+    {
+      "id": 53043761,
+      "filename": "utilsAudio.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1496,
+      "url": "https://issues.chromium.org/action/issues/40054571/attachments/53043761?download=true",
+      "local_path": "attachments/utilsAudio.js"
+    },
+    {
+      "id": 53043762,
+      "filename": "README.md",
+      "mime_type": "text/plain",
+      "size_bytes": 332,
+      "url": "https://issues.chromium.org/action/issues/40054571/attachments/53043762?download=true",
+      "local_path": "attachments/README.md"
+    },
+    {
+      "id": 53043763,
+      "filename": "random.js",
+      "mime_type": "text/plain",
+      "size_bytes": 1861,
+      "url": "https://issues.chromium.org/action/issues/40054571/attachments/53043763?download=true",
+      "local_path": "attachments/random.js"
+    },
+    {
+      "id": 53043764,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 6179,
+      "url": "https://issues.chromium.org/action/issues/40054571/attachments/53043764?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53043765,
+      "filename": "nodesDefinitions.js",
+      "mime_type": "text/plain",
+      "size_bytes": 3723,
+      "url": "https://issues.chromium.org/action/issues/40054571/attachments/53043765?download=true",
+      "local_path": "attachments/nodesDefinitions.js"
+    },
+    {
+      "id": 53043766,
+      "filename": "demicmAudioShort.mp3",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 22954,
+      "url": "https://issues.chromium.org/action/issues/40054571/attachments/53043766?download=true",
+      "local_path": "attachments/demicmAudioShort.mp3"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "Google Chrome AudioDelayDSPKernel::ProcessKRate heap-based buffer overlow vulnerability\r\n\r\nSummary\r\n\r\nAn exploitable heap-based buffer overflow vulnerability exists in Google Chromium browser at least in versions 89.0.4383.0 64-bit and 90.0.4390.0 64-bit. A specially crafted HTML web page can cause"
+}

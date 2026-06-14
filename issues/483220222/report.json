@@ -1,13 +1,14 @@
 {
   "id": "483220222",
   "url": "https://issues.chromium.org/issues/483220222",
-  "title": "V8 sandbox bypass due to NativeModule swapping while module instantiation was ongoing",
-  "status": "Assigned",
+  "title": "V8 sandbox bypass: reuse `protected_uses` of `WasmDispatchTable` after grow",
+  "status": "Accepted",
   "severity": "S3-Low",
   "priority": "P2",
-  "component": "Blink>JavaScript>WebAssembly",
+  "component": "Blink>JavaScript>Sandbox, Blink>JavaScript>WebAssembly",
   "os_platforms": [
     "Android",
+    "Fuchsia",
     "Linux",
     "Mac",
     "Windows",

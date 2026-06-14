@@ -9,7 +9,7 @@
 | **Component** | Blink>WebGPU |
 | **Platforms** | Windows |
 | **Reporter** | le...@gmail.com |
-| **Assignee** | cw...@chromium.org |
+| **Assignee** | cw...@google.com |
 | **Created** | 2025-11-30 |
 | **Bounty** | $2,000.00 |
 

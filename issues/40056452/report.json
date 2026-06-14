@@ -54,7 +54,7 @@
       "mime_type": "text/plain",
       "size_bytes": 11326,
       "url": "https://issues.chromium.org/action/issues/40056452/attachments/53371037?download=true",
-      "local_path": "attachments/asan"
+      "local_path": null
     },
     {
       "id": 53371038,
@@ -62,7 +62,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1559272,
       "url": "https://issues.chromium.org/action/issues/40056452/attachments/53371038?download=true",
-      "local_path": "attachments/Demo.mp4"
+      "local_path": null
     },
     {
       "id": 53371039,
@@ -70,7 +70,7 @@
       "mime_type": "text/plain",
       "size_bytes": 757,
       "url": "https://issues.chromium.org/action/issues/40056452/attachments/53371039?download=true",
-      "local_path": "attachments/poc.html"
+      "local_path": null
     },
     {
       "id": 53371040,

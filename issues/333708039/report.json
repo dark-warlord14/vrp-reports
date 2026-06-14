@@ -1,0 +1,66 @@
+{
+  "id": "333708039",
+  "url": "https://issues.chromium.org/issues/333708039",
+  "title": "Intersection Observer v2 API fails to reliably determine target's visibility, which enables clickjacking against Google One Tap",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Geometry",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lo...@icloud.com",
+  "assignee": "sz...@chromium.org",
+  "created_date": "2024-04-10T15:21:37+00:00",
+  "modified_date": "2024-09-11T15:42:09+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 55395338,
+      "filename": "google-one-tap-clickjacking.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 21819901,
+      "url": "https://issues.chromium.org/action/issues/333708039/attachments/55395338?download=true",
+      "local_path": "attachments/google-one-tap-clickjacking.mov"
+    },
+    {
+      "id": 55445854,
+      "filename": "intersection-observer-v2-poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 92603853,
+      "url": "https://issues.chromium.org/action/issues/333708039/attachments/55445854?download=true",
+      "local_path": "attachments/intersection-observer-v2-poc.mov"
+    },
+    {
+      "id": 55445855,
+      "filename": "intersection-observer-v2-poc-ubuntu.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 67550266,
+      "url": "https://issues.chromium.org/action/issues/333708039/attachments/55445855?download=true",
+      "local_path": "attachments/intersection-observer-v2-poc-ubuntu.mov"
+    },
+    {
+      "id": 55457859,
+      "filename": "poc-intersection-observer-v2-resize.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 38336081,
+      "url": "https://issues.chromium.org/action/issues/333708039/attachments/55457859?download=true",
+      "local_path": "attachments/poc-intersection-observer-v2-resize.mov"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "VULNERABILITY DETAILS\n\nThe [Intersection Observer v2 API](https://web.dev/articles/intersectionobserver-v2) fails to correctly and reliably determine a target's visibility. The API determines that a target is visible, although it is hidden, i.e., by setting the opacity down to 0%.\n\nThe [Google One T"
+}

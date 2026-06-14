@@ -1,0 +1,62 @@
+{
+  "id": "40055247",
+  "url": "https://issues.chromium.org/issues/40055247",
+  "title": "GPU process crash below DoDrawArrays (Nvidia)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals, Internals>GPU>VendorSpecific",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ao...@gmail.com",
+  "assignee": "gm...@chromium.org",
+  "created_date": "2012-03-19T19:40:45+00:00",
+  "modified_date": "2018-04-25T23:24:19+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53321159,
+      "filename": "CanvasMatrix.js",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 11112,
+      "url": "https://issues.chromium.org/action/issues/40055247/attachments/53321159?download=true",
+      "local_path": "attachments/CanvasMatrix.js"
+    },
+    {
+      "id": 53321160,
+      "filename": "unknown-2.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 4280,
+      "url": "https://issues.chromium.org/action/issues/40055247/attachments/53321160?download=true",
+      "local_path": "attachments/unknown-2.html"
+    },
+    {
+      "id": 53321176,
+      "filename": "repro.tar.gz",
+      "mime_type": "application/x-gzip; charset=binary",
+      "size_bytes": 159187,
+      "url": "https://issues.chromium.org/action/issues/40055247/attachments/53321176?download=true",
+      "local_path": "attachments/repro.tar.gz"
+    },
+    {
+      "id": 53321225,
+      "filename": "unknown-3.html",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 1978,
+      "url": "https://issues.chromium.org/action/issues/40055247/attachments/53321225?download=true",
+      "local_path": "attachments/unknown-3.html"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nOpening the attached page causes a GPU process crash. A crash like this seems to be happening in every version from stable to current unstable, but the same repros don't seem to work for all versions. The attached partially minimized testcase works at least against https"
+}

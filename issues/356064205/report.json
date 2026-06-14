@@ -1,0 +1,38 @@
+{
+  "id": "356064205",
+  "url": "https://issues.chromium.org/issues/356064205",
+  "title": "Chromium arbitrary file create/write vulnerability",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Installer",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "127.0.6533.0",
+  "cve_ids": [],
+  "reporter": "in...@gmail.com",
+  "assignee": "ga...@chromium.org",
+  "created_date": "2024-07-29T14:28:23+00:00",
+  "modified_date": "2024-11-06T15:43:28+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58249368,
+      "filename": "POC.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 1199883,
+      "url": "https://issues.chromium.org/action/issues/356064205/attachments/58249368?download=true",
+      "local_path": "attachments/POC.zip"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "# Steps to reproduce the problem\n1. Chrome/Chromium Installer creates and writes a file chromium_installer.log(chromium) or chrome_installer.log(chrome) in C:\\Windows\\temp\n2. Since a non-admin user has write access on C:\\Windows\\temp, user can create a symlink on that to get arbitrary file create or"
+}

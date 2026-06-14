@@ -1,0 +1,127 @@
+{
+  "id": "40055233",
+  "url": "https://issues.chromium.org/issues/40055233",
+  "title": "Chromium illegally paints outside of iframe when using -webkit-box-reflect",
+  "status": "Accepted",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "Internals>Compositing",
+  "os_platforms": [
+    "Android",
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pr...@gmail.com",
+  "assignee": "wa...@chromium.org",
+  "created_date": "2021-03-17T11:16:19+00:00",
+  "modified_date": "2024-09-23T21:57:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53340355,
+      "filename": "ref.png",
+      "mime_type": "image/png",
+      "size_bytes": 67469,
+      "url": "https://issues.chromium.org/action/issues/40055233/attachments/53340355?download=true",
+      "local_path": "attachments/ref.png"
+    },
+    {
+      "id": 53340356,
+      "filename": "parent.html",
+      "mime_type": "text/plain",
+      "size_bytes": 315,
+      "url": "https://issues.chromium.org/action/issues/40055233/attachments/53340356?download=true",
+      "local_path": "attachments/parent.html"
+    },
+    {
+      "id": 53340357,
+      "filename": "iframe.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1471,
+      "url": "https://issues.chromium.org/action/issues/40055233/attachments/53340357?download=true",
+      "local_path": "attachments/iframe.html"
+    },
+    {
+      "id": 53340358,
+      "filename": "ref2.png",
+      "mime_type": "image/png",
+      "size_bytes": 276009,
+      "url": "https://issues.chromium.org/action/issues/40055233/attachments/53340358?download=true",
+      "local_path": "attachments/ref2.png"
+    },
+    {
+      "id": 53340408,
+      "filename": "iframe.html",
+      "mime_type": "text/plain",
+      "size_bytes": 217,
+      "url": "https://issues.chromium.org/action/issues/40055233/attachments/53340408?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53340418,
+      "filename": "iframe.html",
+      "mime_type": "text/plain",
+      "size_bytes": 239,
+      "url": "https://issues.chromium.org/action/issues/40055233/attachments/53340418?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53340465,
+      "filename": "main.html",
+      "mime_type": "text/plain",
+      "size_bytes": 287,
+      "url": "https://issues.chromium.org/action/issues/40055233/attachments/53340465?download=true",
+      "local_path": "attachments/main.html"
+    },
+    {
+      "id": 53340466,
+      "filename": "iframe.html",
+      "mime_type": "text/plain",
+      "size_bytes": 432,
+      "url": "https://issues.chromium.org/action/issues/40055233/attachments/53340466?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53340467,
+      "filename": "samsungs21_chrome.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 41409,
+      "url": "https://issues.chromium.org/action/issues/40055233/attachments/53340467?download=true",
+      "local_path": "attachments/samsungs21_chrome.jpg"
+    },
+    {
+      "id": 53340519,
+      "filename": "f955c742-f1ab-407a-8df4-44b3038015ca.png",
+      "mime_type": "image/png",
+      "size_bytes": 27788,
+      "url": "https://issues.chromium.org/action/issues/40055233/attachments/53340519?download=true",
+      "local_path": "attachments/f955c742-f1ab-407a-8df4-44b3038015ca.png"
+    },
+    {
+      "id": 53340524,
+      "filename": "iframe.html",
+      "mime_type": "text/plain",
+      "size_bytes": 568,
+      "url": "https://issues.chromium.org/action/issues/40055233/attachments/53340524?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53340525,
+      "filename": "Screenshot_20221018-101544_Chrome.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 58452,
+      "url": "https://issues.chromium.org/action/issues/40055233/attachments/53340525?download=true",
+      "local_path": "attachments/Screenshot_20221018-101544_Chrome.jpg"
+    }
+  ],
+  "update_count": 88,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1. open \"parent.html\" on Chrome 89.0.4389.90 (official stable).\r\n2. download \"iframe.html\" and load it by executing JS code.\r\n\r\nprepare_iframe('ifra"
+}

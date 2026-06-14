@@ -1,0 +1,44 @@
+{
+  "id": "40055111",
+  "url": "https://issues.chromium.org/issues/40055111",
+  "title": "Heap-use-after-free in WebCore::SVGStyledElement::buildPendingResourcesIfNeeded",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink, Blink>SVG",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ax...@gmail.com",
+  "assignee": "pd...@chromium.org",
+  "created_date": "2012-03-16T13:26:33+00:00",
+  "modified_date": "2018-04-25T23:24:34+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52992463,
+      "filename": "tc-16-03-12-uaf.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 574,
+      "url": "https://issues.chromium.org/action/issues/40055111/attachments/52992463?download=true",
+      "local_path": "attachments/tc-16-03-12-uaf.zip"
+    },
+    {
+      "id": 52992500,
+      "filename": "118593-2.zip",
+      "mime_type": "application/zip; charset=binary",
+      "size_bytes": 4652,
+      "url": "https://issues.chromium.org/action/issues/40055111/attachments/52992500?download=true",
+      "local_path": "attachments/118593-2.zip"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nUse after free happens when adding attribute to SVG element from imported and adopted node.  \n  \n**VERSION**   \nVersion 19.0.1068.0 (126348), Developer Build on Ubuntu 10.10  \n17.0.963.79 m, Win7 x64  \n  \n**REPRODUCTION CASE**   \nIn attachment.  \n  \n**FOR CRASHES, PLEASE"
+}

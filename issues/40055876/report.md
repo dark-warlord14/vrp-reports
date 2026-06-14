@@ -58,7 +58,7 @@ Flash Version:
 
 ## Attachments
 
-- [shapa.html](attachments/shapa.html) (text/plain, 713 B)
+- shapa.html (text/plain, 713 B)
 - [Screenshot_1.jpg](attachments/Screenshot_1.jpg) (image/jpeg, 35.0 KB)
 - [HTTP Auth_POC.mp4](attachments/HTTP Auth_POC.mp4) (video/mp4, 2.8 MB)
 - [Tue Mar 19 2024 10:19:06 GMT+0000 (Greenwich Mean Time).png](attachments/Tue Mar 19 2024 10_19_06 GMT+0000 (Greenwich Mean Time).png) (image/png, 225.1 KB)

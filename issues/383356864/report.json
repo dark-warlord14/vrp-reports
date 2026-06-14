@@ -43,7 +43,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 7635,
       "url": "https://issues.chromium.org/action/issues/383356864/attachments/61463263?download=true",
-      "local_path": "attachments/poc.js"
+      "local_path": null
     },
     {
       "id": 61512631,
@@ -51,7 +51,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 7751,
       "url": "https://issues.chromium.org/action/issues/383356864/attachments/61512631?download=true",
-      "local_path": "attachments/poc-inv.js"
+      "local_path": null
     },
     {
       "id": 61630225,
@@ -59,7 +59,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 55688,
       "url": "https://issues.chromium.org/action/issues/383356864/attachments/61630225?download=true",
-      "local_path": "attachments/exploit.js"
+      "local_path": null
     }
   ],
   "update_count": 138,

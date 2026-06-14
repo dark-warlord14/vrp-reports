@@ -227,7 +227,7 @@ Shadow gap: cc
 
 - [testcase.html](attachments/testcase.html) (text/plain, 228 B)
 - [screen.mov](attachments/screen.mov) (video/quicktime, 2.4 MB)
-- [screen.mov](attachments/screen.mov) (video/quicktime, 5.0 MB)
+- [screen.mov](attachments/screen_53212523.mov) (video/quicktime, 5.0 MB)
 
 ## Timeline
 

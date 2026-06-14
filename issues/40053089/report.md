@@ -55,8 +55,8 @@ Reporter credit: David Erceg
 - [iframe.js](attachments/iframe.js) (text/plain, 187 B)
 - [local_file.html](attachments/local_file.html) (text/plain, 1.1 KB)
 - [manifest.json](attachments/manifest.json) (text/plain, 323 B)
-- [background.js](attachments/background.js) (text/plain, 2.5 KB)
-- [manifest.json](attachments/manifest.json) (text/plain, 247 B)
+- [background.js](attachments/background_52919091.js) (text/plain, 2.5 KB)
+- [manifest.json](attachments/manifest_52919092.json) (text/plain, 247 B)
 
 ## Timeline
 

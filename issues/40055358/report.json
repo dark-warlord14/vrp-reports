@@ -1,0 +1,57 @@
+{
+  "id": "40055358",
+  "url": "https://issues.chromium.org/issues/40055358",
+  "title": "Security: Heap-use-after-free in TabDragController::EndDragImpl",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "Platform>Extensions>API",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "co...@chromium.org",
+  "created_date": "2021-03-29T01:51:23+00:00",
+  "modified_date": "2021-08-19T17:30:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53293414,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 389,
+      "url": "https://issues.chromium.org/action/issues/40055358/attachments/53293414?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53293415,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 219,
+      "url": "https://issues.chromium.org/action/issues/40055358/attachments/53293415?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53293416,
+      "filename": "screen.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 4201770,
+      "url": "https://issues.chromium.org/action/issues/40055358/attachments/53293416?download=true",
+      "local_path": "attachments/screen.mov"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "Chrome Version: 91.0.4461.0 (Official Build) canary (x86_64)  \nOperating System: MacOS  \n  \n**REPRODUCTION CASE**   \n1. Install the extension.  \n2. Drag the opened tab out of the current tab strip   \n  \n==14108==ERROR: AddressSanitizer: heap-use-after-free on address 0x61e0009e8880 at pc 0x0001214da"
+}

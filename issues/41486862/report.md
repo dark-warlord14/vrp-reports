@@ -172,7 +172,7 @@ Date:   Tue Nov 14 15:04:29 2023 +0100
 
 - [poc_code.js](attachments/poc_code.js) (text/plain, 14.4 KB)
 - [poc.js](attachments/poc.js) (text/plain, 3.2 KB)
-- [poc.js](attachments/poc.js) (text/plain, 1.3 KB)
+- poc.js (text/plain, 1.3 KB)
 
 ## Timeline
 

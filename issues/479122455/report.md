@@ -107,5 +107,25 @@ Please contact security-vrp@chromium.org with any questions.
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
+### ch...@gmail.com (2026-06-12)
+
+Dear Chrome VRP Panel,
+
+Thank you for the reward on this report. I would like to respectfully request a reassessment based on the following inconsistency.
+
+This report falls under the same vulnerability class (Security UI Spoofing, S3) as three other reports on the same surface, all rewarded during the same period:
+
+- Issue 467448811: Mini bar blank when omnibox hidden → $2,000
+- Issue 482433856: Mini bar color spoof on virtual keyboard → $2,000
+- Issue 484082189: RTL omnibox truncation → $2,000
+
+All three received $2,000 as the baseline reward for Security UI Spoofing at S3. This report was assessed at the same severity but received only $1,000 with the rationale "Low impact."
+
+I would also note that this report demonstrated a device-specific bypass of the fix for Issue 467448811, proving the original fix was incomplete for Pixel 8 and Pixel 9. Finding a bypass of an already-patched vulnerability arguably warrants at least equal treatment to the original report.
+
+I respectfully ask the panel to reconsider the reward in light of these comparable decisions.
+
+Thank you for your time.
+
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/479122455)*

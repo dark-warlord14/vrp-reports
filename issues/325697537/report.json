@@ -1,0 +1,113 @@
+{
+  "id": "325697537",
+  "url": "https://issues.chromium.org/issues/325697537",
+  "title": "UAF in BrowserView",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Accessibility",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "xi...@google.com",
+  "created_date": "2024-02-17T15:50:00+00:00",
+  "modified_date": "2024-11-04T17:33:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53656481,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 26445,
+      "url": "https://issues.chromium.org/action/issues/325697537/attachments/53656481?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 53680620,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/325697537/attachments/53680620?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53701342,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/325697537/attachments/53701342?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53710498,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/325697537/attachments/53710498?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53657470,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/325697537/attachments/53657470?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53846679,
+      "filename": "325697537.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 11033435,
+      "url": "https://issues.chromium.org/action/issues/325697537/attachments/53846679?download=true",
+      "local_path": "attachments/325697537.mp4"
+    },
+    {
+      "id": 54392546,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 309,
+      "url": "https://issues.chromium.org/action/issues/325697537/attachments/54392546?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 54392572,
+      "filename": "asan2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 25329,
+      "url": "https://issues.chromium.org/action/issues/325697537/attachments/54392572?download=true",
+      "local_path": "attachments/asan2.txt"
+    },
+    {
+      "id": 54392618,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 191,
+      "url": "https://issues.chromium.org/action/issues/325697537/attachments/54392618?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 54392547,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 221,
+      "url": "https://issues.chromium.org/action/issues/325697537/attachments/54392547?download=true",
+      "local_path": "attachments/background.js"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "VULNERABILITY DETAILS\n\nThis is a UAF in view. Root cause analysis coming soon.\n\n## Bisect\n\nBy analyzing the required feature and the manual reproduction bisect, this UAF is introduced in the commit \n\nhttps://chromium-review.googlesource.com/c/chromium/src/+/5241404\n\n\nVERSION\nChrome Version: [122.0.6"
+}

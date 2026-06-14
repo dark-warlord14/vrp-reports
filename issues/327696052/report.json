@@ -1,0 +1,71 @@
+{
+  "id": "327696052",
+  "url": "https://issues.chromium.org/issues/327696052",
+  "title": "Security: heap-use-after-free in ScopedResourceUsageQuery::NotifyObservers",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>PerformanceManager",
+  "os_platforms": [
+    "Linux",
+    "Mac"
+  ],
+  "chrome_version": "122.0.6261.94",
+  "cve_ids": [],
+  "reporter": "zh...@gmail.com",
+  "assignee": "jo...@google.com",
+  "created_date": "2024-03-01T08:36:05+00:00",
+  "modified_date": "2024-06-12T15:55:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 54291723,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 49609,
+      "url": "https://issues.chromium.org/action/issues/327696052/attachments/54291723?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 54291724,
+      "filename": "trigger.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1043,
+      "url": "https://issues.chromium.org/action/issues/327696052/attachments/54291724?download=true",
+      "local_path": "attachments/trigger.diff"
+    },
+    {
+      "id": 54296097,
+      "filename": "poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 13869418,
+      "url": "https://issues.chromium.org/action/issues/327696052/attachments/54296097?download=true",
+      "local_path": "attachments/poc.mov"
+    },
+    {
+      "id": 54316034,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 86838,
+      "url": "https://issues.chromium.org/action/issues/327696052/attachments/54316034?download=true",
+      "local_path": null
+    },
+    {
+      "id": 54346469,
+      "filename": "asan-122.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 78767,
+      "url": "https://issues.chromium.org/action/issues/327696052/attachments/54346469?download=true",
+      "local_path": "attachments/asan-122.txt"
+    }
+  ],
+  "update_count": 75,
+  "description_snippet": "# Steps to reproduce the problem\n1. In order to reproduce this vulnerability stably, we need to compile an asan chrome locally. The commit I chose to reproduce the vulnerability is:\n`git checkout 80a4b049ae9d4b5abea7333a661a1644f11b5a70`\n2. `git apply trigger.diff` can trigger vulnerabilities more s"
+}

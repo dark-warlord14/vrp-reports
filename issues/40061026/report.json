@@ -20,7 +20,7 @@
   "reporter": "vi...@gmail.com",
   "assignee": "ke...@chromium.org",
   "created_date": "2022-09-18T08:28:50+00:00",
-  "modified_date": "2025-03-27T12:43:51+00:00",
+  "modified_date": "2026-05-16T07:55:56+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 2000.0,
@@ -124,7 +124,7 @@
       "mime_type": "application/json",
       "size_bytes": 720,
       "url": "https://issues.chromium.org/action/issues/40061026/attachments/61520939?download=true",
-      "local_path": "attachments/manifest.json"
+      "local_path": null
     },
     {
       "id": 61520940,
@@ -151,6 +151,6 @@
       "local_path": "attachments/extension.zip"
     }
   ],
-  "update_count": 97,
+  "update_count": 98,
   "description_snippet": "**VERSION**   \n  \nChrome Version: 105.0.5195.127 (Official Build) (64-bit)  \nOperating System: Windows 10 Pro Version 21H1 (Build 19043.2006)  \n  \n**VULNERABILITY DETAILS**   \n  \nThis report covers some behavior previously reported in 1302159 (CVE-2022-2616), 1290213, and 1301203; expanding the impa"
 }

@@ -3423,5 +3423,20 @@ https://chromium-review.googlesource.com/5402058
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
 
+### jk...@gmail.com (2026-05-05)
+
+Bot: The poc requires modifying Chromium to reproduce.
+
+*Intented behavior, unless, demonstrated without *crafted patch**
+
+```
+Manual patch
+    ↓
+Invalid GPU state
+    ↓
+Crash
+
+```
+
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/41484151)*

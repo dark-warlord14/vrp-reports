@@ -106,8 +106,8 @@ Reporter credit: Seunghyun Lee (@0x10n) of CMU CyLab
 ## Attachments
 
 - [poc.js](attachments/poc.js) (text/javascript, 73.9 KB)
-- [poc.js](attachments/poc.js) (text/javascript, 77.2 KB)
-- [poc.js](attachments/poc.js) (text/javascript, 77.2 KB)
+- poc.js (text/javascript, 77.2 KB)
+- poc.js (text/javascript, 77.2 KB)
 - [turboshaft-typer-logging-patch.diff](attachments/turboshaft-typer-logging-patch.diff) (text/x-diff, 13.3 KB)
 - [log_unreachable.txt](attachments/log_unreachable.txt) (text/plain, 10.0 KB)
 - [log_normal.txt](attachments/log_normal.txt) (text/plain, 11.5 KB)

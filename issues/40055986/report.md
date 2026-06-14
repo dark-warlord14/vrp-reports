@@ -12,7 +12,7 @@
 | **Reporter** | se...@pipping.org |
 | **Assignee** | ja...@chromium.org |
 | **Created** | 2021-05-24 |
-| **Bounty** | Confirmed (amount unknown) |
+| **Bounty** | $500.00 |
 
 ## Description
 

@@ -110,7 +110,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1665472,
       "url": "https://issues.chromium.org/action/issues/40065483/attachments/53228229?download=true",
-      "local_path": "attachments/demo.mp4"
+      "local_path": "attachments/demo_53228229.mp4"
     },
     {
       "id": 53228333,
@@ -118,7 +118,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1665472,
       "url": "https://issues.chromium.org/action/issues/40065483/attachments/53228333?download=true",
-      "local_path": "attachments/demo.mp4"
+      "local_path": "attachments/demo_53228333.mp4"
     }
   ],
   "update_count": 70,

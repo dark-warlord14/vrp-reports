@@ -1,0 +1,29 @@
+{
+  "id": "40052766",
+  "url": "https://issues.chromium.org/issues/40052766",
+  "title": "Security DCHECK failure: unit.TextContentEnd() <= text.length() in ng_offset_mapping.cc",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Layout",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "ko...@chromium.org",
+  "created_date": "2020-07-04T01:05:59+00:00",
+  "modified_date": "2024-01-09T01:50:29+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 6000.0,
+  "reward_amount_meta": 6000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 41,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=5686589092593664\n\nFuzzer: attekett_dom_fuzzer\nJob Type: linux_asan_chrome_v8_arm\nPlatform Id: linux\n\nCrash Type: Security DCHECK failure\nCrash Address: \nCrash State:\n  unit.TextContentEnd() <= text.length() in ng_offset_mapping.cc\n  blink::NGInli"
+}

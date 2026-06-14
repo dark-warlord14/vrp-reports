@@ -60,7 +60,7 @@
       "mime_type": "text/html",
       "size_bytes": 2390,
       "url": "https://issues.chromium.org/action/issues/376497151/attachments/63015659?download=true",
-      "local_path": "attachments/popup.html"
+      "local_path": null
     },
     {
       "id": 63010321,
@@ -76,7 +76,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 1155,
       "url": "https://issues.chromium.org/action/issues/376497151/attachments/63010322?download=true",
-      "local_path": "attachments/bg-keyboard.js"
+      "local_path": null
     },
     {
       "id": 63010323,

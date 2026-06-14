@@ -32,7 +32,7 @@
       "mime_type": "text/plain",
       "size_bytes": 217,
       "url": "https://issues.chromium.org/action/issues/40054845/attachments/53017129?download=true",
-      "local_path": "attachments/tc.html"
+      "local_path": null
     },
     {
       "id": 53017160,
@@ -40,7 +40,7 @@
       "mime_type": "text/plain",
       "size_bytes": 244,
       "url": "https://issues.chromium.org/action/issues/40054845/attachments/53017160?download=true",
-      "local_path": "attachments/tc2.html"
+      "local_path": null
     }
   ],
   "update_count": 43,

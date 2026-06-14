@@ -1,0 +1,29 @@
+{
+  "id": "40053161",
+  "url": "https://issues.chromium.org/issues/40053161",
+  "title": "Debug check failed: effect_edges > 0",
+  "status": "Accepted",
+  "severity": "Unknown",
+  "priority": "P3",
+  "component": "Blink>JavaScript>Compiler",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wx...@gmail.com",
+  "assignee": "ni...@chromium.org",
+  "created_date": "2020-08-25T06:24:35+00:00",
+  "modified_date": "2024-03-07T18:28:05+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 35,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nThe following testcase crashes the latest debug build of d8.  \n  \n**VERSION**   \nV8 Version: V8 version 8.7.0 (candidate)  \nOperating System: Linux 64bit  \nV8 Flag: --allow-natives-syntax --interrupt-budget=1024  \n  \n**REPRODUCTION CASE**   \n  \nfunction main() {  \n  for"
+}

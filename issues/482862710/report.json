@@ -75,7 +75,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 8871,
       "url": "https://issues.chromium.org/action/issues/482862710/attachments/73251400?download=true",
-      "local_path": "attachments/off100_qp25_cabac.mp4"
+      "local_path": null
     },
     {
       "id": 73251401,
@@ -83,7 +83,7 @@
       "mime_type": "text/x-python-script",
       "size_bytes": 12646,
       "url": "https://issues.chromium.org/action/issues/482862710/attachments/73251401?download=true",
-      "local_path": "attachments/poc_v2.py"
+      "local_path": null
     },
     {
       "id": 73241327,
@@ -115,7 +115,7 @@
       "mime_type": "text/x-python",
       "size_bytes": 12646,
       "url": "https://issues.chromium.org/action/issues/482862710/attachments/73519943?download=true",
-      "local_path": "attachments/poc_v2.py"
+      "local_path": null
     },
     {
       "id": 73523138,

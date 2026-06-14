@@ -1,17 +1,17 @@
-# V8 Sandbox Bypass: Argument count inconsistency due to bound args double-fetch in Generate_PushBoundArguments
+# V8 Sandbox Bypass: Control flow hijack via Torque function type corruption
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [441949792](https://issues.chromium.org/issues/441949792) |
-| **Status** | Accepted |
+| **Status** | Assigned |
 | **Severity** | S3-Low |
-| **Priority** | P3 |
+| **Priority** | P2 |
 | **Component** | Blink>JavaScript>Sandbox |
 | **Platforms** | Android, Fuchsia, Linux, Mac, Windows, ChromeOS |
 | **Reporter** | se...@gmail.com |
-| **Assignee** | is...@chromium.org |
+| **Assignee** | ni...@chromium.org |
 | **Created** | 2025-08-29 |
-| **Bounty** | $5,000.00 |
+| **Bounty** | $20,000.00 |
 
 ## Description
 

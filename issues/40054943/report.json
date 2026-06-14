@@ -30,7 +30,7 @@
       "mime_type": "text/plain",
       "size_bytes": 902,
       "url": "https://issues.chromium.org/action/issues/40054943/attachments/52995100?download=true",
-      "local_path": "attachments/crash.html"
+      "local_path": null
     },
     {
       "id": 52995101,
@@ -38,7 +38,7 @@
       "mime_type": "text/plain",
       "size_bytes": 106279,
       "url": "https://issues.chromium.org/action/issues/40054943/attachments/52995101?download=true",
-      "local_path": "attachments/webgl-test-utils.js"
+      "local_path": null
     }
   ],
   "update_count": 66,

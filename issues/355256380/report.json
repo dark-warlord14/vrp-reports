@@ -1,0 +1,42 @@
+{
+  "id": "355256380",
+  "url": "https://issues.chromium.org/issues/355256380",
+  "title": "Type Confusion between WasmObject and JSObject in V8 MaglevGraphBuilder::TryBuildFastOrdinaryHasInstance",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "vi...@chromium.org",
+  "created_date": "2024-07-25T02:50:06+00:00",
+  "modified_date": "2024-11-01T15:48:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58180454,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 599,
+      "url": "https://issues.chromium.org/action/issues/355256380/attachments/58180454?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "VULNERABILITY DETAILS\n## INTRODUCE\nWithout a doubt, the true introduction of this vulnerability, like most previous confusions between wasm and js objects, can be traced back to the point where wasm arrays and wasm structs were introduced.\n\n## CRASH LOG\n- Debug output\n\n```bash\n#\n# Fatal error in ../"
+}

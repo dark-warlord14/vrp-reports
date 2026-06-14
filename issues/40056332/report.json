@@ -1,0 +1,46 @@
+{
+  "id": "40056332",
+  "url": "https://issues.chromium.org/issues/40056332",
+  "title": "Security: Content-Security-Policy bypass via Console API CSS-formatted messages",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy, Platform>DevTools",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2016-5157",
+    "CVE-2019-1986",
+    "CVE-2019-1987",
+    "CVE-2019-1988"
+  ],
+  "reporter": "gs...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2021-06-24T17:24:58+00:00",
+  "modified_date": "2022-08-02T17:32:26+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52916578,
+      "filename": "csp-console-api-bypass.php",
+      "mime_type": "text/plain",
+      "size_bytes": 2007,
+      "url": "https://issues.chromium.org/action/issues/40056332/attachments/52916578?download=true",
+      "local_path": "attachments/csp-console-api-bypass.php"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nDeveloper Tools use a separate context and do not use the corresponding web page's Content-Security-Policy.  \n  \nIf a web page uses the Console API to log user-controlled content, CSS styles can inject remote resources.  \n  \nconsole.log() supports CSS formatting if the f"
+}

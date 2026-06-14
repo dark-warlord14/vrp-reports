@@ -3,7 +3,7 @@
   "url": "https://issues.chromium.org/issues/337222641",
   "title": "Autofill Drop Down List Scroll Swaps Datalist Leading To Clickjacking",
   "status": "Accepted",
-  "severity": "S1-High",
+  "severity": "S2-Medium",
   "priority": "P3",
   "component": "UI>Browser>Autofill",
   "os_platforms": [
@@ -18,7 +18,7 @@
   "reporter": "le...@gmail.com",
   "assignee": "ta...@google.com",
   "created_date": "2024-04-26T19:16:08+00:00",
-  "modified_date": "2026-05-24T07:54:42+00:00",
+  "modified_date": "2026-06-08T07:38:28+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 1000.0,
@@ -66,7 +66,7 @@
       "mime_type": "text/html",
       "size_bytes": 1612,
       "url": "https://issues.chromium.org/action/issues/337222641/attachments/56138519?download=true",
-      "local_path": "attachments/poc.html"
+      "local_path": null
     },
     {
       "id": 56139651,
@@ -101,6 +101,6 @@
       "local_path": null
     }
   ],
-  "update_count": 79,
+  "update_count": 83,
   "description_snippet": "# Steps to reproduce the problem\n1. Upload poc.html file to your server\n2. Open the poc.html link via your windows 64 bit (Chrome Browser)\n3. Click the green box. Autofill dropdown will popup and then as you point the drop down with the mouse it will scroll downwards.\n\n# Problem Description\nWhen the"
 }

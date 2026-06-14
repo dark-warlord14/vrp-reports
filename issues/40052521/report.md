@@ -565,9 +565,9 @@ Antti Levomäki and Christian Jalio from Forcepoint
 
 ## Attachments
 
-- [bof.trace_symbolized](attachments/bof.trace_symbolized) (application/octet-stream, 37.8 KB)
-- [double_free.asan_symbolized](attachments/double_free.asan_symbolized) (application/octet-stream, 44.6 KB)
-- [canvas_bug.html](attachments/canvas_bug.html) (text/plain, 1.5 KB)
+- bof.trace_symbolized (application/octet-stream, 37.8 KB)
+- double_free.asan_symbolized (application/octet-stream, 44.6 KB)
+- canvas_bug.html (text/plain, 1.5 KB)
 
 ## Timeline
 

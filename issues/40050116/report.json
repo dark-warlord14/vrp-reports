@@ -1,0 +1,46 @@
+{
+  "id": "40050116",
+  "url": "https://issues.chromium.org/issues/40050116",
+  "title": "Security: heap overflow in radf4_ps",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "Blink>Media>Audio, Blink>WebAudio",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jo...@microsoft.com",
+  "assignee": "rt...@chromium.org",
+  "created_date": "2019-09-13T19:11:30+00:00",
+  "modified_date": "2024-01-09T01:06:37+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52890110,
+      "filename": "chrome.asan",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 16025,
+      "url": "https://issues.chromium.org/action/issues/40050116/attachments/52890110?download=true",
+      "local_path": "attachments/chrome.asan"
+    },
+    {
+      "id": 52890111,
+      "filename": "crash.html",
+      "mime_type": "text/plain",
+      "size_bytes": 124,
+      "url": "https://issues.chromium.org/action/issues/40050116/attachments/52890111?download=true",
+      "local_path": "attachments/crash.html"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "**-------------------------**   \n  \n**VULNERABILITY DETAILS**   \nAdding a panner to an offline audio context will cause a heap overflow in the \"PFFFT\" library.   \n  \n**VERSION**   \nChrome Version: Tested on commit c6e1baabea9fe771f139f00aa422a9c1cf751f7b  \nOperating System: Windows 10 x64  \n  \n**"
+}

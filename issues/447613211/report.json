@@ -59,7 +59,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 1194,
       "url": "https://issues.chromium.org/action/issues/447613211/attachments/69690538?download=true",
-      "local_path": "attachments/poc.js"
+      "local_path": null
     },
     {
       "id": 69687645,
@@ -67,7 +67,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 78347,
       "url": "https://issues.chromium.org/action/issues/447613211/attachments/69687645?download=true",
-      "local_path": "attachments/wasm-module-builder.js"
+      "local_path": null
     }
   ],
   "update_count": 83,

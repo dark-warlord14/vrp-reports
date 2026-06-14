@@ -41,7 +41,7 @@ Reporter credit: [Puf]
 ## Attachments
 
 - [POC.html](attachments/POC.html) (text/html, 2.0 KB)
-- [Reproduce Video.mp4](attachments/Reproduce Video.mp4) (video/mp4, 170.5 KB)
+- Reproduce Video.mp4 (video/mp4, 170.5 KB)
 - [video.mp4](attachments/video.mp4) (video/mp4, 24.9 KB)
 - [New POC.html](attachments/New POC.html) (text/html, 2.0 KB)
 - [#1.PNG](attachments/#1.PNG) (image/png, 105.7 KB)
@@ -53,12 +53,12 @@ Reporter credit: [Puf]
 - [mailvideo.mp4](attachments/mailvideo.mp4) (video/mp4, 65.5 KB)
 - deleted (application/octet-stream, 0 B)
 - deleted (application/octet-stream, 0 B)
-- [mailvideo.mp4](attachments/mailvideo.mp4) (video/mp4, 65.5 KB)
+- mailvideo.mp4 (video/mp4, 65.5 KB)
 - [New Latest Reproduce.mp4](attachments/New Latest Reproduce.mp4) (video/mp4, 388.4 KB)
 - deleted (application/octet-stream, 0 B)
 - deleted (application/octet-stream, 0 B)
 - [Latest Reproduce.mp4.mp4](attachments/Latest Reproduce.mp4.mp4) (video/mp4, 330.5 KB)
-- [POC.html](attachments/POC.html) (text/html, 2.9 KB)
+- POC.html (text/html, 2.9 KB)
 - [football.mp4](attachments/football.mp4) (video/mp4, 46.7 KB)
 - deleted (application/octet-stream, 0 B)
 - [Latest Repro .mp4](attachments/Latest Repro .mp4) (video/mp4, 1.1 MB)

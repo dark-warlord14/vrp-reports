@@ -1,0 +1,55 @@
+{
+  "id": "40051060",
+  "url": "https://issues.chromium.org/issues/40051060",
+  "title": "Security: Full screen notification overlap on Windows and Linux",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>FullScreen",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "av...@chromium.org",
+  "created_date": "2019-12-24T04:36:06+00:00",
+  "modified_date": "2024-01-08T23:52:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52965576,
+      "filename": "screen.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 601858,
+      "url": "https://issues.chromium.org/action/issues/40051060/attachments/52965576?download=true",
+      "local_path": "attachments/screen.mov"
+    },
+    {
+      "id": 52965577,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 171,
+      "url": "https://issues.chromium.org/action/issues/40051060/attachments/52965577?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 52965578,
+      "filename": "fullscreen.html",
+      "mime_type": "text/plain",
+      "size_bytes": 102,
+      "url": "https://issues.chromium.org/action/issues/40051060/attachments/52965578?download=true",
+      "local_path": "attachments/fullscreen.html"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "**VERSION**   \nChrome Version: 81.0.4005.0 (Official Build) canary (64-bit)  \nOperating System: Windows and Linux  \n  \n**REPRODUCTION CASE**   \nSimilar to https://crbug.com/chromium/752003.  \n  \n- Please allow pop-ups from index.html  \n  \n1. Lunch index.html  \n2. Click on the button   \n3. Click on t"
+}

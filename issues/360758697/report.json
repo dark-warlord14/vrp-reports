@@ -1,0 +1,75 @@
+{
+  "id": "360758697",
+  "url": "https://issues.chromium.org/issues/360758697",
+  "title": "Integer overflow in Skia RegionOpImpl::onPrepareDraws leads to OOB write",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Skia",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "129.0.6661.0",
+  "cve_ids": [],
+  "reporter": "hy...@gmail.com",
+  "assignee": "ja...@google.com",
+  "created_date": "2024-08-19T14:02:30+00:00",
+  "modified_date": "2024-11-28T15:42:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 15000.0,
+  "reward_amount_meta": 15000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58745298,
+      "filename": "genskpic.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 3551,
+      "url": "https://issues.chromium.org/action/issues/360758697/attachments/58745298?download=true",
+      "local_path": "attachments/genskpic.py"
+    },
+    {
+      "id": 58745299,
+      "filename": "chromium.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 6835,
+      "url": "https://issues.chromium.org/action/issues/360758697/attachments/58745299?download=true",
+      "local_path": "attachments/chromium.diff"
+    },
+    {
+      "id": 58745300,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 191,
+      "url": "https://issues.chromium.org/action/issues/360758697/attachments/58745300?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 58741599,
+      "filename": "CHROME_ASAN_LOG.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 19281,
+      "url": "https://issues.chromium.org/action/issues/360758697/attachments/58741599?download=true",
+      "local_path": "attachments/CHROME_ASAN_LOG.txt"
+    },
+    {
+      "id": 58827857,
+      "filename": "genskpic_POSTFIX.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 3556,
+      "url": "https://issues.chromium.org/action/issues/360758697/attachments/58827857?download=true",
+      "local_path": "attachments/genskpic_POSTFIX.py"
+    }
+  ],
+  "update_count": 116,
+  "description_snippet": "# Steps to reproduce the problem\n(Chromium)\n1. Apply the `chromium.diff` renderer patch to chromium.\n2. Run `genskpic.py` to generate `drawable_picture.skp.hh`, then move the generated file to `src/gpu/command_buffer/client`.\n3. Build and start the browser.\n4. Open `index.html` to trigger PoC.\n5. GP"
+}

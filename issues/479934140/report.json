@@ -55,7 +55,7 @@
       "mime_type": "text/html",
       "size_bytes": 733,
       "url": "https://issues.chromium.org/action/issues/479934140/attachments/72964450?download=true",
-      "local_path": "attachments/trigger.html"
+      "local_path": null
     },
     {
       "id": 72964451,
@@ -63,7 +63,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 2349,
       "url": "https://issues.chromium.org/action/issues/479934140/attachments/72964451?download=true",
-      "local_path": "attachments/poc_stsd"
+      "local_path": null
     }
   ],
   "update_count": 46,

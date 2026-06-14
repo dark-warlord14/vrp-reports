@@ -1,13 +1,15 @@
-# contentSettings API is too powerful
+# Security: Chrome extension able to grant itself content setting permissions due to faulty pattern matching
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [40086360](https://issues.chromium.org/issues/40086360) |
 | **Status** | Accepted |
-| **Severity** | S0-Critical |
-| **Priority** | P4 |
-| **Component** | Platform>Extensions |
-| **Reporter** | es...@chromium.org |
+| **Severity** | S3-Low |
+| **Priority** | P2 |
+| **Component** | Internals>Permissions>Model, Platform>Extensions>API |
+| **Platforms** | Android, Fuchsia, Linux, Mac, Windows, ChromeOS |
+| **Reporter** | pu...@gmail.com |
+| **Assignee** | es...@chromium.org |
 | **Created** | 2017-01-01 |
 | **Bounty** | $1,000.00 |
 
@@ -1293,10 +1295,6 @@ Despite this issue not being truly resolved, we did want to acknowledge this rep
 ### ch...@google.com (2025-05-24)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> reward for report issue that resulted in some long-term considerations contentSettings API and potential abuse of it by extensions
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40086360)*

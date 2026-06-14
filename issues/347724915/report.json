@@ -1,0 +1,46 @@
+{
+  "id": "347724915",
+  "url": "https://issues.chromium.org/issues/347724915",
+  "title": "Segfault in v8 in Builtins_JSConstructStubGeneric",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Turbofan, Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "s0...@gmail.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2024-06-17T21:58:55+00:00",
+  "modified_date": "2024-09-29T22:11:12+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 57245782,
+      "filename": "program_20240617070556_F7F6F4E5-F138-431A-BC27-3D3FE1A25E51_deterministic.fuzzil.protobuf",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 847,
+      "url": "https://issues.chromium.org/action/issues/347724915/attachments/57245782?download=true",
+      "local_path": "attachments/program_20240617070556_F7F6F4E5-F138-431A-BC27-3D3FE1A25E51_deterministic.fuzzil.protobuf"
+    },
+    {
+      "id": 57245783,
+      "filename": "program_20240617070556_F7F6F4E5-F138-431A-BC27-3D3FE1A25E51_deterministic.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1212,
+      "url": "https://issues.chromium.org/action/issues/347724915/attachments/57245783?download=true",
+      "local_path": "attachments/program_20240617070556_F7F6F4E5-F138-431A-BC27-3D3FE1A25E51_deterministic.js"
+    }
+  ],
+  "update_count": 79,
+  "description_snippet": "## VULNERABILITY DETAILS\nFuzzing revealed a segmentation fault in LTS version of V8. Please find details below. It can be reproduced easily by running the file attached against d8 using the command: d8 --expose-gc --omit-quit --future --harmony --assert-types --harmony-struct --allow-natives-syntax"
+}

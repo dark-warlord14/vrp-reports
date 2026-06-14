@@ -91,12 +91,12 @@ Found with fuzzing. I wonder if I could contribute my fuzzer as part of 'Chrome 
 
 ## Attachments
 
-- [python_poc2.zip](attachments/python_poc2.zip) (application/octet-stream, 251.2 KB)
-- [filtered.log](attachments/filtered.log) (text/plain, 6.0 KB)
-- [locking_logging.txt](attachments/locking_logging.txt) (text/plain, 52.3 KB)
-- [usrsctp2.zip](attachments/usrsctp2.zip) (application/octet-stream, 2.4 MB)
-- [usrsctp3.zip](attachments/usrsctp3.zip) (application/octet-stream, 2.3 MB)
-- [locking_logging_cookie_new.txt](attachments/locking_logging_cookie_new.txt) (text/plain, 87.6 KB)
+- python_poc2.zip (application/octet-stream, 251.2 KB)
+- filtered.log (text/plain, 6.0 KB)
+- locking_logging.txt (text/plain, 52.3 KB)
+- usrsctp2.zip (application/octet-stream, 2.4 MB)
+- usrsctp3.zip (application/octet-stream, 2.3 MB)
+- locking_logging_cookie_new.txt (text/plain, 87.6 KB)
 
 ## Timeline
 

@@ -1,0 +1,62 @@
+{
+  "id": "355139788",
+  "url": "https://issues.chromium.org/issues/355139788",
+  "title": "UAF in FacilitatedPaymentsPaymentMethodsControllerBridge",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "UI>Browser>Autofill>Payments",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "jt...@gmail.com",
+  "assignee": "lo...@google.com",
+  "created_date": "2024-07-24T13:27:12+00:00",
+  "modified_date": "2024-11-16T15:41:53+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 36000.0,
+  "reward_amount_meta": 36000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58148557,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 23274,
+      "url": "https://issues.chromium.org/action/issues/355139788/attachments/58148557?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 58148558,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 3194,
+      "url": "https://issues.chromium.org/action/issues/355139788/attachments/58148558?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 58148559,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 625,
+      "url": "https://issues.chromium.org/action/issues/355139788/attachments/58148559?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 58161674,
+      "filename": "demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4539412,
+      "url": "https://issues.chromium.org/action/issues/355139788/attachments/58161674?download=true",
+      "local_path": "attachments/demo.mp4"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "VULNERABILITY DETAILS\nWhen the web content has finished loading in the primary main frame, the browser would trigger PIX code detection if kEnablePixPayments is enabled. It calls to `ChromeFacilitatedPaymentsClient::ShowPixPaymentPrompt` after validating the PIX code received from renderer [1]. This"
+}

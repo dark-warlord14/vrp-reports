@@ -1,10 +1,10 @@
 {
   "id": "487746373",
   "url": "https://issues.chromium.org/issues/487746373",
-  "title": "Debug check failed: IsInBounds(index).",
+  "title": "Concurrent GSAB Growth Causes OOB Write in Key Enumeration",
   "status": "Assigned",
   "severity": "S3-Low",
-  "priority": "P2",
+  "priority": "P1",
   "component": "Blink>JavaScript>Runtime",
   "os_platforms": [
     "Android",
@@ -23,11 +23,11 @@
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 8000.0,
-  "reward_amount_meta": null,
-  "inclusion_reason": "award_text",
-  "award_text_found": true,
-  "award_text_source_update": 77,
-  "bounty_rationale": "Baseline with bisect. Memory corruption in a sandboxed process",
+  "reward_amount_meta": 8000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 73769547,
@@ -59,7 +59,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 226,
       "url": "https://issues.chromium.org/action/issues/487746373/attachments/73769760?download=true",
-      "local_path": "attachments/worker.js"
+      "local_path": null
     }
   ],
   "update_count": 101,

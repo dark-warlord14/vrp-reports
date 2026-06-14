@@ -33,7 +33,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1802792,
       "url": "https://issues.chromium.org/action/issues/40074918/attachments/53211705?download=true",
-      "local_path": "attachments/Bypass-AutofillCap-DEV-V120-2023-10-14_23-44-16.mp4"
+      "local_path": null
     },
     {
       "id": 53211706,
@@ -41,7 +41,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1318056,
       "url": "https://issues.chromium.org/action/issues/40074918/attachments/53211706?download=true",
-      "local_path": "attachments/Bypass-Autofill-Cap-StableV118-2023-10-14_23-40-24.mp4"
+      "local_path": null
     },
     {
       "id": 53211707,
@@ -49,7 +49,7 @@
       "mime_type": "text/plain",
       "size_bytes": 2272,
       "url": "https://issues.chromium.org/action/issues/40074918/attachments/53211707?download=true",
-      "local_path": "attachments/show-me-out3-caption.html"
+      "local_path": null
     },
     {
       "id": 53211708,
@@ -57,7 +57,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 115401,
       "url": "https://issues.chromium.org/action/issues/40074918/attachments/53211708?download=true",
-      "local_path": "attachments/tts-game-instructions.mp3"
+      "local_path": null
     },
     {
       "id": 53211709,
@@ -65,7 +65,7 @@
       "mime_type": "image/webp",
       "size_bytes": 195802,
       "url": "https://issues.chromium.org/action/issues/40074918/attachments/53211709?download=true",
-      "local_path": "attachments/wargame.webp"
+      "local_path": null
     },
     {
       "id": 53211753,
@@ -73,7 +73,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 3164133,
       "url": "https://issues.chromium.org/action/issues/40074918/attachments/53211753?download=true",
-      "local_path": "attachments/CanaryWin-V120-2023-10-16 21-25-04-382.mp4"
+      "local_path": null
     },
     {
       "id": 64627504,

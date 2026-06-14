@@ -58,7 +58,7 @@ Reporter credit: Man Yue Mo of GitHub Security Lab
 
 ## Attachments
 
-- stackcheck.js (text/plain, 879 B)
+- [stackcheck.js](attachments/stackcheck.js) (text/plain, 879 B)
 - [exploit.js](attachments/exploit.js) (text/plain, 2.8 KB)
 
 ## Timeline
@@ -777,6 +777,10 @@ This issue was migrated from crbug.com/chromium/1452137?no_tracker_redirect=1
 [Auto-CCs applied]
 [Multiple monorail components: Blink>JavaScript, Blink>JavaScript>Runtime]
 [Monorail components added to Component Tags custom field.]
+
+### os...@gmail.com (2026-06-05)
+
+deleted
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40065473)*

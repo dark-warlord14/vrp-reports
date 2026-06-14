@@ -213,7 +213,7 @@ Flash Version:
 ## Attachments
 
 - [crash.html](attachments/crash.html) (text/plain, 124 B)
-- [cache-ws.js](attachments/cache-ws.js) (text/plain, 20 B)
+- cache-ws.js (text/plain, 20 B)
 
 ## Timeline
 

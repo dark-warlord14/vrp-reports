@@ -91,7 +91,7 @@ Barath Stalin K (<https://www.linkedin.com/in/barathstalin/>)
 
 - [Chrome PIP origin Spoof.mp4](attachments/Chrome PIP origin Spoof.mp4) (video/mp4, 6.1 MB)
 - Chrome POC.mov (video/quicktime, 8.6 MB)
-- Chrome Document PIP Spoof.mp4 (video/mp4, 5.4 MB)
+- [Chrome Document PIP Spoof.mp4](attachments/Chrome Document PIP Spoof.mp4) (video/mp4, 5.4 MB)
 - [test.html](attachments/test.html) (text/html, 11.1 KB)
 - [pip-doc.html](attachments/pip-doc.html) (text/html, 1.6 KB)
 

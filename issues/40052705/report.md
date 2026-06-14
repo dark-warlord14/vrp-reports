@@ -36,7 +36,7 @@ Reporter credit: Andrew Hess (any1)
 
 ## Attachments
 
-- [chrome_update_install_mklink_exploit.mp4](attachments/chrome_update_install_mklink_exploit.mp4) (video/mp4, 4.6 MB)
+- chrome_update_install_mklink_exploit.mp4 (video/mp4, 4.6 MB)
 
 ## Timeline
 

@@ -41,8 +41,8 @@ Regression: N/A
 
 ## Attachments
 
-- spoof.html (text/html, 2.0 KB)
-- bypass ::: chrome.mov (video/quicktime, 7.8 MB)
+- [spoof.html](attachments/spoof.html) (text/html, 2.0 KB)
+- [bypass ::: chrome.mov](attachments/bypass _ chrome.mov) (video/quicktime, 7.8 MB)
 
 ## Timeline
 

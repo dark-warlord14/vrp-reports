@@ -1,15 +1,16 @@
-# Ensure not reusing ScriptResource via Blink MemoryCache across worlds
+# Chrome Extension Isolation bypass via Link headers
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [373263969](https://issues.chromium.org/issues/373263969) |
 | **Status** | Assigned |
-| **Severity** | Unknown |
+| **Severity** | S4-Minimal |
 | **Priority** | P1 |
-| **Component** | Blink>Loader, Blink>Workers |
+| **Component** | Platform>Extensions |
 | **Platforms** | Linux, Mac, Windows, ChromeOS |
-| **Reporter** | jl...@chromium.org |
-| **Assignee** | yy...@chromium.org |
+| **Chrome Version** | 131 |
+| **Reporter** | se...@gmail.com |
+| **Assignee** | jl...@chromium.org |
 | **Created** | 2024-10-14 |
 | **Bounty** | $1,000.00 |
 
@@ -512,10 +513,6 @@ Date:  Wed Dec 11 08:28:26 2024
 ### pe...@google.com (2025-02-12)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> $1,000 for report baseline / lower impact web platform privilege escalation as a carry over from the already rewarded report of crbug.com/371011220
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/373263969)*

@@ -1,0 +1,44 @@
+{
+  "id": "341432425",
+  "url": "https://issues.chromium.org/issues/341432425",
+  "title": "Security: Keyboard/Pointer Lock permission prompt does not elide origins correctly, allows origin spoof",
+  "status": "Verified",
+  "severity": "Unknown",
+  "priority": "P3",
+  "component": "UI>Browser>Permissions>Prompts",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "ta...@chromium.org",
+  "created_date": "2024-05-18T23:04:46+00:00",
+  "modified_date": "2024-10-31T15:41:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 56466282,
+      "filename": "kplock-elision.html",
+      "mime_type": "text/html",
+      "size_bytes": 2664,
+      "url": "https://issues.chromium.org/action/issues/341432425/attachments/56466282?download=true",
+      "local_path": null
+    },
+    {
+      "id": 56491567,
+      "filename": "kplock-elision.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2767843,
+      "url": "https://issues.chromium.org/action/issues/341432425/attachments/56491567?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "#### SUMMARY\nSimilar to issue 341436934, the Keyboard/Pointer Lock [1] permission prompt does not elide origins correctly, which allows the origin shown in the prompt to be spoofed.\n\nThe root cause appears to be a pattern that affects other sensitive dialogs. These other instances will be reported s"
+}

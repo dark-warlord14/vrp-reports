@@ -56,8 +56,8 @@ Reporter credit: Luan Herrera (@lbherrera\_)
 ## Attachments
 
 - deleted (application/octet-stream, 0 B)
-- [bug-1176031.html](attachments/bug-1176031.html) (text/plain, 628 B)
-- [extension.zip](attachments/extension.zip) (application/octet-stream, 721 B)
+- bug-1176031.html (text/plain, 628 B)
+- extension.zip (application/octet-stream, 721 B)
 
 ## Timeline
 

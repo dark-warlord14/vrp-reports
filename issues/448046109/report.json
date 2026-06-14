@@ -51,7 +51,7 @@
       "mime_type": "text/html",
       "size_bytes": 3430,
       "url": "https://issues.chromium.org/action/issues/448046109/attachments/69730549?download=true",
-      "local_path": "attachments/poc.html"
+      "local_path": null
     },
     {
       "id": 69730778,
@@ -59,7 +59,7 @@
       "mime_type": "text/html",
       "size_bytes": 3412,
       "url": "https://issues.chromium.org/action/issues/448046109/attachments/69730778?download=true",
-      "local_path": "attachments/poc.html"
+      "local_path": null
     }
   ],
   "update_count": 67,

@@ -1,0 +1,169 @@
+{
+  "id": "40051012",
+  "url": "https://issues.chromium.org/issues/40051012",
+  "title": "Security: 3D CSS transform and drop-shadow can draw over address bar",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Skia>Compositing",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lu...@gmail.com",
+  "assignee": "ba...@chromium.org",
+  "created_date": "2019-12-18T05:01:54+00:00",
+  "modified_date": "2024-01-08T22:43:50+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53338322,
+      "filename": "minimal.html",
+      "mime_type": "text/plain",
+      "size_bytes": 312,
+      "url": "https://issues.chromium.org/action/issues/40051012/attachments/53338322?download=true",
+      "local_path": "attachments/minimal.html"
+    },
+    {
+      "id": 53338323,
+      "filename": "screenshot.png",
+      "mime_type": "image/png",
+      "size_bytes": 13409,
+      "url": "https://issues.chromium.org/action/issues/40051012/attachments/53338323?download=true",
+      "local_path": "attachments/screenshot.png"
+    },
+    {
+      "id": 53338387,
+      "filename": "machine3_affected_chrome_version.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2362,
+      "url": "https://issues.chromium.org/action/issues/40051012/attachments/53338387?download=true",
+      "local_path": "attachments/machine3_affected_chrome_version.txt"
+    },
+    {
+      "id": 53338388,
+      "filename": "machine2_unaffected_chromium_version.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 557,
+      "url": "https://issues.chromium.org/action/issues/40051012/attachments/53338388?download=true",
+      "local_path": "attachments/machine2_unaffected_chromium_version.txt"
+    },
+    {
+      "id": 53338389,
+      "filename": "machine2_affected_chrome_version.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1929,
+      "url": "https://issues.chromium.org/action/issues/40051012/attachments/53338389?download=true",
+      "local_path": "attachments/machine2_affected_chrome_version.txt"
+    },
+    {
+      "id": 53338390,
+      "filename": "machine1_unaffected_chromium_version.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 689,
+      "url": "https://issues.chromium.org/action/issues/40051012/attachments/53338390?download=true",
+      "local_path": "attachments/machine1_unaffected_chromium_version.txt"
+    },
+    {
+      "id": 53338391,
+      "filename": "machine1_unaffected_chrome_firstrun_version.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 592,
+      "url": "https://issues.chromium.org/action/issues/40051012/attachments/53338391?download=true",
+      "local_path": "attachments/machine1_unaffected_chrome_firstrun_version.txt"
+    },
+    {
+      "id": 53338392,
+      "filename": "machine1_affected_chrome_version.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1966,
+      "url": "https://issues.chromium.org/action/issues/40051012/attachments/53338392?download=true",
+      "local_path": "attachments/machine1_affected_chrome_version.txt"
+    },
+    {
+      "id": 53338393,
+      "filename": "machine4_affected_chrome_version.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2252,
+      "url": "https://issues.chromium.org/action/issues/40051012/attachments/53338393?download=true",
+      "local_path": "attachments/machine4_affected_chrome_version.txt"
+    },
+    {
+      "id": 53338394,
+      "filename": "Vagrantfile",
+      "mime_type": "text/plain",
+      "size_bytes": 3135,
+      "url": "https://issues.chromium.org/action/issues/40051012/attachments/53338394?download=true",
+      "local_path": "attachments/Vagrantfile"
+    },
+    {
+      "id": 53338432,
+      "filename": "machine1_unaffected_chrome_firstrun_gpu.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13184,
+      "url": "https://issues.chromium.org/action/issues/40051012/attachments/53338432?download=true",
+      "local_path": "attachments/machine1_unaffected_chrome_firstrun_gpu.txt"
+    },
+    {
+      "id": 53338433,
+      "filename": "machine1_dev_affected_chrome_version.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 634,
+      "url": "https://issues.chromium.org/action/issues/40051012/attachments/53338433?download=true",
+      "local_path": "attachments/machine1_dev_affected_chrome_version.txt"
+    },
+    {
+      "id": 53338434,
+      "filename": "machine1_dev_affected_chrome_gpu.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 12727,
+      "url": "https://issues.chromium.org/action/issues/40051012/attachments/53338434?download=true",
+      "local_path": "attachments/machine1_dev_affected_chrome_gpu.txt"
+    },
+    {
+      "id": 53338435,
+      "filename": "machine1_beta_affected_chrome_subsequent_version.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2305,
+      "url": "https://issues.chromium.org/action/issues/40051012/attachments/53338435?download=true",
+      "local_path": "attachments/machine1_beta_affected_chrome_subsequent_version.txt"
+    },
+    {
+      "id": 53338436,
+      "filename": "machine1_beta_affected_chrome_gpu.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 12725,
+      "url": "https://issues.chromium.org/action/issues/40051012/attachments/53338436?download=true",
+      "local_path": "attachments/machine1_beta_affected_chrome_gpu.txt"
+    },
+    {
+      "id": 53338437,
+      "filename": "machine1_beta_affected_chrome_firstrun_version.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 604,
+      "url": "https://issues.chromium.org/action/issues/40051012/attachments/53338437?download=true",
+      "local_path": "attachments/machine1_beta_affected_chrome_firstrun_version.txt"
+    },
+    {
+      "id": 53338438,
+      "filename": "machine1_affected_chrome_subsequent_gpu.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 12676,
+      "url": "https://issues.chromium.org/action/issues/40051012/attachments/53338438?download=true",
+      "local_path": "attachments/machine1_affected_chrome_subsequent_gpu.txt"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen a block element has a 3D CSS transform (e.g. transform: translate3d),  \nCSS filters such as drop-shadow and blur can draw outside of the webpage  \nframe, including on top of the address bar. drop-shadow in particular can  \nbe used with a canvas element to draw arbit"
+}

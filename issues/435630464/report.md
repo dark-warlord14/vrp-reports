@@ -1,15 +1,13 @@
-# V8 Sandbox Bypass: In-sandbox corruption allows execution of dangerous / experimental code
+# VULNERABILITY DETAILS
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [435630464](https://issues.chromium.org/issues/435630464) |
-| **Status** | Assigned |
-| **Severity** | S3-Low |
-| **Priority** | P2 |
-| **Component** | Blink>JavaScript>Runtime |
-| **Platforms** | Android, Linux, Mac, Windows, ChromeOS |
-| **Reporter** | se...@gmail.com |
-| **Assignee** | is...@chromium.org |
+| **Status** | Unknown |
+| **Severity** | Unknown |
+| **Priority** | Unknown |
+| **Component** | Unknown |
+| **Reporter** | Unknown |
 | **Created** | 2025-08-02 |
 | **Bounty** | $20,000.00 |
 
@@ -107,7 +105,7 @@ Marking any rewards for charity in advance.
 
 ## Attachments
 
-- [v8sbx-unlock-sharedstruct.js](attachments/v8sbx-unlock-sharedstruct.js) (text/javascript, 83.9 KB)
+- v8sbx-unlock-sharedstruct.js (text/javascript, 83.9 KB)
 
 ## Timeline
 
@@ -806,6 +804,10 @@ Removing `Clusterfuzz-ignore` hotlist from some old bugs as it's preventing Clus
 ### ch...@google.com (2026-01-13)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
+
+## Bounty Award
+
+> thank you for pointing out a class of issues here
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/435630464)*

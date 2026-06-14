@@ -79,9 +79,9 @@ Reporter credit: Luan Herrera (@lbherrera\_)
 
 ## Attachments
 
-- [blob.html](attachments/blob.html) (text/html, 1.3 KB)
-- [index.html](attachments/index.html) (text/html, 359 B)
-- [repro.mp4](attachments/repro.mp4) (video/mp4, 193.3 KB)
+- blob.html (text/html, 1.3 KB)
+- index.html (text/html, 359 B)
+- repro.mp4 (video/mp4, 193.3 KB)
 
 ## Timeline
 

@@ -46,7 +46,7 @@
       "mime_type": "image/png",
       "size_bytes": 27337,
       "url": "https://issues.chromium.org/action/issues/40055040/attachments/53210644?download=true",
-      "local_path": "attachments/Screen Shot 2021-03-04 at 9.08.26 AM.png"
+      "local_path": null
     },
     {
       "id": 53210645,
@@ -54,7 +54,7 @@
       "mime_type": "image/png",
       "size_bytes": 159349,
       "url": "https://issues.chromium.org/action/issues/40055040/attachments/53210645?download=true",
-      "local_path": "attachments/Screenshot_20210304-091826.png"
+      "local_path": null
     },
     {
       "id": 53210663,
@@ -62,7 +62,7 @@
       "mime_type": "image/jpeg",
       "size_bytes": 4905667,
       "url": "https://issues.chromium.org/action/issues/40055040/attachments/53210663?download=true",
-      "local_path": "attachments/aosp1.jpg"
+      "local_path": null
     },
     {
       "id": 53210664,
@@ -70,7 +70,7 @@
       "mime_type": "image/jpeg",
       "size_bytes": 6306244,
       "url": "https://issues.chromium.org/action/issues/40055040/attachments/53210664?download=true",
-      "local_path": "attachments/aosp2.jpg"
+      "local_path": null
     },
     {
       "id": 53210665,
@@ -78,7 +78,7 @@
       "mime_type": "image/jpeg",
       "size_bytes": 5621082,
       "url": "https://issues.chromium.org/action/issues/40055040/attachments/53210665?download=true",
-      "local_path": "attachments/aosp3.jpg"
+      "local_path": null
     },
     {
       "id": 53210707,
@@ -86,7 +86,7 @@
       "mime_type": "image/png",
       "size_bytes": 291881,
       "url": "https://issues.chromium.org/action/issues/40055040/attachments/53210707?download=true",
-      "local_path": "attachments/Screenshot_20210308-072721.png"
+      "local_path": null
     },
     {
       "id": 55416651,
@@ -102,7 +102,7 @@
       "mime_type": "application/json",
       "size_bytes": 963,
       "url": "https://issues.chromium.org/action/issues/40055040/attachments/55416653?download=true",
-      "local_path": "attachments/manifest.json"
+      "local_path": null
     }
   ],
   "update_count": 53,

@@ -171,7 +171,7 @@ SUMMARY: AddressSanitizer: access-violation D:\chromium\src\third\_party\blink\r
 
 - [poc.html](attachments/poc.html) (text/plain, 579 B)
 - [ASAN.txt](attachments/ASAN.txt) (text/plain, 3.5 KB)
-- [poc.html](attachments/poc.html) (text/plain, 342 B)
+- poc.html (text/plain, 342 B)
 - [fix.patch](attachments/fix.patch) (text/plain, 1.9 KB)
 
 ## Timeline

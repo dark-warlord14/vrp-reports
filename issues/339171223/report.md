@@ -240,7 +240,7 @@ Refer to https://chromium.googlesource.com/chromium/src/+/main/base/memory/raw_p
 - [indexCanPropagatePredecessorsForPHIs.html](attachments/indexCanPropagatePredecessorsForPHIs.html) (text/html, 3.9 KB)
 - [standalone.hlsl](attachments/standalone.hlsl) (application/octet-stream, 1.1 KB)
 - [standalone.wgsl](attachments/standalone.wgsl) (application/octet-stream, 1.0 KB)
-- [s2.hlsl](attachments/s2.hlsl) (application/octet-stream, 867 B)
+- s2.hlsl (application/octet-stream, 867 B)
 - [bad.ll](attachments/bad.ll) (application/octet-stream, 13.7 KB)
 - [good.ll](attachments/good.ll) (application/octet-stream, 8.5 KB)
 - [RemoveUnstructuredExits b_339171223.png](attachments/RemoveUnstructuredExits b_339171223.png) (image/png, 122.0 KB)

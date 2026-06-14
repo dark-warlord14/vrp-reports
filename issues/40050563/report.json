@@ -1,0 +1,85 @@
+{
+  "id": "40050563",
+  "url": "https://issues.chromium.org/issues/40050563",
+  "title": "Security - UAF in OfflineAudioContext",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebAudio",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2019-5851"
+  ],
+  "reporter": "iv...@gmail.com",
+  "assignee": "ho...@chromium.org",
+  "created_date": "2019-10-29T16:06:27+00:00",
+  "modified_date": "2024-06-27T08:48:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 13370.0,
+  "reward_amount_meta": 13370.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53355649,
+      "filename": "crash1.png",
+      "mime_type": "image/png",
+      "size_bytes": 145304,
+      "url": "https://issues.chromium.org/action/issues/40050563/attachments/53355649?download=true",
+      "local_path": "attachments/crash1.png"
+    },
+    {
+      "id": 53355650,
+      "filename": "crash2.png",
+      "mime_type": "image/png",
+      "size_bytes": 135192,
+      "url": "https://issues.chromium.org/action/issues/40050563/attachments/53355650?download=true",
+      "local_path": "attachments/crash2.png"
+    },
+    {
+      "id": 53355651,
+      "filename": "crash3.png",
+      "mime_type": "image/png",
+      "size_bytes": 109988,
+      "url": "https://issues.chromium.org/action/issues/40050563/attachments/53355651?download=true",
+      "local_path": "attachments/crash3.png"
+    },
+    {
+      "id": 53355652,
+      "filename": "callstack.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7747,
+      "url": "https://issues.chromium.org/action/issues/40050563/attachments/53355652?download=true",
+      "local_path": "attachments/callstack.txt"
+    },
+    {
+      "id": 53355653,
+      "filename": "exploit.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2649,
+      "url": "https://issues.chromium.org/action/issues/40050563/attachments/53355653?download=true",
+      "local_path": "attachments/exploit.zip"
+    },
+    {
+      "id": 53355785,
+      "filename": "poc.js",
+      "mime_type": "text/plain",
+      "size_bytes": 10114,
+      "url": "https://issues.chromium.org/action/issues/40050563/attachments/53355785?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 116,
+  "description_snippet": "Hello Google team!  \nMy name is Anton Ivanov. I am working at Kaspersky Lab in position Head Of Advanced Threat Research and Detection team. We found out that exploit for Google Chrome browser is using right now in limited attacks. After redirecting victim to the malicious web page with this exploit"
+}

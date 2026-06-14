@@ -71,7 +71,7 @@ Regression: N/A
 
 Crash log
 
-### nh...@chromium.org (2025-04-03)
+### [Deleted User] (2025-04-03)
 
 kbr: Can you look at this and see if a shader workaround is appropriate here? [crbug.com/407645758](https://crbug.com/407645758) is a very similar report, but neither of them demonstrate code execution in chrome or other security impact.
 

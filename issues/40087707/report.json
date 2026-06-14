@@ -1,0 +1,87 @@
+{
+  "id": "40087707",
+  "url": "https://issues.chromium.org/issues/40087707",
+  "title": "Security: Mismatched Origin Display in WebUSB and WebBluetooth Permissions Dialogs",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>Bluetooth, Blink>USB, UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Linux",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "re...@chromium.org",
+  "created_date": "2017-05-17T08:08:07+00:00",
+  "modified_date": "2025-02-13T00:30:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53088292,
+      "filename": "webusb-permission-ui-confusion-1.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 103985,
+      "url": "https://issues.chromium.org/action/issues/40087707/attachments/53088292?download=true",
+      "local_path": "attachments/webusb-permission-ui-confusion-1.jpg"
+    },
+    {
+      "id": 53088293,
+      "filename": "webusb-permission-ui-confusion-2.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 193457,
+      "url": "https://issues.chromium.org/action/issues/40087707/attachments/53088293?download=true",
+      "local_path": "attachments/webusb-permission-ui-confusion-2.jpg"
+    },
+    {
+      "id": 53088294,
+      "filename": "webusb-perm-poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 456,
+      "url": "https://issues.chromium.org/action/issues/40087707/attachments/53088294?download=true",
+      "local_path": "attachments/webusb-perm-poc.html"
+    },
+    {
+      "id": 53088543,
+      "filename": "webbt-perm-poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 508,
+      "url": "https://issues.chromium.org/action/issues/40087707/attachments/53088543?download=true",
+      "local_path": "attachments/webbt-perm-poc.html"
+    },
+    {
+      "id": 53088613,
+      "filename": "paired.png",
+      "mime_type": "image/png",
+      "size_bytes": 12286,
+      "url": "https://issues.chromium.org/action/issues/40087707/attachments/53088613?download=true",
+      "local_path": "attachments/paired.png"
+    },
+    {
+      "id": 53088637,
+      "filename": "poc-webusb.html",
+      "mime_type": "text/plain",
+      "size_bytes": 438,
+      "url": "https://issues.chromium.org/action/issues/40087707/attachments/53088637?download=true",
+      "local_path": "attachments/poc-webusb.html"
+    },
+    {
+      "id": 53088638,
+      "filename": "poc-webbt.html",
+      "mime_type": "text/plain",
+      "size_bytes": 485,
+      "url": "https://issues.chromium.org/action/issues/40087707/attachments/53088638?download=true",
+      "local_path": "attachments/poc-webbt.html"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA race condition exists allowing a malicious origin to display a WebUSB permission request in context of an arbitrary origin such as for example https://google.com.  \n  \nSuccessful exploitation requires chrome://flags/#enable-experimental-web-platform-features to be enab"
+}

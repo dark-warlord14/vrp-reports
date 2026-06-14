@@ -321,9 +321,9 @@ Shadow gap: cc
 
 ## Attachments
 
-- [screen.mov](attachments/screen.mov) (video/quicktime, 7.3 MB)
-- [poc.html](attachments/poc.html) (text/plain, 176 B)
-- [screen.mov](attachments/screen.mov) (video/quicktime, 2.5 MB)
+- screen.mov (video/quicktime, 7.3 MB)
+- poc.html (text/plain, 176 B)
+- screen.mov (video/quicktime, 2.5 MB)
 
 ## Timeline
 

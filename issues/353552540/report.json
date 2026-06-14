@@ -1,0 +1,78 @@
+{
+  "id": "353552540",
+  "url": "https://issues.chromium.org/issues/353552540",
+  "title": "AddressSanitizer: heap-use-after-free on [SharingCoordinator start]",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Sharing",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": "126.0.0.0",
+  "cve_ids": [],
+  "reporter": "li...@gmail.com",
+  "assignee": "sd...@google.com",
+  "created_date": "2024-07-17T02:20:33+00:00",
+  "modified_date": "2024-10-29T15:42:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 57983741,
+      "filename": "1.png",
+      "mime_type": "image/png",
+      "size_bytes": 477547,
+      "url": "https://issues.chromium.org/action/issues/353552540/attachments/57983741?download=true",
+      "local_path": "attachments/1.png"
+    },
+    {
+      "id": 57983742,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 218,
+      "url": "https://issues.chromium.org/action/issues/353552540/attachments/57983742?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 57983743,
+      "filename": "uaf.log",
+      "mime_type": "text/plain",
+      "size_bytes": 64811,
+      "url": "https://issues.chromium.org/action/issues/353552540/attachments/57983743?download=true",
+      "local_path": "attachments/uaf.log"
+    },
+    {
+      "id": 57983744,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1600,
+      "url": "https://issues.chromium.org/action/issues/353552540/attachments/57983744?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 57985840,
+      "filename": "example.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 23532452,
+      "url": "https://issues.chromium.org/action/issues/353552540/attachments/57985840?download=true",
+      "local_path": "attachments/example.mov"
+    },
+    {
+      "id": 57984181,
+      "filename": "fix.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1087,
+      "url": "https://issues.chromium.org/action/issues/353552540/attachments/57984181?download=true",
+      "local_path": "attachments/fix.patch"
+    }
+  ],
+  "update_count": 62,
+  "description_snippet": "# Steps to reproduce the problem\nrepro:\n    1. apply patch.diff which simplify trigger。\n    2. run poc.html then click the share button\n\n# Problem Description\n0. `ThreadPool::PostTaskAndReplyWithResult` in the `start` function passes `currentWebState` as a parameter, but this Objc class is controlle"
+}

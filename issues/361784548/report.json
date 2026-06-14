@@ -1,0 +1,94 @@
+{
+  "id": "361784548",
+  "url": "https://issues.chromium.org/issues/361784548",
+  "title": "heap-use-after-free on media_router::MediaRouterDialogControllerAndroid::CancelPresentationRequest",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>PresentationAPI",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": "127.0.0.0",
+  "cve_ids": [],
+  "reporter": "li...@gmail.com",
+  "assignee": "mu...@google.com",
+  "created_date": "2024-08-23T19:56:19+00:00",
+  "modified_date": "2024-12-07T15:43:38+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58875327,
+      "filename": "sym.log",
+      "mime_type": "text/plain",
+      "size_bytes": 774,
+      "url": "https://issues.chromium.org/action/issues/361784548/attachments/58875327?download=true",
+      "local_path": null
+    },
+    {
+      "id": 58883680,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 218,
+      "url": "https://issues.chromium.org/action/issues/361784548/attachments/58883680?download=true",
+      "local_path": null
+    },
+    {
+      "id": 58883681,
+      "filename": "mov.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5404795,
+      "url": "https://issues.chromium.org/action/issues/361784548/attachments/58883681?download=true",
+      "local_path": null
+    },
+    {
+      "id": 58883682,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 24646,
+      "url": "https://issues.chromium.org/action/issues/361784548/attachments/58883682?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 58881599,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 3468,
+      "url": "https://issues.chromium.org/action/issues/361784548/attachments/58881599?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 58927516,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 59522,
+      "url": "https://issues.chromium.org/action/issues/361784548/attachments/58927516?download=true",
+      "local_path": null
+    },
+    {
+      "id": 58928850,
+      "filename": "sym-free.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 10309,
+      "url": "https://issues.chromium.org/action/issues/361784548/attachments/58928850?download=true",
+      "local_path": "attachments/sym-free.txt"
+    },
+    {
+      "id": 58959264,
+      "filename": "crash.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17337,
+      "url": "https://issues.chromium.org/action/issues/361784548/attachments/58959264?download=true",
+      "local_path": "attachments/crash.txt"
+    }
+  ],
+  "update_count": 69,
+  "description_snippet": "# Steps to reproduce the problem\n\nrepro: \n1. apply patch.\n2. host poc.html\n3. click `presentationRequst.start()` button\n4. wait tab close. then uaf.\nsee mov.\n\n# Problem Description\n1. variant of pattern the issue 358296941. there didn't dismiss view after `MediaRouterDialogControllerAndroid` destuct"
+}

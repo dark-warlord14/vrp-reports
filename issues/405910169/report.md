@@ -218,7 +218,7 @@ Refer to https://chromium.googlesource.com/chromium/src/+/main/base/memory/raw_p
 - [manifest.json](attachments/manifest.json) (application/json, 194 B)
 - [background.js](attachments/background.js) (text/javascript, 864 B)
 - [test.html](attachments/test.html) (text/html, 53 B)
-- [manifest.json](attachments/manifest.json) (application/json, 243 B)
+- [manifest.json](attachments/manifest_64195616.json) (application/json, 243 B)
 - [Thu Mar 27 2025 10:26:01 GMT-0400 (Eastern Daylight Time).png](attachments/Thu Mar 27 2025 10_26_01 GMT-0400 (Eastern Daylight Time).png) (image/png, 794.0 KB)
 
 ## Timeline

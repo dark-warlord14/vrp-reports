@@ -173,8 +173,8 @@ Initially discovered by a v8sbx fuzzer, which revealed not to be a v8sbx violati
 
 ## Attachments
 
-- wrapper.html (text/html, 249 B)
-- wasmtojs-tierup-isel-crash.js (text/javascript, 74.1 KB)
+- [wrapper.html](attachments/wrapper.html) (text/html, 249 B)
+- [wasmtojs-tierup-isel-crash.js](attachments/wasmtojs-tierup-isel-crash.js) (text/javascript, 74.1 KB)
 
 ## Timeline
 

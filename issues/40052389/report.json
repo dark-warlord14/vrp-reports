@@ -1,0 +1,65 @@
+{
+  "id": "40052389",
+  "url": "https://issues.chromium.org/issues/40052389",
+  "title": "Security: Improper Theme name sanitization in theme manager.",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Unknown",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ar...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2020-05-22T15:13:21+00:00",
+  "modified_date": "2021-12-24T18:29:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53344698,
+      "filename": "arun.crx",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3975,
+      "url": "https://issues.chromium.org/action/issues/40052389/attachments/53344698?download=true",
+      "local_path": "attachments/arun.crx"
+    },
+    {
+      "id": 53344699,
+      "filename": "arun.pem",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1704,
+      "url": "https://issues.chromium.org/action/issues/40052389/attachments/53344699?download=true",
+      "local_path": "attachments/arun.pem"
+    },
+    {
+      "id": 53344700,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 743,
+      "url": "https://issues.chromium.org/action/issues/40052389/attachments/53344700?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 53344805,
+      "filename": "images - 2020-11-18T123825.323.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 26930,
+      "url": "https://issues.chromium.org/action/issues/40052389/attachments/53344805?download=true",
+      "local_path": "attachments/images - 2020-11-18T123825.323.jpeg"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nA malicious theme can be created which has XSS payload in the name part of the manifest.json triggers the injected Code into the HTML when opening the colors a theme section of the theme manager and it is not sanitized. Since CSP is in place, scripts are restricted bu"
+}

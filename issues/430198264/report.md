@@ -1,17 +1,17 @@
-# Intersection Observer v2 API fails to reliably determine target's visibility, which enables clickjacking against Google One Tap
+# IntersectionObserver's visibility check can be bypassed through SVG filters
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [430198264](https://issues.chromium.org/issues/430198264) |
-| **Status** | Assigned |
+| **Status** | Accepted |
 | **Severity** | S3-Low |
 | **Priority** | P2 |
 | **Component** | Blink>Geometry |
 | **Platforms** | Android, Linux, Mac, Windows, ChromeOS |
-| **Reporter** | lo...@icloud.com |
+| **Reporter** | re...@gmail.com |
 | **Assignee** | sz...@chromium.org |
 | **Created** | 2025-07-08 |
-| **Bounty** | $5,000.00 |
+| **Bounty** | $4,000.00 |
 
 ## Description
 
@@ -47,11 +47,11 @@ Reporter credit: Lyra Rebane (rebane2001)
 
 ## Attachments
 
-- [demo.mp4](attachments/demo.mp4) (video/mp4, 168.4 KB)
-- [overlay.png](attachments/overlay.png) (image/png, 1.1 KB)
-- [target.html](attachments/target.html) (text/html, 1016 B)
-- [isvisible-bypass.html](attachments/isvisible-bypass.html) (text/html, 750 B)
-- [target.html](attachments/target.html) (text/html, 1018 B)
+- demo.mp4 (video/mp4, 168.4 KB)
+- overlay.png (image/png, 1.1 KB)
+- target.html (text/html, 1016 B)
+- isvisible-bypass.html (text/html, 750 B)
+- target.html (text/html, 1018 B)
 
 ## Timeline
 

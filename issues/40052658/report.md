@@ -62,8 +62,8 @@ Eliya Stein
 
 ## Attachments
 
-- [payload.html](attachments/payload.html) (text/plain, 427 B)
-- [origin1.html](attachments/origin1.html) (text/plain, 469 B)
+- payload.html (text/plain, 427 B)
+- origin1.html (text/plain, 469 B)
 
 ## Timeline
 

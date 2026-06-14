@@ -19,7 +19,7 @@
   "reporter": "ze...@gmail.com",
   "assignee": "pt...@chromium.org",
   "created_date": "2025-02-25T09:25:59+00:00",
-  "modified_date": "2025-06-05T12:39:04+00:00",
+  "modified_date": "2026-05-29T13:41:17+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 2000.0,
@@ -54,6 +54,6 @@
       "local_path": "attachments/bug.html"
     }
   ],
-  "update_count": 83,
+  "update_count": 87,
   "description_snippet": "VULNERABILITY DETAILS\n\nAfter updating the parent of a SlicedString, its map object may become outdated, leading to Out-of-Band memory reads during JSON serialization.\n\nVERSION\n\nV8 commit: be6d95e1118064c533c56e0547627374bd2bd434\n\n\nREPRODUCTION CASE\n\nBuild args:\n````\nis_component_build = false\nis_deb"
 }

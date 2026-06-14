@@ -34,7 +34,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 38661,
       "url": "https://issues.chromium.org/action/issues/40052521/attachments/53209104?download=true",
-      "local_path": "attachments/bof.trace_symbolized"
+      "local_path": null
     },
     {
       "id": 53209105,
@@ -42,7 +42,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 45626,
       "url": "https://issues.chromium.org/action/issues/40052521/attachments/53209105?download=true",
-      "local_path": "attachments/double_free.asan_symbolized"
+      "local_path": null
     },
     {
       "id": 53209106,
@@ -50,7 +50,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1530,
       "url": "https://issues.chromium.org/action/issues/40052521/attachments/53209106?download=true",
-      "local_path": "attachments/canvas_bug.html"
+      "local_path": null
     }
   ],
   "update_count": 51,

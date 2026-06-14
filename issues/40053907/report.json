@@ -1,0 +1,60 @@
+{
+  "id": "40053907",
+  "url": "https://issues.chromium.org/issues/40053907",
+  "title": "Bad cast in splitAnonymousBlocksAroundChild (part 3)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2012-02-20T19:55:47+00:00",
+  "modified_date": "2018-04-25T23:28:06+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53163955,
+      "filename": "beta-136184p.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 7260,
+      "url": "https://issues.chromium.org/action/issues/40053907/attachments/53163955?download=true",
+      "local_path": "attachments/beta-136184p.txt"
+    },
+    {
+      "id": 53163956,
+      "filename": "stable-136184p.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 7418,
+      "url": "https://issues.chromium.org/action/issues/40053907/attachments/53163956?download=true",
+      "local_path": "attachments/stable-136184p.txt"
+    },
+    {
+      "id": 53163957,
+      "filename": "136184p.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 7351,
+      "url": "https://issues.chromium.org/action/issues/40053907/attachments/53163957?download=true",
+      "local_path": "attachments/136184p.txt"
+    },
+    {
+      "id": 53163958,
+      "filename": "136184p.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 1044,
+      "url": "https://issues.chromium.org/action/issues/40053907/attachments/53163958?download=true",
+      "local_path": "attachments/136184p.html"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nlike 114924 but reproing on 108225  \n  \n**VERSION**   \nChrome Version:   \n  \nChromium\t19.0.1048.0 (Developer Build 122755)  \nOS\tLinux  \nWebKit\t535.22 (@108225)  \nJavaScript\tV8 3.9.7  \n  \nOperating System: linux 64 bit  \n  \n**REPRODUCTION CASE**   \n<html>  \n  <he"
+}

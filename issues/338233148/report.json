@@ -81,7 +81,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 27593486,
       "url": "https://issues.chromium.org/action/issues/338233148/attachments/55997119?download=true",
-      "local_path": "attachments/fedcm-placement.mp4"
+      "local_path": null
     },
     {
       "id": 55997120,
@@ -137,7 +137,7 @@
       "mime_type": "image/png",
       "size_bytes": 102575,
       "url": "https://issues.chromium.org/action/issues/338233148/attachments/56401717?download=true",
-      "local_path": "attachments/passkey-modal-hanging-outside-webcontents.png"
+      "local_path": null
     },
     {
       "id": 56403521,

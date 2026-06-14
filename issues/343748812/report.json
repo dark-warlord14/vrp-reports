@@ -1,0 +1,46 @@
+{
+  "id": "343748812",
+  "url": "https://issues.chromium.org/issues/343748812",
+  "title": "Security: Debug check failed: offset == var.offset() (128 vs. 112).",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "rh...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2024-05-31T01:47:28+00:00",
+  "modified_date": "2024-09-11T15:42:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 56790503,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 124539,
+      "url": "https://issues.chromium.org/action/issues/343748812/attachments/56790503?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 56807506,
+      "filename": "poc_minimize.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 4668,
+      "url": "https://issues.chromium.org/action/issues/343748812/attachments/56807506?download=true",
+      "local_path": "attachments/poc_minimize.js"
+    }
+  ],
+  "update_count": 77,
+  "description_snippet": "# Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/"
+}

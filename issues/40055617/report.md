@@ -122,7 +122,7 @@ Rong Jian and Guang Gong of Alpha Lab, Qihoo 360.
 
 ## Attachments
 
-- [poc.html](attachments/poc.html) (text/plain, 3.5 KB)
+- poc.html (text/plain, 3.5 KB)
 - [asan.log](attachments/asan.log) (text/plain, 17.6 KB)
 
 ## Timeline

@@ -131,7 +131,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 796,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/70188312?download=true",
-      "local_path": "attachments/renderer.patch"
+      "local_path": null
     },
     {
       "id": 70188969,
@@ -187,7 +187,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 1682,
       "url": "https://issues.chromium.org/action/issues/446722008/attachments/70644848?download=true",
-      "local_path": "attachments/renderer.patch"
+      "local_path": null
     },
     {
       "id": 70644877,

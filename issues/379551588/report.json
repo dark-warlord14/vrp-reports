@@ -14,7 +14,7 @@
   "reporter": "a7...@gmail.com",
   "assignee": "ds...@chromium.org",
   "created_date": "2024-11-18T17:02:57+00:00",
-  "modified_date": "2026-03-05T16:41:21+00:00",
+  "modified_date": "2026-06-08T15:13:20+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 35000.0,
@@ -54,7 +54,7 @@
       "mime_type": "text/html",
       "size_bytes": 4229,
       "url": "https://issues.chromium.org/action/issues/379551588/attachments/60979045?download=true",
-      "local_path": "attachments/androidoob.html"
+      "local_path": null
     },
     {
       "id": 61138273,
@@ -73,6 +73,6 @@
       "local_path": "attachments/comp(2).spv"
     }
   ],
-  "update_count": 134,
+  "update_count": 136,
   "description_snippet": "##### VULNERABILITY DETAILS\nChrome on Android translates WebGPU shaders to SPIR-V. These SPIR-V shaders are eventually passed to libGLES_mali.so for optimization and native code generation. This bug report is about a WebGPU shader that crashes com.android.chrome (and sometimes com.android.systemui,"
 }

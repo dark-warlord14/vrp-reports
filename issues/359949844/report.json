@@ -1,13 +1,12 @@
 {
   "id": "359949844",
   "url": "https://issues.chromium.org/issues/359949844",
-  "title": "Security: Extension popup can render over permission prompts and screen share dialog",
+  "title": " Extension popup can render over PWA prompts ",
   "status": "Accepted",
   "severity": "S3-Low",
   "priority": "P3",
   "component": "Platform>Extensions",
   "os_platforms": [
-    "Fuchsia",
     "Linux",
     "Mac",
     "Windows",
@@ -15,14 +14,14 @@
   ],
   "chrome_version": null,
   "cve_ids": [],
-  "reporter": "al...@alesandroortiz.com",
-  "assignee": "ke...@chromium.org",
+  "reporter": "sa...@gmail.com",
+  "assignee": "ke...@google.com",
   "created_date": "2024-08-15T06:52:01+00:00",
   "modified_date": "2025-02-18T17:00:51+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
-  "bounty_amount": 5000.0,
-  "reward_amount_meta": 5000.0,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
   "inclusion_reason": "reward_amount_meta",
   "award_text_found": false,
   "award_text_source_update": null,
@@ -58,7 +57,7 @@
       "mime_type": "application/zip",
       "size_bytes": 2381,
       "url": "https://issues.chromium.org/action/issues/359949844/attachments/63017562?download=true",
-      "local_path": "attachments/extension.zip"
+      "local_path": null
     }
   ],
   "update_count": 42,

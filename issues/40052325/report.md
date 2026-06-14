@@ -34,10 +34,10 @@ Update the content too.
 - deleted (application/octet-stream, 0 B)
 - deleted (application/octet-stream, 0 B)
 - [attack1.html](attachments/attack1.html) (text/plain, 132 B)
-- [Parent.html](attachments/Parent.html) (text/plain, 540 B)
-- [UpdatedSpoof.mp4](attachments/UpdatedSpoof.mp4) (video/mp4, 1.6 MB)
-- [TwitterSpoof.mp4](attachments/TwitterSpoof.mp4) (video/mp4, 311.7 KB)
-- [Fixed.mp4](attachments/Fixed.mp4) (video/mp4, 6.1 MB)
+- Parent.html (text/plain, 540 B)
+- UpdatedSpoof.mp4 (video/mp4, 1.6 MB)
+- TwitterSpoof.mp4 (video/mp4, 311.7 KB)
+- Fixed.mp4 (video/mp4, 6.1 MB)
 
 ## Timeline
 

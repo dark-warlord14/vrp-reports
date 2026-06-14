@@ -19,7 +19,7 @@
   "reporter": "p1...@gmail.com",
   "assignee": "ol...@chromium.org",
   "created_date": "2026-01-07T00:25:54+00:00",
-  "modified_date": "2026-04-21T07:57:28+00:00",
+  "modified_date": "2026-06-10T19:39:43+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 7000.0,
@@ -38,6 +38,6 @@
       "local_path": "attachments/poc.js"
     }
   ],
-  "update_count": 94,
+  "update_count": 98,
   "description_snippet": "## Summary\n\nA data race vulnerability exists in V8's Map object where concurrent access to `bit_field2` (which contains `elements_kind`) between the main thread and Maglev/TurboFan background compilation threads can lead to memory corruption. The race occurs because `bit_field2` is accessed with non"
 }

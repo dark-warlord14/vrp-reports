@@ -1,13 +1,15 @@
-# Summary
+# UAF in ModelContext::ForEachScriptTool
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [483853103](https://issues.chromium.org/issues/483853103) |
-| **Status** | Unknown |
-| **Severity** | Unknown |
-| **Priority** | Unknown |
-| **Component** | Unknown |
-| **Reporter** | Unknown |
+| **Status** | Assigned |
+| **Severity** | S3-Low |
+| **Priority** | P1 |
+| **Component** | Blink>Agentic Platform>WebMCP |
+| **Platforms** | Linux, ChromeOS |
+| **Reporter** | he...@gmail.com |
+| **Assignee** | ma...@chromium.org |
 | **Created** | 2026-02-12 |
 | **Bounty** | $10,000.00 |
 
@@ -379,10 +381,6 @@ deleted
 ### ch...@google.com (2026-05-23)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> High Quality. Renderer RCE / memory corruption in a sandboxed process.
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/483853103)*

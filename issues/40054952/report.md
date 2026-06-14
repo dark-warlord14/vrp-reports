@@ -51,9 +51,9 @@ Reporter credit: Leecraso and Guang Gong of 360 Alpha Lab
 
 ## Attachments
 
-- [asan](attachments/asan) (text/plain, 21.0 KB)
-- [poc.html](attachments/poc.html) (text/plain, 1.5 KB)
-- [copy_mojo_js_bindings.py](attachments/copy_mojo_js_bindings.py) (text/plain, 514 B)
+- asan (text/plain, 21.0 KB)
+- poc.html (text/plain, 1.5 KB)
+- copy_mojo_js_bindings.py (text/plain, 514 B)
 
 ## Timeline
 

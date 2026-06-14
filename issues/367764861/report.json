@@ -1,0 +1,51 @@
+{
+  "id": "367764861",
+  "url": "https://issues.chromium.org/issues/367764861",
+  "title": "Security DCHECK failed at string_view.h: length <= impl.length() - offset",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Layout>Ruby",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ta...@gmail.com",
+  "assignee": "tk...@chromium.org",
+  "created_date": "2024-09-18T08:13:14+00:00",
+  "modified_date": "2024-12-27T15:42:37+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 59461000,
+      "filename": "security_dcheck_reduced.html",
+      "mime_type": "text/html",
+      "size_bytes": 361,
+      "url": "https://issues.chromium.org/action/issues/367764861/attachments/59461000?download=true",
+      "local_path": "attachments/security_dcheck_reduced.html"
+    },
+    {
+      "id": 59461001,
+      "filename": "line_info_int_overflow_proposal.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 829,
+      "url": "https://issues.chromium.org/action/issues/367764861/attachments/59461001?download=true",
+      "local_path": "attachments/line_info_int_overflow_proposal.patch"
+    }
+  ],
+  "update_count": 75,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

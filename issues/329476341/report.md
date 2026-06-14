@@ -4,7 +4,7 @@
 |-------|-------|
 | **Issue ID** | [329476341](https://issues.chromium.org/issues/329476341) |
 | **Status** | Assigned |
-| **Severity** | S3-Low |
+| **Severity** | S1-High |
 | **Priority** | P2 |
 | **Component** | UI>Browser, UI>Browser>Mobile>ContextMenu, UI>Browser>Selection |
 | **Platforms** | Android |
@@ -321,6 +321,23 @@ Do not file a new bug reporting that this is still reproducible. Someone else al
 Regarding comment #39, do you have a reference to the other issue?
 
 The test case at https://lbstyle.github.io/repro.html is still reproducible in Chrome and in most other Chromium based web browsers. As a developer of a chromium based browser affected by the same problem it would be very beneficial for us to know what you are doing to fix the issue so that we can ensure that we apply the same fix in our browser as well.
+
+### as...@google.com (2026-05-22)
+
+This still appears to be broken (tested 150.0.7849.0) and we're still getting duplicate reports, so I'm reopening it.
+
+Note that the reproduction URL appears to have been repurposed, but the original attachments still work.
+
+### pb...@google.com (2026-05-26)
+
+Bulk Priority Update: This bug has been reprioritized from P1 to P2 to align with Chromium's SLOs for long standing in Chrome issues and added to the Chrome-Debt-Management-Transfer hotlist.
+
+If you believe this issue remains a true P1 (requires weekly updates and will be fixed within 4 weeks), please reprioritize it back to P1. Otherwise, no action is needed. 
+[See the recent chromium-dev announcement for full context] (https://groups.google.com/a/chromium.org/g/chromium-dev/c/zlO-4K8o-_8/m/htUZKTpkCgAJ?e=48417069)
+
+### pb...@google.com (2026-06-03)
+
+Apologies for the noise (please ignore the previous comment), and thanks to cthomp@ for flagging this. The priority change was an error caused by a bulk-move script that accidentally included vulnerability bugs. I am reverting the change and moving this bug back to P1 now.
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/329476341)*

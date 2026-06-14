@@ -20,7 +20,7 @@
   "modified_date": "2025-01-21T11:55:57+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
-  "bounty_amount": null,
+  "bounty_amount": 20000.0,
   "reward_amount_meta": 0.0,
   "inclusion_reason": "award_text",
   "award_text_found": true,
@@ -97,7 +97,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 1307,
       "url": "https://issues.chromium.org/action/issues/341136300/attachments/56647206?download=true",
-      "local_path": "attachments/devtools.js"
+      "local_path": "attachments/devtools_56647206.js"
     }
   ],
   "update_count": 93,

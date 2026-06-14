@@ -67,7 +67,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 127,
       "url": "https://issues.chromium.org/action/issues/340221135/attachments/56364601?download=true",
-      "local_path": "attachments/min.js"
+      "local_path": null
     },
     {
       "id": 56364602,
@@ -75,7 +75,7 @@
       "mime_type": "text/plain",
       "size_bytes": 20,
       "url": "https://issues.chromium.org/action/issues/340221135/attachments/56364602?download=true",
-      "local_path": "attachments/module.txt"
+      "local_path": null
     }
   ],
   "update_count": 125,

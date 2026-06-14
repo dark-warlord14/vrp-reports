@@ -1,0 +1,46 @@
+{
+  "id": "40050861",
+  "url": "https://issues.chromium.org/issues/40050861",
+  "title": "Security: URL bar spoofing with prompt dialog on iOS",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Navigation, UI>Browser>Omnibox",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2019-12-02T19:41:18+00:00",
+  "modified_date": "2025-02-13T00:20:43+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52919571,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 261,
+      "url": "https://issues.chromium.org/action/issues/40050861/attachments/52919571?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 52919590,
+      "filename": "IMG_8248.MP4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2228675,
+      "url": "https://issues.chromium.org/action/issues/40050861/attachments/52919590?download=true",
+      "local_path": "attachments/IMG_8248.MP4"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "**VERSION**   \nChrome Version: 79.0.3945.45 beta  \nOperating System: iOS  \n  \nSee https://crbug.com/chromium/1029637  \n  \n**REPRODUCTION CASE**   \n1. Go to the test case  \n2. Click on the button and wait   \n3. On the new page, you will see an alert dialog is displayed   \n4. Type any website e.g gmai"
+}

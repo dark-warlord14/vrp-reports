@@ -47,8 +47,8 @@ Reporter credit: Shaheen Fazim
 - [phishing.html](attachments/phishing.html) (text/plain, 1.7 KB)
 - [poc.html](attachments/poc.html) (text/plain, 1.2 KB)
 - [chrome permission.mp4](attachments/chrome permission.mp4) (video/mp4, 909.8 KB)
-- [demo.mp4](attachments/demo.mp4) (video/mp4, 1.6 MB)
-- [demo.mp4](attachments/demo.mp4) (video/mp4, 1.6 MB)
+- [demo.mp4](attachments/demo_53228229.mp4) (video/mp4, 1.6 MB)
+- [demo.mp4](attachments/demo_53228333.mp4) (video/mp4, 1.6 MB)
 
 ## Timeline
 

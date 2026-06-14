@@ -1,7 +1,7 @@
 {
   "id": "361711121",
   "url": "https://issues.chromium.org/issues/361711121",
-  "title": "Security: Extension popup can render over permission prompts and screen share dialog",
+  "title": " Extension popup can render over Request Payment prompts",
   "status": "Accepted",
   "severity": "S3-Low",
   "priority": "P3",
@@ -15,14 +15,14 @@
   ],
   "chrome_version": null,
   "cve_ids": [],
-  "reporter": "al...@alesandroortiz.com",
+  "reporter": "sa...@gmail.com",
   "assignee": "ke...@chromium.org",
   "created_date": "2024-08-23T17:58:07+00:00",
   "modified_date": "2025-02-19T00:45:47+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
-  "bounty_amount": 5000.0,
-  "reward_amount_meta": 5000.0,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
   "inclusion_reason": "reward_amount_meta",
   "award_text_found": false,
   "award_text_source_update": null,
@@ -34,7 +34,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 2808145,
       "url": "https://issues.chromium.org/action/issues/361711121/attachments/58875323?download=true",
-      "local_path": "attachments/bandicam 2024-08-24 00-49-56-017.mp4"
+      "local_path": null
     },
     {
       "id": 58875324,
@@ -42,7 +42,7 @@
       "mime_type": "application/zip",
       "size_bytes": 2436,
       "url": "https://issues.chromium.org/action/issues/361711121/attachments/58875324?download=true",
-      "local_path": "attachments/extensionpopup.zip"
+      "local_path": null
     },
     {
       "id": 58875325,

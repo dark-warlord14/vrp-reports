@@ -1,0 +1,43 @@
+{
+  "id": "40051007",
+  "url": "https://issues.chromium.org/issues/40051007",
+  "title": "Security: Autocomplete preview text leak #4: using ::first-line pseudo-element",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "ba...@chromium.org",
+  "created_date": "2019-12-17T19:07:58+00:00",
+  "modified_date": "2024-01-08T22:43:43+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53114551,
+      "filename": "demo.html",
+      "mime_type": "text/plain",
+      "size_bytes": 4356,
+      "url": "https://issues.chromium.org/action/issues/40051007/attachments/53114551?download=true",
+      "local_path": "attachments/demo.html"
+    }
+  ],
+  "update_count": 41,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nPreviously, I reported https://bugs.chromium.org/p/chromium/issues/detail?id=916838, a flaw in how autocomplete preview text is handled that allows stored autocomplete data to be leaked from the user's browser to a malicious webpage. The attack depended on changing th"
+}

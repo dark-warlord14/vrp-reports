@@ -1,0 +1,62 @@
+{
+  "id": "343014709",
+  "url": "https://issues.chromium.org/issues/343014709",
+  "title": "Segv on unknown address in media::`anonymous namespace'::ConvertVideoFrameToRGBPixelsTask",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>GetUserMedia, Internals>Media>CameraCapture",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "127.0.6506.0",
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ah...@google.com",
+  "created_date": "2024-05-28T01:32:25+00:00",
+  "modified_date": "2024-09-19T16:02:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 56697732,
+      "filename": "testcase.html",
+      "mime_type": "text/html",
+      "size_bytes": 2347,
+      "url": "https://issues.chromium.org/action/issues/343014709/attachments/56697732?download=true",
+      "local_path": "attachments/testcase.html"
+    },
+    {
+      "id": 56697733,
+      "filename": "screen-capture.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2012160,
+      "url": "https://issues.chromium.org/action/issues/343014709/attachments/56697733?download=true",
+      "local_path": "attachments/screen-capture.mp4"
+    },
+    {
+      "id": 56697734,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 5975,
+      "url": "https://issues.chromium.org/action/issues/343014709/attachments/56697734?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 56767961,
+      "filename": "Video_2024_05_30-3.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 9480628,
+      "url": "https://issues.chromium.org/action/issues/343014709/attachments/56767961?download=true",
+      "local_path": "attachments/Video_2024_05_30-3.webm"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "# Steps to reproduce the problem\n1. Run Chromium and enable chrome://flags/#camera-mic-preview\n2. Open testcase.html\n3. Click \"Allow\"\n\n# Problem Description\nSegv on unknown address in media::`anonymous namespace'::ConvertVideoFrameToRGBPixelsTask\n\n# Summary\nSegv on unknown address in media::`anonymo"
+}

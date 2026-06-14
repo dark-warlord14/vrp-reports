@@ -34,7 +34,7 @@
       "mime_type": "text/plain",
       "size_bytes": 23558,
       "url": "https://issues.chromium.org/action/issues/432035817/attachments/67627048?download=true",
-      "local_path": "attachments/Chrome-138-crashes.txt"
+      "local_path": null
     },
     {
       "id": 67682746,
@@ -42,7 +42,7 @@
       "mime_type": "text/plain",
       "size_bytes": 987582,
       "url": "https://issues.chromium.org/action/issues/432035817/attachments/67682746?download=true",
-      "local_path": "attachments/chrome-asan-crash-stackwalk-stacks.txt"
+      "local_path": null
     },
     {
       "id": 67682747,
@@ -50,7 +50,7 @@
       "mime_type": "text/plain",
       "size_bytes": 286048,
       "url": "https://issues.chromium.org/action/issues/432035817/attachments/67682747?download=true",
-      "local_path": "attachments/chrome-asan-crash-stackwalk.txt"
+      "local_path": null
     },
     {
       "id": 67682748,
@@ -58,7 +58,7 @@
       "mime_type": "text/plain",
       "size_bytes": 32275,
       "url": "https://issues.chromium.org/action/issues/432035817/attachments/67682748?download=true",
-      "local_path": "attachments/chrome-asan-crash.txt"
+      "local_path": null
     }
   ],
   "update_count": 111,

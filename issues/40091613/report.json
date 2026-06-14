@@ -1,0 +1,79 @@
+{
+  "id": "40091613",
+  "url": "https://issues.chromium.org/issues/40091613",
+  "title": "UI/URL Spoofing by opening popups and putting the background page into fullscreen",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Fullscreen, UI>Browser>FullScreen",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "mu...@chromium.org",
+  "created_date": "2018-06-10T05:04:58+00:00",
+  "modified_date": "2025-02-13T01:09:08+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53261464,
+      "filename": "spoof.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 489096,
+      "url": "https://issues.chromium.org/action/issues/40091613/attachments/53261464?download=true",
+      "local_path": "attachments/spoof.mp4"
+    },
+    {
+      "id": 53261465,
+      "filename": "taskbar.png",
+      "mime_type": "image/png",
+      "size_bytes": 224312,
+      "url": "https://issues.chromium.org/action/issues/40091613/attachments/53261465?download=true",
+      "local_path": "attachments/taskbar.png"
+    },
+    {
+      "id": 53261489,
+      "filename": "sign.png",
+      "mime_type": "image/png",
+      "size_bytes": 64857,
+      "url": "https://issues.chromium.org/action/issues/40091613/attachments/53261489?download=true",
+      "local_path": "attachments/sign.png"
+    },
+    {
+      "id": 53261490,
+      "filename": "spoof.png",
+      "mime_type": "image/png",
+      "size_bytes": 239226,
+      "url": "https://issues.chromium.org/action/issues/40091613/attachments/53261490?download=true",
+      "local_path": "attachments/spoof.png"
+    },
+    {
+      "id": 53261491,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 602,
+      "url": "https://issues.chromium.org/action/issues/40091613/attachments/53261491?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53261492,
+      "filename": "opener.html",
+      "mime_type": "text/plain",
+      "size_bytes": 1866,
+      "url": "https://issues.chromium.org/action/issues/40091613/attachments/53261492?download=true",
+      "local_path": "attachments/opener.html"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nBy opening a popup, putting the background page into fullscreen and opening a subsequent popup over the fullscreen message it's possible to perform UI/URL spoofing.  \n  \nThe exploit works as follows:  \n1. User accesses attacker's website and clicks on a link.  \n2. A popu"
+}

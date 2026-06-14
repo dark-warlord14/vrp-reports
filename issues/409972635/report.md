@@ -1,15 +1,16 @@
-# Tricking a user into a same-page drag-and-drop can disclose data to cross-origin frames
+# Cross-origin iframe captures dragenter, dragleave, events when behind other elements
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [409972635](https://issues.chromium.org/issues/409972635) |
-| **Status** | Assigned |
+| **Status** | Fixed |
 | **Severity** | S3-Low |
-| **Priority** | P2 |
-| **Component** | Blink>DataTransfer, Blink>FencedFrames, Blink>Portals, UI>Browser>Navigation>MPArch |
-| **Platforms** | Android, Linux, Mac, Windows, ChromeOS |
-| **Reporter** | lu...@chromium.org |
-| **Assignee** | dt...@chromium.org |
+| **Priority** | P3 |
+| **Component** | Blink>DataTransfer, Internals>Sandbox>SiteIsolation |
+| **Platforms** | Mac |
+| **Chrome Version** | 135.0.0.0 |
+| **Reporter** | ka...@yeticgi.com |
+| **Assignee** | ro...@microsoft.com |
 | **Created** | 2025-04-11 |
 | **Bounty** | $1,000.00 |
 
@@ -238,10 +239,6 @@ P.S. One other thing we'd like to mention:
 * Please do NOT publicly disclose details until a fix has been released to all our users. Early public disclosure may cancel the provisional reward. Also, please be considerate about disclosure when the bug affects a core library that may be used by other products. Please do NOT share this information with third parties who are not directly involved in fixing the bug. Doing so may cancel the provisional reward. Please be honest if you have already disclosed anything publicly or to third parties. Lastly, we understand that some of you are not interested in money. We offer the option to donate your reward to an eligible charity. Any rewards that are unclaimed after 12 months will be donated to a charity of our choosing.
 
 Please contact security-vrp@chromium.org with any questions.
-
-## Bounty Award
-
-> Baseline. User information disclosure
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/409972635)*

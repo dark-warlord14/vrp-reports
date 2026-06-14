@@ -62,7 +62,7 @@ Regression: N/A
 
 ## Attachments
 
-- [asan](attachments/asan) (application/octet-stream, 18.0 KB)
+- asan (application/octet-stream, 18.0 KB)
 - [browser.diff](attachments/browser.diff) (text/x-diff, 805 B)
 - [demo.mp4](attachments/demo.mp4) (video/mp4, 551.5 KB)
 - [poc.html](attachments/poc.html) (text/html, 353 B)

@@ -33,7 +33,7 @@
       "mime_type": "text/x-diff",
       "size_bytes": 3458,
       "url": "https://issues.chromium.org/action/issues/435684924/attachments/68102014?download=true",
-      "local_path": "attachments/filepicker-ksave-cr.patch"
+      "local_path": null
     },
     {
       "id": 68102015,
@@ -41,7 +41,7 @@
       "mime_type": "text/html",
       "size_bytes": 6290,
       "url": "https://issues.chromium.org/action/issues/435684924/attachments/68102015?download=true",
-      "local_path": "attachments/download-theft-input-ksave-cr.html"
+      "local_path": null
     },
     {
       "id": 68102016,

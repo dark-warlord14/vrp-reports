@@ -1,0 +1,29 @@
+{
+  "id": "40053716",
+  "url": "https://issues.chromium.org/issues/40053716",
+  "title": "Security: Chromium doesn't conform to SMS Verification APIs leading to potential Access to app protected components vulnerability",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebOTP",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@oversecured.com",
+  "assignee": "mt...@chromium.org",
+  "created_date": "2020-10-25T16:48:55+00:00",
+  "modified_date": "2024-01-06T00:09:54+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 39,
+  "description_snippet": "Hey, I scanned multiple apps internally using Oversecured scanner and noticed that the most of them doesn't conform to official guidelines https://developers.google.com/identity/sms-retriever/user-consent/request#2_start_listening_for_incoming_messages\r\n\r\nThe guidelines require to ask the broadcast"
+}

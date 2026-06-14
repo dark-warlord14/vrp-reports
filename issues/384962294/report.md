@@ -1,13 +1,16 @@
-# Steps to reproduce the problem
+# In PWA Installation Dialog Hide Origin Using Window
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [384962294](https://issues.chromium.org/issues/384962294) |
-| **Status** | Unknown |
-| **Severity** | Unknown |
-| **Priority** | Unknown |
-| **Component** | Unknown |
-| **Reporter** | Unknown |
+| **Status** | Assigned |
+| **Severity** | S3-Low |
+| **Priority** | P2 |
+| **Component** | UI>Browser>WebAppInstalls>Desktop |
+| **Platforms** | Linux, Mac, Windows, ChromeOS |
+| **Chrome Version** | 132.0.6834.46 beta  |
+| **Reporter** | pu...@gmail.com |
+| **Assignee** | di...@google.com |
 | **Created** | 2024-12-18 |
 | **Bounty** | $3,000.00 |
 
@@ -54,7 +57,7 @@ Regression: N/A
 
 ## Attachments
 
-- [repro.mp4](attachments/repro.mp4) (video/mp4, 476.3 KB)
+- repro.mp4 (video/mp4, 476.3 KB)
 - deleted (application/octet-stream, 0 B)
 - [HalfDialog133.png](attachments/HalfDialog133.png) (image/png, 34.2 KB)
 
@@ -769,10 +772,6 @@ Thanks for the reward Really appreciate it.
 ### ch...@google.com (2025-03-29)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> report of lower impact security UI issue
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/384962294)*

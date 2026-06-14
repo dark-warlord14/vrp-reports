@@ -74,10 +74,10 @@ Reporter credit: Lyra Rebane (rebane2001)
 - [crash.html](attachments/crash.html) (text/html, 318 B)
 - [asan2.log](attachments/asan2.log) (text/plain, 35.9 KB)
 - [crash2.html](attachments/crash2.html) (text/html, 372 B)
-- [crash2.html](attachments/crash2.html) (text/html, 372 B)
+- [crash2.html](attachments/crash2_64408507.html) (text/html, 372 B)
 - [crash3.html](attachments/crash3.html) (text/html, 846 B)
 - [demo.webm](attachments/demo.webm) (video/webm, 2.9 MB)
-- [crash.html](attachments/crash.html) (text/html, 590 B)
+- [crash.html](attachments/crash_65471578.html) (text/html, 590 B)
 
 ## Timeline
 
@@ -452,7 +452,7 @@ But this will be a largeish refactor (especially in the Oilpan case, which I rec
 
 The issue's primary component must be in the Component Tags, so re-adding it. To change the primary component, use the edit button at the top of the issue, just above the title.
 
-### nh...@chromium.org (2025-04-03)
+### [Deleted User] (2025-04-03)
 
 flackr: based on [comment #15](https://issues.chromium.org/issues/407328533#comment15), this sounds like a Blink>Animation issue. Since this is a security bug, it should have an assignee. Can you find an appropriate owner for this bug?
 

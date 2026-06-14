@@ -51,8 +51,8 @@ Please use the GN arguments provided in this report when building the binary. If
 
 ## Attachments
 
-- [tc.html](attachments/tc.html) (text/plain, 217 B)
-- [tc2.html](attachments/tc2.html) (text/plain, 244 B)
+- tc.html (text/plain, 217 B)
+- tc2.html (text/plain, 244 B)
 
 ## Timeline
 

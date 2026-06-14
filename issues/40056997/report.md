@@ -269,7 +269,7 @@ Right alloca redzone: cb
 
 - [cast.html](attachments/cast.html) (text/plain, 963 B)
 - [screen.mp4](attachments/screen.mp4) (video/mp4, 2.0 MB)
-- [screen.mp4](attachments/screen.mp4) (video/mp4, 964.4 KB)
+- screen.mp4 (video/mp4, 964.4 KB)
 
 ## Timeline
 

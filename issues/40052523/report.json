@@ -1,0 +1,31 @@
+{
+  "id": "40052523",
+  "url": "https://issues.chromium.org/issues/40052523",
+  "title": "Cross-domain content can be fetched from resources loaded by the content scheme",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P1",
+  "component": "Blink>SecurityFeature>CORS",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2020-6516"
+  ],
+  "reporter": "wy...@gmail.com",
+  "assignee": "to...@chromium.org",
+  "created_date": "2020-06-08T14:49:22+00:00",
+  "modified_date": "2024-08-11T21:22:26+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "reward_amount_meta": 20000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 78,
+  "description_snippet": "Originally reported in https://crbug.com/chromium/1092025. Reporter's comments on the issue pasted here:\r\n\r\nWe can cross-domain fetch other content://xxx under one content://xxx by XMLHttpRequest.\r\n\r\nOriginally, the SOP of chrome takes isolation measures between 'content' schemes, just like 'file' s"
+}

@@ -6,7 +6,7 @@
 | **Status** | Assigned |
 | **Severity** | S3-Low |
 | **Priority** | P2 |
-| **Component** | Blink>WebAuthentication |
+| **Component** | Blink>Web Authentication (Passkeys & Security Keys) |
 | **Platforms** | Android |
 | **Reporter** | Si...@rawet.se |
 | **Assignee** | ke...@chromium.org |

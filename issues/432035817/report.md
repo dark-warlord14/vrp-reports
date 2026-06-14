@@ -55,10 +55,10 @@ Crash ID: crash/f9d9ae28f307b76a
 
 ## Attachments
 
-- [Chrome-138-crashes.txt](attachments/Chrome-138-crashes.txt) (text/plain, 23.0 KB)
-- [chrome-asan-crash-stackwalk-stacks.txt](attachments/chrome-asan-crash-stackwalk-stacks.txt) (text/plain, 964.4 KB)
-- [chrome-asan-crash-stackwalk.txt](attachments/chrome-asan-crash-stackwalk.txt) (text/plain, 279.3 KB)
-- [chrome-asan-crash.txt](attachments/chrome-asan-crash.txt) (text/plain, 31.5 KB)
+- Chrome-138-crashes.txt (text/plain, 23.0 KB)
+- chrome-asan-crash-stackwalk-stacks.txt (text/plain, 964.4 KB)
+- chrome-asan-crash-stackwalk.txt (text/plain, 279.3 KB)
+- chrome-asan-crash.txt (text/plain, 31.5 KB)
 
 ## Timeline
 
@@ -103,7 +103,7 @@ Information attached, I assume the actual crash is not useful given that it's a 
 This is not a duplicate of the duplicated-to bug. Please don't mark it as such.
 
 
-### nh...@chromium.org (2025-07-21)
+### [Deleted User] (2025-07-21)
 
 The crash report crash/859a626b13b72cf4 appears to most closely match the stack trace in the provided asan report.
 

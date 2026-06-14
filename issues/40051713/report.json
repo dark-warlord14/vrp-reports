@@ -1,0 +1,51 @@
+{
+  "id": "40051713",
+  "url": "https://issues.chromium.org/issues/40051713",
+  "title": "use-after-free in web_graphics_context_3d_provider_wrapper",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Canvas",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cd...@gmail.com",
+  "assignee": "fs...@chromium.org",
+  "created_date": "2020-03-07T09:59:09+00:00",
+  "modified_date": "2024-01-09T00:12:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52917416,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40051713/attachments/52917416?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52917486,
+      "filename": "asan2.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 38774,
+      "url": "https://issues.chromium.org/action/issues/40051713/attachments/52917486?download=true",
+      "local_path": "attachments/asan2.txt"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\n1 Build latest chrome(82.0.4079.0) with asan.\r\n2 ./chrome http://127.0.0.1:8605/crash.html\r\n3 Close the entire browser after about 5 secon"
+}

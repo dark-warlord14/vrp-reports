@@ -1,0 +1,29 @@
+{
+  "id": "331837300",
+  "url": "https://issues.chromium.org/issues/331837300",
+  "title": "Crash in v8::internal::Heap::InYoungGeneration",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>JavaScript, Blink>JavaScript>GarbageCollection",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@googlemail.com",
+  "assignee": "om...@chromium.org",
+  "created_date": "2024-03-28T20:58:40+00:00",
+  "modified_date": "2024-11-04T17:03:53+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 9000.0,
+  "reward_amount_meta": 9000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 30,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=5145935524331520\n\nFuzzer: decoder_langfuzz\nJob Type: linux_cfi_d8\nPlatform Id: linux\n\nCrash Type: UNKNOWN READ\nCrash Address: 0x246900d40000\nCrash State:\n  v8::internal::Heap::InYoungGeneration\n  void v8::internal::RememberedSetUpdatingItem::Chec"
+}

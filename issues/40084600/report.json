@@ -1,0 +1,36 @@
+{
+  "id": "40084600",
+  "url": "https://issues.chromium.org/issues/40084600",
+  "title": "Security: Adobe Flash PSDK.Object Use After Free",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>Flash",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "xi...@gmail.com",
+  "assignee": "na...@google.com",
+  "created_date": "2016-06-17T03:12:10+00:00",
+  "modified_date": "2025-02-13T00:08:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53018621,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40084600/attachments/53018621?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 26,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \n  \n**VERSION**   \nChrome Version: 52.0.2743.41 beta-m (64-bit)  \nOperating System: Windows 7 en 64-bit  \n  \n**REPRODUCTION CASE**   \n  \nThis is a use after free vulnerability on an inner object of the PSDK object.  \nWhen you call the getter property PSDK.pSDK, y"
+}

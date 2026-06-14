@@ -19,7 +19,7 @@
   "reporter": "m....@gmail.com",
   "assignee": "ho...@gmail.com",
   "created_date": "2022-10-16T08:04:40+00:00",
-  "modified_date": "2026-03-05T16:41:49+00:00",
+  "modified_date": "2026-06-08T16:17:50+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 8000.0,
@@ -51,7 +51,7 @@
       "mime_type": "text/plain",
       "size_bytes": 342,
       "url": "https://issues.chromium.org/action/issues/40061370/attachments/53376806?download=true",
-      "local_path": "attachments/poc.html"
+      "local_path": null
     },
     {
       "id": 53376817,
@@ -62,6 +62,6 @@
       "local_path": "attachments/fix.patch"
     }
   ],
-  "update_count": 46,
+  "update_count": 48,
   "description_snippet": "**VERSION**   \nWIN10 X64  \ncommit 12f0eec0b0f1a77d40a82a839db7d8ee41c693b3 (HEAD, origin/main, origin/HEAD)  \n  \ntarget_cpu = \"x64\"  \ndcheck_always_on = false  \nis_asan = true  \nis_component_build = true  \nis_debug = false  \nenable_nacl = false  \nsymbol_level=2  \n  \n  \n**REPRODUCTION CASE**   \nchrom"
 }

@@ -185,8 +185,8 @@ Flash Version:
 
 ## Attachments
 
-- [crash.html](attachments/crash.html) (text/plain, 902 B)
-- [webgl-test-utils.js](attachments/webgl-test-utils.js) (text/plain, 103.8 KB)
+- crash.html (text/plain, 902 B)
+- webgl-test-utils.js (text/plain, 103.8 KB)
 
 ## Timeline
 

@@ -14,7 +14,7 @@
   "reporter": "li...@gmail.com",
   "assignee": "ro...@chromium.org",
   "created_date": "2026-01-19T03:24:16+00:00",
-  "modified_date": "2026-05-21T22:55:40+00:00",
+  "modified_date": "2026-06-04T23:23:59+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 2000.0,
@@ -49,6 +49,6 @@
       "local_path": "attachments/demo. txt.exe"
     }
   ],
-  "update_count": 50,
+  "update_count": 61,
   "description_snippet": "---\n\n### Report description\n\n\nChrome (Windows): Opening download “demo. txt” executes sibling “demo. txt.exe” (object-level target confusion / unsafe Shell fallback)\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chro"
 }

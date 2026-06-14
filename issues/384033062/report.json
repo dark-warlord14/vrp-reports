@@ -1,28 +1,28 @@
 {
   "id": "384033062",
   "url": "https://issues.chromium.org/issues/384033062",
-  "title": "Text selection magnifier gets stuck on screen upon navigation",
-  "status": "Fixed",
-  "severity": "S0-Critical",
-  "priority": "P4",
+  "title": "Security: Android selection magnifier persists after navigation, can obscure/spoof browser UI or page content",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
   "component": "UI>Browser>Selection",
   "os_platforms": [
     "Android"
   ],
   "chrome_version": null,
   "cve_ids": [],
-  "reporter": "mu...@gmail.com",
-  "assignee": null,
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "ya...@google.com",
   "created_date": "2024-12-14T02:57:51+00:00",
   "modified_date": "2025-04-19T12:39:01+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 5000.0,
-  "reward_amount_meta": null,
-  "inclusion_reason": "award_text",
-  "award_text_found": true,
-  "award_text_source_update": 31,
-  "bounty_rationale": "high-quality, comprehensive report of moderate impact security UI issue, specifically the permissions spoof / bypass",
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
   "attachments": [
     {
       "id": 61539798,
@@ -30,7 +30,7 @@
       "mime_type": "text/html",
       "size_bytes": 1384,
       "url": "https://issues.chromium.org/action/issues/384033062/attachments/61539798?download=true",
-      "local_path": "attachments/android-magnifier-minimal.html"
+      "local_path": null
     },
     {
       "id": 61539799,
@@ -38,7 +38,7 @@
       "mime_type": "text/html",
       "size_bytes": 1751,
       "url": "https://issues.chromium.org/action/issues/384033062/attachments/61539799?download=true",
-      "local_path": "attachments/android-magnifier-minimal-no-delay.html"
+      "local_path": null
     },
     {
       "id": 61539800,
@@ -46,7 +46,7 @@
       "mime_type": "text/html",
       "size_bytes": 4990,
       "url": "https://issues.chromium.org/action/issues/384033062/attachments/61539800?download=true",
-      "local_path": "attachments/android-magnifier-omnibox.html"
+      "local_path": null
     },
     {
       "id": 61539801,
@@ -54,7 +54,7 @@
       "mime_type": "text/html",
       "size_bytes": 4904,
       "url": "https://issues.chromium.org/action/issues/384033062/attachments/61539801?download=true",
-      "local_path": "attachments/android-magnifier-permission.html"
+      "local_path": null
     },
     {
       "id": 61539802,
@@ -62,7 +62,7 @@
       "mime_type": "application/x-httpd-php",
       "size_bytes": 121,
       "url": "https://issues.chromium.org/action/issues/384033062/attachments/61539802?download=true",
-      "local_path": "attachments/slow.php"
+      "local_path": null
     },
     {
       "id": 61539803,
@@ -70,7 +70,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 2976,
       "url": "https://issues.chromium.org/action/issues/384033062/attachments/61539803?download=true",
-      "local_path": "attachments/signal-server.js"
+      "local_path": null
     },
     {
       "id": 61539804,
@@ -78,7 +78,7 @@
       "mime_type": "text/html",
       "size_bytes": 493,
       "url": "https://issues.chromium.org/action/issues/384033062/attachments/61539804?download=true",
-      "local_path": "attachments/permission.html"
+      "local_path": null
     },
     {
       "id": 61539805,

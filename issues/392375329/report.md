@@ -36,9 +36,9 @@ Reporter credit: [goes here]
 
 ## Attachments
 
-- pocv.html (text/html, 1.5 KB)
-- bandicam 2025-01-27 08-45-25-929.mp4 (video/mp4, 1.7 MB)
-- bandicam 2025-02-24 15-01-45-096.mp4 (video/mp4, 2.6 MB)
+- [pocv.html](attachments/pocv.html) (text/html, 1.5 KB)
+- [bandicam 2025-01-27 08-45-25-929.mp4](attachments/bandicam 2025-01-27 08-45-25-929.mp4) (video/mp4, 1.7 MB)
+- [bandicam 2025-02-24 15-01-45-096.mp4](attachments/bandicam 2025-02-24 15-01-45-096.mp4) (video/mp4, 2.6 MB)
 - version 134.mp4 (video/mp4, 1.6 MB)
 - version 136.mp4 (video/mp4, 2.2 MB)
 - [enterjacking.html](attachments/enterjacking.html) (text/html, 1.5 KB)

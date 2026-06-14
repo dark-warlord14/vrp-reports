@@ -273,9 +273,9 @@ Regression: No
 
 ## Attachments
 
-- [genskpic_POSTFIX.py](attachments/genskpic_POSTFIX.py) (text/x-python, 3.5 KB)
-- [index.html](attachments/index.html) (text/html, 191 B)
-- [chromium.diff](attachments/chromium.diff) (text/x-diff, 6.7 KB)
+- genskpic_POSTFIX.py (text/x-python, 3.5 KB)
+- index.html (text/html, 191 B)
+- chromium.diff (text/x-diff, 6.7 KB)
 
 ## Timeline
 

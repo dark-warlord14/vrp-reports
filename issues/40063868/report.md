@@ -1,14 +1,14 @@
-# Service workers bypass PrivateNetworkAccess for localhost
+# Apply Local Network Access permission to workers
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [40063868](https://issues.chromium.org/issues/40063868) |
-| **Status** | Accepted |
+| **Status** | Assigned |
 | **Severity** | S3-Low |
 | **Priority** | P2 |
-| **Component** | Blink>SecurityFeature>CORS>PrivateNetworkAccess |
-| **Platforms** | Android, Fuchsia, Linux, Mac, Windows, ChromeOS |
-| **Reporter** | nd...@protonmail.com |
+| **Component** | Blink>SecurityFeature>DeprecatedPrivateNetworkAccess |
+| **Platforms** | Linux, Mac, Windows, ChromeOS |
+| **Reporter** | ct...@chromium.org |
 | **Assignee** | ct...@chromium.org |
 | **Created** | 2023-04-02 |
 | **Bounty** | $1,000.00 |
@@ -320,6 +320,10 @@ Thanks :)
 ### ch...@google.com (2025-09-06)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
+
+## Bounty Award
+
+> thank you for report of issue in a feature that did not ship, but helped us make considerations regarding service worker handling in local network access
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40063868)*

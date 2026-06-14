@@ -125,12 +125,12 @@ Luke Francis
 - [media-internals.txt](attachments/media-internals.txt) (text/plain, 15.3 KB)
 - [poc_chroma_qp.py](attachments/poc_chroma_qp.py) (text/x-python-script, 18.6 KB)
 - [poc_v2.py](attachments/poc_v2.py) (text/x-python-script, 12.3 KB)
-- [off100_qp25_cabac.mp4](attachments/off100_qp25_cabac.mp4) (video/mp4, 8.7 KB)
-- [poc_v2.py](attachments/poc_v2.py) (text/x-python-script, 12.3 KB)
+- off100_qp25_cabac.mp4 (video/mp4, 8.7 KB)
+- poc_v2.py (text/x-python-script, 12.3 KB)
 - [Chromium VA-API PoC Test Results.txt](attachments/Chromium VA-API PoC Test Results.txt) (text/plain, 2.2 KB)
 - [media_internals_output.txt](attachments/media_internals_output.txt) (text/plain, 4.2 KB)
 - [media-internals (2).txt](attachments/media-internals (2).txt) (text/plain, 8.6 KB)
-- [poc_v2.py](attachments/poc_v2.py) (text/x-python, 12.3 KB)
+- poc_v2.py (text/x-python, 12.3 KB)
 - [media-internals__18_.txt](attachments/media-internals_18_.txt) (text/plain, 9.8 KB)
 
 ## Timeline

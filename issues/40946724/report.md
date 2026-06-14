@@ -31,7 +31,7 @@ Operating System: Android Pixel 7 Pro
 
 - [screen.mp4](attachments/screen.mp4) (video/mp4, 440.1 KB)
 - [poc.html](attachments/poc.html) (text/plain, 1.0 KB)
-- [screen.mp4](attachments/screen.mp4) (video/mp4, 432.2 KB)
+- screen.mp4 (video/mp4, 432.2 KB)
 - [screen-20251212-050630.mp4](attachments/screen-20251212-050630.mp4) (video/mp4, 8.5 MB)
 - [Fri Jan 09 2026 11:22:38 GMT-0800 (Pacific Standard Time).png](attachments/Fri Jan 09 2026 11_22_38 GMT-0800 (Pacific Standard Time).png) (image/png, 351.3 KB)
 

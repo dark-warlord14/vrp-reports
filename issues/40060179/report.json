@@ -15,9 +15,9 @@
   "chrome_version": null,
   "cve_ids": [],
   "reporter": "lo...@gmail.com",
-  "assignee": "cw...@chromium.org",
+  "assignee": "cw...@google.com",
   "created_date": "2022-07-06T09:39:20+00:00",
-  "modified_date": "2026-03-27T17:01:39+00:00",
+  "modified_date": "2026-06-08T15:23:50+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 7500.0,
@@ -36,6 +36,6 @@
       "local_path": "attachments/UAF_GPUExternalTexture_PoC.html"
     }
   ],
-  "update_count": 40,
+  "update_count": 44,
   "description_snippet": "**VULNERABILITY DETAILS**   \n\tSpecifically crafted HTML file can trigger Use After Free of GPUExternalTexture object in renderer process. This bug can potentially be exploited to achieve one click Remote Code Execution in renderer process.  \n  \n\tOpen the PoC (UAF_GPUExternalTexture_PoC.html) in chro"
 }

@@ -1,4 +1,4 @@
-# [Skia] Integer overflow in MeshOp::onCombineIfPossible
+# Security: Skia integer overflow (results in OOB) at AAHairlineOp::onPrepareDraws 
 
 | Field | Value |
 |-------|-------|
@@ -7,12 +7,13 @@
 | **Severity** | S3-Low |
 | **Priority** | P1 |
 | **Component** | Internals>Skia |
-| **Platforms** | Android, Fuchsia, Linux, Mac, Windows, ChromeOS |
+| **Platforms** | Android, Linux, Mac, Windows, ChromeOS |
+| **Chrome Version** | 130.0.0.0 |
 | **CVE IDs** | CVE-2023-6345 |
-| **Reporter** | hy...@gmail.com |
-| **Assignee** | mi...@google.com |
+| **Reporter** | kd...@gmail.com |
+| **Assignee** | ja...@google.com |
 | **Created** | 2024-12-08 |
-| **Bounty** | $15,000.00 |
+| **Bounty** | $3,000.00 |
 
 ## Description
 

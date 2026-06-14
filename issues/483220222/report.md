@@ -1,13 +1,13 @@
-# V8 sandbox bypass due to NativeModule swapping while module instantiation was ongoing
+# V8 sandbox bypass: reuse `protected_uses` of `WasmDispatchTable` after grow
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [483220222](https://issues.chromium.org/issues/483220222) |
-| **Status** | Assigned |
+| **Status** | Accepted |
 | **Severity** | S3-Low |
 | **Priority** | P2 |
-| **Component** | Blink>JavaScript>WebAssembly |
-| **Platforms** | Android, Linux, Mac, Windows, ChromeOS |
+| **Component** | Blink>JavaScript>Sandbox, Blink>JavaScript>WebAssembly |
+| **Platforms** | Android, Fuchsia, Linux, Mac, Windows, ChromeOS |
 | **Reporter** | pv...@gmail.com |
 | **Assignee** | jk...@chromium.org |
 | **Created** | 2026-02-10 |

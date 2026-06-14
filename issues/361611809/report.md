@@ -34,12 +34,12 @@ Reporter credit: Hafiizh (https://www.linkedin.com/in/hafiizh-7aa6bb31/)
 
 ## Attachments
 
-- [video6214974538107588499.mp4](attachments/video6214974538107588499.mp4) (video/mp4, 6.4 MB)
-- [payment.html](attachments/payment.html) (text/html, 16.2 KB)
-- [video6273551694387221470.mp4](attachments/video6273551694387221470.mp4) (video/mp4, 3.1 MB)
-- [2025_03_26_21_17_32.mp4](attachments/2025_03_26_21_17_32.mp4) (video/mp4, 11.2 MB)
-- [2025_03_26_22_17_23.mp4](attachments/2025_03_26_22_17_23.mp4) (video/mp4, 12.2 MB)
-- [2025_03_26_22_29_18.mp4](attachments/2025_03_26_22_29_18.mp4) (video/mp4, 9.9 MB)
+- video6214974538107588499.mp4 (video/mp4, 6.4 MB)
+- payment.html (text/html, 16.2 KB)
+- video6273551694387221470.mp4 (video/mp4, 3.1 MB)
+- 2025_03_26_21_17_32.mp4 (video/mp4, 11.2 MB)
+- 2025_03_26_22_17_23.mp4 (video/mp4, 12.2 MB)
+- 2025_03_26_22_29_18.mp4 (video/mp4, 9.9 MB)
 
 ## Timeline
 

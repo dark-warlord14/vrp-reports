@@ -31,9 +31,9 @@ Reporter Credit: if applicable, please credit my pseudonym Popax21 in regards to
 
 ## Attachments
 
-- [poc.js](attachments/poc.js) (text/javascript, 12.5 KB)
-- [poc-chromium.js](attachments/poc-chromium.js) (text/javascript, 34.5 KB)
-- [poc-chromium.js](attachments/poc-chromium.js) (text/javascript, 34.5 KB)
+- poc.js (text/javascript, 12.5 KB)
+- poc-chromium.js (text/javascript, 34.5 KB)
+- poc-chromium.js (text/javascript, 34.5 KB)
 
 ## Timeline
 

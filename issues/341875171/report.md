@@ -1,4 +1,4 @@
-# Sandbox escape from extensions due to insufficent checks in chrome.devtools.inspectedWindow.reload and chrome://policy
+# Extensions can run JS on any privileged origin by using a race condition with chrome.devtools.inspectedWindow.reload 
 
 | Field | Value |
 |-------|-------|
@@ -9,7 +9,7 @@
 | **Component** | Platform>DevTools |
 | **Platforms** | Linux, Mac, Windows, ChromeOS |
 | **Reporter** | ad...@gmail.com |
-| **Assignee** | yd...@google.com |
+| **Assignee** | pf...@google.com |
 | **Created** | 2024-05-21 |
 | **Bounty** | $20,000.00 |
 
@@ -54,11 +54,11 @@ Reporter credit: Allen Ding
 
 ## Attachments
 
-- [chrome_devtools_bug.mp4](attachments/chrome_devtools_bug.mp4) (video/mp4, 591.2 KB)
-- [worker.js](attachments/worker.js) (text/javascript, 149 B)
-- [manifest.json](attachments/manifest.json) (application/json, 243 B)
-- [devtools.html](attachments/devtools.html) (text/html, 73 B)
-- [index.html](attachments/index.html) (text/html, 191 B)
+- chrome_devtools_bug.mp4 (video/mp4, 591.2 KB)
+- worker.js (text/javascript, 149 B)
+- manifest.json (application/json, 243 B)
+- devtools.html (text/html, 73 B)
+- index.html (text/html, 191 B)
 - [devtools.js](attachments/devtools.js) (text/javascript, 1.4 KB)
 
 ## Timeline

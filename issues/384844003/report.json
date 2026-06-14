@@ -33,7 +33,7 @@
       "mime_type": "application/json",
       "size_bytes": 160,
       "url": "https://issues.chromium.org/action/issues/384844003/attachments/61630887?download=true",
-      "local_path": "attachments/manifest.json"
+      "local_path": null
     },
     {
       "id": 61630888,
@@ -41,7 +41,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 506,
       "url": "https://issues.chromium.org/action/issues/384844003/attachments/61630888?download=true",
-      "local_path": "attachments/background.js"
+      "local_path": null
     },
     {
       "id": 61630889,

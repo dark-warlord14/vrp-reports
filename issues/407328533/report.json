@@ -74,7 +74,7 @@
       "mime_type": "text/html",
       "size_bytes": 372,
       "url": "https://issues.chromium.org/action/issues/407328533/attachments/64408507?download=true",
-      "local_path": "attachments/crash2.html"
+      "local_path": "attachments/crash2_64408507.html"
     },
     {
       "id": 64417139,
@@ -98,7 +98,7 @@
       "mime_type": "text/html",
       "size_bytes": 590,
       "url": "https://issues.chromium.org/action/issues/407328533/attachments/65471578?download=true",
-      "local_path": "attachments/crash.html"
+      "local_path": "attachments/crash_65471578.html"
     }
   ],
   "update_count": 112,

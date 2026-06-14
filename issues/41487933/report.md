@@ -56,7 +56,7 @@ Reporter credit: Harry Chen
 - [victim3.html](attachments/victim3.html) (text/plain, 136 B)
 - [redirect.html](attachments/redirect.html) (text/plain, 72 B)
 - [x.js](attachments/x.js) (text/plain, 48 B)
-- [exp2.html](attachments/exp2.html) (text/plain, 725 B)
+- exp2.html (text/plain, 725 B)
 
 ## Timeline
 
@@ -372,6 +372,10 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 ### ch...@gmail.com (2025-12-28)
 
 deleted
+
+### fa...@gmail.com (2026-05-27)
+
+i am having an error while using blogger , i publsihed this article but i am unable to submit in the google search console, it says that the url is not in the proeprty. please look into this <https://nhsinfouk.blogspot.com/2026/05/best-nhs-pension-calculator-202627-know.html>
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/41487933)*

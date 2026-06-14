@@ -92,7 +92,7 @@ koocola(@alo_cook) and Nan Wang(@eternalsakura13) of 360 Alpha Lab
 - [git.patch](attachments/git.patch) (text/plain, 1.4 KB)
 - [asan.log](attachments/asan.log) (text/plain, 9.9 KB)
 - [indexed.html](attachments/indexed.html) (text/plain, 1.8 KB)
-- [indexed.html](attachments/indexed.html) (text/plain, 1.8 KB)
+- indexed.html (text/plain, 1.8 KB)
 
 ## Timeline
 

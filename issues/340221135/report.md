@@ -68,8 +68,8 @@ No, this vulnerability is private
 - deleted (application/octet-stream, 0 B)
 - deleted (application/octet-stream, 0 B)
 - deleted (application/octet-stream, 0 B)
-- [min.js](attachments/min.js) (text/javascript, 127 B)
-- [module.txt](attachments/module.txt) (text/plain, 20 B)
+- min.js (text/javascript, 127 B)
+- module.txt (text/plain, 20 B)
 
 ## Timeline
 

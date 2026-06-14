@@ -162,7 +162,7 @@ Regression: No
 
 ## Timeline
 
-### nh...@chromium.org (2025-06-02)
+### [Deleted User] (2025-06-02)
 
 chlily: this looks similar to [crbug.com/419922504](https://crbug.com/419922504), but the structure of the `data:` URL looks different enough that I think it's a different root cause. To repro on an actual device, I needed to add `<input type="text"></input>` to the poc after the `</script>` tag so that I could tap in the text box to get the on-screen keyboard to appear allowing me to generate a keydown event.
 

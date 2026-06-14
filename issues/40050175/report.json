@@ -1,0 +1,54 @@
+{
+  "id": "40050175",
+  "url": "https://issues.chromium.org/issues/40050175",
+  "title": "Security: URL bar spoofing on iOS ",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Mobile>iOSWeb>Security",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ga...@google.com",
+  "created_date": "2019-09-19T23:14:05+00:00",
+  "modified_date": "2024-08-21T12:00:50+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53416986,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 673,
+      "url": "https://issues.chromium.org/action/issues/40050175/attachments/53416986?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53416994,
+      "filename": "6199AB97-2C3F-424F-8756-60F9C9AE4FDD.MP4",
+      "mime_type": "video/mp4",
+      "size_bytes": 510663,
+      "url": "https://issues.chromium.org/action/issues/40050175/attachments/53416994?download=true",
+      "local_path": "attachments/6199AB97-2C3F-424F-8756-60F9C9AE4FDD.MP4"
+    },
+    {
+      "id": 53416995,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40050175/attachments/53416995?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 72,
+  "description_snippet": "**VERSION**   \nChrome Version: 78.0.3904.20  \nOperating System: iOS  \n  \n**REPRODUCTION CASE**   \n1. Lunch the PoC  \n2. Click on the button to copy the link  \n3. Focus the address bar and past the link  \n4. Click on the link to stop pending"
+}

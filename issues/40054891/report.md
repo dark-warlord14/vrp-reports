@@ -37,7 +37,7 @@ on ubuntu 18.04
 
 ## Attachments
 
-- [poc.js](attachments/poc.js) (text/plain, 645 B)
+- poc.js (text/plain, 645 B)
 
 ## Timeline
 

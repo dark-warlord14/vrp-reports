@@ -203,7 +203,7 @@ fuzz22.release.asan.webm test on gs://chromium-browser-asan/win32-release_x64/as
 
 ## Attachments
 
-- [182651.png](attachments/182651.png) (image/png, 226.8 KB)
+- 182651.png (image/png, 226.8 KB)
 - [182952.png](attachments/182952.png) (image/png, 161.6 KB)
 - [fuzz22.debug.webm](attachments/fuzz22.debug.webm) (video/webm, 3.2 MB)
 - [fuzz22.release.asan.webm](attachments/fuzz22.release.asan.webm) (video/webm, 9.3 MB)

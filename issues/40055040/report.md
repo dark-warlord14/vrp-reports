@@ -41,14 +41,14 @@ Flash Version:
 
 - deleted (application/octet-stream, 0 B)
 - deleted (application/octet-stream, 0 B)
-- [Screen Shot 2021-03-04 at 9.08.26 AM.png](attachments/Screen Shot 2021-03-04 at 9.08.26 AM.png) (image/png, 26.7 KB)
-- [Screenshot_20210304-091826.png](attachments/Screenshot_20210304-091826.png) (image/png, 155.6 KB)
-- [aosp1.jpg](attachments/aosp1.jpg) (image/jpeg, 4.7 MB)
-- [aosp2.jpg](attachments/aosp2.jpg) (image/jpeg, 6.0 MB)
-- [aosp3.jpg](attachments/aosp3.jpg) (image/jpeg, 5.4 MB)
-- [Screenshot_20210308-072721.png](attachments/Screenshot_20210308-072721.png) (image/png, 285.0 KB)
+- Screen Shot 2021-03-04 at 9.08.26 AM.png (image/png, 26.7 KB)
+- Screenshot_20210304-091826.png (image/png, 155.6 KB)
+- aosp1.jpg (image/jpeg, 4.7 MB)
+- aosp2.jpg (image/jpeg, 6.0 MB)
+- aosp3.jpg (image/jpeg, 5.4 MB)
+- Screenshot_20210308-072721.png (image/png, 285.0 KB)
 - deleted (application/octet-stream, 0 B)
-- [manifest.json](attachments/manifest.json) (application/json, 963 B)
+- manifest.json (application/json, 963 B)
 
 ## Timeline
 

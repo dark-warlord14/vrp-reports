@@ -45,9 +45,9 @@ Reporter credit: [goes here]
 - [bg-keyboard.js](attachments/bg-keyboard.js) (text/javascript, 1.1 KB)
 - [manifest.json](attachments/manifest.json) (application/json, 462 B)
 - [popup.html](attachments/popup.html) (text/html, 2.3 KB)
-- [popup.html](attachments/popup.html) (text/html, 2.3 KB)
+- popup.html (text/html, 2.3 KB)
 - [manifest (1).json](attachments/manifest (1).json) (application/json, 462 B)
-- [bg-keyboard.js](attachments/bg-keyboard.js) (text/javascript, 1.1 KB)
+- bg-keyboard.js (text/javascript, 1.1 KB)
 - [bandicam 2024-10-31 09-12-50-722 (1).mp4](attachments/bandicam 2024-10-31 09-12-50-722 (1).mp4) (video/mp4, 1.6 MB)
 
 ## Timeline

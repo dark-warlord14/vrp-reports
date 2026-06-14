@@ -1,0 +1,51 @@
+{
+  "id": "40050755",
+  "url": "https://issues.chromium.org/issues/40050755",
+  "title": "pdfium (XFA): invalid-vptr in CXFA_FFTextEdit::UpdateFWLData",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pd...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2019-11-21T00:29:25+00:00",
+  "modified_date": "2020-02-29T18:57:12+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53321089,
+      "filename": "chromium-1026918.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 609,
+      "url": "https://issues.chromium.org/action/issues/40050755/attachments/53321089?download=true",
+      "local_path": "attachments/chromium-1026918.pdf"
+    },
+    {
+      "id": 53321092,
+      "filename": "chromium-1026918.evt",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 32,
+      "url": "https://issues.chromium.org/action/issues/40050755/attachments/53321092?download=true",
+      "local_path": "attachments/chromium-1026918.evt"
+    }
+  ],
+  "update_count": 23,
+  "description_snippet": "UserAgent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.101 Safari/537.36\r\n\r\nSteps to reproduce the problem:\r\nxfa/fxfa/cxfa_fftextedit.cpp:277:18: runtime error: downcast of address 0x5583fdc14890 which does not point to an object of type 'CXFA_Barcode'\r\n0x"
+}

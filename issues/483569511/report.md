@@ -192,7 +192,7 @@ Reporter credit: Shaheen Fazim
 
 - [poc.html](attachments/poc.html) (text/html, 416 B)
 - [exploit.md](attachments/exploit.md) (text/markdown, 3.1 KB)
-- [poc.html](attachments/poc.html) (text/html, 1.2 KB)
+- poc.html (text/html, 1.2 KB)
 - [poc-write.html](attachments/poc-write.html) (text/html, 9.6 KB)
 - [v8.patch](attachments/v8.patch) (text/x-diff, 6.4 KB)
 - [exploit-write.md](attachments/exploit-write.md) (text/markdown, 5.5 KB)

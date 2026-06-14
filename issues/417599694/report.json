@@ -31,7 +31,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 46,
       "url": "https://issues.chromium.org/action/issues/417599694/attachments/65791473?download=true",
-      "local_path": null
+      "local_path": "attachments/out_better1crash-a849b610d97bc4bf8be154b2d226a4353b8fd93e"
     },
     {
       "id": 65791474,
@@ -39,7 +39,7 @@
       "mime_type": "application/x-sharedlib",
       "size_bytes": 8640504,
       "url": "https://issues.chromium.org/action/issues/417599694/attachments/65791474?download=true",
-      "local_path": null
+      "local_path": "attachments/image_operations_resize_fuzzer_better"
     },
     {
       "id": 65792147,
@@ -47,7 +47,7 @@
       "mime_type": "text/x-c++src",
       "size_bytes": 2092,
       "url": "https://issues.chromium.org/action/issues/417599694/attachments/65792147?download=true",
-      "local_path": null
+      "local_path": "attachments/image_operations_resize_fuzzer_better.cc"
     },
     {
       "id": 69234886,
@@ -55,7 +55,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 15459,
       "url": "https://issues.chromium.org/action/issues/417599694/attachments/69234886?download=true",
-      "local_path": null
+      "local_path": "attachments/logv142.asan"
     },
     {
       "id": 73292482,
@@ -63,7 +63,7 @@
       "mime_type": "application/zip",
       "size_bytes": 822963,
       "url": "https://issues.chromium.org/action/issues/417599694/attachments/73292482?download=true",
-      "local_path": null
+      "local_path": "attachments/poc.zip"
     },
     {
       "id": 73286484,
@@ -71,7 +71,7 @@
       "mime_type": "video/webm",
       "size_bytes": 6605099,
       "url": "https://issues.chromium.org/action/issues/417599694/attachments/73286484?download=true",
-      "local_path": null
+      "local_path": "attachments/repro.webm"
     }
   ],
   "update_count": 75,

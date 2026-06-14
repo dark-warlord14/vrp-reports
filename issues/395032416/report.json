@@ -33,7 +33,7 @@
       "mime_type": "text/javascript",
       "size_bytes": 1292,
       "url": "https://issues.chromium.org/action/issues/395032416/attachments/62770701?download=true",
-      "local_path": null
+      "local_path": "attachments/background.js"
     },
     {
       "id": 62770702,
@@ -41,7 +41,7 @@
       "mime_type": "application/json",
       "size_bytes": 160,
       "url": "https://issues.chromium.org/action/issues/395032416/attachments/62770702?download=true",
-      "local_path": null
+      "local_path": "attachments/manifest.json"
     },
     {
       "id": 62770703,
@@ -49,7 +49,7 @@
       "mime_type": "text/plain",
       "size_bytes": 36921,
       "url": "https://issues.chromium.org/action/issues/395032416/attachments/62770703?download=true",
-      "local_path": null
+      "local_path": "attachments/asan.log"
     },
     {
       "id": 62786211,

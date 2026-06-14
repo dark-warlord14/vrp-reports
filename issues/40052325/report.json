@@ -62,7 +62,7 @@
       "mime_type": "text/plain",
       "size_bytes": 540,
       "url": "https://issues.chromium.org/action/issues/40052325/attachments/53230923?download=true",
-      "local_path": "attachments/Parent.html"
+      "local_path": null
     },
     {
       "id": 53230924,
@@ -70,7 +70,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 1647693,
       "url": "https://issues.chromium.org/action/issues/40052325/attachments/53230924?download=true",
-      "local_path": "attachments/UpdatedSpoof.mp4"
+      "local_path": null
     },
     {
       "id": 53231066,
@@ -78,7 +78,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 319203,
       "url": "https://issues.chromium.org/action/issues/40052325/attachments/53231066?download=true",
-      "local_path": "attachments/TwitterSpoof.mp4"
+      "local_path": null
     },
     {
       "id": 53231203,
@@ -86,7 +86,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 6414374,
       "url": "https://issues.chromium.org/action/issues/40052325/attachments/53231203?download=true",
-      "local_path": "attachments/Fixed.mp4"
+      "local_path": null
     }
   ],
   "update_count": 87,

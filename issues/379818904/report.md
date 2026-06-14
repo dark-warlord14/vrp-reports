@@ -43,7 +43,7 @@ CREDIT INFORMATION Reporter credit: Zeddy in CUHK
 
 ## Timeline
 
-### nh...@chromium.org (2024-11-19)
+### [Deleted User] (2024-11-19)
 
 mahmadi: Can you find an owner for this bug?
 
@@ -295,6 +295,10 @@ This bug has been closed for more than 14 weeks. Removing issue access restricti
 ### ze...@gmail.com (2026-01-20)
 
 Still no CVE assigned? Or it will not be assigned?
+
+### ze...@gmail.com (2026-04-23)
+
+Any updates on this issue?
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/379818904)*

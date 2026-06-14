@@ -411,10 +411,10 @@ Discovered by Piotr Bania of Cisco Talos.
 
 ## Attachments
 
-- [TALOS-2021-1251 - Google_Chrome_WebAudio_blink::AudioNodeOutput::Pull_code_execution_vulnerability.txt](attachments/TALOS-2021-1251 - Google_Chrome_WebAudio_blink_AudioNodeOutput_Pull_code_execution_vulnerability.txt) (text/plain, 46.0 KB)
-- [poc_min.html](attachments/poc_min.html) (text/plain, 1.2 KB)
-- [poc_command_line.txt](attachments/poc_command_line.txt) (text/plain, 128 B)
-- [repro-1176218-r2.html](attachments/repro-1176218-r2.html) (text/plain, 636 B)
+- TALOS-2021-1251 - Google_Chrome_WebAudio_blink::AudioNodeOutput::Pull_code_execution_vulnerability.txt (text/plain, 46.0 KB)
+- poc_min.html (text/plain, 1.2 KB)
+- poc_command_line.txt (text/plain, 128 B)
+- repro-1176218-r2.html (text/plain, 636 B)
 
 ## Timeline
 

@@ -30,7 +30,7 @@
       "mime_type": "text/html",
       "size_bytes": 1349,
       "url": "https://issues.chromium.org/action/issues/422217920/attachments/66433311?download=true",
-      "local_path": "attachments/blob.html"
+      "local_path": null
     },
     {
       "id": 66433312,
@@ -38,7 +38,7 @@
       "mime_type": "text/html",
       "size_bytes": 359,
       "url": "https://issues.chromium.org/action/issues/422217920/attachments/66433312?download=true",
-      "local_path": "attachments/index.html"
+      "local_path": null
     },
     {
       "id": 66433313,
@@ -46,7 +46,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 197987,
       "url": "https://issues.chromium.org/action/issues/422217920/attachments/66433313?download=true",
-      "local_path": "attachments/repro.mp4"
+      "local_path": null
     }
   ],
   "update_count": 67,

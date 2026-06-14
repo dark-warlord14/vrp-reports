@@ -1,0 +1,33 @@
+{
+  "id": "40052054",
+  "url": "https://issues.chromium.org/issues/40052054",
+  "title": "Security: missing the -0 case when intersecting and computing the Type::Range in NumberMax",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ja...@gmail.com",
+  "assignee": "ne...@chromium.org",
+  "created_date": "2020-04-18T17:25:55+00:00",
+  "modified_date": "2024-01-09T01:02:41+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 46,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIn the Typer phase Math.max and Math.min generate the wrong type by mistakenly removing the Type::MinusZero property of the input nodes.  \n  \nThe faulty code is within the operation-typer.cc file here:  \nhttps://chromium.googlesource.com/v8/v8.git/+/refs/heads/master/src"
+}

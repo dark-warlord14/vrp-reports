@@ -38,7 +38,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 8650902,
       "url": "https://issues.chromium.org/action/issues/40054619/attachments/53296267?download=true",
-      "local_path": "attachments/bandicam 2021-01-29 19-56-47-218.mp4"
+      "local_path": null
     },
     {
       "id": 53296268,
@@ -46,7 +46,7 @@
       "mime_type": "text/plain",
       "size_bytes": 91,
       "url": "https://issues.chromium.org/action/issues/40054619/attachments/53296268?download=true",
-      "local_path": "attachments/index.html"
+      "local_path": null
     }
   ],
   "update_count": 47,

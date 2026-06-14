@@ -1,0 +1,29 @@
+{
+  "id": "366783804",
+  "url": "https://issues.chromium.org/issues/366783804",
+  "title": "Crash in blink::V8Initializer::ExceptionPropagationCallback",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>Bindings, Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2024-09-15T16:58:57+00:00",
+  "modified_date": "2024-12-25T15:42:16+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 9000.0,
+  "reward_amount_meta": 9000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 39,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=4847048679424000\n\nFuzzer: b0ring_webidl_fuzzer\nJob Type: linux_asan_content_shell_drt\nPlatform Id: linux\n\nCrash Type: UNKNOWN READ\nCrash Address: 0x7be94bd18000\nCrash State:\n  blink::V8Initializer::ExceptionPropagationCallback\n  v8::internal::Iso"
+}

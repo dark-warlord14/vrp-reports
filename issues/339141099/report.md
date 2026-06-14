@@ -116,7 +116,7 @@ Reporter credit: [goes here]
 
 ## Attachments
 
-- [background.js](attachments/background.js) (text/javascript, 1.1 KB)
+- background.js (text/javascript, 1.1 KB)
 - [manifest.json](attachments/manifest.json) (application/json, 225 B)
 - [out.txt](attachments/out.txt) (text/plain, 6.8 KB)
 

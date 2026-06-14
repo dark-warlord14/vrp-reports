@@ -1,0 +1,29 @@
+{
+  "id": "40052817",
+  "url": "https://issues.chromium.org/issues/40052817",
+  "title": "Security DCHECK failure: i < length() in string_view.h",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Platform",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "cl...@chromium.org",
+  "assignee": "ko...@chromium.org",
+  "created_date": "2020-07-11T18:11:35+00:00",
+  "modified_date": "2024-01-09T01:52:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 6000.0,
+  "reward_amount_meta": 6000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 33,
+  "description_snippet": "Detailed Report: https://clusterfuzz.com/testcase?key=5632044842942464\n\nFuzzer: miaubiz_css_fuzzer\nJob Type: linux_asan_chrome_v8_arm\nPlatform Id: linux\n\nCrash Type: Security DCHECK failure\nCrash Address: \nCrash State:\n  i < length() in string_view.h\n  blink::AddEmphasisMarkToBloberizer\n  blink::Sha"
+}

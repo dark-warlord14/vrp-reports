@@ -1,14 +1,15 @@
-# Audit and add validation for extension IPCs
+# Authorization Bypass in Target.exposeDevToolsProtocol via Missing Early Return
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [485287859](https://issues.chromium.org/issues/485287859) |
-| **Status** | Accepted |
-| **Severity** | S1-High |
-| **Priority** | P4 |
-| **Component** | Platform>Extensions |
-| **Reporter** | ka...@chromium.org |
-| **Assignee** | lu...@google.com |
+| **Status** | Assigned |
+| **Severity** | S3-Low |
+| **Priority** | P2 |
+| **Component** | Platform>DevTools |
+| **Platforms** | Linux, ChromeOS |
+| **Reporter** | oj...@gmail.com |
+| **Assignee** | al...@google.com |
 | **Created** | 2026-02-17 |
 | **Bounty** | $4,000.00 |
 
@@ -284,9 +285,9 @@ M. Fauzan Wijaya (Gh05t666nero)
 - [index.html](attachments/index.html) (text/html, 4.1 KB)
 - [background.js](attachments/background.js) (application/x-javascript, 685 B)
 - [manifest.json](attachments/manifest.json) (application/json, 204 B)
-- [background.js](attachments/background.js) (text/javascript, 1.1 KB)
-- [manifest.json](attachments/manifest.json) (application/json, 204 B)
-- [index.html](attachments/index.html) (text/html, 6.8 KB)
+- background.js (text/javascript, 1.1 KB)
+- manifest.json (application/json, 204 B)
+- index.html (text/html, 6.8 KB)
 - [poc-final.mp4](attachments/poc-final.mp4) (video/mp4, 7.4 MB)
 - [faq-proof.png](attachments/faq-proof.png) (image/png, 189.4 KB)
 - [retest-m144-m145-m146-m147.mp4](attachments/retest-m144-m145-m146-m147.mp4) (video/mp4, 2.0 MB)
@@ -294,8 +295,8 @@ M. Fauzan Wijaya (Gh05t666nero)
 - [run-impact-test.png](attachments/run-impact-test.png) (image/png, 136.5 KB)
 - [attacker.html](attachments/attacker.html) (text/html, 3.6 KB)
 - [victim.html](attachments/victim.html) (text/html, 237 B)
-- [background.js](attachments/background.js) (text/javascript, 1.9 KB)
-- [manifest.json](attachments/manifest.json) (application/json, 227 B)
+- background.js (text/javascript, 1.9 KB)
+- manifest.json (application/json, 227 B)
 
 ## Timeline
 
@@ -743,10 +744,6 @@ Labeled `LTS-Merge-Merged-144` because the patch was already merged to M144.
 ### ch...@google.com (2026-05-29)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> High Quality. Web Platform Privilege Escalation
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/485287859)*

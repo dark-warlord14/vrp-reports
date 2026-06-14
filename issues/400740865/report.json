@@ -46,7 +46,7 @@
       "mime_type": "application/x-msdos-program",
       "size_bytes": 519168,
       "url": "https://issues.chromium.org/action/issues/400740865/attachments/63462607?download=true",
-      "local_path": "attachments/FolderOrFileDeleteToSystem.exe"
+      "local_path": null
     },
     {
       "id": 63462608,
@@ -54,7 +54,7 @@
       "mime_type": "video/x-matroska",
       "size_bytes": 1864673,
       "url": "https://issues.chromium.org/action/issues/400740865/attachments/63462608?download=true",
-      "local_path": "attachments/PoC-Google-ChromeUpdater-EoP.mkv"
+      "local_path": null
     }
   ],
   "update_count": 68,

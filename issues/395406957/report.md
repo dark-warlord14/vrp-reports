@@ -91,9 +91,9 @@ Ciarán Cotter / Monke
 
 ## Attachments
 
-- Screen Recording 2025-02-09 at 12.35.34.mov (video/quicktime, 4.0 MB)
-- demo.html (text/html, 237 B)
-- Screenshot 2025-02-11 at 08.26.02.png (image/png, 1.2 MB)
+- [Screen Recording 2025-02-09 at 12.35.34.mov](attachments/Screen Recording 2025-02-09 at 12.35.34.mov) (video/quicktime, 4.0 MB)
+- [demo.html](attachments/demo.html) (text/html, 237 B)
+- [Screenshot 2025-02-11 at 08.26.02.png](attachments/Screenshot 2025-02-11 at 08.26.02.png) (image/png, 1.2 MB)
 
 ## Timeline
 

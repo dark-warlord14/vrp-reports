@@ -107,7 +107,7 @@ This was introduced in <https://chromium.googlesource.com/chromium/src/+/b40c9c2
 ## Attachments
 
 - [patch.diff](attachments/patch.diff) (text/x-diff, 1.3 KB)
-- [patch.diff](attachments/patch.diff) (text/x-diff, 1.3 KB)
+- patch.diff (text/x-diff, 1.3 KB)
 - [asan.log](attachments/asan.log) (text/plain, 50.5 KB)
 - [server.js](attachments/server.js) (text/javascript, 358 B)
 

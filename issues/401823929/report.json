@@ -5,7 +5,7 @@
   "status": "Assigned",
   "severity": "S3-Low",
   "priority": "P2",
-  "component": "Blink>WebAuthentication",
+  "component": "Blink>Web Authentication (Passkeys & Security Keys)",
   "os_platforms": [
     "Android"
   ],
@@ -14,7 +14,7 @@
   "reporter": "Si...@rawet.se",
   "assignee": "ke...@chromium.org",
   "created_date": "2025-03-09T23:58:29+00:00",
-  "modified_date": "2025-06-25T12:47:07+00:00",
+  "modified_date": "2026-06-12T17:09:33+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 2000.0,
@@ -41,6 +41,6 @@
       "local_path": "attachments/index.html"
     }
   ],
-  "update_count": 52,
+  "update_count": 54,
   "description_snippet": "VULNERABILITY DETAILS\nIt's possbile to bypass the fix for 370482421 by using a intent URI.\n\nVERSION\nChrome Version: 133.0.6943.137 stable\nOperating System: Pixel 7 Pro Android 15 March security updates.\n\nREPRODUCTION CASE\nSee https://issues.chromium.org/issues/370482421 for the original discussion."
 }

@@ -1,0 +1,123 @@
+{
+  "id": "339654392",
+  "url": "https://issues.chromium.org/issues/339654392",
+  "title": "Security: FedCM prompt bubble can be obscured by Video/Document PiP window, allow for hidden login",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Identity>FedCM",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "cb...@chromium.org",
+  "created_date": "2024-05-10T03:57:55+00:00",
+  "modified_date": "2024-10-30T15:43:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 56259216,
+      "filename": "fedcm-documentpip.html",
+      "mime_type": "text/html",
+      "size_bytes": 3222,
+      "url": "https://issues.chromium.org/action/issues/339654392/attachments/56259216?download=true",
+      "local_path": null
+    },
+    {
+      "id": 56259217,
+      "filename": "fedcm-videopip.html",
+      "mime_type": "text/html",
+      "size_bytes": 3091,
+      "url": "https://issues.chromium.org/action/issues/339654392/attachments/56259217?download=true",
+      "local_path": "attachments/fedcm-videopip.html"
+    },
+    {
+      "id": 56259218,
+      "filename": "fedcm-pip-login.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 12297264,
+      "url": "https://issues.chromium.org/action/issues/339654392/attachments/56259218?download=true",
+      "local_path": "attachments/fedcm-pip-login.mp4"
+    },
+    {
+      "id": 56261385,
+      "filename": "server-single-account.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2372,
+      "url": "https://issues.chromium.org/action/issues/339654392/attachments/56261385?download=true",
+      "local_path": "attachments/server-single-account.js"
+    },
+    {
+      "id": 56283353,
+      "filename": "fedcm-videopip.html",
+      "mime_type": "text/html",
+      "size_bytes": 2981,
+      "url": "https://issues.chromium.org/action/issues/339654392/attachments/56283353?download=true",
+      "local_path": null
+    },
+    {
+      "id": 56279865,
+      "filename": "pip-hello-world.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 12004,
+      "url": "https://issues.chromium.org/action/issues/339654392/attachments/56279865?download=true",
+      "local_path": "attachments/pip-hello-world.webm"
+    },
+    {
+      "id": 56374459,
+      "filename": "pip-permission-chromeos.html",
+      "mime_type": "text/html",
+      "size_bytes": 850,
+      "url": "https://issues.chromium.org/action/issues/339654392/attachments/56374459?download=true",
+      "local_path": "attachments/pip-permission-chromeos.html"
+    },
+    {
+      "id": 56374460,
+      "filename": "permission-ui-obscured-by-pip-window.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 3459530,
+      "url": "https://issues.chromium.org/action/issues/339654392/attachments/56374460?download=true",
+      "local_path": "attachments/permission-ui-obscured-by-pip-window.mov"
+    },
+    {
+      "id": 56441894,
+      "filename": "fedcm-documentpip-modal.html",
+      "mime_type": "text/html",
+      "size_bytes": 1606,
+      "url": "https://issues.chromium.org/action/issues/339654392/attachments/56441894?download=true",
+      "local_path": "attachments/fedcm-documentpip-modal.html"
+    },
+    {
+      "id": 56441920,
+      "filename": "fedcm-documentpip-modal-popup.html",
+      "mime_type": "text/html",
+      "size_bytes": 1170,
+      "url": "https://issues.chromium.org/action/issues/339654392/attachments/56441920?download=true",
+      "local_path": "attachments/fedcm-documentpip-modal-popup.html"
+    },
+    {
+      "id": 56441895,
+      "filename": "fedcm-documentpip-modal.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 7981169,
+      "url": "https://issues.chromium.org/action/issues/339654392/attachments/56441895?download=true",
+      "local_path": "attachments/fedcm-documentpip-modal.mp4"
+    }
+  ],
+  "update_count": 130,
+  "description_snippet": "#### SUMMARY\nThe FedCM prompt does not have input protections if the associated window is visible, allowing for hidden login if the prompt is obscured by a Video or Document PiP window.\n\nShowing the FedCM prompt does not require user interaction. \\\nA compromised renderer can open popups without user"
+}

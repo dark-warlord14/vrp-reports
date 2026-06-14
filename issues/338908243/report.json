@@ -1,0 +1,50 @@
+{
+  "id": "338908243",
+  "url": "https://issues.chromium.org/issues/338908243",
+  "title": "Type Confusion between WasmObject and JSObject in Array Concat",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime, Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "ml...@chromium.org",
+  "created_date": "2024-05-06T13:12:31+00:00",
+  "modified_date": "2024-08-17T15:41:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 56106026,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 72752,
+      "url": "https://issues.chromium.org/action/issues/338908243/attachments/56106026?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 56259225,
+      "filename": "repro-issue.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 744,
+      "url": "https://issues.chromium.org/action/issues/338908243/attachments/56259225?download=true",
+      "local_path": "attachments/repro-issue.js"
+    }
+  ],
+  "update_count": 108,
+  "description_snippet": "# Steps to reproduce the problem\n1. Download debug v8 from: gs://v8-asan/linux-debug/d8-linux-debug-v8-component-93712.zip\n2. Run: `./d8 poc.js`\n\n```bash\n$ cd /path/to/v8/\n$ /tmp/d8-linux-debug-v8-component-93712/d8 /tmp/poc.js\n\n#\n# Fatal error in gen/torque-generated/src/objects/js-objects-tq-inl.i"
+}

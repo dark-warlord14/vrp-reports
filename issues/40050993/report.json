@@ -1,0 +1,39 @@
+{
+  "id": "40050993",
+  "url": "https://issues.chromium.org/issues/40050993",
+  "title": "A null pointer dereference has been discovered in V8 compiler which affects the latest version.",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler, Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@ncsc.gov.uk",
+  "assignee": "cl...@chromium.org",
+  "created_date": "2019-12-09T14:27:21+00:00",
+  "modified_date": "2024-01-09T07:52:25+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53113068,
+      "filename": "NCSC Vulnerability Report 498687.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 109744,
+      "url": "https://issues.chromium.org/action/issues/40050993/attachments/53113068?download=true",
+      "local_path": "attachments/NCSC Vulnerability Report 498687.pdf"
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": "Summary\r\nA null pointer dereference has been discovered in V8 compiler which affects the latest version.\r\nThis vulnerability allows an attacker to bypass a security mitigation.\r\n\r\nDetails\r\nARM (unlike X86) uses fxed length 32-bit opcodes. This means that it cannot encode a 32-bit\r\nliteral immediate"
+}

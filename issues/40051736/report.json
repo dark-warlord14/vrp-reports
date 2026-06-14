@@ -1,0 +1,50 @@
+{
+  "id": "40051736",
+  "url": "https://issues.chromium.org/issues/40051736",
+  "title": "Security: PDFium heap-use-after-free in CPDFXFA_Page::GetNextXFAAnnot (XFA)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "my...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2020-03-11T12:00:57+00:00",
+  "modified_date": "2020-06-26T18:59:51+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52886557,
+      "filename": "test.evt",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 56,
+      "url": "https://issues.chromium.org/action/issues/40051736/attachments/52886557?download=true",
+      "local_path": "attachments/test.evt"
+    },
+    {
+      "id": 52886558,
+      "filename": "test.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 6492,
+      "url": "https://issues.chromium.org/action/issues/40051736/attachments/52886558?download=true",
+      "local_path": "attachments/test.pdf"
+    }
+  ],
+  "update_count": 24,
+  "description_snippet": "PDFium heap-use-after-free in CPDFXFA_Page::GetNextXFAAnnot (XFA)  \n  \n**VULNERABILITY DETAILS**   \n  \nCPDFSDK_Annot\\* CPDFXFA_Page::GetNextXFAAnnot(CPDFSDK_Annot\\* pSDKAnnot,  \n                                             bool bNext) {  \n...  \n  std::unique_ptr<IXFA_WidgetIterator> pWidgetIterator"
+}

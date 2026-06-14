@@ -1,13 +1,15 @@
-# **Does this work in other browsers? **  Yes - This is just a Chrome problem
+# ImageBitmapRenderingContext does not work from a worker
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [40062804](https://issues.chromium.org/issues/40062804) |
-| **Status** | Unknown |
-| **Severity** | Unknown |
-| **Priority** | Unknown |
-| **Component** | Unknown |
-| **Reporter** | Unknown |
+| **Status** | Assigned |
+| **Severity** | S3-Low |
+| **Priority** | P2 |
+| **Component** | Blink>Canvas |
+| **Platforms** | Mac |
+| **Reporter** | gm...@greggman.com |
+| **Assignee** | zm...@chromium.org |
 | **Created** | 2023-01-27 |
 | **Bounty** | $2,000.00 |
 
@@ -334,10 +336,6 @@ Reporter has alerted us that they are not eligible for rewards at this time.
 ### ch...@google.com (2026-05-19)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> Baseline. User information disclosure
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40062804)*

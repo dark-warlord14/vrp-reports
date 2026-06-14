@@ -199,7 +199,7 @@ Regression: N/A
 
 ## Attachments
 
-- [oob.html](attachments/oob.html) (text/html, 399.1 KB)
+- oob.html (text/html, 399.1 KB)
 
 ## Timeline
 

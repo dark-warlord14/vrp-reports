@@ -170,7 +170,7 @@ ClusterFuzz is analyzing your testcase. Developers can follow the progress at ht
 
 ClusterFuzz is analyzing your testcase. Developers can follow the progress at https://clusterfuzz.com/testcase?key=6188543642632192.
 
-### nh...@chromium.org (2025-10-27)
+### [Deleted User] (2025-10-27)
 
 Security shepherd here: I accidentally messed up the first clusterfuzz upload — please ignore that one.
 

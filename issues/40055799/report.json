@@ -1,0 +1,113 @@
+{
+  "id": "40055799",
+  "url": "https://issues.chromium.org/issues/40055799",
+  "title": "Security: heap-buffer-overflow in extensions",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "Platform>Extensions>API, UI>Browser>TopChrome>TabStrip",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "vm...@gmail.com",
+  "assignee": "dp...@chromium.org",
+  "created_date": "2021-05-10T10:50:38+00:00",
+  "modified_date": "2024-01-09T03:17:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52899258,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 649,
+      "url": "https://issues.chromium.org/action/issues/40055799/attachments/52899258?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 52899259,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 56,
+      "url": "https://issues.chromium.org/action/issues/40055799/attachments/52899259?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 52899260,
+      "filename": "1.html",
+      "mime_type": "text/plain",
+      "size_bytes": 45,
+      "url": "https://issues.chromium.org/action/issues/40055799/attachments/52899260?download=true",
+      "local_path": "attachments/1.html"
+    },
+    {
+      "id": 52899261,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40055799/attachments/52899261?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52899262,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40055799/attachments/52899262?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52899281,
+      "filename": "extension01.js",
+      "mime_type": "text/plain",
+      "size_bytes": 4331,
+      "url": "https://issues.chromium.org/action/issues/40055799/attachments/52899281?download=true",
+      "local_path": "attachments/extension01.js"
+    },
+    {
+      "id": 52899282,
+      "filename": "extension02.js",
+      "mime_type": "text/plain",
+      "size_bytes": 20235,
+      "url": "https://issues.chromium.org/action/issues/40055799/attachments/52899282?download=true",
+      "local_path": "attachments/extension02.js"
+    },
+    {
+      "id": 52899304,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 617,
+      "url": "https://issues.chromium.org/action/issues/40055799/attachments/52899304?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52899305,
+      "filename": "log-beta",
+      "mime_type": "text/plain",
+      "size_bytes": 6321,
+      "url": "https://issues.chromium.org/action/issues/40055799/attachments/52899305?download=true",
+      "local_path": "attachments/log-beta"
+    },
+    {
+      "id": 52899376,
+      "filename": "Screencast from 2021年06月09日 10时39分16秒.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 5711930,
+      "url": "https://issues.chromium.org/action/issues/40055799/attachments/52899376?download=true",
+      "local_path": "attachments/Screencast from 2021年06月09日 10时39分16秒.webm"
+    }
+  ],
+  "update_count": 79,
+  "description_snippet": "**VERSION**   \nChrome Version: (tested on) Version 92.0.4492.0 (Developer Build) (64-bit)  \nOperating System: (tested on) Ubuntu20  \n  \n  \n**FOR CRASHES, PLEASE INCLUDE THE FOLLOWING ADDITIONAL INFORMATION**   \nType of crash: browser  \nCrash State:   \n==1011516==ERROR: AddressSanitizer:"
+}

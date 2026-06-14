@@ -64,8 +64,8 @@ Reporter credit: David Erceg
 
 ## Attachments
 
-- [download.txt](attachments/download.txt) (text/plain, 1 B)
-- [iframe.html](attachments/iframe.html) (text/plain, 113 B)
+- download.txt (text/plain, 1 B)
+- iframe.html (text/plain, 113 B)
 - [iframe.js](attachments/iframe.js) (text/plain, 121 B)
 - [index.html](attachments/index.html) (text/plain, 152 B)
 - [server.py](attachments/server.py) (text/plain, 488 B)

@@ -1,0 +1,46 @@
+{
+  "id": "341991535",
+  "url": "https://issues.chromium.org/issues/341991535",
+  "title": "Security: Container-overflow in STGEverythingMenu::ExecuteCommand",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>TopChrome>TabStrip>TabGroups",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": "125.0.6422.60 ",
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "pe...@google.com",
+  "created_date": "2024-05-22T03:34:43+00:00",
+  "modified_date": "2024-11-04T17:58:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 56560341,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 121,
+      "url": "https://issues.chromium.org/action/issues/341991535/attachments/56560341?download=true",
+      "local_path": null
+    },
+    {
+      "id": 56560342,
+      "filename": "video.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 736291,
+      "url": "https://issues.chromium.org/action/issues/341991535/attachments/56560342?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "# Steps to reproduce the problem\n1. download asan-linux-release-1303566.zip and unzip\n2. start a http server at the folder of poc.html\n3. run `./asan-linux-release-1303566/chrome  --user-data-dir=/tmp/noexist http://127.0.0.1:8605/poc.html about:blank`\n4. add the `poc.html` to TabGroup and then save"
+}

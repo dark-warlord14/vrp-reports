@@ -20,7 +20,7 @@
   "reporter": "da...@davidmanouchehri.com",
   "assignee": "en...@chromium.org",
   "created_date": "2022-05-16T18:42:05+00:00",
-  "modified_date": "2026-03-27T17:01:58+00:00",
+  "modified_date": "2026-06-08T15:11:50+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 10000.0,
@@ -39,6 +39,6 @@
       "local_path": "attachments/index.js"
     }
   ],
-  "update_count": 64,
+  "update_count": 68,
   "description_snippet": "Reserved."
 }

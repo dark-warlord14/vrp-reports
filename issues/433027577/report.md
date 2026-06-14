@@ -117,8 +117,8 @@ Regression: N/A \
 
 ## Attachments
 
-- [asan.txt](attachments/asan.txt) (text/plain, 12.9 KB)
-- [full.log](attachments/full.log) (text/plain, 70.5 KB)
+- asan.txt (text/plain, 12.9 KB)
+- full.log (text/plain, 70.5 KB)
 
 ## Timeline
 
@@ -130,7 +130,7 @@ Flags: --no-sandbox --enable-logging=stderr --v=0
 
 Since the bisect code was submitted on July 13, 2021, this issue may affect the stable channel.
 
-### nh...@chromium.org (2025-07-21)
+### [Deleted User] (2025-07-21)
 
 Thank you for the report. Based on the lack of reproduction steps and the described no stable reproduction case, I'm treating this as a speculative report. If you're able to provide additional information on on conditions to reproduce, that would be appreciated in being able to resolve this bug.
 

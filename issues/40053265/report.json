@@ -1,0 +1,72 @@
+{
+  "id": "40053265",
+  "url": "https://issues.chromium.org/issues/40053265",
+  "title": "Portrait photos (taken by Pixel3aXL) with EXIF crash on Desktop",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebGL",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "zu...@gmail.com",
+  "assignee": "sc...@chromium.org",
+  "created_date": "2020-09-06T07:10:43+00:00",
+  "modified_date": "2024-01-09T02:29:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53402285,
+      "filename": "IMG_20200828_193925.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 1739025,
+      "url": "https://issues.chromium.org/action/issues/40053265/attachments/53402285?download=true",
+      "local_path": "attachments/IMG_20200828_193925.jpg"
+    },
+    {
+      "id": 53402286,
+      "filename": "IMG_20200828_193928.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 1735016,
+      "url": "https://issues.chromium.org/action/issues/40053265/attachments/53402286?download=true",
+      "local_path": "attachments/IMG_20200828_193928.jpg"
+    },
+    {
+      "id": 53402310,
+      "filename": "1125337.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 928729,
+      "url": "https://issues.chromium.org/action/issues/40053265/attachments/53402310?download=true",
+      "local_path": "attachments/1125337.mp4"
+    },
+    {
+      "id": 53402386,
+      "filename": "exif-orientation-resources.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 83702,
+      "url": "https://issues.chromium.org/action/issues/40053265/attachments/53402386?download=true",
+      "local_path": "attachments/exif-orientation-resources.zip"
+    },
+    {
+      "id": 53402481,
+      "filename": "bug.html",
+      "mime_type": "text/plain",
+      "size_bytes": 19483,
+      "url": "https://issues.chromium.org/action/issues/40053265/attachments/53402481?download=true",
+      "local_path": "attachments/bug.html"
+    }
+  ],
+  "update_count": 81,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36\r\n\r\nExample URL:\r\nhttp://ik1-333-26678.vs.sakura.ne.jp/ImageLoadTest/\r\n\r\nSteps to reproduce the problem:\r\n1. Select Filechooser button.\r\n2. Select portrait photo attach"
+}

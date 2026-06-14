@@ -16,8 +16,8 @@
   "cve_ids": [],
   "reporter": "st...@gmail.com",
   "assignee": "tl...@google.com",
-  "created_date": null,
-  "modified_date": null,
+  "created_date": "2024-06-17T11:26:42+00:00",
+  "modified_date": "2024-11-04T17:16:52+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 1000.0,
@@ -26,7 +26,16 @@
   "award_text_found": false,
   "award_text_source_update": null,
   "bounty_rationale": null,
-  "attachments": [],
-  "update_count": 0,
-  "description_snippet": ""
+  "attachments": [
+    {
+      "id": 57236754,
+      "filename": "poc.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 2800800,
+      "url": "https://issues.chromium.org/action/issues/347664964/attachments/57236754?download=true",
+      "local_path": "attachments/poc.webm"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "---\n\n### Report description\n\n\nSecurity: heap-use-after-free in GetModalDialogBounds\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/rules/57451678"
 }

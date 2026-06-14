@@ -1,0 +1,74 @@
+{
+  "id": "354847246",
+  "url": "https://issues.chromium.org/issues/354847246",
+  "title": "UAF in blink::AudioBus::Zero()",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Media>Audio, Blink>WebAudio",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "em...@gmail.com",
+  "assignee": "ho...@chromium.org",
+  "created_date": "2024-07-23T17:11:20+00:00",
+  "modified_date": "2024-11-07T15:41:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58140183,
+      "filename": "crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 977,
+      "url": "https://issues.chromium.org/action/issues/354847246/attachments/58140183?download=true",
+      "local_path": "attachments/crash.html"
+    },
+    {
+      "id": 58140184,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 38483,
+      "url": "https://issues.chromium.org/action/issues/354847246/attachments/58140184?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 58206302,
+      "filename": "2024-07-25_web_audio_bench_clean.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3292,
+      "url": "https://issues.chromium.org/action/issues/354847246/attachments/58206302?download=true",
+      "local_path": "attachments/2024-07-25_web_audio_bench_clean.txt"
+    },
+    {
+      "id": 58203022,
+      "filename": "2024-07-25_web_audio_bench_with_patch.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3300,
+      "url": "https://issues.chromium.org/action/issues/354847246/attachments/58203022?download=true",
+      "local_path": "attachments/2024-07-25_web_audio_bench_with_patch.txt"
+    },
+    {
+      "id": 58256881,
+      "filename": "asan2.log",
+      "mime_type": "text/plain",
+      "size_bytes": 38532,
+      "url": "https://issues.chromium.org/action/issues/354847246/attachments/58256881?download=true",
+      "local_path": "attachments/asan2.log"
+    }
+  ],
+  "update_count": 130,
+  "description_snippet": "tested OS:\nubuntu 22.04\nMacOS 14.0\n\ntested chrome version:\nstable & beta & dev\n\nalso tested with latest asan built chrome (gs://chromium-browser-asan/linux-release/asan-linux-release-1331767.zip)\n\nrepro steps:\nchrome --user-data-dir=/tmp/xx http://localhost:8880/crash.html\n==1==ERROR: AddressSanitiz"
+}

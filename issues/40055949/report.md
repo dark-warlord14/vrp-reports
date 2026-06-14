@@ -272,7 +272,7 @@ Flash Version: Shockwave Flash 30.0 r0
 
 ## Attachments
 
-- [ChromiumHeapUaFViaLoopedReloadWithDevTools.mp4](attachments/ChromiumHeapUaFViaLoopedReloadWithDevTools.mp4) (video/mp4, 1.6 MB)
+- ChromiumHeapUaFViaLoopedReloadWithDevTools.mp4 (video/mp4, 1.6 MB)
 - [win-asan-report-heap-uaf.txt](attachments/win-asan-report-heap-uaf.txt) (text/plain, 17.9 KB)
 
 ## Timeline

@@ -15,7 +15,7 @@
   "reporter": "em...@gmail.com",
   "assignee": "lo...@google.com",
   "created_date": "2024-07-12T05:54:56+00:00",
-  "modified_date": "2026-03-06T08:01:22+00:00",
+  "modified_date": "2026-06-08T16:17:06+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 8000.0,
@@ -50,6 +50,6 @@
       "local_path": "attachments/launcher.sh"
     }
   ],
-  "update_count": 49,
+  "update_count": 51,
   "description_snippet": "UAF in dawn::wire::client::Device::HandleError\ntested OS:ubuntu 22.04\ntested chrome:\nChromium 128.0.6591.0(gs://chromium-browser-asan/linux-release/asan-linux-release-1326524.zip)\nChromium 128.0.6585.0\n\n- Repro steps (on the real Machine)\n./chrome --user-data-dir=/tmp/xx1 --enable-unsafe-webgpu --in"
 }

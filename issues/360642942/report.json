@@ -1,0 +1,206 @@
+{
+  "id": "360642942",
+  "url": "https://issues.chromium.org/issues/360642942",
+  "title": "Multiple Vulnerability Address Bar Spoofing to XSS via Recent Search",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gh...@gmail.com",
+  "assignee": "ga...@chromium.org",
+  "created_date": "2024-08-18T16:57:54+00:00",
+  "modified_date": "2024-12-18T20:52:28+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58740886,
+      "filename": "Universal XSS.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 17340681,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/58740886?download=true",
+      "local_path": "attachments/Universal XSS.mp4"
+    },
+    {
+      "id": 58740887,
+      "filename": "Universal XSS.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 368499,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/58740887?download=true",
+      "local_path": "attachments/Universal XSS.jpg"
+    },
+    {
+      "id": 58740888,
+      "filename": "Address Bar Spoof.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 343330,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/58740888?download=true",
+      "local_path": "attachments/Address Bar Spoof.jpg"
+    },
+    {
+      "id": 58740889,
+      "filename": "Address Bar Spoof.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 20726645,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/58740889?download=true",
+      "local_path": "attachments/Address Bar Spoof.mp4"
+    },
+    {
+      "id": 58740890,
+      "filename": "Address Bar Spoof 2.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 346538,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/58740890?download=true",
+      "local_path": "attachments/Address Bar Spoof 2.jpg"
+    },
+    {
+      "id": 58765440,
+      "filename": "Universal XSS on Google Chrome via Recent Search(2).mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 11851222,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/58765440?download=true",
+      "local_path": "attachments/Universal XSS on Google Chrome via Recent Search(2).mp4"
+    },
+    {
+      "id": 58766658,
+      "filename": "Universal XSS on Google Chrome via Recent Search.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 17997757,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/58766658?download=true",
+      "local_path": "attachments/Universal XSS on Google Chrome via Recent Search.mp4"
+    },
+    {
+      "id": 58763952,
+      "filename": "Microsoft Edge.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 17824275,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/58763952?download=true",
+      "local_path": "attachments/Microsoft Edge.mp4"
+    },
+    {
+      "id": 58766659,
+      "filename": "Firefox PoC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 17253115,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/58766659?download=true",
+      "local_path": "attachments/Firefox PoC.mp4"
+    },
+    {
+      "id": 58766660,
+      "filename": "Opera Browser PoC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 12584532,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/58766660?download=true",
+      "local_path": "attachments/Opera Browser PoC.mp4"
+    },
+    {
+      "id": 58813656,
+      "filename": "Vid 1.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 7347347,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/58813656?download=true",
+      "local_path": null
+    },
+    {
+      "id": 58797087,
+      "filename": "Vid 2.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 12097947,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/58797087?download=true",
+      "local_path": null
+    },
+    {
+      "id": 58928840,
+      "filename": "Fix By Edge Mobile.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 31588826,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/58928840?download=true",
+      "local_path": null
+    },
+    {
+      "id": 58928868,
+      "filename": "Screenshot_2024-08-27-06-22-29-93_40deb401b9ffe8e1df2f1cc5ba480b12.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 767405,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/58928868?download=true",
+      "local_path": null
+    },
+    {
+      "id": 58960957,
+      "filename": "PoC Chrome.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 18298113,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/58960957?download=true",
+      "local_path": null
+    },
+    {
+      "id": 59049149,
+      "filename": "VID-20240830-WA0016.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 8240875,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/59049149?download=true",
+      "local_path": null
+    },
+    {
+      "id": 59149181,
+      "filename": "WhatsApp Image 2024-09-05 at 02.43.31.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 53121,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/59149181?download=true",
+      "local_path": null
+    },
+    {
+      "id": 59142292,
+      "filename": "WhatsApp Image 2024-09-05 at 02.39.30.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 74607,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/59142292?download=true",
+      "local_path": "attachments/WhatsApp Image 2024-09-05 at 02.39.30.jpeg"
+    },
+    {
+      "id": 59149182,
+      "filename": "WhatsApp Image 2024-09-05 at 02.39.29.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 77919,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/59149182?download=true",
+      "local_path": "attachments/WhatsApp Image 2024-09-05 at 02.39.29.jpeg"
+    },
+    {
+      "id": 59142293,
+      "filename": "IOS UXSS.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 9543997,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/59142293?download=true",
+      "local_path": "attachments/IOS UXSS.mp4"
+    },
+    {
+      "id": 59372100,
+      "filename": "Screenshot 2024-09-13 080747.png",
+      "mime_type": "image/png",
+      "size_bytes": 33547,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/59372100?download=true",
+      "local_path": "attachments/Screenshot 2024-09-13 080747.png"
+    },
+    {
+      "id": 59372101,
+      "filename": "Screenshot (392).png",
+      "mime_type": "image/png",
+      "size_bytes": 240985,
+      "url": "https://issues.chromium.org/action/issues/360642942/attachments/59372101?download=true",
+      "local_path": "attachments/Screenshot (392).png"
+    }
+  ],
+  "update_count": 165,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

@@ -279,7 +279,7 @@ Received signal 11 SEGV\_ACCERR 2ca1beadbef6
 
 ## Attachments
 
-- [poc.js](attachments/poc.js) (text/plain, 1.2 KB)
+- poc.js (text/plain, 1.2 KB)
 
 ## Timeline
 

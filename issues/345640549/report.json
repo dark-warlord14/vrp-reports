@@ -1,0 +1,54 @@
+{
+  "id": "345640549",
+  "url": "https://issues.chromium.org/issues/345640549",
+  "title": "heap-use-after-free in in content::RemoveWebUIManagedInterfaces",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Navigation, UI>Browser>WebUI",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "127.0.6524.1",
+  "cve_ids": [],
+  "reporter": "xp...@gmail.com",
+  "assignee": "ra...@chromium.org",
+  "created_date": "2024-06-07T08:02:16+00:00",
+  "modified_date": "2024-09-28T16:13:11+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2500.0,
+  "reward_amount_meta": 2500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 56994050,
+      "filename": "NVIDIA_Share_dQ8ZSiZ8zv.gif",
+      "mime_type": "image/gif",
+      "size_bytes": 13543162,
+      "url": "https://issues.chromium.org/action/issues/345640549/attachments/56994050?download=true",
+      "local_path": "attachments/NVIDIA_Share_dQ8ZSiZ8zv.gif"
+    },
+    {
+      "id": 56994051,
+      "filename": "_asan_.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 21258,
+      "url": "https://issues.chromium.org/action/issues/345640549/attachments/56994051?download=true",
+      "local_path": "attachments/_asan_.txt"
+    },
+    {
+      "id": 56994060,
+      "filename": "poc.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 1102,
+      "url": "https://issues.chromium.org/action/issues/345640549/attachments/56994060?download=true",
+      "local_path": "attachments/poc.zip"
+    }
+  ],
+  "update_count": 77,
+  "description_snippet": "# Steps to reproduce the problem\nHi happy friday,\n\n2 methods to reproduce this UAF.\n\n# Extension Method (automatic)\n1.  Make sure Chrome has only 1 tab open in current window. Only the chrome://extension tab.\n2.  Add poc.zip to Chrome\n\n# Manual Method:\n1. Visit chrome://print/ from URL bar.\n2. Visit"
+}

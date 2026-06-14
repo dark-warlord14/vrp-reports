@@ -132,7 +132,7 @@ Received signal 10 BUS_ADRALN 37b001064c14
 
 ClusterFuzz is analyzing your testcase. Developers can follow the progress at https://clusterfuzz.com/testcase?key=4798757916835840.
 
-### nh...@chromium.org (2025-12-08)
+### [Deleted User] (2025-12-08)
 
 Tentatively set FoundIn and severity.
 

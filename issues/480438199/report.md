@@ -195,7 +195,7 @@ Reporter credit: Bjarne Boll (@Rairosu) at Neodyme Ag
 ## Attachments
 
 - [poc.js](attachments/poc.js) (text/javascript, 3.0 KB)
-- [poc.js](attachments/poc.js) (text/javascript, 3.2 KB)
+- poc.js (text/javascript, 3.2 KB)
 
 ## Timeline
 

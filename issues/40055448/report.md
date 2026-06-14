@@ -338,7 +338,7 @@ Shadow gap: cc
 - [screen.mov](attachments/screen.mov) (video/quicktime, 9.2 MB)
 - [testcase.html](attachments/testcase.html) (text/plain, 1.2 KB)
 - [confirm.js](attachments/confirm.js) (text/plain, 1.2 KB)
-- [screen.mov](attachments/screen.mov) (video/quicktime, 12.0 MB)
+- screen.mov (video/quicktime, 12.0 MB)
 
 ## Timeline
 

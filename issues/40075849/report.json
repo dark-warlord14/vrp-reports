@@ -110,7 +110,7 @@
       "mime_type": "text/x-sh",
       "size_bytes": 265,
       "url": "https://issues.chromium.org/action/issues/40075849/attachments/56286065?download=true",
-      "local_path": "attachments/clean_sys.sh"
+      "local_path": "attachments/clean_sys_56286065.sh"
     },
     {
       "id": 56292651,
@@ -150,7 +150,7 @@
       "mime_type": "application/x-freemind",
       "size_bytes": 800,
       "url": "https://issues.chromium.org/action/issues/40075849/attachments/56292653?download=true",
-      "local_path": "attachments/trigger.mm"
+      "local_path": "attachments/trigger_56292653.mm"
     },
     {
       "id": 56286067,
@@ -158,7 +158,7 @@
       "mime_type": "application/x-freemind",
       "size_bytes": 5253,
       "url": "https://issues.chromium.org/action/issues/40075849/attachments/56286067?download=true",
-      "local_path": "attachments/exploit.mm"
+      "local_path": "attachments/exploit_56286067.mm"
     }
   ],
   "update_count": 127,

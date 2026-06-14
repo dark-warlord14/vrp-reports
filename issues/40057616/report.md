@@ -55,7 +55,7 @@ Reporter credit: Suhwan Song
 - [child.html](attachments/child.html) (text/plain, 148 B)
 - [Screenshot.png](attachments/Screenshot.png) (image/png, 130.2 KB)
 - [Screenshot_click.png](attachments/Screenshot_click.png) (image/png, 148.8 KB)
-- [parent.html](attachments/parent.html) (text/plain, 369 B)
+- [parent.html](attachments/parent_52943886.html) (text/plain, 369 B)
 - [chrome___version.png](attachments/chrome_version.png) (image/png, 783.0 KB)
 
 ## Timeline

@@ -1,0 +1,38 @@
+{
+  "id": "40054999",
+  "url": "https://issues.chromium.org/issues/40054999",
+  "title": "Security: webgl2 BlitFramebuffer Stencil Attachment heap-overflow",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "[Deleted User]",
+  "assignee": "ge...@chromium.org",
+  "created_date": "2021-02-27T00:53:29+00:00",
+  "modified_date": "2024-03-12T14:04:27+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7500.0,
+  "reward_amount_meta": 7500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53338884,
+      "filename": "poc-blit-stencil.html",
+      "mime_type": "text/plain",
+      "size_bytes": 741,
+      "url": "https://issues.chromium.org/action/issues/40054999/attachments/53338884?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 72,
+  "description_snippet": "#BlitFramebuffer Stencil Attachment \r\n\r\n##Crash Environment:\r\nGoogle Chrome build version 88.0.4324.190 (Official Build) (64-bit)\r\nGoogle Chrome Canary build version 90.0.4430.0 (Official Build) canary (64-bit)\r\non Windows\r\n\r\n##Crash Analysis:\r\nCrash occurs at libglesv2!memcpy+0xa2 at the following"
+}

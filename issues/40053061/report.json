@@ -1,0 +1,57 @@
+{
+  "id": "40053061",
+  "url": "https://issues.chromium.org/issues/40053061",
+  "title": "CSP Bypass via Chrome Extension",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>ContentSecurityPolicy, Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gh...@gmail.com",
+  "assignee": "ar...@chromium.org",
+  "created_date": "2020-08-12T17:24:39+00:00",
+  "modified_date": "2024-01-09T02:18:18+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52955021,
+      "filename": "csp_bypass_extension.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 28863,
+      "url": "https://issues.chromium.org/action/issues/40053061/attachments/52955021?download=true",
+      "local_path": "attachments/csp_bypass_extension.zip"
+    },
+    {
+      "id": 52955022,
+      "filename": "mysite_csp.php",
+      "mime_type": "text/plain",
+      "size_bytes": 262,
+      "url": "https://issues.chromium.org/action/issues/40053061/attachments/52955022?download=true",
+      "local_path": "attachments/mysite_csp.php"
+    },
+    {
+      "id": 52955023,
+      "filename": "mysite_xframe.php",
+      "mime_type": "text/plain",
+      "size_bytes": 229,
+      "url": "https://issues.chromium.org/action/issues/40053061/attachments/52955023?download=true",
+      "local_path": "attachments/mysite_xframe.php"
+    }
+  ],
+  "update_count": 78,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nCSP(Content-Security-Policy) has a header frame-ancestors which blocks click jacking and UI Redressing Vulnerabilities. However, I have discovered a way to bypass the frame-ancestors header via Chrome Extension.   \n  \n**VERSION**   \nChrome Version: 84.0.4147.125 (Offi"
+}

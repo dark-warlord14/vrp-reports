@@ -1,0 +1,57 @@
+{
+  "id": "40055616",
+  "url": "https://issues.chromium.org/issues/40055616",
+  "title": "Security: Container-overflow when extension is disabled or uninstalled while dragging icon in extensions toolbar",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "em...@chromium.org",
+  "created_date": "2021-04-21T04:57:42+00:00",
+  "modified_date": "2024-01-09T07:51:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53327337,
+      "filename": "asan_output_874548.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 15728,
+      "url": "https://issues.chromium.org/action/issues/40055616/attachments/53327337?download=true",
+      "local_path": null
+    },
+    {
+      "id": 53327338,
+      "filename": "background.js",
+      "mime_type": "text/plain",
+      "size_bytes": 144,
+      "url": "https://issues.chromium.org/action/issues/40055616/attachments/53327338?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 53327339,
+      "filename": "manifest.json",
+      "mime_type": "text/plain",
+      "size_bytes": 191,
+      "url": "https://issues.chromium.org/action/issues/40055616/attachments/53327339?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nWhen the icon for an extension is being dragged within the extensions toolbar, if that extension is disabled or uninstalled, a container-overflow will occur in the browser process.  \n  \n**VERSION**   \nChrome Version: Tested on 92.0.4484.0 (latest asan build)  \nOperating"
+}

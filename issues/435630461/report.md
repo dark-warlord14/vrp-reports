@@ -167,7 +167,7 @@ Reporter credit: Krishna Ravishankar (@krsh732)
 
 ## Attachments
 
-- [typed-array-oob-write.js](attachments/typed-array-oob-write.js) (text/javascript, 1.3 KB)
+- typed-array-oob-write.js (text/javascript, 1.3 KB)
 
 ## Timeline
 

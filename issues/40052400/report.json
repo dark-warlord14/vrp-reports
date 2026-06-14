@@ -1,0 +1,68 @@
+{
+  "id": "40052400",
+  "url": "https://issues.chromium.org/issues/40052400",
+  "title": "Use of uninitialized value in SkAlphaRuns::Break",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "mo...@google.com",
+  "created_date": "2011-12-25T20:43:34+00:00",
+  "modified_date": "2018-04-25T23:51:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52956571,
+      "filename": "sk1.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 445,
+      "url": "https://issues.chromium.org/action/issues/40052400/attachments/52956571?download=true",
+      "local_path": "attachments/sk1.html"
+    },
+    {
+      "id": 52956572,
+      "filename": "vg-sk2.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 599874,
+      "url": "https://issues.chromium.org/action/issues/40052400/attachments/52956572?download=true",
+      "local_path": "attachments/vg-sk2.txt"
+    },
+    {
+      "id": 52956575,
+      "filename": "vg-sk1.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 586962,
+      "url": "https://issues.chromium.org/action/issues/40052400/attachments/52956575?download=true",
+      "local_path": "attachments/vg-sk1.txt"
+    },
+    {
+      "id": 52956576,
+      "filename": "sk2.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 488,
+      "url": "https://issues.chromium.org/action/issues/40052400/attachments/52956576?download=true",
+      "local_path": "attachments/sk2.html"
+    },
+    {
+      "id": 52956604,
+      "filename": "convex.diff",
+      "mime_type": "text/x-diff; charset=us-ascii",
+      "size_bytes": 1023,
+      "url": "https://issues.chromium.org/action/issues/40052400/attachments/52956604?download=true",
+      "local_path": "attachments/convex.diff"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nuse of unitialized value with border styles  \n  \n**VERSION**   \nChrome Version:   \n  \n  \nChromium\t18.0.983.0 (Developer Build 115770)  \nOS\tLinux  \nWebKit\t535.15 (@103658)  \nJavaScript\tV8 3.8.2.1  \n  \nOperating System: linux 64bit  \n  \n**REPRODUCTION CASE**   \n<html>  \n<h"
+}

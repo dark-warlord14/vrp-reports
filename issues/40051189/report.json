@@ -1,0 +1,43 @@
+{
+  "id": "40051189",
+  "url": "https://issues.chromium.org/issues/40051189",
+  "title": "Security:  Another \"universal\" XSS via copy&paste",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Editing, Blink>SVG",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@bentkowski.info",
+  "assignee": "xi...@chromium.org",
+  "created_date": "2020-01-10T02:39:50+00:00",
+  "modified_date": "2024-01-08T23:55:53+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53351386,
+      "filename": "copy-paste-xss.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 665778,
+      "url": "https://issues.chromium.org/action/issues/40051189/attachments/53351386?download=true",
+      "local_path": "attachments/copy-paste-xss.mp4"
+    }
+  ],
+  "update_count": 82,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nIt is possible to execute arbitrary JS code via copy&paste. The effect of this bug is exactly the same as in https://crbug.com/chromium/1011950.  \n  \n**VERSION**   \nVerified on:  \n \\* Canary:  81.0.4022.0  \n \\* Stable:  79.0.3945.88  \n  \n**REPRODUCTION CASE**   \nAs in ht"
+}

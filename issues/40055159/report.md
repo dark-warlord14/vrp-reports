@@ -75,9 +75,9 @@ Flash Version:
 
 ## Attachments
 
-- [poc.html](attachments/poc.html) (text/plain, 1.1 KB)
-- [asan.log](attachments/asan.log) (text/plain, 15.9 KB)
-- [video.webm](attachments/video.webm) (video/webm, 4.3 MB)
+- poc.html (text/plain, 1.1 KB)
+- asan.log (text/plain, 15.9 KB)
+- video.webm (video/webm, 4.3 MB)
 
 ## Timeline
 

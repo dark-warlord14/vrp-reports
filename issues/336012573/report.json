@@ -1,0 +1,38 @@
+{
+  "id": "336012573",
+  "url": "https://issues.chromium.org/issues/336012573",
+  "title": "Use After Free in BackForwardCacheDisablingFeatureTracker::ReportFeaturesToDelegate()",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Scheduling",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lo...@gmail.com",
+  "assignee": "yu...@chromium.org",
+  "created_date": "2024-04-21T04:02:28+00:00",
+  "modified_date": "2024-11-04T17:28:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 55707697,
+      "filename": "UAF_ReportFeaturesToDelegate_PoC.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2189,
+      "url": "https://issues.chromium.org/action/issues/336012573/attachments/55707697?download=true",
+      "local_path": "attachments/UAF_ReportFeaturesToDelegate_PoC.js"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "VULNERABILITY DETAILS\nSpecifically crafted HTML file can trigger Use After Free of DedicatedWorkerGlobalScope object  in BackForwardCacheDisablingFeatureTracker::ReportFeaturesToDelegate(). This bug can potentially be exploited to achieve one click Remote Code Execution in a renderer process.\n\nThe b"
+}

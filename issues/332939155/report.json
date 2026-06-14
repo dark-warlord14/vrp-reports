@@ -1,0 +1,59 @@
+{
+  "id": "332939155",
+  "url": "https://issues.chromium.org/issues/332939155",
+  "title": "SEGV_ACCERR / seccomp-bpf gpu::gles2::cmds::FramebufferPixelLocalClearValuefvANGLEImmediate::Init",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>WebGL",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "123.0.0.0",
+  "cve_ids": [],
+  "reporter": "wx...@gmail.com",
+  "assignee": "kb...@chromium.org",
+  "created_date": "2024-04-05T04:57:13+00:00",
+  "modified_date": "2024-07-31T15:42:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "reward_amount_meta": 8000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 55253074,
+      "filename": "webgl-shader-pixel-local-storage.html",
+      "mime_type": "text/html",
+      "size_bytes": 19995,
+      "url": "https://issues.chromium.org/action/issues/332939155/attachments/55253074?download=true",
+      "local_path": "attachments/webgl-shader-pixel-local-storage.html"
+    },
+    {
+      "id": 55253075,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 16790,
+      "url": "https://issues.chromium.org/action/issues/332939155/attachments/55253075?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 55639474,
+      "filename": "0001-fix-the-integer-overflow-to-prevent-oob-read.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1191,
+      "url": "https://issues.chromium.org/action/issues/332939155/attachments/55639474?download=true",
+      "local_path": "attachments/0001-fix-the-integer-overflow-to-prevent-oob-read.patch"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "# Steps to reproduce the problem\n1. chrome://flags to enable the #enable-webgl-draft-extensions flags\n2. cd chromium\\src\\third_party\\webgl\\src\\sdk\\tests\\  and  python -m SimpleHTTPServer\n3. change the third_party\\webgl\\src\\sdk\\tests\\conformance2\\extensions\\webgl-shader-pixel-local-storage.html to my"
+}

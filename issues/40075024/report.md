@@ -28,7 +28,7 @@ Operating System: Windows 11
 
 ## Attachments
 
-- [PXL_20231017_020147987~2.jpg](attachments/PXL_20231017_020147987~2.jpg) (image/jpeg, 1.0 MB)
+- PXL_20231017_020147987~2.jpg (image/jpeg, 1.0 MB)
 
 ## Timeline
 

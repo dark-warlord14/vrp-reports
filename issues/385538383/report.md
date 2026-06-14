@@ -1,13 +1,15 @@
-# ---
+# Hard coded storage bucket URL in Chrome allows for malicious Javascript / HTML to be run on numerous users without they knowledge
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [385538383](https://issues.chromium.org/issues/385538383) |
-| **Status** | Unknown |
-| **Severity** | Unknown |
-| **Priority** | Unknown |
-| **Component** | Unknown |
-| **Reporter** | Unknown |
+| **Status** | Accepted |
+| **Severity** | S3-Low |
+| **Priority** | P2 |
+| **Component** | UI>Browser>HaTS |
+| **Platforms** | Android, Fuchsia, Linux, Mac, Windows, ChromeOS |
+| **Reporter** | ak...@gmail.com |
+| **Assignee** | fj...@google.com |
 | **Created** | 2024-12-22 |
 | **Bounty** | $1,000.00 |
 
@@ -266,10 +268,6 @@ Thank you again for your efforts and reporting this issue to us.
 ### ch...@google.com (2025-04-11)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
-
-## Bounty Award
-
-> Thank you reward: this issue only impacted <M125 versions of Chrome and did not impact any active release versions of Chrome at the time it was reported. We did, however, appreciate this report and would like to see types of report of this kind that potentially impact users on active release channels.
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/385538383)*

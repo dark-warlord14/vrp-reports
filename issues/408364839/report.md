@@ -9,7 +9,7 @@
 | **Component** | Dawn |
 | **Platforms** | Linux, ChromeOS |
 | **Reporter** | a7...@gmail.com |
-| **Assignee** | cw...@chromium.org |
+| **Assignee** | cw...@google.com |
 | **Created** | 2025-04-04 |
 | **Bounty** | $10,000.00 |
 

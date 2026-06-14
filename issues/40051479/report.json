@@ -1,0 +1,67 @@
+{
+  "id": "40051479",
+  "url": "https://issues.chromium.org/issues/40051479",
+  "title": "Security:  MediaElementAudioSourceNode bypasses CORS checks",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>SecurityFeature>CORS, Blink>WebAudio",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "uz...@gmail.com",
+  "assignee": "rt...@chromium.org",
+  "created_date": "2020-02-11T13:10:05+00:00",
+  "modified_date": "2024-01-09T00:06:54+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53075223,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2591,
+      "url": "https://issues.chromium.org/action/issues/40051479/attachments/53075223?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 53075224,
+      "filename": "123.mp3",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 11828877,
+      "url": "https://issues.chromium.org/action/issues/40051479/attachments/53075224?download=true",
+      "local_path": "attachments/123.mp3"
+    },
+    {
+      "id": 53075302,
+      "filename": "index.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2567,
+      "url": "https://issues.chromium.org/action/issues/40051479/attachments/53075302?download=true",
+      "local_path": "attachments/index_53075302.html"
+    },
+    {
+      "id": 53075353,
+      "filename": "test3.html",
+      "mime_type": "text/plain",
+      "size_bytes": 2822,
+      "url": "https://issues.chromium.org/action/issues/40051479/attachments/53075353?download=true",
+      "local_path": "attachments/test3.html"
+    }
+  ],
+  "update_count": 63,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nThis example shows how you can access an external audio stream despite CORS protection. Although the message \"MediaElementAudioSource outputs zeroes due to CORS access restrictions for\" appears in the Chrome console, you can still get the data  \nand use, for example,"
+}

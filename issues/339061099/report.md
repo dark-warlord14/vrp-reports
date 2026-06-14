@@ -172,7 +172,7 @@ Regression: N/A
 
 ## Attachments
 
-- [asan.txt](attachments/asan.txt) (text/plain, 21.0 KB)
+- asan.txt (text/plain, 21.0 KB)
 - [index.html](attachments/index.html) (text/html, 1.0 KB)
 - [poc.mov](attachments/poc.mov) (video/quicktime, 25.6 MB)
 

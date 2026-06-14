@@ -34,7 +34,7 @@
       "mime_type": "text/plain",
       "size_bytes": 456,
       "url": "https://issues.chromium.org/action/issues/40052699/attachments/53350981?download=true",
-      "local_path": "attachments/poc.html"
+      "local_path": null
     },
     {
       "id": 53351087,
@@ -42,7 +42,7 @@
       "mime_type": "application/octet-stream",
       "size_bytes": 8425,
       "url": "https://issues.chromium.org/action/issues/40052699/attachments/53351087?download=true",
-      "local_path": "attachments/poc2.zip"
+      "local_path": null
     },
     {
       "id": 53351132,

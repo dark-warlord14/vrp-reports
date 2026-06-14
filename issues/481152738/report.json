@@ -57,7 +57,7 @@
       "mime_type": "text/html",
       "size_bytes": 495,
       "url": "https://issues.chromium.org/action/issues/481152738/attachments/73071747?download=true",
-      "local_path": "attachments/poc.html"
+      "local_path": null
     },
     {
       "id": 73071748,
@@ -65,7 +65,7 @@
       "mime_type": "video/mp4",
       "size_bytes": 76015,
       "url": "https://issues.chromium.org/action/issues/481152738/attachments/73071748?download=true",
-      "local_path": "attachments/poc_video_first.mp4"
+      "local_path": null
     },
     {
       "id": 73073816,
@@ -273,7 +273,7 @@
       "mime_type": "text/x-python",
       "size_bytes": 3155,
       "url": "https://issues.chromium.org/action/issues/481152738/attachments/73823042?download=true",
-      "local_path": "attachments/serve_exploit.py"
+      "local_path": null
     },
     {
       "id": 73823043,
@@ -289,7 +289,7 @@
       "mime_type": "text/x-sh",
       "size_bytes": 2166,
       "url": "https://issues.chromium.org/action/issues/481152738/attachments/73823044?download=true",
-      "local_path": "attachments/run_rce_demo_cycle.sh"
+      "local_path": null
     },
     {
       "id": 73812350,

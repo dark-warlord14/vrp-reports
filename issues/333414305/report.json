@@ -1,0 +1,70 @@
+{
+  "id": "333414305",
+  "url": "https://issues.chromium.org/issues/333414305",
+  "title": "Security: heap-buffer-overflow while opening pdf and search box",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Plugins>PDF",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": "123.0.6312.105",
+  "cve_ids": [],
+  "reporter": "kd...@gmail.com",
+  "assignee": "ts...@chromium.org",
+  "created_date": "2024-04-09T19:32:08+00:00",
+  "modified_date": "2024-09-23T21:56:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 55329219,
+      "filename": "another-check-failure.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11120,
+      "url": "https://issues.chromium.org/action/issues/333414305/attachments/55329219?download=true",
+      "local_path": "attachments/another-check-failure.txt"
+    },
+    {
+      "id": 55329220,
+      "filename": "non-symbolized-asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 9546,
+      "url": "https://issues.chromium.org/action/issues/333414305/attachments/55329220?download=true",
+      "local_path": "attachments/non-symbolized-asan.txt"
+    },
+    {
+      "id": 55329221,
+      "filename": "mini.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 261080,
+      "url": "https://issues.chromium.org/action/issues/333414305/attachments/55329221?download=true",
+      "local_path": "attachments/mini.pdf"
+    },
+    {
+      "id": 55415001,
+      "filename": "byte_str.bin",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 9736,
+      "url": "https://issues.chromium.org/action/issues/333414305/attachments/55415001?download=true",
+      "local_path": "attachments/byte_str.bin"
+    },
+    {
+      "id": 55412639,
+      "filename": "str.bin",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 9736,
+      "url": "https://issues.chromium.org/action/issues/333414305/attachments/55412639?download=true",
+      "local_path": "attachments/str.bin"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "# Steps to reproduce the problem\n1. /chrome --enable-logging --v=1 ./poc.pdf\n2. Press Ctrl+F to open the search box and enter any string (e.g., heap-buffer-overflow)\n3. \n\n# Problem Description\nSorry for not providing a symbolized stack and minimized case for now. I'm working on building Chrome from"
+}

@@ -1,0 +1,94 @@
+{
+  "id": "362658609",
+  "url": "https://issues.chromium.org/issues/362658609",
+  "title": "security: heap-use-after-free on TouchToFillPaymentMethodControllerBridge_jni.h:31:108",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Autofill, UI>Browser>Autofill>Payments",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": "127.0.0.0",
+  "cve_ids": [],
+  "reporter": "li...@gmail.com",
+  "assignee": "fr...@chromium.org",
+  "created_date": "2024-08-28T14:09:57+00:00",
+  "modified_date": "2024-12-10T15:43:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58963042,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 245,
+      "url": "https://issues.chromium.org/action/issues/362658609/attachments/58963042?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 58982110,
+      "filename": "sym2",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 10630,
+      "url": "https://issues.chromium.org/action/issues/362658609/attachments/58982110?download=true",
+      "local_path": "attachments/sym2"
+    },
+    {
+      "id": 58982111,
+      "filename": "uaf11-asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 48186,
+      "url": "https://issues.chromium.org/action/issues/362658609/attachments/58982111?download=true",
+      "local_path": "attachments/uaf11-asan.log"
+    },
+    {
+      "id": 58960969,
+      "filename": "poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 659018,
+      "url": "https://issues.chromium.org/action/issues/362658609/attachments/58960969?download=true",
+      "local_path": "attachments/poc.mov"
+    },
+    {
+      "id": 58982116,
+      "filename": "symbol.jpg.png",
+      "mime_type": "image/png",
+      "size_bytes": 241116,
+      "url": "https://issues.chromium.org/action/issues/362658609/attachments/58982116?download=true",
+      "local_path": "attachments/symbol.jpg.png"
+    },
+    {
+      "id": 58983024,
+      "filename": "stack.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 20252,
+      "url": "https://issues.chromium.org/action/issues/362658609/attachments/58983024?download=true",
+      "local_path": "attachments/stack.txt"
+    },
+    {
+      "id": 59013350,
+      "filename": "fix.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 787,
+      "url": "https://issues.chromium.org/action/issues/362658609/attachments/59013350?download=true",
+      "local_path": "attachments/fix.patch"
+    },
+    {
+      "id": 59013364,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1088,
+      "url": "https://issues.chromium.org/action/issues/362658609/attachments/59013364?download=true",
+      "local_path": "attachments/patch.diff"
+    }
+  ],
+  "update_count": 88,
+  "description_snippet": "# Steps to reproduce the problem\nwill be update tonight with RCA.\n\n# Problem Description\nI don't have time now, I will analyze RCA tonight.\n\n# Summary\nsecurity: heap-use-after-free on TouchToFillPaymentMethodControllerBridge_jni.h:31:108\n\n# Custom Questions\n#### Type of crash: \nbrwoser\n\n#### Crash s"
+}

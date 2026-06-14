@@ -1,0 +1,75 @@
+{
+  "id": "355465305",
+  "url": "https://issues.chromium.org/issues/355465305",
+  "title": "OOB write in SkSLRasterPipelineBuilder",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Skia",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hy...@gmail.com",
+  "assignee": "br...@google.com",
+  "created_date": "2024-07-25T18:54:53+00:00",
+  "modified_date": "2024-11-16T15:41:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 58200722,
+      "filename": "stacktrace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17606,
+      "url": "https://issues.chromium.org/action/issues/355465305/attachments/58200722?download=true",
+      "local_path": "attachments/stacktrace.txt"
+    },
+    {
+      "id": 58200723,
+      "filename": "chromium.diff",
+      "mime_type": "text/x-patch",
+      "size_bytes": 7800,
+      "url": "https://issues.chromium.org/action/issues/355465305/attachments/58200723?download=true",
+      "local_path": "attachments/chromium.diff"
+    },
+    {
+      "id": 58200724,
+      "filename": "skia_DO_NOT_USE_IN_CHROMIUM.diff",
+      "mime_type": "text/x-patch",
+      "size_bytes": 1537,
+      "url": "https://issues.chromium.org/action/issues/355465305/attachments/58200724?download=true",
+      "local_path": "attachments/skia_DO_NOT_USE_IN_CHROMIUM.diff"
+    },
+    {
+      "id": 58200725,
+      "filename": "genskpic.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 7476,
+      "url": "https://issues.chromium.org/action/issues/355465305/attachments/58200725?download=true",
+      "local_path": "attachments/genskpic.py"
+    },
+    {
+      "id": 58221933,
+      "filename": "genskpic_M121_AND_BELOW.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 7013,
+      "url": "https://issues.chromium.org/action/issues/355465305/attachments/58221933?download=true",
+      "local_path": "attachments/genskpic_M121_AND_BELOW.py"
+    }
+  ],
+  "update_count": 124,
+  "description_snippet": "---\n\n### Report description\n\n\nOOB write in SkSLRasterPipelineBuilder\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/rules/5745167867576320/chrome"
+}

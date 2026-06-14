@@ -94,7 +94,7 @@
       "mime_type": "text/html",
       "size_bytes": 2891,
       "url": "https://issues.chromium.org/action/issues/370856871/attachments/59814581?download=true",
-      "local_path": "attachments/exp.html"
+      "local_path": null
     },
     {
       "id": 59879775,
@@ -102,7 +102,7 @@
       "mime_type": "text/x-c++src",
       "size_bytes": 175,
       "url": "https://issues.chromium.org/action/issues/370856871/attachments/59879775?download=true",
-      "local_path": "attachments/a.cpp"
+      "local_path": null
     },
     {
       "id": 59880832,

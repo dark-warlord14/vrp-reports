@@ -50,8 +50,8 @@ Flash Version:
 - [poc_response_sample.txt](attachments/poc_response_sample.txt) (text/plain, 37 B)
 - [safe_redirect.php](attachments/safe_redirect.php) (application/x-httpd-php, 1.0 KB)
 - [samesite_poc.py](attachments/samesite_poc.py) (text/x-python, 3.8 KB)
-- [download_redirect.html](attachments/download_redirect.html) (text/html, 147 B)
-- [location.php](attachments/location.php) (application/x-httpd-php, 209 B)
+- [download_redirect.html](attachments/download_redirect_70808620.html) (text/html, 147 B)
+- [location.php](attachments/location_70850657.php) (application/x-httpd-php, 209 B)
 
 ## Timeline
 

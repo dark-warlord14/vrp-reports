@@ -1,0 +1,29 @@
+{
+  "id": "346044228",
+  "url": "https://issues.chromium.org/issues/346044228",
+  "title": "UAF in media::VideoCaptureDeviceFactoryLinux::OnGetDevicesInfo",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Core, Internals>Media>CameraCapture",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m....@gmail.com",
+  "assignee": "il...@chromium.org",
+  "created_date": "2024-06-09T08:11:48+00:00",
+  "modified_date": "2024-09-18T15:47:39+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 54,
+  "description_snippet": "## reproduce\nFound by myfuzzer run on CF(https://clusterfuzz.com/testcase-detail/5965107015122944)\n\n## type\nUtility process(maybe sandbox escape)\n\n## bisect\nhttps://chromium-review.googlesource.com/c/chromium/src/+/3308882\n\n## RCA\n\n1. webrtc_factory_->GetDevicesInfo constructs an OnceCallback using"
+}

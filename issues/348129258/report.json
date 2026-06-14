@@ -16,8 +16,8 @@
   "cve_ids": [],
   "reporter": "ke...@gmail.com",
   "assignee": "th...@chromium.org",
-  "created_date": null,
-  "modified_date": null,
+  "created_date": "2024-06-19T14:50:06+00:00",
+  "modified_date": "2024-10-10T20:04:39+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 11000.0,
@@ -26,7 +26,40 @@
   "award_text_found": false,
   "award_text_source_update": null,
   "bounty_rationale": null,
-  "attachments": [],
-  "update_count": 0,
-  "description_snippet": ""
+  "attachments": [
+    {
+      "id": 57301430,
+      "filename": "cl1_cblks_mqc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 1255,
+      "url": "https://issues.chromium.org/action/issues/348129258/attachments/57301430?download=true",
+      "local_path": "attachments/cl1_cblks_mqc.pdf"
+    },
+    {
+      "id": 57428456,
+      "filename": "poc1.j2k",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 608,
+      "url": "https://issues.chromium.org/action/issues/348129258/attachments/57428456?download=true",
+      "local_path": "attachments/poc1.j2k"
+    },
+    {
+      "id": 57430530,
+      "filename": "poc2.j2k",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 660,
+      "url": "https://issues.chromium.org/action/issues/348129258/attachments/57430530?download=true",
+      "local_path": "attachments/poc2.j2k"
+    },
+    {
+      "id": 57428457,
+      "filename": "poc3.j2k",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 212,
+      "url": "https://issues.chromium.org/action/issues/348129258/attachments/57428457?download=true",
+      "local_path": "attachments/poc3.j2k"
+    }
+  ],
+  "update_count": 98,
+  "description_snippet": "Chrome Version: beta, dev\nOperating System: windows, linux\n\nBisects to : https://pdfium-review.googlesource.com/c/pdfium/+/119592\n\nThat change disables strict mode when decoding JPEG2000 images, which leads to out-of-bounds reads, writes.\n\nThis is also in the latest openjpeg, can be tested with ./"
 }

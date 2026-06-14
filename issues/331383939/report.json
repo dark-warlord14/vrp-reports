@@ -1,0 +1,59 @@
+{
+  "id": "331383939",
+  "url": "https://issues.chromium.org/issues/331383939",
+  "title": "JS object corruption in WasmJs::InstallTypeReflection",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>API, Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "m-...@github.com",
+  "assignee": "ah...@chromium.org",
+  "created_date": "2024-03-27T13:13:53+00:00",
+  "modified_date": "2024-07-13T15:51:58+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 54967001,
+      "filename": "trial-token.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1135,
+      "url": "https://issues.chromium.org/action/issues/331383939/attachments/54967001?download=true",
+      "local_path": "attachments/trial-token.patch"
+    },
+    {
+      "id": 54967002,
+      "filename": "wasm_type.html",
+      "mime_type": "text/html",
+      "size_bytes": 357,
+      "url": "https://issues.chromium.org/action/issues/331383939/attachments/54967002?download=true",
+      "local_path": "attachments/wasm_type.html"
+    },
+    {
+      "id": 55216298,
+      "filename": "wasm_poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 5066,
+      "url": "https://issues.chromium.org/action/issues/331383939/attachments/55216298?download=true",
+      "local_path": "attachments/wasm_poc.html"
+    }
+  ],
+  "update_count": 69,
+  "description_snippet": "VULNERABILITY DETAILS\n\nIn InstallConditionalFeatures, a check is in place to check that the `WebAssembly` object does not contain the `Function` property to avoid adding duplicate properties in the object:\n\n```\nvoid WasmJs::InstallConditionalFeatures(Isolate* isolate,"
+}

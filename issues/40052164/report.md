@@ -1,15 +1,14 @@
-# iOS: URL spoofing due to pages that commit but take a long time to paint
+# WKWebView doesn't clear the currently presented page when committing the navigation
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [40052164](https://issues.chromium.org/issues/40052164) |
 | **Status** | Accepted |
-| **Severity** | S3-Low |
-| **Priority** | P3 |
-| **Component** | UI>Browser>Navigation, UI>Browser>Omnibox |
+| **Severity** | Unknown |
+| **Priority** | P4 |
+| **Component** | Mobile>iOSWeb>WebPlatform, UI>Browser>Navigation |
 | **Platforms** | iOS |
-| **Reporter** | ra...@gmail.com |
-| **Assignee** | ti...@chromium.org |
+| **Reporter** | ga...@google.com |
 | **Created** | 2020-04-30 |
 | **Bounty** | $1,000.00 |
 
@@ -597,6 +596,10 @@ Thank you for your efforts and reporting this issue to us!
 ### ch...@google.com (2025-04-26)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
+
+## Bounty Award
+
+> report of lower impact security UI issue
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40052164)*

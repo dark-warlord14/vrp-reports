@@ -1,4 +1,4 @@
-# Security: Type confusion in v8 value serializer
+# Type confusion in TryFastAddDataProperty
 
 | Field | Value |
 |-------|-------|
@@ -6,12 +6,12 @@
 | **Status** | Assigned |
 | **Severity** | S4-Minimal |
 | **Priority** | P1 |
-| **Component** | Blink>JavaScript>Runtime |
-| **Platforms** | Linux, Windows |
+| **Component** | Blink>JavaScript |
+| **Platforms** | Android, Linux, Mac, Windows, ChromeOS |
 | **Reporter** | m-...@github.com |
-| **Assignee** | ma...@chromium.org |
+| **Assignee** | le...@chromium.org |
 | **Created** | 2024-05-24 |
-| **Bounty** | $10,000.00 |
+| **Bounty** | $25,000.00 |
 
 ## Description
 

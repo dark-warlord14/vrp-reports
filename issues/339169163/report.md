@@ -202,7 +202,7 @@ Task trace:
 
 ## Attachments
 
-- [asancomputeexit](attachments/asancomputeexit) (application/octet-stream, 18.4 KB)
+- asancomputeexit (application/octet-stream, 18.4 KB)
 - [indexComputeExitLimit.html](attachments/indexComputeExitLimit.html) (text/html, 3.1 KB)
 - [standalone.hlsl](attachments/standalone.hlsl) (application/octet-stream, 754 B)
 - [standalone.wgsl](attachments/standalone.wgsl) (application/octet-stream, 881 B)

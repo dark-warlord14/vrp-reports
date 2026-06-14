@@ -78,8 +78,8 @@ if (!is_trusted_location && !auto_grant_permission) {
 
 ## Attachments
 
-- [Installed_by_user.mov](attachments/Installed_by_user.mov) (video/quicktime, 18.9 MB)
-- [Installed_externally.mov](attachments/Installed_externally.mov) (video/quicktime, 17.6 MB)
+- Installed_by_user.mov (video/quicktime, 18.9 MB)
+- Installed_externally.mov (video/quicktime, 17.6 MB)
 - third party.svg (image/svg+xml, 19.2 KB)
 
 ## Timeline

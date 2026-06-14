@@ -3,7 +3,7 @@
   "url": "https://issues.chromium.org/issues/329476341",
   "title": "Text Selection menu able to overlap URL bar  ",
   "status": "Assigned",
-  "severity": "S3-Low",
+  "severity": "S1-High",
   "priority": "P2",
   "component": "UI>Browser, UI>Browser>Mobile>ContextMenu, UI>Browser>Selection",
   "os_platforms": [
@@ -14,7 +14,7 @@
   "reporter": "ch...@gmail.com",
   "assignee": "ji...@google.com",
   "created_date": "2024-03-14T08:23:08+00:00",
-  "modified_date": "2025-12-10T15:35:15+00:00",
+  "modified_date": "2026-06-03T22:50:05+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 2000.0,
@@ -65,6 +65,6 @@
       "local_path": "attachments/20250106_130420275.jpg"
     }
   ],
-  "update_count": 116,
+  "update_count": 130,
   "description_snippet": "# Steps to reproduce the problem\n1. Open the testcase.html or navigate to https://lbstyle.github.io/repro.html\n2. tap anywhere \n3. \n\n# Problem Description\nWhen the user taps somewhere on the page, the text selection menu can appear over the URL bar, in this case, the user can be manipulated.\n\n# Summ"
 }

@@ -99,7 +99,7 @@
       "mime_type": "text/plain",
       "size_bytes": 4854,
       "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977387?download=true",
-      "local_path": "attachments/exp.html"
+      "local_path": "attachments/exp_52977387.html"
     },
     {
       "id": 52977388,
@@ -107,7 +107,7 @@
       "mime_type": "text/plain",
       "size_bytes": 3720,
       "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977388?download=true",
-      "local_path": "attachments/exp.js"
+      "local_path": "attachments/exp_52977388.js"
     },
     {
       "id": 52977390,
@@ -115,7 +115,7 @@
       "mime_type": "text/plain",
       "size_bytes": 780,
       "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977390?download=true",
-      "local_path": "attachments/fix.patch"
+      "local_path": "attachments/fix_52977390.patch"
     },
     {
       "id": 52977391,
@@ -123,7 +123,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1052,
       "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977391?download=true",
-      "local_path": "attachments/poc.html"
+      "local_path": "attachments/poc_52977391.html"
     },
     {
       "id": 52977392,
@@ -131,7 +131,7 @@
       "mime_type": "text/plain",
       "size_bytes": 593,
       "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977392?download=true",
-      "local_path": "attachments/poc-new.js"
+      "local_path": "attachments/poc-new_52977392.js"
     },
     {
       "id": 52977393,
@@ -139,7 +139,7 @@
       "mime_type": "text/plain",
       "size_bytes": 590,
       "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977393?download=true",
-      "local_path": "attachments/poc-old.js"
+      "local_path": "attachments/poc-old_52977393.js"
     },
     {
       "id": 52977394,
@@ -147,7 +147,7 @@
       "mime_type": "image/png",
       "size_bytes": 183319,
       "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977394?download=true",
-      "local_path": "attachments/rce.png"
+      "local_path": "attachments/rce_52977394.png"
     },
     {
       "id": 52977408,
@@ -155,7 +155,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1036,
       "url": "https://issues.chromium.org/action/issues/40067712/attachments/52977408?download=true",
-      "local_path": "attachments/test.js"
+      "local_path": "attachments/test_52977408.js"
     }
   ],
   "update_count": 64,

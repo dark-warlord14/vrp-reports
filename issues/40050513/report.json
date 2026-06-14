@@ -1,0 +1,62 @@
+{
+  "id": "40050513",
+  "url": "https://issues.chromium.org/issues/40050513",
+  "title": "Security: URL bar spoofing on iOS with a very long URL",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "ju...@chromium.org",
+  "created_date": "2019-10-24T04:11:57+00:00",
+  "modified_date": "2024-08-21T12:31:25+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 52892675,
+      "filename": "x.html",
+      "mime_type": "text/plain",
+      "size_bytes": 291,
+      "url": "https://issues.chromium.org/action/issues/40050513/attachments/52892675?download=true",
+      "local_path": "attachments/x.html"
+    },
+    {
+      "id": 52892676,
+      "filename": "attack.html",
+      "mime_type": "text/plain",
+      "size_bytes": 502,
+      "url": "https://issues.chromium.org/action/issues/40050513/attachments/52892676?download=true",
+      "local_path": "attachments/attack.html"
+    },
+    {
+      "id": 52892688,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/40050513/attachments/52892688?download=true",
+      "local_path": null
+    },
+    {
+      "id": 52892716,
+      "filename": "IMG_7578.MP4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1802757,
+      "url": "https://issues.chromium.org/action/issues/40050513/attachments/52892716?download=true",
+      "local_path": "attachments/IMG_7578.MP4"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "Chrome Version: 78.0.3904.59 beta  \nOperating System: iOS  \n  \nThis is similar to https://crbug.com/chromium/989497.  \n  \n**REPRODUCTION CASE**   \n1. Go to https://lbstyle.github.io/x.html  \n2. Click on the button   \n3. On the new page (about:blank), try to reload it and wait.  \n4. Then click on \"Go"
+}

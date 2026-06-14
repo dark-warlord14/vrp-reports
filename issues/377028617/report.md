@@ -98,7 +98,7 @@ Reporter credit: Zhenghang Xiao (@Kipreyyy)
 ## Attachments
 
 - [poc.js](attachments/poc.js) (text/javascript, 220 B)
-- [poc.js](attachments/poc.js) (text/javascript, 218 B)
+- poc.js (text/javascript, 218 B)
 
 ## Timeline
 

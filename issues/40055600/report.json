@@ -49,7 +49,7 @@
       "mime_type": "text/plain",
       "size_bytes": 169,
       "url": "https://issues.chromium.org/action/issues/40055600/attachments/52977567?download=true",
-      "local_path": null
+      "local_path": "attachments/manifest.json"
     },
     {
       "id": 52977568,
@@ -57,7 +57,7 @@
       "mime_type": "text/plain",
       "size_bytes": 98,
       "url": "https://issues.chromium.org/action/issues/40055600/attachments/52977568?download=true",
-      "local_path": null
+      "local_path": "attachments/page.html"
     },
     {
       "id": 52977569,
@@ -65,7 +65,7 @@
       "mime_type": "text/plain",
       "size_bytes": 135,
       "url": "https://issues.chromium.org/action/issues/40055600/attachments/52977569?download=true",
-      "local_path": null
+      "local_path": "attachments/page.js"
     }
   ],
   "update_count": 57,

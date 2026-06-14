@@ -558,5 +558,21 @@ P.S. One other thing we'd like to mention:
 
 Please contact security-vrp@chromium.org with any questions.
 
+### li...@gmail.com (2026-05-23)
+
+Hi VRP team,
+
+Thank you for the reward decision! Since this issue was fixed some time ago, could you please confirm whether CVE assignment or Chrome Stable security release-note inclusion is still pending, or whether this issue is not expected to receive one?
+
+Best regards,
+
+### ch...@google.com (2026-06-04)
+
+WARNING: Removing security\_release value because the issue is not on security\_impact-stable or security\_impact-extended hotlists. Please add to the correct hotlist if the issue is on a release branch.
+
+### li...@gmail.com (2026-06-04)
+
+Could you please help add this issue to the correct internal stable-security hotlist or release-branch tracking, since the bot keeps automatically removing the Security_Release label, most recently 0-M149?
+
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/476862276)*

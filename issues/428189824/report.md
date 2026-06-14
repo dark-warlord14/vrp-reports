@@ -133,7 +133,7 @@ Reporter credit: Alesandro Ortiz <https://AlesandroOrtiz.com>
 - [filepicker-pip-rce-cr.patch](attachments/filepicker-pip-rce-cr.patch) (text/x-diff, 2.2 KB)
 - [filepicker-pip-rce-cr.html](attachments/filepicker-pip-rce-cr.html) (text/html, 2.7 KB)
 - [filepicker-pip-rce-cr.mp4](attachments/filepicker-pip-rce-cr.mp4) (video/mp4, 7.5 MB)
-- [filepicker-pip-rce-cr.patch](attachments/filepicker-pip-rce-cr.patch) (text/x-diff, 3.2 KB)
+- [filepicker-pip-rce-cr.patch](attachments/filepicker-pip-rce-cr_67379411.patch) (text/x-diff, 3.2 KB)
 - [filepicker-pip-rce-bg-cr.html](attachments/filepicker-pip-rce-bg-cr.html) (text/html, 3.1 KB)
 - [filepicker-pip-rce-bg-cr.mp4](attachments/filepicker-pip-rce-bg-cr.mp4) (video/mp4, 3.1 MB)
 - [Screencast From 2025-08-05 15-48-28.mp4](attachments/Screencast From 2025-08-05 15-48-28.mp4) (video/mp4, 1.8 MB)

@@ -35,7 +35,7 @@
       "mime_type": "text/plain",
       "size_bytes": 427,
       "url": "https://issues.chromium.org/action/issues/40052658/attachments/53243580?download=true",
-      "local_path": "attachments/payload.html"
+      "local_path": null
     },
     {
       "id": 53243581,
@@ -43,7 +43,7 @@
       "mime_type": "text/plain",
       "size_bytes": 469,
       "url": "https://issues.chromium.org/action/issues/40052658/attachments/53243581?download=true",
-      "local_path": "attachments/origin1.html"
+      "local_path": null
     }
   ],
   "update_count": 62,

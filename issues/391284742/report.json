@@ -16,7 +16,7 @@
   "reporter": "a7...@gmail.com",
   "assignee": "am...@chromium.org",
   "created_date": "2025-01-21T16:02:55+00:00",
-  "modified_date": "2026-03-05T16:41:26+00:00",
+  "modified_date": "2026-06-08T15:13:21+00:00",
   "public_issue": true,
   "bounty_confirmed": true,
   "bounty_amount": 5000.0,
@@ -59,6 +59,6 @@
       "local_path": "attachments/standalone.cpp"
     }
   ],
-  "update_count": 79,
+  "update_count": 81,
   "description_snippet": "##### VULNERABILITY DETAILS\nChrome on Android translates WebGPU shaders to SPIR-V. These SPIR-V shaders are eventually passed to libGLES_mali.so for optimization and native code generation. This bug report is about a WebGPU shader that crashes org.chromium.chrome on an MTE-enable device. Chromium us"
 }

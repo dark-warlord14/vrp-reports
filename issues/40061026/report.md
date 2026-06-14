@@ -60,7 +60,7 @@ Reporter credit: Vitor Torres <https://github.com/vtorres/>
 - [crbug-1365104-canary.mp4](attachments/crbug-1365104-canary.mp4) (video/mp4, 860.3 KB)
 - [background.js](attachments/background.js) (text/javascript, 689 B)
 - [content.js](attachments/content.js) (text/javascript, 1.5 KB)
-- [manifest.json](attachments/manifest.json) (application/json, 720 B)
+- manifest.json (application/json, 720 B)
 - [popup.html](attachments/popup.html) (text/html, 219 B)
 - [README.md](attachments/README.md) (text/markdown, 2.1 KB)
 - [extension.zip](attachments/extension.zip) (application/zip, 3.5 KB)
@@ -522,6 +522,10 @@ Thanks for the reward!
 ### ch...@google.com (2025-03-27)
 
 This bug has been closed for more than 14 weeks. Removing issue access restrictions.
+
+### ja...@gmail.com (2026-05-16)
+
+Security: Extension can obscure active window with an unfocused window points out how small security gaps can sometimes create bigger concerns than people expect. Topics like this make you think more carefully about privacy, system access, and how easily important information can be overlooked during everyday use. security guard service woodland hills connects with the broader idea of staying protected and aware of potential risks in different environments. Whether online or in physical spaces, people usually feel more comfortable when proper security measures are in place. More Info Here: https://alreadysecurity.com/security-guard-services-woodland-hills-ca/
 
 ---
 *Data from [Chromium Issue Tracker](https://issues.chromium.org/issues/40061026)*

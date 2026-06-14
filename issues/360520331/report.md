@@ -1,4 +1,4 @@
-# Security: PaymentRequest dialog susceptible to clickjacking
+# Clickjacking Exploit Leading to Unintentional Credit Card Submission in Chrome iOS
 
 | Field | Value |
 |-------|-------|
@@ -6,10 +6,11 @@
 | **Status** | Assigned |
 | **Severity** | S3-Low |
 | **Priority** | P2 |
-| **Component** | Blink>Payments |
-| **Platforms** | Linux, Mac, Windows, ChromeOS |
-| **Reporter** | st...@gmail.com |
-| **Assignee** | np...@chromium.org |
+| **Component** | UI>Browser>Autofill>Payments |
+| **Platforms** | Android, iOS |
+| **Chrome Version** | 127.0.6533.103 |
+| **Reporter** | ia...@gmail.com |
+| **Assignee** | vi...@google.com |
 | **Created** | 2024-08-18 |
 | **Bounty** | $1,000.00 |
 

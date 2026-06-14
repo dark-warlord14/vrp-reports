@@ -48,7 +48,7 @@
       "mime_type": "application/x-x509-ca-cert",
       "size_bytes": 1064,
       "url": "https://issues.chromium.org/action/issues/420734141/attachments/66220262?download=true",
-      "local_path": "attachments/server.crt"
+      "local_path": null
     },
     {
       "id": 66220263,
@@ -56,7 +56,7 @@
       "mime_type": "application/x-iwork-keynote-sffkey",
       "size_bytes": 1732,
       "url": "https://issues.chromium.org/action/issues/420734141/attachments/66220263?download=true",
-      "local_path": "attachments/server.key"
+      "local_path": null
     },
     {
       "id": 66220264,
@@ -64,7 +64,7 @@
       "mime_type": "text/x-python",
       "size_bytes": 715,
       "url": "https://issues.chromium.org/action/issues/420734141/attachments/66220264?download=true",
-      "local_path": "attachments/https_server_fileserve.py"
+      "local_path": null
     }
   ],
   "update_count": 113,

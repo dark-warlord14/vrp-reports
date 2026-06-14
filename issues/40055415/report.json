@@ -1,0 +1,60 @@
+{
+  "id": "40055415",
+  "url": "https://issues.chromium.org/issues/40055415",
+  "title": "Heap-use-after-free in WebCore::ApplyStyleCommand::applyInlineStyleToNodeRange",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@gmail.com",
+  "assignee": "in...@chromium.org",
+  "created_date": "2012-03-22T18:34:15+00:00",
+  "modified_date": "2018-04-25T23:24:05+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53250545,
+      "filename": "64104.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 11110,
+      "url": "https://issues.chromium.org/action/issues/40055415/attachments/53250545?download=true",
+      "local_path": "attachments/64104.txt"
+    },
+    {
+      "id": 53250546,
+      "filename": "64104.html",
+      "mime_type": "text/html; charset=us-ascii",
+      "size_bytes": 408,
+      "url": "https://issues.chromium.org/action/issues/40055415/attachments/53250546?download=true",
+      "local_path": "attachments/64104.html"
+    },
+    {
+      "id": 53250547,
+      "filename": "beta-64104.txt",
+      "mime_type": "text/x-c; charset=us-ascii",
+      "size_bytes": 11155,
+      "url": "https://issues.chromium.org/action/issues/40055415/attachments/53250547?download=true",
+      "local_path": "attachments/beta-64104.txt"
+    },
+    {
+      "id": 53250548,
+      "filename": "stable-64104.txt",
+      "mime_type": "text/plain; charset=us-ascii",
+      "size_bytes": 11272,
+      "url": "https://issues.chromium.org/action/issues/40055415/attachments/53250548?download=true",
+      "local_path": "attachments/stable-64104.txt"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "**VULNERABILITY DETAILS**   \nuse-after-free in WebCore::ApplyStyleCommand::applyInlineStyleToNodeRange  \n  \n**VERSION**   \nChrome Version: stable, beta, dev  \n  \nChromium\t19.0.1078.0 (Developer Build 128192)  \nOS\tLinux  \nWebKit\t536.4 (@111590)  \n  \nOperating System: 64bit linux  \n  \n**REPRODUC"
+}

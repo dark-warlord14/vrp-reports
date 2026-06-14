@@ -1,17 +1,17 @@
-# Security: Very long extension name spoofs debugging infobar and breaks other UI
+# Unable to Uninstall PWA Due to Excessive Emoji in App Name Blocking UI
 
 | Field | Value |
 |-------|-------|
 | **Issue ID** | [367401496](https://issues.chromium.org/issues/367401496) |
-| **Status** | Accepted |
-| **Severity** | S1-High |
+| **Status** | Assigned |
+| **Severity** | Unknown |
 | **Priority** | P3 |
-| **Component** | Platform>DevTools>Privacy and Security, Platform>Extensions |
-| **Platforms** | Fuchsia, Linux, Mac, ChromeOS |
-| **Reporter** | re...@gmail.com |
-| **Assignee** | ab...@microsoft.com |
+| **Component** | UI>Browser>WebAppInstalls>Desktop |
+| **Platforms** | Linux |
+| **Reporter** | al...@gmail.com |
+| **Assignee** | fi...@google.com |
 | **Created** | 2024-09-17 |
-| **Bounty** | $500.00 |
+| **Bounty** | $1,000.00 |
 
 ## Description
 

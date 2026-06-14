@@ -1,0 +1,65 @@
+{
+  "id": "342194497",
+  "url": "https://issues.chromium.org/issues/342194497",
+  "title": "Security: PEPC prompt can be obscured by Video/Document PiP window",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Permissions>Prompts",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@alesandroortiz.com",
+  "assignee": "st...@chromium.org",
+  "created_date": "2024-05-23T04:09:11+00:00",
+  "modified_date": "2024-11-04T17:30:42+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 56595680,
+      "filename": "pepc-pip.html",
+      "mime_type": "text/html",
+      "size_bytes": 1805,
+      "url": "https://issues.chromium.org/action/issues/342194497/attachments/56595680?download=true",
+      "local_path": "attachments/pepc-pip.html"
+    },
+    {
+      "id": 56595681,
+      "filename": "pepc-pip.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1090943,
+      "url": "https://issues.chromium.org/action/issues/342194497/attachments/56595681?download=true",
+      "local_path": "attachments/pepc-pip.mp4"
+    },
+    {
+      "id": 56632170,
+      "filename": "kplock-pip.html",
+      "mime_type": "text/html",
+      "size_bytes": 1271,
+      "url": "https://issues.chromium.org/action/issues/342194497/attachments/56632170?download=true",
+      "local_path": "attachments/kplock-pip.html"
+    },
+    {
+      "id": 56630407,
+      "filename": "kplock-pip.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1126079,
+      "url": "https://issues.chromium.org/action/issues/342194497/attachments/56630407?download=true",
+      "local_path": "attachments/kplock-pip.mp4"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "#### SUMMARY\nThe Page Embedded Permission Control (PEPC) prompt can be obscured by a Video or Document PiP window, allowing a page to obtain permissions without user awareness.\n\nThe current address bar permission prompts do check for PiP window occlusion.\n\nInterestingly, it seems that PEPC also has"
+}

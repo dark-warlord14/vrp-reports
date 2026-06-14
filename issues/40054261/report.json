@@ -1,0 +1,54 @@
+{
+  "id": "40054261",
+  "url": "https://issues.chromium.org/issues/40054261",
+  "title": "Security: UAF in LocationBar",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P1",
+  "component": "UI>Browser, UI>Browser>Omnibox",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "le...@gmail.com",
+  "assignee": "es...@chromium.org",
+  "created_date": "2020-12-22T11:28:09+00:00",
+  "modified_date": "2024-01-09T02:50:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53237782,
+      "filename": "poc.html",
+      "mime_type": "text/plain",
+      "size_bytes": 163,
+      "url": "https://issues.chromium.org/action/issues/40054261/attachments/53237782?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 53237783,
+      "filename": "LocationBar.asan",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 6423,
+      "url": "https://issues.chromium.org/action/issues/40054261/attachments/53237783?download=true",
+      "local_path": "attachments/LocationBar.asan"
+    },
+    {
+      "id": 53237793,
+      "filename": "LocationBar.asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 6423,
+      "url": "https://issues.chromium.org/action/issues/40054261/attachments/53237793?download=true",
+      "local_path": "attachments/LocationBar.asan.txt"
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": "**VULNERABILITY DETAILS**   \n  \nOn Linux, when clicking the location icon with the middle mouse button, the browser will read the clipboard content[1] to navigate to a new site. And |ReadText| will run a nested message loop[2] to continue running the ui thread. If the LocationBarView are destroyed,"
+}

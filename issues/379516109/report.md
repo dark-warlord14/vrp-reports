@@ -145,7 +145,7 @@ Regression: N/A
 - [fix.diff](attachments/fix.diff) (text/x-diff, 869 B)
 - [poc.html](attachments/poc.html) (text/html, 673 B)
 - [uaf15.patch](attachments/uaf15.patch) (text/x-diff, 2.1 KB)
-- [asan.log](attachments/asan.log) (text/plain, 90.8 KB)
+- asan.log (text/plain, 90.8 KB)
 - [demonstration.mov](attachments/demonstration.mov) (video/quicktime, 17.0 MB)
 - [exploit_demonstration.md](attachments/exploit_demonstration.md) (text/markdown, 14.8 KB)
 - [stable_poc.html](attachments/stable_poc.html) (text/html, 1.3 KB)

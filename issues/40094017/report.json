@@ -1,0 +1,66 @@
+{
+  "id": "40094017",
+  "url": "https://issues.chromium.org/issues/40094017",
+  "title": "Extension has an ability to execute script in New Tab Page",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "Ju...@microsoft.com",
+  "assignee": "ka...@chromium.org",
+  "created_date": "2019-02-12T01:06:22+00:00",
+  "modified_date": "2025-02-13T00:10:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 53102417,
+      "filename": "NewTabPage.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 870,
+      "url": "https://issues.chromium.org/action/issues/40094017/attachments/53102417?download=true",
+      "local_path": "attachments/NewTabPage.zip"
+    },
+    {
+      "id": 53102431,
+      "filename": "NewTabPage 2.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 792,
+      "url": "https://issues.chromium.org/action/issues/40094017/attachments/53102431?download=true",
+      "local_path": "attachments/NewTabPage 2.zip"
+    },
+    {
+      "id": 53102461,
+      "filename": "webReq.zip",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 652,
+      "url": "https://issues.chromium.org/action/issues/40094017/attachments/53102461?download=true",
+      "local_path": "attachments/webReq.zip"
+    },
+    {
+      "id": 53102462,
+      "filename": "webRequest.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 265176,
+      "url": "https://issues.chromium.org/action/issues/40094017/attachments/53102462?download=true",
+      "local_path": "attachments/webRequest.mp4"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "UserAgent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3695.0 Safari/537.36 Edg/74.0.82.0\r\n\r\nSteps to reproduce the problem:\r\n1. Side load attached extension\r\n2. Go to Google.com\r\n3. Click on extension button\r\n4. After an alert, open a New Tab Page"
+}

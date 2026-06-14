@@ -247,7 +247,7 @@ Povcfe of Tencent Security Xuanwu Lab
 
 ## Attachments
 
-- reload_redirect.mp4 (video/mp4, 9.7 MB)
+- [reload_redirect.mp4](attachments/reload_redirect.mp4) (video/mp4, 9.7 MB)
 - [reload_redirect.zip](attachments/reload_redirect.zip) (application/x-zip-compressed, 2.3 KB)
 
 ## Timeline

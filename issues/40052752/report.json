@@ -106,7 +106,7 @@
       "mime_type": "text/plain",
       "size_bytes": 132,
       "url": "https://issues.chromium.org/action/issues/40052752/attachments/53017448?download=true",
-      "local_path": "attachments/devtools_page.html"
+      "local_path": "attachments/devtools_page_53017448.html"
     },
     {
       "id": 53017449,
@@ -114,7 +114,7 @@
       "mime_type": "text/plain",
       "size_bytes": 1564,
       "url": "https://issues.chromium.org/action/issues/40052752/attachments/53017449?download=true",
-      "local_path": "attachments/devtools_page.js"
+      "local_path": "attachments/devtools_page_53017449.js"
     },
     {
       "id": 53017450,
@@ -122,7 +122,7 @@
       "mime_type": "text/plain",
       "size_bytes": 165,
       "url": "https://issues.chromium.org/action/issues/40052752/attachments/53017450?download=true",
-      "local_path": "attachments/manifest.json"
+      "local_path": "attachments/manifest_53017450.json"
     }
   ],
   "update_count": 84,

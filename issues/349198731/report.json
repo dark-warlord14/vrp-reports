@@ -1,0 +1,70 @@
+{
+  "id": "349198731",
+  "url": "https://issues.chromium.org/issues/349198731",
+  "title": "heap-use-after-free on DownloadManagerTabHelper::DidCreateDownload",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": "126.0.0.0",
+  "cve_ids": [],
+  "reporter": "li...@gmail.com",
+  "assignee": "sd...@google.com",
+  "created_date": "2024-06-25T07:18:43+00:00",
+  "modified_date": "2024-10-04T15:41:37+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 57452283,
+      "filename": "poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 51630048,
+      "url": "https://issues.chromium.org/action/issues/349198731/attachments/57452283?download=true",
+      "local_path": "attachments/poc.mov"
+    },
+    {
+      "id": 57452284,
+      "filename": "uaf4-asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 67177,
+      "url": "https://issues.chromium.org/action/issues/349198731/attachments/57452284?download=true",
+      "local_path": "attachments/uaf4-asan.log"
+    },
+    {
+      "id": 57452285,
+      "filename": "poc4.html",
+      "mime_type": "text/html",
+      "size_bytes": 124,
+      "url": "https://issues.chromium.org/action/issues/349198731/attachments/57452285?download=true",
+      "local_path": "attachments/poc4.html"
+    },
+    {
+      "id": 57452286,
+      "filename": "uaf.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 2301,
+      "url": "https://issues.chromium.org/action/issues/349198731/attachments/57452286?download=true",
+      "local_path": "attachments/uaf.diff"
+    },
+    {
+      "id": 57454647,
+      "filename": "fix4.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1728,
+      "url": "https://issues.chromium.org/action/issues/349198731/attachments/57454647?download=true",
+      "local_path": "attachments/fix4.patch"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "# Steps to reproduce the problem\n  1. apply the patch, (The path of the patch is not important, just for better triggering)\n  2. see the mov.\n\n# Problem Description\n0.  similar  issue:40057634, the block function here uses completionHandler, so it is asynchronous, and then destroying this before `Di"
+}
