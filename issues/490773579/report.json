@@ -1,0 +1,39 @@
+{
+  "id": "490773579",
+  "url": "https://issues.chromium.org/issues/490773579",
+  "title": "CSP doesn't block sourceMappingURL",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>DevTools>Sources",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "no...@applitools.com",
+  "assignee": "da...@google.com",
+  "created_date": "2026-03-08T12:51:24+00:00",
+  "modified_date": "2026-06-19T07:56:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74091782,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 1706,
+      "url": "https://issues.chromium.org/action/issues/490773579/attachments/74091782?download=true",
+      "local_path": "attachments/index.html"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "## VULNERABILITY DETAILS\n\n### Summary\n\nFollowing the decision made in issue 361116749, `sourceMappingURL` requests should be blocked by the `connect-src` CSP directive.\n\nHowever, this vulnerability allows an attacker to bypass CSP and send requests to their own server, even if the `connect-src` dire"
+}

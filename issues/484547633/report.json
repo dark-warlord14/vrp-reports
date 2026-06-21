@@ -1,0 +1,123 @@
+{
+  "id": "484547633",
+  "url": "https://issues.chromium.org/issues/484547633",
+  "title": "VideoFrame Mojo deserialization accepts negative stride → OOB read in video encoders \n",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Media",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "147.0.0.0",
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2026-02-15T10:17:00+00:00",
+  "modified_date": "2026-06-15T19:57:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73434533,
+      "filename": "asan_crash_output.log",
+      "mime_type": "text/plain",
+      "size_bytes": 5137,
+      "url": "https://issues.chromium.org/action/issues/484547633/attachments/73434533?download=true",
+      "local_path": "attachments/asan_crash_output.log"
+    },
+    {
+      "id": 73434534,
+      "filename": "asan_output.log",
+      "mime_type": "text/plain",
+      "size_bytes": 4748,
+      "url": "https://issues.chromium.org/action/issues/484547633/attachments/73434534?download=true",
+      "local_path": "attachments/asan_output.log"
+    },
+    {
+      "id": 73434535,
+      "filename": "fix_negative_stride.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 949,
+      "url": "https://issues.chromium.org/action/issues/484547633/attachments/73434535?download=true",
+      "local_path": "attachments/fix_negative_stride.diff"
+    },
+    {
+      "id": 73464432,
+      "filename": "js_poc_output.log",
+      "mime_type": "text/plain",
+      "size_bytes": 151,
+      "url": "https://issues.chromium.org/action/issues/484547633/attachments/73464432?download=true",
+      "local_path": "attachments/js_poc_output.log"
+    },
+    {
+      "id": 73464433,
+      "filename": "poc_negative_stride.html",
+      "mime_type": "text/html",
+      "size_bytes": 13939,
+      "url": "https://issues.chromium.org/action/issues/484547633/attachments/73464433?download=true",
+      "local_path": "attachments/poc_negative_stride.html"
+    },
+    {
+      "id": 73464434,
+      "filename": "poc_patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 2800,
+      "url": "https://issues.chromium.org/action/issues/484547633/attachments/73464434?download=true",
+      "local_path": "attachments/poc_patch.diff"
+    },
+    {
+      "id": 73464435,
+      "filename": "run_poc_v8.sh",
+      "mime_type": "text/x-sh",
+      "size_bytes": 5010,
+      "url": "https://issues.chromium.org/action/issues/484547633/attachments/73464435?download=true",
+      "local_path": "attachments/run_poc_v8.sh"
+    },
+    {
+      "id": 73761436,
+      "filename": "poc_negative_stride.html",
+      "mime_type": "text/html",
+      "size_bytes": 14587,
+      "url": "https://issues.chromium.org/action/issues/484547633/attachments/73761436?download=true",
+      "local_path": "attachments/poc_negative_stride_73761436.html"
+    },
+    {
+      "id": 73761437,
+      "filename": "reproduce.sh",
+      "mime_type": "text/x-sh",
+      "size_bytes": 10277,
+      "url": "https://issues.chromium.org/action/issues/484547633/attachments/73761437?download=true",
+      "local_path": "attachments/reproduce.sh"
+    },
+    {
+      "id": 73761438,
+      "filename": "reproduce_output.log",
+      "mime_type": "text/plain",
+      "size_bytes": 44434,
+      "url": "https://issues.chromium.org/action/issues/484547633/attachments/73761438?download=true",
+      "local_path": "attachments/reproduce_output.log"
+    },
+    {
+      "id": 73761412,
+      "filename": "mojo_demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4781160,
+      "url": "https://issues.chromium.org/action/issues/484547633/attachments/73761412?download=true",
+      "local_path": "attachments/mojo_demo.mp4"
+    }
+  ],
+  "update_count": 75,
+  "description_snippet": "# Steps to reproduce the problem\n== Environment ==\nTested on: Chromium trunk (Linux x64), ASAN build\nAffected platforms: All (Linux, macOS, Windows, ChromeOS, Android)\nThe vulnerable code is platform-independent.\n\n== Build Configuration (ASAN) ==\nis_asan = true\nis_debug = false\nis_component_build ="
+}

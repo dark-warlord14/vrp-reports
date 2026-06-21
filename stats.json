@@ -1,7 +1,7 @@
 {
-  "total_reports": 4431,
-  "total_bounty": 24316671.7,
-  "avg_bounty": 5491.57,
+  "total_reports": 4479,
+  "total_bounty": 24685671.7,
+  "avg_bounty": 5515.12,
   "by_year": {
     "2009": {
       "count": 3,
@@ -56,51 +56,51 @@
       "total_bounty": 3155000.0
     },
     "2022": {
-      "count": 470,
-      "total_bounty": 2908500.0
+      "count": 471,
+      "total_bounty": 2910500.0
     },
     "2023": {
       "count": 501,
       "total_bounty": 2748837.0
     },
     "2024": {
-      "count": 379,
-      "total_bounty": 3443981.0
+      "count": 380,
+      "total_bounty": 3445981.0
     },
     "2025": {
-      "count": 276,
-      "total_bounty": 3394500.0
+      "count": 278,
+      "total_bounty": 3401500.0
     },
     "2026": {
-      "count": 97,
-      "total_bounty": 1527000.0
+      "count": 141,
+      "total_bounty": 1885000.0
     }
   },
   "by_severity": {
-    "S3-Low": 3875,
-    "S4-Minimal": 488,
-    "Unknown": 61,
+    "S3-Low": 3909,
+    "S4-Minimal": 501,
+    "Unknown": 62,
     "S1-High": 6,
     "S2-Medium": 1
   },
   "by_status": {
-    "Assigned": 3524,
-    "Accepted": 680,
-    "New": 113,
+    "Assigned": 3554,
+    "Accepted": 691,
+    "New": 116,
     "Fixed": 84,
-    "Verified": 29,
+    "Verified": 33,
     "Unknown": 1
   },
   "by_component": {
-    "Blink": 1953,
-    "Internals": 951,
-    "UI": 604,
+    "Blink": 1983,
+    "Internals": 960,
+    "UI": 607,
     "Unknown": 349,
-    "Platform": 255,
+    "Platform": 256,
     "Blink, Blink": 80,
     "Mobile": 57,
     "Internals, Internals": 41,
-    "Dawn": 31,
+    "Dawn": 35,
     "OS": 16,
     "Enterprise": 12,
     "Blink, Internals, Internals": 12,
@@ -124,23 +124,23 @@
     },
     {
       "range": "$1K-3K",
-      "count": 1467
+      "count": 1486
     },
     {
       "range": "$3K-5K",
-      "count": 687
+      "count": 693
     },
     {
       "range": "$5K-10K",
-      "count": 988
+      "count": 998
     },
     {
       "range": "$10K-20K",
-      "count": 413
+      "count": 420
     },
     {
       "range": "$20K+",
-      "count": 264
+      "count": 270
     }
   ],
   "top_bounties": [

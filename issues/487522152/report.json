@@ -1,0 +1,114 @@
+{
+  "id": "487522152",
+  "url": "https://issues.chromium.org/issues/487522152",
+  "title": "Dawn QueueWriteBufferXl / QueueWriteTextureXl OOB Heap Read via GetSourceData() Fast Path",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Dawn",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gr...@gmail.com",
+  "assignee": "ba...@chromium.org",
+  "created_date": "2026-02-25T19:22:32+00:00",
+  "modified_date": "2026-06-15T20:55:08+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73731866,
+      "filename": "asan_oob_read_android.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 4404,
+      "url": "https://issues.chromium.org/action/issues/487522152/attachments/73731866?download=true",
+      "local_path": "attachments/asan_oob_read_android.txt"
+    },
+    {
+      "id": 73731867,
+      "filename": "asan_oob_read_chrome_gpu.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18150,
+      "url": "https://issues.chromium.org/action/issues/487522152/attachments/73731867?download=true",
+      "local_path": "attachments/asan_oob_read_chrome_gpu.txt"
+    },
+    {
+      "id": 73731868,
+      "filename": "asan_oob_read_linux.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 4650,
+      "url": "https://issues.chromium.org/action/issues/487522152/attachments/73731868?download=true",
+      "local_path": "attachments/asan_oob_read_linux.txt"
+    },
+    {
+      "id": 73731869,
+      "filename": "chrome_trigger_patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1777,
+      "url": "https://issues.chromium.org/action/issues/487522152/attachments/73731869?download=true",
+      "local_path": "attachments/chrome_trigger_patch.diff"
+    },
+    {
+      "id": 73731870,
+      "filename": "compromised_renderer.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1104,
+      "url": "https://issues.chromium.org/action/issues/487522152/attachments/73731870?download=true",
+      "local_path": "attachments/compromised_renderer.patch"
+    },
+    {
+      "id": 73731871,
+      "filename": "e2e_output.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 4989,
+      "url": "https://issues.chromium.org/action/issues/487522152/attachments/73731871?download=true",
+      "local_path": "attachments/e2e_output.txt"
+    },
+    {
+      "id": 73731872,
+      "filename": "e2e_screenshot.png",
+      "mime_type": "image/png",
+      "size_bytes": 231613,
+      "url": "https://issues.chromium.org/action/issues/487522152/attachments/73731872?download=true",
+      "local_path": "attachments/e2e_screenshot.png"
+    },
+    {
+      "id": 73731873,
+      "filename": "poc_oob_read.cc",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 21638,
+      "url": "https://issues.chromium.org/action/issues/487522152/attachments/73731873?download=true",
+      "local_path": "attachments/poc_oob_read.cc"
+    },
+    {
+      "id": 73731874,
+      "filename": "trigger_oob_read.html",
+      "mime_type": "text/html",
+      "size_bytes": 4682,
+      "url": "https://issues.chromium.org/action/issues/487522152/attachments/73731874?download=true",
+      "local_path": "attachments/trigger_oob_read.html"
+    },
+    {
+      "id": 73731875,
+      "filename": "trigger_oob_read_e2e.html",
+      "mime_type": "text/html",
+      "size_bytes": 12647,
+      "url": "https://issues.chromium.org/action/issues/487522152/attachments/73731875?download=true",
+      "local_path": "attachments/trigger_oob_read_e2e.html"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "Hi Guys, its me again. Since my last was sadly a dupe (non public) i decided to pick up the pace. That's why I'm finishing the pocs I've already collected and submitting them. \n\n## Summary\n\nA compromised renderer (one with arbitrary code execution, e.g., via a separate renderer exploit) can trigger"
+}

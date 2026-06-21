@@ -1,0 +1,51 @@
+{
+  "id": "491080830",
+  "url": "https://issues.chromium.org/issues/491080830",
+  "title": "Heap OOB read in Blink text shaping",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Fonts",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sh...@gmail.com",
+  "assignee": "dr...@chromium.org",
+  "created_date": "2026-03-09T15:58:21+00:00",
+  "modified_date": "2026-06-18T07:55:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74130142,
+      "filename": "agent21_min_run6.stderr.log",
+      "mime_type": "text/plain",
+      "size_bytes": 40360,
+      "url": "https://issues.chromium.org/action/issues/491080830/attachments/74130142?download=true",
+      "local_path": "attachments/agent21_min_run6.stderr.log"
+    },
+    {
+      "id": 74130143,
+      "filename": "crash_20260309_050715_agent21_min.html",
+      "mime_type": "text/html",
+      "size_bytes": 174787,
+      "url": "https://issues.chromium.org/action/issues/491080830/attachments/74130143?download=true",
+      "local_path": "attachments/crash_20260309_050715_agent21_min.html"
+    }
+  ],
+  "update_count": 88,
+  "description_snippet": "### VULNERABILITY DETAILS\nA heap-buffer-overflow read occurs in Blink text shaping when `CaseMappingHarfBuzzBufferFiller::FillSlowCase()` advances UTF-16 with a wrong bound argument.\n\nIn `third_party/blink/renderer/platform/fonts/shaping/case_mapping_harfbuzz_buffer_filler.cc:80`, the code calls:\n\n`"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "487768771",
+  "url": "https://issues.chromium.org/issues/487768771",
+  "title": "Debug check failed: IsInBounds(index).",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "V8 version 14.7.0 (candidate)",
+  "cve_ids": [],
+  "reporter": "qy...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2026-02-26T09:05:48+00:00",
+  "modified_date": "2026-06-15T21:55:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73769542,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 297,
+      "url": "https://issues.chromium.org/action/issues/487768771/attachments/73769542?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 73769543,
+      "filename": "worker.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 226,
+      "url": "https://issues.chromium.org/action/issues/487768771/attachments/73769543?download=true",
+      "local_path": "attachments/worker.js"
+    }
+  ],
+  "update_count": 75,
+  "description_snippet": "# Steps to reproduce the problem\nrun with:\nDownload worker.js and poc.js and put them in the same directory.\nd8 poc.js\n\n# Problem Description\n## Root Cause\nThe root cause is **inconsistent length snapshots** within one logical operation, plus missing write-side capacity bounds.\n\n- Allocation uses ol"
+}

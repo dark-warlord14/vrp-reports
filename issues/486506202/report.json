@@ -1,0 +1,90 @@
+{
+  "id": "486506202",
+  "url": "https://issues.chromium.org/issues/486506202",
+  "title": "Uninitialized alpha-plane padding in VP9-with-alpha external frame buffer decode causes renderer heap data disclosure via WebCodecs VideoFrame.copyTo(codedRect)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Media>WebCodecs",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gi...@octane.security",
+  "assignee": "eu...@chromium.org",
+  "created_date": "2026-02-22T03:52:04+00:00",
+  "modified_date": "2026-06-15T20:55:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73633001,
+      "filename": "report.md",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 5433,
+      "url": "https://issues.chromium.org/action/issues/486506202/attachments/73633001?download=true",
+      "local_path": "attachments/report.md"
+    },
+    {
+      "id": 73633002,
+      "filename": "exploit_poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 4316,
+      "url": "https://issues.chromium.org/action/issues/486506202/attachments/73633002?download=true",
+      "local_path": "attachments/exploit_poc.html"
+    },
+    {
+      "id": 73633003,
+      "filename": "heap_ptr_leak.html",
+      "mime_type": "text/html",
+      "size_bytes": 2418,
+      "url": "https://issues.chromium.org/action/issues/486506202/attachments/73633003?download=true",
+      "local_path": "attachments/heap_ptr_leak.html"
+    },
+    {
+      "id": 73633004,
+      "filename": "vp9_17x17.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 996,
+      "url": "https://issues.chromium.org/action/issues/486506202/attachments/73633004?download=true",
+      "local_path": "attachments/vp9_17x17.webm"
+    },
+    {
+      "id": 73673827,
+      "filename": "2026-02-24 00-04-14.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 30157328,
+      "url": "https://issues.chromium.org/action/issues/486506202/attachments/73673827?download=true",
+      "local_path": "attachments/2026-02-24 00-04-14.mp4"
+    },
+    {
+      "id": 73806579,
+      "filename": "heap_ptr_leak.html",
+      "mime_type": "text/html",
+      "size_bytes": 4019,
+      "url": "https://issues.chromium.org/action/issues/486506202/attachments/73806579?download=true",
+      "local_path": "attachments/heap_ptr_leak_73806579.html"
+    },
+    {
+      "id": 73806557,
+      "filename": "exploit_poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 5890,
+      "url": "https://issues.chromium.org/action/issues/486506202/attachments/73806557?download=true",
+      "local_path": "attachments/exploit_poc_73806557.html"
+    }
+  ],
+  "update_count": 60,
+  "description_snippet": "---\n\n### Report description\n\n\nUninitialized alpha-plane padding in VP9-with-alpha external frame buffer decode causes renderer heap data disclosure via WebCodecs VideoFrame.copyTo(codedRect)\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security"
+}

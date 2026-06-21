@@ -1,0 +1,70 @@
+{
+  "id": "488400770",
+  "url": "https://issues.chromium.org/issues/488400770",
+  "title": "Security: Cross-tab GPU memory exfiltration via uint64 to uint32 truncation in Dawn's Metal vertex buffer length tracking",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Dawn>Native",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sw...@gmail.com",
+  "assignee": "ka...@google.com",
+  "created_date": "2026-02-27T19:47:10+00:00",
+  "modified_date": "2026-06-16T11:58:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73832113,
+      "filename": "cross-tab-poc-result2.png",
+      "mime_type": "image/png",
+      "size_bytes": 388050,
+      "url": "https://issues.chromium.org/action/issues/488400770/attachments/73832113?download=true",
+      "local_path": "attachments/cross-tab-poc-result2.png"
+    },
+    {
+      "id": 73832114,
+      "filename": "cross-tab-poc-result1.png",
+      "mime_type": "image/png",
+      "size_bytes": 2841361,
+      "url": "https://issues.chromium.org/action/issues/488400770/attachments/73832114?download=true",
+      "local_path": "attachments/cross-tab-poc-result1.png"
+    },
+    {
+      "id": 73832115,
+      "filename": "exploit_cross_tab_s4_imageSuccess.html",
+      "mime_type": "text/html",
+      "size_bytes": 75989,
+      "url": "https://issues.chromium.org/action/issues/488400770/attachments/73832115?download=true",
+      "local_path": "attachments/exploit_cross_tab_s4_imageSuccess.html"
+    },
+    {
+      "id": 73832116,
+      "filename": "poc_minimized.html",
+      "mime_type": "text/html",
+      "size_bytes": 6571,
+      "url": "https://issues.chromium.org/action/issues/488400770/attachments/73832116?download=true",
+      "local_path": "attachments/poc_minimized.html"
+    },
+    {
+      "id": 73848160,
+      "filename": "victim.html",
+      "mime_type": "text/html",
+      "size_bytes": 20482,
+      "url": "https://issues.chromium.org/action/issues/488400770/attachments/73848160?download=true",
+      "local_path": "attachments/victim.html"
+    }
+  ],
+  "update_count": 88,
+  "description_snippet": "---\n\n### Report description\n\n\nSecurity: Cross-tab GPU memory exfiltration via uint64 to uint32 truncation in Dawn's Metal vertex buffer length tracking\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [S"
+}

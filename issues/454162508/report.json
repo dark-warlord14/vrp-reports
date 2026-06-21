@@ -1,0 +1,58 @@
+{
+  "id": "454162508",
+  "url": "https://issues.chromium.org/issues/454162508",
+  "title": "Service Worker Navigation bypass LNA checks for localhost",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>LocalNetworkAccess",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "0x...@gmail.com",
+  "assignee": "hc...@chromium.org",
+  "created_date": "2025-10-22T07:31:32+00:00",
+  "modified_date": "2026-06-20T07:55:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 70303764,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 450,
+      "url": "https://issues.chromium.org/action/issues/454162508/attachments/70303764?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 70303765,
+      "filename": "service_worker.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 701,
+      "url": "https://issues.chromium.org/action/issues/454162508/attachments/70303765?download=true",
+      "local_path": "attachments/service_worker.js"
+    },
+    {
+      "id": 70399361,
+      "filename": "414162508-browser-test-repro.json",
+      "mime_type": "application/json",
+      "size_bytes": 352049,
+      "url": "https://issues.chromium.org/action/issues/454162508/attachments/70399361?download=true",
+      "local_path": "attachments/414162508-browser-test-repro.json"
+    }
+  ],
+  "update_count": 112,
+  "description_snippet": "VULNERABILITY DETAILS\nChromium has a Local Network Access feature that displays a PNA bubble to alert users when a webpage attempts to access private addresses. However, this security restriction can be bypassed by using the Service Worker navigation feature.\n\nVERSION\nChromium\t143.0.7469.0 (Develope"
+}

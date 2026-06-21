@@ -1,0 +1,63 @@
+{
+  "id": "491518619",
+  "url": "https://issues.chromium.org/issues/491518619",
+  "title": "[PassAsSpan] ArrayBuffer.transfer() re-entrancy UAF / SEGV in TextDecoder.decode",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>TextEncoding",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pk...@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2026-03-11T02:27:55+00:00",
+  "modified_date": "2026-06-18T08:03:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74191171,
+      "filename": "webgl2-passasspan-infoleak-v1.html",
+      "mime_type": "text/html",
+      "size_bytes": 22720,
+      "url": "https://issues.chromium.org/action/issues/491518619/attachments/74191171?download=true",
+      "local_path": "attachments/webgl2-passasspan-infoleak-v1.html"
+    },
+    {
+      "id": 74191172,
+      "filename": "webgl2-passasspan-uaf-v4.html",
+      "mime_type": "text/html",
+      "size_bytes": 10672,
+      "url": "https://issues.chromium.org/action/issues/491518619/attachments/74191172?download=true",
+      "local_path": "attachments/webgl2-passasspan-uaf-v4.html"
+    },
+    {
+      "id": 74236854,
+      "filename": "chrome-asan-uaf-trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 20306,
+      "url": "https://issues.chromium.org/action/issues/491518619/attachments/74236854?download=true",
+      "local_path": "attachments/chrome-asan-uaf-trace.txt"
+    },
+    {
+      "id": 74232108,
+      "filename": "chrome-asan-uaf-trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 55808,
+      "url": "https://issues.chromium.org/action/issues/491518619/attachments/74232108?download=true",
+      "local_path": "attachments/chrome-asan-uaf-trace_74232108.txt"
+    }
+  ],
+  "update_count": 13,
+  "description_snippet": "# Steps to reproduce the problem\n1. Save the two attached PoC HTML files\n2. Serve via HTTP: python -m http.server 8899\n3. Open webgl2-passasspan-uaf-v4.html in Chrome\n4. Observe output: \"UAF DETECTED\" with R=252 (spray value) instead of R=3 (original value)\n5. Open webgl2-passasspan-infoleak-v1.html"
+}

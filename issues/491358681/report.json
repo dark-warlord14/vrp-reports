@@ -1,0 +1,67 @@
+{
+  "id": "491358681",
+  "url": "https://issues.chromium.org/issues/491358681",
+  "title": "Heap buffer overflow write in libaom AV1 SVC encoding via WebRTC",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media>Video",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ma...@google.com",
+  "created_date": "2026-03-10T14:44:42+00:00",
+  "modified_date": "2026-06-20T07:55:39+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74179572,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 23397,
+      "url": "https://issues.chromium.org/action/issues/491358681/attachments/74179572?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 74179573,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 4785,
+      "url": "https://issues.chromium.org/action/issues/491358681/attachments/74179573?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74190008,
+      "filename": "crash.png",
+      "mime_type": "image/png",
+      "size_bytes": 366856,
+      "url": "https://issues.chromium.org/action/issues/491358681/attachments/74190008?download=true",
+      "local_path": "attachments/crash.png"
+    },
+    {
+      "id": 74205606,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 23469,
+      "url": "https://issues.chromium.org/action/issues/491358681/attachments/74205606?download=true",
+      "local_path": "attachments/asan_74205606.log"
+    }
+  ],
+  "update_count": 121,
+  "description_snippet": "# Heap buffer overflow write in libaom AV1 SVC encoding via WebRTC\n\n## Summary\n\nA heap buffer overflow write exists in libaom's AV1 encoder when encoding video with spatial Scalable Video Coding (SVC) through WebRTC. The `chroma_check` function in `var_based_part.c` uses the LAST_FRAME reference's s"
+}

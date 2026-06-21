@@ -1,0 +1,79 @@
+{
+  "id": "490727241",
+  "url": "https://issues.chromium.org/issues/490727241",
+  "title": "Use-after-poison in InspectorMediaEventHandler::SendQueuedMediaEvents via canvas.captureStream() (zero interaction)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Media",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hu...@gmail.com",
+  "assignee": "da...@chromium.org",
+  "created_date": "2026-03-08T17:55:47+00:00",
+  "modified_date": "2026-06-18T07:55:06+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74104888,
+      "filename": "asan-no-expose-gc.37470",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 10674,
+      "url": "https://issues.chromium.org/action/issues/490727241/attachments/74104888?download=true",
+      "local_path": "attachments/asan-no-expose-gc.37470"
+    },
+    {
+      "id": 74104889,
+      "filename": "poc_no_expose_gc.html",
+      "mime_type": "text/html",
+      "size_bytes": 8277,
+      "url": "https://issues.chromium.org/action/issues/490727241/attachments/74104889?download=true",
+      "local_path": "attachments/poc_no_expose_gc.html"
+    },
+    {
+      "id": 74104890,
+      "filename": "fix-inspector-context-uap.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1872,
+      "url": "https://issues.chromium.org/action/issues/490727241/attachments/74104890?download=true",
+      "local_path": "attachments/fix-inspector-context-uap.patch"
+    },
+    {
+      "id": 74104891,
+      "filename": "asan-vrp-retest.36210",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 10718,
+      "url": "https://issues.chromium.org/action/issues/490727241/attachments/74104891?download=true",
+      "local_path": "attachments/asan-vrp-retest.36210"
+    },
+    {
+      "id": 74104892,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 7839,
+      "url": "https://issues.chromium.org/action/issues/490727241/attachments/74104892?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74104893,
+      "filename": "recording.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 793325,
+      "url": "https://issues.chromium.org/action/issues/490727241/attachments/74104893?download=true",
+      "local_path": "attachments/recording.mov"
+    }
+  ],
+  "update_count": 68,
+  "description_snippet": "# Use-after-poison in InspectorMediaEventHandler::SendQueuedMediaEvents via canvas.captureStream() (zero interaction)\n\n## Security Bug\n\n---\n\n## VULNERABILITY DETAILS\n\nA dangling `raw_ptr<blink::MediaInspectorContext, DanglingUntriaged>` in `InspectorMediaEventHandler` (line 30 of `content/renderer/m"
+}

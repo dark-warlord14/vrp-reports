@@ -1,0 +1,58 @@
+{
+  "id": "486167751",
+  "url": "https://issues.chromium.org/issues/486167751",
+  "title": "WebNN LiteRT: heap-buffer-overflow write in XNNPACK subconv2d via convTranspose2d",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "to...@gmail.com",
+  "assignee": "re...@chromium.org",
+  "created_date": "2026-02-20T16:43:16+00:00",
+  "modified_date": "2026-06-18T07:54:58+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 25000.0,
+  "reward_amount_meta": 25000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73607074,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 2222,
+      "url": "https://issues.chromium.org/action/issues/486167751/attachments/73607074?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 73613677,
+      "filename": "model0.tflite",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 904,
+      "url": "https://issues.chromium.org/action/issues/486167751/attachments/73613677?download=true",
+      "local_path": "attachments/model0.tflite"
+    },
+    {
+      "id": 73620272,
+      "filename": "Fri Feb 20 2026 17:17:46 GMT-0800 (Pacific Standard Time).png",
+      "mime_type": "image/png",
+      "size_bytes": 128865,
+      "url": "https://issues.chromium.org/action/issues/486167751/attachments/73620272?download=true",
+      "local_path": "attachments/Fri Feb 20 2026 17_17_46 GMT-0800 (Pacific Standard Time).png"
+    }
+  ],
+  "update_count": 59,
+  "description_snippet": "---\n\n### Report description\n\n\nWebNN LiteRT: heap-buffer-overflow write in XNNPACK subconv2d via convTranspose2d\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.goo"
+}

@@ -1,0 +1,59 @@
+{
+  "id": "490769268",
+  "url": "https://issues.chromium.org/issues/490769268",
+  "title": "V8 Sandbox Bypass: BigInt CachedMod Heap-Buffer-Overflow on C++ Heap",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "de...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2026-03-08T22:06:17+00:00",
+  "modified_date": "2026-06-19T07:56:11+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "reward_amount_meta": 20000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74104481,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3320,
+      "url": "https://issues.chromium.org/action/issues/490769268/attachments/74104481?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 74113263,
+      "filename": "poc_write_violation.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1187,
+      "url": "https://issues.chromium.org/action/issues/490769268/attachments/74113263?download=true",
+      "local_path": "attachments/poc_write_violation.js"
+    },
+    {
+      "id": 74179574,
+      "filename": "poc_rip_control.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 7405,
+      "url": "https://issues.chromium.org/action/issues/490769268/attachments/74179574?download=true",
+      "local_path": "attachments/poc_rip_control.js"
+    }
+  ],
+  "update_count": 48,
+  "description_snippet": "## VULNERABILITY DETAILS\nA heap-buffer-overflow in V8's BigInt `CachedMod()` [1] function allows **arbitrary write (AAW) to the C++ heap outside the V8 sandbox**. By corrupting a BigInt's `bitfield_` [2] (an in-sandbox write), an attacker can inflate the divisor's reported digit-length while the cac"
+}

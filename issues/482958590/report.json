@@ -1,0 +1,67 @@
+{
+  "id": "482958590",
+  "url": "https://issues.chromium.org/issues/482958590",
+  "title": "Use-After-Free in WMPI",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Media",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "144.0.0.0",
+  "cve_ids": [],
+  "reporter": "ss...@gmail.com",
+  "assignee": "da...@chromium.org",
+  "created_date": "2026-02-09T15:09:26+00:00",
+  "modified_date": "2026-06-17T07:58:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73253270,
+      "filename": "repro.html",
+      "mime_type": "text/html",
+      "size_bytes": 2054,
+      "url": "https://issues.chromium.org/action/issues/482958590/attachments/73253270?download=true",
+      "local_path": "attachments/repro.html"
+    },
+    {
+      "id": 73253271,
+      "filename": "repro.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 40124740,
+      "url": "https://issues.chromium.org/action/issues/482958590/attachments/73253271?download=true",
+      "local_path": "attachments/repro.webm"
+    },
+    {
+      "id": 73253272,
+      "filename": "poc_helper.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 581,
+      "url": "https://issues.chromium.org/action/issues/482958590/attachments/73253272?download=true",
+      "local_path": "attachments/poc_helper.diff"
+    },
+    {
+      "id": 73253273,
+      "filename": "crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 7295,
+      "url": "https://issues.chromium.org/action/issues/482958590/attachments/73253273?download=true",
+      "local_path": "attachments/crash.log"
+    }
+  ],
+  "update_count": 97,
+  "description_snippet": "# Steps to reproduce the problem\n1. .\\chrome.exe --js-flags=\"--expose-gc\"\n\n# Problem Description\nUse-After-Free occurs when a parent object is destroyed by GC while accessing a WMPI object.\\\nGC can be called via the [0] function.\\\nThere are several places where this function can be called, but I cho"
+}

@@ -1,0 +1,57 @@
+{
+  "id": "479326680",
+  "url": "https://issues.chromium.org/issues/479326680",
+  "title": "Incorrect Origin Display in PWA Install Prompt When Using RTL Characters",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>WebAppInstalls",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "me...@google.com",
+  "created_date": "2026-01-28T02:53:51+00:00",
+  "modified_date": "2026-06-15T19:57:39+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 72881732,
+      "filename": "Chrome PWA.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 24383309,
+      "url": "https://issues.chromium.org/action/issues/479326680/attachments/72881732?download=true",
+      "local_path": "attachments/Chrome PWA.mov"
+    },
+    {
+      "id": 73119739,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 377,
+      "url": "https://issues.chromium.org/action/issues/479326680/attachments/73119739?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 73125696,
+      "filename": "webapp.html",
+      "mime_type": "text/html",
+      "size_bytes": 2116,
+      "url": "https://issues.chromium.org/action/issues/479326680/attachments/73125696?download=true",
+      "local_path": "attachments/webapp.html"
+    }
+  ],
+  "update_count": 81,
+  "description_snippet": "---\n\n### Report description\n\n\nChrome Mac - Incorrect Origin Display in PWA Install Prompt When Using RTL Characters\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters"
+}

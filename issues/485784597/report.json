@@ -1,0 +1,99 @@
+{
+  "id": "485784597",
+  "url": "https://issues.chromium.org/issues/485784597",
+  "title": "V8 Sandbox Bypass: V8 JSPI StackMemory use-after-free via EPT entry not invalidated on retirement",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ad...@gmail.com",
+  "assignee": "th...@google.com",
+  "created_date": "2026-02-19T10:02:40+00:00",
+  "modified_date": "2026-06-15T20:55:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73564849,
+      "filename": "jsapi-stack-uaf.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 12338,
+      "url": "https://issues.chromium.org/action/issues/485784597/attachments/73564849?download=true",
+      "local_path": "attachments/jsapi-stack-uaf.zip"
+    },
+    {
+      "id": 73564850,
+      "filename": "jspi_stack_uaf_test.cc",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3462,
+      "url": "https://issues.chromium.org/action/issues/485784597/attachments/73564850?download=true",
+      "local_path": "attachments/jspi_stack_uaf_test.cc"
+    },
+    {
+      "id": 73564851,
+      "filename": "jspi_stack_uaf.html",
+      "mime_type": "text/html",
+      "size_bytes": 6168,
+      "url": "https://issues.chromium.org/action/issues/485784597/attachments/73564851?download=true",
+      "local_path": "attachments/jspi_stack_uaf.html"
+    },
+    {
+      "id": 73564852,
+      "filename": "jspi_stack_uaf.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 16913,
+      "url": "https://issues.chromium.org/action/issues/485784597/attachments/73564852?download=true",
+      "local_path": "attachments/jspi_stack_uaf.js"
+    },
+    {
+      "id": 73593236,
+      "filename": "stack-ept-uaf-unittest.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 12142,
+      "url": "https://issues.chromium.org/action/issues/485784597/attachments/73593236?download=true",
+      "local_path": "attachments/stack-ept-uaf-unittest.patch"
+    },
+    {
+      "id": 73593237,
+      "filename": "asan_test1_final.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8667,
+      "url": "https://issues.chromium.org/action/issues/485784597/attachments/73593237?download=true",
+      "local_path": "attachments/asan_test1_final.log"
+    },
+    {
+      "id": 73593730,
+      "filename": "asan_test2_final.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8789,
+      "url": "https://issues.chromium.org/action/issues/485784597/attachments/73593730?download=true",
+      "local_path": "attachments/asan_test2_final.log"
+    },
+    {
+      "id": 73593249,
+      "filename": "asan_test3_final.log",
+      "mime_type": "text/plain",
+      "size_bytes": 812,
+      "url": "https://issues.chromium.org/action/issues/485784597/attachments/73593249?download=true",
+      "local_path": "attachments/asan_test3_final.log"
+    }
+  ],
+  "update_count": 77,
+  "description_snippet": "---\n\n### Report description\n\n\nV8 JSPI StackMemory use-after-free via EPT entry not invalidated on retirement — V8 sandbox bypass\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https"
+}

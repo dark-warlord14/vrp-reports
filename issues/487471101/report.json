@@ -1,0 +1,83 @@
+{
+  "id": "487471101",
+  "url": "https://issues.chromium.org/issues/487471101",
+  "title": "Sandboxed iframe bypasses allow-popups restriction via CreateNewWindow Mojo IPC — browser has zero sandbox enforcement",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Sandbox>SiteIsolation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "os...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2026-02-25T05:18:42+00:00",
+  "modified_date": "2026-06-15T20:55:25+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73724216,
+      "filename": "h6_fix.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4936,
+      "url": "https://issues.chromium.org/action/issues/487471101/attachments/73724216?download=true",
+      "local_path": "attachments/h6_fix.diff"
+    },
+    {
+      "id": 73724217,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 1954,
+      "url": "https://issues.chromium.org/action/issues/487471101/attachments/73724217?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 73724218,
+      "filename": "sandboxed.html",
+      "mime_type": "text/html",
+      "size_bytes": 678,
+      "url": "https://issues.chromium.org/action/issues/487471101/attachments/73724218?download=true",
+      "local_path": "attachments/sandboxed.html"
+    },
+    {
+      "id": 73724219,
+      "filename": "pwned.html",
+      "mime_type": "text/html",
+      "size_bytes": 997,
+      "url": "https://issues.chromium.org/action/issues/487471101/attachments/73724219?download=true",
+      "local_path": "attachments/pwned.html"
+    },
+    {
+      "id": 73724220,
+      "filename": "h6_patch_renderer_poc.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2403,
+      "url": "https://issues.chromium.org/action/issues/487471101/attachments/73724220?download=true",
+      "local_path": "attachments/h6_patch_renderer_poc.diff"
+    },
+    {
+      "id": 73724221,
+      "filename": "serve.py",
+      "mime_type": "text/x-python-script",
+      "size_bytes": 814,
+      "url": "https://issues.chromium.org/action/issues/487471101/attachments/73724221?download=true",
+      "local_path": "attachments/serve.py"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "---\n\n### Report description\n\n\nSandboxed iframe bypasses allow-popups restriction via CreateNewWindow Mojo IPC — browser has zero sandbox enforcement\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See"
+}

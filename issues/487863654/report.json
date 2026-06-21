@@ -1,0 +1,50 @@
+{
+  "id": "487863654",
+  "url": "https://issues.chromium.org/issues/487863654",
+  "title": "One click Chrome Sanitizer API bypass via xlink:href:x",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>SanitizerAPI",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ne...@akorlith.com",
+  "assignee": "vo...@chromium.org",
+  "created_date": "2026-02-26T06:11:19+00:00",
+  "modified_date": "2026-06-15T21:55:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73766352,
+      "filename": "poc_sanitizer.html",
+      "mime_type": "text/html",
+      "size_bytes": 391,
+      "url": "https://issues.chromium.org/action/issues/487863654/attachments/73766352?download=true",
+      "local_path": "attachments/poc_sanitizer.html"
+    },
+    {
+      "id": 73766353,
+      "filename": "poc_sanitizer.html",
+      "mime_type": "text/html",
+      "size_bytes": 391,
+      "url": "https://issues.chromium.org/action/issues/487863654/attachments/73766353?download=true",
+      "local_path": "attachments/poc_sanitizer_73766353.html"
+    }
+  ],
+  "update_count": 75,
+  "description_snippet": "---\n\n### Report description\n\n\nOne click Chrome Sanitizer API bypass via xlink:href:x\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/rules/5745167"
+}

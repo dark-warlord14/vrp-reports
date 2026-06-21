@@ -1,0 +1,70 @@
+{
+  "id": "490254128",
+  "url": "https://issues.chromium.org/issues/490254128",
+  "title": "Use-after-free in MidiManagerAndroid due to incorrect member destruction order on Android",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>WebMIDI",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ho...@google.com",
+  "created_date": "2026-03-06T14:48:03+00:00",
+  "modified_date": "2026-06-19T07:55:43+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74049567,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 2080,
+      "url": "https://issues.chromium.org/action/issues/490254128/attachments/74049567?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74049568,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 716,
+      "url": "https://issues.chromium.org/action/issues/490254128/attachments/74049568?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 74061040,
+      "filename": "VirtualMIDI.apk",
+      "mime_type": "application/vnd.android.package-archive",
+      "size_bytes": 12789,
+      "url": "https://issues.chromium.org/action/issues/490254128/attachments/74061040?download=true",
+      "local_path": "attachments/VirtualMIDI.apk"
+    },
+    {
+      "id": 74061041,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 3068,
+      "url": "https://issues.chromium.org/action/issues/490254128/attachments/74061041?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 74061042,
+      "filename": "readme.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 2784,
+      "url": "https://issues.chromium.org/action/issues/490254128/attachments/74061042?download=true",
+      "local_path": "attachments/readme.md"
+    }
+  ],
+  "update_count": 77,
+  "description_snippet": "## Summary\n\nOn Android, `MidiManagerAndroid` destroys its `input_port_to_index_` hash map before closing MIDI input ports, allowing a concurrent Android MIDI system callback to call `find()` on the destroyed map. This is a use-after-destroy that executes directly in the browser process, reachable fr"
+}

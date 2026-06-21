@@ -1,0 +1,67 @@
+{
+  "id": "488072253",
+  "url": "https://issues.chromium.org/issues/488072253",
+  "title": "V8 Sandbox escape via String::Value::Value unsigned overflow",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "h2...@gmail.com",
+  "assignee": "is...@chromium.org",
+  "created_date": "2026-02-27T13:22:32+00:00",
+  "modified_date": "2026-06-15T21:55:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73814612,
+      "filename": "fix.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 518,
+      "url": "https://issues.chromium.org/action/issues/488072253/attachments/73814612?download=true",
+      "local_path": "attachments/fix.patch"
+    },
+    {
+      "id": 73814613,
+      "filename": "poc_chrome_eval.html",
+      "mime_type": "text/html",
+      "size_bytes": 4838,
+      "url": "https://issues.chromium.org/action/issues/488072253/attachments/73814613?download=true",
+      "local_path": "attachments/poc_chrome_eval.html"
+    },
+    {
+      "id": 73814614,
+      "filename": "server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 1548,
+      "url": "https://issues.chromium.org/action/issues/488072253/attachments/73814614?download=true",
+      "local_path": "attachments/server.py"
+    },
+    {
+      "id": 73814615,
+      "filename": "sleep.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1074,
+      "url": "https://issues.chromium.org/action/issues/488072253/attachments/73814615?download=true",
+      "local_path": "attachments/sleep.patch"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "VULNERABILITY DETAILS\n\nThe `String::Value` constructor stores the length of the incoming String object into its `length_` member, an `uint32_t`. Then it makes an allocation from PartitionAlloc for `length_ + 1`, which can overflow to zero if the length of the incoming String is UINT32_MAX.\n\n```cpp\nS"
+}
