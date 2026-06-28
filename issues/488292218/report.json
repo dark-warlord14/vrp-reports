@@ -1,0 +1,33 @@
+{
+  "id": "488292218",
+  "url": "https://issues.chromium.org/issues/488292218",
+  "title": "Not preflighting message/ad-auction-trusted-signals-request breaks CSRF prevention features",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>InterestGroups",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "145.0.7632.111",
+  "cve_ids": [],
+  "reporter": "gl...@apollographql.com",
+  "assignee": "mm...@chromium.org",
+  "created_date": "2026-02-27T16:44:31+00:00",
+  "modified_date": "2026-06-23T07:54:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 66,
+  "description_snippet": "# Steps to reproduce the problem\n1. Open Network tab of dev tools\n2. Go to https://web.mit.edu/glasser/www/cors-no-preflight.html\n3. Observe that a cross-origin request was sent to the origin https://graphql.api.apollographql.com/ with content-type message/ad-auction-trusted-signals-request with no"
+}

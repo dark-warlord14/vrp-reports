@@ -1,0 +1,81 @@
+{
+  "id": "492465356",
+  "url": "https://issues.chromium.org/issues/492465356",
+  "title": "SubAppsServiceImpl::Remove() use-after-free: ReportBadMessageAndDeleteThis() mid-loop deletes `this`, next iteration accesses freed memory",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>WebAppInstalls>Isolated",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "os...@gmail.com",
+  "assignee": "by...@google.com",
+  "created_date": "2026-03-13T13:14:00+00:00",
+  "modified_date": "2026-06-24T07:52:20+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 36000.0,
+  "reward_amount_meta": 36000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74313792,
+      "filename": "fix.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1254,
+      "url": "https://issues.chromium.org/action/issues/492465356/attachments/74313792?download=true",
+      "local_path": "attachments/fix.diff"
+    },
+    {
+      "id": 74313793,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 773,
+      "url": "https://issues.chromium.org/action/issues/492465356/attachments/74313793?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 74313794,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2223,
+      "url": "https://issues.chromium.org/action/issues/492465356/attachments/74313794?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 74313795,
+      "filename": "poc_patch.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1033,
+      "url": "https://issues.chromium.org/action/issues/492465356/attachments/74313795?download=true",
+      "local_path": "attachments/poc_patch.diff"
+    },
+    {
+      "id": 74313796,
+      "filename": "serve.py",
+      "mime_type": "text/x-python-script",
+      "size_bytes": 2771,
+      "url": "https://issues.chromium.org/action/issues/492465356/attachments/74313796?download=true",
+      "local_path": "attachments/serve.py"
+    },
+    {
+      "id": 74313797,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 42422,
+      "url": "https://issues.chromium.org/action/issues/492465356/attachments/74313797?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "---\n\n### Report description\n\n\nSubAppsServiceImpl::Remove() use-after-free: ReportBadMessageAndDeleteThis() mid-loop deletes `this`, next iteration accesses freed memory\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the C"
+}

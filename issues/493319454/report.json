@@ -1,0 +1,58 @@
+{
+  "id": "493319454",
+  "url": "https://issues.chromium.org/issues/493319454",
+  "title": "Heap buffer overflow in TFLite FullyConnectedPerChannel via WebNN quantized GEMM with wrong per-axis quantization dimension",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "we...@intel.com",
+  "created_date": "2026-03-17T05:13:19+00:00",
+  "modified_date": "2026-06-26T07:59:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 43000.0,
+  "reward_amount_meta": 43000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74410493,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 3824,
+      "url": "https://issues.chromium.org/action/issues/493319454/attachments/74410493?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74410494,
+      "filename": "asan_linux.log",
+      "mime_type": "text/plain",
+      "size_bytes": 15394,
+      "url": "https://issues.chromium.org/action/issues/493319454/attachments/74410494?download=true",
+      "local_path": "attachments/asan_linux.log"
+    },
+    {
+      "id": 74410495,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 29180,
+      "url": "https://issues.chromium.org/action/issues/493319454/attachments/74410495?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 74,
+  "description_snippet": "## Title\n\nHeap buffer overflow in TFLite FullyConnectedPerChannel via WebNN quantized GEMM with wrong per-axis quantization dimension\n\n## Summary\n\nThe WebNN-to-TFLite translation layer fuses a quantized GEMM into TFLite's FULLY_CONNECTED operator without validating that the weight tensor's per-chann"
+}

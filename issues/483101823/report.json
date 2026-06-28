@@ -1,0 +1,144 @@
+{
+  "id": "483101823",
+  "url": "https://issues.chromium.org/issues/483101823",
+  "title": "Mojo’s ChannelPosix incorrectly handles >128 file descriptors in a message, leading to fd confusion",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Mojo",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "ff...@google.com",
+  "created_date": "2026-02-09T20:13:10+00:00",
+  "modified_date": "2026-06-05T07:57:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 30000.0,
+  "reward_amount_meta": 30000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73284892,
+      "filename": "2026-02-10 03-03-37.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 42994841,
+      "url": "https://issues.chromium.org/action/issues/483101823/attachments/73284892?download=true",
+      "local_path": "attachments/2026-02-10 03-03-37.mp4"
+    },
+    {
+      "id": 73284893,
+      "filename": "1.html",
+      "mime_type": "text/html",
+      "size_bytes": 1085,
+      "url": "https://issues.chromium.org/action/issues/483101823/attachments/73284893?download=true",
+      "local_path": "attachments/1.html"
+    },
+    {
+      "id": 73286462,
+      "filename": "2026-02-10 03-37-10.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 32557853,
+      "url": "https://issues.chromium.org/action/issues/483101823/attachments/73286462?download=true",
+      "local_path": "attachments/2026-02-10 03-37-10.mp4"
+    },
+    {
+      "id": 73289287,
+      "filename": "2026-02-10 06-24-21.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 40343332,
+      "url": "https://issues.chromium.org/action/issues/483101823/attachments/73289287?download=true",
+      "local_path": null
+    },
+    {
+      "id": 73289288,
+      "filename": "Screenshot from 2026-02-10 06-35-22.png",
+      "mime_type": "image/png",
+      "size_bytes": 180150,
+      "url": "https://issues.chromium.org/action/issues/483101823/attachments/73289288?download=true",
+      "local_path": "attachments/Screenshot from 2026-02-10 06-35-22.png"
+    },
+    {
+      "id": 73292464,
+      "filename": "2026-02-10 07-08-16.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 59468370,
+      "url": "https://issues.chromium.org/action/issues/483101823/attachments/73292464?download=true",
+      "local_path": "attachments/2026-02-10 07-08-16.mp4"
+    },
+    {
+      "id": 73286467,
+      "filename": "2026-02-10 07-16-06.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 84421827,
+      "url": "https://issues.chromium.org/action/issues/483101823/attachments/73286467?download=true",
+      "local_path": "attachments/2026-02-10 07-16-06.mp4"
+    },
+    {
+      "id": 73289300,
+      "filename": "Screenshot from 2026-02-10 14-46-48.png",
+      "mime_type": "image/png",
+      "size_bytes": 245413,
+      "url": "https://issues.chromium.org/action/issues/483101823/attachments/73289300?download=true",
+      "local_path": "attachments/Screenshot from 2026-02-10 14-46-48.png"
+    },
+    {
+      "id": 73498812,
+      "filename": "Screenshot_20260217_165857_Chrome.png",
+      "mime_type": "image/png",
+      "size_bytes": 90437,
+      "url": "https://issues.chromium.org/action/issues/483101823/attachments/73498812?download=true",
+      "local_path": "attachments/Screenshot_20260217_165857_Chrome.png"
+    },
+    {
+      "id": 73516536,
+      "filename": "2.html",
+      "mime_type": "text/html",
+      "size_bytes": 1258,
+      "url": "https://issues.chromium.org/action/issues/483101823/attachments/73516536?download=true",
+      "local_path": "attachments/2.html"
+    },
+    {
+      "id": 73673852,
+      "filename": "4.html",
+      "mime_type": "text/html",
+      "size_bytes": 1899,
+      "url": "https://issues.chromium.org/action/issues/483101823/attachments/73673852?download=true",
+      "local_path": "attachments/4.html"
+    },
+    {
+      "id": 73704371,
+      "filename": "2026-02-25 02-51-24.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 168041481,
+      "url": "https://issues.chromium.org/action/issues/483101823/attachments/73704371?download=true",
+      "local_path": "attachments/2026-02-25 02-51-24.mp4"
+    },
+    {
+      "id": 73704372,
+      "filename": "log.log",
+      "mime_type": "text/plain",
+      "size_bytes": 12161,
+      "url": "https://issues.chromium.org/action/issues/483101823/attachments/73704372?download=true",
+      "local_path": "attachments/log.log"
+    },
+    {
+      "id": 73714686,
+      "filename": "gdb.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 29917,
+      "url": "https://issues.chromium.org/action/issues/483101823/attachments/73714686?download=true",
+      "local_path": "attachments/gdb.txt"
+    }
+  ],
+  "update_count": 69,
+  "description_snippet": "---\n\n### Report description\n\n\nAddressSanitizer: BUS on unknown address\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/rules/5745167867576320/chro"
+}

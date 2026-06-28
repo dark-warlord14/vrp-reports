@@ -1,0 +1,95 @@
+{
+  "id": "493952652",
+  "url": "https://issues.chromium.org/issues/493952652",
+  "title": "heap-use-after-free READ in ElementRuleCollector InputRules path, page load, MiraclePtr unprotected",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>CSS",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": "146.0.7680.x",
+  "cve_ids": [],
+  "reporter": "nn...@gmail.com",
+  "assignee": "se...@chromium.org",
+  "created_date": "2026-03-18T20:47:40+00:00",
+  "modified_date": "2026-06-27T07:57:17+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74492371,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 370,
+      "url": "https://issues.chromium.org/action/issues/493952652/attachments/74492371?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74492372,
+      "filename": "asan_trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 22835,
+      "url": "https://issues.chromium.org/action/issues/493952652/attachments/74492372?download=true",
+      "local_path": "attachments/asan_trace.txt"
+    },
+    {
+      "id": 74492373,
+      "filename": "controlled_uaf_demo.cc",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 7528,
+      "url": "https://issues.chromium.org/action/issues/493952652/attachments/74492373?download=true",
+      "local_path": "attachments/controlled_uaf_demo.cc"
+    },
+    {
+      "id": 74492374,
+      "filename": "README.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 7684,
+      "url": "https://issues.chromium.org/action/issues/493952652/attachments/74492374?download=true",
+      "local_path": "attachments/README.md"
+    },
+    {
+      "id": 74536543,
+      "filename": "poc_addref_write.html",
+      "mime_type": "text/html",
+      "size_bytes": 3226,
+      "url": "https://issues.chromium.org/action/issues/493952652/attachments/74536543?download=true",
+      "local_path": "attachments/poc_addref_write.html"
+    },
+    {
+      "id": 74541488,
+      "filename": "asan_head147_trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 44133,
+      "url": "https://issues.chromium.org/action/issues/493952652/attachments/74541488?download=true",
+      "local_path": "attachments/asan_head147_trace.txt"
+    },
+    {
+      "id": 74535839,
+      "filename": "asan_16bundle_trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 24071,
+      "url": "https://issues.chromium.org/action/issues/493952652/attachments/74535839?download=true",
+      "local_path": "attachments/asan_16bundle_trace.txt"
+    },
+    {
+      "id": 74678894,
+      "filename": "escalation_inputrules_data_exfil.html",
+      "mime_type": "text/html",
+      "size_bytes": 6606,
+      "url": "https://issues.chromium.org/action/issues/493952652/attachments/74678894?download=true",
+      "local_path": "attachments/escalation_inputrules_data_exfil.html"
+    }
+  ],
+  "update_count": 74,
+  "description_snippet": "# Steps to reproduce the problem\n1. Save the attached poc.html to disk                                                                                          \n  2. Open poc.html in Chrome (no flags required, works with file:// protocol)                                                    \n  3. Rend"
+}

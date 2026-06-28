@@ -1,0 +1,130 @@
+{
+  "id": "488408915",
+  "url": "https://issues.chromium.org/issues/488408915",
+  "title": "SharedStorage custom-data-origin authorization bypass via stale match state",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Storage>SharedStorage",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "oj...@gmail.com",
+  "assignee": "ca...@chromium.org",
+  "created_date": "2026-02-27T20:20:51+00:00",
+  "modified_date": "2026-06-24T07:52:09+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73832078,
+      "filename": "reproduce.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 6813,
+      "url": "https://issues.chromium.org/action/issues/488408915/attachments/73832078?download=true",
+      "local_path": "attachments/reproduce.py"
+    },
+    {
+      "id": 73815833,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1350,
+      "url": "https://issues.chromium.org/action/issues/488408915/attachments/73815833?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 73815834,
+      "filename": "server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 4668,
+      "url": "https://issues.chromium.org/action/issues/488408915/attachments/73815834?download=true",
+      "local_path": "attachments/server.py"
+    },
+    {
+      "id": 73815835,
+      "filename": "trusted-origins.json",
+      "mime_type": "application/json",
+      "size_bytes": 169,
+      "url": "https://issues.chromium.org/action/issues/488408915/attachments/73815835?download=true",
+      "local_path": "attachments/trusted-origins.json"
+    },
+    {
+      "id": 73815836,
+      "filename": "worklet.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 150,
+      "url": "https://issues.chromium.org/action/issues/488408915/attachments/73815836?download=true",
+      "local_path": "attachments/worklet.js"
+    },
+    {
+      "id": 73958830,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1772,
+      "url": "https://issues.chromium.org/action/issues/488408915/attachments/73958830?download=true",
+      "local_path": "attachments/poc_73958830.html"
+    },
+    {
+      "id": 73958831,
+      "filename": "seed.html",
+      "mime_type": "text/html",
+      "size_bytes": 644,
+      "url": "https://issues.chromium.org/action/issues/488408915/attachments/73958831?download=true",
+      "local_path": "attachments/seed.html"
+    },
+    {
+      "id": 73950946,
+      "filename": "server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 4341,
+      "url": "https://issues.chromium.org/action/issues/488408915/attachments/73950946?download=true",
+      "local_path": "attachments/server_73950946.py"
+    },
+    {
+      "id": 73950947,
+      "filename": "trusted-origins.json",
+      "mime_type": "application/json",
+      "size_bytes": 169,
+      "url": "https://issues.chromium.org/action/issues/488408915/attachments/73950947?download=true",
+      "local_path": "attachments/trusted-origins_73950947.json"
+    },
+    {
+      "id": 73961370,
+      "filename": "verify.html",
+      "mime_type": "text/html",
+      "size_bytes": 908,
+      "url": "https://issues.chromium.org/action/issues/488408915/attachments/73961370?download=true",
+      "local_path": "attachments/verify.html"
+    },
+    {
+      "id": 73958832,
+      "filename": "verify-worklet.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 337,
+      "url": "https://issues.chromium.org/action/issues/488408915/attachments/73958832?download=true",
+      "local_path": "attachments/verify-worklet.js"
+    },
+    {
+      "id": 73960935,
+      "filename": "worklet.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 601,
+      "url": "https://issues.chromium.org/action/issues/488408915/attachments/73960935?download=true",
+      "local_path": "attachments/worklet_73960935.js"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "---\n\n### Report description\n\n\nSharedStorage custom-data-origin authorization bypass via stale match state\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.co"
+}

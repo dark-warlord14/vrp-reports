@@ -1,0 +1,57 @@
+{
+  "id": "492450478",
+  "url": "https://issues.chromium.org/issues/492450478",
+  "title": "OOB Write in GraphBuilderTflite::SerializeConv2d",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "ly...@google.com",
+  "created_date": "2026-03-13T17:31:22+00:00",
+  "modified_date": "2026-06-25T07:52:29+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 23000.0,
+  "reward_amount_meta": 23000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74317609,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 25540,
+      "url": "https://issues.chromium.org/action/issues/492450478/attachments/74317609?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 74317610,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1609,
+      "url": "https://issues.chromium.org/action/issues/492450478/attachments/74317610?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74373826,
+      "filename": "asan_windows.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 23263,
+      "url": "https://issues.chromium.org/action/issues/492450478/attachments/74373826?download=true",
+      "local_path": "attachments/asan_windows.txt"
+    }
+  ],
+  "update_count": 64,
+  "description_snippet": "### Summary\n\nThe ARM ruy fast path computes the destination pointer in [MakeKernelParamsFloat](https://source.chromium.org/chromium/chromium/src/+/main:third_party/ruy/src/ruy/kernel_common.h;l=239) as `start_col * dst->layout.stride + start_row` using 32-bit signed arithmetic. Once the hidden trans"
+}

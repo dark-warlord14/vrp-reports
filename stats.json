@@ -1,7 +1,7 @@
 {
-  "total_reports": 4479,
-  "total_bounty": 24685671.7,
-  "avg_bounty": 5515.12,
+  "total_reports": 4522,
+  "total_bounty": 25290671.7,
+  "avg_bounty": 5596.52,
   "by_year": {
     "2009": {
       "count": 3,
@@ -68,39 +68,40 @@
       "total_bounty": 3445981.0
     },
     "2025": {
-      "count": 278,
-      "total_bounty": 3401500.0
+      "count": 280,
+      "total_bounty": 3407500.0
     },
     "2026": {
-      "count": 141,
-      "total_bounty": 1885000.0
+      "count": 182,
+      "total_bounty": 2484000.0
     }
   },
   "by_severity": {
-    "S3-Low": 3909,
-    "S4-Minimal": 501,
-    "Unknown": 62,
+    "S3-Low": 3939,
+    "S4-Minimal": 511,
+    "Unknown": 64,
     "S1-High": 6,
+    "S0-Critical": 1,
     "S2-Medium": 1
   },
   "by_status": {
-    "Assigned": 3554,
-    "Accepted": 691,
-    "New": 116,
-    "Fixed": 84,
-    "Verified": 33,
+    "Assigned": 3576,
+    "Accepted": 696,
+    "New": 120,
+    "Fixed": 86,
+    "Verified": 43,
     "Unknown": 1
   },
   "by_component": {
-    "Blink": 1983,
-    "Internals": 960,
-    "UI": 607,
-    "Unknown": 349,
-    "Platform": 256,
+    "Blink": 2008,
+    "Internals": 971,
+    "UI": 609,
+    "Unknown": 351,
+    "Platform": 258,
     "Blink, Blink": 80,
     "Mobile": 57,
     "Internals, Internals": 41,
-    "Dawn": 35,
+    "Dawn": 36,
     "OS": 16,
     "Enterprise": 12,
     "Blink, Internals, Internals": 12,
@@ -124,23 +125,23 @@
     },
     {
       "range": "$1K-3K",
-      "count": 1486
+      "count": 1493
     },
     {
       "range": "$3K-5K",
-      "count": 693
+      "count": 702
     },
     {
       "range": "$5K-10K",
-      "count": 998
+      "count": 1007
     },
     {
       "range": "$10K-20K",
-      "count": 420
+      "count": 425
     },
     {
       "range": "$20K+",
-      "count": 270
+      "count": 283
     }
   ],
   "top_bounties": [
@@ -222,6 +223,13 @@
       "year": 2018
     },
     {
+      "id": "491518608",
+      "title": "Use-After-Free in Dawn Wire Server Uncaptured-Error Callback via Incomplete Device Unregistration Cleanup",
+      "bounty_amount": 70000.0,
+      "severity": "S3-Low",
+      "year": 2026
+    },
+    {
       "id": "433533359",
       "title": "Consumers of ReadableStream subject to data race with SharedArrayBuffer, leading to RCE + V8 Sandbox bypass",
       "bounty_amount": 70000.0,
@@ -273,13 +281,6 @@
     {
       "id": "446122633",
       "title": "Wasm type confusion due to wrong reachability analysis in `WasmGCTypeAnalyzer::ProcessBranchOnTarget()` with custom descriptor casts",
-      "bounty_amount": 55000.0,
-      "severity": "S3-Low",
-      "year": 2025
-    },
-    {
-      "id": "446124893",
-      "title": "Wasm type confusion due to custom descriptors spec ambiguity in `ref.get_desc` exactness typing",
       "bounty_amount": 55000.0,
       "severity": "S3-Low",
       "year": 2025

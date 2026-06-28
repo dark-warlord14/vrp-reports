@@ -1,0 +1,43 @@
+{
+  "id": "490889657",
+  "url": "https://issues.chromium.org/issues/490889657",
+  "title": "Fatal error in Bytecode mismatch at offset 8 in interpreter.cc",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript, Blink>JavaScript>GarbageCollection, Blink>JavaScript>Parser, Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ta...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2026-03-08T22:05:36+00:00",
+  "modified_date": "2026-06-17T07:57:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "reward_amount_meta": 8000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74109596,
+      "filename": "testcase.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 237,
+      "url": "https://issues.chromium.org/action/issues/490889657/attachments/74109596?download=true",
+      "local_path": "attachments/testcase.js"
+    }
+  ],
+  "update_count": 8,
+  "description_snippet": "---\n\n### Report description\n\n\nBytecode mismatch in interpreter when generator constructor uses context cells (new StaCurrentContextSlot vs StaCurrentContextSlotNoCell)\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Ch"
+}

@@ -1,0 +1,60 @@
+{
+  "id": "486761170",
+  "url": "https://issues.chromium.org/issues/486761170",
+  "title": "`WindowOpenDisposition` should use mojo enum",
+  "status": "Accepted",
+  "severity": "S0-Critical",
+  "priority": "P2",
+  "component": "Internals",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": null,
+  "created_date": "2026-02-23T12:16:26+00:00",
+  "modified_date": "2026-06-23T07:54:59+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 26,
+  "bounty_rationale": "Baseline. User information disclosure",
+  "attachments": [
+    {
+      "id": 73637163,
+      "filename": "switch_to_tab_info_leak_browsertest.cc",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 10972,
+      "url": "https://issues.chromium.org/action/issues/486761170/attachments/73637163?download=true",
+      "local_path": "attachments/switch_to_tab_info_leak_browsertest.cc"
+    },
+    {
+      "id": 73637164,
+      "filename": "poc_death_test.cc",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 4280,
+      "url": "https://issues.chromium.org/action/issues/486761170/attachments/73637164?download=true",
+      "local_path": "attachments/poc_death_test.cc"
+    },
+    {
+      "id": 73652376,
+      "filename": "renderer_trigger.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 2237,
+      "url": "https://issues.chromium.org/action/issues/486761170/attachments/73652376?download=true",
+      "local_path": "attachments/renderer_trigger.patch"
+    },
+    {
+      "id": 73652377,
+      "filename": "SETUP.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1340,
+      "url": "https://issues.chromium.org/action/issues/486761170/attachments/73652377?download=true",
+      "local_path": "attachments/SETUP.txt"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

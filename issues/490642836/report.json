@@ -1,0 +1,123 @@
+{
+  "id": "490642836",
+  "url": "https://issues.chromium.org/issues/490642836",
+  "title": "Rewriter stack overflow can corrupt AST and can cause wrong-scope bytecode generation",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Parser",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gu...@gmail.com",
+  "assignee": "ve...@chromium.org",
+  "created_date": "2026-03-08T09:21:16+00:00",
+  "modified_date": "2026-06-23T07:54:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "reward_amount_meta": 8000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74104466,
+      "filename": "repro_carrier.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 6912,
+      "url": "https://issues.chromium.org/action/issues/490642836/attachments/74104466?download=true",
+      "local_path": "attachments/repro_carrier.js"
+    },
+    {
+      "id": 74104467,
+      "filename": "suggest.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 4017,
+      "url": "https://issues.chromium.org/action/issues/490642836/attachments/74104467?download=true",
+      "local_path": "attachments/suggest.patch"
+    },
+    {
+      "id": 74311495,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/490642836/attachments/74311495?download=true",
+      "local_path": null
+    },
+    {
+      "id": 74314529,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/490642836/attachments/74314529?download=true",
+      "local_path": null
+    },
+    {
+      "id": 74342350,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/490642836/attachments/74342350?download=true",
+      "local_path": null
+    },
+    {
+      "id": 74342351,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/490642836/attachments/74342351?download=true",
+      "local_path": null
+    },
+    {
+      "id": 74336641,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/490642836/attachments/74336641?download=true",
+      "local_path": null
+    },
+    {
+      "id": 74336648,
+      "filename": "exp.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1453,
+      "url": "https://issues.chromium.org/action/issues/490642836/attachments/74336648?download=true",
+      "local_path": "attachments/exp.patch"
+    },
+    {
+      "id": 74346950,
+      "filename": "exp.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 6249,
+      "url": "https://issues.chromium.org/action/issues/490642836/attachments/74346950?download=true",
+      "local_path": "attachments/exp.js"
+    },
+    {
+      "id": 74353386,
+      "filename": "exp_nopatch.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 8731,
+      "url": "https://issues.chromium.org/action/issues/490642836/attachments/74353386?download=true",
+      "local_path": "attachments/exp_nopatch.js"
+    },
+    {
+      "id": 74356156,
+      "filename": "exp_nopatch_worker.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 9514,
+      "url": "https://issues.chromium.org/action/issues/490642836/attachments/74356156?download=true",
+      "local_path": "attachments/exp_nopatch_worker.js"
+    }
+  ],
+  "update_count": 140,
+  "description_snippet": "## VULNERABILITY DETAILS\n\n### Summary\n\n`Processor::Process` trusts `replacement_` from visits even when stack overflow occurred, then it can lead to corrupted AST and bytecode generator consuming it.\n\n### Root cause analysis\n\n```cpp\n// src/ast/ast.h\n#define DEFINE_AST_VISITOR_SUBCLASS_MEMBERS()"
+}

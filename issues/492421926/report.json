@@ -1,0 +1,49 @@
+{
+  "id": "492421926",
+  "url": "https://issues.chromium.org/issues/492421926",
+  "title": "OOB read in TFLite TransposeConvV2",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "ju...@intel.com",
+  "created_date": "2026-03-13T12:56:11+00:00",
+  "modified_date": "2026-06-26T07:59:18+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74301285,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 65338,
+      "url": "https://issues.chromium.org/action/issues/492421926/attachments/74301285?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 74301286,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1040,
+      "url": "https://issues.chromium.org/action/issues/492421926/attachments/74301286?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 73,
+  "description_snippet": "### Summary\n\nWebNN TFLite backend accepts non-scalar `int4` concat outputs in [`MLGraphBuilder::concat`](https://source.chromium.org/chromium/chromium/src/+/main:third_party/blink/renderer/modules/ml/webnn/ml_graph_builder.cc;l=1924) and [`ValidateConcatAndInferOutput`](https://source.chromium.org/c"
+}

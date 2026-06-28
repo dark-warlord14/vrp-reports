@@ -1,0 +1,59 @@
+{
+  "id": "489633232",
+  "url": "https://issues.chromium.org/issues/489633232",
+  "title": "V8 Sandbox Bypass: AAW/PC Control via major GC between codegen and Code object creation",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Compiler>Maglev",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "kr...@gmail.com",
+  "assignee": "vi...@chromium.org",
+  "created_date": "2026-03-04T12:55:15+00:00",
+  "modified_date": "2026-06-25T07:52:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "reward_amount_meta": 20000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73971865,
+      "filename": "doa-code-poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2980,
+      "url": "https://issues.chromium.org/action/issues/489633232/attachments/73971865?download=true",
+      "local_path": "attachments/doa-code-poc.js"
+    },
+    {
+      "id": 73972980,
+      "filename": "doa-code-poc-v2.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3778,
+      "url": "https://issues.chromium.org/action/issues/489633232/attachments/73972980?download=true",
+      "local_path": "attachments/doa-code-poc-v2.js"
+    },
+    {
+      "id": 74452115,
+      "filename": "doa-code-insufficient-fix-poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 4460,
+      "url": "https://issues.chromium.org/action/issues/489633232/attachments/74452115?download=true",
+      "local_path": "attachments/doa-code-insufficient-fix-poc.js"
+    }
+  ],
+  "update_count": 98,
+  "description_snippet": "### VULNERABILITY DETAILS\n\n#### Details\nRecall crbug/443772809 worked by triggering major GC after removing all in-sandbox dispatch handle references of some target dispatch entry to free and reclaim dispatch entries while they were being used by other Code. This was fixed by [marking Code that was"
+}

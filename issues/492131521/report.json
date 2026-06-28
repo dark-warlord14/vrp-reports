@@ -1,0 +1,96 @@
+{
+  "id": "492131521",
+  "url": "https://issues.chromium.org/issues/492131521",
+  "title": "ANGLE WebGL2: Missing Per-Layer Init Tracking in TEXTURE_2D_ARRAY Leaves Layers Uninitialized, Leads to Cross-Origin GPU Texture Data Leak",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sw...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2026-03-12T14:39:22+00:00",
+  "modified_date": "2026-06-27T07:57:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74265729,
+      "filename": "cross_origin_texture_leak_poc_2.png",
+      "mime_type": "image/png",
+      "size_bytes": 635099,
+      "url": "https://issues.chromium.org/action/issues/492131521/attachments/74265729?download=true",
+      "local_path": "attachments/cross_origin_texture_leak_poc_2.png"
+    },
+    {
+      "id": 74265730,
+      "filename": "poc_html_result.png",
+      "mime_type": "image/png",
+      "size_bytes": 17301,
+      "url": "https://issues.chromium.org/action/issues/492131521/attachments/74265730?download=true",
+      "local_path": "attachments/poc_html_result.png"
+    },
+    {
+      "id": 74265731,
+      "filename": "poc_v2_enhanced_html_result.png",
+      "mime_type": "image/png",
+      "size_bytes": 154799,
+      "url": "https://issues.chromium.org/action/issues/492131521/attachments/74265731?download=true",
+      "local_path": "attachments/poc_v2_enhanced_html_result.png"
+    },
+    {
+      "id": 74265732,
+      "filename": "cross_origin_texture_leak_poc_1.png",
+      "mime_type": "image/png",
+      "size_bytes": 3128515,
+      "url": "https://issues.chromium.org/action/issues/492131521/attachments/74265732?download=true",
+      "local_path": "attachments/cross_origin_texture_leak_poc_1.png"
+    },
+    {
+      "id": 74265733,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1855,
+      "url": "https://issues.chromium.org/action/issues/492131521/attachments/74265733?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74265734,
+      "filename": "poc_v2_enhanced.html",
+      "mime_type": "text/html",
+      "size_bytes": 13219,
+      "url": "https://issues.chromium.org/action/issues/492131521/attachments/74265734?download=true",
+      "local_path": "attachments/poc_v2_enhanced.html"
+    },
+    {
+      "id": 74265735,
+      "filename": "poc_attacker_layer_visual.html",
+      "mime_type": "text/html",
+      "size_bytes": 7529,
+      "url": "https://issues.chromium.org/action/issues/492131521/attachments/74265735?download=true",
+      "local_path": "attachments/poc_attacker_layer_visual.html"
+    },
+    {
+      "id": 74265736,
+      "filename": "victim_layer_visual.html",
+      "mime_type": "text/html",
+      "size_bytes": 6347,
+      "url": "https://issues.chromium.org/action/issues/492131521/attachments/74265736?download=true",
+      "local_path": "attachments/victim_layer_visual.html"
+    }
+  ],
+  "update_count": 50,
+  "description_snippet": "---\n\n### Report description\n\n\nANGLE WebGL2: Missing Per-Layer Init Tracking in TEXTURE_2D_ARRAY Leaves Layers Uninitialized, Leads to Cross-Origin GPU Texture Data Leak\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the C"
+}

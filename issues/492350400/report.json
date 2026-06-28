@@ -1,0 +1,57 @@
+{
+  "id": "492350400",
+  "url": "https://issues.chromium.org/issues/492350400",
+  "title": "OOB Write in GraphBuilderTflite::SerializeConv2d",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "ly...@google.com",
+  "created_date": "2026-03-13T11:20:18+00:00",
+  "modified_date": "2026-06-24T07:52:13+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 23000.0,
+  "reward_amount_meta": 23000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74301571,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 22971,
+      "url": "https://issues.chromium.org/action/issues/492350400/attachments/74301571?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 74301572,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1642,
+      "url": "https://issues.chromium.org/action/issues/492350400/attachments/74301572?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74301574,
+      "filename": "asan_linux.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18841,
+      "url": "https://issues.chromium.org/action/issues/492350400/attachments/74301574?download=true",
+      "local_path": "attachments/asan_linux.txt"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "### Summary\n\n[GraphBuilderTflite::SerializeConv2d](https://source.chromium.org/chromium/chromium/src/+/main:services/webnn/tflite/graph_builder_tflite.cc;l=3982) lets WebNN lower a `conv2d` whose declared input, output, and filter tensors all remain below backend `tensor_byte_length_limit`, but it d"
+}

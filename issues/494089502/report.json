@@ -1,0 +1,66 @@
+{
+  "id": "494089502",
+  "url": "https://issues.chromium.org/issues/494089502",
+  "title": "Missing size validation in WebNN TFLite quantize parameter serialization leads to out-of-bounds read in the GPU process",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ju...@intel.com",
+  "created_date": "2026-03-19T12:25:26+00:00",
+  "modified_date": "2026-06-27T07:57:19+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 43000.0,
+  "reward_amount_meta": 43000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74511655,
+      "filename": "segv-linux.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8662,
+      "url": "https://issues.chromium.org/action/issues/494089502/attachments/74511655?download=true",
+      "local_path": "attachments/segv-linux.log"
+    },
+    {
+      "id": 74511656,
+      "filename": "segv-mac.log",
+      "mime_type": "text/plain",
+      "size_bytes": 3620,
+      "url": "https://issues.chromium.org/action/issues/494089502/attachments/74511656?download=true",
+      "local_path": "attachments/segv-mac.log"
+    },
+    {
+      "id": 74511657,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 7296,
+      "url": "https://issues.chromium.org/action/issues/494089502/attachments/74511657?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74511658,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 22654,
+      "url": "https://issues.chromium.org/action/issues/494089502/attachments/74511658?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 68,
+  "description_snippet": "# Missing size validation in WebNN TFLite quantize parameter serialization leads to out-of-bounds read in the GPU process\n\n## Summary\n\nThe WebNN TFLite graph builder's `SerializeQuantizeParams` function writes renderer-controlled quantization vectors directly into a FlatBuffer without checking the p"
+}

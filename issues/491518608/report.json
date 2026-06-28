@@ -1,0 +1,138 @@
+{
+  "id": "491518608",
+  "url": "https://issues.chromium.org/issues/491518608",
+  "title": "Use-After-Free in Dawn Wire Server Uncaptured-Error Callback via Incomplete Device Unregistration Cleanup",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Dawn>Wire",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "lo...@google.com",
+  "created_date": "2026-03-10T20:00:04+00:00",
+  "modified_date": "2026-06-27T07:57:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 70000.0,
+  "reward_amount_meta": 70000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74191160,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 2282,
+      "url": "https://issues.chromium.org/action/issues/491518608/attachments/74191160?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 74191161,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1827,
+      "url": "https://issues.chromium.org/action/issues/491518608/attachments/74191161?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75141391,
+      "filename": "exp_occupy.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 2630,
+      "url": "https://issues.chromium.org/action/issues/491518608/attachments/75141391?download=true",
+      "local_path": "attachments/exp_occupy.diff"
+    },
+    {
+      "id": 75141392,
+      "filename": "exp_occupy.html",
+      "mime_type": "text/html",
+      "size_bytes": 1806,
+      "url": "https://issues.chromium.org/action/issues/491518608/attachments/75141392?download=true",
+      "local_path": "attachments/exp_occupy.html"
+    },
+    {
+      "id": 75136943,
+      "filename": "exp_occupy_writeup.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 4998,
+      "url": "https://issues.chromium.org/action/issues/491518608/attachments/75136943?download=true",
+      "local_path": "attachments/exp_occupy_writeup.md"
+    },
+    {
+      "id": 75117200,
+      "filename": "exp_occupy.png",
+      "mime_type": "image/png",
+      "size_bytes": 2255635,
+      "url": "https://issues.chromium.org/action/issues/491518608/attachments/75117200?download=true",
+      "local_path": "attachments/exp_occupy.png"
+    },
+    {
+      "id": 75117201,
+      "filename": "exp.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 7297,
+      "url": "https://issues.chromium.org/action/issues/491518608/attachments/75117201?download=true",
+      "local_path": "attachments/exp.diff"
+    },
+    {
+      "id": 75141393,
+      "filename": "exp.html",
+      "mime_type": "text/html",
+      "size_bytes": 1823,
+      "url": "https://issues.chromium.org/action/issues/491518608/attachments/75141393?download=true",
+      "local_path": "attachments/exp.html"
+    },
+    {
+      "id": 75136944,
+      "filename": "exp_writeup.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 11268,
+      "url": "https://issues.chromium.org/action/issues/491518608/attachments/75136944?download=true",
+      "local_path": "attachments/exp_writeup.md"
+    },
+    {
+      "id": 75141394,
+      "filename": "exp.png",
+      "mime_type": "image/png",
+      "size_bytes": 399610,
+      "url": "https://issues.chromium.org/action/issues/491518608/attachments/75141394?download=true",
+      "local_path": "attachments/exp.png"
+    },
+    {
+      "id": 75136945,
+      "filename": "exp_gdb.png",
+      "mime_type": "image/png",
+      "size_bytes": 3091709,
+      "url": "https://issues.chromium.org/action/issues/491518608/attachments/75136945?download=true",
+      "local_path": "attachments/exp_gdb.png"
+    },
+    {
+      "id": 75159663,
+      "filename": "mac_exp_occupy.png",
+      "mime_type": "image/png",
+      "size_bytes": 607039,
+      "url": "https://issues.chromium.org/action/issues/491518608/attachments/75159663?download=true",
+      "local_path": "attachments/mac_exp_occupy.png"
+    },
+    {
+      "id": 75786186,
+      "filename": "mac_exp_occupy.png",
+      "mime_type": "image/png",
+      "size_bytes": 607039,
+      "url": "https://issues.chromium.org/action/issues/491518608/attachments/75786186?download=true",
+      "local_path": "attachments/mac_exp_occupy_75786186.png"
+    }
+  ],
+  "update_count": 118,
+  "description_snippet": "## Summary\n\nThe Dawn wire server's device cleanup function fails to clear the uncaptured-error callback when a device is unregistered, leaving a dangling pointer to a freed DeviceInfo structure as the callback's userdata. A compromised renderer can exploit this by sending an UnregisterObject comman"
+}

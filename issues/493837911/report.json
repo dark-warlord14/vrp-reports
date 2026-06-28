@@ -1,0 +1,63 @@
+{
+  "id": "493837911",
+  "url": "https://issues.chromium.org/issues/493837911",
+  "title": "heap-use-after-free READ in ElementRuleCollector InputRules path, page load, MiraclePtr unprotected",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>CSS",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": "146.0.7680.x",
+  "cve_ids": [],
+  "reporter": "nn...@gmail.com",
+  "assignee": "se...@chromium.org",
+  "created_date": "2026-03-18T11:50:39+00:00",
+  "modified_date": "2026-06-25T07:52:18+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74473325,
+      "filename": "asan_trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 21052,
+      "url": "https://issues.chromium.org/action/issues/493837911/attachments/74473325?download=true",
+      "local_path": "attachments/asan_trace.txt"
+    },
+    {
+      "id": 74473326,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 593,
+      "url": "https://issues.chromium.org/action/issues/493837911/attachments/74473326?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74492575,
+      "filename": "symbolized_asan_report.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 50305,
+      "url": "https://issues.chromium.org/action/issues/493837911/attachments/74492575?download=true",
+      "local_path": "attachments/symbolized_asan_report.txt"
+    },
+    {
+      "id": 74490971,
+      "filename": "asan_trace_symbolized.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 8831,
+      "url": "https://issues.chromium.org/action/issues/493837911/attachments/74490971?download=true",
+      "local_path": "attachments/asan_trace_symbolized.txt"
+    }
+  ],
+  "update_count": 14,
+  "description_snippet": "---\n\n### Report description\n\n\nUse-After-Free in ElementRuleCollector via input-type attribute reference invalidation\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunter"
+}

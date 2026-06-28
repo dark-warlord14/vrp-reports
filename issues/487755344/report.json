@@ -1,0 +1,33 @@
+{
+  "id": "487755344",
+  "url": "https://issues.chromium.org/issues/487755344",
+  "title": "OOB in GPU process: Missing negative length validation in Bucket::GetAsStrings.",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "cw...@google.com",
+  "created_date": "2026-02-26T04:35:00+00:00",
+  "modified_date": "2026-06-24T07:52:26+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 83,
+  "description_snippet": "## Summary\n\nThe `Bucket::GetAsStrings` function in Chromium's GPU command buffer does not validate that per-string length values are non-negative. A compromised renderer process can construct a malicious bucket containing a negative length entry, which causes the function to compute an out-of-bound"
+}

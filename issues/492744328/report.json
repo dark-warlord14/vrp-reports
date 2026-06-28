@@ -1,0 +1,83 @@
+{
+  "id": "492744328",
+  "url": "https://issues.chromium.org/issues/492744328",
+  "title": "Heap buffer overflow (read) in skcms curve table lookup via crafted ICC profile",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Skia",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ma...@gmail.com",
+  "assignee": "kj...@chromium.org",
+  "created_date": "2026-03-14T20:12:40+00:00",
+  "modified_date": "2026-06-24T07:52:31+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74328878,
+      "filename": "test_skcms_oob.c",
+      "mime_type": "text/x-csrc",
+      "size_bytes": 7673,
+      "url": "https://issues.chromium.org/action/issues/492744328/attachments/74328878?download=true",
+      "local_path": "attachments/test_skcms_oob.c"
+    },
+    {
+      "id": 74328879,
+      "filename": "standalone_asan_trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3699,
+      "url": "https://issues.chromium.org/action/issues/492744328/attachments/74328879?download=true",
+      "local_path": "attachments/standalone_asan_trace.txt"
+    },
+    {
+      "id": 74328880,
+      "filename": "skcms_oob.webp",
+      "mime_type": "image/webp",
+      "size_bytes": 33554850,
+      "url": "https://issues.chromium.org/action/issues/492744328/attachments/74328880?download=true",
+      "local_path": "attachments/skcms_oob.webp"
+    },
+    {
+      "id": 74328881,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 221,
+      "url": "https://issues.chromium.org/action/issues/492744328/attachments/74328881?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74328882,
+      "filename": "gen_webp_skcms_oob.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 11664,
+      "url": "https://issues.chromium.org/action/issues/492744328/attachments/74328882?download=true",
+      "local_path": "attachments/gen_webp_skcms_oob.py"
+    },
+    {
+      "id": 74328883,
+      "filename": "chromium_asan_trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 10787,
+      "url": "https://issues.chromium.org/action/issues/492744328/attachments/74328883?download=true",
+      "local_path": "attachments/chromium_asan_trace.txt"
+    }
+  ],
+  "update_count": 91,
+  "description_snippet": "## Summary\n\nA heap-buffer-overflow (read of size 2) occurs in skcms's TRC curve table\nevaluation when processing an ICC profile with a `curv` tag whose\n`table_entries` value triggers IEEE 754 float32 precision loss in the index\ncomputation. This is reachable from web content by embedding the crafted"
+}

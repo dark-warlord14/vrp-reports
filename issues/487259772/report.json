@@ -1,0 +1,74 @@
+{
+  "id": "487259772",
+  "url": "https://issues.chromium.org/issues/487259772",
+  "title": "Out-of-bounds heap read in VP9 encoder via WebCodecs VideoEncoder dimension reconfiguration",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Media>WebCodecs",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ca...@gmail.com",
+  "assignee": "jz...@google.com",
+  "created_date": "2026-02-24T15:50:29+00:00",
+  "modified_date": "2026-06-25T07:52:31+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73700149,
+      "filename": "asan.log",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 20050,
+      "url": "https://issues.chromium.org/action/issues/487259772/attachments/73700149?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 73700150,
+      "filename": "vp9_av1_oob_poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 4616,
+      "url": "https://issues.chromium.org/action/issues/487259772/attachments/73700150?download=true",
+      "local_path": "attachments/vp9_av1_oob_poc.html"
+    },
+    {
+      "id": 73693744,
+      "filename": "clean-vp9-iso.html",
+      "mime_type": "text/html",
+      "size_bytes": 3142,
+      "url": "https://issues.chromium.org/action/issues/487259772/attachments/73693744?download=true",
+      "local_path": "attachments/clean-vp9-iso.html"
+    },
+    {
+      "id": 73764093,
+      "filename": "b487259772-clean-vp9-iso.html",
+      "mime_type": "text/html",
+      "size_bytes": 12579,
+      "url": "https://issues.chromium.org/action/issues/487259772/attachments/73764093?download=true",
+      "local_path": "attachments/b487259772-clean-vp9-iso.html"
+    },
+    {
+      "id": 73984717,
+      "filename": "b487259772-clean-vp9-iso.html",
+      "mime_type": "text/html",
+      "size_bytes": 263351,
+      "url": "https://issues.chromium.org/action/issues/487259772/attachments/73984717?download=true",
+      "local_path": "attachments/b487259772-clean-vp9-iso_73984717.html"
+    }
+  ],
+  "update_count": 102,
+  "description_snippet": "---\n\n### Report description\n\n\nOut-of-bounds heap read in VP9 encoder via WebCodecs VideoEncoder dimension reconfiguration\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bugh"
+}

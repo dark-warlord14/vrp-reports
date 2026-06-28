@@ -1,0 +1,59 @@
+{
+  "id": "492561170",
+  "url": "https://issues.chromium.org/issues/492561170",
+  "title": "V8 Sandbox Bypass: Atomics TypedArray TOCTOU (Map/Length Mismatch)",
+  "status": "Verified",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2026-03-14T21:23:42+00:00",
+  "modified_date": "2026-06-25T07:52:34+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74316134,
+      "filename": "logcat_relevant.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1183,
+      "url": "https://issues.chromium.org/action/issues/492561170/attachments/74316134?download=true",
+      "local_path": "attachments/logcat_relevant.txt"
+    },
+    {
+      "id": 74316135,
+      "filename": "logcat.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 8496519,
+      "url": "https://issues.chromium.org/action/issues/492561170/attachments/74316135?download=true",
+      "local_path": "attachments/logcat.txt"
+    },
+    {
+      "id": 74316136,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1478,
+      "url": "https://issues.chromium.org/action/issues/492561170/attachments/74316136?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "# Steps to reproduce the problem\n1. Build d8 for desktop (x86-64):\n\n```\ncat > out/args.gn << 'EOF'\nv8_enable_sandbox = true\nv8_enable_memory_corruption_api = true\nis_debug = false\ntarget_cpu = \"x64\"\nEOF\nautoninja -C out d8\n```\n\n2. Run the attached poc.js on desktop:\n\n```\n./out/d8 --sandbox-testing p"
+}
