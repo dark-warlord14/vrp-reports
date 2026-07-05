@@ -1,0 +1,49 @@
+{
+  "id": "493747582",
+  "url": "https://issues.chromium.org/issues/493747582",
+  "title": "Heap OOB write in XNNPACK Pool2D via integer overflow",
+  "status": "New",
+  "severity": "S4-Minimal",
+  "priority": "P0",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "we...@intel.com",
+  "created_date": "2026-03-18T06:50:14+00:00",
+  "modified_date": "2026-07-02T08:01:26+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 43000.0,
+  "reward_amount_meta": 43000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74433707,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 12179,
+      "url": "https://issues.chromium.org/action/issues/493747582/attachments/74433707?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 74433708,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 2420,
+      "url": "https://issues.chromium.org/action/issues/493747582/attachments/74433708?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 68,
+  "description_snippet": "# Integer overflow in XNNPack tensor size computation leads to heap OOB write in the GPU process via WebNN pool2d\n\n## Summary\n\nWhen the WebNN TFLite backend translates a `maxPool2d` (or `averagePool2d`) operation with explicit padding, it inserts an internal PAD node whose output tensor dimensions a"
+}

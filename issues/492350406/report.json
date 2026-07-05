@@ -1,0 +1,46 @@
+{
+  "id": "492350406",
+  "url": "https://issues.chromium.org/issues/492350406",
+  "title": "CHECK failure: offset <= view.length() && length <= view.length() - offset in string_view.h",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P4",
+  "component": "Platform",
+  "os_platforms": [
+    "Linux"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "24...@project.gserviceaccount.com",
+  "assignee": "ts...@google.com",
+  "created_date": "2026-03-13T12:25:16+00:00",
+  "modified_date": "2026-07-01T08:29:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 57,
+  "bounty_rationale": "Baseline with bisect. User information disclosure",
+  "attachments": [
+    {
+      "id": 74311481,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 2599,
+      "url": "https://issues.chromium.org/action/issues/492350406/attachments/74311481?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74311482,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 14704,
+      "url": "https://issues.chromium.org/action/issues/492350406/attachments/74311482?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "# OOB read in ShapeResultView::ForEachGraphemeClusters via multi-glyph cluster skip logic\n\n## Summary\n\nAn out-of-bounds read in the Chromium renderer can be triggered from JavaScript on all platforms. The function `ShapeResultView::ForEachGraphemeClusters` advances the `cluster_start` position once"
+}

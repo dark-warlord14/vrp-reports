@@ -1,0 +1,52 @@
+{
+  "id": "494449806",
+  "url": "https://issues.chromium.org/issues/494449806",
+  "title": "RequestService::RequestToken() missing browser-side identity-credentials-get Permissions Policy enforcement",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Identity>FedCM, Blink>PermissionsPolicy",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "os...@gmail.com",
+  "assignee": "os...@gmail.com",
+  "created_date": "2026-03-20T07:22:18+00:00",
+  "modified_date": "2026-07-01T08:30:08+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74561627,
+      "filename": "fix.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 5474,
+      "url": "https://issues.chromium.org/action/issues/494449806/attachments/74561627?download=true",
+      "local_path": "attachments/fix.diff"
+    },
+    {
+      "id": 74561628,
+      "filename": "serve.py",
+      "mime_type": "text/x-python-script",
+      "size_bytes": 7284,
+      "url": "https://issues.chromium.org/action/issues/494449806/attachments/74561628?download=true",
+      "local_path": "attachments/serve.py"
+    },
+    {
+      "id": 74561629,
+      "filename": "poc_patch.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1642,
+      "url": "https://issues.chromium.org/action/issues/494449806/attachments/74561629?download=true",
+      "local_path": "attachments/poc_patch.diff"
+    }
+  ],
+  "update_count": 27,
+  "description_snippet": "---\n\n### Report description\n\n\nRequestService::RequestToken() missing browser-side identity-credentials-get Permissions Policy enforcement\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rul"
+}

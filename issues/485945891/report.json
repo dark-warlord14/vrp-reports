@@ -1,0 +1,29 @@
+{
+  "id": "485945891",
+  "url": "https://issues.chromium.org/issues/485945891",
+  "title": "memory corruption in glsl::glslTypeGen::GetConstantByType leads to Android gpu crash",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>GPU>Internals",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "ge...@chromium.org",
+  "created_date": "2026-02-20T03:07:32+00:00",
+  "modified_date": "2026-06-24T07:51:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 32000.0,
+  "reward_amount_meta": 32000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 66,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

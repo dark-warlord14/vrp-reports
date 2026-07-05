@@ -1,0 +1,81 @@
+{
+  "id": "491191118",
+  "url": "https://issues.chromium.org/issues/491191118",
+  "title": "Heap OOB Write in Skia Ganesh Atlas Path Renderer via Signed Integer Overflow in PathStencilCoverOp",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>Skia",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "qq...@calif.io",
+  "assignee": "mi...@google.com",
+  "created_date": "2026-03-10T09:19:39+00:00",
+  "modified_date": "2026-07-01T08:30:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 32000.0,
+  "reward_amount_meta": 32000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74167636,
+      "filename": "atlas_path_positive_wrap_poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 3201,
+      "url": "https://issues.chromium.org/action/issues/491191118/attachments/74167636?download=true",
+      "local_path": "attachments/atlas_path_positive_wrap_poc.html"
+    },
+    {
+      "id": 74438985,
+      "filename": "atlas_path_positive_wrap_poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 3876,
+      "url": "https://issues.chromium.org/action/issues/491191118/attachments/74438985?download=true",
+      "local_path": "attachments/atlas_path_positive_wrap_poc_74438985.html"
+    },
+    {
+      "id": 74703450,
+      "filename": "Chrome 146 PoC recording.mkv",
+      "mime_type": "video/x-matroska",
+      "size_bytes": 17989605,
+      "url": "https://issues.chromium.org/action/issues/491191118/attachments/74703450?download=true",
+      "local_path": "attachments/Chrome 146 PoC recording.mkv"
+    },
+    {
+      "id": 74706189,
+      "filename": "reliable_poc_v2.html",
+      "mime_type": "text/html",
+      "size_bytes": 3860,
+      "url": "https://issues.chromium.org/action/issues/491191118/attachments/74706189?download=true",
+      "local_path": "attachments/reliable_poc_v2.html"
+    },
+    {
+      "id": 76617193,
+      "filename": "poc_vrp.html",
+      "mime_type": "text/html",
+      "size_bytes": 1045199,
+      "url": "https://issues.chromium.org/action/issues/491191118/attachments/76617193?download=true",
+      "local_path": "attachments/poc_vrp.html"
+    },
+    {
+      "id": 77150647,
+      "filename": "poc_vrp.html",
+      "mime_type": "text/html",
+      "size_bytes": 1053639,
+      "url": "https://issues.chromium.org/action/issues/491191118/attachments/77150647?download=true",
+      "local_path": "attachments/poc_vrp_77150647.html"
+    }
+  ],
+  "update_count": 81,
+  "description_snippet": "A signed 32-bit integer overflow vulnerability exists in Skia's Ganesh backend, specifically within the `PathStencilCoverOp` class used by the Atlas Path Renderer. By providing a specifically crafted number of path verbs, an attacker can trigger a \"positive wrap-around\" during vertex buffer reservat"
+}

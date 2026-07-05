@@ -1,0 +1,54 @@
+{
+  "id": "484319071",
+  "url": "https://issues.chromium.org/issues/484319071",
+  "title": "WebNN DirectML Constant Tensor Use-After-Free",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ci...@gmail.com",
+  "assignee": "br...@intel.com",
+  "created_date": "2026-02-13T16:18:05+00:00",
+  "modified_date": "2026-06-29T19:56:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 16000.0,
+  "reward_amount_meta": 16000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73432023,
+      "filename": "poc_webnn_dml_uaf.html",
+      "mime_type": "text/html",
+      "size_bytes": 3462,
+      "url": "https://issues.chromium.org/action/issues/484319071/attachments/73432023?download=true",
+      "local_path": "attachments/poc_webnn_dml_uaf.html"
+    },
+    {
+      "id": 73435801,
+      "filename": "poc_webnn_dml_dll_chain.html",
+      "mime_type": "text/html",
+      "size_bytes": 4809,
+      "url": "https://issues.chromium.org/action/issues/484319071/attachments/73435801?download=true",
+      "local_path": "attachments/poc_webnn_dml_dll_chain.html"
+    },
+    {
+      "id": 73971875,
+      "filename": "asan_webnn_dml_uaf_out.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 31693,
+      "url": "https://issues.chromium.org/action/issues/484319071/attachments/73971875?download=true",
+      "local_path": "attachments/asan_webnn_dml_uaf_out.txt"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "---\n\n### Report description\n\n\nWebNN DirectML Constant Tensor Use-After-Free\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/rules/5745167867576320"
+}

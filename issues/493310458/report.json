@@ -1,0 +1,57 @@
+{
+  "id": "493310458",
+  "url": "https://issues.chromium.org/issues/493310458",
+  "title": "Heap buffer overflow in TFLite pooling via WebNN Pool2d windowDimensions uint32-to-int32 truncation",
+  "status": "New",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ly...@google.com",
+  "created_date": "2026-03-17T02:48:39+00:00",
+  "modified_date": "2026-06-26T07:59:10+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74407509,
+      "filename": "asan-linux.log",
+      "mime_type": "text/plain",
+      "size_bytes": 32331,
+      "url": "https://issues.chromium.org/action/issues/493310458/attachments/74407509?download=true",
+      "local_path": "attachments/asan-linux.log"
+    },
+    {
+      "id": 74407510,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 30458,
+      "url": "https://issues.chromium.org/action/issues/493310458/attachments/74407510?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 74407511,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 2559,
+      "url": "https://issues.chromium.org/action/issues/493310458/attachments/74407511?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 72,
+  "description_snippet": "## Title\n\nHeap buffer overflow in TFLite pooling via WebNN Pool2d windowDimensions uint32-to-int32 truncation\n\n## Summary\n\nThe WebNN-to-TFLite translation layer in `GraphBuilderTflite::SerializePool2d` passes `uint32_t` window dimensions directly into TFLite's `CreatePool2DOptions`, which expects `i"
+}

@@ -1,0 +1,50 @@
+{
+  "id": "492963096",
+  "url": "https://issues.chromium.org/issues/492963096",
+  "title": "setHTML() Sanitizer API bypass via custom element callback execution during parsing",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>SecurityFeature>SanitizerAPI",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ch...@gmail.com",
+  "assignee": "vo...@chromium.org",
+  "created_date": "2026-03-15T17:35:25+00:00",
+  "modified_date": "2026-06-29T21:55:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74365713,
+      "filename": "poc_custom_element_bypass.html",
+      "mime_type": "text/html",
+      "size_bytes": 8815,
+      "url": "https://issues.chromium.org/action/issues/492963096/attachments/74365713?download=true",
+      "local_path": "attachments/poc_custom_element_bypass.html"
+    },
+    {
+      "id": 74365714,
+      "filename": "sethtml_ce_bypass.html",
+      "mime_type": "text/html",
+      "size_bytes": 1554,
+      "url": "https://issues.chromium.org/action/issues/492963096/attachments/74365714?download=true",
+      "local_path": "attachments/sethtml_ce_bypass.html"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "---\n\n### Report description\n\n\nsetHTML() Sanitizer API bypass via custom element callback execution during parsing\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.g"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "493256564",
+  "url": "https://issues.chromium.org/issues/493256564",
+  "title": "ANGLE Metal Stale mFormat Cache causes GPU OOB WRITE",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ci...@gmail.com",
+  "assignee": "ge...@chromium.org",
+  "created_date": "2026-03-16T18:38:16+00:00",
+  "modified_date": "2026-07-01T08:30:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 77000.0,
+  "reward_amount_meta": 77000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74400213,
+      "filename": "crash_trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3536,
+      "url": "https://issues.chromium.org/action/issues/493256564/attachments/74400213?download=true",
+      "local_path": "attachments/crash_trace.txt"
+    },
+    {
+      "id": 74400214,
+      "filename": "poc_write_crash.html",
+      "mime_type": "text/html",
+      "size_bytes": 3997,
+      "url": "https://issues.chromium.org/action/issues/493256564/attachments/74400214?download=true",
+      "local_path": "attachments/poc_write_crash.html"
+    },
+    {
+      "id": 74397458,
+      "filename": "poc_rip_v3.html",
+      "mime_type": "text/html",
+      "size_bytes": 10147,
+      "url": "https://issues.chromium.org/action/issues/493256564/attachments/74397458?download=true",
+      "local_path": "attachments/poc_rip_v3.html"
+    },
+    {
+      "id": 74406166,
+      "filename": "poc_rce_v2.html",
+      "mime_type": "text/html",
+      "size_bytes": 5618,
+      "url": "https://issues.chromium.org/action/issues/493256564/attachments/74406166?download=true",
+      "local_path": "attachments/poc_rce_v2.html"
+    },
+    {
+      "id": 74434409,
+      "filename": "poc_rce_v2.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 52949641,
+      "url": "https://issues.chromium.org/action/issues/493256564/attachments/74434409?download=true",
+      "local_path": "attachments/poc_rce_v2.mov"
+    },
+    {
+      "id": 77030235,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/493256564/attachments/77030235?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "---\n\n### Report description\n\n\nANGLE Metal Stale mFormat Cache causes GPU OOB WRITE\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/rules/574516786"
+}

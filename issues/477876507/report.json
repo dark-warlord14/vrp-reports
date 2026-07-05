@@ -1,0 +1,70 @@
+{
+  "id": "477876507",
+  "url": "https://issues.chromium.org/issues/477876507",
+  "title": "TWA Origin Spoofing & UI Redressing via Intent Injection",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P3",
+  "component": "Services (Use Subcomponents)>Chromoting",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2026-01-22T13:46:30+00:00",
+  "modified_date": "2026-06-24T09:15:18+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 72726234,
+      "filename": "{A667DE12-B559-460B-A3B4-10009509BE12}.png",
+      "mime_type": "image/png",
+      "size_bytes": 14290,
+      "url": "https://issues.chromium.org/action/issues/477876507/attachments/72726234?download=true",
+      "local_path": "attachments/{A667DE12-B559-460B-A3B4-10009509BE12}.png"
+    },
+    {
+      "id": 72726235,
+      "filename": "{1CD1EB6D-A3B3-491F-B77F-7C4820C9A0F3}.png",
+      "mime_type": "image/png",
+      "size_bytes": 78256,
+      "url": "https://issues.chromium.org/action/issues/477876507/attachments/72726235?download=true",
+      "local_path": "attachments/{1CD1EB6D-A3B3-491F-B77F-7C4820C9A0F3}.png"
+    },
+    {
+      "id": 72726236,
+      "filename": "{F65D6359-B7E4-48CF-8A86-2AB464D98D70}.png",
+      "mime_type": "image/png",
+      "size_bytes": 82410,
+      "url": "https://issues.chromium.org/action/issues/477876507/attachments/72726236?download=true",
+      "local_path": "attachments/{F65D6359-B7E4-48CF-8A86-2AB464D98D70}.png"
+    },
+    {
+      "id": 72726237,
+      "filename": "{0662ACA5-8CCA-4BDC-A2EF-7E6E9B337C0A}.png",
+      "mime_type": "image/png",
+      "size_bytes": 63654,
+      "url": "https://issues.chromium.org/action/issues/477876507/attachments/72726237?download=true",
+      "local_path": "attachments/{0662ACA5-8CCA-4BDC-A2EF-7E6E9B337C0A}.png"
+    },
+    {
+      "id": 72726238,
+      "filename": "app-debug.apk",
+      "mime_type": "application/vnd.android.package-archive",
+      "size_bytes": 13829280,
+      "url": "https://issues.chromium.org/action/issues/477876507/attachments/72726238?download=true",
+      "local_path": "attachments/app-debug.apk"
+    }
+  ],
+  "update_count": 90,
+  "description_snippet": "**Summary:** TWA Origin Spoofing & UI Redressing via Intent Injection\n\n**Program:** Mobile VRP\n\n**URL:** com.google.chromeremotedesktop\n\n**Vulnerability type:** Security UI Spoofing\n\n### Details\n\n#### Summary\nThe Chrome Remote Desktop Android application suffers from an Improper Input Validation vul"
+}

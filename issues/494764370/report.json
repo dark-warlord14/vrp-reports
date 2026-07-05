@@ -1,0 +1,74 @@
+{
+  "id": "494764370",
+  "url": "https://issues.chromium.org/issues/494764370",
+  "title": "Stale FedCM autofill suggestion triggers heap-use-after-free in the browser process via unchecked flat_map iterator dereference",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Identity>FedCM",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "cb...@chromium.org",
+  "created_date": "2026-03-21T14:22:27+00:00",
+  "modified_date": "2026-07-04T07:55:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74599106,
+      "filename": "poc_demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2248859,
+      "url": "https://issues.chromium.org/action/issues/494764370/attachments/74599106?download=true",
+      "local_path": "attachments/poc_demo.mp4"
+    },
+    {
+      "id": 74599107,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 40711,
+      "url": "https://issues.chromium.org/action/issues/494764370/attachments/74599107?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 74599108,
+      "filename": "readme.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 1670,
+      "url": "https://issues.chromium.org/action/issues/494764370/attachments/74599108?download=true",
+      "local_path": "attachments/readme.md"
+    },
+    {
+      "id": 74599109,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1891,
+      "url": "https://issues.chromium.org/action/issues/494764370/attachments/74599109?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74599110,
+      "filename": "idp_server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 5137,
+      "url": "https://issues.chromium.org/action/issues/494764370/attachments/74599110?download=true",
+      "local_path": "attachments/idp_server.py"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "# Stale FedCM autofill suggestion triggers heap-use-after-free in the browser process via unchecked flat_map iterator dereference\n\n## Summary\n\nWhen a FedCM conditional mediation request is cancelled and a new request with a different identity provider is initiated, a previously displayed autofill su"
+}

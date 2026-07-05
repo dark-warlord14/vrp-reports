@@ -1,0 +1,75 @@
+{
+  "id": "488514078",
+  "url": "https://issues.chromium.org/issues/488514078",
+  "title": "EnterFullscreen() bypasses fullscreen Permissions Policy via missing browser-side check",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Sandbox>SiteIsolation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "os...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2026-02-28T05:31:26+00:00",
+  "modified_date": "2026-07-04T07:56:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73852094,
+      "filename": "fix.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 7358,
+      "url": "https://issues.chromium.org/action/issues/488514078/attachments/73852094?download=true",
+      "local_path": "attachments/fix.diff"
+    },
+    {
+      "id": 73852095,
+      "filename": "attacker.html",
+      "mime_type": "text/html",
+      "size_bytes": 4411,
+      "url": "https://issues.chromium.org/action/issues/488514078/attachments/73852095?download=true",
+      "local_path": "attachments/attacker.html"
+    },
+    {
+      "id": 73852096,
+      "filename": "serve.py",
+      "mime_type": "text/x-python-script",
+      "size_bytes": 2700,
+      "url": "https://issues.chromium.org/action/issues/488514078/attachments/73852096?download=true",
+      "local_path": "attachments/serve.py"
+    },
+    {
+      "id": 73852097,
+      "filename": "poc_patch.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1111,
+      "url": "https://issues.chromium.org/action/issues/488514078/attachments/73852097?download=true",
+      "local_path": "attachments/poc_patch.diff"
+    },
+    {
+      "id": 73852098,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 3252,
+      "url": "https://issues.chromium.org/action/issues/488514078/attachments/73852098?download=true",
+      "local_path": "attachments/index.html"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "---\n\n### Report description\n\n\nEnterFullscreen() bypasses fullscreen Permissions Policy via missing browser-side check\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunte"
+}

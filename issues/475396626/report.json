@@ -1,0 +1,38 @@
+{
+  "id": "475396626",
+  "url": "https://issues.chromium.org/issues/475396626",
+  "title": "UAF in KEGLGetPoolBuffers cause chrome sandbox escape",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "ge...@google.com",
+  "created_date": "2026-01-13T12:01:59+00:00",
+  "modified_date": "2026-06-30T07:57:47+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 25000.0,
+  "reward_amount_meta": 25000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 72433845,
+      "filename": "androidoob2.html",
+      "mime_type": "text/html",
+      "size_bytes": 12760,
+      "url": "https://issues.chromium.org/action/issues/475396626/attachments/72433845?download=true",
+      "local_path": "attachments/androidoob2.html"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "Chrome Version: [143.0.7499.192] + Stable\n\nOperating System: pixel10,BP4A.260105.004.E1\n\n\nREPRODUCTION CASE:\n\n\n1、launch chrome with MTE\n\n\n2、http://127.0.0.1:8080/poc.html\n\n3、logcat | grep DEBUG\n\n\n\n```txt\n01-13 18:21:53.846 20418 20418 F DEBUG   : Learn more about MTE reports: https://source.android."
+}

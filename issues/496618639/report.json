@@ -1,0 +1,59 @@
+{
+  "id": "496618639",
+  "url": "https://issues.chromium.org/issues/496618639",
+  "title": "Heap-buffer-overflow in PDFium via integer overflow in bundled lcms2 ICC CLUT allocation",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "PDFium",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2026-03-26T19:39:11+00:00",
+  "modified_date": "2026-07-04T07:56:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74825526,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 26675,
+      "url": "https://issues.chromium.org/action/issues/496618639/attachments/74825526?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 74825527,
+      "filename": "gen_poc.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 10599,
+      "url": "https://issues.chromium.org/action/issues/496618639/attachments/74825527?download=true",
+      "local_path": "attachments/gen_poc.py"
+    },
+    {
+      "id": 74825528,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 19580,
+      "url": "https://issues.chromium.org/action/issues/496618639/attachments/74825528?download=true",
+      "local_path": "attachments/poc.pdf"
+    }
+  ],
+  "update_count": 91,
+  "description_snippet": "## Summary\n\nAn integer overflow in the bundled lcms2 color management library allows a crafted ICC profile embedded in a PDF to trigger a heap-buffer-overflow read inside the Chromium renderer process. The overflow occurs in `CubeSize()`, which computes the total number of entries in a multi-dimens"
+}

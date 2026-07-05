@@ -1,7 +1,7 @@
 {
-  "total_reports": 4522,
-  "total_bounty": 25290671.7,
-  "avg_bounty": 5596.52,
+  "total_reports": 4550,
+  "total_bounty": 25721171.7,
+  "avg_bounty": 5656.73,
   "by_year": {
     "2009": {
       "count": 3,
@@ -72,46 +72,46 @@
       "total_bounty": 3407500.0
     },
     "2026": {
-      "count": 182,
-      "total_bounty": 2484000.0
+      "count": 210,
+      "total_bounty": 2914500.0
     }
   },
   "by_severity": {
-    "S3-Low": 3939,
-    "S4-Minimal": 511,
+    "S3-Low": 3962,
+    "S4-Minimal": 516,
     "Unknown": 64,
     "S1-High": 6,
     "S0-Critical": 1,
     "S2-Medium": 1
   },
   "by_status": {
-    "Assigned": 3576,
-    "Accepted": 696,
-    "New": 120,
-    "Fixed": 86,
-    "Verified": 43,
+    "Assigned": 3587,
+    "Accepted": 701,
+    "New": 128,
+    "Fixed": 88,
+    "Verified": 45,
     "Unknown": 1
   },
   "by_component": {
-    "Blink": 2008,
-    "Internals": 971,
-    "UI": 609,
+    "Blink": 2020,
+    "Internals": 979,
+    "UI": 610,
     "Unknown": 351,
-    "Platform": 258,
+    "Platform": 261,
     "Blink, Blink": 80,
     "Mobile": 57,
     "Internals, Internals": 41,
-    "Dawn": 36,
+    "Dawn": 38,
     "OS": 16,
     "Enterprise": 12,
     "Blink, Internals, Internals": 12,
     "Blink, Internals": 9,
     "Speed": 7,
+    "PDFium": 6,
     "Infra": 6,
-    "PDFium": 5,
     "Privacy": 5,
+    "Services (Use Subcomponents)": 5,
     "UI, UI": 5,
-    "Services (Use Subcomponents)": 4,
     "IO": 4
   },
   "bounty_histogram": [
@@ -121,27 +121,27 @@
     },
     {
       "range": "$500-1K",
-      "count": 603
+      "count": 604
     },
     {
       "range": "$1K-3K",
-      "count": 1493
+      "count": 1498
     },
     {
       "range": "$3K-5K",
-      "count": 702
+      "count": 709
     },
     {
       "range": "$5K-10K",
-      "count": 1007
+      "count": 1008
     },
     {
       "range": "$10K-20K",
-      "count": 425
+      "count": 431
     },
     {
       "range": "$20K+",
-      "count": 283
+      "count": 291
     }
   ],
   "top_bounties": [
@@ -216,6 +216,13 @@
       "year": 2026
     },
     {
+      "id": "493256564",
+      "title": "ANGLE Metal Stale mFormat Cache causes GPU OOB WRITE",
+      "bounty_amount": 77000.0,
+      "severity": "S3-Low",
+      "year": 2026
+    },
+    {
       "id": "40093479",
       "title": "Security: ChromeOS Persistent root Command Execution",
       "bounty_amount": 75000.0,
@@ -274,13 +281,6 @@
     {
       "id": "446113732",
       "title": "Wasm type confusion due to spec unsoundness in `cast_desc` operations",
-      "bounty_amount": 55000.0,
-      "severity": "S3-Low",
-      "year": 2025
-    },
-    {
-      "id": "446122633",
-      "title": "Wasm type confusion due to wrong reachability analysis in `WasmGCTypeAnalyzer::ProcessBranchOnTarget()` with custom descriptor casts",
       "bounty_amount": 55000.0,
       "severity": "S3-Low",
       "year": 2025

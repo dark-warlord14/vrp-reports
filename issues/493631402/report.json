@@ -1,0 +1,67 @@
+{
+  "id": "493631402",
+  "url": "https://issues.chromium.org/issues/493631402",
+  "title": " heap-use-after-free in v8_inspector::V8DebuggerAgentImpl::setBreakpointByUrl",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "sz...@google.com",
+  "created_date": "2026-03-17T23:45:42+00:00",
+  "modified_date": "2026-06-30T07:57:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74438986,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 29868,
+      "url": "https://issues.chromium.org/action/issues/493631402/attachments/74438986?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 74438987,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/493631402/attachments/74438987?download=true",
+      "local_path": null
+    },
+    {
+      "id": 74438988,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 209,
+      "url": "https://issues.chromium.org/action/issues/493631402/attachments/74438988?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 74438989,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1291,
+      "url": "https://issues.chromium.org/action/issues/493631402/attachments/74438989?download=true",
+      "local_path": "attachments/background.js"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "VULNERABILITY DETAILS\nUAF in v8_inspector::V8DebuggerAgentImpl::setBreakpointByUrl\n\nVERSION\nChrome Version: 148.0.7728.0（Developer Build）\nOperating System: Ubuntu\n\nREPRODUCTION CASE\n1. put manifest.json/background.js into the extension_path\n2. run the command:\n ./chrome --user-data-dir=./noexist --n"
+}

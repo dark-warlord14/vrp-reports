@@ -1,0 +1,57 @@
+{
+  "id": "494158331",
+  "url": "https://issues.chromium.org/issues/494158331",
+  "title": "Heap OOB write in XNNPACK Pool2D via integer overflow",
+  "status": "New",
+  "severity": "S4-Minimal",
+  "priority": "P0",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "we...@intel.com",
+  "created_date": "2026-03-19T16:18:46+00:00",
+  "modified_date": "2026-06-28T08:00:27+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 43000.0,
+  "reward_amount_meta": 43000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74511662,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 38239,
+      "url": "https://issues.chromium.org/action/issues/494158331/attachments/74511662?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 74511663,
+      "filename": "fix.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 839,
+      "url": "https://issues.chromium.org/action/issues/494158331/attachments/74511663?download=true",
+      "local_path": "attachments/fix.patch"
+    },
+    {
+      "id": 74511664,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1774,
+      "url": "https://issues.chromium.org/action/issues/494158331/attachments/74511664?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "# VULNERABILITY DETAILS\n\nAn integer overflow vulnerability exists in the WebNN TFLite XNNPACK backend when processing `Pool2d` operations, leading to heap out-of-bounds write.\n\nThe root cause resides in the WebNN frontend graph validation `ValidatePool2dAndInferOutput`. It reads `windowDimensions` i"
+}

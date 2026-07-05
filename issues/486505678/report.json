@@ -1,0 +1,73 @@
+{
+  "id": "486505678",
+  "url": "https://issues.chromium.org/issues/486505678",
+  "title": "UAF in OnGpuControlReturnData",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Dawn",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "lo...@google.com",
+  "created_date": "2026-02-22T08:41:59+00:00",
+  "modified_date": "2026-07-01T04:11:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "reward_amount_meta": 8000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73607164,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 33463,
+      "url": "https://issues.chromium.org/action/issues/486505678/attachments/73607164?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 73982874,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 2377,
+      "url": "https://issues.chromium.org/action/issues/486505678/attachments/73982874?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 73982875,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2698,
+      "url": "https://issues.chromium.org/action/issues/486505678/attachments/73982875?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 74223301,
+      "filename": "asan_mac_1596779.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 47012,
+      "url": "https://issues.chromium.org/action/issues/486505678/attachments/74223301?download=true",
+      "local_path": "attachments/asan_mac_1596779.txt"
+    },
+    {
+      "id": 74203504,
+      "filename": "asan_mac_manual_build.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 48871,
+      "url": "https://issues.chromium.org/action/issues/486505678/attachments/74203504?download=true",
+      "local_path": "attachments/asan_mac_manual_build.txt"
+    }
+  ],
+  "update_count": 89,
+  "description_snippet": "### SUMMARY\n\nI accidentally run into this heap-use-after-free during fuzzing; I managed to reproduced it but failed using my fuzzer recorded steps. I think we might being able to identify issues by the asan crash stack, and I have briefly analyzed the crash stack.\n\n### DETAILS\n\nThe UAF occurs when ["
+}
