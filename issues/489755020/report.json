@@ -1,0 +1,33 @@
+{
+  "id": "489755020",
+  "url": "https://issues.chromium.org/issues/489755020",
+  "title": "Out-of-bounds heap read in VP9 encoder via WebCodecs VideoEncoder dimension reconfiguration",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Media>WebCodecs",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ca...@gmail.com",
+  "assignee": "jz...@google.com",
+  "created_date": "2026-03-04T17:51:38+00:00",
+  "modified_date": "2026-06-11T07:54:54+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 41,
+  "description_snippet": "---\n\n### Report description\n\n**This is meant to track the merge request for libvpx (VP9) as part of b/487259772. That bug covers both libvpx and libaom (AV1) and a fix is still pending for AV1.**\n\n\nOut-of-bounds heap read in VP9 encoder via WebCodecs VideoEncoder dimension reconfiguration\n\n\n---\n\n###"
+}

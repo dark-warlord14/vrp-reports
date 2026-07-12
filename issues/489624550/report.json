@@ -1,0 +1,139 @@
+{
+  "id": "489624550",
+  "url": "https://issues.chromium.org/issues/489624550",
+  "title": "SpeechSynthesis audio can appear to originate from another domain after fast redirect (UI/Audio Spoofing – may trick users / tricky victim)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Speech",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ec...@gmail.com",
+  "assignee": "ev...@google.com",
+  "created_date": "2026-03-04T08:21:32+00:00",
+  "modified_date": "2026-07-08T08:01:16+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73968830,
+      "filename": "RESULT.png",
+      "mime_type": "image/png",
+      "size_bytes": 42202,
+      "url": "https://issues.chromium.org/action/issues/489624550/attachments/73968830?download=true",
+      "local_path": "attachments/RESULT.png"
+    },
+    {
+      "id": 73968831,
+      "filename": "POC CHROME WINDOWS 145.0.7632.117 .mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 14462095,
+      "url": "https://issues.chromium.org/action/issues/489624550/attachments/73968831?download=true",
+      "local_path": "attachments/POC CHROME WINDOWS 145.0.7632.117 .mp4"
+    },
+    {
+      "id": 73968832,
+      "filename": "POC-Chrome&ChromeCanary-Andro.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5695197,
+      "url": "https://issues.chromium.org/action/issues/489624550/attachments/73968832?download=true",
+      "local_path": "attachments/POC-Chrome&ChromeCanary-Andro.mp4"
+    },
+    {
+      "id": 73968833,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1204,
+      "url": "https://issues.chromium.org/action/issues/489624550/attachments/73968833?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 73965281,
+      "filename": "chromeCanary-Windows.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 23004854,
+      "url": "https://issues.chromium.org/action/issues/489624550/attachments/73965281?download=true",
+      "local_path": "attachments/chromeCanary-Windows.mp4"
+    },
+    {
+      "id": 73964666,
+      "filename": "voice icon.png",
+      "mime_type": "image/png",
+      "size_bytes": 15063,
+      "url": "https://issues.chromium.org/action/issues/489624550/attachments/73964666?download=true",
+      "local_path": "attachments/voice icon.png"
+    },
+    {
+      "id": 73965286,
+      "filename": "chrome and chrome canary.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 9404808,
+      "url": "https://issues.chromium.org/action/issues/489624550/attachments/73965286?download=true",
+      "local_path": "attachments/chrome and chrome canary.mp4"
+    },
+    {
+      "id": 74276929,
+      "filename": "2026-03-13 15-29-58.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 14361149,
+      "url": "https://issues.chromium.org/action/issues/489624550/attachments/74276929?download=true",
+      "local_path": "attachments/2026-03-13 15-29-58.mp4"
+    },
+    {
+      "id": 74276900,
+      "filename": "android.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2862636,
+      "url": "https://issues.chromium.org/action/issues/489624550/attachments/74276900?download=true",
+      "local_path": "attachments/android.mp4"
+    },
+    {
+      "id": 74462531,
+      "filename": "Record_2026-03-18-15-17-18.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1627417,
+      "url": "https://issues.chromium.org/action/issues/489624550/attachments/74462531?download=true",
+      "local_path": "attachments/Record_2026-03-18-15-17-18.mp4"
+    },
+    {
+      "id": 74786294,
+      "filename": "ScreenRecording_03-26-2026 11-47-55_1.MP4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6713265,
+      "url": "https://issues.chromium.org/action/issues/489624550/attachments/74786294?download=true",
+      "local_path": "attachments/ScreenRecording_03-26-2026 11-47-55_1.MP4"
+    },
+    {
+      "id": 75917433,
+      "filename": "Record_2026-04-24-22-53-11.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2102781,
+      "url": "https://issues.chromium.org/action/issues/489624550/attachments/75917433?download=true",
+      "local_path": "attachments/Record_2026-04-24-22-53-11.mp4"
+    },
+    {
+      "id": 75921212,
+      "filename": "voice-icon.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 131357,
+      "url": "https://issues.chromium.org/action/issues/489624550/attachments/75921212?download=true",
+      "local_path": "attachments/voice-icon.jpg"
+    }
+  ],
+  "update_count": 108,
+  "description_snippet": "---\n\n### Report description\n\n\nSpeechSynthesis audio can appear to originate from another domain after fast redirect (UI/Audio Spoofing – may trick users / tricky victim)\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "496807861",
+  "url": "https://issues.chromium.org/issues/496807861",
+  "title": "V8 Sandbox Bypass: BigInt DivideSchoolbook Native Heap OOB Write via Signed Scratch-Length Overflow",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pi...@gmail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2026-03-27T09:17:03+00:00",
+  "modified_date": "2026-07-07T08:01:29+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74849305,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 416,
+      "url": "https://issues.chromium.org/action/issues/496807861/attachments/74849305?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "## VULNERABILITY DETAILS\n### Summary\n`DivideSchoolbook` computes its temporary scratch size with signed `int` locals even though the driving operand lengths come from attacker-corruptible BigInt heap metadata. By corrupting the dividend length to `0x7fffffff` and then executing `%` with a small mult"
+}

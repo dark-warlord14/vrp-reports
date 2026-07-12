@@ -1,7 +1,7 @@
 {
-  "total_reports": 4550,
-  "total_bounty": 25721171.7,
-  "avg_bounty": 5656.73,
+  "total_reports": 4583,
+  "total_bounty": 26168671.7,
+  "avg_bounty": 5713.68,
   "by_year": {
     "2009": {
       "count": 3,
@@ -72,36 +72,36 @@
       "total_bounty": 3407500.0
     },
     "2026": {
-      "count": 210,
-      "total_bounty": 2914500.0
+      "count": 243,
+      "total_bounty": 3362000.0
     }
   },
   "by_severity": {
-    "S3-Low": 3962,
-    "S4-Minimal": 516,
+    "S3-Low": 3988,
+    "S4-Minimal": 523,
     "Unknown": 64,
     "S1-High": 6,
     "S0-Critical": 1,
     "S2-Medium": 1
   },
   "by_status": {
-    "Assigned": 3587,
-    "Accepted": 701,
-    "New": 128,
-    "Fixed": 88,
-    "Verified": 45,
+    "Assigned": 3600,
+    "Accepted": 712,
+    "New": 131,
+    "Fixed": 90,
+    "Verified": 49,
     "Unknown": 1
   },
   "by_component": {
-    "Blink": 2020,
-    "Internals": 979,
-    "UI": 610,
+    "Blink": 2035,
+    "Internals": 991,
+    "UI": 612,
     "Unknown": 351,
-    "Platform": 261,
+    "Platform": 264,
     "Blink, Blink": 80,
     "Mobile": 57,
     "Internals, Internals": 41,
-    "Dawn": 38,
+    "Dawn": 39,
     "OS": 16,
     "Enterprise": 12,
     "Blink, Internals, Internals": 12,
@@ -121,27 +121,27 @@
     },
     {
       "range": "$500-1K",
-      "count": 604
+      "count": 605
     },
     {
       "range": "$1K-3K",
-      "count": 1498
+      "count": 1506
     },
     {
       "range": "$3K-5K",
-      "count": 709
+      "count": 713
     },
     {
       "range": "$5K-10K",
-      "count": 1008
+      "count": 1017
     },
     {
       "range": "$10K-20K",
-      "count": 431
+      "count": 435
     },
     {
       "range": "$20K+",
-      "count": 291
+      "count": 298
     }
   ],
   "top_bounties": [
@@ -200,6 +200,13 @@
       "bounty_amount": 100000.0,
       "severity": "S3-Low",
       "year": 2017
+    },
+    {
+      "id": "490170083",
+      "title": "ANGLE BlitGL copySubTextureCPUReadback Controlled Heap Overflow via Unsynchronized PACK_ROW_LENGTH",
+      "bounty_amount": 90000.0,
+      "severity": "S3-Low",
+      "year": 2026
     },
     {
       "id": "487338366",
@@ -277,13 +284,6 @@
       "bounty_amount": 55000.0,
       "severity": "S4-Minimal",
       "year": 2026
-    },
-    {
-      "id": "446113732",
-      "title": "Wasm type confusion due to spec unsoundness in `cast_desc` operations",
-      "bounty_amount": 55000.0,
-      "severity": "S3-Low",
-      "year": 2025
     }
   ]
 }

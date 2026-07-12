@@ -1,0 +1,50 @@
+{
+  "id": "492139412",
+  "url": "https://issues.chromium.org/issues/492139412",
+  "title": "UAF write in Dawn wire server: BufferUpdateMappedData writes to freed GPU memory after DeviceDestroy",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Dawn>Wire",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "cw...@google.com",
+  "created_date": "2026-03-12T15:23:14+00:00",
+  "modified_date": "2026-07-05T07:56:05+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 36000.0,
+  "reward_amount_meta": 36000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74257019,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 893,
+      "url": "https://issues.chromium.org/action/issues/492139412/attachments/74257019?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 74257020,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 2189,
+      "url": "https://issues.chromium.org/action/issues/492139412/attachments/74257020?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 178,
+  "description_snippet": "## Summary\n\nA use-after-free write exists in the Dawn wire server running in the GPU process. When a compromised renderer sends a DeviceDestroy wire command followed by BufferUpdateMappedData for a buffer that was created with `mappedAtCreation`, the server performs a `memcpy` into GPU buffer memor"
+}

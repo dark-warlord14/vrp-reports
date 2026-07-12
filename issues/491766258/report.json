@@ -1,0 +1,105 @@
+{
+  "id": "491766258",
+  "url": "https://issues.chromium.org/issues/491766258",
+  "title": "Extensions without file URL access can use the `Page.navigate` CDP command to open `view-source:file:` URLs",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Platform>DevTools, Platform>Extensions>API",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@gmail.com",
+  "assignee": "da...@google.com",
+  "created_date": "2026-03-11T18:23:49+00:00",
+  "modified_date": "2026-07-09T08:13:57+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74223362,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 845,
+      "url": "https://issues.chromium.org/action/issues/491766258/attachments/74223362?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 74223363,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 164,
+      "url": "https://issues.chromium.org/action/issues/491766258/attachments/74223363?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 74232067,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 913,
+      "url": "https://issues.chromium.org/action/issues/491766258/attachments/74232067?download=true",
+      "local_path": "attachments/background_74232067.js"
+    },
+    {
+      "id": 74232093,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 164,
+      "url": "https://issues.chromium.org/action/issues/491766258/attachments/74232093?download=true",
+      "local_path": "attachments/manifest_74232093.json"
+    },
+    {
+      "id": 74337428,
+      "filename": "receiver.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2927,
+      "url": "https://issues.chromium.org/action/issues/491766258/attachments/74337428?download=true",
+      "local_path": "attachments/receiver.js"
+    },
+    {
+      "id": 74336653,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2295,
+      "url": "https://issues.chromium.org/action/issues/491766258/attachments/74336653?download=true",
+      "local_path": "attachments/background_74336653.js"
+    },
+    {
+      "id": 74336633,
+      "filename": "server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 1761,
+      "url": "https://issues.chromium.org/action/issues/491766258/attachments/74336633?download=true",
+      "local_path": "attachments/server.py"
+    },
+    {
+      "id": 74336634,
+      "filename": "receiver.html",
+      "mime_type": "text/html",
+      "size_bytes": 895,
+      "url": "https://issues.chromium.org/action/issues/491766258/attachments/74336634?download=true",
+      "local_path": "attachments/receiver.html"
+    },
+    {
+      "id": 74336635,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 210,
+      "url": "https://issues.chromium.org/action/issues/491766258/attachments/74336635?download=true",
+      "local_path": "attachments/manifest_74336635.json"
+    }
+  ],
+  "update_count": 74,
+  "description_snippet": "## VULNERABILITY DETAILS\n\n### Summary\n\nA malicious extension can use the `chrome.debugger.sendCommand` API with the `Page.navigate` CDP command to navigate to `view-source:file:` URLs without the user enabling `Allow access to file URLs`. On Windows, this can be exploited using a UNC path to leak NT"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "492077213",
+  "url": "https://issues.chromium.org/issues/492077213",
+  "title": "V8 Sandbox Bypass: Fast API overload metadata corruption causes compiler-emitted mixed native call type confusion",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gu...@gmail.com",
+  "assignee": "em...@google.com",
+  "created_date": "2026-03-12T11:17:43+00:00",
+  "modified_date": "2026-07-09T08:14:08+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74257012,
+      "filename": "repro.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 5820,
+      "url": "https://issues.chromium.org/action/issues/492077213/attachments/74257012?download=true",
+      "local_path": "attachments/repro.js"
+    }
+  ],
+  "update_count": 81,
+  "description_snippet": "## VULNERABILITY DETAILS\n\n### Summary\n\nIn V8, Fast API overload metadata is stored as mutable in-heap `[address, signature]` pairs and later trusted by TurboFan during fast-call optimization.\nIf an attacker can corrupt `c_function_overloads`, they can mix a native callee address from one overload w"
+}

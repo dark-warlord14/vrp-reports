@@ -1,0 +1,51 @@
+{
+  "id": "497404188",
+  "url": "https://issues.chromium.org/issues/497404188",
+  "title": "Incorrect Optimization of ArrayConstructor by Maglev Leads to Creation of Malformed JSArray Objects",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Maglev",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hu...@gmail.com",
+  "assignee": "jg...@chromium.org",
+  "created_date": "2026-03-29T19:45:17+00:00",
+  "modified_date": "2026-07-08T08:14:08+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 50000.0,
+  "reward_amount_meta": 50000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74910571,
+      "filename": "exp.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2905,
+      "url": "https://issues.chromium.org/action/issues/497404188/attachments/74910571?download=true",
+      "local_path": "attachments/exp.js"
+    },
+    {
+      "id": 74914026,
+      "filename": "getshell_nosbx.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 94103,
+      "url": "https://issues.chromium.org/action/issues/497404188/attachments/74914026?download=true",
+      "local_path": "attachments/getshell_nosbx.js"
+    }
+  ],
+  "update_count": 122,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

@@ -1,0 +1,83 @@
+{
+  "id": "492153658",
+  "url": "https://issues.chromium.org/issues/492153658",
+  "title": "ANGLE Vulkan: invalidateFramebuffer Erases Pending robust_resource_init Clear, Leads to Cross-Origin GPU Texture Data Leak",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>ANGLE, Internals>GPU>Vulkan",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sw...@gmail.com",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2026-03-12T16:01:40+00:00",
+  "modified_date": "2026-07-05T07:56:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74266597,
+      "filename": "poc_html_result.png",
+      "mime_type": "image/png",
+      "size_bytes": 13827,
+      "url": "https://issues.chromium.org/action/issues/492153658/attachments/74266597?download=true",
+      "local_path": "attachments/poc_html_result.png"
+    },
+    {
+      "id": 74266598,
+      "filename": "cross_origin_texture_leak_poc.png",
+      "mime_type": "image/png",
+      "size_bytes": 1620895,
+      "url": "https://issues.chromium.org/action/issues/492153658/attachments/74266598?download=true",
+      "local_path": "attachments/cross_origin_texture_leak_poc.png"
+    },
+    {
+      "id": 74266599,
+      "filename": "cross_tab_texture_leak_poc_2.png",
+      "mime_type": "image/png",
+      "size_bytes": 507001,
+      "url": "https://issues.chromium.org/action/issues/492153658/attachments/74266599?download=true",
+      "local_path": "attachments/cross_tab_texture_leak_poc_2.png"
+    },
+    {
+      "id": 74266600,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1891,
+      "url": "https://issues.chromium.org/action/issues/492153658/attachments/74266600?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74269262,
+      "filename": "poc_attacker_visual_v3.html",
+      "mime_type": "text/html",
+      "size_bytes": 6198,
+      "url": "https://issues.chromium.org/action/issues/492153658/attachments/74269262?download=true",
+      "local_path": "attachments/poc_attacker_visual_v3.html"
+    },
+    {
+      "id": 74269263,
+      "filename": "victim_visual_v3.html",
+      "mime_type": "text/html",
+      "size_bytes": 6553,
+      "url": "https://issues.chromium.org/action/issues/492153658/attachments/74269263?download=true",
+      "local_path": "attachments/victim_visual_v3.html"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "---\n\n### Report description\n\n\nANGLE Vulkan: invalidateFramebuffer Erases Pending robust_resource_init Clear, Leads to Cross-Origin GPU Texture Data Leak\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. ["
+}

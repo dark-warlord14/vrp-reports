@@ -1,0 +1,58 @@
+{
+  "id": "490170083",
+  "url": "https://issues.chromium.org/issues/490170083",
+  "title": "ANGLE BlitGL copySubTextureCPUReadback Controlled Heap Overflow via Unsynchronized PACK_ROW_LENGTH",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ci...@gmail.com",
+  "assignee": "ge...@chromium.org",
+  "created_date": "2026-03-05T22:31:40+00:00",
+  "modified_date": "2026-07-07T08:00:51+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 90000.0,
+  "reward_amount_meta": 90000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74034158,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 4910,
+      "url": "https://issues.chromium.org/action/issues/490170083/attachments/74034158?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74034159,
+      "filename": "asan_out.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 28337,
+      "url": "https://issues.chromium.org/action/issues/490170083/attachments/74034159?download=true",
+      "local_path": "attachments/asan_out.txt"
+    },
+    {
+      "id": 74051407,
+      "filename": "crash_control.html",
+      "mime_type": "text/html",
+      "size_bytes": 4814,
+      "url": "https://issues.chromium.org/action/issues/490170083/attachments/74051407?download=true",
+      "local_path": "attachments/crash_control.html"
+    }
+  ],
+  "update_count": 70,
+  "description_snippet": "---\n\n### Report description\n\n\nANGLE BlitGL copySubTextureCPUReadback Controlled Heap Overflow via Unsynchronized PACK_ROW_LENGTH\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https"
+}

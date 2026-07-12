@@ -1,0 +1,75 @@
+{
+  "id": "495864169",
+  "url": "https://issues.chromium.org/issues/495864169",
+  "title": "heap-use-after-free in XNNPACK widen_fp16_accumulators",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P0",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "ly...@google.com",
+  "created_date": "2026-03-24T21:27:34+00:00",
+  "modified_date": "2026-07-10T05:05:38+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 43000.0,
+  "reward_amount_meta": 43000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74722898,
+      "filename": "asan_linux.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 99178,
+      "url": "https://issues.chromium.org/action/issues/495864169/attachments/74722898?download=true",
+      "local_path": "attachments/asan_linux.txt"
+    },
+    {
+      "id": 74722899,
+      "filename": "hwasan_android.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 194720,
+      "url": "https://issues.chromium.org/action/issues/495864169/attachments/74722899?download=true",
+      "local_path": "attachments/hwasan_android.txt"
+    },
+    {
+      "id": 74722900,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 2233,
+      "url": "https://issues.chromium.org/action/issues/495864169/attachments/74722900?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74722901,
+      "filename": "fix.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1504,
+      "url": "https://issues.chromium.org/action/issues/495864169/attachments/74722901?download=true",
+      "local_path": "attachments/fix.patch"
+    },
+    {
+      "id": 74722902,
+      "filename": "x86_fp16_bypass.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 670,
+      "url": "https://issues.chromium.org/action/issues/495864169/attachments/74722902?download=true",
+      "local_path": "attachments/x86_fp16_bypass.patch"
+    }
+  ],
+  "update_count": 129,
+  "description_snippet": "# VULNERABILITY DETAILS\n\nA heap-use-after-free vulnerability exists in XNNPACK's subgraph optimization phase when processing WebNN graphs.\n\nWhen XNNPACK optimizes subgraphs for FP16 inference, the `widen_fp16_accumulators` function is called to perform specific conversions. During this process, it c"
+}
