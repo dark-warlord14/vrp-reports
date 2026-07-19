@@ -1,0 +1,46 @@
+{
+  "id": "497896137",
+  "url": "https://issues.chromium.org/issues/497896137",
+  "title": "Integer overflow in ANGLE D3D11 compressed 3D texture deferred-init leads to heap OOB read in GPU process",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "sh...@google.com",
+  "created_date": "2026-03-30T19:56:18+00:00",
+  "modified_date": "2026-07-17T07:56:05+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74973813,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1107,
+      "url": "https://issues.chromium.org/action/issues/497896137/attachments/74973813?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74973814,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 14204,
+      "url": "https://issues.chromium.org/action/issues/497896137/attachments/74973814?download=true",
+      "local_path": "attachments/asan.txt"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "## Summary\n\nThe ANGLE D3D11 backend computes the zero-fill buffer size for block-compressed 3D textures using an unchecked 32-bit multiplication that does not account for block height, producing a value four times larger than the actual compressed image size. For sufficiently large textures the pro"
+}

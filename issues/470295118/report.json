@@ -1,0 +1,54 @@
+{
+  "id": "470295118",
+  "url": "https://issues.chromium.org/issues/470295118",
+  "title": "Blank Address Bar Spoofing on Chrome for iOS",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": "143.0.7499.151 (Official Build) stable (64-bit)",
+  "cve_ids": [],
+  "reporter": "sa...@gmail.com",
+  "assignee": "ga...@google.com",
+  "created_date": "2025-12-19T16:59:32+00:00",
+  "modified_date": "2026-07-14T08:00:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 71959983,
+      "filename": "POC_Blank_Address Bar_Chrome_iOS_2025-12-19 at 23.51.59.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1654827,
+      "url": "https://issues.chromium.org/action/issues/470295118/attachments/71959983?download=true",
+      "local_path": "attachments/POC_Blank_Address Bar_Chrome_iOS_2025-12-19 at 23.51.59.mp4"
+    },
+    {
+      "id": 71986895,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 3978,
+      "url": "https://issues.chromium.org/action/issues/470295118/attachments/71986895?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 73471714,
+      "filename": "Video 2026-02-16 at 10.49.53 PM.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1938965,
+      "url": "https://issues.chromium.org/action/issues/470295118/attachments/73471714?download=true",
+      "local_path": "attachments/Video 2026-02-16 at 10.49.53 PM.mp4"
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": "# Steps to reproduce the problem\n1. Open Chrome for iOS and visit this link: https://vxyoka.github.io/spoof/\n2. Click on Login Button\n3. You will notice blank address bar with fake contents.\n\n# Problem Description\n## Summary:\nA UI spoofing issue exists in Chrome for iOS where navigating to a crafted"
+}

@@ -1,0 +1,51 @@
+{
+  "id": "497159159",
+  "url": "https://issues.chromium.org/issues/497159159",
+  "title": "Integer overflow in ruy pack kernel offset leads to heap OOB write in the GPU process via WebNN quantized Gemm",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ju...@intel.com",
+  "created_date": "2026-03-29T03:25:08+00:00",
+  "modified_date": "2026-07-17T05:01:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74887040,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 2629,
+      "url": "https://issues.chromium.org/action/issues/497159159/attachments/74887040?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74905421,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 4042,
+      "url": "https://issues.chromium.org/action/issues/497159159/attachments/74905421?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 35,
+  "description_snippet": "# Integer overflow in ruy pack kernel offset leads to heap OOB write in the GPU process via WebNN quantized Gemm\n\n## Summary\n\nA malicious web page can crash the GPU process by constructing a WebNN graph whose quantized int8 Gemm has a contraction dimension large enough to overflow the `int` offset a"
+}

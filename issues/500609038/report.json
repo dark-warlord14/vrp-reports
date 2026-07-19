@@ -1,0 +1,57 @@
+{
+  "id": "500609038",
+  "url": "https://issues.chromium.org/issues/500609038",
+  "title": "heap-use-after-free in dawn::native::vulkan::BindGroupLayout::GetOrCreateSpecializedHandle",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Dawn",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "lo...@google.com",
+  "created_date": "2026-04-08T14:11:51+00:00",
+  "modified_date": "2026-07-18T08:02:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75295738,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 30083,
+      "url": "https://issues.chromium.org/action/issues/500609038/attachments/75295738?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 75310421,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 4169,
+      "url": "https://issues.chromium.org/action/issues/500609038/attachments/75310421?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75310422,
+      "filename": "poc.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 893,
+      "url": "https://issues.chromium.org/action/issues/500609038/attachments/75310422?download=true",
+      "local_path": "attachments/poc.patch"
+    }
+  ],
+  "update_count": 73,
+  "description_snippet": "# VULNERABILITY DETAILS\n\nWebGPU supports compiling compute pipelines asynchronously via the `createComputePipelineAsync` API. This spawns background task worker threads in `ThreadPoolForeg` to initialize the pipeline in the backend. During backend layout construction, `BindGroupLayout` leverages an"
+}

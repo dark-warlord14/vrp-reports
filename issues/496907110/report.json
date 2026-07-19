@@ -1,0 +1,105 @@
+{
+  "id": "496907110",
+  "url": "https://issues.chromium.org/issues/496907110",
+  "title": "OOB write in PDFium TIFF decoder via lossless JPEG data precision mismatch",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "PDFium",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2026-03-27T19:16:00+00:00",
+  "modified_date": "2026-07-15T07:57:39+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 50000.0,
+  "reward_amount_meta": 50000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74867116,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 28404,
+      "url": "https://issues.chromium.org/action/issues/496907110/attachments/74867116?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 74867117,
+      "filename": "gen_poc.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 8255,
+      "url": "https://issues.chromium.org/action/issues/496907110/attachments/74867117?download=true",
+      "local_path": "attachments/gen_poc.py"
+    },
+    {
+      "id": 74867118,
+      "filename": "poc.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 1219,
+      "url": "https://issues.chromium.org/action/issues/496907110/attachments/74867118?download=true",
+      "local_path": "attachments/poc.pdf"
+    },
+    {
+      "id": 74863468,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 28638,
+      "url": "https://issues.chromium.org/action/issues/496907110/attachments/74863468?download=true",
+      "local_path": "attachments/asan_74863468.txt"
+    },
+    {
+      "id": 75101132,
+      "filename": "exploit.pdf",
+      "mime_type": "application/pdf",
+      "size_bytes": 5210,
+      "url": "https://issues.chromium.org/action/issues/496907110/attachments/75101132?download=true",
+      "local_path": "attachments/exploit.pdf"
+    },
+    {
+      "id": 75064506,
+      "filename": "gen_exploit_pdf.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 8900,
+      "url": "https://issues.chromium.org/action/issues/496907110/attachments/75064506?download=true",
+      "local_path": "attachments/gen_exploit_pdf.py"
+    },
+    {
+      "id": 75101133,
+      "filename": "exploit_writeup.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 8443,
+      "url": "https://issues.chromium.org/action/issues/496907110/attachments/75101133?download=true",
+      "local_path": "attachments/exploit_writeup.md"
+    },
+    {
+      "id": 75074337,
+      "filename": "exp_gdb.png",
+      "mime_type": "image/png",
+      "size_bytes": 1525523,
+      "url": "https://issues.chromium.org/action/issues/496907110/attachments/75074337?download=true",
+      "local_path": "attachments/exp_gdb.png"
+    },
+    {
+      "id": 75101134,
+      "filename": "exp.png",
+      "mime_type": "image/png",
+      "size_bytes": 185473,
+      "url": "https://issues.chromium.org/action/issues/496907110/attachments/75101134?download=true",
+      "local_path": "attachments/exp.png"
+    }
+  ],
+  "update_count": 71,
+  "description_snippet": "## Summary\n\nA heap buffer overflow write exists in PDFium's TIFF image decoder when processing a TIFF file that uses JPEG compression with a lossless JPEG codestream (SOF3) whose data precision is less than 8 bits. The bundled libtiff calculates the strip buffer size based on the TIFF BitsPerSample"
+}

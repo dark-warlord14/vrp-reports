@@ -1,0 +1,62 @@
+{
+  "id": "489369089",
+  "url": "https://issues.chromium.org/issues/489369089",
+  "title": "Integer truncation in ANGLE D3D11 VertexDataManager leads to heap OOB read from compromised renderer on Windows",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "am...@google.com",
+  "created_date": "2026-03-04T07:58:59+00:00",
+  "modified_date": "2026-07-17T07:56:47+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73965274,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1877,
+      "url": "https://issues.chromium.org/action/issues/489369089/attachments/73965274?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 73965275,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1964,
+      "url": "https://issues.chromium.org/action/issues/489369089/attachments/73965275?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 73965276,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 14093,
+      "url": "https://issues.chromium.org/action/issues/489369089/attachments/73965276?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 73965277,
+      "filename": "readme.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 1870,
+      "url": "https://issues.chromium.org/action/issues/489369089/attachments/73965277?download=true",
+      "local_path": "attachments/readme.md"
+    }
+  ],
+  "update_count": 36,
+  "description_snippet": "# Integer truncation in ANGLE D3D11 VertexDataManager leads to heap OOB read from compromised renderer on Windows\n\n## Summary\n\nANGLE's D3D11 backend truncates a 64-bit vertex attribute offset to a 32-bit signed integer when performing CPU-side vertex format conversion. When a compromised renderer su"
+}

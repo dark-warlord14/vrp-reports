@@ -1,0 +1,59 @@
+{
+  "id": "495996858",
+  "url": "https://issues.chromium.org/issues/495996858",
+  "title": "UAF in WebRTC LibaomAv1Encoder sync issues triggered by frequent resolution changes",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Media>Codecs",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "ma...@google.com",
+  "created_date": "2026-03-25T14:21:45+00:00",
+  "modified_date": "2026-07-15T07:58:17+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74742237,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 21581,
+      "url": "https://issues.chromium.org/action/issues/495996858/attachments/74742237?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 74742238,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 5256,
+      "url": "https://issues.chromium.org/action/issues/495996858/attachments/74742238?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74778674,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 26866,
+      "url": "https://issues.chromium.org/action/issues/495996858/attachments/74778674?download=true",
+      "local_path": "attachments/asan_74778674.txt"
+    }
+  ],
+  "update_count": 94,
+  "description_snippet": "### Summary\n\n`VideoFramePool::PoolImpl::CreateFrame` drops non-matching pooled backing allocations while AV1 encoder row-worker threads still hold raw pointers into the freed memory, leading to the UAF in webrtc.\n\n### Details\n\nWhen the WebRTC encoder needs a mapped I420 buffer, the call chain `Conve"
+}

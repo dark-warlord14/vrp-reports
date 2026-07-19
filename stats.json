@@ -1,7 +1,7 @@
 {
-  "total_reports": 4583,
-  "total_bounty": 26168671.7,
-  "avg_bounty": 5713.68,
+  "total_reports": 4608,
+  "total_bounty": 26386671.7,
+  "avg_bounty": 5730.0,
   "by_year": {
     "2009": {
       "count": 3,
@@ -68,46 +68,46 @@
       "total_bounty": 3445981.0
     },
     "2025": {
-      "count": 280,
-      "total_bounty": 3407500.0
+      "count": 282,
+      "total_bounty": 3411500.0
     },
     "2026": {
-      "count": 243,
-      "total_bounty": 3362000.0
+      "count": 266,
+      "total_bounty": 3576000.0
     }
   },
   "by_severity": {
-    "S3-Low": 3988,
-    "S4-Minimal": 523,
+    "S3-Low": 4011,
+    "S4-Minimal": 525,
     "Unknown": 64,
     "S1-High": 6,
     "S0-Critical": 1,
     "S2-Medium": 1
   },
   "by_status": {
-    "Assigned": 3600,
-    "Accepted": 712,
-    "New": 131,
-    "Fixed": 90,
+    "Assigned": 3616,
+    "Accepted": 718,
+    "New": 133,
+    "Fixed": 91,
     "Verified": 49,
     "Unknown": 1
   },
   "by_component": {
-    "Blink": 2035,
-    "Internals": 991,
-    "UI": 612,
+    "Blink": 2041,
+    "Internals": 1004,
+    "UI": 616,
     "Unknown": 351,
     "Platform": 264,
     "Blink, Blink": 80,
     "Mobile": 57,
     "Internals, Internals": 41,
-    "Dawn": 39,
+    "Dawn": 40,
     "OS": 16,
     "Enterprise": 12,
     "Blink, Internals, Internals": 12,
     "Blink, Internals": 9,
+    "PDFium": 7,
     "Speed": 7,
-    "PDFium": 6,
     "Infra": 6,
     "Privacy": 5,
     "Services (Use Subcomponents)": 5,
@@ -125,23 +125,23 @@
     },
     {
       "range": "$1K-3K",
-      "count": 1506
+      "count": 1511
     },
     {
       "range": "$3K-5K",
-      "count": 713
+      "count": 719
     },
     {
       "range": "$5K-10K",
-      "count": 1017
+      "count": 1022
     },
     {
       "range": "$10K-20K",
-      "count": 435
+      "count": 442
     },
     {
       "range": "$20K+",
-      "count": 298
+      "count": 300
     }
   ],
   "top_bounties": [

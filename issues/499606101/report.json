@@ -1,0 +1,51 @@
+{
+  "id": "499606101",
+  "url": "https://issues.chromium.org/issues/499606101",
+  "title": "OOB Write in V8 TryMatchLoadStoreShift on Mac arm64 (OOB read on non-Mac arm64)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Turboshaft",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "ml...@chromium.org",
+  "created_date": "2026-04-05T05:41:46+00:00",
+  "modified_date": "2026-07-16T08:30:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75176441,
+      "filename": "log.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1884,
+      "url": "https://issues.chromium.org/action/issues/499606101/attachments/75176441?download=true",
+      "local_path": "attachments/log.txt"
+    },
+    {
+      "id": 75176442,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 517,
+      "url": "https://issues.chromium.org/action/issues/499606101/attachments/75176442?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 105,
+  "description_snippet": "### Summary\n\nArm64 Wasm memory accesses can miscompile 32-bit shifted indices in [`TryMatchLoadStoreShift`](https://source.chromium.org/chromium/chromium/src/+/main:v8/src/compiler/backend/arm64/instruction-selector-arm64.cc;l=578-606). When the index has the shape `ChangeUint32ToUint64(ShiftLeft(Wo"
+}

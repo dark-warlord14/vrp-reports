@@ -1,0 +1,56 @@
+{
+  "id": "494764371",
+  "url": "https://issues.chromium.org/issues/494764371",
+  "title": "Unlocked MetafilePlayer access in OOP SpoolDocument leads to heap-use-after-free in the browser process",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Printing",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2026-03-21T14:57:49+00:00",
+  "modified_date": "2026-07-14T08:00:42+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74599112,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 26898,
+      "url": "https://issues.chromium.org/action/issues/494764371/attachments/74599112?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 74599113,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 4007,
+      "url": "https://issues.chromium.org/action/issues/494764371/attachments/74599113?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 74599114,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 437,
+      "url": "https://issues.chromium.org/action/issues/494764371/attachments/74599114?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 38,
+  "description_snippet": "# Unlocked MetafilePlayer access in OOP SpoolDocument leads to heap-use-after-free in the browser process\n\n## Summary\n\nOn Linux and macOS, where out-of-process (OOP) printing is enabled by default, the browser-process worker thread in `PrintJobWorkerOop::SpoolDocument` reads a `MetafilePlayer` point"
+}

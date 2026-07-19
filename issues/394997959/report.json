@@ -1,0 +1,70 @@
+{
+  "id": "394997959",
+  "url": "https://issues.chromium.org/issues/394997959",
+  "title": " iOS Chrome download origin spoof: spoofing downloaded file as it's from any legitimate site via data: URI",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pr...@gmail.com",
+  "assignee": "ol...@google.com",
+  "created_date": "2025-02-07T11:28:00+00:00",
+  "modified_date": "2026-07-17T07:56:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 62720571,
+      "filename": "ioschrome_data_spoof.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2322244,
+      "url": "https://issues.chromium.org/action/issues/394997959/attachments/62720571?download=true",
+      "local_path": "attachments/ioschrome_data_spoof.mp4"
+    },
+    {
+      "id": 62720572,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/394997959/attachments/62720572?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62720573,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/394997959/attachments/62720573?download=true",
+      "local_path": null
+    },
+    {
+      "id": 62721950,
+      "filename": "1337.php",
+      "mime_type": "application/x-httpd-php",
+      "size_bytes": 370,
+      "url": "https://issues.chromium.org/action/issues/394997959/attachments/62721950?download=true",
+      "local_path": "attachments/1337.php"
+    },
+    {
+      "id": 62720574,
+      "filename": "ioschromedata.html",
+      "mime_type": "text/html",
+      "size_bytes": 435,
+      "url": "https://issues.chromium.org/action/issues/394997959/attachments/62720574?download=true",
+      "local_path": "attachments/ioschromedata.html"
+    }
+  ],
+  "update_count": 58,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

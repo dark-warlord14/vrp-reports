@@ -1,0 +1,94 @@
+{
+  "id": "490251701",
+  "url": "https://issues.chromium.org/issues/490251701",
+  "title": "Use-After-Free in DCOMPSurfaceRegistry due to data race on unsynchronized flat_map access in GPU Process",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>Video",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "xh...@chromium.org",
+  "created_date": "2026-03-06T08:31:19+00:00",
+  "modified_date": "2026-07-17T07:56:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74046063,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1995,
+      "url": "https://issues.chromium.org/action/issues/490251701/attachments/74046063?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 74046064,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1678,
+      "url": "https://issues.chromium.org/action/issues/490251701/attachments/74046064?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74046065,
+      "filename": "bear-vp9.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 67504,
+      "url": "https://issues.chromium.org/action/issues/490251701/attachments/74046065?download=true",
+      "local_path": "attachments/bear-vp9.webm"
+    },
+    {
+      "id": 74167886,
+      "filename": "sleep.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 814,
+      "url": "https://issues.chromium.org/action/issues/490251701/attachments/74167886?download=true",
+      "local_path": "attachments/sleep.diff"
+    },
+    {
+      "id": 74174646,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1678,
+      "url": "https://issues.chromium.org/action/issues/490251701/attachments/74174646?download=true",
+      "local_path": "attachments/poc_74174646.html"
+    },
+    {
+      "id": 74167887,
+      "filename": "bear-vp9.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 67504,
+      "url": "https://issues.chromium.org/action/issues/490251701/attachments/74167887?download=true",
+      "local_path": "attachments/bear-vp9_74167887.webm"
+    },
+    {
+      "id": 74179575,
+      "filename": "asan-uaf.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 21282,
+      "url": "https://issues.chromium.org/action/issues/490251701/attachments/74179575?download=true",
+      "local_path": "attachments/asan-uaf.txt"
+    },
+    {
+      "id": 74179576,
+      "filename": "asan-oob.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 15799,
+      "url": "https://issues.chromium.org/action/issues/490251701/attachments/74179576?download=true",
+      "local_path": "attachments/asan-oob.txt"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "# Data race in DCOMPSurfaceRegistry leads to GPU process memory corruption via concurrent flat_map access\n\n## Summary\n\nThe `gl::DCOMPSurfaceRegistry` singleton in the GPU process stores Windows Direct Composition surface handles in a `base::flat_map` that is accessed concurrently from two different"
+}

@@ -1,0 +1,78 @@
+{
+  "id": "493315759",
+  "url": "https://issues.chromium.org/issues/493315759",
+  "title": "DCOMPSurfaceRegistry race in Media Foundation DirectComposition",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>GPU>Internals",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ke...@gmail.com",
+  "assignee": "jo...@chromium.org",
+  "created_date": "2026-03-17T18:02:47+00:00",
+  "modified_date": "2026-07-17T07:57:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74408498,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 3274,
+      "url": "https://issues.chromium.org/action/issues/493315759/attachments/74408498?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 74408499,
+      "filename": "red-a500hz.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 131366,
+      "url": "https://issues.chromium.org/action/issues/493315759/attachments/74408499?download=true",
+      "local_path": "attachments/red-a500hz.webm"
+    },
+    {
+      "id": 74408500,
+      "filename": "dcomp_race_test_v44.html",
+      "mime_type": "text/html",
+      "size_bytes": 24478,
+      "url": "https://issues.chromium.org/action/issues/493315759/attachments/74408500?download=true",
+      "local_path": "attachments/dcomp_race_test_v44.html"
+    },
+    {
+      "id": 74408501,
+      "filename": "asanuaf.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 22105,
+      "url": "https://issues.chromium.org/action/issues/493315759/attachments/74408501?download=true",
+      "local_path": "attachments/asanuaf.txt"
+    },
+    {
+      "id": 74408502,
+      "filename": "asanheapbof.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 22566,
+      "url": "https://issues.chromium.org/action/issues/493315759/attachments/74408502?download=true",
+      "local_path": "attachments/asanheapbof.txt"
+    },
+    {
+      "id": 74408503,
+      "filename": "asancont.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 20753,
+      "url": "https://issues.chromium.org/action/issues/493315759/attachments/74408503?download=true",
+      "local_path": "attachments/asancont.txt"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "## Vulnerability Details\n\n`gl::DCOMPSurfaceRegistry` is a process-wide singleton in the GPU process that maps `UnguessableToken` to DCOMP surface handles via a `base::flat_map`.\n\n`RegisterDCOMPSurfaceHandle` and `UnregisterDCOMPSurfaceHandle` are called on the GPU IO thread via `GpuServiceImpl`.  \nW"
+}

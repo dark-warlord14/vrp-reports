@@ -1,0 +1,46 @@
+{
+  "id": "495262779",
+  "url": "https://issues.chromium.org/issues/495262779",
+  "title": "Security: heap-use-after-free in gpu::SyncToken::operator=(gpu::SyncToken const&)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>Internals",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": "146.0.0.0",
+  "cve_ids": [],
+  "reporter": "zh...@gmail.com",
+  "assignee": "il...@chromium.org",
+  "created_date": "2026-03-23T12:35:23+00:00",
+  "modified_date": "2026-07-15T07:58:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74629154,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 28016,
+      "url": "https://issues.chromium.org/action/issues/495262779/attachments/74629154?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 74629155,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 4107,
+      "url": "https://issues.chromium.org/action/issues/495262779/attachments/74629155?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "# Steps to reproduce the problem\n1. compile arm mac asan chromium:\n```\ngit checkout da5e37a96774daad7538cb4cf11761571080d2b3 \ngn gen out/asan-0323 --args=\"is_component_build=true is_debug=false is_asan=true symbol_level=2 dcheck_always_on=false treat_warnings_as_errors=false\"\n```\n2. run asan chromiu"
+}
