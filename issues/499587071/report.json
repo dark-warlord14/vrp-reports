@@ -1,0 +1,111 @@
+{
+  "id": "499587071",
+  "url": "https://issues.chromium.org/issues/499587071",
+  "title": "Chromium crashes during xdg-desktop-portal screencast on Wayland KDE (Slack screen share)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Media>ScreenCapture",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": "146.0.7680.177 (Official Build) Arch Linux (64-bit) ",
+  "cve_ids": [],
+  "reporter": "bo...@gmail.com",
+  "assignee": "gr...@gmail.com",
+  "created_date": "2026-04-05T17:26:55+00:00",
+  "modified_date": "2026-07-24T08:01:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75187103,
+      "filename": "chrome_debug.log",
+      "mime_type": "text/plain",
+      "size_bytes": 2365459,
+      "url": "https://issues.chromium.org/action/issues/499587071/attachments/75187103?download=true",
+      "local_path": null
+    },
+    {
+      "id": 75183594,
+      "filename": "about-gpu-2026-04-05T17-49-42-838Z.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 39919,
+      "url": "https://issues.chromium.org/action/issues/499587071/attachments/75183594?download=true",
+      "local_path": null
+    },
+    {
+      "id": 75225141,
+      "filename": "499587071-M146.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 23553067,
+      "url": "https://issues.chromium.org/action/issues/499587071/attachments/75225141?download=true",
+      "local_path": "attachments/499587071-M146.webm"
+    },
+    {
+      "id": 75225211,
+      "filename": "Screencast_20260406_201722.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 3348331,
+      "url": "https://issues.chromium.org/action/issues/499587071/attachments/75225211?download=true",
+      "local_path": "attachments/Screencast_20260406_201722.webm"
+    },
+    {
+      "id": 75225212,
+      "filename": "chrome-version.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 36458,
+      "url": "https://issues.chromium.org/action/issues/499587071/attachments/75225212?download=true",
+      "local_path": "attachments/chrome-version.txt"
+    },
+    {
+      "id": 75231605,
+      "filename": "chrome-crash-dbus2.log",
+      "mime_type": "text/plain",
+      "size_bytes": 394060,
+      "url": "https://issues.chromium.org/action/issues/499587071/attachments/75231605?download=true",
+      "local_path": "attachments/chrome-crash-dbus2.log"
+    },
+    {
+      "id": 75247925,
+      "filename": "repro.html",
+      "mime_type": "text/html",
+      "size_bytes": 4216,
+      "url": "https://issues.chromium.org/action/issues/499587071/attachments/75247925?download=true",
+      "local_path": "attachments/repro.html"
+    },
+    {
+      "id": 75241288,
+      "filename": "core.chromium.1000.bd96f1fff7634c26a511dbe0327f3205.1683929.1775436052000000.zst",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 18311573,
+      "url": "https://issues.chromium.org/action/issues/499587071/attachments/75241288?download=true",
+      "local_path": "attachments/core.chromium.1000.bd96f1fff7634c26a511dbe0327f3205.1683929.1775436052000000.zst"
+    },
+    {
+      "id": 75369796,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 24668,
+      "url": "https://issues.chromium.org/action/issues/499587071/attachments/75369796?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 75370493,
+      "filename": "repro-asan.html",
+      "mime_type": "text/html",
+      "size_bytes": 3015,
+      "url": "https://issues.chromium.org/action/issues/499587071/attachments/75370493?download=true",
+      "local_path": "attachments/repro-asan.html"
+    }
+  ],
+  "update_count": 68,
+  "description_snippet": "# Steps to reproduce the problem\n1. Navigate to slack.com\n2. Join a huddle & share screen\n3. xdg-desktop-portal popup opens, choose one of the screens to share\n4. Confirm in slack you want to share that screen\n5. Repeat the above 1-10 times: The crash does not happen every time\n6. See the shared scr"
+}

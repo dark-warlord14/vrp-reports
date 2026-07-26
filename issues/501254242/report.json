@@ -1,0 +1,52 @@
+{
+  "id": "501254242",
+  "url": "https://issues.chromium.org/issues/501254242",
+  "title": "HLS key redirect bypasses origin restriction",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Media",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "oj...@gmail.com",
+  "assignee": "tm...@chromium.org",
+  "created_date": "2026-04-10T03:36:18+00:00",
+  "modified_date": "2026-07-24T08:00:03+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75385319,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2267881,
+      "url": "https://issues.chromium.org/action/issues/501254242/attachments/75385319?download=true",
+      "local_path": "attachments/poc.mp4"
+    },
+    {
+      "id": 75385320,
+      "filename": "poc.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 2794,
+      "url": "https://issues.chromium.org/action/issues/501254242/attachments/75385320?download=true",
+      "local_path": "attachments/poc.py"
+    },
+    {
+      "id": 75385321,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 589,
+      "url": "https://issues.chromium.org/action/issues/501254242/attachments/75385321?download=true",
+      "local_path": "attachments/index.html"
+    }
+  ],
+  "update_count": 23,
+  "description_snippet": "---\n\n### Report description\n\n\nHLS key redirect bypasses origin restriction\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/rules/5745167867576320/"
+}

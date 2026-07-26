@@ -1,0 +1,29 @@
+{
+  "id": "385662278",
+  "url": "https://issues.chromium.org/issues/385662278",
+  "title": "[Android] Security: Chrome Page Preview Bypass SameSite Strict Cookies",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Preload>LinkPreview, UI>Browser>Mobile>PreviewTab",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ja...@gmail.com",
+  "assignee": "ji...@chromium.org",
+  "created_date": "2024-12-23T22:32:03+00:00",
+  "modified_date": "2026-07-25T07:56:10+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 59,
+  "description_snippet": "This is a copy of https://crbug.com/385260469 to track the same problem in Chrome on Android's Preview Page feature.\n\n---\n\n### Report description\n\n\nSecurity: Chrome Link Preview Bypass SameSite Strict Cookies\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP"
+}

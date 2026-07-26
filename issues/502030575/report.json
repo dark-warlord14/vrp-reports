@@ -1,0 +1,43 @@
+{
+  "id": "502030575",
+  "url": "https://issues.chromium.org/issues/502030575",
+  "title": "V8: Incorrect Address Computation in Int64LoweringReducer via IncreaseOffset element_scale Mishandling",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Turboshaft, Blink>JavaScript>WebAssembly",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ca...@gmail.com",
+  "assignee": "ml...@chromium.org",
+  "created_date": "2026-04-13T10:58:26+00:00",
+  "modified_date": "2026-07-24T18:58:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "reward_amount_meta": 8000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75474289,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2507,
+      "url": "https://issues.chromium.org/action/issues/502030575/attachments/75474289?download=true",
+      "local_path": "attachments/poc.js"
+    }
+  ],
+  "update_count": 68,
+  "description_snippet": "## Summary\n\nA bug in Turboshaft's `Int64LoweringReducer::IncreaseOffset` on 32-bit platforms (ia32, ARM) causes incorrect address computation when splitting 64-bit loads into two 32-bit loads. When `element_scale > 0` and the offset+4 wraps to `INT32_MIN` for tagged-base loads, the fallback path add"
+}

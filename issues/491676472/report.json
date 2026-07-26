@@ -1,0 +1,59 @@
+{
+  "id": "491676472",
+  "url": "https://issues.chromium.org/issues/491676472",
+  "title": "RenderFrameHostImpl::RunJavaScriptDialog() missing browser-side allow-modals sandbox flag check",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>HTML>Dialog, Blink>SecurityFeature>IFrameSandbox, Internals>Sandbox>SiteIsolation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "os...@gmail.com",
+  "assignee": "av...@chromium.org",
+  "created_date": "2026-03-11T06:59:03+00:00",
+  "modified_date": "2026-07-24T08:00:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74206801,
+      "filename": "serve.py",
+      "mime_type": "text/x-python-script",
+      "size_bytes": 448,
+      "url": "https://issues.chromium.org/action/issues/491676472/attachments/74206801?download=true",
+      "local_path": "attachments/serve.py"
+    },
+    {
+      "id": 74208772,
+      "filename": "poc_patch.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3149,
+      "url": "https://issues.chromium.org/action/issues/491676472/attachments/74208772?download=true",
+      "local_path": "attachments/poc_patch.diff"
+    },
+    {
+      "id": 74208773,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 3864,
+      "url": "https://issues.chromium.org/action/issues/491676472/attachments/74208773?download=true",
+      "local_path": "attachments/index.html"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "---\n\n### Report description\n\n\nRenderFrameHostImpl::RunJavaScriptDialog() missing browser-side allow-modals sandbox flag check\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://"
+}

@@ -1,0 +1,91 @@
+{
+  "id": "499717570",
+  "url": "https://issues.chromium.org/issues/499717570",
+  "title": "V8 Sandbox Bypass:TypedArray.prototype.set ElementsKind TOCTOU",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "V8 version 14.9.0 (candidate)",
+  "cve_ids": [],
+  "reporter": "gr...@gmail.com",
+  "assignee": "ar...@google.com",
+  "created_date": "2026-04-05T17:55:28+00:00",
+  "modified_date": "2026-07-23T07:59:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75186286,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1448,
+      "url": "https://issues.chromium.org/action/issues/499717570/attachments/75186286?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 75186287,
+      "filename": "crash.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3108,
+      "url": "https://issues.chromium.org/action/issues/499717570/attachments/75186287?download=true",
+      "local_path": "attachments/crash.txt"
+    },
+    {
+      "id": 75186288,
+      "filename": "fix.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1509,
+      "url": "https://issues.chromium.org/action/issues/499717570/attachments/75186288?download=true",
+      "local_path": "attachments/fix.diff"
+    },
+    {
+      "id": 75186289,
+      "filename": "oob-controlled-addr.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1715,
+      "url": "https://issues.chromium.org/action/issues/499717570/attachments/75186289?download=true",
+      "local_path": "attachments/oob-controlled-addr.js"
+    },
+    {
+      "id": 75297761,
+      "filename": "test.sh",
+      "mime_type": "text/x-sh",
+      "size_bytes": 3175,
+      "url": "https://issues.chromium.org/action/issues/499717570/attachments/75297761?download=true",
+      "local_path": "attachments/test.sh"
+    },
+    {
+      "id": 75310426,
+      "filename": "shellcode.sh",
+      "mime_type": "text/x-sh",
+      "size_bytes": 6892,
+      "url": "https://issues.chromium.org/action/issues/499717570/attachments/75310426?download=true",
+      "local_path": "attachments/shellcode.sh"
+    },
+    {
+      "id": 78827974,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 6095,
+      "url": "https://issues.chromium.org/action/issues/499717570/attachments/78827974?download=true",
+      "local_path": "attachments/poc_78827974.js"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "# Steps to reproduce the problem\n1. Build d8 for android (arm64)    \n``` \n//The test commit is 56e2ad9bc14b082cf40252f99d1217bd477a0398 (Fri Apr 3 00:19:11 2026)\ntarget_os = \"android\"\ntarget_cpu = \"arm64\"\nv8_enable_sandbox = true\nv8_enable_memory_corruption_api = true\nis_debug = false\nis_component_b"
+}

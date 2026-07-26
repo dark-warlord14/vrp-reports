@@ -1,0 +1,39 @@
+{
+  "id": "494352590",
+  "url": "https://issues.chromium.org/issues/494352590",
+  "title": "Heap UAF in Blink OffscreenCanvas",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Mojo",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sh...@gmail.com",
+  "assignee": "jp...@chromium.org",
+  "created_date": "2026-03-20T02:32:06+00:00",
+  "modified_date": "2026-07-23T07:59:11+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74543509,
+      "filename": "poc_standalone.html",
+      "mime_type": "text/html",
+      "size_bytes": 8857,
+      "url": "https://issues.chromium.org/action/issues/494352590/attachments/74543509?download=true",
+      "local_path": "attachments/poc_standalone.html"
+    }
+  ],
+  "update_count": 79,
+  "description_snippet": "## VULNERABILITY DETAILS\nA heap-use-after-free vulnerability exists in Chromium's Blink engine, specifically within the `OffscreenCanvas` component (`core` and `modules`). The crash triggers at `mojo::Handle::is_valid()` via `blink::CanvasResourceDispatcher::OnBeginFrame`. \n\n```\n==================="
+}

@@ -1,0 +1,47 @@
+{
+  "id": "488613135",
+  "url": "https://issues.chromium.org/issues/488613135",
+  "title": "Use-after-free in Dawn wire server buffer map callback due to spontaneous callback race condition",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Dawn",
+  "os_platforms": [
+    "Mac",
+    "iOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "lo...@google.com",
+  "created_date": "2026-03-01T04:44:42+00:00",
+  "modified_date": "2026-06-19T07:56:08+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 16000.0,
+  "reward_amount_meta": 16000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73857571,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1159,
+      "url": "https://issues.chromium.org/action/issues/488613135/attachments/73857571?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 73857572,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 3511,
+      "url": "https://issues.chromium.org/action/issues/488613135/attachments/73857572?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 102,
+  "description_snippet": "## Summary\n\nWhen Dawn's spontaneous wire server mode is enabled (the default on platforms where WebGPU is active), the GPU process's wire server processes incoming commands on the scheduler thread without holding the server mutex, while asynchronous callbacks from GPU completion handlers fire on se"
+}

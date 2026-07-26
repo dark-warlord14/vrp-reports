@@ -1,7 +1,7 @@
 {
-  "total_reports": 4608,
-  "total_bounty": 26386671.7,
-  "avg_bounty": 5730.0,
+  "total_reports": 4640,
+  "total_bounty": 26867671.7,
+  "avg_bounty": 5794.19,
   "by_year": {
     "2009": {
       "count": 3,
@@ -64,44 +64,44 @@
       "total_bounty": 2748837.0
     },
     "2024": {
-      "count": 380,
-      "total_bounty": 3445981.0
+      "count": 381,
+      "total_bounty": 3447981.0
     },
     "2025": {
       "count": 282,
       "total_bounty": 3411500.0
     },
     "2026": {
-      "count": 266,
-      "total_bounty": 3576000.0
+      "count": 297,
+      "total_bounty": 4055000.0
     }
   },
   "by_severity": {
-    "S3-Low": 4011,
-    "S4-Minimal": 525,
+    "S3-Low": 4042,
+    "S4-Minimal": 526,
     "Unknown": 64,
     "S1-High": 6,
     "S0-Critical": 1,
     "S2-Medium": 1
   },
   "by_status": {
-    "Assigned": 3616,
-    "Accepted": 718,
-    "New": 133,
-    "Fixed": 91,
-    "Verified": 49,
+    "Assigned": 3631,
+    "Accepted": 726,
+    "New": 138,
+    "Fixed": 93,
+    "Verified": 51,
     "Unknown": 1
   },
   "by_component": {
-    "Blink": 2041,
-    "Internals": 1004,
-    "UI": 616,
+    "Blink": 2059,
+    "Internals": 1013,
+    "UI": 617,
     "Unknown": 351,
-    "Platform": 264,
+    "Platform": 265,
     "Blink, Blink": 80,
     "Mobile": 57,
+    "Dawn": 43,
     "Internals, Internals": 41,
-    "Dawn": 40,
     "OS": 16,
     "Enterprise": 12,
     "Blink, Internals, Internals": 12,
@@ -125,23 +125,23 @@
     },
     {
       "range": "$1K-3K",
-      "count": 1511
+      "count": 1516
     },
     {
       "range": "$3K-5K",
-      "count": 719
+      "count": 726
     },
     {
       "range": "$5K-10K",
-      "count": 1022
+      "count": 1029
     },
     {
       "range": "$10K-20K",
-      "count": 442
+      "count": 446
     },
     {
       "range": "$20K+",
-      "count": 300
+      "count": 309
     }
   ],
   "top_bounties": [
@@ -279,10 +279,10 @@
       "year": 2012
     },
     {
-      "id": "486657483",
-      "title": "Incorrect Maglev assumption leading to SIGSEGV ",
+      "id": "500880819",
+      "title": "Type confusion in BuildCheckSmi constant folding in V8/Maglev",
       "bounty_amount": 55000.0,
-      "severity": "S4-Minimal",
+      "severity": "S3-Low",
       "year": 2026
     }
   ]

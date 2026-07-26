@@ -1,0 +1,67 @@
+{
+  "id": "493957495",
+  "url": "https://issues.chromium.org/issues/493957495",
+  "title": "DCHECK-only validation of WebRTC APM output buffer size leads to heap buffer overflow from compromised renderer",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>WebRTC",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "sa...@chromium.org",
+  "created_date": "2026-03-19T05:16:19+00:00",
+  "modified_date": "2026-07-23T07:59:32+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74493864,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 894,
+      "url": "https://issues.chromium.org/action/issues/493957495/attachments/74493864?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74493865,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 33571,
+      "url": "https://issues.chromium.org/action/issues/493957495/attachments/74493865?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 74493866,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1086,
+      "url": "https://issues.chromium.org/action/issues/493957495/attachments/74493866?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 74537147,
+      "filename": "bug_493957495.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 28027,
+      "url": "https://issues.chromium.org/action/issues/493957495/attachments/74537147?download=true",
+      "local_path": "attachments/bug_493957495.txt"
+    }
+  ],
+  "update_count": 76,
+  "description_snippet": "# DCHECK-only validation of WebRTC APM output buffer size leads to heap buffer overflow from compromised renderer\n\n## Summary\n\nA compromised renderer can cause a heap buffer overflow in the audio service process by sending crafted `AudioParameters` through the `blink.mojom.RendererAudioInputStreamFa"
+}

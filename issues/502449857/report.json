@@ -1,0 +1,75 @@
+{
+  "id": "502449857",
+  "url": "https://issues.chromium.org/issues/502449857",
+  "title": "Security: Heap-use-after-free in CastActivityManager::FindActivityForSessionJoin",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Internals>Cast",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "146.0.0.0",
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "mu...@google.com",
+  "created_date": "2026-04-14T10:44:24+00:00",
+  "modified_date": "2026-07-25T07:56:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75518910,
+      "filename": "fake_cast.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 2715,
+      "url": "https://issues.chromium.org/action/issues/502449857/attachments/75518910?download=true",
+      "local_path": "attachments/fake_cast.py"
+    },
+    {
+      "id": 75518911,
+      "filename": "fake_castd.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 10641,
+      "url": "https://issues.chromium.org/action/issues/502449857/attachments/75518911?download=true",
+      "local_path": "attachments/fake_castd.py"
+    },
+    {
+      "id": 75518912,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 791,
+      "url": "https://issues.chromium.org/action/issues/502449857/attachments/75518912?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75518913,
+      "filename": "cdp_trigger.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 5369,
+      "url": "https://issues.chromium.org/action/issues/502449857/attachments/75518913?download=true",
+      "local_path": "attachments/cdp_trigger.py"
+    },
+    {
+      "id": 75518914,
+      "filename": "change.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 4027,
+      "url": "https://issues.chromium.org/action/issues/502449857/attachments/75518914?download=true",
+      "local_path": "attachments/change.txt"
+    }
+  ],
+  "update_count": 69,
+  "description_snippet": "# Steps to reproduce the problem\n1. Apply `change.txt` to Chromium and compile with ASAN enabled.\n2. Start the mDNS advertisement: python3 fake_cast.py\n3. Start the fake Cast receiver: python3 fake_castd.py\n4. Launch Chrome: ./out/asan/chrome  --remote-debugging-port=9222 --user-data-dir=/tmp/noexis"
+}

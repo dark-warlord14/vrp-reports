@@ -1,0 +1,73 @@
+{
+  "id": "494740162",
+  "url": "https://issues.chromium.org/issues/494740162",
+  "title": "Use-after-free of std::list iterator in FormFiller::UndoAutofill via duplicate FieldGlobalIds",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>Autofill",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "pi...@google.com",
+  "created_date": "2026-03-21T08:24:58+00:00",
+  "modified_date": "2026-07-22T07:59:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74576350,
+      "filename": "asan-mac.log",
+      "mime_type": "text/plain",
+      "size_bytes": 38494,
+      "url": "https://issues.chromium.org/action/issues/494740162/attachments/74576350?download=true",
+      "local_path": "attachments/asan-mac.log"
+    },
+    {
+      "id": 74576351,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 611,
+      "url": "https://issues.chromium.org/action/issues/494740162/attachments/74576351?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74576352,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1099,
+      "url": "https://issues.chromium.org/action/issues/494740162/attachments/74576352?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 74599101,
+      "filename": "poc_demo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4201675,
+      "url": "https://issues.chromium.org/action/issues/494740162/attachments/74599101?download=true",
+      "local_path": "attachments/poc_demo.mp4"
+    },
+    {
+      "id": 74720194,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 42304,
+      "url": "https://issues.chromium.org/action/issues/494740162/attachments/74720194?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "# Use-after-free of std::list iterator in FormFiller::UndoAutofill via duplicate FieldGlobalIds\n\n## Summary\n\nA use-after-free in the browser process can be triggered by a compromised renderer that sends a FormData containing duplicate FieldRendererIds through the `mojom::AutofillDriver::AskForValues"
+}

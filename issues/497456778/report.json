@@ -1,0 +1,59 @@
+{
+  "id": "497456778",
+  "url": "https://issues.chromium.org/issues/497456778",
+  "title": "WebML Double-Free Via XNNPACK LUT-Fusion",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "h2...@gmail.com",
+  "assignee": "we...@intel.com",
+  "created_date": "2026-03-29T21:47:27+00:00",
+  "modified_date": "2026-07-25T07:55:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 43000.0,
+  "reward_amount_meta": 43000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74918470,
+      "filename": "asan_backtrace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 214607,
+      "url": "https://issues.chromium.org/action/issues/497456778/attachments/74918470?download=true",
+      "local_path": "attachments/asan_backtrace.txt"
+    },
+    {
+      "id": 74918471,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1759,
+      "url": "https://issues.chromium.org/action/issues/497456778/attachments/74918471?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75120188,
+      "filename": "run-chrome-asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 50952,
+      "url": "https://issues.chromium.org/action/issues/497456778/attachments/75120188?download=true",
+      "local_path": "attachments/run-chrome-asan.log"
+    }
+  ],
+  "update_count": 34,
+  "description_snippet": "# VULNERABILITY DETAILS\n\nThis is a double-free in XNNPACK's quantized unary LUT-fusion optimization, reachable through Chromium's WebNN CPU backend.\n\nThe optimization becomes incorrect when a temporary LUT-building subgraph copies a previously generated LUT value that still carries `XNN_VALUE_FLAG_N"
+}

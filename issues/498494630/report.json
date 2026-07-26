@@ -1,0 +1,83 @@
+{
+  "id": "498494630",
+  "url": "https://issues.chromium.org/issues/498494630",
+  "title": "XNNPACK Workspace Size Overflow — Heap Buffer Overflow from WebNN",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "to...@gmail.com",
+  "assignee": "re...@chromium.org",
+  "created_date": "2026-04-01T09:06:56+00:00",
+  "modified_date": "2026-07-25T05:00:20+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 42000.0,
+  "reward_amount_meta": 42000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75044247,
+      "filename": "asan_output.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 68680,
+      "url": "https://issues.chromium.org/action/issues/498494630/attachments/75044247?download=true",
+      "local_path": "attachments/asan_output.txt"
+    },
+    {
+      "id": 75044248,
+      "filename": "crash_report.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 31938,
+      "url": "https://issues.chromium.org/action/issues/498494630/attachments/75044248?download=true",
+      "local_path": "attachments/crash_report.txt"
+    },
+    {
+      "id": 75044249,
+      "filename": "build_fix.patch",
+      "mime_type": "text/x-patch",
+      "size_bytes": 1614,
+      "url": "https://issues.chromium.org/action/issues/498494630/attachments/75044249?download=true",
+      "local_path": "attachments/build_fix.patch"
+    },
+    {
+      "id": 75045916,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1403,
+      "url": "https://issues.chromium.org/action/issues/498494630/attachments/75045916?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75260793,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1403,
+      "url": "https://issues.chromium.org/action/issues/498494630/attachments/75260793?download=true",
+      "local_path": "attachments/poc_75260793.html"
+    },
+    {
+      "id": 75260794,
+      "filename": "Dockerfile",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4512,
+      "url": "https://issues.chromium.org/action/issues/498494630/attachments/75260794?download=true",
+      "local_path": "attachments/Dockerfile"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "---\n\n### Report description\n\n\nXNNPACK Workspace Size Overflow — Heap Buffer Overflow from WebNN\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/ru"
+}

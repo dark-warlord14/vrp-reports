@@ -1,0 +1,98 @@
+{
+  "id": "501096128",
+  "url": "https://issues.chromium.org/issues/501096128",
+  "title": "Dawn: heap-use-after-free in wire client ObjectStore via multithreaded WebGPU",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Dawn",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "no...@gmail.com",
+  "assignee": "lo...@google.com",
+  "created_date": "2026-04-09T17:14:05+00:00",
+  "modified_date": "2026-07-24T08:01:16+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75366616,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 3444,
+      "url": "https://issues.chromium.org/action/issues/501096128/attachments/75366616?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75366617,
+      "filename": "objectstore_race_window.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1486,
+      "url": "https://issues.chromium.org/action/issues/501096128/attachments/75366617?download=true",
+      "local_path": "attachments/objectstore_race_window.patch"
+    },
+    {
+      "id": 75366618,
+      "filename": "force_multithread.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 497,
+      "url": "https://issues.chromium.org/action/issues/501096128/attachments/75366618?download=true",
+      "local_path": "attachments/force_multithread.patch"
+    },
+    {
+      "id": 75366619,
+      "filename": "fix_objectstore_race.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3441,
+      "url": "https://issues.chromium.org/action/issues/501096128/attachments/75366619?download=true",
+      "local_path": "attachments/fix_objectstore_race.patch"
+    },
+    {
+      "id": 75366620,
+      "filename": "asan_trace.log",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 62060,
+      "url": "https://issues.chromium.org/action/issues/501096128/attachments/75366620?download=true",
+      "local_path": "attachments/asan_trace.log"
+    },
+    {
+      "id": 75544685,
+      "filename": "mmappeddata_asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 17230,
+      "url": "https://issues.chromium.org/action/issues/501096128/attachments/75544685?download=true",
+      "local_path": "attachments/mmappeddata_asan.txt"
+    },
+    {
+      "id": 75544686,
+      "filename": "mmappeddata_exploit_primitive_test.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2668,
+      "url": "https://issues.chromium.org/action/issues/501096128/attachments/75544686?download=true",
+      "local_path": "attachments/mmappeddata_exploit_primitive_test.txt"
+    },
+    {
+      "id": 75546313,
+      "filename": "WireBufferMappedDataRacePOC.cpp",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 6750,
+      "url": "https://issues.chromium.org/action/issues/501096128/attachments/75546313?download=true",
+      "local_path": "attachments/WireBufferMappedDataRacePOC.cpp"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "---\n\n### Report description\n\n\nDawn: heap-use-after-free in wire client ObjectStore via multithreaded WebGPU\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google."
+}

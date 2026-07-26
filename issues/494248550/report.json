@@ -1,0 +1,70 @@
+{
+  "id": "494248550",
+  "url": "https://issues.chromium.org/issues/494248550",
+  "title": "ORT DML EP: heap-buffer-overflow in CreateCpuResource via int4/uint4 constants",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "to...@gmail.com",
+  "assignee": "ra...@microsoft.com",
+  "created_date": "2026-03-19T17:04:37+00:00",
+  "modified_date": "2026-07-25T07:55:29+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74525651,
+      "filename": "asan_output.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 24964,
+      "url": "https://issues.chromium.org/action/issues/494248550/attachments/74525651?download=true",
+      "local_path": "attachments/asan_output.txt"
+    },
+    {
+      "id": 74525652,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 909,
+      "url": "https://issues.chromium.org/action/issues/494248550/attachments/74525652?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74628214,
+      "filename": "asan_output.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 16654,
+      "url": "https://issues.chromium.org/action/issues/494248550/attachments/74628214?download=true",
+      "local_path": "attachments/asan_output_74628214.txt"
+    },
+    {
+      "id": 74625726,
+      "filename": "build_ort_msvc_asan.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 3327,
+      "url": "https://issues.chromium.org/action/issues/494248550/attachments/74625726?download=true",
+      "local_path": "attachments/build_ort_msvc_asan.py"
+    },
+    {
+      "id": 74623597,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1182,
+      "url": "https://issues.chromium.org/action/issues/494248550/attachments/74623597?download=true",
+      "local_path": "attachments/poc_74623597.html"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "---\n\n### Report description\n\n\nORT DML EP: heap-buffer-overflow in CreateCpuResource via int4/uint4 constants\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google"
+}

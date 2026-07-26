@@ -1,0 +1,51 @@
+{
+  "id": "503763493",
+  "url": "https://issues.chromium.org/issues/503763493",
+  "title": "Browser Process Heap-Use-After-Free in Digital Credentials API (Renderer → Browser Memory Corruption)",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Identity>DigitalCredentials",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wo...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2026-04-17T17:52:56+00:00",
+  "modified_date": "2026-07-25T07:54:54+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75673036,
+      "filename": "BTPoC.html",
+      "mime_type": "text/html",
+      "size_bytes": 1715,
+      "url": "https://issues.chromium.org/action/issues/503763493/attachments/75673036?download=true",
+      "local_path": "attachments/BTPoC.html"
+    },
+    {
+      "id": 75673037,
+      "filename": "recording.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2942174,
+      "url": "https://issues.chromium.org/action/issues/503763493/attachments/75673037?download=true",
+      "local_path": "attachments/recording.mp4"
+    }
+  ],
+  "update_count": 11,
+  "description_snippet": "---\n\n### Report description\n\n\nincomplete fix of 488617440\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/rules/5745167867576320/chrome-vulnerabil"
+}

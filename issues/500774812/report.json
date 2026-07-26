@@ -1,0 +1,54 @@
+{
+  "id": "500774812",
+  "url": "https://issues.chromium.org/issues/500774812",
+  "title": "heap-buffer-overflow in Dawn BufferGL::MapAtCreationImpl",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Dawn",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "ka...@google.com",
+  "created_date": "2026-04-09T09:08:36+00:00",
+  "modified_date": "2026-07-19T07:55:23+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 33000.0,
+  "reward_amount_meta": 33000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75327015,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18360,
+      "url": "https://issues.chromium.org/action/issues/500774812/attachments/75327015?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 75327016,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 809,
+      "url": "https://issues.chromium.org/action/issues/500774812/attachments/75327016?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75327017,
+      "filename": "fix.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 571,
+      "url": "https://issues.chromium.org/action/issues/500774812/attachments/75327017?download=true",
+      "local_path": "attachments/fix.patch"
+    }
+  ],
+  "update_count": 78,
+  "description_snippet": "# VULNERABILITY DETAILS\n\nA heap out-of-bounds write vulnerability exists in the Dawn OpenGL backend when handling buffer mapping at creation (`MapAtCreationImpl`) with `Toggle::GLDefer` enabled.\n\nThe root cause resides in a size discrepancy between the logical buffer size (`GetSize()`) and the under"
+}

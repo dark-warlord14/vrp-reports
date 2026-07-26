@@ -1,0 +1,91 @@
+{
+  "id": "500413224",
+  "url": "https://issues.chromium.org/issues/500413224",
+  "title": "V8 Sandbox Escape: CopyElementsHandleSlow→SetImpl missing SBXCHECK — OOB Write 192GB past guard via getter re-entrancy (race-free, deterministic)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "bb...@gmail.com",
+  "assignee": "ar...@google.com",
+  "created_date": "2026-04-07T19:27:14+00:00",
+  "modified_date": "2026-07-23T07:59:07+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75275506,
+      "filename": "vrp_new_499489156_followup.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 6234,
+      "url": "https://issues.chromium.org/action/issues/500413224/attachments/75275506?download=true",
+      "local_path": "attachments/vrp_new_499489156_followup.md"
+    },
+    {
+      "id": 75275507,
+      "filename": "technique_summary.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 4933,
+      "url": "https://issues.chromium.org/action/issues/500413224/attachments/75275507?download=true",
+      "local_path": "attachments/technique_summary.md"
+    },
+    {
+      "id": 75275508,
+      "filename": "poc_setimpl_racefree_v1.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 6871,
+      "url": "https://issues.chromium.org/action/issues/500413224/attachments/75275508?download=true",
+      "local_path": "attachments/poc_setimpl_racefree_v1.js"
+    },
+    {
+      "id": 75275509,
+      "filename": "poc_setimpl_racefree_v2_minimal.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2426,
+      "url": "https://issues.chromium.org/action/issues/500413224/attachments/75275509?download=true",
+      "local_path": "attachments/poc_setimpl_racefree_v2_minimal.js"
+    },
+    {
+      "id": 75275510,
+      "filename": "crash_escape.log",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 5119,
+      "url": "https://issues.chromium.org/action/issues/500413224/attachments/75275510?download=true",
+      "local_path": "attachments/crash_escape.log"
+    },
+    {
+      "id": 75275511,
+      "filename": "poc_setimpl_racefree_v2_escape.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 5815,
+      "url": "https://issues.chromium.org/action/issues/500413224/attachments/75275511?download=true",
+      "local_path": "attachments/poc_setimpl_racefree_v2_escape.js"
+    },
+    {
+      "id": 75275512,
+      "filename": "crash_minimal.log",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3938,
+      "url": "https://issues.chromium.org/action/issues/500413224/attachments/75275512?download=true",
+      "local_path": "attachments/crash_minimal.log"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "---\n\n### Report description\n\n\nV8 Sandbox Escape: CopyElementsHandleSlow→SetImpl missing SBXCHECK — OOB Write 192GB past guard via getter re-entrancy (race-free, deterministic)\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affectin"
+}
