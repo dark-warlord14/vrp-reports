@@ -1,0 +1,57 @@
+{
+  "id": "502636904",
+  "url": "https://issues.chromium.org/issues/502636904",
+  "title": "Renderer-to-GPU sandbox escape via Skia SPIR-V injection",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>Skia",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "qq...@calif.io",
+  "assignee": "mi...@google.com",
+  "created_date": "2026-04-14T20:12:42+00:00",
+  "modified_date": "2026-07-30T07:58:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 25000.0,
+  "reward_amount_meta": 25000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75546300,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 54088,
+      "url": "https://issues.chromium.org/action/issues/502636904/attachments/75546300?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 75546301,
+      "filename": "renderer.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 5558,
+      "url": "https://issues.chromium.org/action/issues/502636904/attachments/75546301?download=true",
+      "local_path": "attachments/renderer.patch"
+    },
+    {
+      "id": 75546302,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 30657,
+      "url": "https://issues.chromium.org/action/issues/502636904/attachments/75546302?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 77,
+  "description_snippet": "## Summary\n\nA compromised renderer sends a crafted glyph drawable through the\nstrike-cache IPC. The GPU process deserialises it into SkSL (finding 1:\nmissing `allowSkSL` check on `SkRuntimeImageFilter`), compiles it to\nSPIR-V with a truncated instruction word-count (finding 2: 16-bit\noverflow in `SP"
+}

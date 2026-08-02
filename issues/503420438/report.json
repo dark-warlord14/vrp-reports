@@ -1,0 +1,54 @@
+{
+  "id": "503420438",
+  "url": "https://issues.chromium.org/issues/503420438",
+  "title": "Security: Heap-use-after-free in PasskeyResetWebContentsObserver::MaybeRunCallback\n",
+  "status": "Verified",
+  "severity": "Unknown",
+  "priority": "P4",
+  "component": "Unknown",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "147.0.0.0",
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": null,
+  "created_date": "2026-04-17T02:41:07+00:00",
+  "modified_date": "2026-07-29T05:01:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 37,
+  "bounty_rationale": "highly mitigated browser memory corruption",
+  "attachments": [
+    {
+      "id": 75636565,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1197,
+      "url": "https://issues.chromium.org/action/issues/503420438/attachments/75636565?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75636566,
+      "filename": "change.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 3925,
+      "url": "https://issues.chromium.org/action/issues/503420438/attachments/75636566?download=true",
+      "local_path": "attachments/change.diff"
+    },
+    {
+      "id": 75636567,
+      "filename": "server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 4961,
+      "url": "https://issues.chromium.org/action/issues/503420438/attachments/75636567?download=true",
+      "local_path": "attachments/server.py"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "# Steps to reproduce the problem\n1. Apply `change.diff` to Chromium and compile with ASAN enabled\n2. Start the PoC HTTP server: `python3 server.py` (from the `poc/` directory)\n3. Run Chrome: `./out/asan/chrome --no-sandbox --gaia-url=http://localhost:8080 http://localhost:8080/`\n4. Wait until the po"
+}

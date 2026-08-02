@@ -1,0 +1,59 @@
+{
+  "id": "492374380",
+  "url": "https://issues.chromium.org/issues/492374380",
+  "title": "[Linux] Cross-Thread Use-After-Free in FontLoader::openStream via Non-Owning MappedFontFile Cache",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Fonts",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "dc...@chromium.org",
+  "created_date": "2026-03-13T14:32:47+00:00",
+  "modified_date": "2026-07-31T05:04:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74306523,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 39945,
+      "url": "https://issues.chromium.org/action/issues/492374380/attachments/74306523?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 74306524,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 7549,
+      "url": "https://issues.chromium.org/action/issues/492374380/attachments/74306524?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74411271,
+      "filename": "0001-Fix-ownership-of-mapped_font_files_-values.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 8748,
+      "url": "https://issues.chromium.org/action/issues/492374380/attachments/74411271?download=true",
+      "local_path": "attachments/0001-Fix-ownership-of-mapped_font_files_-values.patch"
+    }
+  ],
+  "update_count": 57,
+  "description_snippet": "# [Linux] Cross-Thread Use-After-Free in FontLoader::openStream via Non-Owning MappedFontFile Cache\n\n## Summary\n\nA use-after-free vulnerability exists in the Linux font service's `FontLoader::openStream` method. The `mapped_font_files_` map stores non-owning raw pointers to `MappedFontFile` objects,"
+}

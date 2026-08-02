@@ -1,0 +1,83 @@
+{
+  "id": "501646327",
+  "url": "https://issues.chromium.org/issues/501646327",
+  "title": "CanvasRenderingContext2D::drawFocusIfNeeded dangling `Path` use-after-free",
+  "status": "Accepted",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>Canvas",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "qw...@gmail.com",
+  "assignee": "fm...@chromium.org",
+  "created_date": "2026-04-11T10:23:30+00:00",
+  "modified_date": "2026-07-31T05:04:27+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 7000.0,
+  "reward_amount_meta": 7000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75435714,
+      "filename": "poc_bof.html",
+      "mime_type": "text/html",
+      "size_bytes": 749,
+      "url": "https://issues.chromium.org/action/issues/501646327/attachments/75435714?download=true",
+      "local_path": "attachments/poc_bof.html"
+    },
+    {
+      "id": 75435715,
+      "filename": "run.sh",
+      "mime_type": "text/x-sh",
+      "size_bytes": 1561,
+      "url": "https://issues.chromium.org/action/issues/501646327/attachments/75435715?download=true",
+      "local_path": "attachments/run.sh"
+    },
+    {
+      "id": 75435716,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 807,
+      "url": "https://issues.chromium.org/action/issues/501646327/attachments/75435716?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75435717,
+      "filename": "asan_report_bof.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 18783,
+      "url": "https://issues.chromium.org/action/issues/501646327/attachments/75435717?download=true",
+      "local_path": "attachments/asan_report_bof.txt"
+    },
+    {
+      "id": 75435718,
+      "filename": "run_bof.sh",
+      "mime_type": "text/x-sh",
+      "size_bytes": 1589,
+      "url": "https://issues.chromium.org/action/issues/501646327/attachments/75435718?download=true",
+      "local_path": "attachments/run_bof.sh"
+    },
+    {
+      "id": 75435719,
+      "filename": "asan_report.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 23806,
+      "url": "https://issues.chromium.org/action/issues/501646327/attachments/75435719?download=true",
+      "local_path": "attachments/asan_report.txt"
+    }
+  ],
+  "update_count": 53,
+  "description_snippet": "---\n\n### Report description\n\n\nCanvasRenderingContext2D::drawFocusIfNeeded dangling `Path` use-after-free\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com"
+}

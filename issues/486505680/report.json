@@ -1,0 +1,51 @@
+{
+  "id": "486505680",
+  "url": "https://issues.chromium.org/issues/486505680",
+  "title": "OOB Read in WebGL2 clearBufferuiv",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebGL",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fa...@gmail.com",
+  "assignee": "ge...@chromium.org",
+  "created_date": "2026-02-22T08:48:06+00:00",
+  "modified_date": "2026-08-01T07:56:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73632659,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 922,
+      "url": "https://issues.chromium.org/action/issues/486505680/attachments/73632659?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74113272,
+      "filename": "testcase.html",
+      "mime_type": "text/html",
+      "size_bytes": 2231,
+      "url": "https://issues.chromium.org/action/issues/486505680/attachments/74113272?download=true",
+      "local_path": "attachments/testcase.html"
+    }
+  ],
+  "update_count": 72,
+  "description_snippet": "```bash\n=================================================================\n==21228==ERROR: AddressSanitizer: access-violation on unknown address 0x132c00004000 (pc 0x7ffc1e81dc26 bp 0x00c87c9faa80 sp 0x00c87c9fa9f8 T0)\n==21228==The signal is caused by a READ memory access.\n==21228==*** WARNING: Faile"
+}

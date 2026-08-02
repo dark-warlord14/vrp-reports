@@ -1,0 +1,59 @@
+{
+  "id": "504663582",
+  "url": "https://issues.chromium.org/issues/504663582",
+  "title": "V8 SBX Trap Fuzzing: Container Overflow in src/bigint/bigint.h:163:37",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@goodmanemail.com",
+  "assignee": "jk...@chromium.org",
+  "created_date": "2026-04-20T23:52:44+00:00",
+  "modified_date": "2026-08-01T07:56:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75752564,
+      "filename": "program_20260324001909_8EFCCC45-5108-4285-9BC1-DEEA07A0D626.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 58,
+      "url": "https://issues.chromium.org/action/issues/504663582/attachments/75752564?download=true",
+      "local_path": "attachments/program_20260324001909_8EFCCC45-5108-4285-9BC1-DEEA07A0D626.js"
+    },
+    {
+      "id": 75752565,
+      "filename": "program_20260324001909_8EFCCC45-5108-4285-9BC1-DEEA07A0D626.js.log",
+      "mime_type": "text/plain",
+      "size_bytes": 23598,
+      "url": "https://issues.chromium.org/action/issues/504663582/attachments/75752565?download=true",
+      "local_path": "attachments/program_20260324001909_8EFCCC45-5108-4285-9BC1-DEEA07A0D626.js.log"
+    },
+    {
+      "id": 75830808,
+      "filename": "bigint_validation.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 2709,
+      "url": "https://issues.chromium.org/action/issues/504663582/attachments/75830808?download=true",
+      "local_path": "attachments/bigint_validation.patch"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "PREAMBLE\nI spotted in 5df56c210ed6398cd4ce2f1f37a070a8af9ec175 Samuel Groß has added a new argument in d8: --sandbox-trap-fuzzing.  After attempting (stupidly?) to get this working in Fuzzilli I figured that the results of running this over an existing corpus appear at odds to what you normally want"
+}

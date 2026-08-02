@@ -1,0 +1,57 @@
+{
+  "id": "503346647",
+  "url": "https://issues.chromium.org/issues/503346647",
+  "title": " I identified that the Chrome browser’s Reading List feature introduces an origin confusion issue by reordering domain names. This behavior can mislead users about the true origin of a website.",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>TopChrome>BookmarksBar>ReadingList",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ah...@gmail.com",
+  "assignee": "ag...@google.com",
+  "created_date": "2026-04-16T16:35:18+00:00",
+  "modified_date": "2026-07-30T07:59:20+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75624641,
+      "filename": "evd.png",
+      "mime_type": "image/png",
+      "size_bytes": 49725,
+      "url": "https://issues.chromium.org/action/issues/503346647/attachments/75624641?download=true",
+      "local_path": "attachments/evd.png"
+    },
+    {
+      "id": 75624642,
+      "filename": "evd.png",
+      "mime_type": "image/png",
+      "size_bytes": 49725,
+      "url": "https://issues.chromium.org/action/issues/503346647/attachments/75624642?download=true",
+      "local_path": "attachments/evd_75624642.png"
+    },
+    {
+      "id": 75621667,
+      "filename": "evds-2.png",
+      "mime_type": "image/png",
+      "size_bytes": 413023,
+      "url": "https://issues.chromium.org/action/issues/503346647/attachments/75621667?download=true",
+      "local_path": "attachments/evds-2.png"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "---\n\n### Report description\n\n\n I identified that the Chrome browser’s Reading List feature introduces an origin confusion issue by reordering domain names. This behavior can mislead users about the true origin of a website.\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerabilit"
+}

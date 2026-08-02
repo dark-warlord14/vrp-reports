@@ -1,0 +1,52 @@
+{
+  "id": "504471167",
+  "url": "https://issues.chromium.org/issues/504471167",
+  "title": "Out-of-bounds write in ipcz while deserializing message",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Mojo>Core",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": " 130.0.6710.2",
+  "cve_ids": [
+    "CVE-2025-4609"
+  ],
+  "reporter": "bl...@gmail.com",
+  "assignee": "ro...@google.com",
+  "created_date": "2026-04-20T06:03:21+00:00",
+  "modified_date": "2026-07-29T07:58:06+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 35000.0,
+  "reward_amount_meta": 35000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75729495,
+      "filename": "node.cc.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1357,
+      "url": "https://issues.chromium.org/action/issues/504471167/attachments/75729495?download=true",
+      "local_path": "attachments/node.cc.patch"
+    },
+    {
+      "id": 75729496,
+      "filename": "node_link_test.cc",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 8035,
+      "url": "https://issues.chromium.org/action/issues/504471167/attachments/75729496?download=true",
+      "local_path": "attachments/node_link_test.cc"
+    }
+  ],
+  "update_count": 6,
+  "description_snippet": "---\n\n### Report description\n\n\nipcz NodeLink::OnAddBlockBuffer missing sender guard allows renderer to inject attacker-controlled shared memory into broker buffer pool\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chr"
+}

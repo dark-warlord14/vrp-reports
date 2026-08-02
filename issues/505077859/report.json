@@ -1,0 +1,70 @@
+{
+  "id": "505077859",
+  "url": "https://issues.chromium.org/issues/505077859",
+  "title": "Validating Decoder Stale PACK_ALIGNMENT causes GPU Heap OOB Write",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>GPU",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ci...@gmail.com",
+  "assignee": "va...@chromium.org",
+  "created_date": "2026-04-21T20:19:46+00:00",
+  "modified_date": "2026-08-01T07:57:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 43000.0,
+  "reward_amount_meta": 43000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75802166,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1587,
+      "url": "https://issues.chromium.org/action/issues/505077859/attachments/75802166?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75802167,
+      "filename": "tombstone.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 499276,
+      "url": "https://issues.chromium.org/action/issues/505077859/attachments/75802167?download=true",
+      "local_path": "attachments/tombstone.txt"
+    },
+    {
+      "id": 75802168,
+      "filename": "symbolized_stack_trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 23983,
+      "url": "https://issues.chromium.org/action/issues/505077859/attachments/75802168?download=true",
+      "local_path": "attachments/symbolized_stack_trace.txt"
+    },
+    {
+      "id": 75838468,
+      "filename": "poc_crash_control.html",
+      "mime_type": "text/html",
+      "size_bytes": 4950,
+      "url": "https://issues.chromium.org/action/issues/505077859/attachments/75838468?download=true",
+      "local_path": "attachments/poc_crash_control.html"
+    },
+    {
+      "id": 75832310,
+      "filename": "tombstone.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 526305,
+      "url": "https://issues.chromium.org/action/issues/505077859/attachments/75832310?download=true",
+      "local_path": "attachments/tombstone_75832310.txt"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "---\n\n### Report description\n\n\nValidating Decoder Stale PACK_ALIGNMENT causes GPU Heap OOB Write\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/ru"
+}

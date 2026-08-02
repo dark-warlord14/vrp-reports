@@ -1,0 +1,59 @@
+{
+  "id": "503422316",
+  "url": "https://issues.chromium.org/issues/503422316",
+  "title": "Use-After-Free in AllocateSctpSids via DCEP OPEN Message Failure Leads to Renderer Crash",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebRTC",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ht...@chromium.org",
+  "created_date": "2026-04-17T08:11:33+00:00",
+  "modified_date": "2026-07-29T08:00:25+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75644791,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 21659,
+      "url": "https://issues.chromium.org/action/issues/503422316/attachments/75644791?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 75644792,
+      "filename": "readme.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 598,
+      "url": "https://issues.chromium.org/action/issues/503422316/attachments/75644792?download=true",
+      "local_path": "attachments/readme.md"
+    },
+    {
+      "id": 75644793,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 3401,
+      "url": "https://issues.chromium.org/action/issues/503422316/attachments/75644793?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "# Use-After-Free in AllocateSctpSids via DCEP OPEN Message Failure Leads to Renderer Crash\n\n## Summary\n\nA use-after-free vulnerability exists in the WebRTC SCTP data channel implementation. When DataChannelController::AllocateSctpSids iterates over newly assigned channels using raw pointers, the act"
+}

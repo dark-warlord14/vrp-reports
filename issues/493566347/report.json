@@ -1,0 +1,110 @@
+{
+  "id": "493566347",
+  "url": "https://issues.chromium.org/issues/493566347",
+  "title": "ORT DML EP: heap-buffer-overflow in CreateCpuResource via int4/uint4 constants",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebML",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "to...@gmail.com",
+  "assignee": "ra...@microsoft.com",
+  "created_date": "2026-03-17T15:50:23+00:00",
+  "modified_date": "2026-07-25T07:55:27+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74436111,
+      "filename": "asan_output.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13326,
+      "url": "https://issues.chromium.org/action/issues/493566347/attachments/74436111?download=true",
+      "local_path": "attachments/asan_output.txt"
+    },
+    {
+      "id": 74436112,
+      "filename": "ort_verbose_log.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 29124,
+      "url": "https://issues.chromium.org/action/issues/493566347/attachments/74436112?download=true",
+      "local_path": "attachments/ort_verbose_log.txt"
+    },
+    {
+      "id": 74436113,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1748,
+      "url": "https://issues.chromium.org/action/issues/493566347/attachments/74436113?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74625724,
+      "filename": "asan_output.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 26983,
+      "url": "https://issues.chromium.org/action/issues/493566347/attachments/74625724?download=true",
+      "local_path": "attachments/asan_output_74625724.txt"
+    },
+    {
+      "id": 74625725,
+      "filename": "build_ort_msvc_asan.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 3362,
+      "url": "https://issues.chromium.org/action/issues/493566347/attachments/74625725?download=true",
+      "local_path": "attachments/build_ort_msvc_asan.py"
+    },
+    {
+      "id": 74623596,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1748,
+      "url": "https://issues.chromium.org/action/issues/493566347/attachments/74623596?download=true",
+      "local_path": "attachments/poc_74623596.html"
+    },
+    {
+      "id": 74786291,
+      "filename": "output.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 5462,
+      "url": "https://issues.chromium.org/action/issues/493566347/attachments/74786291?download=true",
+      "local_path": "attachments/output.txt"
+    },
+    {
+      "id": 74783571,
+      "filename": "build.bat",
+      "mime_type": "application/x-msdos-program",
+      "size_bytes": 1313,
+      "url": "https://issues.chromium.org/action/issues/493566347/attachments/74783571?download=true",
+      "local_path": "attachments/build.bat"
+    },
+    {
+      "id": 74786292,
+      "filename": "README.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 2232,
+      "url": "https://issues.chromium.org/action/issues/493566347/attachments/74786292?download=true",
+      "local_path": "attachments/README.md"
+    },
+    {
+      "id": 74783572,
+      "filename": "wrl_asan_test.cpp",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 4477,
+      "url": "https://issues.chromium.org/action/issues/493566347/attachments/74783572?download=true",
+      "local_path": "attachments/wrl_asan_test.cpp"
+    }
+  ],
+  "update_count": 82,
+  "description_snippet": "**Summary:** ORT DML EP: new-delete-type-mismatch via WebNN quantizeLinear\n\n**Program:** Google VRP\n\n**URL:** https://source.chromium.org/chromium/chromium/src/+/main:services/webnn/ort/graph_impl_ort.cc\n\n**Vulnerability type:** Memory Corruption (in a sandboxed process)\n\n### Details\n\n## Issue\nORT's"
+}

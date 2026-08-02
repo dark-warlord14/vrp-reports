@@ -1,0 +1,81 @@
+{
+  "id": "464217867",
+  "url": "https://issues.chromium.org/issues/464217867",
+  "title": "Insufficient URL Scheme Validation in regex_rules_matcher.cc",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>Extensions>API",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "dj...@gmail.com",
+  "assignee": "ke...@chromium.org",
+  "created_date": "2025-11-28T11:40:00+00:00",
+  "modified_date": "2026-08-01T07:56:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 71341836,
+      "filename": "dnrdnr.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1657159,
+      "url": "https://issues.chromium.org/action/issues/464217867/attachments/71341836?download=true",
+      "local_path": "attachments/dnrdnr.mp4"
+    },
+    {
+      "id": 71341837,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 4040,
+      "url": "https://issues.chromium.org/action/issues/464217867/attachments/71341837?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 71341838,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 313,
+      "url": "https://issues.chromium.org/action/issues/464217867/attachments/71341838?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 71341839,
+      "filename": "attacker_server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 2005,
+      "url": "https://issues.chromium.org/action/issues/464217867/attachments/71341839?download=true",
+      "local_path": "attachments/attacker_server.py"
+    },
+    {
+      "id": 75678449,
+      "filename": "dnrdnr.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1657159,
+      "url": "https://issues.chromium.org/action/issues/464217867/attachments/75678449?download=true",
+      "local_path": "attachments/dnrdnr_75678449.mp4"
+    },
+    {
+      "id": 75953924,
+      "filename": "dnrdnr.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 1657159,
+      "url": "https://issues.chromium.org/action/issues/464217867/attachments/75953924?download=true",
+      "local_path": "attachments/dnrdnr_75953924.mp4"
+    }
+  ],
+  "update_count": 68,
+  "description_snippet": "URL: src/extensions/browser/api/declarative_net_request/regex_rules_matcher.cc\n\nDetails\n\n\"source_file\": \"src/extensions/browser/api/declarative_net_request/regex_rules_matcher.cc\", \"type\": \"Insufficient URL Scheme Validation\"\n\nThe CreateRegexSubstitutionRedirectAction function, which handles declara"
+}

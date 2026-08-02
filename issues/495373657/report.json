@@ -1,0 +1,65 @@
+{
+  "id": "495373657",
+  "url": "https://issues.chromium.org/issues/495373657",
+  "title": "GPU process arbitrary address read via unvalidated client pointer in passthrough `CompressedTexImage3D` / `CompressedTexSubImage3D` handlers",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "cw...@google.com",
+  "created_date": "2026-03-23T17:45:20+00:00",
+  "modified_date": "2026-07-29T08:00:17+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74632468,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/495373657/attachments/74632468?download=true",
+      "local_path": null
+    },
+    {
+      "id": 74632469,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1358,
+      "url": "https://issues.chromium.org/action/issues/495373657/attachments/74632469?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74632470,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 7687,
+      "url": "https://issues.chromium.org/action/issues/495373657/attachments/74632470?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 74669108,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 2128,
+      "url": "https://issues.chromium.org/action/issues/495373657/attachments/74669108?download=true",
+      "local_path": "attachments/patch.diff"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "## Summary\n\nThe passthrough command decoder's handlers for `CompressedTexImage3D` and `CompressedTexSubImage3D` reinterpret the command's `data_shm_offset` field as a raw GPU-process pointer when `data_shm_id` is zero. This encoding is intended for Pixel Buffer Object offsets, but the handler perfo"
+}

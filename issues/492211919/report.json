@@ -1,0 +1,38 @@
+{
+  "id": "492211919",
+  "url": "https://issues.chromium.org/issues/492211919",
+  "title": "Missing Browser-Side Sandbox Enforcement for kPointerLock",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>Input>PointerLock, Blink>SecurityFeature>IFrameSandbox, Internals>Sandbox>SiteIsolation",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@bountyy.fi",
+  "assignee": "mi...@bountyy.fi",
+  "created_date": "2026-03-12T18:58:31+00:00",
+  "modified_date": "2026-08-01T07:56:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1500.0,
+  "reward_amount_meta": 1500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74273888,
+      "filename": "poc_chrome.html",
+      "mime_type": "text/html",
+      "size_bytes": 6376,
+      "url": "https://issues.chromium.org/action/issues/492211919/attachments/74273888?download=true",
+      "local_path": "attachments/poc_chrome.html"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "# Steps to reproduce the problem\n1. `RenderWidgetHostImpl::RequestMouseLock()` does not check the\n`WebSandboxFlags::kPointerLock` sandbox flag. A compromised renderer\ninside a sandboxed frame (without `allow-pointer-lock`) can call\n`FrameWidgetInputHandler::RequestMouseLock` over Mojo IPC directly,"
+}

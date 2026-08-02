@@ -1,0 +1,59 @@
+{
+  "id": "503987504",
+  "url": "https://issues.chromium.org/issues/503987504",
+  "title": "Double-free in BrowserLiveBackgroundController::VideoConsumer::OnFrameCaptured()",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@gmail.com",
+  "assignee": "em...@google.com",
+  "created_date": "2026-04-19T05:30:58+00:00",
+  "modified_date": "2026-07-31T07:58:15+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75696163,
+      "filename": "asan_browser_crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 20202,
+      "url": "https://issues.chromium.org/action/issues/503987504/attachments/75696163?download=true",
+      "local_path": "attachments/asan_browser_crash.log"
+    },
+    {
+      "id": 75696164,
+      "filename": "poc.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 960,
+      "url": "https://issues.chromium.org/action/issues/503987504/attachments/75696164?download=true",
+      "local_path": "attachments/poc.diff"
+    },
+    {
+      "id": 75708111,
+      "filename": "windbg.log",
+      "mime_type": "text/plain",
+      "size_bytes": 35418,
+      "url": "https://issues.chromium.org/action/issues/503987504/attachments/75708111?download=true",
+      "local_path": "attachments/windbg.log"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

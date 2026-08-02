@@ -1,0 +1,48 @@
+{
+  "id": "502461760",
+  "url": "https://issues.chromium.org/issues/502461760",
+  "title": "Heap-use-after-free in `remoting::PamAuthorizer::GetNextMessage` / `OnMessageProcessed`",
+  "status": "Fixed",
+  "severity": "S4-Minimal",
+  "priority": "P3",
+  "component": "Services (Use Subcomponents)>Chromoting",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "da...@gmail.com",
+  "assignee": "jo...@google.com",
+  "created_date": "2026-04-14T12:48:19+00:00",
+  "modified_date": "2026-07-28T07:59:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75506893,
+      "filename": "pam_authorization_factory_posix_unittest.cc",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 6615,
+      "url": "https://issues.chromium.org/action/issues/502461760/attachments/75506893?download=true",
+      "local_path": "attachments/pam_authorization_factory_posix_unittest.cc"
+    },
+    {
+      "id": 75506894,
+      "filename": "asan-pam-uaf-report.log",
+      "mime_type": "text/plain",
+      "size_bytes": 10993,
+      "url": "https://issues.chromium.org/action/issues/502461760/attachments/75506894?download=true",
+      "local_path": "attachments/asan-pam-uaf-report.log"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "## Crash information\n\n**Type of crash:** host process. `remoting_me2me_host` (Chrome Remote Desktop Linux host daemon). Not a browser tab or renderer crash. Reproduced inside the `remoting_unittests` ASAN binary, which links the production `pam_authorization_factory_posix.cc` source file unmodified."
+}

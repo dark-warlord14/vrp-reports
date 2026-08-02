@@ -1,0 +1,87 @@
+{
+  "id": "498904293",
+  "url": "https://issues.chromium.org/issues/498904293",
+  "title": "Arbitrary Memory Read and Write in ANGLE GL Backend via PBO Desync",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ki...@gmail.com",
+  "assignee": "ge...@chromium.org",
+  "created_date": "2026-04-02T13:45:43+00:00",
+  "modified_date": "2026-07-30T23:50:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 97000.0,
+  "reward_amount_meta": 97000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75101135,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 2598,
+      "url": "https://issues.chromium.org/action/issues/498904293/attachments/75101135?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75101136,
+      "filename": "renderer.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 6647,
+      "url": "https://issues.chromium.org/action/issues/498904293/attachments/75101136?download=true",
+      "local_path": "attachments/renderer.patch"
+    },
+    {
+      "id": 75101137,
+      "filename": "asan_read.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 10772,
+      "url": "https://issues.chromium.org/action/issues/498904293/attachments/75101137?download=true",
+      "local_path": "attachments/asan_read.txt"
+    },
+    {
+      "id": 75101138,
+      "filename": "asan_write.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11300,
+      "url": "https://issues.chromium.org/action/issues/498904293/attachments/75101138?download=true",
+      "local_path": "attachments/asan_write.txt"
+    },
+    {
+      "id": 75175907,
+      "filename": "pure_js_poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 5280,
+      "url": "https://issues.chromium.org/action/issues/498904293/attachments/75175907?download=true",
+      "local_path": "attachments/pure_js_poc.html"
+    },
+    {
+      "id": 75175908,
+      "filename": "asan_pure_js_read.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 11410,
+      "url": "https://issues.chromium.org/action/issues/498904293/attachments/75175908?download=true",
+      "local_path": "attachments/asan_pure_js_read.txt"
+    },
+    {
+      "id": 75175909,
+      "filename": "asan_pure_js_write.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 10892,
+      "url": "https://issues.chromium.org/action/issues/498904293/attachments/75175909?download=true",
+      "local_path": "attachments/asan_pure_js_write.txt"
+    }
+  ],
+  "update_count": 65,
+  "description_snippet": "# VULNERABILITY DETAILS\n\nA severe state desynchronization vulnerability exists in the ANGLE OpenGL backend (`CopySubTextureCHROMIUM`), leading to Arbitrary R/W in the GPU process.\n\nThe root cause resides in `BlitGL::copySubTextureCPUReadback`. When performing a CPU fallback copy, the code explicitly"
+}

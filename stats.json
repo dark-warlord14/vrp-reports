@@ -1,7 +1,7 @@
 {
-  "total_reports": 4640,
-  "total_bounty": 26867671.7,
-  "avg_bounty": 5794.19,
+  "total_reports": 4670,
+  "total_bounty": 27297171.7,
+  "avg_bounty": 5848.98,
   "by_year": {
     "2009": {
       "count": 3,
@@ -68,38 +68,38 @@
       "total_bounty": 3447981.0
     },
     "2025": {
-      "count": 282,
-      "total_bounty": 3411500.0
+      "count": 283,
+      "total_bounty": 3413500.0
     },
     "2026": {
-      "count": 297,
-      "total_bounty": 4055000.0
+      "count": 326,
+      "total_bounty": 4482500.0
     }
   },
   "by_severity": {
-    "S3-Low": 4042,
-    "S4-Minimal": 526,
-    "Unknown": 64,
+    "S3-Low": 4068,
+    "S4-Minimal": 528,
+    "Unknown": 66,
     "S1-High": 6,
     "S0-Critical": 1,
     "S2-Medium": 1
   },
   "by_status": {
-    "Assigned": 3631,
-    "Accepted": 726,
-    "New": 138,
-    "Fixed": 93,
-    "Verified": 51,
+    "Assigned": 3646,
+    "Accepted": 731,
+    "New": 142,
+    "Fixed": 96,
+    "Verified": 54,
     "Unknown": 1
   },
   "by_component": {
-    "Blink": 2059,
-    "Internals": 1013,
-    "UI": 617,
-    "Unknown": 351,
-    "Platform": 265,
+    "Blink": 2071,
+    "Internals": 1023,
+    "UI": 620,
+    "Unknown": 352,
+    "Platform": 267,
     "Blink, Blink": 80,
-    "Mobile": 57,
+    "Mobile": 58,
     "Dawn": 43,
     "Internals, Internals": 41,
     "OS": 16,
@@ -108,9 +108,9 @@
     "Blink, Internals": 9,
     "PDFium": 7,
     "Speed": 7,
+    "Services (Use Subcomponents)": 6,
     "Infra": 6,
     "Privacy": 5,
-    "Services (Use Subcomponents)": 5,
     "UI, UI": 5,
     "IO": 4
   },
@@ -121,27 +121,27 @@
     },
     {
       "range": "$500-1K",
-      "count": 605
+      "count": 607
     },
     {
       "range": "$1K-3K",
-      "count": 1516
+      "count": 1524
     },
     {
       "range": "$3K-5K",
-      "count": 726
+      "count": 729
     },
     {
       "range": "$5K-10K",
-      "count": 1029
+      "count": 1035
     },
     {
       "range": "$10K-20K",
-      "count": 446
+      "count": 450
     },
     {
       "range": "$20K+",
-      "count": 309
+      "count": 316
     }
   ],
   "top_bounties": [
@@ -200,6 +200,13 @@
       "bounty_amount": 100000.0,
       "severity": "S3-Low",
       "year": 2017
+    },
+    {
+      "id": "498904293",
+      "title": "Arbitrary Memory Read and Write in ANGLE GL Backend via PBO Desync",
+      "bounty_amount": 97000.0,
+      "severity": "S3-Low",
+      "year": 2026
     },
     {
       "id": "490170083",
@@ -277,13 +284,6 @@
       "bounty_amount": 60000.0,
       "severity": "S3-Low",
       "year": 2012
-    },
-    {
-      "id": "500880819",
-      "title": "Type confusion in BuildCheckSmi constant folding in V8/Maglev",
-      "bounty_amount": 55000.0,
-      "severity": "S3-Low",
-      "year": 2026
     }
   ]
 }

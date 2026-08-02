@@ -1,0 +1,64 @@
+{
+  "id": "502617990",
+  "url": "https://issues.chromium.org/issues/502617990",
+  "title": "Integer overflow in ANGLE D3D11 compressed 3D texture deferred-init leads to heap OOB read in GPU process",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2026-5859"
+  ],
+  "reporter": "se...@gmail.com",
+  "assignee": "sh...@google.com",
+  "created_date": "2026-04-14T18:32:45+00:00",
+  "modified_date": "2026-07-30T07:58:33+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75542918,
+      "filename": "angle_compressed_3d_overflow.html",
+      "mime_type": "text/html",
+      "size_bytes": 14632,
+      "url": "https://issues.chromium.org/action/issues/502617990/attachments/75542918?download=true",
+      "local_path": "attachments/angle_compressed_3d_overflow.html"
+    },
+    {
+      "id": 75542919,
+      "filename": "asan_stderr_d3d11.log",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 377945,
+      "url": "https://issues.chromium.org/action/issues/502617990/attachments/75542919?download=true",
+      "local_path": "attachments/asan_stderr_d3d11.log"
+    },
+    {
+      "id": 75542920,
+      "filename": "asan_stderr_vulkan.log",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 214502,
+      "url": "https://issues.chromium.org/action/issues/502617990/attachments/75542920?download=true",
+      "local_path": "attachments/asan_stderr_vulkan.log"
+    },
+    {
+      "id": 75542921,
+      "filename": "angle_compressed_3d_overflow.html",
+      "mime_type": "text/html",
+      "size_bytes": 14632,
+      "url": "https://issues.chromium.org/action/issues/502617990/attachments/75542921?download=true",
+      "local_path": "attachments/angle_compressed_3d_overflow_75542921.html"
+    }
+  ],
+  "update_count": 20,
+  "description_snippet": "---\n\n### Report description\n\n\nANGLE heap-buffer-overflow in LoadCompressedToNative via WebGL2 compressed 3D texture (2048x2048x320). Crashes GPU process on D3D11 and Vulkan backends. ASAN confirmed. No flags needed.\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChro"
+}

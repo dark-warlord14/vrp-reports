@@ -1,0 +1,192 @@
+{
+  "id": "503393471",
+  "url": "https://issues.chromium.org/issues/503393471",
+  "title": "Elevation of Privilege in GoogleUpdate with Windows",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Updater",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2024-1694"
+  ],
+  "reporter": "do...@pksecurity.io",
+  "assignee": "ga...@chromium.org",
+  "created_date": "2026-04-16T18:54:33+00:00",
+  "modified_date": "2026-07-24T07:59:25+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75630450,
+      "filename": "01_Target_Environment_Setup_with_Admin_ACLs.png",
+      "mime_type": "image/png",
+      "size_bytes": 65752,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630450?download=true",
+      "local_path": "attachments/01_Target_Environment_Setup_with_Admin_ACLs.png"
+    },
+    {
+      "id": 75630451,
+      "filename": "05_Malicious_Junction_Created_In_UserData.png",
+      "mime_type": "image/png",
+      "size_bytes": 106487,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630451?download=true",
+      "local_path": "attachments/05_Malicious_Junction_Created_In_UserData.png"
+    },
+    {
+      "id": 75630452,
+      "filename": "06_Vulnerable_Chrome_Version_Tested.png",
+      "mime_type": "image/png",
+      "size_bytes": 11049,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630452?download=true",
+      "local_path": "attachments/06_Vulnerable_Chrome_Version_Tested.png"
+    },
+    {
+      "id": 75630453,
+      "filename": "03_UAC_Delete_Protection_Triggered.png",
+      "mime_type": "image/png",
+      "size_bytes": 23120,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630453?download=true",
+      "local_path": "attachments/03_UAC_Delete_Protection_Triggered.png"
+    },
+    {
+      "id": 75630454,
+      "filename": "04_Planting_Malicious_Directory_Junction.png",
+      "mime_type": "image/png",
+      "size_bytes": 6626,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630454?download=true",
+      "local_path": "attachments/04_Planting_Malicious_Directory_Junction.png"
+    },
+    {
+      "id": 75630455,
+      "filename": "02_Verifying_Access_Denied_For_Standard_User.png",
+      "mime_type": "image/png",
+      "size_bytes": 7693,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630455?download=true",
+      "local_path": "attachments/02_Verifying_Access_Denied_For_Standard_User.png"
+    },
+    {
+      "id": 75630456,
+      "filename": "08_Initiating_The_Vulnerable_Execution_Trigger.png",
+      "mime_type": "image/png",
+      "size_bytes": 12842,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630456?download=true",
+      "local_path": "attachments/08_Initiating_The_Vulnerable_Execution_Trigger.png"
+    },
+    {
+      "id": 75630457,
+      "filename": "09_Arbitrary_File_Deletion_Confirmed.png",
+      "mime_type": "image/png",
+      "size_bytes": 31581,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630457?download=true",
+      "local_path": "attachments/09_Arbitrary_File_Deletion_Confirmed.png"
+    },
+    {
+      "id": 75630458,
+      "filename": "07_Pre_Execution_State_With_Target_Intact.png",
+      "mime_type": "image/png",
+      "size_bytes": 29751,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630458?download=true",
+      "local_path": "attachments/07_Pre_Execution_State_With_Target_Intact.png"
+    },
+    {
+      "id": 75630459,
+      "filename": "Poc Chromium Arbitrary File Deletion Eop.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5980043,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630459?download=true",
+      "local_path": "attachments/Poc Chromium Arbitrary File Deletion Eop.mp4"
+    },
+    {
+      "id": 75630460,
+      "filename": "Poc Chromium Arbitrary File Deletion Eop.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5980043,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630460?download=true",
+      "local_path": "attachments/Poc Chromium Arbitrary File Deletion Eop_75630460.mp4"
+    },
+    {
+      "id": 75630461,
+      "filename": "08_Initiating_The_Vulnerable_Execution_Trigger.png",
+      "mime_type": "image/png",
+      "size_bytes": 12842,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630461?download=true",
+      "local_path": "attachments/08_Initiating_The_Vulnerable_Execution_Trigger_75630461.png"
+    },
+    {
+      "id": 75630462,
+      "filename": "01_Target_Environment_Setup_with_Admin_ACLs.png",
+      "mime_type": "image/png",
+      "size_bytes": 65752,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630462?download=true",
+      "local_path": "attachments/01_Target_Environment_Setup_with_Admin_ACLs_75630462.png"
+    },
+    {
+      "id": 75630463,
+      "filename": "04_Planting_Malicious_Directory_Junction.png",
+      "mime_type": "image/png",
+      "size_bytes": 6626,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630463?download=true",
+      "local_path": "attachments/04_Planting_Malicious_Directory_Junction_75630463.png"
+    },
+    {
+      "id": 75630464,
+      "filename": "02_Verifying_Access_Denied_For_Standard_User.png",
+      "mime_type": "image/png",
+      "size_bytes": 7693,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630464?download=true",
+      "local_path": "attachments/02_Verifying_Access_Denied_For_Standard_User_75630464.png"
+    },
+    {
+      "id": 75630465,
+      "filename": "06_Vulnerable_Chrome_Version_Tested.png",
+      "mime_type": "image/png",
+      "size_bytes": 11049,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630465?download=true",
+      "local_path": "attachments/06_Vulnerable_Chrome_Version_Tested_75630465.png"
+    },
+    {
+      "id": 75630466,
+      "filename": "03_UAC_Delete_Protection_Triggered.png",
+      "mime_type": "image/png",
+      "size_bytes": 23120,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630466?download=true",
+      "local_path": "attachments/03_UAC_Delete_Protection_Triggered_75630466.png"
+    },
+    {
+      "id": 75630467,
+      "filename": "07_Pre_Execution_State_With_Target_Intact.png",
+      "mime_type": "image/png",
+      "size_bytes": 29751,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630467?download=true",
+      "local_path": "attachments/07_Pre_Execution_State_With_Target_Intact_75630467.png"
+    },
+    {
+      "id": 75630468,
+      "filename": "09_Arbitrary_File_Deletion_Confirmed.png",
+      "mime_type": "image/png",
+      "size_bytes": 31581,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630468?download=true",
+      "local_path": "attachments/09_Arbitrary_File_Deletion_Confirmed_75630468.png"
+    },
+    {
+      "id": 75630469,
+      "filename": "05_Malicious_Junction_Created_In_UserData.png",
+      "mime_type": "image/png",
+      "size_bytes": 106487,
+      "url": "https://issues.chromium.org/action/issues/503393471/attachments/75630469?download=true",
+      "local_path": "attachments/05_Malicious_Junction_Created_In_UserData_75630469.png"
+    }
+  ],
+  "update_count": 10,
+  "description_snippet": "---\n\n### Report description\n\n\nLocal Privilege Escalation / Arbitrary File Deletion via Directory Junction Traversal in base::DeletePathRecursively\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See pr"
+}

@@ -1,0 +1,74 @@
+{
+  "id": "503768143",
+  "url": "https://issues.chromium.org/issues/503768143",
+  "title": "ANGLE: missing setPixelPackBuffer(nullptr) in norm16 readback workaround causes GPU process crash via WebGL PBO type confusion",
+  "status": "New",
+  "severity": "Unknown",
+  "priority": "P0",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Android",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2026-10883",
+    "CVE-2026-6296"
+  ],
+  "reporter": "ma...@gmail.com",
+  "assignee": "ge...@chromium.org",
+  "created_date": "2026-04-17T18:09:10+00:00",
+  "modified_date": "2026-07-31T00:09:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75672688,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 8935,
+      "url": "https://issues.chromium.org/action/issues/503768143/attachments/75672688?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75672689,
+      "filename": "repro.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 12060,
+      "url": "https://issues.chromium.org/action/issues/503768143/attachments/75672689?download=true",
+      "local_path": "attachments/repro.md"
+    },
+    {
+      "id": 75672690,
+      "filename": "code-diff.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 5094,
+      "url": "https://issues.chromium.org/action/issues/503768143/attachments/75672690?download=true",
+      "local_path": "attachments/code-diff.md"
+    },
+    {
+      "id": 75672691,
+      "filename": "REPORT.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 11364,
+      "url": "https://issues.chromium.org/action/issues/503768143/attachments/75672691?download=true",
+      "local_path": "attachments/REPORT.md"
+    },
+    {
+      "id": 75672692,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 8935,
+      "url": "https://issues.chromium.org/action/issues/503768143/attachments/75672692?download=true",
+      "local_path": "attachments/poc_75672692.html"
+    }
+  ],
+  "update_count": 52,
+  "description_snippet": "---\n\n### Report description\n\n\nANGLE: missing setPixelPackBuffer(nullptr) in norm16 readback workaround causes GPU process crash via WebGL PBO type confusion\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browse"
+}
