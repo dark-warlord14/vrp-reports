@@ -1,0 +1,62 @@
+{
+  "id": "503197487",
+  "url": "https://issues.chromium.org/issues/503197487",
+  "title": "ipcz bug can allow renderer duplicate browser process handle to escape sandbox",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Mojo>Core",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "135.0.0.0",
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "aj...@chromium.org",
+  "created_date": "2026-04-16T16:03:55+00:00",
+  "modified_date": "2026-07-24T07:59:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 250000.0,
+  "reward_amount_meta": 250000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75622180,
+      "filename": "exploit.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 2721,
+      "url": "https://issues.chromium.org/action/issues/503197487/attachments/75622180?download=true",
+      "local_path": "attachments/exploit.patch"
+    },
+    {
+      "id": 75622181,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 14266,
+      "url": "https://issues.chromium.org/action/issues/503197487/attachments/75622181?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 75622182,
+      "filename": "brokerhost_lifecycle.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 2124,
+      "url": "https://issues.chromium.org/action/issues/503197487/attachments/75622182?download=true",
+      "local_path": "attachments/brokerhost_lifecycle.patch"
+    },
+    {
+      "id": 75622183,
+      "filename": "exploit.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4217601,
+      "url": "https://issues.chromium.org/action/issues/503197487/attachments/75622183?download=true",
+      "local_path": "attachments/exploit.mp4"
+    }
+  ],
+  "update_count": 11,
+  "description_snippet": "# Steps to reproduce the problem\n### Reproduce Crash\n1. Download brokerhost_lifecycle.patch (attached)\n2. Apply patch using `git apply brokerhost_lifecycle.patch`\n3. Here's out/asan/args.gn\n```\n# Set build arguments here. See `gn help buildargs`.\nis_asan = true\nis_clang = true\nis_debug = false\n\nsymb"
+}

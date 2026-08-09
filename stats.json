@@ -1,7 +1,7 @@
 {
-  "total_reports": 4670,
-  "total_bounty": 27297171.7,
-  "avg_bounty": 5848.98,
+  "total_reports": 4687,
+  "total_bounty": 27743171.7,
+  "avg_bounty": 5924.23,
   "by_year": {
     "2009": {
       "count": 3,
@@ -68,36 +68,36 @@
       "total_bounty": 3447981.0
     },
     "2025": {
-      "count": 283,
-      "total_bounty": 3413500.0
+      "count": 285,
+      "total_bounty": 3414500.0
     },
     "2026": {
-      "count": 326,
-      "total_bounty": 4482500.0
+      "count": 341,
+      "total_bounty": 4927500.0
     }
   },
   "by_severity": {
-    "S3-Low": 4068,
-    "S4-Minimal": 528,
-    "Unknown": 66,
+    "S3-Low": 4083,
+    "S4-Minimal": 529,
+    "Unknown": 67,
     "S1-High": 6,
     "S0-Critical": 1,
     "S2-Medium": 1
   },
   "by_status": {
-    "Assigned": 3646,
-    "Accepted": 731,
-    "New": 142,
+    "Assigned": 3655,
+    "Accepted": 738,
+    "New": 143,
     "Fixed": 96,
     "Verified": 54,
     "Unknown": 1
   },
   "by_component": {
-    "Blink": 2071,
-    "Internals": 1023,
-    "UI": 620,
+    "Blink": 2077,
+    "Internals": 1030,
+    "UI": 623,
     "Unknown": 352,
-    "Platform": 267,
+    "Platform": 268,
     "Blink, Blink": 80,
     "Mobile": 58,
     "Dawn": 43,
@@ -121,30 +121,37 @@
     },
     {
       "range": "$500-1K",
-      "count": 607
+      "count": 609
     },
     {
       "range": "$1K-3K",
-      "count": 1524
+      "count": 1527
     },
     {
       "range": "$3K-5K",
-      "count": 729
+      "count": 732
     },
     {
       "range": "$5K-10K",
-      "count": 1035
+      "count": 1036
     },
     {
       "range": "$10K-20K",
-      "count": 450
+      "count": 451
     },
     {
       "range": "$20K+",
-      "count": 316
+      "count": 322
     }
   ],
   "top_bounties": [
+    {
+      "id": "503197487",
+      "title": "ipcz bug can allow renderer duplicate browser process handle to escape sandbox",
+      "bounty_amount": 250000.0,
+      "severity": "S3-Low",
+      "year": 2026
+    },
     {
       "id": "481277120",
       "title": "ipcz bug can allow renderer duplicate browser process handle to escape sandbox",
@@ -276,13 +283,6 @@
       "title": "Pwnium bug: Prerendering issues with NACL",
       "bounty_amount": 60000.0,
       "severity": "S4-Minimal",
-      "year": 2012
-    },
-    {
-      "id": "40054620",
-      "title": "Part 1 of Pwnium Bug: UXSS",
-      "bounty_amount": 60000.0,
-      "severity": "S3-Low",
       "year": 2012
     }
   ]

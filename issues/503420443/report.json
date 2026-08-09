@@ -1,0 +1,135 @@
+{
+  "id": "503420443",
+  "url": "https://issues.chromium.org/issues/503420443",
+  "title": "Missing lifetime check in SpdyStream::IncreaseRecvWindowSize leads to use-after-free in Network Service",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>Network>HTTP2",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2019-9512",
+    "CVE-2019-9514",
+    "CVE-2019-9515"
+  ],
+  "reporter": "je...@gmail.com",
+  "assignee": "ba...@chromium.org",
+  "created_date": "2026-04-17T04:37:21+00:00",
+  "modified_date": "2026-08-04T07:54:19+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 43000.0,
+  "reward_amount_meta": 43000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75636576,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 243,
+      "url": "https://issues.chromium.org/action/issues/503420443/attachments/75636576?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75636578,
+      "filename": "server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 5685,
+      "url": "https://issues.chromium.org/action/issues/503420443/attachments/75636578?download=true",
+      "local_path": "attachments/server.py"
+    },
+    {
+      "id": 75636579,
+      "filename": "spdy_poc_key.pem",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1704,
+      "url": "https://issues.chromium.org/action/issues/503420443/attachments/75636579?download=true",
+      "local_path": "attachments/spdy_poc_key.pem"
+    },
+    {
+      "id": 75636580,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 20828,
+      "url": "https://issues.chromium.org/action/issues/503420443/attachments/75636580?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 75636581,
+      "filename": "readme.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 1175,
+      "url": "https://issues.chromium.org/action/issues/503420443/attachments/75636581?download=true",
+      "local_path": "attachments/readme.md"
+    },
+    {
+      "id": 75647069,
+      "filename": "spdy_poc_cert.pem",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1115,
+      "url": "https://issues.chromium.org/action/issues/503420443/attachments/75647069?download=true",
+      "local_path": "attachments/spdy_poc_cert.pem"
+    },
+    {
+      "id": 75647074,
+      "filename": "server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 9092,
+      "url": "https://issues.chromium.org/action/issues/503420443/attachments/75647074?download=true",
+      "local_path": "attachments/server_75647074.py"
+    },
+    {
+      "id": 75647075,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 2407,
+      "url": "https://issues.chromium.org/action/issues/503420443/attachments/75647075?download=true",
+      "local_path": "attachments/poc_75647075.html"
+    },
+    {
+      "id": 75644783,
+      "filename": "readme.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 922,
+      "url": "https://issues.chromium.org/action/issues/503420443/attachments/75644783?download=true",
+      "local_path": "attachments/readme_75644783.md"
+    },
+    {
+      "id": 75632852,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 18570,
+      "url": "https://issues.chromium.org/action/issues/503420443/attachments/75632852?download=true",
+      "local_path": "attachments/asan_75632852.log"
+    },
+    {
+      "id": 75644784,
+      "filename": "report.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 13735,
+      "url": "https://issues.chromium.org/action/issues/503420443/attachments/75644784?download=true",
+      "local_path": "attachments/report.md"
+    },
+    {
+      "id": 75656900,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 22448,
+      "url": "https://issues.chromium.org/action/issues/503420443/attachments/75656900?download=true",
+      "local_path": "attachments/asan_75656900.log"
+    }
+  ],
+  "update_count": 54,
+  "description_snippet": "# Missing lifetime check in SpdyStream::IncreaseRecvWindowSize leads to use-after-free in Network Service\n\n## Summary\n\nA use-after-free write exists in the HTTP/2 stack of Chromium's Network Service. When a malicious HTTP/2 server sends a burst of control frames followed by a padded DATA frame, the"
+}

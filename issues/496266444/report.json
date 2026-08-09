@@ -1,0 +1,70 @@
+{
+  "id": "496266444",
+  "url": "https://issues.chromium.org/issues/496266444",
+  "title": "Non trivial number of AutoCloseableRouter finalizer exceptions",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "Internals>Mojo>Bindings",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ds...@chromium.org",
+  "assignee": "dc...@chromium.org",
+  "created_date": "2026-03-26T02:10:46+00:00",
+  "modified_date": "2026-08-04T07:55:06+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": null,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 81,
+  "bounty_rationale": "Mildly mitigated browser memory corruption. Mitigated browser crash by race. \n\n\n\n\n\n\n\n  \n    \n  \n\n\nImportant payment guidance:\n\n\n*   **Legacy**: If you aren't already registered with Google as a supplier,\n    p2p-vrp@google.com will reach out to you. If you have registered in the\n    past, no need to repeat the process – you can sit back and relax, and we\n    will process the payment soon.\n\n    If you have any payment related requests, please direct them to\n    p2p-vrp@google.com. Please remember",
+  "attachments": [
+    {
+      "id": 74780545,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 184,
+      "url": "https://issues.chromium.org/action/issues/496266444/attachments/74780545?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74780546,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 4544,
+      "url": "https://issues.chromium.org/action/issues/496266444/attachments/74780546?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 74780547,
+      "filename": "trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 19825,
+      "url": "https://issues.chromium.org/action/issues/496266444/attachments/74780547?download=true",
+      "local_path": "attachments/trace.txt"
+    },
+    {
+      "id": 74835582,
+      "filename": "MojoWriteIpcz.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 15640,
+      "url": "https://issues.chromium.org/action/issues/496266444/attachments/74835582?download=true",
+      "local_path": "attachments/MojoWriteIpcz.txt"
+    },
+    {
+      "id": 75274547,
+      "filename": "updated_patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 4535,
+      "url": "https://issues.chromium.org/action/issues/496266444/attachments/75274547?download=true",
+      "local_path": "attachments/updated_patch.diff"
+    }
+  ],
+  "update_count": 85,
+  "description_snippet": "# Steps to reproduce the problem\ngn args:\n```\nandroid_static_analysis = \"off\"\ndebuggable_apks = true\nenable_android_secondary_abi = true\ndcheck_always_on=false\nis_debug=false\nffmpeg_branding = \"Chrome\"\nis_component_build = false\nproprietary_codecs = true\nsymbol_level = 2\ntarget_cpu = \"arm64\"\ntarget_"
+}

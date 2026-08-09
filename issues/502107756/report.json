@@ -1,0 +1,65 @@
+{
+  "id": "502107756",
+  "url": "https://issues.chromium.org/issues/502107756",
+  "title": "Buffer overflow in vp9_get_token_cost via crafted VideoEncoder frame sequence",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>Media>Video",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sh...@gmail.com",
+  "assignee": "ma...@google.com",
+  "created_date": "2026-04-13T10:09:59+00:00",
+  "modified_date": "2026-07-22T07:57:37+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75486376,
+      "filename": "chrome_ubsan_trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 3719,
+      "url": "https://issues.chromium.org/action/issues/502107756/attachments/75486376?download=true",
+      "local_path": "attachments/chrome_ubsan_trace.txt"
+    },
+    {
+      "id": 75486377,
+      "filename": "harness.c",
+      "mime_type": "text/x-csrc",
+      "size_bytes": 2840,
+      "url": "https://issues.chromium.org/action/issues/502107756/attachments/75486377?download=true",
+      "local_path": "attachments/harness.c"
+    },
+    {
+      "id": 75486378,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1815,
+      "url": "https://issues.chromium.org/action/issues/502107756/attachments/75486378?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75486379,
+      "filename": "poc.yuv",
+      "mime_type": "video/x-raw-yuv",
+      "size_bytes": 42912,
+      "url": "https://issues.chromium.org/action/issues/502107756/attachments/75486379?download=true",
+      "local_path": "attachments/poc.yuv"
+    }
+  ],
+  "update_count": 27,
+  "description_snippet": "---\n\n### Report description\n\n\nSigned integer overflow in VP9 encoder block_rd_txfm (libvpx)\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/rules/"
+}

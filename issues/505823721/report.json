@@ -1,0 +1,59 @@
+{
+  "id": "505823721",
+  "url": "https://issues.chromium.org/issues/505823721",
+  "title": "V8: Turboshaft miscompilation: Operand drop in TryReduceRorInTree allows potential sandbox bypass",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Turboshaft",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "or...@gmail.com",
+  "assignee": "mr...@chromium.org",
+  "created_date": "2026-04-23T19:51:02+00:00",
+  "modified_date": "2026-08-04T07:58:17+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "reward_amount_meta": 8000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75892054,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 587,
+      "url": "https://issues.chromium.org/action/issues/505823721/attachments/75892054?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 75892055,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1439,
+      "url": "https://issues.chromium.org/action/issues/505823721/attachments/75892055?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75887159,
+      "filename": "2026-04-24 112502.png",
+      "mime_type": "image/png",
+      "size_bytes": 12086,
+      "url": "https://issues.chromium.org/action/issues/505823721/attachments/75887159?download=true",
+      "local_path": "attachments/2026-04-24 112502.png"
+    }
+  ],
+  "update_count": 80,
+  "description_snippet": "---\n\n### Report description\n\n\nV8: Turboshaft miscompilation: Operand drop in TryReduceRorInTree allows potential sandbox bypass\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https:"
+}

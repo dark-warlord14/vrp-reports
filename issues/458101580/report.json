@@ -1,0 +1,58 @@
+{
+  "id": "458101580",
+  "url": "https://issues.chromium.org/issues/458101580",
+  "title": "Bypass :// Characters in Download Security UI lead to Origin Spoofing",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "131.0.0.0",
+  "cve_ids": [],
+  "reporter": "fr...@gmail.com",
+  "assignee": "ch...@chromium.org",
+  "created_date": "2025-11-06T02:00:48+00:00",
+  "modified_date": "2026-08-04T07:54:11+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 70771968,
+      "filename": "IMG_4862.MP4",
+      "mime_type": "video/mp4",
+      "size_bytes": 5424703,
+      "url": "https://issues.chromium.org/action/issues/458101580/attachments/70771968?download=true",
+      "local_path": "attachments/IMG_4862.MP4"
+    },
+    {
+      "id": 70771969,
+      "filename": "spoof-2.html",
+      "mime_type": "text/html",
+      "size_bytes": 2012,
+      "url": "https://issues.chromium.org/action/issues/458101580/attachments/70771969?download=true",
+      "local_path": "attachments/spoof-2.html"
+    },
+    {
+      "id": 75929005,
+      "filename": "Fri Apr 24 2026 17:38:03 GMT+0200 (Central European Summer Time).png",
+      "mime_type": "image/png",
+      "size_bytes": 174625,
+      "url": "https://issues.chromium.org/action/issues/458101580/attachments/75929005?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "# Steps to reproduce the problem\n1. Prepare spoof html files or you can use mine at https://n13s.site/spoof-2.html\n2. Access the page\n3. Download the file\n4. You will see that the :// blacklist is getting bypassed and allow attacker to create a fake origin\n\n# Problem Description\nBy default, Chrome’s"
+}

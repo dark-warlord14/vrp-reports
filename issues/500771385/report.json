@@ -1,0 +1,99 @@
+{
+  "id": "500771385",
+  "url": "https://issues.chromium.org/issues/500771385",
+  "title": "V8 Sandbox Bypass: Compiler-Eliminated CPT Tag Check",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "qw...@gmail.com",
+  "assignee": "ml...@google.com",
+  "created_date": "2026-04-08T19:24:05+00:00",
+  "modified_date": "2026-08-04T07:54:43+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "reward_amount_meta": 20000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75326371,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 8860,
+      "url": "https://issues.chromium.org/action/issues/500771385/attachments/75326371?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75326372,
+      "filename": "test-2-crosstype-read.log",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 7055,
+      "url": "https://issues.chromium.org/action/issues/500771385/attachments/75326372?download=true",
+      "local_path": "attachments/test-2-crosstype-read.log"
+    },
+    {
+      "id": 75326373,
+      "filename": "test-1-sbx-violation.html",
+      "mime_type": "text/html",
+      "size_bytes": 1707,
+      "url": "https://issues.chromium.org/action/issues/500771385/attachments/75326373?download=true",
+      "local_path": "attachments/test-1-sbx-violation.html"
+    },
+    {
+      "id": 75326374,
+      "filename": "test-1-sbx-violation.log",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 7816,
+      "url": "https://issues.chromium.org/action/issues/500771385/attachments/75326374?download=true",
+      "local_path": "attachments/test-1-sbx-violation.log"
+    },
+    {
+      "id": 75326375,
+      "filename": "test-2-crosstype-read.html",
+      "mime_type": "text/html",
+      "size_bytes": 1306,
+      "url": "https://issues.chromium.org/action/issues/500771385/attachments/75326375?download=true",
+      "local_path": "attachments/test-2-crosstype-read.html"
+    },
+    {
+      "id": 75326376,
+      "filename": "test-3-enum-inject.html",
+      "mime_type": "text/html",
+      "size_bytes": 1866,
+      "url": "https://issues.chromium.org/action/issues/500771385/attachments/75326376?download=true",
+      "local_path": "attachments/test-3-enum-inject.html"
+    },
+    {
+      "id": 75326377,
+      "filename": "poc.log",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 7676,
+      "url": "https://issues.chromium.org/action/issues/500771385/attachments/75326377?download=true",
+      "local_path": "attachments/poc.log"
+    },
+    {
+      "id": 75326378,
+      "filename": "test-3-enum-inject.log",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 8125,
+      "url": "https://issues.chromium.org/action/issues/500771385/attachments/75326378?download=true",
+      "local_path": "attachments/test-3-enum-inject.log"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "---\n\n### Report description\n\n\nV8 Sandbox Bypass: Compiler-Eliminated CPT Tag Check\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/rules/574516786"
+}

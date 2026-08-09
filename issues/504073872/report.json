@@ -1,0 +1,107 @@
+{
+  "id": "504073872",
+  "url": "https://issues.chromium.org/issues/504073872",
+  "title": "\tSharedWorker same-origin check bypass for chrome-extension:// — DedicatedWorker hardening (8bde565) not applied to sibling SharedWorker path",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Workers",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "tr...@gmail.com",
+  "assignee": "yy...@chromium.org",
+  "created_date": "2026-04-19T00:33:25+00:00",
+  "modified_date": "2026-08-04T07:54:51+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75674505,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 465,
+      "url": "https://issues.chromium.org/action/issues/504073872/attachments/75674505?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 75674506,
+      "filename": "popup.html",
+      "mime_type": "text/html",
+      "size_bytes": 210,
+      "url": "https://issues.chromium.org/action/issues/504073872/attachments/75674506?download=true",
+      "local_path": "attachments/popup.html"
+    },
+    {
+      "id": 75674507,
+      "filename": "popup.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2778,
+      "url": "https://issues.chromium.org/action/issues/504073872/attachments/75674507?download=true",
+      "local_path": "attachments/popup.js"
+    },
+    {
+      "id": 75674508,
+      "filename": "server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 2382,
+      "url": "https://issues.chromium.org/action/issues/504073872/attachments/75674508?download=true",
+      "local_path": "attachments/server.py"
+    },
+    {
+      "id": 75702803,
+      "filename": "worker.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 701,
+      "url": "https://issues.chromium.org/action/issues/504073872/attachments/75702803?download=true",
+      "local_path": "attachments/worker.js"
+    },
+    {
+      "id": 75702804,
+      "filename": "attacker_collected.json",
+      "mime_type": "application/json",
+      "size_bytes": 4423,
+      "url": "https://issues.chromium.org/action/issues/504073872/attachments/75702804?download=true",
+      "local_path": "attachments/attacker_collected.json"
+    },
+    {
+      "id": 75702805,
+      "filename": "kill_signature.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 995,
+      "url": "https://issues.chromium.org/action/issues/504073872/attachments/75702805?download=true",
+      "local_path": "attachments/kill_signature.txt"
+    },
+    {
+      "id": 75702806,
+      "filename": "trunk_debug_kill_context.log",
+      "mime_type": "text/plain",
+      "size_bytes": 15512,
+      "url": "https://issues.chromium.org/action/issues/504073872/attachments/75702806?download=true",
+      "local_path": "attachments/trunk_debug_kill_context.log"
+    },
+    {
+      "id": 75736712,
+      "filename": "poc.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 4241,
+      "url": "https://issues.chromium.org/action/issues/504073872/attachments/75736712?download=true",
+      "local_path": "attachments/poc.zip"
+    }
+  ],
+  "update_count": 39,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}
