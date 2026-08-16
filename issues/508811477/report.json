@@ -1,0 +1,131 @@
+{
+  "id": "508811477",
+  "url": "https://issues.chromium.org/issues/508811477",
+  "title": "V8 Turboshaft late load elimination reuses stale map load after aliased map transition",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Turboshaft",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mu...@winfunc.com",
+  "assignee": "dm...@chromium.org",
+  "created_date": "2026-05-02T22:06:32+00:00",
+  "modified_date": "2026-08-14T20:12:16+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 76244057,
+      "filename": "poc_d8.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1080,
+      "url": "https://issues.chromium.org/action/issues/508811477/attachments/76244057?download=true",
+      "local_path": "attachments/poc_d8.js"
+    },
+    {
+      "id": 76244058,
+      "filename": "lle_verifier_crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 12340,
+      "url": "https://issues.chromium.org/action/issues/508811477/attachments/76244058?download=true",
+      "local_path": "attachments/lle_verifier_crash.log"
+    },
+    {
+      "id": 76244059,
+      "filename": "lle_noverify.log",
+      "mime_type": "text/plain",
+      "size_bytes": 187,
+      "url": "https://issues.chromium.org/action/issues/508811477/attachments/76244059?download=true",
+      "local_path": "attachments/lle_noverify.log"
+    },
+    {
+      "id": 76244060,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1817,
+      "url": "https://issues.chromium.org/action/issues/508811477/attachments/76244060?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 76244061,
+      "filename": "chrome_parent_lle_browser.log",
+      "mime_type": "text/plain",
+      "size_bytes": 18044,
+      "url": "https://issues.chromium.org/action/issues/508811477/attachments/76244061?download=true",
+      "local_path": "attachments/chrome_parent_lle_browser.log"
+    },
+    {
+      "id": 76377904,
+      "filename": "poc_missing_property_wrong_result.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1127,
+      "url": "https://issues.chromium.org/action/issues/508811477/attachments/76377904?download=true",
+      "local_path": "attachments/poc_missing_property_wrong_result.js"
+    },
+    {
+      "id": 76400801,
+      "filename": "poc_missing_property.html",
+      "mime_type": "text/html",
+      "size_bytes": 1613,
+      "url": "https://issues.chromium.org/action/issues/508811477/attachments/76400801?download=true",
+      "local_path": "attachments/poc_missing_property.html"
+    },
+    {
+      "id": 76387418,
+      "filename": "chrome_missing_property_noverify.log",
+      "mime_type": "text/plain",
+      "size_bytes": 3773,
+      "url": "https://issues.chromium.org/action/issues/508811477/attachments/76387418?download=true",
+      "local_path": "attachments/chrome_missing_property_noverify.log"
+    },
+    {
+      "id": 76377905,
+      "filename": "chrome_missing_property_verify.log",
+      "mime_type": "text/plain",
+      "size_bytes": 17501,
+      "url": "https://issues.chromium.org/action/issues/508811477/attachments/76377905?download=true",
+      "local_path": "attachments/chrome_missing_property_verify.log"
+    },
+    {
+      "id": 76377906,
+      "filename": "lle_missing_property_noverify.log",
+      "mime_type": "text/plain",
+      "size_bytes": 218,
+      "url": "https://issues.chromium.org/action/issues/508811477/attachments/76377906?download=true",
+      "local_path": "attachments/lle_missing_property_noverify.log"
+    },
+    {
+      "id": 76403578,
+      "filename": "lle_missing_property_verify.log",
+      "mime_type": "text/plain",
+      "size_bytes": 12241,
+      "url": "https://issues.chromium.org/action/issues/508811477/attachments/76403578?download=true",
+      "local_path": "attachments/lle_missing_property_verify.log"
+    },
+    {
+      "id": 76403579,
+      "filename": "lle_missing_property_interp.log",
+      "mime_type": "text/plain",
+      "size_bytes": 221,
+      "url": "https://issues.chromium.org/action/issues/508811477/attachments/76403579?download=true",
+      "local_path": "attachments/lle_missing_property_interp.log"
+    }
+  ],
+  "update_count": 107,
+  "description_snippet": "Security Bug\n\nVULNERABILITY DETAILS\n\nV8 Turboshaft Late Load Elimination can reuse a stale `LoadMapField` across an aliased map transition. The root cause is in `LateLoadEliminationAnalyzer::ProcessStore()`:\n\n```\nv8/src/compiler/turboshaft/late-load-elimination-reducer.cc\n\n// Updates known stored va"
+}

@@ -1,0 +1,62 @@
+{
+  "id": "472892246",
+  "url": "https://issues.chromium.org/issues/472892246",
+  "title": "Chrome Android address bar shows stale eTLD when navigating to longer attacker-controlled domains",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Omnibox",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": "145.0.7608.0",
+  "cve_ids": [],
+  "reporter": "ga...@gmail.com",
+  "assignee": "pe...@google.com",
+  "created_date": "2026-01-02T13:14:49+00:00",
+  "modified_date": "2026-08-14T20:11:12+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 72188176,
+      "filename": "PoC.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 9684477,
+      "url": "https://issues.chromium.org/action/issues/472892246/attachments/72188176?download=true",
+      "local_path": "attachments/PoC.mp4"
+    },
+    {
+      "id": 72188177,
+      "filename": "WhatsApp Image 2026-01-02 at 20.00.58.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 24976,
+      "url": "https://issues.chromium.org/action/issues/472892246/attachments/72188177?download=true",
+      "local_path": "attachments/WhatsApp Image 2026-01-02 at 20.00.58.jpeg"
+    },
+    {
+      "id": 72188178,
+      "filename": "WhatsApp Image 2026-01-02 at 20.01.44.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 24365,
+      "url": "https://issues.chromium.org/action/issues/472892246/attachments/72188178?download=true",
+      "local_path": "attachments/WhatsApp Image 2026-01-02 at 20.01.44.jpeg"
+    },
+    {
+      "id": 72188179,
+      "filename": "WhatsApp Image 2026-01-02 at 20.02.32.jpeg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 25777,
+      "url": "https://issues.chromium.org/action/issues/472892246/attachments/72188179?download=true",
+      "local_path": "attachments/WhatsApp Image 2026-01-02 at 20.02.32.jpeg"
+    }
+  ],
+  "update_count": 43,
+  "description_snippet": "# Steps to reproduce the problem\n1. Open Chrome on Android (tested on Chrome Canary 142.0.7396.0, Android 15).\n2. In a single tab, navigate to:\n   https://www.aaaaa.auths.account.google.c\n3. Observe that the address bar correctly displays:\n   https://www.aaaaa.auths.account.google.c\n4. Without openi"
+}

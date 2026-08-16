@@ -1,0 +1,59 @@
+{
+  "id": "503731573",
+  "url": "https://issues.chromium.org/issues/503731573",
+  "title": "Browser Process Heap-Use-After-Free in Digital Credentials API (Renderer → Browser Memory Corruption)",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Identity>DigitalCredentials",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "wo...@gmail.com",
+  "assignee": "ma...@chromium.org",
+  "created_date": "2026-04-17T16:12:42+00:00",
+  "modified_date": "2026-07-25T07:54:43+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75668443,
+      "filename": "recording.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2942174,
+      "url": "https://issues.chromium.org/action/issues/503731573/attachments/75668443?download=true",
+      "local_path": "attachments/recording.mp4"
+    },
+    {
+      "id": 75668444,
+      "filename": "crash.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 16094,
+      "url": "https://issues.chromium.org/action/issues/503731573/attachments/75668444?download=true",
+      "local_path": "attachments/crash.txt"
+    },
+    {
+      "id": 75667901,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1922,
+      "url": "https://issues.chromium.org/action/issues/503731573/attachments/75667901?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 17,
+  "description_snippet": "---\n\n### Report description\n\n\nIncomplete Fix: Reentrant Teardown in Digital Credentials API Leads to Use-After-Free / Invalid Object Lifetime in Browser Process\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome br"
+}

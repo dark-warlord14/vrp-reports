@@ -1,0 +1,57 @@
+{
+  "id": "493082093",
+  "url": "https://issues.chromium.org/issues/493082093",
+  "title": "Integer overflow in XNNPACK MaxPool2d indirection buffer sizing leads to heap out-of-bounds write in GPU process",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Internals>OptimizationGuide",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ph...@chromium.org",
+  "created_date": "2026-03-16T11:53:42+00:00",
+  "modified_date": "2026-08-13T22:07:08+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 43000.0,
+  "reward_amount_meta": 43000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74371800,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 3207,
+      "url": "https://issues.chromium.org/action/issues/493082093/attachments/74371800?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 74383062,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8233,
+      "url": "https://issues.chromium.org/action/issues/493082093/attachments/74383062?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 74383063,
+      "filename": "asan_linux.log",
+      "mime_type": "text/plain",
+      "size_bytes": 5422,
+      "url": "https://issues.chromium.org/action/issues/493082093/attachments/74383063?download=true",
+      "local_path": "attachments/asan_linux.log"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "# Integer overflow in XNNPACK MaxPool2d indirection buffer sizing leads to heap out-of-bounds write in GPU process\n\n## Summary\n\nAn integer overflow in XNNPACK's max pooling operator allows a web page to crash the GPU process via the WebNN API. The function `reshape_max_pooling2d_nhwc` computes the s"
+}

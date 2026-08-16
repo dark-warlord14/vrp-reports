@@ -1,0 +1,90 @@
+{
+  "id": "507138723",
+  "url": "https://issues.chromium.org/issues/507138723",
+  "title": "UAF in RenderFrameHostImpl::ExitFullscreen() — missing WeakPtr guard (variant of EnterFullscreen fix 91d5baaef742)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>FullScreen",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@minico.ai",
+  "assignee": "jo...@chromium.org",
+  "created_date": "2026-04-27T21:53:15+00:00",
+  "modified_date": "2026-08-13T21:55:44+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 76042134,
+      "filename": "chromium_tree_android_fix_cc.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4613,
+      "url": "https://issues.chromium.org/action/issues/507138723/attachments/76042134?download=true",
+      "local_path": "attachments/chromium_tree_android_fix_cc.patch"
+    },
+    {
+      "id": 76042135,
+      "filename": "suggested_fix.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1873,
+      "url": "https://issues.chromium.org/action/issues/507138723/attachments/76042135?download=true",
+      "local_path": "attachments/suggested_fix.patch"
+    },
+    {
+      "id": 76042136,
+      "filename": "unittest_diff.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2950,
+      "url": "https://issues.chromium.org/action/issues/507138723/attachments/76042136?download=true",
+      "local_path": "attachments/unittest_diff.patch"
+    },
+    {
+      "id": 76042137,
+      "filename": "destructive_java_trigger.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1412,
+      "url": "https://issues.chromium.org/action/issues/507138723/attachments/76042137?download=true",
+      "local_path": "attachments/destructive_java_trigger.patch"
+    },
+    {
+      "id": 76042138,
+      "filename": "chromium_tree_android_fix_buildgn.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1779,
+      "url": "https://issues.chromium.org/action/issues/507138723/attachments/76042138?download=true",
+      "local_path": "attachments/chromium_tree_android_fix_buildgn.patch"
+    },
+    {
+      "id": 76042139,
+      "filename": "asan.log",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 21002,
+      "url": "https://issues.chromium.org/action/issues/507138723/attachments/76042139?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 76042140,
+      "filename": "build.log",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3949717,
+      "url": "https://issues.chromium.org/action/issues/507138723/attachments/76042140?download=true",
+      "local_path": "attachments/build.log"
+    }
+  ],
+  "update_count": 7,
+  "description_snippet": "---\n\n### Report description\n\n\nHeap UAF in WebContentsImpl::FullscreenStateChanged\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/rules/5745167867"
+}

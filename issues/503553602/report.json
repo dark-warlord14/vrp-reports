@@ -1,0 +1,75 @@
+{
+  "id": "503553602",
+  "url": "https://issues.chromium.org/issues/503553602",
+  "title": "V8 Sandbox Bypass:LOCAL+frame OOB write in `SetLocalVariableValue`",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "V8 version 14.9.0 (candidate)",
+  "cve_ids": [],
+  "reporter": "gr...@gmail.com",
+  "assignee": "da...@google.com",
+  "created_date": "2026-04-17T08:22:46+00:00",
+  "modified_date": "2026-08-13T22:07:21+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75644794,
+      "filename": "poc.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1478,
+      "url": "https://issues.chromium.org/action/issues/503553602/attachments/75644794?download=true",
+      "local_path": "attachments/poc.js"
+    },
+    {
+      "id": 75655727,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/503553602/attachments/75655727?download=true",
+      "local_path": null
+    },
+    {
+      "id": 75655728,
+      "filename": "poc2.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3909,
+      "url": "https://issues.chromium.org/action/issues/503553602/attachments/75655728?download=true",
+      "local_path": "attachments/poc2.js"
+    },
+    {
+      "id": 75735265,
+      "filename": "fix.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 857,
+      "url": "https://issues.chromium.org/action/issues/503553602/attachments/75735265?download=true",
+      "local_path": "attachments/fix.patch"
+    },
+    {
+      "id": 76055448,
+      "filename": "poc2.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1966,
+      "url": "https://issues.chromium.org/action/issues/503553602/attachments/76055448?download=true",
+      "local_path": "attachments/poc2_76055448.js"
+    }
+  ],
+  "update_count": 77,
+  "description_snippet": "# Steps to reproduce the problem\n1. Build d8 (commit 6b7fa0487453a6521f21f8d596acbfcc38f98995 Thu Apr 16)\n```\nis_component_build = false\nis_debug = false\ntarget_cpu = \"x64\"\nv8_enable_sandbox = true\nv8_enable_backtrace = true\nv8_enable_disassembler = true\nv8_enable_object_print = true\nv8_enable_verif"
+}

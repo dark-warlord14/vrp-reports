@@ -1,0 +1,48 @@
+{
+  "id": "503558392",
+  "url": "https://issues.chromium.org/issues/503558392",
+  "title": "Integer truncation in ANGLE D3D11 VertexDataManager leads to heap OOB read from compromised renderer on Windows",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [
+    "CVE-2026-6296"
+  ],
+  "reporter": "je...@gmail.com",
+  "assignee": "am...@google.com",
+  "created_date": "2026-04-17T05:15:36+00:00",
+  "modified_date": "2026-07-25T07:54:27+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75647967,
+      "filename": "angle_d3d11_static_attrib_oob.html",
+      "mime_type": "text/html",
+      "size_bytes": 14944,
+      "url": "https://issues.chromium.org/action/issues/503558392/attachments/75647967?download=true",
+      "local_path": "attachments/angle_d3d11_static_attrib_oob.html"
+    },
+    {
+      "id": 75647968,
+      "filename": "angle_d3d11_static_attrib_oob.html",
+      "mime_type": "text/html",
+      "size_bytes": 14944,
+      "url": "https://issues.chromium.org/action/issues/503558392/attachments/75647968?download=true",
+      "local_path": "attachments/angle_d3d11_static_attrib_oob_75647968.html"
+    }
+  ],
+  "update_count": 8,
+  "description_snippet": "---\n\n### Report description\n\n\nANGLE D3D11: StoreStaticAttrib heap OOB read via integer wrap in vertex attribute offset — static_cast<int>(0x80000000) wraps to -2GB, sourceData points backward past buffer in GPU process\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nC"
+}

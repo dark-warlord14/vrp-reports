@@ -1,0 +1,70 @@
+{
+  "id": "401546699",
+  "url": "https://issues.chromium.org/issues/401546699",
+  "title": "Android Chrome: Out of bound in Vulkan Samsung driver",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P2",
+  "component": "Internals>GPU>Vulkan",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": "133.0.0.0",
+  "cve_ids": [],
+  "reporter": "pw...@gmail.com",
+  "assignee": "va...@chromium.org",
+  "created_date": "2025-03-08T05:37:41+00:00",
+  "modified_date": "2026-08-13T22:10:42+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 63573271,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8807,
+      "url": "https://issues.chromium.org/action/issues/401546699/attachments/63573271?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 63573272,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 5406,
+      "url": "https://issues.chromium.org/action/issues/401546699/attachments/63573272?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 63646530,
+      "filename": "about-gpu-2025-03-11T07-46-33-989Z.txt.phps",
+      "mime_type": "application/x-httpd-php-source",
+      "size_bytes": 61087,
+      "url": "https://issues.chromium.org/action/issues/401546699/attachments/63646530?download=true",
+      "local_path": "attachments/about-gpu-2025-03-11T07-46-33-989Z.txt.phps"
+    },
+    {
+      "id": 64622199,
+      "filename": "about-gpu-2025-02-11T06-09-25-759Z.txt (1).phps",
+      "mime_type": "application/x-httpd-php-source",
+      "size_bytes": 52079,
+      "url": "https://issues.chromium.org/action/issues/401546699/attachments/64622199?download=true",
+      "local_path": "attachments/about-gpu-2025-02-11T06-09-25-759Z.txt (1).phps"
+    },
+    {
+      "id": 64622200,
+      "filename": "KakaoTalk_20250406_233640323.jpg",
+      "mime_type": "image/jpeg",
+      "size_bytes": 455486,
+      "url": "https://issues.chromium.org/action/issues/401546699/attachments/64622200?download=true",
+      "local_path": "attachments/KakaoTalk_20250406_233640323.jpg"
+    }
+  ],
+  "update_count": 144,
+  "description_snippet": "# Steps to reproduce the problem\n1. Run chrome browser in android\n2. Open poc.html\n3. Check crash log using \"adb logcat -b crash\"\n\n# Problem Description\nWhen Android Chrome compiles a shader using the Vulkan driver, a crash occurs in the vulkan.samsung.so driver. Specifically, the function `sub_1858"
+}

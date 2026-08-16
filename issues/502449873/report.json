@@ -1,0 +1,91 @@
+{
+  "id": "502449873",
+  "url": "https://issues.chromium.org/issues/502449873",
+  "title": "Integer truncation in `protectedAudience.decodeUtf8()` causes out-of-bounds read via `strlen` in auction worklet utility process",
+  "status": "Verified",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>InterestGroups",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "mo...@chromium.org",
+  "created_date": "2026-04-14T16:52:33+00:00",
+  "modified_date": "2026-08-13T22:06:25+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75529134,
+      "filename": "ad.html",
+      "mime_type": "text/html",
+      "size_bytes": 45,
+      "url": "https://issues.chromium.org/action/issues/502449873/attachments/75529134?download=true",
+      "local_path": "attachments/ad.html"
+    },
+    {
+      "id": 75529135,
+      "filename": "seller.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 180,
+      "url": "https://issues.chromium.org/action/issues/502449873/attachments/75529135?download=true",
+      "local_path": "attachments/seller.js"
+    },
+    {
+      "id": 75529136,
+      "filename": "readme.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 916,
+      "url": "https://issues.chromium.org/action/issues/502449873/attachments/75529136?download=true",
+      "local_path": "attachments/readme.md"
+    },
+    {
+      "id": 75529137,
+      "filename": "crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 2133,
+      "url": "https://issues.chromium.org/action/issues/502449873/attachments/75529137?download=true",
+      "local_path": "attachments/crash.log"
+    },
+    {
+      "id": 75529138,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 1146,
+      "url": "https://issues.chromium.org/action/issues/502449873/attachments/75529138?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75538593,
+      "filename": "bidder.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 755,
+      "url": "https://issues.chromium.org/action/issues/502449873/attachments/75538593?download=true",
+      "local_path": "attachments/bidder.js"
+    },
+    {
+      "id": 75538594,
+      "filename": "server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 2074,
+      "url": "https://issues.chromium.org/action/issues/502449873/attachments/75538594?download=true",
+      "local_path": "attachments/server.py"
+    }
+  ],
+  "update_count": 28,
+  "description_snippet": "# Integer truncation in `protectedAudience.decodeUtf8()` causes out-of-bounds read via `strlen` in auction worklet utility process\n\n## Summary\n\nThe `TextConversionHelpers::DecodeUtf8` function in the Protected Audience (FLEDGE) auction worklet service passes a `size_t` byte length to `v8::String::Ne"
+}

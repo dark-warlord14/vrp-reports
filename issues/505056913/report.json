@@ -1,0 +1,62 @@
+{
+  "id": "505056913",
+  "url": "https://issues.chromium.org/issues/505056913",
+  "title": "WebGL indexed-draw validation truncation on ANGLE Metal allows out-of-bounds vertex fetches",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>GPU>ANGLE",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mu...@winfunc.com",
+  "assignee": "ge...@google.com",
+  "created_date": "2026-04-21T19:45:53+00:00",
+  "modified_date": "2026-08-13T22:07:34+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75799810,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 3525,
+      "url": "https://issues.chromium.org/action/issues/505056913/attachments/75799810?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75799811,
+      "filename": "chrome_parent_metal_index_oob.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8597,
+      "url": "https://issues.chromium.org/action/issues/505056913/attachments/75799811?download=true",
+      "local_path": "attachments/chrome_parent_metal_index_oob.log"
+    },
+    {
+      "id": 75799812,
+      "filename": "chrome_parent_metal_index_oob_ramp16.log",
+      "mime_type": "text/plain",
+      "size_bytes": 8987,
+      "url": "https://issues.chromium.org/action/issues/505056913/attachments/75799812?download=true",
+      "local_path": "attachments/chrome_parent_metal_index_oob_ramp16.log"
+    },
+    {
+      "id": 75799813,
+      "filename": "chrome_parent_metal_index_oob_asan_latest.log",
+      "mime_type": "text/plain",
+      "size_bytes": 3623,
+      "url": "https://issues.chromium.org/action/issues/505056913/attachments/75799813?download=true",
+      "local_path": "attachments/chrome_parent_metal_index_oob_asan_latest.log"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "Security Bug\n\nVULNERABILITY DETAILS\n\nANGLE's indexed-draw validator narrows the computed unsigned maximum element index to signed `GLint` before enforcing vertex-buffer bounds:\n\n```cpp\nif (!ValidateDrawAttribs(context, entryPoint, static_cast<GLint>(indexRange.end())))\n{\n    return false;\n}\n```\n\nTha"
+}

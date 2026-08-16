@@ -1,0 +1,68 @@
+{
+  "id": "487564032",
+  "url": "https://issues.chromium.org/issues/487564032",
+  "title": "Refactor _unfencedTop MPArch code path",
+  "status": "Accepted",
+  "severity": "S1-High",
+  "priority": "P4",
+  "component": "Blink>FencedFrames, UI>Browser>Navigation",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "gt...@chromium.org",
+  "assignee": "sh...@chromium.org",
+  "created_date": "2026-02-25T11:50:20+00:00",
+  "modified_date": "2026-08-14T05:03:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 44,
+  "bounty_rationale": "Baseline with patch bonus. User information disclosure",
+  "attachments": [
+    {
+      "id": 73738275,
+      "filename": "m2_fix.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4901,
+      "url": "https://issues.chromium.org/action/issues/487564032/attachments/73738275?download=true",
+      "local_path": "attachments/m2_fix.diff"
+    },
+    {
+      "id": 73738276,
+      "filename": "m2_poc_patch.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1202,
+      "url": "https://issues.chromium.org/action/issues/487564032/attachments/73738276?download=true",
+      "local_path": "attachments/m2_poc_patch.diff"
+    },
+    {
+      "id": 73738277,
+      "filename": "fenced.html",
+      "mime_type": "text/html",
+      "size_bytes": 297,
+      "url": "https://issues.chromium.org/action/issues/487564032/attachments/73738277?download=true",
+      "local_path": "attachments/fenced.html"
+    },
+    {
+      "id": 73738278,
+      "filename": "serve.py",
+      "mime_type": "text/x-python-script",
+      "size_bytes": 1018,
+      "url": "https://issues.chromium.org/action/issues/487564032/attachments/73738278?download=true",
+      "local_path": "attachments/serve.py"
+    },
+    {
+      "id": 73738279,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 710,
+      "url": "https://issues.chromium.org/action/issues/487564032/attachments/73738279?download=true",
+      "local_path": "attachments/index.html"
+    }
+  ],
+  "update_count": 55,
+  "description_snippet": "---\n\n### Report description\n\n\nFenced frame `_unfencedTop` navigation leaks `initiator_origin` to destination via `Sec-Fetch-Site`\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](http"
+}

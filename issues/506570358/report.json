@@ -1,0 +1,91 @@
+{
+  "id": "506570358",
+  "url": "https://issues.chromium.org/issues/506570358",
+  "title": "V8 Sandbox Escape: CppHeapPointerTable evacuation entry causes out-of-sandbox CppGC mark-bit write",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Sandbox",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "149.0.7811.0",
+  "cve_ids": [],
+  "reporter": "sm...@gmail.com",
+  "assignee": "di...@chromium.org",
+  "created_date": "2026-04-26T08:03:48+00:00",
+  "modified_date": "2026-08-13T22:12:12+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75979616,
+      "filename": "crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 5129,
+      "url": "https://issues.chromium.org/action/issues/506570358/attachments/75979616?download=true",
+      "local_path": "attachments/crash.log"
+    },
+    {
+      "id": 75979617,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 64208,
+      "url": "https://issues.chromium.org/action/issues/506570358/attachments/75979617?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75975860,
+      "filename": "crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 6685,
+      "url": "https://issues.chromium.org/action/issues/506570358/attachments/75975860?download=true",
+      "local_path": "attachments/crash_75975860.log"
+    },
+    {
+      "id": 75991650,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 5149,
+      "url": "https://issues.chromium.org/action/issues/506570358/attachments/75991650?download=true",
+      "local_path": "attachments/poc_75991650.html"
+    },
+    {
+      "id": 75991652,
+      "filename": "fix.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 944,
+      "url": "https://issues.chromium.org/action/issues/506570358/attachments/75991652?download=true",
+      "local_path": "attachments/fix.patch"
+    },
+    {
+      "id": 76004209,
+      "filename": "crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 3525,
+      "url": "https://issues.chromium.org/action/issues/506570358/attachments/76004209?download=true",
+      "local_path": "attachments/crash_76004209.log"
+    },
+    {
+      "id": 76004210,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 5273,
+      "url": "https://issues.chromium.org/action/issues/506570358/attachments/76004210?download=true",
+      "local_path": "attachments/poc_76004210.html"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "# Steps to reproduce the problem\n1. Chrome build with v8 sbx memory corruption api enabled\n\nI used following:\n```gn\nis_asan = true\nis_component_build = false\nsymbol_level = 2\ndcheck_always_on = false\nv8_enable_sandbox = true\nv8_enable_memory_corruption_api = true\n```\n2. Run the attached `poc.html`"
+}

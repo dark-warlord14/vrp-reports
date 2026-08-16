@@ -1,0 +1,59 @@
+{
+  "id": "510968707",
+  "url": "https://issues.chromium.org/issues/510968707",
+  "title": "RenderFrameHostImpl::RunJavaScriptDialog() missing browser-side allow-modals sandbox flag check",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>HTML>Dialog, Blink>SecurityFeature>IFrameSandbox, Internals>Sandbox>SiteIsolation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "os...@gmail.com",
+  "assignee": "av...@chromium.org",
+  "created_date": "2026-05-08T03:49:31+00:00",
+  "modified_date": "2026-08-15T07:55:09+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 76477657,
+      "filename": "bug-report.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 7014,
+      "url": "https://issues.chromium.org/action/issues/510968707/attachments/76477657?download=true",
+      "local_path": "attachments/bug-report.md"
+    },
+    {
+      "id": 76477658,
+      "filename": "suggested-fix.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2304,
+      "url": "https://issues.chromium.org/action/issues/510968707/attachments/76477658?download=true",
+      "local_path": "attachments/suggested-fix.diff"
+    },
+    {
+      "id": 76477659,
+      "filename": "screen_orientation_sandbox_bypass_browsertest.cc",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 8997,
+      "url": "https://issues.chromium.org/action/issues/510968707/attachments/76477659?download=true",
+      "local_path": "attachments/screen_orientation_sandbox_bypass_browsertest.cc"
+    }
+  ],
+  "update_count": 16,
+  "description_snippet": "---\n\n### Report description\n\n\nScreenOrientationProvider::LockOrientation() missing browser-side sandbox flag check — compromised renderer bypasses kOrientationLock via Mojo IPC\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecti"
+}

@@ -1,0 +1,44 @@
+{
+  "id": "484756087",
+  "url": "https://issues.chromium.org/issues/484756087",
+  "title": "Implement an IR for ANGLE's translator",
+  "status": "Accepted",
+  "severity": "S1-High",
+  "priority": "P2",
+  "component": "Unknown",
+  "os_platforms": [],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sy...@chromium.org",
+  "assignee": "sy...@chromium.org",
+  "created_date": "2026-02-15T17:34:00+00:00",
+  "modified_date": "2026-08-15T07:56:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 38,
+  "bounty_rationale": "Baseline. Exploit mitigation bypass.",
+  "attachments": [
+    {
+      "id": 73465621,
+      "filename": "angle_shader_compiler_ast_validation_bypass_poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 7460,
+      "url": "https://issues.chromium.org/action/issues/484756087/attachments/73465621?download=true",
+      "local_path": "attachments/angle_shader_compiler_ast_validation_bypass_poc.html"
+    },
+    {
+      "id": 73465622,
+      "filename": "angle_shader_compiler_ast_validation_bypass_poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 7460,
+      "url": "https://issues.chromium.org/action/issues/484756087/attachments/73465622?download=true",
+      "local_path": "attachments/angle_shader_compiler_ast_validation_bypass_poc_73465622.html"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "---\n\n### Report description\n\n\nA crafted GLSL ES 3.0 shader triggers an AST transformation bug in ANGLE's shared compiler frontend that produces an internally inconsistent AST (dangling variable references).\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP –"
+}

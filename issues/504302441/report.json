@@ -1,0 +1,30 @@
+{
+  "id": "504302441",
+  "url": "https://issues.chromium.org/issues/504302441",
+  "title": "On Ubuntu (or other Linux-based systems) an attacker can steal files uploaded to other sites with little user interaction.",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Linux Toolkit Theming",
+  "os_platforms": [
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "va...@hotmail.com",
+  "assignee": "th...@chromium.org",
+  "created_date": "2026-04-19T15:06:07+00:00",
+  "modified_date": "2026-08-13T22:24:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 19,
+  "description_snippet": "---\n\n### Report description\n\n\nOn Ubuntu (or other Linux-based systems) an attacker can steal files uploaded to other sites with little user interaction.\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. ["
+}

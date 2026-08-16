@@ -1,0 +1,67 @@
+{
+  "id": "504160794",
+  "url": "https://issues.chromium.org/issues/504160794",
+  "title": "AddressSanitizer heap-buffer-overflow in skcms CLUT from a PNG iCCP chunk on the default Rust ICC path",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Skia",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "oj...@gmail.com",
+  "assignee": "se...@microsoft.com",
+  "created_date": "2026-04-19T00:53:04+00:00",
+  "modified_date": "2026-08-13T22:08:01+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75707168,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 6567418,
+      "url": "https://issues.chromium.org/action/issues/504160794/attachments/75707168?download=true",
+      "local_path": "attachments/poc.mp4"
+    },
+    {
+      "id": 75707169,
+      "filename": "make_icc_poc.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 3130,
+      "url": "https://issues.chromium.org/action/issues/504160794/attachments/75707169?download=true",
+      "local_path": "attachments/make_icc_poc.py"
+    },
+    {
+      "id": 75707170,
+      "filename": "evil.png",
+      "mime_type": "image/png",
+      "size_bytes": 620,
+      "url": "https://issues.chromium.org/action/issues/504160794/attachments/75707170?download=true",
+      "local_path": "attachments/evil.png"
+    },
+    {
+      "id": 75707171,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 60,
+      "url": "https://issues.chromium.org/action/issues/504160794/attachments/75707171?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 66,
+  "description_snippet": "---\n\n### Report description\n\n\nHeap-buffer-overflow in skcms::select_curve_ops via a PNG iCCP mAB tag on the default Rust ICC path\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](http"
+}

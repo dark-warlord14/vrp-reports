@@ -1,0 +1,115 @@
+{
+  "id": "487357841",
+  "url": "https://issues.chromium.org/issues/487357841",
+  "title": "Reentrant socket destruction during ThrottlingP2PNetworkInterceptor timer callback leads to heap-use-after-free in the Network Service (browser process on Android)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>WebRTC>Network",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "gu...@google.com",
+  "created_date": "2026-02-25T12:41:47+00:00",
+  "modified_date": "2026-08-15T07:55:58+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73761428,
+      "filename": "README.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 832,
+      "url": "https://issues.chromium.org/action/issues/487357841/attachments/73761428?download=true",
+      "local_path": "attachments/README.md"
+    },
+    {
+      "id": 73755605,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 545,
+      "url": "https://issues.chromium.org/action/issues/487357841/attachments/73755605?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 73755606,
+      "filename": "renderer_patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 4861,
+      "url": "https://issues.chromium.org/action/issues/487357841/attachments/73755606?download=true",
+      "local_path": "attachments/renderer_patch.diff"
+    },
+    {
+      "id": 73761401,
+      "filename": "asan_log.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 24164,
+      "url": "https://issues.chromium.org/action/issues/487357841/attachments/73761401?download=true",
+      "local_path": "attachments/asan_log.txt"
+    },
+    {
+      "id": 73755607,
+      "filename": "poc_trigger.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 8752,
+      "url": "https://issues.chromium.org/action/issues/487357841/attachments/73755607?download=true",
+      "local_path": "attachments/poc_trigger.py"
+    },
+    {
+      "id": 73801337,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 545,
+      "url": "https://issues.chromium.org/action/issues/487357841/attachments/73801337?download=true",
+      "local_path": "attachments/poc_73801337.html"
+    },
+    {
+      "id": 73801998,
+      "filename": "poc-p2p-interceptor.log",
+      "mime_type": "text/plain",
+      "size_bytes": 11566858,
+      "url": "https://issues.chromium.org/action/issues/487357841/attachments/73801998?download=true",
+      "local_path": "attachments/poc-p2p-interceptor.log"
+    },
+    {
+      "id": 73801896,
+      "filename": "poc_trigger.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 8743,
+      "url": "https://issues.chromium.org/action/issues/487357841/attachments/73801896?download=true",
+      "local_path": "attachments/poc_trigger_73801896.py"
+    },
+    {
+      "id": 73801961,
+      "filename": "renderer.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 4782,
+      "url": "https://issues.chromium.org/action/issues/487357841/attachments/73801961?download=true",
+      "local_path": "attachments/renderer.diff"
+    },
+    {
+      "id": 73806571,
+      "filename": "asan_manual_devtools_report.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 30951,
+      "url": "https://issues.chromium.org/action/issues/487357841/attachments/73806571?download=true",
+      "local_path": "attachments/asan_manual_devtools_report.txt"
+    }
+  ],
+  "update_count": 106,
+  "description_snippet": "## Title\n\nReentrant socket destruction during ThrottlingP2PNetworkInterceptor timer callback leads to heap-use-after-free in the Network Service (browser process on Android)\n\n## Summary\n\nThrottlingP2PNetworkInterceptor::OnSendNetworkTimer() holds a std::map iterator while calling socket->SendFromInt"
+}

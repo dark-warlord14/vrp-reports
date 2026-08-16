@@ -1,0 +1,70 @@
+{
+  "id": "496456528",
+  "url": "https://issues.chromium.org/issues/496456528",
+  "title": "Security: T0 Heap-Use-After-Free in views::Widget during Browser Teardown",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>UserEducation",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": "148.0.7751.0",
+  "cve_ids": [],
+  "reporter": "ba...@gmail.com",
+  "assignee": "aj...@google.com",
+  "created_date": "2026-03-26T16:35:33+00:00",
+  "modified_date": "2026-08-14T20:11:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74808526,
+      "filename": "crash1.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 45039,
+      "url": "https://issues.chromium.org/action/issues/496456528/attachments/74808526?download=true",
+      "local_path": "attachments/crash1.txt"
+    },
+    {
+      "id": 76022341,
+      "filename": "poc_reproduce.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 2626,
+      "url": "https://issues.chromium.org/action/issues/496456528/attachments/76022341?download=true",
+      "local_path": "attachments/poc_reproduce.patch"
+    },
+    {
+      "id": 76022342,
+      "filename": "asan_output.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 43826,
+      "url": "https://issues.chromium.org/action/issues/496456528/attachments/76022342?download=true",
+      "local_path": "attachments/asan_output.txt"
+    },
+    {
+      "id": 76035174,
+      "filename": "PoC.html",
+      "mime_type": "text/html",
+      "size_bytes": 518,
+      "url": "https://issues.chromium.org/action/issues/496456528/attachments/76035174?download=true",
+      "local_path": "attachments/PoC.html"
+    },
+    {
+      "id": 76037074,
+      "filename": "exploit_poc_crash.ips",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 158959,
+      "url": "https://issues.chromium.org/action/issues/496456528/attachments/76037074?download=true",
+      "local_path": "attachments/exploit_poc_crash.ips"
+    }
+  ],
+  "update_count": 95,
+  "description_snippet": "# Steps to reproduce the problem\nHello, I encountered a crash while running tests on Chromium. I'm not sure if it's related to my HTML file, but the terminal output indicates the root cause of the problem.\nObviously, to recreate this problem, I'm compiling Chromium from scratch on a different comput"
+}

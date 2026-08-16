@@ -1,0 +1,59 @@
+{
+  "id": "508092634",
+  "url": "https://issues.chromium.org/issues/508092634",
+  "title": "Forged audio_forwarder in SpeechRecognition IPC bypasses per-origin microphone permission on Android",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Speech",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "je...@gmail.com",
+  "assignee": "ev...@google.com",
+  "created_date": "2026-04-30T13:49:49+00:00",
+  "modified_date": "2026-08-14T05:03:46+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 8000.0,
+  "reward_amount_meta": 8000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 76151312,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 3147,
+      "url": "https://issues.chromium.org/action/issues/508092634/attachments/76151312?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 76151313,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 3730,
+      "url": "https://issues.chromium.org/action/issues/508092634/attachments/76151313?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 76151314,
+      "filename": "logcat.log",
+      "mime_type": "text/plain",
+      "size_bytes": 832,
+      "url": "https://issues.chromium.org/action/issues/508092634/attachments/76151314?download=true",
+      "local_path": "attachments/logcat.log"
+    }
+  ],
+  "update_count": 42,
+  "description_snippet": "# Forged audio_forwarder in SpeechRecognition IPC bypasses per-origin microphone permission on Android\n\n## Summary\n\nOn Android, a compromised renderer can bypass the browser-enforced per-origin microphone permission check for the Web Speech API by injecting a forged `audio_forwarder` into the `Start"
+}

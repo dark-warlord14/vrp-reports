@@ -1,0 +1,88 @@
+{
+  "id": "507356235",
+  "url": "https://issues.chromium.org/issues/507356235",
+  "title": "Security: heap-use-after-free in extensions::ExtensionInstallTimePermissionProvider::GetRuleIterator",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Platform>Extensions",
+  "os_platforms": [
+    "Mac"
+  ],
+  "chrome_version": "147.0.0.0",
+  "cve_ids": [
+    "CVE-2026-8587"
+  ],
+  "reporter": "zh...@gmail.com",
+  "assignee": "jo...@chromium.org",
+  "created_date": "2026-04-28T16:14:43+00:00",
+  "modified_date": "2026-08-13T22:12:08+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 6000.0,
+  "reward_amount_meta": 6000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 76061408,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 53807,
+      "url": "https://issues.chromium.org/action/issues/507356235/attachments/76061408?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 76061409,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 320,
+      "url": "https://issues.chromium.org/action/issues/507356235/attachments/76061409?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 76061410,
+      "filename": "serve.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 364,
+      "url": "https://issues.chromium.org/action/issues/507356235/attachments/76061410?download=true",
+      "local_path": "attachments/serve.py"
+    },
+    {
+      "id": 76061411,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 435,
+      "url": "https://issues.chromium.org/action/issues/507356235/attachments/76061411?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 76061412,
+      "filename": "settings_toggle.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 1278,
+      "url": "https://issues.chromium.org/action/issues/507356235/attachments/76061412?download=true",
+      "local_path": "attachments/settings_toggle.js"
+    },
+    {
+      "id": 76061413,
+      "filename": "sw.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 3098,
+      "url": "https://issues.chromium.org/action/issues/507356235/attachments/76061413?download=true",
+      "local_path": "attachments/sw.js"
+    },
+    {
+      "id": 76086489,
+      "filename": "poc.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 110083072,
+      "url": "https://issues.chromium.org/action/issues/507356235/attachments/76086489?download=true",
+      "local_path": "attachments/poc.mov"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "# Steps to reproduce the problem\n1. Download mac-release-arm64_asan-mac-release-1621025\n\n2. Prepare a clean directory and store these files there.On my computer, I selected `cd ~/Sites; mkdir fastcat-extension-registry-uaf-arm1621025;`\n```\npoc.html\nserve.py\nmanager/manifest.json\nmanager/sw.js\nmanage"
+}

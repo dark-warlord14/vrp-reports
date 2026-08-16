@@ -1,0 +1,83 @@
+{
+  "id": "487300831",
+  "url": "https://issues.chromium.org/issues/487300831",
+  "title": "VerifyInitiatorOrigin() skips HostsOrigin() process lock check for opaque origins in error documents and MHTML subframes",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Navigation",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "os...@gmail.com",
+  "assignee": "al...@chromium.org",
+  "created_date": "2026-02-24T18:19:32+00:00",
+  "modified_date": "2026-08-13T22:08:54+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73703252,
+      "filename": "h5_fix.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3426,
+      "url": "https://issues.chromium.org/action/issues/487300831/attachments/73703252?download=true",
+      "local_path": "attachments/h5_fix.diff"
+    },
+    {
+      "id": 73703253,
+      "filename": "h5_browsertest.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3632,
+      "url": "https://issues.chromium.org/action/issues/487300831/attachments/73703253?download=true",
+      "local_path": "attachments/h5_browsertest.diff"
+    },
+    {
+      "id": 73703254,
+      "filename": "serve.py",
+      "mime_type": "text/x-python-script",
+      "size_bytes": 269,
+      "url": "https://issues.chromium.org/action/issues/487300831/attachments/73703254?download=true",
+      "local_path": "attachments/serve.py"
+    },
+    {
+      "id": 73703255,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 774,
+      "url": "https://issues.chromium.org/action/issues/487300831/attachments/73703255?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 73703256,
+      "filename": "h5_patch_renderer_poc.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 4086,
+      "url": "https://issues.chromium.org/action/issues/487300831/attachments/73703256?download=true",
+      "local_path": "attachments/h5_patch_renderer_poc.diff"
+    },
+    {
+      "id": 73703257,
+      "filename": "victim.html",
+      "mime_type": "text/html",
+      "size_bytes": 126,
+      "url": "https://issues.chromium.org/action/issues/487300831/attachments/73703257?download=true",
+      "local_path": "attachments/victim.html"
+    }
+  ],
+  "update_count": 51,
+  "description_snippet": "---\n\n### Report description\n\n\nVerifyInitiatorOrigin() skips HostsOrigin() process lock check for opaque origins in error documents and MHTML subframes\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [Se"
+}

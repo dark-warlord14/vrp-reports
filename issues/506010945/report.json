@@ -1,0 +1,211 @@
+{
+  "id": "506010945",
+  "url": "https://issues.chromium.org/issues/506010945",
+  "title": "AddressSanitizer heap-buffer-overflow in skcms CLUT from a PNG iCCP chunk on the default Rust ICC path",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Internals>Skia",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "oj...@gmail.com",
+  "assignee": "se...@microsoft.com",
+  "created_date": "2026-04-24T08:22:01+00:00",
+  "modified_date": "2026-08-13T22:06:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75912049,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 60,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75912049?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75912050,
+      "filename": "make_icc_poc.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 3810,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75912050?download=true",
+      "local_path": "attachments/make_icc_poc.py"
+    },
+    {
+      "id": 75912051,
+      "filename": "evil.png",
+      "mime_type": "image/png",
+      "size_bytes": 196,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75912051?download=true",
+      "local_path": "attachments/evil.png"
+    },
+    {
+      "id": 75912052,
+      "filename": "server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 767,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75912052?download=true",
+      "local_path": "attachments/server.py"
+    },
+    {
+      "id": 75907232,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 17708,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75907232?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 75906391,
+      "filename": "evil-g2.png",
+      "mime_type": "image/png",
+      "size_bytes": 270,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75906391?download=true",
+      "local_path": "attachments/evil-g2.png"
+    },
+    {
+      "id": 75907233,
+      "filename": "evil-g3.png",
+      "mime_type": "image/png",
+      "size_bytes": 273,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75907233?download=true",
+      "local_path": "attachments/evil-g3.png"
+    },
+    {
+      "id": 75907234,
+      "filename": "evil-g5.png",
+      "mime_type": "image/png",
+      "size_bytes": 278,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75907234?download=true",
+      "local_path": "attachments/evil-g5.png"
+    },
+    {
+      "id": 75906392,
+      "filename": "evil-g10.png",
+      "mime_type": "image/png",
+      "size_bytes": 287,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75906392?download=true",
+      "local_path": "attachments/evil-g10.png"
+    },
+    {
+      "id": 75905395,
+      "filename": "evil-g17.png",
+      "mime_type": "image/png",
+      "size_bytes": 305,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75905395?download=true",
+      "local_path": "attachments/evil-g17.png"
+    },
+    {
+      "id": 75905396,
+      "filename": "evil-g50.png",
+      "mime_type": "image/png",
+      "size_bytes": 373,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75905396?download=true",
+      "local_path": "attachments/evil-g50.png"
+    },
+    {
+      "id": 75905397,
+      "filename": "evil-g100.png",
+      "mime_type": "image/png",
+      "size_bytes": 478,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75905397?download=true",
+      "local_path": "attachments/evil-g100.png"
+    },
+    {
+      "id": 75906393,
+      "filename": "evil-g255.png",
+      "mime_type": "image/png",
+      "size_bytes": 806,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75906393?download=true",
+      "local_path": "attachments/evil-g255.png"
+    },
+    {
+      "id": 75906394,
+      "filename": "make_poc.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 7032,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75906394?download=true",
+      "local_path": "attachments/make_poc.py"
+    },
+    {
+      "id": 75907235,
+      "filename": "result.json",
+      "mime_type": "application/json",
+      "size_bytes": 1215,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75907235?download=true",
+      "local_path": "attachments/result.json"
+    },
+    {
+      "id": 75905398,
+      "filename": "server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 1497,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75905398?download=true",
+      "local_path": "attachments/server_75905398.py"
+    },
+    {
+      "id": 75906395,
+      "filename": "test.html",
+      "mime_type": "text/html",
+      "size_bytes": 1104,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75906395?download=true",
+      "local_path": "attachments/test.html"
+    },
+    {
+      "id": 75961580,
+      "filename": "gen.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 2836,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75961580?download=true",
+      "local_path": "attachments/gen.py"
+    },
+    {
+      "id": 75954928,
+      "filename": "mab.png",
+      "mime_type": "image/png",
+      "size_bytes": 741,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75954928?download=true",
+      "local_path": "attachments/mab.png"
+    },
+    {
+      "id": 75961581,
+      "filename": "read-b2a.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 1979,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75961581?download=true",
+      "local_path": "attachments/read-b2a.py"
+    },
+    {
+      "id": 75961582,
+      "filename": "repro.html",
+      "mime_type": "text/html",
+      "size_bytes": 64,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75961582?download=true",
+      "local_path": "attachments/repro.html"
+    },
+    {
+      "id": 75957288,
+      "filename": "serve.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 386,
+      "url": "https://issues.chromium.org/action/issues/506010945/attachments/75957288?download=true",
+      "local_path": "attachments/serve.py"
+    }
+  ],
+  "update_count": 61,
+  "description_snippet": "---\n\n### Report description\n\n\nHeap-buffer-overflow in skcms clut() via a PNG iCCP mAB tag with output_channels=1 on the default Rust ICC path\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program"
+}

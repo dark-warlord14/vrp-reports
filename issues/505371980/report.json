@@ -1,0 +1,97 @@
+{
+  "id": "505371980",
+  "url": "https://issues.chromium.org/issues/505371980",
+  "title": "heap-buffer-overflow in TabDragController::AttachToNewContext",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "UI>Browser>TopChrome>TabStrip",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "149.0.7791.0",
+  "cve_ids": [],
+  "reporter": "xp...@gmail.com",
+  "assignee": "al...@google.com",
+  "created_date": "2026-04-22T20:22:52+00:00",
+  "modified_date": "2026-08-13T22:12:14+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75829981,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 113,
+      "url": "https://issues.chromium.org/action/issues/505371980/attachments/75829981?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 75829982,
+      "filename": "inject.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 125,
+      "url": "https://issues.chromium.org/action/issues/505371980/attachments/75829982?download=true",
+      "local_path": "attachments/inject.js"
+    },
+    {
+      "id": 75829983,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 336,
+      "url": "https://issues.chromium.org/action/issues/505371980/attachments/75829983?download=true",
+      "local_path": "attachments/manifest.json"
+    },
+    {
+      "id": 75829984,
+      "filename": "asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 12156,
+      "url": "https://issues.chromium.org/action/issues/505371980/attachments/75829984?download=true",
+      "local_path": "attachments/asan.txt"
+    },
+    {
+      "id": 75838471,
+      "filename": "whats-new-asan.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 876,
+      "url": "https://issues.chromium.org/action/issues/505371980/attachments/75838471?download=true",
+      "local_path": "attachments/whats-new-asan.patch"
+    },
+    {
+      "id": 75832311,
+      "filename": "reproduction_hbo.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 10078488,
+      "url": "https://issues.chromium.org/action/issues/505371980/attachments/75832311?download=true",
+      "local_path": "attachments/reproduction_hbo.mp4"
+    },
+    {
+      "id": 75878039,
+      "filename": "win_dbg_trace.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 13708,
+      "url": "https://issues.chromium.org/action/issues/505371980/attachments/75878039?download=true",
+      "local_path": "attachments/win_dbg_trace.txt"
+    },
+    {
+      "id": 77666883,
+      "filename": "Fri Jun 05 2026 16:26:16 GMT-0400 (Eastern Daylight Time).png",
+      "mime_type": "image/png",
+      "size_bytes": 281812,
+      "url": "https://issues.chromium.org/action/issues/505371980/attachments/77666883?download=true",
+      "local_path": "attachments/Fri Jun 05 2026 16_26_16 GMT-0400 (Eastern Daylight Time).png"
+    }
+  ],
+  "update_count": 67,
+  "description_snippet": "# Steps to reproduce the problem\n1.  Install extension to Chrome.\n2.  Drag chrome://whats-new/ tab out (titled \"What's new\").\n\n# Problem Description\nheap-buffer-overflow in TabDragController::AttachToNewContext. Please check comments for RCA and summary of the issue + patch.\n\n# Summary\nheap-buffer-o"
+}
