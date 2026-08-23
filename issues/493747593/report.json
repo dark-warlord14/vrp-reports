@@ -1,0 +1,107 @@
+{
+  "id": "493747593",
+  "url": "https://issues.chromium.org/issues/493747593",
+  "title": "Qualcomm Wild exploited CVE-2025-27038 bypass",
+  "status": "New",
+  "severity": "S4-Minimal",
+  "priority": "P0",
+  "component": "Blink>WebGL",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "kb...@google.com",
+  "created_date": "2026-03-18T09:35:44+00:00",
+  "modified_date": "2026-08-21T17:21:30+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 250000.0,
+  "reward_amount_meta": 250000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 74462533,
+      "filename": "qualcomm.html",
+      "mime_type": "text/html",
+      "size_bytes": 11921,
+      "url": "https://issues.chromium.org/action/issues/493747593/attachments/74462533?download=true",
+      "local_path": "attachments/qualcomm.html"
+    },
+    {
+      "id": 74462534,
+      "filename": "adreno_exp.cpp",
+      "mime_type": "text/x-c++src",
+      "size_bytes": 8139,
+      "url": "https://issues.chromium.org/action/issues/493747593/attachments/74462534?download=true",
+      "local_path": "attachments/adreno_exp.cpp"
+    },
+    {
+      "id": 74462535,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/493747593/attachments/74462535?download=true",
+      "local_path": null
+    },
+    {
+      "id": 74462536,
+      "filename": "exp.html",
+      "mime_type": "text/html",
+      "size_bytes": 201,
+      "url": "https://issues.chromium.org/action/issues/493747593/attachments/74462536?download=true",
+      "local_path": "attachments/exp.html"
+    },
+    {
+      "id": 74467069,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/493747593/attachments/74467069?download=true",
+      "local_path": null
+    },
+    {
+      "id": 75606419,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/493747593/attachments/75606419?download=true",
+      "local_path": null
+    },
+    {
+      "id": 76163847,
+      "filename": "img_exp.h",
+      "mime_type": "text/x-chdr",
+      "size_bytes": 10098,
+      "url": "https://issues.chromium.org/action/issues/493747593/attachments/76163847?download=true",
+      "local_path": "attachments/img_exp.h"
+    },
+    {
+      "id": 76160706,
+      "filename": "exploit_s25.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 15000520,
+      "url": "https://issues.chromium.org/action/issues/493747593/attachments/76160706?download=true",
+      "local_path": null
+    },
+    {
+      "id": 77040805,
+      "filename": "patchs25.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 11612,
+      "url": "https://issues.chromium.org/action/issues/493747593/attachments/77040805?download=true",
+      "local_path": "attachments/patchs25.diff"
+    }
+  ],
+  "update_count": 123,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

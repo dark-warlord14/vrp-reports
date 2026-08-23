@@ -1,0 +1,139 @@
+{
+  "id": "508092629",
+  "url": "https://issues.chromium.org/issues/508092629",
+  "title": "V8 Sandbox Escape: Stale MicrotaskQueue cache leads to OOS write",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sm...@gmail.com",
+  "assignee": "is...@chromium.org",
+  "created_date": "2026-04-30T10:57:09+00:00",
+  "modified_date": "2026-08-19T07:57:24+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 20000.0,
+  "reward_amount_meta": 20000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 76151309,
+      "filename": "crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 1357,
+      "url": "https://issues.chromium.org/action/issues/508092629/attachments/76151309?download=true",
+      "local_path": "attachments/crash.log"
+    },
+    {
+      "id": 76151310,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 10121,
+      "url": "https://issues.chromium.org/action/issues/508092629/attachments/76151310?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 76155393,
+      "filename": "fix.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1976,
+      "url": "https://issues.chromium.org/action/issues/508092629/attachments/76155393?download=true",
+      "local_path": "attachments/fix.diff"
+    },
+    {
+      "id": 76180600,
+      "filename": "crash.log",
+      "mime_type": "text/plain",
+      "size_bytes": 15533,
+      "url": "https://issues.chromium.org/action/issues/508092629/attachments/76180600?download=true",
+      "local_path": "attachments/crash_76180600.log"
+    },
+    {
+      "id": 76181731,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 10341,
+      "url": "https://issues.chromium.org/action/issues/508092629/attachments/76181731?download=true",
+      "local_path": "attachments/poc_76181731.html"
+    },
+    {
+      "id": 76996313,
+      "filename": "aaw.html",
+      "mime_type": "text/html",
+      "size_bytes": 40735,
+      "url": "https://issues.chromium.org/action/issues/508092629/attachments/76996313?download=true",
+      "local_path": "attachments/aaw.html"
+    },
+    {
+      "id": 78369367,
+      "filename": "exp.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 12278778,
+      "url": "https://issues.chromium.org/action/issues/508092629/attachments/78369367?download=true",
+      "local_path": "attachments/exp.mp4"
+    },
+    {
+      "id": 78369368,
+      "filename": "exp.html",
+      "mime_type": "text/html",
+      "size_bytes": 133049,
+      "url": "https://issues.chromium.org/action/issues/508092629/attachments/78369368?download=true",
+      "local_path": "attachments/exp.html"
+    },
+    {
+      "id": 78313134,
+      "filename": "exploit.tar.gz",
+      "mime_type": "application/x-gzip",
+      "size_bytes": 28339,
+      "url": "https://issues.chromium.org/action/issues/508092629/attachments/78313134?download=true",
+      "local_path": "attachments/exploit.tar.gz"
+    },
+    {
+      "id": 78623096,
+      "filename": "aaw.html",
+      "mime_type": "text/html",
+      "size_bytes": 124282,
+      "url": "https://issues.chromium.org/action/issues/508092629/attachments/78623096?download=true",
+      "local_path": "attachments/aaw_78623096.html"
+    },
+    {
+      "id": 78592555,
+      "filename": "aaw-gdb.png",
+      "mime_type": "image/png",
+      "size_bytes": 189967,
+      "url": "https://issues.chromium.org/action/issues/508092629/attachments/78592555?download=true",
+      "local_path": "attachments/aaw-gdb.png"
+    },
+    {
+      "id": 78600177,
+      "filename": "exp.html",
+      "mime_type": "text/html",
+      "size_bytes": 124304,
+      "url": "https://issues.chromium.org/action/issues/508092629/attachments/78600177?download=true",
+      "local_path": "attachments/exp_78600177.html"
+    },
+    {
+      "id": 78600178,
+      "filename": "exp-sandbox.mkv",
+      "mime_type": "video/x-matroska",
+      "size_bytes": 1004204,
+      "url": "https://issues.chromium.org/action/issues/508092629/attachments/78600178?download=true",
+      "local_path": "attachments/exp-sandbox.mkv"
+    }
+  ],
+  "update_count": 113,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

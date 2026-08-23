@@ -1,0 +1,46 @@
+{
+  "id": "486761172",
+  "url": "https://issues.chromium.org/issues/486761172",
+  "title": "Chrome on Windows can be tricked into saving a dangerous .url InternetShortcut without the .download",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "UI>Browser>Downloads",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "145.0.7632.110 (Official Build) (64-bit)",
+  "cve_ids": [],
+  "reporter": "ra...@gmail.com",
+  "assignee": "ya...@google.com",
+  "created_date": "2026-02-23T14:05:34+00:00",
+  "modified_date": "2026-08-21T07:57:32+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73652388,
+      "filename": "poc_alt.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 4890,
+      "url": "https://issues.chromium.org/action/issues/486761172/attachments/73652388?download=true",
+      "local_path": "attachments/poc_alt.py"
+    },
+    {
+      "id": 73652389,
+      "filename": "poc_chrome.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 35789459,
+      "url": "https://issues.chromium.org/action/issues/486761172/attachments/73652389?download=true",
+      "local_path": "attachments/poc_chrome.mp4"
+    }
+  ],
+  "update_count": 47,
+  "description_snippet": "# Steps to reproduce the problem\n1. Run: poc_alt.py (serves on 127.0.0.1:8001).\n2. Chrome on Windows → open http://127.0.0.1:8001/.\n3. Right-click “Bypass: photo.jpg %25%25.url” → “Save link as…”.\n4. Save dialog suggests photo.jpg .url (type: Internet Shortcut). No .download rewrite.\n5. Save & open:"
+}

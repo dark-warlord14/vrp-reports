@@ -1,0 +1,59 @@
+{
+  "id": "507508103",
+  "url": "https://issues.chromium.org/issues/507508103",
+  "title": "memory corruption in qualcomm gpu lead sandbox escape",
+  "status": "New",
+  "severity": "S4-Minimal",
+  "priority": "P0",
+  "component": "Blink>WebGL",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "kb...@google.com",
+  "created_date": "2026-04-29T00:09:04+00:00",
+  "modified_date": "2026-08-19T20:19:17+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 76086252,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 9643,
+      "url": "https://issues.chromium.org/action/issues/507508103/attachments/76086252?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 76086253,
+      "filename": "poc.c",
+      "mime_type": "text/x-csrc",
+      "size_bytes": 1801,
+      "url": "https://issues.chromium.org/action/issues/507508103/attachments/76086253?download=true",
+      "local_path": "attachments/poc.c"
+    },
+    {
+      "id": 76183149,
+      "filename": "poc_oob_pc.c",
+      "mime_type": "text/x-csrc",
+      "size_bytes": 8193,
+      "url": "https://issues.chromium.org/action/issues/507508103/attachments/76183149?download=true",
+      "local_path": "attachments/poc_oob_pc.c"
+    }
+  ],
+  "update_count": 108,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

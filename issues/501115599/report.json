@@ -1,0 +1,60 @@
+{
+  "id": "501115599",
+  "url": "https://issues.chromium.org/issues/501115599",
+  "title": "Browser-Process Heap Use-After-Free in FileSystemAccessWatcherManager",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Storage>FileSystem",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "iOS",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "as...@gmail.com",
+  "assignee": "fe...@google.com",
+  "created_date": "2026-04-10T00:15:52+00:00",
+  "modified_date": "2026-08-22T07:57:43+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75369800,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 40659,
+      "url": "https://issues.chromium.org/action/issues/501115599/attachments/75369800?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 75369801,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 5012,
+      "url": "https://issues.chromium.org/action/issues/501115599/attachments/75369801?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75368047,
+      "filename": "FSA FileSystemAccessWatcherManager UAF PoC.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 28254710,
+      "url": "https://issues.chromium.org/action/issues/501115599/attachments/75368047?download=true",
+      "local_path": "attachments/FSA FileSystemAccessWatcherManager UAF PoC.mov"
+    }
+  ],
+  "update_count": 56,
+  "description_snippet": "**VULNERABILITY DETAILS**\n\nA browser-process heap use-after-free (UAF) vulnerability exists in the File System Access API due to iterator/lifetime invalidation during change-delivery event dispatch. \n\n`FileSystemAccessWatcherManager::OnRawChange(...)` iterates over its internal observation groups to"
+}

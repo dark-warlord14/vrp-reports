@@ -1,0 +1,83 @@
+{
+  "id": "507365348",
+  "url": "https://issues.chromium.org/issues/507365348",
+  "title": "SpdyStream Use-After-Free in QueueNextDataFrame via PrefacePing drain",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P0",
+  "component": "Internals>Network>HTTP2",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ci...@gmail.com",
+  "assignee": "ba...@chromium.org",
+  "created_date": "2026-04-28T12:19:43+00:00",
+  "modified_date": "2026-08-18T07:57:00+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 43000.0,
+  "reward_amount_meta": 43000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 76067521,
+      "filename": "server.py",
+      "mime_type": "text/x-python-script",
+      "size_bytes": 14701,
+      "url": "https://issues.chromium.org/action/issues/507365348/attachments/76067521?download=true",
+      "local_path": "attachments/server.py"
+    },
+    {
+      "id": 76067522,
+      "filename": "android_tombstone.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 885978,
+      "url": "https://issues.chromium.org/action/issues/507365348/attachments/76067522?download=true",
+      "local_path": "attachments/android_tombstone.txt"
+    },
+    {
+      "id": 76067523,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 5923,
+      "url": "https://issues.chromium.org/action/issues/507365348/attachments/76067523?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 76067524,
+      "filename": "asan_symbolized.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 43287,
+      "url": "https://issues.chromium.org/action/issues/507365348/attachments/76067524?download=true",
+      "local_path": "attachments/asan_symbolized.txt"
+    },
+    {
+      "id": 76063380,
+      "filename": "asan_out.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 41958,
+      "url": "https://issues.chromium.org/action/issues/507365348/attachments/76063380?download=true",
+      "local_path": "attachments/asan_out.txt"
+    },
+    {
+      "id": 76086245,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 36907,
+      "url": "https://issues.chromium.org/action/issues/507365348/attachments/76086245?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 73,
+  "description_snippet": "---\n\n### Report description\n\n\nSpdyStream Use-After-Free in QueueNextDataFrame via PrefacePing drain\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/abou"
+}

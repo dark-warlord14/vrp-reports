@@ -1,0 +1,73 @@
+{
+  "id": "457771782",
+  "url": "https://issues.chromium.org/issues/457771782",
+  "title": "STTF allows to leaking text char by char from cross-origin page.",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Scroll",
+  "os_platforms": [
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "142.0.0.0",
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "vm...@google.com",
+  "created_date": "2025-11-04T19:18:20+00:00",
+  "modified_date": "2026-08-22T07:57:16+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 10000.0,
+  "reward_amount_meta": 10000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 70690453,
+      "filename": "etest.html",
+      "mime_type": "text/html",
+      "size_bytes": 5997,
+      "url": "https://issues.chromium.org/action/issues/457771782/attachments/70690453?download=true",
+      "local_path": "attachments/etest.html"
+    },
+    {
+      "id": 70690454,
+      "filename": "exploit_chrome.html",
+      "mime_type": "text/html",
+      "size_bytes": 1469,
+      "url": "https://issues.chromium.org/action/issues/457771782/attachments/70690454?download=true",
+      "local_path": "attachments/exploit_chrome.html"
+    },
+    {
+      "id": 70690455,
+      "filename": "time_detect.html",
+      "mime_type": "text/html",
+      "size_bytes": 2942,
+      "url": "https://issues.chromium.org/action/issues/457771782/attachments/70690455?download=true",
+      "local_path": "attachments/time_detect.html"
+    },
+    {
+      "id": 70690456,
+      "filename": "PoC.mov",
+      "mime_type": "video/quicktime",
+      "size_bytes": 43469599,
+      "url": "https://issues.chromium.org/action/issues/457771782/attachments/70690456?download=true",
+      "local_path": "attachments/PoC.mov"
+    },
+    {
+      "id": 70811566,
+      "filename": "simpler_repro.html",
+      "mime_type": "text/html",
+      "size_bytes": 915,
+      "url": "https://issues.chromium.org/action/issues/457771782/attachments/70811566?download=true",
+      "local_path": "attachments/simpler_repro.html"
+    }
+  ],
+  "update_count": 129,
+  "description_snippet": "# Steps to reproduce the problem\nSteps to reproduce:\n1. Download attached files \n2. Change `TARGET`, `PREFIX`, `FOUND`, `NOT_FOUND` if you want to test on another text/website.\n3. Host this files on localhost/site\n4. open `exploit_chrome.html`\n4. Start typing text\n\nYou will see that symbols will gra"
+}

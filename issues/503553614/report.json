@@ -1,0 +1,99 @@
+{
+  "id": "503553614",
+  "url": "https://issues.chromium.org/issues/503553614",
+  "title": "Heap-use-after-free in v8_inspector::InjectedScript::wrapObjectMirror due to context destruction in JS callback",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Platform>DevTools",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "al...@gmail.com",
+  "assignee": "da...@google.com",
+  "created_date": "2026-04-17T13:12:55+00:00",
+  "modified_date": "2026-07-30T07:59:06+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75654842,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 42897,
+      "url": "https://issues.chromium.org/action/issues/503553614/attachments/75654842?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 75654843,
+      "filename": "server.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 640,
+      "url": "https://issues.chromium.org/action/issues/503553614/attachments/75654843?download=true",
+      "local_path": "attachments/server.py"
+    },
+    {
+      "id": 75654844,
+      "filename": "testcase.html",
+      "mime_type": "text/html",
+      "size_bytes": 299,
+      "url": "https://issues.chromium.org/action/issues/503553614/attachments/75654844?download=true",
+      "local_path": "attachments/testcase.html"
+    },
+    {
+      "id": 75957285,
+      "filename": "poc_regctl.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 3092,
+      "url": "https://issues.chromium.org/action/issues/503553614/attachments/75957285?download=true",
+      "local_path": "attachments/poc_regctl.py"
+    },
+    {
+      "id": 75961576,
+      "filename": "windbg_41_v8inspector.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 19430,
+      "url": "https://issues.chromium.org/action/issues/503553614/attachments/75961576?download=true",
+      "local_path": "attachments/windbg_41_v8inspector.txt"
+    },
+    {
+      "id": 76086482,
+      "filename": "gm_object.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 6050,
+      "url": "https://issues.chromium.org/action/issues/503553614/attachments/76086482?download=true",
+      "local_path": "attachments/gm_object.diff"
+    },
+    {
+      "id": 76101243,
+      "filename": "poc_aaw_b.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 11617,
+      "url": "https://issues.chromium.org/action/issues/503553614/attachments/76101243?download=true",
+      "local_path": "attachments/poc_aaw_b.py"
+    },
+    {
+      "id": 76101244,
+      "filename": "windbg_v8inspector_cafebabe.log",
+      "mime_type": "text/plain",
+      "size_bytes": 16899,
+      "url": "https://issues.chromium.org/action/issues/503553614/attachments/76101244?download=true",
+      "local_path": "attachments/windbg_v8inspector_cafebabe.log"
+    }
+  ],
+  "update_count": 73,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

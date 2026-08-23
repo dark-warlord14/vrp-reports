@@ -1,0 +1,51 @@
+{
+  "id": "505427216",
+  "url": "https://issues.chromium.org/issues/505427216",
+  "title": "Service Worker Static Routing API cache source bypasses CORP in crossOriginIsolated context (fix wiring ineffective)",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>ServiceWorker",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "da...@gmail.com",
+  "assignee": "yy...@chromium.org",
+  "created_date": "2026-04-23T09:28:58+00:00",
+  "modified_date": "2026-08-14T20:11:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75857394,
+      "filename": "POC-sw-static-router-CORP-bypass.sw.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 633,
+      "url": "https://issues.chromium.org/action/issues/505427216/attachments/75857394?download=true",
+      "local_path": "attachments/POC-sw-static-router-CORP-bypass.sw.js"
+    },
+    {
+      "id": 75857395,
+      "filename": "POC-sw-static-router-CORP-bypass.html",
+      "mime_type": "text/html",
+      "size_bytes": 9739,
+      "url": "https://issues.chromium.org/action/issues/505427216/attachments/75857395?download=true",
+      "local_path": "attachments/POC-sw-static-router-CORP-bypass.html"
+    }
+  ],
+  "update_count": 40,
+  "description_snippet": "Security Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www.chromium.org/Ho"
+}

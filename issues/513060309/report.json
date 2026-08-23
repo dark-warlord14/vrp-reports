@@ -1,0 +1,43 @@
+{
+  "id": "513060309",
+  "url": "https://issues.chromium.org/issues/513060309",
+  "title": "Improper handling of side-effects of CopyFastSmiOrObjectElements in LateLoadElimination leads to a fake object / arbitrary write primitive",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Compiler>Maglev",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "bj...@neodyme.io",
+  "assignee": "ni...@chromium.org",
+  "created_date": "2026-05-14T04:54:46+00:00",
+  "modified_date": "2026-08-22T07:55:43+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 11000.0,
+  "reward_amount_meta": 11000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 76744176,
+      "filename": "poc-aggressive.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 2221,
+      "url": "https://issues.chromium.org/action/issues/513060309/attachments/76744176?download=true",
+      "local_path": "attachments/poc-aggressive.js"
+    }
+  ],
+  "update_count": 30,
+  "description_snippet": "---\n\n### Report description\n\n\nV8 TurboShaft LateLoadElimination: AllocateOp and JSStackCheck Bypass Map Invalidation Fix\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughu"
+}

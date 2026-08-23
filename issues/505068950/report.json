@@ -1,0 +1,59 @@
+{
+  "id": "505068950",
+  "url": "https://issues.chromium.org/issues/505068950",
+  "title": "Security: Heap-use-after-free regression in ServiceWorkerContextCore::OnRunningStateChanged\n",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>ServiceWorker",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "147.0.0.0",
+  "cve_ids": [],
+  "reporter": "me...@gmail.com",
+  "assignee": "an...@chromium.org",
+  "created_date": "2026-04-22T01:49:51+00:00",
+  "modified_date": "2026-08-04T07:54:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75803035,
+      "filename": "trigger.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 830,
+      "url": "https://issues.chromium.org/action/issues/505068950/attachments/75803035?download=true",
+      "local_path": "attachments/trigger.patch"
+    },
+    {
+      "id": 75803036,
+      "filename": "background.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 254,
+      "url": "https://issues.chromium.org/action/issues/505068950/attachments/75803036?download=true",
+      "local_path": "attachments/background.js"
+    },
+    {
+      "id": 75803037,
+      "filename": "manifest.json",
+      "mime_type": "application/json",
+      "size_bytes": 197,
+      "url": "https://issues.chromium.org/action/issues/505068950/attachments/75803037?download=true",
+      "local_path": "attachments/manifest.json"
+    }
+  ],
+  "update_count": 44,
+  "description_snippet": "# Steps to reproduce the problem\n1. Apply `trigger.patch` to Chromium and compile with ASAN enabled\n2. Put `background.js` and `manifest.json` at ext_poc folder. Run Chrome:\n   ```\n   ./out/asan/chrome --no-sandbox --no-first-run --load-extension=/path/to/ext_poc\n   ```\n3. ASAN heap-use-after-free f"
+}

@@ -1,0 +1,48 @@
+{
+  "id": "488306299",
+  "url": "https://issues.chromium.org/issues/488306299",
+  "title": "Turboshaft WLE correctness bug: stale StringPrepareForGetCodeUnit result survives calls, leaks V8 heap pointers via charCodeAt",
+  "status": "Fixed",
+  "severity": "S3-Low",
+  "priority": "P3",
+  "component": "Blink>JavaScript",
+  "os_platforms": [
+    "Linux",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "fl...@outlook.com",
+  "assignee": "aj...@chromium.org",
+  "created_date": "2026-02-27T14:54:48+00:00",
+  "modified_date": "2026-08-18T07:59:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73823038,
+      "filename": "wle_stale_ptr_d8.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 14747,
+      "url": "https://issues.chromium.org/action/issues/488306299/attachments/73823038?download=true",
+      "local_path": "attachments/wle_stale_ptr_d8.js"
+    },
+    {
+      "id": 73823039,
+      "filename": "verify_leak.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 11293,
+      "url": "https://issues.chromium.org/action/issues/488306299/attachments/73823039?download=true",
+      "local_path": "attachments/verify_leak.js"
+    }
+  ],
+  "update_count": 33,
+  "description_snippet": "Title: Turboshaft WLE correctness bug: stale StringPrepareForGetCodeUnit\n       result survives calls, leaks V8 heap pointers via charCodeAt\n\nVulnerability Type: JIT Compiler Correctness Bug / Information Leak\nSeverity:          High\nComponent:         Blink>JavaScript>WebAssembly (Turboshaft WLE)\nA"
+}
