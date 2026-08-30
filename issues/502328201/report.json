@@ -1,0 +1,54 @@
+{
+  "id": "502328201",
+  "url": "https://issues.chromium.org/issues/502328201",
+  "title": "Contact dialog can be shown over a cross-origin page which might confuse a user into leaking sensitive information to an attacker",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Contacts",
+  "os_platforms": [
+    "Android"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "fi...@chromium.org",
+  "created_date": "2026-04-14T06:06:42+00:00",
+  "modified_date": "2026-08-27T09:12:55+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75497711,
+      "filename": "Chrome Beta.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 50619689,
+      "url": "https://issues.chromium.org/action/issues/502328201/attachments/75497711?download=true",
+      "local_path": "attachments/Chrome Beta.webm"
+    },
+    {
+      "id": 75497712,
+      "filename": "Chrome.webm",
+      "mime_type": "video/webm",
+      "size_bytes": 23837139,
+      "url": "https://issues.chromium.org/action/issues/502328201/attachments/75497712?download=true",
+      "local_path": "attachments/Chrome.webm"
+    },
+    {
+      "id": 75497713,
+      "filename": "spoof.html",
+      "mime_type": "text/html",
+      "size_bytes": 931,
+      "url": "https://issues.chromium.org/action/issues/502328201/attachments/75497713?download=true",
+      "local_path": "attachments/spoof.html"
+    }
+  ],
+  "update_count": 79,
+  "description_snippet": "# Steps to reproduce the problem\n1. Access https://attacked14.github.io/x/contact.html using Chrome on Android.\n2. Click anywhere on the page (ensure you have not previously granted the Contacts permission to the browser).\n3. Observe that a Contact permission dialog appears, but the underlying visib"
+}

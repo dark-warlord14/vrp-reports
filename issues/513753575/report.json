@@ -1,0 +1,59 @@
+{
+  "id": "513753575",
+  "url": "https://issues.chromium.org/issues/513753575",
+  "title": "V8 TryFastAddDataProperty descriptor-array OOB access",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hu...@gmail.com",
+  "assignee": "le...@chromium.org",
+  "created_date": "2026-05-16T06:28:12+00:00",
+  "modified_date": "2026-08-27T07:59:48+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 55000.0,
+  "reward_amount_meta": 55000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 76848102,
+      "filename": "Reports-20260516.zip",
+      "mime_type": "application/x-zip-compressed",
+      "size_bytes": 34949186,
+      "url": "https://issues.chromium.org/action/issues/513753575/attachments/76848102?download=true",
+      "local_path": "attachments/Reports-20260516.zip"
+    },
+    {
+      "id": 76848103,
+      "filename": "regress-506689381-strict-function-field-write-crash.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 451,
+      "url": "https://issues.chromium.org/action/issues/513753575/attachments/76848103?download=true",
+      "local_path": "attachments/regress-506689381-strict-function-field-write-crash.js"
+    },
+    {
+      "id": 76848104,
+      "filename": "regress-506689381-browser-repro.html",
+      "mime_type": "text/html",
+      "size_bytes": 701,
+      "url": "https://issues.chromium.org/action/issues/513753575/attachments/76848104?download=true",
+      "local_path": "attachments/regress-506689381-browser-repro.html"
+    }
+  ],
+  "update_count": 26,
+  "description_snippet": "---\n\n### Report description\n\n\nMissing dictionary-map guard in TryFastAddDataProperty after map normalization. It causes the use of a stale descriptor, leading to an invalid write in JSObject::WriteToField.\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – R"
+}

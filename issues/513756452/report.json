@@ -1,0 +1,67 @@
+{
+  "id": "513756452",
+  "url": "https://issues.chromium.org/issues/513756452",
+  "title": "V8 Sandbox Escape via gin::PerContextData EmbedderDataTypeTag collision with Blink ScriptState",
+  "status": "Accepted",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Bindings",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sm...@gmail.com",
+  "assignee": "ah...@google.com",
+  "created_date": "2026-05-16T06:46:38+00:00",
+  "modified_date": "2026-08-26T05:01:58+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 76849756,
+      "filename": "sandbox_violation.log",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1858,
+      "url": "https://issues.chromium.org/action/issues/513756452/attachments/76849756?download=true",
+      "local_path": "attachments/sandbox_violation.log"
+    },
+    {
+      "id": 76849757,
+      "filename": "gin_blink_ept_reverse_only.html",
+      "mime_type": "text/html",
+      "size_bytes": 4671,
+      "url": "https://issues.chromium.org/action/issues/513756452/attachments/76849757?download=true",
+      "local_path": "attachments/gin_blink_ept_reverse_only.html"
+    },
+    {
+      "id": 76849758,
+      "filename": "per_context_data_unittest.diff",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 8403,
+      "url": "https://issues.chromium.org/action/issues/513756452/attachments/76849758?download=true",
+      "local_path": "attachments/per_context_data_unittest.diff"
+    },
+    {
+      "id": 76849759,
+      "filename": "asan.log",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 27643,
+      "url": "https://issues.chromium.org/action/issues/513756452/attachments/76849759?download=true",
+      "local_path": "attachments/asan.log"
+    }
+  ],
+  "update_count": 45,
+  "description_snippet": "---\n\n### Report description\n\n\nV8 Sandbox Escape via gin::PerContextData EmbedderDataTypeTag collision with Blink ScriptState\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://b"
+}

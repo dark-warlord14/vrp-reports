@@ -1,0 +1,58 @@
+{
+  "id": "506921089",
+  "url": "https://issues.chromium.org/issues/506921089",
+  "title": "UAF in RenderFrameHostImpl::ExitFullscreen() — missing WeakPtr guard (variant of EnterFullscreen fix 91d5baaef742)",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>FullScreen",
+  "os_platforms": [
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "mi...@minico.ai",
+  "assignee": "jo...@chromium.org",
+  "created_date": "2026-04-27T12:46:53+00:00",
+  "modified_date": "2026-08-13T21:55:40+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2000.0,
+  "reward_amount_meta": 2000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 76019173,
+      "filename": "fix.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 798,
+      "url": "https://issues.chromium.org/action/issues/506921089/attachments/76019173?download=true",
+      "local_path": "attachments/fix.diff"
+    },
+    {
+      "id": 76019174,
+      "filename": "patch.diff",
+      "mime_type": "text/x-diff",
+      "size_bytes": 1637,
+      "url": "https://issues.chromium.org/action/issues/506921089/attachments/76019174?download=true",
+      "local_path": "attachments/patch.diff"
+    },
+    {
+      "id": 76019175,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 164,
+      "url": "https://issues.chromium.org/action/issues/506921089/attachments/76019175?download=true",
+      "local_path": "attachments/poc.html"
+    }
+  ],
+  "update_count": 7,
+  "description_snippet": "# Use-After-Free in RenderFrameHostImpl::CreateNewWindow\n\n## Summary\n\n`RenderFrameHostImpl::CreateNewWindow()` calls `delegate_->CreateNewWindow()` which internally calls `AddNewContents()`. On Windows, `AddNewContents()` can enter a nested message loop via `::ShowWindow()`. During this nested loop,"
+}

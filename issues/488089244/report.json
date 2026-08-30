@@ -1,0 +1,74 @@
+{
+  "id": "488089244",
+  "url": "https://issues.chromium.org/issues/488089244",
+  "title": "OOB in LinearTimingFunction::GetValue via Single-Point Linear Easing Deserialization in GPU Process",
+  "status": "Assigned",
+  "severity": "Unknown",
+  "priority": "P1",
+  "component": "Internals>Services>Viz",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "se...@gmail.com",
+  "assignee": "zm...@chromium.org",
+  "created_date": "2026-02-27T02:59:01+00:00",
+  "modified_date": "2026-08-22T07:56:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 73796045,
+      "filename": "README.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 1038,
+      "url": "https://issues.chromium.org/action/issues/488089244/attachments/73796045?download=true",
+      "local_path": "attachments/README.md"
+    },
+    {
+      "id": 73796046,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 129317,
+      "url": "https://issues.chromium.org/action/issues/488089244/attachments/73796046?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 73796047,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 441,
+      "url": "https://issues.chromium.org/action/issues/488089244/attachments/73796047?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 73796048,
+      "filename": "viz.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 2591,
+      "url": "https://issues.chromium.org/action/issues/488089244/attachments/73796048?download=true",
+      "local_path": "attachments/viz.patch"
+    },
+    {
+      "id": 73796049,
+      "filename": "renderer.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 8089,
+      "url": "https://issues.chromium.org/action/issues/488089244/attachments/73796049?download=true",
+      "local_path": "attachments/renderer.patch"
+    }
+  ],
+  "update_count": 37,
+  "description_snippet": "# Missing validation of linear timing function point count in Viz process DeserializeTimingFunction leads to OOB read in GPU process\n\n## Summary\n\n`DeserializeTimingFunction()` in the Viz process does not validate that a `linear` timing function received over Mojo IPC contains at least 2 easing point"
+}

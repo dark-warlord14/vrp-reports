@@ -1,0 +1,131 @@
+{
+  "id": "512592772",
+  "url": "https://issues.chromium.org/issues/512592772",
+  "title": "V8 TryFastAddDataProperty descriptor-array OOB access",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>JavaScript>Runtime",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "hu...@gmail.com",
+  "assignee": "le...@chromium.org",
+  "created_date": "2026-05-12T23:41:42+00:00",
+  "modified_date": "2026-08-21T05:03:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 55000.0,
+  "reward_amount_meta": 55000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 76682283,
+      "filename": "chrome-148.0.7778.96-regress-506689381-23464a7f-b843-4abb-91e2-95895cab2137.dmp",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 355744,
+      "url": "https://issues.chromium.org/action/issues/512592772/attachments/76682283?download=true",
+      "local_path": "attachments/chrome-148.0.7778.96-regress-506689381-23464a7f-b843-4abb-91e2-95895cab2137.dmp"
+    },
+    {
+      "id": 76682284,
+      "filename": "TECHNICAL-REPORT.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 8320,
+      "url": "https://issues.chromium.org/action/issues/512592772/attachments/76682284?download=true",
+      "local_path": "attachments/TECHNICAL-REPORT.md"
+    },
+    {
+      "id": 76682285,
+      "filename": "REPRODUCTION.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 3277,
+      "url": "https://issues.chromium.org/action/issues/512592772/attachments/76682285?download=true",
+      "local_path": "attachments/REPRODUCTION.md"
+    },
+    {
+      "id": 76682286,
+      "filename": "stable-148-v8-14.8.178.14-regress-506689381-strict-function-field-write-crash-release.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 2102,
+      "url": "https://issues.chromium.org/action/issues/512592772/attachments/76682286?download=true",
+      "local_path": "attachments/stable-148-v8-14.8.178.14-regress-506689381-strict-function-field-write-crash-release.txt"
+    },
+    {
+      "id": 76682287,
+      "filename": "tip-v8-15-regress-506689381-strict-function-field-write-crash-debug.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 54,
+      "url": "https://issues.chromium.org/action/issues/512592772/attachments/76682287?download=true",
+      "local_path": "attachments/tip-v8-15-regress-506689381-strict-function-field-write-crash-debug.txt"
+    },
+    {
+      "id": 76682288,
+      "filename": "stable-148-v8-14.8.178.14-regress-506689381-strict-function-field-write-crash-asan.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 4038,
+      "url": "https://issues.chromium.org/action/issues/512592772/attachments/76682288?download=true",
+      "local_path": "attachments/stable-148-v8-14.8.178.14-regress-506689381-strict-function-field-write-crash-asan.txt"
+    },
+    {
+      "id": 76682289,
+      "filename": "chrome-148.0.7778.96-regress-506689381-browser-repro-headless.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 211,
+      "url": "https://issues.chromium.org/action/issues/512592772/attachments/76682289?download=true",
+      "local_path": "attachments/chrome-148.0.7778.96-regress-506689381-browser-repro-headless.txt"
+    },
+    {
+      "id": 76682290,
+      "filename": "stable-148-v8-14.8.178.14-regress-506689381-strict-function-field-allocation-pressure-release.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 1401,
+      "url": "https://issues.chromium.org/action/issues/512592772/attachments/76682290?download=true",
+      "local_path": "attachments/stable-148-v8-14.8.178.14-regress-506689381-strict-function-field-allocation-pressure-release.txt"
+    },
+    {
+      "id": 76682291,
+      "filename": "stable-148-v8-14.8.178.14-regress-506689381-strict-function-field-write-crash-debug.txt",
+      "mime_type": "text/plain",
+      "size_bytes": 4109,
+      "url": "https://issues.chromium.org/action/issues/512592772/attachments/76682291?download=true",
+      "local_path": "attachments/stable-148-v8-14.8.178.14-regress-506689381-strict-function-field-write-crash-debug.txt"
+    },
+    {
+      "id": 76682292,
+      "filename": "regress-506689381-browser-repro.html",
+      "mime_type": "text/html",
+      "size_bytes": 701,
+      "url": "https://issues.chromium.org/action/issues/512592772/attachments/76682292?download=true",
+      "local_path": "attachments/regress-506689381-browser-repro.html"
+    },
+    {
+      "id": 76682293,
+      "filename": "regress-506689381-strict-function-field-allocation-pressure.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 658,
+      "url": "https://issues.chromium.org/action/issues/512592772/attachments/76682293?download=true",
+      "local_path": "attachments/regress-506689381-strict-function-field-allocation-pressure.js"
+    },
+    {
+      "id": 76682294,
+      "filename": "regress-506689381-strict-function-field-write-crash.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 451,
+      "url": "https://issues.chromium.org/action/issues/512592772/attachments/76682294?download=true",
+      "local_path": "attachments/regress-506689381-strict-function-field-write-crash.js"
+    }
+  ],
+  "update_count": 28,
+  "description_snippet": "---\n\n### Report description\n\n\nV8 TryFastAddDataProperty stale descriptor after map normalization causes release write access violation\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules]"
+}

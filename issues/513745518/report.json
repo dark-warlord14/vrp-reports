@@ -1,0 +1,66 @@
+{
+  "id": "513745518",
+  "url": "https://issues.chromium.org/issues/513745518",
+  "title": "Leaking size of cross-origin resources via rangeless opaque responses using Service Workers and the Fetch API",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Blink>Network>FetchAPI",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "he...@gmail.com",
+  "assignee": "yy...@chromium.org",
+  "created_date": "2026-05-16T05:44:07+00:00",
+  "modified_date": "2026-08-25T07:59:58+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 3000.0,
+  "reward_amount_meta": 3000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 76848858,
+      "filename": "xsleak_sw.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 731,
+      "url": "https://issues.chromium.org/action/issues/513745518/attachments/76848858?download=true",
+      "local_path": "attachments/xsleak_sw.js"
+    },
+    {
+      "id": 76849580,
+      "filename": "xsleak_index (1).html",
+      "mime_type": "text/html",
+      "size_bytes": 3085,
+      "url": "https://issues.chromium.org/action/issues/513745518/attachments/76849580?download=true",
+      "local_path": "attachments/xsleak_index (1).html"
+    },
+    {
+      "id": 76849581,
+      "filename": "cross-origin-leak-2026-05-16_11.26.53",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 32451243,
+      "url": "https://issues.chromium.org/action/issues/513745518/attachments/76849581?download=true",
+      "local_path": "attachments/cross-origin-leak-2026-05-16_11.26.53"
+    },
+    {
+      "id": 76849328,
+      "filename": "Screenshot_2026-05-16_11_37_28.png",
+      "mime_type": "image/png",
+      "size_bytes": 177107,
+      "url": "https://issues.chromium.org/action/issues/513745518/attachments/76849328?download=true",
+      "local_path": "attachments/Screenshot_2026-05-16_11_37_28.png"
+    }
+  ],
+  "update_count": 25,
+  "description_snippet": "---\n\n### Report description\n\n\nCross-Origin Resource Size Leak via Service Worker Manipulation\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome browser. [See program rules](https://bughunters.google.com/about/rule"
+}

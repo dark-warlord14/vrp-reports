@@ -1,0 +1,90 @@
+{
+  "id": "479203484",
+  "url": "https://issues.chromium.org/issues/479203484",
+  "title": "Intersection Observer v2 API fails to reliably determine target's visibility, which enables clickjacking against Google One Tap",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P2",
+  "component": "Blink>Geometry",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "lo...@icloud.com",
+  "assignee": "sz...@chromium.org",
+  "created_date": "2026-01-27T17:55:56+00:00",
+  "modified_date": "2026-08-23T07:58:56+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 5000.0,
+  "reward_amount_meta": 5000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 72867569,
+      "filename": "bypass.html",
+      "mime_type": "text/html",
+      "size_bytes": 1307,
+      "url": "https://issues.chromium.org/action/issues/479203484/attachments/72867569?download=true",
+      "local_path": "attachments/bypass.html"
+    },
+    {
+      "id": 72867570,
+      "filename": "expected-overlay.html",
+      "mime_type": "text/html",
+      "size_bytes": 892,
+      "url": "https://issues.chromium.org/action/issues/479203484/attachments/72867570?download=true",
+      "local_path": "attachments/expected-overlay.html"
+    },
+    {
+      "id": 72867571,
+      "filename": "frame.html",
+      "mime_type": "text/html",
+      "size_bytes": 2097,
+      "url": "https://issues.chromium.org/action/issues/479203484/attachments/72867571?download=true",
+      "local_path": "attachments/frame.html"
+    },
+    {
+      "id": 72867572,
+      "filename": "gis.html",
+      "mime_type": "text/html",
+      "size_bytes": 974,
+      "url": "https://issues.chromium.org/action/issues/479203484/attachments/72867572?download=true",
+      "local_path": "attachments/gis.html"
+    },
+    {
+      "id": 72867573,
+      "filename": "google-clickjacking.html",
+      "mime_type": "text/html",
+      "size_bytes": 2826,
+      "url": "https://issues.chromium.org/action/issues/479203484/attachments/72867573?download=true",
+      "local_path": "attachments/google-clickjacking.html"
+    },
+    {
+      "id": 72867574,
+      "filename": "repro-core.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 18700066,
+      "url": "https://issues.chromium.org/action/issues/479203484/attachments/72867574?download=true",
+      "local_path": "attachments/repro-core.mp4"
+    },
+    {
+      "id": 72867575,
+      "filename": "repro-tap.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 14294650,
+      "url": "https://issues.chromium.org/action/issues/479203484/attachments/72867575?download=true",
+      "local_path": "attachments/repro-tap.mp4"
+    }
+  ],
+  "update_count": 49,
+  "description_snippet": "#### VULNERABILITY DETAILS\n\nWhile researching variations of issue 333708039, it was discovered that the Intersection Observer v2 API fails to accurately determine a target's visibility when the occluding element uses CSS 3D transforms. By placing an overlay element with `transform-style: preserve-3d"
+}

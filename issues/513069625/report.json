@@ -1,0 +1,48 @@
+{
+  "id": "513069625",
+  "url": "https://issues.chromium.org/issues/513069625",
+  "title": "GPU passthrough decoder UAF: DoBufferData GL error path skips mapped_buffer_map.erase()",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>GPU>Internals",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "pa...@gmail.com",
+  "assignee": "sh...@google.com",
+  "created_date": "2026-05-14T05:37:59+00:00",
+  "modified_date": "2026-08-27T08:03:04+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 25000.0,
+  "reward_amount_meta": 25000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 76745505,
+      "filename": "angle_foreign_images_callee_side_fix.patch",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1590,
+      "url": "https://issues.chromium.org/action/issues/513069625/attachments/76745505?download=true",
+      "local_path": "attachments/angle_foreign_images_callee_side_fix.patch"
+    },
+    {
+      "id": 76745506,
+      "filename": "foreign_images_stale_set_poc_test.cpp",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3397,
+      "url": "https://issues.chromium.org/action/issues/513069625/attachments/76745506?download=true",
+      "local_path": "attachments/foreign_images_stale_set_poc_test.cpp"
+    }
+  ],
+  "update_count": 46,
+  "description_snippet": "---\n\n### Report description\n\n\nANGLE Vulkan ContextVk::flushAndSubmitCommands error paths leak mForeignImagesInUse stale-set causing heap-use-after-free (incomplete fix of CL 7801425)\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues a"
+}
