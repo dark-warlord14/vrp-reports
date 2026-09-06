@@ -1,7 +1,7 @@
 {
-  "total_reports": 4771,
-  "total_bounty": 28751671.7,
-  "avg_bounty": 6031.4,
+  "total_reports": 4779,
+  "total_bounty": 28825171.7,
+  "avg_bounty": 6036.69,
   "by_year": {
     "2009": {
       "count": 3,
@@ -52,8 +52,8 @@
       "total_bounty": 1809200.0
     },
     "2021": {
-      "count": 420,
-      "total_bounty": 3155000.0
+      "count": 421,
+      "total_bounty": 3162500.0
     },
     "2022": {
       "count": 471,
@@ -72,35 +72,35 @@
       "total_bounty": 3427500.0
     },
     "2026": {
-      "count": 421,
-      "total_bounty": 5922000.0
+      "count": 428,
+      "total_bounty": 5988000.0
     }
   },
   "by_severity": {
-    "S3-Low": 4152,
-    "S4-Minimal": 540,
-    "Unknown": 69,
+    "S3-Low": 4158,
+    "S4-Minimal": 541,
+    "Unknown": 70,
     "S1-High": 8,
     "S0-Critical": 1,
     "S2-Medium": 1
   },
   "by_status": {
-    "Assigned": 3702,
-    "Accepted": 764,
-    "New": 148,
+    "Assigned": 3708,
+    "Accepted": 765,
+    "New": 149,
     "Fixed": 99,
     "Verified": 57,
     "Unknown": 1
   },
   "by_component": {
-    "Blink": 2116,
-    "Internals": 1053,
-    "UI": 636,
+    "Blink": 2120,
+    "Internals": 1055,
+    "UI": 637,
     "Unknown": 353,
     "Platform": 272,
     "Blink, Blink": 80,
     "Mobile": 58,
-    "Dawn": 46,
+    "Dawn": 47,
     "Internals, Internals": 41,
     "OS": 16,
     "Enterprise": 12,
@@ -121,19 +121,19 @@
     },
     {
       "range": "$500-1K",
-      "count": 612
+      "count": 613
     },
     {
       "range": "$1K-3K",
-      "count": 1559
+      "count": 1562
     },
     {
       "range": "$3K-5K",
-      "count": 748
+      "count": 749
     },
     {
       "range": "$5K-10K",
-      "count": 1046
+      "count": 1047
     },
     {
       "range": "$10K-20K",
@@ -141,7 +141,7 @@
     },
     {
       "range": "$20K+",
-      "count": 336
+      "count": 338
     }
   ],
   "top_bounties": [

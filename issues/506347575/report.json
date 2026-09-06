@@ -1,0 +1,67 @@
+{
+  "id": "506347575",
+  "url": "https://issues.chromium.org/issues/506347575",
+  "title": "Use-After-Free via re-entrant attribute mutation during synchronous speculation-rules error dispatch",
+  "status": "Assigned",
+  "severity": "S4-Minimal",
+  "priority": "P1",
+  "component": "Blink>DOM",
+  "os_platforms": [
+    "Android",
+    "Fuchsia",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": "150.0.7849.0",
+  "cve_ids": [],
+  "reporter": "pw...@gmail.com",
+  "assignee": "db...@chromium.org",
+  "created_date": "2026-04-25T07:26:50+00:00",
+  "modified_date": "2026-09-03T07:55:02+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 1000.0,
+  "reward_amount_meta": 1000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75968402,
+      "filename": "poc_release_4141.html",
+      "mime_type": "text/html",
+      "size_bytes": 1005,
+      "url": "https://issues.chromium.org/action/issues/506347575/attachments/75968402?download=true",
+      "local_path": "attachments/poc_release_4141.html"
+    },
+    {
+      "id": 75968403,
+      "filename": "poc.html",
+      "mime_type": "text/html",
+      "size_bytes": 718,
+      "url": "https://issues.chromium.org/action/issues/506347575/attachments/75968403?download=true",
+      "local_path": "attachments/poc.html"
+    },
+    {
+      "id": 75968404,
+      "filename": "asan.log",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 21817,
+      "url": "https://issues.chromium.org/action/issues/506347575/attachments/75968404?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 75968405,
+      "filename": "release_crash_4141.log",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 5404,
+      "url": "https://issues.chromium.org/action/issues/506347575/attachments/75968405?download=true",
+      "local_path": "attachments/release_crash_4141.log"
+    }
+  ],
+  "update_count": 22,
+  "description_snippet": "---\n\n### Report description\n\n\nHeap-use-after-free read in `blink::Document::ProcessBaseElement` via re-entrant SpeculationRules error dispatch from `UpdateBaseURL`\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report security issues affecting the Chrome"
+}

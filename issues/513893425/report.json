@@ -1,0 +1,246 @@
+{
+  "id": "513893425",
+  "url": "https://issues.chromium.org/issues/513893425",
+  "title": "Windows PWA handler launcher filename can smuggle --utility-cmd-prefix from manifest name, causing Chrome to execute attacker-chosen wrapper on utility process launch.",
+  "status": "New",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "UI>Browser>WebAppInstalls",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ro...@gmail.com",
+  "assignee": "dm...@google.com",
+  "created_date": "2026-05-16T22:37:08+00:00",
+  "modified_date": "2026-09-06T07:55:36+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 2500.0,
+  "reward_amount_meta": 2500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 76865146,
+      "filename": "Video.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 3495404,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76865146?download=true",
+      "local_path": "attachments/Video.mp4"
+    },
+    {
+      "id": 76865147,
+      "filename": "icon.svg",
+      "mime_type": "image/svg+xml",
+      "size_bytes": 278,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76865147?download=true",
+      "local_path": "attachments/icon.svg"
+    },
+    {
+      "id": 76865148,
+      "filename": "manifest.webmanifest",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 524,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76865148?download=true",
+      "local_path": "attachments/manifest.webmanifest"
+    },
+    {
+      "id": 76865149,
+      "filename": "sw.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 89,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76865149?download=true",
+      "local_path": "attachments/sw.js"
+    },
+    {
+      "id": 76865150,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 938,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76865150?download=true",
+      "local_path": "attachments/index.html"
+    },
+    {
+      "id": 76865151,
+      "filename": "trigger.html",
+      "mime_type": "text/html",
+      "size_bytes": 758,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76865151?download=true",
+      "local_path": "attachments/trigger.html"
+    },
+    {
+      "id": 76865152,
+      "filename": "start_video_demo.ps1",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 2036,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76865152?download=true",
+      "local_path": "attachments/start_video_demo.ps1"
+    },
+    {
+      "id": 76865153,
+      "filename": "README.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 1153,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76865153?download=true",
+      "local_path": "attachments/README.md"
+    },
+    {
+      "id": 76853085,
+      "filename": "Recording 2026-05-17 012615.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 4294257,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76853085?download=true",
+      "local_path": "attachments/Recording 2026-05-17 012615.mp4"
+    },
+    {
+      "id": 76830867,
+      "filename": "04-update-20260517.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 146085,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76830867?download=true",
+      "local_path": "attachments/04-update-20260517.zip"
+    },
+    {
+      "id": 76859333,
+      "filename": "Recording 2026-05-17 014408.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 2591493,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76859333?download=true",
+      "local_path": "attachments/Recording 2026-05-17 014408.mp4"
+    },
+    {
+      "id": 76853087,
+      "filename": "Screenshot 2026-05-17 022100.png",
+      "mime_type": "image/png",
+      "size_bytes": 31053,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76853087?download=true",
+      "local_path": "attachments/Screenshot 2026-05-17 022100.png"
+    },
+    {
+      "id": 76917074,
+      "filename": "FULL POC.zip",
+      "mime_type": "application/zip",
+      "size_bytes": 6982,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76917074?download=true",
+      "local_path": "attachments/FULL POC.zip"
+    },
+    {
+      "id": 76922258,
+      "filename": "icon.svg",
+      "mime_type": "image/svg+xml",
+      "size_bytes": 201,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76922258?download=true",
+      "local_path": "attachments/icon_76922258.svg"
+    },
+    {
+      "id": 76922259,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 2251,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76922259?download=true",
+      "local_path": "attachments/index_76922259.html"
+    },
+    {
+      "id": 76917075,
+      "filename": "manifest.webmanifest",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 550,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76917075?download=true",
+      "local_path": "attachments/manifest_76917075.webmanifest"
+    },
+    {
+      "id": 76917076,
+      "filename": "open-protocol.html",
+      "mime_type": "text/html",
+      "size_bytes": 177,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76917076?download=true",
+      "local_path": "attachments/open-protocol.html"
+    },
+    {
+      "id": 76922260,
+      "filename": "sw.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 42,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76922260?download=true",
+      "local_path": "attachments/sw_76922260.js"
+    },
+    {
+      "id": 76911194,
+      "filename": "check.ps1",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 1341,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76911194?download=true",
+      "local_path": "attachments/check.ps1"
+    },
+    {
+      "id": 76922261,
+      "filename": "README.md",
+      "mime_type": "text/markdown",
+      "size_bytes": 2292,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76922261?download=true",
+      "local_path": "attachments/README_76922261.md"
+    },
+    {
+      "id": 76922262,
+      "filename": "start.ps1",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 3347,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76922262?download=true",
+      "local_path": "attachments/start.ps1"
+    },
+    {
+      "id": 76922263,
+      "filename": "stop.ps1",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 697,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76922263?download=true",
+      "local_path": "attachments/stop.ps1"
+    },
+    {
+      "id": 76923476,
+      "filename": "icon.svg",
+      "mime_type": "image/svg+xml",
+      "size_bytes": 235,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76923476?download=true",
+      "local_path": "attachments/icon_76923476.svg"
+    },
+    {
+      "id": 76922626,
+      "filename": "index.html",
+      "mime_type": "text/html",
+      "size_bytes": 444,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76922626?download=true",
+      "local_path": "attachments/index_76922626.html"
+    },
+    {
+      "id": 76922265,
+      "filename": "manifest.webmanifest",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 534,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76922265?download=true",
+      "local_path": "attachments/manifest_76922265.webmanifest"
+    },
+    {
+      "id": 76922266,
+      "filename": "open-mailto.html",
+      "mime_type": "text/html",
+      "size_bytes": 142,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76922266?download=true",
+      "local_path": "attachments/open-mailto.html"
+    },
+    {
+      "id": 76922627,
+      "filename": "sw.js",
+      "mime_type": "text/javascript",
+      "size_bytes": 42,
+      "url": "https://issues.chromium.org/action/issues/513893425/attachments/76922627?download=true",
+      "local_path": "attachments/sw_76922627.js"
+    }
+  ],
+  "update_count": 121,
+  "description_snippet": "---\n\n### Report description\n\n\nWindows PWA handler launcher filename can smuggle --utility-cmd-prefix from manifest name, causing Chrome to execute attacker-chosen wrapper on utility process launch.\n\n\n---\n\n### Bug location\n\n\n#### Where do you want to report your vulnerability?\n\nChrome VRP – Report se"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "501792454",
+  "url": "https://issues.chromium.org/issues/501792454",
+  "title": "Heap-Use-After-Free via stale set iterator dereference in HostResolverDnsTask::OnTransactionSorted",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "Internals>Network>DoH",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": "148.0.7763.0",
+  "cve_ids": [],
+  "reporter": "pw...@gmail.com",
+  "assignee": "er...@google.com",
+  "created_date": "2026-04-12T15:15:07+00:00",
+  "modified_date": "2026-08-31T07:53:29+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 4000.0,
+  "reward_amount_meta": 4000.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [
+    {
+      "id": 75452852,
+      "filename": "asan.log",
+      "mime_type": "text/plain",
+      "size_bytes": 26148,
+      "url": "https://issues.chromium.org/action/issues/501792454/attachments/75452852?download=true",
+      "local_path": "attachments/asan.log"
+    },
+    {
+      "id": 75452853,
+      "filename": "dns_sort_uaf_trigger.py",
+      "mime_type": "text/x-python",
+      "size_bytes": 20336,
+      "url": "https://issues.chromium.org/action/issues/501792454/attachments/75452853?download=true",
+      "local_path": "attachments/dns_sort_uaf_trigger.py"
+    },
+    {
+      "id": 75436227,
+      "filename": "deleted",
+      "mime_type": "application/octet-stream",
+      "size_bytes": 0,
+      "url": "https://issues.chromium.org/action/issues/501792454/attachments/75436227?download=true",
+      "local_path": null
+    }
+  ],
+  "update_count": 26,
+  "description_snippet": "# VRP Report \n\nSecurity Bug\n\nImportant: Please do not change the component of this bug manually.\n\nPlease READ THIS FAQ before filing a bug: https://chromium.googlesource.com/chromium/src/+/HEAD/docs/security/faq.md\n\nPlease see the following link for instructions on filing security bugs: https://www."
+}
