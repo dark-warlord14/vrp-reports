@@ -1,5 +1,25 @@
 [
   {
+    "id": "519007689",
+    "title": "PDFium NameTree lookup-only path still truncates /Limits",
+    "url": "https://issues.chromium.org/issues/519007689",
+    "status": "Assigned",
+    "severity": "S3-Low",
+    "component": "PDFium",
+    "reporter": "sd...@gmail.com",
+    "cve_ids": [],
+    "bounty_amount": 500.0,
+    "reward_amount_meta": 500.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2026-06-02T08:38:13+00:00",
+    "year": 2026,
+    "attachment_count": 0,
+    "local_path": "issues/519007689",
+    "has_markdown": true
+  },
+  {
     "id": "517168239",
     "title": "use-after-poison in ViewTransitionSupplement::OnTransitionCaptured",
     "url": "https://issues.chromium.org/issues/517168239",

@@ -1,0 +1,33 @@
+{
+  "id": "519007689",
+  "url": "https://issues.chromium.org/issues/519007689",
+  "title": "PDFium NameTree lookup-only path still truncates /Limits",
+  "status": "Assigned",
+  "severity": "S3-Low",
+  "priority": "P1",
+  "component": "PDFium",
+  "os_platforms": [
+    "Android",
+    "Linux",
+    "Mac",
+    "Windows",
+    "ChromeOS"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "sd...@gmail.com",
+  "assignee": "ts...@google.com",
+  "created_date": "2026-06-02T08:38:13+00:00",
+  "modified_date": "2026-09-09T09:07:49+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": 500.0,
+  "reward_amount_meta": 500.0,
+  "inclusion_reason": "reward_amount_meta",
+  "award_text_found": false,
+  "award_text_source_update": null,
+  "bounty_rationale": null,
+  "attachments": [],
+  "update_count": 58,
+  "description_snippet": "PDFium CL 146590 states that lookup-only operations should not truncate the\n/Limits array:\n\n  Do not truncate /Limits array for lookup-only operations\n\nHowever, current main still appears to trim /Limits in the lookup-only path.\n\nIn core/fpdfdoc/cpdf_nametree.cpp, SearchNameNodeByNameInternal() docu"
+}

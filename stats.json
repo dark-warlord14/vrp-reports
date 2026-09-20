@@ -1,7 +1,7 @@
 {
-  "total_reports": 4779,
-  "total_bounty": 28825171.7,
-  "avg_bounty": 6036.69,
+  "total_reports": 4780,
+  "total_bounty": 28825671.7,
+  "avg_bounty": 6035.53,
   "by_year": {
     "2009": {
       "count": 3,
@@ -72,12 +72,12 @@
       "total_bounty": 3427500.0
     },
     "2026": {
-      "count": 428,
-      "total_bounty": 5988000.0
+      "count": 429,
+      "total_bounty": 5988500.0
     }
   },
   "by_severity": {
-    "S3-Low": 4158,
+    "S3-Low": 4159,
     "S4-Minimal": 541,
     "Unknown": 70,
     "S1-High": 8,
@@ -85,7 +85,7 @@
     "S2-Medium": 1
   },
   "by_status": {
-    "Assigned": 3708,
+    "Assigned": 3709,
     "Accepted": 765,
     "New": 149,
     "Fixed": 99,
@@ -106,7 +106,7 @@
     "Enterprise": 12,
     "Blink, Internals, Internals": 12,
     "Blink, Internals": 9,
-    "PDFium": 7,
+    "PDFium": 8,
     "Speed": 7,
     "Services (Use Subcomponents)": 6,
     "Infra": 6,
@@ -121,7 +121,7 @@
     },
     {
       "range": "$500-1K",
-      "count": 613
+      "count": 614
     },
     {
       "range": "$1K-3K",
