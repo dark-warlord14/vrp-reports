@@ -1,0 +1,46 @@
+{
+  "id": "424995036",
+  "url": "https://issues.chromium.org/issues/424995036",
+  "title": "Security: <select> data can cross browser line of death if input box is too large",
+  "status": "Accepted",
+  "severity": "Unknown",
+  "priority": "P2",
+  "component": "Blink>Forms>Select, Blink>SecurityFeature",
+  "os_platforms": [
+    "Windows"
+  ],
+  "chrome_version": null,
+  "cve_ids": [],
+  "reporter": "ha...@gmail.com",
+  "assignee": "ja...@chromium.org",
+  "created_date": "2025-06-14T18:26:51+00:00",
+  "modified_date": "2026-10-02T21:57:45+00:00",
+  "public_issue": true,
+  "bounty_confirmed": true,
+  "bounty_amount": null,
+  "reward_amount_meta": null,
+  "inclusion_reason": "award_text",
+  "award_text_found": true,
+  "award_text_source_update": 96,
+  "bounty_rationale": "UI spoof - omnibox\n\n\n\n\n\n\n\n  \n    \n  \n\n\nImportant payment guidance:\n\n\n*   **Legacy**: If you aren't already registered with Google as a supplier,\n    p2p-vrp@google.com will reach out to you. If you have registered in the\n    past, no need to repeat the process – you can sit back and relax, and we\n    will process the payment soon.\n\n    If you have any payment related requests, please direct them to\n    p2p-vrp@google.com. Please remember to include the subject of this email and\n    the email add",
+  "attachments": [
+    {
+      "id": 66751030,
+      "filename": "poc.patch",
+      "mime_type": "text/x-diff",
+      "size_bytes": 14230,
+      "url": "https://issues.chromium.org/action/issues/424995036/attachments/66751030?download=true",
+      "local_path": "attachments/poc.patch"
+    },
+    {
+      "id": 66751031,
+      "filename": "poc.mp4",
+      "mime_type": "video/mp4",
+      "size_bytes": 358705,
+      "url": "https://issues.chromium.org/action/issues/424995036/attachments/66751031?download=true",
+      "local_path": "attachments/poc.mp4"
+    }
+  ],
+  "update_count": 98,
+  "description_snippet": "**VULNERABILITY DETAILS**\n\nThe PopupWidgetHost interface [1] allows a renderer to create a popup window, intended for features like dropdown menus. If the renderer is compromised, then it can set arbitrary bounds on the popup window, and paint arbitrary content in it. This allows the attacker to spo"
+}
