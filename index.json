@@ -12542,6 +12542,28 @@
     "has_markdown": true
   },
   {
+    "id": "409745067",
+    "title": "page crash after breakpoint and resume, and in other cases",
+    "url": "https://issues.chromium.org/issues/409745067",
+    "status": "Assigned",
+    "severity": "S4-Minimal",
+    "component": "Platform>DevTools",
+    "reporter": "st...@gmail.com",
+    "cve_ids": [
+      "CVE-2025-4050"
+    ],
+    "bounty_amount": 2000.0,
+    "reward_amount_meta": 2000.0,
+    "public_issue": true,
+    "inclusion_reason": "reward_amount_meta",
+    "award_text_found": false,
+    "created_date": "2025-04-10T12:56:14+00:00",
+    "year": 2025,
+    "attachment_count": 0,
+    "local_path": "issues/409745067",
+    "has_markdown": true
+  },
+  {
     "id": "409619251",
     "title": "Buffer Overflow (GPU process) in Chrome Windows Media Foundation Encode Accelerator",
     "url": "https://issues.chromium.org/issues/409619251",
